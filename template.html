@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add("js");</script>
+<title>%%TITLE%%</title>
+<meta name="description" content="%%DESCRIPTION%%">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="%%CANONICAL%%">
+%%GSC_META%%
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="%%SITE_NAME%%">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="%%TITLE%%">
+<meta property="og:description" content="%%DESCRIPTION%%">
+<meta property="og:url" content="%%CANONICAL%%">
+<meta property="og:image" content="%%OG_IMAGE%%">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Noticias del Momento: noticias de Chile y el mundo actualizadas cada hora">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="%%TITLE%%">
+<meta name="twitter:description" content="%%DESCRIPTION%%">
+<meta name="twitter:image" content="%%OG_IMAGE%%">
+<meta name="theme-color" content="#0A2540">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230A2540'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='62' font-weight='700' fill='%23FBFAF7' text-anchor='middle'%3EN%3C/text%3E%3Crect x='18' y='82' width='64' height='5' fill='%23C8102E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap">
+<script type="application/ld+json">%%JSONLD%%</script>
+<style>
+  :root{
+    --navy:#0A2540; --navy-dark:#061424; --red:#C8102E; --paper:#FBFAF7; --ink:#07192E;
+    --muted:#6D7480; --rule:#B9C0C8; --strong:#0A2540; --surface:#FFFFFF;
+    --c-nacional:#C8102E; --c-internacional:#1F5F8B; --c-economia:#2E6B4F; --c-tecnologia:#5B3F9E; --c-deportes:#B4530A; --c-cultura:#9C2F6F;
+    --b-nacional:#FF6B7D; --b-internacional:#7CC0EE; --b-economia:#74D0A4; --b-tecnologia:#B39AF5; --b-deportes:#F5A35C; --b-cultura:#EE8BC6;
+    --on-navy:#FFFFFF; --on-navy-soft:#C5CFDA;
+    --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    color-scheme:light dark;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --navy:#0F2440; --navy-dark:#050C16; --red:#FF5C70; --paper:#0B1420; --ink:#E9EDF2;
+      --muted:#9BA5B1; --rule:#2B3A4C; --strong:#C9D2DC; --surface:#111D2C;
+      --c-nacional:#FF6B7D; --c-internacional:#7CC0EE; --c-economia:#74D0A4; --c-tecnologia:#B39AF5; --c-deportes:#F5A35C; --c-cultura:#EE8BC6;
+    }
+  }
+  :root[data-theme="dark"]{
+    --navy:#0F2440; --navy-dark:#050C16; --red:#FF5C70; --paper:#0B1420; --ink:#E9EDF2;
+    --muted:#9BA5B1; --rule:#2B3A4C; --strong:#C9D2DC; --surface:#111D2C;
+    --c-nacional:#FF6B7D; --c-internacional:#7CC0EE; --c-economia:#74D0A4; --c-tecnologia:#B39AF5; --c-deportes:#F5A35C; --c-cultura:#EE8BC6;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  [hidden]{display:none !important;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  :focus-visible{outline:2px solid var(--red);outline-offset:3px;}
+  .container{max-width:1240px;margin:0 auto;padding:0 32px;}
+  .skip-link{position:absolute;left:-9999px;top:8px;z-index:300;background:var(--surface);color:var(--ink);padding:10px 14px;border:1px solid var(--strong);}
+  .skip-link:focus{left:12px;}
+
+  /* ---------- Barra utilitaria ---------- */
+  .utility{background:var(--navy-dark);color:var(--on-navy-soft);font-size:12px;}
+  .utility-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:34px;}
+  .utility p{margin:0;letter-spacing:.08em;text-transform:uppercase;font-weight:600;}
+  .utility-status{display:flex;align-items:center;gap:12px;}
+  .utility time{color:var(--on-navy);font-weight:600;}
+  .refresh-bar{display:inline-block;width:96px;height:2px;background:rgba(255,255,255,.18);overflow:hidden;}
+  .refresh-bar-fill{display:block;height:100%;width:0;background:var(--red);transition:width 1s linear;}
+
+  /* ---------- Masthead ---------- */
+  .masthead-wrap{border-bottom:4px double var(--strong);}
+  .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;padding-top:30px;padding-bottom:22px;}
+  .masthead-title{font-family:var(--serif);font-weight:700;text-transform:uppercase;letter-spacing:-.01em;line-height:.95;font-size:clamp(34px,6.2vw,86px);margin:0;}
+  .masthead-claim{font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.4;color:var(--muted);max-width:290px;margin:0;text-align:right;}
+
+  /* ---------- Barra de secciones (fija) ---------- */
+  .sticky-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:100;background:var(--navy);color:var(--on-navy);}
+  .bar-inner{display:flex;align-items:center;gap:18px;min-height:52px;}
+  .brand-mini{font-family:var(--serif);font-weight:700;font-size:17px;text-transform:uppercase;white-space:nowrap;max-width:0;overflow:hidden;visibility:hidden;opacity:0;margin-right:-18px;transition:opacity .2s;}
+  .sticky-bar.is-stuck .brand-mini{max-width:280px;visibility:visible;opacity:1;margin-right:0;}
+  .site-nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none;}
+  .site-nav::-webkit-scrollbar{display:none;}
+  .site-nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;}
+  .site-nav a{display:flex;align-items:center;min-height:52px;padding:0 12px;white-space:nowrap;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--on-navy-soft);border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
+  .site-nav a:hover,.site-nav a:focus-visible{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));}
+  .site-nav a[class^="cat-"]::before,.footer-nav a[class^="cat-"]::before{content:"";display:inline-block;flex-shrink:0;width:8px;height:8px;margin-right:8px;background:var(--cat-b);}
+  .icon-btn{display:none;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:0 8px;background:none;border:0;color:var(--on-navy);font:600 12.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;}
+  .js .search-toggle{display:inline-flex;margin-left:auto;}
+  .icon-btn svg{width:20px;height:20px;}
+
+  .search-panel{background:var(--surface);color:var(--ink);border-bottom:1px solid var(--rule);padding:22px 0 26px;}
+  .search-label{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  .search-input{width:100%;font:500 24px/1.3 var(--serif);color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--strong);padding:8px 0;border-radius:0;}
+  .search-input:focus{outline:none;border-bottom-color:var(--red);}
+  .search-status{font-size:13px;color:var(--muted);margin:12px 0 4px;}
+  .search-results{list-style:none;margin:0;padding:0;max-height:50vh;overflow-y:auto;}
+  .search-results li{padding:12px 0;border-bottom:1px solid var(--rule);}
+  .search-results a{display:block;font:600 18px/1.3 var(--serif);}
+  .search-results a:hover{text-decoration:underline;text-underline-offset:3px;}
+
+  /* ---------- Lo último ---------- */
+  .breaking{border-bottom:1px solid var(--rule);}
+  .breaking-inner{display:flex;align-items:baseline;gap:14px;padding-top:11px;padding-bottom:11px;font-size:14px;}
+  .breaking-label{flex-shrink:0;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);padding-right:14px;border-right:1px solid var(--rule);}
+  .breaking a{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;}
+  .breaking a:hover{text-decoration:underline;text-underline-offset:3px;}
+  .breaking time{flex-shrink:0;color:var(--muted);font-size:13px;}
+
+  /* ---------- Elementos editoriales ---------- */
+  main.container{padding-top:36px;}
+  .kicker{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cat,var(--red));margin:0 0 8px;}
+  .dek{font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--muted);margin:0;max-width:62ch;}
+  .meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;font-size:13px;color:var(--muted);margin:12px 0 0;}
+  .meta .src{color:var(--ink);font-weight:600;}
+  .meta .src::after{content:" ·";font-weight:400;color:var(--muted);}
+  .meta .read{color:var(--cat,var(--red));font-weight:600;margin-left:6px;}
+  .meta .read::after{content:" ↗";}
+  .meta .read:hover{text-decoration:underline;text-underline-offset:3px;}
+  h2 a:hover,h3 a:hover,.context-text a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;}
+  .media{margin:calc(var(--pad,0px) * -1) calc(var(--pad,0px) * -1) 20px;aspect-ratio:16/9;background:var(--rule);overflow:hidden;}
+  .media img{width:100%;height:100%;object-fit:cover;}
+
+  /* ---------- Tarjetas (esquinas rectas, sin sombra) ---------- */
+  .lead,.feature,.rail-list li,.compact-list li,.context{
+    background:var(--surface);border:1px solid var(--rule);transition:border-color .15s;
+  }
+  .lead,.feature,.rail-list li,.compact-list li{
+    border-top:3px solid var(--cat,var(--strong));
+    background:color-mix(in srgb,var(--cat,var(--surface)) 4%,var(--surface));
+  }
+  .lead:hover,.feature:hover,.rail-list li:hover,.compact-list li:hover{border-color:var(--cat,var(--muted));}
+
+  /* ---------- Portada ---------- */
+  .top-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start;}
+  .lead{grid-column:1 / span 8;--pad:32px;padding:var(--pad);border-top-width:5px;}
+  .top-grid--single .lead{grid-column:1 / -1;}
+  .lead-title{font-family:var(--serif);font-weight:600;font-size:clamp(30px,3.8vw,52px);line-height:1.06;letter-spacing:-.015em;margin:4px 0 16px;}
+  .top-aside{grid-column:9 / span 4;}
+  .rail-title{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-top:3px solid var(--strong);padding-top:10px;margin:0 0 12px;}
+  .rail-list{list-style:none;margin:0;padding:0;counter-reset:rail;display:grid;gap:12px;}
+  .rail-list li{counter-increment:rail;display:grid;grid-template-columns:34px minmax(0,1fr);padding:18px 20px 18px 16px;}
+  .rail-list li::before{content:counter(rail);font:600 30px/1 var(--serif);color:var(--muted);}
+  .rail-item h3{font-family:var(--serif);font-size:19px;line-height:1.25;font-weight:600;margin:0;}
+
+  /* ---------- Franja de contexto ---------- */
+  .context{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:40px 0 0;border-top:3px solid var(--strong);}
+  .context-unit{padding:22px 26px 24px;border-left:1px solid var(--rule);}
+  .context-unit:first-child{border-left:0;}
+  .context-label{display:flex;gap:10px;align-items:baseline;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px;}
+  .context-num{color:var(--red);}
+  .context-text{font:600 21px/1.25 var(--serif);margin:0;}
+  .context-note{font-size:13px;color:var(--muted);margin:8px 0 0;}
+
+  /* ---------- Secciones ---------- */
+  .section{margin-top:64px;}
+  .section-head{display:flex;align-items:baseline;gap:14px;border-top:3px solid var(--cat,var(--strong));border-bottom:1px solid var(--rule);padding:12px 0;margin-bottom:20px;}
+  .section-num{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--cat,var(--red));}
+  .section-head h2::before{content:"";display:inline-block;width:12px;height:12px;margin-right:10px;background:var(--cat,var(--red));vertical-align:.08em;}
+  .section-head h2{font:700 30px/1.1 var(--serif);margin:0;}
+  .section-count{margin-left:auto;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+  .section-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start;}
+  .feature{grid-column:1 / span 7;--pad:28px;padding:var(--pad);}
+  .section-grid--single .feature{grid-column:1 / span 8;}
+  .feature-title{font:600 28px/1.15 var(--serif);letter-spacing:-.01em;margin:0 0 12px;}
+  .feature .dek{font-size:17px;}
+  .compact-list{grid-column:8 / span 5;list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+  .compact-list li{padding:18px 20px;}
+  .compact h3{font:600 18px/1.3 var(--serif);margin:0;}
+  .compact .meta{margin-top:6px;}
+  #portada,.section{scroll-margin-top:72px;}
+
+  /* ---------- Colores por categoría ---------- */
+  .context-text a[class^="cat-"]{color:var(--cat);}
+  .cat-nacional{--cat:var(--c-nacional);--cat-b:var(--b-nacional);}
+  .cat-internacional{--cat:var(--c-internacional);--cat-b:var(--b-internacional);}
+  .cat-economia{--cat:var(--c-economia);--cat-b:var(--b-economia);}
+  .cat-tecnologia{--cat:var(--c-tecnologia);--cat-b:var(--b-tecnologia);}
+  .cat-deportes{--cat:var(--c-deportes);--cat-b:var(--b-deportes);}
+  .cat-cultura{--cat:var(--c-cultura);--cat-b:var(--b-cultura);}
+
+  /* ---------- Pie ---------- */
+  .site-footer{background:var(--navy-dark);color:var(--on-navy-soft);margin-top:80px;padding:52px 0 28px;font-size:14px;}
+  .footer-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;}
+  .footer-brand-block{grid-column:span 5;}
+  .footer-nav{grid-column:span 3;}
+  .footer-about{grid-column:span 4;}
+  .footer-brand{font:700 28px/1 var(--serif);text-transform:uppercase;color:var(--on-navy);margin:0 0 12px;}
+  .footer-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy);margin:0 0 12px;}
+  .site-footer p{margin:0;line-height:1.6;}
+  .footer-nav ul{list-style:none;margin:0;padding:0;}
+  .footer-nav a{display:inline-block;padding:4px 0;}
+  .footer-nav a:hover{color:var(--on-navy);text-decoration:underline;text-underline-offset:3px;}
+  .footer-bottom{margin-top:36px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:12px;}
+
+  /* ---------- Tablet ---------- */
+  @media (max-width:1179px){
+    .lead,.top-aside,.feature,.section-grid--single .feature,.compact-list{grid-column:1 / -1;}
+    .rail-list{grid-template-columns:repeat(3,minmax(0,1fr));}
+    .compact-list{grid-template-columns:repeat(2,minmax(0,1fr));}
+    .footer-brand-block{grid-column:1 / -1;}
+    .footer-nav{grid-column:span 5;}
+    .footer-about{grid-column:span 7;}
+  }
+  /* ---------- Móvil ---------- */
+  @media (max-width:767px){
+    .container{padding:0 16px;}
+    .utility p{display:none;}
+    .utility-inner{justify-content:flex-start;}
+    .masthead{flex-direction:column;align-items:flex-start;gap:10px;padding-top:20px;padding-bottom:16px;}
+    .masthead-claim{text-align:left;font-size:15px;max-width:none;}
+    .bar-inner{gap:8px;}
+    .brand-mini{margin-right:-8px;font-size:15px;}
+    .sticky-bar.is-stuck .brand-mini{max-width:200px;}
+    .js .menu-toggle{display:inline-flex;}
+    .js .site-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.12);max-height:70vh;overflow-y:auto;}
+    .js .site-nav.open{display:block;}
+    .js .site-nav ul{flex-direction:column;}
+    .js .site-nav a{min-height:48px;padding:0 18px;border-bottom:1px solid rgba(255,255,255,.08);}
+    .js .search-toggle{margin-left:auto;}
+    main.container{padding-top:20px;}
+    .dek{font-size:17px;}
+    .top-grid,.section-grid{gap:14px;}
+    .rail-list,.compact-list{grid-template-columns:minmax(0,1fr);gap:10px;}
+    .lead,.feature{--pad:20px;}
+    .rail-list li{padding:16px 18px 16px 14px;}
+    .compact-list li{padding:16px 18px;}
+    .top-aside{margin-top:14px;}
+    .context{grid-template-columns:minmax(0,1fr);margin-top:28px;}
+    .context-unit,.context-unit:first-child{padding:18px 20px;border-left:0;border-top:1px solid var(--rule);}
+    .context-unit:first-child{border-top:0;}
+    .section{margin-top:44px;}
+    .section-head{margin-bottom:14px;}
+    .section-head h2{font-size:25px;}
+    .feature-title{font-size:24px;}
+    .footer-nav,.footer-about{grid-column:1 / -1;}
+    .meta a,.meta time{min-height:24px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="utility">
+    <div class="container utility-inner">
+      <p>La vista del día · Chile y el mundo</p>
+      <div class="utility-status">
+        <span>Actualizado <time id="updated-at" datetime="%%UPDATED_ISO%%">%%UPDATED_HUMAN%%</time></span>
+        <span class="refresh-bar" role="progressbar" aria-label="Tiempo transcurrido hasta la próxima actualización" aria-valuemin="0" aria-valuemax="100"><span class="refresh-bar-fill" id="refresh-fill"></span></span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead-wrap">
+    <div class="container masthead">
+      <h1 class="masthead-title">Noticias del Momento</h1>
+      <p class="masthead-claim">Lo más relevante de Chile y el mundo, actualizado cada hora y con enlace a cada fuente.</p>
+    </div>
+  </div>
+</header>
+
+<div class="sticky-bar">
+  <div class="container bar-inner">
+    <a class="brand-mini" href="#contenido">Noticias del Momento</a>
+    <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Secciones
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Secciones">
+      <ul>%%NAV%%</ul>
+    </nav>
+    <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    </button>
+  </div>
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="container">
+      <label class="search-label" for="search-input">Buscar en las noticias publicadas</label>
+      <input class="search-input" id="search-input" type="search" autocomplete="off" placeholder="Ej.: presupuesto, Copa Chile, inteligencia artificial">
+      <p class="search-status" id="search-status" aria-live="polite"></p>
+      <ul class="search-results" id="search-results"></ul>
+    </div>
+  </div>
+</div>
+
+%%BREAKING%%
+
+<main id="contenido" class="container">
+%%TOP%%
+%%CONTEXT%%
+%%SECTIONS%%
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand-block">
+      <p class="footer-brand">Noticias del Momento</p>
+      <p>Lo más relevante de Chile y el mundo, actualizado cada hora.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Secciones en el pie de página">
+      <p class="footer-label">Secciones</p>
+      <ul>%%FOOTER_NAV%%</ul>
+    </nav>
+    <div class="footer-about">
+      <p class="footer-label">Sobre las fuentes</p>
+      <p>Los titulares se recopilan automáticamente desde Google Noticias y GNews. Cada uno enlaza a la nota original del medio que la publicó; los extractos breves corresponden a la descripción entregada por cada fuente.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© %%YEAR%% Noticias del Momento · Última actualización: %%UPDATED_HUMAN%%</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var d = document;
+
+  // Barra de ciclo de actualización (1 hora desde la última generación real del sitio)
+  var time = d.getElementById("updated-at"), fill = d.getElementById("refresh-fill");
+  if (time && fill) {
+    var last = new Date(time.getAttribute("datetime")).getTime();
+    var tick = function () {
+      var pct = Math.max(0, Math.min(100, ((Date.now() - last) / 3600000) * 100));
+      fill.style.width = pct + "%";
+      fill.parentNode.setAttribute("aria-valuenow", String(Math.round(pct)));
+    };
+    tick();
+    setInterval(tick, 5000);
+  }
+
+  // Imágenes que no cargan: se retira el contenedor para no dejar huecos
+  d.querySelectorAll("figure.media img").forEach(function (img) {
+    var drop = function () { var f = img.closest("figure"); if (f) f.remove(); };
+    if (img.complete && img.naturalWidth === 0) drop(); else img.addEventListener("error", drop);
+  });
+
+  // Marca compacta en la barra fija cuando el masthead sale de pantalla
+  var bar = d.querySelector(".sticky-bar"), mast = d.querySelector(".masthead-wrap");
+  if (bar && mast && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      bar.classList.toggle("is-stuck", !entries[0].isIntersecting);
+    }).observe(mast);
+  }
+
+  // Menú móvil
+  var menuBtn = d.getElementById("menu-toggle"), nav = d.getElementById("site-nav");
+  function setMenu(open) {
+    if (!menuBtn || !nav) return;
+    nav.classList.toggle("open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+  }
+  if (menuBtn && nav) {
+    menuBtn.addEventListener("click", function () { setSearch(false); setMenu(!nav.classList.contains("open")); });
+    nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+  }
+
+  // Búsqueda sobre los titulares publicados en la página
+  var searchBtn = d.getElementById("search-toggle"), panel = d.getElementById("search-panel");
+  var input = d.getElementById("search-input"), status = d.getElementById("search-status");
+  var results = d.getElementById("search-results");
+  function norm(t) { return t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+  var seen = {}, index = [];
+  d.querySelectorAll("main a[data-cat]").forEach(function (a) {
+    if (seen[a.href]) return;
+    seen[a.href] = true;
+    index.push({ href: a.href, title: a.textContent.trim(), cat: a.getAttribute("data-cat"), catKey: a.getAttribute("data-key"), key: norm(a.textContent) });
+  });
+  function setSearch(open) {
+    if (!panel || !searchBtn) return;
+    panel.hidden = !open;
+    searchBtn.setAttribute("aria-expanded", String(open));
+    if (open) input.focus();
+  }
+  if (searchBtn && panel && input) {
+    searchBtn.addEventListener("click", function () { setMenu(false); setSearch(panel.hidden); });
+    input.addEventListener("input", function () {
+      var raw = input.value.trim(), q = norm(raw);
+      results.innerHTML = "";
+      if (!q) { status.textContent = ""; return; }
+      var words = q.split(/\s+/);
+      var found = index.filter(function (item) {
+        return words.every(function (w) { return item.key.indexOf(w) !== -1; });
+      });
+      status.textContent = found.length
+        ? (found.length === 1 ? "1 resultado" : found.length + " resultados")
+        : "Sin resultados para «" + raw + "» en las noticias publicadas.";
+      found.slice(0, 8).forEach(function (item) {
+        var li = d.createElement("li"), k = d.createElement("p"), a = d.createElement("a");
+        li.className = "cat-" + item.catKey; k.className = "kicker"; k.textContent = item.cat;
+        a.href = item.href; a.target = "_blank"; a.rel = "noopener"; a.textContent = item.title;
+        li.appendChild(k); li.appendChild(a); results.appendChild(li);
+      });
+    });
+  }
+
+  d.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    if (panel && !panel.hidden) { setSearch(false); searchBtn.focus(); }
+    if (nav && nav.classList.contains("open")) { setMenu(false); menuBtn.focus(); }
+  });
+})();
+</script>
+</body>
+</html>
