@@ -1,6 +1,607 @@
 {
- "actualizado": "2026-10-13T10:26:12Z",
+ "actualizado": "2026-10-13T18:10:34Z",
  "noticias": [
+  {
+   "category": "economia",
+   "title": "En plenas fricciones con EEUU: China recalca a Chile como su tercer socio comercial de la región",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNSUxUS3FiaFhDSVN1d1N1Mk5va0s2TFlTTHQ0am5oVE9IWmp3TjN5Y282c1duMHpLUzA2ZmtYZXpGWVZCRmRxSXA5NFdjVWtxLTN5d3FUeC1qdjlmMzdlWFJpNmtlRUtaR0hod2JqQlRWbW5KYVZvdVBtQWtYVkpsQk5FZi1SY2MzS2NacXhja01qZGVCcWZtTkktUXEtbFhDOUVBblNLQVZ3QWVwT0UzWkNidWV2RDZNY3dzNHZkVzRISjd3T3ZiejZYYkExUTFJZ0trV3BueHBVY3ljaEwyZS1idVE5VTVrWFFMRWpPanduWEFxeU9LZXJpdGVXclNDVFR6Q0xZMlh6QQ?oc=5",
+   "published": "2026-10-13T17:28:03Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "\"¿Me estai we...?\": Paredes le hizo la cruz a Sampaoli para La Roja y sorprende con candidato nacional",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRUllUkVzR1JIektPTWRWd3B4UmdVMFA4dHdBUjhPZUFMQ0xnVGxoZ2o0UkNGVW5uS3ZncjFKLWVFN1RLNmxMNkg0ZFRDVFdFOWpFMXNyR2VJclp2TUFmNHJKTnZVbndSVm9MYXR0YTg1Z0pad3FGcHdkaG55QWRwTzdYcTRMdnBRVzRtVFhsczdhbkF6ZTExQTVDNmVuQ3lTWUtKOG1JZVJBMU13cHVObWk3Q3Y1N0poZ0hxMUVVWVc3bUNHclRxTE9rLVhQNlh3aTdYaWZ5MEg1Z0dZbTFDV2ZhMU1iRjVCNzBCVm9Zc2tGZ0ZzV1V2aEdUV2dXTDIx?oc=5",
+   "published": "2026-10-13T17:16:41Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Minutos de pánico entre pasajeros: Graban brutal ataque “familiar” a bus RED y su conductora",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Cuarta"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZmVxdWhWOFcyNGNFUmM5MVJ4ai1WLVBnckxuV25tV0xzOWlidWVubE1RZTlFV2ZHMjZrNGFYM3ktQ1l5d1Z0dTJyNnlsY1VsNVFSUXRPUkFsQnhzbVhBbWU4N0JxMWEyMFNnQTUwSlFCcm9DZjA0dzRROTZjQ19tb3l5Wm4tZ2dCYkhiOXlqUFhfd2FmT1J6bTA5MG5waUNCWXc4a0tnamVod0FGX3dYaUhSMEl5YXdxSFBlX044OWNkSjR3TEdGN9IB6gFBVV95cUxQREdObDBiUzJSSGM2cjNLckVuTjJoYWlvSW5kN25wU2xXQzlLcWdiLTNGb0p3MWtrVjJCdlhJeXllMUJNSTB0S1h2LTNnXzJXZnVzQS1jdWs0Q3BaOHNWdmpSV3h0czhCZDI4cUZBM2l3Z0NyaUc3VEZMcFFnSWpUYk9JeWJlZUx4OUFLenlQbDZZWXdyTFdTVE5JUk9ZcFkzeXVsTFZNT0ZPX01IU2hGb0wxTF9Nb21rcnpzM0F0dlAxdG5LcUhMSHdocU12Nl83bk12U3UwanU2aU83QkpQaXpDMDdGUDdiblE?oc=5",
+   "published": "2026-10-13T17:02:27Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "\"No a los recortes\": FICValdivia inicia con fuertes críticas y pifias a representante del Gobierno",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOYmItdDAyWmM4ZXNxamZTX1J5RHdKdGtuODVNZU1GdEtCT2ltSkktMHV5b2FWbEJqLUNUblRKQmxtVjNBUjFROWtSLTJYSndlN1ItbGx3ZzE2dC1mS25OeWRxa2xMM2NLcE9UcGhYLW5xU2dDZmc5a2NrRUVEWFJUT19aQ3NYUjhZbEYyS3dZeV80WFVTN3NmWmFiXzFwZzl5emdtUUR5OTRUd2lBMmtHTzZDUlVmT1g1M3pxWTlEd1dkUXdtSzJfaThfdERlZ01BMkowN01tN1JYdXdpaHBVaHV0d3gxTmhKZmdJU0pUcW5fT0ctcWU0VFFMSDNkUjB0T3lhTWFSZw?oc=5",
+   "published": "2026-10-13T16:48:07Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Gabriel Cañas revela cómo su homosexualidad casi le cuesta su trabajo en TV: \"Dijiste que eras cola\"",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNcTVaeHFIQ2RqQ1hFeElIakxTdzZwYm1wa1p0RTdFV3VuMDBkTUxwanpRY3F1LThTMjk1Mk5rajdkclZYOUNlNE5ESkZ1ekZMME9peGpjT2ljQS13YzVybWNHaVNJQlZFTGJkOFdLU0V2QmpLSzhxQ04xNTFuclhqU2Rjb3JrRTd6RU5NVVFfNVM1THkxRG9sWC0xSmh3bGotdGpMXzhUV1JhNmwyY0kwaFY5X1ZwX3lPcXZwSzc1TE9rNVA4VV9XY0ZsekRnRmhJODlrQzNYNGxmMzRNay1HRkd0WUhZXzBFd3FDQkg1SQ?oc=5",
+   "published": "2026-10-13T16:47:40Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Orden en las aulas: Fujimori obligará que estudiantes peruanos lleven pelo corto y no usen maquillaje",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOM0tUSEZsSk81MXc0MGVfZXYzYWt6ZmZaUWxFOXRTUno2dTRXc3VHTkZPdVV5bVZGZVRlOW82Z2w4Y0tNM0lZcnVjRDlpVDRvWTdQRVRZSjlleTM3QWZ6Q2kxQVZfdk1CUkdVNi0xVm9KWmg5QWhOcDJKYUVjYmNfNXExd3BZUlJDeUw1TUd3YWQ0ZlV2ZlhuX2xKMUtpemRqRFNVUVZzUkgtblY3OWx2dFBLQUFON2theHdCRlUyQ1VWc3ExdmptdnI2VjMzdkc3dFJ1ZTFkRHlHZ2Z1T19PR0VJZFJTNkctRFF1ckRVcG95MjJWWXB5eGZyaUlxdDROMkwwMmlPUzdQQm52N1VB?oc=5",
+   "published": "2026-10-13T16:30:30Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "La ofensiva de Catalina San Martín tras aluvión en Las Condes: alcaldesa apunta a roles del MOP y Claudio Orrego",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUWx1eThsTDh0Mi1ITmJUblNSNkNkQWZfWmozZndLakFueDJnbFh4eGpyMm5IUlBMeDh5VGFqanMtUFF1dzRUakFfSzdGQ05fUXhnQmJqcXFDOU5VNFpXSTBNcG5SOUIwaE9PVjZuTUZTV0lzUEhCZHp4V0dIM2ZxRGNvdU1RUTBoSFFHdXlCbndWLW05dC1lOWIyTW1HOUZ5MXJfQjltZnVKdmlKZ1NZc1NEeWxTSnYzcHpKaEl5RGFnZ0RqUnVyZ0tOMFVFMHZObDlqbWlFVjU2Z0NFbUVzN3g3SVU0UjZmeHVv?oc=5",
+   "published": "2026-10-13T16:30:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Las grabaciones que revelan la confusión en la prisión tras la fallida ejecución fallida de Christa Pike",
+   "summary": "Pike es considerada como la primera persona en sobrevivir una ejecución con inyección letal.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9712/live/4ba7f3d0-c6e3-11f1-9a39-31b474234113.jpg",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/c6rryzepezlko?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-13T16:05:37Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "“Busca su salida”: Revelan la primera baja de Colo Colo para el 2027",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "RedGol"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRWVnT2JjQ0c4RWhKYkVyQmw2NERObEQ2bDI1RDdUX2dyNlA1UFo0cUFFT3Y4OXNRUlJva1dVYXJ6cEd1M2h6enhuV2thajllcFVsVFpGbWtETmo2V1NSOV9tUlVRbkhneHpzZHQtSWpNbEtkV0xJYzloNG9OVTFMR21TbldtRTVyUzlFMkM1N01MVXpwOTVz0gGcAUFVX3lxTFAta1lVbUlZZFY1RVdmaEtuaS1mLWxNNlZfV3lMUHNrcmxYR0xVX0t0Y29ZakhyTlNJRzFtdGY4d2M1dV92bG1VR044Q2VJZnpjMkJKWGNPMzY3dXlxZUJxb3UxZF9aYUU1SzloZnA4MEhwdjI4Vm9iSlF2ZW5vTDVmTHZOQjBJenlfY2V0akFPdnlOa0YzOEpISUE2ZA?oc=5",
+   "published": "2026-10-13T15:50:27Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Argentina acude a tribunal internacional para impedir explotación petrolera británica en Malvinas",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdW03SWtsZEpjakZmWEg2aUY2UWFrU0daaW1mNWJUS2pMOWhGMzYwbl90aTdyVy1IcXY4VEU0bHhsMTZaY1RsQ2NHVWN4RkxCVnl2VXNuT1d5WjhWd2FGTzAzRmhxZ1h5MnVyNjhlQll5YnFzcjBtempTeUhXbVQzUzVTVGlPTWUtalNkMXZqNGU4R1Ixekg3bUQzanh0dGFlTElDN05tZVAzNjBTRk5LeHl1STZtVHZGM3FFMVpNTk9zY3hndUZZUmcwdlduWWVWbk5iMnZYaFUwV3lCbXhCLVg3N2dLQjNNNWRDVkdxZVg5YzBjNDNqb0YteWZzWm5yS3VWTE05VVFRWGs?oc=5",
+   "published": "2026-10-13T15:48:18Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Paula Pavic confirma el fin del amor con Camilo Huerta y cómo los líos judiciales afectaron el término",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPanQ1aU5wMXNpV3V5SDNGNmdzOVJfczl4Zk5Zdk1DRlZvUi1IQlNpNUpNZHZfbjQ5TDVMRzQ0akkwNHhqU1o2a18xN2F3VjVFN3pBTHhOMlFGUjk2eXROWDhfYV9XMl91S2JxYkRkazh0TGY0a3ByaGhFNWNQd1BBclRodGRSNDB2c1FZbE5rVEE0UTBITDgzSFFMWk9HSEpLeUhBZk9CT0ZEVUtlc2QtQy1mdVFpcmZzZDVxLVhwXzlFMlI3R0NqcVA1S2x5MzA1dC1YRXc1V1AzYXNxS2tzcDgtanc3SjhoSXVWREM5N0hVRVBaN1BFelBNR0luVHp4T0VlTno5ZWRVa2xaR1VhTjhIY0U?oc=5",
+   "published": "2026-10-13T15:47:58Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Cómo \"Breaking Bad\" y RJ Mitte cambiaron la percepción sobre la parálisis cerebral",
+   "summary": "Mitte sufrió daño cerebral al nacer y fue diagnosticado con parálisis cerebral leve a los tres años.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/0dfc/live/ec4d59b0-c6f7-11f1-b4dd-e786ec6f11b1.jpg",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/c6lye2xke7ndo?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-13T15:38:28Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "\"Tiene esperanzas de que Brasil cambie\": Flávio Bolsonaro visita a su padre en arresto domiciliario",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOTExKWjc0eGtGT3NQTTdXSE1ZT0FobEZHbWQ3c1o0endULUYtMWE3RjE5QUpDbnYybmh2LURKVWROR0xsR2RiNFFoanlKWkhmWGVNZzI4dF95c0Q0TV8yU3B2aHRmZm5XM1lNZmtmT01jSEVUOTFPQUE5ekNUR2F5azNBYTdqWjhZTDJrd3hIY2RsQ21SQzczT2lwZ2VpNy1UbHJJdmVnTFdEZndQUkNvcXhGOWg1SHpDVjhoV1ZpNm1TdURUbkcwUXFkZDU0RkZZU2NiR0FReTMwVDJwd2c1YmRDWWtxN09rSzh5ZnFFM01scG1YczJLTm9Gd0ZhVW1FMUluTDZRUVBGUQ?oc=5",
+   "published": "2026-10-13T15:23:36Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "\"Ley de nietos\": por qué el Tribunal Supremo de España suspendió el derecho a votar de miles de ciudadanos naturalizados",
+   "summary": "La decisión paraliza la inscripción en el padrón electoral y obliga a los afectados a demostrar que son descendientes de españoles exiliados para poder ejercer su derecho al sufragio.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9782/live/ce94b250-ad26-11f1-980e-4fc6f1211def.jpg",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/ckg0z1gnv9ko?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-13T15:20:07Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Trabajador muere tras accidente minero en planta de Illapel",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUXJYYi1WRXM3d004ZENwRndfVkplRzIxTjNCaGtCZzQ4UUVkRmtlcEtIX25RbVVCNUdYXzByNnRXZ0pWbDFRSUtxTXV1WThyUXJPM3dqdnNBYlBWSGNpUnBySkxOd3JUU08yTnhxY2lWSG9ENTBmUG9tZmFMdUpmeVpRclJPZm0wYmE4WHAwMTJFbDNxcmpuZFhjY0FwUHpPV1NvMjNIdWMtUGVzRUswbUxuaklfNjF6blk2ZzdKemFfQmo3dGw2VjE4bUlveUFFNjlBTnBDMA?oc=5",
+   "published": "2026-10-13T14:56:54Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Chile y su ceguera ante la inteligencia extranjera",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUmh2TWlka1N6Wk9ibkhlS2VKSjJqaktCaHpoNDhpcWtqWkp5T0JMMVA2bVM2S19FZ2V3cnZGTXYwd0RpaER6RFg3a3ZmN0tTQWtDTzN0ZkZ5TXVINUxKb1lYTlRCeGozTXJKYVhGUlFTWjNaYlFlYkh0Q2J1VGJNVWl6UjhGaEI3MjZvQmxRWl9oR0VyUldEdUdEcUl4R1dEM2x6U1FCOE8wOHg0UXZNcHpWRGlfLXJpU2hSTmpsQ0J5VDQ?oc=5",
+   "published": "2026-10-13T14:38:45Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "\"Último de ordinario. Nunca he visto a una persona con más mal gusto\": Isidora Gaete lanza dura crítica contra rostro de la farándula chilena",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "FMDOS — La radio de los dos"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcHJDVlFBVjNhbVgxenRtVDlweVBZdEotdjJfZWNMZkFFTEdKWEQ5bnljdExzT2JSUWZ5aHNvTEZwd2NOVHFKcTJ2NEVBUHNxbDg2Y29Gb0tJbThmVlNmRHZjQ3ktOHk3RGhoNExNWG4yNnJBUDFFcGpTTkhtYTNoaTMyeC1mN0FjM2FOcDIxb195ekZiOFIzaGI3ZHVtTnhJUnlBVENYQTM1d3JLMUhVaHJvMDhnQlZZUU5DdENOcXB2OEk1ZWVvaEhLQmljMlNWVVNtaVRNempLekFkek1zWDNjWkJrZ0FBLXpQd3VCckxkN2dTLWFwSTN2ZzjSAYICQVVfeXFMTXVSM21fY1hsLVJIQkZ2RUEyaEFMRTh0SVRqYXJJWl82czBaNjZZRUlhTDdZZDU2R2lsUGVlMG1fUWZzNjJ0WVRVQ0xyRTRqSzNadHAtM1JNT3BnZWdRYmxzRDE3WktJZ1FvMlJ2RHZFSUQ5MWhOV0w5OUFVZzBIYzZnUjd3aXFiOUtZZ1ZZZjgzX0pNQmd5blNTdzQ0X1o5R3piOUt0dDM5N3EyUjVBQmd3NkdkejQxcFg4MDFZVkUtT3NZTEdtV2NoaEdGRUhYWm5JcDdtbmd0Q3pVUGYwVW90UV9ZdWxqZHBFNllHbHQ4LUhESFZrcTlHUHY0VUoyMGZn?oc=5",
+   "published": "2026-10-13T14:25:11Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "En video | \"¿Es una broma?”: las llamadas de emergencia durante la fallida ejecución de Christa Pike en EE.UU.",
+   "summary": "Los audios revelan que los servicios de emergencia se retrasaron debido a la confusión entre los equipos de primera intervención y los funcionarios de la prisión de Tennessee.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/04dc/live/aaf3dec0-c70c-11f1-a64c-550be9e3c66b.jpg",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cjqln692r767o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-13T14:15:27Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Todo lo que sabemos sobre el apagón 3G y la llegada del 6G a Chile",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNWTdjaDkwOFQ3RlFrM2JzVzdYMTZoTU9BMEE2YVNtTWFzc2YxLW1rd1hQOG1zWld3blN1X3RmcEU1Q0lWZHU5SndoZDVIMzc2QmgwVEt0VVhnTTdhWFVvQ284eDhheEdTZG8zWXBRUlh5TnVRU2lXaVMyUU12UG9sNDh0VEs3aERxR3AwdXNyZUlEMVY3cVY2ZHV3d1Zuek02WVE5RG1rTTZ2V0F6b0RWaFd1ZjhGRlBPQWJTeVIzLTBfVVB3TGQ0Q3hHQmZCVGRVU0Y5NmV6R01LRmFnUGJibkdValBoQQ?oc=5",
+   "published": "2026-10-13T14:06:11Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Famosa compartió inocente registro y generó inesperadas reacciones: cibernautas advirtieron detalle y no lo dejaron pasar",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Cuarta"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1p6ajB3LVBqcU9WcUFYZmluQzk0MjNLMENiNmJBVmtYZVF2ZmZSM2pWY2c2RmFodi1zNTEyRGxfMTBKMkJab3R3VzgtcDVyWVhsdVI5S3FRT2Zha0dzc1dJTC1LaWpxT0NDdE5zWTlCdTZfNmJwbENhclFfU0VSZkpHMWQ5SVBmMDhZTktXa1FFcGw0VHhIZTZNc2pIMEVmNkhPUWx1YV92b3dhSVpvT3FpcmVfTFdGd0Rtc2lwdjJ5d1Jfck9xZkU0bWlLaGxncVJaMFZCRVI2ZjFQdWo0S29KWTNFSXdlRDgtWUVfMHdyZ2FabjNDcG1kc9IBnAJBVV95cUxNWE56NjZHTWhKWERYaVJaTWJ0SUpWX1hNaDJlQTNXZVhUdWdWeXR3c1A3RHZYd2lhTE1zMzBNcmdHSGU1aWZ5MFNqb0JhbHBlT0ZzT1NaNE9LSm9UX2ExektNOS1pYWYtamJFRXdfTl90MkR1eEtUb3E2dzg1VGdPRDZoUXgxLS1KZVA4R045OXVIeW41WVNZS0hiVnliZmMtQTBXdl84UkpyUTRPSnE5TGNvTl9kdDctYTJxVEctWlE1ckdDNTV1WFV0SmUtZnY1dTU2NXZabFNFOFFQd2gtcTJSLUY4cFJkY0dRcmp0TXFha3lJbm1WR0ZkcGs0eExSV0hGM1UyTGcybENLdDE0aldrVTNtSGIzSmFpQg?oc=5",
+   "published": "2026-10-13T13:58:02Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "\"Salió volando\": Detallan horrorosa escena del padre que cayó con hijo de enorme montaña rusa de EE.UU",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNYVMwOFJHVC1MYWlaM3dYNFd5THJwd2pPTFZRTVo3SE9nbTRETkpiSms2WVhIU0J4bUtGbjlOUmRYckZzVVBIZU9GOUdVanJ2N1hXRUZCQUluNmtJd1ZhbkJGbzRMUnJmZHR4OW53cGptSjNZRk5vSTZqWWItMmFmdGUxMDRJd0V4RTQ2QVdIOGZxQzNpanJjLUVXXzJjbWhWSmRYclZ5amlUMl82LVAxdmRieXNFbHNZZWhWc1ByQnZpUEtNUExMa3ByaVZLaF9ZR0Y3ZzM3Uk82X2thLXJkUC1VQjllbHNkMWdKbFMzVVJuampQbnZsdk5PQmF3TkU?oc=5",
+   "published": "2026-10-13T13:54:25Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Bravo llena de consejos a Maureira tras su triste desempeño en Colo Colo: “No te quedes con la sensación…”",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "RedGol"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObUo1ZW9zRGhjQU5Ld1o4elBWQmdqVkQtQzN4WW9JRWMwTzRmT1VhT3QtUy1Fc0FXTGtjSWczVElOZkFNTS1YTGhzSHY5Q2Iwc0lXYjdDMGJibEFOVVkycndlVHBFOGtLc0hQYW5qTG1xbk02QXBWeWJEUTExTENRajVaNFZaOTZEaWNxTTBmRnVrdFR0bDBtSDFmZ2ZJUFVOcnd6X045VV9TWDhuX2ZBVk80OFhoUWtQODFvcDM2d3ZySWQ1OUNNNdIBzgFBVV95cUxOZ0NRQWVPZ3EwTVhRMnVZMUpGVDk5dEY3ZGJPNjBLcWpuTm9ETWJQMkVXVzlzak1mSVRWSEcwcHRLc3dHVkhOMjdpNFNQc01JQjhTOHFmMjk2cEd2NC1HZXBPTEkyTC1WSFlUTC1fbFQ5RGx2VHRkQXJhcGh2Q3J4RjEtd3UtUkExanJOSkJlLWxGRGZBNWVZS0lHdFZpSnNFYjZyWXZFRmZmTGtTbGdnT0l6UThlS2NuOXgtQzMzS2dvUWh0Q3NpZF9EREtPdw?oc=5",
+   "published": "2026-10-13T13:42:50Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "economia",
+   "title": "Huelga en Centinela y nueva tragedia en El Teniente presionan los altos precios del cobre",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPalljVktMLTRBNDNfSVdnQWh0ZGNUUGxjdzVqa3NLb3lHRXUwbHg5TmhyZldRVHpEekp0ek9UVEVPeUY0MjhWME5HSWFKRGoyQ1dWS2hHc1k3RjJMWldod3RGTFoyTVRXY210dWFPOTd3T1JMX0ZvWGR6T2czTDdzajVlZEJPWlFMUUtxRnRBeGZrZUx6UThXS09YbXRNRFdZSDJRbG5vblAwVUxvR1JGd0pqUDZYd0s5REFWUHV4V0ZMQnlaSzBtT3NxaElJUmNIU2ZOMlJyWnh0Tm10U2QxNEMtaU9CN212OXVjODg3SkhFa0FyRDY0UHhtLTV2RUM5NkV4VnVwWFpCN25FMWU0?oc=5",
+   "published": "2026-10-13T13:25:38Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "economia",
+   "title": "Bulk llega a México con su inteligencia artificial de cobranzas por WhatsApp",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Diario Financiero"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQV0lyaWpUSHhxQlhHMEtleFFzby1NN3NocFc5a1NKUC1NbVR6MUtwM0NwOXlBYXJjSFpkRnZxNlJsYnNIMDRsVWp2SWtWS3pyaHV6QkV5QkVhaXBvcW9vQUdIQm1DaTBTTTc1dVo1UGk2SEZsOGpkY0JrR2tYdzYxQXFITVZPQ0FwXy1heGdNU2wwck9wU0xhWFFGbEZpSlowT1ZWWHFSd3MwT2MzZi1HczNZZU0?oc=5",
+   "published": "2026-10-13T13:25:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Chile aplastó a Brasil y clasificó invicto a la final del World Rugby Challenger U20",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcnBZUWFOSzQ3ckZnZXdCYWYtenFHU3VydmNYNjFVcThaNjdDc3AxV0hFUnhWTnNhSDJJWlR0NGFoeTk0OVFQR290UzN4Sm0xY19SYVdHY3lHRURtQTlpMWJLdXdwQVVEOXRTQ1Z3UUM5bDBQNUY5a2xBQ09HQkFiVjN1SmlibUdGWE90RnZ6X3BkeEV5WXlHQnJwSVJtcVJ0UE51Y3hYZlNhbVJjRDM5a1Z3RmFEZExrWWNvc01kYVlsZGEtQjVESl8tSEJkSDlxWS1icF9WZE1NcFox?oc=5",
+   "published": "2026-10-13T13:22:14Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Otro fallo del fútbol chileno: final de la Copa de la Liga vuelve a ser postergada",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "ADN Radio"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUEhjeWpQZnpDVDZzVXJHdVQyUUY4OGVFS1JjWm05RUx3OHpHSXVLU0pKdV9iM0dfR0NpZ3h4VXFRV3hXaUZyU0xCbEtBSGt5VEpNNXdiRTVUbXNQTTRqUUkwNlJFdlJnakJQNVhLSlZGU0pMN19xMVVoTXZPVjJ3SzN6Wk5hWmFzOVJocEpnb05VLXN5Y0NzaXZkOWY0b004S1VrbTZwYWNkNlN0aktaYkpMREdrWWkt0gHMAUFVX3lxTE5xbW4zQjJYTGExRHFibTdNT1BlaFJLdTRfVnFVWmFaSzNVWGxEeTI2blBOcktVbGZMOTZOTWlmbENzSkV1bWdzNWltV2MwTDI5NzF5RHZJUFJISkN6bktFZHVTYzh3TGhmM2cyMlNKTjZMRmhLQlZGYnZkVFBMLW1YUERaLXN0am16WnBGNFpOaTAwX3JRZF9qdU1Xa3hPSFdKY01ZZWdVQm00bks4R0FVOUtxWVVqMkdCN2lHT0VzTWpSSjBxRE5TcE5oRw?oc=5",
+   "published": "2026-10-13T13:13:01Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "A qué hora comienza la lluvia en la Región Metropolitana y qué sectores serán los más afectados",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPUUgyWDdaNnZTSXdTc0xpZUZNenNxX05NanBCcVlvRW45dXhZaVZZUjVYTUpxNHZBM0hDcnRzVVZfR2RjaERBMllab252Yy1PQWRyeHdvbzFROTd4OU5HVFFJajdKZWxDZTdqaXMzT0NadDhyVDU2UW91V2l0MXNpOGhIVXVNVnNvdHdMN3dZbGZobWxGS2pFVm9UMnBfWVVVRVFzMDBheVd5UjJLTXRBelRveHBwNFJRVUxzRVBoUGkxSmlZb0JSeDNKelJ2akFEdTMwc2dDLUHSAfoBQVVfeXFMTXBUTlA1T2RoSlROZW1DYkVyLVZtYzJ2S1drYklWdWdDOTBSdm9LTWx3YnVzZkFqMmozeEVBVVJsb2JPUHNmT0liUFBTY3BHaWEwU1gwRWh5c0p1UWt1UGNYRGdmeWVwRTVtanFFdHZiXzZPTWJoYWJfZG5lRWhTekVLcC1aMGZaTHNRLU14SXczQTVRbHY4RzB0LUVMSlRkUWotRFhLUjRGazhFOG51c3dWcHd1NEFtb3BNTVBTVEs4R3VCbHpSQmVNemFHMWhiMnlyV2w2eFJScDRRazhzVEg2UGU4UWI5NVViX09zVkJBUlBIc2VET1J4QQ?oc=5",
+   "published": "2026-10-13T13:06:33Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Actriz Selma Blair fue detenida por violentos incidentes a bordo de un avión",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Cooperativa"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMUdObTJYWENoaEstWXFqWnpSOTZPdjJ0WldTQzltcUxhOXRNaDc0QW5NX3RfZ0tqN2E3QVp2a1V0akVkTHNDeXpieGQteWNOaWlUTTNvbF9vSnhMNl83bEZsZV9BczFJLUZxZnZqZkFDUEp0UHAzWXpTdzJaaF9sNi14YTRxaVZFWllzWEZ1S3kyODJpcTJLRXE0bDdROWJnSDR5WFRsWHFKX1plSFNBN3o4NVVwWXZCeXZMY0RKZDExeF9GRU4wUDEzNVZCSzhUSFNBSEF0dlowaDlPVVNLeHUta9IBjAFBVV95cUxOWVlsQ3c3ZDBHZGVid09MZndRSVpvaWhlQVpRY1BHR1hQOWgxTnJBX2xyRERiYnVVRklpaUVzd0dGdjYwdWpSd3RBZ01SQ0NVQUNBWXhGYUwycVk3ZmcwQ2NTR0dneXNaRjgyRHhMNVp1OW13ZE92Slk5NjVpa2hHVkw5ME1vYXJEbmlzYg?oc=5",
+   "published": "2026-10-13T12:52:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Entró a robar por los balcones y hasta le pidió agua a una residente: Detienen a adolescente 'arañita' en Providencia",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Meganoticias"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU2tqaUFBRVRoMDJ2TzdBZFMxOHBUSno0N2dJVDRCYk1icURKRDJCVzhLUmRFY2pWVk9rMnl6MmpnME90XzhXMGNKMjF5dUVGc3hCYUYwTTVKbGRQZG1SSjlvREdJdEhJWVpBUkpWMFFEQkc2ek1aaGY0M3lKRDRoMnhmOFV4a0NfdjRNS0xHNTNLckVfd2k4VFJGQThGSElMV1ZzcmM3eW5oekR2Qi1NR3RDZ2FGUWvSAbwBQVVfeXFMTlVXcFRMcEJyM3VUdk9kdEZYNmt3ek0zbE9aTjVBSmlFMktHa0JNZU1TWG02ajFWdlRjY0I2aUlUNF9FTkIwRWVsTUNDT0FGaFI2YUpRNDBpOVZPQ18td21hMEg5RnlKRFdIcmd0NVV4NS1uNkJjekFVRmFZTWk3RW1kbkhBRDhzN05SdldlakEzZzdGbTRHTXRhU0xGcHk5c09QMXE5MFpfeUdkMEFrcGk1T2hiX3VaMzNnazk?oc=5",
+   "published": "2026-10-13T12:37:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Botota Fox se lanzó contra Michelle Bachelet y las redes explotaron: “La vieja...”",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Cuarta"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbktSZmNKdkxOLWY3LUIxNDVmNTYxRmNHWmxweVlSeTY5SkZZbmJDWUxRNHRMcUlvQWRrbGZFdEwzaUpzQ01WNHF1ZjV6NktFVnJCWGpUbEp2LTVKT01DWW5yYUdGejItV1JCWV9GWXZKOEVNclo2YTdpdUhvcW5VaHh4VUpYSGNTUTJYSjBDUmpaODBObVhlNURSSWNkdXJNMEY1Vzh4MW81RXd5N195UjV3YUluOFVEVzc5MUZORTTSAeIBQVVfeXFMTXdwZ0FhVkM4aVh6WndmSHlvQ0hPUUUtb2ZDNVk2VkN3Wjlia0QxTVZfUU9WWHZtcUdxNTRoRFRIQmNNZGdpNWZsd2tWeFhqcm1uVTJLV2VNdDlpMDhzejdldHU2ME5pZUw2ZzNwSUtlS2RXMkRxQlluTkMzMVNlNkZkdVU4b0pQNzYwWGZic1dIQUZtUXBCamV2X2M0LVp2TWxleTZpRjFqQjdLWG0wYThHVkNLal91bXQ3Z08wWkJycEh5ZzNha2x1a1Npd0NPUXo5V1FBdGt2V051X1R0Y2FiQQ?oc=5",
+   "published": "2026-10-13T12:33:39Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "La revelación de Karla Constant a casi dos años del fin de su matrimonio: contó la firme sobre su actual estado sentimental",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Cuarta"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMVZISzg3ZVF6aXZpaXhzUGRpdmtfZlg1WjlGQkd1akxVMXg0VFJXTlJSOC1HUWFjWGg5TlhiM0VsRG5BUmFOUi15akFCS2JEMDktQ3pjTGN5NXhQOVlLcUhmN1pBSXA3ZklHaU9DTFBDdTVKbW4zVWY2VXlISlJUTHctZmZPM3VfelJLNUJQX1pIcWQyQnh0QWZtX09TOEdkekpPeHRFZG9QSnBKZ1UyTXJNaTRTeW5UazJvUjdxVlluOUh0TDg1VGJWeTBiQ2xSdHRka3luS1dodTFDYU1HRlA5dnA4MnpTbmJZdXJETDRVZGQzNGRBLW5KV3ZKd9IBnwJBVV95cUxPQmJ5SHpYNVlPOVZsdlVqZjF2eUxxQjdubl9VbklJaFJHMzB0bk1Ja0VzTXg0b2kyMFlnLW1lWlNPa2NPWkR5TEQ3VmhHZ3BwUHp3ZkkwYmZ5eGhiNXdFRWdPU2VSWDNQajhyUmJSSkZFanRuOXVCdWRoNmlkdUphUVVqOWp2THpEYjZSRVQ1SWx1MjZYa1JvQkR6VUdHU2ZJNC0xc281bjZjYno3OThTRzE4NmVKQ0pJNjRKTDlFNl9rbDgzSGpPZVp1SGI4UHFWUk5nWVRwZmY5RzV2Q3R3d3oyRkNqWHAzZ0wxVHNtMC0wWVBCX0xDSW5aMTZpdjRpdHphc0wtT1hleG5TRWRYMnpJOUxab3I1SF85dDBGMA?oc=5",
+   "published": "2026-10-13T12:30:01Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Se quedó con los $25 millones: Conoce al gran ganador del reality “Vecinos al límite”",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Cuarta"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPOUdacUZ4WVVocGdKbGV0ZWhYRnBQQXVDYnpST3Y2Mkh5dWh1ZjlRRGJCU1hTeGgzOGUyUVVwNE16UzhzbGlzQzBrTlYtLTBfZ29GVlRRS0U2RGRSOUE1QlBJdW1hWmprdUxlb1hhSVBiV2tfQk5BaEEwbjhuRkhZRG1JdjlGcHlHQ1U3X2xzR1NQS0E2b0ZWS3pSNmREVUl5NWsxWm8tRHEtZmhvYjYxVVl5SUtNSVBqQTZTU2xBc0ZTQmVUcXpv0gHoAUFVX3lxTFBwcVYxWVNoZmd4WGVrQy1RRTQ3WnNDM3V4UENqY2JjSjB5eXVCQVdXSndEQlVXVW4zeW80ZGJvblh1X29yUnVVTHZoeFZLb1FkR3poQjBpdjJUQ2c4aUpNOUUtTnBlem9HNW5ZaEhzcUVObU1zbmNtWm1YNlN4YTVmX3lTRUMxazhnbXY2enAtV2xrWE8wcGlxdFpaTF9IY1FfeVY5RldxVHVGU25yOWFmX21SU1JldUwxQjJKN2tYemE5RGs0eVNzcnN2Z200Tm5hSjlSdW1HNDlFNXhQRlFvd0pTZk5fOWU?oc=5",
+   "published": "2026-10-13T12:26:25Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "\"Incidente de ciberseguridad\" deja estantes vacíos en supermercados neerlandeses",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Cooperativa"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbjlXZzFVSjd2SHpwei1uVEliRTAyT0lzWW1iVEpwRk9KeS13LUZfSndEZG1XY0hRVFhJZXRYcVRJOVBmcTJnLUt5TUVETjJFQ1pjYVlXaVRaSUU4RHNYVEU5OXBvX0dkcWczR3A2Rmlzc2JnbmJYaGs4RWVxdS1xa3NJdVVXcHJSckRjcE13d2pfdU9ST3VTX3pYTzZsTFBFSkllYV8xS1lHb09QTWZieFlRUXpHaUFwemE1b3BSU0VUWEJvRUh6MmliVG9qUkU4TC03WUR6YjRfRncxZHRLSmtB0gGMAUFVX3lxTFAxc1JXckVxV0ZRT1JOY3Q3M0JQai1qSmVIZEs4UWU2dVNpMVlIeXJ1ZHY1ak5lOUpWc0V6NmJCY0NtSm9QME10VUkyWXlYRnl0b1piMWJOaU5ac204VUd6OEYtS3piM21kdzBIbmc5Njd3ZjlNRmU5eTAxTVA5RXBkYzZOWkFkLUI3TVJ2?oc=5",
+   "published": "2026-10-13T12:22:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "La tragedia carretera de hinchas de San Luis en el sur que enluta a Quillota",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdG13NGpxU1FaUzFiNW05U2NEWVFGeHJqTk13MlRBRjhuME9SOHMzM1UtckZKaUVLNHRDek1SZ0FfY0YxQTVRV3NKRFBCVVNlczBxYkllLVVVR3RkdTR4elhndXBoS2JBanJRVEZHbHhtZnpSSld1a1AyZFNDa1lmM1QySi1oa0VuSE5EWWVIMFRnRDUyUlExM3k3WmRadmlHeXVJcDBrSTN2VDY0Z19ad3g5TVpDcGlRSnl0WdIB3gFBVV95cUxOcXdUMHZDSlg1dEgyc3JDa0x0djJGazU4UmZRT0pTUVFGNmx0NDE4cUhQNng0QUd1bnJ1Z091NVpodU1pWkw1SVBocU1qOWc3cmgyUld3eUN6dDJ2NUlmaHloM0JQUG9MSjc2RWtCeXVrQTliRU5McXp0enc3S0ZIb2ZRaHhpUXJpN3BVdmJPdXdFZXpjN1dSbS1VWlNwLVRRbzJObXB5aHhpQUFiNkljVFRVOUIySWVZNFJnS19Ea3AzRm5WVnFHUzQyYmhqQXFiNEQxUHhoM2RBaGVtZVE?oc=5",
+   "published": "2026-10-13T12:14:37Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Balance de tránsito: 14 muertos y más de 200 detenidos durante el fin de semana largo",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZkN4V0Q5M3NtcE5wSFBCaU5BRkxEYmh5TVRveDRMSzBxdnFPLTR5NVU2OXl5NlhrV3NKWnFBT2lEcEFnNjlLT3RINkVVbTZaek11Ymt0bmJvSkhFSlIwVjBWSGhtQWttSFFXUWV5RS1vVGVVOThaakpyNW5OTlJodTd6Z3RGcmZSOUVhWXBxeDZMaENrTWlONnllVVMzLWtsZFdQSFdUNi1xM1lDUzF6ZnJVZk1FVDNjVng0THNuTDg5T2Jxc21fWHhTTkhWWXdVejRzelloTlNoMlptOU83ZU8wd0VvSWs?oc=5",
+   "published": "2026-10-13T12:05:53Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Infantino envuelto en nuevo escándalo: investigan millonario sueldo extra y lujosa mansión en Miami",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQTkxOSFNhU0d4YmpFODJFVVo0TGhZN2ZaM1JZTDV1STRkUXh0aENWNDlVSFFXdk44bUJFczlnbTRFa2RuS1Q0ZHpaNHVIeTd4SEdGZ2tYaUNOSExneERlUmVWZC00cHpIa05KbHZXZjRxd1l1WWtsY3lES0lhcjhLMjdqUC11bnBNcU1SVlJ1VEJ5aEZ1ZjNpSXpzV1VGWUg2cXBLcDBGZEhSSkJYVTBfVlIzdWRmSkUxem9kamVkb0liUkxDUkMyRFRrX2Q4bS01WkZpNXE0eFZXaUxqZ2RSU0Z6RVNfMlRpMFp4RDNRYWw5OUMwa3FzRXE2QldTU0dqTFNobzFQQXFNN2dCY1lWelNNalpIUnhkcWhSZzJwZ1hoVnU3dVVrdERmYUVMbER4MkE?oc=5",
+   "published": "2026-10-13T12:02:44Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "\"Niñas de 3 años contagiadas de VIH\": la indignación en Perú por las más de 1.000 víctimas de abuso sexual infantil que no han sido atendidas por la justicia",
+   "summary": "El aumento de casos de abuso ha derivado en una epidemia de contagios de VIH entre menores de edad en las comunidades wampis y awajún de Perú.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4ccf/live/4ce89810-c70d-11f1-9783-ed95709f9dec.jpg",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cmp3g15gggjeo?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-13T12:02:01Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Pronostican tormentas eléctricas con granizo y fuerte viento en toda la zona central para este martes",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPeTNoT3hLb0N4dW94RGFWUTBNQTZuTDExRWVIeW1XMHNIT2pIdzZMLW1lZ0R1a1VvV2hyVURFZnB0Z1p4emVMRjNSdV9ydTg1Wi10SnNBcnNKc3JieEszOTlITXBfM3g2UTZfTU9YN2prTFlYeGYzU2dYZmo5Zlh6cFBqNVBLXzdUQTgtejBOczNDMUJOVHhZeVBMVDNYZUVJTVpZODZncnNOM0ZrYXhtNWh3QnZtM0piM2s5T2lIQ3hFYUxRbFRFbWd2UThiT085NEtrWnMzdzgyaGRrdGhyV1ZkZmtwMkVNdHV1ZndVcDJmWjg5S2JEdEU5NFl5M3RGTXZIZQ?oc=5",
+   "published": "2026-10-13T11:58:58Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Rubio causa un lío en Unión por ‘culpa’ de la U: “Pareciera que la responsabilidad de todo es mía...”",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "AS Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUXBxbFNPbUhnWldYTWhuNm5qZGU3N25JTXZtaGh4X0M0ZHZSdDVXbVFhS3plZXVpT1lEUEFRWmFkdTFMeTN1VkYwcXdZS1BONlZHSmhMMjhuS04wbXltbmVmNlY1RkN5V0lQb3ZHbEtCTUZYbG5ob3BydnQ2WFVzZzNBaDhkMUg1VDd3aE9CWHQwRi1KM25YRVg3ME9pWG51WUVKMWF3OWE1RlRESzZINkpMRi1VYWdDVHRfaUdmeGZIUk55Mm1NM25OaXloTDND0gHkAUFVX3lxTE11bFFGQktrSnNtQ2xGNkNtdUtwZTVuZVlabjJaWVEtYllhUndxd19GNlVmR3dlOWNYdkFwZ09iSHcxSU9ZOG04OTZnMjdmNklrLWVIdVJ5UnY4RVE2eFozTWZ4WDg4alJWQTktT2NwZGNQT2lFajBZNmZ5aWtCMGFnTFhUbUV1NllWQ0stMnRrLVJmRVp4U052UEZSUk8tZFlTRlpIdzR4ellUajBpb1BjMkJCYldDU0RrOWJZM1p0QzVxNE5UYmtQcEJqOE9TWkNZc1lNZVhwaUxoZ3NZckswZmlHVw?oc=5",
+   "published": "2026-10-13T11:36:57Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Entre la prevención y el peligro: el límite de la seguridad municipal",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQ0FnaDVrZndBSzRtM213YzlfMzRWS1F0Q2MyT3oyWmVVUmdqLUFRM2RfNE9QTVktSnZxRW9HZEJoMldQOXp2VzY2WVcwZkJEUU1lX0xZdnZmbWZBTmIzLVNGWUw0VFRWbjlwbTdZdVp5eTByZ3VKNlJadDFzNkNOay1zLVVQSkRwTlljWlRDSWtySDgxNE5BV3VsazY4UnVNaUN4VHpYNVYwaDZ3bGNBNUtvOE85T2VHYkEzbWxCeUlNbmJ3YzJpdzZDZGdwN3JVWE1nVDR1WUR6N2M?oc=5",
+   "published": "2026-10-13T11:36:47Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "\"Te extrañaré, hijo\": la emotiva despedida de Bryan Cranston tras la muerte de RJ Mitte, su compañero en \"Breaking Bad\"",
+   "summary": "Mitte, que padecía parálisis cerebral, interpretó a Walter White Jr. en la serie dramática ganadora del premio Emmy.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9d0b/live/7a961ad0-c6f9-11f1-b4dd-e786ec6f11b1.jpg",
+   "sources": [
+    "BBC News Mundo",
+    "BBC"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/ck0j0z4jp0n7o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-13T11:27:41Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Un carguero hundido y otro dañado en ataques en el mar Negro que Bulgaria atribuye a Rusia",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "DW.com"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNY1FYTWMtRnhpZTJXV0FVYW55YXROYU9SZ1lUZWhrb1ZIbVg3VGc4X0E2M3FXMTF3aDhpRWtZeVNuR1dQTDI5S21UXzl3aXlJZHRmTFdPel9KS1lSbGlmN25QRnFiUldCMDFxb2RXSGtoMDk5QjdJcVU5VXRfenpiQm0zVHpBMFZ0SGJMQXhvb2VaX2JySjJTS2VqdU1aejVzWWMwQVRBYk1tQkFkaENPQlZwdzlqMENSREV0REF6UGdDMlVmZ0ZV0gHHAUFVX3lxTE9xLUd0R2RIQkFDbjR6VnpIUWJQZmJqQ1FaX0NlWVZTSWxmWExLY19UMTd4dW1lR3N2MzRXeHA1dkMzTDhmbWpTX0hkc0VDUENzbV9NV3lBN2FHZVAycG11enVBMEU4dFlfQng1dk5UTVlEb3N3WjFreXdaRkRFTjk4RXZkb0gxYUpxV0ZtZTNfR1lYY3d5VHZ4RWdnc3NUb25ZdTBURUpKVmZ5UjUtdmpRTDhvQVRSX09EbVQ1MkozeHZEQnR4TXc?oc=5",
+   "published": "2026-10-13T11:15:37Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Homicidio en Macul: vecinos trasladaron a víctima agonizante en una micro",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Cooperativa"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWk1EX3dYRkRhZ2hoODZ1NF8zekgtQ3FxdDBuakZKOGl2ZVRQa0ZHczl4VktJS2RmazlUbVpBNXJDOHVTem1xMVNRRk1VemVQZlBsa0NJVFBHTDRVR2dVVE9NNHFGYTRoNXdBMG56Vy1Zb3NaMG5CZ2pvcG5nS2RaS1BEREdMaXAwUHpxNzhMbnJ6c1p2aW9RRUZoY0R0WUJxbWc3X3NYWkE3Z2dDRFVTZkJqN3JMZnYxMFZ1eVoyVjNMNE96M2lvYXo5V293TE1Ud1VMVjhlbGJWQS1ZWjAtc3pBUmdvUV9rVW5Zc9IBjAFBVV95cUxQbzJCSURKTDdoWFF3UlpBalRidm9fTWRKcUZ0RWIwa3hQcXlsQkduYkFOcVR6WUt4aEo1cFh1RHFuamdCTXdaLXFsUHAxQ0ZmNndrbGlWWnZ6aGFVMlB6RHRBODJoYkNQbGlKcXVfb2U5V2VWdnMxOHNWOTJKQTh2RDZMU3d4MFNBdkJYUQ?oc=5",
+   "published": "2026-10-13T10:41:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Pelea por el ascenso, liguilla y descenso al rojo vivo: la tabla de la Primera B a 3 fechas del final",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQOFJMaGw1M09mbjBIbWllempOYmktWGo5ZXRnMmlqQjg2d0JMVjBsMDg3TEpkTG52MzhTTGFsLWM0NXFhYnBvX3pzUmhRdUMwcW9nTU4tbWxkZU9EZnp6Vkw5SHVhVEQ5eXB1M1ZxdnlDbUVqX3lYM0Z1TVNhZzRUWXlnNG1sdTRyVFNJS0tfZjJ1cEhEbnFDYmctOG9yLXc5Q3NMLUhkU1hINDU0YWhSVWZIbF9FXzl2RGM3UDRScXVpR2JSY2RjbzYtcTdCRGZ3eE5paUtRSjh0a3pDWXZBUC1vRklIenJ5cV9SbEpTN1BZMHUwNENHYVo5eUw2WG1tZWJMMTZBQW5tS1ZGcGszTkpB?oc=5",
+   "published": "2026-10-13T10:35:03Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Ignacia Michelson se harta y se va en picada contra Fran García-Huidobro tras feroz ninguneo: respondió con “palo” sin filtro",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Cuarta"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOTGVyM3RSVU12TDFheFNkeHBackhFTERqS0xKSnZFNW04Z0prNWk4NlllY09oVEJxcTZnOS13M0FveVJrbU5qemhJdE52Y1dVaDBMV2QzOUdfeDRST1BTbzFHWHJxSDBhT1JSOGtSNWVQclVsLXRkVWUtRUJIXzM1VW1kZHJxZ3pDUFRzSlJpT2hQS1RyM093MkJoM1BFbmxYRnN4amFYYTMyLU1sOEJvdUtnQS04U2hCcDBjeHZtSWJMcW5peWZwdDlzc1l6QWZScGhrSEFUT2hBVnBIaUhkaEdlRW0xR05USEJHNjAwRVJQeEx6NHVjbnlKRlRzd9IBnwJBVV95cUxPLWV6cEpGTE14MVdLX2J6dzJ0YV8zSHhVbVNRcm1DUHRMdjh4YzFkNDJtUW5nV1FYeVBQTGtxUjh1WjhQTmt5cGdrbHZ3djFWSjFTMmhUUUphcVlHQjRGTjNLZEV3cXhKNG45TWlvcC1GTUlvbG1mOUN1aUx3VDRqWFI5dkx0ZVN0alI2SnBSa0F4a3pXaEpSTDJmR1ZZazl5N0gxbFB5WTJRaUVEVGhOb1RiaHMxaTNDYVplMVEwMG1vSHJ2RllzWFl1TXo2dTVLSXBCN240cGliaVJVcWQxcTVRWktSNmdKaGthMy1wWmM5V1ladW5yck1RNlJXUkk1TW43SEtrd2laWDJjU2FZa0FfTkFTSWp0MWJMY05KSQ?oc=5",
+   "published": "2026-10-13T10:34:15Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "China golpea a los fabricantes de chips y pone en riesgo el rally de la inteligencia artificial",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Diario Financiero"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd3Y5VDNWS01RUDM4MDZUT2pacWtYN3pUN1pXVXRGdUtsSjdIQTRPNkZ0YTE4Y043bFNDMk9YX0FPUzUwU1lUb01zNU9jWnc2UURoTXU1VjF2T1RkXzF6cVZYbWUwUHFTbWdVRlluV09qNjFreU4teXZhLTltc1Z4S05jTUg0VTFYMXlfcnlR?oc=5",
+   "published": "2026-10-13T10:30:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "economia",
+   "title": "Célestin Freinet, pedagogo sobre la educación: \"No se puede preparar a los alumnos para que construyan mañana el mundo del mañana si les regalamos las herramientas del ayer\"",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Revista Merca2.0"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQc3NBSlYtTmVlNGlmX2JGS0dUQjh6YzBtcEl2WnNnTWJXellPaWdIbWJiS1ZNUzMwdjhqUElzWk1Kei13OGRJbWdYYW5OQ0pOam43MFdCdmY3UVZ0S3IwM0xUUWFURVVSRENsYnBpR1o5RE1RRXNPQW5VbFVPRzNBbjVrWDEwRlI0Z01vTGw5dkkzZ2dQVUhHZFczdzhTZ2FrcjlNNnFWTC1CenA0WUJzRlUzd3ZTUDc0ZURvdHozdXVmamRITnlIWU1oWEx2MzdhUWthVmlsWHVfcXBqVnpSTDdlMTYtcFJEblVJQkZzN3A1eThJM0RWenlmZkNlVDRueEg0SU9oQXRfUG9rWUM3cnBReWZjaV9RczhRQm5NSQ?oc=5",
+   "published": "2026-10-13T10:26:05Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Palestino paga los daños: caída de Colo Colo descarta duelo ante los albos en el Estadio Nacional",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPb0x0TmJKeG5EQWpueFBOaUlreWNtUnoxb1FoeU1EeWV1aXJNSmM2bU9hM1FJUWhfeW5BSDBDQ2JobTJnN2hzVWgxM25vZWJJbFNpd3ZlaVhtNG9QNnlGcXBKWDU0T0tkekpNZmlUcnV0RmdzYWRteWJ2b0dWWlNOcGFQQ1pJNmhhMkdGeXNHTzJZOWViTExxVWJrdTYyb1NrNVJ0Y0Jpd0hCcDRwOWoxaGZQZVFYd1hkb2p2S2g2MWdZYmFfclhqSXVvQTE0NXBURHdRaG10Z3l1UUhP0gH-AUFVX3lxTE1wRjJkZ2VRaDYyZUJfUmdHbW1aWHEtV2o3V3FxSk42eUotek8xRWU2akxvV2I1MTRWRXFCUkppcjRwem1iTk1sMy15MXRoTmdKMHNXakFSd2JOOUtnc0VlQUFaNVo3TGQwWnI5RUNidmx2bWVhclRkZ3dhdzBSU295QkJBVTZrUElCb2hOQUxrV2w2a29wVXNNbVRZNGZGV1NROFJWYVlrbzkteVZSR3FmSVczNl8yWm50LWZaa3lBMTdMd1JNTWpTMXhJNDBhcG1QcV83OXlhZEcwZmF1TFRtOS0zZnpwZEZtQVc1NkFLem4ydDVYS0pOY25kRW9R?oc=5",
+   "published": "2026-10-13T10:12:25Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "El ‘gallito’ de Fernando Ortiz que complica la permanencia de Vozinha en Colo Colo",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQ0NnbWdZakwyRzNseXNPRG1ZUFJ3X0l6V3gyeFlSTVFycVJYM0F6aDBBTk9NWml4VThXSVhKTlJJMWlhSDZiVWFjZGtzOWFFbTBWeVFzeVdna3EwX3JhbHJSZDJ6VVRhUUxXc3FGSzFYMEtqZ191QlJIUHZ3bEJUS1Zmd0JhaUJlYTRTWWJtTUFLemt3MmUwUkIxaDZTN24tQ0hyMUpDWHJuRlBmN2dkcEVFSFJLdHpXWEI3UXYzVkk4VGgxX0lr0gHoAUFVX3lxTE1HVjB1cHRIcXAtd0NZUWY5d1RJTmNLOHoxWV9HRlIyaVR2OFRONk0zRHVtY2Q5NnVGSEtOQjVtVWZqT1NIUG14WXhPLTUxTEhKeGx4V1FvMlpxS2Fxd1dDekMwaG9UUlRqYm1jQ1BjUmxWOEhnSEtWUlNWeXFuN0EtUzhyUDgwTW1ya3JTQkJXQ05jX0taMjVKTWxJM2Rra1hhYVNHNG1WY0pseHpKY1BocV9ncVVZeDFSRVVlRUZKVG9ucklTaDNaYWotVU1SeWJsa3ZDbk0zaEhQMDZSZ253TzZIRlpwS3Y?oc=5",
+   "published": "2026-10-13T10:08:56Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "cultura",
+   "title": "\"Me cansé, ya no me callo más\": Cony Capelli lanza fuerte crítica contra el padre de su bebé",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "24horas"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWlNDSU5ZN2NILTlNR2lGYnM4Nm13QVpTcy1PVUUzQV93RFJOOUwxM1pVRU9TeVF5X1BSWWNrWFdxdng2MlRpaWpJMDNSZk1CUDRBQkVvN0pQXzR3NGJwc2tHVlhEcEVLXzhNT3Bza0h0TV8wMnhCcXJqamdYZXBIVjZyUGVESzkydEZSa1NyeksyeG0teDA5MmpxaUVDb0hxeVJUUjBoME1Wd0pTY0Yw0gG0AUFVX3lxTFBjd2RFS1hpdjRJY3JzN2QxRnJmaWxIbVMxRGlZUTJzTWh0d3ZkZEt5OUhSX0xVVHRDSVhLS05rNVFEb0toTk9jLXI1WEVpcExYQnVEcGVlVHdWUS1zaUstTjZxY2U1dTA3dGd3RW9vWkJOd3lVRFNiWkpnTURLTG85QTIyeVRCTXR5QXZ1ZnZwTUpMMXh5RlVvVVNoNUVOa1hLMGxGajh3QlVvTDVyZUZtdVUxQQ?oc=5",
+   "published": "2026-10-13T10:02:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
   {
    "category": "internacional",
    "title": "30 premios en 125 años: por qué menos del 4% de los Nobel de ciencia han sido para mujeres",
@@ -15,6 +616,78 @@
   },
   {
    "category": "internacional",
+   "title": "\"No podemos seguir diciendo que no existe un sesgo de género en los premios Nobel, porque estadísticamente sí existe\"",
+   "summary": "Expertas aseguran que la estadística es preocupante, pero llaman a ampliar el debate y centrarse en las barreras previas que enfrentan las mujeres en sus trayectorias.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/7c54/live/8283b8b0-c6ef-11f1-bc1b-8dfa7c975faa.jpg",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cr1exnelj2vxo?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-13T10:00:55Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "deportes",
+   "title": "\"Me tuve que ir del Arsenal para poder jugar el Mundial\"",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Fichajes.com"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaVpSYkxIYXQ4TjUxQzZkRklWU1dMc2pBYkQ1SjhzT1RkWHRfSTZ0NXRrSUZzVTVCNzRkSjlHMXhGMzVrTW0xcUpwbG5ORE9NcjVvNDdDU1FoNkpCd3hQNTBLemhEeWVxUXFBVXZ2aEE0VUMxUldPR2ZhWXdWVHBuWFgtOENyVWxha3dBSnpqTUFYM2hhcEc4R1M2elEtbVRCVmc?oc=5",
+   "published": "2026-10-13T09:18:34Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Científicos encuentran un tratamiento prometedor para regenerar el cartílago de la rodilla y detener la osteoartritis",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdldxNWFQN19OVlR3UUVVVVNhd0R1UV8wYU9udkNQWDJlYUtrVkx5NmRZbDNwNGFmZUxWVktjQldUMXNXQUFabmRmOUZFRGlLQjVPMVFzaGlSWUNBS2tTdnVKdldITkptcWhhYUtmY25RTDBZd0pHV2VZUlpNS2xIeDdpa2R1M2szMmxTRUpnbjV1aDRSOTNTLUE1NkFYQTQ0Z2o4MHZqWGJGOEh3M2prWGRxLWFveUhjbWlhenpfejNTdFlxSmNzTS04dzItYTZpQUhlTk9GRHVyOWx5ZWRsMV9pQWFyZ3lFbDBhUWd6TEZHU250S1HSAZcCQVVfeXFMUDYzNkU4OGRxWllPZV9iQndfbm80UDZuMlZ5Y2xpVjd3bVUtcVZNTURNcEtqdW14cm5IUThqX2FpQk9hdG5nUEdERzRPNmRhMGY5Y3NkbGJ2NFVaZ1pkZWlSOUN0ekJMZ1BtRk9od05xNFRFYkVxVzhqMDZ6bkpTX3NVRkZSc2F0SmJjWG5ldVhlWDMyN0VDZzc3cGlKbkR1UVVCcXd5NzVyYTQ2Y1RQa3BQQmd2bk1Yc3VvUEl2Z1BmenhXR1ViYjRoSTF0bWxkVUpycG03dk82ejdpYllCVzJhUFk2OXVPWDJkMUFRVGRPenBQdmlOM3BtaF9yOUtsRjI0YUxYdVZzXy1XLW5SaFRydnMxR0N3?oc=5",
+   "published": "2026-10-13T09:03:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Carabineros aumenta cupos en sus escuelas y podrá formar número récord de aspirantes en 2027",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUktPZi1kLWVjeVhWTFE5a1JBb0Z0Y080NlB4WDVaYlJOT3ZZbTNHbHVBM3B5azBVQ04zekZOWk92WjFzR1FGN2J4TUJTaFdISkZuVmkzYjBDakhPRXUySVV0d2tGQWNzX2tRU24wSTlScHB5QmN2eVBpYS1DRThqYzNDdnpHenhYNjJvZHFhRHBBSFg0UmJNLUFPY2VGdFJsajFKV3pSeVNoVzJweXhwOWU1d1d0ZFBQbjNxSW55QmZza2N6T28tbW9jc0lVQTJHc0HSAfMBQVVfeXFMT3RqNXVZUHJ1M0RzRGw4T3F4SmhOckxXd1hucDV5dXhZNXRZNzg5elZGRHFQb3QzT3hBeVZKc0ZiUzBQZ3NpdzZtT0ZwYndZYmxKaEp1Q2trX2ZaTjV0dnk1UWwwTDFXekd0N0hxNFNvUVNUeHY0UzBfdExuVWVlUURrdTdSazhOd1piWHc4Uzk1VFhJME11d29UT0wydnBYcHF5SjJZSkJTS1lNZ0lqUkRGWTNXeGpEZ3g1bkxUNmVEc25qVFNUc3lUaVZDZlo5UWN4blE0aVBqVXprWVFGdW5GVkUwUm1rTExCd201dFEyVm1J?oc=5",
+   "published": "2026-10-13T09:00:01Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Greta Thunberg se suma a las protestas estudiantiles en Francia",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "DW.com"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUk95OERpTzhlMEQ1LV9WQmplQUhCUUZqemQwTTROSGg1LUNvTXgzMDhYZlFrQWNEYkMwak96SGo4aTJSV2gxQ2NaMDV0UDFDcWROTVQzbjEyR0lhV1N3MjJtWjY4QUlEc3RvNXFULV9TQXFQVTZEd3o3eUhvSm1tb1I0aWhVMkEzMFVKVXVzVTdiVEtQNWtodHVWUzXSAZwBQVVfeXFMTlloNDY0M21aSkFISzM2OTFKQ0NJMlVEMURiV1UxcW5YcWZDejMwODR2dmFKMkdPNlIyWkFNZlVhTUFUWm1LV3VEaEl3dFRmSnRQOXFCaXBuUTVqdHV0UEhTZnJqYmNmRlNyenJ5U2tTNkRYZy0xRi1rLUxHR0F1d3I5RF9NRlF1Smp6amhuOXBNbS1vWUZjZWZfRDdJ?oc=5",
+   "published": "2026-10-13T08:41:06Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "economia",
+   "title": "Estados Unidos debate la construcción de centros de datos. China los construye a toda velocidad",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "CNN en Español"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN013SkFQbUZfRFFXbVRCdHgzazkxRWlKSFY5VVdVb0cxVGNiSmZrcTVWWjFVc1lWZDQ3MXg1ZWFwdmVFSHFmWjJ6VDU3Tkk2cDhxVXRVYWhDMmJWbkt3UG50UERMNTVPOU5leXBJa0ZXbEZjczNhU0RqeTQzektLZGZCUW1oZlJLMTlYUGlZZw?oc=5",
+   "published": "2026-10-13T07:53:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
    "title": "Un muerto y varios heridos tras un accidente en una montaña rusa de un parque Six Flags en EE.UU.",
    "summary": "La montaña rusa se quedó atascasda y los pasajeros tuvieron que recibir apoyo para bajarse.",
    "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/eb02/live/12f052c0-c6c6-11f1-a64c-550be9e3c66b.jpg",
@@ -24,6 +697,42 @@
    "link": "https://www.bbc.com/mundo/articles/crly0134j51xo?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-13T07:44:47Z",
    "first_seen": "2026-10-13T10:26:12Z"
+  },
+  {
+   "category": "nacional",
+   "title": "MOP posterga siete de las 12 licitaciones de concesiones previstas para 2026 y apunta a mejorar sus condiciones",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Diario Financiero"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVWFVTTdPbVU1bXdHOWNBaU9JcDJkREd5eU1GS2RfZlo4ejVxU0lCczFmMFpJWmxpN2VLTlpwR2FBenlnaF9rQlNlaGJ2ajhBWHM3ZURwalhoNjlhM2EwcDVrRTc0dHZrbDR1ZDhGcFYzM1N6YnNnenhqc09Vb3BuVTY5WWsxeENEaENNMEd0c3gyN25BQzhrckh2c2pWU0ViUDZFRlV2eVViQjdib1VCaw?oc=5",
+   "published": "2026-10-13T07:00:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "nacional",
+   "title": "“Muy mal negocio para Chile”: Parisi cuestiona rebaja del TAG anunciada por el Gobierno y apunta a las concesionarias",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Teletrece"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRV9pOEVUVTZJdVFOa2k2d3BHUWlYRjVYMm5MaURGVXdiOEVOczRmcEdMeWZXZGcwR1k4dnBxRWFoQkFyTFc4WEZkbUhOcDBfbHlCZjJzZk41c2FlZlZ2Yl95Z3pYSEVkMlJrWjg4WG9qZEV6WFI2cVk0UXBJcHZ4eVFjbzBWaU9WU0hQQWV2WnZCNDV6Ykw0dDFoeDRQbV9ONXpkVTNOMGFuRGx4YlZNZjN3MzJRV1F6V0NTRzVKZFMyd0lv?oc=5",
+   "published": "2026-10-13T06:14:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Zelenski asegura que ataques rusos contra sector energético continúan",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "DW.com"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPdzlZWEowbjBuMkRpcTlSajNFNm15LXJrOVUwLUItTmN6QlFGWmRHV0l0X3dDcmNCT1M2MGhVUnFkWU4tVkxLWEJvZHhOQmNDc2ZnV1RsYVNsU2l1WFRCeTM1OWdIaEtLQWIzSlV4dDVpdmlQelZVOEVYcDB2V1BneVc1aW80TWtEeG1UNjVWN0s3SjBxUW9UZE1lTDIwcC1PMkw5cE5SV2M3MURQS2NxR2tFYmZtc3l2QmZhOXpTcHYzazFCZ1VJQ2gzU21GQ3ZmdDk3YUF5WkplWFJBOE1jRGpmZmhfcFlNc2YyVmZsZWhqLXpPektKU2F0ZGJmcGU1cTJyai1pRjNkd3YyanUtU1FJd3jSAZQCQVVfeXFMT1YwX05BRGVBV21FM09BaDFaX3dKRnpiOURzSE1GTlZkQk1FUl9QS3BiYmpLbjV5dGNMVndrV2J6UnF0STJoSTZTT1dDbUlMa09HZHJ5Z0RhRVZ4WS1FRF9HQmJCODMzcF9OaTNhZURwZEpUcnBYS05uTGtBbFdYcU45MUNPRXY4blltYTIxVWp3eTFTRHhDN3pqd2xHWU52ckdrUjUwa1BwNFR4TjNqa2lDem5hTTQwUmxzSWU3bGVnZDZXMDRTT09rSWtwUzEwQWVQb2JyelRoS1E2VlE0YWVJNGJ2RzgxVHNSUHl4WU4xY1dLWjN5ZlMtblZpcmM3WWJlRjZHbVVaR0VVU0Rsa2hvbTdq?oc=5",
+   "published": "2026-10-13T05:42:10Z",
+   "first_seen": "2026-10-13T18:10:34Z"
   },
   {
    "category": "internacional",
@@ -48,6 +757,18 @@
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWndacy1DY3A4WVZfU2xudkFRZzJUUXJKalJIUnFxczBNcmhxYWFOMVZJeFlhbXpYVVc0ZG5rel9Bby1YTXZLSVNBY1lrb2lrMURvelVaU1RuRFlEZkNvM3NfZ05lZ09xMHRiMXlhdGVkQXd2N2hTOUR0MDVsNkc3VlBpY1otTkRDOFBORi01TzB1Rkh2RlFVOGhZeWdPS093bGhvQlkwMzJEejM0dFlBQkdXUHJWTXlEbGZ3aU1MaUYxdmNkN1VfeWZYU0N1S3g5ZXlrckFiamRSZzJUY1NXNWNPc0gxODRjN1dvd3pJUQ?oc=5",
    "published": "2026-10-13T03:29:13Z",
    "first_seen": "2026-10-13T10:26:12Z"
+  },
+  {
+   "category": "economia",
+   "title": "Un robot camina sin batería gracias a un truco: usar el suelo como energía",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Infobae"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONFYtRWhXeURDeC0xYWlOUktZVDBjQUZpQkpReFVoNkd2SDlWQUZYSGRuQnB1bEZBWWp2Mk82VTg5ei1nSFY2RE5jd0gxTnE2aWZyekFoMmFFQS1RajhCdzUzcmk2dEpZYndEVThyY01IRU9XWmxReFZvQmVaSHJ6UHlkMWZqOWtpazJVYW5nTEZUWS1GbklfSFVKN0llazRNQmtWYUlHbVQzRkVRRzBxTVRwYzE3d9IB0AFBVV95cUxPQzh0aHF4THluNGlBdE5nWnIzek4tUUNEMVBrWVBZUmpDczd5cjN4V1RZTm1KTHZHRVJxRUxaeE5OX3BUZnlyTFNnRkdZYlZsOXdPeXBrLUZxMTlRajVLcFFQY05lVlQwR0hRaDh1ekttVXMyWkQzakVkOVBKa0lvVHRoWHo2eTZnQ2FtQ0VRYlZWby0xc0daNzFqVGFIeU9GeHh0TDl1ZFJvUHRZX2xfeV9GOGNxclJUc3NQTmo4WFVlLWRiV3FxeC1YRnZpc1gz?oc=5",
+   "published": "2026-10-13T02:50:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
   },
   {
    "category": "internacional",
@@ -158,18 +879,6 @@
    "first_seen": "2026-10-13T10:26:12Z"
   },
   {
-   "category": "internacional",
-   "title": "Fiscalía de Bolivia investiga a Evo Morales por asesinato",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "DW.com"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM3FIT0t1NUNZc0NSajE4dENPcV9uTFlaX1VOaGxvT2FlVGZYbTJVRVlGX2VtQ3BTRFpOYlV3cmRiQzB6TnBlM1kxNW9aMjNKMjFnSnhUQWZfUS1YTDVVMVh1cE4zeWRNd3pTOTFmaTM3N1Q4SzNkY0ZCNS1pU0lGSkxzWVRvQW1qSnoxbTFIUDdaUTVSdlkybnF1WdIBmwFBVV95cUxNcm9UTDk5eE9NbnJ2b2VPSlJ5WlBhZUNQeWV3UEFUbkVoTTIyVjBGTE9FQ2ZTQnB6elhHN2pKakxZbDhoZWZyNzdKVUd6aHJIT05DVXA2enU5TWhuYzU5N2NDczRUaHEtNnBRZW5rZXpaY29fS05MNjlTLXhDWUtweFVLWVJWRU1YQ0Vvam11TjRuMXpndmprV2hCTQ?oc=5",
-   "published": "2026-10-12T23:57:08Z",
-   "first_seen": "2026-10-13T10:26:12Z"
-  },
-  {
    "category": "deportes",
    "title": "Juan José Ribera deja la banca de Ñublense tras caer goleado frente a la Universidad de Chile",
    "summary": "",
@@ -206,6 +915,19 @@
    "first_seen": "2026-10-13T02:32:22Z"
   },
   {
+   "category": "internacional",
+   "title": "Fiscalía de Bolivia investiga a Evo Morales por asesinato",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "DW.com",
+    "Teletrece"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQM3FIT0t1NUNZc0NSajE4dENPcV9uTFlaX1VOaGxvT2FlVGZYbTJVRVlGX2VtQ3BTRFpOYlV3cmRiQzB6TnBlM1kxNW9aMjNKMjFnSnhUQWZfUS1YTDVVMVh1cE4zeWRNd3pTOTFmaTM3N1Q4SzNkY0ZCNS1pU0lGSkxzWVRvQW1qSnoxbTFIUDdaUTVSdlkybnF1WdIBmwFBVV95cUxNcm9UTDk5eE9NbnJ2b2VPSlJ5WlBhZUNQeWV3UEFUbkVoTTIyVjBGTE9FQ2ZTQnB6elhHN2pKakxZbDhoZWZyNzdKVUd6aHJIT05DVXA2enU5TWhuYzU5N2NDczRUaHEtNnBRZW5rZXpaY29fS05MNjlTLXhDWUtweFVLWVJWRU1YQ0Vvam11TjRuMXpndmprV2hCTQ?oc=5",
+   "published": "2026-10-12T23:31:00Z",
+   "first_seen": "2026-10-13T10:26:12Z"
+  },
+  {
    "category": "deportes",
    "title": "Con Suazo titular y capitán: Sevilla igualó ante Levante en ’partido de locos’ en fecha 8 de LaLiga",
    "summary": "",
@@ -240,6 +962,18 @@
    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPXzZlVHIxakdRaXNhMGpYRERlZzB5VWlFRmhfTEtfUk5RaGVSQzhsbFk4dmZTSE8zRVAtcFBMdnZTVzE3ZzNmUkhkbVMwV0twaDNSMDBHTVN6X05OcDMzMVM3TXhlTHA1WnNEc2tuYXV1ZVdEZ0FlRWhtdXRyejlSbUVrUU9DQXVIbHhleTFmVHVCUGxhSVFVa3U2VmlCOUF3cjVIMXdwdkQ0UVhGdlhiLVBYU2psYnhUMFdmSTZseTRSUnNPLUEzZFRPS2U0OXBWOGdtOXA3RG9ISnpOLW9ZNjZwZUZmQ3Bha0NqREw2aW9nRDZyMzRHSXoySW5Fa0ZCUThTRzdja2VUTXM?oc=5",
    "published": "2026-10-12T22:37:12Z",
    "first_seen": "2026-10-13T10:26:12Z"
+  },
+  {
+   "category": "economia",
+   "title": "Por posible extorsión y usura: CMF denuncia a dos aplicaciones ante el Ministerio Público",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Chócale"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZm5vUk01aEZuNjg4aTduOXIxVlRyaWVwbnlGci1KTi1RNEpzNVFTOFctS3BINEZTVG5sOU5fZVpMRHlXTTJ5STJsS21Mb29QVDZHUFZmNkYwaVNqWlAxODc0Tkc0UHN1M1hWNDFya2RJVXZib1dtbGRpSVNERmV6LUxaa2dwNTZHYW1uMUpLVmVTTllPTlUwZllKMXBpS3FTRllod0hwMjVDRDJiR2NYeHo4QU95TVE?oc=5",
+   "published": "2026-10-12T22:37:05Z",
+   "first_seen": "2026-10-13T18:10:34Z"
   },
   {
    "category": "internacional",
@@ -279,6 +1013,18 @@
    "first_seen": "2026-10-13T02:32:22Z"
   },
   {
+   "category": "deportes",
+   "title": "La U aplastó con seis goles a Ñublense y se acercó a Colo Colo en la pelea por el título",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Cooperativa"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPYVBGRnRyblRxNmdDQnRQMlF6d1NaUkd6cFF4MEFkZzVCMExNTHA5Xzl4RTkzczdXWU5PSGp3TEwxN2VFSXdZWllIUGtndGpfc25ZbXlNbk91WDI5YlN3dndYcGZaMkFGcWR5emVaN09NREJONFNUNFhBTndtb0RMWE8yd1hPZmZNejRVcmFmOUlfbjVUZ2RGUFV1T19wT21OclVjei1wS2tKZ29oc2dMaGV0dW13Znc0SFhXU3ZaSnJxNHc3Njg4b0VCeFlNSGwyNDNHeEUxbXVBbmZzb1FoNl9VVEJiR0ZZVGlMaWJrVnLSAYwBQVVfeXFMTTZveGJZMEQ1M0pKODdVZGZ4YXRYNmhCczhCNXA3VkhEd0QtMk5RZlBWQ0RQMXVzNlRJcTdXbFQ0ODhlVHdZQzNwNjRvVlROd0NScmxjbU54cTJhNVBhUjJCY05DREpadDNBVmlkWmlrdDdzd25NUTlDYXJDNE9PR3ZOWDcxUVdfMVVDMUI?oc=5",
+   "published": "2026-10-12T22:04:00Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
    "category": "internacional",
    "title": "Trump por acuerdo entre Rusia y Ucrania: \"Han alcanzado un acuerdo porque yo he dicho que hay acuerdo\"",
    "summary": "",
@@ -303,6 +1049,18 @@
    "first_seen": "2026-10-13T02:32:22Z"
   },
   {
+   "category": "economia",
+   "title": "De planner de vestuario a CEO: los 20 años de Juan Cristóbal López en Falabella y su afición por el running",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Ex-ante"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MWEVxVUpId1pDN0VETDdKQ3JMTDF0VHJCQU5GckZ5M2Q0ZTljc1NlLWlPLTZDLXBUYzZXcnpBMUpGMG9adEstelBKUkdmeXI5RUJVbzZZMWpPZC0zbGVwVjFKYWZwYVY5cTZXWWZhcmc2SmxjQXBRd1U1UnM?oc=5",
+   "published": "2026-10-12T21:41:09Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
    "category": "cultura",
    "title": "\"Siempre te he amado\": Clara escuchará íntima conversación de Antonio y León en el capítulo 40 de La Baronesa",
    "summary": "",
@@ -325,6 +1083,18 @@
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPd0tNTWpZeGw0RWpqNWFJUHBBaW9kQ0NENVFZRVpBMG5tTWYwLUYtWm93b043RXpsOTVNZkxDcGtQb0lrSmo0dlVQZ2RLOHJmZmNjcEFUV3pnMHc1R2NnRjlza2J3Y1AzQjBBSFlNaHQxdkliNEE4ZjV5eDNkNVNSbW9WaVViQQ?oc=5",
    "published": "2026-10-12T21:07:04Z",
    "first_seen": "2026-10-13T02:32:22Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Comisión de Minería citará a Codelco por muerte de dos trabajadores en El Teniente",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNM2p0RlRnRTZzY1lrVHhXMTdCVWx5VVZ2aXlYOEVUX29xbW13RWFBdFF2SEl2b1Q5bHZQblF2VTlnWHdhWEhBaGFtRG5JUjE4S0JJUjBzOUE0WHF4S3dkbGQ0N3plM21zZHpISVpmQ1o1c0p0UXhkUnZWOHFXbjBCWFIxUEQ2NUY4dC0tdlJ6MkE3ZW43clh2R1RISmc5aVBuYUtIa2RmY2J1OHB5Ymg3V3NVYVRvclltOV9kaVVMYTZaeTc0UHl6YUx1QU1iaEZwdlAzM1hLV3M5bXVVYmNuekh3MzVBVHY1SlNqSGxuRGpaVEdtb0E?oc=5",
+   "published": "2026-10-12T21:05:56Z",
+   "first_seen": "2026-10-13T18:10:34Z"
   },
   {
    "category": "economia",
@@ -449,6 +1219,18 @@
    "first_seen": "2026-10-13T10:26:12Z"
   },
   {
+   "category": "deportes",
+   "title": "Colo Colo femenino emprende rumbo a la Libertadores y recibe el último aliento de sus hinchas",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Dale Albo"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWHd6TW01cDgwZjM0RWU5LXd5V3hhTTRYTURwQ0xmMFFMR3N4NUpZZmxiY1ZLam1lbnRNVUFSVHdtal8yZTRIV1ZIaElsSXg2NkpoT2M1c0dhelljdXU4eHpoeVhMME03VElremNZQTN4bHk1a0VtX2RjLU9sNjVLcm5DMGx0SGRaSENBblRDdDk5d1EycHRWbEZnbmgxeEs0UXdfQ0NDZVJaTmNDNjRSbEZoT2R6aXFXUGlaTXFNQ2FJazVCa1VQbmhhVlPSAdIBQVVfeXFMT3ktR3JhbTM3d3lHUERELXpGSUpGUjFJQ0p4bEhWVGZ5NXM4Zmxnd2RkSldiMDJ2N3BYeUk4U2FvcGRrSE9QLXp4QWFpVkhjM01sMDMxUmhWNTlRR21VRm1nZWx0dXdtTVpqTnl4VHE4OVlhd19saEhrRlBUWmhmVTlKS0dfbDFTNjdBdktERDlyYndjOU1KVlptLUdSWGs2Y2NweUpJTlNNaUJqeHJTYlR1dm55aUx4UEE0ZjRJZ29SWENJaXpUenRrNF9qRXNON3F3?oc=5",
+   "published": "2026-10-12T20:13:07Z",
+   "first_seen": "2026-10-13T18:10:34Z"
+  },
+  {
    "category": "internacional",
    "title": "Autorizan a Flávio Bolsonaro para visitar a su padre Jair a semanas de la segunda vuelta en Brasil",
    "summary": "",
@@ -471,6 +1253,18 @@
    "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQTm1pQl9sQ3lzWnNTc3ZNZ1ZLTFBvWDB5a1BJMjg3dzRScDNTQ1NZQ21ZenJ2MzdjMUw3aDJHV1RRczRhNmNNTThrLXlTS2hhak9XVDl3RWRTc3Zua0E5TmRxYU1yWXZkSzFvakh5MmpEakN5ckJHMmlqdG5FTGJTbmtCOENGSkxEUUR6bHkwdTlQSHE3Z0ZmcjB3RS04LUJpeEFoVV9ZUS1mbmFmSTZmX0tCVlZpenJ3aENNM1pKWjloekdtWTZJaXdoWWVWUHdWOF9RaGhUakd6bGN1NjhOOVFRTm5zeW1ISy1ydExsZXZQU0REVXVrVVZLMGlCVDhFMlVaRzlZRjQ0TmpIUFE?oc=5",
    "published": "2026-10-12T20:08:32Z",
    "first_seen": "2026-10-13T02:32:22Z"
+  },
+  {
+   "category": "economia",
+   "title": "\"Las familias compran menos\": Feriantes alertan profunda crisis en sus ventas por el alza del IPC",
+   "summary": "",
+   "image": "",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMWpEc3ZKZzBmeVVkTl9sSVhxRnVkM05Ma2I3YU42RlFHRXA5c3lrMVotNk1ESWxGdWFXZmlwMUYtY2VlNVlxMlFseTdFU2dzWFUxSHotZ3hHamQtMlB3UUFJSzR4djBSMlNvNFhnbEYxS3J4RFM0OUE4bm1SVUZHWEdYNHBxMGhlV04zb0JjRlBMdFJoOTBadnhNMkNhZnpkdkY2aUFIS0VESDZ3clFnYmRNUFJVcmZXY04xbkRfMWhKeGd5R3NCekZn?oc=5",
+   "published": "2026-10-12T19:52:03Z",
+   "first_seen": "2026-10-13T18:10:34Z"
   },
   {
    "category": "deportes",
@@ -616,620 +1410,6 @@
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdEFBQW9sUS15RXN2VGV2TDJkdU1xZlQzVWo4RGlpc09Qb0NURHk2SjZZUHRWNHV2LUVkWm1jSllhaWxuSjAwdTJ6UUpjZE8wdWliOFNMTEhmRmZ6bGNHMXFIYWFjd3FWTFNvaS1lMW4zREsydXBHQ2NkcE4zWWhiWVJSeEI4Yi05UHUyVlhPdy1yRmNCTFR3c2twSDk0Q2RBZk9wMS1FYW5YM0ZWVkZkQWFieHFaQdIBuwFBVV95cUxPRS1ZeU1hLW1NNUxmenFCVi0yZkxaZ2U4R2Z3SW5uQ0dNTE9vUlY5Q2hyMlgtYnR0OGdDZlhsOFk4dVZiYlVCcXFYa1BKSjVYR21jUVRKazlyaTROUEdKVTNZZF92VkVLQUFReTNXUXRpb29QREh0WXhYR1psOXNlZzdLRDJ5UkpqcnBRczlXR1BKZXdDME1hQ2xJZGZ6bTJBaGdTTVVfaDF1OWthYkdWOE5CTDdSY0hsbl9F?oc=5",
    "published": "2026-10-12T18:15:00Z",
    "first_seen": "2026-10-13T02:32:22Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Lo celebra Chupete: San Luis es nuevo líder del Ascenso tras triunfazo ante Puerto Montt",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQVm1rRl91TzFUTjVXUjVFblFUd0dJSEJLNnRmYVZfUC1Tb2lvREFITHYzN083Y2FjRktGZHBKcVU2dU1aT3B5SC1nT2pVNVZKMmd4a3VaUWZTckJ5RHQ2ekZybDQwd0EySWFOUHZZX0o2THhielBFYlNSU1J2eDdyV1NkbDJlYjJqX05CTGdKMUszNHREZ014MlBJZ1RfbFFma214MXQzamktRUJDY29EdEt6Q3ZvWUJlcUJCZ201WGJrTUNhTEstOHdJSUhIVm9SekxpZWdLRVRlMExPZ2RfZXVqM2FSQy1SM1VqYzVGTkl2MTF2ZDlwTVNtU3AxZUJReXc?oc=5",
-   "published": "2026-10-12T17:47:52Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Crece preocupación por 'La Jauría' de Valparaíso: Sujetos son detenidos y rápidamente quedan en libertad",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Meganoticias"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxObDZ5Qmt6SmtTLVhtLS05c2J2ODNWei1Dd2pORkhVUUZRYVJXMEtUV0F3NlNXcEtOWm1OdVNIeGYwTVpxUGp0ZXRmemZLdnBERXZCWG1vYTU4enN4Si16S1M1QjR3akNQZEJBU3k0eEFXSlYtUnlwMUFoUnBsN0FhLWM0OC1XQVpSWjhwMVBTZElPb2Rjc2FhdEhrN3NJNWFVaDFnd1I5RjR5aXc2bzcwemQ1ZHlXQ1pORFF4cjVJdU9oNEFuTmV4VE1uRzhlLTZ6aUhfTktNS1hoZ0dUMGFEdXhMVmnSAeoBQVVfeXFMTnBwLTZmSHUwSXNYd05nV1FZRWRVWHRwclUyb2V6ekFEc1ZvQlVJenNVOGFlaXZNUVJEVHlMY2g5OEVXNTRPOW1tU2p6RHN1Y2Uyeko1b3JaY0FJdHhSemJTck42N2RMemlqaTNnMExxNjBpc0VOR240LXRIWk1CbG1yMFV3YkVwX196OWVEUDJia1hFWTc0YVYydE9tUjVDT3Nld09yZGFnc245TUlYS215Y1hLVE9tVk1mUlhNd25Id0VsVmo1YkN5bVc5dXFwc081TEJwd3ozYU4tQlNWMDZ5MTlVOENrbWR3?oc=5",
-   "published": "2026-10-12T17:46:00Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Hackers \"fríen\" los refrigeradores de 500 supermercados en Francia y botan toneladas de comida",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNV3F1bVF6QkNLZ200WjZtNWlqWnExTXhjN0hvRktiaGpCUl9nRnNudXJCNDNHMDZsR1R6WF9KR3BFZEdXeVJmVTdNRW5OZmhPYmU4NUFsUnZVN0hscE45Z25aOHJYamVfWGEyLXBWZ3o3NFhKS25RdjNKWEc5YmotaTNNYmtkaFV3UFV3NDFFR0pMeFI2c1lUTWM5X25ZdWgtQTVqYTlLN2Z0ZjBER0dHOFdwZk9UOXdLLVB0Z0FZRC1CS1JYdXBzVHpWT0JKX1UwYTJlNy1Pc2tqMEN3Rm5PSy02ZDh2eV9Ib3FOUlJCOW9pU1ZJbXQ3U2szYkpRY0NEOEVxVElOWmFiNjFqbnc?oc=5",
-   "published": "2026-10-12T17:41:22Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "La emoción de Humberto Suazo tras conseguir el liderato de Primera B junto a San Luis: “Me saco el sombrero por el plantel”",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOMkV3ckh4bERvNXBQVGFwZlpMQkg4bTIyTU9DVjdMYlBvOGhMaUhQbnlyUFRkWGhHYVlPeFZFR09zVlEzQkhVZ0xCQnF5NjRDSFRyMkdGYnJMMmM3TjRRcUpJX1JQU0NQczBTOHAyMzZZYTVHWTZhNnJkZkVGX1cxZzhEVzBxdzZpRzVSNzUtdUFuYk1vdEJDdzVVODI2ZjlxcmZfM1Q5S1R3ejB1NGxOMGxwMzk1SnV0SVhCVy1Yd1NPTG9yVGdCaTB0RDlwUTNVUzRTT0dqRFgxVHp6T3ZsLTI4Q3pNUmlsSGRWbER6TVZKVnJhR0pRdC1ZWFjSAZ4CQVVfeXFMTkdxczJLLUlaMi1QMmFhUExnM2xkZXE2SG52di05MXFnaWExVURkRTRibU9xNkhzMTNlMzVUQlVieXVORExhc2YtVDlKQmQxX3Vndkh1d0ZTcGVmM0xxWHJrS0YzNnZGOUNfVXlYc1UzYUNkMmp1NjlvVFdjODlnTmNPQ0RCRURSVk1GdWlVNmFFNElaWDVDVzRjRTd1b3pVYjQ5OUxoby1uUVBhT01IdXJLRWZvU2hlelZXVDBTUHh0VHlERy1Ld3RTNnRHZTVYYWNzUklWdEl5WTJRaTJ4eUNkRi1zSm9EVHpzMml2NXNnN0wxS0w4aDRvUDNNYjZhV1FVVjN0ME9TUFMxbHhrLTBzWEhuSm0xeGNhWFpLQQ?oc=5",
-   "published": "2026-10-12T17:41:12Z",
-   "first_seen": "2026-10-13T02:32:22Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Poduje anuncia evacuación de 40 familias en Arauco y estudio por grieta que amenaza viviendas",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQMFNoTU82WWFoZGdWblhiMk02TURmaHBHNzAzRmN2bjhkaWZubHlfLVJ6ZVdBXzItLTViVDFMN2ZDMmdmUVI2bU4ySUVZQi15Vm9ZZDdKRDF2NEtZbFMxdlhNak91RTFHcTZ5TTRlMkdBYkFuRGZVLWZQdjdUeDkzM3h4Y2Q5YllUeEVwOVZycnRjTjlVNWFVNGtWc1NBTGw0eGVpNVhsdWVyM2ZCTV9hbm56MGxyRk1UWFBXV2ExNmRBMTlDR1NWMnJzOHZDNTRiM21VTXlpN1AyUDhZaWZXLWdYUlpxUTNNV1R0a2d6TDdOcTduMHU4Z2lWa3lYVExJT2NwbQ?oc=5",
-   "published": "2026-10-12T17:13:20Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Digger: la nueva película de Tom Cruise se proyecta como uno de los mayores fracasos en la historia de Hollywood",
-   "summary": "La película sufrió una caída de alrededor del 60% en su segundo fin de semana y podría convertirse en uno de los mayores fracasos de Hollywood.",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/e226/live/539ab580-c64f-11f1-b47f-e3f9cf703bc3.jpg",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "link": "https://www.bbc.com/mundo/articles/cm2l4j5p7dx9o?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-12T17:08:34Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "\"Sácate los cinco\": Alcalde Manouchehri se burló de Colo Colo tras la goleada de Coquimbo",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Cooperativa"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRHowd01FWGRQOEJJYVR0YTNsV0FhOU44TXNaN1hxVkdBWTB4a2sxbG1NZThyNHFlemRsajJQdDFaX1Z2SFp1T2VaNlFFSkxrbDZVanR2Vy00VzRuSFQ5LWhLZ0VDSDlzeEFVNVVSN1pxY2hGNGktUTVtXzl0WVVPMloyeFNjdG54NmtTLXl3cFQxUnBIN2xmdUx1MWdrX0t6bEIwVHFfVVBsMDZ4MTgyQlFKYzd4WUYtUzNkdXRzMmQ3ZldGTnk5UkFEMTc0VmNnYjkzNU1hWEdrNEwxSVB4S3FpdF_SAYwBQVVfeXFMTTJVWHpuX3hKaUY4STZqTThabGQxU1E4TXliWnBQX2w2bkVOZ0NZX25MMXQ1bFEzZG9YakNPbUpjUFdPeVBZbGhGSUVuRE42Zml6WmZUSTV4Zk1LMGt0RXc0eENpNmM3NngyYkk3WmdLZkZNdWpyTEh4V2pOTUVTZUVTeU1tZi1HdVd1bVk?oc=5",
-   "published": "2026-10-12T17:07:00Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Estudio descubre 8 trastornos que envejecen tu cerebro de manera acelerada: Ni el TEA ni el TDAH",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPVVBtbVpFdmlONmZ0VXBqTUQtY1FBSi14VW1CNkpYOVpGOGtoUFA1VEswWkxKNXdwb0ZyZFhDMWJhUzhLaTVoMjBBMXFfUHNQYTZaZHo2cmJOQXJCUVpvcHVTYkpIYkViNGVxdkJ3S2d6SEVpa2FSMHlLdUdGWFlVeVEyVE50THBSOGkzX1NXUnI0UHpVdDVNYkJNaTYxUWFUZlhsRmFRVkNWUXNQb25oOV9BZzhCOGlLSUhkRnotTHV3eUZfU2NYcHVEcGt4Y2R2REdRdkhqQU14SlItem1Tcmotckx5UDI4cDh3YTY3a3VUbHZtZG9QaFlWRF9QUnZwWUdF?oc=5",
-   "published": "2026-10-12T16:50:36Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "La \"historia olvidada\" de los vikingos que llegaron a América 500 años antes que Colón",
-   "summary": "Al momento de la llegada de Colón a América, los vikingos ya llevaban casi 500 años explorando el continente.",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/2904/live/5737b9c0-c64c-11f1-b47f-e3f9cf703bc3.jpg",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "link": "https://www.bbc.com/mundo/articles/c95ynr1886vmo?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-12T16:43:11Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Dirección del Trabajo para las faenas en sector de mina El Teniente donde murieron dos trabajadores",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNUDg1dXVwR2kzUFdTV0V3TEhKOUV5Z0pxbFNwcHJDVEdyWmswUmlGRU1tbERlUzdtdkx2UHBIUUFDbjdPU1lEbmVWSEwwU0VZRjVTMmFnMHRTMUJCXzBZLV80alVnXzlreEtLS2hRLXNJNVRQNnNUbjZfcllNMWx0dHdEQnl0eHZaSDU5MjNxdFF5OXhvUTZINExONkc4cHpDRW9zTE1reE1nVGtQcmpIbW5Walo0ZGtNdkxZbmNpNVNmUmlMMkRnNmtvV0s5VDJFeXBxcjFlQnRxRjA3M0pTY0M4TU9PTmdvMVdVaXgyYW5IMTk2Vmh5TkhQTEhkZw?oc=5",
-   "published": "2026-10-12T16:42:50Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Carabineros reporta 17 detenciones en marcha por el Día del Encuentro de Dos Mundos",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX3pscUx5R2J0U2huTTlzYVRCQ3NoQnZiME95S3kwR1FWQ19MVzIwQ0VKcUZIZUIxNmlsUGxDQjFnUzB0Vm5JMU11SFcxV2dlVExWU2hmeXBpR2cwUlZVbkdEdHVCOXY0SkZNUklIMi1ZTjZvaTV5SjdrbVY3S3BQQlAtOUtzdlV0aXZjZHg2ZnduNEh0OUFfTGpsNHdnOTNqS3JZc1BBZy13dWpmVkdxVUkxNXBtbC1oQnZxM2V5TFXSAeIBQVVfeXFMT050aEVOZWY3UU8tejc1eUtoNVNjNE5INk01d3daQjFJMUVITVMtNWFIMFNxVkFxejZ2VndHcVJEUmJSZ0tVTWkzWk9LeG4wemVEbE5FWExBN3NOVk5PU0RKalVTQXc5TlR3R2lBUEhMQVZPU2d0a08xVWR5SHpfVGJiN2NPREFIUVRkU1E3Unhxbk5iS0pneksyVUNYUVB1eDMwTFZGSmJxWEVaeF9sS19BS0piUHFRZ0NBaURuUlBmUTNzMUdkVzNnWVV5bHpnREJmbkVFNlk1bFpVbGRtb2pUdw?oc=5",
-   "published": "2026-10-12T16:39:08Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Park and Ride para BTS en Chile: cómo funciona y dónde estacionar para llegar al Estadio Nacional",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "El Mostrador"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQMDVuVEpvazc0cFMwam51bS1uOWMyZ1dPempYT2VwYmJ3Z1piUjNZbVZQVndZal9JZWd2SFpORGE3RmVSWEVRZ0pPV09xWUZSS2R1QWR0b1JUVkRqS0dxc1FzeEpsRi1oX3BWY25DSVo5UEZhYy0tTHRwWlUtQnJZdGEwR3VhX0JBMGJzSmdDWUMydkpvZE1IdjRHOENIUC1yaS1fdjNwN1pjNm96SE9rM29pTFRqcm9OU2RqNzd2c2FxU1B5UXljYzctanpFMVRVTjYwaW52OXhxN1lRQ2t5c2Rn?oc=5",
-   "published": "2026-10-12T16:30:19Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Conductor ebrio intentó escapar de fiscalización en San José de Maipo: Destrozó su auto, quedó detenido y Carabineros le disparó",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Meganoticias"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZURIcDFqakNNM20zOTd4d0R3S1FTZ1FXYzRTcVJZRDFOU2VqRTJXc1p6Z0U0elh4eGVTWXpWVHUzZURIS2VMY2gweS1EY2E5VzJKQWNkQ09qSlVRakQ0YzBwM2M3MGZrV1BJRWFUWmhzVHpocWsyUmNTSWloQUZtVk1MY0N2WTJEdWVnWC1UekJXY1dBcWhjWFpEZ1MzRmcyMHB5UjZDMTVSbXctT2cxUjJnQ2NhS2FKN05BbGhWSUNuVjhteG81TW5JQWhCRjFvV2ItUWVWeVh6eWhqYWN3cw?oc=5",
-   "published": "2026-10-12T16:23:00Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "De hierro a herrumbre: La noche en que Margaret Thatcher estuvo a punto de morir asesinada",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcGNXV04tek1jU3AxM3ZpM3c5aXB1ZEJDbU1rWHVjMDkyYUs2eEZ3SlZ5MHU4OFpIcFZualRvY2JERDJ3Vl9HaGoweUM0Q24tNEM4UnpYZHNvWHc4Y2IwS1ZwNzdneXB1YktYejJUWWFTUzBvRkNleENVRENaTEZjQkNTQ3JSc25ZcVh5LV9tdlZtQUZSMmN5SnpRWnU0LWUzZlN6UThSVDN3ZFZjU0U0aGNvUzBQTVNyRWpWZ21wazBDaDJ4Z2FuM1NQNGR3OUNtRHRpOVZKMGVOcm9zUXplRllmYy1tYzRhVHpkd0pvQlNkZw?oc=5",
-   "published": "2026-10-12T16:22:49Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Evacúan a 14 tripulantes tras impacto de embarcación contra roqueríos cerca de Melinka",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOQnl4cjZhNXU2R0ZPYkRwaWlneHVPSldnWEJ1aWlZMm9rN2ZfU29tN0cxVldNNFJkYUQyOTJScXRjalZjUVZURTB3V3JkeFdtQW4wY1htbFJSS08wNFBGcmhTbm5QYXFPRW0xemxMZkk4NzFEYjFjOVVpa1JKMUZDdVA0N0JuQXp5dzVxNjdiSlZsWlhYT1FSQjJMOGNjT1E5c1N5OWZmMjdDR0NWellKMHlnMFNidVU2LV94QjhMV21pV3BmOUpLdTltY3dsVDBxSlNLR1otMlhNSjVBTTJqZ1hxd0xaTFZLYjFfMVJJek14ZC1LZHpBM3JjOVM?oc=5",
-   "published": "2026-10-12T16:17:52Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Cecilia Gutiérrez se confesó ante directa sobre su futuro en farándula: le puso plazo a su retiro",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Cuarta"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNc1ZBdzRkemFDVmJpQzFNeDRIU1Q2d1loOEZnTzFLOGtSMWRMNmE5RUJOVWpKVVViYnJtbkEyVF8xVHRjbDRTeTdBdllhQ1dfWVZqQW80YkY4SDMxd2c3anFZZ1NTNWctdnFocklIbmdIREpfOEhsczhGTEdTODNaZWNSa0xveVVieXM3M2tZYjZrRzVMcTFFS21WMndyT3FlT3NVMnZlbEU3M0lIZTBGWnpaM3BvQW82VjN6MmxQMGdXLWlDY3R6dXJubmFTNHEzX2FKZENMNTlBNzDSAfwBQVVfeXFMT3ZZWW5iUG0xZTN6SGxpQlBrUG5XODVKZUpLSTk4VDJFeWtZRmhWR1AxSGtxUmhNeHM4SU5jeHJKeVEyTmRZekJhczdOS29yalo4VTlDTWFGRlZ0V3l4TXJmRWRONlYwQXJ4Y1B4OHBNYWl3UEdBSmczb21PWi1JR0NxUkJ3WEVHVG13X08tblZDak5QZ0Z1MHdEQVpIejV4ekhia2JCa2tHYktvYjFTdzI5dXlDZXFWQVJ1TFRpWGVjdll1LXJEb20wcm8yQlpxb3Y5SHBLcnNVYnhMS19ydkxkV3lUVXBCVTFwR2xMMDdfTXBoX2w3aTdBTG5z?oc=5",
-   "published": "2026-10-12T16:17:43Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Hombre muere baleado tras intento de robo de gallinas en La Serena: dueño de casa quedó en libertad",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQODhCOE9wcS1sMDMzLUZjdmNXem1lQWJPQ19aYXpTdU5CMWR2QVBfQ1JGRV9nWmVBVXNtTGNMeUdoYkt4QllxOEtJTE96RTJsMGpUY295VmljS2JQZ0hRRFM0VXJudEYwY3lPdWFsRE5QbzFNNkZZUVRRXzVPMWpWZUdlUEtMSjNUalpFNE1taXJySmZiR2l1clVsT1BlVndjZEVaMndndW9HVE40bFQwd3E3V0RQcEx5dE9qREVyUVRDMHpaZ096aUdZZm1ndVVmalNNM1cyblVrZ9IB-wFBVV95cUxNYjFOaUxKSTZjUUdoS3Y4UDJXcDVWRG1aS1JDZmt1YmVHbVU0U3RZaUw0QUJVMC1TdTNXbDRXSVNjYmQycVNiTDRGeWpxMFluX2V5aVhnMVRUNnpCbnBwV3V3ek4yM18zemstZjhXN2J4RF9zZl9DdFh6UFZnRXptR3gydmlQaVJQZjI2THhJMVZTT2JMT2lGTHA3QWVrSktLczNQalZTTVMzR1dwd21ZSXRXcklOR0FYSVN2clB2a1lCUlVzZUhXTlZiZWlWR2JmaERiWHRWLV9pbXpidVg2ZWFwMTRkTkZIR21IVjRMemNKdnZLd0UyZ09nOA?oc=5",
-   "published": "2026-10-12T15:35:32Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Una cueva gigante bajo la Luna inquieta a los científicos: Podría volverse un refugio para astronautas",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOd1BqR01IdExkSVZPN3Rjb25lU0tYdUQxcWdJTEo0U3F3SFVMYUU2QXJUcEZjRTNCOGJtSzg1UXJmLTd4Ty1UbnB4VExFUl9GeksySGJDNGpRMnhnQ1V1RzVsWHdNZHByVzViWmQ0QjBHakIzYTNydTFtX0ZzajczMlpGWG5ZUEIxdUhsLXBZeXAzLW01dXBmblozQXpkbkZaTVNpUktoc2UwN3Y3YVRXYktSMDZObGNJa3ZmWEhKb1BxdnE3c2xVUVlqSXBkSDN1cXZFV2QzZ01NLUFXZFM3REhYU1NjYUlFOFBIcFBVTU5wWGFHaDhjTzVuVmluVlZOTjZISmZaUGZfOXFjNVRlMnFNUS0?oc=5",
-   "published": "2026-10-12T15:23:44Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Ataques hutíes en Arabia Saudita: Riad canceló sus vuelos, hay 17 muertos y no hay fecha para reabrir el aeropuerto",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Infobae"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPZGRZWkNfalN4c1ZJa2o3VGkxOC1uai1lT1dNODBPZUE2bzJIeEJEMEZLZGtYbElmT2VxT3pjdjN1U0NyX1l2ajhPTFF0TlZIMUdPako4S3Iwd3BJV0gwMC12MlpIdEY3c1RRcXlmMENyaWVwd0JQa2hDOVVFZVNZZlU1SUwybjZkR2c3SUFZX05jV0NzVTl0VmEyTjR6VVEtVVQ3MV9RYjRzandRQ0lQUTRWamJQQW1zS1V2bG52VUYtN0Z5cXhoNXhTYkxMZWdUY2NGZi1Yd250ZkVwRGQ5SGo3blh4ZENXclNKZlJKb3ZMaWRvclHSAZACQVVfeXFMTVlpQ2xXNHhEd1FfVXdHdmJtVHVfTGVyMEpKWmVubG4zTnc4OXNnR3lRUk9xWDRzRmdGc181b3J4V21aZnhxRVhmQTF0eUo2WlRkT04wallKM2tsUjJsalhjekZGUTVjM256X1FpVE1OMlhNY3g0WGRsQk9GX0xwX3hlZXllaUR1b1dLTEJRQmZsTm9Ha0ktMWllZWozVUIxQzJfZjU5UmEwZWwycWFDV0psQXZBVWNzTXlJMFZLeWFxNnBGeFdKNU44STNtSC1RQW9ESmJHQlluMG5TbVl0d2U3MG50RDJvaERtLXNjV1lFRXRNSVZHcmZsM2luSjVoNVBhY3o3V3NnazhOeEduUTQ?oc=5",
-   "published": "2026-10-12T15:14:00Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Codina instruye evacuación de viviendas con pérdida total en Las Condes ante alta probabilidad de remoción en masa",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQjVYanJqTjJ3U1oxWE5tUVRVUlBGLVJDZ3VtdkZxQ09CWVQ4cmVXMl91cmI0ODdTNWRCdDBJOXJFNk41X0ZtQTFqX2ZWQjJsUGpQU25lUXRLU2p2eldnb3V6Z1M5dTN4TFRGVHB4bnFuVGk1dzVrajREbnY4eWRLV0g3MV9CUWRGLU1HQXQ0dUpoeDNJcmY5dldFWFd5bXNYSlhiZ2l4TDdVRkl6YW9PWHlaa051Tl80WWZab1JLcGpMTjRQRldhbGROQWtCcXhtNzA0N290YTRuVnRCVVlDeDZHY0dTcUNzOGZLdDdjUdIBkAJBVV95cUxPVmhobi1xM0xtLVVSMUFPSjZ5YnNtNkNjSDZQM2dUQkgxN3pGSGZ4ejVUTUVzSk9zMnJrRzVEUHVUSUc5MVJ1UHJMVkZBZVFKb0VnbjlZV2dWX2RTcjFCcUFlb0ZWNmlNSF9LSktDQnk4aHlscHNVLU81NGxZdFVPSy1fdDJCazZ3QnhTUkpwU0dGT2xNd2R5d1UwcUxaMXQ4ZkZDeVgwVW4wRlIwbzNqcElJRFVvbXo0ODl1dkJCd3pnamtMNjlIUXQwM1dPLUcydEpsWURVYS1DVmlMbDFvbkQyalhTcXotRlU4a2NFbGYzVHdtVkNrVnBfU0lPVF9mYjE1NTBMZ1o2N0RQNUoyUg?oc=5",
-   "published": "2026-10-12T15:03:32Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Alcalde de Coquimbo reacciona a la goleada ante Colo Colo y arma una polémica: este fue su posteo",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "AS Chile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNFVXX09NQWxocUkxOWVid0V5TE9ZTDMyd1dRVGVfN0VvOS16bThmRnVqeTJPZEwtWE5oMHRIRncyM2l2RFJtblh4M1hmbjdxY0wyQnRFMXRteW1MUUN4STdYT2c3Nk5ETFdUcGJSQnd6dkdhN3hHS1Jva0tvS0VQS3o1VVB3RFdKUDhsT0xSY2pLTi1oSmM2VEwwVDNDU1Zpa09WX1o1UC1odW42eFFNb19vRk9iZW5OcDVGN3AyQUtsUXF4V2l4T3A0VC1MUFJE0gHkAUFVX3lxTE8tNGRMcjAzUDM0TmNqZDNaSHNLWEVUYVJvM2VrZllxbU5DZ25qdXg0UkNhS0FmWTgtOXRaa3FOQlgtMWdYR0Vpa1ZJbkI4bDZEWW5tclZkT1JJcW95T1JWT2NZUEhoQ0tHNExxaWJ4ZFVJNFZjQ2IxSnRVR0xsdHhVbzlQSDlLTExKbXd3RE1WdC12bHVXdEdRV1VrTGxoYVNtRjZDYjRnZFVVLUhSbGtMTXU4SHlSdmlOQVFvOC1TT3UyQVNfYkNvNjlIYk9FVnptZ183RV8zdXl4VXhxaE1yN0ZqSA?oc=5",
-   "published": "2026-10-12T15:01:14Z",
-   "first_seen": "2026-10-13T02:32:22Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Qué pasó con el experimento de Bukele de convertir a El Salvador en el \"país del bitcoin\"",
-   "summary": "En 2021 la nación centroamericana se convirtió en la primera del mundo adoptar el criptoactivo como moneda de curso legal. Hoy gran parte de la iniciativa fue desmantelada, ante la apatía de la población y la presión…",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/8d48/live/0cf317d0-c64f-11f1-b47f-e3f9cf703bc3.jpg",
-   "sources": [
-    "BBC News Mundo",
-    "BBC"
-   ],
-   "link": "https://www.bbc.com/mundo/articles/c8ly0ewg93ddo?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-12T15:01:12Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Teletón 2026 confirma sus primeros artistas y tradicional cierre en el Estadio Nacional",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOclNhVlRkbURGcGRhWDBud0NYb0JEOWlrNkhadHB2LWdEMWxjRnpxTHFJcUNTbElEemVDNHcxSDVFTFBfcHVPVjFKMVpYRHpjcU5QRTIzMjE3TXZkNENMTTJFWUtoR0RFTmtfZlg4N3ZSV0NxQTBNYjNsUU5uVEhjX3NPdlowTTZ2eWJJNUVONWtVdm9aRTJPSE9VdVRvM3VrZUkzZXZuN3pVc0ZkekhYN0tWeFpkUF9hdkVuRGlHRjROWG1EYmlvVXI2RXF2OEJja3RTelA4WlN1TG5Nc2w1X0FOMzhiN1Y3T2phT1hmSTB6YXc?oc=5",
-   "published": "2026-10-12T14:52:09Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "\"Un salvavidas financiero para Rusia mientras mata civiles en Ucrania\": las críticas contra Trump por su plan de importar diésel ruso",
-   "summary": "Tanto los legisladores republicanos como los demócratas han criticado el acuerdo, que se anunció a pocas semanas de las elecciones de mitad de período en Estados Unidos.",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/878e/live/dd74b990-c64a-11f1-b47f-e3f9cf703bc3.jpg",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "link": "https://www.bbc.com/mundo/articles/cw98z4vm9mg4o?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-12T14:42:18Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Cómo es Yandex, el \"Google de Rusia\" que se ha convertido en blanco de ataques de Ucrania",
-   "summary": "El gigante tecnologico es una pieza clave para Rusia en el desarrollo de su propia IA y en su ambición por construir una internet \"soberana\".",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c253/live/6b842d20-c64a-11f1-b47f-e3f9cf703bc3.jpg",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "link": "https://www.bbc.com/mundo/articles/c670pwl08kgeo?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-12T14:35:05Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Así queda el ranking ATP después de la sorpresiva derrota de Alcaraz en Shanghai",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "ESPN Chile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUm9LX2RSZzM5Q3M4RF9kWVFRTU8tb1Q0MnBXT3l6aldtUWNRRHR0elNxU1dwRXh0Y1poc01aaGpJb1lGV2NIZE1pVlJUaV8taG9pa01fMUhTUTNuUWZUazczZTd2aXZrbGlxUDhjTlJVMnR0V0dITXVfQTNLZmhKeDdDa00yNW13c2RMbGtYVHJzdVNzZUpXQkNLbjFSQktvZ3RJNEhKT2VMYk9LMmtBcGhjTURjNUZ4UU92ZElDYkwzUk0?oc=5",
-   "published": "2026-10-12T14:24:55Z",
-   "first_seen": "2026-10-13T02:32:22Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Cierre de la Teletón 2026 en el Estadio Nacional: Destaca presencia de Tito El Bambino, Bacilos y Leo Rey",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Meganoticias"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNN3ZHV1k3NGZHYW9WSGRLNW9aYzhLRTFDOE0xYmhmOUNST2hfVmtGTkx6c1BjUEhGRC12S2hMSG13aElZdWxtdWp6VWxSeU4tVlFnRDVKT1Z0dVlEZVZZa21zTjFva2c2WkFYSVZVTENVVjN4RENIR2RuNGVYSEtNUWpPeFBxX0FlVzVoYld3eTNYTUZsUDJwbjliTDFuWGwtQmdjMGxLb0NmOXlId0lfVUZMN3NKOTN2cjFzRlk2cUJlOFk2MDJkdEVQV3UxRjNQXzVKbHBqWV90VDB3eDVrbmUweEFxOG5tbEhtcjZaWnY5VTBFTElyYtIB_gFBVV95cUxPR0UzeFZXUHBUeC1Xb3Vaal85UERTVTFRUFdsSDFWTW9JTkVMY2gxRVl0VUNZcGlTcnUwbXhNNldzMVlOV2dyZHN3SlRUNDJiMlF3NHU1VkFuaFd0eERlVi1YUUZldTB0ZGtjVWM3T3ZHMWo0UTJnbm1aTlJ6Q1dqX3VXczRTSmxLQWpJa1I1UDJCQ00zSjR5RXg4WVpPbC1aNkpBVVVHMmQzcVVZVTFrckpPaHhhZTZGR3BMOW96RUlGZ294dk9vRElNMmVpQ1djQjJzWUUwcGo3OVJ3VVlGQV96TThDOXlyaVctdko0QUs3ZUpFaUNsUFFPZk5pUQ?oc=5",
-   "published": "2026-10-12T14:19:00Z",
-   "first_seen": "2026-10-13T02:32:22Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Netanyahu exige investigar y procesar a los participantes del documental NAZA",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "DW.com"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ2tnc0lrcllLdXVKdDFHTURWcVF5U1ZGcVUwMi14X2hGR3BNR1ZfTkZwd19GWGRsSUVqMHBIV0NnMWpJNS1BU1U3TmNvaDZPM0dkYjFsQlY2d21sZzljT1ZBekg2UzRFVkRXd1dSUWFuRTF3by10RzJOZ1B6MDRCQ1pWdE9nZGVLMHdhODFRTk1wNl8tOGt2NzBHV3FUemhRLVdTTUxFRFRiUkVRQlNz0gGvAUFVX3lxTE5vOVkwWnRfWkxUekJOdWRWaThaejZ1QXVNemdGaHMwWWU1V3hVM0dGcThTV21zbTktSTdpY1Z1TkV5WS1vUTdWMnJ3c2RRNzAtQkdzYjVQb0xCV3ozdjNhaG91ZGx0Y2JacnAtUWJ4RmhiVXlrNWR3N3g1b2g2N25hbjl1aDJIRkdHUXNLeXlwX1Vad0taSTlrbGRBdUFJYUwtNEdBclFtZDQ2RjFIS3c?oc=5",
-   "published": "2026-10-12T14:17:04Z",
-   "first_seen": "2026-10-13T10:26:12Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Tras caída de Alcaraz en Shanghái: Alexander Zverev aseguró cerrar el año como número uno del mundo",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTWJFcXJnbDhYbEVfOThKM0ExYkpnZmVRQ09Uc3JGbjRrNndCWkdOeDI1NHM2SlU5bTFaLVQ1OEF1SFdyX0JXQ1R0NmV5WHhFTUIzSGxuU1JUeFJWb2tqLXRZdy1CMThCQXhELTctVFJTdHB6WS01U1Noa2Z3cEhRQ1Aza1cxTm93OGRnMFJobnVKOExwWDFoM2tRcGszdmEtcnJwWnpSMDlSWTVNT0FQT3VsZlV0QnZzSUdIYVdJZlRrQ05hZVE?oc=5",
-   "published": "2026-10-12T14:08:25Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "“No entiendo nada”: un desconcertado Carlos Alcaraz se despide del ATP de Shanghái y cede el número 1 del ranking ATP",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdTl6SVV3bkxOS1ljb2VxYlRhNnpBd3RpWEhvRHgtSUVIbnFJblAxMU05cFBCLXBGY2k0VTMwNjA1ZFpUOVZGZ0N1WVlIWFYxWXRlZjMtakZRS0JuWnVOVGU4ZFlFbkhBc3pxQkJCYl9TMzBfdW5yeFJqMmloRm9pU3dtdkNNRWVLWm9rQUl4anliUWpRV3YwRGM1bF94TWYwVkxKOGo0VkMxVTY3ZWNJNTRMRTltNkF1c081WWI1RHF2NURNai13RlBybklIVk9VSkhyaEJwR2VLMDF4Z3VBTnJtZHVVRU5GclBBbNIBjgJBVV95cUxOMXlhb0pvenZ0SjVnd1Z3Zk5VY1c5SkdPalFJNUNqVHQ4MWxMVzRHZDRobVl1ZW9TUHNBUHhDdHRCVHVwY2VULThEU1hNUlgya0xjZ2lYcFktOVRDOWdKLU9WU084TnJDVkdNTjZidXFSODdMTEpMUjhNY3BUd2d3aGRvb3llVVJCeE9fM3E1RlFxMVNTeXVPajRuQTN0bkY3THQtRjlEbmlmZmlVbllvN0lEWUl2c2t1Rnc4NmNBWjBha2RfQmNidTlIWnVPMUg2UEl2bHVldUxFajFGdFktMHd0aGlsRTdzU1BaNUplMURnZFFfdXh2TGN2OHJieXIxdzZFenBpV3hvbU1kaXc?oc=5",
-   "published": "2026-10-12T14:06:53Z",
-   "first_seen": "2026-10-13T10:26:12Z"
-  },
-  {
-   "category": "economia",
-   "title": "El SUV chino más vendido que supera a Toyota Corolla Cross y Ford Territory",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Auto Test"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbURSdy1wVTRmM1VMb0J3WG5ybldIcEFZWnlPZTRfWVlZU09FbjI4SjZWSmM4MHhoUEtraXVfYXlOQ2dOYTV0X29la2gzaEZBWk9DXzYtZTdXVkd3UjBqYjFLRGhLTkdRajhHUVl6VndxUjlNVjl0X2JtU2p2S1RnX2oxb0NCTzhYOEYwNkZhTi1KdUpDbDU5aGV5ckEtMGw2RUkwdUVnVlp6aU16RkE?oc=5",
-   "published": "2026-10-12T14:00:48Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Revelan el estadio donde Colo Colo visitará a Palestino por la Liga de Primera",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Dale Albo"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdUNWUXNrVEluUDNrRDNDam9CNExtdUVKLUh1SmtNNTlFZk5xdkktaVNUaU1kSHlUNXdHeThFc1JXbUI1aTczajdSQjlsOWxaWllfSk5tcDc4Tmp4SmNqZkxQWWxuc3A5VWFoRjdHaVd3dHhkSGYxYVlIZ0Q2d1pmd2E4SUZ3MzRGeHJnVFk2OXBxeXNiUnEwZ2V5LXRpM1J4aWZRYmttcW5mUml6MnZjOWlSTVTSAboBQVVfeXFMTzFEZ0doN1JhdG4tQ3Vudy1RME5xaVZxQXdVLXdmWHNyY3FaZmF1US1IdURaYmdnNGhJVkxyTFBnOEFTWlhtaHlYREdyTzdSblNWLUtXellHUTNSRzZpUEoxS2hXZFExT0VZMHVTTm90a2RKOFlOT3BTNXdHUTEtV2RwcEcwWldfZVRFZUhiQnNFLWpQd3RQaHpYc2xYNVdFWFdiZlltb3B5bzIwemoyanRHX0VMeEg1S1hB?oc=5",
-   "published": "2026-10-12T13:57:58Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Gualberto Jara apunta al culpable de la debacle de Colo Colo ante Coquimbo: “Vidal, jugó muy desordenado”",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "RedGol"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPVndWSUVsRnlTTkk2MXBPa3ZybVY4Rm00WHFGOFp1VUVmLXlaa1dsVGlQbjBNTi05dlgxMWl2bnljMUZwVnI2LVEtT1JicU1Qa3Z0SEd2ZnJ2bnVseFF1NzVmZGdNcXJZTEtmczBqNW1UdkhZRVU2aUp6NjBBclB0VzZmMFdROVJkdzdDN2FPUkstbVBWOHVkWGJsYmRJWHZvWXg0MXpUWDJXekE3b2NFbWwwWXQ0LUJYR2FYZTNFdDhXdUV1YUEw0gHMAUFVX3lxTFB6ZFExamhzWEpqN3Q4ai13QTltemdxeTFnX1dYOEhvaF9SMUIxaW50emN2SlpYeDFROHpiNG5xVWN5Q0ltejR0b0FoSVh5Vm5CQjIwbFdQOFQtakIyZ3ZzSDFYbkU2VkE5b2N1bkRvVjVNSzEwNmlrOTdVOUtHbURkVjBubzBKTmFKNkZuOXVTT25GNmdUd3RzckRXZGRhd21KNThabktQVFdVZ0k5dUozSXU4NUJZNVFKd0IyZDQtYXRFN0duelcxTTBQVw?oc=5",
-   "published": "2026-10-12T13:53:34Z",
-   "first_seen": "2026-10-13T02:32:22Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Fallece a los 65 años Gabriel Prieto, destacado actor chileno de teatro y televisión",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Universidad de Chile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNDZYTy12WWo0UDN2VUtfZ3A4R1UyclFPbHhpLWZVOXVReWlTMUpfb3dNYllHMUVnOFZpb2JnMmdadG9TNjhpMWRac1VKNFhfT2pzaUJQaS1xLXRkcnRsbU5wb3E4cXVnV25YVlNMTS1ESDB3TEVBS0wxcXlPOEZpa3J0Ym1tcVFsa3htTDlaM0VGVUFlQUc5Y2ptVWlpcW44YVMtZXg5TkhRb1dzaGUzLU9FclNOODB1aVdR?oc=5",
-   "published": "2026-10-12T13:28:51Z",
-   "first_seen": "2026-10-13T10:26:12Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Robert Hall y Michael Woodford de EE.UU. obtienen el Premio Nobel de Economía",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZHNSRG00b2J0aDUwUUJEbVdqX041NWdMRlgzbmhxQ1dMdnEwRmRlaTdKcFpiZURiUkUwdU05MmxhajI1bEYyM3VHVmRBZTMyVFVfMFJWTXoxZU91UXdhZzVvNlQ3YWNHSk1ZZmVycWo5ZkREaDdYWE9iamJwR1NLNTFxdmxoQUhkalBJaDZBUmVFdEpiUE1pZEMyYWV4cWZtajRhYVBJTk10MFlpbWFHZTllWWlvTW_SAdgBQVVfeXFMTXF5NVRiMkVCWEsxS3EzbW5tUV9yazNwZUJtdTloNEFmVlk1X1Qya29zbXdhZFluYTJJV3JSRmloLXJ5MW81T3ZRNzZhT1dTTVA0MGxwU3FsbG90TXNqTnF1Snlwa3hxSGhTeE1sSjBqZDN0MHA2TTJpSFNBajZ4MjdYZExGUTNqOXBMRE1Yb0VvVFRKSzZRZHdUd0FRNElhX0Y5cl9YeWt1TnAwd2lWWGNFQXpiVWV3VGdxOHowTUFfektGUDJ2VXpnTmlwS0FKNV81MU5oTHpN?oc=5",
-   "published": "2026-10-12T13:23:23Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "WhatsApp dejará de funcionar en estos celulares: revisa si está el tuyo",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "24horas"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSUdkclQxVy1fUWwzSjdqZHd1LVZEUTA5dUJOeFdkM2dxLUZaWEF0bld4NEV1S0YxWkxadlFJdnFGaWt4N0puQmRMLU1YenFWZklkUTdmNG9CYXZWRVVkaEZidjZGN0lZSDF2UnV0WXZmSHFuNFdjR1dGTVNYR2ZMd1VxbHpPTmttaXVSYUZaNHQyWTVYZExieFU0ZEt0QUR4ei0wYmJfTdIBrAFBVV95cUxNYVBIY05oOVprRHVILWNJbFIzcWh2RjJPbUZKZElNcm13UVpseDhtVkt6a0hLNDMwZVVKNU9WZmNUQ2FyTjJ2SzhGMmdmMTFDNndYUXhad3VWcWtfaDl5b2ZvZV9JcWlFQVlvYzZhTVo4S3IwcXBRMEcxNVdJeVFYR1pmUzFPMTc1cE4yNXQ0NW5xRk5IUGh2VEd0Zl83N3hUcUtjRGZIR0NQdU1J?oc=5",
-   "published": "2026-10-12T12:51:00Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Revelan motivo por el que Darío Osorio no fue convocado en victoria del Crystal Palace",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "ADN Radio"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYUlrSlU5WFBNdkpoWUhmeUY5LWtDY21vQnBqU2U0UHhoQS1XUXBEdFEtTWs5QWR4SFZPaXNPOVBqc3QzUWxkWVdQdXFfNTdfR254ZDJ4UEpjTzlwQzI3amhCbFgyNHdocldtZER4b21CbURzN3JJcElub1FicDJjTGJpa2ZheDNIczJpMVU0c2R6YllwM2MtamN0RkN1SEhUb3dmS1BkUEZfMDZvZFNxeUJBcXVZb0xfcUtYcFdvNNIB0wFBVV95cUxQSHRlQ3U5TUQ1bkZuX2hFS2hMZVE3dkhDUG91Mmx0RWF2VDdBS3FRZmNYWlBMeG9xSlNSQmlPZHNTV2V2Wk9fTU9Rb2gwRmFxQWN5Y2hwTlAxMGgza2l6OW9UUnJKcmsxRnZDZElVNE5FRVJVVmE0U1NJaWEydWFhellOMkRGN25HeVFyUnFxTjNsOVA2ejdaT2hmVFg0XzUwZUttUS02QU05OWZ6YVVKLUx3UUQzeWZyUU9rM0FpenZ3UmE0ZzE3SkJzaGZZR1cyN0xZ?oc=5",
-   "published": "2026-10-12T12:40:09Z",
-   "first_seen": "2026-10-13T02:32:22Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Confirman hallazgo de segunda víctima tras trágico volcamiento de automóvil en la Ruta 5 Sur",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Diario Futrono"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOOXBEUW5MXzVZX21Yek5majAwdzVhQWxNTU8weC1hUUpoQ19xb0htdUp4SXlJRkFrS1Zuc01YUlItczFJTUxnWnVaeGQxanVsb2N3Sy1aMm1SWGxuenowa1NqX0ZGaTFWWTNUY3VYNzFxcTJCbXF3ZzFzbnZjZU1jNHFINDB4Mm5VaUhMNXlsb2dhSjc0T0haVG9FMlk1d0U2U3NLZ1pLbHhCcUNVdVpJT3lac195b2FoR2V2LUhDeVJtR0cybHRKWFVGUmlVVVVCdDFJREVUZ0VnNHQ2ZWx6OHR3?oc=5",
-   "published": "2026-10-12T12:36:00Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Papa León XIV será hospitalizado este martes para ser operado de un nódulo en su pulmón",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPczNwWFNQWGdEZ2R1NnM4UDYyRWVRMkxpM0VpWThqR1ZEdWdsMmN1TnhCWDZkYzlvNWFhWFl0Y3lHTUxXSmViUHdZcnpuS3pkVjFuQWdJRzBJZGVwdXJGNVY2akwxOXhKb0V6R2FHZFlVNE01YWhyY2tnQzU2VUY1eDcyUl9VZVNBckFFZXdicE9jR3k3YkF0Yl84YWh3RTdEd0tYOV9GYklVQzJacUtuN2U0QWxjSWk0STNrbFhJTll0TTZyczJXUmJJNG9DLXZVY056dWNZVHpEUjMybDB6aWJndGVvdFR3MHRQazl4TC1KZW8?oc=5",
-   "published": "2026-10-12T12:35:53Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Gabriel Cañas descolocó a Coca Guazzini y Patricia Rivadeneira con revelación de cuando “yo estaba pololeando con un actor que salía en la tele”",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Cuarta"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNNEEzcl9Rbk1aR2tKanoyakRRQWxlZU1EM3dJZkVncWlIX0tnVnJ5ZGJwNVN4WGlRR3MwUkpnMFIzSDRnWFZLM0piVmRXVW5selRhYl9OYnZIYTViUC1pZnVzM2dkdE5QTXdlaEEwaGZ0a1Nrb1NfbGNXLTV6VWlCRjhNRVIwSXVHNEg5eTV5ZnVteVk4RDAwNEI2UHh1UTZlRjJLS3dyNGY0NU9fb2g3TjU5d19kTDQ1OHMybXp5cURjVmhPV2Q3LWhiTjdBWURXMTNJYkxpSm5DZDNKTWtZeS04NnF5OWxxSmZTWFdBbWZJNDdCRzNGNVhLUXpDYVl0Z3RkMzlralpIQnRmOW1FTmtpV3RuMzhB0gG6AkFVX3lxTE1HTk1HLWlHRnZzeGFiOTNtVkdreG1GMnQ1dFgxd1Z0MWI0ZnUyTW5fUE5rUXVCWXVILXFJZjdHVnRBZFllbE5rd09YVVlPb0V6OU4xVjM5eDVTb3hWUkJVUzR2YVEyU2Q4eUtEMkNjckx0NWVxT04wR1ZTaUNzMFRIVGVwNGdNWEV0Qzd1WkpaZWwtbjVjNURzbDNmb3VMYWtNZjlvMnJUdXpGOFVia09FOEstN0JNelphdmlLOUIwbGYzb0c3a0d1LTlnUzI3d3hKSzJHY1FkeEY0TklBM1VYaW13eGJ2Q1F3Tno2ZjRpWld2R2tMOWFXWGJiaGZqc0tvMHU1UGMzc2NsQ3FhWlhrT2gybmpPWGx4c215Ulpwa3VrdVN4b3RyV0F3dmwtaHAwUzg2R08tZVV3?oc=5",
-   "published": "2026-10-12T12:32:00Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "“Es un cacho si me pilla con ellas”: Vale Roth explica particular decisión sobre su tercer parto",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Chilevisión"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQX1VncUcxRHJkMndMS1JBeHpqcW1HZkI3Y0ZzbjdyT0RXRnMzOHlabkJTSDBuYjZGR1FpQTFaU3hrZ1JwWHFPMklYdDhielVZUUFhRGZuZkF2WFhIaTh0a3hXSm1UekJIZEs4NVg1NzVBS3pGem1QeF9TYzJzeWZ6YU1FVmRaZV85eG1yNnc5WjZoMGN3TWRYLUhrMzVFSWpwQ2dRQnlwdjZLZEtiaVE1b3pYeXZlbUlxNTI4a1pYQjdxNXhMaURLeHAtQ09hTlk4?oc=5",
-   "published": "2026-10-12T12:31:28Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "\"Alguien quería que me fuera\": Etienne Bobenrieth apunta a su eliminación en Fiebre de Canto",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQU2FyTnZpNzcwdmsySkNCSEczNFdUNGp0Z1k3WWlPTE96SXpudWdCeEVmNEdqckN3OHkydlZ2TDQxLXAzT3Fhb05ZSVFUZmdMUWhGN1hGRmw1cEdIZkxGREZsUFQ1R0RNRUJ4QVlVODhLLTV6eElqbFhybWd2MVlWbkwyT1hLZVVUb0txV1Q1OXFHNEpibDVtZVlkdWN5QzF4MWtHN18tWTZGNGp0RGk2Z294RFhzaEI0R3h4MzZSc1ZIWUlsMEd5OFRTLWhTNlowU1pYSGVDOHhZR09uQjAyT3M1b1J5T1VCY1g3alhHQUZYTGhCQlE?oc=5",
-   "published": "2026-10-12T12:24:55Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Participante quedará fuera de competencia, Faloon hará feroz pataleta a producción y más en VCTE2",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Mega.cl"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNUkN0N0s1MGp3LS1saHBNdXJLdjVTWEdXZkQ0Z3JZUHE0c08xSTFGUFU5TlBtUE9PcXBKaWpPS19NWk5keVY5NkhtT2tENkE1NGxmQlIxZ0xuQUhxdHlTclRnR3dzYXh0SVpJYWdhdU9jR0xLVmp5bW5yUFctN29zc2lzTTZlLTBSQkY1LW1sN3A5dFMtNUdLV2hzQm03TEF1cE9QZ1pmWU1YU09jM0c2S3NxWTgyZk5RMnBDWnpkRkZWaVNnblNlRFhkVEd4WEJneVFfS0FkbE5JSVZz0gHiAUFVX3lxTFBHWG5rQjRLdUFyUk8xT3FXV2tBaEduQ25FeGFfUkxXb2xQSmQ4RjR0aHlIX3BiYmptYVc2NVdLZ2w1TWwxekpUYzMxVVdfS3lBSG5DS2l6QkxRYU5Gai1mdUd6YzNLeVl2eUxUTURkQk45b0ZGV3JyT3pTUHpQdVRGcDB6ejlHdmI4WkR3VUJWYl95Y3dYWGZwUnVkSTRVb002Mml2OHJzR1l1eXZCSjhrLWJSM1NoLUwtQ3gwSzhGZTdEdHVOZTlld0hzUjlhVERkNXN3SHpkQVVseDFGV1puOGc?oc=5",
-   "published": "2026-10-12T12:21:00Z",
-   "first_seen": "2026-10-13T10:26:12Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Tras anuncio de Trump, el Kremlin no confirma tregua energética anunciada por Trump",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "DW.com"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOb2VuelV6SkdPSXBob0FCQmw5em1NSWU5WjRoVWZNLXE3emswWHk3V3ByN0ozUUpONTBaajNIMzZrbmdPT3dJSUxXY2Y4ZUlXMU5lbUpVeUVHSDNVdTd6WE5BNDNnSGFnOWZQUElMWUQybjlrc3dnYW9CMGt2WFFFWnNoeUstNTBCVUZ3SjlIODdNdjRTdVZyZnFIUFJRRGkzSWszUF9lVHdGTEhIREhPMm5LbGNDUDdtbF9QatIBvAFBVV95cUxNalBvZ1VpendnUUZwWFdoWThGY1lxdTl0X3E0X1hOYi0zNkxLWUQwU0JMNmhsaVJRVXA1NDFCc0Z3LURJc05mMmRkamZ3TllMTXBpbGdRNlp0aTVaaVcwaEE3QjBCQmEzdXhYWXZremhQWVROd3g1QVR5VUR0Y3NIZ2p1Z0I2Y3J0Y04zMC1lQkpfXzlfMmZSbmpNVC1SbWZQQUNmXzdSbFFaZ3hkbmpTODhVSlVRdjBPY3JWNw?oc=5",
-   "published": "2026-10-12T12:10:33Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "internacional",
-   "title": "\"Si tienen tanta tecnología, por qué nos atacaron\": los pescadores ecuatorianos que fueron bombardeados en una operación por la que se señala a la CIA",
-   "summary": "Al menos tres embarcaciones de pescadores de Ecuador han sido objeto de ataques en alta mar este año sin que nadie se haya hecho responsable de lo ocurrido. La prensa estadounidense sugiere que fueron objeto de una…",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9eac/live/2679edc0-c634-11f1-b99d-0127a94fa1d0.jpg",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "link": "https://www.bbc.com/mundo/articles/cvp8g7enyl2wo?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-12T12:05:22Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Johnny Herrera se burla de Maureira en la goleada de Colo Colo: “Ese achique a lo Neuer”",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "RedGol"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeGFXR2h0S0FlZTNtckd0VmtzNG90QWZUNHViUmZqY3d3VUlxNjl4MGMta3JwWFdKdEZiUkJwbU44WEY5TW5XMGJPNkUta3lRbEtudzVpbG81d09xd3BBcGlsYng3QzNnTDhDUWh4T0EyZWMxMzFxWVZySFRKMmM4dkhhQ3JZampEdG9KSmM4OXFUNDVoRERoUXVyak91T2M1VHotYnNCd1FlNC1CeFZobnpR0gG3AUFVX3lxTE1fRGJRUjdTZ2Z4ckZEOHI1TWZsX1ZOVWtaUGRYODRKYmhEcllFQlJ3RjJfZHo1NDFSMTJUMEtQb1NRU3JVazZNamdPcjJwdHIzSExNN3Q4YTNaUmw1aHkxck9MZUFCNWNPWWt1dkIxaEJEbWpDX2xfTll0SmFDOVkyeGppSWIxX1RyVENBY1UtanJsbGJmSGJoQTdfaVl1dzdCc0JfQXFUVjlkWUFfREg0bWVocWpHcw?oc=5",
-   "published": "2026-10-12T12:03:18Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Pulgar crea un lío en Brasil: “Fue una mier... todo el mundo vio que...”",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "AS Chile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZ010YnlkZ1FuZTlmNzhBSHExSTR6Z0did3ZEU2pwNXFPWHg1cWJxc19meU80VDdaN2RiSmJQWWZXb0syVDNMelNlajdZUHlaOWQwWW9VdnZseTFoRFJ6N0JNVDY3b09NbmtYQl9zZFBSdUxVSElURXBLNHVIWUNudTNZcENidHpZWVV3aDVvSW41MjdEQ1ppcExtYzFYazVzeGdoc0VBRGluRHU1SW1VNFhFNFIxR1QtNlFTdXRKQXRoZ9IB1gFBVV95cUxOM1hBb3Z2c1YtWk5TdllPeHNfX0lsRENWV0ZjdHo4MXpfTmVwM1pTZDZpWEFPc1JuT2JaVDluNUd4M1ZIYXRFRW42bkpJSGhrLUtFRnBQdV9tY1QycFd0dnV1ZlNZLS05N0dFY3R0VVhZbHpJdjhRbGR3ZHVWZjE1NkxvWVc1ZWYzckdERU5POUx5bHhySU9JdmVJZlZrUGl2OXFRc1I4S1J3dUdOUDkxa3Q4a0owak9meFJybzBQR095WmpKaDlzQzBPU2UtOVA1WlpMTGF3?oc=5",
-   "published": "2026-10-12T11:40:01Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Diana Bolocco rinde homenaje a Gabriel Prieto en Fiebre de Canto y revela desconocido vínculo",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Chilevisión"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPemk4T1o4eVBreG5vNW51Z3JHdUxwaENoeUYxdVEwMHcxMDJWS2x1NnduUEtJdDkyUzJxWjkxVGxPMTZlZkhXRXpNdzRETm0yMUxtd0w1aTVzYWhZVTRoWjJlRDZ4TEtsTGt5V2Vzc3FPV29jMW04eW1VUkVqS1I4N2VUT0VFNkZqS3FNTUYyREdudzltbUV0bGdVazhDWm50QnVKV05YU0RTNDNMbDZxTWtFQmJrZDEydlZlSDFfcWJQSVFZM2U2OVFR?oc=5",
-   "published": "2026-10-12T11:35:54Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "deportes",
-   "title": "La Roja Femenina aplastó a Bolivia en amistoso",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "NOSTÁLGICA cl",
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5oeTdNaUVORFJlVUY1SnU4dzVCbkVEVlh1REZuX2hNNDFlYkhRekpmUjRib1QzRDMzSnZqT2xBWi1rSHpGU3FIdTVCNS1Pa1FCbXNMXy14NW5GcGs0NldLT3dUQlJVeldjSi1HSEd0UzF4aWpSOEl1X29ObkI3dw?oc=5",
-   "published": "2026-10-12T11:33:22Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Jordi Castell enfrenta dolorosa e íntima muerte de “valiosa” integrante de su familia",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Cuarta"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdWdLMjNqbzBOMDZtQVY1NVNVclh4eWptRVVCbTg5OThTcWprT2NLSHNXdXFOdXVMR3JVbFFJeGEzYlNlMDBjRlJjNGdWb20yeVBHRUxoTnZPQkhwY3REeWFERzJwLVZjdnpWM1ByVEtSNUF2b0pzWUctWEpmdm9CaVNXWk5WWmllTlhZdEd1bkYtTWRlUUNyUGZnRHVHSGVUX1drdnRhdXJiNHQxOUxTUU94aXA2SmV1VE1WclBMcTJadE9RdEwtOHJB0gHrAUFVX3lxTE1BX0ZaRzZtVHZua2hrSnh0OUlpUXcwWWhRVmRjS2t0MU5ILVZyMGh4cHJSQ2xqeTNGOHd6cVRuNmRwdUlsbVotVmhLYnZpcXB6SFpMN2tXTnZGUkRETENsZjFzZFItVVBRNWExUWlMSDRDYl9ubEk3NjNaVEN6YXhCRmpCX1hEOTBNcHg3YklscVZNb08yb1RWUmY0NFNGaTdEVWR1RVItQ1pfYUt4aFYyU0p6Tk1wSXlXOUFTNl9XM1hVRTJWaU5adDhCMk4wT3NYbWJETVBpRDUyNjU4el8wRUw0V2pyRkJpUHM?oc=5",
-   "published": "2026-10-12T10:45:50Z",
-   "first_seen": "2026-10-12T20:14:35Z"
-  },
-  {
-   "category": "economia",
-   "title": "Aurus Joyería y el creciente negocio de la venta de lingotes de oro en Chile",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSTI5ZEJ3dGM2WlRPNlFYMmU0XzN6cEhQTHpDWWl6UDRDY1BpcGNVdWVXOU5nUExPTUI3WVpJWGpiOVV3MVJBUWl0NlNnek9ILVhOcU9wZ0Z5V05ObVA5emEyRDhrOVB1WlhDZFEwcTRMaW9vY3lXZFctQWRpbTYxaDhlcHB4R29ybEVZWXhIVzJwY3NoSDMwRFd2cU43T1NRcUZfVUo5aEpuek1VV0ptSkhfUW1sOXo50gHaAUFVX3lxTE1YcWh3ZlB5QXhfSm1QNDJ0Yk1zeUdCVW5tNDRac0dHZDhoTE9YbHVDQmhCNXp3WVU0czdNNG80VjlUcFFNSS0yeU5HWTk5N0pNZ2cwUS1mVG9pNFpNZ1NoOVFNaVpiMkN3amVXNFhQR25DVVZtYnJVek5hS0VhTDlZSnhJRGU3SjhNdTE2RzhtZVAtR1VKT2E4cnp1ZDZuVXVscU5tM0p1LTJ2UnpKTEN4TmNYZWRMRWlPNVRxZHRtMm1DRTd5WjBjcEJfSkw5MjQzS2Q5a3ctc0JR?oc=5",
-   "published": "2026-10-12T10:43:07Z",
-   "first_seen": "2026-10-12T20:14:35Z"
   }
  ]
 }
