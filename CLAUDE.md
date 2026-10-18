@@ -59,3 +59,6 @@ Variables de entorno: `GNEWS_API_KEY` (secret), `SITE_URL` y `GSC_VERIFICATION` 
 - En `usuario.github.io/repo/` el `robots.txt` no aplica (solo vale en la raíz del dominio). Recomendado: dominio propio + variable `SITE_URL`.
 - Google Search Console (lo hace el propietario): propiedad por prefijo de URL, verificar con etiqueta HTML vía `GSC_VERIFICATION`, enviar `sitemap.xml`, inspeccionar e indexar la portada.
 - Ideas no implementadas: páginas de archivo por día, resúmenes con IA, feed RSS propio.
+
+## Marco legal-tecnológico
+Leer `docs/ASESOR_LEGAL_TECNOLOGICO.md` en tareas con implicaciones legales, datos, IA, derechos de contenido, seguridad, proveedores, contratos o continuidad. Aplicar solo los controles pertinentes y distinguir requisitos jurídicos verificados de buenas prácticas; registrar evidencia, jurisdicción, riesgo y validación pendiente. Coordinar con `AGENTS.md`.
