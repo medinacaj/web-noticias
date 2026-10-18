@@ -3,6 +3,8 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlsplit
 
+import subprocess,sys
+subprocess.run([sys.executable,"scripts/dedupe_history.py"],check=True)
 data=json.loads(Path("data/historial.json").read_text(encoding="utf8"))
 assert isinstance(data.get("noticias"),list), "Falta noticias[]"
 seen=set()
