@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # Noticias del Momento
 
 Sitio estático de noticias generales (Chile y el mundo) que se regenera solo cada hora con GitHub Actions y se publica en GitHub Pages. Sin servidor propio, sin Vercel.
