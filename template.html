@@ -92,7 +92,7 @@
   .site-nav a{display:flex;align-items:center;min-height:52px;padding:0 12px;white-space:nowrap;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--on-navy-soft);border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
   .site-nav a:hover,.site-nav a:focus-visible{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.07);}
   .site-nav a.is-active{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.10);}
-  .js .site-nav{cursor:grab;touch-action:pan-x;user-select:none;position:relative;}
+  .js .site-nav{cursor:grab;touch-action:pan-x;user-select:none;position:relative;scroll-behavior:auto;}
   .js .site-nav.is-dragging{cursor:grabbing;scroll-behavior:auto;}
   .site-nav[data-paused="true"]{box-shadow:inset 0 -2px 0 rgba(255,255,255,.2);}
   .site-nav[data-paused="true"]::after{content:"EN PAUSA";pointer-events:none;position:sticky;right:0;float:right;margin-top:-39px;padding:3px 7px;border-radius:3px;background:var(--navy);color:var(--on-navy-soft);font:600 10px/1.4 var(--sans);letter-spacing:.08em;}
@@ -423,16 +423,29 @@
     var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
     var paused = !!(reduced && reduced.matches), dragging = false, moved = false;
     var pressX = 0, startScroll = 0, pointerId = null, lastManual = 0;
-    var hovered = false, focused = false;
-    function canMove() { return strip.scrollWidth > strip.clientWidth + 6 && window.innerWidth > 767; }
+    var focused = false, cycleWidth = 0, lastFrame = 0;
+    var track = strip.querySelector("ul");
+    if (track) {
+      cycleWidth = track.scrollWidth;
+      if (cycleWidth > strip.clientWidth + 6) {
+        Array.prototype.slice.call(track.children).forEach(function (item) {
+          var clone = item.cloneNode(true);
+          clone.setAttribute("aria-hidden", "true");
+          clone.querySelectorAll("a,button,[tabindex]").forEach(function (el) {
+            el.setAttribute("tabindex", "-1");
+            el.setAttribute("aria-hidden", "true");
+          });
+          track.appendChild(clone);
+        });
+      }
+    }
+    function canMove() { return cycleWidth > strip.clientWidth + 6 && window.innerWidth > 767; }
     function updatePause() {
       strip.dataset.paused = String(paused);
       strip.setAttribute("aria-label", paused
         ? "Carrusel de secciones en pausa; pulsa para reanudar, o arrastra"
         : "Carrusel de secciones en movimiento; pulsa para pausar, o arrastra");
     }
-    strip.addEventListener("pointerenter", function () {hovered = true;});
-    strip.addEventListener("pointerleave", function () {hovered = false;});
     strip.addEventListener("focusin", function () {focused = true;});
     strip.addEventListener("focusout", function (event) {
       if (!strip.contains(event.relatedTarget)) focused = false;
@@ -487,16 +500,18 @@
       if (event.matches) paused = true;
       updatePause();
     });
-    window.setInterval(function () {
-      if (paused || hovered || focused || dragging || d.hidden || !canMove() ||
-          Date.now() - lastManual < 3500 || (reduced && reduced.matches)) return;
-      var max = strip.scrollWidth - strip.clientWidth;
-      if (strip.scrollLeft >= max - 3) {
-        strip.scrollTo({left:0,behavior:"instant"});
-      } else {
-        strip.scrollBy({left:90,behavior:"smooth"});
+    // Movimiento continuo: velocidad constante sin pausas entre pasos.
+    function animate(timestamp) {
+      var elapsed = lastFrame ? Math.min(timestamp - lastFrame, 60) : 0;
+      lastFrame = timestamp;
+      if (!paused && !focused && !dragging && !d.hidden && canMove() &&
+          Date.now() - lastManual >= 900 && !(reduced && reduced.matches)) {
+        strip.scrollLeft += elapsed * 0.055;
+        if (strip.scrollLeft >= cycleWidth) strip.scrollLeft -= cycleWidth;
       }
-    }, 2600);
+      window.requestAnimationFrame(animate);
+    }
+    window.requestAnimationFrame(animate);
     updatePause();
   })();
 
