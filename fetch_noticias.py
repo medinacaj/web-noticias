@@ -179,6 +179,35 @@ def safe_image(url):
     return url if url.startswith("https://") else ""  # evita contenido mixto http
 
 
+def source_domain(source_url, article_url=""):
+    """Dominio editorial seguro; nunca atribuir noticias al agregador Google."""
+    for value in (source_url, article_url):
+        parsed = urllib.parse.urlsplit((value or "").strip())
+        host = (parsed.hostname or "").lower().rstrip(".")
+        if (parsed.scheme == "https" and host and "." in host
+                and not parsed.username and not parsed.password
+                and not is_google_link(value)
+                and re.fullmatch(r"[a-z0-9.-]+", host)):
+            return host
+    return ""
+
+
+def source_mark(story):
+    """Logo del medio, con monograma visible cuando falta o falla la imagen."""
+    sources = story.get("sources") or ["Fuente"]
+    initial = next((ch.upper() for ch in sources[0] if ch.isalnum()), "N")
+    domain = source_domain(story.get("source_url"), story.get("link"))
+    image = ""
+    if domain:
+        url = "https://www.google.com/s2/favicons?" + urllib.parse.urlencode(
+            {"domain": domain, "sz": "64"})
+        image = (f'<img src="{esc(url)}" alt="" width="18" height="18" '
+                 f'loading="lazy" decoding="async" referrerpolicy="no-referrer" '
+                 f'onerror="this.hidden=true">')
+    return (f'<span class="source-mark" aria-hidden="true">'
+            f'<span class="source-initial">{esc(initial)}</span>{image}</span>')
+
+
 def rss_image(node):
     for tag in (MEDIA_NS + "content", MEDIA_NS + "thumbnail"):
         element = node.find(tag)
@@ -209,6 +238,7 @@ def fetch_rss(url, category, default_source=None):
             "category": category,
             "title": title,
             "source": source or "Fuente",
+            "source_url": (source_node.get("url") or "").strip() if source_node is not None else (url if default_source else ""),
             "link": (node.findtext("link") or "").strip(),
             "published": to_iso(published) if published else None,
             "summary": clean_summary(title, node.findtext("description")),
@@ -228,6 +258,7 @@ def fetch_gnews(cat):
             "category": cat["key"],
             "title": title,
             "source": (article.get("source") or {}).get("name") or "GNews",
+            "source_url": (article.get("source") or {}).get("url") or "",
             "link": (article.get("url") or "").strip(),
             "published": to_iso(published) if published else None,
             "summary": clean_summary(title, article.get("description")),
@@ -313,6 +344,9 @@ def merge(stories, items, now):
                 match["link"] = link  # preferir el enlace directo al medio
             if not match.get("summary") and item.get("summary"):
                 match["summary"] = item["summary"]
+            if (not source_domain(match.get("source_url"), match.get("link"))
+                    and source_domain(item.get("source_url"), link)):
+                match["source_url"] = item.get("source_url") or link
             if not match.get("image") and item.get("image"):
                 match["image"] = safe_image(item["image"])
             if published and (not match.get("published") or published < match["published"]):
@@ -323,6 +357,7 @@ def merge(stories, items, now):
                 "title": title,
                 "summary": item.get("summary") or "",
                 "image": safe_image(item.get("image")),
+                "source_url": item.get("source_url") or (link if not is_google_link(link) else ""),
                 "sources": [s for s in incoming_sources if s],
                 "link": link,
                 "published": published,
@@ -435,7 +470,7 @@ def meta_html(story, now, read_link=False):
     moment = story_time(story) or now
     read = (f'<a class="read" href="{esc(story["link"])}" target="_blank" rel="noopener">Ver noticia completa</a>'
             if read_link else "")
-    return (f'<p class="meta"><span class="src">{esc(label)}</span>'
+    return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
             f'<time datetime="{to_iso(moment)}">{time_ago(story, now)}</time>{read}</p>')
 
 
