@@ -80,7 +80,7 @@ class AdsenseIntegrationTests(unittest.TestCase):
         cfg = configured_adsense({**self.env, "ADSENSE_READY": ""}, OWNED_SITE)
         self.assertFalse(cfg["enabled"])
         self.assertEqual(cfg["code"], "")
-        self.assertEqual(cfg["ads_txt"], "google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0\\n")
+        self.assertEqual(cfg["ads_txt"], "google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0\n")
         enabled = configured_adsense(self.env, OWNED_SITE)
         self.assertTrue(enabled["enabled"])
         self.assertEqual(enabled["code"].count("adsbygoogle.js"), 1)
@@ -96,7 +96,7 @@ class AdsenseIntegrationTests(unittest.TestCase):
             self.assertIn("adsbygoogle.js?client=" + PUB, home)
             self.assertIn('href="' + PRIVACY + '"', home)
             self.assertEqual((Path(directory) / "ads.txt").read_text(encoding="utf-8"),
-                             "google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0\\n")
+                             "google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0\n")
             self.assertEqual(home.count("adsbygoogle.js"), 1)
 
     def test_domain_must_be_root_without_query_or_credentials(self):
