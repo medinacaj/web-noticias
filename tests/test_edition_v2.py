@@ -32,7 +32,7 @@ class EditionV2Tests(unittest.TestCase):
                 self.assertIn("search?q=", url)
 
     def test_new_category_feeds_work_without_gnews_api(self):
-        xml = b"<rss><channel><item><title>Política informativa del congreso</title><link>https://news.google.com/rss/articles/abc</link><source url='https://medio.example'>Medio</source></item></channel></rss>"
+        xml = "<rss><channel><item><title>Política informativa del congreso</title><link>https://news.google.com/rss/articles/abc</link><source url='https://medio.example'>Medio</source></item></channel></rss>".encode("utf-8")
         with patch.object(news, "http_get", return_value=xml):
             found = news.fetch_rss(news.category_google_url(
                 next(c for c in news.CATEGORIES if c["key"] == "politica")), "politica")
