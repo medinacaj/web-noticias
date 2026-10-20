@@ -308,12 +308,24 @@ def collect(now):
                 MAX_NEWS_PER_WORLD_SOURCE, world_news_google_url,
                 matches_world_source)
             for media in WORLD_NEWS_SOURCES:
+                if not media.get("enabled", True):
+                    continue
                 try:
                     results = fetch_rss(world_news_google_url(media), key)
-                    verified = [item for item in results
-                                if matches_world_source(item, media)
+                    recent_cutoff = now - timedelta(hours=24)
+                    future_tolerance = now + timedelta(minutes=15)
+                    verified = []
+                    for item in results:
+                        published = parse_date(item.get("published"))
+                        if (matches_world_source(item, media)
                                 and item.get("title") and item.get("link")
-                                and item.get("published")]
+                                and published is not None
+                                and recent_cutoff <= published <= future_tolerance):
+                            # Google Noticias ofrece titulares y enlaces; nunca
+                            # presuponer derechos comerciales sobre fotos/resúmenes.
+                            item["image"] = ""
+                            item["summary"] = ""
+                            verified.append(item)
                     got = verified[:MAX_NEWS_PER_WORLD_SOURCE]
                     items += got
                     count += len(got)
@@ -424,7 +436,15 @@ def merge(stories, items, now):
         published = to_iso(published) if published else None
         # Un medio puede cambiar el título conservando la misma URL: no
         # publicar una segunda ficha para el mismo artículo.
-        match = (next((s for s in stories if s.get("link") == link), None)
+        # La validación del historial equipara enlaces del mismo host y ruta
+        # aunque cambien parámetros de tracking; usar la misma clave aquí.
+        from scripts.dedupe_history import canonical_key
+        try:
+            item_key = canonical_key(link)
+        except ValueError:
+            continue
+        match = (next((s for s in stories
+                       if canonical_key(s.get("link", "")) == item_key), None)
                  or next((s for s in stories if is_similar(norm, s["_norm"])), None))
         if match:
             coverages = coverage_items(match)
