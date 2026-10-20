@@ -1,5 +1,5 @@
 # Protocolo multi-IA: GitHub + ChatGPT/Codex + Claude
-Versión: 2026-10-19. **Alcance:** colaboración por tareas, sin orquestación automática ni gasto periódico de tokens.
+Versión: 2026-10-20. **Alcance:** colaboración por tareas, fusión asistida de cambios rutinarios tras controles; sin ejecución desatendida ni gasto periódico de tokens.
 
 ## Fuente de verdad y contexto mínimo
 1. Identificar repositorio, rama predeterminada real, Issue y SHA actual; no asumir que se llama `main`.
@@ -11,17 +11,25 @@ Versión: 2026-10-19. **Alcance:** colaboración por tareas, sin orquestación a
 - **ChatGPT/Codex — implementador:** una tarea delimitada, rama específica, cambios mínimos, pruebas y PR.
 - **GitHub Actions — validación:** tests/lint/build ya disponibles, asociados al SHA preciso. Un workflow en verde no sustituye la revisión de seguridad.
 - **Claude — revisor independiente cuando el riesgo lo justifica:** revisar diff, resultados de CI y unas pocas dependencias relevantes; priorizar defectos reales en vez de otra auditoría general.
-- **Responsable humano:** decide prioridades, permisos, despliegues y fusión, conforme a políticas del proyecto.
+- **ChatGPT/Codex — integrador de bajo riesgo:** puede fusionar PR rutinarios de sus tareas tras verificar los controles de «Fusión asistida».
+- **Responsable humano:** decide prioridades, permisos, despliegues sensibles y fusiones que exijan revisión; puede suspender esta autorización en cualquier momento.
 Si el cambio es documental, pequeño y verificable, no es obligatoria una segunda IA.
 
 ## Flujo operativo
 1. Crear/seleccionar Issue con objetivo, alcance, pruebas esperadas y criterio de aceptación.
-2. Crear rama nueva desde la rama predeterminada actual; no editarla directamente ni fusionar automáticamente.
+2. Crear rama nueva desde la rama predeterminada actual; no editarla directamente. La fusión solo se permite tras completar los controles de la sección «Fusión asistida».
 3. Implementar cambios, ejecutar pruebas pertinentes cuando haya entorno y registrar resultados reales.
 4. Abrir PR con resumen, archivos, SHA, pruebas (comando + resultado), riesgos y tareas abiertas.
 5. Si es cambio crítico/arriesgado, pasar el **PR y SHA** a Claude para revisar únicamente el diff y hallazgos abiertos. Registrar observaciones P0–P3 con `archivo:línea`, evidencia y corrección; no reclamar revisión de archivos no examinados.
 6. Resolver hallazgos demostrables y verificar solamente los cambios nuevos y pruebas afectadas. Repetir auditoría amplia solo si cambió arquitectura o superficie de riesgo.
-7. Confirmar CI del último SHA; dejar PR para revisión/fusión humana y actualizar el Issue.
+7. Confirmar CI del último SHA. En PR rutinarios, aplicar los controles de fusión asistida y, si se cumplen, fusionar con el SHA esperado; en los demás casos, solicitar revisión humana. Actualizar el Issue y verificar la integración.
+
+## Fusión asistida de PR rutinarios (autorización general del responsable, 2026-10-20)
+- **Alcance:** mejoras visuales y de accesibilidad, correcciones menores, pruebas y documentación ordinaria de bajo riesgo. Mantener Issue, rama y PR trazables.
+- **Controles obligatorios:** inspeccionar el diff y su alcance; identificar el SHA exacto de cabecera; exigir que las comprobaciones requeridas de GitHub Actions del SHA final estén aprobadas; comprobar ausencia de conflictos y de revisiones bloqueantes, hallazgos P0/P1 o incumplimiento de reglas de rama. Fusionar solo mediante GitHub usando `expected_head_sha`. Si cambia el SHA, revalidar.
+- **Exclusiones:** no fusionar de forma asistida cambios de workflows/Actions, configuración del repositorio, protecciones y permisos, secretos, dependencias críticas, seguridad, privacidad o datos sensibles, despliegues/dominios, acciones destructivas, lógica editorial con riesgo sobre fuentes/licencias ni decisiones difíciles de revertir. Tampoco ante CI fallida, ausente o inconclusa, conflictos, objeciones o incertidumbre sustancial: solicitar aprobación específica.
+- **Trazabilidad:** registrar el PR, SHA, pruebas, riesgos y resultado real de la fusión. Verificar el despliegue cuando corresponda. Respetar todas las protecciones de GitHub; nunca forzar su omisión.
+- **Límite técnico:** la opción nativa `allow_auto_merge` puede estar desactivada. Esta autorización permite fusionar durante una conversación activa tras CI; no crea vigilancia autónoma, ni ejecución permanente, ni evita autorizaciones que requieran GitHub o la plataforma.
 
 ## Traspaso entre agentes (idealmente < 200 palabras)
 - Repositorio / rama base / Issue / PR / SHA:
