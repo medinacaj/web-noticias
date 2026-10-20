@@ -41,7 +41,7 @@ class ContrastThemeTests(unittest.TestCase):
 
     def test_categories_favicons_and_layout_not_replaced(self):
         for key in (".lead", ".feature", ".compact-list li", ".rail-list li",
-                    ".source-mark", ".media-badge", ".top-grid", "%%NAV%%"):
+                    ".source-mark", ".media--source", ".top-grid", "%%NAV%%"):
             self.assertIn(key, self.css)
 
     def test_system_dark_mode_cannot_override_smoke_background(self):

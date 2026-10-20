@@ -541,7 +541,7 @@ def figure_html(story, eager=False):
     loading = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
     return (f'<figure class="media"><img src="{esc(image)}" alt="" width="1200" height="675" '
             f'{loading} decoding="async" referrerpolicy="no-referrer">'
-            f'<span class="media-badge" aria-hidden="true">{source_mark(story)}</span></figure>')
+            f'</figure>')
 
 
 def meta_html(story, now, read_link=False):
