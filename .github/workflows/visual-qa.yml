@@ -1,0 +1,33 @@
+name: QA visual responsive
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  visual-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias de render y navegador
+        run: |
+          python3 -m pip install --disable-pip-version-check gnews-decoder==0.1.1 playwright==1.56.0
+          python3 -m playwright install --with-deps chromium
+      - name: Generar HTML a partir del historial (sin consultar fuentes)
+        run: python3 fetch_noticias.py --solo-render
+      - name: Auditar calidad editorial
+        run: python3 scripts/audit_editorial_quality.py
+      - name: Capturar 5 anchos y comprobar desbordes
+        run: python3 scripts/visual_qa.py
+      - name: Adjuntar capturas para revision
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-qa-screenshots
+          path: artifacts/visual-qa/*.png
+          if-no-files-found: warn
