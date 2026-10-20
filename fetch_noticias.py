@@ -325,6 +325,7 @@ def collect(now):
                             # presuponer derechos comerciales sobre fotos/resúmenes.
                             item["image"] = ""
                             item["summary"] = ""
+                            item["image_fetch_disabled"] = True
                             verified.append(item)
                     got = verified[:MAX_NEWS_PER_WORLD_SOURCE]
                     items += got
@@ -424,6 +425,7 @@ def coverage_control(story):
 def merge(stories, items, now):
     """Agrega noticias nuevas; si un titular ya existe (aunque venga de otro medio),
     suma la fuente a la noticia existente en vez de duplicarla."""
+    from scripts.dedupe_history import canonical_key
     added = 0
     for item in items:
         title = (item.get("title") or "").strip()
@@ -438,7 +440,6 @@ def merge(stories, items, now):
         # publicar una segunda ficha para el mismo artículo.
         # La validación del historial equipara enlaces del mismo host y ruta
         # aunque cambien parámetros de tracking; usar la misma clave aquí.
-        from scripts.dedupe_history import canonical_key
         try:
             item_key = canonical_key(link)
         except ValueError:
@@ -472,6 +473,7 @@ def merge(stories, items, now):
                 "title": title,
                 "summary": item.get("summary") or "",
                 "image": safe_image(item.get("image")),
+                "image_fetch_disabled": bool(item.get("image_fetch_disabled")),
                 "source_url": item.get("source_url") or (link if not is_google_link(link) else ""),
                 "sources": [s for s in incoming_sources if s],
                 "coverages": [coverage_entry(item)] if coverage_entry(item) else [],
