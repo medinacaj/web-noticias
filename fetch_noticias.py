@@ -561,18 +561,23 @@ def render_sections(by_category, now):
                         f'<div class="news-body"><h3 class="feature-title">{title_link(feature)}</h3>'
                         f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
         compact = "".join(
-            f'<li><article class="compact">{figure_html(s)}'
+            f'<li{" hidden" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
             f'<div class="news-body"><h3>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
-            for s in rest)
+            for i, s in enumerate(rest))
         grid_class = "section-grid" if compact else "section-grid section-grid--single"
         compact_html = f'<ul class="compact-list">{compact}</ul>' if compact else ""
         count = len(stories)
+        more = (f'<button type="button" class="show-more" data-show-more '
+                f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
+                f'Ver más noticias <span aria-hidden="true">↓</span></button>'
+                if count > 6 else "")
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(cat["label"])}</h2>'
             f'<span class="section-count">{count} {"noticia" if count == 1 else "noticias"}</span></div>'
-            f'<div class="{grid_class}">{feature_html}{compact_html}</div></section>'
+            f'<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
+            f'{more}</section>'
         )
     return "\n".join(blocks)
 
