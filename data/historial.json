@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T05:10:13Z",
+ "actualizado": "2026-10-20T05:25:00Z",
  "noticias": [
   {
    "category": "nacional",
@@ -29,6 +29,20 @@
    "first_seen": "2026-10-20T03:49:35Z"
   },
   {
+   "category": "politica",
+   "title": "El castigo a Pedro Araya que complicaría los planes del PS para presidir el Senado",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989512-pedro-araya.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/20/el-castigo-a-pedro-araya-que-complicaria-los-planes-del-ps-para-presidir-el-senado.shtml",
+   "published": "2026-10-20T03:17:51Z",
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
+  },
+  {
    "category": "internacional",
    "title": "Los opositores a Putin deportados por Occidente a los que ahora Rusia envía a la guerra",
    "summary": "Durante el último año ha aumentado notablemente el número de activistas antigubernamentales deportados a Rusia desde la Unión Europea y EE.UU., donde habían buscado refugio.",
@@ -40,6 +54,33 @@
    "link": "https://www.bbc.com/mundo/articles/ckzd604n0gdyo?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-20T03:16:50Z",
    "first_seen": "2026-10-20T03:30:06Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Alerta por lluvias en Chile: hasta 40 mm este martes 20 de octubre en cinco regiones",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQOGd4RjVQZG5Ca3lzYU04eWRGdjVoblN0UGVSYktPUUV3bDdKVFAwbHBMNF9fbGhCUG00QmJJYkd1SHM2NmNleVdLR2NHMDEyelZ4UUxBcm91ZHlfaU1NN1llUHloUWFSc3pjQjltckJQUGwwcWZZd01KUGF6N3VXdWc4a3hjd1VHR2FRekFfVU45Xy1Bb19FNXR2ZklaMUFfV0xKanJHYmRzU1lDMWlHNkNiMVRFMlNFM1hmMTdxcTBQZ2JkenBacXBNS1I0QkZiX2xTNzNB?oc=5",
+   "published": "2026-10-20T03:11:05Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "nacional",
+   "title": "La multimillonaria vivienda que habita Parived con su mamá, pero que tiene demandada a Tonka Tomicic",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989549-departamento-tonka-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/20/la-multimillonaria-vivienda-que-habita-parived-con-si-madre-pero-que-tiene-demandada-a-tonka-tomicic.shtml",
+   "published": "2026-10-20T03:01:08Z",
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
@@ -54,6 +95,32 @@
    "published": "2026-10-20T02:59:04Z",
    "first_seen": "2026-10-20T05:10:13Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "regiones",
+   "title": "PDI INVESTIGA ATAQUE INCENDIARIO CONTRA PARQUE EÓLICO EN ANGOL",
+   "summary": "",
+   "image": "",
+   "source_url": "https://araucanianoticias.cl",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQWExa1ZfN2Q2bVFmUmZxR2FVc3gyY1ppUlZTQ0V3SkoxZ3laeFA1ZzZVOXFEWjdkeEt3cW10NDVQZmYwd0Q3MWhURmpKdXRKcE9vWjdlWmxnTnRiSjdEOG5leExaYnl4cWJoYk1ma25BVjdRa3RWSmVVaTZsTXVzUzVxT05yZmJCVm9PTkJrYjVCRDNzc3BGRjFTUG1uSTZCWnRLUXpuTkd0V0E?oc=5",
+   "published": "2026-10-20T02:31:43Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "politica",
+   "title": "BCN lanzó libro sobre exdiputado Venancio Coñuepan Huenchual",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.bcn.cl",
+   "sources": [
+    "BCN"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPY3ZGbVkyclpZbWg0TjhNSS0wcG9MbkZzTHRJWjlrUDRFUnhZT0cwanhVSmFueXd5dGY5TFMtbGk0aWhmLWk1VmIwQk03dDlVcFdCSC1vcEk3UTlLRzRBc2VUX1RQYmtNZXBPMXlrWURJdVJTRVlyaERDTlJmaGVUZTNHeFB5dGgxSkd6WEpRM0JRRVBmclFaVmo1T0JOU3duNGg5QmFJTnd6MUpfNFdfcmhjOHI5SzFuR3h0OTZsc0tpS0ZwVmlIMXdrXzRZMjd5Nk95ZHR0NFlucDg?oc=5",
+   "published": "2026-10-20T02:02:02Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "tecnologia",
@@ -97,6 +164,45 @@
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
   },
   {
+   "category": "regiones",
+   "title": "Suspendido Colo Colo – Puerto Montt y en duda U.de Chile – Antofagasta",
+   "summary": "",
+   "image": "",
+   "source_url": "https://es-us.noticias.yahoo.com",
+   "sources": [
+    "Yahoo"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaXVITXFRbkNxaDFDLUp5QnF4U2NYR25fSWJ2MjBBcjIxR3hQQTRsN3hlR292VlJibGdLVk5ScDRwaVNNUmdvOEh4MndxWmJISXotSWhncHBYVlJ5bUpYaDhpQ2JHYTUwVHJrSGxQUWt1WHB0ZFNtOEdIdnM5MDV4dzhpVEhIT0J6ZUVqSGFDUElwd19P?oc=5",
+   "published": "2026-10-20T01:32:00Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "regiones",
+   "title": "LA ARAUCANÍA AFINA SU OFERTA REGIONAL PARA ATRAER INVERSIÓN EXTRANJERA EN EL EVENTO INTERNACIONAL CHOOSE CHILE",
+   "summary": "",
+   "image": "",
+   "source_url": "https://araucanianoticias.cl",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdFRKM1pmTVNFTXYxSkRrZUpDZHRwZnhrU1Y1YS1Ic3ZZdkpFbUt2UGVnWFFtTzN3REFkMGR2bzItV0lTUXNFdVl1YzljcnZvaDNGazVXcGVRN25SSmdRV3ZoekpoWG1ZU3puRkRNWW5kcjJJbTFQbHY1UmI5OU1zMmlLOUR2b09LLWt5bEs3bFkxelozUV9DOFdyMmEyQ3FueVIxbGVlSjBBYWc1M1dZb1MtVDBoRnpkR0ROV1dWQUNiTmktYWw4Y29tSUh0cFAtUmxrdV9ibVJDY1RtMGlvMTkzdzdvSUY2TnBF?oc=5",
+   "published": "2026-10-20T01:21:21Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "politica",
+   "title": "Chile se prepara para nuevo temporal y posibles inundaciones",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMUhSSnBnSG85TVk1VUFfMXptTjlucXNWM2VmS3U5Q0QtQ1psUFM4NzdrZ1dqTnpNckxrYnU1Q21RejNVSjhxRm5qZThyaHNmaXNDMU52MEV5NFJaR00zWGFldUhOdGtMWThEaG5lTnJjMmY2RnlONEJOYXdqdjQ4WlByNFVzZ3Rka0puVnBfeEhYWVhZbExKZNIBmAFBVV95cUxOYkdVTzhWTWNUUWg1QlFvOUQwZ0wxaTFvREhwVUlXU0psRjNtdS1ldzBERi0xbGJmWGUzWGhXdzR1QVh3dGcxVk80S0N5TmdCUkd3WEI2ZVZYTGdMVUc5Ql82ZXVBWVNRdWdJbVVUTmRETHlTek5qTGxaS2p3YUFaTWNyempaRWQ3bG5QRjB5Z0pDTWVleUVhdQ?oc=5",
+   "published": "2026-10-20T01:15:04Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "cultura",
    "title": "Tortu le dirá algo a Javiera que podría cambiar el rumbo del juicio de custodia en el capítulo 209 de RDS",
    "summary": "",
@@ -122,6 +228,19 @@
    "published": "2026-10-20T01:00:16Z",
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Deuda Histórica: 423 docentes de La Araucanía recibirán la primera cuota del beneficio",
+   "summary": "",
+   "image": "",
+   "source_url": "https://alertanoticiastemuco.cl",
+   "sources": [
+    "Alerta Noticias Temuco.cl"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOFFFbVFwOUxLRE1NaG51SVRTSzZmdTdwSUowQ2tYd1I5YWlJX0tmMjNTTnZjdEoxdTFLVFBiQmhxSW1DcTVPR2dHbWRDeXppdjRVS3hOc18xMTJ5OWtZS3doM0JFNnludWpJeEpHMHNvak9nYUZWcl9KZkstZmo4QmVIZk9DYjZjdkJielN3?oc=5",
+   "published": "2026-10-20T00:35:44Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "deportes",
@@ -194,6 +313,45 @@
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
   },
   {
+   "category": "politica",
+   "title": "Diputado Fabián Ossandón hace llamado al Gobierno a conectarse con el “Chile real” y exige garantías por Ley Ricarte Soto tras recorte presupuestario",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.desiertofm.cl",
+   "sources": [
+    "Desierto FM"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPZFRhMExMNEJGYUVCeUZuZzMwUEZjQVRmVHZXc18ybDAtX3FlWnY2eVJQNS03R2xsVU1jMHdoVmwta2pZY1JIZ2NuZ19aRUpjOUR6YWNJMkRfWUlvZlJVWHNhR0RMa1g5bEdiQzVTM19sWi16TjFCczRhdFI4OVYybHlLazNrU3Z2cTJpREVmTUhiMjZ5dGxmamFmQzYxa3BCcjQ2dGs0a3Q4bndfVWd6ckF0eFhZSjR6bUlKeDN0WnpmckE1ZHdKX1pUZkRRMzFEcVFkaWhBYVNtRzlNYUlBMEZELVkxLVBZZFY4anBJT1hTSTFNSm5oaVJsYUVRNW5fbFJPOA?oc=5",
+   "published": "2026-10-19T22:29:42Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "politica",
+   "title": "Gobierno lanza campaña Casen 2026: ministra Wulf asegura que existe un “compromiso total” con la encuesta",
+   "summary": "",
+   "image": "",
+   "source_url": "https://radio.uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPTGFGOGhGR3lIb1pKMHJpMDA2dHo3Z2dMX1pYdGxCTDRPc2lNOVhIYVM2d1p6czY3TE1QVmNBNElqUnFKMzFpQUV0VGNoRzJwb0FaTmlidGQ1U2wtSDdpRnpEME92eFZWbzg3MW5ucjhUT0F6Mk1laDU3LURreGV0SzU5N3g4VHgwTzdUM2JkT011XzFVQ2pyUlk2X3dlOV81X2pzeTdSX19wcTVnM0ZtME9wY2lZd3kzdS04ZnM2X3NESEFUeWhRWFRDQ1VQdkZpdEV6VA?oc=5",
+   "published": "2026-10-19T22:21:16Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "regiones",
+   "title": "INDAP Biobío concentra la atención de mujeres rurales a nivel nacional con un 53,9%",
+   "summary": "",
+   "image": "",
+   "source_url": "https://g5noticias.cl",
+   "sources": [
+    "G5noticias"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdGZBQ29tc3NQc1BsemUxT0lvVVdXcXk1QllDaW5rVFJXNGdGdUlpcGZ2MWNNZ1lWWWhiLWxfTEQ1eV9tWGRyTFRRYXdsdnlublRQNW9Uem9wWlJlZWlrbHBfNi1vUHhlejZKSVVOb1lYTGxjT1JqNTkzbGcxNFFOUlJHa2Jic3FwNEhRUEhtcF9mZnZ3Z0xtT1VJWnVISHJZT2hHTHlWek9ERVp0TTF3YVZna19Edw?oc=5",
+   "published": "2026-10-19T22:12:07Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "nacional",
    "title": "Suspenden clases en 37 comunas de Valparaíso, O’Higgins y Coquimbo para este martes por riesgo de remociones en masa",
    "summary": "",
@@ -262,6 +420,19 @@
    "source_url": "https://www.mega.cl"
   },
   {
+   "category": "regiones",
+   "title": "U. de Chile vs. Antofagasta: Horario, posibles formaciones y dónde ver por TV y streaming la Copa Chile 2026",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.prensafutbol.cl",
+   "sources": [
+    "PrensaFútbol"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9qRHoydXQxa04tOWlIeTFmcG1aQjJoM3UzSDk4MzYySlk2Y1hOaHVTZjZEeEpQaDU5YWx2WXdsM2hoR09ZS1JPWHBLcDdpMFBGTEJXaEtwT1d3anFsMUViRl9RaU9GREhOZ25hR1QzMFNkMHM4bFBrY1Bfaw?oc=5",
+   "published": "2026-10-19T21:05:07Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "nacional",
    "title": "Meteorología no descarta tornados y granizos para el temporal de este martes",
    "summary": "",
@@ -289,6 +460,19 @@
    "source_url": "https://www.t13.cl"
   },
   {
+   "category": "politica",
+   "title": "Gobierno ingresa proyecto para reformar el INDH: elimina la facultad del organismo de presentar querellas",
+   "summary": "",
+   "image": "",
+   "source_url": "https://radio.uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPMUtaQllJamhpeHpIT0VDVnNtdlZQTmsyTVhoSDlZZVFKci01SGtKWTBqN1ZVdzZWbVhJQUhFRE5ORHpCWjl5Mjd3STdUaGxSZXpvX0hJREVQR25ZbW1DVU5uUXZUbmlCOEdrXy1ScVg1YmhVM2hfSDZXRkg2WEJoQzl2RHBtaTMzQS1RN1RrNkt4c3ZsbE04SFBlMDRiRlp2ZHAzdklBMkVUeFRIbDBqWElIYkhoMkQzUXJ5NHVkVWlfQzFRZWo2YWJFejZ4RUZfa0hncnR2Yw?oc=5",
+   "published": "2026-10-19T20:54:56Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "deportes",
    "title": "La insólita multa que tendrá que pagar Cristiano Ronaldo tras conflicto con entrenador de Portugal",
    "summary": "",
@@ -301,6 +485,19 @@
    "published": "2026-10-19T20:53:42Z",
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Hombre en situación de calle agrede con fierro a inspector municipal en pleno centro de Concepción",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxObS1IRkRtWVFZSzRPeDllWjNEZW5MTEF1cjVzUVJyTkFmcWxzc1F4VmZCQkNJSVdJcHhBanJWdEZhQzNSRldYMGRhNS1fS2RoVGpMTnJnbVBvY1diTE8tZHhsQVB4OTQxT3dwU1FxSmZFY01UZ3YyUFBCNmNoUzVpYmhVSnZFYWFJZUUxWDJGa2NuaE03X3h6LWpCbk5nTXVSTmNmdkRuUW5kcnR5a1gzcUVrdDhOcFhIOHNNdG5pQ1dQZjJ5OEJhbFBJTUdMekhURFVxS1JtZXhNZGM0MVl1UktUQ0xDcFFsdGUxcWpSNVNOdWRtSktZQ0FVSTFqVTJHM3RGTy1vbHg5eHc?oc=5",
+   "published": "2026-10-19T20:44:03Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "internacional",
@@ -329,6 +526,19 @@
    "source_url": "https://www.lacuarta.com/espectaculos/noticia/no-lo-dejo-pasar-y-lo-freno-en-seco-alejandro-sepulveda-respondio-a-influencer-que-lo-acuso-de-copion/"
   },
   {
+   "category": "politica",
+   "title": "Gobierno presenta reforma al INDH: le quita facultad de querellarse y baja Consejo de 11 a 5 miembros",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNbzh4cG5WaW9TRXMxMjlaaWpaMHFDZ1NOb1ZwRXVpbUd3YTBzSXBKa3hLR2ZRMmxaaDdmcGZ0T3E0YnFwcDRVb0RyTVBoRkh0QV9SUzdUelJxS0tXR3J2VU9GenFNbFE2aEpac1VsU0IyRjYxUWdWOWFHbEQ5Z1VxYUR5VHI2blBZdTNfbUEyZzN3MVBNZDVOUGtLNFc3QnF1amE3ejFKQkt0TTM2UVNpUFdKVnpCN25MNGRjcDhzbndoMlI4QTU2UG9jb25jUlg5Uzl2OFFhVGRxb1hPQXcySGdOWklKaTBwRGUyMlJTdEdMMkJ4Z2p3SjdYbzM?oc=5",
+   "published": "2026-10-19T20:32:40Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "economia",
    "title": "Resultados Loto sorteo 5492: revisa los números ganadores y el pozo millonario",
    "summary": "",
@@ -341,6 +551,20 @@
    "published": "2026-10-19T20:27:47Z",
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Servicio de Migraciones anuncia revocación de residencias a extranjeros detenidos en incidentes el 18 de octubre",
+   "summary": "",
+   "image": "https://s.t13.cl/sites/default/files/styles/manualcrop_850x475/public/t13/field-imagen/2026-10/1792441441.jpg.jpeg?itok=KGDbvNxa",
+   "source_url": "https://www.t13.cl",
+   "sources": [
+    "Teletrece"
+   ],
+   "link": "https://www.t13.cl/noticia/nacional/revocaran-residencias-extranjeros-detenidos-incidentes-por-18-octubre-19-10-2026",
+   "published": "2026-10-19T20:25:00Z",
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "deportes",
@@ -358,26 +582,29 @@
    "category": "nacional",
    "title": "Las Condes acota perímetro afectado por aluvión y llaman a evacuar ante pronóstico de intensas lluvias",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989195-las-condes-acota-perimetro-afectado-por-aluvion-y-llaman-a-evacuar-ante-pronostico-de-intensas-lluvi.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOTjJuaHY0S0xoT2hLN1RIY3h2Zkdhb0p6blVMYUw4WDA1dFNYZHJGU1RvNi1QQjhyNHdJSDRpMWRtNVByZzAyMWV0aThKVGJaR1FGOXVBRDZpNEEwTEJLZXdJWGtQNVkyYW5SUnc2Wk5VSkJxOHZ5ekF5NEZiSENUclRfMEVETGtuLUpxM2hOeWdYc2RmVXBIUS1TWmhncDVHcWY0ZFo4UnNfSm5ramZVY3dIMkhBNTY1b3pHY0pTdk84dnVZdV80Y2Rfek84STY4M0dCU2d5RGJqWjM1bFMyc2dOa3ltNENLcGZRelJuWUNHQjBCZ3pEckxSOFR0QkpVb3l2cE12MzFpOTRtM2xQNXRDcw?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/las-condes-acota-perimetro-afectado-por-aluvion-y-llaman-a-evacuar-ante-pronostico-de-intensas-lluvias.shtml",
    "published": "2026-10-19T20:19:59Z",
-   "first_seen": "2026-10-20T03:15:08Z"
+   "first_seen": "2026-10-20T03:15:08Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
    "title": "Varias universidades de la RM suspenden clases presenciales para este martes por sistema frontal",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989121-varias-universidades-de-la-rm-suspenden-clases-presenciales-para-este-martes-por-sistema-frontal.jpg",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPUE9mTG5wajUwLUJhSk5kaHA1MnZBRnFzWjViejVHby03d1lkYVZrZnpBSUsyWGxqUllhY0I3LWZJNG40RHZBMmR6Snljb0gyaHlMdW5aRWM2NDFTX3BtaUhOQlRhRl9nT3ZqRXZOWWFkTmdIOWlOU3B5a0xtQVFveW0zUWg0d2JmaW90X2tKQVc5QzZLRzVtbTduelVHVWU1UlVud2FXMXhRRDlqRWxoTzdRVUJYZ3NuS3BiazV4VF9oSWdSVnhITG9Wb1JHMlQyOVhaS3FxcWZzenZPSlhvZklndGFKdjhYRkF2NDJoYWdWZVMwbGxRVjdhb1ZYVUYxdm9fRERpYXV4WEE?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/varias-universidades-de-la-rm-suspenden-clases-presenciales-para-este-martes-por-sistema-frontal.shtml",
    "published": "2026-10-19T20:10:31Z",
-   "first_seen": "2026-10-20T00:16:12Z"
+   "first_seen": "2026-10-20T00:16:12Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/varias-universidades-de-la-rm-suspenden-clases-presenciales-para-este-martes-por-sistema-frontal.shtml"
   },
   {
    "category": "internacional",
@@ -397,14 +624,15 @@
    "category": "nacional",
    "title": "Gobierno da a conocer los tres polígonos de seguridad en la RM ante sistema frontal",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/K5C3IZRWQ5HMDJ22YPB3G7LXBM.jpg?auth=ec5238cbb99dcf8090cb9507c785352812483c2214c04207444a616e2ec95e5c&height=630&width=1200&smart=true",
    "sources": [
     "La Tercera"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOMmhKRFVRUElOVndMbGh5QkFMWUR3NXc4LTJjcW10V0RRYXVieWpxNC1abE9ZbXpnZDdFWUNQVWNYT3hYMGFrVjkzOGo4WE1Wa3VxQll5MGJKN08wM3JBM2NFYXlWTWY2cDM5OEFLZmdFdGw1X1BXV2JNdWFBUGpOajg5TFAzR08wbldydVczOVZNZDVPUU90dExpSWhMYzFIZXVlbDJpRWttN25jbVJmdkt3NW1xdXpJQk9DREsyVE1CUV9uN2RRcS1uSk10OHVTSEVVNkFoWVdLaTJRZjFMYTVxazFXU2RSZXNZOWRuejE0aVhnS2fSAZcCQVVfeXFMT0dMa0tJMTdtSkNKRmd3dU9UNjhLdXMxcF8xS0RWdGdBX0xYZkxyRVJrUUd6ODJubTFaWndjWGhqcXhYc044Z3J4M3dsZkRMSHViU1puMDBGWml4UGVNYlZkNUJvWWR2RGVNVjk2U1lSVElzaDJQazFFdnpHano0WEdDbEdFZzhjUy01RzBVSEV3Sm5VQjdpeE5GRWFRTXBVbFZoWW13NU9kYzlHUVpqSVB6ZFg5ZE1FdV9Cd3VsSWdZOEJiTGJPeWlJeVNoNWFSMzc1VXZReF8zN3dvNHpZd3I4RnNsZEg1Vm4yQkwtRFF4ZWZ4TjZRQ3ZTYkVqRHNOaEVMLTJfdjFTZnNKSXRiaFZ0Q1VoaThV?oc=5",
+   "link": "https://www.latercera.com/nacional/noticia/gobierno-establece-tres-poligonos-de-seguridad-en-la-rm-ante-sistema-frontal-y-llama-a-la-precaucion-en-zonas-de-riesgo/",
    "published": "2026-10-19T20:01:46Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://www.latercera.com"
+   "source_url": "https://www.latercera.com",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "economia",
@@ -439,39 +667,44 @@
    "category": "nacional",
    "title": "Banco presenta demanda ejecutiva en contra de Tonka Tomicic por arriendo de departamento",
    "summary": "",
-   "image": "",
+   "image": "https://s.t13.cl/sites/default/files/styles/manualcrop_850x475/public/t13/field-imagen/2026-10/1792437157.jpg.jpeg?itok=HZ-_aVRw",
    "sources": [
-    "Teletrece"
+    "Teletrece",
+    "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTVNUOXpyV0dIT0NPeU5RdzBOSm1Pa1FmQWNiWWxqQXhaMEhRVDlqQWpuWnJWVTZ4VGNiTWstZUFBdHRfX24zcHZiTXQ0ZG1vdXVtZ1VzX25SMTFBUzkxQ2RaMXpRUTg3SEpZLUlZdWRsS1JsU1RON2NNaE5hcFlwME1DYW9ORE5CQ09rbDJ1NGJQN3NXUzRSZ0hITW43akprMlRZd283ZFlPdGV2c2hKQVdfM2dtYXE4a3ZBOFNfY3JjXzBS?oc=5",
+   "link": "https://www.t13.cl/noticia/nacional/banco-presenta-demanda-ejecutiva-contra-tonka-tomicic-por-arriendo-departamento-19-10-2026",
    "published": "2026-10-19T19:15:00Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://www.t13.cl"
+   "source_url": "https://www.t13.cl",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
    "title": "Es oficial: Precipitaciones persistirán durante toda la semana hábil en estas comunas de la región de Valparaíso",
    "summary": "",
-   "image": "",
+   "image": "https://images2-mega.cdn.mdstrm.com/megatiempo/2026/10/19/pronostico-lluvia-valparaiso_14831_4_6ad63331cf3ad.jpg?d=1200x675",
    "source_url": "https://www.megatiempo.cl",
    "sources": [
     "Megatiempo"
    ],
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVlFvb0VHTzItN1phcHZLdml4WFkzVTlBcGRacXJRNHZKaGhQZ0ozYkZCMEZ2dmQ2bm01S2JaUWVsaXVSUU9PaUdETTJCTjhRZWc4d3FPLVNVZERId19aNDduWHp1Q0Fzc25CMjRMZWlkaTNZVjNUU2U0cV85M2hTMzhJUlIwQQ?oc=5",
+   "link": "https://www.megatiempo.cl/pronostico/14831-donde-llovera-en-valparaiso-1ab.html",
    "published": "2026-10-19T19:15:00Z",
-   "first_seen": "2026-10-20T03:15:08Z"
+   "first_seen": "2026-10-20T03:15:08Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
    "title": "No hay tregua: pronostican tormentas eléctricas con viento y granizo desde hoy lunes hasta el jueves",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989137-tormenta.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOQThkQVpBSkZLRVNET19SZEUxcmpxemt5QU5wQzJWY3RwQTlWVWdsMXdDYkhJYUJXeHprbGcxWnE4cnBYSUREOUhweEtjTzhKMUduN0JKUFgtT1hwbElUV2NYQTFVaGdaV09VaDRmWjZNaEJ3eUc0WEdfWk1nMXBQQS1sSW96Z0xXZm0xRHdnQ0VRc2V6Mkc0YVlQNzN4MDhKbFd4bDF6blpCT0xoLUkwTGlSak9wX2tYM3R1b1dQV1BjdEk4eG1iWVZROEhzVHhfTzFQN1RGTTl3aWU4cU5rSmQ1VGU0WXdlZlJJSmlBN3JZUDFtTmFIaS1JcEpfQlg2dFE?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/19/no-hay-tregua-pronostican-tormentas-electricas-con-viento-y-granizo-desde-hoy-lunes-hasta-el-jueves.shtml",
    "published": "2026-10-19T19:12:56Z",
-   "first_seen": "2026-10-19T21:00:14Z"
+   "first_seen": "2026-10-19T21:00:14Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/19/no-hay-tregua-pronostican-tormentas-electricas-con-viento-y-granizo-desde-hoy-lunes-hasta-el-jueves.shtml"
   },
   {
    "category": "deportes",
@@ -489,54 +722,100 @@
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
   },
   {
+   "category": "politica",
+   "title": "Partido Comunista concluye su Conferencia Nacional con propuestas para enfrentar al gobierno de Kast y fortalecer la unidad política – social",
+   "summary": "",
+   "image": "",
+   "source_url": "https://pcchile.cl",
+   "sources": [
+    "Partido Comunista de Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQNDlRWUllWHZXVENIYTZDdERUZi1iRUZCMkNTY1E1X09XNm9ic3NISWFQWWxjM1I2THNPUVVCYjBITWdzLVRaRE9PV2U1bDJWcW9UT3R5ZTJ3c1FIQ1dGOGNaSEdtZmxqWXBoQVBUU1VmNmhEOEp0VUt1SXFodDFWb1llRlJlVlNuUUVEcUdCZlNHZ3h5U2N1Tm9tSTlFcjdodXNoTERZMlFPekNKT2VZUlBnUXNVZUxtclhCS3N3dGdBVExTYU1rUmdjZzVkWjhXQUpPdG9QNXBJa3MyQ0Y0Y1FvRUdQWGlxZHNVZUI4TDZ1MEk1QWl0R1FjLTBBZkU?oc=5",
+   "published": "2026-10-19T19:09:14Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "salud-ciencia",
+   "title": "OPS firma acuerdo marco 2026 con la Autónoma de Chile",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.uautonoma.cl",
+   "sources": [
+    "Universidad Autónoma de Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KQW5aM25ER1RkdVpyNXdyRXBJM3pqVjZwUkdwbU5LOFllUHdPb0JHQXpKZi04ekpJcUFCTjVobHByZktXWnR3UEhfVzNQS3djWkkteDVhMm1lTklaM3pyaU1QYlA4QWlmdlIyVGlKWmJxd2pTWF80?oc=5",
+   "published": "2026-10-19T19:03:57Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "nacional",
    "title": "Vuelco en la Suprema: pleno no dará a conocer el veredicto de Daniel Urrutia y mantendrá el suspenso hasta fines de octubre",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/6VPWKINFBBCMRPI2LOIHM3ZHU4.jpg?auth=9b5dc94e76f462be597e9b5716928ea20fa08373d3dfedf998e9208a3f15e291&height=630&width=1200&smart=true",
    "sources": [
     "La Tercera"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNFdoc1FLM1FHMGptRmdrZ2U0NnluMDBSdmpONV9PSEhPZWpQYkliMEZQYktfeEYwQmd5Mm91Qy1ZdVF6MDI5XzROZEJ1ZzRpVmJaWnp6NHl5YS14SXNCYzJGczlxSW9kT0I4enlFQTNtd1ZFd1JiYWJ5Sm40QVQ5TzJYVGM1ZmttQlJWNTc0TXFVdUx1YWRrc1NxUXVaT1RWMkZaYVM1LWVDSWd1UHMycVFzcXp4WmVvUmlvZmlTNU52MEJPNUhEN09vNlZKaFFUTlFhanZFNW9pRmlBVDdhYXVna2dURmNUNUNUelFCSzDSAZICQVVfeXFMTnVmVVFpLUdFelc3NnRaak5ybEVvejMzMVlmUGFoVVVIVmQtQXhQY0lBY3BsbnJKLXplOFlsVGUzcXJmdENfZjFaTTZ6OVlTV2FuRGo3UVM0aW9mOWpJejVjcUN2RjZ3RURDajFNT3d4UjVuUF9JSXhTTlhyX1VtNmcxTUFrb1EzZVlRQi00UWthYUhaeV8zeFRBRzluUVdtRm53Z2FJOHZuSDBkandpalpJYWRzVFJuNXFEem4zZW1NM2NRMkVENUhKbTZSQ2dLTXpYNE9vODZjVDNpMUJuM19IbjFLSlljb19OclpDREtScWdVYjRwQ1ZuY21ZM3IweXNyMTh3azBFc3gzNVd1S1FrQQ?oc=5",
+   "link": "https://www.latercera.com/nacional/noticia/vuelco-en-la-suprema-pleno-no-dara-a-conocer-el-veredicto-de-daniel-urrutia-y-mantendra-el-suspenso-hasta-noviembre/",
    "published": "2026-10-19T19:00:03Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://www.latercera.com"
+   "source_url": "https://www.latercera.com",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "internacional",
    "title": "Flávio Bolsonaro y Lula da Silva en empate técnico a una semana del balotaje en Brasil",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/YEAEDKRJANGTJL2AEYMYDGNJAE.jpg?auth=4bff08db1fccd93643c14040980928a458d9445c8c7ec89bf5c3e76ce0a2b40d&height=630&width=1200&smart=true",
    "sources": [
     "La Tercera"
    ],
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORFFydzJyUkJKaHJPY2VVakI1RkJoQ3drTndHanlpUjV4VS01RUxNc1V2d0NHR2ZONXk2dUFBb2tUQ2RKTjU4Z05TMDNJbmY2RXVvc094WFhnOEQtNUdsMWtBc3I1T1R4aGtuaDI3X2ZEVTUtUDdod29JNEJTbU9Ha2VEUHBWdDNja1BnRkoyUlg0UkRBOXVHQzBjNHV4YzdybVpla2Jha2s4NE9CRVJYNU12bkFsWFZCdzhMa3lscDljcVItRVHSAecBQVVfeXFMUFdrd3VTeE5KaWxCSmhFYnhIcXVSajVqUWZvckZId3N2MWM4QTdkNlhhYkNOakc5X3ZkdjdGM3hXdE8zdEFnTWZoTFNjOUNvRTF5NVpqUlVHWDBncUNFYl9kSlEzNWo5RU54cHozZXlqNk5CZTBDcjBDd2huLUsyMk1QcXVQcS0tMmFiQWtuam1NSHl5T3FpU0k2TXRYUjhBTlBjSnliclBfV1h4Q2thMmhoNGdrenEzWEhVN2lKcDlpZlFQVDk2cnNiZlFmTlJIY3pqdWlhdTZvaExibm91eVdOS0w1ekw0?oc=5",
+   "link": "https://www.latercera.com/mundo/noticia/flavio-bolsonaro-y-lula-da-silva-en-empate-tecnico-a-una-semana-del-balotaje-en-brasil/",
    "published": "2026-10-19T19:00:00Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://www.latercera.com"
+   "source_url": "https://www.latercera.com",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "internacional",
    "title": "EEUU propuso disolver el comité especial de la ONU donde Argentina mantiene reclamo por Malvinas",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989134-trump-milei-malvinas.jpg",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNRlVRb2Nmblhnc0g4ZU1uQUs3Rlk1d05PNUQyRXU2bmUtUDh0eXl2b2hXTC1PUHRtU1p1TjVjdFMyVnFGZ0ZDTnJ6Wkt2ejBGV0U2X0RuUmpOWl93Z1pYakFKdTYzZzNFY0ZVRGtRMThVV2ttUWVFeDZPMkVtc3hYS19QUUJOZDR5N0l3ai1nWlJUWUtLdktsX3FRdkNIX19SUVpJcmRIWFFDS0Zrc3pSSjgtWVBuVmd0S3AxM2U2YjVBWlNOSlE3ZGhfbDV3S2xCUHJ2cUdkeUF1ZFltODBRd1dpTnlzZVRVVzNfVlU5UG42cEVGbV9EZW03NHRxS2tTbEl1cGVIdUF0Zw?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/19/eeuu-propuso-disolver-el-comite-especial-de-la-onu-donde-argentina-mantiene-reclamo-por-malvinas.shtml",
    "published": "2026-10-19T18:59:47Z",
-   "first_seen": "2026-10-19T21:00:14Z"
+   "first_seen": "2026-10-19T21:00:14Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/19/eeuu-propuso-disolver-el-comite-especial-de-la-onu-donde-argentina-mantiene-reclamo-por-malvinas.shtml"
   },
   {
    "category": "nacional",
    "title": "Comisión Mixta aprueba que el Congreso pueda sesionar extraordinariamente en la sede de Santiago",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989074-comision-mixta-aprueba-que-el-congreso-pueda-sesionar-extraordinariamente-en-la-sede-de-santiago.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPdkVXOEozYVJTQlBNR0hvMjNhVG5pWGpVWEprTEtBWmhrZjVzXzdNWkZXbGJJcmpyd1FxcEpHM0x3NUxVZU1OUVI5TTlxemFfQ2x4R3lJSmk5WDJ6UERfcVRJSFRsMUJhTUx2cExBekZ0VkNUMzFnWmd0eDFEWTZGZ0N4WnBrNmtUWEVFTHdHX1kzU3J0T3AxNXhoUUliSHAzVF9ubWw3UE5wWTA4ZFBKUElTaUt1LXIyeUh6ODFWWnhtM0VoQXQ0Y3lEaWhXelZoTVk2bzNkZ1V1bTdUVmJ1VThBRUItUGozNzNLN1hQZE02R2NVa2w0?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/19/comision-mixta-aprueba-que-el-congreso-pueda-sesionar-extraordinariamente-en-la-sede-de-santiago.shtml",
    "published": "2026-10-19T18:51:36Z",
-   "first_seen": "2026-10-19T21:00:14Z"
+   "first_seen": "2026-10-19T21:00:14Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/19/comision-mixta-aprueba-que-el-congreso-pueda-sesionar-extraordinariamente-en-la-sede-de-santiago.shtml"
+  },
+  {
+   "category": "regiones",
+   "title": "Gobierno suspende clases en 16 comunas de la región de Valparaíso ante sistema frontal",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile",
+    "RFI"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPYXlQX0hHaHJGZGppeGpnVkxDWm1DMzV1cE8xNHI5b3NqcDhqdDlJWDRrZzN1VFZHM3ZRYW1Na2c2Y1dKTFFRSDBPaFNLaHctUmYyamhTVGpmSHVZakk3VGdBVGMwaUxsRzhFQm5BcnFiSWdDVUpNcVBNRGxjRHhWUFdRQmxnLTZCdjhYQklwWjRmcFVUV3ZaN3RqVHQyX1BPdmRHWHgwUlE2aWlZREc0TExwVlp2Y1RiNW9XLU4zMTBIVWJ2WHFlQmtoRmo1SFpCUWR0M2ZpWm9yM3cwNkw2TFprd3BJNHc4YmRNS25paFYycTRPWEpZd1VOSVdQdw?oc=5",
+   "published": "2026-10-19T18:45:38Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "deportes",
@@ -550,6 +829,19 @@
    "published": "2026-10-19T18:41:59Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.biobiochile.cl"
+  },
+  {
+   "category": "regiones",
+   "title": "Esta es la única forma en que se transmite U. de Chile- Antofagasta: a qué hora juega, TV, canal y cómo ver la",
+   "summary": "",
+   "image": "",
+   "source_url": "https://chile.as.com",
+   "sources": [
+    "AS Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNd01sNTBPS25DMjBkSGpDcmN6eTlkZ1B1WVBoazVKV1VVYkV0cTVoX2k4clQzeVdodkJnc2t4b1JpS3ZwQ3hVT3UzVG51dExfUXRjaDdYUkxMMXFoMmF6d2RyNXgyakFrcm5zb3pCaEtVdElWMi1MRklBU3VMcUxmNXBuc2xFVFFKSmY5ZDBMWE1IQWYwNWFGMWRZSmdpSVlQRXdWT1JFa0IxSTBCNWtUcG5YQmhyd2N3R1M3SUhMSHlEZDFXV0VZUXJCTGVWRTdaUnBSNXVhd0pxZFFLQWtJQkVXSHdPTGxJRlVkTElGcUcxd9IBhgJBVV95cUxQeWNBbmdHcV96M2RKNERYVXZxQlhKQWxpeGt4SFRpbE42MUs3QUdMMHlEVVoxNkdBdUZpaXRnMzlLZ0p6RU92WHZZTHQxT1RJdGZLR0FXZzFqYWk4MThpaWZpcC01WG1rZVlaMFpHMTR3Yk9YZm0yRzZKZmY3RHB6X0JlNkNTUk1tbUI1VmRzZzg4TFZ0Y1RYSUoyaV9lN3FuNW1QeE9uc0VseTVnRXl4UF9ncHpQUF9UZFNNcGhMQXQyMUh3bU9ZTnFSQVk2S190ZjlxZ2wxeXhaRTdwZ1J5c2NYcGc0SndSRTJTaFcxRlZTU1ppaWVWYlh1ZERGM3h1RTBPa3JB?oc=5",
+   "published": "2026-10-19T18:35:22Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "deportes",
@@ -581,13 +873,15 @@
    "category": "nacional",
    "title": "Seremi de Economía de Aysén renuncia al cargo por motivos personales",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989094-foto-contexto-nota-bbcl-94.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbklzWVJEdDM5YVJqWlBweUJ6a2dHUHdtaGxudFhvU3hHQm9wdm5CNzVrclAtX3QxZG1MYTB0dU9UOTk2T1VQOHVnZFFtcF9DUVlqRGEzSDFvZmY2QmJ1LTAyaXR2YlRKcmtQaWZEaDFKYklkNnktQkZzQjFyZlZPNU4xTEdDa2dENFMwQXl2UlBKNnNROFBOOEFoRHNwd3l5LVVHSHR5WElDWlJNWDdJM3lQVXZtcTRiSjFkeEtPN1RxY3JxY2t2STZ4d2JEMnRjUFRCY01BeXA1ZXBzSTFv?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-aysen/2026/10/19/seremi-de-economia-de-aysen-renuncia-al-cargo-por-motivos-personales.shtml",
    "published": "2026-10-19T18:24:32Z",
-   "first_seen": "2026-10-19T21:00:14Z"
+   "first_seen": "2026-10-19T21:00:14Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/nacional/region-de-aysen/2026/10/19/seremi-de-economia-de-aysen-renuncia-al-cargo-por-motivos-personales.shtml"
   },
   {
    "category": "deportes",
@@ -671,6 +965,32 @@
    "source_url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/19/semana-de-bencinas-proyectan-quinta-alza-seguida-y-un-nuevo-dieselazo-al-bolsillo.shtml"
   },
   {
+   "category": "salud-ciencia",
+   "title": "Más del 62% de los adultos en Chile ha perdido al menos un diente: Especialistas abordan soluciones frente al avance del edentulismo",
+   "summary": "",
+   "image": "",
+   "source_url": "https://portalredsalud.cl",
+   "sources": [
+    "Portal Red Salud"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTTVhdkFGRFo5UU1Gb3FjWHFXeVdMWFJ3eWdaUlpLb09HeHFXRk12d0Q1TUhhZnRaWmVsWmFNSWRSdHhGUEJlWnZtM3NHLTRodVRBSHRncDMtWE90TFpWT0dfM2xnNGtsTVVIMUFSZ1NWRmJDNFVWRnBheDBvTk5ERkZ6TnlmVmllMjR3VVphZ2E0V3BCVEprNWpwZlZES3R6a016Wlh5Yk1BbHFicDQySGVfRzd6LUE1dGlIOXhua3AtQm1CS2FVZ1E0OHFWOUZvX0dNbXJHWW05V0t0al9MWWU3N1J0dVNaNjdNZC04cnNsWlNVWEpnZ2xkOWM?oc=5",
+   "published": "2026-10-19T17:51:28Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
+   "category": "politica",
+   "title": "Ministro Pérez Mackenna analiza situación geopolítica global y prioridades de Chile en conversatorio en Chatham House en Londres",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.minrel.gob.cl",
+   "sources": [
+    "Ministerio de Relaciones Exteriores de Chile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRE93d1N5bGwzaVhFa1J6R3NURmJQOUNhSlJQdFZrQWhqamlOZUxxN2NxbmtjY3J1WHJTQWZZci0tU2Y0eDlyZDcxNC1JbjFDX2N2LUMybnIzU0dZbk4zTnV4Y2hrdXJnQnhtQUVqRVNTZEs3T3NQY0hsZHZpZ0JnY0s0cEpPcWZGdkVvWEdWX21VSlpobTdoZWpmLWdyMF95RFB3X1FQdWJYaDRXVFZaM2J0c29Ydw?oc=5",
+   "published": "2026-10-19T17:36:00Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "internacional",
    "title": "El líder de una secta condenado por ordenar a sus seguidores dejar morir de hambre a casi 200 niños",
    "summary": "El autoproclamado pastor Paul Mackenzie y otros 29 de sus seguidores se enfrentaban a 191 cargos de asesinato.",
@@ -686,65 +1006,97 @@
    "category": "internacional",
    "title": "Huellas dactilares en la arcilla desvelan quiénes pudieron construir el Ejército de Terracota",
    "summary": "",
-   "image": "",
+   "image": "https://static.dw.com/image/79701078_6.jpg",
    "source_url": "https://www.dw.com",
    "sources": [
     "DW.com"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObWRsV05HNk4xZVdHXzJQM3VUM3FWQmp6cTVBRWxBVmh0eXhJeThibFVEOWlrXzVOWGNKRlE1TFRYOGxIWkNMNDhpQ3ZQN0paY3dMeWhHY2szdS14bi1zWVdYMEJJRUdLUHJGTGV3MGZvVlZ1NWpEWHRuSHkxWTYxcGc3bWp4Vk1Qc0k2NTdMbjJxSG1tVUVTNEhuaTBORTgySGlXZGxOb0g4N0xCQ0RmMVdmVG5ldHF6MEpPZFhMYnhockZXeTJJd0Z4QmVab3pHQ2tYWTJn0gHWAUFVX3lxTFBDRkhEdlppRzk1emZDV0Z4Z21tS3VSWXczUV9hakdEMjhfa0RjQVNfUG9fNE1zX2U5U29ZbzNJWFhDTkdZWktJWVpsVVlfbTgxR1E2NHhWUHJ2RzVteUJEQjFXSGtFdzRqVVJ1TEl6UFZzUzZkVFg3QUNYMGNiVEtnX3ZRbUswbzNvUUw3dHJkVFlLa1F6RW85QXFaUko2T0x1bjAxYUNHRzktdFE3aWhHeEtDdVdwc2xiUmNWcDZBY0t3ckpQV0NpUnNIOHJSV3FBeUFHR2c?oc=5",
+   "link": "https://www.dw.com/es/huellas-dactilares-desvelan-qui%C3%A9nes-pudieron-haber-construido-realmente-el-ej%C3%A9rcito-de-terracota/a-79706189",
    "published": "2026-10-19T17:31:43Z",
-   "first_seen": "2026-10-20T03:49:35Z"
+   "first_seen": "2026-10-20T03:49:35Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
+  },
+  {
+   "category": "medioambiente",
+   "title": "Un tercio de las comunas con mayor riesgo al cambio climático no tiene planes de acción",
+   "summary": "",
+   "image": "",
+   "source_url": "https://g5noticias.cl",
+   "sources": [
+    "G5noticias"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUFJJZ0R5aHc3cTZOYzhUM1NUU1o4cnA5QVkzOU55em5KeGdCeEpmN1RTUEIyY3NMNWg3QmVwTGF2c1lmNlRIbDIxcVgtYUpvYlZGbThoU29pRmRwWThOVFBfemo3cXVBaFVVSXlhbmdOQ3F3TWpFS2I0MVZXLVNTWWQzRjJkTE1PdXNJUnBUaWUydElVQ1V1VHA2RDlGdk00cHFZTkdGelJFaGFwZ2JyMW9haGFVaFBiNGdxVWdn?oc=5",
+   "published": "2026-10-19T17:20:27Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "internacional",
    "title": "Avión de Latam sufre incendio en una de sus alas antes de despegar en aeropuerto de Perú",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989014-bbcl-1200-x-633-px-19.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQeWM3dTdtcUpyX3BhcUN4bXpDeGVOQzVyZGt1cGpXQXc5dUF6SWRROXVEcDZYTnc0S2Rid1EtamR6TFAzOXpFRllVVVZtTmc0ZzFjOVg0d0ZwNTFkSUNTNXVpZE5zM1VfMDBrRGVjd2thajhvQWd0VVVkZzVzOU02N1YzaklfMmJzWFdRdTFXTzBra2RudzlUekZJM1pjZXUxTTNXQ0ZfY0drVnBXWHFWVVVPbjBNNXUxWjlyTHB5aTk2NXNYM3BjNzRBUlNBdVE3TTAzdnF1VFV4OTdVN3JzZFdRSkZXckJLeGhtOGkxOEJxX3VXTDR5d2J3UzREMWs?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/19/avion-de-latam-sufre-incendio-en-una-de-sus-alas-antes-de-despegar-en-aeropuerto-de-peru.shtml",
    "published": "2026-10-19T17:20:01Z",
    "first_seen": "2026-10-19T21:00:14Z",
-   "source_url": "https://www.biobiochile.cl"
+   "source_url": "https://www.biobiochile.cl",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
    "title": "Una de las víctimas de la avalancha en Los Andes era hija de la actriz chilena Luz Jiménez",
    "summary": "",
-   "image": "",
+   "image": "https://imagenes.elpais.com/resizer/v2/LU5SXMZDHNICBMM3A64IIOKATA.jpg?auth=f66de6790121758d44e2b00c22115cc48a50a92ffe0dc41e0c039612587b1758&width=1200",
    "sources": [
     "EL PAÍS"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcHZXY3Uta3EtZGZ6NS1QS2JJdXFWdl9aVUM3UjQzbHdhdmdMX252WllrR2lVUGFJYjZnUUZDMzkyQWMtX1ZxclVYWXlOTjFIWjZIZmN2ampUVEU2QmdndXlLRnFtU2M5ZTVnZ20yZ2VaRm9EczJWUERwcG81dUxTMlV1clAxS3hQcnlqa1BsS01ITHVYVUI1dnBYYmhwd3BSbnZPWmZwbmN3c3FCUHZIalFHajR6b0JDY2NqYWZoY0ZrVERzYXhmT3BXbw?oc=5",
+   "link": "https://elpais.com/chile/2026-10-19/una-de-las-victimas-de-la-avalancha-en-los-andes-era-hija-de-la-actriz-chilena-luz-jimenez.html",
    "published": "2026-10-19T17:15:01Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://elpais.com"
+   "source_url": "https://elpais.com",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
    "title": "Zofri reporta incendio en uno de sus galpones y activa evacuación preventiva",
    "summary": "",
-   "image": "",
+   "image": "https://images2-mega.cdn.mdstrm.com/meganoticias/2026/10/19/incendio-zofri_534295_2_6ad6509182fe0.jpg?d=1200x675",
    "sources": [
     "Meganoticias"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNWlJEcUJfOVhHYzFZZ0NCSzBDRHJnMjlLZ2ZtNENIVlhxR1R5Zy1zX2tfWGo5S2h6Rkp6U1ZDTjN1T3owMW5hVmxfVjI0UGttaWJoRS10VHg2cUNVZVdKNGlOVy1fdHl3cDR1REFOZ3hwUWpVNEVXc2dIMDktMDVqRnlOSEpNUU1ZaXA4R1JzUlVheGZvMG1SQVRmTmg2UW5kbXFUUWVOU2pmaUxONjAxQk04ZG0tZG44NGpoWWlxMENEYVlKNmtjbEw3OHJUcm1VcVpwRzAyNUo2c3ZtV3dpOTZB0gHnAUFVX3lxTE95TllzTHVTOEpoMGJfdTNuOXNWMmpiZ01ObXRETlpsemx2V3lCTFhvVHVsbk9kOUMtMVZ6dDF1TXl2RW1HY2RTSWpRbngxZk9Xak9mcXFwdFFzWm91aDA4VDNXVk5xM2pwblF3cEgzM0xaSXJaNDh6dWRkM1NrMnAzNC11dG1udU5EbWx1VG5kSWR0YlVoRS1UYnN2T0ZZeWNWUHU5OTVqOEZQYVB4QjhrS0Z4MndNMWxnR3MwbUpWakExTm9uenJtMGtBcEYzSjA4ZFVtOTROWGkzZlZYc0Q4QVRGWFFlYw?oc=5",
+   "link": "https://www.meganoticias.cl/nacional/534295-sofri-incendio-galpon-zona-franca-de-iquique-emergencia-bomberos-protocolos-de-seguridad-19-10-2026.html",
    "published": "2026-10-19T17:14:00Z",
-   "first_seen": "2026-10-20T00:16:12Z"
+   "first_seen": "2026-10-20T00:16:12Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.meganoticias.cl/nacional/534295-sofri-incendio-galpon-zona-franca-de-iquique-emergencia-bomberos-protocolos-de-seguridad-19-10-2026.html"
+  },
+  {
+   "category": "politica",
+   "title": "“Cuando tú respondes, Chile responde”: Gobierno lanza campaña Casen 2026 y muestra cómo reconocer a los encuestadores",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.midesof.gob.cl",
+   "sources": [
+    "Ministerio de Desarrollo Social y Familia"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNjA5SmtlNTh3Q2c2ZVJTQjJFSkxhTmllYjBKZzRsTTJ2Rkt5RHp4SVFkZ0pTbG9RMnpjOEFsN0tjN2xxZnJlNXdDZG9kSWJRZmdUbWNWSmRTZHhGRC1ub1NOajJuTTFoQ2lqYlhfdW9lVHY4UGI4Q0ctOXdudFU3NkJQYmpWUDg3eUlleFpmeW05TWx6Y3NJajZ2MTlaYmdJWEo1SzZkLXA0V1VSOUJFRnA5Q0FYZjhYY29zejZQS296TXRwVGRaOFJUUUMtNFBhMnh5blFRYVY?oc=5",
+   "published": "2026-10-19T17:13:47Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "nacional",
    "title": "Michelle Adam da la hora exacta en que el temporal será más peligroso",
    "summary": "",
-   "image": "",
+   "image": "https://img.lahora.cl/upload/2026/07/17161D524C43436D17140F55544945791F141E18534143721414-2000x1125.jpg",
    "sources": [
     "La Hora"
    ],
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb09NYUFVUlBmdFFtaW5salZuamNrVnItcXI0UExwRERSRGMtLW1BNl9hOUJLdVV4bnBNcEZjczZjcmVhZkxRYWFHdDB1dkRpTmZxRER5X0VwMTA3OTN6bFc4TU40OWFaNldxbXZBcEkyQURGX0JJV1gxdHFfLUMyTmVEYVBGRk5UVkJFbFY2ZXRaM3EzOUIzNFV0TTNuXzZXaTNNTEFReEZYUmdoRVhSZVZn?oc=5",
+   "link": "https://lahora.cl/cronica/2026/10/19/michelle-adam-da-la-hora-exacta-en-que-el-temporal-parecera-acabo-de-mundo/",
    "published": "2026-10-19T17:10:39Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://lahora.cl"
+   "source_url": "https://lahora.cl",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "internacional",
@@ -775,14 +1127,15 @@
    "category": "internacional",
    "title": "Florida presenta más cargos contra el expresidente cubano Raúl Castro",
    "summary": "",
-   "image": "",
+   "image": "https://static.dw.com/image/77336030_6.jpg",
    "sources": [
     "DW.com"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPcU1lblMtam1NSHI2bnBXOFlBcEljdXVzQXNHMGVQSXNQZUF6ZmoxZTdMTzloRXBmMm43ZWx6cklkM2djdEppanNwbGgyRmRrd095enVwUFpYR3Nla3V6Q2lBLXhqdnRKSTVBdUQ5SGZUbVVJbXJqbThua2c0RE1qVmpQc19rQ0xFYkxTMnd2b0RTMzctazdwQkxLNFU5cHE3aHJxQ3NXNndxbHZZM1VCMTdKYUZBMzlGaUdSalpGc295ckRyTnp1QkxJS2h5ZjJ2eTEzNWN5VzdxZTFlT2FUM2tRQ1pTak3SAecBQVVfeXFMTlBoWlNscjVlUjJWUW1XRDM3ZVhaMGdET3pfMnpDRHNpQmRsOVFtU0VCbXFrc2dMQWFQaXEwaUVZeEN0dmFvOXRYYjU5ZlhzTzFyd1BwMUh3am9pTGVCQVdkYlVGbU14b2w4T0owclQ3MHVLU1U0VTJFVUdGLXNSa1hMWGoySXJCSTNPZzhfRld3YnV6Nnp5X3JhXzZqV1NJQnpyWl9XYWQteVVRd1dzRkJpeUh6ODJwdURXNHpDNWVGaER2RnlBS09iVmVFdUJIOG0ycnhCSy1FRjcwRC05c1VibGlxV0tz?oc=5",
+   "link": "https://www.dw.com/es/florida-presenta-m%C3%A1s-cargos-contra-el-expresidente-cubano-ra%C3%BAl-castro-por-el-derribo-de-dos-avionetas-civiles/a-79706832",
    "published": "2026-10-19T16:54:26Z",
    "first_seen": "2026-10-19T21:00:14Z",
-   "source_url": "https://www.dw.com"
+   "source_url": "https://www.dw.com",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "internacional",
@@ -797,17 +1150,31 @@
    "first_seen": "2026-10-19T21:00:14Z"
   },
   {
+   "category": "regiones",
+   "title": "CEO de Antofagasta Minerals apuesta por potencial minero del Cono Sur y ve oportunidades en Chile, Argentina y Perú",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.df.cl",
+   "sources": [
+    "Diario Financiero"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOU0xMT0V6YU9GR3F3QWYyWng4TmhLSlljNGN4aFFLTzE2MWc2X2xkZjRpRWhqcGpYbFEzd2lrTFNRVVNxRkgtS192SDVlWUxwYlJVR2xhRVM1R1E0b29OY09qdTJXU2pURGd2a1V2VnU4Z1NhTVRqRTFVLVBJZVFkaEU2RnhjY3hZUlhvUkJHTWRPYnM4VDZfZWs1Z0NkWjFTdk9QVU1fRV9wY0k5WGc?oc=5",
+   "published": "2026-10-19T16:52:00Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "internacional",
    "title": "Zelenski: sería \"un error histórico\" que Estados Unidos apoye a Rusia",
    "summary": "",
-   "image": "",
+   "image": "https://static.dw.com/image/61723395_6.jpg",
    "source_url": "https://www.dw.com",
    "sources": [
     "DW.com"
    ],
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYlBmdm9OQ0YtclIyTXdqS1JDSTBlc1F1TkYwM1dCVEdxYU94WVBfUndJcF9UdTZTS0RQdjBkQjdTdHNTUHhXZFRyY1ZPa0F0S0JQaWlFVWxhRWJobElPRTQtT3hISVhFU1lGd0psX1MzaGdOcTdFOVdKUFNLdmRhUy1wb3Q1NmIxNDdIdzNZVFhfSjI0ejN3eDZaZC1RU0xEaDBiU0RMVE9qT3hOWkHSAa4BQVVfeXFMTnFmNTlySkx2TFExa3NybjNLTVVYdGtWb25EVmdoY0lEVkJCX3IyX1NwMXdFckJENkEwb2N6M1c0NllOWXZ3d1cwaXlBem54ZkVwMU9YNXcxdTJYT0F3cDNXa2RLNGJDOEMzWjdpVWRydXViMFM5WkE5N0trMnE1UmJ6cEcyc0ZFUjFwTG9fNW5qQWlldW9OSWgyaXR4M095eHZLV05JeDZ4UzEtbE9n?oc=5",
+   "link": "https://www.dw.com/es/zelenski-ser%C3%ADa-un-error-hist%C3%B3rico-que-estados-unidos-apoye-a-rusia/a-79693787",
    "published": "2026-10-19T16:49:54Z",
-   "first_seen": "2026-10-20T03:30:06Z"
+   "first_seen": "2026-10-20T03:30:06Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "deportes",
@@ -864,14 +1231,28 @@
    "category": "internacional",
    "title": "¿Una nueva Yalta? Putin propone una cumbre con Trump y Xi para discutir el futuro de Ucrania",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/JSATPWSM7VA3FHUECCKSNY2JDE.jpg?auth=51795725938b6030ef975e48af48a4baba13253f4025b68b7ddde4604c4956cb&height=630&width=1200&smart=true",
    "sources": [
     "La Tercera"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTndBU095UUlxWUFnZEYtM2NOLXBMYVM0QXllMEVINmVHWUdyVXluWkJZMF9xT1poQ3l6V2RXX3pWaHVmWjlXXzVOSXdsTC14STZKWjJBSVRtcTI3bjBlMk90dERfbENXZTNQT0JhT3dhMUViTkxtWFB6MkhVZk53aFVLcUt6S1Z3SkY3MENzRGg4cHNOREc0aldhYm9KclRlZS1pRjhiTkktSEFEeGJWU0lrOWVYZDRSa1hvLTl6RnpzenFkY2pkbHR4c9IB7AFBVV95cUxQVjRSanNXZk1rTFRyd3ZHeWVPcGtNdEVDa1lNd056TkxKd2xabG9LNS0wdmVxdUZSS3hGZkVjOHVlTUVVYzMzM0phQTZVMnJ4NWlKZGlPbUU1NURiOUI2Rld0OEFhcDUwTUNDMW02Nk5wNTNQRjc4T0J4dkFmMl94MXlaOEphTUVyUlcwMlpXbjFHVEY0T3Vma1BUYkRZZFRfbWtrNFROb3dqaGhOb3ZoVktGSXpnSkdfbjNJV19sQTNDelhTXy1TUUVLZmZBMmk2alF1RnVlRzNpejJuZEJIWjdYS3ZFMFFKbFJQaQ?oc=5",
+   "link": "https://www.latercera.com/mundo/noticia/una-nueva-yalta-putin-propone-una-cumbre-con-trump-y-xi-para-discutir-el-futuro-de-ucrania/",
    "published": "2026-10-19T16:30:00Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://www.latercera.com"
+   "source_url": "https://www.latercera.com",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
+  },
+  {
+   "category": "salud-ciencia",
+   "title": "Envejecimiento, salud mental e inteligencia artificial: los desafíos que abordará el Congreso Chileno de Medicina Familiar",
+   "summary": "",
+   "image": "",
+   "source_url": "https://g5noticias.cl",
+   "sources": [
+    "G5noticias"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQVltY01BZU14eFItLWp4blVoQmhVUGFhWjV3VkhlTllYNkl1cnh2OHNyd2xIWjJISnRxYXpZenh4dUhRVTRJd3ZSNEZ0Z3VUUVVnd3UxWlVZQVlRYkZEd2ExRUhlOHRBZmx4NGI3QmVSbzFTQkVWUVNadzF2WjFfMzRMVDNEcnU4NkN4LWxkS3ZVT1F1MXVDZ1l1UU1WZ0s5X29GUUQ4Z09SUWZfenJnRG0zTEQtaGYxVmFaY2t3RzBCZllrQ1hRVE14M3dKYmticUJ5Vk1ROWxUd0l4S3VYaHhVeVpSU0JscnJBOQ?oc=5",
+   "published": "2026-10-19T16:26:32Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "deportes",
@@ -916,6 +1297,19 @@
    "source_url": "https://www.biobiochile.cl"
   },
   {
+   "category": "regiones",
+   "title": "Transporte y conectividad: soluciones para Santiago, recortes para el Biobío",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPeWNPSlNINmR3dmt1YURneXNxOC1LV2lxS2tZa01hWnJTR3hpNzhWMHZQcW9XeGl0akY0NWljUHRKUWNib0xJN2R3UnlCVEpXNnhObmNpMUZhQ1o3Ni1wN081OUdiQjh5UldhUmRXQnYtYl9TcGFTSkxQdmhCYXJjZ05MZU1zRE83ejRyd0lSOUlFaHNHRkxfX28tTDN3NUJUWGtZNlJvMWFOTTZEM1B1YzV4M085YnlKOGI5OV8tUWhzVkFTcFdDRW9oX3ZHZVFwc3VMY0RfWi1sQQ?oc=5",
+   "published": "2026-10-19T16:19:23Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "economia",
    "title": "Las 50 gerencias legales que mueven Chile",
    "summary": "",
@@ -933,53 +1327,70 @@
    "category": "internacional",
    "title": "Exministro Mario Marcel ingresa a la Universidad Diego Portales como académico en Economía",
    "summary": "",
-   "image": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/A_UNO_1734429.jpg",
    "sources": [
     "El Mostrador"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaE5BWWd1Zy1TQl9CVGk5bEgyM0NaQkdDMWV3Z1BibVd0TDVCdVVYSGJkMkRVeW50Y1BwbG54cDdwSzBLUzJ4cGtZNEtHQmRKb0ttd2tnaTUtM2lTRW13aWR0bzJsNUx1dks2ZUtIc1N4aDdaeHJhR1NhSFJJam80VmNMY2U0V2FJSGw1NUJKV1pMRDgtdXlrVDczT1R4dzlGcF9VZ2pKWUJMNmFZNnV0SHJTZlhPTEhUUlBhUXNnY2Y0ZHNVMUFwV2dFbnA0U2ZPenkxZ1E2dlRlcFU?oc=5",
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/19/exministro-mario-marcel-ingresa-a-la-universidad-diego-portales-como-academico-en-economia/",
    "published": "2026-10-19T16:11:19Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://www.elmostrador.cl"
+   "source_url": "https://www.elmostrador.cl",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
+  },
+  {
+   "category": "regiones",
+   "title": "¿Va por TNT? El canal que transmite EN VIVO por TV y ONLINE a U. de Chile vs. Antofagasta por Copa Chile 2026",
+   "summary": "",
+   "image": "",
+   "source_url": "https://redgol.cl",
+   "sources": [
+    "RedGol"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQX1BxeUtneEpVaDY0S09qUG9IdE16SFI2VGJKWndPaUViVWNfOHRwa0FlVGtITjljVUZkRkJPMXRIaVhRWHVTTnhfUDZjSDdtY0pnUFgteDNDNkZvSEpZUUlZVDRDQm83Sno4VFZZYWw5OEVsaHhBenh1Z3RZNFRRQ0N6d2JsRWU1OEZqc3F3ckFaWXFJRzAtckxCOWd6MExoY3p5QmkydXBGeERLYU9TanlRZVVrU0FpOE1hUVo2UWNLRU9xVnJfcUJZODHSAdIBQVVfeXFMUHE4MVR4QlI0b1NQZVB2QURIRnpWdTVSWDU0SUVER0YtNVFHbDZKbDY5Wi0wUWxkSWZHTXZlU3JTZndKS2JNajVscXRqbVVaSmpIS0NOSFlyR0F3bVM1ck9XNEh3bElTOVFMcEV5bnUyQWxWLUR2QmNPYlVFc2VBWHlFWW5xTzhfLWxCY1BJcHp4OTZuN09TVG1xT3dmSWtwTThYTEZqMkY0dTBuWkplZDNZMm9laFdQdFM5dVgtcDRJX3BLVUh3SmoxOE02YVNmWWF3?oc=5",
+   "published": "2026-10-19T16:10:10Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "nacional",
    "title": "Migraciones busca expulsar a seis extranjeros detenidos durante incidentes en conmemoración del 18-O",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988842-bbcl-1200-x-633-px-18.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNUDhJTExiVWFDcXVrbW1LcWZPVGpHcGRpUE55ZGtBVW9XVXNlM2dudHZtakN1TDJuZ1VZU20tNWhWS29HSzh3c3N6WlcxdHhNaklIaHN0b1cyMWwzVzVlZTFzYko0NWJBVkd1U0c0UTBQNFMxNHFyS1lMZmpxbUxEM3FqNUpHY2RTa3RRU29tNklQcThoRXBuSXd5eElsbEZhNlV3TGdfVDFxblJaWktkUGMtcGQ5bmNBLVJVNVZlVHBTdThTZ1huOVRRYktZZHh4ZzJUTmJOTHVDbGRiRm16d0ppcnllNjQ4cmtYbldUbFdHLTZ3SVVYYk53ajE?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/19/migraciones-busca-expulsar-a-seis-extranjeros-detenidos-durante-incidentes-en-conmemoracion-del-18-o.shtml",
    "published": "2026-10-19T16:09:50Z",
    "first_seen": "2026-10-20T00:16:12Z",
-   "source_url": "https://www.biobiochile.cl"
+   "source_url": "https://www.biobiochile.cl",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
    "title": "Kast aprueba Alto Mando de la PDI para 2027: 12 oficiales a retiro y 13 ascensos",
    "summary": "",
-   "image": "",
+   "image": "https://media-front.elmostrador.cl/2025/10/PDI-.jpg",
    "source_url": "https://www.elmostrador.cl",
    "sources": [
     "El Mostrador"
    ],
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbGJuQ2R3ZGlCamxEOExmTWcxcG9FQV93QjZsNVFSQkh6TXN0RmxhVGREYWVOWWhhNUw2WV9jUzV4dmFDd3FrLUYxQXMwVGl6bVFXb0ZqN2ZxV3V2M2dYU29uQWZiQWdlZ2xoSkpqMGRJX0UxUDZHeWxpbTZvU2FiZmxidy1MLUsyY3JIcUpNRGxrRS1hcXZYN3RxRjBQWS10STV6a3hLbTdXZGlmbGM3N1pUZ3dnc3Y2MENDTzFRT3JPZmZjb25TcDREOGY?oc=5",
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/19/kast-aprueba-alto-mando-de-la-pdi-para-2027-12-oficiales-a-retiro-y-13-ascensos/",
    "published": "2026-10-19T16:08:33Z",
-   "first_seen": "2026-10-20T05:10:13Z"
+   "first_seen": "2026-10-20T05:10:13Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "internacional",
    "title": "Muere \"Mano\" Höllenreiner, superviviente gitano del Holocausto: su historia fue plasmada en una novela",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988864-muere-mano-hollenreiner-superviviente-gitano-del-holocausto-1.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQMXZZY05PVmwya3BPUmhUNXVBMlBrSE9KT0JTOVZzcjB0S1Vya3B0WjRhdTFKRHZwUjN2T3FJUGxrUE02X0paWlhMbVBKUEZkUjYwMzFucHF0aTVGNEl3RnVwRlpTb0U1SWExbDg4TmJmZkUwMzhlVGVzSFpMZzR6c21iRDloVUdNWDc0c3VZM1I0cllibnVldWlaZmY0NkRuYXdhY2lVUWJESVZzZUJiNGRQUnJjU3RrTWdrTmdPaFlLXzV2UlA1WGJ5bENaMXJjQVRwMjBfZFNRQWJvSktlSEJhUmNUdGJYZm9FbkZzdGtlUW5OVUl4QVE1WHZSUQ?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/sociedad/historia/2026/10/19/muere-mano-hollenreiner-superviviente-gitano-del-holocausto-su-historia-fue-plasmada-en-una-novela.shtml",
    "published": "2026-10-19T15:59:53Z",
    "first_seen": "2026-10-19T21:00:14Z",
-   "source_url": "https://www.biobiochile.cl"
+   "source_url": "https://www.biobiochile.cl",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "nacional",
@@ -1048,13 +1459,15 @@
    "category": "internacional",
    "title": "Encuestas post debate en Brasil proyectan escenario extremadamente cerrado entre Bolsonaro y Lula",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988799-lula-bolsonaro-debate.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOTXpfU1E4dmg4ODRadGkxRnRndnV1OUREcDRRTTlMMTBJYnNIcHBxWmZ1VVQzSENhdDZhVVk2V280bjNuUFVDdmdzZ1FoVENHUnlKZUhDcVo1Tk5UbHAxeW9aeFUxeGthX2drbzVfVXdaRU1qd3VYVTZpV3RKTGhGYmZZanNlbVpzNUtKVlM3TENmX3BPTEZ2ZHVhTHRZRWZ4a1R0VGRHX3A4SEllLVI3RVhBaDBkZ1BGMUplRXRGdzA0T2lYQlVqbElrQW1hVmtLTUtuS0RUZWZ0R2ltdmh0SVZsSS1jX2JDWWhvbE9nMGd4RkduMGFGeUZwOEJXV1lHWS1aT2c3N2ZTYVE?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/19/encuestas-post-debate-en-brasil-proyectan-escenario-extremadamente-cerrado-entre-bolsonaro-y-lula.shtml",
    "published": "2026-10-19T15:37:33Z",
-   "first_seen": "2026-10-19T21:00:14Z"
+   "first_seen": "2026-10-19T21:00:14Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/19/encuestas-post-debate-en-brasil-proyectan-escenario-extremadamente-cerrado-entre-bolsonaro-y-lula.shtml"
   },
   {
    "category": "deportes",
@@ -1123,13 +1536,15 @@
    "category": "internacional",
    "title": "Mario Marcel aterriza en la UDP como profesor de la Facultad de Administración y Economía",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/LTIK7KME6VBPFDOK2J63SHJ56A.jpg?auth=b7ebb6c35f47b03f9656605bc2dfe7766b7e70866fc924f2432016a32c29c342&height=630&width=1200&smart=true",
    "sources": [
     "La Tercera"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPXzhIazRMZ3EzdTVrRGwtalVTdENEUkl5ZEZnMVhjRnNad0VLdDVwNkN6MWpKOWhLcm1NRHk0OVZrT0RuRnlDQzFyRkdUWUpZS2ZydXl1MlFIOXNMNmRoa2l5NThGai1JOG53enh0Y25yNGRjQWVlSkZncmRyX2Zjdmw5SUZVakVaa3NSRkt0RWxMdlduZGRxNHNjcXpSNjF1TTRHY2FhS3lBWW1RcXAxLUlyVVlCcjRwQkhwSDRXblpTZGRlMUpHMklB0gHrAUFVX3lxTFBIajB2OEozZEgwajN0eGFCMERiZEEzR2tIeEpCOWltTi1SSVBabnFQSl8wT1hSU3NoVWdoSERIc0ZuTzItY3BaN3k1NlJySThvWWpFWlpGT0t0SU9Sc2U2clJ3SmxSaWQ0UU9fRE1Hb3JBV3EyNjdVSDd3U2RRTXJyVTJ0UmFjWERWcHFVVzNwMloyR21uc2RCbDBheVJuN1BiY2tRUWJsZ0NUZDZBRUJZeFczMVVOZ0VPTTd4MFhoSjk5MTBrdml6UElyNzZWNXhQN0FmNmo3aUM3Rk5tbVhQcDlEYmxYNkhMRjQ?oc=5",
+   "link": "https://www.latercera.com/pulso/noticia/mario-marcel-aterriza-en-la-udp-como-profesor-de-la-facultad-de-administracion-y-economia/",
    "published": "2026-10-19T14:50:00Z",
-   "first_seen": "2026-10-19T21:00:14Z"
+   "first_seen": "2026-10-19T21:00:14Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.latercera.com/pulso/noticia/mario-marcel-aterriza-en-la-udp-como-profesor-de-la-facultad-de-administracion-y-economia/"
   },
   {
    "category": "deportes",
@@ -1214,14 +1629,16 @@
    "category": "nacional",
    "title": "Fracasa nueva preparación de juicio oral contra Cathy Barriga: segundo juez también se inhabilitó",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988633-fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga_-segundo-juez-tambien-se-inhabilito.png",
    "sources": [
     "BioBioChile",
     "La Tercera"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQY0cxa05BS2s1WVdDb0VRemJWemlLLXQ3ZWwyZl92RGpaMXNjWXN4dF9Jejd1LXhCMzVHVG9xWnVQZzNHSnRHeWNHUDF6aTJHYzBTME5LaXRfRjVFUHJFdzBrODl2UnhlYVduNWVlaVItZTB0SzM2WGxsN0JHRWhDdjdVaU5KRVhhcEdWc0dxVkZxWjdCX0dRVUxjTFRhcktiMlRYUVJoZFNzdzExSFI5YU5iZFVUcjF5a25UWVYtTFg3cDlGS0lONkJyZm1COW1SWTdNb3FId2hIMmZtVG91ak1Ddk5vWWlobnIzMm5VTVNKMnVydGd4SmlOVGYtQkltOG5xNkpDWDhyZGM?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga-segundo-juez-tambien-se-inhabilito.shtml",
    "published": "2026-10-19T14:35:33Z",
-   "first_seen": "2026-10-19T15:49:30Z"
+   "first_seen": "2026-10-19T15:49:30Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga-segundo-juez-tambien-se-inhabilito.shtml"
   },
   {
    "category": "nacional",
@@ -1260,6 +1677,19 @@
    "published": "2026-10-19T14:21:00Z",
    "first_seen": "2026-10-19T15:49:30Z",
    "source_url": "https://www.biobiochile.cl"
+  },
+  {
+   "category": "politica",
+   "title": "Agustín Laje en Chile: “El gobierno de Kast no tendría que condicionar su rumbo por lo que dicen los que salieron quintos”",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPbzV4c3JDenRFbmRpeGtGdmRBa3FiWlFmczY1aGxwUllnWkpYeTBOWUc0TVl1SzdkMGdhRURLTzJoNWwtWGtwaWN4djVmZU1ZRVk4d0UtcjlLdHR2X0Y0NFlyTXFuZ0phZ25TTGdJNWl2UHp1amRqcE1uckhYSmJYRVZPYlpHRmNjdDAxUEE3RFlwRFRQdDFid29TeGs0OFpOdE4xamEtSFFzOE5tcHNJY0ZEOTVUWjJsREIwQVQ0bFNIaUdhUEhLNko2NncwbzNhUzZyT1JwdkJuZFlDdlBycEJ0RWcwdEFaY3k0V2F5UUFsUnE3UHfSAZcCQVVfeXFMT0xkOUlVVGxLVUd0YUxNcEtzVXlUei1VVnhBR2JoR1Foa0ZmR1VfZGtDVW9qT0tObE5uaUNQQWxyUDItU3p6aTJ1VHlySlB1UF85S3ZEQ21hLWJjWnJab2xDb21BMGxIbTdVSEx1TmNqdk9EbklidVV0R0dkbkd3bVdqSkJweVJaSzl4ejlzRnFqeGJ4dmJIMUFGOUFORGtDeVozVDg4OWs1SXNJYkZiM21xYmRYRVYyRnNDNnF6OFhaNkkzeloyTlRXQ1p5NG1fVVJRa3E5T3dVMW9fM2MwQXBSQ2FkaU5mU0hIMDllRmxmdHRZV09ZMUVjS09UVHo1N3k2bzZMVTYxRWQ5bDV4M0Z5eXlBMWtj?oc=5",
+   "published": "2026-10-19T14:18:41Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "nacional",
@@ -1327,14 +1757,15 @@
    "category": "internacional",
    "title": "Europa y Canadá buscan tender nuevo cable submarino para conectarse sin pasar por EEUU",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988636-cable-submarino-noruega-canada.png",
    "sources": [
     "BioBioChile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOSWpSUzNfazRVRWNmVmtZdUU0WnRkdHhUMGE4Z0tRQ092NGdzZ0ZkdjFtVmJlZWxZUUUxU1lGYUsta05HbkZIT3dZUVRUbUNhSDNUUFg2Y1pQbXRsM2h3N2NOUWthbFV4SjhFeUhnbEZWV0djMHJUWlFMUE5CS1NFdFoxckFUUHU3YTBBZWhOSlo1UTdZQndPSkZxQ3hyNTJwNk1rMHBmaU1kd0hlUnVDWTZkVlZSLXNJSWdiY29WUDV6QUhjQ0R0ejFlZHBFLU1VZVVBQ0JQbHN2RVlQcnBFX1FwTkJ6ejFLR2pVT09keEJUaER5cTdIU0NNU1hsTW8?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/adelantos/2026/10/19/europa-y-canada-buscan-tender-nuevo-cable-submarino-para-conectarse-sin-pasar-por-eeuu.shtml",
    "published": "2026-10-19T13:53:52Z",
    "first_seen": "2026-10-19T15:49:30Z",
-   "source_url": "https://www.biobiochile.cl"
+   "source_url": "https://www.biobiochile.cl",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z"
   },
   {
    "category": "internacional",
@@ -1360,6 +1791,19 @@
    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOTjNGa21PS1B3QUx3bGNFTDlOMjdaZ2xId1ZtcFQyejRpOFpXdm4zNXZYNS1tcTdZeEFkQ3k3cTUwU2Z0elI3ZV8wNXRJaVRhTi1pZ3VxbEtOTWhDQktxLU5ESFVDY1YzSmZiZHlEdE9hR2Zfd0FFbVNEUDUxVjNjaUc4Q19hREVBUTBkaE9TN2V1Mms5bUFSQ0MwTjR0TTlqXzI1R3hiZzFvdWxLcE5YOHVLVWJUQVlnTkxtSUhJRnZEMXUwTnFjY1o1S0lEaS1vSC1hMzZLOFFpU1RIczhTNlhZNjMxa0xGYlBUZTliQTREVU9DNi1IMFZLQ2FkM3JXR2pN?oc=5",
    "published": "2026-10-19T13:44:36Z",
    "first_seen": "2026-10-20T00:16:12Z"
+  },
+  {
+   "category": "regiones",
+   "title": "El partido entre Deportes Antofagasta y la Universidad de Chile podría suspenderse",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.diarioantofagasta.cl",
+   "sources": [
+    "El Diario de Antofagasta"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ3p1ZUlXWXpIb1JLN3ZNSEFqUkp0RldOOTBlSGgtcFdxbXQ5a3MxdjFDSHZxMXI3b3k2LXo3dXFhbXpMcDV2UWdFeFhGN1pwWEN5YWhLWUZQR1hHNmZ0bm5UY1hlSnlzN25WTWtLc1h0NDVkbDNMWjRiZzY3dkhTU1BDN1F4MzZqMHlTNVE0S3U1OG0tMDBmRjZjQ095d2c2a2Zwem1MWjZGWmw3cUpBOWoxa1c1NzRDaVo1SmVNM1ctT0d1azZkTTRrSzg?oc=5",
+   "published": "2026-10-19T13:41:31Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "nacional",
@@ -1837,6 +2281,19 @@
    "first_seen": "2026-10-19T15:49:30Z"
   },
   {
+   "category": "medioambiente",
+   "title": "Columna de José Cabello Lechuga : Geología y cambio climático en Chile",
+   "summary": "",
+   "image": "",
+   "source_url": "https://opinion.cooperativa.cl",
+   "sources": [
+    "Opinión - Cooperativa"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOF9CdTVOOTd1RFFXVHA3TGRwaThQRmlqSHhBbVp2a09CTDJDZk1tLVZUTzhjY1BESldjdVBxTEt2ZGxwTnE0RF9nZWxFUE8xVG9zVWNpN3NWb2lrR3pVaEl4TFNGRS1teUl2eWhaTEJPdWxja21WS1FKdzk0VWZCcnQyVTc2ZVlGdEV6cUh0d1drTUFhTHlPZFRPQzBiVS1aaFFjcktsMWo4aTBPVXN4LW92QQ?oc=5",
+   "published": "2026-10-19T09:25:08Z",
+   "first_seen": "2026-10-20T05:25:00Z"
+  },
+  {
    "category": "nacional",
    "title": "\"Me tiembla todo cuando viene el ajuste\": un cura y la cruz de convivir con el peaje más caro de Chile",
    "summary": "",
@@ -1896,6 +2353,19 @@
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVWlTWENfM2pPaGxoY2R6aEg1dHYtRTZYNTVjbGtEUUZvSzBsdTk4OUxzU0M0SjE5NDVqSXA1T05IOVZ6S1pWNHJWMmtJdkpmNklkQVNFVUlmMm1mdkRGZm5ienNlQkxEdTV1bFRXQmJXTEFlVmpGdkpROVN3RG9nLXNwRTJ5dlpmQ0hN?oc=5",
    "published": "2026-10-19T09:00:00Z",
    "first_seen": "2026-10-20T03:15:08Z"
+  },
+  {
+   "category": "salud-ciencia",
+   "title": "Casi el 20% de Chile tiene 60 años o más: aumentan las ITS y especialistas llaman a derribar mitos sobre la sexualidad en personas mayores",
+   "summary": "",
+   "image": "",
+   "source_url": "https://presslatam.cl",
+   "sources": [
+    "PressLatam"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOZ3RDT0hhVDY1MTZBT3h3MGNKUW1RcjdDU2pjZ0JKUEhjQ2JoTER0ajdmbjRtYjlJX2FkU204U3dtcDg2ZVpkQ0pIVjZBd0UyVU5IY0l6dGg5NTVQb0FhbGtNbXpJWl80YkNPWUpXYVhiYTdRcUR6aVhPbVktRDA4OGpydTFkanNFbGV1bGxIMTRoN016QW5RMTNQX25qd2R2OF9PTWUyVUlGTmR4WDZHSU5LclZxb1REcGh0WktpaTRodjY1eWJFVHBKMzgxLUxlY192bTVQcHZZbjcwUUVhVjJpREJOUzNaeXMyczlWY2lhejlTSXBGYlVJUdIB-wFBVV95cUxOZ3RDT0hhVDY1MTZBT3h3MGNKUW1RcjdDU2pjZ0JKUEhjQ2JoTER0ajdmbjRtYjlJX2FkU204U3dtcDg2ZVpkQ0pIVjZBd0UyVU5IY0l6dGg5NTVQb0FhbGtNbXpJWl80YkNPWUpXYVhiYTdRcUR6aVhPbVktRDA4OGpydTFkanNFbGV1bGxIMTRoN016QW5RMTNQX25qd2R2OF9PTWUyVUlGTmR4WDZHSU5LclZxb1REcGh0WktpaTRodjY1eWJFVHBKMzgxLUxlY192bTVQcHZZbjcwUUVhVjJpREJOUzNaeXMyczlWY2lhejlTSXBGYlVJUQ?oc=5",
+   "published": "2026-10-19T08:37:10Z",
+   "first_seen": "2026-10-20T05:25:00Z"
   },
   {
    "category": "nacional",
