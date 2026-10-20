@@ -21,6 +21,9 @@ Variables de entorno:
   SITE_URL          URL pública definitiva sin barra final (ej: https://noticias.midominio.cl).
                     Si no se define, se deduce de GITHUB_REPOSITORY (GitHub Pages).
   GSC_VERIFICATION  código de verificación de Google Search Console (opcional)
+  ADSENSE_PUBLISHER_ID  identificador ca-pub-... para verificación (opcional)
+  ADSENSE_READY  true únicamente tras revisión del sitio y políticas
+  ADSENSE_PRIVACY_URL  URL HTTPS a política de privacidad publicada
 """
 
 import argparse
@@ -733,6 +736,10 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
         newsletter_url = ""
 
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
+    from scripts.adsense import configured_adsense
+    adsense = configured_adsense(os.environ, SITE_URL)
+    if adsense["requested"] and not adsense["enabled"]:
+        print("[aviso] AdSense deshabilitado: requiere ID, dominio raíz propio y política HTTPS.")
     nav = render_nav(sel)
     replacements = {
         "%%TITLE%%": esc(SITE_TITLE),
@@ -741,6 +748,9 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
         "%%CANONICAL%%": esc(SITE_URL + "/"),
         "%%OG_IMAGE%%": esc(SITE_URL + "/og-image.png"),
         "%%GSC_META%%": f'<meta name="google-site-verification" content="{esc(gsc_code)}">' if gsc_code else "",
+        "%%ADSENSE_META%%": adsense["meta"],
+        "%%ADSENSE_CODE%%": adsense["code"],
+        "%%ADSENSE_PRIVACY_LINK%%": adsense["footer"],
         "%%JSONLD%%": build_jsonld(sel, now),
         "%%UPDATED_ISO%%": to_iso(now),
         "%%UPDATED_HUMAN%%": human_datetime(now),
@@ -784,6 +794,8 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
         "robots.txt": f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
         "sitemap.xml": render_sitemap(SITE_URL, to_iso(now)),
     }
+    if adsense["ads_txt"]:
+        files["ads.txt"] = adsense["ads_txt"]
     for name, content in files.items():
         with open(os.path.join(out_dir, name), "w", encoding="utf-8") as handle:
             handle.write(content)
