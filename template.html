@@ -452,7 +452,8 @@
 
   // Si una imagen externa falla, conservar la composición y mostrar la fuente real.
   // No generar ilustraciones ficticias ni dejar espacios vacíos.
-  d.querySelectorAll("figure.media img").forEach(function (img) {
+  var usedNewsImages = Object.create(null);
+  d.querySelectorAll("figure.media > img").forEach(function (img) {
     var fallback = function () {
       var figure = img.closest("figure");
       if (!figure || figure.classList.contains("media--source")) return;
@@ -473,6 +474,8 @@
       visual.appendChild(label);
       figure.appendChild(visual);
     };
+    if (usedNewsImages[img.src]) { fallback(); return; }
+    usedNewsImages[img.src] = true;
     if (img.complete && img.naturalWidth === 0) fallback(); else img.addEventListener("error", fallback);
   });
 
@@ -639,7 +642,7 @@
       if (status) status.textContent = total ? (total - read) + " noticias por leer" : "";
     }
     main.addEventListener("click", function (event) {
-      var link = event.target.closest("a[data-cat]");
+      var link = event.target.closest("a[data-cat],a.read");
       if (!link || !cardFor(link)) return;
       seen[link.href] = Date.now();
       persist();
