@@ -86,11 +86,19 @@
   .bar-inner{display:flex;align-items:center;gap:18px;min-height:52px;}
   .brand-mini{font-family:var(--serif);font-weight:700;font-size:17px;text-transform:uppercase;white-space:nowrap;max-width:0;overflow:hidden;visibility:hidden;opacity:0;margin-right:-18px;transition:opacity .2s;}
   .sticky-bar.is-stuck .brand-mini{max-width:280px;visibility:visible;opacity:1;margin-right:0;}
-  .site-nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none;}
+  .site-nav{flex:1;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-behavior:smooth;mask-image:linear-gradient(to right,#000 0%,#000 97%,transparent 100%);}
   .site-nav::-webkit-scrollbar{display:none;}
   .site-nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;}
   .site-nav a{display:flex;align-items:center;min-height:52px;padding:0 12px;white-space:nowrap;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--on-navy-soft);border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
-  .site-nav a:hover,.site-nav a:focus-visible{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));}
+  .site-nav a:hover,.site-nav a:focus-visible{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.07);}
+  .site-nav a.is-active{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.10);}
+  .nav-controls{display:none;align-items:center;gap:4px;flex:none;}
+  .js .nav-controls{display:flex;}
+  .nav-arrow,.nav-pause{display:inline-flex;align-items:center;justify-content:center;min-width:32px;min-height:34px;padding:0 5px;border:1px solid rgba(255,255,255,.22);border-radius:5px;background:transparent;color:var(--on-navy);cursor:pointer;font:600 16px/1 var(--sans);}
+  .nav-arrow:hover,.nav-pause:hover,.nav-arrow:focus-visible,.nav-pause:focus-visible{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.5);}
+  .nav-arrow:disabled{opacity:.3;cursor:default;}
+  .nav-pause{font-size:12px;min-width:34px;}
+  .nav-pause[aria-pressed="true"]{background:rgba(255,255,255,.16);}
   .site-nav a[class^="cat-"]::before,.footer-nav a[class^="cat-"]::before{content:"";display:inline-block;flex-shrink:0;width:8px;height:8px;margin-right:8px;background:var(--cat-b);}
   .icon-btn{display:none;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:0 8px;background:none;border:0;color:var(--on-navy);font:600 12.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;}
   .js .search-toggle{display:inline-flex;margin-left:auto;}
@@ -153,6 +161,11 @@
     background:color-mix(in srgb,var(--cat,var(--surface)) 4%,var(--surface));
   }
   .lead:hover,.feature:hover,.rail-list li:hover,.compact-list li:hover{border-color:var(--cat,var(--muted));}
+  .lead,.feature,.rail-list li,.compact-list li{box-shadow:0 2px 10px rgba(6,20,36,.055);}
+  .lead:hover,.feature:hover,.rail-list li:hover,.compact-list li:hover{box-shadow:0 7px 20px rgba(6,20,36,.13);transform:translateY(-2px);}
+  .lead,.feature,.rail-list li,.compact-list li{transition:border-color .18s,box-shadow .18s,transform .18s;}
+  .section-head{background:linear-gradient(90deg,color-mix(in srgb,var(--cat,var(--navy)) 9%,var(--surface)),transparent 68%);padding-left:10px;}
+  .section-count{background:color-mix(in srgb,var(--cat,var(--navy)) 9%,var(--surface));border-radius:4px;padding:4px 8px;}
 
   /* ---------- Portada ---------- */
   .top-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;align-items:stretch;}
@@ -261,7 +274,8 @@
     .brand-mini{margin-right:-8px;font-size:15px;}
     .sticky-bar.is-stuck .brand-mini{max-width:200px;}
     .js .menu-toggle{display:inline-flex;}
-    .js .site-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.12);max-height:70vh;overflow-y:auto;}
+    .js .site-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.12);max-height:70vh;overflow-y:auto;mask-image:none;}
+    .nav-controls,.js .nav-controls{display:none;}
     .js .site-nav.open{display:block;}
     .js .site-nav ul{flex-direction:column;}
     .js .site-nav a{min-height:48px;padding:0 18px;border-bottom:1px solid rgba(255,255,255,.08);}
@@ -287,7 +301,7 @@
     .footer-nav,.footer-about{grid-column:1 / -1;}
     .meta a,.meta time{min-height:24px;}
   }
-  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto !important;transform:none !important;}}
 </style>
 </head>
 <body>
@@ -317,9 +331,14 @@
     <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Secciones
     </button>
-    <nav class="site-nav" id="site-nav" aria-label="Secciones">
+    <nav class="site-nav" id="site-nav" aria-label="Secciones" tabindex="0">
       <ul>%%NAV%%</ul>
     </nav>
+    <div class="nav-controls" role="group" aria-label="Mover menú de secciones">
+      <button type="button" class="nav-arrow" id="nav-prev" aria-label="Secciones anteriores" title="Mover a la izquierda">‹</button>
+      <button type="button" class="nav-pause" id="nav-pause" aria-label="Pausar desplazamiento automático" aria-pressed="false" title="Pausar">Ⅱ</button>
+      <button type="button" class="nav-arrow" id="nav-next" aria-label="Secciones siguientes" title="Mover a la derecha">›</button>
+    </div>
     <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
     </button>
@@ -404,6 +423,62 @@
     menuBtn.addEventListener("click", function () { setSearch(false); setMenu(!nav.classList.contains("open")); });
     nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
   }
+
+  // Navegación desplazable: movimiento manual, pausa, ratón/teclado y preferencia de accesibilidad.
+  (function () {
+    var strip = d.getElementById("site-nav"), prev = d.getElementById("nav-prev");
+    var next = d.getElementById("nav-next"), pause = d.getElementById("nav-pause");
+    if (!strip || !prev || !next || !pause) return;
+    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
+    var manualPaused = !!(reduced && reduced.matches);
+    var hovering = false, focusing = false, pointerDown = false;
+    var direction = 1, timer = null, lastManual = 0;
+    function canScroll() { return strip.scrollWidth > strip.clientWidth + 6; }
+    function update() {
+      var max = Math.max(0, strip.scrollWidth - strip.clientWidth);
+      var visible = canScroll();
+      prev.disabled = !visible || strip.scrollLeft < 2;
+      next.disabled = !visible || strip.scrollLeft > max - 2;
+      pause.disabled = !visible;
+      pause.setAttribute("aria-pressed", String(manualPaused));
+      pause.textContent = manualPaused ? "▶" : "Ⅱ";
+      pause.setAttribute("aria-label", manualPaused ? "Reanudar desplazamiento automático" : "Pausar desplazamiento automático");
+      var group = pause.parentNode;
+      if (group) group.hidden = !visible || window.innerWidth <= 767;
+    }
+    function move(sign) {
+      lastManual = Date.now();
+      strip.scrollBy({left: sign * Math.max(145, Math.floor(strip.clientWidth * .65)), behavior:"smooth"});
+    }
+    prev.addEventListener("click", function () {move(-1);});
+    next.addEventListener("click", function () {move(1);});
+    pause.addEventListener("click", function () {manualPaused = !manualPaused; update();});
+    strip.addEventListener("mouseenter", function () {hovering = true;});
+    strip.addEventListener("mouseleave", function () {hovering = false;});
+    strip.addEventListener("focusin", function () {focusing = true;});
+    strip.addEventListener("focusout", function (e) {if (!strip.contains(e.relatedTarget)) focusing = false;});
+    strip.addEventListener("pointerdown", function () {pointerDown = true; lastManual = Date.now();});
+    window.addEventListener("pointerup", function () {pointerDown = false;});
+    strip.addEventListener("wheel", function (e) {
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) lastManual = Date.now();
+    }, {passive:true});
+    strip.addEventListener("scroll", update, {passive:true});
+    window.addEventListener("resize", update);
+    if (reduced && reduced.addEventListener) reduced.addEventListener("change", function(e) {
+      if (e.matches) manualPaused = true;
+      update();
+    });
+    timer = window.setInterval(function () {
+      if (manualPaused || hovering || focusing || pointerDown || !canScroll() ||
+          window.innerWidth <= 767 || d.hidden || Date.now() - lastManual < 4500 ||
+          (reduced && reduced.matches)) return;
+      var max = strip.scrollWidth - strip.clientWidth;
+      if (strip.scrollLeft >= max - 3) direction = -1;
+      if (strip.scrollLeft <= 3) direction = 1;
+      strip.scrollBy({left: direction * 92, behavior:"smooth"});
+    }, 2800);
+    update();
+  })();
 
   // «Ver más» revela noticias que ya vienen en el HTML estático.
   d.querySelectorAll("[data-show-more]").forEach(function (button) {
