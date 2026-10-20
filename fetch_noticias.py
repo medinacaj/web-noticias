@@ -561,7 +561,7 @@ def render_sections(by_category, now):
                         f'<div class="news-body"><h3 class="feature-title">{title_link(feature)}</h3>'
                         f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
         compact = "".join(
-            f'<li{" hidden" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
+            f'<li{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
             f'<div class="news-body"><h3>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
             for i, s in enumerate(rest))
         grid_class = "section-grid" if compact else "section-grid section-grid--single"
