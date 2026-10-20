@@ -301,6 +301,26 @@ def collect(now):
                 count += len(got)
             except Exception as error:
                 print(f"[aviso] Feed directo {name} falló: {error}")
+        if key == "internacional":
+            # Cobertura mundial equilibrada sin suplantar la fuente ni usar RSS
+            # directo de medios que no permiten su reutilización comercial.
+            from scripts.global_sources import (WORLD_NEWS_SOURCES,
+                MAX_NEWS_PER_WORLD_SOURCE, world_news_google_url,
+                matches_world_source)
+            for media in WORLD_NEWS_SOURCES:
+                try:
+                    results = fetch_rss(world_news_google_url(media), key)
+                    verified = [item for item in results
+                                if matches_world_source(item, media)
+                                and item.get("title") and item.get("link")
+                                and item.get("published")]
+                    got = verified[:MAX_NEWS_PER_WORLD_SOURCE]
+                    items += got
+                    count += len(got)
+                    print(f"  Medio internacional {media['name']}: {len(got)}")
+                except Exception as error:
+                    # Una fuente caída no interrumpe la edición ni las demás.
+                    print(f"[aviso] Medio internacional {media['name']} falló: {error}")
         if use_gnews and cat.get('gnews'):
             try:
                 got = fetch_gnews(cat)
@@ -402,7 +422,10 @@ def merge(stories, items, now):
         incoming_sources = item.get("sources") or [item.get("source") or "Fuente"]
         published = parse_date(item.get("published"))
         published = to_iso(published) if published else None
-        match = next((s for s in stories if is_similar(norm, s["_norm"])), None)
+        # Un medio puede cambiar el título conservando la misma URL: no
+        # publicar una segunda ficha para el mismo artículo.
+        match = (next((s for s in stories if s.get("link") == link), None)
+                 or next((s for s in stories if is_similar(norm, s["_norm"])), None))
         if match:
             coverages = coverage_items(match)
             entry = coverage_entry(item)
