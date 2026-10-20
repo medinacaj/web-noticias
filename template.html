@@ -265,10 +265,6 @@
   .is-compact .coverage-trigger{font-size:11px;}
   .meta time[data-fresh="true"]{font-weight:700;color:var(--card-link);}
   .breaking time[data-fresh="true"]{color:var(--red);}
-  .read-marker{display:inline-block;flex:0 0 auto;width:6px;height:6px;background:var(--cat-b,var(--card-link));border-radius:50%;margin-left:auto;vertical-align:middle;}
-  .is-read .read-marker{background:transparent;border:1px solid var(--card-muted);}
-  .lead.is-read,.feature.is-read,.rail-list li.is-read,.compact-list li.is-read{border-color:color-mix(in srgb,var(--card-rule) 60%,transparent);}
-  .is-read h2 a,.is-read h3 a{color:var(--card-muted);}
   .news-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
   .news-toolbar select{background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:8px;color:var(--ink);font:500 12px var(--sans);}
   .reading-size{font-size:12px;color:var(--muted);}
@@ -277,16 +273,11 @@
   #contenido[data-text-size="large"] .rail-item h3{font-size:21px;}
   #contenido[data-text-size="large"] .dek{font-size:19px;}
   #contenido[data-text-size="large"] .section-grid .meta{font-size:13px;}
-  .section-grid [data-filter-hidden],.top-grid [data-filter-hidden]{display:none !important;}
-  .filtered-empty{font:500 14px var(--sans);color:var(--muted);padding:12px 0;}
-  .filtered-empty[hidden]{display:none !important;}
   .back-to-top{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));right:18px;z-index:30;border:1px solid var(--rule);border-radius:100px;padding:10px 14px;min-height:44px;background:var(--surface);color:var(--ink);font:600 12px var(--sans);box-shadow:var(--card-shadow);cursor:pointer;}
   .back-to-top[hidden]{display:none !important;}
   .news-toolbar label{font-size:12px;font-weight:600;color:var(--muted);}
   .density-switch{font:600 12px var(--sans);padding:8px 12px;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;cursor:pointer;}
   .density-switch[aria-pressed="true"]{background:var(--navy);color:var(--on-navy);border-color:var(--navy);}
-  .reading-status{font-size:12px;color:var(--muted);margin-right:auto;}
-  .reading-status:empty{display:none;}
   .is-compact .section-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
   .is-compact .section-grid .media{display:none;}
   .is-compact .feature,.is-compact .compact-list li{min-height:0;padding:13px 15px;}
@@ -460,7 +451,7 @@
 %%BREAKING%%
 
 <main id="contenido" class="container">
-<div class="news-toolbar" aria-label="Opciones de lectura"><span id="reading-status" class="reading-status" aria-live="polite"></span><label for="reading-filter">Mostrar</label><select id="reading-filter" aria-label="Filtrar noticias"><option value="all">Todas</option><option value="unread">Por leer</option><option value="read">Leídas</option><option value="multiple">Varias fuentes</option></select><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div><p id="filter-empty" class="filtered-empty" role="status" hidden>No hay noticias que coincidan con este filtro. Selecciona «Todas» para verlas de nuevo.</p>
+<div class="news-toolbar" aria-label="Opciones de visualización"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div>
 %%TOP%%
 %%CONTEXT%%
 %%SECTIONS%%
@@ -666,77 +657,17 @@
     updatePause();
   })();
 
-  // Preferencias locales opcionales: sin cuentas, cookies ni envío a terceros.
-  // El enlace original se mantiene como única acción de abrir la noticia.
+  // Preferencias visuales únicamente; las noticias nunca se marcan como leídas.
   (function () {
-    var main = d.getElementById("contenido");
-    var density = d.getElementById("density-switch");
-    var status = d.getElementById("reading-status");
+    var main = d.getElementById("contenido"), density = d.getElementById("density-switch");
+    var textSize = d.getElementById("text-size");
     if (!main || !density) return;
-    var key = "noticias:reading:v1", densityKey = "noticias:density:v1";
-    var filter = d.getElementById("reading-filter"), textSize = d.getElementById("text-size");
-    var empty = d.getElementById("filter-empty");
-    var maxAge = 30 * 24 * 60 * 60 * 1000;
-    var seen = {};
+    var densityKey = "noticias:density:v1";
+    // Limpiar marcas anteriores del navegador tras retirar el seguimiento individual.
     try {
-      seen = JSON.parse(localStorage.getItem(key) || "{}");
-      if (!seen || typeof seen !== "object" || Array.isArray(seen)) seen = {};
-    } catch (err) { seen = {}; }
-    var now = Date.now();
-    Object.keys(seen).forEach(function (url) {
-      if (typeof seen[url] !== "number" || now - seen[url] > maxAge || seen[url] > now) delete seen[url];
-    });
-    function persist() {
-      try { localStorage.setItem(key, JSON.stringify(seen)); } catch (err) { /* Lectura funciona sin almacenamiento. */ }
-    }
-    function cardFor(link) { return link.closest(".lead,.feature,.rail-list li,.compact-list li"); }
-    function refresh() {
-      var total = 0, read = 0;
-      main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li").forEach(function (card) {
-        var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
-        if (!link) return;
-        total++;
-        var opened = Object.prototype.hasOwnProperty.call(seen, link.href);
-        if (opened) read++;
-        card.classList.toggle("is-read", opened);
-        var dot = card.querySelector(".read-marker");
-        if (!dot) {
-          dot = d.createElement("span");
-          dot.className = "read-marker";
-          dot.setAttribute("aria-hidden", "true");
-          var kicker = card.querySelector(".kicker");
-          if (kicker) kicker.appendChild(dot);
-        }
-        link.setAttribute("data-reading-state", opened ? "leida" : "nueva");
-      });
-      if (status) status.textContent = total ? (total - read) + " noticias por leer" : "";
-      applyReadingFilter();
-    }
-    function applyReadingFilter() {
-      if (!filter) return;
-      var visible = 0, selected = filter.value;
-      main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li").forEach(function (card) {
-        var hasArticle = !!card.querySelector("h2 a[data-cat],h3 a[data-cat]");
-        if (!hasArticle) return;
-        var multiple = !!card.querySelector("[data-coverage-trigger]");
-        var read = card.classList.contains("is-read");
-        var show = selected === "all" || (selected === "read" && read)
-          || (selected === "unread" && !read) || (selected === "multiple" && multiple);
-        card.toggleAttribute("data-filter-hidden", !show);
-        if (show && !card.hasAttribute("data-extra")) visible++;
-      });
-      if (empty) empty.hidden = visible > 0;
-    }
-    if (filter) {
-      filter.addEventListener("change", function () {
-        try { sessionStorage.setItem("noticias:filter:v1", filter.value); } catch (err) {}
-        applyReadingFilter();
-      });
-      try {
-        var storedFilter = sessionStorage.getItem("noticias:filter:v1");
-        if (["all","read","unread","multiple"].indexOf(storedFilter) >= 0) filter.value = storedFilter;
-      } catch (err) {}
-    }
+      localStorage.removeItem("noticias:reading:v1");
+      sessionStorage.removeItem("noticias:filter:v1");
+    } catch (err) { /* La visualización sigue funcionando sin almacenamiento. */ }
     if (textSize) {
       textSize.addEventListener("change", function () {
         main.dataset.textSize = textSize.value;
@@ -748,13 +679,6 @@
         }
       } catch (err) {}
     }
-    main.addEventListener("click", function (event) {
-      var link = event.target.closest("a[data-cat],a.read");
-      if (!link || !cardFor(link)) return;
-      seen[link.href] = Date.now();
-      persist();
-      refresh();
-    });
     density.addEventListener("click", function () {
       var compact = !main.classList.contains("is-compact");
       main.classList.toggle("is-compact", compact);
@@ -769,8 +693,6 @@
         density.textContent = "Editorial";
       }
     } catch (err) {}
-    persist();
-    refresh();
   })();
 
   // La sección visible se identifica sin desplazar el carrusel ni forzar animaciones.
@@ -845,8 +767,6 @@
         item.removeAttribute("data-extra");
       });
       if (!section.querySelector("[data-extra]")) button.hidden = true;
-      var filter = d.getElementById("reading-filter");
-      if (filter) filter.dispatchEvent(new Event("change"));
     });
   });
 
