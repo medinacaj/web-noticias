@@ -19,9 +19,15 @@ class NavigationPolishTests(unittest.TestCase):
         for marker in ('pointerdown', 'pointermove', 'pointerup',
                        'pressX = event.clientX',
                        'startScroll - delta', 'event.preventDefault()',
-                       'paused = !paused', 'dataset.paused', 'setInterval',
-                       'scrollTo({left:0', 'scrollBy({left:90'):
+                       'paused = !paused', 'dataset.paused', 'requestAnimationFrame',
+                       'scrollLeft += elapsed * 0.055', 'scrollLeft -= cycleWidth'):
             self.assertIn(marker, self.html)
+
+    def test_no_stepwise_movement_or_hover_pauses(self):
+        self.assertNotIn("window.setInterval(function () {", self.html)
+        self.assertNotIn("hovered || focused", self.html)
+        self.assertIn('clone.setAttribute("aria-hidden", "true")', self.html)
+        self.assertIn('el.setAttribute("tabindex", "-1")', self.html)
 
     def test_accessible_motion_preferences_and_keyboard(self):
         for marker in ('prefers-reduced-motion: reduce',
