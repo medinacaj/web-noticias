@@ -479,7 +479,7 @@ def figure_html(story, eager=False):
                 f'<span class="source-visual">{source_mark(story)}'
                 f'<span class="source-visual-name">{esc(source)}</span></span>'
                 f'</figure>')
-    loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    loading = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
     return (f'<figure class="media"><img src="{esc(image)}" alt="" width="1200" height="675" '
             f'{loading} decoding="async" referrerpolicy="no-referrer">'
             f'<span class="media-badge" aria-hidden="true">{source_mark(story)}</span></figure>')
@@ -491,8 +491,9 @@ def meta_html(story, now, read_link=False):
     moment = story_time(story) or now
     read = (f'<a class="read" href="{esc(story["link"])}" target="_blank" rel="noopener">Ver noticia completa</a>'
             if read_link else "")
+    fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'<time datetime="{to_iso(moment)}">{time_ago(story, now)}</time>{read}</p>')
+            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{read}</p>')
 
 
 def dek_html(story):
@@ -513,7 +514,7 @@ def render_top(sel, now):
     if not lead:
         return ""
     lead_html = (
-        f'<article class="lead cat-{lead["category"]}" id="portada">{figure_html(lead, eager=True)}'
+        f'<article class="lead cat-{lead["category"]}{" lead--text" if not safe_image(lead.get("image")) else ""}" id="portada">{figure_html(lead, eager=True)}'
         f'<p class="kicker">Portada · {esc(category_label(lead))}</p>'
         f'<h2 class="lead-title">{title_link(lead)}</h2>{dek_html(lead)}{meta_html(lead, now, True)}</article>'
     )
