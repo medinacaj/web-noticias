@@ -775,21 +775,193 @@
       refresh();
     });
     density.addEventListener("click", function () {
-      var compact = !main.classList.contains("is-compact");
-      main.classList.toggle("is-compact", compact);
-      density.setAttribute("aria-pressed", String(compact));
-      density.textContent = compact ? "Editorial" : "Compacta";
-      try { localStorage.setItem(densityKey, compact ? "compact" : "editorial"); } catch (err) {}
+      var mode = main.classList.contains("is-headlines") ? "editorial"
+        : main.classList.contains("is-compact") ? "headlines" : "compact";
+      setDensity(mode);
+      try { localStorage.setItem(densityKey, mode); } catch (err) {}
     });
+    function setDensity(mode) {
+      main.classList.toggle("is-compact", mode === "compact");
+      main.classList.toggle("is-headlines", mode === "headlines");
+      density.setAttribute("aria-pressed", String(mode !== "editorial"));
+      density.textContent = mode === "editorial" ? "Compacta"
+        : mode === "compact" ? "Solo titulares" : "Editorial";
+    }
     try {
-      if (localStorage.getItem(densityKey) === "compact") {
-        main.classList.add("is-compact");
-        density.setAttribute("aria-pressed", "true");
-        density.textContent = "Editorial";
-      }
+      var savedMode = localStorage.getItem(densityKey);
+      if (savedMode === "compact" || savedMode === "headlines") setDensity(savedMode);
     } catch (err) {}
     persist();
     refresh();
+  })();
+
+  // V5: controles centralizados, biblioteca local, fuentes preferidas e historial.
+  (function () {
+    var main = d.getElementById("contenido");
+    var prefs = d.getElementById("preferences-panel"), library = d.getElementById("library-panel");
+    if (!main || !prefs || !library) return;
+    var sourceSelect = d.getElementById("source-preference");
+    var categorySelect = d.getElementById("category-preference");
+    var sortSelect = d.getElementById("source-sort");
+    var savedList = d.getElementById("saved-stories");
+    var historyList = d.getElementById("reading-history");
+    var storageKey = "noticias:library:v1", historyKey = "noticias:history:v1";
+    var sourceKey = "noticias:source:v1", categoryKey = "noticias:category:v1", sortKey = "noticias:sort:v1";
+    var MAX_RECORDS = 120, DAYS = 30 * 86400000;
+    function get(key, fallback) {
+      try { return JSON.parse(localStorage.getItem(key) || "null") || fallback; }
+      catch (err) { return fallback; }
+    }
+    function set(key, value) {
+      try { localStorage.setItem(key, JSON.stringify(value)); } catch (err) {}
+    }
+    function validUrl(url) {
+      try { var parsed = new URL(url); return parsed.protocol === "https:"; }
+      catch (err) { return false; }
+    }
+    function tidy(records) {
+      var now = Date.now();
+      return (Array.isArray(records) ? records : []).filter(function (item) {
+        return item && validUrl(item.url) && typeof item.title === "string"
+          && item.title.length < 400 && typeof item.time === "number"
+          && item.time <= now && now - item.time < DAYS;
+      }).slice(0, MAX_RECORDS);
+    }
+    var saved = tidy(get(storageKey, [])), history = tidy(get(historyKey, []));
+    var cards = Array.prototype.slice.call(main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li"))
+      .filter(function (card) {return !!card.querySelector("h2 a[data-cat],h3 a[data-cat]");});
+    var sources = new Set(), categories = new Map();
+    cards.forEach(function (card) {
+      var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+      var source = card.querySelector(".source-name");
+      if (source) sources.add(source.textContent.trim());
+      categories.set(link.getAttribute("data-key"), link.getAttribute("data-cat"));
+    });
+    Array.from(sources).sort().forEach(function (name) {
+      var opt = d.createElement("option"); opt.value = name; opt.textContent = name;
+      sourceSelect.appendChild(opt);
+    });
+    Array.from(categories).sort().forEach(function (entry) {
+      var opt = d.createElement("option"); opt.value = entry[0]; opt.textContent = entry[1];
+      categorySelect.appendChild(opt);
+    });
+    function makeRecord(link) {
+      return {url:link.href, title:link.textContent.trim().slice(0, 399),
+        category:link.getAttribute("data-cat") || "", time:Date.now()};
+    }
+    function renderList(element, records, removable) {
+      element.replaceChildren();
+      if (!records.length) {
+        var empty = d.createElement("li"); empty.textContent = removable
+          ? "Aún no guardaste noticias." : "No hay lecturas recientes."; element.appendChild(empty);
+        return;
+      }
+      records.forEach(function (entry) {
+        var li = d.createElement("li"), a = d.createElement("a");
+        a.href = entry.url; a.target = "_blank"; a.rel = "noopener";
+        a.textContent = entry.title; li.appendChild(a);
+        if (removable) {
+          var button = d.createElement("button");
+          button.type = "button"; button.textContent = "Quitar";
+          button.setAttribute("aria-label", "Quitar noticia guardada: " + entry.title);
+          button.addEventListener("click", function () {
+            saved = saved.filter(function (x) { return x.url !== entry.url; });
+            set(storageKey, saved); syncSaved(); renderList(savedList, saved, true);
+          });
+          li.appendChild(button);
+        }
+        element.appendChild(li);
+      });
+    }
+    function syncSaved() {
+      cards.forEach(function (card) {
+        var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+        var active = saved.some(function (x) {return x.url === link.href;});
+        var button = card.querySelector(".save-story");
+        if (!button) {
+          button = d.createElement("button"); button.type = "button"; button.className = "save-story";
+          button.setAttribute("aria-label", "Guardar noticia para después");
+          button.textContent = "☆";
+          button.addEventListener("click", function () {
+            var exists = saved.some(function (x) {return x.url === link.href;});
+            saved = saved.filter(function (x) {return x.url !== link.href;});
+            if (!exists) saved.unshift(makeRecord(link));
+            saved = tidy(saved); set(storageKey, saved);
+            syncSaved(); renderList(savedList, saved, true);
+          });
+          var kicker = card.querySelector(".kicker");
+          if (kicker) kicker.appendChild(button);
+        }
+        button.textContent = active ? "★" : "☆";
+        button.setAttribute("aria-pressed", String(active));
+        button.setAttribute("aria-label", (active ? "Quitar de guardadas: " : "Guardar noticia: ") + link.textContent.trim());
+      });
+    }
+    main.addEventListener("click", function (event) {
+      var link = event.target.closest("a[data-cat],a.read");
+      if (!link || !link.closest(".lead,.feature,.rail-list li,.compact-list li")) return;
+      var title = link.closest(".lead,.feature,.rail-list li,.compact-list li").querySelector("h2 a[data-cat],h3 a[data-cat]");
+      if (!title) return;
+      history = history.filter(function (x) {return x.url !== title.href;});
+      history.unshift(makeRecord(title)); history = tidy(history);
+      set(historyKey, history); renderList(historyList, history, false);
+    });
+    function switchPanel(id) {
+      [prefs,library].forEach(function (panel) {
+        panel.hidden = panel.id !== id || !panel.hidden;
+        var toggle = d.getElementById(panel.id === "preferences-panel" ? "preferences-toggle" : "library-toggle");
+        toggle.setAttribute("aria-expanded", String(!panel.hidden));
+      });
+    }
+    ["preferences","library"].forEach(function (name) {
+      d.getElementById(name+"-toggle").addEventListener("click", function () {switchPanel(name+"-panel");});
+    });
+    d.querySelectorAll("[data-close-panel]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var panel = d.getElementById(button.getAttribute("data-close-panel"));
+        panel.hidden = true;
+        var toggle = d.getElementById(panel.id === "preferences-panel" ? "preferences-toggle" : "library-toggle");
+        toggle.setAttribute("aria-expanded", "false"); toggle.focus();
+      });
+    });
+    d.getElementById("clear-reader-history").addEventListener("click", function () {
+      history = []; set(historyKey, history); renderList(historyList, history, false);
+    });
+    function applySourcePreferences() {
+      var source = sourceSelect.value, category = categorySelect.value;
+      cards.forEach(function (card) {
+        var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+        var name = card.querySelector(".source-name");
+        var matches = (!source || (name && name.textContent.trim() === source))
+          && (!category || link.getAttribute("data-key") === category);
+        card.toggleAttribute("data-source-hidden", !matches);
+      });
+      if (sortSelect.value === "recent") {
+        main.querySelectorAll(".section-grid").forEach(function (grid) {
+          var items = Array.prototype.slice.call(grid.querySelectorAll(".compact-list > li"));
+          items.sort(function (a,b) {
+            var ta = Date.parse(a.querySelector("time")?.dateTime || "") || 0;
+            var tb = Date.parse(b.querySelector("time")?.dateTime || "") || 0;
+            return tb - ta;
+          });
+          var parent = grid.querySelector(".compact-list");
+          if (parent) items.forEach(function (item) {parent.appendChild(item);});
+        });
+      }
+    }
+    sourceSelect.value = get(sourceKey, "") || "";
+    categorySelect.value = get(categoryKey, "") || "";
+    sortSelect.value = get(sortKey, "relevance") || "relevance";
+    [sourceSelect,categorySelect,sortSelect].forEach(function (select) {
+      select.addEventListener("change", function () {
+        set(sourceKey, sourceSelect.value); set(categoryKey, categorySelect.value);
+        set(sortKey, sortSelect.value); applySourcePreferences();
+      });
+    });
+    // Relevance is the original static server order; reloading restores it.
+    if (sortSelect.value === "recent") applySourcePreferences();
+    else applySourcePreferences();
+    syncSaved(); renderList(savedList, saved, true); renderList(historyList, history, false);
   })();
 
   // La sección visible se identifica sin desplazar el carrusel ni forzar animaciones.
