@@ -34,7 +34,7 @@ def configured_adsense(environ, site_url):
         site.scheme == "https" and candidate_host
         and site.path in ("", "/") and not site.query and not site.fragment
         and not site.username and not site.password
-        and not site.port
+        and site.netloc.lower() == host
     )
     valid_id = bool(match)
     eligible = valid_id and bool(privacy) and owned_root
