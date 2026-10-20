@@ -299,7 +299,9 @@
   .reader-library-list li{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--rule);}
   .reader-library-list a{font:600 14px/1.3 var(--serif);min-width:0;flex:1;}
   .reader-library-list button{font:600 12px var(--sans);border:1px solid var(--rule);border-radius:5px;background:transparent;padding:7px;cursor:pointer;}
-  .save-story{margin-left:auto;flex:none;background:none;border:0;color:var(--card-link);cursor:pointer;padding:3px;font:700 15px var(--sans);min-width:29px;min-height:28px;}
+  .card-actions{display:inline-flex;align-items:center;gap:2px;flex:none;margin-left:auto;}
+  .lead .kicker,.feature .kicker,.rail-list .kicker,.compact-list .kicker{flex-wrap:wrap;row-gap:2px;min-width:0;}
+  .save-story{margin-left:0;flex:none;background:none;border:0;color:var(--card-link);cursor:pointer;padding:3px;font:700 15px var(--sans);min-width:29px;min-height:28px;}
   .save-story[aria-pressed="true"]{color:#FFE0A4;}
   .share-story{flex:none;background:none;border:0;color:var(--card-link);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:3px;min-width:29px;min-height:28px;border-radius:5px;}
   .share-story svg{width:16px;height:16px;}
@@ -887,6 +889,12 @@
       cards.forEach(function (card) {
         var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
         var active = saved.some(function (x) {return x.url === link.href;});
+        var kicker = card.querySelector(".kicker");
+        var actions = kicker && kicker.querySelector(".card-actions");
+        if (kicker && !actions) {
+          actions = d.createElement("span"); actions.className = "card-actions";
+          kicker.appendChild(actions);
+        }
         var button = card.querySelector(".save-story");
         if (!button) {
           button = d.createElement("button"); button.type = "button"; button.className = "save-story";
@@ -899,8 +907,7 @@
             saved = tidy(saved); set(storageKey, saved);
             syncSaved(); renderList(savedList, saved, true);
           });
-          var kicker = card.querySelector(".kicker");
-          if (kicker) kicker.appendChild(button);
+          if (actions) actions.appendChild(button);
         }
         var share = card.querySelector(".share-story");
         if (!share) {
@@ -941,8 +948,7 @@
               window.prompt("Copia el enlace de la noticia:", link.href);
             }
           });
-          var kickerForShare = card.querySelector(".kicker");
-          if (kickerForShare) kickerForShare.appendChild(share);
+          if (actions) actions.appendChild(share);
         }
         button.textContent = active ? "★" : "☆";
         button.setAttribute("aria-pressed", String(active));
