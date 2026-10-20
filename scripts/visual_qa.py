@@ -26,6 +26,22 @@ async def check(html, output):
                         .filter(el => el.right > innerWidth + 2).slice(0,10)""")
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
+            # Ninguna miniatura debe dejar un bloque vacío por debajo del texto.
+            gaps = await page.evaluate("""() => Array.from(document.querySelectorAll(
+                ".section-grid .feature, .section-grid .compact"))
+                .filter(card => card.getClientRects().length)
+                .map(card => {
+                    const image = card.querySelector(".media");
+                    const body = card.querySelector(".news-body");
+                    if (!image || !body || getComputedStyle(image).display === "none") return null;
+                    return {gap: Math.round(body.getBoundingClientRect().height -
+                                            image.getBoundingClientRect().height),
+                            photo: Math.round(image.getBoundingClientRect().height),
+                            body: Math.round(body.getBoundingClientRect().height)};
+                }).filter(Boolean).slice(0, 12)""")
+            assert gaps, f"No se encontraron miniaturas para comprobar a {width}px"
+            assert all(item["gap"] <= 4 for item in gaps), (
+                f"Miniaturas sin ocupar la altura disponible a {width}px: {gaps}")
             await page.screenshot(path=str(output / f"home-{width}.png"), full_page=True, animations="disabled")
             await page.locator("#view-options-toggle").click()
             assert await page.locator("#view-options-panel").is_visible(), f"Menú visual oculto a {width}px"
