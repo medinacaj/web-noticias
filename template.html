@@ -270,6 +270,32 @@
   .lead.is-read,.feature.is-read,.rail-list li.is-read,.compact-list li.is-read{border-color:color-mix(in srgb,var(--card-rule) 60%,transparent);}
   .is-read h2 a,.is-read h3 a{color:var(--card-muted);}
   .news-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+  .reader-panel{border:1px solid var(--rule);border-radius:8px;padding:18px;margin:0 0 18px;background:var(--surface);box-shadow:0 4px 14px rgba(6,20,36,.08);}
+  .reader-panel[hidden]{display:none;}
+  .reader-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
+  .reader-panel h2{font:700 23px/1.2 var(--serif);margin:0;}
+  .reader-panel h3{font:650 17px/1.3 var(--serif);margin:0 0 10px;}
+  .reader-close{background:transparent;color:var(--ink);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:8px 12px;cursor:pointer;font:600 12px var(--sans);}
+  .reader-options{display:flex;align-items:end;flex-wrap:wrap;gap:12px;}
+  .reader-options label{display:grid;gap:5px;font:600 12px var(--sans);color:var(--muted);flex:1 1 145px;}
+  .reader-options select{width:100%;min-height:44px;padding:8px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);font:500 12px var(--sans);}
+  .reader-hint{font-size:12px;color:var(--muted);margin:12px 0 0;}
+  .library-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+  .reader-library-list{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-height:320px;overflow:auto;}
+  .reader-library-list li{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--rule);}
+  .reader-library-list a{font:600 14px/1.3 var(--serif);min-width:0;flex:1;}
+  .reader-library-list button{font:600 12px var(--sans);border:1px solid var(--rule);border-radius:5px;background:transparent;padding:7px;cursor:pointer;}
+  .save-story{margin-left:auto;flex:none;background:none;border:0;color:var(--card-link);cursor:pointer;padding:3px;font:700 15px var(--sans);min-width:29px;min-height:28px;}
+  .save-story[aria-pressed="true"]{color:#FFE0A4;}
+  .is-headlines .section-grid{grid-template-columns:minmax(0,1fr);gap:0;}
+  .is-headlines .section-grid .media,.is-headlines .section-grid .dek{display:none;}
+  .is-headlines .section-grid .feature,.is-headlines .section-grid .compact-list li{min-height:0;padding:10px 12px;border-radius:0;box-shadow:none;border-top:0;}
+  .is-headlines .section-grid .news-body{min-height:0;display:flex;flex-direction:row;align-items:center;gap:12px;flex-wrap:wrap;}
+  .is-headlines .section-grid .kicker{margin:0;flex:0 0 110px;}
+  .is-headlines .section-grid h3{margin:0;flex:1 1 210px;}
+  .is-headlines .section-grid .meta{padding:0;margin:0;}
+  .is-headlines .section-grid .feature,.is-headlines .section-grid .compact{width:100%;}
+  .reader-panel button:focus-visible,.save-story:focus-visible{outline:2px solid var(--red);outline-offset:2px;}
   .news-toolbar select{background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:8px;color:var(--ink);font:500 12px var(--sans);}
   .reading-size{font-size:12px;color:var(--muted);}
   #contenido[data-text-size="large"] .lead-title{font-size:clamp(32px,3.3vw,46px);}
@@ -278,6 +304,7 @@
   #contenido[data-text-size="large"] .dek{font-size:19px;}
   #contenido[data-text-size="large"] .section-grid .meta{font-size:13px;}
   .section-grid [data-filter-hidden],.top-grid [data-filter-hidden]{display:none !important;}
+  .section-grid [data-source-hidden],.top-grid [data-source-hidden]{display:none !important;}
   .filtered-empty{font:500 14px var(--sans);color:var(--muted);padding:12px 0;}
   .filtered-empty[hidden]{display:none !important;}
   .back-to-top{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));right:18px;z-index:30;border:1px solid var(--rule);border-radius:100px;padding:10px 14px;min-height:44px;background:var(--surface);color:var(--ink);font:600 12px var(--sans);box-shadow:var(--card-shadow);cursor:pointer;}
@@ -365,6 +392,9 @@
     .reading-status{flex-basis:100%;order:2;}
     .density-switch{min-height:44px;}
     .news-toolbar select{min-height:44px;}
+    .library-columns{grid-template-columns:minmax(0,1fr);}
+    .is-headlines .section-grid .kicker{flex-basis:100%;}
+    .reader-panel{padding:14px;}
     .search-filters select{min-width:0;width:100%;}
     .search-filters label{flex:1 1 140px;}
     .back-to-top{right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));}
@@ -445,7 +475,25 @@
 %%BREAKING%%
 
 <main id="contenido" class="container">
-<div class="news-toolbar" aria-label="Opciones de lectura"><span id="reading-status" class="reading-status" aria-live="polite"></span><label for="reading-filter">Mostrar</label><select id="reading-filter" aria-label="Filtrar noticias"><option value="all">Todas</option><option value="unread">Por leer</option><option value="read">Leídas</option><option value="multiple">Varias fuentes</option></select><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div><p id="filter-empty" class="filtered-empty" role="status" hidden>No hay noticias que coincidan con este filtro. Selecciona «Todas» para verlas de nuevo.</p>
+<div class="news-toolbar" aria-label="Opciones de lectura"><span id="reading-status" class="reading-status" aria-live="polite"></span><button type="button" id="preferences-toggle" class="density-switch" aria-expanded="false" aria-controls="preferences-panel">Preferencias</button><button type="button" id="library-toggle" class="density-switch" aria-expanded="false" aria-controls="library-panel">Guardadas</button></div>
+<div class="reader-panel" id="preferences-panel" hidden aria-label="Preferencias de lectura">
+  <div class="reader-panel-head"><h2>Preferencias</h2><button type="button" class="reader-close" data-close-panel="preferences-panel" aria-label="Cerrar preferencias">Cerrar</button></div>
+  <div class="reader-options">
+    <label for="reading-filter">Mostrar<select id="reading-filter" aria-label="Filtrar noticias"><option value="all">Todas</option><option value="unread">Por leer</option><option value="read">Leídas</option><option value="multiple">Varias fuentes</option></select></label>
+    <label for="text-size">Texto<select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select></label>
+    <label for="density-switch">Vista<button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></label>
+    <label for="source-preference">Medio<select id="source-preference"><option value="">Todos los medios</option></select></label>
+    <label for="source-sort">Orden<select id="source-sort"><option value="relevance">Relevancia original</option><option value="recent">Más recientes primero</option></select></label>
+    <label for="category-preference">Categoría favorita<select id="category-preference"><option value="">Todas las categorías</option></select></label>
+  </div>
+  <p class="reader-hint">Los filtros se aplican en este dispositivo. No cambian el orden editorial publicado para otros lectores.</p>
+</div>
+<div class="reader-panel" id="library-panel" hidden aria-label="Noticias guardadas e historial">
+  <div class="reader-panel-head"><h2>Mi biblioteca</h2><button type="button" class="reader-close" data-close-panel="library-panel" aria-label="Cerrar biblioteca">Cerrar</button></div>
+  <div class="library-columns"><section><h3>Guardadas</h3><ul id="saved-stories" class="reader-library-list"></ul></section><section><h3>Consultadas recientemente</h3><ul id="reading-history" class="reader-library-list"></ul></section></div>
+  <p class="reader-hint">Se conservan solo en este navegador. Puedes borrar las preferencias y el historial desde sus opciones de almacenamiento.</p>
+  <button type="button" id="clear-reader-history" class="reader-close">Borrar historial de lectura</button>
+</div><p id="filter-empty" class="filtered-empty" role="status" hidden>No hay noticias que coincidan con este filtro. Selecciona «Todas» para verlas de nuevo.</p>
 %%TOP%%
 %%CONTEXT%%
 %%SECTIONS%%
