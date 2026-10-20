@@ -265,10 +265,6 @@
   .is-compact .coverage-trigger{font-size:11px;}
   .meta time[data-fresh="true"]{font-weight:700;color:var(--card-link);}
   .breaking time[data-fresh="true"]{color:var(--red);}
-  .read-marker{display:inline-block;flex:0 0 auto;width:6px;height:6px;background:var(--cat-b,var(--card-link));border-radius:50%;margin-left:auto;vertical-align:middle;}
-  .is-read .read-marker{background:transparent;border:1px solid var(--card-muted);}
-  .lead.is-read,.feature.is-read,.rail-list li.is-read,.compact-list li.is-read{border-color:color-mix(in srgb,var(--card-rule) 60%,transparent);}
-  .is-read h2 a,.is-read h3 a{color:var(--card-muted);}
   .news-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
   .coverage-radar{margin:34px 0 6px;padding:20px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
   .radar-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}
@@ -312,7 +308,6 @@
   #contenido[data-text-size="large"] .rail-item h3{font-size:21px;}
   #contenido[data-text-size="large"] .dek{font-size:19px;}
   #contenido[data-text-size="large"] .section-grid .meta{font-size:13px;}
-  .section-grid [data-filter-hidden],.top-grid [data-filter-hidden]{display:none !important;}
   .section-grid [data-source-hidden],.top-grid [data-source-hidden]{display:none !important;}
   .filtered-empty{font:500 14px var(--sans);color:var(--muted);padding:12px 0;}
   .filtered-empty[hidden]{display:none !important;}
@@ -321,8 +316,6 @@
   .news-toolbar label{font-size:12px;font-weight:600;color:var(--muted);}
   .density-switch{font:600 12px var(--sans);padding:8px 12px;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;cursor:pointer;}
   .density-switch[aria-pressed="true"]{background:var(--navy);color:var(--on-navy);border-color:var(--navy);}
-  .reading-status{font-size:12px;color:var(--muted);margin-right:auto;}
-  .reading-status:empty{display:none;}
   .is-compact .section-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
   .is-compact .section-grid .media{display:none;}
   .is-compact .feature,.is-compact .compact-list li{min-height:0;padding:13px 15px;}
@@ -486,11 +479,10 @@
 %%BREAKING%%
 
 <main id="contenido" class="container">
-<div class="news-toolbar" aria-label="Opciones de lectura"><span id="reading-status" class="reading-status" aria-live="polite"></span><button type="button" id="preferences-toggle" class="density-switch" aria-expanded="false" aria-controls="preferences-panel">Preferencias</button><button type="button" id="library-toggle" class="density-switch" aria-expanded="false" aria-controls="library-panel">Guardadas</button></div>
+<div class="news-toolbar" aria-label="Opciones de lectura"><button type="button" id="preferences-toggle" class="density-switch" aria-expanded="false" aria-controls="preferences-panel">Preferencias</button><button type="button" id="library-toggle" class="density-switch" aria-expanded="false" aria-controls="library-panel">Guardadas</button></div>
 <div class="reader-panel" id="preferences-panel" hidden aria-label="Preferencias de lectura">
   <div class="reader-panel-head"><h2>Preferencias</h2><button type="button" class="reader-close" data-close-panel="preferences-panel" aria-label="Cerrar preferencias">Cerrar</button></div>
   <div class="reader-options">
-    <label for="reading-filter">Mostrar<select id="reading-filter" aria-label="Filtrar noticias"><option value="all">Todas</option><option value="unread">Por leer</option><option value="read">Leídas</option><option value="multiple">Varias fuentes</option></select></label>
     <label for="text-size">Texto<select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select></label>
     <label for="density-switch">Vista<button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></label>
     <label for="source-preference">Medio<select id="source-preference"><option value="">Todos los medios</option></select></label>
@@ -501,10 +493,9 @@
 </div>
 <div class="reader-panel" id="library-panel" hidden aria-label="Noticias guardadas e historial">
   <div class="reader-panel-head"><h2>Mi biblioteca</h2><button type="button" class="reader-close" data-close-panel="library-panel" aria-label="Cerrar biblioteca">Cerrar</button></div>
-  <div class="library-columns"><section><h3>Guardadas</h3><ul id="saved-stories" class="reader-library-list"></ul></section><section><h3>Consultadas recientemente</h3><ul id="reading-history" class="reader-library-list"></ul></section></div>
-  <p class="reader-hint">Se conservan solo en este navegador. Puedes borrar las preferencias y el historial desde sus opciones de almacenamiento.</p>
-  <button type="button" id="clear-reader-history" class="reader-close">Borrar historial de lectura</button>
-</div><p id="filter-empty" class="filtered-empty" role="status" hidden>No hay noticias que coincidan con este filtro. Selecciona «Todas» para verlas de nuevo.</p>
+  <div class="library-columns"><section><h3>Guardadas</h3><ul id="saved-stories" class="reader-library-list"></ul></section></div>
+  <p class="reader-hint">Solo se guardan las noticias que marcas voluntariamente como favoritas en este navegador.</p>
+</div>
 %%TOP%%
 %%CONTEXT%%
 %%RADAR%%
@@ -697,77 +688,16 @@
     updatePause();
   })();
 
-  // Preferencias locales opcionales: sin cuentas, cookies ni envío a terceros.
-  // El enlace original se mantiene como única acción de abrir la noticia.
+  // Preferencias visuales sin rastrear qué noticias abre cada visitante.
   (function () {
-    var main = d.getElementById("contenido");
-    var density = d.getElementById("density-switch");
-    var status = d.getElementById("reading-status");
+    var main = d.getElementById("contenido"), density = d.getElementById("density-switch");
+    var textSize = d.getElementById("text-size"), densityKey = "noticias:density:v1";
     if (!main || !density) return;
-    var key = "noticias:reading:v1", densityKey = "noticias:density:v1";
-    var filter = d.getElementById("reading-filter"), textSize = d.getElementById("text-size");
-    var empty = d.getElementById("filter-empty");
-    var maxAge = 30 * 24 * 60 * 60 * 1000;
-    var seen = {};
     try {
-      seen = JSON.parse(localStorage.getItem(key) || "{}");
-      if (!seen || typeof seen !== "object" || Array.isArray(seen)) seen = {};
-    } catch (err) { seen = {}; }
-    var now = Date.now();
-    Object.keys(seen).forEach(function (url) {
-      if (typeof seen[url] !== "number" || now - seen[url] > maxAge || seen[url] > now) delete seen[url];
-    });
-    function persist() {
-      try { localStorage.setItem(key, JSON.stringify(seen)); } catch (err) { /* Lectura funciona sin almacenamiento. */ }
-    }
-    function cardFor(link) { return link.closest(".lead,.feature,.rail-list li,.compact-list li"); }
-    function refresh() {
-      var total = 0, read = 0;
-      main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li").forEach(function (card) {
-        var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
-        if (!link) return;
-        total++;
-        var opened = Object.prototype.hasOwnProperty.call(seen, link.href);
-        if (opened) read++;
-        card.classList.toggle("is-read", opened);
-        var dot = card.querySelector(".read-marker");
-        if (!dot) {
-          dot = d.createElement("span");
-          dot.className = "read-marker";
-          dot.setAttribute("aria-hidden", "true");
-          var kicker = card.querySelector(".kicker");
-          if (kicker) kicker.appendChild(dot);
-        }
-        link.setAttribute("data-reading-state", opened ? "leida" : "nueva");
-      });
-      if (status) status.textContent = total ? (total - read) + " noticias por leer" : "";
-      applyReadingFilter();
-    }
-    function applyReadingFilter() {
-      if (!filter) return;
-      var visible = 0, selected = filter.value;
-      main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li").forEach(function (card) {
-        var hasArticle = !!card.querySelector("h2 a[data-cat],h3 a[data-cat]");
-        if (!hasArticle) return;
-        var multiple = !!card.querySelector("[data-coverage-trigger]");
-        var read = card.classList.contains("is-read");
-        var show = selected === "all" || (selected === "read" && read)
-          || (selected === "unread" && !read) || (selected === "multiple" && multiple);
-        card.toggleAttribute("data-filter-hidden", !show);
-        if (show && !card.hasAttribute("data-extra")) visible++;
-      });
-      if (empty) empty.hidden = visible > 0;
-    }
-    if (filter) {
-      filter.addEventListener("change", function () {
-        try { sessionStorage.setItem("noticias:filter:v1", filter.value); } catch (err) {}
-        applyReadingFilter();
-      });
-      try {
-        var storedFilter = sessionStorage.getItem("noticias:filter:v1");
-        if (["all","read","unread","multiple"].indexOf(storedFilter) >= 0) filter.value = storedFilter;
-      } catch (err) {}
-    }
+      localStorage.removeItem("noticias:reading:v1");
+      localStorage.removeItem("noticias:history:v1");
+      sessionStorage.removeItem("noticias:filter:v1");
+    } catch (err) {}
     if (textSize) {
       textSize.addEventListener("change", function () {
         main.dataset.textSize = textSize.value;
@@ -779,19 +709,6 @@
         }
       } catch (err) {}
     }
-    main.addEventListener("click", function (event) {
-      var link = event.target.closest("a[data-cat],a.read");
-      if (!link || !cardFor(link)) return;
-      seen[link.href] = Date.now();
-      persist();
-      refresh();
-    });
-    density.addEventListener("click", function () {
-      var mode = main.classList.contains("is-headlines") ? "editorial"
-        : main.classList.contains("is-compact") ? "headlines" : "compact";
-      setDensity(mode);
-      try { localStorage.setItem(densityKey, mode); } catch (err) {}
-    });
     function setDensity(mode) {
       main.classList.toggle("is-compact", mode === "compact");
       main.classList.toggle("is-headlines", mode === "headlines");
@@ -799,12 +716,16 @@
       density.textContent = mode === "editorial" ? "Compacta"
         : mode === "compact" ? "Solo titulares" : "Editorial";
     }
+    density.addEventListener("click", function () {
+      var mode = main.classList.contains("is-headlines") ? "editorial"
+        : main.classList.contains("is-compact") ? "headlines" : "compact";
+      setDensity(mode);
+      try { localStorage.setItem(densityKey, mode); } catch (err) {}
+    });
     try {
       var savedMode = localStorage.getItem(densityKey);
       if (savedMode === "compact" || savedMode === "headlines") setDensity(savedMode);
     } catch (err) {}
-    persist();
-    refresh();
   })();
 
   // V5: controles centralizados, biblioteca local, fuentes preferidas e historial.
@@ -816,8 +737,7 @@
     var categorySelect = d.getElementById("category-preference");
     var sortSelect = d.getElementById("source-sort");
     var savedList = d.getElementById("saved-stories");
-    var historyList = d.getElementById("reading-history");
-    var storageKey = "noticias:library:v1", historyKey = "noticias:history:v1";
+    var storageKey = "noticias:library:v1";
     var sourceKey = "noticias:source:v1", categoryKey = "noticias:category:v1", sortKey = "noticias:sort:v1";
     var MAX_RECORDS = 120, DAYS = 30 * 86400000;
     function get(key, fallback) {
@@ -839,7 +759,7 @@
           && item.time <= now && now - item.time < DAYS;
       }).slice(0, MAX_RECORDS);
     }
-    var saved = tidy(get(storageKey, [])), history = tidy(get(historyKey, []));
+    var saved = tidy(get(storageKey, []));
     var cards = Array.prototype.slice.call(main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li"))
       .filter(function (card) {return !!card.querySelector("h2 a[data-cat],h3 a[data-cat]");});
     var sources = new Set(), categories = new Map();
@@ -864,8 +784,7 @@
     function renderList(element, records, removable) {
       element.replaceChildren();
       if (!records.length) {
-        var empty = d.createElement("li"); empty.textContent = removable
-          ? "Aún no guardaste noticias." : "No hay lecturas recientes."; element.appendChild(empty);
+        var empty = d.createElement("li"); empty.textContent = "Aún no guardaste noticias."; element.appendChild(empty);
         return;
       }
       records.forEach(function (entry) {
@@ -909,15 +828,6 @@
         button.setAttribute("aria-label", (active ? "Quitar de guardadas: " : "Guardar noticia: ") + link.textContent.trim());
       });
     }
-    main.addEventListener("click", function (event) {
-      var link = event.target.closest("a[data-cat],a.read");
-      if (!link || !link.closest(".lead,.feature,.rail-list li,.compact-list li")) return;
-      var title = link.closest(".lead,.feature,.rail-list li,.compact-list li").querySelector("h2 a[data-cat],h3 a[data-cat]");
-      if (!title) return;
-      history = history.filter(function (x) {return x.url !== title.href;});
-      history.unshift(makeRecord(title)); history = tidy(history);
-      set(historyKey, history); renderList(historyList, history, false);
-    });
     function switchPanel(id) {
       [prefs,library].forEach(function (panel) {
         panel.hidden = panel.id !== id || !panel.hidden;
@@ -935,9 +845,6 @@
         var toggle = d.getElementById(panel.id === "preferences-panel" ? "preferences-toggle" : "library-toggle");
         toggle.setAttribute("aria-expanded", "false"); toggle.focus();
       });
-    });
-    d.getElementById("clear-reader-history").addEventListener("click", function () {
-      history = []; set(historyKey, history); renderList(historyList, history, false);
     });
     main.querySelectorAll(".section-grid").forEach(function (grid) {
       var container = grid.querySelector(".compact-list");
@@ -978,7 +885,7 @@
       });
     });
     applySourcePreferences();
-    syncSaved(); renderList(savedList, saved, true); renderList(historyList, history, false);
+    syncSaved(); renderList(savedList, saved, true);
   })();
 
   // La sección visible se identifica sin desplazar el carrusel ni forzar animaciones.
@@ -1053,8 +960,6 @@
         item.removeAttribute("data-extra");
       });
       if (!section.querySelector("[data-extra]")) button.hidden = true;
-      var filter = d.getElementById("reading-filter");
-      if (filter) filter.dispatchEvent(new Event("change"));
     });
   });
 
