@@ -44,9 +44,13 @@ class ContrastThemeTests(unittest.TestCase):
                     ".source-mark", ".media-badge", ".top-grid", "%%NAV%%"):
             self.assertIn(key, self.css)
 
-    def test_dark_mode_has_distinct_surfaces(self):
-        self.assertEqual(self.css.count("--card-bg:#223247"), 2)
-        self.assertIn("--paper:#0B1420", self.css)
+    def test_system_dark_mode_cannot_override_smoke_background(self):
+        self.assertNotIn("prefers-color-scheme:dark", self.css)
+        self.assertNotIn(":root[data-theme=\"dark\"]", self.css)
+        self.assertNotIn("--paper:#0B1420", self.css)
+        self.assertIn("color-scheme:light;", self.css)
+        self.assertIn("--paper:#EEF2F6", self.css)
+        self.assertIn("--card-bg:#182639", self.css)
 
 
 if __name__ == "__main__":
