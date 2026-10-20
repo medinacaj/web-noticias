@@ -1,6 +1,21 @@
 {
- "actualizado": "2026-10-20T11:26:16Z",
+ "actualizado": "2026-10-20T11:46:18Z",
  "noticias": [
+  {
+   "category": "regiones",
+   "title": "Universidad de Chile se enfrenta ante la visita D. Antofagasta por la llave 2",
+   "summary": "",
+   "image": "https://www.elrancaguino.cl/wp-content/uploads/2026/10/798639_0.png",
+   "source_url": "https://www.elrancaguino.cl",
+   "sources": [
+    "El Rancagüino"
+   ],
+   "coverages": [],
+   "link": "https://www.elrancaguino.cl/2026/10/20/universidad-de-chile-vs-d-antofagasta-previa-horario-y-como-llegan-para-la-llave-2-de-la-copa-chile/",
+   "published": "2026-10-20T11:27:00Z",
+   "first_seen": "2026-10-20T11:46:18Z",
+   "image_checked_at": "2026-10-20T11:46:18.547013Z"
+  },
   {
    "category": "internacional",
    "title": "Por qué Chile enfrenta una crisis económica con récord de desempleo en medio de las políticas de austeridad de Kast",
@@ -169,6 +184,21 @@
    "published": "2026-10-20T08:44:12Z",
    "first_seen": "2026-10-20T09:46:18Z",
    "image_checked_at": "2026-10-20T09:46:18.893659Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Un zarpazo estratégico: el diseño de Bachelet que ordenó a la oposición",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/A_UNO_1774127-700x467.jpg",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/20/un-zarpazo-estrategico-el-diseno-de-bachelet-que-ordeno-a-la-oposicion/",
+   "published": "2026-10-20T08:10:50Z",
+   "first_seen": "2026-10-20T11:46:18Z",
+   "image_checked_at": "2026-10-20T11:46:18.547013Z"
   },
   {
    "category": "internacional",
@@ -652,6 +682,21 @@
    "published": "2026-10-19T23:47:54Z",
    "first_seen": "2026-10-20T09:04:58Z",
    "image_checked_at": "2026-10-20T09:04:58.739835Z"
+  },
+  {
+   "category": "deportes",
+   "title": "La ANFP toma una decisión final por el Colo Colo - Puerto Montt: sorpresa total",
+   "summary": "",
+   "image": "",
+   "source_url": "https://chile.as.com",
+   "sources": [
+    "AS Chile"
+   ],
+   "coverages": [],
+   "link": "https://chile.as.com/futbol/la-anfp-toma-una-decision-final-por-el-colo-colo-puerto-montt-sorpresa-total-f202610-n/",
+   "published": "2026-10-19T23:42:06Z",
+   "first_seen": "2026-10-20T11:46:18Z",
+   "image_checked_at": "2026-10-20T11:46:18.547013Z"
   },
   {
    "category": "nacional",
@@ -2353,7 +2398,8 @@
    "published": "2026-10-19T14:48:41Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.lacuarta.com",
-   "image_checked_at": "2026-10-20T05:43:55.557181Z"
+   "image_checked_at": "2026-10-20T05:43:55.557181Z",
+   "coverages": []
   },
   {
    "category": "tecnologia",
@@ -2954,50 +3000,6 @@
    "source_url": "https://www.lacuarta.com",
    "image_checked_at": "2026-10-20T05:49:04.488112Z",
    "coverages": []
-  },
-  {
-   "category": "deportes",
-   "title": "Garin y Barrios sufren dura caída en ranking ATP: Davidovich Fokina da gran salto tras ganar Shanghai",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988414-ranking-atp-garin-barrios-davidovich.jpg",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://www.biobiochile.cl/noticias/deportes/tenis/2026/10/19/garin-y-barrios-sufren-dura-caida-en-ranking-atp-davidovich-fokina-da-gran-salto-tras-ganar-shanghai.shtml",
-   "published": "2026-10-19T11:39:26Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "source_url": "https://www.biobiochile.cl",
-   "image_checked_at": "2026-10-20T05:43:55.557181Z",
-   "coverages": []
-  },
-  {
-   "category": "cultura",
-   "title": "Expareja de Nano Calderón anunció que está embarazada: terminaron hace algunas semanas",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988357-image-2026-10-19t074614-606-1200x633.png",
-   "sources": [
-    "BioBioChile",
-    "Meganoticias"
-   ],
-   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/19/expareja-de-nano-calderon-anuncio-que-esta-embarazada-terminaron-hace-algunas-semanas.shtml",
-   "published": "2026-10-19T11:34:48Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "image_checked_at": "2026-10-20T05:43:55.557181Z",
-   "source_url": "https://www.biobiochile.cl/noticias/dopamina/2026/10/19/expareja-de-nano-calderon-anuncio-que-esta-embarazada-terminaron-hace-algunas-semanas.shtml"
-  },
-  {
-   "category": "deportes",
-   "title": "Vidal analizó errores de Maureira y utilizó a Bravo como ejemplo",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261019/imag/foto_0000000720261019083238.jpg",
-   "sources": [
-    "Cooperativa"
-   ],
-   "link": "https://www.cooperativa.cl/noticias/deportes/futbol/colo-colo/vidal-analizo-errores-de-maureira-y-utilizo-a-bravo-como-ejemplo/2026-10-19/083238.html",
-   "published": "2026-10-19T11:29:00Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "image_checked_at": "2026-10-20T05:43:55.557181Z",
-   "source_url": "https://www.cooperativa.cl/noticias/deportes/futbol/colo-colo/vidal-analizo-errores-de-maureira-y-utilizo-a-bravo-como-ejemplo/2026-10-19/083238.html"
   }
  ]
 }
