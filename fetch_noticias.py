@@ -336,6 +336,59 @@ def save_history(path, stories, now):
         json.dump({"actualizado": to_iso(now), "noticias": clean}, handle, ensure_ascii=False, indent=1)
 
 
+def coverage_entry(item):
+    """Solo enlaces HTTPS directos a publicaciones; conservar sus títulos originales."""
+    url = (item.get("link") or "").strip()
+    parsed = urllib.parse.urlsplit(url)
+    if (parsed.scheme != "https" or not parsed.hostname or parsed.username
+            or parsed.password or is_google_link(url)):
+        return None
+    outlet = (item.get("source") or (item.get("sources") or [""])[0] or "").strip()
+    title = (item.get("title") or "").strip()
+    if not outlet or not title:
+        return None
+    date = parse_date(item.get("published"))
+    return {"source": outlet, "title": title, "link": url,
+            "published": to_iso(date) if date else ""}
+
+
+def coverage_items(story):
+    """Nunca reconstruir enlaces desde el nombre de una fuente."""
+    seen_sources, seen_urls, result = set(), set(), []
+    for item in story.get("coverages") or []:
+        if not isinstance(item, dict):
+            continue
+        entry = coverage_entry(item)
+        if not entry:
+            continue
+        source_key = entry["source"].casefold()
+        if source_key in seen_sources or entry["link"] in seen_urls:
+            continue
+        seen_sources.add(source_key)
+        seen_urls.add(entry["link"])
+        result.append(entry)
+    return result[:12]
+
+
+def coverage_control(story):
+    rows = coverage_items(story)
+    if len(rows) < 2:
+        return ""
+    content = "".join(
+        f'<li><span class="coverage-source">{esc(x["source"])}</span>'
+        f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}</a>'
+        + (f'<time datetime="{esc(x["published"])}">{esc(x["published"][:10])}</time>'
+           if x["published"] else "") + '</li>'
+        for x in rows
+    )
+    return (f'<button type="button" class="coverage-trigger" aria-haspopup="dialog" '
+            f'data-coverage-trigger>Comparar <span aria-hidden="true">↗</span></button>'
+            f'<template class="coverage-data"><h2>Comparación de coberturas</h2>'
+            f'<p>Publicaciones relacionadas detectadas de {len(rows)} medios. '
+            f'Los enlaces conservan los titulares originales; no se infieren diferencias de enfoque.</p>'
+            f'<ol class="coverage-list">{content}</ol></template>')
+
+
 def merge(stories, items, now):
     """Agrega noticias nuevas; si un titular ya existe (aunque venga de otro medio),
     suma la fuente a la noticia existente en vez de duplicarla."""
@@ -351,6 +404,11 @@ def merge(stories, items, now):
         published = to_iso(published) if published else None
         match = next((s for s in stories if is_similar(norm, s["_norm"])), None)
         if match:
+            coverages = coverage_items(match)
+            entry = coverage_entry(item)
+            if entry and all(x["link"] != entry["link"] for x in coverages):
+                coverages.append(entry)
+            match["coverages"] = coverages[:12]
             for source in incoming_sources:
                 if source and source not in match["sources"]:
                     match["sources"].append(source)
@@ -373,6 +431,7 @@ def merge(stories, items, now):
                 "image": safe_image(item.get("image")),
                 "source_url": item.get("source_url") or (link if not is_google_link(link) else ""),
                 "sources": [s for s in incoming_sources if s],
+                "coverages": [coverage_entry(item)] if coverage_entry(item) else [],
                 "link": link,
                 "published": published,
                 "first_seen": to_iso(now),
@@ -493,7 +552,7 @@ def meta_html(story, now, read_link=False):
             if read_link else "")
     fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{read}</p>')
+            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{read}{coverage_control(story)}</p>')
 
 
 def dek_html(story):
