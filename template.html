@@ -391,6 +391,21 @@
     .meta a,.meta time{min-height:24px;}
   }
   @media(max-width:360px){.container{padding:0 12px;}.news-toolbar{column-gap:6px;}.rail-list li{grid-template-columns:26px minmax(0,1fr);}.search-input{font-size:20px;}}
+  /* Newsletter: sección independiente, sin formularios que capturen correos falsamente. */
+  .newsletter-invite{background:var(--navy);color:var(--on-navy);padding:30px 0;margin-top:42px;}
+  .newsletter-invite-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .newsletter-copy{max-width:590px;}
+  .newsletter-eyebrow{font:700 10px var(--sans);letter-spacing:.13em;text-transform:uppercase;color:#b7c9da;margin:0 0 8px;}
+  .newsletter-copy h2{font:700 clamp(22px,3vw,28px)/1.2 var(--serif);margin:0 0 6px;}
+  .newsletter-copy p:last-child{font:400 13px/1.5 var(--sans);color:#cad5e0;margin:0;}
+  .newsletter-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:flex-end;flex:0 0 auto;}
+  .newsletter-preview,.newsletter-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border-radius:5px;padding:10px 14px;font:600 12px var(--sans);text-decoration:none;}
+  .newsletter-preview{border:1px solid #8da4ba;color:#fff;}
+  .newsletter-link{background:#fff;color:#182639;}
+  .newsletter-pending{font-size:12px;color:#c8d4df;}
+  .newsletter-privacy{font-size:11px;color:#dce6ef;text-decoration:underline;}
+  .newsletter-preview:focus-visible,.newsletter-link:focus-visible{outline:2px solid #fff;outline-offset:3px;}
+  @media(max-width:767px){.newsletter-invite-inner{align-items:flex-start;flex-direction:column;}.newsletter-actions{justify-content:flex-start;flex:initial;}}
   @media (hover:hover) and (pointer:fine){
     .lead:hover .media > img,.feature:hover .media > img,.compact-list li:hover .media > img{transform:scale(1.025);}
   }
@@ -451,6 +466,20 @@
 %%SECTIONS%%
 </main>
 <button id="back-to-top" class="back-to-top" type="button" hidden aria-label="Volver a la portada">↑ Portada</button>
+
+<section class="newsletter-invite" aria-labelledby="newsletter-heading">
+  <div class="container newsletter-invite-inner">
+    <div class="newsletter-copy">
+      <p class="newsletter-eyebrow">Boletín informativo</p>
+      <h2 id="newsletter-heading">Las noticias esenciales, en un solo resumen</h2>
+      <p>Consulta el resumen diario elaborado a partir de titulares y enlaces originales de los medios.</p>
+    </div>
+    <div class="newsletter-actions">
+      <a href="boletin-diario.html" class="newsletter-preview">Ver boletín diario <span aria-hidden="true">↗</span></a>
+      %%NEWSLETTER_SIGNUP%%
+    </div>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="container footer-grid">
