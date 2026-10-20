@@ -17,6 +17,12 @@ async def check(html, output):
             await page.screenshot(path=str(output / f"home-{width}.png"), full_page=True, animations="disabled")
             overflowing = await page.evaluate("document.documentElement.scrollWidth > window.innerWidth + 2")
             if overflowing:
+                offenders = await page.evaluate("""() => Array.from(document.querySelectorAll("body *"))
+                    .map(el => ({tag:el.tagName, className:String(el.className).slice(0,80),
+                                 right:Math.round(el.getBoundingClientRect().right),
+                                 left:Math.round(el.getBoundingClientRect().left)}))
+                    .filter(el => el.right > innerWidth + 2 || el.left < -2).slice(0,20)""")
+                print(f"Desborde horizontal a {width}px: {offenders}", flush=True)
                 raise AssertionError(f"Desborde horizontal a {width}px")
             for panel in ("preferences", "library"):
                 await page.locator(f"#{panel}-toggle").click()
