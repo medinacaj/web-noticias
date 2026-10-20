@@ -41,7 +41,7 @@ class InterfaceV4Tests(unittest.TestCase):
 
     def test_prior_editorial_features_preserved(self):
         for part in ('--paper:#EEF2F6', '--card-bg:#182639',
-                     'class="coverage-dialog"', 'data-coverage-trigger',
+                     'dialog.className = "coverage-dialog"', 'data-coverage-trigger',
                      'dialog.showModal()', 'window.requestAnimationFrame(animate)',
                      'data-show-more', '.media--source', '%%TOP%%', '%%SECTIONS%%'):
             self.assertIn(part, self.page)
