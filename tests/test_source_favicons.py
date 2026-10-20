@@ -48,8 +48,24 @@ class SourceFaviconsTests(unittest.TestCase):
         self.assertIn("medio.cl", rendered)
         self.assertLess(rendered.index("photo.jpg"), rendered.index('class="media-badge"'))
 
-    def test_no_badge_without_image(self):
-        self.assertEqual(figure_html({"image": "", "sources": ["Medio"]}), "")
+    def test_missing_photo_displays_publisher_thumbnail(self):
+        rendered = figure_html({"image": "", "sources": ["Medio"],
+                                "source_url": "https://medio.cl"})
+        self.assertIn('class="media media--source"', rendered)
+        self.assertIn('class="source-visual"', rendered)
+        self.assertIn("medio.cl", rendered)
+        self.assertNotIn('class="media-badge"', rendered)
+
+    def test_no_domain_still_has_visible_monogram(self):
+        rendered = figure_html({"image": "", "sources": ["Medio"],
+                                "link": "https://news.google.com/rss/articles/abc"})
+        self.assertIn('class="source-initial">M', rendered)
+        self.assertIn("Medio", rendered)
+
+    def test_publisher_name_is_escaped_in_image_placeholder(self):
+        rendered = figure_html({"image": "", "sources": ['<bad attr="x">']})
+        self.assertNotIn("<bad", rendered)
+        self.assertIn("&lt;bad", rendered)
 
     def test_merge_preserves_editorial_url(self):
         now = datetime(2026, 10, 19, tzinfo=timezone.utc)
