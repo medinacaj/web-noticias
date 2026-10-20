@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T09:46:18Z",
+ "actualizado": "2026-10-20T09:55:17Z",
  "noticias": [
   {
    "category": "internacional",
@@ -87,6 +87,21 @@
    "link": "https://www.bbc.com/mundo/articles/c65yngpp7zxlo?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-20T07:50:18Z",
    "first_seen": "2026-10-20T07:53:17Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Según Termómetro Pyme octubre 2026: en Valparaíso, 4 de cada 10 pymes no pagó sus cotizaciones a tiempo y el 88% reporta mayores costos",
+   "summary": "",
+   "image": "https://g5noticias.cl/wp-content/uploads/2024/10/Maxxa-CP-Encuesta-revela-que-situacion-economica-del-pais-y-falta-de-caja-son-los-principales-temores-de-las-pymes-1.jpg",
+   "source_url": "https://g5noticias.cl",
+   "sources": [
+    "G5noticias"
+   ],
+   "coverages": [],
+   "link": "https://g5noticias.cl/2026/10/20/segun-termometro-pyme-octubre-2026-en-valparaiso-4-de-cada-10-pymes-no-pago-sus-cotizaciones-a-tiempo-y-el-88-reporta-mayores-costos/",
+   "published": "2026-10-20T03:53:58Z",
+   "first_seen": "2026-10-20T09:55:17Z",
+   "image_checked_at": "2026-10-20T09:55:17.609953Z"
   },
   {
    "category": "internacional",
@@ -474,6 +489,21 @@
    "coverages": []
   },
   {
+   "category": "internacional",
+   "title": "¿La \"Pantera rosa\" en las protestas de Francia? La verdad de sus imágenes virales",
+   "summary": "",
+   "image": "https://www.cooperativa.cl/noticias/site/artic/20261019/imag/foto_0000000120261019200150.jpg",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa"
+   ],
+   "coverages": [],
+   "link": "https://www.cooperativa.cl/noticias/mundo/francia/disturbios/la-pantera-rosa-en-las-protestas-de-francia-la-verdad-de-sus/2026-10-19/200150.html",
+   "published": "2026-10-19T23:52:00Z",
+   "first_seen": "2026-10-20T09:55:17Z",
+   "image_checked_at": "2026-10-20T09:55:17.609953Z"
+  },
+  {
    "category": "politica",
    "title": "Cámara aprueba proyecto que agiliza expulsiones de migrantes: Así queda la iniciativa que pasa al Senado",
    "summary": "",
@@ -544,7 +574,7 @@
    "link": "https://www.desiertofm.cl/diputado-fabian-ossandon-hace-llamado-al-gobierno-a-conectarse-con-el-chile-real-y-exige-garantias-por-ley-ricarte-soto-tras-recorte-presupuestario/",
    "published": "2026-10-19T22:29:42Z",
    "first_seen": "2026-10-20T05:25:00Z",
-   "image_checked_at": "2026-10-20T05:49:04.488112Z",
+   "image_checked_at": "2026-10-20T09:55:17.609953Z",
    "coverages": []
   },
   {
@@ -1149,7 +1179,7 @@
    "category": "politica",
    "title": "Partido Comunista concluye su Conferencia Nacional con propuestas para enfrentar al gobierno de Kast y fortalecer la unidad política – social",
    "summary": "",
-   "image": "",
+   "image": "https://pcchile.cl/wp-content/uploads/2026/10/Conferencia-Nacional.jpeg",
    "source_url": "https://pcchile.cl",
    "sources": [
     "Partido Comunista de Chile"
@@ -1157,7 +1187,7 @@
    "link": "https://pcchile.cl/2026/10/19/partido-comunista-concluye-su-conferencia-nacional-con-propuestas-para-enfrentar-al-gobierno-de-kast-y-fortalecer-la-unidad-politica-social/",
    "published": "2026-10-19T19:09:14Z",
    "first_seen": "2026-10-20T05:25:00Z",
-   "image_checked_at": "2026-10-20T05:49:04.488112Z",
+   "image_checked_at": "2026-10-20T09:55:17.609953Z",
    "coverages": []
   },
   {
@@ -1276,7 +1306,7 @@
    "link": "https://chile.as.com/futbol/esta-es-la-unica-forma-en-que-se-transmite-u-de-chile-antofagasta-a-que-hora-juega-tv-canal-y-como-ver-la-copa-de-la-liga-f202610-n/",
    "published": "2026-10-19T18:35:22Z",
    "first_seen": "2026-10-20T05:25:00Z",
-   "image_checked_at": "2026-10-20T05:49:04.488112Z",
+   "image_checked_at": "2026-10-20T09:55:17.609953Z",
    "coverages": []
   },
   {
@@ -1562,7 +1592,7 @@
    "link": "https://www.midesof.gob.cl/cuando-tu-respondes-chile-responde-gobierno-lanza-campana-casen-2026-y-muestra-como-reconocer-a-los-encuestadores/",
    "published": "2026-10-19T17:13:47Z",
    "first_seen": "2026-10-20T05:25:00Z",
-   "image_checked_at": "2026-10-20T05:49:04.488112Z",
+   "image_checked_at": "2026-10-20T09:55:17.609953Z",
    "coverages": []
   },
   {
@@ -1736,7 +1766,8 @@
    "summary": "",
    "image": "https://www.latercera.com/resizer/v2/JSATPWSM7VA3FHUECCKSNY2JDE.jpg?auth=51795725938b6030ef975e48af48a4baba13253f4025b68b7ddde4604c4956cb&height=630&width=1200&smart=true",
    "sources": [
-    "La Tercera"
+    "La Tercera",
+    "BioBioChile"
    ],
    "link": "https://www.latercera.com/mundo/noticia/una-nueva-yalta-putin-propone-una-cumbre-con-trump-y-xi-para-discutir-el-futuro-de-ucrania/",
    "published": "2026-10-19T16:30:00Z",
@@ -2112,7 +2143,8 @@
    "published": "2026-10-19T14:50:00Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "image_checked_at": "2026-10-20T05:25:00.620401Z",
-   "source_url": "https://www.latercera.com/pulso/noticia/mario-marcel-aterriza-en-la-udp-como-profesor-de-la-facultad-de-administracion-y-economia/"
+   "source_url": "https://www.latercera.com/pulso/noticia/mario-marcel-aterriza-en-la-udp-como-profesor-de-la-facultad-de-administracion-y-economia/",
+   "coverages": []
   },
   {
    "category": "deportes",
