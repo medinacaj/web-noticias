@@ -2,7 +2,7 @@
 import unittest
 from datetime import datetime, timezone
 
-from fetch_noticias import source_domain, source_mark, meta_html, merge
+from fetch_noticias import source_domain, source_mark, meta_html, merge, figure_html
 
 
 class SourceFaviconsTests(unittest.TestCase):
@@ -37,6 +37,19 @@ class SourceFaviconsTests(unittest.TestCase):
         self.assertIn('class="source-mark"', html)
         self.assertIn('class="source-name">Ejemplo', html)
         self.assertIn("<time", html)
+
+    def test_badge_over_image_keeps_original_image_and_logo(self):
+        story = {"image": "https://example.com/photo.jpg",
+                 "source_url": "https://medio.cl", "sources": ["Medio"]}
+        rendered = figure_html(story)
+        self.assertIn('class="media-badge"', rendered)
+        self.assertIn('class="source-mark"', rendered)
+        self.assertIn("photo.jpg", rendered)
+        self.assertIn("medio.cl", rendered)
+        self.assertLess(rendered.index("photo.jpg"), rendered.index('class="media-badge"'))
+
+    def test_no_badge_without_image(self):
+        self.assertEqual(figure_html({"image": "", "sources": ["Medio"]}), "")
 
     def test_merge_preserves_editorial_url(self):
         now = datetime(2026, 10, 19, tzinfo=timezone.utc)
