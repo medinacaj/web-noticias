@@ -33,6 +33,12 @@ def permitted_url(url, *, check_dns=True):
                 or "." not in hostname or hostname.endswith(".local")
                 or hostname in ("localhost", GOOGLE_NEWS_HOST)):
             return False
+        try:
+            # Los hosts expresados como IP son rechazados incluso sin consulta DNS.
+            ipaddress.ip_address(hostname)
+            return False
+        except ValueError:
+            pass
         if not check_dns:
             return True
         addresses = socket.getaddrinfo(hostname, 443, type=socket.SOCK_STREAM)
