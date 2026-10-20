@@ -1,6 +1,72 @@
 {
- "actualizado": "2026-10-20T09:18:28Z",
+ "actualizado": "2026-10-20T09:46:18Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "Hipermovilidad: la poco conocida \"enfermedad de la flexibilidad\" que causa dolor y fatiga",
+   "summary": "Este trastorno puede afectar a cientos de miles de personas, pero muchas sufren retrasos a la hora de obtener un diagnóstico.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/21ec/live/6e373a20-a2a6-11f1-b109-879e35c24276.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "Hipermovilidad: la poco conocida \"enfermedad de la flexibilidad\" que causa dolor y fatiga",
+     "link": "https://www.bbc.com/mundo/articles/cqj9k3vge1r9o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-20T09:34:37Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cqj9k3vge1r9o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-20T09:34:37Z",
+   "first_seen": "2026-10-20T09:46:18Z"
+  },
+  {
+   "category": "politica",
+   "title": "El desplome del fondo E de las AFP incendia la política en Chile",
+   "summary": "",
+   "image": "https://imagenes.elpais.com/resizer/v2/BYFN7GF6AJAB3B5WAEHHVYWYQY.jpg?auth=a1877b843b068bc6fd33f9d8648426036529bf02520a5fabb96a5154dd1de038&width=1200",
+   "source_url": "https://elpais.com",
+   "sources": [
+    "EL PAÍS"
+   ],
+   "coverages": [],
+   "link": "https://elpais.com/chile/2026-10-20/el-desplome-del-fondo-e-de-las-afp-incendia-la-politica-en-chile.html",
+   "published": "2026-10-20T09:30:00Z",
+   "first_seen": "2026-10-20T09:46:18Z",
+   "image_checked_at": "2026-10-20T09:46:18.893659Z"
+  },
+  {
+   "category": "politica",
+   "title": "El pueblo unido jamás será vencido: del Chile de Allende a las protestas de París",
+   "summary": "",
+   "image": "https://imagenes.elpais.com/resizer/v2/ML3IB3AQIKMYYLKKJKJT5Q7MOA.jpg?auth=1aaafc450ad7a01941d3e7a2c740a0a600aa7a39b003a4c06392f031740a258b&width=1200",
+   "source_url": "https://elpais.com",
+   "sources": [
+    "EL PAÍS"
+   ],
+   "coverages": [],
+   "link": "https://elpais.com/chile/2026-10-20/el-pueblo-unido-jamas-sera-vencido-del-chile-de-allende-a-las-protestas-de-paris.html",
+   "published": "2026-10-20T09:30:00Z",
+   "first_seen": "2026-10-20T09:46:18Z",
+   "image_checked_at": "2026-10-20T09:46:18.893659Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Periodista Mónica Rincón sufre encerrona que incluyó disparos al aire en la capital",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989591-monica-rincon-encerrona.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/20/periodista-monica-rincon-sufre-encerrona-que-incluyo-disparos-al-aire-en-la-capital.shtml",
+   "published": "2026-10-20T08:44:12Z",
+   "first_seen": "2026-10-20T09:46:18Z",
+   "image_checked_at": "2026-10-20T09:46:18.893659Z"
+  },
   {
    "category": "internacional",
    "title": "Alberta vota por seguir formando parte de Canadá, según resultados preliminares del referendo independentista",
@@ -567,7 +633,8 @@
    "link": "https://www.latercera.com/nacional/noticia/suspenden-clases-en-12-comunas-de-la-region-de-ohiggins-para-este-martes-por-riesgo-de-remociones-en-masa/",
    "published": "2026-10-19T21:35:49Z",
    "first_seen": "2026-10-20T03:15:08Z",
-   "image_checked_at": "2026-10-20T05:10:13.359000Z"
+   "image_checked_at": "2026-10-20T05:10:13.359000Z",
+   "coverages": []
   },
   {
    "category": "regiones",
@@ -640,6 +707,21 @@
    "link": "https://www.bbc.com/mundo/articles/c6ev3zgnrxz9o?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-19T21:16:19Z",
    "first_seen": "2026-10-20T03:15:08Z"
+  },
+  {
+   "category": "cultura",
+   "title": "“Fuiste mi primer amor”: Andrea Zuckermann dedica emotivo mensaje a Gabriel Prieto a una semana de su muerte",
+   "summary": "",
+   "image": "https://media.chilevision.cl/2026/10/ex-pareja-de-gabriel-prieto-1200x675.jpg",
+   "source_url": "https://www.chilevision.cl",
+   "sources": [
+    "Chilevisión"
+   ],
+   "coverages": [],
+   "link": "https://www.chilevision.cl/noticias/show/fuiste-mi-primer-amor-andrea-zuckermann-dedica-emotivo-mensaje-a-gabriel-prieto-a-una-semana-de-su-muerte/",
+   "published": "2026-10-19T21:15:31Z",
+   "first_seen": "2026-10-20T09:46:18Z",
+   "image_checked_at": "2026-10-20T09:46:18.893659Z"
   },
   {
    "category": "cultura",
@@ -824,6 +906,21 @@
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z",
    "coverages": []
+  },
+  {
+   "category": "tecnologia",
+   "title": "Unicorn Overlord recibe Port Nativo de PC para Windows y Linux con 4K, FSR 1, Teclado y Mouse - Guía de Instalación",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.pcmrace.com",
+   "sources": [
+    "PC Master Race Latinoamérica"
+   ],
+   "coverages": [],
+   "link": "https://www.pcmrace.com/2026/10/19/unicorn-overlord-pc-port-linux-windows/",
+   "published": "2026-10-19T20:27:28Z",
+   "first_seen": "2026-10-20T09:46:18Z",
+   "image_checked_at": "2026-10-20T09:46:18.893659Z"
   },
   {
    "category": "nacional",
@@ -2191,6 +2288,21 @@
   },
   {
    "category": "deportes",
+   "title": "Le salió caro: Periodista español insultó a Manuel Pellegrini y su Instagram se llenó de comentarios",
+   "summary": "",
+   "image": "https://media.chilevision.cl/2026/10/Periodista-espanol-insulto-a-Manuel-Pellegrini-y-su-Instagram-se-repleto-de-comentarios-1200x675.jpg",
+   "source_url": "https://www.chilevision.cl",
+   "sources": [
+    "Chilevisión"
+   ],
+   "coverages": [],
+   "link": "https://www.chilevision.cl/chv-deportes/futbol-internacional/le-salio-caro-periodista-espanol-insulto-a-pellegrni-y-se-lleno-de-comentarios/",
+   "published": "2026-10-19T14:12:20Z",
+   "first_seen": "2026-10-20T09:46:18Z",
+   "image_checked_at": "2026-10-20T09:46:18.893659Z"
+  },
+  {
+   "category": "deportes",
    "title": "Endurance Trail: estos fueron todos los ganadores de la edición 2026 con más de un día de competencia",
    "summary": "",
    "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988660-endurance-trail-todos-los-ganadores-edicion-2026.jpg",
@@ -2412,7 +2524,7 @@
    "category": "cultura",
    "title": "Yamila Reyna arremetió sin filtro contra Pancha Merino tras llorar en pantalla por demandas en su contra",
    "summary": "",
-   "image": "",
+   "image": "https://gcdn.emol.cl/tv-chilena/files/2026/10/Yamila-Reyna-Pancha-Merino--308x199.jpg",
    "source_url": "https://www.guioteca.com",
    "sources": [
     "Guioteca"
@@ -2420,7 +2532,7 @@
    "link": "https://www.guioteca.com/tv-chilena/yamila-reyna-arremetio-sin-filtro-contra-pancha-merino-tras-llorar-en-pantalla-por-demandas-en-su-contra/",
    "published": "2026-10-19T12:50:29Z",
    "first_seen": "2026-10-20T03:30:06Z",
-   "image_checked_at": "2026-10-20T05:43:55.557181Z"
+   "image_checked_at": "2026-10-20T09:46:18.893659Z"
   },
   {
    "category": "cultura",
@@ -2700,7 +2812,8 @@
    "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/19/2-500-clientes-afectados-por-corte-de-luz-en-centro-de-concepcion.shtml",
    "published": "2026-10-19T11:05:32Z",
    "first_seen": "2026-10-20T05:36:05Z",
-   "image_checked_at": "2026-10-20T05:49:04.488112Z"
+   "image_checked_at": "2026-10-20T05:49:04.488112Z",
+   "coverages": []
   },
   {
    "category": "deportes",
@@ -2847,49 +2960,6 @@
    "first_seen": "2026-10-19T15:49:30Z",
    "source_url": "https://www.latercera.com",
    "image_checked_at": "2026-10-20T05:36:05.913844Z",
-   "coverages": []
-  },
-  {
-   "category": "cultura",
-   "title": "Diana Bolocco envió sentido mensaje a Luz Jiménez tras la muerte de su hija: “En nombre del programa y mío...”",
-   "summary": "",
-   "image": "https://www.lacuarta.com/resizer/v2/LDWJSXEXFNF2RFHJDAL7IFEJXI.jpg?auth=6825d6c5076710e5a2788164e63daecea21ea1bf951903a9e719407396c333ac&height=630&width=1200&smart=true",
-   "sources": [
-    "La Cuarta",
-    "BioBioChile"
-   ],
-   "link": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/",
-   "published": "2026-10-19T09:45:29Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "image_checked_at": "2026-10-20T05:49:04.488112Z",
-   "source_url": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/",
-   "coverages": []
-  },
-  {
-   "category": "deportes",
-   "title": "Vuelve la NBA: quiénes son los favoritos, los que quieren dar la sorpresa y los equipos bajo presión",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNlZWRGt6OEVkZzUtYzN6NGN5V2w2aVBKb2QyWmw2eHB4YVVzRXZtaGVCcEQ0MVltWm40Q2o0c2s3WXlUZkIyd09xcDFQaWFZWHpNWHRoWkNEcHFnUDJFSXpLeVZralppRzBRZThQUFdSRWEzNEVvR1lVTkRTQUNKVktiN0JYaDE0bGx2YV85NHRMdl80MmU0Y2RRX3hLQUNMY2c3MXFaMlNObkhrNW1oc2p1OFNmSXdQV1BFcUtYczJDQXhCODlRYw?oc=5",
-   "published": "2026-10-19T09:40:36Z",
-   "first_seen": "2026-10-19T15:49:30Z"
-  },
-  {
-   "category": "medioambiente",
-   "title": "Columna de José Cabello Lechuga : Geología y cambio climático en Chile",
-   "summary": "",
-   "image": "https://opinion.cooperativa.cl/opinion/imag/share.jpg?=20261020025709",
-   "source_url": "https://opinion.cooperativa.cl",
-   "sources": [
-    "Opinión - Cooperativa"
-   ],
-   "link": "https://opinion.cooperativa.cl/opinion/medio-ambiente/geologia-y-cambio-climatico-en-chile/2026-10-19/062258.html",
-   "published": "2026-10-19T09:25:08Z",
-   "first_seen": "2026-10-20T05:25:00Z",
-   "image_checked_at": "2026-10-20T05:56:57.552543Z",
    "coverages": []
   }
  ]
