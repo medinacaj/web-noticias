@@ -27,6 +27,13 @@ class EditorialV5Tests(unittest.TestCase):
                       'id="clear-reader-history"', 'function applyReadingFilter()'):
             self.assertNotIn(token, self.page)
 
+    def test_share_and_save_are_optional_actions_not_read_status(self):
+        for marker in ('className = "share-story"', 'navigator.share(news)',
+                       'navigator.clipboard.writeText(link.href)',
+                       'className = "save-story"', 'noticias:library:v1'):
+            self.assertIn(marker, self.page)
+        self.assertNotIn('card.classList.toggle("is-read"', self.page)
+
     def test_third_layout_is_independent_from_editorial(self):
         for marker in ('.is-headlines .section-grid', '.is-compact .section-grid',
                        'mode === "headlines"', 'setDensity(mode)',
