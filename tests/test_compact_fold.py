@@ -9,11 +9,11 @@ class CompactFoldTests(unittest.TestCase):
     def setUpClass(cls):
         cls.page = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
 
-    def test_toolbar_reuses_news_strip(self):
-        self.assertIn('var strip = d.querySelector(".breaking-inner")', self.page)
-        self.assertIn('if (strip && toolbar) strip.appendChild(toolbar)', self.page)
+    def test_toolbar_moves_to_top_navigation(self):
+        self.assertIn('id="view-options-toggle"', self.page)
+        self.assertIn('id="view-options-panel" hidden', self.page)
         self.assertIn('main.container{padding-top:14px;}', self.page)
-        self.assertIn('.breaking .news-toolbar{flex:none;', self.page)
+        self.assertNotIn('if (strip && toolbar) strip.appendChild(toolbar)', self.page)
 
     def test_existing_controls_remain_available(self):
         for marker in ('id="density-switch"', 'id="text-size"',
@@ -21,9 +21,9 @@ class CompactFoldTests(unittest.TestCase):
                        'data-show-more', '%%BREAKING%%', '%%TOP%%'):
             self.assertIn(marker, self.page)
 
-    def test_mobile_stacks_controls(self):
-        self.assertIn('@media(max-width:900px){.breaking-inner{flex-wrap:wrap;', self.page)
-        self.assertIn('@media(max-width:480px)', self.page)
+    def test_mobile_fits_controls_in_menu(self):
+        self.assertIn('.view-options-panel{position:absolute;', self.page)
+        self.assertIn('@media(max-width:360px)', self.page)
 
     def test_no_read_tracking_reintroduced(self):
         for marker in ('id="reading-filter"', 'id="reading-status"',
