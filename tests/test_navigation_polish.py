@@ -10,28 +10,31 @@ class NavigationPolishTests(unittest.TestCase):
     def setUpClass(cls):
         cls.html = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
 
-    def test_manual_controls_have_accessible_names(self):
+    def test_old_controls_removed(self):
         for marker in ('id="nav-prev"', 'id="nav-next"', 'id="nav-pause"',
-                       'aria-label="Secciones anteriores"',
-                       'aria-label="Secciones siguientes"',
-                       'aria-label="Pausar desplazamiento automático"'):
+                       'class="nav-controls"'):
+            self.assertNotIn(marker, self.html)
+
+    def test_click_pause_and_mouse_drag(self):
+        for marker in ('pointerdown', 'pointermove', 'pointerup',
+                       'pressX = event.clientX',
+                       'startScroll - delta', 'event.preventDefault()',
+                       'paused = !paused', 'dataset.paused', 'setInterval',
+                       'scrollTo({left:0', 'scrollBy({left:90'):
             self.assertIn(marker, self.html)
 
-    def test_scroll_has_keyboard_and_hover_pause(self):
-        for marker in ('strip.addEventListener("mouseenter"',
-                       'strip.addEventListener("focusin"',
-                       'strip.addEventListener("pointerdown"',
-                       'strip.scrollBy({left: sign',
-                       'strip.scrollWidth > strip.clientWidth',
-                       'manualPaused', 'window.matchMedia',
-                       'prefers-reduced-motion: reduce'):
+    def test_accessible_motion_preferences_and_keyboard(self):
+        for marker in ('prefers-reduced-motion: reduce',
+                       'event.key === "Enter"', 'event.key === "ArrowRight"',
+                       'aria-label="Carrusel de secciones;',
+                       'tabindex="0"', 'touch-action:pan-x'):
             self.assertIn(marker, self.html)
 
     def test_mobile_menu_is_preserved(self):
         for marker in ('id="menu-toggle"', 'id="site-nav"',
                        'nav.classList.toggle("open", open)',
                        '.js .site-nav.open{display:block;}',
-                       '.nav-controls,.js .nav-controls{display:none;}'):
+                       'window.innerWidth > 767'):
             self.assertIn(marker, self.html)
 
     def test_category_palette_and_news_functions_remain(self):
