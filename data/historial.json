@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T05:49:04Z",
+ "actualizado": "2026-10-20T05:56:57Z",
  "noticias": [
   {
    "category": "nacional",
@@ -364,6 +364,20 @@
    "image_checked_at": "2026-10-20T05:49:04.488112Z"
   },
   {
+   "category": "cultura",
+   "title": "Nuevo drama remece a Tonka Tomicic e involucra a Parived: banco la demandó y le exige entregar departamento",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/6VAHZNN2SRALLG6YY36Q35NNXM.jpg?auth=bb6bd5d92b6a0a92cefc84ecf3169fb88f37bbb8abfe06043e27bfaa5be02b04&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/nuevo-drama-remece-a-tonka-tomicic-e-involucra-a-parived-banco-la-demando-y-le-exige-entregar-departamento/",
+   "published": "2026-10-19T21:51:15Z",
+   "first_seen": "2026-10-20T05:56:57Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
+  },
+  {
    "category": "nacional",
    "title": "Suspenden clases en 37 comunas de Valparaíso, O’Higgins y Coquimbo para este martes por riesgo de remociones en masa",
    "summary": "",
@@ -459,6 +473,20 @@
    "published": "2026-10-19T21:02:00Z",
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Chile y Reino Unido acuerdan avanzar a un “nuevo nivel de asociación estratégica”",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/Perez-UK-700x342.png",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/19/chile-y-reino-unido-acuerdan-avanzar-a-un-nuevo-nivel-de-asociacion-estrategica/",
+   "published": "2026-10-19T21:00:55Z",
+   "first_seen": "2026-10-20T05:56:57Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   },
   {
    "category": "cultura",
@@ -759,14 +787,15 @@
    "category": "salud-ciencia",
    "title": "OPS firma acuerdo marco 2026 con la Autónoma de Chile",
    "summary": "",
-   "image": "",
+   "image": "https://www.uautonoma.cl/content/uploads/2026/10/OPS.png",
    "source_url": "https://www.uautonoma.cl",
    "sources": [
     "Universidad Autónoma de Chile"
    ],
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KQW5aM25ER1RkdVpyNXdyRXBJM3pqVjZwUkdwbU5LOFllUHdPb0JHQXpKZi04ekpJcUFCTjVobHByZktXWnR3UEhfVzNQS3djWkkteDVhMm1lTklaM3pyaU1QYlA4QWlmdlIyVGlKWmJxd2pTWF80?oc=5",
+   "link": "https://www.uautonoma.cl/noticias/acuerdo-marco-entre-ua-la-ops-oms/",
    "published": "2026-10-19T19:03:57Z",
-   "first_seen": "2026-10-20T05:25:00Z"
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   },
   {
    "category": "nacional",
@@ -997,14 +1026,15 @@
    "category": "salud-ciencia",
    "title": "Más del 62% de los adultos en Chile ha perdido al menos un diente: Especialistas abordan soluciones frente al avance del edentulismo",
    "summary": "",
-   "image": "",
+   "image": "https://portalredsalud.cl/wp-content/uploads/2026/10/Mas-del-62-de-los-adultos-en-Chile-ha-perdido-al-menos-un-diente-Especialistas-abordan-soluciones-frente-al-avance-del-edentulismo.jpg",
    "source_url": "https://portalredsalud.cl",
    "sources": [
     "Portal Red Salud"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTTVhdkFGRFo5UU1Gb3FjWHFXeVdMWFJ3eWdaUlpLb09HeHFXRk12d0Q1TUhhZnRaWmVsWmFNSWRSdHhGUEJlWnZtM3NHLTRodVRBSHRncDMtWE90TFpWT0dfM2xnNGtsTVVIMUFSZ1NWRmJDNFVWRnBheDBvTk5ERkZ6TnlmVmllMjR3VVphZ2E0V3BCVEprNWpwZlZES3R6a016Wlh5Yk1BbHFicDQySGVfRzd6LUE1dGlIOXhua3AtQm1CS2FVZ1E0OHFWOUZvX0dNbXJHWW05V0t0al9MWWU3N1J0dVNaNjdNZC04cnNsWlNVWEpnZ2xkOWM?oc=5",
+   "link": "https://portalredsalud.cl/2026/10/19/mas-del-62-de-los-adultos-en-chile-ha-perdido-al-menos-un-diente-especialistas-abordan-soluciones-frente-al-avance-del-edentulismo/",
    "published": "2026-10-19T17:51:28Z",
-   "first_seen": "2026-10-20T05:25:00Z"
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   },
   {
    "category": "politica",
@@ -1284,14 +1314,15 @@
    "category": "salud-ciencia",
    "title": "Envejecimiento, salud mental e inteligencia artificial: los desafíos que abordará el Congreso Chileno de Medicina Familiar",
    "summary": "",
-   "image": "",
+   "image": "https://g5noticias.cl/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-19-at-13.15.59.jpeg",
    "source_url": "https://g5noticias.cl",
    "sources": [
     "G5noticias"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPQVltY01BZU14eFItLWp4blVoQmhVUGFhWjV3VkhlTllYNkl1cnh2OHNyd2xIWjJISnRxYXpZenh4dUhRVTRJd3ZSNEZ0Z3VUUVVnd3UxWlVZQVlRYkZEd2ExRUhlOHRBZmx4NGI3QmVSbzFTQkVWUVNadzF2WjFfMzRMVDNEcnU4NkN4LWxkS3ZVT1F1MXVDZ1l1UU1WZ0s5X29GUUQ4Z09SUWZfenJnRG0zTEQtaGYxVmFaY2t3RzBCZllrQ1hRVE14M3dKYmticUJ5Vk1ROWxUd0l4S3VYaHhVeVpSU0JscnJBOQ?oc=5",
+   "link": "https://g5noticias.cl/2026/10/19/envejecimiento-salud-mental-e-inteligencia-artificial-los-desafios-que-abordara-el-congreso-chileno-de-medicina-familiar-2/",
    "published": "2026-10-19T16:26:32Z",
-   "first_seen": "2026-10-20T05:25:00Z"
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   },
   {
    "category": "deportes",
@@ -2155,20 +2186,6 @@
    "source_url": "https://www.biobiochile.cl/noticias/dopamina/2026/10/19/expareja-de-nano-calderon-anuncio-que-esta-embarazada-terminaron-hace-algunas-semanas.shtml"
   },
   {
-   "category": "cultura",
-   "title": "Diana Bolocco envió sentido mensaje a Luz Jiménez tras la muerte de su hija: “En nombre del programa y mío...”",
-   "summary": "",
-   "image": "https://www.lacuarta.com/resizer/v2/LDWJSXEXFNF2RFHJDAL7IFEJXI.jpg?auth=6825d6c5076710e5a2788164e63daecea21ea1bf951903a9e719407396c333ac&height=630&width=1200&smart=true",
-   "sources": [
-    "La Cuarta"
-   ],
-   "link": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/",
-   "published": "2026-10-19T11:34:33Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "image_checked_at": "2026-10-20T05:49:04.488112Z",
-   "source_url": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/"
-  },
-  {
    "category": "deportes",
    "title": "Vidal analizó errores de Maureira y utilizó a Bravo como ejemplo",
    "summary": "",
@@ -2382,6 +2399,21 @@
    "image_checked_at": "2026-10-20T05:36:05.913844Z"
   },
   {
+   "category": "cultura",
+   "title": "Diana Bolocco envió sentido mensaje a Luz Jiménez tras la muerte de su hija: “En nombre del programa y mío...”",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/LDWJSXEXFNF2RFHJDAL7IFEJXI.jpg?auth=6825d6c5076710e5a2788164e63daecea21ea1bf951903a9e719407396c333ac&height=630&width=1200&smart=true",
+   "sources": [
+    "La Cuarta",
+    "BioBioChile"
+   ],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/",
+   "published": "2026-10-19T09:45:29Z",
+   "first_seen": "2026-10-19T15:49:30Z",
+   "image_checked_at": "2026-10-20T05:49:04.488112Z",
+   "source_url": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/"
+  },
+  {
    "category": "deportes",
    "title": "Vuelve la NBA: quiénes son los favoritos, los que quieren dar la sorpresa y los equipos bajo presión",
    "summary": "",
@@ -2397,14 +2429,15 @@
    "category": "medioambiente",
    "title": "Columna de José Cabello Lechuga : Geología y cambio climático en Chile",
    "summary": "",
-   "image": "",
+   "image": "https://opinion.cooperativa.cl/opinion/imag/share.jpg?=20261020025709",
    "source_url": "https://opinion.cooperativa.cl",
    "sources": [
     "Opinión - Cooperativa"
    ],
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOF9CdTVOOTd1RFFXVHA3TGRwaThQRmlqSHhBbVp2a09CTDJDZk1tLVZUTzhjY1BESldjdVBxTEt2ZGxwTnE0RF9nZWxFUE8xVG9zVWNpN3NWb2lrR3pVaEl4TFNGRS1teUl2eWhaTEJPdWxja21WS1FKdzk0VWZCcnQyVTc2ZVlGdEV6cUh0d1drTUFhTHlPZFRPQzBiVS1aaFFjcktsMWo4aTBPVXN4LW92QQ?oc=5",
+   "link": "https://opinion.cooperativa.cl/opinion/medio-ambiente/geologia-y-cambio-climatico-en-chile/2026-10-19/062258.html",
    "published": "2026-10-19T09:25:08Z",
-   "first_seen": "2026-10-20T05:25:00Z"
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   },
   {
    "category": "nacional",
@@ -2474,14 +2507,15 @@
    "category": "salud-ciencia",
    "title": "Casi el 20% de Chile tiene 60 años o más: aumentan las ITS y especialistas llaman a derribar mitos sobre la sexualidad en personas mayores",
    "summary": "",
-   "image": "",
+   "image": "https://presslatam.cl/wp-content/uploads/2026/10/DKT-TERCERA-EDAD-222.jpg",
    "source_url": "https://presslatam.cl",
    "sources": [
     "PressLatam"
    ],
-   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOZ3RDT0hhVDY1MTZBT3h3MGNKUW1RcjdDU2pjZ0JKUEhjQ2JoTER0ajdmbjRtYjlJX2FkU204U3dtcDg2ZVpkQ0pIVjZBd0UyVU5IY0l6dGg5NTVQb0FhbGtNbXpJWl80YkNPWUpXYVhiYTdRcUR6aVhPbVktRDA4OGpydTFkanNFbGV1bGxIMTRoN016QW5RMTNQX25qd2R2OF9PTWUyVUlGTmR4WDZHSU5LclZxb1REcGh0WktpaTRodjY1eWJFVHBKMzgxLUxlY192bTVQcHZZbjcwUUVhVjJpREJOUzNaeXMyczlWY2lhejlTSXBGYlVJUdIB-wFBVV95cUxOZ3RDT0hhVDY1MTZBT3h3MGNKUW1RcjdDU2pjZ0JKUEhjQ2JoTER0ajdmbjRtYjlJX2FkU204U3dtcDg2ZVpkQ0pIVjZBd0UyVU5IY0l6dGg5NTVQb0FhbGtNbXpJWl80YkNPWUpXYVhiYTdRcUR6aVhPbVktRDA4OGpydTFkanNFbGV1bGxIMTRoN016QW5RMTNQX25qd2R2OF9PTWUyVUlGTmR4WDZHSU5LclZxb1REcGh0WktpaTRodjY1eWJFVHBKMzgxLUxlY192bTVQcHZZbjcwUUVhVjJpREJOUzNaeXMyczlWY2lhejlTSXBGYlVJUQ?oc=5",
+   "link": "https://presslatam.cl/2026/10/casi-el-20-de-chile-tiene-60-anos-o-mas-aumentan-las-its-y-especialistas-llaman-a-derribar-mitos-sobre-la-sexualidad-en-personas-mayores/",
    "published": "2026-10-19T08:37:10Z",
-   "first_seen": "2026-10-20T05:25:00Z"
+   "first_seen": "2026-10-20T05:25:00Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   },
   {
    "category": "nacional",
