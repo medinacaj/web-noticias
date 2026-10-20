@@ -16,13 +16,11 @@ class ReadingExperienceTests(unittest.TestCase):
                        'density.setAttribute("aria-pressed"'):
             self.assertIn(marker, self.html)
 
-    def test_read_state_is_local_and_bounded(self):
-        for marker in ('noticias:reading:v1', 'maxAge = 30 * 24 * 60 * 60 * 1000',
-                       'localStorage.setItem(key, JSON.stringify(seen))',
-                       'event.target.closest("a[data-cat],a.read")',
-                       'card.classList.toggle("is-read", opened)',
-                       'is-read .read-marker', 'aria-live="polite"'):
-            self.assertIn(marker, self.html)
+    def test_no_personal_read_tracking(self):
+        for token in ('id="reading-status"', 'id="reading-filter"',
+                      'card.classList.toggle("is-read"', 'is-read .read-marker'):
+            self.assertNotIn(token, self.html)
+        self.assertIn('localStorage.removeItem("noticias:reading:v1")', self.html)
 
     def test_navigation_does_not_interfere_with_carousel(self):
         self.assertIn('link.setAttribute("aria-current", "location")', self.html)
