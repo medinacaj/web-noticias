@@ -1,6 +1,19 @@
 {
- "actualizado": "2026-10-20T03:30:06Z",
+ "actualizado": "2026-10-20T03:49:35Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "De estudiantes secundarios a “chalecos amarillos”: cómo creció la protesta que sacude Francia",
+   "summary": "¿Por qué unas protestas estudiantiles terminaron convirtiéndose en una crisis nacional para Emmanuel Macron?",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/756f/live/20dd47e0-cbe8-11f1-ad7b-fd8c269705fe.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cvlyd7rw80e5o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-20T03:26:41Z",
+   "first_seen": "2026-10-20T03:49:35Z"
+  },
   {
    "category": "internacional",
    "title": "Los opositores a Putin deportados por Occidente a los que ahora Rusia envía a la guerra",
@@ -78,6 +91,19 @@
    "published": "2026-10-19T23:01:27Z",
    "first_seen": "2026-10-20T00:16:12Z",
    "source_url": "https://www.biobiochile.cl"
+  },
+  {
+   "category": "nacional",
+   "title": "Por riesgo de avalanchas y aluviones: decretan cierre de rutas hacia Farellones por sistema frontal",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQdV9naUQ2RTlOMzZCWkRSM1E0d1JpQ0sxNmRfcllzUUpBNnRoRzN2TS1rNGNaWDdZdkxyRk9KTURUNFE1WllIUkh0YlBSbEg5MEk3RmRnNGRQb0FfUkFVNjZaQnJMM2RDZlhKVndRMHQ1ZXRZQmRHeVN3bjEzenZVaEkzZTdrMWxaelloeTY5T29ySF9OZEQ0QlVHT0lmQjc3R1NCX3N2YV9tMFVHd1VjMWU2X2pFeXFRTTBpbVlNa284YkVvTzhCR3dTOVJGUnl2bUgxcVFhTndVbjl3Z0Q3UGhCU2dHcVpiNHlZREViMThVcllaLTRoRldJUm0wT0hQb2lmQ3VsbngxUjJSRlE?oc=5",
+   "published": "2026-10-19T22:51:05Z",
+   "first_seen": "2026-10-20T03:49:35Z"
   },
   {
    "category": "nacional",
@@ -534,6 +560,19 @@
    "link": "https://www.bbc.com/mundo/articles/c98rzyr2nze1o?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-19T17:34:20Z",
    "first_seen": "2026-10-19T21:00:14Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Huellas dactilares en la arcilla desvelan quiénes pudieron construir el Ejército de Terracota",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObWRsV05HNk4xZVdHXzJQM3VUM3FWQmp6cTVBRWxBVmh0eXhJeThibFVEOWlrXzVOWGNKRlE1TFRYOGxIWkNMNDhpQ3ZQN0paY3dMeWhHY2szdS14bi1zWVdYMEJJRUdLUHJGTGV3MGZvVlZ1NWpEWHRuSHkxWTYxcGc3bWp4Vk1Qc0k2NTdMbjJxSG1tVUVTNEhuaTBORTgySGlXZGxOb0g4N0xCQ0RmMVdmVG5ldHF6MEpPZFhMYnhockZXeTJJd0Z4QmVab3pHQ2tYWTJn0gHWAUFVX3lxTFBDRkhEdlppRzk1emZDV0Z4Z21tS3VSWXczUV9hakdEMjhfa0RjQVNfUG9fNE1zX2U5U29ZbzNJWFhDTkdZWktJWVpsVVlfbTgxR1E2NHhWUHJ2RzVteUJEQjFXSGtFdzRqVVJ1TEl6UFZzUzZkVFg3QUNYMGNiVEtnX3ZRbUswbzNvUUw3dHJkVFlLa1F6RW85QXFaUko2T0x1bjAxYUNHRzktdFE3aWhHeEtDdVdwc2xiUmNWcDZBY0t3ckpQV0NpUnNIOHJSV3FBeUFHR2c?oc=5",
+   "published": "2026-10-19T17:31:43Z",
+   "first_seen": "2026-10-20T03:49:35Z"
   },
   {
    "category": "internacional",
@@ -1429,7 +1468,8 @@
    ],
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOZEJNV3VmOS1vWFhVV0V4TE9QQUxOMjk0OGdNRnowMHNXTXMxcDc4ekl5VmMtNGk5bFBfMGd1bE55cjB2T2JISGt4anhfVjIxTUFJbDNvTjFGdGVxeXFJQ2V6a3ptX05nM1VuTVpxVmx6dl8zUHQ4VjJtTlRHckY2aXRKc0Nxdkxta1pEWDZYNnV4ZFJwcEpLTmRfN2VCSDlneWs2R1laWUVSc0NtNkl1bnlIX2p1NVo1VmtabDFQdG8tLUdsRzA0MWdGbHgwS21NOXFyN2tyUWRBLUxyckRpM0ZLOGQ3Uk5nT09lMThuaEZpZlRzY21XZlpudkY?oc=5",
    "published": "2026-10-19T11:39:26Z",
-   "first_seen": "2026-10-19T15:49:30Z"
+   "first_seen": "2026-10-19T15:49:30Z",
+   "source_url": "https://www.biobiochile.cl"
   },
   {
    "category": "cultura",
@@ -1840,18 +1880,6 @@
    ],
    "link": "https://www.bbc.com/mundo/articles/cm4g17q284xlo?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-19T03:58:23Z",
-   "first_seen": "2026-10-19T07:41:06Z"
-  },
-  {
-   "category": "cultura",
-   "title": "María José Quintanilla suspende otro show por lluvias: \"Lo primero es cuidarnos\"",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNcjl4emVqQk5OQlFXbk5FODZiS01XUFh5cmpjVVRkWUpMYm11NkhRa2trREN3dHctTWpDYndVTFBaNGVCRE5GRXZHcnJjVThaVHd2X1ZVbFhXaGRVdkZyRUFnTkFSRFdORjRyaEFQeFV6cEZnMEZsTjJadVp2aS1kaDRrcDg4U3R6ZWZTRFNBRkdxQnBJZVVUV2dhcGp1YlRjQVJOMldVZ2NBUkU5RV82U29BSUl0V2V1M3VDbkVIUGpEdGRZRVVUUzd5SlFxaWxOYklxNHFoZktvNzFYRTE4aW04ekVQZ0laTHBiVDBDR1g0SmhQUkhQMW5LRkJvQkE?oc=5",
-   "published": "2026-10-19T03:47:41Z",
    "first_seen": "2026-10-19T07:41:06Z"
   }
  ]
