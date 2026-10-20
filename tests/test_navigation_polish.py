@@ -50,7 +50,7 @@ class NavigationPolishTests(unittest.TestCase):
             self.assertIn(marker, self.html)
 
     def test_visual_polish_preserves_responsive_rules(self):
-        for marker in ('box-shadow:0 7px 20px', '.site-nav a.is-active',
+        for marker in ('box-shadow:var(--card-shadow-hover)', '.site-nav a.is-active',
                        '@media (max-width:767px)', 'scroll-behavior:auto !important',
                        'color-mix(in srgb,var(--cat'):
             self.assertIn(marker, self.html)
