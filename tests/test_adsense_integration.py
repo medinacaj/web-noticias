@@ -76,6 +76,25 @@ class AdsenseIntegrationTests(unittest.TestCase):
         self.assertEqual(conf["code"], "")
         self.assertEqual(conf["ads_txt"], "")
 
+    def test_root_github_pages_can_be_configured_without_buying_domain(self):
+        # Un sitio de usuario es un host registrable bajo el sufijo público github.io,
+        # distinto de una página de proyecto bajo /web-noticias/.
+        root = "https://medinacaj.github.io/"
+        candidate = configured_adsense(self.env, root)
+        self.assertTrue(candidate["owned_root"])
+        self.assertTrue(candidate["enabled"])
+        self.assertIn("adsbygoogle.js", candidate["code"])
+        self.assertIn("google.com, pub-", candidate["ads_txt"])
+        disabled = configured_adsense({**self.env, "ADSENSE_READY": "false"}, root)
+        self.assertFalse(disabled["enabled"])
+        self.assertEqual(disabled["code"], "")
+
+    def test_not_every_github_subdomain_is_registrable(self):
+        for candidate in ("https://github.io/", "https://sub.medinacaj.github.io/",
+                          "https://medinacaj.github.io/web-noticias",
+                          "https://medinacaj.github.io:9999/"):
+            self.assertFalse(configured_adsense(self.env, candidate)["enabled"])
+
     def test_owned_custom_root_is_opt_in_and_ads_txt_valid(self):
         cfg = configured_adsense({**self.env, "ADSENSE_READY": ""}, OWNED_SITE)
         self.assertFalse(cfg["enabled"])
@@ -101,7 +120,7 @@ class AdsenseIntegrationTests(unittest.TestCase):
 
     def test_domain_must_be_root_without_query_or_credentials(self):
         for domain in ("https://noticias.example.cl/seccion", "http://noticias.example.cl",
-                       "https://foo.github.io/", "https://github.io/",
+                       "https://foo.github.io/noticias", "https://github.io/",
                        "https://noticias.example.cl/?q=1",
                        "https://u:p@noticias.example.cl/"):
             self.assertFalse(configured_adsense(self.env, domain)["enabled"])
