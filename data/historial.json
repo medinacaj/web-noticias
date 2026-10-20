@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T07:09:05Z",
+ "actualizado": "2026-10-20T07:29:02Z",
  "noticias": [
   {
    "category": "internacional",
@@ -82,6 +82,20 @@
    "published": "2026-10-20T02:59:04Z",
    "first_seen": "2026-10-20T05:10:13Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "cultura",
+   "title": "«La Traviata» volvió al Teatro Municipal de Viña del Mar con dos funciones a tablero vuelto",
+   "summary": "",
+   "image": "https://puranoticia.pnt.cl/cms/site/artic/20261019/imag/foto_0000000220261019234147/f198c098-740f-444c-ba5a-42ce0aa77865.jpg",
+   "source_url": "https://puranoticia.pnt.cl",
+   "sources": [
+    "Puranoticia.cl"
+   ],
+   "link": "https://puranoticia.pnt.cl/region-valparaiso/la-traviata-volvio-al-teatro-municipal-de-vina-del-mar-con-dos-funciones",
+   "published": "2026-10-20T02:57:00Z",
+   "first_seen": "2026-10-20T07:29:02Z",
+   "image_checked_at": "2026-10-20T07:29:02.525583Z"
   },
   {
    "category": "nacional",
@@ -531,20 +545,6 @@
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
   },
   {
-   "category": "nacional",
-   "title": "Chile y Reino Unido acuerdan avanzar a un “nuevo nivel de asociación estratégica”",
-   "summary": "",
-   "image": "https://media-front.elmostrador.cl/2026/10/Perez-UK-700x342.png",
-   "source_url": "https://www.elmostrador.cl",
-   "sources": [
-    "El Mostrador"
-   ],
-   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/19/chile-y-reino-unido-acuerdan-avanzar-a-un-nuevo-nivel-de-asociacion-estrategica/",
-   "published": "2026-10-19T21:00:55Z",
-   "first_seen": "2026-10-20T05:56:57Z",
-   "image_checked_at": "2026-10-20T05:56:57.552543Z"
-  },
-  {
    "category": "cultura",
    "title": "Muere a los 34 años la modelo Sahara Ray, expareja de Justin Bieber: fue madre a principio de año",
    "summary": "",
@@ -766,6 +766,21 @@
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.latercera.com",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Chile y Reino Unido acuerdan avanzar a un “nuevo nivel de asociación estratégica”",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/Perez-UK-700x342.png",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador",
+    "BioBioChile"
+   ],
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/19/chile-y-reino-unido-acuerdan-avanzar-a-un-nuevo-nivel-de-asociacion-estrategica/",
+   "published": "2026-10-19T19:25:20Z",
+   "first_seen": "2026-10-20T05:56:57Z",
+   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   },
   {
    "category": "internacional",
@@ -2626,18 +2641,6 @@
    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY1lBSDhoUUhuZlAzRzV5anlTRXNHeEhNOXFGektHdUlDZlJueENDakQtOUs3eFhvcG50ZC1WNS02QUI3S0l4Y1RDY2FVbEItS1lLbDJJUkVWOGVzaTk3RlNLQURSV1lURkNVUUExei1wSVhjRlpkLXd1QTdlNk1UU0NibW5FU2tOS3A1MUt1TEgwZ09DM3VtaVoyZDlSdERoVHlmb0MtZVdGckNTNmVzeE80RnozVDJMZGhGSmY4OF9RMlZSX25jeHpFeU1kZ1hFT0ZMdW5Kalh0WDZqLXNKdVhxVQ?oc=5",
    "published": "2026-10-19T08:08:56Z",
    "first_seen": "2026-10-19T15:49:30Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Lista: las diez comunas donde se suspenderán clases este martes por riesgo de aluvión",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "Teletrece"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX3dZNTZiSFp5X1J4Vlo4eng4Q0dWRzJ4SlNIUkFOaDIzZWMzaEE2RENpejAwQ2l3VUo2RTRuMVFJWGRnRzRoc2lZQUV2b2tvUnJwb1M3ZXFGcjhFRXNybXhoZnkwOHNpZjZBdHJ5U1V0ZXRVbzRtRnpVOFBMRHNrbXVjcWxkVldiU21RYmV5VFFNVGhKNHNSeHFwa2IwN2xFWUVDZ19FWUxxWUdRZ2ZXMEpOTkxzcFp2a0lIYzJR?oc=5",
-   "published": "2026-10-19T07:21:00Z",
-   "first_seen": "2026-10-19T21:00:14Z"
   }
  ]
 }
