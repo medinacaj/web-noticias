@@ -358,18 +358,25 @@
   .cat-cultura{--cat:var(--c-cultura);--cat-b:var(--b-cultura);}
 
   /* ---------- Pie ---------- */
-  .site-footer{background:var(--navy-dark);color:var(--on-navy-soft);margin-top:80px;padding:52px 0 28px;font-size:14px;}
-  .footer-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;}
-  .footer-brand-block{grid-column:span 5;}
-  .footer-nav{grid-column:span 3;}
-  .footer-about{grid-column:span 4;}
-  .footer-brand{font:700 28px/1 var(--serif);text-transform:uppercase;color:var(--on-navy);margin:0 0 12px;}
-  .footer-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy);margin:0 0 12px;}
-  .site-footer p{margin:0;line-height:1.6;}
-  .footer-nav ul{list-style:none;margin:0;padding:0;}
-  .footer-nav a{display:inline-block;padding:4px 0;}
+  /* Pie editorial sin segundo panel ni navegación repetida por categoría. */
+  .site-footer{background:var(--navy-dark);color:var(--on-navy-soft);margin-top:0;padding:32px 0 18px;font-size:13px;border-top:1px solid rgba(255,255,255,.12);}
+  .footer-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(20px,3.5vw,48px);align-items:start;}
+  .footer-brand-block{grid-column:span 5;min-width:0;}
+  .footer-nav{grid-column:span 3;min-width:0;}
+  .footer-about{grid-column:span 4;min-width:0;}
+  .footer-eyebrow{font:700 10px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#A8BCD0;margin:0 0 7px !important;}
+  .footer-brand{font:700 clamp(22px,2.2vw,26px)/1.15 var(--serif);text-transform:none;letter-spacing:-.025em;color:var(--on-navy);margin:0 0 8px !important;text-wrap:balance;}
+  .footer-description{max-width:320px;}
+  .footer-label{font:700 11px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--on-navy);margin:0 0 9px !important;}
+  .site-footer p{margin:0;line-height:1.55;}
+  .footer-about p{max-width:360px;color:var(--on-navy-soft);font-size:12px;line-height:1.65;}
+  .footer-nav ul{list-style:none;margin:0;padding:0;display:grid;gap:1px;}
+  .footer-nav a{display:inline-flex;align-items:center;min-height:32px;padding:4px 0;color:var(--on-navy-soft);font-size:13px;}
   .footer-nav a:hover{color:var(--on-navy);text-decoration:underline;text-underline-offset:3px;}
-  .footer-bottom{margin-top:36px;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:12px;}
+  .footer-nav a:focus-visible{outline:2px solid var(--on-navy);outline-offset:3px;border-radius:2px;}
+  .footer-bottom{margin-top:24px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);font-size:11px;display:flex;align-items:baseline;justify-content:space-between;gap:6px 20px;flex-wrap:wrap;}
+  .footer-updated{color:#B1C3D4;}
+  .section-anchor{display:block;height:0;scroll-margin-top:76px;}
 
   /* ---------- Tablet ---------- */
   @media (max-width:1179px){
@@ -450,11 +457,21 @@
   .newsletter-preview:focus-visible,.newsletter-link:focus-visible{outline:2px solid #fff;outline-offset:3px;}
   @media(max-width:767px){.newsletter-invite-inner{align-items:flex-start;flex-direction:column;}.newsletter-actions{justify-content:flex-start;flex:initial;}}
   @media (max-width:767px){
-    .library-columns,.footer-grid{grid-template-columns:minmax(0,1fr);gap:20px;}
-    .footer-brand-block,.footer-nav,.footer-about{grid-column:1 / -1;min-width:0;}
+    .library-columns{grid-template-columns:minmax(0,1fr);gap:20px;}
+    .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+    .footer-brand-block{grid-column:1 / -1;}
+    .footer-nav,.footer-about{grid-column:auto;min-width:0;}
+    .footer-nav a{min-height:40px;}
     .is-headlines .section-grid .kicker{flex-basis:100%;}
     .reader-panel{padding:14px;}
     .coverage-radar li{display:grid;gap:4px;}
+  }
+  @media (max-width:540px){
+    .site-footer{padding-top:26px;}
+    .footer-grid{grid-template-columns:minmax(0,1fr);gap:20px;}
+    .footer-brand-block,.footer-nav,.footer-about{grid-column:1 / -1;}
+    .footer-nav ul{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:0;}
+    .footer-bottom{margin-top:20px;align-items:flex-start;flex-direction:column;gap:4px;}
   }
   @media (hover:hover) and (pointer:fine){
     .lead:hover .media > img,.feature:hover .media > img,.compact-list li:hover .media > img{transform:scale(1.025);}
@@ -535,6 +552,7 @@
 %%TOP%%
 %%CONTEXT%%
 %%RADAR%%
+<span class="section-anchor" id="categorias" aria-hidden="true"></span>
 %%SECTIONS%%
 </main>
 <button id="back-to-top" class="back-to-top" type="button" hidden aria-label="Volver a la portada">↑ Portada</button>
@@ -553,23 +571,29 @@
   </div>
 </section>
 
-<footer class="site-footer">
+<footer class="site-footer" aria-label="Información de Noticias del Momento">
   <div class="container footer-grid">
     <div class="footer-brand-block">
+      <p class="footer-eyebrow">Portal informativo</p>
       <p class="footer-brand">Noticias del Momento</p>
-      <p>Lo más relevante de Chile y el mundo, actualizado cada hora.</p>
+      <p class="footer-description">Actualidad de Chile y el mundo, reunida en un solo lugar.</p>
     </div>
-    <nav class="footer-nav" aria-label="Secciones en el pie de página">
-      <p class="footer-label">Secciones</p>
-      <ul>%%FOOTER_NAV%%</ul>
+    <nav class="footer-nav" aria-label="Enlaces útiles">
+      <p class="footer-label">Explorar</p>
+      <ul>
+        <li><a href="#contenido">Portada</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="boletin-diario.html">Boletín diario</a></li>
+      </ul>
     </nav>
-    <div class="footer-about">
-      <p class="footer-label">Sobre las fuentes</p>
-      <p>Los titulares se recopilan automáticamente desde Google Noticias y GNews. Cada uno enlaza a la nota original del medio que la publicó; los extractos breves corresponden a la descripción entregada por cada fuente.</p>
-    </div>
+    <section class="footer-about" aria-labelledby="footer-about-title">
+      <h2 class="footer-label" id="footer-about-title">Sobre el portal</h2>
+      <p>Recopilamos automáticamente titulares y referencias informativas. Los artículos y su contenido pertenecen a sus respectivos medios de origen.</p>
+    </section>
   </div>
   <div class="container footer-bottom">
-    <p>© %%YEAR%% Noticias del Momento · Última actualización: %%UPDATED_HUMAN%%</p>
+    <p>© %%YEAR%% Noticias del Momento</p>
+    <p class="footer-updated">Última actualización: %%UPDATED_HUMAN%%</p>
   </div>
 </footer>
 
