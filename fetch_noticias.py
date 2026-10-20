@@ -558,11 +558,13 @@ def render_sections(by_category, now):
         stories = by_category[cat["key"]]
         feature, rest = stories[0], stories[1:]
         feature_html = (f'<article class="feature">{figure_html(feature)}'
-                        f'<div class="news-body"><h3 class="feature-title">{title_link(feature)}</h3>'
+                        f'<div class="news-body"><p class="kicker">{esc(cat["label"])}</p>'
+                        f'<h3 class="feature-title">{title_link(feature)}</h3>'
                         f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
         compact = "".join(
             f'<li{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
-            f'<div class="news-body"><h3>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
+            f'<div class="news-body"><p class="kicker">{esc(cat["label"])}</p>'
+            f'<h3>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
             for i, s in enumerate(rest))
         grid_class = "section-grid" if compact else "section-grid section-grid--single"
         compact_html = f'<ul class="compact-list">{compact}</ul>' if compact else ""
