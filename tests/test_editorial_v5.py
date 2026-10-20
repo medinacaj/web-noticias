@@ -56,6 +56,16 @@ class EditorialV5Tests(unittest.TestCase):
         self.assertIn("scrollWidth > window.innerWidth", visual)
         self.assertIn("upload-artifact@v4", workflow)
 
+    def test_headline_is_the_only_full_story_link(self):
+        from datetime import datetime, timezone
+        from fetch_noticias import meta_html
+        story = {"title": "Titular", "category": "nacional",
+                 "link": "https://medio.cl/noticia", "sources": ["Medio"],
+                 "published": "2026-10-20T07:00:00Z"}
+        output = meta_html(story, datetime(2026, 10, 20, 8, tzinfo=timezone.utc), True)
+        self.assertNotIn("Ver noticia completa", output)
+        self.assertNotIn('class="read"', output)
+
     def test_existing_comparison_and_colors_survive(self):
         for marker in ('dialog.showModal()', 'data-coverage-trigger',
                        '--paper:#EEF2F6', '--card-bg:#182639',
