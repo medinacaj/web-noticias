@@ -65,6 +65,19 @@ async def check(html, output):
             await no_overflow("guardadas")
             await page.screenshot(path=str(output / f"saved-{width}.png"), full_page=False, animations="disabled")
             await page.locator('[data-close-panel="library-panel"]').click()
+            footer = page.locator(".site-footer")
+            await footer.scroll_into_view_if_needed()
+            links = await page.locator(".site-footer .footer-nav a").evaluate_all(
+                "(nodes) => nodes.map(a => a.getAttribute('href'))")
+            assert links == ["#contenido", "#categorias", "boletin-diario.html"], (
+                f"Enlaces de pie no válidos a {width}px: {links}")
+            assert await page.locator("#categorias").count() == 1
+            assert await page.locator(".footer-updated").is_visible()
+            await no_overflow("pie de página")
+            await page.screenshot(path=str(output / f"footer-{width}.png"), full_page=False, animations="disabled")
+            await page.locator('.site-footer a[href="#categorias"]').click()
+            assert await page.evaluate("window.location.hash") == "#categorias", (
+                f"Enlace a categorías falló a {width}px")
             if errors:
                 raise AssertionError(f"Errores JavaScript a {width}px: {errors}")
             await page.close()
