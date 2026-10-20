@@ -2,7 +2,7 @@
 import unittest
 from datetime import datetime, timezone
 
-from fetch_noticias import source_domain, source_mark, meta_html, merge, figure_html
+from fetch_noticias import source_domain, source_mark, meta_html, merge, figure_html, render_sections
 
 
 class SourceFaviconsTests(unittest.TestCase):
@@ -66,6 +66,21 @@ class SourceFaviconsTests(unittest.TestCase):
         rendered = figure_html({"image": "", "sources": ['<bad attr="x">']})
         self.assertNotIn("<bad", rendered)
         self.assertIn("&lt;bad", rendered)
+
+    def test_section_uses_compact_media_for_all_six_stories(self):
+        now = datetime(2026, 10, 20, tzinfo=timezone.utc)
+        stories = [
+            {"category": "nacional", "title": f"Noticia de prueba número {i}",
+             "sources": ["Medio"], "source_url": "https://medio.cl",
+             "image": "", "link": f"https://medio.cl/{i}",
+             "published": "2026-10-20T00:00:00Z", "summary": ""}
+            for i in range(6)
+        ]
+        rendered = render_sections({"nacional": stories}, now)
+        self.assertEqual(rendered.count('class="media media--source"'), 6)
+        self.assertEqual(rendered.count('class="news-body"'), 6)
+        self.assertEqual(rendered.count('class="compact"'), 5)
+        self.assertEqual(rendered.count('class="feature"'), 1)
 
     def test_merge_preserves_editorial_url(self):
         now = datetime(2026, 10, 19, tzinfo=timezone.utc)
