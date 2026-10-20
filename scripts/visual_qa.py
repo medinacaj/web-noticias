@@ -36,8 +36,16 @@ async def check(html, output):
             assert await page.locator("#contenido").evaluate("(el) => el.classList.contains('is-headlines')"), f"Vista titulares inactiva a {width}px"
             await page.screenshot(path=str(output / f"headlines-{width}.png"), full_page=False, animations="disabled")
             await page.locator("#view-options-toggle").click()
+            # Validar botones reales en una tarjeta, no solo el panel de favoritos.
+            favorite = page.locator(".save-story:visible").first
+            share = page.locator(".share-story:visible").first
+            assert await favorite.count() and await share.count(), f"Faltan acciones en tarjetas a {width}px"
+            await favorite.click()
+            assert await favorite.get_attribute("aria-pressed") == "true", f"No se guardó favorito a {width}px"
+            await no_overflow("acciones de tarjeta")
             await page.locator("#library-toggle").click()
             assert await page.locator("#library-panel").is_visible(), f"Favoritos ocultos a {width}px"
+            assert await page.locator("#saved-stories a").count() >= 1, f"Biblioteca no sincronizada a {width}px"
             await no_overflow("guardadas")
             await page.screenshot(path=str(output / f"saved-{width}.png"), full_page=False, animations="disabled")
             await page.locator('[data-close-panel="library-panel"]').click()
