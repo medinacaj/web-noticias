@@ -645,6 +645,8 @@
     var status = d.getElementById("reading-status");
     if (!main || !density) return;
     var key = "noticias:reading:v1", densityKey = "noticias:density:v1";
+    var filter = d.getElementById("reading-filter"), textSize = d.getElementById("text-size");
+    var empty = d.getElementById("filter-empty");
     var maxAge = 30 * 24 * 60 * 60 * 1000;
     var seen = {};
     try {
@@ -679,6 +681,43 @@
         link.setAttribute("data-reading-state", opened ? "leida" : "nueva");
       });
       if (status) status.textContent = total ? (total - read) + " noticias por leer" : "";
+      applyReadingFilter();
+    }
+    function applyReadingFilter() {
+      if (!filter) return;
+      var visible = 0, selected = filter.value;
+      main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li").forEach(function (card) {
+        var hasArticle = !!card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+        if (!hasArticle) return;
+        var multiple = !!card.querySelector("[data-coverage-trigger]");
+        var read = card.classList.contains("is-read");
+        var show = selected === "all" || (selected === "read" && read)
+          || (selected === "unread" && !read) || (selected === "multiple" && multiple);
+        card.toggleAttribute("data-filter-hidden", !show);
+        if (show && !card.hasAttribute("data-extra")) visible++;
+      });
+      if (empty) empty.hidden = visible > 0;
+    }
+    if (filter) {
+      filter.addEventListener("change", function () {
+        try { sessionStorage.setItem("noticias:filter:v1", filter.value); } catch (err) {}
+        applyReadingFilter();
+      });
+      try {
+        var storedFilter = sessionStorage.getItem("noticias:filter:v1");
+        if (["all","read","unread","multiple"].indexOf(storedFilter) >= 0) filter.value = storedFilter;
+      } catch (err) {}
+    }
+    if (textSize) {
+      textSize.addEventListener("change", function () {
+        main.dataset.textSize = textSize.value;
+        try { localStorage.setItem("noticias:text-size:v1", textSize.value); } catch (err) {}
+      });
+      try {
+        if (localStorage.getItem("noticias:text-size:v1") === "large") {
+          textSize.value = "large"; main.dataset.textSize = "large";
+        }
+      } catch (err) {}
     }
     main.addEventListener("click", function (event) {
       var link = event.target.closest("a[data-cat],a.read");
@@ -777,45 +816,111 @@
         item.removeAttribute("data-extra");
       });
       if (!section.querySelector("[data-extra]")) button.hidden = true;
+      var filter = d.getElementById("reading-filter");
+      if (filter) filter.dispatchEvent(new Event("change"));
     });
   });
 
-  // Búsqueda sobre los titulares publicados en la página
+  // Acceso a portada sin otra barra, y sin movimiento forzado si está desactivado.
+  (function () {
+    var top = d.getElementById("back-to-top");
+    if (!top) return;
+    var update = function () { top.hidden = window.scrollY < 900; };
+    window.addEventListener("scroll", update, {passive:true});
+    top.addEventListener("click", function () {
+      var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({top:0,behavior:reduced ? "instant" : "smooth"});
+    });
+    update();
+  })();
+
+  // Búsqueda local: indexa solo noticias presentes; sin consultas ni telemetría.
   var searchBtn = d.getElementById("search-toggle"), panel = d.getElementById("search-panel");
   var input = d.getElementById("search-input"), status = d.getElementById("search-status");
   var results = d.getElementById("search-results");
+  var catSelect = d.getElementById("search-category"), sourceSelect = d.getElementById("search-source");
+  var dateSelect = d.getElementById("search-date");
   function norm(t) { return t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
-  var seen = {}, index = [];
+  var seen = {}, index = [], categories = {}, sources = {};
   d.querySelectorAll("main a[data-cat]").forEach(function (a) {
     if (seen[a.href]) return;
     seen[a.href] = true;
-    index.push({ href: a.href, title: a.textContent.trim(), cat: a.getAttribute("data-cat"), catKey: a.getAttribute("data-key"), key: norm(a.textContent) });
+    var card = a.closest(".lead,.feature,.rail-list li,.compact-list li");
+    var source = card && card.querySelector(".meta .source-name");
+    var time = card && card.querySelector(".meta time");
+    var name = source ? source.textContent.trim() : "";
+    var timestamp = time ? Date.parse(time.getAttribute("datetime")) : NaN;
+    var cat = a.getAttribute("data-cat"), catKey = a.getAttribute("data-key");
+    index.push({href:a.href,title:a.textContent.trim(),cat:cat,catKey:catKey,
+      source:name,time:timestamp,key:norm(a.textContent)});
+    categories[catKey] = cat;
+    if (name) sources[name] = true;
   });
+  function fillSelect(select, entries) {
+    if (!select) return;
+    entries.forEach(function (entry) {
+      var option = d.createElement("option");
+      option.value = entry[0]; option.textContent = entry[1]; select.appendChild(option);
+    });
+  }
+  fillSelect(catSelect, Object.keys(categories).sort().map(function (k) {return [k,categories[k]];}));
+  fillSelect(sourceSelect, Object.keys(sources).sort().map(function (k) {return [k,k];}));
   function setSearch(open) {
     if (!panel || !searchBtn) return;
     panel.hidden = !open;
     searchBtn.setAttribute("aria-expanded", String(open));
-    if (open) input.focus();
+    if (open && input) input.focus();
+  }
+  function highlight(a, title, terms) {
+    // Fragmentos seguros: no interpretar titulares remotos como HTML.
+    title.split(/(\s+)/).forEach(function (part) {
+      var normalized = norm(part.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, ""));
+      if (normalized && terms.some(function (term) {return normalized.indexOf(term) >= 0;})) {
+        var mark = d.createElement("mark"); mark.textContent = part; a.appendChild(mark);
+      } else a.appendChild(d.createTextNode(part));
+    });
+  }
+  function updateResults() {
+    if (!input || !results || !status) return;
+    var raw = input.value.trim(), q = norm(raw), words = q ? q.split(/\s+/) : [];
+    results.replaceChildren();
+    var category = catSelect ? catSelect.value : "";
+    var source = sourceSelect ? sourceSelect.value : "";
+    var age = dateSelect ? Number(dateSelect.value) : 0;
+    if (!words.length && !category && !source && !age) {
+      status.textContent = "Escribe un término o selecciona un filtro para buscar."; return;
+    }
+    var now = Date.now();
+    var found = index.filter(function (item) {
+      return words.every(function (w) {return item.key.indexOf(w) !== -1;})
+        && (!category || item.catKey === category)
+        && (!source || item.source === source)
+        && (!age || (Number.isFinite(item.time) && item.time <= now && now - item.time <= age * 3600000));
+    });
+    status.textContent = found.length
+      ? (found.length === 1 ? "1 resultado" : found.length + " resultados")
+      : "No hay noticias que coincidan con la búsqueda y los filtros seleccionados.";
+    found.slice(0, 20).forEach(function (item) {
+      var li = d.createElement("li"), k = d.createElement("p"), a = d.createElement("a");
+      var extra = d.createElement("p");
+      li.className = "cat-" + item.catKey; k.className = "kicker"; k.textContent = item.cat;
+      a.href = item.href; a.target = "_blank"; a.rel = "noopener";
+      highlight(a, item.title, words);
+      extra.className = "search-result-meta"; extra.textContent = item.source;
+      li.appendChild(k); li.appendChild(a); li.appendChild(extra); results.appendChild(li);
+    });
   }
   if (searchBtn && panel && input) {
-    searchBtn.addEventListener("click", function () { setMenu(false); setSearch(panel.hidden); });
-    input.addEventListener("input", function () {
-      var raw = input.value.trim(), q = norm(raw);
-      results.innerHTML = "";
-      if (!q) { status.textContent = ""; return; }
-      var words = q.split(/\s+/);
-      var found = index.filter(function (item) {
-        return words.every(function (w) { return item.key.indexOf(w) !== -1; });
-      });
-      status.textContent = found.length
-        ? (found.length === 1 ? "1 resultado" : found.length + " resultados")
-        : "Sin resultados para «" + raw + "» en las noticias publicadas.";
-      found.slice(0, 8).forEach(function (item) {
-        var li = d.createElement("li"), k = d.createElement("p"), a = d.createElement("a");
-        li.className = "cat-" + item.catKey; k.className = "kicker"; k.textContent = item.cat;
-        a.href = item.href; a.target = "_blank"; a.rel = "noopener"; a.textContent = item.title;
-        li.appendChild(k); li.appendChild(a); results.appendChild(li);
-      });
+    searchBtn.addEventListener("click", function () {setMenu(false); setSearch(panel.hidden);});
+    input.addEventListener("input", updateResults);
+    [catSelect,sourceSelect,dateSelect].forEach(function (select) {
+      if (select) select.addEventListener("change", updateResults);
+    });
+    updateResults();
+    d.addEventListener("keydown", function (event) {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault(); setMenu(false); setSearch(true);
+      }
     });
   }
 
