@@ -147,7 +147,6 @@
   .lead,.feature,.rail-list li,.compact-list li{
     background:var(--card-bg);color:var(--card-ink);
     border:1px solid var(--card-rule);
-    border-top:3px solid var(--cat-b,var(--on-navy-soft));
     border-radius:8px;
     box-shadow:var(--card-shadow);
     transition:box-shadow .22s ease,transform .22s ease,border-color .22s ease;
@@ -158,8 +157,15 @@
     box-shadow:var(--card-shadow-hover);
     transform:translateY(-2px);
   }
+  /* La identidad de la categoría se expresa junto al texto, no en un borde decorativo. */
   .lead .kicker,.feature .kicker,.rail-list .kicker,.compact-list .kicker{
-    color:var(--cat-b,var(--card-link));
+    display:flex;align-items:center;gap:8px;
+    color:var(--card-muted);font-size:10px;letter-spacing:.12em;
+  }
+  .lead .kicker::before,.feature .kicker::before,
+  .rail-list .kicker::before,.compact-list .kicker::before{
+    content:"";flex:none;width:7px;height:7px;border-radius:50%;
+    background:var(--cat-b,var(--card-link));
   }
   .lead .dek,.feature .dek,
   .lead .meta,.feature .meta,.rail-list .meta,.compact-list .meta{
@@ -179,12 +185,12 @@
     color:var(--card-ink);
   }
   .context{background:var(--surface);border:1px solid var(--rule);border-radius:8px;box-shadow:0 1px 4px rgba(16,24,40,.05);}
-  .section-head{background:linear-gradient(90deg,color-mix(in srgb,var(--cat,var(--navy)) 9%,var(--surface)),transparent 68%);padding-left:10px;}
-  .section-count{background:color-mix(in srgb,var(--cat,var(--navy)) 9%,var(--surface));border-radius:4px;padding:4px 8px;}
+  .section-head{background:none;padding-left:0;}
+  .section-count{background:transparent;border-radius:0;padding:0;}
 
   /* ---------- Portada ---------- */
   .top-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px;align-items:stretch;}
-  .lead{grid-column:1 / span 7;--pad:22px;padding:var(--pad);border-top-width:5px;min-width:0;display:flex;flex-direction:column;}
+  .lead{grid-column:1 / span 7;--pad:22px;padding:var(--pad);min-width:0;display:flex;flex-direction:column;}
   .top-grid--single .lead{grid-column:1 / -1;}
   .lead-title{font-family:var(--serif);font-weight:600;font-size:clamp(25px,2.6vw,36px);line-height:1.13;letter-spacing:-.015em;margin:4px 0 10px;}
   .top-aside{grid-column:8 / span 5;display:flex;flex-direction:column;min-width:0;}
@@ -208,9 +214,9 @@
 
   /* ---------- Secciones ---------- */
   .section{margin-top:64px;}
-  .section-head{display:flex;align-items:baseline;gap:14px;border-top:3px solid var(--cat,var(--strong));border-bottom:1px solid var(--rule);padding:12px 0;margin-bottom:20px;}
+  .section-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--rule);padding:12px 0;margin-bottom:20px;}
   .section-num{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--cat,var(--red));}
-  .section-head h2::before{content:"";display:inline-block;width:12px;height:12px;margin-right:10px;background:var(--cat,var(--red));vertical-align:.08em;}
+  
   .section-head h2{font:700 30px/1.1 var(--serif);margin:0;}
   .section-count{margin-left:auto;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
   /* Seis noticias por categoría en tarjetas autónomas, sin una ficha gigante. */
