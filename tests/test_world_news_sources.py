@@ -34,6 +34,7 @@ class WorldSourcesTests(unittest.TestCase):
         self.assertEqual(len(names), len(set(names)))
         self.assertIn("BBC News Mundo", [name for _, name in news.DIRECT_FEEDS["internacional"]])
         self.assertLessEqual(MAX_NEWS_PER_WORLD_SOURCE, 5)
+        self.assertFalse(next(m for m in WORLD_NEWS_SOURCES if m["name"] == "The Guardian")["enabled"])
         self.assertGreaterEqual(sum(m["language"] == "es" for m in WORLD_NEWS_SOURCES), 4)
 
     def test_google_news_site_filters_locale_and_recent_date(self):
@@ -67,10 +68,13 @@ class WorldSourcesTests(unittest.TestCase):
             return items
         with patch.object(news, "fetch_rss", side_effect=fake_rss), patch.object(news, "GNEWS_API_KEY", ""):
             result = news.collect(self.now)
-        self.assertEqual(len(result), len(WORLD_NEWS_SOURCES) * MAX_NEWS_PER_WORLD_SOURCE)
+        active = sum(m.get("enabled", True) for m in WORLD_NEWS_SOURCES)
+        self.assertEqual(len(result), active * MAX_NEWS_PER_WORLD_SOURCE)
+        self.assertTrue(all(item["image_fetch_disabled"] for item in result))
+        self.assertTrue(all(item["summary"] == "" and item["image"] == "" for item in result))
         self.assertTrue(all(item["category"] == "internacional" for item in result))
         self.assertTrue(all(item["source"] != "Fuente" for item in result))
-        self.assertEqual(len(calls), len(news.CATEGORIES) + 1 + len(WORLD_NEWS_SOURCES))
+        self.assertEqual(len(calls), len(news.CATEGORIES) + 1 + active)
 
     def test_broken_media_does_not_block_other_sources(self):
         def fake_rss(url, category, default_source=None):
@@ -83,7 +87,7 @@ class WorldSourcesTests(unittest.TestCase):
             return [self.item(media)]
         with patch.object(news, "fetch_rss", side_effect=fake_rss), patch.object(news, "GNEWS_API_KEY", ""):
             result = news.collect(self.now)
-        self.assertEqual(len(result), len(WORLD_NEWS_SOURCES) - 1)
+        self.assertEqual(len(result), sum(m.get("enabled", True) for m in WORLD_NEWS_SOURCES) - 1)
 
     def test_same_url_with_different_titles_is_single_article(self):
         first = self.item(WORLD_NEWS_SOURCES[0])
@@ -95,6 +99,43 @@ class WorldSourcesTests(unittest.TestCase):
         self.assertEqual(len(stories), 1)
         self.assertEqual(stories[0]["sources"], ["Reuters", "Medio colaborador"])
         self.assertEqual(stories[0]["link"], first["link"])
+
+    def test_search_filters_out_stale_and_future_articles(self):
+        media = WORLD_NEWS_SOURCES[0]
+        def fake_rss(url, category, default_source=None):
+            q = parse_qs(urlsplit(url).query).get("q", [""])[0]
+            if q != media["query"] + " when:1d":
+                return []
+            return [
+                {**self.item(media, 1), "published": "2026-10-19T16:00:00Z"},
+                {**self.item(media, 2), "published": "2026-10-20T18:30:00Z"},
+                {**self.item(media, 3), "published": "2026-10-20T17:30:00Z"},
+            ]
+        with patch.object(news, "fetch_rss", side_effect=fake_rss), patch.object(news, "GNEWS_API_KEY", ""):
+            found = news.collect(self.now)
+        self.assertEqual(len(found), 1)
+        self.assertEqual(found[0]["title"], "Tema mundial único Reuters 3")
+
+    def test_source_rejects_link_spoofing_and_untrusted_direct_destinations(self):
+        media = WORLD_NEWS_SOURCES[0]
+        story = self.item(media)
+        self.assertTrue(matches_world_source(story, media))
+        self.assertTrue(matches_world_source({**story, "link": "https://news.google.com/rss/articles/xyz"}, media))
+        for bad in ("http://reuters.com/world",
+                    "https://evil.example/world",
+                    "https://reuters.com.evil.example/world",
+                    "https://reuters.com@evil.example/world",
+                    "javascript:alert(1)"):
+            self.assertFalse(matches_world_source({**story, "link": bad}, media))
+
+    def test_same_canonical_path_dedupes_tracking_parameters(self):
+        first = self.item(WORLD_NEWS_SOURCES[0])
+        first["link"] = "https://www.reuters.com/world/example?utm_source=rss"
+        second = {**first, "title": "Titular muy diferente al inicial",
+                  "link": "https://www.reuters.com/world/example?utm_campaign=feed"}
+        stories = []
+        self.assertEqual(news.merge(stories, [first, second], self.now), 1)
+        self.assertEqual(len(stories), 1)
 
     def test_collection_does_not_create_news_without_publication_date(self):
         media = WORLD_NEWS_SOURCES[0]
