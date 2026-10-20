@@ -44,6 +44,9 @@ jobs:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
           SITE_URL: ${{ vars.SITE_URL }}
           GSC_VERIFICATION: ${{ vars.GSC_VERIFICATION }}
+          ADSENSE_PUBLISHER_ID: ${{ vars.ADSENSE_PUBLISHER_ID }}
+          ADSENSE_READY: ${{ vars.ADSENSE_READY }}
+          ADSENSE_PRIVACY_URL: ${{ vars.ADSENSE_PRIVACY_URL }}
         run: python3 fetch_noticias.py
 
       - name: Guardar historial de noticias
