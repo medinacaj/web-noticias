@@ -939,6 +939,12 @@
     d.getElementById("clear-reader-history").addEventListener("click", function () {
       history = []; set(historyKey, history); renderList(historyList, history, false);
     });
+    main.querySelectorAll(".section-grid").forEach(function (grid) {
+      var container = grid.querySelector(".compact-list");
+      if (container) Array.prototype.slice.call(container.children).forEach(function (li, idx) {
+        li.dataset.originalOrder = String(idx);
+      });
+    });
     function applySourcePreferences() {
       var source = sourceSelect.value, category = categorySelect.value;
       cards.forEach(function (card) {
@@ -948,18 +954,19 @@
           && (!category || link.getAttribute("data-key") === category);
         card.toggleAttribute("data-source-hidden", !matches);
       });
-      if (sortSelect.value === "recent") {
-        main.querySelectorAll(".section-grid").forEach(function (grid) {
-          var items = Array.prototype.slice.call(grid.querySelectorAll(".compact-list > li"));
-          items.sort(function (a,b) {
-            var ta = Date.parse(a.querySelector("time")?.dateTime || "") || 0;
-            var tb = Date.parse(b.querySelector("time")?.dateTime || "") || 0;
-            return tb - ta;
-          });
-          var parent = grid.querySelector(".compact-list");
-          if (parent) items.forEach(function (item) {parent.appendChild(item);});
+      main.querySelectorAll(".section-grid").forEach(function (grid) {
+        var parent = grid.querySelector(".compact-list");
+        if (!parent) return;
+        var items = Array.prototype.slice.call(parent.children);
+        items.sort(function (a,b) {
+          if (sortSelect.value !== "recent")
+            return Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
+          var ta = Date.parse(a.querySelector("time")?.dateTime || "") || 0;
+          var tb = Date.parse(b.querySelector("time")?.dateTime || "") || 0;
+          return tb - ta || Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
         });
-      }
+        items.forEach(function (item) {parent.appendChild(item);});
+      });
     }
     sourceSelect.value = get(sourceKey, "") || "";
     categorySelect.value = get(categoryKey, "") || "";
@@ -970,9 +977,7 @@
         set(sortKey, sortSelect.value); applySourcePreferences();
       });
     });
-    // Relevance is the original static server order; reloading restores it.
-    if (sortSelect.value === "recent") applySourcePreferences();
-    else applySourcePreferences();
+    applySourcePreferences();
     syncSaved(); renderList(savedList, saved, true); renderList(historyList, history, false);
   })();
 
