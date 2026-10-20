@@ -611,6 +611,24 @@ def render_context(sel, now, window_hours):
     return f'<section class="context" aria-label="Resumen del día">{cells}</section>'
 
 
+def render_coverage_radar(stories):
+    """Radar conservador: no infiere tendencia o crecimiento desde una instantánea."""
+    prominent = [s for s in stories if len(set((s.get("sources") or []))) >= 4]
+    prominent.sort(key=lambda s: len(set(s["sources"])), reverse=True)
+    if not prominent:
+        return ""
+    items = "".join(
+        f'<li><a href="{esc(story["link"])}" target="_blank" rel="noopener">'
+        f'{esc(story["title"])}</a><span>{len(set(story["sources"]))} medios distintos</span></li>'
+        for story in prominent[:5]
+    )
+    return (f'<section class="coverage-radar" aria-labelledby="coverage-radar-title">'
+            f'<div class="radar-head"><h2 id="coverage-radar-title">Radar de cobertura</h2>'
+            f'<span>4 o más medios</span></div>'
+            f'<p>Noticias publicadas por varios medios. No implica que estén creciendo en popularidad.</p>'
+            f'<ul>{items}</ul></section>')
+
+
 def render_sections(by_category, now):
     blocks = []
     present = [c for c in CATEGORIES if c["key"] in by_category]
@@ -726,6 +744,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
         "%%BREAKING%%": render_breaking(sel, now),
         "%%TOP%%": render_top(sel, now),
         "%%CONTEXT%%": render_context(sel, now, window_hours),
+        "%%RADAR%%": render_coverage_radar(stories),
         "%%SECTIONS%%": render_sections(sel["by_category"], now),
     }
     for marker, value in replacements.items():
