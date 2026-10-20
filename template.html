@@ -42,31 +42,13 @@
     --card-shadow-hover:0 2px 4px rgba(16,24,40,.12),0 16px 34px rgba(16,24,40,.24);
     --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
     --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-    color-scheme:light dark;
+    color-scheme:light;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
   }
-  @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"]){
-      --navy:#0F2440; --navy-dark:#050C16; --red:#FF5C70; --paper:#0B1420; --ink:#E9EDF2;
-      --muted:#9BA5B1; --rule:#2B3A4C; --strong:#C9D2DC; --surface:#111D2C;
-      --c-nacional:#FF6B7D; --c-internacional:#7CC0EE; --c-economia:#74D0A4; --c-tecnologia:#B39AF5; --c-deportes:#F5A35C; --c-cultura:#EE8BC6;
-      --card-bg:#223247; --card-ink:#F0F4F8; --card-muted:#C1CFDE;
-      --card-rule:#455A70; --card-link:#C5E1FF;
-      --card-shadow:0 1px 2px rgba(0,0,0,.20),0 8px 24px rgba(0,0,0,.32);
-      --card-shadow-hover:0 2px 4px rgba(0,0,0,.24),0 16px 34px rgba(0,0,0,.45);
-    }
-  }
-  :root[data-theme="dark"]{
-    --navy:#0F2440; --navy-dark:#050C16; --red:#FF5C70; --paper:#0B1420; --ink:#E9EDF2;
-    --muted:#9BA5B1; --rule:#2B3A4C; --strong:#C9D2DC; --surface:#111D2C;
-    --c-nacional:#FF6B7D; --c-internacional:#7CC0EE; --c-economia:#74D0A4; --c-tecnologia:#B39AF5; --c-deportes:#F5A35C; --c-cultura:#EE8BC6;
-    --card-bg:#223247; --card-ink:#F0F4F8; --card-muted:#C1CFDE;
-    --card-rule:#455A70; --card-link:#C5E1FF;
-    --card-shadow:0 1px 2px rgba(0,0,0,.20),0 8px 24px rgba(0,0,0,.32);
-    --card-shadow-hover:0 2px 4px rgba(0,0,0,.24),0 16px 34px rgba(0,0,0,.45);
-  }
+  /* Identidad editorial fija: el sistema oscuro no debe anular el fondo gris humo.
+     Las tarjetas mantienen su tratamiento oscuro de alto contraste. */
   *,*::before,*::after{box-sizing:border-box;}
   [hidden]{display:none !important;}
   html{scroll-padding-top:env(safe-area-inset-top,0px);}
