@@ -270,6 +270,15 @@
   .lead.is-read,.feature.is-read,.rail-list li.is-read,.compact-list li.is-read{border-color:color-mix(in srgb,var(--card-rule) 60%,transparent);}
   .is-read h2 a,.is-read h3 a{color:var(--card-muted);}
   .news-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+  .coverage-radar{margin:34px 0 6px;padding:20px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .radar-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}
+  .radar-head h2{font:700 25px/1.2 var(--serif);margin:0;}
+  .radar-head span,.coverage-radar p{font-size:12px;color:var(--muted);}
+  .coverage-radar p{margin:6px 0 12px;}
+  .coverage-radar ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+  .coverage-radar li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;}
+  .coverage-radar li a{font:600 16px/1.35 var(--serif);}
+  .coverage-radar li span{font-size:11px;color:var(--muted);white-space:nowrap;}
   .reader-panel{border:1px solid var(--rule);border-radius:8px;padding:18px;margin:0 0 18px;background:var(--surface);box-shadow:0 4px 14px rgba(6,20,36,.08);}
   .reader-panel[hidden]{display:none;}
   .reader-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
@@ -395,6 +404,7 @@
     .library-columns{grid-template-columns:minmax(0,1fr);}
     .is-headlines .section-grid .kicker{flex-basis:100%;}
     .reader-panel{padding:14px;}
+    .coverage-radar li{display:grid;gap:4px;}
     .search-filters select{min-width:0;width:100%;}
     .search-filters label{flex:1 1 140px;}
     .back-to-top{right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));}
@@ -496,6 +506,7 @@
 </div><p id="filter-empty" class="filtered-empty" role="status" hidden>No hay noticias que coincidan con este filtro. Selecciona «Todas» para verlas de nuevo.</p>
 %%TOP%%
 %%CONTEXT%%
+%%RADAR%%
 %%SECTIONS%%
 </main>
 <button id="back-to-top" class="back-to-top" type="button" hidden aria-label="Volver a la portada">↑ Portada</button>
