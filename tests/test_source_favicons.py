@@ -38,15 +38,28 @@ class SourceFaviconsTests(unittest.TestCase):
         self.assertIn('class="source-name">Ejemplo', html)
         self.assertIn("<time", html)
 
-    def test_badge_over_image_keeps_original_image_and_logo(self):
+    def test_real_photo_has_no_redundant_source_badge(self):
         story = {"image": "https://example.com/photo.jpg",
                  "source_url": "https://medio.cl", "sources": ["Medio"]}
         rendered = figure_html(story)
-        self.assertIn('class="media-badge"', rendered)
-        self.assertIn('class="source-mark"', rendered)
+        self.assertIn('class="media"', rendered)
         self.assertIn("photo.jpg", rendered)
-        self.assertIn("medio.cl", rendered)
-        self.assertLess(rendered.index("photo.jpg"), rendered.index('class="media-badge"'))
+        self.assertNotIn('media-badge', rendered)
+        self.assertNotIn('source-mark', rendered)
+        self.assertNotIn("google.com/s2/favicons", rendered)
+        # Los metadatos de la tarjeta mantienen el medio y su favicon.
+        now = datetime(2026, 10, 20, tzinfo=timezone.utc)
+        story["published"] = "2026-10-20T00:00:00Z"
+        story["link"] = "https://medio.cl/nota"
+        meta = meta_html(story, now)
+        self.assertIn('class="source-mark"', meta)
+        self.assertIn('class="source-name">Medio', meta)
+
+    def test_no_badge_css_remains(self):
+        from fetch_noticias import TEMPLATE_PATH
+        from pathlib import Path
+        css = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
+        self.assertNotIn('.media-badge', css)
 
     def test_missing_photo_displays_publisher_thumbnail(self):
         rendered = figure_html({"image": "", "sources": ["Medio"],
