@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T10:14:18Z",
+ "actualizado": "2026-10-20T10:26:31Z",
  "noticias": [
   {
    "category": "internacional",
@@ -59,7 +59,8 @@
    "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989591-monica-rincon-encerrona.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "La Tercera"
    ],
    "coverages": [],
    "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/20/periodista-monica-rincon-sufre-encerrona-que-incluyo-disparos-al-aire-en-la-capital.shtml",
@@ -251,21 +252,6 @@
    "image_checked_at": "2026-10-20T09:04:58.739835Z"
   },
   {
-   "category": "nacional",
-   "title": "Kast instruye iniciar expulsiones de extranjeros que participaron en desmanes durante aniversario del 18-O",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/773P3UX6HJAQDJWZ62QVSXBTHA.jpeg?auth=ab6e5de953af7aefaf80c70ca96e2d5325c0b598482d93f13ca84e1635167db1&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://www.latercera.com/nacional/noticia/kast-instruye-iniciar-expulsiones-de-extranjeros-que-participaron-en-desmanes-durante-aniversario-del-18-o/",
-   "published": "2026-10-20T02:32:39Z",
-   "first_seen": "2026-10-20T06:17:14Z",
-   "image_checked_at": "2026-10-20T06:17:14.360807Z",
-   "coverages": []
-  },
-  {
    "category": "regiones",
    "title": "PDI INVESTIGA ATAQUE INCENDIARIO CONTRA PARQUE EÓLICO EN ANGOL",
    "summary": "",
@@ -338,6 +324,22 @@
    "published": "2026-10-20T01:56:00Z",
    "first_seen": "2026-10-20T05:10:13Z",
    "image_checked_at": "2026-10-20T05:43:55.557181Z",
+   "coverages": []
+  },
+  {
+   "category": "nacional",
+   "title": "Kast instruye iniciar expulsiones de extranjeros que participaron en desmanes durante aniversario del 18-O",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/773P3UX6HJAQDJWZ62QVSXBTHA.jpeg?auth=ab6e5de953af7aefaf80c70ca96e2d5325c0b598482d93f13ca84e1635167db1&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera",
+    "BioBioChile"
+   ],
+   "link": "https://www.latercera.com/nacional/noticia/kast-instruye-iniciar-expulsiones-de-extranjeros-que-participaron-en-desmanes-durante-aniversario-del-18-o/",
+   "published": "2026-10-20T01:43:15Z",
+   "first_seen": "2026-10-20T06:17:14Z",
+   "image_checked_at": "2026-10-20T06:17:14.360807Z",
    "coverages": []
   },
   {
@@ -2964,21 +2966,6 @@
    "published": "2026-10-19T10:31:27Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.lacuarta.com",
-   "coverages": []
-  },
-  {
-   "category": "tecnologia",
-   "title": "Sorprenden a banda extranjera robando en empresa de Ñuñoa: hay nueve detenidos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988366-robo-nunoa-banda.jpg",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/sorprenden-a-banda-extranjera-robando-en-empresa-de-nunoa-hay-nueve-detenidos.shtml",
-   "published": "2026-10-19T10:24:39Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "source_url": "https://www.biobiochile.cl",
-   "image_checked_at": "2026-10-20T05:36:05.913844Z",
    "coverages": []
   }
  ]
