@@ -275,6 +275,55 @@
   .view-options-panel .news-toolbar label{font:600 12px var(--sans);color:var(--muted);}
   .view-options-panel .news-toolbar select{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:7px;color:var(--ink);font:500 12px var(--sans);}
   .view-options-panel .news-toolbar .density-switch{width:100%;}
+  .coverage-radar{margin:34px 0 6px;padding:20px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .radar-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}
+  .radar-head h2{font:700 25px/1.2 var(--serif);margin:0;}
+  .radar-head span,.coverage-radar p{font-size:12px;color:var(--muted);}
+  .coverage-radar p{margin:6px 0 12px;}
+  .coverage-radar ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+  .coverage-radar li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;}
+  .coverage-radar li a{font:600 16px/1.35 var(--serif);}
+  .coverage-radar li span{font-size:11px;color:var(--muted);white-space:nowrap;}
+  .reader-panel{border:1px solid var(--rule);border-radius:8px;padding:18px;margin:0 0 18px;background:var(--surface);box-shadow:0 4px 14px rgba(6,20,36,.08);}
+  .reader-panel[hidden]{display:none;}
+  .reader-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
+  .reader-panel h2{font:700 23px/1.2 var(--serif);margin:0;}
+  .reader-panel h3{font:650 17px/1.3 var(--serif);margin:0 0 10px;}
+  .reader-close{background:transparent;color:var(--ink);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:8px 12px;cursor:pointer;font:600 12px var(--sans);}
+  .reader-options{display:flex;align-items:end;flex-wrap:wrap;gap:12px;}
+  .reader-options label{display:grid;gap:5px;font:600 12px var(--sans);color:var(--muted);flex:1 1 145px;}
+  .reader-options select{width:100%;min-height:44px;padding:8px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);font:500 12px var(--sans);}
+  .reader-hint{font-size:12px;color:var(--muted);margin:12px 0 0;}
+  .library-columns{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;}
+  .reader-library-list{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-height:320px;overflow:auto;}
+  .reader-library-list li{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--rule);}
+  .reader-library-list a{font:600 14px/1.3 var(--serif);min-width:0;flex:1;}
+  .reader-library-list button{font:600 12px var(--sans);border:1px solid var(--rule);border-radius:5px;background:transparent;padding:7px;cursor:pointer;}
+  .card-actions{display:inline-flex;align-items:center;gap:2px;flex:none;margin-left:auto;}
+  .lead .kicker,.feature .kicker,.rail-list .kicker,.compact-list .kicker{flex-wrap:wrap;row-gap:2px;min-width:0;}
+  .save-story{margin-left:0;flex:none;background:none;border:0;color:var(--card-link);cursor:pointer;padding:3px;font:700 15px var(--sans);min-width:29px;min-height:28px;}
+  .save-story[aria-pressed="true"]{color:#FFE0A4;}
+  .share-story{flex:none;background:none;border:0;color:var(--card-link);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:3px;min-width:29px;min-height:28px;border-radius:5px;}
+  .share-story svg{width:16px;height:16px;}
+  .share-story:hover,.save-story:hover{color:var(--card-ink);}
+  .share-story:focus-visible{outline:2px solid var(--red);outline-offset:2px;}
+  .is-headlines .section-grid{grid-template-columns:minmax(0,1fr);gap:0;}
+  .is-headlines .section-grid .media,.is-headlines .section-grid .dek{display:none;}
+  .is-headlines .section-grid .feature,.is-headlines .section-grid .compact-list li{min-height:0;padding:10px 12px;border-radius:0;box-shadow:none;border-top:0;}
+  .is-headlines .section-grid .news-body{min-height:0;display:flex;flex-direction:row;align-items:center;gap:12px;flex-wrap:wrap;}
+  .is-headlines .section-grid .kicker{margin:0;flex:0 0 110px;}
+  .is-headlines .section-grid h3{margin:0;flex:1 1 210px;}
+  .is-headlines .section-grid .meta{padding:0;margin:0;}
+  .is-headlines .section-grid .feature,.is-headlines .section-grid .compact{width:100%;}
+  .reader-panel button:focus-visible,.save-story:focus-visible{outline:2px solid var(--red);outline-offset:2px;}
+  .section-grid [data-source-hidden],.top-grid [data-source-hidden]{display:none !important;}
+  .view-options-panel{width:284px;}
+  .view-option-extra{display:grid;gap:6px;margin-top:12px;border-top:1px solid var(--rule);padding-top:12px;}
+  .view-option-extra label{display:grid;gap:4px;color:var(--muted);font:600 11px var(--sans);}
+  .view-option-extra select{width:100%;min-height:40px;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:6px;padding:6px;font:500 12px var(--sans);}
+  .js .library-toggle{display:inline-flex;margin-left:0;}
+  .library-toggle[aria-expanded="true"]{background:rgba(255,255,255,.12);}
+  .library-panel{margin:0 0 16px;}
   .reading-size{font-size:12px;color:var(--muted);}
   #contenido[data-text-size="large"] .lead-title{font-size:clamp(32px,3.3vw,46px);}
   #contenido[data-text-size="large"] .feature-title,#contenido[data-text-size="large"] .compact h3{font-size:20px;}
@@ -405,6 +454,13 @@
   .newsletter-privacy{font-size:11px;color:#dce6ef;text-decoration:underline;}
   .newsletter-preview:focus-visible,.newsletter-link:focus-visible{outline:2px solid #fff;outline-offset:3px;}
   @media(max-width:767px){.newsletter-invite-inner{align-items:flex-start;flex-direction:column;}.newsletter-actions{justify-content:flex-start;flex:initial;}}
+  @media (max-width:767px){
+    .library-columns,.footer-grid{grid-template-columns:minmax(0,1fr);gap:20px;}
+    .footer-brand-block,.footer-nav,.footer-about{grid-column:1 / -1;min-width:0;}
+    .is-headlines .section-grid .kicker{flex-basis:100%;}
+    .reader-panel{padding:14px;}
+    .coverage-radar li{display:grid;gap:4px;}
+  }
   @media (hover:hover) and (pointer:fine){
     .lead:hover .media > img,.feature:hover .media > img,.compact-list li:hover .media > img{transform:scale(1.025);}
   }
@@ -451,8 +507,16 @@
       <div class="view-options-panel" id="view-options-panel" hidden aria-label="Opciones de visualización">
         <p class="view-options-heading">Personalizar vista</p>
         <div class="news-toolbar"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div>
+        <div class="view-option-extra">
+          <label for="source-preference">Medio<select id="source-preference"><option value="">Todos los medios</option></select></label>
+          <label for="source-sort">Orden<select id="source-sort"><option value="relevance">Orden editorial</option><option value="recent">Recientes en cada sección</option></select></label>
+          <label for="category-preference">Categoría<select id="category-preference"><option value="">Todas las categorías</option></select></label>
+        </div>
       </div>
     </div>
+    <button type="button" class="icon-btn library-toggle" id="library-toggle" aria-expanded="false" aria-controls="library-panel" aria-label="Noticias guardadas" title="Noticias guardadas">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg>
+    </button>
   </div>
   <div class="search-panel" id="search-panel" hidden>
     <div class="container">
@@ -468,8 +532,14 @@
 %%BREAKING%%
 
 <main id="contenido" class="container">
+<div class="reader-panel" id="library-panel" hidden aria-label="Noticias guardadas">
+  <div class="reader-panel-head"><h2>Mi biblioteca</h2><button type="button" class="reader-close" data-close-panel="library-panel" aria-label="Cerrar biblioteca">Cerrar</button></div>
+  <div class="library-columns"><section><h3>Guardadas</h3><ul id="saved-stories" class="reader-library-list"></ul></section></div>
+  <p class="reader-hint">Solo se guardan las noticias que marcas voluntariamente como favoritas en este navegador.</p>
+</div>
 %%TOP%%
 %%CONTEXT%%
+%%RADAR%%
 %%SECTIONS%%
 </main>
 <button id="back-to-top" class="back-to-top" type="button" hidden aria-label="Volver a la portada">↑ Portada</button>
@@ -698,17 +768,16 @@
     if (search) search.addEventListener("click", function () {setOpen(false);});
   })();
 
-  // Preferencias visuales únicamente; las noticias nunca se marcan como leídas.
+  // Preferencias visuales sin rastrear qué noticias abre cada visitante.
   (function () {
     var main = d.getElementById("contenido"), density = d.getElementById("density-switch");
-    var textSize = d.getElementById("text-size");
+    var textSize = d.getElementById("text-size"), densityKey = "noticias:density:v1";
     if (!main || !density) return;
-    var densityKey = "noticias:density:v1";
-    // Limpiar marcas anteriores del navegador tras retirar el seguimiento individual.
     try {
       localStorage.removeItem("noticias:reading:v1");
+      localStorage.removeItem("noticias:history:v1");
       sessionStorage.removeItem("noticias:filter:v1");
-    } catch (err) { /* La visualización sigue funcionando sin almacenamiento. */ }
+    } catch (err) {}
     if (textSize) {
       textSize.addEventListener("change", function () {
         main.dataset.textSize = textSize.value;
@@ -720,20 +789,224 @@
         }
       } catch (err) {}
     }
+    function setDensity(mode) {
+      main.classList.toggle("is-compact", mode === "compact");
+      main.classList.toggle("is-headlines", mode === "headlines");
+      density.setAttribute("aria-pressed", String(mode !== "editorial"));
+      density.textContent = mode === "editorial" ? "Compacta"
+        : mode === "compact" ? "Solo titulares" : "Editorial";
+    }
     density.addEventListener("click", function () {
-      var compact = !main.classList.contains("is-compact");
-      main.classList.toggle("is-compact", compact);
-      density.setAttribute("aria-pressed", String(compact));
-      density.textContent = compact ? "Editorial" : "Compacta";
-      try { localStorage.setItem(densityKey, compact ? "compact" : "editorial"); } catch (err) {}
+      var mode = main.classList.contains("is-headlines") ? "editorial"
+        : main.classList.contains("is-compact") ? "headlines" : "compact";
+      setDensity(mode);
+      try { localStorage.setItem(densityKey, mode); } catch (err) {}
     });
     try {
-      if (localStorage.getItem(densityKey) === "compact") {
-        main.classList.add("is-compact");
-        density.setAttribute("aria-pressed", "true");
-        density.textContent = "Editorial";
-      }
+      var savedMode = localStorage.getItem(densityKey);
+      if (savedMode === "compact" || savedMode === "headlines") setDensity(savedMode);
     } catch (err) {}
+  })();
+
+  // V5: favoritos voluntarios y preferencias editoriales.
+  (function () {
+    var main = d.getElementById("contenido");
+    var library = d.getElementById("library-panel");
+    var libraryToggle = d.getElementById("library-toggle");
+    if (!main || !library || !libraryToggle) return;
+    var sourceSelect = d.getElementById("source-preference");
+    var categorySelect = d.getElementById("category-preference");
+    var sortSelect = d.getElementById("source-sort");
+    var savedList = d.getElementById("saved-stories");
+    var storageKey = "noticias:library:v1";
+    var sourceKey = "noticias:source:v1", categoryKey = "noticias:category:v1", sortKey = "noticias:sort:v1";
+    var MAX_RECORDS = 120, DAYS = 30 * 86400000;
+    function get(key, fallback) {
+      try { return JSON.parse(localStorage.getItem(key) || "null") || fallback; }
+      catch (err) { return fallback; }
+    }
+    function set(key, value) {
+      try { localStorage.setItem(key, JSON.stringify(value)); } catch (err) {}
+    }
+    function validUrl(url) {
+      try { var parsed = new URL(url); return parsed.protocol === "https:"; }
+      catch (err) { return false; }
+    }
+    function tidy(records) {
+      var now = Date.now();
+      return (Array.isArray(records) ? records : []).filter(function (item) {
+        return item && validUrl(item.url) && typeof item.title === "string"
+          && item.title.length < 400 && typeof item.time === "number"
+          && item.time <= now && now - item.time < DAYS;
+      }).slice(0, MAX_RECORDS);
+    }
+    var saved = tidy(get(storageKey, []));
+    var cards = Array.prototype.slice.call(main.querySelectorAll(".lead,.feature,.rail-list li,.compact-list li"))
+      .filter(function (card) {return !!card.querySelector("h2 a[data-cat],h3 a[data-cat]");});
+    var sources = new Set(), categories = new Map();
+    cards.forEach(function (card) {
+      var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+      var source = card.querySelector(".source-name");
+      if (source) sources.add(source.textContent.trim());
+      categories.set(link.getAttribute("data-key"), link.getAttribute("data-cat"));
+    });
+    Array.from(sources).sort().forEach(function (name) {
+      var opt = d.createElement("option"); opt.value = name; opt.textContent = name;
+      sourceSelect.appendChild(opt);
+    });
+    Array.from(categories).sort().forEach(function (entry) {
+      var opt = d.createElement("option"); opt.value = entry[0]; opt.textContent = entry[1];
+      categorySelect.appendChild(opt);
+    });
+    function makeRecord(link) {
+      return {url:link.href, title:link.textContent.trim().slice(0, 399),
+        category:link.getAttribute("data-cat") || "", time:Date.now()};
+    }
+    function renderList(element, records, removable) {
+      element.replaceChildren();
+      if (!records.length) {
+        var empty = d.createElement("li"); empty.textContent = "Aún no guardaste noticias."; element.appendChild(empty);
+        return;
+      }
+      records.forEach(function (entry) {
+        var li = d.createElement("li"), a = d.createElement("a");
+        a.href = entry.url; a.target = "_blank"; a.rel = "noopener";
+        a.textContent = entry.title; li.appendChild(a);
+        if (removable) {
+          var button = d.createElement("button");
+          button.type = "button"; button.textContent = "Quitar";
+          button.setAttribute("aria-label", "Quitar noticia guardada: " + entry.title);
+          button.addEventListener("click", function () {
+            saved = saved.filter(function (x) { return x.url !== entry.url; });
+            set(storageKey, saved); syncSaved(); renderList(savedList, saved, true);
+          });
+          li.appendChild(button);
+        }
+        element.appendChild(li);
+      });
+    }
+    function syncSaved() {
+      cards.forEach(function (card) {
+        var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+        var active = saved.some(function (x) {return x.url === link.href;});
+        var kicker = card.querySelector(".kicker");
+        var actions = kicker && kicker.querySelector(".card-actions");
+        if (kicker && !actions) {
+          actions = d.createElement("span"); actions.className = "card-actions";
+          kicker.appendChild(actions);
+        }
+        var button = card.querySelector(".save-story");
+        if (!button) {
+          button = d.createElement("button"); button.type = "button"; button.className = "save-story";
+          button.setAttribute("aria-label", "Guardar noticia para después");
+          button.textContent = "☆";
+          button.addEventListener("click", function () {
+            var exists = saved.some(function (x) {return x.url === link.href;});
+            saved = saved.filter(function (x) {return x.url !== link.href;});
+            if (!exists) saved.unshift(makeRecord(link));
+            saved = tidy(saved); set(storageKey, saved);
+            syncSaved(); renderList(savedList, saved, true);
+          });
+          if (actions) actions.appendChild(button);
+        }
+        var share = card.querySelector(".share-story");
+        if (!share) {
+          share = d.createElement("button");
+          share.type = "button";
+          share.className = "share-story";
+          share.setAttribute("aria-label", "Compartir noticia: " + link.textContent.trim());
+          share.title = "Compartir noticia";
+          share.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.6M8.3 13.2l7.4 4.6"/></svg>';
+          share.addEventListener("click", async function () {
+            var news = {title: link.textContent.trim(), url: link.href};
+            if (navigator.share) {
+              try { await navigator.share(news); } catch (err) {
+                if (err.name !== "AbortError") share.title = "No se pudo compartir";
+              }
+              return;
+            }
+            var copied = false;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              try { await navigator.clipboard.writeText(link.href); copied = true; } catch (err) {}
+            }
+            if (!copied) {
+              var field = d.createElement("textarea");
+              field.value = link.href;
+              field.style.position = "fixed"; field.style.left = "-9999px";
+              d.body.appendChild(field); field.select();
+              try { copied = d.execCommand("copy"); } catch (err) {}
+              field.remove();
+            }
+            if (copied) {
+              share.setAttribute("aria-label", "Enlace copiado");
+              share.title = "Enlace copiado";
+              setTimeout(function () {
+                share.setAttribute("aria-label", "Compartir noticia: " + link.textContent.trim());
+                share.title = "Compartir noticia";
+              }, 1600);
+            } else {
+              window.prompt("Copia el enlace de la noticia:", link.href);
+            }
+          });
+          if (actions) actions.appendChild(share);
+        }
+        button.textContent = active ? "★" : "☆";
+        button.setAttribute("aria-pressed", String(active));
+        button.setAttribute("aria-label", (active ? "Quitar de guardadas: " : "Guardar noticia: ") + link.textContent.trim());
+      });
+    }
+    libraryToggle.addEventListener("click", function () {
+      library.hidden = !library.hidden;
+      libraryToggle.setAttribute("aria-expanded", String(!library.hidden));
+      if (!library.hidden) library.scrollIntoView({block:"nearest",behavior:"instant"});
+    });
+    d.querySelectorAll('[data-close-panel="library-panel"]').forEach(function (button) {
+      button.addEventListener("click", function () {
+        library.hidden = true;
+        libraryToggle.setAttribute("aria-expanded","false");
+        libraryToggle.focus();
+      });
+    });
+    main.querySelectorAll(".section-grid").forEach(function (grid) {
+      var container = grid.querySelector(".compact-list");
+      if (container) Array.prototype.slice.call(container.children).forEach(function (li, idx) {
+        li.dataset.originalOrder = String(idx);
+      });
+    });
+    function applySourcePreferences() {
+      var source = sourceSelect.value, category = categorySelect.value;
+      cards.forEach(function (card) {
+        var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+        var name = card.querySelector(".source-name");
+        var matches = (!source || (name && name.textContent.trim() === source))
+          && (!category || link.getAttribute("data-key") === category);
+        card.toggleAttribute("data-source-hidden", !matches);
+      });
+      main.querySelectorAll(".section-grid").forEach(function (grid) {
+        var parent = grid.querySelector(".compact-list");
+        if (!parent) return;
+        var items = Array.prototype.slice.call(parent.children);
+        items.sort(function (a,b) {
+          if (sortSelect.value !== "recent")
+            return Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
+          var ta = Date.parse(a.querySelector("time")?.dateTime || "") || 0;
+          var tb = Date.parse(b.querySelector("time")?.dateTime || "") || 0;
+          return tb - ta || Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
+        });
+        items.forEach(function (item) {parent.appendChild(item);});
+      });
+    }
+    sourceSelect.value = get(sourceKey, "") || "";
+    categorySelect.value = get(categoryKey, "") || "";
+    sortSelect.value = get(sortKey, "relevance") || "relevance";
+    [sourceSelect,categorySelect,sortSelect].forEach(function (select) {
+      select.addEventListener("change", function () {
+        set(sourceKey, sourceSelect.value); set(categoryKey, categorySelect.value);
+        set(sortKey, sortSelect.value); applySourcePreferences();
+      });
+    });
+    applySourcePreferences();
+    syncSaved(); renderList(savedList, saved, true);
   })();
 
   // La sección visible se identifica sin desplazar el carrusel ni forzar animaciones.
