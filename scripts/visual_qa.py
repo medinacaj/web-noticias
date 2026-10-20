@@ -13,6 +13,8 @@ async def check(html, output):
         browser = await pw.chromium.launch()
         for width in WIDTHS:
             page = await browser.new_page(viewport={"width": width, "height": 900}, device_scale_factor=1)
+            errors = []
+            page.on("pageerror", lambda error: errors.append(str(error)))
             await page.goto(html.resolve().as_uri(), wait_until="domcontentloaded")
             await page.screenshot(path=str(output / f"home-{width}.png"), full_page=True, animations="disabled")
             overflowing = await page.evaluate("document.documentElement.scrollWidth > window.innerWidth + 2")
@@ -26,11 +28,15 @@ async def check(html, output):
                 raise AssertionError(f"Desborde horizontal a {width}px")
             for panel in ("preferences", "library"):
                 await page.locator(f"#{panel}-toggle").click()
+                assert await page.locator(f"#{panel}-panel").is_visible(), f"Panel {panel} no abierto en {width}px"
                 await page.screenshot(path=str(output / f"{panel}-{width}.png"), full_page=False, animations="disabled")
                 await page.locator(f'[data-close-panel="{panel}-panel"]').click()
             await page.locator("#preferences-toggle").click()
             await page.locator("#density-switch").click()
             await page.locator("#density-switch").click()
+            assert await page.locator("#contenido").evaluate("(el) => el.classList.contains(\'is-headlines\')"), f"Vista titulares no activada en {width}px"
+            if errors:
+                raise AssertionError(f"Errores JavaScript a {width}px: {errors}")
             await page.screenshot(path=str(output / f"headlines-{width}.png"), full_page=False, animations="disabled")
             await page.close()
         await browser.close()
