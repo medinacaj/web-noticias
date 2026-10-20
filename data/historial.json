@@ -1,6 +1,19 @@
 {
- "actualizado": "2026-10-20T03:15:08Z",
+ "actualizado": "2026-10-20T03:30:06Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "Los opositores a Putin deportados por Occidente a los que ahora Rusia envía a la guerra",
+   "summary": "Durante el último año ha aumentado notablemente el número de activistas antigubernamentales deportados a Rusia desde la Unión Europea y EE.UU., donde habían buscado refugio.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/ae4f/live/28e9b630-cbcf-11f1-aba9-2bb2608f11d9.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "link": "https://www.bbc.com/mundo/articles/ckzd604n0gdyo?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-20T03:16:50Z",
+   "first_seen": "2026-10-20T03:30:06Z"
+  },
   {
    "category": "tecnologia",
    "title": "Usuarios de plan familiar de Spotify deberán verificarse con un QR o quedarán vetados por 12 meses",
@@ -345,7 +358,8 @@
    ],
    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNFdoc1FLM1FHMGptRmdrZ2U0NnluMDBSdmpONV9PSEhPZWpQYkliMEZQYktfeEYwQmd5Mm91Qy1ZdVF6MDI5XzROZEJ1ZzRpVmJaWnp6NHl5YS14SXNCYzJGczlxSW9kT0I4enlFQTNtd1ZFd1JiYWJ5Sm40QVQ5TzJYVGM1ZmttQlJWNTc0TXFVdUx1YWRrc1NxUXVaT1RWMkZaYVM1LWVDSWd1UHMycVFzcXp4WmVvUmlvZmlTNU52MEJPNUhEN09vNlZKaFFUTlFhanZFNW9pRmlBVDdhYXVna2dURmNUNUNUelFCSzDSAZICQVVfeXFMTnVmVVFpLUdFelc3NnRaak5ybEVvejMzMVlmUGFoVVVIVmQtQXhQY0lBY3BsbnJKLXplOFlsVGUzcXJmdENfZjFaTTZ6OVlTV2FuRGo3UVM0aW9mOWpJejVjcUN2RjZ3RURDajFNT3d4UjVuUF9JSXhTTlhyX1VtNmcxTUFrb1EzZVlRQi00UWthYUhaeV8zeFRBRzluUVdtRm53Z2FJOHZuSDBkandpalpJYWRzVFJuNXFEem4zZW1NM2NRMkVENUhKbTZSQ2dLTXpYNE9vODZjVDNpMUJuM19IbjFLSlljb19OclpDREtScWdVYjRwQ1ZuY21ZM3IweXNyMTh3azBFc3gzNVd1S1FrQQ?oc=5",
    "published": "2026-10-19T19:00:03Z",
-   "first_seen": "2026-10-20T00:16:12Z"
+   "first_seen": "2026-10-20T00:16:12Z",
+   "source_url": "https://www.latercera.com"
   },
   {
    "category": "internacional",
@@ -623,6 +637,19 @@
    "first_seen": "2026-10-19T21:00:14Z"
   },
   {
+   "category": "internacional",
+   "title": "Zelenski: sería \"un error histórico\" que Estados Unidos apoye a Rusia",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYlBmdm9OQ0YtclIyTXdqS1JDSTBlc1F1TkYwM1dCVEdxYU94WVBfUndJcF9UdTZTS0RQdjBkQjdTdHNTUHhXZFRyY1ZPa0F0S0JQaWlFVWxhRWJobElPRTQtT3hISVhFU1lGd0psX1MzaGdOcTdFOVdKUFNLdmRhUy1wb3Q1NmIxNDdIdzNZVFhfSjI0ejN3eDZaZC1RU0xEaDBiU0RMVE9qT3hOWkHSAa4BQVVfeXFMTnFmNTlySkx2TFExa3NybjNLTVVYdGtWb25EVmdoY0lEVkJCX3IyX1NwMXdFckJENkEwb2N6M1c0NllOWXZ3d1cwaXlBem54ZkVwMU9YNXcxdTJYT0F3cDNXa2RLNGJDOEMzWjdpVWRydXViMFM5WkE5N0trMnE1UmJ6cEcyc0ZFUjFwTG9fNW5qQWlldW9OSWgyaXR4M095eHZLV05JeDZ4UzEtbE9n?oc=5",
+   "published": "2026-10-19T16:49:54Z",
+   "first_seen": "2026-10-20T03:30:06Z"
+  },
+  {
    "category": "deportes",
    "title": "A qué hora y dónde ver a Universidad de Chile contra Libertad por la Copa Libertadores Femenina",
    "summary": "",
@@ -829,19 +856,6 @@
    "source_url": "https://www.latercera.com"
   },
   {
-   "category": "nacional",
-   "title": "Ya son tres: Otro juez se inhabilitó del caso Barriga",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUDRBMmpyTmVWWHRQb05MRExTSWxSXy0wbEJyNlBiN2twdDZtX1VTR1JvUTE3SHVxUnQwX2toRVlhdm5aQ0dqT3JvMmd0S3FpRUZQUGtiOFBCTVpFeWJJb1ZxamJ5c1YydUVLODBqMmgxb2puTEpYcFpuWE42ZHpxdGg4U1NKZWM0NnpTYWdwR0Z0WThMam1XSjM2N3NmNjI1WUlpZEt6eFpMVmRkRmhqUWZRaXU5MHVjaUtmTG9wU0pUTjIwSk1hX0QxZFNZVjFxUGE2c3JYajhNLUpQ0gGMAUFVX3lxTE5ETTAzVTJ5Zl9fOEN6NzNfLWhpS01CaGJOQ1ZVVVVLUDFiUGJmV29VM3VRRXhlTUNpazExVElTMTFaTGNFUWFUZEhJQlVkcHdYT0ZfaFdCaGx6bHVMamIxYl9tUGJJSE50Y3gwckpXYTJtQ2xyX0poOVVndzVkS1Z1Zk56MVBjb0pYWDNU?oc=5",
-   "published": "2026-10-19T15:44:00Z",
-   "first_seen": "2026-10-20T03:15:08Z"
-  },
-  {
    "category": "deportes",
    "title": "Falleció Manuel Burboa, histórico creador del escudo de La Roja y miembro organizador del Mundial 1962",
    "summary": "",
@@ -1004,6 +1018,20 @@
    "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxPWlpCMmV2Ykk2X2lBN19TOVNKM1dxSUpNeklvUkZhSm1rSmxfOWEzQms1b290ZGItekViTjg4Y1VDdFhaRHR2X2RyV3dBeWk3LWJSSGhPenlDaklfajVkcWcyc0JlTjBPVm93NUhjR0poS0RsZjc0c2JvQVZFUlVGSGtvWURyenlHOTV4bmUxU0lfYlBtNC1zUXFVZEZadGZBTTF2dV9Kelo0MWFpSGF1bUhsSmxLclAtS0EyUHlPT0stbnhXYm55YU5WQmk3dTFXSDh6ekVCSU5LVWFhNUI5UVkzR2xNeWswUndSUWpBT2pWY2xNaWExaU93N3h4UFkwSy1EVUhOLThjaC1uV05UWVlVemhXWlBsZGNzeGZR0gG_AkFVX3lxTFBBSWtyYXdMM05JYUxMTDBkMGNwMzZwQVlwVFZPTTlPY0o3VFdBM01lQ2ZzdnlfOEFlVExkak9BUVNOeXVNa1p0alBBNUVTMkJKSHBpR0hsa3ZnWFB0VENUVEdQQkVJaE9MUnpGaTRwcDJDNzBuekFBNnl1UW00Smc1cFJsRUZYbElaNk5wbjJ0VWx4MU1lUjJpbnlBTG9YT2RrTEN4WmFpSnREb0NoWllMRk80QVZnZm1aYlBVREc2TTNMTkVFQi1kYXpPakhmeVRsb0FPa0czQzgzbEdvUGNmY04tMVhMeXgybHp2UWhkSW5TM2MzUDZlbFAyVE9sOHVHWUg2eWpEUHo1SlpOdFpPWU15OW82R1AwY0JCTU9rYll6QkxLRTJITldHa2x2SkNObEsyMllMVkRSZ2UxXzA?oc=5",
    "published": "2026-10-19T14:36:39Z",
    "first_seen": "2026-10-19T21:00:14Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Ya son tres: Otro juez se inhabilitó del caso Barriga",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa",
+    "La Tercera"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUDRBMmpyTmVWWHRQb05MRExTSWxSXy0wbEJyNlBiN2twdDZtX1VTR1JvUTE3SHVxUnQwX2toRVlhdm5aQ0dqT3JvMmd0S3FpRUZQUGtiOFBCTVpFeWJJb1ZxamJ5c1YydUVLODBqMmgxb2puTEpYcFpuWE42ZHpxdGg4U1NKZWM0NnpTYWdwR0Z0WThMam1XSjM2N3NmNjI1WUlpZEt6eFpMVmRkRmhqUWZRaXU5MHVjaUtmTG9wU0pUTjIwSk1hX0QxZFNZVjFxUGE2c3JYajhNLUpQ0gGMAUFVX3lxTE5ETTAzVTJ5Zl9fOEN6NzNfLWhpS01CaGJOQ1ZVVVVLUDFiUGJmV29VM3VRRXhlTUNpazExVElTMTFaTGNFUWFUZEhJQlVkcHdYT0ZfaFdCaGx6bHVMamIxYl9tUGJJSE50Y3gwckpXYTJtQ2xyX0poOVVndzVkS1Z1Zk56MVBjb0pYWDNU?oc=5",
+   "published": "2026-10-19T14:35:33Z",
+   "first_seen": "2026-10-20T03:15:08Z"
   },
   {
    "category": "nacional",
@@ -1232,6 +1260,19 @@
   },
   {
    "category": "cultura",
+   "title": "Yamila Reyna arremetió sin filtro contra Pancha Merino tras llorar en pantalla por demandas en su contra",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.guioteca.com",
+   "sources": [
+    "Guioteca"
+   ],
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdHNxZ2xXM1hWNDF3OEJPVktyX2FpNEEwb1R3aVhUclZOanZDVGt0WDRXQVMtcXBFMzEwMlJNQ2REb3FnZ0NBMlJtc0RtQjllZ2RvOWFZVkI0TGZaOEhEZ1YwTHo1akFKRmJhR0tJLWJmUWJ5US1KREFRbk1YV2l3UFlXQUg3cFRQb25oVWpYcFJUMjgwVDZ2Nm9USE9ubERETTdibmZsOXJsbXRid2psbUtlclI0LVNHOUhlX3JXVE4wUkRvQmZUWkxLZFczdGdsVXk4eVI3TDQ?oc=5",
+   "published": "2026-10-19T12:50:29Z",
+   "first_seen": "2026-10-20T03:30:06Z"
+  },
+  {
+   "category": "cultura",
    "title": "“Nadie me iba a creer”: Mon Laferte reveló episodio de acoso en Rojo que mantuvo en silencio por años",
    "summary": "",
    "image": "",
@@ -1362,7 +1403,8 @@
    ],
    "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQdmhncGZvZndudHYxUmRMQXlxVkRycVNYUWNiZm9RVGFpd0ZzSzJNeGRobTdaUGxGakw4TFNSTEtHUTNYSndrN01VSG5VdGk5THZZdnZIb00xMG84bF9ZYVdxamVMOUVaS0pjaVVtRUQ0OGpNdjYwX3Vaa0MwWmRyMHktZDJQQlhoNG1rMi1KWU45Q2c0b0JjMzVRNjh1TnBWcHlBdzRSWTRBdWg0MllDUTNpblI2ZHg1NFJfbjJRYXBISU4zXzY1ZXN5VzJTeFNaWW11QkdUVkZqcEltaGVHcVo4Tnp0bVEzcnpPQzE5OUUtUDU0VmNySzR0V2V5dkU5V3dPV2NXaUw2MlVFYmxqYkhR?oc=5",
    "published": "2026-10-19T11:47:26Z",
-   "first_seen": "2026-10-19T15:49:30Z"
+   "first_seen": "2026-10-19T15:49:30Z",
+   "source_url": "https://www.biobiochile.cl"
   },
   {
    "category": "cultura",
@@ -1433,11 +1475,13 @@
    "image": "",
    "sources": [
     "La Tercera",
-    "DW.com"
+    "DW.com",
+    "CNN en Español"
    ],
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZXR0MGhvaGtsQ1dkRS1CZlpsU1g5RFo0U1EzeHBlRjJ4UUNrLUJsS241dTg2UzZONDFfb3hOdFRYT3NGRDFqdG1UenE2NUxBbW9Bc3ByN1ZmUDZBRHJDZl9xZzNDa2tfakFsZ0VPX3dROC14SnNkUHhkdXpkZFg2QnRjUG1nSW1FaUE0QWxYVkJTbGJBZk5yRmNnQ2JuY0d2LW9VOTBxT0E1X201dmhRWmVBQ1jSAdYBQVVfeXFMUHp5Y1d1MkJPVlh0WE1lVVNicGlHa1Q2M3NIblRoVDhLSzd5MWRIcDZzWnRFYzN5MU1LQ1c4NndRaFM0NEIxVGg1NDVYN0Jhb040ekpSemhvN3I4RjF1ZEdaNko3ZDBaQnBORnYzOXQ3SjZXX1UtOEdYd2RrNTB5aGxXd0JMdXl5ejdCMGNCMmJyTUxmeVRtV0xWOWxRUnI5c3ZvSEkyR0FYY3NvQTZjZDFEenFZV3NXWlRvWDZEYy1DUmQ1LTFxbVZmU1hfR0ZwcHdQRVRBQQ?oc=5",
    "published": "2026-10-19T11:15:57Z",
-   "first_seen": "2026-10-19T15:49:30Z"
+   "first_seen": "2026-10-19T15:49:30Z",
+   "source_url": "https://cnnespanol.cnn.com"
   },
   {
    "category": "cultura",
@@ -1808,30 +1852,6 @@
    ],
    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNcjl4emVqQk5OQlFXbk5FODZiS01XUFh5cmpjVVRkWUpMYm11NkhRa2trREN3dHctTWpDYndVTFBaNGVCRE5GRXZHcnJjVThaVHd2X1ZVbFhXaGRVdkZyRUFnTkFSRFdORjRyaEFQeFV6cEZnMEZsTjJadVp2aS1kaDRrcDg4U3R6ZWZTRFNBRkdxQnBJZVVUV2dhcGp1YlRjQVJOMldVZ2NBUkU5RV82U29BSUl0V2V1M3VDbkVIUGpEdGRZRVVUUzd5SlFxaWxOYklxNHFoZktvNzFYRTE4aW04ekVQZ0laTHBiVDBDR1g0SmhQUkhQMW5LRkJvQkE?oc=5",
    "published": "2026-10-19T03:47:41Z",
-   "first_seen": "2026-10-19T07:41:06Z"
-  },
-  {
-   "category": "nacional",
-   "title": "RM bajo alerta por nuevo sistema frontal: suspenden clases el martes en 10 comunas y se definen 3 perímetros de seguridad",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNZS0zSXdMNU0tNFJkMlBKZFlnZzB0c0xqaGRhTkpLRzhEcjBKc1FNUDFyQWdCdFEydmFQR0VZdWhES2hZcFJNNnJrMVlXLVN0WVotOFZ5LTlPclhnMFpiWUg0SlRwWWwzZk1uQzd6M0U1NVdhTVJwTDBtVjhYcjM4aXRPc1JaeG4tc2RCTEJLNTRzMzBRWDlCWkprWVI3aVJkNnVHdFF5WHR5RnpQZEJYYjVLaUZUbXNIMTFlM0k0SUhQbk9SYWtpRUJzZERTVHJZTE5FZGZnd3dVUHRIYjJzTjlZRG40Ri11SExYZkVmUXd3RjEzeE9r0gGYAkFVX3lxTE80UjJlS1ViZVc2dFByVUpEdFlsc3NfT1NPREJDMlVsRFlRNFhfdXlkSnl5UWUxUmlRRVVDVE9TM3JRdUZLQzI0MkhwZW9QSE11Z0R0MVIyT3hJVlpfZEtEVWJGNHVDQWRXNXQxcTF0d3lGTDg5YWtJM2cxeWhndUR2X3RWdTRRMTBXd2xabTNoc2M2Q3VvY1FqTHV2aW1Kc2E3eXltYi02MUxhR2NOdmJqYkk2S0xFb1NpcFZuNmRMRFhEeVNvQkVvVDRDbGNUc0ktVmNIRGVBTTJwaW1uODBtaV9aMExHX0g1Z0dHS3dHOGhFdmg4T3piUHliQzQxWXhpek5yUk5OOTh5SThhQkJ4MFpaMzZEVmI?oc=5",
-   "published": "2026-10-19T03:25:30Z",
-   "first_seen": "2026-10-19T07:41:06Z"
-  },
-  {
-   "category": "internacional",
-   "title": "\"Tu padre sabe que soy mejor que tú\": el irónico dardo de Lula a Flávio Bolsonaro en debate",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOSHZGSExwSlk2OVBFNjJGSDZneGhHMWdGMFJWU190S0s5cHFkSnFoaV9LenlQaTJlTkpxUzJ1UXVsZXoxTWV0dEN2S3p0b2thOGtmNlNtelpkbzJIUDRuOTljM2ZpcmxBYVNPUGhwQzBLUG9qNnlfTlhiTmp3Z0F4VW1TejV5WXpTMEhCdHNCQ3dBSFEtM2JfNmhUUHI4aGlTZUsyUkozSkRtS3ZTSGdSUFNBUElWaElubXg4eGY4d09BUjl3UzNvQUhCT0lMMzM5SUJYaUo3alowbzZyRWdtRVlKaE05c2J4Wm1kV25wZlBwcFN4dVBkY0xuRUt4bWc?oc=5",
-   "published": "2026-10-19T03:18:30Z",
    "first_seen": "2026-10-19T07:41:06Z"
   }
  ]
