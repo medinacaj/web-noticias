@@ -548,9 +548,11 @@ def meta_html(story, now, read_link=False):
     sources = story["sources"]
     label = ", ".join(sources[:3]) + (f" y {len(sources) - 3} más" if len(sources) > 3 else "")
     moment = story_time(story) or now
+    read = (f'<a class="read" href="{esc(story["link"])}" target="_blank" rel="noopener">Ver noticia completa</a>'
+            if read_link else "")
     fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story)}</p>')
+            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{read}{coverage_control(story)}</p>')
 
 
 def dek_html(story):
@@ -724,6 +726,14 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
     with open(TEMPLATE_PATH, encoding="utf-8") as handle:
         page = handle.read()
 
+    from scripts.newsletter import render_newsletter, safe_external_url
+    newsletter_enabled = os.environ.get("NEWSLETTER_READY", "").lower() == "true"
+    newsletter_url = safe_external_url(os.environ.get("NEWSLETTER_SUBSCRIBE_URL"))
+    privacy_url = safe_external_url(os.environ.get("NEWSLETTER_PRIVACY_URL"))
+    cancel_url = safe_external_url(os.environ.get("NEWSLETTER_UNSUBSCRIBE_URL"))
+    if not (newsletter_enabled and newsletter_url and privacy_url and cancel_url):
+        newsletter_url = ""
+
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
     nav = render_nav(sel)
     replacements = {
@@ -744,6 +754,14 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
         "%%CONTEXT%%": render_context(sel, now, window_hours),
         "%%RADAR%%": render_coverage_radar(stories),
         "%%SECTIONS%%": render_sections(sel["by_category"], now),
+        "%%NEWSLETTER_SIGNUP%%": (
+            f'<a class="newsletter-link" href="{esc(newsletter_url)}" target="_blank" rel="noopener">'
+            'Suscribirme</a>'
+            f'<a class="newsletter-privacy" href="{esc(privacy_url)}" target="_blank" rel="noopener">'
+            'Privacidad y datos de suscripción</a>'
+            if newsletter_url
+            else '<span class="newsletter-pending">Suscripciones próximamente</span>'
+        ),
     }
     for marker, value in replacements.items():
         page = page.replace(marker, value)
@@ -751,12 +769,16 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
     if leftover:
         raise SystemExit(f"ERROR: la plantilla quedó con marcadores sin reemplazar: {leftover}")
 
+    # Newsletter: vista pública, sin enviar correos ni recolectar direcciones.
+    newsletter_html = render_newsletter(
+        stories, now, SITE_URL, newsletter_url, cancel_url if newsletter_url else "")
     os.makedirs(out_dir, exist_ok=True)
     if os.path.isdir(STATIC_DIR):
         shutil.copytree(STATIC_DIR, out_dir, dirs_exist_ok=True)
 
     files = {
         "index.html": page,
+        "boletin-diario.html": newsletter_html,
         "404.html": PAGE_404.replace("%%HOME%%", esc(SITE_URL + "/")),
         "robots.txt": f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
         "sitemap.xml": (

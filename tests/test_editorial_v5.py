@@ -10,9 +10,9 @@ class EditorialV5Tests(unittest.TestCase):
         cls.page = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
 
     def test_options_are_in_a_single_collapsible_panel(self):
-        for marker in ('id="preferences-panel" hidden', 'id="preferences-toggle"',
+        for marker in ('id="view-options-panel" hidden', 'id="view-options-toggle"',
                        'id="source-preference"', 'id="category-preference"',
-                       'id="source-sort"', 'id="density-switch"',
+                       'id="source-sort"', 'id="library-toggle"', 'id="density-switch"',
                        'id="text-size"'):
             self.assertIn(marker, self.page)
 

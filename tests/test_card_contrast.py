@@ -33,9 +33,9 @@ class ContrastThemeTests(unittest.TestCase):
                 self.assertGreaterEqual(contrast(fg, "#182639"), 4.5)
                 self.assertGreaterEqual(contrast(fg, "#223247"), 4.5)
 
-    def test_shadows_have_two_layers_and_motion_safe(self):
-        self.assertIn("--card-shadow:0 1px 2px", self.css)
-        self.assertIn("--card-shadow-hover:0 2px 4px", self.css)
+    def test_shadows_have_soft_layers_and_motion_safe(self):
+        self.assertIn("--card-shadow:0 2px 5px", self.css)
+        self.assertIn("--card-shadow-hover:0 4px 9px", self.css)
         self.assertIn("box-shadow:var(--card-shadow-hover)", self.css)
         self.assertIn("prefers-reduced-motion:reduce", self.css)
 

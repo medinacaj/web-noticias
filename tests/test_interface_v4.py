@@ -17,10 +17,13 @@ class InterfaceV4Tests(unittest.TestCase):
             self.assertIn(part, self.page)
         self.assertNotIn("a.innerHTML = item.title", self.page)
 
-    def test_public_portal_has_no_hidden_read_news(self):
-        for token in ('id="reading-filter"', 'value="unread"', 'value="read"',
-                      'data-filter-hidden', 'function applyReadingFilter()'):
-            self.assertNotIn(token, self.page)
+    def test_no_private_read_filters_or_hidden_cards(self):
+        for marker in ('id="reading-filter"', 'value="unread"', 'value="read"',
+                       'data-filter-hidden', 'function applyReadingFilter()',
+                       'id="reading-status"'):
+            self.assertNotIn(marker, self.page)
+        self.assertIn('data-show-more', self.page)
+        self.assertIn('id="text-size"', self.page)
 
     def test_text_prefs_and_density_both_exist(self):
         for part in ('id="text-size"', 'noticias:text-size:v1', 'data-text-size="large"',
