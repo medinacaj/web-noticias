@@ -81,6 +81,16 @@ async def check(html, output):
             if errors:
                 raise AssertionError(f"Errores JavaScript a {width}px: {errors}")
             await page.close()
+            # Página SEO permanente: diseño accesible y sin desbordamiento responsive.
+            about_file = html.resolve().parent / "sobre-el-portal.html"
+            about = await browser.new_page(viewport={"width": width, "height": 900}, device_scale_factor=1)
+            await about.goto(about_file.as_uri(), wait_until="domcontentloaded")
+            assert await about.locator("h1").count() == 1, f"Falta H1 único en Sobre a {width}px"
+            assert await about.locator('link[rel="canonical"]').count() == 1
+            about_overflows = await about.evaluate("document.documentElement.scrollWidth > innerWidth + 2")
+            assert not about_overflows, f"Desborde horizontal en Sobre a {width}px"
+            await about.screenshot(path=str(output / f"about-{width}.png"), full_page=True, animations="disabled")
+            await about.close()
         await browser.close()
 
 
