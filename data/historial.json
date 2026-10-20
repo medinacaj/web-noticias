@@ -1,20 +1,6 @@
 {
- "actualizado": "2026-10-20T06:06:08Z",
+ "actualizado": "2026-10-20T06:17:14Z",
  "noticias": [
-  {
-   "category": "nacional",
-   "title": "Gobierno decreta suspensión de clases y evacuaciones preventivas ante ingreso de nuevo sistema frontal",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989509-gobierno-decreta-suspension-de-clases-y-evacuaciones-preventivas-ante-ingreso-de-nuevo-sistema-frontal.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/19/gobierno-decreta-suspension-de-clases-y-evacuaciones-preventivas-ante-ingreso-de-nuevo-sistema-frontal.shtml",
-   "published": "2026-10-20T04:32:48Z",
-   "first_seen": "2026-10-20T05:10:13Z",
-   "image_checked_at": "2026-10-20T05:10:13.359000Z"
-  },
   {
    "category": "internacional",
    "title": "De estudiantes secundarios a “chalecos amarillos”: cómo creció la protesta que sacude Francia",
@@ -96,6 +82,20 @@
    "published": "2026-10-20T02:59:04Z",
    "first_seen": "2026-10-20T05:10:13Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Kast instruye iniciar expulsiones de extranjeros que participaron en desmanes durante aniversario del 18-O",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/773P3UX6HJAQDJWZ62QVSXBTHA.jpeg?auth=ab6e5de953af7aefaf80c70ca96e2d5325c0b598482d93f13ca84e1635167db1&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "link": "https://www.latercera.com/nacional/noticia/kast-instruye-iniciar-expulsiones-de-extranjeros-que-participaron-en-desmanes-durante-aniversario-del-18-o/",
+   "published": "2026-10-20T02:32:39Z",
+   "first_seen": "2026-10-20T06:17:14Z",
+   "image_checked_at": "2026-10-20T06:17:14.360807Z"
   },
   {
    "category": "regiones",
@@ -235,6 +235,20 @@
    "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/19/patricio-alfredo-sanchez-molinari-quien-era-el-sacerdote-ecuatoriano-que-murio-tras-ser-aplastado-por-una-cruz-en-su-iglesia.shtml",
    "published": "2026-10-20T01:00:16Z",
    "first_seen": "2026-10-20T03:15:08Z",
+   "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Gobierno decreta suspensión de clases y evacuaciones preventivas ante ingreso de nuevo sistema frontal",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989509-gobierno-decreta-suspension-de-clases-y-evacuaciones-preventivas-ante-ingreso-de-nuevo-sistema-frontal.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/19/gobierno-decreta-suspension-de-clases-y-evacuaciones-preventivas-ante-ingreso-de-nuevo-sistema-frontal.shtml",
+   "published": "2026-10-20T01:00:12Z",
+   "first_seen": "2026-10-20T05:10:13Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
   },
   {
