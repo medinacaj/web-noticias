@@ -46,7 +46,7 @@ def configured_adsense(environ, site_url):
         if privacy and valid_id else ""
     )
     ads_txt = (
-        f"google.com, {publisher.replace('ca-', '')}, DIRECT, {GOOGLE_ADS_TXT_CERT}\\n"
+        f"google.com, {publisher.replace('ca-', '')}, DIRECT, {GOOGLE_ADS_TXT_CERT}\n"
         if valid_id and owned_root else ""
     )
     return {
