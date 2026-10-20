@@ -427,7 +427,8 @@
     .section-grid .meta{padding-top:12px;}
     .section-head{gap:9px;flex-wrap:wrap;}
     .section-count{font-size:10px;}
-    .footer-nav,.footer-about{grid-column:1 / -1;}
+    .footer-grid{grid-template-columns:minmax(0,1fr);gap:24px;}
+    .footer-brand-block,.footer-nav,.footer-about{grid-column:1 / -1;min-width:0;}
     .meta a,.meta time{min-height:24px;}
   }
   @media(max-width:360px){.container{padding:0 12px;}.news-toolbar{column-gap:6px;}.rail-list li{grid-template-columns:26px minmax(0,1fr);}.search-input{font-size:20px;}}
