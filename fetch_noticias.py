@@ -548,11 +548,9 @@ def meta_html(story, now, read_link=False):
     sources = story["sources"]
     label = ", ".join(sources[:3]) + (f" y {len(sources) - 3} más" if len(sources) > 3 else "")
     moment = story_time(story) or now
-    read = (f'<a class="read" href="{esc(story["link"])}" target="_blank" rel="noopener">Ver noticia completa</a>'
-            if read_link else "")
     fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{read}{coverage_control(story)}</p>')
+            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story)}</p>')
 
 
 def dek_html(story):
