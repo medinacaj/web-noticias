@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T06:17:14Z",
+ "actualizado": "2026-10-20T06:53:28Z",
  "noticias": [
   {
    "category": "internacional",
@@ -350,6 +350,20 @@
    "image_checked_at": "2026-10-20T05:49:04.488112Z"
   },
   {
+   "category": "nacional",
+   "title": "José Ramón Correa, Aldo Cornejo y otros: los desconocidos asesores en las sombras de Minera Dominga",
+   "summary": "",
+   "image": "https://reportea.cl/wp-content/uploads/2026/10/Foto-portada-mongabay-dominga.jpeg",
+   "source_url": "https://reportea.cl",
+   "sources": [
+    "Reportea"
+   ],
+   "link": "https://reportea.cl/2026/10/19/jose-ramon-correa-aldo-cornejo-y-otros-los-desconocidos-asesores-en-las-sombras-de-minera-dominga/",
+   "published": "2026-10-19T22:28:28Z",
+   "first_seen": "2026-10-20T06:53:28Z",
+   "image_checked_at": "2026-10-20T06:53:28.053150Z"
+  },
+  {
    "category": "politica",
    "title": "Gobierno lanza campaña Casen 2026: ministra Wulf asegura que existe un “compromiso total” con la encuesta",
    "summary": "",
@@ -418,6 +432,20 @@
    "first_seen": "2026-10-20T00:16:12Z",
    "source_url": "https://www.dw.com",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "medioambiente",
+   "title": "Programa de Cambio Climático: Ministerio de Medio Ambiente asegura que en 2025 se destinaron $123 millones a catering y talleres",
+   "summary": "",
+   "image": "https://media.cnnchile.com/2026/10/A_UNO_1681304-768x512.jpg",
+   "source_url": "https://www.cnnchile.com",
+   "sources": [
+    "CNN Chile"
+   ],
+   "link": "https://www.cnnchile.com/pais/programa-de-cambio-climatico-ministerio-de-medio-ambiente-asegura-que-en-2025-se-destinaron-123-millones-a-catering-y-talleres/",
+   "published": "2026-10-19T21:23:46Z",
+   "first_seen": "2026-10-20T06:53:28Z",
+   "image_checked_at": "2026-10-20T06:53:28.053150Z"
   },
   {
    "category": "tecnologia",
@@ -543,6 +571,20 @@
    "published": "2026-10-19T20:53:42Z",
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Carlos Palacios y Williams Alarcón afuera de duelo definitorio de Boca en Sudamericana",
+   "summary": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/19171800/alarcon-palacios-1200x740.webp",
+   "source_url": "https://redgol.cl",
+   "sources": [
+    "RedGol"
+   ],
+   "link": "https://redgol.cl/copa-sudamericana/boca-juniors-rodolfo-arruabarrena-carlos-palacios-williams-alarcon-semifinal-copa-sudamericana",
+   "published": "2026-10-19T20:47:44Z",
+   "first_seen": "2026-10-20T06:53:28Z",
+   "image_checked_at": "2026-10-20T06:53:28.053150Z"
   },
   {
    "category": "regiones",
@@ -1574,6 +1616,20 @@
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.cooperativa.cl",
    "image_checked_at": "2026-10-20T05:43:55.557181Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Periodista de CHV Juan Vera contó cómo le fueron infiel en su propia casa: \"Mujer sin alma\"",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988743-juan-vera.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/19/periodista-de-chv-juan-vera-conto-cuando-le-fueron-infiel-en-su-propia-casa-mujer-sin-alma.shtml",
+   "published": "2026-10-19T15:31:18Z",
+   "first_seen": "2026-10-20T06:53:28Z",
+   "image_checked_at": "2026-10-20T06:53:28.053150Z"
   },
   {
    "category": "economia",
