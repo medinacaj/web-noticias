@@ -20,8 +20,17 @@ class EditorialVisualSystemTests(unittest.TestCase):
         for css in ("min-height:164px", ".news-body{flex:1;min-width:0;display:flex;flex-direction:column",
                     ".section-grid .meta{margin-top:auto",
                     ".compact .meta{margin-top:auto",
-                    ".section-grid .media{flex:0 0 104px;width:104px;height:92px"):
+                    ".section-grid .media{flex:0 0 104px;width:104px;height:auto;min-height:92px;align-self:stretch"):
             self.assertIn(css, self.source)
+
+    def test_section_photos_fill_vertical_space_without_changing_card_size(self):
+        self.assertIn(".section-grid .feature,.section-grid .compact{align-items:stretch;}", self.source)
+        self.assertIn(".section-grid .media{flex:0 0 104px;width:104px;height:auto;min-height:92px;align-self:stretch;", self.source)
+        self.assertIn(".section-grid .media{flex-basis:92px;width:92px;height:auto;min-height:84px;}", self.source)
+        self.assertIn(".media > img{width:100%;height:100%;object-fit:cover;object-position:center", self.source)
+        self.assertIn(".is-compact .section-grid .media{display:none;}", self.source)
+        self.assertIn(".is-headlines .section-grid .media,.is-headlines .section-grid .dek{display:none;}", self.source)
+        self.assertIn(".section-grid .media--source{padding:8px;}", self.source)
 
     def test_missing_photos_fallback_to_real_source(self):
         for code in ("figure.classList.add(\"media--source\")",
