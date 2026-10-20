@@ -61,8 +61,8 @@ GNEWS_EVERY_HOURS = 3        # 6 categorías x 8 corridas/día = 48 solicitudes 
 SITE_NAME = "Noticias del Momento"
 SITE_TITLE = "Noticias de Chile y el mundo hoy | Noticias del Momento"
 SITE_DESCRIPTION = (
-    "Consulta noticias recientes de Chile y el mundo: nacional, regiones, política, "
-    "economía, tecnología, salud, clima, cultura y deportes, con enlaces a los medios originales."
+    "Noticias de Chile y el mundo: nacional, regiones, política, economía, tecnología, "
+    "salud, clima, cultura y deportes, con enlaces a los medios originales."
 )
 
 GOOGLE_RSS = "https://news.google.com/rss/headlines/section/topic/{topic}?hl=es-419&gl=CL&ceid=CL:es-419"
