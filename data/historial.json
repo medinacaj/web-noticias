@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T08:18:09Z",
+ "actualizado": "2026-10-20T09:04:58Z",
  "noticias": [
   {
    "category": "internacional",
@@ -138,6 +138,21 @@
    "first_seen": "2026-10-20T07:29:02Z",
    "image_checked_at": "2026-10-20T07:29:02.525583Z",
    "coverages": []
+  },
+  {
+   "category": "regiones",
+   "title": "80 mujeres habrían fallecido por cáncer de mama en la Región de La Araucanía en 2025",
+   "summary": "",
+   "image": "",
+   "source_url": "https://temucodiario.cl",
+   "sources": [
+    "TemucoDiario.cl"
+   ],
+   "coverages": [],
+   "link": "https://temucodiario.cl/2026/10/20/80-mujeres-habrian-fallecido-por-cancer-de-mama-en-la-region-de-la-araucania-en-2025/",
+   "published": "2026-10-20T02:50:34Z",
+   "first_seen": "2026-10-20T09:04:58Z",
+   "image_checked_at": "2026-10-20T09:04:58.739835Z"
   },
   {
    "category": "nacional",
@@ -393,6 +408,21 @@
    "coverages": []
   },
   {
+   "category": "politica",
+   "title": "Cámara aprueba proyecto que agiliza expulsiones de migrantes: Así queda la iniciativa que pasa al Senado",
+   "summary": "",
+   "image": "https://media.cnnchile.com/2026/10/Gobierno-suma-1.764-expulsiones-tras-concretarse-nuevo-vuelo-FACH-con-destino-Peru-y-Colombia-768x512.jpeg",
+   "source_url": "https://www.cnnchile.com",
+   "sources": [
+    "CNN Chile"
+   ],
+   "coverages": [],
+   "link": "https://www.cnnchile.com/pais/camara-aprueba-proyecto-que-agiliza-expulsiones-de-migrantes-asi-queda-la-iniciativa-que-pasa-al-senado/",
+   "published": "2026-10-19T23:47:54Z",
+   "first_seen": "2026-10-20T09:04:58Z",
+   "image_checked_at": "2026-10-20T09:04:58.739835Z"
+  },
+  {
    "category": "nacional",
    "title": "No era un tornado: DMC aclara qué fenómeno ocurrió en Estación Central el pasado martes 13",
    "summary": "",
@@ -523,6 +553,21 @@
    "published": "2026-10-19T21:35:49Z",
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Corte da portazo a estudiante USS sancionado por acoso sexual durante fiesta mechona en Concepción",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989335-estudiantes-uss.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/19/corte-da-portazo-a-estudiante-uss-sancionado-por-acoso-sexual-durante-fiesta-mechona-en-concepcion.shtml",
+   "published": "2026-10-19T21:26:24Z",
+   "first_seen": "2026-10-20T09:04:58Z",
+   "image_checked_at": "2026-10-20T09:04:58.739835Z"
   },
   {
    "category": "internacional",
@@ -836,6 +881,21 @@
    "source_url": "https://www.biobiochile.cl/noticias/internacional/eeuu/2026/10/19/donald-trump-acepta-reunirse-con-xi-jinping-y-vladimir-putin-para-negociar-fin-de-la-guerra-en-ucrania.shtml"
   },
   {
+   "category": "deportes",
+   "title": "Marcó doblete por segundo duelo consecutivo: Jordhy Thompson fue protagonista en empate de Orenburg",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6989203-marco-doblete-por-segundo-duelo-consecutivo_-jordhy-thompson-fue-protagonista-en-empate-de-orenburg.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/10/19/marco-doblete-por-segundo-duelo-consecutivo-jordhy-thompson-fue-protagonista-en-empate-de-orenburg.shtml",
+   "published": "2026-10-19T20:02:18Z",
+   "first_seen": "2026-10-20T09:04:58Z",
+   "image_checked_at": "2026-10-20T09:04:58.739835Z"
+  },
+  {
    "category": "nacional",
    "title": "Gobierno da a conocer los tres polígonos de seguridad en la RM ante sistema frontal",
    "summary": "",
@@ -1068,7 +1128,8 @@
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile",
-    "RFI"
+    "RFI",
+    "Canal 9 Bío Bío Televisión"
    ],
    "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/10/19/gobierno-suspende-clases-en-16-comunas-de-la-region-de-valparaiso-ante-sistema-frontal.shtml",
    "published": "2026-10-19T18:45:38Z",
@@ -1846,7 +1907,8 @@
    "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/19/periodista-de-chv-juan-vera-conto-cuando-le-fueron-infiel-en-su-propia-casa-mujer-sin-alma.shtml",
    "published": "2026-10-19T15:31:18Z",
    "first_seen": "2026-10-20T06:53:28Z",
-   "image_checked_at": "2026-10-20T06:53:28.053150Z"
+   "image_checked_at": "2026-10-20T06:53:28.053150Z",
+   "coverages": []
   },
   {
    "category": "economia",
@@ -1860,7 +1922,8 @@
    "published": "2026-10-19T15:24:00Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "image_checked_at": "2026-10-20T05:36:05.913844Z",
-   "source_url": "https://www.df.cl/empresas/construccion/tras-vencimiento-de-concesion-y-en-plena-disputa-judicial-municipalidad-de"
+   "source_url": "https://www.df.cl/empresas/construccion/tras-vencimiento-de-concesion-y-en-plena-disputa-judicial-municipalidad-de",
+   "coverages": []
   },
   {
    "category": "internacional",
@@ -1910,6 +1973,20 @@
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.lacuarta.com",
    "image_checked_at": "2026-10-20T05:43:55.557181Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Adolescente de 16 años es hallada muerta en cité de Independencia",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.24horas.cl",
+   "sources": [
+    "24horas"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSk1kYkl2R3ZWb2xHYlpHUVJacUJfSkxqc3J1R0dpQkZVR2RRMERGVHRVQTBpYUNFNVNfM3NXd3NLQnhkVU9PUURLNDdCYlRqdzdya2JjTF9aSXpDRVN6V01PZkFfd0FSdmI5a3Y0THJtZmZHbDlIRm5PVmdKRDlpZU5sTms0bjhHSTdycUk1blQwbldkdXFJbTVjcVI0czRxVVp6ZE1hM1FxaldL0gGyAUFVX3lxTE5Ra0s5QVRlUkI5UktyQWhobmd3SkVGMERRaVFNMGlPYllrN2hBUU9SUU9oc0l2Vk03UE1YS2FvcmJBQlgzQzFTbGthY3Q3TF91M3JXRmowelVsT0hHcDJObVMtekZsMVcxZF8xQjZHSnprNkNYdlNiVUt4bTdIMVdaay1WSE5Ma1pNd2ljcjhxWm5reGJpaW04VkI3SHJqVXFYZ2wxYkUtckpTQTNfUC1weGc?oc=5",
+   "published": "2026-10-19T15:05:00Z",
+   "first_seen": "2026-10-20T09:04:58Z"
   },
   {
    "category": "internacional",
@@ -2013,21 +2090,6 @@
    "first_seen": "2026-10-20T03:15:08Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z",
    "coverages": []
-  },
-  {
-   "category": "nacional",
-   "title": "Fracasa nueva preparación de juicio oral contra Cathy Barriga: segundo juez también se inhabilitó",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988633-fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga_-segundo-juez-tambien-se-inhabilito.png",
-   "sources": [
-    "BioBioChile",
-    "La Tercera"
-   ],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga-segundo-juez-tambien-se-inhabilito.shtml",
-   "published": "2026-10-19T14:35:33Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "image_checked_at": "2026-10-20T05:25:00.620401Z",
-   "source_url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga-segundo-juez-tambien-se-inhabilito.shtml"
   },
   {
    "category": "nacional",
@@ -2142,6 +2204,22 @@
    "coverages": []
   },
   {
+   "category": "nacional",
+   "title": "Fracasa nueva preparación de juicio oral contra Cathy Barriga: segundo juez también se inhabilitó",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988633-fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga_-segundo-juez-tambien-se-inhabilito.png",
+   "sources": [
+    "BioBioChile",
+    "La Tercera"
+   ],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga-segundo-juez-tambien-se-inhabilito.shtml",
+   "published": "2026-10-19T13:59:58Z",
+   "first_seen": "2026-10-19T15:49:30Z",
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "source_url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/19/fracasa-nueva-preparacion-de-juicio-oral-contra-cathy-barriga-segundo-juez-tambien-se-inhabilito.shtml",
+   "coverages": []
+  },
+  {
    "category": "internacional",
    "title": "La nueva oleada de drogas sintéticas caseras que se propaga por EE.UU. y agrava la crisis del fentanilo",
    "summary": "La BBC recoge testimonios de consumidores, traficantes, personal penitenciario y trabajadores de centros de rehabilitación, mientras el país lucha contra una nueva y mortal epidemia de drogas.",
@@ -2189,6 +2267,21 @@
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.dw.com",
    "image_checked_at": "2026-10-20T05:36:05.913844Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Advertir es lealtad con Chile: ignorar el riesgo compromete su seguridad",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6988542-advertir-es-lealtad-con-chile-ignorar-el-riesgo-compromete-seguridad.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/opinion/columnas-bbcl/2026/10/19/advertir-es-lealtad-con-chile-ignorar-el-riesgo-compromete-su-seguridad.shtml",
+   "published": "2026-10-19T13:49:44Z",
+   "first_seen": "2026-10-20T09:04:58Z",
+   "image_checked_at": "2026-10-20T09:04:58.739835Z"
   },
   {
    "category": "internacional",
@@ -2754,7 +2847,8 @@
    "published": "2026-10-19T09:45:29Z",
    "first_seen": "2026-10-19T15:49:30Z",
    "image_checked_at": "2026-10-20T05:49:04.488112Z",
-   "source_url": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/"
+   "source_url": "https://www.lacuarta.com/espectaculos/noticia/diana-bolocco-envio-sentido-mensaje-a-luz-jimenez-tras-la-muerte-de-su-hija-en-nombre-del-programa-y-mio/",
+   "coverages": []
   },
   {
    "category": "deportes",
@@ -2782,85 +2876,6 @@
    "first_seen": "2026-10-20T05:25:00Z",
    "image_checked_at": "2026-10-20T05:56:57.552543Z",
    "coverages": []
-  },
-  {
-   "category": "nacional",
-   "title": "\"Me tiembla todo cuando viene el ajuste\": un cura y la cruz de convivir con el peaje más caro de Chile",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "BioBioChile"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNbG9LX0lHQlRZQ2MwRUZXeFNWT1JLWl9YaHR4WjlfZkNfMDJWMjN5d1IyRTVOa2FYdE56d2l3MWVLRWFyN2xPVG9MdWgxeEJ2VzF3bzVrOTBqeWVGN0FvME5rWEM0SmxraGIydUUyUDNsMUJPb1BpaEVJUnczNEptZVNxd1NCVDB0UFZYdTRhTmR4NWt6N3hfV1BhUHVGRS1SdktqQXFfbGxaYTBxVmJtVlBSSmFEYnVBMkRfUHFkeFNySnVXZHJSdUZjM3p4bHhMTTR6UE9Ic1NRclAzX0dJQ2xCbU9RTTk3SHFnNXEtWlFnemp4VWZvNGlSTHpHRzJmRC1RV2poZWNfWTUxcHNER29wbWVEZw?oc=5",
-   "published": "2026-10-19T09:00:30Z",
-   "first_seen": "2026-10-19T15:49:30Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Asociación de Notarios y Conservadores elige nueva directiva para 2027 y exabogado de Colonia Dignidad logra primera mayoría",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOa1Z2SXFqNHFTaklLUFpkVFRFck5wVE1YOFFQMk1kaDFQcUFoQ1FEYXZpbmRBdFdIdEprb3Z6ckpENGhKeldPQUdCRy1DSHAyT3pmRTF2NXN3RkZMUk50YWlreVlFQXJ1UmoxSU5QZ1ZadEk5bm9BY3BnVmFkMWQ1NjdFZll4VVZxWXBGWnM1cnpBV0w2YlE1cnlGTGR4REV2TWxpZGRnU1JuSFZHMW96X3RoOVQ0TWp4QTZXSDRUXzhueWtXdEVNVUp5ZzZMOXo1dXFtMTFHYzJ4TXJvZWhyOGRjdGQ3c1NWZVNOU2ttMWhMWXltdmVKRmpBcnDSAZ4CQVVfeXFMTXBDRjNXU0RBWUtuQ0VHbnJaQzJBd3F5TGVSOFhnSlVPRkVETlBpaWY5VVVFSVBiSXFkelExTzdKbVpPRnZGOFJBc1h3QkZiZUpJRGdGd25yZG81MTg1b2lhOU5qOGdLRzF3MTR0ZjJWWk1zOFhEeHNueWpTWTJ3czdGTlZZTUo0MlJPa1otYlYtbk5DdlpDcHdaT2Z2eUQ1Qzd1NTFyV09UNUZ0NmNEMWRoOHdhTTc1NW1PZlAycmR0NHhZRTdXTWZ0MFRHcUtCMTlfLXNEa0h5Q3MzaW53bGNEWEgtdWFYeTJaSHlMUnczVk5xNHRjSHZOOEJBcTA2UkhfQmx3YWtwM1NTcGpoU1Y0V0FSSTVGVU0tVlBGZw?oc=5",
-   "published": "2026-10-19T09:00:01Z",
-   "first_seen": "2026-10-19T15:49:30Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Oficialismo blinda a ministro Quiroz por críticas de una parte del sector en medio del debate por el Presupuesto 2027",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQc185UDA2NXRHYVJXaldfNHJBQTVxNWppdThVcWdTNDdyVTdXYk03TmtFblc1aE5kVGZ1U1BGc2pRS2JlNjFkUTNBWnkwbGNEZUVQeVVERmdPTURHN0pDVTFxVnlENDRBNDR3QVpMdmFhLWJlYkRKTDRreDcxaHNXaHY4aGQtc0VBYndUOHR2TTlWM2VBM29oRjlWYndQLUtkS3BKUGZqb1JaSE54NmxkX2dmajFETGFWTDBhNlBLeXl6WlFzZ0szZnJpaFpCUGNWZGFQTmJ4Nk40aG96X1kxVDBBbEd6bzdMRlNRN2wwMXN3WDA?oc=5",
-   "published": "2026-10-19T09:00:01Z",
-   "first_seen": "2026-10-19T15:49:30Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Defensoría de las Víctimas y Ley Nain Retamal 2.0 con discusión inmediata: gobierno acelera el tranco en agenda de seguridad",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/EJYFRGJAAZA47EHCD2CHN3R3XI.jpg?auth=8d9bbae3a4672bbeb063270e2c3cce0ff56bf214a9003108e52a3d90e8c32495&height=630&width=1200&smart=true",
-   "sources": [
-    "La Tercera"
-   ],
-   "link": "https://www.latercera.com/politica/noticia/defensoria-de-las-victimas-y-ley-nain-retamal-20-con-discusion-inmediata-gobierno-acelera-el-tranco-en-agenda-de-seguridad/",
-   "published": "2026-10-19T09:00:01Z",
-   "first_seen": "2026-10-19T15:49:30Z",
-   "image_checked_at": "2026-10-20T05:36:05.913844Z",
-   "source_url": "https://www.latercera.com/politica/noticia/defensoria-de-las-victimas-y-ley-nain-retamal-20-con-discusion-inmediata-gobierno-acelera-el-tranco-en-agenda-de-seguridad/"
-  },
-  {
-   "category": "economia",
-   "title": "Trabajo Minería: Finning abre 9 vacantes en Antofagasta",
-   "summary": "",
-   "image": "https://chilepaisminero.com/wp-content/uploads/2026/10/IMG_3180.jpeg",
-   "source_url": "https://chilepaisminero.com",
-   "sources": [
-    "Chile País Minero"
-   ],
-   "link": "https://chilepaisminero.com/trabajo-mineria-finning-abre-9-vacantes-en-antofagasta/",
-   "published": "2026-10-19T09:00:00Z",
-   "first_seen": "2026-10-20T03:15:08Z",
-   "image_checked_at": "2026-10-20T05:36:05.913844Z",
-   "coverages": []
-  },
-  {
-   "category": "salud-ciencia",
-   "title": "Casi el 20% de Chile tiene 60 años o más: aumentan las ITS y especialistas llaman a derribar mitos sobre la sexualidad en personas mayores",
-   "summary": "",
-   "image": "https://presslatam.cl/wp-content/uploads/2026/10/DKT-TERCERA-EDAD-222.jpg",
-   "source_url": "https://presslatam.cl",
-   "sources": [
-    "PressLatam"
-   ],
-   "link": "https://presslatam.cl/2026/10/casi-el-20-de-chile-tiene-60-anos-o-mas-aumentan-las-its-y-especialistas-llaman-a-derribar-mitos-sobre-la-sexualidad-en-personas-mayores/",
-   "published": "2026-10-19T08:37:10Z",
-   "first_seen": "2026-10-20T05:25:00Z",
-   "image_checked_at": "2026-10-20T05:56:57.552543Z"
   }
  ]
 }
