@@ -58,6 +58,20 @@ class PublisherImagesTests(unittest.TestCase):
                 fetch_image=lambda url: ""), (0, 0))
         self.assertEqual(story["image"], "")
 
+    def test_global_headline_only_links_skip_editor_image_requests(self):
+        now = datetime(2026, 10, 20, tzinfo=timezone.utc)
+        story = {"category": "internacional", "title": "Reporte del mundo",
+                 "sources": ["Reuters"], "image": "",
+                 "link": "https://news.google.com/rss/articles/ABC",
+                 "image_fetch_disabled": True}
+        selection = {"lead": story, "secondary": [], "by_category": {}}
+        def unexpected(*args, **kwargs):
+            raise AssertionError("No consultar artículos externos para recuperar imágenes")
+        self.assertEqual(enrich_visible_images(
+            [story], selection, now, decoder=unexpected, fetch_image=unexpected),
+            (0, 0))
+        self.assertEqual(story["image"], "")
+
     def test_google_links_identified_only_by_hostname(self):
         self.assertTrue(is_google_news("https://news.google.com/rss/articles/ABC"))
         self.assertFalse(is_google_news("https://news.google.com.evil.test/rss/articles/ABC"))
