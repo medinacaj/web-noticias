@@ -59,10 +59,10 @@ GNEWS_API_KEY = os.environ.get("GNEWS_API_KEY", "").strip()
 GNEWS_EVERY_HOURS = 3        # 6 categorías x 8 corridas/día = 48 solicitudes (límite gratis: 100)
 
 SITE_NAME = "Noticias del Momento"
-SITE_TITLE = "Noticias del Momento — Últimas noticias de Chile y el mundo hoy"
+SITE_TITLE = "Noticias de Chile y el mundo hoy | Noticias del Momento"
 SITE_DESCRIPTION = (
-    "Las noticias más relevantes de Chile y el mundo, actualizadas cada hora: nacional, "
-    "internacional, economía, tecnología, deportes y cultura, con enlace a cada fuente."
+    "Consulta noticias recientes de Chile y el mundo: nacional, regiones, política, "
+    "economía, tecnología, salud, clima, cultura y deportes, con enlaces a los medios originales."
 )
 
 GOOGLE_RSS = "https://news.google.com/rss/headlines/section/topic/{topic}?hl=es-419&gl=CL&ceid=CL:es-419"
@@ -767,24 +767,22 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
     if leftover:
         raise SystemExit(f"ERROR: la plantilla quedó con marcadores sin reemplazar: {leftover}")
 
-    # Newsletter: vista pública, sin enviar correos ni recolectar direcciones.
+    # Páginas propias y estables: no convertir enlaces a medios en páginas de noticias ficticias.
+    from scripts.seo_pages import render_about_page, render_sitemap
     newsletter_html = render_newsletter(
         stories, now, SITE_URL, newsletter_url, cancel_url if newsletter_url else "")
+    about_html = render_about_page(SITE_URL)
     os.makedirs(out_dir, exist_ok=True)
     if os.path.isdir(STATIC_DIR):
         shutil.copytree(STATIC_DIR, out_dir, dirs_exist_ok=True)
 
     files = {
         "index.html": page,
+        "sobre-el-portal.html": about_html,
         "boletin-diario.html": newsletter_html,
         "404.html": PAGE_404.replace("%%HOME%%", esc(SITE_URL + "/")),
         "robots.txt": f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
-        "sitemap.xml": (
-            '<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            f"  <url>\n    <loc>{esc(SITE_URL)}/</loc>\n    <lastmod>{to_iso(now)}</lastmod>\n  </url>\n"
-            "</urlset>\n"
-        ),
+        "sitemap.xml": render_sitemap(SITE_URL, to_iso(now)),
     }
     for name, content in files.items():
         with open(os.path.join(out_dir, name), "w", encoding="utf-8") as handle:
