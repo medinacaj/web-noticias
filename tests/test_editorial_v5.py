@@ -13,15 +13,19 @@ class EditorialV5Tests(unittest.TestCase):
         for marker in ('id="preferences-panel" hidden', 'id="preferences-toggle"',
                        'id="source-preference"', 'id="category-preference"',
                        'id="source-sort"', 'id="density-switch"',
-                       'id="text-size"', 'id="reading-filter"'):
+                       'id="text-size"'):
             self.assertIn(marker, self.page)
 
     def test_library_is_local_and_bounded(self):
         for marker in ('id="library-panel" hidden', 'id="saved-stories"',
-                       'id="reading-history"', 'noticias:library:v1',
-                       'noticias:history:v1', 'MAX_RECORDS = 120',
+                       'noticias:library:v1', 'MAX_RECORDS = 120',
                        'DAYS = 30 * 86400000', 'aria-pressed'):
             self.assertIn(marker, self.page)
+
+    def test_portal_has_no_personal_read_tracking(self):
+        for token in ('id="reading-filter"', 'id="reading-status"', 'id="reading-history"',
+                      'id="clear-reader-history"', 'function applyReadingFilter()'):
+            self.assertNotIn(token, self.page)
 
     def test_third_layout_is_independent_from_editorial(self):
         for marker in ('.is-headlines .section-grid', '.is-compact .section-grid',
