@@ -14,7 +14,11 @@
 
 Web Noticias se sirve como proyecto en `https://medinacaj.github.io/web-noticias/`. Su repositorio **no controla** `https://medinacaj.github.io/ads.txt`: generar `/web-noticias/ads.txt` no equivale a un archivo de la raíz del host.
 
-AdSense permite añadir dominios y ciertos subdominios hospedados por plataformas; no asumir que aprobará una ruta de GitHub Pages o que permitirá verificar la propiedad del dominio compartido. Debe comprobarse la aceptación **dentro de la cuenta del usuario**. Recomendación: configurar un dominio personalizado propio que resuelva en la raíz de la web (por ejemplo, `https://noticias.example.cl/`) y verificar ese dominio en Google. No se ha adquirido ni configurado ningún dominio.
+**No es obligatorio comprar un dominio por ahora.** `github.io` está inscrito en la lista pública de sufijos (Public Suffix List) y las normas de AdSense permiten solicitar la revisión de subdominios de esos sufijos. La opción gratuita a evaluar es servir el portal como **sitio de usuario de GitHub Pages** en `https://medinacaj.github.io/`, desde un repositorio llamado `medinacaj.github.io` que el usuario controle. En ese caso la raíz del host podría publicar `https://medinacaj.github.io/ads.txt`, sin cambiar de plataforma. **La aprobación de Google no está confirmada**, y el sitio debe aportar contenido propio de valor suficiente.
+
+**Decisión actual del usuario:** mantener por ahora la URL `https://medinacaj.github.io/web-noticias/`. No mover contenido, no crear el repositorio de raíz ni cambiar `SITE_URL` hasta tener aprobación para esa migración. Con esa URL de proyecto, el generador deja los anuncios deshabilitados para no simular acceso a `/ads.txt` del host. Un dominio propio sigue siendo una alternativa posterior, no un requisito impuesto.
+
+Fuentes: [AdSense: tipos de sitio permitidos](https://support.google.com/adsense/answer/12170421?hl=en), [Public Suffix List actual](https://publicsuffix.org/list/public_suffix_list.dat), [Github Pages: sitios de usuario](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 
 ## Variables de GitHub Actions
 
@@ -25,9 +29,9 @@ En el repositorio `Settings → Secrets and variables → Actions → Variables`
 | `ADSENSE_PUBLISHER_ID` | `ca-pub-1234567890123456` | ID real del editor AdSense (16 dígitos). Permite publicar la etiqueta meta de verificación. Es público, no una contraseña. |
 | `ADSENSE_READY` | `false` | Solo debe ser `true` después de revisar la aprobación y privacidad. |
 | `ADSENSE_PRIVACY_URL` | `https://tudominio.cl/privacidad` | URL pública HTTPS que describa las tecnologías publicitarias, terceros y derechos de los usuarios. |
-| `SITE_URL` | `https://tudominio.cl` | URL oficial del sitio alojado en la raíz del dominio, sin rutas ni parámetros. |
+| `SITE_URL` | `https://medinacaj.github.io` | **Solo si el sitio completo se publica en la raíz del host**; también admite raíz HTTPS de un dominio propio. No cambiar por ahora. |
 
-**Estos son ejemplos, no configuración real.** No ingresar un ID de ejemplo ni afirmar que la aprobación ya existe. Nunca cambiar `SITE_URL` antes de que el dominio personalizado funcione de manera comprobable con GitHub Pages y el certificado TLS.
+**Estos son ejemplos, no configuración real.** No ingresar un ID de ejemplo ni afirmar que la aprobación ya existe. Nunca cambiar `SITE_URL` antes de comprobar que la nueva URL raíz contiene realmente el portal y que HTTPS y los enlaces funcionan.
 
 ### Dos etapas
 
@@ -35,9 +39,9 @@ En el repositorio `Settings → Secrets and variables → Actions → Variables`
 
 **2. Publicidad:** una vez que AdSense marque el sitio como **Listo**, que esté disponible `https://DOMINIO/ads.txt` con el ID verdadero del editor, que se haya publicado una política de privacidad adecuada y que se hayan revisado las opciones de consentimiento aplicables, definir `ADSENSE_READY=true`.
 
-La implementación exige ID válido, `ADSENSE_READY=true`, `ADSENSE_PRIVACY_URL` HTTPS y sitio `SITE_URL` en raíz de un dominio distinto a `github.io`. De lo contrario omite por completo el script y los anuncios, sin cambiar el diseño.
+La implementación exige ID válido, `ADSENSE_READY=true`, `ADSENSE_PRIVACY_URL` HTTPS y `SITE_URL` en la raíz de un host admisible: puede ser un dominio propio o el sitio personal `usuario.github.io/`, **pero no** un sitio de proyecto bajo `usuario.github.io/repositorio/`. De lo contrario omite el script y los anuncios.
 
-En un dominio propio de raíz se genera `ads.txt` con la directiva estándar de vendedor **DIRECT** para la cuenta correspondiente; comprobar el archivo público en `https://DOMINIO/ads.txt`. No se publica `ads.txt` desde la subruta GitHub Pages porque no resuelve el requisito real.
+En una raíz de host admisible se genera `ads.txt` con la directiva de vendedor **DIRECT**; comprobar que está accesible en `https://HOST/ads.txt`. No se publica `ads.txt` desde la subruta GitHub Pages porque no resuelve el requisito real.
 
 El enlace de privacidad se muestra en el pie solo cuando el ID real y la URL HTTPS estén configurados.
 
@@ -67,4 +71,4 @@ Las pruebas verifican que la configuración incompleta **no** añada solicitudes
 - [Guía de ads.txt](https://support.google.com/adsense/answer/12171612?hl=es-CL)
 - [Cambios en sitios admitidos](https://support.google.com/adsense/answer/12170421?hl=en)
 
-**Puerta de integración GitHub:** este PR modifica el workflow de despliegue y prepara la carga de scripts publicitarios de terceros. El protocolo actual exige una revisión humana antes de fusionarlo, incluso con CI en verde.
+**Puerta de integración GitHub:** este PR modifica el workflow de despliegue y prepara la carga de scripts publicitarios de terceros. El protocolo exige revisión humana antes de fusionarlo, incluso con CI en verde. Mantener el sitio actual y `ADSENSE_READY=false` hasta que el usuario decida si publicar el portal en la raíz `medinacaj.github.io/`.
