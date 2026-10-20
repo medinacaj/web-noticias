@@ -2,7 +2,7 @@
 import unittest
 from datetime import datetime, timezone
 
-from fetch_noticias import source_domain, source_mark, meta_html, merge, figure_html
+from fetch_noticias import source_domain, source_mark, meta_html, merge, figure_html, render_sections
 
 
 class SourceFaviconsTests(unittest.TestCase):
@@ -48,8 +48,39 @@ class SourceFaviconsTests(unittest.TestCase):
         self.assertIn("medio.cl", rendered)
         self.assertLess(rendered.index("photo.jpg"), rendered.index('class="media-badge"'))
 
-    def test_no_badge_without_image(self):
-        self.assertEqual(figure_html({"image": "", "sources": ["Medio"]}), "")
+    def test_missing_photo_displays_publisher_thumbnail(self):
+        rendered = figure_html({"image": "", "sources": ["Medio"],
+                                "source_url": "https://medio.cl"})
+        self.assertIn('class="media media--source"', rendered)
+        self.assertIn('class="source-visual"', rendered)
+        self.assertIn("medio.cl", rendered)
+        self.assertNotIn('class="media-badge"', rendered)
+
+    def test_no_domain_still_has_visible_monogram(self):
+        rendered = figure_html({"image": "", "sources": ["Medio"],
+                                "link": "https://news.google.com/rss/articles/abc"})
+        self.assertIn('class="source-initial">M', rendered)
+        self.assertIn("Medio", rendered)
+
+    def test_publisher_name_is_escaped_in_image_placeholder(self):
+        rendered = figure_html({"image": "", "sources": ['<bad attr="x">']})
+        self.assertNotIn("<bad", rendered)
+        self.assertIn("&lt;bad", rendered)
+
+    def test_section_uses_compact_media_for_all_six_stories(self):
+        now = datetime(2026, 10, 20, tzinfo=timezone.utc)
+        stories = [
+            {"category": "nacional", "title": f"Noticia de prueba número {i}",
+             "sources": ["Medio"], "source_url": "https://medio.cl",
+             "image": "", "link": f"https://medio.cl/{i}",
+             "published": "2026-10-20T00:00:00Z", "summary": ""}
+            for i in range(6)
+        ]
+        rendered = render_sections({"nacional": stories}, now)
+        self.assertEqual(rendered.count('class="media media--source"'), 6)
+        self.assertEqual(rendered.count('class="news-body"'), 6)
+        self.assertEqual(rendered.count('class="compact"'), 5)
+        self.assertEqual(rendered.count('class="feature"'), 1)
 
     def test_merge_preserves_editorial_url(self):
         now = datetime(2026, 10, 19, tzinfo=timezone.utc)
