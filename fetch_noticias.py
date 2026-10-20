@@ -707,6 +707,15 @@ def main():
         print("ERROR: no hay noticias disponibles en la ventana de tiempo; no se publica el sitio.", file=sys.stderr)
         sys.exit(1)
 
+    if not args.solo_render and not args.importar:
+        # Enriquecer solo artículos visibles para evitar consultas masivas a editores.
+        # Los errores de terceros nunca deben impedir publicar noticias.
+        try:
+            from scripts.article_images import enrich_visible_images
+            enrich_visible_images(stories, select(stories, now), now)
+        except Exception as error:
+            print(f"[aviso] Recuperación editorial no disponible: {error}")
+
     save_history(args.historial, stories, now)
     build_site(stories, now, args.salida, args.ventana)
 
