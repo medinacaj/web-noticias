@@ -105,6 +105,12 @@
   .search-results li{padding:12px 0;border-bottom:1px solid var(--rule);}
   .search-results a{display:block;font:600 18px/1.3 var(--serif);}
   .search-results a:hover{text-decoration:underline;text-underline-offset:3px;}
+  .search-filters{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0;}
+  .search-filters label{display:flex;flex-direction:column;gap:4px;font:600 11px var(--sans);color:var(--muted);}
+  .search-filters select{min-height:42px;min-width:150px;max-width:100%;padding:8px 10px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:6px;font:500 13px var(--sans);}
+  .search-results mark{background:#FFF0AE;color:var(--ink);border-radius:2px;padding:0 1px;}
+  .search-results .search-result-meta{font:500 12px var(--sans);color:var(--muted);margin-top:5px;}
+  .search-empty{padding:18px 0;color:var(--muted);font-size:14px;}
 
   /* ---------- Lo último ---------- */
   .breaking{border-bottom:1px solid var(--rule);}
@@ -263,7 +269,19 @@
   .is-read .read-marker{background:transparent;border:1px solid var(--card-muted);}
   .lead.is-read,.feature.is-read,.rail-list li.is-read,.compact-list li.is-read{border-color:color-mix(in srgb,var(--card-rule) 60%,transparent);}
   .is-read h2 a,.is-read h3 a{color:var(--card-muted);}
-  .news-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-bottom:16px;}
+  .news-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:16px;flex-wrap:wrap;}
+  .news-toolbar select{background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:8px;color:var(--ink);font:500 12px var(--sans);}
+  .reading-size{font-size:12px;color:var(--muted);}
+  #contenido[data-text-size="large"] .lead-title{font-size:clamp(32px,3.3vw,46px);}
+  #contenido[data-text-size="large"] .feature-title,#contenido[data-text-size="large"] .compact h3{font-size:20px;}
+  #contenido[data-text-size="large"] .rail-item h3{font-size:21px;}
+  #contenido[data-text-size="large"] .dek{font-size:19px;}
+  #contenido[data-text-size="large"] .section-grid .meta{font-size:13px;}
+  .section-grid [data-filter-hidden],.top-grid [data-filter-hidden]{display:none !important;}
+  .filtered-empty{font:500 14px var(--sans);color:var(--muted);padding:12px 0;}
+  .filtered-empty[hidden]{display:none !important;}
+  .back-to-top{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));right:18px;z-index:30;border:1px solid var(--rule);border-radius:100px;padding:10px 14px;min-height:44px;background:var(--surface);color:var(--ink);font:600 12px var(--sans);box-shadow:var(--card-shadow);cursor:pointer;}
+  .back-to-top[hidden]{display:none !important;}
   .news-toolbar label{font-size:12px;font-weight:600;color:var(--muted);}
   .density-switch{font:600 12px var(--sans);padding:8px 12px;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;cursor:pointer;}
   .density-switch[aria-pressed="true"]{background:var(--navy);color:var(--on-navy);border-color:var(--navy);}
@@ -346,6 +364,10 @@
     .news-toolbar{gap:8px;flex-wrap:wrap;justify-content:flex-end;}
     .reading-status{flex-basis:100%;order:2;}
     .density-switch{min-height:44px;}
+    .news-toolbar select{min-height:44px;}
+    .search-filters select{min-width:0;width:100%;}
+    .search-filters label{flex:1 1 140px;}
+    .back-to-top{right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));}
     .rail-list{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;gap:10px;}
     .lead{--pad:18px;}
     .lead-title{font-size:clamp(26px,6vw,34px);}
@@ -368,6 +390,7 @@
     .footer-nav,.footer-about{grid-column:1 / -1;}
     .meta a,.meta time{min-height:24px;}
   }
+  @media(max-width:360px){.container{padding:0 12px;}.news-toolbar{column-gap:6px;}.rail-list li{grid-template-columns:26px minmax(0,1fr);}.search-input{font-size:20px;}}
   @media (hover:hover) and (pointer:fine){
     .lead:hover .media > img,.feature:hover .media > img,.compact-list li:hover .media > img{transform:scale(1.025);}
   }
@@ -412,6 +435,7 @@
     <div class="container">
       <label class="search-label" for="search-input">Buscar en las noticias publicadas</label>
       <input class="search-input" id="search-input" type="search" autocomplete="off" placeholder="Ej.: presupuesto, Copa Chile, inteligencia artificial">
+      <div class="search-filters" aria-label="Filtrar búsqueda"><label for="search-category">Categoría<select id="search-category"><option value="">Todas</option></select></label><label for="search-source">Medio<select id="search-source"><option value="">Todos</option></select></label><label for="search-date">Antigüedad<select id="search-date"><option value="">Cualquiera</option><option value="1">Última hora</option><option value="6">Últimas 6 horas</option><option value="24">Últimas 24 horas</option></select></label></div>
       <p class="search-status" id="search-status" aria-live="polite"></p>
       <ul class="search-results" id="search-results"></ul>
     </div>
@@ -421,11 +445,12 @@
 %%BREAKING%%
 
 <main id="contenido" class="container">
-<div class="news-toolbar" aria-label="Opciones de lectura"><span id="reading-status" class="reading-status" aria-live="polite"></span><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div>
+<div class="news-toolbar" aria-label="Opciones de lectura"><span id="reading-status" class="reading-status" aria-live="polite"></span><label for="reading-filter">Mostrar</label><select id="reading-filter" aria-label="Filtrar noticias"><option value="all">Todas</option><option value="unread">Por leer</option><option value="read">Leídas</option><option value="multiple">Varias fuentes</option></select><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div><p id="filter-empty" class="filtered-empty" role="status" hidden>No hay noticias que coincidan con este filtro. Selecciona «Todas» para verlas de nuevo.</p>
 %%TOP%%
 %%CONTEXT%%
 %%SECTIONS%%
 </main>
+<button id="back-to-top" class="back-to-top" type="button" hidden aria-label="Volver a la portada">↑ Portada</button>
 
 <footer class="site-footer">
   <div class="container footer-grid">
