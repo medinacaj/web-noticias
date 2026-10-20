@@ -92,13 +92,10 @@
   .site-nav a{display:flex;align-items:center;min-height:52px;padding:0 12px;white-space:nowrap;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--on-navy-soft);border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
   .site-nav a:hover,.site-nav a:focus-visible{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.07);}
   .site-nav a.is-active{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.10);}
-  .nav-controls{display:none;align-items:center;gap:4px;flex:none;}
-  .js .nav-controls{display:flex;}
-  .nav-arrow,.nav-pause{display:inline-flex;align-items:center;justify-content:center;min-width:32px;min-height:34px;padding:0 5px;border:1px solid rgba(255,255,255,.22);border-radius:5px;background:transparent;color:var(--on-navy);cursor:pointer;font:600 16px/1 var(--sans);}
-  .nav-arrow:hover,.nav-pause:hover,.nav-arrow:focus-visible,.nav-pause:focus-visible{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.5);}
-  .nav-arrow:disabled{opacity:.3;cursor:default;}
-  .nav-pause{font-size:12px;min-width:34px;}
-  .nav-pause[aria-pressed="true"]{background:rgba(255,255,255,.16);}
+  .js .site-nav{cursor:grab;touch-action:pan-x;user-select:none;position:relative;}
+  .js .site-nav.is-dragging{cursor:grabbing;scroll-behavior:auto;}
+  .site-nav[data-paused="true"]{box-shadow:inset 0 -2px 0 rgba(255,255,255,.2);}
+  .site-nav[data-paused="true"]::after{content:"EN PAUSA";pointer-events:none;position:sticky;right:0;float:right;margin-top:-39px;padding:3px 7px;border-radius:3px;background:var(--navy);color:var(--on-navy-soft);font:600 10px/1.4 var(--sans);letter-spacing:.08em;}
   .site-nav a[class^="cat-"]::before,.footer-nav a[class^="cat-"]::before{content:"";display:inline-block;flex-shrink:0;width:8px;height:8px;margin-right:8px;background:var(--cat-b);}
   .icon-btn{display:none;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:0 8px;background:none;border:0;color:var(--on-navy);font:600 12.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;}
   .js .search-toggle{display:inline-flex;margin-left:auto;}
@@ -275,7 +272,7 @@
     .sticky-bar.is-stuck .brand-mini{max-width:200px;}
     .js .menu-toggle{display:inline-flex;}
     .js .site-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.12);max-height:70vh;overflow-y:auto;mask-image:none;}
-    .nav-controls,.js .nav-controls{display:none;}
+    .js .site-nav{cursor:auto;touch-action:auto;user-select:auto;}
     .js .site-nav.open{display:block;}
     .js .site-nav ul{flex-direction:column;}
     .js .site-nav a{min-height:48px;padding:0 18px;border-bottom:1px solid rgba(255,255,255,.08);}
@@ -331,14 +328,9 @@
     <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Secciones
     </button>
-    <nav class="site-nav" id="site-nav" aria-label="Secciones" tabindex="0">
+    <nav class="site-nav" id="site-nav" aria-label="Carrusel de secciones; arrastra para mover, pulsa para pausar o reanudar" title="Arrastra para mover · clic para pausar o reanudar" tabindex="0">
       <ul>%%NAV%%</ul>
     </nav>
-    <div class="nav-controls" role="group" aria-label="Mover menú de secciones">
-      <button type="button" class="nav-arrow" id="nav-prev" aria-label="Secciones anteriores" title="Mover a la izquierda">‹</button>
-      <button type="button" class="nav-pause" id="nav-pause" aria-label="Pausar desplazamiento automático" aria-pressed="false" title="Pausar">Ⅱ</button>
-      <button type="button" class="nav-arrow" id="nav-next" aria-label="Secciones siguientes" title="Mover a la derecha">›</button>
-    </div>
     <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
     </button>
@@ -424,60 +416,88 @@
     nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
   }
 
-  // Navegación desplazable: movimiento manual, pausa, ratón/teclado y preferencia de accesibilidad.
+  // Carrusel: desplazamiento automático, arrastre manual y clic para pausa.
   (function () {
-    var strip = d.getElementById("site-nav"), prev = d.getElementById("nav-prev");
-    var next = d.getElementById("nav-next"), pause = d.getElementById("nav-pause");
-    if (!strip || !prev || !next || !pause) return;
+    var strip = d.getElementById("site-nav");
+    if (!strip) return;
     var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
-    var manualPaused = !!(reduced && reduced.matches);
-    var hovering = false, focusing = false, pointerDown = false;
-    var direction = 1, timer = null, lastManual = 0;
-    function canScroll() { return strip.scrollWidth > strip.clientWidth + 6; }
-    function update() {
-      var max = Math.max(0, strip.scrollWidth - strip.clientWidth);
-      var visible = canScroll();
-      prev.disabled = !visible || strip.scrollLeft < 2;
-      next.disabled = !visible || strip.scrollLeft > max - 2;
-      pause.disabled = !visible;
-      pause.setAttribute("aria-pressed", String(manualPaused));
-      pause.textContent = manualPaused ? "▶" : "Ⅱ";
-      pause.setAttribute("aria-label", manualPaused ? "Reanudar desplazamiento automático" : "Pausar desplazamiento automático");
-      var group = pause.parentNode;
-      if (group) group.hidden = !visible || window.innerWidth <= 767;
+    var paused = !!(reduced && reduced.matches), dragging = false, moved = false;
+    var pressX = 0, startScroll = 0, pointerId = null, lastManual = 0;
+    var hovered = false, focused = false;
+    function canMove() { return strip.scrollWidth > strip.clientWidth + 6 && window.innerWidth > 767; }
+    function updatePause() {
+      strip.dataset.paused = String(paused);
+      strip.setAttribute("aria-label", paused
+        ? "Carrusel de secciones en pausa; pulsa para reanudar, o arrastra"
+        : "Carrusel de secciones en movimiento; pulsa para pausar, o arrastra");
     }
-    function move(sign) {
-      lastManual = Date.now();
-      strip.scrollBy({left: sign * Math.max(145, Math.floor(strip.clientWidth * .65)), behavior:"smooth"});
-    }
-    prev.addEventListener("click", function () {move(-1);});
-    next.addEventListener("click", function () {move(1);});
-    pause.addEventListener("click", function () {manualPaused = !manualPaused; update();});
-    strip.addEventListener("mouseenter", function () {hovering = true;});
-    strip.addEventListener("mouseleave", function () {hovering = false;});
-    strip.addEventListener("focusin", function () {focusing = true;});
-    strip.addEventListener("focusout", function (e) {if (!strip.contains(e.relatedTarget)) focusing = false;});
-    strip.addEventListener("pointerdown", function () {pointerDown = true; lastManual = Date.now();});
-    window.addEventListener("pointerup", function () {pointerDown = false;});
-    strip.addEventListener("wheel", function (e) {
-      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) lastManual = Date.now();
-    }, {passive:true});
-    strip.addEventListener("scroll", update, {passive:true});
-    window.addEventListener("resize", update);
-    if (reduced && reduced.addEventListener) reduced.addEventListener("change", function(e) {
-      if (e.matches) manualPaused = true;
-      update();
+    strip.addEventListener("pointerenter", function () {hovered = true;});
+    strip.addEventListener("pointerleave", function () {hovered = false;});
+    strip.addEventListener("focusin", function () {focused = true;});
+    strip.addEventListener("focusout", function (event) {
+      if (!strip.contains(event.relatedTarget)) focused = false;
     });
-    timer = window.setInterval(function () {
-      if (manualPaused || hovering || focusing || pointerDown || !canScroll() ||
-          window.innerWidth <= 767 || d.hidden || Date.now() - lastManual < 4500 ||
-          (reduced && reduced.matches)) return;
+    strip.addEventListener("pointerdown", function (event) {
+      if (!canMove() || (event.pointerType !== "mouse" && event.pointerType !== "pen")
+          || event.button !== 0) return;
+      dragging = true; moved = false; pointerId = event.pointerId;
+      pressX = event.clientX; startScroll = strip.scrollLeft;
+      lastManual = Date.now();
+    });
+    strip.addEventListener("pointermove", function (event) {
+      if (!dragging || event.pointerId !== pointerId) return;
+      var delta = event.clientX - pressX;
+      if (Math.abs(delta) > 5) {
+        moved = true;
+        if (!strip.classList.contains("is-dragging")) strip.classList.add("is-dragging");
+        strip.scrollLeft = startScroll - delta;
+      }
+    });
+    function endDrag(event) {
+      if (!dragging || event.pointerId !== pointerId) return;
+      dragging = false; pointerId = null;
+      strip.classList.remove("is-dragging");
+      if (moved) lastManual = Date.now();
+    }
+    strip.addEventListener("pointerup", endDrag);
+    strip.addEventListener("pointercancel", endDrag);
+    // Si se arrastró, el enlace no debe abrirse; un clic normal sí funciona.
+    strip.addEventListener("click", function (event) {
+      if (moved) {
+        event.preventDefault(); event.stopPropagation(); moved = false;
+        return;
+      }
+      if (!canMove()) return;
+      paused = !paused; lastManual = Date.now();
+      updatePause();
+    }, true);
+    strip.addEventListener("keydown", function (event) {
+      if (event.target !== strip) return;
+      if (event.key === " " || event.key === "Enter") {
+        event.preventDefault(); paused = !paused; updatePause();
+      } else if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+        event.preventDefault(); lastManual = Date.now();
+        strip.scrollBy({left:event.key === "ArrowRight" ? 160 : -160,behavior:"smooth"});
+      }
+    });
+    strip.addEventListener("wheel", function (event) {
+      if (Math.abs(event.deltaX) > 0) lastManual = Date.now();
+    }, {passive:true});
+    if (reduced && reduced.addEventListener) reduced.addEventListener("change", function (event) {
+      if (event.matches) paused = true;
+      updatePause();
+    });
+    window.setInterval(function () {
+      if (paused || hovered || focused || dragging || d.hidden || !canMove() ||
+          Date.now() - lastManual < 3500 || (reduced && reduced.matches)) return;
       var max = strip.scrollWidth - strip.clientWidth;
-      if (strip.scrollLeft >= max - 3) direction = -1;
-      if (strip.scrollLeft <= 3) direction = 1;
-      strip.scrollBy({left: direction * 92, behavior:"smooth"});
-    }, 2800);
-    update();
+      if (strip.scrollLeft >= max - 3) {
+        strip.scrollTo({left:0,behavior:"instant"});
+      } else {
+        strip.scrollBy({left:90,behavior:"smooth"});
+      }
+    }, 2600);
+    updatePause();
   })();
 
   // «Ver más» revela noticias que ya vienen en el HTML estático.
