@@ -13,7 +13,9 @@ WORLD_NEWS_SOURCES = (
     {"name": "Associated Press", "query": "site:apnews.com", "domain": "apnews.com", "language": "en"},
     {"name": "Al Jazeera English", "query": "site:aljazeera.com", "domain": "aljazeera.com", "language": "en"},
     {"name": "NHK World-Japan", "query": "site:www3.nhk.or.jp/nhkworld", "domain": "nhk.or.jp", "language": "en"},
-    {"name": "The Guardian", "query": "site:theguardian.com/world", "domain": "theguardian.com", "language": "en"},
+    # Reserva editorial: términos de Guardian restringen agregación comercial.
+    # No consultar hasta disponer de permiso o revisión jurídica documentada.
+    {"name": "The Guardian", "query": "site:theguardian.com/world", "domain": "theguardian.com", "language": "en", "enabled": False},
     {"name": "NPR World", "query": "site:npr.org/sections/world", "domain": "npr.org", "language": "en"},
     {"name": "DW Español", "query": "site:dw.com/es", "domain": "dw.com", "language": "es"},
     {"name": "France 24 Español", "query": "site:france24.com/es", "domain": "france24.com", "language": "es"},
@@ -38,12 +40,25 @@ def world_news_google_url(media):
 
 
 def matches_world_source(story, media):
-    """Evita atribuir al medio resultados ajenos devueltos por una búsqueda."""
+    """Verifica la fuente y el destino de cada resultado sin confiar en su rótulo."""
     from urllib.parse import urlsplit
 
-    src = (story.get("source_url") or "").strip()
-    url = urlsplit(src)
-    host = (url.hostname or "").lower().rstrip(".")
+    def safe_parts(value):
+        try:
+            uri = urlsplit((value or "").strip())
+            host = (uri.hostname or "").lower().rstrip(".")
+            if (uri.scheme != "https" or not host or uri.username
+                    or uri.password or uri.port not in (None, 443)):
+                return None
+            return host
+        except (ValueError, UnicodeError):
+            return None
+
     expected = media["domain"]
-    return (url.scheme == "https" and not url.username and not url.password
-            and (host == expected or host.endswith("." + expected)))
+    source_host = safe_parts(story.get("source_url"))
+    link_host = safe_parts(story.get("link"))
+    from_publisher = (lambda host: bool(host) and
+                      (host == expected or host.endswith("." + expected)))
+    # El RSS puede apuntar a Google Noticias antes de resolver el enlace real.
+    return (from_publisher(source_host)
+            and (from_publisher(link_host) or link_host == "news.google.com"))
