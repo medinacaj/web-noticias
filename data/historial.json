@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-20T07:53:17Z",
+ "actualizado": "2026-10-20T08:18:09Z",
  "noticias": [
   {
    "category": "internacional",
@@ -330,7 +330,8 @@
    "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/19/gobierno-decreta-suspension-de-clases-y-evacuaciones-preventivas-ante-ingreso-de-nuevo-sistema-frontal.shtml",
    "published": "2026-10-20T01:00:12Z",
    "first_seen": "2026-10-20T05:10:13Z",
-   "image_checked_at": "2026-10-20T05:10:13.359000Z"
+   "image_checked_at": "2026-10-20T05:10:13.359000Z",
+   "coverages": []
   },
   {
    "category": "regiones",
@@ -462,7 +463,8 @@
    "link": "https://reportea.cl/2026/10/19/jose-ramon-correa-aldo-cornejo-y-otros-los-desconocidos-asesores-en-las-sombras-de-minera-dominga/",
    "published": "2026-10-19T22:28:28Z",
    "first_seen": "2026-10-20T06:53:28Z",
-   "image_checked_at": "2026-10-20T06:53:28.053150Z"
+   "image_checked_at": "2026-10-20T06:53:28.053150Z",
+   "coverages": []
   },
   {
    "category": "politica",
@@ -666,7 +668,8 @@
    "link": "https://www.lacuarta.com/deportes/noticia/la-insolita-multa-que-tendra-que-pagar-cristiano-ronaldo-tras-conflicto-con-entrenador-de-portugal/",
    "published": "2026-10-19T20:53:42Z",
    "first_seen": "2026-10-20T03:15:08Z",
-   "image_checked_at": "2026-10-20T05:10:13.359000Z"
+   "image_checked_at": "2026-10-20T05:10:13.359000Z",
+   "coverages": []
   },
   {
    "category": "deportes",
@@ -907,7 +910,8 @@
    "published": "2026-10-19T19:15:00Z",
    "first_seen": "2026-10-20T00:16:12Z",
    "source_url": "https://www.t13.cl",
-   "image_checked_at": "2026-10-20T05:25:00.620401Z"
+   "image_checked_at": "2026-10-20T05:25:00.620401Z",
+   "coverages": []
   },
   {
    "category": "nacional",
@@ -1246,7 +1250,8 @@
    "published": "2026-10-19T17:57:38Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "image_checked_at": "2026-10-20T05:10:13.359000Z",
-   "source_url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/19/semana-de-bencinas-proyectan-quinta-alza-seguida-y-un-nuevo-dieselazo-al-bolsillo.shtml"
+   "source_url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/19/semana-de-bencinas-proyectan-quinta-alza-seguida-y-un-nuevo-dieselazo-al-bolsillo.shtml",
+   "coverages": []
   },
   {
    "category": "salud-ciencia",
@@ -1520,7 +1525,8 @@
    "published": "2026-10-19T16:35:39Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://redgol.cl",
-   "image_checked_at": "2026-10-20T05:36:05.913844Z"
+   "image_checked_at": "2026-10-20T05:36:05.913844Z",
+   "coverages": []
   },
   {
    "category": "tecnologia",
@@ -1825,7 +1831,8 @@
    "published": "2026-10-19T15:32:00Z",
    "first_seen": "2026-10-19T21:00:14Z",
    "source_url": "https://www.cooperativa.cl",
-   "image_checked_at": "2026-10-20T05:43:55.557181Z"
+   "image_checked_at": "2026-10-20T05:43:55.557181Z",
+   "coverages": []
   },
   {
    "category": "cultura",
@@ -2854,18 +2861,6 @@
    "published": "2026-10-19T08:37:10Z",
    "first_seen": "2026-10-20T05:25:00Z",
    "image_checked_at": "2026-10-20T05:56:57.552543Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Caso Hermosilla: los chats que evidencian cómo Manuel Guerra filtraba causas criminales",
-   "summary": "",
-   "image": "",
-   "sources": [
-    "El Mostrador"
-   ],
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNY1lBSDhoUUhuZlAzRzV5anlTRXNHeEhNOXFGektHdUlDZlJueENDakQtOUs3eFhvcG50ZC1WNS02QUI3S0l4Y1RDY2FVbEItS1lLbDJJUkVWOGVzaTk3RlNLQURSV1lURkNVUUExei1wSVhjRlpkLXd1QTdlNk1UU0NibW5FU2tOS3A1MUt1TEgwZ09DM3VtaVoyZDlSdERoVHlmb0MtZVdGckNTNmVzeE80RnozVDJMZGhGSmY4OF9RMlZSX25jeHpFeU1kZ1hFT0ZMdW5Kalh0WDZqLXNKdVhxVQ?oc=5",
-   "published": "2026-10-19T08:08:56Z",
-   "first_seen": "2026-10-19T15:49:30Z"
   }
  ]
 }
