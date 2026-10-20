@@ -114,8 +114,7 @@
 
   /* ---------- Lo último ---------- */
   .breaking{border-bottom:1px solid var(--rule);}
-  .breaking-inner{display:flex;align-items:center;gap:12px;padding-top:5px;padding-bottom:5px;font-size:14px;min-height:52px;}
-  .breaking-inner > a{flex:1;min-width:0;}
+  .breaking-inner{display:flex;align-items:baseline;gap:14px;padding-top:8px;padding-bottom:8px;font-size:14px;}
   .breaking-label{flex-shrink:0;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);padding-right:14px;border-right:1px solid var(--rule);}
   .breaking a{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;}
   .breaking a:hover{text-decoration:underline;text-underline-offset:3px;}
@@ -266,11 +265,16 @@
   .is-compact .coverage-trigger{font-size:11px;}
   .meta time[data-fresh="true"]{font-weight:700;color:var(--card-link);}
   .breaking time[data-fresh="true"]{color:var(--red);}
-  .news-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-bottom:12px;flex-wrap:wrap;}
-  .breaking .news-toolbar{flex:none;gap:8px;flex-wrap:nowrap;margin:0 0 0 auto;padding-left:12px;border-left:1px solid var(--rule);}
-  .breaking .news-toolbar select,.breaking .news-toolbar button{min-height:36px;}
-  .breaking .news-toolbar label{white-space:nowrap;}
-  .news-toolbar select{background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:8px;color:var(--ink);font:500 12px var(--sans);}
+  .view-options-wrap{position:relative;flex:none;}
+  .js .view-options-toggle{display:inline-flex;margin-left:-12px;}
+  .view-options-toggle[aria-expanded="true"]{background:rgba(255,255,255,.12);}
+  .view-options-panel{position:absolute;right:0;top:calc(100% + 7px);z-index:150;width:245px;max-width:calc(100vw - 24px);padding:15px;border-radius:9px;background:var(--surface);border:1px solid var(--rule);box-shadow:0 8px 20px rgba(6,20,36,.13),0 18px 42px rgba(6,20,36,.13);color:var(--ink);}
+  .view-options-panel[hidden]{display:none;}
+  .view-options-heading{font:700 13px var(--sans);margin:0 0 12px;}
+  .view-options-panel .news-toolbar{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:12px 8px;margin:0;}
+  .view-options-panel .news-toolbar label{font:600 12px var(--sans);color:var(--muted);}
+  .view-options-panel .news-toolbar select{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:7px;color:var(--ink);font:500 12px var(--sans);}
+  .view-options-panel .news-toolbar .density-switch{width:100%;}
   .reading-size{font-size:12px;color:var(--muted);}
   #contenido[data-text-size="large"] .lead-title{font-size:clamp(32px,3.3vw,46px);}
   #contenido[data-text-size="large"] .feature-title,#contenido[data-text-size="large"] .compact h3{font-size:20px;}
@@ -356,10 +360,10 @@
     .top-grid,.section-grid{gap:14px;}
     .section-grid{grid-template-columns:minmax(0,1fr);}
     .is-compact .section-grid{grid-template-columns:minmax(0,1fr);}
-    .news-toolbar{gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+    .view-options-panel .news-toolbar{gap:12px 8px;}
     .reading-status{flex-basis:100%;order:2;}
     .density-switch{min-height:44px;}
-    .news-toolbar select{min-height:44px;}
+    .view-options-panel .news-toolbar select{min-height:44px;}
     .search-filters select{min-width:0;width:100%;}
     .search-filters label{flex:1 1 140px;}
     .back-to-top{right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));}
@@ -385,9 +389,7 @@
     .footer-nav,.footer-about{grid-column:1 / -1;}
     .meta a,.meta time{min-height:24px;}
   }
-  @media(max-width:900px){.breaking-inner{flex-wrap:wrap;row-gap:6px;}.breaking-inner > a{flex:1 1 62%;}.breaking .news-toolbar{flex:1 1 100%;border-left:0;padding:0;justify-content:flex-end;}.breaking .news-toolbar select,.breaking .news-toolbar button{min-height:40px;}}
-  @media(max-width:480px){.breaking-inner{gap:7px;}.breaking time{font-size:11px;}.breaking-label{font-size:10px;padding-right:8px;}.breaking .news-toolbar label{font-size:11px;}}
-  @media(max-width:360px){.container{padding:0 12px;}.news-toolbar{column-gap:6px;}.rail-list li{grid-template-columns:26px minmax(0,1fr);}.search-input{font-size:20px;}}
+  @media(max-width:360px){.container{padding:0 12px;}.view-options-panel{right:0;}.rail-list li{grid-template-columns:26px minmax(0,1fr);}.search-input{font-size:20px;}}
   /* Newsletter: sección independiente, sin formularios que capturen correos falsamente. */
   .newsletter-invite{background:var(--navy);color:var(--on-navy);padding:30px 0;margin-top:42px;}
   .newsletter-invite-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
@@ -442,6 +444,15 @@
     <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
     </button>
+    <div class="view-options-wrap">
+      <button type="button" class="icon-btn view-options-toggle" id="view-options-toggle" aria-label="Opciones de visualización" aria-expanded="false" aria-controls="view-options-panel" title="Opciones de visualización">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.4" fill="var(--navy)"/><circle cx="16" cy="17" r="2.4" fill="var(--navy)"/></svg>
+      </button>
+      <div class="view-options-panel" id="view-options-panel" hidden aria-label="Opciones de visualización">
+        <p class="view-options-heading">Personalizar vista</p>
+        <div class="news-toolbar"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div>
+      </div>
+    </div>
   </div>
   <div class="search-panel" id="search-panel" hidden>
     <div class="container">
@@ -457,7 +468,6 @@
 %%BREAKING%%
 
 <main id="contenido" class="container">
-<div class="news-toolbar" aria-label="Opciones de visualización"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div>
 %%TOP%%
 %%CONTEXT%%
 %%SECTIONS%%
@@ -663,12 +673,29 @@
     updatePause();
   })();
 
-  // Reutilizar la fila «Lo último» para opciones de vista: evitar una banda casi vacía.
-  // Con JS desactivado, los controles conservan su posición original y siguen visibles.
+  // Opciones de vista en la navegación, sin reservar espacio sobre portada.
   (function () {
-    var strip = d.querySelector(".breaking-inner");
-    var toolbar = d.querySelector("main .news-toolbar");
-    if (strip && toolbar) strip.appendChild(toolbar);
+    var toggle = d.getElementById("view-options-toggle");
+    var panel = d.getElementById("view-options-panel");
+    var search = d.getElementById("search-toggle");
+    if (!toggle || !panel) return;
+    function setOpen(open) {
+      panel.hidden = !open;
+      toggle.setAttribute("aria-expanded", String(open));
+    }
+    toggle.addEventListener("click", function () {
+      setOpen(panel.hidden);
+      if (!panel.hidden) d.getElementById("text-size").focus();
+    });
+    d.addEventListener("pointerdown", function (event) {
+      if (!panel.hidden && !event.target.closest(".view-options-wrap")) setOpen(false);
+    });
+    d.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !panel.hidden) {
+        setOpen(false); toggle.focus();
+      }
+    });
+    if (search) search.addEventListener("click", function () {setOpen(false);});
   })();
 
   // Preferencias visuales únicamente; las noticias nunca se marcan como leídas.
