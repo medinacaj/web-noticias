@@ -1,7 +1,7 @@
 """Configuración segura y optativa de Google AdSense para sitio estático.
 
 Ningún código publicitario se carga sin decisión explícita ADSENSE_READY=true,
-dominio raíz propio y URL HTTPS de privacidad revisada.
+sitio servido en la raíz de un host controlado y privacidad HTTPS revisada.
 """
 import html
 import re
@@ -21,14 +21,20 @@ def configured_adsense(environ, site_url):
     privacy = safe_external_url(environ.get("ADSENSE_PRIVACY_URL"))
     requested = (environ.get("ADSENSE_READY") or "").strip().lower() == "true"
     site = urlsplit((site_url or "").strip())
-    # ads.txt debe publicarse desde la raíz del host. Una ruta de proyecto
-    # *.github.io/repo no controla /ads.txt en *.github.io.
+    # ads.txt se sirve desde la raíz del HOST. Una ruta de proyecto
+    # user.github.io/repo no controla user.github.io/ads.txt.
+    # GitHub.io figura en la Public Suffix List: user.github.io/ (sitio
+    # de usuario) puede ser válido si se controla realmente su raíz.
+    host = (site.hostname or "").lower()
+    github_user_site = host.endswith(".github.io") and host.count(".") == 2
+    candidate_host = host not in ("github.io", "io") and (
+        not host.endswith(".github.io") or github_user_site
+    )
     owned_root = (
-        site.scheme == "https" and bool(site.hostname)
+        site.scheme == "https" and candidate_host
         and site.path in ("", "/") and not site.query and not site.fragment
         and not site.username and not site.password
-        and site.hostname != "github.io"
-        and not site.hostname.endswith(".github.io")
+        and not site.port
     )
     valid_id = bool(match)
     eligible = valid_id and bool(privacy) and owned_root
