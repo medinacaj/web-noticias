@@ -32,7 +32,7 @@ class TechnicalSEOTests(unittest.TestCase):
         head.feed(html)
         self.assertEqual(head.meta["robots"][0], "index, follow, max-image-preview:large")
         self.assertIn('href="https://medinacaj.github.io/web-noticias/sobre-el-portal.html"', html)
-        self.assertIn("no verifica independientemente", html)
+        self.assertIn("ni verifica independientemente", html)
         self.assertIn("no son artículos escritos por este portal", html)
         self.assertNotIn('"@type": "NewsArticle"', html)
         self.assertIn('href="https://medinacaj.github.io/web-noticias/"', html)
