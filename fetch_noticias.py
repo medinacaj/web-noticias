@@ -49,7 +49,7 @@ DEFAULT_OUT = os.path.join(BASE_DIR, "public")
 TZ_CHILE = ZoneInfo("America/Santiago")
 USER_AGENT = "Mozilla/5.0 (compatible; NoticiasDelMomento/2.0)"
 
-STORIES_PER_CATEGORY = 6
+STORIES_PER_CATEGORY = 24  # seis iniciales, resto progresivo
 WINDOW_HOURS = 24            # cuánto tiempo permanece una noticia en el sitio
 MAX_HISTORY = 400            # tope de noticias guardadas en el historial
 SIMILARITY_THRESHOLD = 0.6   # umbral para considerar dos titulares "la misma noticia"
@@ -74,6 +74,10 @@ CATEGORIES = [
     {"key": "tecnologia",    "label": "Tecnología",                "google_topic": "TECHNOLOGY",    "gnews": "technology"},
     {"key": "deportes",      "label": "Deportes",                  "google_topic": "SPORTS",        "gnews": "sports"},
     {"key": "cultura",       "label": "Cultura y entretenimiento", "google_topic": "ENTERTAINMENT", "gnews": "entertainment", "short": "Cultura"},
+    {"key": "regiones", "label": "Regiones", "google_query": "(Biobío OR Ñuble OR Concepción OR Valparaíso OR Antofagasta OR Araucanía) noticias Chile"},
+    {"key": "politica", "label": "Política", "google_query": "(Gobierno OR Congreso OR Senado OR política) Chile"},
+    {"key": "medioambiente", "label": "Medioambiente y clima", "google_query": "(medioambiente OR cambio climático OR meteorología OR clima) Chile", "short": "Clima"},
+    {"key": "salud-ciencia", "label": "Salud y ciencia", "google_query": "(salud pública OR medicina OR ciencia OR investigación) Chile", "short": "Salud y ciencia"},
 ]
 CATEGORY_LABELS = {c["key"]: c["label"] for c in CATEGORIES}
 
@@ -267,6 +271,16 @@ def fetch_gnews(cat):
     return items
 
 
+def category_google_url(cat):
+    """Feeds de búsqueda para nuevas secciones; sin presuponer topic IDs."""
+    if cat.get("google_query"):
+        params = urllib.parse.urlencode({
+            "q": cat["google_query"], "hl": "es-419", "gl": "CL", "ceid": "CL:es-419"
+        })
+        return "https://news.google.com/rss/search?" + params
+    return GOOGLE_RSS.format(topic=cat["google_topic"])
+
+
 def collect(now):
     use_gnews = bool(GNEWS_API_KEY) and now.hour % GNEWS_EVERY_HOURS == 0
     if GNEWS_API_KEY and not use_gnews:
@@ -275,7 +289,7 @@ def collect(now):
     for cat in CATEGORIES:
         key, count = cat["key"], 0
         try:
-            got = fetch_rss(GOOGLE_RSS.format(topic=cat["google_topic"]), key)
+            got = fetch_rss(category_google_url(cat), key)
             items += got
             count += len(got)
         except Exception as error:  # una fuente caída no debe detener las demás
@@ -287,7 +301,7 @@ def collect(now):
                 count += len(got)
             except Exception as error:
                 print(f"[aviso] Feed directo {name} falló: {error}")
-        if use_gnews:
+        if use_gnews and cat.get('gnews'):
             try:
                 got = fetch_gnews(cat)
                 items += got
@@ -394,7 +408,8 @@ def score(story, now):
 def select(stories, now):
     ranked = sorted(stories, key=lambda s: score(s, now), reverse=True)
     recent = [s for s in ranked if hours_old(s, now) <= 12]
-    lead = (recent or ranked)[0] if ranked else None
+    candidates = (recent or ranked)[:5]
+    lead = next((s for s in candidates if s.get("image")), candidates[0] if candidates else None)
     rest = [s for s in ranked if s is not lead]
     # Destacadas: las mejor puntuadas, sin vaciar ninguna sección (se respeta al menos una por categoría)
     remaining = {}
