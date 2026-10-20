@@ -458,7 +458,12 @@ def title_link(story):
 def figure_html(story, eager=False):
     image = safe_image(story.get("image"))
     if not image:
-        return ""
+        source = (story.get("sources") or ["Fuente"])[0]
+        return (f'<figure class="media media--source" role="img" '
+                f'aria-label="Medio de origen: {esc(source)}">'
+                f'<span class="source-visual">{source_mark(story)}'
+                f'<span class="source-visual-name">{esc(source)}</span></span>'
+                f'</figure>')
     loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
     return (f'<figure class="media"><img src="{esc(image)}" alt="" width="1200" height="675" '
             f'{loading} decoding="async" referrerpolicy="no-referrer">'
