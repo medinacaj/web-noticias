@@ -63,6 +63,17 @@ class EditionV2Tests(unittest.TestCase):
         result = news.select(items, self.now)
         self.assertIs(result["lead"], items[2])
 
+    def test_template_has_progressive_controls_and_responsive_layout(self):
+        from pathlib import Path
+        template = Path(news.TEMPLATE_PATH).read_text(encoding="utf-8")
+        self.assertIn('d.querySelectorAll("[data-show-more]")', template)
+        self.assertIn('.js .section-grid [data-extra]', template)
+        self.assertIn('button.hidden = true', template)
+        self.assertIn('grid-column:1 / span 7', template)
+        self.assertIn('grid-column:8 / span 5', template)
+        self.assertIn('.lead .media{', template)
+        self.assertIn('@media (max-width:767px)', template)
+
     def test_generated_categories_retain_existing_selections(self):
         keys = {c["key"] for c in news.CATEGORIES}
         self.assertTrue({"nacional", "internacional", "economia", "tecnologia",
