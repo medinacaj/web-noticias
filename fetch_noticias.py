@@ -477,6 +477,37 @@ def score(story, now):
     return len(story["sources"]) - hours_old(story, now) / 6
 
 
+def balance_section_sources(candidates, limit=STORIES_PER_CATEGORY):
+    """Distribuir medios entre las seis fichas iniciales sin suprimir notas.
+
+    Si hay pocas fuentes distintas, el espacio restante se completa en el
+    orden original de relevancia; el resto sigue disponible con «Ver más».
+    """
+    selected = []
+    selected_ids = set()
+    by_source = {}
+    first_page = min(6, limit)
+
+    for story in candidates:
+        if len(selected) >= first_page:
+            break
+        source = (story.get("sources") or ["Fuente"])[0]
+        if by_source.get(source, 0) >= 2:
+            continue
+        selected.append(story)
+        selected_ids.add(id(story))
+        by_source[source] = by_source.get(source, 0) + 1
+
+    for story in candidates:
+        if len(selected) >= limit:
+            break
+        if id(story) in selected_ids:
+            continue
+        selected.append(story)
+        selected_ids.add(id(story))
+    return selected
+
+
 def select(stories, now):
     ranked = sorted(stories, key=lambda s: score(s, now), reverse=True)
     recent = [s for s in ranked if hours_old(s, now) <= 12]
@@ -497,7 +528,8 @@ def select(stories, now):
     used = {id(s) for s in secondary}
     by_category = {}
     for cat in CATEGORIES:
-        chosen = [s for s in rest if s["category"] == cat["key"] and id(s) not in used][:STORIES_PER_CATEGORY]
+        candidates = [s for s in rest if s["category"] == cat["key"] and id(s) not in used]
+        chosen = balance_section_sources(candidates)
         if chosen:
             by_category[cat["key"]] = chosen
     counts = {}
