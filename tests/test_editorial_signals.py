@@ -45,15 +45,21 @@ class EditorialSignalsTests(unittest.TestCase):
         articles = [self.story(2, i, f"Medio {i}") for i in range(4)]
         history = update_archive([], articles, self.now)
         self.assertEqual(trending_topics(history, self.now,
-                         (self.now - timedelta(days=6)).isoformat()), [])
+                         (self.now - timedelta(days=7)).isoformat()), [])
+        self.assertEqual(trending_topics(history, self.now,
+                         (self.now - timedelta(days=8)).isoformat()), [])
+        anchor = self.story(24 * 8 - 1, 50, "Histórico", "Reporte antiguo del sector eléctrico")
+        history = update_archive(history, [anchor], self.now)
         trends = trending_topics(history, self.now,
-                        (self.now - timedelta(days=7)).isoformat())
+                        (self.now - timedelta(days=8)).isoformat())
         self.assertTrue(trends)
         self.assertTrue(any(x["sources"] == 4 for x in trends))
         self.assertTrue(all(x["stories"] >= 4 for x in trends))
 
     def test_same_publisher_does_not_fake_trend(self):
-        history = update_archive([], [self.story(2, i, "Solo Medio") for i in range(8)], self.now)
+        articles = [self.story(2, i, "Solo Medio") for i in range(8)]
+        articles.append(self.story(24 * 8 - 1, 50, "Histórico", "Reporte antiguo del sector eléctrico"))
+        history = update_archive([], articles, self.now)
         self.assertEqual(trending_topics(history, self.now,
                          (self.now - timedelta(days=8)).isoformat()), [])
 
@@ -61,6 +67,7 @@ class EditorialSignalsTests(unittest.TestCase):
         for term in ("miercoles", "octubre", "partidos", "resultados"):
             self.assertNotIn(term, terms("Miércoles octubre partidos resultados"))
         titles = [self.story(2, i, f"Medio {i}", title="Miércoles octubre partidos resultados") for i in range(5)]
+        titles.append(self.story(24 * 8 - 1, 50, "Histórico", "Reporte antiguo del sector eléctrico"))
         history = update_archive([], titles, self.now)
         self.assertEqual(trending_topics(history, self.now,
                          (self.now - timedelta(days=8)).isoformat()), [])
