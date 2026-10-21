@@ -26,6 +26,7 @@ seria estan gobierno presidente ministro nacional general mayor primer primera u
 ultimas ultimos noticias noticia video fotos foto directo vivo ayer manana
 enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre
 lunes martes miercoles jueves viernes sabado domingo
+chile venezuela latinoamerica america internacional tecnologia
 futbol football basquetbol tenis deporte deportes deportivo partido partidos encuentro
 encuentros marcador marcadores resultado resultados goles gol victoria victorias derrota
 derrotas empate empates jornada jornadas fecha fechas liga ligas copa copas campeonato
@@ -102,7 +103,13 @@ def terms(title):
 def trending_topics(archive, now, started_at, limit=5):
     """No afirmar tendencias hasta disponer de siete días completos de referencia."""
     start = moment(started_at)
-    if start is None or now - start < timedelta(days=REFERENCE_DAYS):
+    # La comparación utiliza 24 h actuales + siete días COMPLETOS anteriores:
+    # requiere ocho días de capturas, no siete, y datos desde el inicio.
+    if start is None or now - start < timedelta(days=ARCHIVE_DAYS):
+        return []
+    dated = [moment(item.get("published")) for item in archive]
+    dated = [dt for dt in dated if dt is not None]
+    if not dated or min(dated) > now - timedelta(days=ARCHIVE_DAYS) + timedelta(hours=6):
         return []
     current_start = now - timedelta(hours=24)
     baseline_start = current_start - timedelta(days=REFERENCE_DAYS)
