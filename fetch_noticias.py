@@ -425,7 +425,6 @@ def coverage_control(story):
 def merge(stories, items, now):
     """Agrega noticias nuevas; si un titular ya existe (aunque venga de otro medio),
     suma la fuente a la noticia existente en vez de duplicarla."""
-    from scripts.dedupe_history import canonical_key
     added = 0
     for item in items:
         title = (item.get("title") or "").strip()
@@ -436,17 +435,20 @@ def merge(stories, items, now):
         incoming_sources = item.get("sources") or [item.get("source") or "Fuente"]
         published = parse_date(item.get("published"))
         published = to_iso(published) if published else None
-        # Un medio puede cambiar el título conservando la misma URL: no
-        # publicar una segunda ficha para el mismo artículo.
-        # La validación del historial equipara enlaces del mismo host y ruta
-        # aunque cambien parámetros de tracking; usar la misma clave aquí.
+        # La URL canónica identifica una nota aunque cambie el titular o tenga tracking.
+        # La similitud difusa, en cambio, solo agrupa noticias dentro de una
+        # categoría: no debe absorber Salud, Ciencia o Medioambiente en Nacional.
+        from scripts.dedupe_history import canonical_key
         try:
-            item_key = canonical_key(link)
+            article_key = canonical_key(link)
         except ValueError:
             continue
-        match = (next((s for s in stories
-                       if canonical_key(s.get("link", "")) == item_key), None)
-                 or next((s for s in stories if is_similar(norm, s["_norm"])), None))
+        match = next((s for s in stories
+                      if canonical_key(s["link"]) == article_key), None)
+        if match is None:
+            match = next((s for s in stories
+                          if s["category"] == item["category"]
+                          and is_similar(norm, s["_norm"])), None)
         if match:
             coverages = coverage_items(match)
             entry = coverage_entry(item)
@@ -465,6 +467,8 @@ def merge(stories, items, now):
                 match["source_url"] = item.get("source_url") or link
             if not match.get("image") and item.get("image"):
                 match["image"] = safe_image(item["image"])
+            if item.get("image_fetch_disabled"):
+                match["image_fetch_disabled"] = True
             if published and (not match.get("published") or published < match["published"]):
                 match["published"] = published
         else:
@@ -878,6 +882,13 @@ def main():
         except Exception as error:
             print(f"[aviso] Recuperación editorial no disponible: {error}")
 
+    # Reconciliar enlaces canónicos antes de guardar Y publicar. La recuperación
+    # de imágenes puede resolver un enlace Google News hacia una URL ya existente.
+    from scripts.dedupe_history import deduplicate
+    before_dedupe = len(stories)
+    stories = deduplicate(stories)
+    if len(stories) != before_dedupe:
+        print(f"URLs repetidas consolidadas antes de publicar: {before_dedupe - len(stories)}")
     save_history(args.historial, stories, now)
     build_site(stories, now, args.salida, args.ventana)
 
