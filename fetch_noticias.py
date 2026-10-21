@@ -402,7 +402,20 @@ def merge(stories, items, now):
         incoming_sources = item.get("sources") or [item.get("source") or "Fuente"]
         published = parse_date(item.get("published"))
         published = to_iso(published) if published else None
-        match = next((s for s in stories if is_similar(norm, s["_norm"])), None)
+        # La URL canónica identifica una nota aunque cambie el titular o tenga tracking.
+        # La similitud difusa, en cambio, solo agrupa noticias dentro de una
+        # categoría: no debe absorber Salud, Ciencia o Medioambiente en Nacional.
+        from scripts.dedupe_history import canonical_key
+        try:
+            article_key = canonical_key(link)
+        except ValueError:
+            continue
+        match = next((s for s in stories
+                      if canonical_key(s["link"]) == article_key), None)
+        if match is None:
+            match = next((s for s in stories
+                          if s["category"] == item["category"]
+                          and is_similar(norm, s["_norm"])), None)
         if match:
             coverages = coverage_items(match)
             entry = coverage_entry(item)
@@ -833,6 +846,13 @@ def main():
         except Exception as error:
             print(f"[aviso] Recuperación editorial no disponible: {error}")
 
+    # Reconciliar enlaces canónicos antes de guardar Y publicar. La recuperación
+    # de imágenes puede resolver un enlace Google News hacia una URL ya existente.
+    from scripts.dedupe_history import deduplicate
+    before_dedupe = len(stories)
+    stories = deduplicate(stories)
+    if len(stories) != before_dedupe:
+        print(f"URLs repetidas consolidadas antes de publicar: {before_dedupe - len(stories)}")
     save_history(args.historial, stories, now)
     build_site(stories, now, args.salida, args.ventana)
 
