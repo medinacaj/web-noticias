@@ -329,11 +329,29 @@ def load_history(path):
     return stories
 
 
-def save_history(path, stories, now):
+def load_signals(path):
+    """Metadatos acumulados; separados de la ventana de portada de 24 horas."""
+    try:
+        with open(path, encoding="utf-8") as handle:
+            data = json.load(handle)
+        if isinstance(data, dict):
+            items = data.get("senales_historicas", [])
+            start = data.get("senales_inicio", "")
+            return (items if isinstance(items, list) else []), start
+    except (OSError, json.JSONDecodeError):
+        pass
+    return [], ""
+
+
+def save_history(path, stories, now, signals_archive=None, signals_started=""):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     clean = [{k: v for k, v in s.items() if not k.startswith("_")} for s in stories]
+    data = {"actualizado": to_iso(now), "noticias": clean}
+    if signals_archive is not None:
+        data["senales_inicio"] = signals_started or to_iso(now)
+        data["senales_historicas"] = signals_archive
     with open(path, "w", encoding="utf-8") as handle:
-        json.dump({"actualizado": to_iso(now), "noticias": clean}, handle, ensure_ascii=False, indent=1)
+        json.dump(data, handle, ensure_ascii=False, indent=1)
 
 
 def coverage_entry(item):
@@ -764,8 +782,14 @@ PAGE_404 = """<!DOCTYPE html>
 """
 
 
-def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
+def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
+               signals_archive=None, signals_started=""):
     sel = select(stories, now)
+    from scripts.editorial_signals import trending_topics, related_timeline, render_signals
+    archive = signals_archive or []
+    signals_html = render_signals(
+        trending_topics(archive, now, signals_started),
+        related_timeline(archive, now))
     with open(TEMPLATE_PATH, encoding="utf-8") as handle:
         page = handle.read()
 
@@ -796,6 +820,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS):
         "%%TOP%%": render_top(sel, now),
         "%%CONTEXT%%": render_context(sel, now, window_hours),
         "%%RADAR%%": render_coverage_radar(stories),
+        "%%SIGNALS%%": signals_html,
         "%%SECTIONS%%": render_sections(sel["by_category"], now),
         "%%NEWSLETTER_SIGNUP%%": (
             f'<a class="newsletter-link" href="{esc(newsletter_url)}" target="_blank" rel="noopener">'
@@ -850,6 +875,7 @@ def main():
     args = parser.parse_args()
 
     now = parse_date(args.ahora) if args.ahora else datetime.now(timezone.utc)
+    archive, signals_started = load_signals(args.historial)
     stories = load_history(args.historial)
     print(f"Historial: {len(stories)} noticias previas")
 
@@ -885,8 +911,12 @@ def main():
     stories = deduplicate(stories)
     if len(stories) != before_dedupe:
         print(f"URLs repetidas consolidadas antes de publicar: {before_dedupe - len(stories)}")
-    save_history(args.historial, stories, now)
-    build_site(stories, now, args.salida, args.ventana)
+    from scripts.editorial_signals import update_archive
+    archive = update_archive(archive, stories, now)
+    signals_started = signals_started or to_iso(now)
+    save_history(args.historial, stories, now, archive, signals_started)
+    build_site(stories, now, args.salida, args.ventana,
+               signals_archive=archive, signals_started=signals_started)
 
 
 if __name__ == "__main__":

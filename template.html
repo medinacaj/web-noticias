@@ -279,6 +279,11 @@
   .coverage-radar li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;}
   .coverage-radar li a{font:600 16px/1.35 var(--serif);}
   .coverage-radar li span{font-size:11px;color:var(--muted);white-space:nowrap;}
+  .signal-timeline li{display:grid;grid-template-columns:132px minmax(0,1fr);gap:12px;align-items:start;}
+  .signal-timeline li time{font-size:11px;color:var(--muted);white-space:nowrap;padding-top:4px;}
+  .signal-timeline li a{min-width:0;overflow-wrap:anywhere;}
+  @media (max-width:600px){.signal-timeline li{grid-template-columns:1fr;gap:3px;}.signal-timeline li time{padding-top:0;}}
+
   .reader-panel{border:1px solid var(--rule);border-radius:8px;padding:18px;margin:0 0 18px;background:var(--surface);box-shadow:0 4px 14px rgba(6,20,36,.08);}
   .reader-panel[hidden]{display:none;}
   .reader-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
@@ -554,6 +559,7 @@
 %%TOP%%
 %%CONTEXT%%
 %%RADAR%%
+%%SIGNALS%%
 <span class="section-anchor" id="categorias" aria-hidden="true"></span>
 %%SECTIONS%%
 </main>
