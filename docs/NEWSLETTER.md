@@ -17,6 +17,8 @@ Configurar en GitHub Actions o variables del repositorio:
 
 Las tres URLs deben ser HTTPS. El estado predeterminado muestra **«Suscripciones próximamente»** y nunca presenta un formulario falso.
 
+El workflow `.github/workflows/update-news.yml` transmite estas cuatro variables de GitHub Actions al generador. **No tienen valores por defecto y no se activan con la fusión del código**. Para habilitar el enlace real hay que contratar/configurar el proveedor, publicar y revisar las políticas de privacidad y baja, cargar sus URL auténticas en GitHub Actions y decidir expresamente cuándo establecer `NEWSLETTER_READY=true`. Esta configuración no puede hacerse ni validarse usando URL ficticias.
+
 **Importante:** el flujo actual solo genera la página, **no envía emails**. Para activar el envío diario real se necesitan credenciales del proveedor guardadas en GitHub Secrets o, preferiblemente, campañas programadas dentro del proveedor, una lista de destinatarios confirmados y una fase de prueba con un destinatario autorizado. La periodicidad semanal y la segmentación por categorías o regiones deben configurarse en el proveedor o en una etapa posterior, sin afirmar que ya funcionan.
 
 ## Política editorial
