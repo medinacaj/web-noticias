@@ -1,6 +1,7 @@
 """Auditoría prepublicación: estadísticas, advertencias y puerta QA."""
 import unittest
 from pathlib import Path
+from datetime import datetime, timezone
 from scripts.audit_news_health import inspect_news, alerts
 
 
@@ -25,6 +26,13 @@ class PublishQualityTests(unittest.TestCase):
         self.assertEqual(report["noticias"], 0)
         self.assertEqual(report["porcentaje_con_resumen"], 0)
         self.assertTrue(alerts(report))
+
+    def test_warns_if_news_is_stale_without_blocking(self):
+        news = [{"category": "nacional", "sources": ["A"],
+                 "published": "2026-10-20T10:00:00Z"}]
+        report = inspect_news(news, now=datetime(2026, 10, 20, 15, tzinfo=timezone.utc))
+        self.assertEqual(report["horas_desde_noticia_mas_reciente"], 5)
+        self.assertTrue(any("Última noticia" in x for x in alerts(report)))
 
     def test_hourly_workflow_gates_deploy_before_upload(self):
         workflow = Path(".github/workflows/update-news.yml").read_text(encoding="utf-8")
