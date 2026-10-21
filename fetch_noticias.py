@@ -846,6 +846,13 @@ def main():
         except Exception as error:
             print(f"[aviso] Recuperación editorial no disponible: {error}")
 
+    # Reconciliar enlaces canónicos antes de guardar Y publicar. La recuperación
+    # de imágenes puede resolver un enlace Google News hacia una URL ya existente.
+    from scripts.dedupe_history import deduplicate
+    before_dedupe = len(stories)
+    stories = deduplicate(stories)
+    if len(stories) != before_dedupe:
+        print(f"URLs repetidas consolidadas antes de publicar: {before_dedupe - len(stories)}")
     save_history(args.historial, stories, now)
     build_site(stories, now, args.salida, args.ventana)
 
