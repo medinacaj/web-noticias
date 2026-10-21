@@ -12,7 +12,7 @@ def _safe_link(value):
         p = urlsplit(str(value or ""))
         if (p.scheme == "https" and p.hostname and not p.username and not p.password
                 and p.port in (None, 443)):
-            return value
+            return str(value)
     except (ValueError, TypeError):
         pass
     return ""
