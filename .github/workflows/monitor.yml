@@ -45,7 +45,7 @@ jobs:
           cat health-report.txt
           cat health-report.txt >> "$GITHUB_STEP_SUMMARY"
           issue_title='Web Noticias: alerta automática de publicación'
-          open_issue=$(gh api --paginate --slurp "repos/$GH_REPO/issues?state=open&per_page=100" --jq '[.[][] | select(has("pull_request") | not) | select(.title == "Web Noticias: alerta automática de publicación") | .number] | min // empty')
+          open_issue=$(gh api --paginate "repos/$GH_REPO/issues?state=open&per_page=100" | jq -sr '[.[][] | select(has("pull_request") | not) | select(.title == "Web Noticias: alerta automática de publicación") | .number] | min // empty')
           if [ "$CHECK_RESULT" != 'success' ]; then
             if [ -z "$open_issue" ]; then
               gh issue create --repo "$GH_REPO" --title "$issue_title" --body-file health-report.txt
