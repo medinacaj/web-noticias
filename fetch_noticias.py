@@ -603,7 +603,8 @@ def category_label(story):
 
 def title_link(story):
     return (f'<a href="{esc(story["link"])}" target="_blank" rel="noopener" '
-            f'data-cat="{esc(category_label(story))}" data-key="{story["category"]}">{esc(story["title"])}</a>')
+            f'data-cat="{esc(category_label(story))}" data-key="{story["category"]}" '
+            f'data-sources="{esc(json.dumps(story.get("sources") or [], ensure_ascii=False))}">{esc(story["title"])}</a>')
 
 
 def figure_html(story, eager=False):
@@ -673,9 +674,10 @@ def render_context(sel, now, window_hours):
         units.append(("Lo más cubierto", title_link(reported),
                       f"{n} medio lo reporta" if n == 1 else f"{n} medios lo reportan"))
     if sel["busiest"]:
+        from scripts.presentation_groups import canonical_section
         key, count = sel["busiest"]
         units.append(("Sección más activa",
-                      f'<a class="cat-{key}" href="#cat-{key}">{esc(CATEGORY_LABELS[key])}</a>',
+                      f'<a class="cat-{key}" href="#cat-{canonical_section(key)}">{esc(CATEGORY_LABELS[key])}</a>',
                       f"{count} noticia publicada" if count == 1 else f"{count} noticias publicadas"))
     period = f"en las últimas {int(window_hours)} horas" if window_hours <= 48 else "en el período publicado"
     units.append(("Cobertura", f'{sel["total"]} noticias de {sel["outlets"]} medios',
@@ -707,18 +709,19 @@ def render_coverage_radar(stories):
 
 
 def render_sections(by_category, now):
+    from scripts.presentation_groups import PRESENTATION_LABELS, canonical_section
     blocks = []
     present = [c for c in CATEGORIES if c["key"] in by_category]
     for number, cat in enumerate(present, start=1):
         stories = by_category[cat["key"]]
         feature, rest = stories[0], stories[1:]
         feature_html = (f'<article class="feature">{figure_html(feature)}'
-                        f'<div class="news-body"><p class="kicker">{esc(cat["label"])}</p>'
+                        f'<div class="news-body"><p class="kicker">{esc(category_label(feature))}</p>'
                         f'<h3 class="feature-title">{title_link(feature)}</h3>'
                         f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
         compact = "".join(
             f'<li{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
-            f'<div class="news-body"><p class="kicker">{esc(cat["label"])}</p>'
+            f'<div class="news-body"><p class="kicker">{esc(category_label(s))}</p>'
             f'<h3>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
             for i, s in enumerate(rest))
         grid_class = "section-grid" if compact else "section-grid section-grid--single"
@@ -728,10 +731,14 @@ def render_sections(by_category, now):
                 f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
                 f'Ver más noticias <span aria-hidden="true">↓</span></button>'
                 if count > 6 else "")
+        aliases = "".join(f'<span class="section-anchor" id="cat-{origin}" aria-hidden="true"></span>'
+                          for origin in ("salud-ciencia", "medioambiente")
+                          if canonical_section(origin) == cat["key"] and origin not in by_category)
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
+            f'{aliases}'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
-            f'<h2 id="titulo-{cat["key"]}">{esc(cat["label"])}</h2>'
+            f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count} {"noticia" if count == 1 else "noticias"}</span></div>'
             f'<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
             f'{more}</section>'
@@ -740,8 +747,9 @@ def render_sections(by_category, now):
 
 
 def render_nav(sel):
+    from scripts.presentation_groups import PRESENTATION_LABELS
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
-    links += [f'<li><a class="cat-{c["key"]}" href="#cat-{c["key"]}">{esc(c.get("short", c["label"]))}</a></li>'
+    links += [f'<li><a class="cat-{c["key"]}" href="#cat-{c["key"]}">{esc(PRESENTATION_LABELS.get(c["key"], c.get("short", c["label"])))}</a></li>'
               for c in CATEGORIES if c["key"] in sel["by_category"]]
     return "".join(links)
 
@@ -801,6 +809,8 @@ PAGE_404 = """<!DOCTYPE html>
 def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
                signals_archive=None, signals_started=""):
     sel = select(stories, now)
+    from scripts.presentation_groups import group_sections
+    sel["by_category"] = group_sections(sel["by_category"], STORIES_PER_CATEGORY)
     from scripts.editorial_signals import trending_topics, related_timeline, render_signals
     archive = signals_archive or []
     signals_html = render_signals(

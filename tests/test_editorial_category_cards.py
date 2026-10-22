@@ -1,5 +1,6 @@
 """Regresión del diseño editorial sin barras superiores de categoría."""
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from fetch_noticias import TEMPLATE_PATH, render_sections
 
@@ -25,9 +26,15 @@ class EditorialCategoryCardTests(unittest.TestCase):
         self.assertNotIn("border-top:3px solid var(--cat", self.template)
 
     def test_categories_reach_feature_and_compact_news(self):
-        self.assertIn('f\'<div class="news-body"><p class="kicker">{esc(cat["label"])}</p>\'', self.generator)
-        self.assertIn('f\'<h3>{title_link(s)}</h3>', self.generator)
-        self.assertIn('f\'<h3 class="feature-title">{title_link(feature)}</h3>', self.generator)
+        stories = [{"category": category, "title": "Titular sobre " + category,
+                    "link": "https://medio.example/" + category, "sources": ["Medio"],
+                    "image": "", "summary": "", "published": "2026-10-22T12:00:00Z"}
+                   for category in ("tecnologia", "salud-ciencia")]
+        output = render_sections({"tecnologia": stories}, datetime(2026, 10, 22, 12, tzinfo=timezone.utc))
+        self.assertIn('<p class="kicker">Tecnología</p>', output)
+        self.assertIn('<p class="kicker">Salud y ciencia</p>', output)
+        self.assertIn('data-key="salud-ciencia"', output)
+        self.assertIn('class="feature-title"', output)
 
     def test_responsive_and_accessibility_remain(self):
         for marker in ("prefers-reduced-motion:reduce", "@media (max-width:767px)",
@@ -38,3 +45,4 @@ class EditorialCategoryCardTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

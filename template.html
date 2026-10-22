@@ -835,6 +835,37 @@
     } catch (err) {}
   })();
 
+  // Las etiquetas visibles pueden abreviar coberturas; los filtros usan todas las fuentes.
+  function storySources(card, link) {
+    var encoded = link && link.getAttribute("data-sources");
+    if (encoded) {
+      try {
+        var names = JSON.parse(encoded);
+        if (Array.isArray(names)) return Array.from(new Set(names.filter(function (name) {
+          return typeof name === "string" && name.trim();
+        }).map(function (name) {return name.trim();})));
+      } catch (err) {}
+    }
+    var label = card && card.querySelector(".source-name");
+    return label ? label.textContent.replace(/ y \d+ más$/, "").split(",")
+      .map(function (name) {return name.trim();}).filter(Boolean) : [];
+  }
+
+  // Cada cambio de filtros u orden vuelve a mostrar las seis primeras coincidencias.
+  function refreshSection(grid, limit) {
+    grid.dataset.visibleLimit = String(limit);
+    var count = 0;
+    grid.querySelectorAll(".feature,.compact-list li").forEach(function (item) {
+      var matches = !item.hasAttribute("data-source-hidden");
+      item.toggleAttribute("data-extra", matches && ++count > limit);
+    });
+    var button = d.querySelector('[data-show-more][aria-controls="' + grid.getAttribute("id") + '"]');
+    if (button) {
+      if (count <= limit) button.hidden = true;
+      else button.hidden = false;
+    }
+  }
+
   // V5: favoritos voluntarios y preferencias editoriales.
   (function () {
     var main = d.getElementById("contenido");
@@ -873,8 +904,7 @@
     var sources = new Set(), categories = new Map();
     cards.forEach(function (card) {
       var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
-      var source = card.querySelector(".source-name");
-      if (source) sources.add(source.textContent.trim());
+      storySources(card, link).forEach(function (name) {sources.add(name);});
       categories.set(link.getAttribute("data-key"), link.getAttribute("data-cat"));
     });
     Array.from(sources).sort().forEach(function (name) {
@@ -1004,8 +1034,7 @@
       var source = sourceSelect.value, category = categorySelect.value;
       cards.forEach(function (card) {
         var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
-        var name = card.querySelector(".source-name");
-        var matches = (!source || (name && name.textContent.trim() === source))
+        var matches = (!source || storySources(card, link).indexOf(source) !== -1)
           && (!category || link.getAttribute("data-key") === category);
         card.toggleAttribute("data-source-hidden", !matches);
       });
@@ -1021,6 +1050,7 @@
           return tb - ta || Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
         });
         items.forEach(function (item) {parent.appendChild(item);});
+        refreshSection(grid, 6);
       });
     }
     sourceSelect.value = get(sourceKey, "") || "";
@@ -1103,11 +1133,8 @@
     var section = d.getElementById(button.getAttribute("aria-controls"));
     if (!section) return;
     button.addEventListener("click", function () {
-      var hidden = Array.prototype.slice.call(section.querySelectorAll("[data-extra]"));
-      hidden.slice(0, Number(button.getAttribute("data-step")) || 6).forEach(function (item) {
-        item.removeAttribute("data-extra");
-      });
-      if (!section.querySelector("[data-extra]")) button.hidden = true;
+      var limit = Number(section.dataset.visibleLimit) || 6;
+      refreshSection(section, limit + (Number(button.getAttribute("data-step")) || 6));
     });
   });
 
@@ -1139,12 +1166,13 @@
     var source = card && card.querySelector(".meta .source-name");
     var time = card && card.querySelector(".meta time");
     var name = source ? source.textContent.trim() : "";
+    var sourceNames = storySources(card, a);
     var timestamp = time ? Date.parse(time.getAttribute("datetime")) : NaN;
     var cat = a.getAttribute("data-cat"), catKey = a.getAttribute("data-key");
     index.push({href:a.href,title:a.textContent.trim(),cat:cat,catKey:catKey,
-      source:name,time:timestamp,key:norm(a.textContent)});
+      source:name,sources:sourceNames,time:timestamp,key:norm(a.textContent)});
     categories[catKey] = cat;
-    if (name) sources[name] = true;
+    sourceNames.forEach(function (name) {sources[name] = true;});
   });
   function fillSelect(select, entries) {
     if (!select) return;
@@ -1184,13 +1212,13 @@
     var found = index.filter(function (item) {
       return words.every(function (w) {return item.key.indexOf(w) !== -1;})
         && (!category || item.catKey === category)
-        && (!source || item.source === source)
+        && (!source || item.sources.indexOf(source) !== -1)
         && (!age || (Number.isFinite(item.time) && item.time <= now && now - item.time <= age * 3600000));
     });
     status.textContent = found.length
       ? (found.length === 1 ? "1 resultado" : found.length + " resultados")
       : "No hay noticias que coincidan con la búsqueda y los filtros seleccionados.";
-    found.slice(0, 20).forEach(function (item) {
+    found.forEach(function (item) {
       var li = d.createElement("li"), k = d.createElement("p"), a = d.createElement("a");
       var extra = d.createElement("p");
       li.className = "cat-" + item.catKey; k.className = "kicker"; k.textContent = item.cat;
@@ -1223,3 +1251,4 @@
 </script>
 </body>
 </html>
+
