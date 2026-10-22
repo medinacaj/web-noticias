@@ -309,6 +309,11 @@ def collect(now):
             except Exception as error:
                 print(f"[aviso] GNews falló en {key}: {error}")
         print(f"{cat['label']}: {count} notas recolectadas")
+    from scripts.regional_sources import collect_regional
+    regional = collect_regional(now)
+    items += regional
+    if regional:
+        print(f"RSS regionales revisados: {len(regional)} titulares recolectados")
     return items
 
 
@@ -433,6 +438,7 @@ def merge(stories, items, now):
         if match is None:
             match = next((s for s in stories
                           if s["category"] == item["category"]
+                          and not s.get("metadata_only") and not item.get("metadata_only")
                           and is_similar(norm, s["_norm"])), None)
         if match:
             coverages = coverage_items(match)
@@ -454,6 +460,13 @@ def merge(stories, items, now):
                 match["image"] = safe_image(item["image"])
             if published and (not match.get("published") or published < match["published"]):
                 match["published"] = published
+            for field in ("publisher_id", "source_country", "source_country_label"):
+                if not match.get(field) and item.get(field):
+                    match[field] = item[field]
+            if item.get("metadata_only") or match.get("metadata_only"):
+                match["metadata_only"] = True
+                match["summary"] = ""
+                match["image"] = ""
         else:
             stories.append({
                 "category": item["category"],
@@ -467,6 +480,8 @@ def merge(stories, items, now):
                 "published": published,
                 "first_seen": to_iso(now),
                 "_norm": norm,
+                **{key: item[key] for key in ("publisher_id", "source_country",
+                   "source_country_label", "metadata_only") if key in item},
             })
             added += 1
     return added
@@ -501,20 +516,9 @@ def balance_section_sources(candidates, limit=STORIES_PER_CATEGORY):
     Si hay pocas fuentes distintas, el espacio restante se completa en el
     orden original de relevancia; el resto sigue disponible con «Ver más».
     """
-    selected = []
-    selected_ids = set()
-    by_source = {}
-    first_page = min(6, limit)
-
-    for story in candidates:
-        if len(selected) >= first_page:
-            break
-        source = (story.get("sources") or ["Fuente"])[0]
-        if by_source.get(source, 0) >= 2:
-            continue
-        selected.append(story)
-        selected_ids.add(id(story))
-        by_source[source] = by_source.get(source, 0) + 1
+    from scripts.source_diversity import diverse_prefix
+    selected = diverse_prefix(candidates, min(6, limit))
+    selected_ids = {id(story) for story in selected}
 
     for story in candidates:
         if len(selected) >= limit:
@@ -536,13 +540,23 @@ def select(stories, now):
     remaining = {}
     for story in rest:
         remaining[story["category"]] = remaining.get(story["category"], 0) + 1
+    from scripts.source_diversity import publisher_key
     secondary = []
-    for story in rest:
-        if len(secondary) == 3:
-            break
-        if remaining[story["category"]] >= 2:
+    used_editors = {publisher_key(lead)} if lead else set()
+    for require_new_editor in (True, False):
+        for story in rest:
+            if len(secondary) == 3:
+                break
+            if any(story is selected for selected in secondary):
+                continue
+            if remaining[story["category"]] < 2:
+                continue
+            editor = publisher_key(story)
+            if require_new_editor and editor in used_editors:
+                continue
             secondary.append(story)
             remaining[story["category"]] -= 1
+            used_editors.add(editor)
     used = {id(s) for s in secondary}
     by_category = {}
     for cat in CATEGORIES:
@@ -612,8 +626,10 @@ def meta_html(story, now, read_link=False):
     label = ", ".join(sources[:3]) + (f" y {len(sources) - 3} más" if len(sources) > 3 else "")
     moment = story_time(story) or now
     fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
+    country = (f'<span class="source-country">{esc(story["source_country_label"])}</span>'
+               if story.get("source_country_label") else "")
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story)}</p>')
+            f'{country}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story)}</p>')
 
 
 def dek_html(story):
@@ -921,3 +937,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
