@@ -55,7 +55,8 @@ def canonical(url):
         p = urlsplit(str(url or "").strip())
         if p.scheme != "https" or not p.hostname or p.username or p.password or p.port not in (None, 443):
             return ""
-        return p.hostname.lower() + (p.path.rstrip("/") or "/")
+        from scripts.dedupe_history import canonical_key
+        return canonical_key(url)
     except (ValueError, TypeError):
         return ""
 
@@ -215,3 +216,4 @@ def render_signals(trends, timeline):
                 'La coincidencia no demuestra que describan exactamente el mismo hecho.</p>'
                 '<ul>' + entries + '</ul></section>')
     return "".join(sections)
+

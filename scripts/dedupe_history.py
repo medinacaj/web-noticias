@@ -1,7 +1,7 @@
 """Normalización determinista de historial de noticias, sin consultar Internet."""
 import json
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, urlsplit
 
 
 def canonical_key(link):
@@ -9,7 +9,10 @@ def canonical_key(link):
     u = urlsplit(link)
     if u.scheme not in ("http", "https") or not u.netloc:
         raise ValueError("Enlace no válido")
-    return u.netloc.lower(), u.path.rstrip("/") or "/"
+    tracking = {"oc", "gclid", "fbclid", "msclkid", "mc_cid", "mc_eid", "_ga", "igshid"}
+    query = tuple((key, value) for key, value in parse_qsl(u.query, keep_blank_values=True)
+                  if not key.casefold().startswith("utm_") and key.casefold() not in tracking)
+    return u.netloc.lower(), u.path.rstrip("/") or "/", query
 
 
 def deduplicate(items):
@@ -28,6 +31,13 @@ def deduplicate(items):
             for field in ("summary", "image", "source_url", "image_checked_at"):
                 if not target.get(field) and news.get(field):
                     target[field] = news[field]
+            for field in ("publisher_id", "source_country", "source_country_label"):
+                if not target.get(field) and news.get(field):
+                    target[field] = news[field]
+            if target.get("metadata_only") or news.get("metadata_only"):
+                target["metadata_only"] = True
+                target["summary"] = ""
+                target["image"] = ""
             coverage = list(target.get("coverages") or [])
             covered_links = {item.get("link") for item in coverage if isinstance(item, dict)}
             for item in news.get("coverages") or []:
@@ -41,7 +51,11 @@ def deduplicate(items):
                     target[field] = news[field]
             continue
         seen[key] = len(result)
-        result.append(dict(news))
+        entry = dict(news)
+        if entry.get("metadata_only"):
+            entry["summary"] = ""
+            entry["image"] = ""
+        result.append(entry)
     return result
 
 
@@ -60,3 +74,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

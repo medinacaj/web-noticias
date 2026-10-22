@@ -5,7 +5,9 @@ from fetch_noticias import balance_section_sources
 
 
 def item(source, number):
-    return {"title": f"Noticia {number}", "sources": [source], "link": f"https://medio.example/{number}"}
+    # Cada editor del fixture publica en su propio dominio.
+    domain = source.lower().replace(" ", "-")
+    return {"title": f"Noticia {number}", "sources": [source], "link": f"https://{domain}.example/{number}"}
 
 
 class BalancedSourcesTests(unittest.TestCase):
@@ -39,3 +41,4 @@ class BalancedSourcesTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

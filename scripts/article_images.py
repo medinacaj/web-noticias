@@ -118,7 +118,7 @@ def enrich_visible_images(stories, selected, now, decoder=None, fetch_image=publ
     unique, seen = [], set()
     for story in visible:
         key = id(story)
-        if key in seen or story.get("image"):
+        if key in seen or story.get("image") or story.get("metadata_only"):
             continue
         seen.add(key)
         checked = story.get("image_checked_at", "")
@@ -169,3 +169,4 @@ def enrich_visible_images(stories, selected, now, decoder=None, fetch_image=publ
                 count += 1
     print(f"Fotografías editoriales: {count}/{len(unique)} recuperadas de páginas originales")
     return count, len(unique)
+
