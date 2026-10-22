@@ -1,6 +1,51 @@
 {
- "actualizado": "2026-10-22T22:02:46Z",
+ "actualizado": "2026-10-22T23:16:38Z",
  "noticias": [
+  {
+   "category": "politica",
+   "title": "Sobre los críticos a la conducción de las Relaciones Exteriores de Chile",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.athenalab.org",
+   "sources": [
+    "AthenaLAB"
+   ],
+   "coverages": [],
+   "link": "https://www.athenalab.org/medios/2026/10/22/sobre-los-criticos-a-la-conduccion-de-las-relaciones-exteriores-de-chile/",
+   "published": "2026-10-22T22:31:19Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Heridos y atrapados deja accidente múltiple entre autos, camión y buses en Ruta 5 altura Renca",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993032-heridos-y-atrapados-deja-accidente-multiple-entre-autos-camion-y-buses-en-ruta-5-altura-renca.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/22/heridos-y-atrapados-deja-accidente-multiple-entre-autos-camion-y-buses-en-ruta-5-altura-renca.shtml",
+   "published": "2026-10-22T22:23:15Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Nueva alerta por tormentas eléctricas, granizo y vientos intensos en Maule, Ñuble y Bío Bío",
+   "summary": "",
+   "image": "https://media.canal9.cl/2026/10/tormentas-electricas-2-1-768x405.png",
+   "source_url": "https://www.canal9.cl",
+   "sources": [
+    "Canal 9 Bío Bío Televisión"
+   ],
+   "coverages": [],
+   "link": "https://www.canal9.cl/episodios/2026/10/22/alertan-nuevamente-por-tormentas-electricas-granizos-y-fuerte-viento-para-maule-nuble-y-bio-bio",
+   "published": "2026-10-22T21:56:20Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
   {
    "category": "internacional",
    "title": "Los anfitriones de Airbnb ya no pueden exigir a los huéspedes que quiten las sábanas ni que laven los platos",
@@ -21,6 +66,21 @@
    "link": "https://www.bbc.com/mundo/articles/c6vg0k034n94o?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-22T21:43:11Z",
    "first_seen": "2026-10-22T21:53:12Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Trump optimista y Rusia se muestra escéptica sobre fin de la guerra",
+   "summary": "",
+   "image": "https://static.dw.com/image/79691781_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/trump-optimista-y-rusia-se-muestra-esc%C3%A9ptica-sobre-fin-de-la-guerra/a-79727174",
+   "published": "2026-10-22T21:10:25Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "internacional",
@@ -57,6 +117,36 @@
    "published": "2026-10-22T20:56:46Z",
    "first_seen": "2026-10-22T21:41:26Z",
    "image_checked_at": "2026-10-22T21:41:26.280174Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Muere a los 93 años Tom Skerritt, actor conocido por “Alien” y “Picket Fences”",
+   "summary": "",
+   "image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-915862442-20261022205159775.jpg?c=16x9&q=w_800,c_fill",
+   "source_url": "https://cnnespanol.cnn.com",
+   "sources": [
+    "CNN en Español"
+   ],
+   "coverages": [],
+   "link": "https://cnnespanol.cnn.com/2026/10/22/entretenimiento/muere-tom-skerritt-actor-alien-picket-fences-trax",
+   "published": "2026-10-22T20:52:00Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
+   "category": "deportes",
+   "title": "¡Hay partido! Insólito autogol de Deportivo Cali le permitió a la U descontar en la Libertadores Femenina",
+   "summary": "",
+   "image": "https://media.chilevision.cl/2026/10/Segundo-gol-de-la-U-vs-Deportivo-Cali.jpg",
+   "source_url": "https://www.chilevision.cl",
+   "sources": [
+    "Chilevisión"
+   ],
+   "coverages": [],
+   "link": "https://www.chilevision.cl/chv-deportes/copa-libertadores/insolito-autogol-de-deportivo-cali-le-permitio-a-la-u-descontar-en-la-libertadores-femenina/",
+   "published": "2026-10-22T20:44:07Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "cultura",
@@ -150,6 +240,21 @@
   },
   {
    "category": "politica",
+   "title": "Milei y el desgaste de su estrategia política: el viaje a España revela los límites de su motosierra",
+   "summary": "",
+   "image": "https://uchile-media-storage.nyc3.digitaloceanspaces.com/wp-content/uploads/2026/10/22162917/javier-milei.jpg",
+   "source_url": "https://radio.uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "coverages": [],
+   "link": "https://radio.uchile.cl/2026/10/22/milei-y-el-desgaste-de-su-estrategia-politica-el-viaje-a-espana-revela-los-limites-de-su-motosierra/",
+   "published": "2026-10-22T19:56:16Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
+   "category": "politica",
    "title": "Elecciones en Brasil Lula vs Bolsonaro: importancia Chile",
    "summary": "",
    "image": "https://www.ex-ante.cl/wp-content/uploads/2026/10/Bolsonarolula.png",
@@ -209,6 +314,21 @@
    "image_checked_at": "2026-10-22T19:59:52.269610Z"
   },
   {
+   "category": "cultura",
+   "title": "Crítica de teatro: La señorita Julia de Strindberg en versión trans",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/cirtia-2-700x466.jpg",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/cultura/2026/10/22/critica-de-teatro-la-senorita-julia-de-strindberg-en-version-trans/",
+   "published": "2026-10-22T19:11:36Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
    "category": "internacional",
    "title": "Sólo horas después de abrirse a negociar la paz: Rusia lanzó ataque con misiles contra Ucrania",
    "summary": "",
@@ -252,6 +372,21 @@
    "published": "2026-10-22T19:02:00Z",
    "first_seen": "2026-10-22T21:41:26Z",
    "image_checked_at": "2026-10-22T21:41:26.280174Z"
+  },
+  {
+   "category": "internacional",
+   "title": "El dilema de Chancay en Perú",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/GF33KY3BM5FZ7JPIMQHIDQLU4A.jpg?auth=3a108c69d2e7cd734645432967ffa8b4947e2a0639f20ccc351db5e04915c969&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/mundo/noticia/el-dilema-de-chancay-en-peru/",
+   "published": "2026-10-22T19:00:00Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "deportes",
@@ -314,6 +449,21 @@
    "image_checked_at": "2026-10-22T22:02:46.430342Z"
   },
   {
+   "category": "tecnologia",
+   "title": "¿Qué es PHP y por qué generó una falla de seguridad en internet que desató una alerta global?",
+   "summary": "",
+   "image": "https://ichef.bbci.co.uk/news/1200/branded_mundo/ac6c/live/31297e70-ce04-11f1-9688-4162f7c2e1d5.jpg",
+   "source_url": "https://www.bbc.com",
+   "sources": [
+    "BBC"
+   ],
+   "coverages": [],
+   "link": "https://www.bbc.com/mundo/articles/cmly0k9y9p1vo",
+   "published": "2026-10-22T18:50:14Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
    "category": "nacional",
    "title": "Extienden entrega del Bono Combustible hasta diciembre: quiénes pueden recibir $100 mil mensuales",
    "summary": "",
@@ -363,6 +513,21 @@
    "link": "https://www.bbc.com/mundo/articles/cqglwgj3e91yo?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-22T18:31:16Z",
    "first_seen": "2026-10-22T19:59:52Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Nació en Chile, tiene una fortuna de US$ 8.400 millones y ahora está a un paso de ser dueño de un equipo de la NFL y una carrera de la Fórmula 1",
+   "summary": "",
+   "image": "https://static.theclinic.cl/media/og-watermarked/20261022-1812392-unknown-191.jpg",
+   "source_url": "https://www.theclinic.cl",
+   "sources": [
+    "The Clinic"
+   ],
+   "coverages": [],
+   "link": "https://www.theclinic.cl/2026/10/22/nacio-en-chile-tiene-una-fortuna-de-us-8-400-millones-y-ahora-esta-a-un-paso-de-ser-dueno-de-un-equipo-de-la-nfl-y-una-carrera-de-la-formula-1/",
+   "published": "2026-10-22T18:28:47Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "cultura",
@@ -440,6 +605,21 @@
    "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
+   "category": "deportes",
+   "title": "Equipo paraguayo impone código de vestimenta a fotógrafas: Inusual medida que sorprendió a todos",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.guioteca.com",
+   "sources": [
+    "Guioteca"
+   ],
+   "coverages": [],
+   "link": "https://www.guioteca.com/futbol-internacional/equipo-paraguayo-impone-codigo-de-vestimenta-a-fotografas-inusual-medida-que-sorprendio-a-todos/",
+   "published": "2026-10-22T17:16:40Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
    "category": "medioambiente",
    "title": "Cómo afectará el cambio climático a Valparaíso: Aumento de calor, más riesgos de incendios y escasez de agua",
    "summary": "",
@@ -449,23 +629,40 @@
     "El Martutino"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYnJCTms2bV8xNC1PSzFJUExqWU9yTDlXQXRGOUc5cXJYb09fQUlYbWtYbjdTamtqWFNJVDBvcU1rb3JFUjZ3eG03MXloSXBPTnd4WWtwS1Q5OXRDS2ljZUNNc3NzOFdEeWYwNDRndkZQX2dsa1oxb2NEUGtLOWF0WGhyZEFDTU9lNWNBUEdDZTUwNnA2ZXh0Wk5TS3BRVWlYbTV1QmJjWnRzenVkWkFPOGJaclNIQlN4TGFIM0REZWcwdTA2NVE?oc=5",
+   "link": "https://www.elmartutino.cl/noticia/sociedad/como-afectara-el-cambio-climatico-valparaiso-aumento-de-calor-mas-riesgos-de-incend",
    "published": "2026-10-22T17:10:48Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "medioambiente",
    "title": "Urruticoechea (PNL) critica lenguaje de cambio climático: \"Cosa en la que nosotros no creemos\"",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992520-urruticoechea-pnl-critica-lenguaje-de-cambio-climatico_-_cosa-en-la-que-nosotros-no-creemos_.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNbHdDV0V0cU5hZDJaWkpjY3hIT1dTV1JNUndNMDJYNEg1NTNBdHNZT0g5OVFzY3ZjQXhteGVQTFB2b0syV3pJT3lQdlJDMjU2Y01raGFENGVieFF2eXQwVUJlckVISDZzYy05VXJWNzdOWFlvdjFQX004QlpXOEg5c3NZMzFyRWoyWnhEWW96cHh2M2N5S3B0TWFaT3VSUDFyWlhIOG1PQUpYZk9Qb1hrU1RBQkJhajl1dFlzcFh5UjIydmppc3lIWmN6eUtJMm1CX2htOGQtWUdOTWpTWFllQ3V0MVRxSWRTU2ZlUHJR?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/22/urruticoechea-pnl-critica-lenguaje-de-cambio-climatico-cosa-en-la-que-nosotros-no-creemos.shtml",
    "published": "2026-10-22T17:10:40Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Se revela el monto que pagará Fran Maira a motociclista que atropelló y la fianza para viajar a nuevo desafío televisivo",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/Z3OWWET4L5DQHCW7A5PTQ2Y4EU.jpg?auth=5dec5cc82168801d21804e49e9135694a83234feaf6329db30344186cb72311b&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/se-revela-el-monto-que-pagara-fran-maira-a-motociclista-que-atropello-y-la-fianza-para-viajar-a-nuevo-desafio-televisivo/",
+   "published": "2026-10-22T17:08:38Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "politica",
@@ -496,6 +693,21 @@
    "published": "2026-10-22T17:03:53Z",
    "first_seen": "2026-10-22T21:41:26Z",
    "image_checked_at": "2026-10-22T22:02:46.430342Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Alerta en el centro sur de Chile: DMC emite aviso por posibles nubes tornádicas en Maule, Ñuble y Biobío",
+   "summary": "",
+   "image": "https://media.eldesconcierto.cl/p/d27d4581e962997258f2389da21e2dae/adjuntos/378/imagenes/100/136/0100136545/1200x675/647x550:667x570/kbr6sf5uundnxcdmzr6rgtohze.jpg",
+   "source_url": "https://eldesconcierto.cl",
+   "sources": [
+    "El Desconcierto"
+   ],
+   "coverages": [],
+   "link": "https://eldesconcierto.cl/actualidad/alerta-el-centro-sur-chile-dmc-emite-aviso-posibles-nubes-tornadicas-maule-nuble-y-biobio-n5463385",
+   "published": "2026-10-22T16:58:00Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "deportes",
@@ -738,15 +950,16 @@
    "category": "salud-ciencia",
    "title": "Picmagluti: ¿será más barato que Ozempic? Chile aprueba nuevo medicamento con semaglutida",
    "summary": "",
-   "image": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/picmagluti-semaglutida-ozempic-medicamento-chile-700x392.jpg",
    "source_url": "https://www.elmostrador.cl",
    "sources": [
     "El Mostrador"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRXNXeXp5OUJSZUo3bS1WdTB0ckEzVEFueU5JdlhFZTNhS1ZJS25CVEhVdXNzVVA2aGdHaUJza0JkR2lrWjFpY2VHRzNlNktVYUdGN0ZlaTQ0WXk5dXhoU2w4SXlmOEUzSkxFdThHdUxLWFpJYlZEeHVTVXRfQ2dDTnE0TkFnSGRQck80RXVQRFprR083ekhEeUN5WlVkYk40VmRxZTluZ3V1TFVlcy1mNkFFNUpvNXNQTnotejl4UEtpUVlsWmRiM2NMTTdjMDJSU0lVTkdtQ19HQnJheGRXeFhoT1ZlUQ?oc=5",
+   "link": "https://www.elmostrador.cl/agenda-pais/vida-en-linea/2026/10/22/picmagluti-sera-mas-barato-que-ozempic-chile-aprueba-nuevo-medicamento-con-semaglutida/",
    "published": "2026-10-22T15:47:06Z",
-   "first_seen": "2026-10-22T21:53:12Z"
+   "first_seen": "2026-10-22T21:53:12Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "regiones",
@@ -888,6 +1101,21 @@
    "link": "https://www.bbc.com/mundo/articles/c6x2wnkw55lvo?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-22T15:13:40Z",
    "first_seen": "2026-10-22T19:59:52Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Ni el internet está seguro: Uno de cada cuatro chilenos ha caído en una estafa digital",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/GDOYN65SZBGWHFBSEVH56C7UCA.jpg?auth=e3c5f7d9721d2c5cc51c10697dfd36fb31bebbdf5323da629101d992abd30135&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/tendencias/noticia/ni-el-internet-esta-seguro-uno-de-cada-cuatro-chilenos-ha-caido-en-una-estafa-digital/",
+   "published": "2026-10-22T15:10:12Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "deportes",
@@ -1220,6 +1448,21 @@
    "image_checked_at": "2026-10-22T15:13:54.190239Z"
   },
   {
+   "category": "nacional",
+   "title": "Maltratador fue abatido al atacar a Carabineros con cuchillos y un hacha",
+   "summary": "",
+   "image": "https://www.cooperativa.cl/noticias/site/artic/20261022/imag/foto_0000000120261022103221.jpg",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa"
+   ],
+   "coverages": [],
+   "link": "https://www.cooperativa.cl/noticias/pais/policial/violencia-intrafamiliar/maltratador-fue-abatido-al-atacar-a-carabineros-con-cuchillos-y-un-hacha/2026-10-22/103221.html",
+   "published": "2026-10-22T14:03:00Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
    "category": "regiones",
    "title": "La Región de Valparaíso eligió su mejor \"pan batido\"",
    "summary": "",
@@ -1435,15 +1678,16 @@
    "category": "salud-ciencia",
    "title": "Desafíos del sistema de salud en seminario de la Federación Médica de Chile",
    "summary": "",
-   "image": "",
+   "image": "https://portalredsalud.cl/wp-content/uploads/2026/10/Desafios-del-sistema-de-salud-en-seminario-de-la-Federacion-Medica-de-Chile.jpg",
    "source_url": "https://portalredsalud.cl",
    "sources": [
     "Portal Red Salud"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeTFFVEh6NHRQY1d5RERlN2pYUVZ4V2tscF9ad2otV2JEbW82b0hoV21sUlVid2k4OEhEY0VpTkpKWHBPcnE5dmVUcTNoU2tNY0JsaEx3UHFjeGpFb29IMUd6T3ZzQk1sMEJGdEc5YkxBUkRRMlFqU2VLRk1FaTJTUkxWSUlSdm91WWk1dWZqdjNMSGdBMjRjc1RhU1lZckNja3JjcWtYb184cTZPWGxEYUFnQQ?oc=5",
+   "link": "https://portalredsalud.cl/2026/10/22/desafios-del-sistema-de-salud-en-seminario-de-la-federacion-medica-de-chile/",
    "published": "2026-10-22T13:01:16Z",
-   "first_seen": "2026-10-22T15:13:54Z"
+   "first_seen": "2026-10-22T15:13:54Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "deportes",
@@ -1459,21 +1703,6 @@
    "published": "2026-10-22T12:53:29Z",
    "first_seen": "2026-10-22T15:13:54Z",
    "image_checked_at": "2026-10-22T15:13:54.190239Z"
-  },
-  {
-   "category": "economia",
-   "title": "Alerta internacional por falla grave en el lenguaje de programación PHP que afecta a servidores",
-   "summary": "",
-   "image": "https://static.dw.com/image/79248870_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/php-reconoce-falla-de-seguridad-y-publica-parche-para-evitar-ciberdelitos/a-79724651",
-   "published": "2026-10-22T12:51:17Z",
-   "first_seen": "2026-10-22T19:59:52Z",
-   "image_checked_at": "2026-10-22T19:59:52.269610Z"
   },
   {
    "category": "deportes",
@@ -2152,20 +2381,6 @@
    "image_checked_at": "2026-10-22T04:32:59.468788Z"
   },
   {
-   "category": "medioambiente",
-   "title": "Los tres \"ingredientes\" que impulsan la formación de tornados: ¿Influye El Niño o el cambio climático?",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNZ1RnX0VIOHVBQktVeE5mZWVmUTQzaVJaMlUtdmU5VGREMVpLQ0N6dzZMVThrcW5zQU1mdVpSeWtQNHRVMTladzJ0YmtrdXR6NksycnNwRUJZNEVqbFUzeWZHblBCcTZHeFpNalBvbjBpWmVQZ2s1a05ic28xZnRyOWw0aXFFaDN5X2c5ZGFEX2U5T2JJYnFmWkE5dlN4Wkw0ZkZxSHFTLVh1R3hEZXN6Qjdkb25jYVFtejRCMjBpT2RxU2pja29GSWlZMWdYTVZEVC0zSWhMQ2NwQU9RbTNKY0dnX2plTDdxZkFrVnl1MDNOcGVMS1doTG94WUxMeXJSNVZPbHF5aVN4T28?oc=5",
-   "published": "2026-10-22T02:48:53Z",
-   "first_seen": "2026-10-22T15:13:54Z"
-  },
-  {
    "category": "regiones",
    "title": "Antof a Mil anunció 10 espectáculos para su edición 2027 en Antofagasta, Mejillones y San Pedro de Atacama",
    "summary": "",
@@ -2470,15 +2685,16 @@
    "category": "politica",
    "title": "Cátedra de la U. de Chile advierte que reforma al INDH amenaza su autonomía: “Una grave amenaza” para los derechos humanos",
    "summary": "",
-   "image": "",
+   "image": "https://uchile-media-storage.nyc3.cdn.digitaloceanspaces.com/2021/06/Destacada-INDH-scaled.jpg",
    "source_url": "https://radio.uchile.cl",
    "sources": [
     "Universidad de Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNMHliZWpOM0NHVWt5cUREX0UzN2NQNWl1QWZkSWxxTzNJN2FtVkdlVS01VVE2UjBHZU5mblMyOGE0RmtWd1I5VllIb21NelhvZUlKWHJIblZ1Z1lSQXNlTWk1N3BZYWFjVnJTTWtqWmFRU1BfSy1OTnpRQTNQQjhSdTQ2bW5PVVA2UDNvdktEUFloaW51TmFJdGZ1VzlGYXM2RmJTTldKcXBZVFQ0NFVQYUJuc0I3WlEzY2VLRnJyM0NTRHVkYUYwNVZIQjhXQ0syZUJpNm5GRXU2SGRwVnliU3JGN1FZOWg2S3c?oc=5",
+   "link": "https://radio.uchile.cl/2026/10/21/catedra-de-la-u-de-chile-advierte-que-reforma-al-indh-amenaza-su-autonomia-una-grave-amenaza-para-los-derechos-humanos/",
    "published": "2026-10-22T00:04:57Z",
-   "first_seen": "2026-10-22T04:32:59Z"
+   "first_seen": "2026-10-22T04:32:59Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "cultura",
@@ -2514,15 +2730,16 @@
    "category": "politica",
    "title": "SII detecta más de US$3.200 millones en el exterior sin declarar; gobierno rebaja 56 condenas por delitos sexuales contra menores, y Hermosilla solicita por segunda vez inhabilidad de fiscal",
    "summary": "",
-   "image": "",
+   "image": "https://www.ciperchile.cl/wp-content/uploads/banner-radar2.png",
    "source_url": "https://www.ciperchile.cl",
    "sources": [
     "- CIPER Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1xdk9MWnVNeXgwQXo5Q25rWWc1QUNqMXpEaHhqN2o3Z1dObzE0Zmplc2lBRFdaN3dhM3ZNeFBaQmRZUGxkVXdxX0tpdlJPRm5OQjRDZ2FFOVFuWUh3cjFGS3FR?oc=5",
+   "link": "https://www.ciperchile.cl/2026/10/21/radar-21-10-26/",
    "published": "2026-10-21T23:46:16Z",
-   "first_seen": "2026-10-22T10:04:05Z"
+   "first_seen": "2026-10-22T10:04:05Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "internacional",
@@ -2543,15 +2760,16 @@
    "category": "politica",
    "title": "De $70 mil a $248 mil: el salto aprobado en el Congreso para alumnos de Carabineros",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991848-de-70-a-248-mil_-el-salto-aprobado-en-el-congreso-para-alumnos-de-carabineros-y-que-suma-a-civiles.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNMnkxckh0X3B6MWtIRzZwSnFUTWtJWkF2cEc2Zk9Ha3NtbElxMkMwNTRkTlBsaWlka294RG9pWHcyV2VxOTVDSzFIcGZpdnZ6X0NTMktyOFdKZnRFS2hxQy01eUVNVUVRNGhoa2xxdEVvN2pFT000OENDMEpzR29oNXlTQm1tX3BUc3k1cS1xM2NJOFh6SXRSUkNQTVZSX2YyYVpqcnBBOC1vUDdxQVh5aDU4N0ZGQmozV3laczJVZ29SNXF3cE5fSlVpZWJreTBGTUdrUnhmOTV3NW1sLXppcHJSSEFqZ1FhUjJKeC1vMXRmUjRmMjhXNA?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/21/de-70-a-248-mil-el-salto-aprobado-en-el-congreso-para-alumnos-de-carabineros-y-que-suma-a-civiles.shtml",
    "published": "2026-10-21T23:41:33Z",
-   "first_seen": "2026-10-22T04:32:59Z"
+   "first_seen": "2026-10-22T04:32:59Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
    "category": "economia",
@@ -2569,6 +2787,20 @@
    "image_checked_at": "2026-10-22T10:04:05.411056Z"
   },
   {
+   "category": "deportes",
+   "title": "EN VIVO | Jarry vs Pucinelli por el Challenger de Cali: punto a punto",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.encancha.cl",
+   "sources": [
+    "En Cancha"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaUxKc211Z0RKU0l0MmxMbC12MF9xZ0xveHJVczdFWXRQS2gtVmxhR21CV2w4UWZxa2VYX2JHaFlhSjVDNi1aTW5WTUhaUTIwU2FHZFdKMDNmR1BsUUt5NkR0VEEwXzgtcXBkTGhYaGk4di1rM0hXN3dfanJkalVJRnk1Q0Vtd2U2S250WWRlNVdMNGhIcVl3SHFlNTFuT0tLc3FUWGlmWnhiT05mbHJFVFVHUy1ZWGRZOF9TOTJHNHJWY0dic1E?oc=5",
+   "published": "2026-10-21T23:40:00Z",
+   "first_seen": "2026-10-22T23:16:38Z"
+  },
+  {
    "category": "tecnologia",
    "title": "Los planes de la ministra Lincolao para instalar a Chile en el circuito global de la IA: “Estamos cerca de cerrar un acuerdo con OpenAI”",
    "summary": "",
@@ -2584,6 +2816,21 @@
    "image_checked_at": "2026-10-22T10:04:05.411056Z"
   },
   {
+   "category": "nacional",
+   "title": "Adolescente de 14 años muere apuñalado tras presunta riña en Estación Central",
+   "summary": "",
+   "image": "https://media.chilevision.cl/2026/10/adolescente-muere-apunalado-1200x675.png",
+   "source_url": "https://www.chilevision.cl",
+   "sources": [
+    "Chilevisión"
+   ],
+   "coverages": [],
+   "link": "https://www.chilevision.cl/noticias/casos-policiales/adolescente-de-14-anos-muere-apunalado-tras-presunta-rina-en-estacion-central/",
+   "published": "2026-10-21T23:26:21Z",
+   "first_seen": "2026-10-22T23:16:38Z",
+   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+  },
+  {
    "category": "cultura",
    "title": "J.K. Rowling insiste contra el activismo trans y acusa \"amenazas de muerte, tortura y violación\"",
    "summary": "",
@@ -2597,190 +2844,37 @@
    "published": "2026-10-21T23:21:56Z",
    "first_seen": "2026-10-22T19:59:52Z",
    "image_checked_at": "2026-10-22T21:53:12.308190Z"
-  },
-  {
-   "category": "nacional",
-   "title": "¿Fue un tornado? Meteorología entrega primera clasificación tras fenómeno en Retiro",
-   "summary": "",
-   "image": "https://www.24horas.cl/24horas/site/artic/20261021/imag/foto_0000001120261021201336/tornado_retiro.webp",
-   "source_url": "https://www.24horas.cl",
-   "sources": [
-    "24horas"
-   ],
-   "coverages": [],
-   "link": "https://www.24horas.cl/regiones/zona-centro/maule/fue-un-tornado-meteorologia-entrega-primera-clasificacion-retiro",
-   "published": "2026-10-21T23:13:00Z",
-   "first_seen": "2026-10-22T04:32:59Z",
-   "image_checked_at": "2026-10-22T04:32:59.468788Z"
-  },
-  {
-   "category": "politica",
-   "title": "Detrás de las 56 rebajas por delitos sexuales: los argumentos de Justicia que no cierran la polémica",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991522-collage-editorial-con-emblema-judicial-1200x633.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/21/detras-de-las-56-rebajas-por-delitos-sexuales-la-explicacion-de-justicia-que-no-cierra-la-polemica.shtml",
-   "published": "2026-10-21T23:11:13Z",
-   "first_seen": "2026-10-21T23:14:51Z",
-   "image_checked_at": "2026-10-21T23:14:51.275301Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Fuerte remezón para el animador: Julio César Rodríguez confirma el fin de programa que condujo por 20 años",
-   "summary": "",
-   "image": "https://www.lacuarta.com/resizer/v2/X5A3W65Z3JB7JATZLCXMN7CLDM.jpg?auth=4e46d25fcc7cc4fab8897c48f122f699a54a05a0b5ad2c19e5cb6bc74527184f&height=630&width=1200&smart=true",
-   "source_url": "https://www.lacuarta.com",
-   "sources": [
-    "La Cuarta"
-   ],
-   "coverages": [],
-   "link": "https://www.lacuarta.com/espectaculos/noticia/fuerte-remezon-personal-julio-cesar-rodriguez-confirma-el-fin-de-programa-que-condujo-por-20-anos/",
-   "published": "2026-10-21T23:08:43Z",
-   "first_seen": "2026-10-22T04:32:59Z",
-   "image_checked_at": "2026-10-22T10:04:05.411056Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Informe asegura que hasta 12.000 norcoreanos trabajan como esclavos en una fábrica rusa de drones",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991268-trabajadores-norcoreanos-esclavos.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/21/informe-asegura-que-hasta-12-000-norcoreanos-trabajan-como-esclavos-en-una-fabrica-rusa-de-drones.shtml",
-   "published": "2026-10-21T23:00:02Z",
-   "first_seen": "2026-10-21T23:14:51Z",
-   "image_checked_at": "2026-10-21T23:14:51.275301Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Subcomisión Mixta de Presupuestos rechaza partida del Ministerio de Ciencia para 2027",
-   "summary": "",
-   "image": "https://media-front.elmostrador.cl/2026/10/WhatsApp-Image-2026-10-21-at-7.53.07-PM-700x394.jpeg",
-   "source_url": "https://www.elmostrador.cl",
-   "sources": [
-    "El Mostrador"
-   ],
-   "coverages": [],
-   "link": "https://www.elmostrador.cl/cultura/ciencia-cultura/2026/10/21/subcomision-mixta-de-presupuestos-rechaza-partida-del-ministerio-de-ciencia-para-2027/",
-   "published": "2026-10-21T22:58:24Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "La nueva moda de “hackear” Smart TV con inteligencia artificial: usuarios logran eliminar anuncios y aplicaciones de rastreo",
-   "summary": "",
-   "image": "https://static.theclinic.cl/media/og-watermarked/20261021-1811889-portada-tech.jpg",
-   "source_url": "https://www.theclinic.cl",
-   "sources": [
-    "The Clinic"
-   ],
-   "coverages": [],
-   "link": "https://www.theclinic.cl/2026/10/21/hackear-televisores-ia-eliminar-anuncios/",
-   "published": "2026-10-21T22:57:05Z",
-   "first_seen": "2026-10-22T21:41:26Z",
-   "image_checked_at": "2026-10-22T21:41:26.280174Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "MK4: Comisión de Hacienda aprueba indicaciones para crear fondo de fondos para startups y gobierno hace reserva de constitucionalidad",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261021/imag/foto_0000000220261021193114/WhatsApp_Image_2026-10-21_at_19.31.11.jpeg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/df-lab/innovacion-y-startups/mk4-comision-de-hacienda-aprueba-indicaciones-para-crear-fondo-de-fondos",
-   "published": "2026-10-21T22:56:00Z",
-   "first_seen": "2026-10-22T04:32:59Z",
-   "image_checked_at": "2026-10-22T10:04:05.411056Z"
-  },
-  {
-   "category": "internacional",
-   "title": "\"Nos avergüenza\": Oposición argentina rechaza insultos de Milei contra Presidente Sánchez en España",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991785-efe-por-oposicion-argentina-rechaza-insultos-de-milei-contra-presidente-sanchez-en-espana.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/21/nos-averguenza-oposicion-argentina-rechaza-insultos-de-milei-contra-presidente-sanchez-en-espana.shtml",
-   "published": "2026-10-21T22:35:43Z",
-   "first_seen": "2026-10-21T23:14:51Z",
-   "image_checked_at": "2026-10-21T23:14:51.275301Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Exministro Marcel cuestiona manejo en precio de combustibles y plantea alternativa para atenuar alzas",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991718-marcel-combustibles.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/21/exministro-marcel-cuestiona-manejo-en-precio-de-combustibles-y-plantea-alternativa-para-atenuar-alzas.shtml",
-   "published": "2026-10-21T22:16:44Z",
-   "first_seen": "2026-10-21T23:14:51Z",
-   "image_checked_at": "2026-10-21T23:14:51.275301Z"
-  },
-  {
-   "category": "regiones",
-   "title": "Vive Barrio Puerto: Valparaíso ofrecerá un fin de semana de arte, arquitectura, música y gastronomía",
-   "summary": "",
-   "image": "https://g5noticias.cl/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-21-at-5.36.39-PM.jpeg",
-   "source_url": "https://g5noticias.cl",
-   "sources": [
-    "G5noticias"
-   ],
-   "coverages": [],
-   "link": "https://g5noticias.cl/2026/10/21/vive-barrio-puerto-valparaiso-ofrecera-un-fin-de-semana-de-arte-arquitectura-musica-y-gastronomia/",
-   "published": "2026-10-21T22:15:04Z",
-   "first_seen": "2026-10-21T23:14:51Z",
-   "image_checked_at": "2026-10-22T22:02:46.430342Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Yoan Amor contó la verdadera razón de su salida de La Noche y deja abierta la posibilidad de regresar",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991660-sin-nombre-18-1200x633.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/21/yoan-amor-conto-la-verdadera-razon-de-su-salida-de-la-noche-y-deja-abierta-la-posibilidad-de-regresar.shtml",
-   "published": "2026-10-21T22:11:19Z",
-   "first_seen": "2026-10-21T23:14:51Z",
-   "image_checked_at": "2026-10-22T10:04:05.411056Z"
-  },
-  {
-   "category": "economia",
-   "title": "Emiten alerta de seguridad para algunos vehículos marca Ford: qué hacer si el tuyo es uno de ellos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991754-ford.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/21/emiten-alerta-de-seguridad-para-algunos-vehiculos-marca-ford-que-hacer-si-el-tuyo-es-uno-de-ellos.shtml",
-   "published": "2026-10-21T22:06:28Z",
-   "first_seen": "2026-10-21T23:14:51Z",
-   "image_checked_at": "2026-10-21T23:14:51.275301Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Sobre los críticos a la conducción de las Relaciones Exteriores de Chile",
+   "link": "https://www.athenalab.org/medios/2026/10/22/sobre-los-criticos-a-la-conduccion-de-las-relaciones-exteriores-de-chile/",
+   "category": "politica",
+   "published": "2026-10-22T22:31:19Z",
+   "sources": [
+    "AthenaLAB"
+   ]
+  },
+  {
+   "title": "Heridos y atrapados deja accidente múltiple entre autos, camión y buses en Ruta 5 altura Renca",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/22/heridos-y-atrapados-deja-accidente-multiple-entre-autos-camion-y-buses-en-ruta-5-altura-renca.shtml",
+   "category": "nacional",
+   "published": "2026-10-22T22:23:15Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Nueva alerta por tormentas eléctricas, granizo y vientos intensos en Maule, Ñuble y Bío Bío",
+   "link": "https://www.canal9.cl/episodios/2026/10/22/alertan-nuevamente-por-tormentas-electricas-granizos-y-fuerte-viento-para-maule-nuble-y-bio-bio",
+   "category": "regiones",
+   "published": "2026-10-22T21:56:20Z",
+   "sources": [
+    "Canal 9 Bío Bío Televisión"
+   ]
+  },
   {
    "title": "Los anfitriones de Airbnb ya no pueden exigir a los huéspedes que quiten las sábanas ni que laven los platos",
    "link": "https://www.bbc.com/mundo/articles/c6vg0k034n94o?at_medium=RSS&at_campaign=rss",
@@ -2788,6 +2882,15 @@
    "published": "2026-10-22T21:43:11Z",
    "sources": [
     "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Trump optimista y Rusia se muestra escéptica sobre fin de la guerra",
+   "link": "https://www.dw.com/es/trump-optimista-y-rusia-se-muestra-esc%C3%A9ptica-sobre-fin-de-la-guerra/a-79727174",
+   "category": "internacional",
+   "published": "2026-10-22T21:10:25Z",
+   "sources": [
+    "DW.com"
    ]
   },
   {
@@ -2806,6 +2909,24 @@
    "published": "2026-10-22T20:56:46Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Muere a los 93 años Tom Skerritt, actor conocido por “Alien” y “Picket Fences”",
+   "link": "https://cnnespanol.cnn.com/2026/10/22/entretenimiento/muere-tom-skerritt-actor-alien-picket-fences-trax",
+   "category": "cultura",
+   "published": "2026-10-22T20:52:00Z",
+   "sources": [
+    "CNN en Español"
+   ]
+  },
+  {
+   "title": "¡Hay partido! Insólito autogol de Deportivo Cali le permitió a la U descontar en la Libertadores Femenina",
+   "link": "https://www.chilevision.cl/chv-deportes/copa-libertadores/insolito-autogol-de-deportivo-cali-le-permitio-a-la-u-descontar-en-la-libertadores-femenina/",
+   "category": "deportes",
+   "published": "2026-10-22T20:44:07Z",
+   "sources": [
+    "Chilevisión"
    ]
   },
   {
@@ -2863,6 +2984,15 @@
    ]
   },
   {
+   "title": "Milei y el desgaste de su estrategia política: el viaje a España revela los límites de su motosierra",
+   "link": "https://radio.uchile.cl/2026/10/22/milei-y-el-desgaste-de-su-estrategia-politica-el-viaje-a-espana-revela-los-limites-de-su-motosierra/",
+   "category": "politica",
+   "published": "2026-10-22T19:56:16Z",
+   "sources": [
+    "Universidad de Chile"
+   ]
+  },
+  {
    "title": "Elecciones en Brasil Lula vs Bolsonaro: importancia Chile",
    "link": "https://www.ex-ante.cl/internacional/lula-bolsonaro-chile-eleccion-brasil/",
    "category": "politica",
@@ -2908,6 +3038,15 @@
    ]
   },
   {
+   "title": "Crítica de teatro: La señorita Julia de Strindberg en versión trans",
+   "link": "https://www.elmostrador.cl/cultura/2026/10/22/critica-de-teatro-la-senorita-julia-de-strindberg-en-version-trans/",
+   "category": "cultura",
+   "published": "2026-10-22T19:11:36Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
    "title": "Sólo horas después de abrirse a negociar la paz: Rusia lanzó ataque con misiles contra Ucrania",
    "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/22/solo-horas-despues-de-abrirse-a-negociar-la-paz-rusia-lanzo-ataque-con-misiles-contra-ucrania.shtml",
    "category": "internacional",
@@ -2932,6 +3071,15 @@
    "published": "2026-10-22T19:02:00Z",
    "sources": [
     "Diario Financiero"
+   ]
+  },
+  {
+   "title": "El dilema de Chancay en Perú",
+   "link": "https://www.latercera.com/mundo/noticia/el-dilema-de-chancay-en-peru/",
+   "category": "internacional",
+   "published": "2026-10-22T19:00:00Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -2980,6 +3128,15 @@
    ]
   },
   {
+   "title": "¿Qué es PHP y por qué generó una falla de seguridad en internet que desató una alerta global?",
+   "link": "https://www.bbc.com/mundo/articles/cmly0k9y9p1vo",
+   "category": "tecnologia",
+   "published": "2026-10-22T18:50:14Z",
+   "sources": [
+    "BBC"
+   ]
+  },
+  {
    "title": "Extienden entrega del Bono Combustible hasta diciembre: quiénes pueden recibir $100 mil mensuales",
    "link": "https://www.biobiochile.cl/noticias/servicios/beneficios/2026/10/22/extienden-entrega-del-bono-combustible-hasta-diciembre-quienes-pueden-recibir-100-mil-mensuales.shtml",
    "category": "nacional",
@@ -3013,6 +3170,15 @@
    "published": "2026-10-22T18:31:16Z",
    "sources": [
     "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Nació en Chile, tiene una fortuna de US$ 8.400 millones y ahora está a un paso de ser dueño de un equipo de la NFL y una carrera de la Fórmula 1",
+   "link": "https://www.theclinic.cl/2026/10/22/nacio-en-chile-tiene-una-fortuna-de-us-8-400-millones-y-ahora-esta-a-un-paso-de-ser-dueno-de-un-equipo-de-la-nfl-y-una-carrera-de-la-formula-1/",
+   "category": "deportes",
+   "published": "2026-10-22T18:28:47Z",
+   "sources": [
+    "The Clinic"
    ]
   },
   {
@@ -3088,8 +3254,26 @@
    ]
   },
   {
+   "title": "Equipo paraguayo impone código de vestimenta a fotógrafas: Inusual medida que sorprendió a todos",
+   "link": "https://www.guioteca.com/futbol-internacional/equipo-paraguayo-impone-codigo-de-vestimenta-a-fotografas-inusual-medida-que-sorprendio-a-todos/",
+   "category": "deportes",
+   "published": "2026-10-22T17:16:40Z",
+   "sources": [
+    "Guioteca"
+   ]
+  },
+  {
    "title": "Cómo afectará el cambio climático a Valparaíso: Aumento de calor, más riesgos de incendios y escasez de agua",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYnJCTms2bV8xNC1PSzFJUExqWU9yTDlXQXRGOUc5cXJYb09fQUlYbWtYbjdTamtqWFNJVDBvcU1rb3JFUjZ3eG03MXloSXBPTnd4WWtwS1Q5OXRDS2ljZUNNc3NzOFdEeWYwNDRndkZQX2dsa1oxb2NEUGtLOWF0WGhyZEFDTU9lNWNBUEdDZTUwNnA2ZXh0Wk5TS3BRVWlYbTV1QmJjWnRzenVkWkFPOGJaclNIQlN4TGFIM0REZWcwdTA2NVE?oc=5",
+   "category": "medioambiente",
+   "published": "2026-10-22T17:10:48Z",
+   "sources": [
+    "El Martutino"
+   ]
+  },
+  {
+   "title": "Cómo afectará el cambio climático a Valparaíso: Aumento de calor, más riesgos de incendios y escasez de agua",
+   "link": "https://www.elmartutino.cl/noticia/sociedad/como-afectara-el-cambio-climatico-valparaiso-aumento-de-calor-mas-riesgos-de-incend",
    "category": "medioambiente",
    "published": "2026-10-22T17:10:48Z",
    "sources": [
@@ -3103,6 +3287,24 @@
    "published": "2026-10-22T17:10:40Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Urruticoechea (PNL) critica lenguaje de cambio climático: \"Cosa en la que nosotros no creemos\"",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/22/urruticoechea-pnl-critica-lenguaje-de-cambio-climatico-cosa-en-la-que-nosotros-no-creemos.shtml",
+   "category": "medioambiente",
+   "published": "2026-10-22T17:10:40Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Se revela el monto que pagará Fran Maira a motociclista que atropelló y la fianza para viajar a nuevo desafío televisivo",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/se-revela-el-monto-que-pagara-fran-maira-a-motociclista-que-atropello-y-la-fianza-para-viajar-a-nuevo-desafio-televisivo/",
+   "category": "cultura",
+   "published": "2026-10-22T17:08:38Z",
+   "sources": [
+    "La Cuarta"
    ]
   },
   {
@@ -3139,6 +3341,15 @@
    "published": "2026-10-22T17:03:53Z",
    "sources": [
     "El Mostrador"
+   ]
+  },
+  {
+   "title": "Alerta en el centro sur de Chile: DMC emite aviso por posibles nubes tornádicas en Maule, Ñuble y Biobío",
+   "link": "https://eldesconcierto.cl/actualidad/alerta-el-centro-sur-chile-dmc-emite-aviso-posibles-nubes-tornadicas-maule-nuble-y-biobio-n5463385",
+   "category": "regiones",
+   "published": "2026-10-22T16:58:00Z",
+   "sources": [
+    "El Desconcierto"
    ]
   },
   {
@@ -3322,6 +3533,15 @@
    ]
   },
   {
+   "title": "Picmagluti: ¿será más barato que Ozempic? Chile aprueba nuevo medicamento con semaglutida",
+   "link": "https://www.elmostrador.cl/agenda-pais/vida-en-linea/2026/10/22/picmagluti-sera-mas-barato-que-ozempic-chile-aprueba-nuevo-medicamento-con-semaglutida/",
+   "category": "salud-ciencia",
+   "published": "2026-10-22T15:47:06Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
    "title": "PDI RATIFICA AL PREFECTO INSPECTOR HÉCTOR CORNEJO COMO JEFE DE LA REGIÓN POLICIAL DE LA ARAUCANÍA PARA 2027",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOcGJfWVlOWG1JNkV3bl9UazE1cklBVERmWVRqWFNSbXVCV3VCVGl1aldCUmFGbUtncnEweXBtcldLUGVGU3FTS2dRcGkzZVU2MTlqWDBtSjR5MVppcFlqeGdSS2VnTm41NjN6OUVOOW5qRmRpM1JGclhpb0lHc1Z0WTRxLTZVYXRaejh5Ymd4YU84TGFVdmZKWVhNbFF1VlhULWF2dFJscEN0WWxrYXpIdzJjVlBUT1J4WDRhYklUaHhGdmpCcHRqQzk3ZURTWVVUaGc2Ylg1c3hLLVcyVkVHenY0bWFRems?oc=5",
    "category": "regiones",
@@ -3436,6 +3656,15 @@
    "published": "2026-10-22T15:13:40Z",
    "sources": [
     "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Ni el internet está seguro: Uno de cada cuatro chilenos ha caído en una estafa digital",
+   "link": "https://www.lacuarta.com/tendencias/noticia/ni-el-internet-esta-seguro-uno-de-cada-cuatro-chilenos-ha-caido-en-una-estafa-digital/",
+   "category": "tecnologia",
+   "published": "2026-10-22T15:10:12Z",
+   "sources": [
+    "La Cuarta"
    ]
   },
   {
@@ -3718,6 +3947,15 @@
    ]
   },
   {
+   "title": "Maltratador fue abatido al atacar a Carabineros con cuchillos y un hacha",
+   "link": "https://www.cooperativa.cl/noticias/pais/policial/violencia-intrafamiliar/maltratador-fue-abatido-al-atacar-a-carabineros-con-cuchillos-y-un-hacha/2026-10-22/103221.html",
+   "category": "nacional",
+   "published": "2026-10-22T14:03:00Z",
+   "sources": [
+    "Cooperativa"
+   ]
+  },
+  {
    "title": "La Región de Valparaíso eligió su mejor \"pan batido\"",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOVpnX0tjbEpLQVBBR3BER0hIWGZMVDhiUUxILUVYRTJtWVZsNzhKS1F2WnFXSGJpNmpfbk5fQXFjMFU1NGFPOWFaeS02UHpMQzlDTUZJUFJEekRETzJkSGlGZHhYM1FjbnZlQ3NtWDlNbENPTGtaRktSTWxwNC1kak9iOXI3V0lJVkYxVDlVNFBzU2RkNVk2MW1kZUprTFhRVHAxZndPYkPSAa4BQVVfeXFMTUpYbm5pN1JNMnF6b2RobmlHcm9tRnBuWGFicVRJdlVZcXNPMDhVYkotcmRUUDBDZjRZRDBQeVNjVXpFaWRCVkhDOXBDc2RVRUJiY3JnREVVZFBiSzZ6NWNlZzNjQ1RheWFpdHBGNFlBQ0dNQWVfeTZOSU51b1VqS3d1akdIbzBmaU8wdWRXTmE2a0plT1BmWGVZbnRNbHBnNjA0Wm8wZ09ERl9IYW1R?oc=5",
    "category": "regiones",
@@ -3911,6 +4149,15 @@
   {
    "title": "Desafíos del sistema de salud en seminario de la Federación Médica de Chile",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeTFFVEh6NHRQY1d5RERlN2pYUVZ4V2tscF9ad2otV2JEbW82b0hoV21sUlVid2k4OEhEY0VpTkpKWHBPcnE5dmVUcTNoU2tNY0JsaEx3UHFjeGpFb29IMUd6T3ZzQk1sMEJGdEc5YkxBUkRRMlFqU2VLRk1FaTJTUkxWSUlSdm91WWk1dWZqdjNMSGdBMjRjc1RhU1lZckNja3JjcWtYb184cTZPWGxEYUFnQQ?oc=5",
+   "category": "salud-ciencia",
+   "published": "2026-10-22T13:01:16Z",
+   "sources": [
+    "Portal Red Salud"
+   ]
+  },
+  {
+   "title": "Desafíos del sistema de salud en seminario de la Federación Médica de Chile",
+   "link": "https://portalredsalud.cl/2026/10/22/desafios-del-sistema-de-salud-en-seminario-de-la-federacion-medica-de-chile/",
    "category": "salud-ciencia",
    "published": "2026-10-22T13:01:16Z",
    "sources": [
@@ -4669,6 +4916,15 @@
    ]
   },
   {
+   "title": "Cátedra de la U. de Chile advierte que reforma al INDH amenaza su autonomía: “Una grave amenaza” para los derechos humanos",
+   "link": "https://radio.uchile.cl/2026/10/21/catedra-de-la-u-de-chile-advierte-que-reforma-al-indh-amenaza-su-autonomia-una-grave-amenaza-para-los-derechos-humanos/",
+   "category": "politica",
+   "published": "2026-10-22T00:04:57Z",
+   "sources": [
+    "Universidad de Chile"
+   ]
+  },
+  {
    "title": "Fran Maira habría alcanzado acuerdo para indemnizar a víctima de atropello y grabará reality en Perú",
    "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPeFRyM2xCM3J4UnQwSmpJTVBrQlF0VVRSWVN0VzRiU0V5Ml9nUC1fbHVvcVppS1NzV2lFNVNVcE50TEdtQlRoVlk5ZzRQcUFQSHBxNllqOHQ4OW5LZkNRX05Jb3NMN0Q0Rmh1OWhZN2kta2VGS2tDalpjZFBvMGhJSDI3QjVNbU1PZ0hmc2IwTndON0FPY2sySUMyY1l1dWtjcEdzaXQtSE5Hdy1LRzlQOGpuZE1INjVFcnBJME9LYWJYeDFqTXZVVzJXXzRvZWM3ZDQ4NE1LWkpuZUdmRV9pckp1Zl81MXRzYmdvYWxnZWNMRThLMGtmdWhzMGtFQ0RndUpjZ3RPY2k1a0p1cV9NVTZB?oc=5",
    "category": "cultura",
@@ -4705,6 +4961,15 @@
    ]
   },
   {
+   "title": "SII detecta más de US$3.200 millones en el exterior sin declarar; gobierno rebaja 56 condenas por delitos sexuales contra menores, y Hermosilla solicita por segunda vez inhabilidad de fiscal",
+   "link": "https://www.ciperchile.cl/2026/10/21/radar-21-10-26/",
+   "category": "politica",
+   "published": "2026-10-21T23:46:16Z",
+   "sources": [
+    "- CIPER Chile"
+   ]
+  },
+  {
    "title": "Emiratos Árabes Unidos nominó a Lana Nusseibeh para dirigir la ONU tras el bloqueo de los siete candidatos",
    "link": "https://www.infobae.com/america/mundo/2026/10/21/emiratos-arabes-unidos-nomino-a-lana-nusseibeh-para-dirigir-la-onu-tras-el-bloqueo-de-los-siete-candidatos/",
    "category": "internacional",
@@ -4723,6 +4988,15 @@
    ]
   },
   {
+   "title": "De $70 mil a $248 mil: el salto aprobado en el Congreso para alumnos de Carabineros",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/21/de-70-a-248-mil-el-salto-aprobado-en-el-congreso-para-alumnos-de-carabineros-y-que-suma-a-civiles.shtml",
+   "category": "politica",
+   "published": "2026-10-21T23:41:33Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Tras nueva alza, bencinas quedan ad portas de máximo histórico y el diésel marca nuevo peak",
    "link": "https://www.latercera.com/pulso/noticia/tras-nueva-alza-bencinas-queda-ad-portas-de-maximo-historico-y-en-el-diesel-marca-nuevo-peak/",
    "category": "economia",
@@ -4732,12 +5006,30 @@
    ]
   },
   {
+   "title": "EN VIVO | Jarry vs Pucinelli por el Challenger de Cali: punto a punto",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaUxKc211Z0RKU0l0MmxMbC12MF9xZ0xveHJVczdFWXRQS2gtVmxhR21CV2w4UWZxa2VYX2JHaFlhSjVDNi1aTW5WTUhaUTIwU2FHZFdKMDNmR1BsUUt5NkR0VEEwXzgtcXBkTGhYaGk4di1rM0hXN3dfanJkalVJRnk1Q0Vtd2U2S250WWRlNVdMNGhIcVl3SHFlNTFuT0tLc3FUWGlmWnhiT05mbHJFVFVHUy1ZWGRZOF9TOTJHNHJWY0dic1E?oc=5",
+   "category": "deportes",
+   "published": "2026-10-21T23:40:00Z",
+   "sources": [
+    "En Cancha"
+   ]
+  },
+  {
    "title": "Los planes de la ministra Lincolao para instalar a Chile en el circuito global de la IA: “Estamos cerca de cerrar un acuerdo con OpenAI”",
    "link": "https://www.df.cl/df-lab/tech-empresas/los-planes-de-la-ministra-lincolao-para-instalar-a-chile-en-el-circuito",
    "category": "tecnologia",
    "published": "2026-10-21T23:30:00Z",
    "sources": [
     "Diario Financiero"
+   ]
+  },
+  {
+   "title": "Adolescente de 14 años muere apuñalado tras presunta riña en Estación Central",
+   "link": "https://www.chilevision.cl/noticias/casos-policiales/adolescente-de-14-anos-muere-apunalado-tras-presunta-rina-en-estacion-central/",
+   "category": "nacional",
+   "published": "2026-10-21T23:26:21Z",
+   "sources": [
+    "Chilevisión"
    ]
   },
   {
