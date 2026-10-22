@@ -8,6 +8,92 @@ from playwright.async_api import async_playwright
 WIDTHS = (320, 375, 768, 1024, 1440)
 
 
+async def check_search(page, width, no_overflow):
+    """Exercise the shipped index and filters using only stories in the page."""
+    stories = await page.locator("main a[data-cat]").evaluate_all("""links => {
+        const seen = new Set();
+        return links.filter(link => {
+            if (seen.has(link.href)) return false;
+            seen.add(link.href);
+            return true;
+        }).map(link => ({
+            href: link.href,
+            category: link.getAttribute("data-key"),
+            label: link.getAttribute("data-cat"),
+            sources: JSON.parse(link.getAttribute("data-sources") || "[]"),
+            key: link.textContent.normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase()
+        }));
+    }""")
+    assert stories, f"No hay noticias indexables a {width}px"
+    assert all(isinstance(story["sources"], list) and story["sources"]
+               and all(isinstance(name, str) and name.strip() for name in story["sources"])
+               for story in stories), f"Fuentes individuales incompletas a {width}px"
+    for story in stories:
+        story["sources"] = list(dict.fromkeys(name.strip() for name in story["sources"]))
+
+    toggle = page.locator("#search-toggle")
+    panel = page.locator("#search-panel")
+    field = page.locator("#search-input")
+    source_filter = page.locator("#search-source")
+    category_filter = page.locator("#search-category")
+    await toggle.click()
+    assert await panel.is_visible(), f"Buscador oculto a {width}px"
+    assert await toggle.get_attribute("aria-expanded") == "true"
+
+    async def verify(expected, stage):
+        actual = await page.locator("#search-results li > a").evaluate_all(
+            "links => links.map(link => link.href)")
+        expected_urls = [story["href"] for story in expected]
+        assert actual == expected_urls, (
+            f"Resultados de {stage} a {width}px: {len(actual)} visibles, "
+            f"{len(expected_urls)} esperados; faltantes={set(expected_urls) - set(actual)}")
+        status = "1 resultado" if len(expected) == 1 else f"{len(expected)} resultados"
+        assert await page.locator("#search-status").inner_text() == status, (
+            f"Conteo anunciado incorrecto en {stage} a {width}px")
+        await no_overflow(f"buscador: {stage}")
+
+    # Cover an individual outlet that participates in combined coverage when available.
+    sources = {name for story in stories for name in story["sources"]}
+    options = await source_filter.locator("option").evaluate_all("nodes => nodes.map(node => node.value)")
+    assert sources <= set(options), f"Faltan medios individuales en el buscador a {width}px"
+    counts = {name: sum(name in story["sources"] for story in stories) for name in sources}
+    combined = {name for story in stories if len(story["sources"]) > 1 for name in story["sources"]}
+    most_common = max(sorted(sources), key=counts.get)
+    individual = max(sorted(combined or sources), key=counts.get)
+    for name in dict.fromkeys((individual, most_common)):
+        await source_filter.select_option(name)
+        await verify([story for story in stories if name in story["sources"]], f"medio {name}")
+    await source_filter.select_option("")
+
+    # Keep original categories testable even when their cards share a larger visual group.
+    categories = {story["category"]: story["label"] for story in stories}
+    category_options = await category_filter.locator("option").evaluate_all(
+        "nodes => nodes.map(node => node.value)")
+    assert set(categories) <= set(category_options), f"Faltan categorías originales a {width}px"
+    category_counts = {key: sum(story["category"] == key for story in stories) for key in categories}
+    largest_category = max(sorted(categories), key=category_counts.get)
+    originals = [key for key, label in categories.items()
+                 if key.lower() in ("salud", "ciencia", "salud-ciencia", "medioambiente") or label.lower() in ("salud", "ciencia")]
+    for key in dict.fromkeys((*originals, largest_category)):
+        await category_filter.select_option(key)
+        await verify([story for story in stories if story["category"] == key], f"categoría {key}")
+    await category_filter.select_option("")
+
+    # A real text query reaches beyond twenty whenever the published headlines allow it.
+    # The most frequent character is the widest possible nonempty substring query.
+    characters = {char for story in stories for char in story["key"] if char.isalnum()}
+    if characters:
+        query = max(sorted(characters), key=lambda char: sum(char in story["key"] for story in stories))
+        await field.fill(query)
+        await verify([story for story in stories if query in story["key"]], f"texto {query!r}")
+    await field.fill("")
+    await page.keyboard.press("Escape")
+    assert not await panel.is_visible(), f"Buscador abierto tras Escape a {width}px"
+    assert await toggle.get_attribute("aria-expanded") == "false"
+    assert await toggle.evaluate("element => element === document.activeElement"), (
+        f"El buscador no devuelve el foco a {width}px")
+
+
 async def check(html, output):
     output.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
@@ -43,6 +129,7 @@ async def check(html, output):
             assert all(item["gap"] <= 4 for item in gaps), (
                 f"Miniaturas sin ocupar la altura disponible a {width}px: {gaps}")
             await page.screenshot(path=str(output / f"home-{width}.png"), full_page=True, animations="disabled")
+            await check_search(page, width, no_overflow)
             await page.locator("#view-options-toggle").click()
             assert await page.locator("#view-options-panel").is_visible(), f"Menú visual oculto a {width}px"
             await no_overflow("preferencias")
@@ -100,3 +187,4 @@ if __name__ == "__main__":
     parser.add_argument("--output", default="artifacts/visual-qa")
     args = parser.parse_args()
     asyncio.run(check(Path(args.html), Path(args.output)))
+
