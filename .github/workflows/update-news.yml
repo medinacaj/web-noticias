@@ -24,6 +24,7 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -44,7 +45,19 @@ jobs:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
           SITE_URL: ${{ vars.SITE_URL }}
           GSC_VERIFICATION: ${{ vars.GSC_VERIFICATION }}
+          NEWSLETTER_READY: ${{ vars.NEWSLETTER_READY }}
+          NEWSLETTER_SUBSCRIBE_URL: ${{ vars.NEWSLETTER_SUBSCRIBE_URL }}
+          NEWSLETTER_PRIVACY_URL: ${{ vars.NEWSLETTER_PRIVACY_URL }}
+          NEWSLETTER_UNSUBSCRIBE_URL: ${{ vars.NEWSLETTER_UNSUBSCRIBE_URL }}
         run: python3 fetch_noticias.py
+
+      - name: Verificar contenido y calidad antes de publicar
+        run: |
+          python3 -m unittest discover -s tests -v
+          python3 scripts/validate_history.py
+          python3 scripts/audit_editorial_quality.py --strict
+          python3 scripts/audit_seo.py --site public
+          python3 scripts/audit_news_health.py
 
       - name: Guardar historial de noticias
         run: |
@@ -55,7 +68,6 @@ jobs:
             echo "Historial sin cambios"
           else
             git commit -m "Historial de noticias actualizado"
-            git pull --rebase --autostash
             git push
           fi
 
