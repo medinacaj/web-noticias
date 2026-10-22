@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   visual-qa:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -31,3 +31,4 @@ jobs:
           name: visual-qa-screenshots
           path: artifacts/visual-qa/*.png
           if-no-files-found: warn
+
