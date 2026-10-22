@@ -1,6 +1,27 @@
 {
- "actualizado": "2026-10-22T21:41:26Z",
+ "actualizado": "2026-10-22T21:53:12Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "Los anfitriones de Airbnb ya no pueden exigir a los huéspedes que quiten las sábanas ni que laven los platos",
+   "summary": "La política actualizada se aplicará a todas las reservas realizadas en el sitio web del alojamiento a partir del 20 de noviembre.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/9806/live/bea00990-ce54-11f1-a166-e30097724580.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "Los anfitriones de Airbnb ya no pueden exigir a los huéspedes que quiten las sábanas ni que laven los platos",
+     "link": "https://www.bbc.com/mundo/articles/c6vg0k034n94o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-22T21:43:11Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/c6vg0k034n94o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-22T21:43:11Z",
+   "first_seen": "2026-10-22T21:53:12Z"
+  },
   {
    "category": "internacional",
    "title": "La justicia le ordena a Trump responder preguntas bajo juramento en su demanda contra la BBC",
@@ -385,18 +406,34 @@
    "image_checked_at": "2026-10-22T19:59:52.269610Z"
   },
   {
+   "category": "deportes",
+   "title": "U de Chile vs Deportivo Cali por Copa Libertadores Femenina: a qué hora juegan y dónde verlo en vivo",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992503-u-de-chile-libertadores.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/22/u-de-chile-vs-deportivo-cali-por-copa-libertadores-femenina-a-que-hora-juegan-y-donde-verlo-en-vivo.shtml",
+   "published": "2026-10-22T17:52:13Z",
+   "first_seen": "2026-10-22T21:53:12Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
+  },
+  {
    "category": "regiones",
    "title": "Aluvión afecta viviendas en sector Juan Riquelme de Concepción",
    "summary": "",
-   "image": "",
+   "image": "https://laconexion.cl/wp-content/uploads/2026/10/aluvion-2.webp",
    "source_url": "https://laconexion.cl",
    "sources": [
     "laconexion.cl"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcHJVRjNPbHBKZTJ1ZE5NX1l0SzhTUWxJT29mR3NsSnR6ZUtmY1NwOWFRUDQzU2ZVdEx3UDJJd19zT0NSNWJnSU9OSEh5U3ViTFJhd3NibGRrOF9MbTk4VE9wVVAzOXhkSnZvX2JtYzJ0end6T0NlZ1BDUV90SXdyQmdualdjdU93eFVCYmt3?oc=5",
+   "link": "https://laconexion.cl/aluvion-afecta-viviendas-en-sector-juan-riquelme-de-concepcion/",
    "published": "2026-10-22T17:37:10Z",
-   "first_seen": "2026-10-22T21:41:26Z"
+   "first_seen": "2026-10-22T21:41:26Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "medioambiente",
@@ -468,6 +505,21 @@
    "published": "2026-10-22T16:39:28Z",
    "first_seen": "2026-10-22T19:59:52Z",
    "image_checked_at": "2026-10-22T21:41:26.280174Z"
+  },
+  {
+   "category": "cultura",
+   "title": "“Se los pueden meter por la raj...”: famoso periodista muestra su ira tras no ser nominado a los Copihue de Oro 2026",
+   "summary": "",
+   "image": "https://www.adnradio.cl/resizer/v2/W64JIUMIXBBXHJLW6DCEB2GF64.jpg?auth=bc40b14e5528b7dcb5639ffba8c16acd3cfed77a21eb5eac2814f81d3c4f30bf&quality=70&width=1200&height=675&smart=true",
+   "source_url": "https://www.adnradio.cl",
+   "sources": [
+    "ADN Radio"
+   ],
+   "coverages": [],
+   "link": "https://www.adnradio.cl/2026/10/22/se-los-pueden-meter-por-la-raj-famoso-periodista-muestra-su-ira-tras-no-ser-nominado-a-los-copihue-de-oro-2026/",
+   "published": "2026-10-22T16:35:20Z",
+   "first_seen": "2026-10-22T21:53:12Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "internacional",
@@ -571,6 +623,21 @@
    "image_checked_at": "2026-10-22T19:59:52.269610Z"
   },
   {
+   "category": "internacional",
+   "title": "Cepal rebaja crecimiento de América Latina al 2% para 2026 y proyecta apenas un 0,2% para Chile",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992511-bbcl-1200-x-633-px-37.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/22/cepal-recorta-proyeccion-de-crecimiento-para-america-latina-en-2026-y-advierte-incertidumbre-global.shtml",
+   "published": "2026-10-22T16:11:17Z",
+   "first_seen": "2026-10-22T21:53:12Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
+  },
+  {
    "category": "deportes",
    "title": "Estalla un escándalo en Suecia por el fichaje de Lucas Assadi: “Vínculos con el crimen organizado”",
    "summary": "",
@@ -646,18 +713,48 @@
    "image_checked_at": "2026-10-22T19:59:52.269610Z"
   },
   {
+   "category": "salud-ciencia",
+   "title": "Picmagluti: ¿será más barato que Ozempic? Chile aprueba nuevo medicamento con semaglutida",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRXNXeXp5OUJSZUo3bS1WdTB0ckEzVEFueU5JdlhFZTNhS1ZJS25CVEhVdXNzVVA2aGdHaUJza0JkR2lrWjFpY2VHRzNlNktVYUdGN0ZlaTQ0WXk5dXhoU2w4SXlmOEUzSkxFdThHdUxLWFpJYlZEeHVTVXRfQ2dDTnE0TkFnSGRQck80RXVQRFprR083ekhEeUN5WlVkYk40VmRxZTluZ3V1TFVlcy1mNkFFNUpvNXNQTnotejl4UEtpUVlsWmRiM2NMTTdjMDJSU0lVTkdtQ19HQnJheGRXeFhoT1ZlUQ?oc=5",
+   "published": "2026-10-22T15:47:06Z",
+   "first_seen": "2026-10-22T21:53:12Z"
+  },
+  {
    "category": "regiones",
    "title": "PDI RATIFICA AL PREFECTO INSPECTOR HÉCTOR CORNEJO COMO JEFE DE LA REGIÓN POLICIAL DE LA ARAUCANÍA PARA 2027",
    "summary": "",
-   "image": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/pdi-ratifica-al-prefecto-inspector-hector-cor.jpeg",
    "source_url": "https://araucanianoticias.cl",
    "sources": [
     "Araucanía Noticias Temuco"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOcGJfWVlOWG1JNkV3bl9UazE1cklBVERmWVRqWFNSbXVCV3VCVGl1aldCUmFGbUtncnEweXBtcldLUGVGU3FTS2dRcGkzZVU2MTlqWDBtSjR5MVppcFlqeGdSS2VnTm41NjN6OUVOOW5qRmRpM1JGclhpb0lHc1Z0WTRxLTZVYXRaejh5Ymd4YU84TGFVdmZKWVhNbFF1VlhULWF2dFJscEN0WWxrYXpIdzJjVlBUT1J4WDRhYklUaHhGdmpCcHRqQzk3ZURTWVVUaGc2Ylg1c3hLLVcyVkVHenY0bWFRems?oc=5",
+   "link": "https://araucanianoticias.cl/2026/pdi-ratifica-al-prefecto-inspector-hector-cornejo-como-jefe-de-la-region-policial-de-la-araucania-para-2027/1022317600",
    "published": "2026-10-22T15:46:54Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Colegios de La Araucanía fortalecen la prevención del suicidio adolescente",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/1000454201-700x525.jpg",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/agenda-pais/educacion/2026/10/22/colegios-de-la-araucania-fortalecen-la-prevencion-del-suicidio-adolescente/",
+   "published": "2026-10-22T15:42:18Z",
+   "first_seen": "2026-10-22T21:53:12Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "politica",
@@ -677,15 +774,16 @@
    "category": "cultura",
    "title": "Fin del misterio: conoce a todos los nominados al Copihue de Oro 2026",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/JXYSQUROXZBGZF4Y2B34SRSVVM.jpg?auth=50c6fc54eeafb61ac52247047dadd9124ef9252cdecde6ac0920a4a34cb5fca2&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeE50UVlnSEN4U053SGU2SDFrMEp5Y2ZVMXEtNnB2UGJrZnRfZVBtRHgtTXU2NmtfUjQwRG5vM3M3ckJsTGVpS1VSY3p2Yl83NGRpVFZtNGR6LVFhN2tsaVRDc2ZaY2RjQ3dUdkNWR3I2dDdtQUs3Sm9uWDlBQV8waE55V0k5dUJOSnRvV3hPUVlHVUdabHdKRjNYV3FVR2N6Rnd2dlBESWVwOU8tRlJodVhOYkFVd9IB1wFBVV95cUxPeTRhOEVGLTBQX2hRdWNZRnprZERyWnZLZVRlajlBMEZoOFRFWnlNUEQwR0FPdUl1SU11d1ZEMndyWmFManVCaHJjelYtTElxbkJyWkZDTkNQb2NKcEVCQUhzR3c5S3BENEktS01QbnY4VjlUcjhQQXNtY0RrTnZ0R2xESnd2TFBmTmZmRmkyN0JOU25QaUpBV1JjTXhHeklpWDhXeS1pVzBvNXgydExIblN3UjFDX1NnTDlCQVFQbDlycnpMV0h6S01UVzV0RW1BSDd5ZklkNA?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/fin-del-misterio-conoce-a-todos-los-nominados-al-copihue-de-oro-2026/",
    "published": "2026-10-22T15:24:22Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "economia",
@@ -721,15 +819,16 @@
    "category": "cultura",
    "title": "“Me parece grave...”: Millaray Viera pierde la paciencia y barre con reconocida periodista por dura crítica a la Teletón",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/CIGC4AB57BD3ZJIYOUKU2BK6A4.jpg?auth=9e9eb77cdda61f92f961c7d7ff428dde43c80c0ceb58129c1b0798546fc2982a&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNMEk1a2lFMk5hWVVzMElMVXl0STN3aXIzZ1BocVBTLTBzTmx1Mml1LTBaTzh6ems5Z1VnWXotV0ttV3VZcTE5R1pwdENIWGRWNEc1WlJyVGJmcTNoV1RTWmwyMlltTkpyby1TT01Kd21sSEdvSnhZcG5oQjNya05qUGJGYjhDS0VVUUdvSjZHbUp2ZUQ4V0JOZlRXcGUzVGdjQ1ZuamNxMDJlR01rU0dWTzhiSFZIS2tLeFhEQ0JTWWk1YTFlRDl6NjhpOHpZVGVPejBLN1N5TzFRdTRweXFNLXl6QU8yNFBEOFZwQ2k0ZGY3b3fSAZQCQVVfeXFMUEFnQ0thN1pQZGFFVDRtNmxTVEpsQlAwdnRLZ1REdWtHY3NiRFE4Q045a3VoeU55REJBOHdxWWRWUVpsb0ZVMGJBLTUteGxmTHJGZ0RsNlhaaVhzVlNPaWJjUXJMS05vdUZ0cmNnYUhVZEVCNUdJbk4yWTI4VWxJV3pLMEo2RFFmWldQV2ZqVGZHSEtBRm1QalFBNGpMeGpySUREWU1vcEtieTJHTFhNRndzazg3TnJnR3NWNndhRWpsemNHVVYxRDJSYkkxd0ZlbFNJMWYwcjQ3VGhNRXRWV2hMZHc1WkdCU0U1cVhjalpHYjJwZ0pqdjVNUkdwQW5mdmE5VVlSQ0ZpV3g4ZGVGMWQycWFv?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/me-parece-grave-millaray-viera-pierde-la-paciencia-y-barre-con-reconocida-periodista-por-dura-critica-a-la-teleton/",
    "published": "2026-10-22T15:17:18Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "deportes",
@@ -845,29 +944,31 @@
    "category": "cultura",
    "title": "El \"Caso Relojes\" llega a Netflix con documental y una pieza clave del fraude: ya hay fecha y tráiler",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992303-el-caso-relojes-llega-netflix-documental-pieza-clave-fraude-fecha-trailer-.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNUENqN1paV0UtMExVLVlpZEp6MUZjZ1Z0dlJ2QlJBVnRqeWpOWVU0UGEzSFVqend4dEk5MHI1MVJMQjFjN2FlZDk3TW9fSUlXclBfam5FSU82U2FKWWFOR3hSUDJMSEY5T2NiVWdJQWJTYlVrMHh4S0RlNTJzUVZOOVJCLWpWMlBIbmlaQUE3WXNxZXBPdU9ESHhQaE54Vnh6cDFNS0VBNGxqV1NaR016UE4zTFJCWXEtM1RReER4Y2lmTHp1RFlmWVFsYUs0cE9UajU0b0xQWXB2Y2ZpMGw3aHY3YlBpT0FwV0JGWkt1TzRxSnZVUzQ1UTd3Z3JKWEsyS0E2bWlYb1RtWVl5S3RGOTdvaTdfRThpWUc4?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/22/el-caso-relojes-llega-a-netflix-con-documental-y-una-pieza-clave-del-fraude-ya-hay-fecha-y-trailer.shtml",
    "published": "2026-10-22T14:47:46Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "regiones",
    "title": "Startup del Biobío obtiene primer lugar en Premio Innovación Edifica 2026 con aislante fabricado a partir de corteza de eucalipto",
    "summary": "",
-   "image": "",
+   "image": "https://portalinnova.cl/wp-content/uploads/2026/10/premio-innovacion-edifica.jpeg",
    "source_url": "https://portalinnova.cl",
    "sources": [
     "Portal Innova"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZ29HR2Z5S3Ntb1l0YUNjRlJ1WDViOVJTdE9ldGlPbUVkS3d5cXVwQ3NleThQQUlta2FSTlQyaXQtN0pGM3FYbUJOOGNHVXVzd1BNbURCMTFscTY1YXBkMk5JV18wZ0FZajZIQldaRDk2OGF5TmdnZi1QeXI5VVhVdTk0T0V3VE9XazNhN3lZZ2twWWpGVVBhbkZjbVdQOUE5ZWJLMDlxOXNoNjJKczFURkFBd2YtUGtsS1poZGpocVl5T1pZWHVvZ1BHeWdRWi1ocmN0bXpWRGVDbERlZUFJQWFHUVM1TGlOM1E?oc=5",
+   "link": "https://portalinnova.cl/startup-del-biobio-obtiene-primer-lugar-en-premio-innovacion-edifica-2026-con-aislante-fabricado-a-partir-de-corteza-de-eucalipto/",
    "published": "2026-10-22T14:46:48Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "regiones",
@@ -882,35 +983,37 @@
    "link": "https://www.elnortero.cl/noticia/deporte/cortes-de-transito-en-antofagasta-por-competencia-y-cicletada-cuales-seran-los-horar",
    "published": "2026-10-22T14:44:04Z",
    "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "regiones",
    "title": "Calle intransitable por el barro: deslizamiento de tierra afecta a sector Juan Riquelme de Concepción",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992301-sector-juan-riquelme-concepcion.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdGtoZWM0dkdoaVMwS25CaUVxbTZ1WklkQWFxUXU0eHJQdHhVOHM3a1NmVzZMU2hoUWlsaVY4cmk1cllGMHFFcUlrclhSaXpaeVZNbGY1WWRtNEpNTG9pdnE3T01oWWtKbzJBYlN2cWhyYjdYUEhjY0h0ckhYWGI5anNHWXU0dEI1clQ1ejJNSVhPcGtLYm9zVEVyUTBnVUhidlZOaHBIOExsMlVyMGh5Zk0xbU5DLUNZd1RqTWdKNGgtWS1CbW1NTjd5Smc0R19qQWlaOXNwZDhfUVBCZWttRjdYMTYwNTNCTFRCc3l1NUtGTUxBaG9LWXR2SE5hS19CMi1ZZ3M4REtGNUdHVEE?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/22/calle-intransitable-por-el-barro-deslizamiento-de-tierra-afecta-a-sector-juan-riquelme-de-concepcion.shtml",
    "published": "2026-10-22T14:41:00Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "regiones",
    "title": "Exportaciones forestales del Biobío aumentaron 7,8% en agosto de 2026 y contemplaron 61,3% de las exportaciones regionales",
    "summary": "",
-   "image": "",
+   "image": "https://www.portalagrochile.cl/wp-content/uploads/2025/12/Exportaciones-forestales-INE.jpg",
    "source_url": "https://www.portalagrochile.cl",
    "sources": [
     "Portal Agro Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR1BYcE15d25iYjZtaEVKQkk1Vi02aTd6RE9MNldfZXFxRGRISnlTb20zQld3TkRzSWt0Z3NKRU5vWV9FeEpxWjRxUTNzU2t6dnZGUzBya2lVUTNtaldMQVJmSnhtM211SVB5ZnN3VE53Y1VzQ3ZOTVNmbEh5LUxlWWdnMDZhNUlaNktnVHBxY1ViNkMxUmZQRVVTNTBRd2NSclJ5U1ZxRHptRXZWaFBZ?oc=5",
+   "link": "https://www.portalagrochile.cl/2026/10/22/exportaciones-forestales-del-biobio-aumentaron-78-en-agosto-de-2026/",
    "published": "2026-10-22T14:40:55Z",
-   "first_seen": "2026-10-22T21:41:26Z"
+   "first_seen": "2026-10-22T21:41:26Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "nacional",
@@ -946,29 +1049,31 @@
    "category": "cultura",
    "title": "“¡Dice que no apoya a Kast, pero ahí está...!”: Ale Valle le responde a Cecilia Bolocco y exhibe foto que sería clave",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/WJAAEFYVFJGT5KNZIZAB74PKII.jpg?auth=d10c91b985065d91aae4becae4336eae19ba6e9195a09fab87543451e871b053&height=630&width=1200&focal=710%2C416",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSldyQmhkT1E4UWJXQkY4RGpxc0NlQkFFWTFoZFhaWlY4ekh3Z0VDMjgzYTJIT0xOZEk4Sm1LcUI3TFk3M2VhdkN5OWVoLUlrZzczUXFTZVpDdV9Vc0NReXVTXzI1Z28zRWQ0UkFyVkpZY0VfMi1UM0VZMmI0djVTVzkwSENKb2doR1VoRmdCazJsQTRBY3dZcXVVaHRIMXBaeVk3aWhuQjRfdUFiSlhrZWhQVVRTZVlwSk1jb1Q1N21VTm9nbjZ4ZHY3dXU3NnNIX2I1YTN4ZlVTUzBJV2VKUFh30gGDAkFVX3lxTE9tS3lfeXVZZGdTd0tZQ1JXcUpYdUlVaTM4ZGJTNWdxOFdJWWRJTU5ranhUTzVhSzU3RWhLbGxBWVhNMnJwbGZiUkJPU05LMHJfSUlTQWcwT1c2SzNWYTlRMmRSaURhci1keWdsNWI1Z1NtMlhHcVQtYkEyOVd2TkNrTzRKQUwtY0pfcExlWENXenA2VDNLV3QyVThFamVucTYyX1lJOG53ZWtEYktsSlRuUFB1bDhZMWlLdTNUWDRXSXpBLUdNQ2dwNlYtZXdTLXpxazh4TkFHQU1QdDVWaHBKVVVseEk0UWxtMGtNeTJVWVktYnJnaUtiamFuUjR0ZUpNblU?oc=5",
+   "link": "https://www.lacuarta.com/chile/noticia/dice-que-no-apoya-a-kast-pero-ahi-esta-ale-valle-le-responde-a-cecilia-bolocco-y-exhibe-foto-que-seria-clave/",
    "published": "2026-10-22T14:34:07Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "cultura",
    "title": "Los detalles del millonario acuerdo de Fran Maira con la familia del motociclista que la acusa de gravísimas lesiones",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/3C3GD45CRJBUPKOOYHZJQF6NVU.jpg?auth=96dc777c126a87cab5c7495ecac82f116790200cb649e41221fcde5a998c6a28&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPcEV6QTRhbHpEZXVXclFpSkRFTjUyV3FYZHUtV2tidk9WWmJkZ2tDY04xb0wtdFQ0ODgwci12Q1IwODBIR1VEbUMyblRCSlZvM3FJS3ZSanppNjNFbUp2S0o0VS1VMlRxYjlVVHI4bnY0Q1RCQ19laVljUDJGcVdWYzNoZm81ZllSc29mVHFCeWFNSHBmbkxPNXpVaF9WNUFkSjB2bGJnVk5XWUlheE5kOEhQalNhU0xGWW1rUkZHRXFMWDVrSVlQMDVZZy1FRFJtMkhERGQ4RzA2Mi01dWljdmdZd2xrMlBSeGVPMndZSnBacDjSAZQCQVVfeXFMUHhPbml1aHNYNDlwUTI5X1hIQV8za2V4dlpHRTZiNGdScW5mMWIzeTNaNzRxNnRRUzBHSnVtRmJzUTJpUFNzNHdEUGpPRzBwU3NzREFLQjNLVTAyblFiWW5Ua09KUzdEZ2hXUXpLa2hxekYtS1pjV3VrbmlOdW02RElrYktGR01YcVhFY0tqbnl6VG9makJETS1obTBwNVFzSk56MG1YUkhzNV9jS1FjU0c2TnJqR2ZyWEdORzJ4TWViRUtGVXVsUWVtVEdiNmlSQ3NRNGVKMTdQdXpIY3RvZG90TFhpSUExd0F0RHVoQlYyWHRrdElSaUNleW5ydmxwbDdyMHdzb0VSdWh4VHRTTVE3MEdG?oc=5",
+   "link": "https://www.latercera.com/nacional/noticia/los-detalles-del-millonario-acuerdo-de-fran-maira-con-la-familia-del-motociclista-que-la-acusa-de-gravisimas-lesiones/",
    "published": "2026-10-22T14:28:58Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "nacional",
@@ -1019,15 +1124,16 @@
    "category": "regiones",
    "title": "Vuelta del Biobío 2026: cinco etapas y 660 kilómetros marcarán el regreso del ciclismo UCI a Chile",
    "summary": "",
-   "image": "",
+   "image": "https://uchile-media-storage.nyc3.digitaloceanspaces.com/wp-content/uploads/2026/10/22110626/ciclismo-2.png",
    "source_url": "https://radio.uchile.cl",
    "sources": [
     "Universidad de Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRFVhSjR6VGNKMEt3NDlyUXF4RmRWTFVMaGhTYUZDTVYtQjl2T29RNXBKZGVJdURvS3VtZG9YeU01S1EtQmU0ci01X2NqSVV6MzJFX3BmSFA5Zy01SmdzaTNlSHppUS1VTXdFSktYZm5FVU11a25TcGxJTXg3TTdSMmZyZ19rNXN2T0t4ZnNVVEk3bHhYSmNlUF9OVDZBV29qblZXZVJwMUhqR1JwR2JwVkplUFRwR2NEa3lUTldNV1J6VVAyWXdMeUViYmZMZw?oc=5",
+   "link": "https://radio.uchile.cl/2026/10/22/vuelta-del-biobio-2026-cinco-etapas-y-660-kilometros-marcaran-el-regreso-del-ciclismo-uci-a-chile/",
    "published": "2026-10-22T14:11:17Z",
-   "first_seen": "2026-10-22T15:13:54Z"
+   "first_seen": "2026-10-22T15:13:54Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "politica",
@@ -1092,15 +1198,16 @@
    "category": "regiones",
    "title": "La Región de Valparaíso eligió su mejor \"pan batido\"",
    "summary": "",
-   "image": "",
+   "image": "https://www.24horas.cl/24horas/site/artic/20261021/imag/foto_0000000520261021173739/chile_al_dia_valpo.webp",
    "source_url": "https://www.24horas.cl",
    "sources": [
     "24horas"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOVpnX0tjbEpLQVBBR3BER0hIWGZMVDhiUUxILUVYRTJtWVZsNzhKS1F2WnFXSGJpNmpfbk5fQXFjMFU1NGFPOWFaeS02UHpMQzlDTUZJUFJEekRETzJkSGlGZHhYM1FjbnZlQ3NtWDlNbENPTGtaRktSTWxwNC1kak9iOXI3V0lJVkYxVDlVNFBzU2RkNVk2MW1kZUprTFhRVHAxZndPYkPSAa4BQVVfeXFMTUpYbm5pN1JNMnF6b2RobmlHcm9tRnBuWGFicVRJdlVZcXNPMDhVYkotcmRUUDBDZjRZRDBQeVNjVXpFaWRCVkhDOXBDc2RVRUJiY3JnREVVZFBiSzZ6NWNlZzNjQ1RheWFpdHBGNFlBQ0dNQWVfeTZOSU51b1VqS3d1akdIbzBmaU8wdWRXTmE2a0plT1BmWGVZbnRNbHBnNjA0Wm8wZ09ERl9IYW1R?oc=5",
+   "link": "https://www.24horas.cl/regiones/zona-centro/valparaiso/la-region-de-valparaiso-eligio-el-mejor-pan-batido",
    "published": "2026-10-22T14:02:00Z",
-   "first_seen": "2026-10-22T15:13:54Z"
+   "first_seen": "2026-10-22T15:13:54Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "medioambiente",
@@ -1167,15 +1274,16 @@
    "category": "cultura",
    "title": "Famosa actriz se harta y lanza opinión sin filtro sobre recortes a Cultura anunciados por gobierno de Kast: reaccionó furia",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/B7E5TYPMIZGAFIPOJIWCZQYYTM.jpg?auth=3951ca9443bec30d1a256af38dc3198ffc731db03a3565b20939dec732beed1f&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOaWlmRzFBR2dkUTEzOEZSalI1MFdjR0V3SU8yejFsb0JMN1h6dGVqeGRMcVctSXJVNU1kcVBBTS01TVA1dUo3aVZwQzg0VE1lZDBGOGZPZTJSSkpsdktJX083bjVnWnNsQXFNWHlrcmRMXzRoOWpaVWZNcXVoMFhiLWhoOXgtS3pkMzBIT2QxY29kX1h3X2xjWThGWG80d2w2VXpkWEx2MEExbnlQMC1vcDRoeWxhdHBHNHZLYVFXVXV1OGFfekt5UWRzbjVCRlRQX1R1R1lRZWl1dEtkeTFJcEoxYk96SHB2R1N6TkREQVE4OVRJOW9UYUpIT0pjZ9IBnwJBVV95cUxNcldVMlQ0T2Z3VVRQbEdxbG0taWVGQ3h6Ni1FWEZ3Qlp6cHVVZ2phMkJFc2VSQnktQzlMOHExYVVLQXBETkRYcEFFTFlSNzRJOFBpN0FCQTMtdE5ia2gxRDFRN0ZxZ21XMW9lemN4QUhiSThKRDZpNzVydW8wSFY1V3Y0eUVvRVRuZFhNNkxQOGtESlR1SE9pOHdHZXRVSFFESFdTODAzMXhwNlIxYWFLbzRfOEVWZVhXZDhZMFBEWnZsUXZUVGVtTmFtb0V6MFZ0dmVWWWpVNkR5Q2Vza2oyRUYtTFFqZ21vZ3JQanRSRmQzX2stQmlLYl9EUFpBOG1WXzJNeG15dWdsQ0RIakctVmVOT1A2cS1Ocnh2ZmdZMA?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/famosa-actriz-se-harta-y-lanza-opinion-sin-filtro-sobre-recortes-a-cultura-anunciados-por-gobierno-de-kast-reacciono-furia/",
    "published": "2026-10-22T13:29:13Z",
-   "first_seen": "2026-10-22T15:13:54Z"
+   "first_seen": "2026-10-22T15:13:54Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "deportes",
@@ -1197,15 +1305,16 @@
    "category": "cultura",
    "title": "Kel Calderón ofrece millonaria recompensa tras muerte de 3 perros en su casa: acusó envenenamiento",
    "summary": "",
-   "image": "",
+   "image": "https://media.chilevision.cl/2026/10/01_26-CHV-1-6-1200x675.png",
    "source_url": "https://www.chilevision.cl",
    "sources": [
     "Chilevisión"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORElETzdvYnFqRENoYnBmZjZRVEQzUmtGMzVhTlljZ3NTZEtGdXJpX05DWHRuckRoelVzZ0lxNEozRVduc2VlM2NXNVU4eS1TcWZoWEw3TzRRUVRnQncwMmctWUJFV19rd2ppLU5sWEJxVTV0N3FTVWh6dnlxZGYtU1d5NzdjMVNDSXp1WlJMY2ZQVTgwUUJmbkdVMzFaVnozUjRObExWN2VPdUthTURJQmNwYURwQndPZndvWlJFcW9IeEdJSXJVMW1xUmxWeGVrUFVxR01R?oc=5",
+   "link": "https://www.chilevision.cl/noticias/show/kel-calderon-ofrece-millonaria-recompensa-tras-muerte-de-3-perros-en-su-casa-acuso-envenenamiento/",
    "published": "2026-10-22T13:26:10Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "deportes",
@@ -1255,15 +1364,16 @@
    "category": "cultura",
    "title": "\"Cortémosla con que le jodió la carrera\": Marcela Vacarezza y conflicto de Tonka Tomicic con Parived",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992153-image-2026-10-22t100523-868-1200x633.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbWFOMHdpeDNLMkFSUWk1Q2cwSnFTTnhQT1ZQMVROVG1pTWo0SVdNNDBHX2ZFSHE0bDNteUh1RGxkTzVpelBIRjNqOU9aRE9MaEM5bkh1OVU0OS1mQXpNcEotYlRGVnFJazZmS3pMYWJTcGd6aVJYZVZ1OWF0dXY0SXpfVGUyQWJSYkJ4NGpWamt2cFAwdEN5X05Nbkc5RW1YX0ltWjFGal9LSFNsdVpNREwxT282TW9hTFVMUjlUOGhSeEdUWWxIa1l2Z0ZGVWFya1dqNE9nSll2SElsMjAwaUJZbmlhcUlRSC1FT1ladDM?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/22/cortemosla-con-que-le-jodio-la-carrera-marcela-vacarezza-y-conflicto-de-tonka-tomicic-con-parived.shtml",
    "published": "2026-10-22T13:08:12Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "deportes",
@@ -1343,15 +1453,16 @@
    "category": "cultura",
    "title": "La sincera opinión de Luis Jara que sacudió a participante de Fiebre de Canto: no contuvo las lágrimas tras escucharlo",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/PJ5JE4ZK35GT3CVZ7KFT3WFN64.jpg?auth=e4f10e1c6f8b246f8d616bda454519bb5e16740dc224db96e8f40e9a1122822b&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNYTV5NVFMREg0dVhwUWpkMTQ3MUR4RXhtcTZOaXU3MUMtSWNEQ094blZSc2M3Sjg4QUExNmRDQUtBOFZZZFE2MEVORng4UlZHMW1Mak51ODhGZWV0RXdHdkNZSUVsQzVHU09DT1hoNUh4TUI3aEV1aWZUN0lCdHl2ZzFpdEIwcXhIWXgza0VLZ19Dc0RjSXIyMkFxR2JMZlo0NWFGc0hHb0VVOHktVHBoWDg5V1h6RjcxMlVSb3ZqVExxMVhNU0Z1ZVBHOEt6aEZxS0tUVHdjUWdwT213ckVRaktLVC16dzROdkNLeG9LbjBJM3Vmc2xz0gGYAkFVX3lxTFBoXzNLTml5YlRpVm5KOTBqWnU0ZDVTLTRLRzV3aC1Ebmw0bkI3aXFndk1qcmpuY0xWYjJuRC0yY0p0bXRXNTZFMXZZal9na1VTVkNnT2dxd3ZNdVhfYWs1ejUyXzBBVGswV3JOU19acW9KWXROSGlkWndhbGtpQXRabXR6X042MGdTS2szZ1hNVnpZNVRvNXpTTV8wS1pKV25peVRMOVd5UlBzdWVWWUp4X1ZGNjFaM3psdFRPMUphc1RtT2NENWRmWFo2eTlJLUF1aDNFNDlUZUpwNWREUzVFZUoyUGd5QUVaeU5QNWNBMnBwcTFLZHFhUUlxOEZ5ZjlTaEdLS1htcUFzenM1NEFsMlF4dzZ6VUE?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/la-sincera-opinion-de-luis-jara-que-sacudio-a-participante-de-fiebre-de-canto-no-contuvo-las-lagrimas-tras-escucharlo/",
    "published": "2026-10-22T12:36:42Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "politica",
@@ -1430,15 +1541,16 @@
    "category": "cultura",
    "title": "Faloon golpea a Luis Mateucci tras exponer revelador secreto de su vida privada en pantalla: “bomba” lo dejó sin palabras",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/CDDQXOHDJRA7HMCPLYWKHGKLNA.jpg?auth=b526749f9d809e0c677c8188f5846d81dca6e4e2399163e3b1de2dcc569d2f2f&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOcTdwQTFjVWlIUFBtYTdtZlg5eDJPc0dCRG00LXpwM0MyejJ2V1lLOXY3U0tnMGhSWTRqeDRtMlE5eEM4bUNWeFZrdnJ1R0x3eVN6VDJQZEg1alVqSVVKZ1BSWVhzdEJfa0pDdGQxcUd3cTVCUVFPQ0Fhdnpqam9WRkFOMmROcDN3YWx2dHNIckdmanFZVmpSTFd1SHI5eGw1UEpRVFJQQUhlSDBwUmJoc2xjZ043TmVMWTZTY2owZXhqX1lvNWp2ZEhGdWt6TXRlN24tWVJvbVhUR18zUFBPWUlucHJJbkdXWjNHQ3A4N0FyNVBaVkMybdIBmgJBVV95cUxOSmw4cjVicjNESlRXU2VZN0hXSGNUaEgxT1l2dnotckc0d0kxV3Q1VjcyMWlFc2FCdm5yemRmU0VENk5jcWpsS1BlVzJ6TFZCRDRueElKZXZzOGFFVzFzLTFWM3NNNXRDdUdEaXBkdDI5NmlNMzQ5X1BNYmEwTVpLX3o5TXdXQVdJcWxqYm1SbEFVbVp1R3lyXzJUSkxvUmdRQjBRVFpSQ0ZtRlVuSUFwUG91YlRIMndZODFoYnN0TzN4OVk5a05kX0paV0t2WUtMUzlMNnZxRC1hNFRNcTNKemxELUp6YWFESkQxN3IwZURRakpoWjFyTWRPdi1palk2cktrNE1NaWNKQzVoUVhHQnYwXzZYSUZFVnc?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/faloon-golpea-a-luis-mateucci-tras-exponer-revelador-secreto-de-su-vida-privada-en-pantalla-bomba-lo-dejo-sin-palabras/",
    "published": "2026-10-22T11:57:00Z",
-   "first_seen": "2026-10-22T15:13:54Z"
+   "first_seen": "2026-10-22T15:13:54Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "internacional",
@@ -1531,6 +1643,21 @@
   },
   {
    "category": "deportes",
+   "title": "En España se inclinan ante Pellegrini por nuevo hito con Betis en Champions: \"Insaciable, histórico\"",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992050-manuel-pellegrini-en-el-betis-1.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/10/22/en-espana-se-inclinan-ante-pellegrini-por-nuevo-hito-con-betis-en-champions-insaciable-historico.shtml",
+   "published": "2026-10-22T11:15:48Z",
+   "first_seen": "2026-10-22T21:53:12Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
+  },
+  {
+   "category": "deportes",
    "title": "Oficial: un chileno firma en Independiente hasta el 2028",
    "summary": "",
    "image": "",
@@ -1591,15 +1718,16 @@
    "category": "cultura",
    "title": "MasterChef Chile vivió nueva eliminación: participante se despidió entre abrazos y emotivas palabras",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992023-masterchef-2-1200x633.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQSG9hekpxTjdMYXpYaUVtYlVoZ0U5NXc5TTI5SHgzTWtZTWRrd0Y2TFVvNW5mR09rdGViRUJMM0c3YkF4clh2TnRMYnlfNW5ZeHNIZDBlU29MazJSVnJ6ZWJxMUJfUjJtUmxmNDUxSzBJUzdzam04WDJBQ1ZTb1JtWGsxWVppRlAwY0dwSmJTTlJKWmRmSUIwZWJuemR6OVJGZ3FubW9NZno1OHBCSzB4ZkczbGdxc3V5dmx5Y0V6SXlJd1o2bWxiWExiZldlU0dlM2ZIUTc0eG1aTHNmS094YWhoVXkxMGI2WGY5aFdpZ256Ukk?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/22/masterchef-chile-vivio-nueva-eliminacion-participante-se-despidio-entre-abrazos-y-emotivas-palabras.shtml",
    "published": "2026-10-22T10:27:18Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "regiones",
@@ -1789,6 +1917,21 @@
    "published": "2026-10-22T09:12:00Z",
    "first_seen": "2026-10-22T10:04:05Z",
    "image_checked_at": "2026-10-22T10:04:05.411056Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Lluvia y tormentas eléctricas: continúa la inestabilidad en Santiago hasta este día",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/P3YF4Y2MPJHWPFOF352DT2B33Y.jpg?auth=17897e907b19ba9e7c78b5788ac78fa7b775c7cb0e10d9a54ebb601e6a55610b&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/tendencias/noticia/lluvia-y-tormentas-electricas-continua-la-inestabilidad-en-santiago-hasta-este-dia/",
+   "published": "2026-10-22T09:02:00Z",
+   "first_seen": "2026-10-22T21:53:12Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "nacional",
@@ -2290,15 +2433,16 @@
    "category": "cultura",
    "title": "Fran Maira habría alcanzado acuerdo para indemnizar a víctima de atropello y grabará reality en Perú",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991856-sin-nombre-3-2-1200x633.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPeFRyM2xCM3J4UnQwSmpJTVBrQlF0VVRSWVN0VzRiU0V5Ml9nUC1fbHVvcVppS1NzV2lFNVNVcE50TEdtQlRoVlk5ZzRQcUFQSHBxNllqOHQ4OW5LZkNRX05Jb3NMN0Q0Rmh1OWhZN2kta2VGS2tDalpjZFBvMGhJSDI3QjVNbU1PZ0hmc2IwTndON0FPY2sySUMyY1l1dWtjcEdzaXQtSE5Hdy1LRzlQOGpuZE1INjVFcnBJME9LYWJYeDFqTXZVVzJXXzRvZWM3ZDQ4NE1LWkpuZUdmRV9pckp1Zl81MXRzYmdvYWxnZWNMRThLMGtmdWhzMGtFQ0RndUpjZ3RPY2k1a0p1cV9NVTZB?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/21/fran-maira-habria-alcanzado-acuerdo-para-indemnizar-a-victima-de-atropello-y-grabara-reality-en-peru.shtml",
    "published": "2026-10-21T23:59:04Z",
-   "first_seen": "2026-10-22T15:13:54Z"
+   "first_seen": "2026-10-22T15:13:54Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "deportes",
@@ -2392,15 +2536,16 @@
    "category": "cultura",
    "title": "J.K. Rowling insiste contra el activismo trans y acusa \"amenazas de muerte, tortura y violación\"",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991828-sin-nombre-2-5-1200x633.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPV2tiN01idnhidWJieWo0WUtfX3FqMzFFZXd0aDRFSDliUVMzV3JNLUZ2cG9DMHg1WndGMjdQcVlfdFFVejQxLVZQRG4xZC1laVotUDljRWhFVkdCM0JXdzhvVGx2N2czX0l5Z1l5aURoeGtVMk15dm5UYm5XQUN0VWtGVjB6U0xXa2hhTkpiWkVGR3RXSjg1czI5WW1CMElsZU9rVzNTSmtPYWJINWpsTnhCMUlDOElibHRxdUg4WHZhTDB4S0tiZVhkZjZzdlBWY1d5cTJtSzR1SU1DMkZrZV9VM0xMLTBxVG9vN1dEN2FCNy12bFNLdDJPY3pSVWVOVGdfSG5qaw?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/21/j-k-rowling-insiste-contra-el-acitvismo-trans-y-acusa-amenazas-de-muerte-tortura-y-violacion.shtml",
    "published": "2026-10-21T23:21:56Z",
-   "first_seen": "2026-10-22T19:59:52Z"
+   "first_seen": "2026-10-22T19:59:52Z",
+   "image_checked_at": "2026-10-22T21:53:12.308190Z"
   },
   {
    "category": "nacional",
@@ -2625,25 +2770,19 @@
    "published": "2026-10-21T21:54:20Z",
    "first_seen": "2026-10-21T23:14:51Z",
    "image_checked_at": "2026-10-22T04:32:59.468788Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Los resultados de la tercera fecha de la Champions League",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261020/imag/foto_0000005920261020132343.jpg",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/deportes/futbol/liga-de-campeones/los-resultados-de-la-tercera-fecha-de-la-champions-league/2026-10-20/132343.html",
-   "published": "2026-10-21T21:47:59Z",
-   "first_seen": "2026-10-22T10:04:05Z",
-   "image_checked_at": "2026-10-22T10:04:05.411056Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Los anfitriones de Airbnb ya no pueden exigir a los huéspedes que quiten las sábanas ni que laven los platos",
+   "link": "https://www.bbc.com/mundo/articles/c6vg0k034n94o?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-22T21:43:11Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
   {
    "title": "La justicia le ordena a Trump responder preguntas bajo juramento en su demanda contra la BBC",
    "link": "https://www.bbc.com/mundo/articles/c51kd0dm8m23o?at_medium=RSS&at_campaign=rss",
@@ -2879,8 +3018,26 @@
    ]
   },
   {
+   "title": "U de Chile vs Deportivo Cali por Copa Libertadores Femenina: a qué hora juegan y dónde verlo en vivo",
+   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/22/u-de-chile-vs-deportivo-cali-por-copa-libertadores-femenina-a-que-hora-juegan-y-donde-verlo-en-vivo.shtml",
+   "category": "deportes",
+   "published": "2026-10-22T17:52:13Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Aluvión afecta viviendas en sector Juan Riquelme de Concepción",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcHJVRjNPbHBKZTJ1ZE5NX1l0SzhTUWxJT29mR3NsSnR6ZUtmY1NwOWFRUDQzU2ZVdEx3UDJJd19zT0NSNWJnSU9OSEh5U3ViTFJhd3NibGRrOF9MbTk4VE9wVVAzOXhkSnZvX2JtYzJ0end6T0NlZ1BDUV90SXdyQmdualdjdU93eFVCYmt3?oc=5",
+   "category": "regiones",
+   "published": "2026-10-22T17:37:10Z",
+   "sources": [
+    "laconexion.cl"
+   ]
+  },
+  {
+   "title": "Aluvión afecta viviendas en sector Juan Riquelme de Concepción",
+   "link": "https://laconexion.cl/aluvion-afecta-viviendas-en-sector-juan-riquelme-de-concepcion/",
    "category": "regiones",
    "published": "2026-10-22T17:37:10Z",
    "sources": [
@@ -2942,6 +3099,15 @@
    ]
   },
   {
+   "title": "“Se los pueden meter por la raj...”: famoso periodista muestra su ira tras no ser nominado a los Copihue de Oro 2026",
+   "link": "https://www.adnradio.cl/2026/10/22/se-los-pueden-meter-por-la-raj-famoso-periodista-muestra-su-ira-tras-no-ser-nominado-a-los-copihue-de-oro-2026/",
+   "category": "cultura",
+   "published": "2026-10-22T16:35:20Z",
+   "sources": [
+    "ADN Radio"
+   ]
+  },
+  {
    "title": "Con cláusula de salida a fin de año: el futuro de Alexis Sánchez en el Montreal queda en suspenso tras ninguneo del DT",
    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOV2w1NlRCSUdJWTRfX01UWDJzbVg5N2pPbmlGRERKRVpvNU16RGRoczdXeG5zd1d3enU2VGxOOU10ajk3dkFIWmo5WV9rdUJkT0xuQ2szR0NtZGtZOTNYb1dsRVRKNUswODhydGtBSG5qTzFFNVYwSTZKdkhVR3g1VDRYMFFXd3pQZF8yeTZmaTRZdW1abUFZSUpHbGtwcVF1TzRRZ0NwckJWMS1hWjlIZ3VHSEZxYnEtby01WlpaamdjRHlUNTVmS2plT1YzaDNva3lTUnJ6a2RCRDFjVXdUTmxvRkZPd2tOVnUydzBWc3IzblQ0VUVJTNIBmgJBVV95cUxOdkxEVHdwMWFvRVpVN3VLU2hIQ1RzYm5aQ3VSaFpzVWowZWNWYVV3aWcxbUkxbV9Kc2RoTFdQZ1FvaHcwQ01jVU11bmxqY2NEZDVSeU1fX0ZCNmZvSUFjVXZXQi0xWjkwaUN2Sk5Xa2duVnRQLV9LajczR2xZSlFHN0xHXzY0VzlzOGpXeTZIcTdOWnFFOVFkSVdqX2RyUTVlYWo4bExpTE5MYW9iRWw0STJaNEtYa3Z3ZDZTZ18yVWZRUmZLbXk1dHBnd2tjZ0x4VHhycVk5WG1iQTlST2RoYm1Fc3VOUGdDNm1sZC1pUHo0cFo5ZDY3WFNqOU1WRklQWlFtMnE4MUR6WDNQRU5HRWkzUi1OVXVYOWc?oc=5",
    "category": "deportes",
@@ -2993,6 +3159,15 @@
    "published": "2026-10-22T16:12:00Z",
    "sources": [
     "Diario Financiero"
+   ]
+  },
+  {
+   "title": "Cepal rebaja crecimiento de América Latina al 2% para 2026 y proyecta apenas un 0,2% para Chile",
+   "link": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/22/cepal-recorta-proyeccion-de-crecimiento-para-america-latina-en-2026-y-advierte-incertidumbre-global.shtml",
+   "category": "internacional",
+   "published": "2026-10-22T16:11:17Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -3059,12 +3234,39 @@
    ]
   },
   {
+   "title": "Picmagluti: ¿será más barato que Ozempic? Chile aprueba nuevo medicamento con semaglutida",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRXNXeXp5OUJSZUo3bS1WdTB0ckEzVEFueU5JdlhFZTNhS1ZJS25CVEhVdXNzVVA2aGdHaUJza0JkR2lrWjFpY2VHRzNlNktVYUdGN0ZlaTQ0WXk5dXhoU2w4SXlmOEUzSkxFdThHdUxLWFpJYlZEeHVTVXRfQ2dDTnE0TkFnSGRQck80RXVQRFprR083ekhEeUN5WlVkYk40VmRxZTluZ3V1TFVlcy1mNkFFNUpvNXNQTnotejl4UEtpUVlsWmRiM2NMTTdjMDJSU0lVTkdtQ19HQnJheGRXeFhoT1ZlUQ?oc=5",
+   "category": "salud-ciencia",
+   "published": "2026-10-22T15:47:06Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
    "title": "PDI RATIFICA AL PREFECTO INSPECTOR HÉCTOR CORNEJO COMO JEFE DE LA REGIÓN POLICIAL DE LA ARAUCANÍA PARA 2027",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOcGJfWVlOWG1JNkV3bl9UazE1cklBVERmWVRqWFNSbXVCV3VCVGl1aldCUmFGbUtncnEweXBtcldLUGVGU3FTS2dRcGkzZVU2MTlqWDBtSjR5MVppcFlqeGdSS2VnTm41NjN6OUVOOW5qRmRpM1JGclhpb0lHc1Z0WTRxLTZVYXRaejh5Ymd4YU84TGFVdmZKWVhNbFF1VlhULWF2dFJscEN0WWxrYXpIdzJjVlBUT1J4WDRhYklUaHhGdmpCcHRqQzk3ZURTWVVUaGc2Ylg1c3hLLVcyVkVHenY0bWFRems?oc=5",
    "category": "regiones",
    "published": "2026-10-22T15:46:54Z",
    "sources": [
     "Araucanía Noticias Temuco"
+   ]
+  },
+  {
+   "title": "PDI RATIFICA AL PREFECTO INSPECTOR HÉCTOR CORNEJO COMO JEFE DE LA REGIÓN POLICIAL DE LA ARAUCANÍA PARA 2027",
+   "link": "https://araucanianoticias.cl/2026/pdi-ratifica-al-prefecto-inspector-hector-cornejo-como-jefe-de-la-region-policial-de-la-araucania-para-2027/1022317600",
+   "category": "regiones",
+   "published": "2026-10-22T15:46:54Z",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ]
+  },
+  {
+   "title": "Colegios de La Araucanía fortalecen la prevención del suicidio adolescente",
+   "link": "https://www.elmostrador.cl/agenda-pais/educacion/2026/10/22/colegios-de-la-araucania-fortalecen-la-prevencion-del-suicidio-adolescente/",
+   "category": "regiones",
+   "published": "2026-10-22T15:42:18Z",
+   "sources": [
+    "El Mostrador"
    ]
   },
   {
@@ -3079,6 +3281,15 @@
   {
    "title": "Fin del misterio: conoce a todos los nominados al Copihue de Oro 2026",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeE50UVlnSEN4U053SGU2SDFrMEp5Y2ZVMXEtNnB2UGJrZnRfZVBtRHgtTXU2NmtfUjQwRG5vM3M3ckJsTGVpS1VSY3p2Yl83NGRpVFZtNGR6LVFhN2tsaVRDc2ZaY2RjQ3dUdkNWR3I2dDdtQUs3Sm9uWDlBQV8waE55V0k5dUJOSnRvV3hPUVlHVUdabHdKRjNYV3FVR2N6Rnd2dlBESWVwOU8tRlJodVhOYkFVd9IB1wFBVV95cUxPeTRhOEVGLTBQX2hRdWNZRnprZERyWnZLZVRlajlBMEZoOFRFWnlNUEQwR0FPdUl1SU11d1ZEMndyWmFManVCaHJjelYtTElxbkJyWkZDTkNQb2NKcEVCQUhzR3c5S3BENEktS01QbnY4VjlUcjhQQXNtY0RrTnZ0R2xESnd2TFBmTmZmRmkyN0JOU25QaUpBV1JjTXhHeklpWDhXeS1pVzBvNXgydExIblN3UjFDX1NnTDlCQVFQbDlycnpMV0h6S01UVzV0RW1BSDd5ZklkNA?oc=5",
+   "category": "cultura",
+   "published": "2026-10-22T15:24:22Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
+   "title": "Fin del misterio: conoce a todos los nominados al Copihue de Oro 2026",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/fin-del-misterio-conoce-a-todos-los-nominados-al-copihue-de-oro-2026/",
    "category": "cultura",
    "published": "2026-10-22T15:24:22Z",
    "sources": [
@@ -3106,6 +3317,15 @@
   {
    "title": "“Me parece grave...”: Millaray Viera pierde la paciencia y barre con reconocida periodista por dura crítica a la Teletón",
    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNMEk1a2lFMk5hWVVzMElMVXl0STN3aXIzZ1BocVBTLTBzTmx1Mml1LTBaTzh6ems5Z1VnWXotV0ttV3VZcTE5R1pwdENIWGRWNEc1WlJyVGJmcTNoV1RTWmwyMlltTkpyby1TT01Kd21sSEdvSnhZcG5oQjNya05qUGJGYjhDS0VVUUdvSjZHbUp2ZUQ4V0JOZlRXcGUzVGdjQ1ZuamNxMDJlR01rU0dWTzhiSFZIS2tLeFhEQ0JTWWk1YTFlRDl6NjhpOHpZVGVPejBLN1N5TzFRdTRweXFNLXl6QU8yNFBEOFZwQ2k0ZGY3b3fSAZQCQVVfeXFMUEFnQ0thN1pQZGFFVDRtNmxTVEpsQlAwdnRLZ1REdWtHY3NiRFE4Q045a3VoeU55REJBOHdxWWRWUVpsb0ZVMGJBLTUteGxmTHJGZ0RsNlhaaVhzVlNPaWJjUXJMS05vdUZ0cmNnYUhVZEVCNUdJbk4yWTI4VWxJV3pLMEo2RFFmWldQV2ZqVGZHSEtBRm1QalFBNGpMeGpySUREWU1vcEtieTJHTFhNRndzazg3TnJnR3NWNndhRWpsemNHVVYxRDJSYkkxd0ZlbFNJMWYwcjQ3VGhNRXRWV2hMZHc1WkdCU0U1cVhjalpHYjJwZ0pqdjVNUkdwQW5mdmE5VVlSQ0ZpV3g4ZGVGMWQycWFv?oc=5",
+   "category": "cultura",
+   "published": "2026-10-22T15:17:18Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
+   "title": "“Me parece grave...”: Millaray Viera pierde la paciencia y barre con reconocida periodista por dura crítica a la Teletón",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/me-parece-grave-millaray-viera-pierde-la-paciencia-y-barre-con-reconocida-periodista-por-dura-critica-a-la-teleton/",
    "category": "cultura",
    "published": "2026-10-22T15:17:18Z",
    "sources": [
@@ -3194,8 +3414,26 @@
    ]
   },
   {
+   "title": "El \"Caso Relojes\" llega a Netflix con documental y una pieza clave del fraude: ya hay fecha y tráiler",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/22/el-caso-relojes-llega-a-netflix-con-documental-y-una-pieza-clave-del-fraude-ya-hay-fecha-y-trailer.shtml",
+   "category": "cultura",
+   "published": "2026-10-22T14:47:46Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Startup del Biobío obtiene primer lugar en Premio Innovación Edifica 2026 con aislante fabricado a partir de corteza de eucalipto",
    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPZ29HR2Z5S3Ntb1l0YUNjRlJ1WDViOVJTdE9ldGlPbUVkS3d5cXVwQ3NleThQQUlta2FSTlQyaXQtN0pGM3FYbUJOOGNHVXVzd1BNbURCMTFscTY1YXBkMk5JV18wZ0FZajZIQldaRDk2OGF5TmdnZi1QeXI5VVhVdTk0T0V3VE9XazNhN3lZZ2twWWpGVVBhbkZjbVdQOUE5ZWJLMDlxOXNoNjJKczFURkFBd2YtUGtsS1poZGpocVl5T1pZWHVvZ1BHeWdRWi1ocmN0bXpWRGVDbERlZUFJQWFHUVM1TGlOM1E?oc=5",
+   "category": "regiones",
+   "published": "2026-10-22T14:46:48Z",
+   "sources": [
+    "Portal Innova"
+   ]
+  },
+  {
+   "title": "Startup del Biobío obtiene primer lugar en Premio Innovación Edifica 2026 con aislante fabricado a partir de corteza de eucalipto",
+   "link": "https://portalinnova.cl/startup-del-biobio-obtiene-primer-lugar-en-premio-innovacion-edifica-2026-con-aislante-fabricado-a-partir-de-corteza-de-eucalipto/",
    "category": "regiones",
    "published": "2026-10-22T14:46:48Z",
    "sources": [
@@ -3221,8 +3459,26 @@
    ]
   },
   {
+   "title": "Calle intransitable por el barro: deslizamiento de tierra afecta a sector Juan Riquelme de Concepción",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/22/calle-intransitable-por-el-barro-deslizamiento-de-tierra-afecta-a-sector-juan-riquelme-de-concepcion.shtml",
+   "category": "regiones",
+   "published": "2026-10-22T14:41:00Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Exportaciones forestales del Biobío aumentaron 7,8% en agosto de 2026 y contemplaron 61,3% de las exportaciones regionales",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR1BYcE15d25iYjZtaEVKQkk1Vi02aTd6RE9MNldfZXFxRGRISnlTb20zQld3TkRzSWt0Z3NKRU5vWV9FeEpxWjRxUTNzU2t6dnZGUzBya2lVUTNtaldMQVJmSnhtM211SVB5ZnN3VE53Y1VzQ3ZOTVNmbEh5LUxlWWdnMDZhNUlaNktnVHBxY1ViNkMxUmZQRVVTNTBRd2NSclJ5U1ZxRHptRXZWaFBZ?oc=5",
+   "category": "regiones",
+   "published": "2026-10-22T14:40:55Z",
+   "sources": [
+    "Portal Agro Chile"
+   ]
+  },
+  {
+   "title": "Exportaciones forestales del Biobío aumentaron 7,8% en agosto de 2026 y contemplaron 61,3% de las exportaciones regionales",
+   "link": "https://www.portalagrochile.cl/2026/10/22/exportaciones-forestales-del-biobio-aumentaron-78-en-agosto-de-2026/",
    "category": "regiones",
    "published": "2026-10-22T14:40:55Z",
    "sources": [
@@ -3257,8 +3513,26 @@
    ]
   },
   {
+   "title": "“¡Dice que no apoya a Kast, pero ahí está...!”: Ale Valle le responde a Cecilia Bolocco y exhibe foto que sería clave",
+   "link": "https://www.lacuarta.com/chile/noticia/dice-que-no-apoya-a-kast-pero-ahi-esta-ale-valle-le-responde-a-cecilia-bolocco-y-exhibe-foto-que-seria-clave/",
+   "category": "cultura",
+   "published": "2026-10-22T14:34:07Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Los detalles del millonario acuerdo de Fran Maira con la familia del motociclista que la acusa de gravísimas lesiones",
    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPcEV6QTRhbHpEZXVXclFpSkRFTjUyV3FYZHUtV2tidk9WWmJkZ2tDY04xb0wtdFQ0ODgwci12Q1IwODBIR1VEbUMyblRCSlZvM3FJS3ZSanppNjNFbUp2S0o0VS1VMlRxYjlVVHI4bnY0Q1RCQ19laVljUDJGcVdWYzNoZm81ZllSc29mVHFCeWFNSHBmbkxPNXpVaF9WNUFkSjB2bGJnVk5XWUlheE5kOEhQalNhU0xGWW1rUkZHRXFMWDVrSVlQMDVZZy1FRFJtMkhERGQ4RzA2Mi01dWljdmdZd2xrMlBSeGVPMndZSnBacDjSAZQCQVVfeXFMUHhPbml1aHNYNDlwUTI5X1hIQV8za2V4dlpHRTZiNGdScW5mMWIzeTNaNzRxNnRRUzBHSnVtRmJzUTJpUFNzNHdEUGpPRzBwU3NzREFLQjNLVTAyblFiWW5Ua09KUzdEZ2hXUXpLa2hxekYtS1pjV3VrbmlOdW02RElrYktGR01YcVhFY0tqbnl6VG9makJETS1obTBwNVFzSk56MG1YUkhzNV9jS1FjU0c2TnJqR2ZyWEdORzJ4TWViRUtGVXVsUWVtVEdiNmlSQ3NRNGVKMTdQdXpIY3RvZG90TFhpSUExd0F0RHVoQlYyWHRrdElSaUNleW5ydmxwbDdyMHdzb0VSdWh4VHRTTVE3MEdG?oc=5",
+   "category": "cultura",
+   "published": "2026-10-22T14:28:58Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Los detalles del millonario acuerdo de Fran Maira con la familia del motociclista que la acusa de gravísimas lesiones",
+   "link": "https://www.latercera.com/nacional/noticia/los-detalles-del-millonario-acuerdo-de-fran-maira-con-la-familia-del-motociclista-que-la-acusa-de-gravisimas-lesiones/",
    "category": "cultura",
    "published": "2026-10-22T14:28:58Z",
    "sources": [
@@ -3302,6 +3576,15 @@
    ]
   },
   {
+   "title": "Vuelta del Biobío 2026: cinco etapas y 660 kilómetros marcarán el regreso del ciclismo UCI a Chile",
+   "link": "https://radio.uchile.cl/2026/10/22/vuelta-del-biobio-2026-cinco-etapas-y-660-kilometros-marcaran-el-regreso-del-ciclismo-uci-a-chile/",
+   "category": "regiones",
+   "published": "2026-10-22T14:11:17Z",
+   "sources": [
+    "Universidad de Chile"
+   ]
+  },
+  {
    "title": "El fichaje de Assadi abre un lío en Suecia y otro chileno es apuntado: “Crimen organizado”",
    "link": "https://chile.as.com/futbol/chilenos-por-el-mundo/el-fichaje-de-assadi-abre-un-lio-en-suecia-y-otro-chileno-es-apuntado-crimen-organizado-f202610-n/",
    "category": "deportes",
@@ -3331,6 +3614,15 @@
   {
    "title": "La Región de Valparaíso eligió su mejor \"pan batido\"",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOVpnX0tjbEpLQVBBR3BER0hIWGZMVDhiUUxILUVYRTJtWVZsNzhKS1F2WnFXSGJpNmpfbk5fQXFjMFU1NGFPOWFaeS02UHpMQzlDTUZJUFJEekRETzJkSGlGZHhYM1FjbnZlQ3NtWDlNbENPTGtaRktSTWxwNC1kak9iOXI3V0lJVkYxVDlVNFBzU2RkNVk2MW1kZUprTFhRVHAxZndPYkPSAa4BQVVfeXFMTUpYbm5pN1JNMnF6b2RobmlHcm9tRnBuWGFicVRJdlVZcXNPMDhVYkotcmRUUDBDZjRZRDBQeVNjVXpFaWRCVkhDOXBDc2RVRUJiY3JnREVVZFBiSzZ6NWNlZzNjQ1RheWFpdHBGNFlBQ0dNQWVfeTZOSU51b1VqS3d1akdIbzBmaU8wdWRXTmE2a0plT1BmWGVZbnRNbHBnNjA0Wm8wZ09ERl9IYW1R?oc=5",
+   "category": "regiones",
+   "published": "2026-10-22T14:02:00Z",
+   "sources": [
+    "24horas"
+   ]
+  },
+  {
+   "title": "La Región de Valparaíso eligió su mejor \"pan batido\"",
+   "link": "https://www.24horas.cl/regiones/zona-centro/valparaiso/la-region-de-valparaiso-eligio-el-mejor-pan-batido",
    "category": "regiones",
    "published": "2026-10-22T14:02:00Z",
    "sources": [
@@ -3393,6 +3685,15 @@
    ]
   },
   {
+   "title": "Famosa actriz se harta y lanza opinión sin filtro sobre recortes a Cultura anunciados por gobierno de Kast: reaccionó furia",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/famosa-actriz-se-harta-y-lanza-opinion-sin-filtro-sobre-recortes-a-cultura-anunciados-por-gobierno-de-kast-reacciono-furia/",
+   "category": "cultura",
+   "published": "2026-10-22T13:29:13Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Club paraguayo prohibió escote y short a periodistas por fotógrafa viral: mujer aludida frenó medida",
    "link": "https://www.biobiochile.cl/noticias/deportes/adlp/2026/10/22/club-paraguayo-prohibio-escote-y-short-a-periodistas-por-fotografa-viral-mujer-aludida-freno-medida.shtml",
    "category": "deportes",
@@ -3405,6 +3706,15 @@
   {
    "title": "Kel Calderón ofrece millonaria recompensa tras muerte de 3 perros en su casa: acusó envenenamiento",
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORElETzdvYnFqRENoYnBmZjZRVEQzUmtGMzVhTlljZ3NTZEtGdXJpX05DWHRuckRoelVzZ0lxNEozRVduc2VlM2NXNVU4eS1TcWZoWEw3TzRRUVRnQncwMmctWUJFV19rd2ppLU5sWEJxVTV0N3FTVWh6dnlxZGYtU1d5NzdjMVNDSXp1WlJMY2ZQVTgwUUJmbkdVMzFaVnozUjRObExWN2VPdUthTURJQmNwYURwQndPZndvWlJFcW9IeEdJSXJVMW1xUmxWeGVrUFVxR01R?oc=5",
+   "category": "cultura",
+   "published": "2026-10-22T13:26:10Z",
+   "sources": [
+    "Chilevisión"
+   ]
+  },
+  {
+   "title": "Kel Calderón ofrece millonaria recompensa tras muerte de 3 perros en su casa: acusó envenenamiento",
+   "link": "https://www.chilevision.cl/noticias/show/kel-calderon-ofrece-millonaria-recompensa-tras-muerte-de-3-perros-en-su-casa-acuso-envenenamiento/",
    "category": "cultura",
    "published": "2026-10-22T13:26:10Z",
    "sources": [
@@ -3450,6 +3760,15 @@
   {
    "title": "\"Cortémosla con que le jodió la carrera\": Marcela Vacarezza y conflicto de Tonka Tomicic con Parived",
    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbWFOMHdpeDNLMkFSUWk1Q2cwSnFTTnhQT1ZQMVROVG1pTWo0SVdNNDBHX2ZFSHE0bDNteUh1RGxkTzVpelBIRjNqOU9aRE9MaEM5bkh1OVU0OS1mQXpNcEotYlRGVnFJazZmS3pMYWJTcGd6aVJYZVZ1OWF0dXY0SXpfVGUyQWJSYkJ4NGpWamt2cFAwdEN5X05Nbkc5RW1YX0ltWjFGal9LSFNsdVpNREwxT282TW9hTFVMUjlUOGhSeEdUWWxIa1l2Z0ZGVWFya1dqNE9nSll2SElsMjAwaUJZbmlhcUlRSC1FT1ladDM?oc=5",
+   "category": "cultura",
+   "published": "2026-10-22T13:08:12Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "\"Cortémosla con que le jodió la carrera\": Marcela Vacarezza y conflicto de Tonka Tomicic con Parived",
+   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/22/cortemosla-con-que-le-jodio-la-carrera-marcela-vacarezza-y-conflicto-de-tonka-tomicic-con-parived.shtml",
    "category": "cultura",
    "published": "2026-10-22T13:08:12Z",
    "sources": [
@@ -3511,6 +3830,15 @@
    ]
   },
   {
+   "title": "La sincera opinión de Luis Jara que sacudió a participante de Fiebre de Canto: no contuvo las lágrimas tras escucharlo",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/la-sincera-opinion-de-luis-jara-que-sacudio-a-participante-de-fiebre-de-canto-no-contuvo-las-lagrimas-tras-escucharlo/",
+   "category": "cultura",
+   "published": "2026-10-22T12:36:42Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Usach abordará desafíos de deserción docente y de la mentoría en Chile",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVTlUWi1lVGF5eThfUk5mdnRkSzBmYmNSb0lOblZuUjM1RWR4MDF0bE5hZlhwUHQ3TGJoa1dWVEpYZUVRbDFhUU11dm1nZEFCS081bjVGQlB5aDlMQWVnVmdMZDZaWE5Vb3VSV0VJZ2Q1Vm9NS0pCY2Y5OS10RFdkaDc3d29XVDRHQUZ0bnpOQU0?oc=5",
    "category": "politica",
@@ -3558,6 +3886,15 @@
   {
    "title": "Faloon golpea a Luis Mateucci tras exponer revelador secreto de su vida privada en pantalla: “bomba” lo dejó sin palabras",
    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOcTdwQTFjVWlIUFBtYTdtZlg5eDJPc0dCRG00LXpwM0MyejJ2V1lLOXY3U0tnMGhSWTRqeDRtMlE5eEM4bUNWeFZrdnJ1R0x3eVN6VDJQZEg1alVqSVVKZ1BSWVhzdEJfa0pDdGQxcUd3cTVCUVFPQ0Fhdnpqam9WRkFOMmROcDN3YWx2dHNIckdmanFZVmpSTFd1SHI5eGw1UEpRVFJQQUhlSDBwUmJoc2xjZ043TmVMWTZTY2owZXhqX1lvNWp2ZEhGdWt6TXRlN24tWVJvbVhUR18zUFBPWUlucHJJbkdXWjNHQ3A4N0FyNVBaVkMybdIBmgJBVV95cUxOSmw4cjVicjNESlRXU2VZN0hXSGNUaEgxT1l2dnotckc0d0kxV3Q1VjcyMWlFc2FCdm5yemRmU0VENk5jcWpsS1BlVzJ6TFZCRDRueElKZXZzOGFFVzFzLTFWM3NNNXRDdUdEaXBkdDI5NmlNMzQ5X1BNYmEwTVpLX3o5TXdXQVdJcWxqYm1SbEFVbVp1R3lyXzJUSkxvUmdRQjBRVFpSQ0ZtRlVuSUFwUG91YlRIMndZODFoYnN0TzN4OVk5a05kX0paV0t2WUtMUzlMNnZxRC1hNFRNcTNKemxELUp6YWFESkQxN3IwZURRakpoWjFyTWRPdi1palk2cktrNE1NaWNKQzVoUVhHQnYwXzZYSUZFVnc?oc=5",
+   "category": "cultura",
+   "published": "2026-10-22T11:57:00Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
+   "title": "Faloon golpea a Luis Mateucci tras exponer revelador secreto de su vida privada en pantalla: “bomba” lo dejó sin palabras",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/faloon-golpea-a-luis-mateucci-tras-exponer-revelador-secreto-de-su-vida-privada-en-pantalla-bomba-lo-dejo-sin-palabras/",
    "category": "cultura",
    "published": "2026-10-22T11:57:00Z",
    "sources": [
@@ -3619,6 +3956,15 @@
    ]
   },
   {
+   "title": "En España se inclinan ante Pellegrini por nuevo hito con Betis en Champions: \"Insaciable, histórico\"",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/10/22/en-espana-se-inclinan-ante-pellegrini-por-nuevo-hito-con-betis-en-champions-insaciable-historico.shtml",
+   "category": "deportes",
+   "published": "2026-10-22T11:15:48Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Oficial: un chileno firma en Independiente hasta el 2028",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUmlhX3VxMlhMOWVLdURmSjJVdmdhZXp2dV9saXNWMUtveFpVbHdyM01wMHNtcDkyTUF6WGxqZ0lUQlFIMTNhMWpMT3cwQmZnUEZvbEZWWkNXenFkWXFnQ3AtaU9zTHJvVi1NYWdmT3dLSC1lWUluNEhTUmNGbnp0RWxFLW1TbXhsS0pGc3NqVmZuNmc1ZzNKQjNlUWk0Z29TNHEzell3c2lrNTRWMFYxRGN1YjBZaVnSAcsBQVVfeXFMTXB3UWxqTWVTS3FKLTh4Ny1Ga0F1bXRKWENiQWUxckVXbV9nYU5wRW14bWFjRi01TWVjcU8yRFU2aUVvVmhNUkZZSTJHYnBUdUxmVTFVQkRqN0JIZUMxcFFGcXZjRjFMcFZJRmhWLXhvMHgxcThOUV8yTmhHdlpqZUlwYkpCOG9WQ014VTRncHdMTC0tVmFObldib2JrUzJLZWNwNmJITFBtcE1VMVhxcjB2OXI0MXh6eThvOWZsMklFRTlqQzVxSzdGRVE?oc=5",
    "category": "deportes",
@@ -3658,6 +4004,15 @@
   {
    "title": "MasterChef Chile vivió nueva eliminación: participante se despidió entre abrazos y emotivas palabras",
    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQSG9hekpxTjdMYXpYaUVtYlVoZ0U5NXc5TTI5SHgzTWtZTWRrd0Y2TFVvNW5mR09rdGViRUJMM0c3YkF4clh2TnRMYnlfNW5ZeHNIZDBlU29MazJSVnJ6ZWJxMUJfUjJtUmxmNDUxSzBJUzdzam04WDJBQ1ZTb1JtWGsxWVppRlAwY0dwSmJTTlJKWmRmSUIwZWJuemR6OVJGZ3FubW9NZno1OHBCSzB4ZkczbGdxc3V5dmx5Y0V6SXlJd1o2bWxiWExiZldlU0dlM2ZIUTc0eG1aTHNmS094YWhoVXkxMGI2WGY5aFdpZ256Ukk?oc=5",
+   "category": "cultura",
+   "published": "2026-10-22T10:27:18Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "MasterChef Chile vivió nueva eliminación: participante se despidió entre abrazos y emotivas palabras",
+   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/22/masterchef-chile-vivio-nueva-eliminacion-participante-se-despidio-entre-abrazos-y-emotivas-palabras.shtml",
    "category": "cultura",
    "published": "2026-10-22T10:27:18Z",
    "sources": [
@@ -3788,6 +4143,15 @@
    "published": "2026-10-22T09:12:00Z",
    "sources": [
     "Defensa.com"
+   ]
+  },
+  {
+   "title": "Lluvia y tormentas eléctricas: continúa la inestabilidad en Santiago hasta este día",
+   "link": "https://www.latercera.com/tendencias/noticia/lluvia-y-tormentas-electricas-continua-la-inestabilidad-en-santiago-hasta-este-dia/",
+   "category": "nacional",
+   "published": "2026-10-22T09:02:00Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -4099,6 +4463,15 @@
    ]
   },
   {
+   "title": "Fran Maira habría alcanzado acuerdo para indemnizar a víctima de atropello y grabará reality en Perú",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/21/fran-maira-habria-alcanzado-acuerdo-para-indemnizar-a-victima-de-atropello-y-grabara-reality-en-peru.shtml",
+   "category": "cultura",
+   "published": "2026-10-21T23:59:04Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "La UC remece el fútbol chileno y presenta a un fichaje europeo",
    "link": "https://chile.as.com/futbol/la-uc-remece-el-futbol-chileno-y-presenta-a-un-fichaje-europeo-f202610-n/",
    "category": "deportes",
@@ -4155,6 +4528,15 @@
   {
    "title": "J.K. Rowling insiste contra el activismo trans y acusa \"amenazas de muerte, tortura y violación\"",
    "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPV2tiN01idnhidWJieWo0WUtfX3FqMzFFZXd0aDRFSDliUVMzV3JNLUZ2cG9DMHg1WndGMjdQcVlfdFFVejQxLVZQRG4xZC1laVotUDljRWhFVkdCM0JXdzhvVGx2N2czX0l5Z1l5aURoeGtVMk15dm5UYm5XQUN0VWtGVjB6U0xXa2hhTkpiWkVGR3RXSjg1czI5WW1CMElsZU9rVzNTSmtPYWJINWpsTnhCMUlDOElibHRxdUg4WHZhTDB4S0tiZVhkZjZzdlBWY1d5cTJtSzR1SU1DMkZrZV9VM0xMLTBxVG9vN1dEN2FCNy12bFNLdDJPY3pSVWVOVGdfSG5qaw?oc=5",
+   "category": "cultura",
+   "published": "2026-10-21T23:21:56Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "J.K. Rowling insiste contra el activismo trans y acusa \"amenazas de muerte, tortura y violación\"",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/21/j-k-rowling-insiste-contra-el-acitvismo-trans-y-acusa-amenazas-de-muerte-tortura-y-violacion.shtml",
    "category": "cultura",
    "published": "2026-10-21T23:21:56Z",
    "sources": [
