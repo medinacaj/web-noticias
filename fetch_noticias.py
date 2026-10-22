@@ -884,6 +884,9 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         with open(os.path.join(out_dir, name), "w", encoding="utf-8") as handle:
             handle.write(content)
 
+    from scripts.public_feeds import write_public_feeds
+    write_public_feeds(out_dir, stories, now, SITE_URL, CATEGORY_LABELS)
+
     total = (1 if sel["lead"] else 0) + len(sel["secondary"]) + sum(len(v) for v in sel["by_category"].values())
     print(f"Sitio generado en {out_dir}: {total} noticias publicadas · URL canónica {SITE_URL}/")
 

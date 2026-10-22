@@ -10,6 +10,7 @@
 | `/sobre-el-portal.html` | Página permanente propia, indexable, con explicación del proceso y atribución; `AboutPage`. |
 | `/sitemap.xml` | Contiene únicamente las dos páginas propias indexables: portada y sobre el portal. No incluye artículos ajenos ni páginas `noindex`. |
 | `/boletin-diario.html` | Vista previa temporal con `noindex`: no se presenta como página editorial permanente y **no envía correos**. |
+| `/rss.xml` y `/rss/<categoria>.xml` | RSS público: hasta 50 titulares en el índice y 24 por categoría original, de las últimas 24 horas. Solo enlaces HTTPS originales, fechas y atribución; sin fotografías ni extractos. |
 | `/404.html` | Página de error con `noindex`. |
 | `/robots.txt` | Archivo informativo con URL de sitemap. **En GitHub Pages con ruta de proyecto** no está en la raíz del host: los buscadores normalmente consultan `https://medinacaj.github.io/robots.txt`, fuera del ámbito de este repositorio. No atribuirle efecto de control de rastreo. |
 | Imágenes | Enlaces a fotografías de medios; carga diferida para secundarias y prioridad alta para imagen principal. El tiempo real depende de los servidores de terceros. |
@@ -50,3 +51,10 @@ Si se adopta dominio propio, actualizar `SITE_URL` y verificar **todas** las URL
 - https://developers.google.com/search/docs/crawling-indexing/robots/intro
 - https://developers.google.com/search/docs/appearance/structured-data/article
 - https://developers.google.com/search/docs/appearance/core-web-vitals
+
+
+## RSS público
+
+El RSS omite enlaces de Google News sin resolver. En noticias fusionadas, el titular, medio y fecha proceden de la cobertura cuyo enlace coincide con el publicado. Si esa cobertura carece de fecha válida propia, se omite la entrada sin heredar la fecha de otro editor. Se ordenan las publicaciones válidas de más reciente a más antigua por su propia fecha de cobertura antes de aplicar los límites de 50 y 24. Si faltan coberturas coincidentes y hay varios editores o el host declarado contradice al enlace, la noticia se omite porque no puede atribuirse con certeza. Con un único editor y sin URL declarada, se conserva la atribución textual. También se omiten entradas con caracteres no permitidos por XML 1.0 en su titular, medio o enlace; se preservan Unicode válido, tabuladores y saltos de línea. La URL de atribución conserva una URL declarada del mismo host o usa el origen HTTPS del enlace publicado, sin reconstruir enlaces desde nombres.
+
+Los feeds usan las categorías de origen: `salud-ciencia` y `medioambiente` conservan sus propios archivos aunque la portada los agrupe visualmente bajo Tecnología y Nacional. No cambian el historial, las fuentes activadas, la búsqueda ni el sitemap HTML. La generación no hace peticiones de red; estas garantías técnicas no acreditan permisos de terceros.
