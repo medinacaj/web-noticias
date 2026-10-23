@@ -1162,8 +1162,6 @@
   function norm(t) { return t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
   var seen = {}, index = [], categories = {}, sources = {};
   d.querySelectorAll("main a[data-cat]").forEach(function (a) {
-    if (seen[a.href]) return;
-    seen[a.href] = true;
     var card = a.closest(".lead,.feature,.rail-list li,.compact-list li");
     var source = card && card.querySelector(".meta .source-name");
     var time = card && card.querySelector(".meta time");
@@ -1171,10 +1169,22 @@
     var sourceNames = storySources(card, a);
     var timestamp = time ? Date.parse(time.getAttribute("datetime")) : NaN;
     var cat = a.getAttribute("data-cat"), catKey = a.getAttribute("data-key");
-    index.push({href:a.href,title:a.textContent.trim(),cat:cat,catKey:catKey,
-      source:name,sources:sourceNames,time:timestamp,key:norm(a.textContent)});
     categories[catKey] = cat;
     sourceNames.forEach(function (name) {sources[name] = true;});
+    var existing = seen[a.href];
+    if (existing) {
+      // El contexto puede preceder a la tarjeta que aporta medio y fecha.
+      if (!existing.source) existing.source = name;
+      if (!Number.isFinite(existing.time)) existing.time = timestamp;
+      sourceNames.forEach(function (name) {
+        if (existing.sources.indexOf(name) === -1) existing.sources.push(name);
+      });
+      return;
+    }
+    var item = {href:a.href,title:a.textContent.trim(),cat:cat,catKey:catKey,
+      source:name,sources:sourceNames,time:timestamp,key:norm(a.textContent)};
+    seen[a.href] = item;
+    index.push(item);
   });
   function fillSelect(select, entries) {
     if (!select) return;

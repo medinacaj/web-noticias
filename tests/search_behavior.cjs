@@ -57,7 +57,7 @@ function simple(node, s) {
   }
   return !s.includes('>');
 }
-function fixture() {
+function fixture({contextPosition, contextSources=['24horas'], contextOnly=false, recent=false} = {}) {
   let d = new Element('document'); d.body = d;
   d.getElementById = id => d.querySelectorAll('[id]').find(x => x.attrs.id === id) || null;
   d.createElement = tag => new Element(tag); d.createTextNode = text => new Element('#text', {}, text);
@@ -65,7 +65,16 @@ function fixture() {
   const ids = ['search-toggle','search-panel','search-input','search-status','search-results','search-category',
     'search-source','search-date','source-preference','category-preference','source-sort','library-panel','library-toggle','saved-stories'];
   ids.forEach(id => add('div', {id}));
-  const main = add('main', {id:'contenido'}), section = add('section', {class:'section'}, '', main);
+  const main = add('main', {id:'contenido'});
+  const addContext = () => {
+    const context = add('section', {class:'context'}, '', main);
+    add('a', {'data-cat':'Chile','data-key':'chile','data-sources':JSON.stringify(contextSources),
+      href:'https://example.com/25'}, 'Noticia común 25', context);
+    if (contextOnly) add('a', {'data-cat':'Chile','data-key':'chile','data-sources':'["Contextual"]',
+      href:'https://example.com/context-only'}, 'Sólo contexto', context);
+  };
+  if (contextPosition === 'before') addContext();
+  const section = add('section', {class:'section'}, '', main);
   const grid = add('div', {class:'section-grid', id:'noticias-grupo'}, '', section);
   const list = new Element('ul', {class:'compact-list'});
   for (let i=0; i<26; i++) {
@@ -74,10 +83,11 @@ function fixture() {
     add('a', {'data-cat':'Chile','data-key':'chile','data-sources':JSON.stringify(names), href:'https://example.com/'+i}, 'Noticia común '+i, h);
     const meta = add('p', {class:'meta'}, '', card);
     add('span', {class:'source-name'}, i===25 ? '24horas, Teletrece' : names[0], meta);
-    add('time', {datetime:new Date(Date.UTC(2026,9,22,0,i)).toISOString()}, '', meta);
+    add('time', {datetime:new Date(recent ? Date.now()-3600000+i : Date.UTC(2026,9,22,0,i)).toISOString()}, '', meta);
   }
   grid.appendChild(list);
   const more = add('button', {'data-show-more':'','aria-controls':'noticias-grupo','data-step':'6'}, '', section);
+  if (contextPosition === 'after') addContext();
   const storage = new Map();
   const context = {document:d, window:{addEventListener(){}}, localStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},
     URL, Date, console, setTimeout(){},setInterval(){}};
@@ -93,6 +103,44 @@ test('search renders every announced result beyond twenty', () => {
   const f=fixture(); f.change('search-input', 'comun', 'input');
   assert.equal(f.d.getElementById('search-status').textContent, '26 resultados');
   assert.equal(f.d.getElementById('search-results').children.length, 26);
+});
+test('context-first duplicates retain card metadata and all twenty-six recent search results', () => {
+  const f=fixture({contextPosition:'before', recent:true});
+  f.change('search-input','comun','input');
+  assert.equal(f.d.getElementById('search-results').children.length,26);
+  f.change('search-date','24');
+  const results=f.d.getElementById('search-results').children;
+  assert.equal(f.d.getElementById('search-status').textContent,'26 resultados');
+  assert.equal(results.length,26);
+  const duplicate=results.find(li=>li.querySelector('a').href==='https://example.com/25');
+  assert.equal(duplicate.querySelector('.search-result-meta').textContent,'24horas, Teletrece');
+  f.change('search-source','Oculto');
+  assert.equal(f.d.getElementById('search-results').children.length,1);
+  assert.equal(f.d.getElementById('search-results').children[0].querySelector('a').href,'https://example.com/25');
+});
+test('duplicate links preserve complete sources in either document order', () => {
+  for (const contextPosition of ['before','after']) {
+    const f=fixture({contextPosition, contextSources:['Contextual'], recent:true});
+    for (const source of ['Contextual','24horas','Teletrece','Oculto']) {
+      assert.ok(f.d.getElementById('search-source').children.some(x=>x.value===source));
+      f.change('search-input','comun 25','input');
+      f.change('search-source',source);
+      f.change('search-date','24');
+      assert.equal(f.d.getElementById('search-results').children.length,1,contextPosition+': '+source);
+    }
+  }
+});
+test('stories present only in context remain searchable without invented metadata', () => {
+  const f=fixture({contextPosition:'before', contextOnly:true});
+  f.change('search-input','solo contexto','input');
+  let results=f.d.getElementById('search-results').children;
+  assert.equal(results.length,1);
+  assert.equal(results[0].querySelector('a').href,'https://example.com/context-only');
+  assert.equal(results[0].querySelector('.search-result-meta').textContent,'');
+  f.change('search-source','Contextual');
+  assert.equal(f.d.getElementById('search-results').children.length,1);
+  f.change('search-date','24');
+  assert.equal(f.d.getElementById('search-results').children.length,0);
 });
 test('source selectors use each complete source, including names absent from the abbreviated label', () => {
   const f=fixture();
