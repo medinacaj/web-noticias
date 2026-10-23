@@ -51,6 +51,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; NoticiasDelMomento/2.0)"
 
 STORIES_PER_CATEGORY = 24  # seis iniciales, resto progresivo
 WINDOW_HOURS = 24            # cuánto tiempo permanece una noticia en el sitio
+FUTURE_TOLERANCE = timedelta(minutes=15)  # pequeño desfase del reloj editorial
 MAX_HISTORY = 400            # tope de noticias guardadas en el historial
 SIMILARITY_THRESHOLD = 0.6   # umbral para considerar dos titulares "la misma noticia"
 RSS_LIMIT = 15
@@ -186,8 +187,11 @@ def safe_image(url):
 def source_domain(source_url, article_url=""):
     """Dominio editorial seguro; nunca atribuir noticias al agregador Google."""
     for value in (source_url, article_url):
-        parsed = urllib.parse.urlsplit((value or "").strip())
-        host = (parsed.hostname or "").lower().rstrip(".")
+        try:
+            parsed = urllib.parse.urlsplit((value or "").strip())
+            host = (parsed.hostname or "").lower().rstrip(".")
+        except ValueError:
+            continue
         if (parsed.scheme == "https" and host and "." in host
                 and not parsed.username and not parsed.password
                 and not is_google_link(value)
@@ -412,10 +416,11 @@ def coverage_control(story):
             f'<ol class="coverage-list">{content}</ol></template>')
 
 
-def merge(stories, items, now):
-    """Agrega noticias nuevas; si un titular ya existe (aunque venga de otro medio),
-    suma la fuente a la noticia existente en vez de duplicarla."""
+def merge(stories, items, now, window_hours=WINDOW_HOURS):
+    """Agrupa titulares vigentes; deduplica la misma URL sin renovar su fecha."""
     added = 0
+    limit = now - timedelta(hours=window_hours)
+    future_limit = now + FUTURE_TOLERANCE
     for item in items:
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
@@ -424,6 +429,9 @@ def merge(stories, items, now):
         norm = normalize_title(title)
         incoming_sources = item.get("sources") or [item.get("source") or "Fuente"]
         published = parse_date(item.get("published"))
+        if published and published > future_limit:
+            continue
+        incoming_time = published or now
         published = to_iso(published) if published else None
         # La URL canónica identifica una nota aunque cambie el titular o tenga tracking.
         # La similitud difusa, en cambio, solo agrupa noticias dentro de una
@@ -435,9 +443,12 @@ def merge(stories, items, now):
             continue
         match = next((s for s in stories
                       if canonical_key(s["link"]) == article_key), None)
-        if match is None:
+        # Una nota caducada no debe absorber ni envejecer otra URL vigente,
+        # independientemente del orden de llegada. La misma URL sigue deduplicándose.
+        if match is None and incoming_time >= limit:
             match = next((s for s in stories
                           if s["category"] == item["category"]
+                          and limit <= (story_time(s) or now) <= future_limit
                           and not s.get("metadata_only") and not item.get("metadata_only")
                           and is_similar(norm, s["_norm"])), None)
         if match:
@@ -458,7 +469,10 @@ def merge(stories, items, now):
                 match["source_url"] = item.get("source_url") or link
             if not match.get("image") and item.get("image"):
                 match["image"] = safe_image(item["image"])
-            if published and (not match.get("published") or published < match["published"]):
+            # first_seen también fija la edad cuando aún falta fecha editorial.
+            # Incorporar una fecha posterior rejuvenecería la misma noticia.
+            previous_time = story_time(match)
+            if published and (not previous_time or incoming_time <= previous_time):
                 match["published"] = published
             for field in ("publisher_id", "source_country", "source_country_label"):
                 if not match.get(field) and item.get(field):
@@ -498,7 +512,8 @@ def hours_old(story, now):
 
 def prune(stories, now, window_hours):
     limit = now - timedelta(hours=window_hours)
-    kept = [s for s in stories if (story_time(s) or now) >= limit]
+    future_limit = now + FUTURE_TOLERANCE
+    kept = [s for s in stories if limit <= (story_time(s) or now) <= future_limit]
     kept.sort(key=lambda s: story_time(s) or now, reverse=True)
     return kept[:MAX_HISTORY]
 
@@ -911,12 +926,12 @@ def main():
     if args.importar:
         with open(args.importar, encoding="utf-8") as handle:
             items = json.load(handle)
-        print(f"Importadas: {merge(stories, items, now)} noticias nuevas")
+        print(f"Importadas: {merge(stories, items, now, args.ventana)} noticias nuevas")
     elif not args.solo_render:
         items = collect(now)
         if not items:
             print("[aviso] Ninguna fuente respondió; se publica con el historial existente.")
-        print(f"Nuevas: {merge(stories, items, now)} (el resto ya estaba publicado y solo sumó fuentes)")
+        print(f"Nuevas: {merge(stories, items, now, args.ventana)} (el resto ya estaba publicado y solo sumó fuentes)")
 
     stories = prune(stories, now, args.ventana)
     if not stories:
