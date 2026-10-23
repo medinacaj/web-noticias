@@ -1,6 +1,42 @@
 {
- "actualizado": "2026-10-23T04:37:59Z",
+ "actualizado": "2026-10-23T09:58:25Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "\"Me avergüenza trabajar en una empresa que impulsa la IA con fines militares\": los empleados de Google que renuncian por los acuerdos con el ejército de EE.UU.",
+   "summary": "La BBC entrevistó a varios empleados actuales y antiguos de Google DeepMind que han dejado sus puestos por su rechazo a cómo la compañía impulsa el uso de sus productos de IA en contextos bélicos.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/68b4/live/5cfc7540-cd76-11f1-bbdb-c39c91930f26.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "\"Me avergüenza trabajar en una empresa que impulsa la IA con fines militares\": los empleados de Google que renuncian por los acuerdos con el ejército de EE.UU.",
+     "link": "https://www.bbc.com/mundo/articles/cxg5j1d93993o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-23T09:35:57Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cxg5j1d93993o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-23T09:35:57Z",
+   "first_seen": "2026-10-23T09:58:25Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Cae banda que maniató a familia durante robo en Lo Barnechea y presumió lo sustraído en redes",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993208-diseno-sin-titulo-72.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/23/cae-banda-que-maniato-a-familia-durante-robo-en-lo-barnechea-y-presumio-lo-sustraido-en-redes.shtml",
+   "published": "2026-10-23T04:21:25Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
   {
    "category": "internacional",
    "title": "Quiénes son los \"ciudadanos palestinos de Israel\" y por qué pueden tener la llave para desbancar a Netanyahu",
@@ -38,19 +74,19 @@
    "image_checked_at": "2026-10-23T04:37:59.665625Z"
   },
   {
-   "category": "internacional",
-   "title": "Putin dice que Rusia está lista para negociar la paz definitiva",
+   "category": "deportes",
+   "title": "Maracanazo de Estudiantes: eliminó en penales a Flamengo para avanzar a la final de Copa Libertadores",
    "summary": "",
-   "image": "https://static.dw.com/image/79239742_6.jpg",
-   "source_url": "https://www.dw.com",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993161-flamengo-estudiantes-copa-libertadores-2026.jpg",
+   "source_url": "https://www.biobiochile.cl",
    "sources": [
-    "DW.com"
+    "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://www.dw.com/es/putin-dice-que-rusia-est%C3%A1-lista-para-negociar-la-paz-definitiva/a-79738139",
-   "published": "2026-10-23T02:33:30Z",
-   "first_seen": "2026-10-23T04:37:59Z",
-   "image_checked_at": "2026-10-23T04:37:59.665625Z"
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2026/10/22/maracanazo-de-estudiantes-elimino-en-penales-a-flamengo-para-avanzar-a-la-final-de-copa-libertadores.shtml",
+   "published": "2026-10-23T02:45:10Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "nacional",
@@ -84,17 +120,48 @@
   },
   {
    "category": "regiones",
-   "title": "DE LOS ODESUR AL DEPORTE ESCOLAR: LA ARAUCANÍA DESTACA SUS RESULTADOS Y PROYECTA NUEVOS DESAFÍOS",
+   "title": "FUNDACIÓN INTEGRA CELEBRA 36 AÑOS CONSTRUYENDO OPORTUNIDADES PARA LA PRIMERA INFANCIA EN LA ARAUCANÍA",
    "summary": "",
-   "image": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/fundacion-integra-celebra-36-anos-construyendo.jpg",
    "source_url": "https://araucanianoticias.cl",
    "sources": [
     "Araucanía Noticias Temuco"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUGd5R1hib3lBMjNqelRzQTBHOFpsR3ZlVHFRLThQVnp1bUFFY1JCUzBUSHZ6bjlEcGFObHhIbVNseDR4LTNTSF80THpGMXdlT1A4WnFDRWtFVW1wWUp3VUkzTFVWbWdUNjRzUVFhM3VGMXVCdWNnYTg1S3huUHhMRkdjZUUwQm5PTHFLTGM0T0tHUnpOM2RZaFhOaGtOU2x5dDA5YkNoa21ITnAtb1F6YlRVVUk2d2FsS3AycEk2LVR3VVRtYUxBN3dBUFd2ZndJUzgteEI3WQ?oc=5",
+   "link": "https://araucanianoticias.cl/2026/fundacion-integra-celebra-36-anos-construyendo-oportunidades-para-la-primera-infancia-en-la-araucania/1022317671",
+   "published": "2026-10-23T02:16:34Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
+   "category": "regiones",
+   "title": "La Serena vs. Concepción: Horario, posibles formaciones y dónde ver por TV y streaming la Liga de Primera 2026",
+   "summary": "",
+   "image": "https://cdn.prensafutbol.cl/wp-content/uploads/2026/10/deporets-concepcion-vs-la-serena-liga-de-primera-2026-foto-Daniel-Pino-Uno-Noticias-Agencia-Uno.png",
+   "source_url": "https://www.prensafutbol.cl",
+   "sources": [
+    "PrensaFútbol"
+   ],
+   "coverages": [],
+   "link": "https://www.prensafutbol.cl/la-serena-concepcion-hora-ver-liga-de-primera/",
+   "published": "2026-10-23T01:33:44Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
+   "category": "regiones",
+   "title": "DE LOS ODESUR AL DEPORTE ESCOLAR: LA ARAUCANÍA DESTACA SUS RESULTADOS Y PROYECTA NUEVOS DESAFÍOS",
+   "summary": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/de-los-odesur-al-deporte-escolar-la-araucania.jpeg",
+   "source_url": "https://araucanianoticias.cl",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ],
+   "coverages": [],
+   "link": "https://araucanianoticias.cl/2026/de-los-odesur-al-deporte-escolar-la-araucania-destaca-sus-resultados-y-proyecta-nuevos-desafios/1022317666",
    "published": "2026-10-23T01:32:09Z",
-   "first_seen": "2026-10-23T04:37:59Z"
+   "first_seen": "2026-10-23T04:37:59Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "nacional",
@@ -110,6 +177,21 @@
    "published": "2026-10-23T01:04:03Z",
    "first_seen": "2026-10-23T04:37:59Z",
    "image_checked_at": "2026-10-23T04:37:59.665625Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Reunión de Superados - Capítulo 211: Una nueva manipulación de Max",
+   "summary": "",
+   "image": "https://images2-mega.cdn.mdstrm.com/mega/2026/10/22/max-abraza-a-tortu_221670_2_6ada5d2a93058.jpg?d=1200x675",
+   "source_url": "https://www.mega.cl",
+   "sources": [
+    "Mega.cl"
+   ],
+   "coverages": [],
+   "link": "https://www.mega.cl/teleseries/reunion-de-superados/capitulos/221670-reunion-de-superados-capitulo-211-jueves-22-de-octubre.html",
+   "published": "2026-10-23T01:04:00Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "internacional",
@@ -130,15 +212,16 @@
    "category": "regiones",
    "title": "¡Comenzó Tech4Future Antofagasta! Tres jornadas de innovación y tecnología para abordar los desafíos estratégicos del norte de Chile",
    "summary": "",
-   "image": "",
+   "image": "https://regionalista.cl/wp-content/uploads/2026/10/GRAFICA-SITIO-WEB-2026-10-22T214519.136.jpg",
    "source_url": "https://regionalista.cl",
    "sources": [
     "Diario Regionalista Antofagasta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQNy1lNHNLTEFXejhCV0w5a05EZkVKamtlVmRRaHN2clQ0clRYTmxIMXljWkJoUGFhS3NEbU5qVjFfQUF2YlFSb1lRSm9yWnIwZFpIdVNmZVBQdDJKQ0FjcWVuQzlVd0dHcUdBTkhiV3daRUVhdTRXbUFrMlpVanNSeGZfcXBDbkk2UjZISVEwR3VmZmpnOTJ5dHZVXzJ0cmF2SC0ya1ZUdWxYaGNCcFlXQnZhVzZqNjdjTGxia2JnLWRrVWdsZmNvU0RyUTE0dlZyYndVbWRKU3ZvU21KMFQ3MktmUFZaMHg5QUMxWlUzMXNuWWVjcmc?oc=5",
+   "link": "https://regionalista.cl/2026/10/comenzo-tech4future-antofagasta-tres-jornadas-de-innovacion-y-tecnologia-para-abordar-los-desafios-estrategicos-del-norte-de-chile/",
    "published": "2026-10-23T00:47:40Z",
-   "first_seen": "2026-10-23T04:37:59Z"
+   "first_seen": "2026-10-23T04:37:59Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "internacional",
@@ -177,6 +260,21 @@
    "image_checked_at": "2026-10-23T04:37:59.665625Z"
   },
   {
+   "category": "internacional",
+   "title": "Bukele amenaza con \"terminar\" a pandillas de Haití por secuestro de militares salvadoreños",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993072-capturas-efe-por-bukele-amenaza-con-_terminar_-a-pandillas-en-haiti-por-secuestro-de-militares-salvadorenos.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/22/bukele-amenaza-con-terminar-a-pandillas-en-haiti-por-secuestro-de-militares-salvadorenos.shtml",
+   "published": "2026-10-23T00:10:37Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
    "category": "nacional",
    "title": "Tormentas dejan 45 damnificados, 104 albergados, 40 aislados y rayo sobre vivienda en zona centro-sur",
    "summary": "",
@@ -204,6 +302,21 @@
    "link": "https://www.pcmrace.com/2026/10/22/wipeout-pure-psp-port-nativo-para-pc-4k/",
    "published": "2026-10-23T00:07:47Z",
    "first_seen": "2026-10-23T04:37:59Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Putin dice que Rusia está lista para negociar la paz definitiva",
+   "summary": "",
+   "image": "https://static.dw.com/image/79239742_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/putin-dice-que-rusia-est%C3%A1-lista-para-negociar-la-paz-definitiva/a-79738139",
+   "published": "2026-10-23T00:05:49Z",
+   "first_seen": "2026-10-23T04:37:59Z",
    "image_checked_at": "2026-10-23T04:37:59.665625Z"
   },
   {
@@ -222,6 +335,21 @@
    "image_checked_at": "2026-10-23T04:37:59.665625Z"
   },
   {
+   "category": "politica",
+   "title": "La presidenta de la Corte Suprema, por la rebaja de condenas a pederastas: “Fue el ministro de Justicia quien dictó los decretos”",
+   "summary": "",
+   "image": "",
+   "source_url": "https://elpais.com",
+   "sources": [
+    "EL PAÍS"
+   ],
+   "coverages": [],
+   "link": "https://elpais.com/chile/2026-10-22/la-presidenta-de-la-corte-suprema-por-la-rebaja-de-condenas-a-agresores-sexuales-de-menores-fue-el-ministro-de-justicia-quien-dicto-los-decretos.html",
+   "published": "2026-10-22T23:56:29Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
    "category": "internacional",
    "title": "Trump reconoce que llamó a Google para cambiar de nombre al océano Atlántico y le dijeron que no",
    "summary": "",
@@ -237,18 +365,49 @@
    "image_checked_at": "2026-10-23T04:37:59.665625Z"
   },
   {
+   "category": "deportes",
+   "title": "Escoltado y con vuelo exclusivo: El plan de Vozinha para asistir a la ceremonia del Balón de Oro",
+   "summary": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/22203726/PS_1177718-e1792712404211-1200x740.webp",
+   "source_url": "https://redgol.cl",
+   "sources": [
+    "RedGol"
+   ],
+   "coverages": [],
+   "link": "https://redgol.cl/colocolo/escoltado-y-con-vuelo-exclusivo-el-plan-de-vozinha-para-asistir-a-la-ceremonia-del-balon-de-oro",
+   "published": "2026-10-22T23:44:26Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
    "category": "regiones",
    "title": "De Cărtărescu a Zambra: nueve voces de la literatura llegan a Puerto de Ideas Valparaíso 2026",
    "summary": "",
-   "image": "",
+   "image": "https://g5noticias.cl/wp-content/uploads/2026/10/DSC_0122-1-scaled.jpg",
    "source_url": "https://g5noticias.cl",
    "sources": [
     "G5noticias"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMHNWcEhlclBVY2EzWkVOOWdkbjZxNWUzM2ZNS2d3ellYX0FxcUlRMnVzZkZCek1oVExBRW5yWExDaWVydXhpVGUwVXg1U2NmbW9yaWdreFg4YUVWQXVQTFNUbk1zMmtHZVNMb0VhS3RXRkhWVnUyUEltYzR5X0gtc0Mzd0R5ZURZYlk4OFJlM3huVXJ2ZUlJSnhvU0p3cmp5Tk1ZUGh0VzVhX2x4TkdFclcySUtZelY5UVY1OHBuYnMxc2pK?oc=5",
+   "link": "https://g5noticias.cl/2026/10/22/de-cartarescu-a-zambra-nueve-voces-de-la-literatura-llegan-a-puerto-de-ideas-valparaiso-2026/",
    "published": "2026-10-22T23:43:40Z",
-   "first_seen": "2026-10-23T04:37:59Z"
+   "first_seen": "2026-10-23T04:37:59Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
+   "category": "politica",
+   "title": "Organizaciones de derechos humanos alertan sobre retrocesos en memoria, justicia y garantías democráticas ante relatora de la CIDH",
+   "summary": "",
+   "image": "https://uchile-media-storage.nyc3.digitaloceanspaces.com/wp-content/uploads/2026/10/22201806/relatora-cidh-scaled.jpg",
+   "source_url": "https://radio.uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "coverages": [],
+   "link": "https://radio.uchile.cl/2026/10/22/organizaciones-de-derechos-humanos-alertan-sobre-retrocesos-en-memoria-justicia-y-garantias-democraticas-ante-relatora-de-la-cidh/",
+   "published": "2026-10-22T23:27:12Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "nacional",
@@ -308,7 +467,22 @@
    "link": "https://www.athenalab.org/medios/2026/10/22/sobre-los-criticos-a-la-conduccion-de-las-relaciones-exteriores-de-chile/",
    "published": "2026-10-22T22:31:19Z",
    "first_seen": "2026-10-22T23:16:38Z",
-   "image_checked_at": "2026-10-22T23:16:38.243944Z"
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
+   "category": "deportes",
+   "title": "El amargo regreso de Darío Osorio",
+   "summary": "",
+   "image": "https://img.asmedia.epimg.net/resizer/v2/MKIFR2LVBVNMPJ7KHIDZTM7OYE.jpg?auth=673efb9c2cef55c0a84b5b24beefa74a6a1d5d7baf638df65ed9e4115149c8cf&width=1472&height=828&focal=2845%2C1006",
+   "source_url": "https://chile.as.com",
+   "sources": [
+    "AS Chile"
+   ],
+   "coverages": [],
+   "link": "https://chile.as.com/futbol/chilenos-por-el-mundo/el-amargo-regreso-de-dario-osorio-f202610-n/",
+   "published": "2026-10-22T22:28:55Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "nacional",
@@ -375,6 +549,21 @@
    "link": "https://www.bbc.com/mundo/articles/c6vg0k034n94o?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-22T21:43:11Z",
    "first_seen": "2026-10-22T21:53:12Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Lula y Flávio Bolsonaro acordaron abrir de forma total sus secretos bancarios, fiscales y telefónicos",
+   "summary": "",
+   "image": "https://www.infobae.com/resizer/v2/DVQ7ZAAWNJCZRB4QX3E5NY5DFY.JPG?auth=f2a65bea59cdc32e34da03ce170356a9495e9e9aa41acc8c3096a2e1dd32de2a&smart=true&width=1200&height=630&quality=85",
+   "source_url": "https://www.infobae.com",
+   "sources": [
+    "Infobae"
+   ],
+   "coverages": [],
+   "link": "https://www.infobae.com/america/america-latina/2026/10/22/lula-y-flavio-bolsonaro-acordaron-abrir-de-forma-total-sus-secretos-bancarios-fiscales-y-telefonicos/",
+   "published": "2026-10-22T21:35:00Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "cultura",
@@ -473,6 +662,21 @@
    "image_checked_at": "2026-10-22T23:16:38.243944Z"
   },
   {
+   "category": "regiones",
+   "title": "Club de Ajedrez Concepción celebra sus 90 años con torneo y visita del destacado ajedrecista Iván Morovic",
+   "summary": "",
+   "image": "https://noticias.udec.cl/app/uploads/2026/10/hand-playing-chess-classic-board-scaled.webp",
+   "source_url": "https://noticias.udec.cl",
+   "sources": [
+    "Noticias UdeC"
+   ],
+   "coverages": [],
+   "link": "https://noticias.udec.cl/club-de-ajedrez-concepcion-celebra-sus-90-anos-con-torneo-y-visita-del-destacado-ajedrecista-ivan-morovic/",
+   "published": "2026-10-22T20:47:48Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
    "category": "deportes",
    "title": "Burda expulsión de Mike Maignan: arquero del AC Milan agredió a rival y regaló penal en Europa League",
    "summary": "",
@@ -542,9 +746,10 @@
     "EL PAÍS"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVnhnaHZQN3BzaWNER3RlSWhuRXVoX0xXS25sX3ppZjJ4WWtRd1hmcnlYS2hkRW9RSlEtbzRYTmFXMlNUb2lFYzBkMG9GcnhYY1p4TTNXenlhZDd4OG5sU204OFVqYk9mdE1iQjI5R2RMRzJrd1FjdTkyZkI1NmVfR2RqMUxNejhsSkFxcjhqV2k2UWpFOTNydkhPR3FUY0Y0emIwRzNnSVJmNlpVbWlmbk9ZcG9CaWprLXdXV1JfQUs3SUlubEdDbVJYaWhmd9IB4gFBVV95cUxPVG8tNGQ0RGdPT09YTFRKdGJiWm00MU80RlBvRDc3T0xYN3JSVkc4UXcwTmRVek9tYmwwdzJuamNTdTAtVmZMOThLNFdIMEstd1V1ZHQ5SElILUVYZXJHTlA2X292c2s0YjhGVENhc1o5RTUyajd5bGthMGw0blVaNlloY2ZXc2s2SFBrZlk5eVIyV05UOUg4Wi1VazY1T0dCdmFUMlAzVE82QnY2dEtBWlFDN3ZNLWlLREdwRTBuZnV1TGM2MVYyWUlfNzNERjRGV1hiMjI1aFZRbTc0U1pkX05R?oc=5",
+   "link": "https://elpais.com/chile/2026-10-22/el-gobierno-de-kast-rebaja-las-condenas-de-56-condenados-por-delitos-sexuales-contra-menores.html",
    "published": "2026-10-22T20:28:07Z",
-   "first_seen": "2026-10-23T04:37:59Z"
+   "first_seen": "2026-10-23T04:37:59Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "cultura",
@@ -583,7 +788,8 @@
    "image": "https://www.df.cl/noticias/site/artic/20261022/imag/foto_0000002820261022102048/grafico_ipsa.png",
    "source_url": "https://www.df.cl",
    "sources": [
-    "Diario Financiero"
+    "Diario Financiero",
+    "BioBioChile"
    ],
    "coverages": [],
    "link": "https://www.df.cl/mercados/bolsa-monedas/bolsas-hoy-hebpb",
@@ -685,15 +891,31 @@
    "category": "regiones",
    "title": "Comunicadores de Iglesias de Chile se capacitan en la UCSC",
    "summary": "",
-   "image": "",
+   "image": "https://ucsc-staging-20260409.b-cdn.net/uploads/2026/10/Capacitacion-Comunicadores-de-iglesia-v3-scaled.png?class=large",
    "source_url": "https://ucsc.cl",
    "sources": [
     "Universidad Católica de la Santísima Concepción"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ2xyYTFCZl9HOC1hTklqZkJTZlFFajU5ZjhHYm9zQ1VOLVczbHIwYTlnQ3VPUWNsb2g5R0FqOEdCMkhLM01fbUNzUUgyLXh4cUMyZUpFTnNPX3hsMXd0UVNJNXl0Sm1iY1o0UTZUOUtJY05VQUVWcnVpdlVLc2Z2MnA0d1JiOHI3cC0zdnI5dTFWWmNxcmh5RElKTkZLS25Ha3hqTzhBbw?oc=5",
+   "link": "https://ucsc.cl/medios-ucsc/noticias/2026/10/comunicadores-de-iglesias-de-chile-se-capacitan-en-la-ucsc/",
    "published": "2026-10-22T19:40:19Z",
-   "first_seen": "2026-10-23T04:37:59Z"
+   "first_seen": "2026-10-23T04:37:59Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
+   "category": "economia",
+   "title": "PHP: el fallo crítico que afectó a internet en todo el mundo",
+   "summary": "",
+   "image": "https://ichef.bbci.co.uk/news/1200/branded_mundo/7bba/live/38145b10-ce36-11f1-bc2e-018d645d8d21.jpg",
+   "source_url": "https://www.bbc.com",
+   "sources": [
+    "BBC"
+   ],
+   "coverages": [],
+   "link": "https://www.bbc.com/mundo/articles/cwx287m3n4jno",
+   "published": "2026-10-22T19:35:14Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "nacional",
@@ -1035,7 +1257,7 @@
    "category": "deportes",
    "title": "Equipo paraguayo impone código de vestimenta a fotógrafas: Inusual medida que sorprendió a todos",
    "summary": "",
-   "image": "",
+   "image": "https://gcdn.emol.cl/futbol-internacional/files/2026/10/sportivo-ameliano-polemica-look-308x199.jpg",
    "source_url": "https://www.guioteca.com",
    "sources": [
     "Guioteca"
@@ -1044,7 +1266,7 @@
    "link": "https://www.guioteca.com/futbol-internacional/equipo-paraguayo-impone-codigo-de-vestimenta-a-fotografas-inusual-medida-que-sorprendio-a-todos/",
    "published": "2026-10-22T17:16:40Z",
    "first_seen": "2026-10-22T23:16:38Z",
-   "image_checked_at": "2026-10-23T04:37:59.665625Z"
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "medioambiente",
@@ -1164,7 +1386,7 @@
    "link": "https://tntsports.cl/internacional/Isco-Alarcon-aplaude-la-gran-cualidad-de-Manuel-Pellegrini-en-el-Real-Betis-Lo-hace-de-maravilla-20261022-0014.html",
    "published": "2026-10-22T16:49:00Z",
    "first_seen": "2026-10-23T04:37:59Z",
-   "image_checked_at": "2026-10-23T04:37:59.665625Z"
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "deportes",
@@ -1236,7 +1458,7 @@
    "category": "cultura",
    "title": "Millaray Viera barre con Laura Landaeta por criticas a la Teletón: \"Si vas a decir algo tan grave, pruébalo\"",
    "summary": "",
-   "image": "",
+   "image": "https://gcdn.emol.cl/celebridades/files/2026/10/Viera-Landaeta--308x199.jpg",
    "source_url": "https://www.guioteca.com",
    "sources": [
     "Guioteca"
@@ -1245,7 +1467,7 @@
    "link": "https://www.guioteca.com/celebridades/millaray-viera-barre-con-laura-landaeta-por-criticas-a-la-teleton-si-vas-a-decir-algo-tan-grave-pruebalo/",
    "published": "2026-10-22T16:33:37Z",
    "first_seen": "2026-10-22T23:43:40Z",
-   "image_checked_at": "2026-10-23T04:37:59.665625Z"
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "deportes",
@@ -1723,7 +1945,7 @@
    "link": "https://www.elnortero.cl/noticia/deporte/cortes-de-transito-en-antofagasta-por-competencia-y-cicletada-cuales-seran-los-horar",
    "published": "2026-10-22T14:44:04Z",
    "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T21:53:12.308190Z"
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "regiones",
@@ -2043,6 +2265,20 @@
    "image_checked_at": "2026-10-22T15:13:54.190239Z"
   },
   {
+   "category": "internacional",
+   "title": "Lula pide anular candidatura de Flávio Bolsonaro por “manipulación algorítmica”",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjFvNnZ3Y1AxSmU4OHJha2xMNmZjSVZVblM0eVRsc3VpWW1lVW1YUFRuQVBaLURYRFFyWGIzYjdrQl9pcWpPTEF5c0ZYT0tyb1lxcVEzQW42U1RmSHlGMVdjejMxMk45WGhXRG1kNXhWLUpOX1hMQzVQMjJfYVRaYUQyX0phMGRXM0JoTXo1T3Y0X0gwMWg5TW9jWFhPZ09CZDZqcGRjcDl1S2dlQS0wZ3dDcms1VGRMTUF2X3hGa1BISndOdkIxdWxSdw?oc=5",
+   "published": "2026-10-22T13:36:15Z",
+   "first_seen": "2026-10-23T09:58:25Z"
+  },
+  {
    "category": "cultura",
    "title": "Todos los rostros de Silver TV, el nuevo canal con Jorge Hevia para mayores de 60 años",
    "summary": "",
@@ -2056,6 +2292,35 @@
    "published": "2026-10-22T13:35:59Z",
    "first_seen": "2026-10-22T15:13:54Z",
    "image_checked_at": "2026-10-22T15:13:54.190239Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Consiguen reducir el arsénico del concentrado de cobre del 7 % a menos del 0,25 % sin perder prácticamente metal: ya han vendido 40 toneladas",
+   "summary": "",
+   "image": "https://ecoinventos.com/wp-content/uploads/2026/10/tecnologia-pionera-de-Fortescue-para-la-eliminacion-de-arsenico-4.jpg",
+   "source_url": "https://ecoinventos.com",
+   "sources": [
+    "EcoInventos"
+   ],
+   "coverages": [],
+   "link": "https://ecoinventos.com/consiguen-reducir-el-arsenico-del-concentrado-de-cobre-del-7-a-menos-del-025-sin-perder-practicamente-metal-ya-han-vendido-40-toneladas/",
+   "published": "2026-10-22T13:32:37Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
+  },
+  {
+   "category": "deportes",
+   "title": "A qué hora y dónde ver a Chile vs. México por el Mundial Femenino Sub 17",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSml2bzNTTlhhWTM2T0RJMDZ0RnU0bU5vX1J6Q3NmZnh3YTZZZmZJYUUzeG5LOTBIVmRHbVpMWERfV2d4blRJcFk0ZFp0WUVac3pPUjRnaFY4STluZVZ5SHFBTUNiYjg2VnF0QV95RGo5a25OUHhLalVKUlVTN2pzUWtDUk8wZXE1aVlhRTZmd0ZrakplbUVBTTlBakNkQXQ2ZlBOTHNiSlNhWER1ZkJ3ejR0UWZlR2PSAdgBQVVfeXFMTi1sZHplMWVpaTVzNzdYeVZfbGJQSGZGYjJOUTlKVjZsZUQ1SUNDOFZPMVhKM3hxb3ItbUJRdk1vYVhYOFF6d2hCSnpzc2lVMS1pYnNKWXd0SFpONS1ZNU1QZWR3a0NpMFpnVFplNE9qTjY3SFRZMURVbk1MX1JwSHZLS1V5ZGVsdGF1MGo4YnNfV3QzbkpSc3BsaEs5ZDdZN2xpUUdQQ0xoVDlYYnc1WGlUNi1WZUNkNWxlTXlZMUV4d3J6TnpiTDZTbnFweXd3SXc4cHhWMWhf?oc=5",
+   "published": "2026-10-22T13:30:13Z",
+   "first_seen": "2026-10-23T09:58:25Z"
   },
   {
    "category": "cultura",
@@ -2266,7 +2531,7 @@
    "link": "https://www.usach.cl/news/usach-abordara-desafios-desercion-docente-y-la-mentoria-chile",
    "published": "2026-10-22T12:26:54Z",
    "first_seen": "2026-10-22T19:59:52Z",
-   "image_checked_at": "2026-10-22T22:02:46.430342Z"
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "deportes",
@@ -2311,6 +2576,21 @@
    "published": "2026-10-22T12:16:48Z",
    "first_seen": "2026-10-22T15:13:54Z",
    "image_checked_at": "2026-10-22T22:02:46.430342Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Director regional de Senapred por socavón en Arauco: “El riesgo es inminente, los organismos técnicos ya lo han dicho”",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/DSI5QJUOTFCBTF2IYUHOOTMZ3U.jpg?auth=fab07bbdf75766244ab366bc0b57add52ea7d8fc00911dec94d311ae6f54f309&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/nacional/noticia/director-regional-senapred-por-socavon-en-arauco-el-riesgo-es-inminente-los-organismos-tecnicos-ya-lo-han-dicho/",
+   "published": "2026-10-22T12:09:42Z",
+   "first_seen": "2026-10-23T09:58:25Z",
+   "image_checked_at": "2026-10-23T09:58:25.461152Z"
   },
   {
    "category": "economia",
@@ -2630,210 +2910,28 @@
    "published": "2026-10-22T10:10:00Z",
    "first_seen": "2026-10-22T15:13:54Z",
    "image_checked_at": "2026-10-22T22:02:46.430342Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Adolescente buscado por homicidio es asesinado a tiros tras partido de fútbol en Lo Barnechea",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992007-adolescente-lo-barnechea.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/22/adolescente-buscado-por-homicidio-es-asesinado-a-tiros-tras-partido-de-futbol-en-lo-barnechea.shtml",
-   "published": "2026-10-22T09:54:39Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
-  },
-  {
-   "category": "internacional",
-   "title": "\"Dejé secretos de Estado en el tren; soy la prueba de que es posible recuperarse del mayor error de tu vida\"",
-   "summary": "El alto funcionario Richard Jackson relata aquel fatídico día en el que olvidó importantes documentos y cómo se recuperó tras lo sucedido.",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1ac3/live/e306fad0-ccad-11f1-a64c-550be9e3c66b.jpg",
-   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "coverages": [
-    {
-     "source": "BBC News Mundo",
-     "title": "\"Dejé secretos de Estado en el tren; soy la prueba de que es posible recuperarse del mayor error de tu vida\"",
-     "link": "https://www.bbc.com/mundo/articles/c6wyd5wx4xq1o?at_medium=RSS&at_campaign=rss",
-     "published": "2026-10-22T09:46:00Z"
-    }
-   ],
-   "link": "https://www.bbc.com/mundo/articles/c6wyd5wx4xq1o?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-22T09:46:00Z",
-   "first_seen": "2026-10-22T10:04:05Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Investigan muerte de adolescente que sufrió herida cortante tras una riña en Santiago",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992006-asesinato-santiago-adolescente.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/22/investigan-muerte-de-adolescente-que-sufrio-herida-cortante-tras-una-rina-en-santiago.shtml",
-   "published": "2026-10-22T09:38:51Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
-  },
-  {
-   "category": "regiones",
-   "title": "El Congreso en Valparaíso y la descentralización de fachada",
-   "summary": "",
-   "image": "https://imagenes.elpais.com/resizer/v2/M4DUE6CPF5HKPP6HBHZAXP6YQU.jpg?auth=c012d67e4452c33e97e190fedcb3382d923285b86b024b66dc45b4a71a2f0754&width=1200",
-   "source_url": "https://elpais.com",
-   "sources": [
-    "EL PAÍS"
-   ],
-   "coverages": [],
-   "link": "https://elpais.com/chile/2026-10-22/el-congreso-en-valparaiso-y-la-descentralizacion-de-fachada.html",
-   "published": "2026-10-22T09:30:00Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T22:02:46.430342Z"
-  },
-  {
-   "category": "politica",
-   "title": "El Congreso en Valparaíso y la descentralización de fachada",
-   "summary": "",
-   "image": "",
-   "source_url": "https://elpais.com",
-   "sources": [
-    "EL PAÍS"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMlNQeldBclB1REVfT2x2eDJLclZERlRlTkZwZktrTXdTR2NPQlpfN0FHWWFjSjJZWldjanZybmlrekRoV2tob0NTSElELURrTmlGZzhIcmpwNGpSZDVZQTB1dk1qbmtDZzhXZE50YjB5cnBIU19GRUZCdW81RmJyY0J1TmFtVzRqTTIyakdXZmpCQ3ZydldvMjJ1bm55T04wM3fSAbYBQVVfeXFMTXBxRkp1Q2c2WlJkcEl5c0RVWXVvMjdiQ1VSR3U5djFDZDRDUGpYbjREckJJRW5OQzdmc2pMMENSODVUTHN4UWN3enhDNFRMMDZ0SFJEallZVVJWTTRtVF95RlEtWlFmTmtPc193V3hvWTYwc1J4c3hTbDlPZ0J3VHdmVXUzRFpxcGtBeEJremp4ek12akVHeWh6aDdaY1hLM2tJUFRyeWhTU2lZVWEtUG42dE1CYnc?oc=5",
-   "published": "2026-10-22T09:30:00Z",
-   "first_seen": "2026-10-23T04:37:59Z"
-  },
-  {
-   "category": "regiones",
-   "title": "ASMAR recibe al Comité de Construcción Naval en su Centro de Manufactura Avanzada de Valparaíso",
-   "summary": "",
-   "image": "https://www.defensa.com/adjuntos/fichero_46804_20261022.jpg",
-   "source_url": "https://www.defensa.com",
-   "sources": [
-    "Defensa.com"
-   ],
-   "coverages": [],
-   "link": "https://www.defensa.com/chile/asmar-recibe-comite-construccion-naval-centro-manufactura",
-   "published": "2026-10-22T09:12:00Z",
-   "first_seen": "2026-10-22T10:04:05Z",
-   "image_checked_at": "2026-10-22T10:04:05.411056Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Lluvia y tormentas eléctricas: continúa la inestabilidad en Santiago hasta este día",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/P3YF4Y2MPJHWPFOF352DT2B33Y.jpg?auth=17897e907b19ba9e7c78b5788ac78fa7b775c7cb0e10d9a54ebb601e6a55610b&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/tendencias/noticia/lluvia-y-tormentas-electricas-continua-la-inestabilidad-en-santiago-hasta-este-dia/",
-   "published": "2026-10-22T09:02:00Z",
-   "first_seen": "2026-10-22T21:53:12Z",
-   "image_checked_at": "2026-10-22T21:53:12.308190Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Israel amenaza con ataque preventivo a Irán: oposición denuncia \"fines políticos\" a 5 días de elecciones",
-   "summary": "",
-   "image": "https://static.dw.com/image/79701525_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/israel-amenaza-con-otro-ataque-preventivo-a-ir%C3%A1n-la-oposici%C3%B3n-denuncia-fines-pol%C3%ADticos-a-cinco-d%C3%ADas-de-las-elecciones/a-79728748",
-   "published": "2026-10-22T09:00:12Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Gremio de camioneros amenaza con paralización ante nueva alza de combustibles",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6991976-a-1-archiv-cntxt-por-gremio-de-camioneros-amenaza-con-paralizacion-ante-nueva-alza-de-combustibles.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/10/22/gremio-de-camioneros-amenaza-con-paralizacion-ante-nueva-alza-de-combustibles.shtml",
-   "published": "2026-10-22T08:45:22Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Nintendo Switch 2 recibe su primer Jailbreak por Software sin Modchip, compatible con FW 23.0.1 y desarrollado con ayuda de IA",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.pcmrace.com",
-   "sources": [
-    "PC Master Race Latinoamérica"
-   ],
-   "coverages": [],
-   "link": "https://www.pcmrace.com/2026/10/22/nintendo-switch-2-jailbreak/",
-   "published": "2026-10-22T08:09:01Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-23T04:37:59.665625Z"
-  },
-  {
-   "category": "politica",
-   "title": "Noticias de América - Chile: aprueban ley para agilizar las expulsiones de inmigrantes",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.rfi.fr",
-   "sources": [
-    "RFI"
-   ],
-   "coverages": [],
-   "link": "https://www.rfi.fr/es/programas/noticias-de-am%C3%A9rica/20261022-chile-aprueban-ley-para-agilizar-las-expulsiones-de-inmigrantes",
-   "published": "2026-10-22T07:44:07Z",
-   "first_seen": "2026-10-22T10:04:05Z",
-   "image_checked_at": "2026-10-22T22:02:46.430342Z"
-  },
-  {
-   "category": "economia",
-   "title": "Mauricio Larraín, exvicepresidente de la CMF y académico de la U. Andes: Efecto negativo por US$ 7 mil millones “ya se materializó”",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261021/imag/foto_0000000620261021195019.jpg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/mercados/pensiones/mauricio-larrain-exvicepresidente-de-la-cmf-y-academico-de-la-u-andes",
-   "published": "2026-10-22T07:00:00Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Estados Unidos retira su personal diplomático no esencial de Arabia Saudí",
-   "summary": "",
-   "image": "https://static.dw.com/image/76194808_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/estados-unidos-retira-su-personal-diplom%C3%A1tico-no-esencial-y-a-sus-familiares-de-arabia-saud%C3%AD/a-79727136",
-   "published": "2026-10-22T05:21:12Z",
-   "first_seen": "2026-10-22T15:13:54Z",
-   "image_checked_at": "2026-10-22T15:13:54.190239Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "\"Me avergüenza trabajar en una empresa que impulsa la IA con fines militares\": los empleados de Google que renuncian por los acuerdos con el ejército de EE.UU.",
+   "link": "https://www.bbc.com/mundo/articles/cxg5j1d93993o?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-23T09:35:57Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Cae banda que maniató a familia durante robo en Lo Barnechea y presumió lo sustraído en redes",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/23/cae-banda-que-maniato-a-familia-durante-robo-en-lo-barnechea-y-presumio-lo-sustraido-en-redes.shtml",
+   "category": "nacional",
+   "published": "2026-10-23T04:21:25Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
   {
    "title": "Quiénes son los \"ciudadanos palestinos de Israel\" y por qué pueden tener la llave para desbancar a Netanyahu",
    "link": "https://www.bbc.com/mundo/articles/crz9812qjxd2o?at_medium=RSS&at_campaign=rss",
@@ -2853,12 +2951,12 @@
    ]
   },
   {
-   "title": "Putin dice que Rusia está lista para negociar la paz definitiva",
-   "link": "https://www.dw.com/es/putin-dice-que-rusia-est%C3%A1-lista-para-negociar-la-paz-definitiva/a-79738139",
-   "category": "internacional",
-   "published": "2026-10-23T02:33:30Z",
+   "title": "Maracanazo de Estudiantes: eliminó en penales a Flamengo para avanzar a la final de Copa Libertadores",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2026/10/22/maracanazo-de-estudiantes-elimino-en-penales-a-flamengo-para-avanzar-a-la-final-de-copa-libertadores.shtml",
+   "category": "deportes",
+   "published": "2026-10-23T02:45:10Z",
    "sources": [
-    "DW.com"
+    "BioBioChile"
    ]
   },
   {
@@ -2880,8 +2978,35 @@
    ]
   },
   {
+   "title": "FUNDACIÓN INTEGRA CELEBRA 36 AÑOS CONSTRUYENDO OPORTUNIDADES PARA LA PRIMERA INFANCIA EN LA ARAUCANÍA",
+   "link": "https://araucanianoticias.cl/2026/fundacion-integra-celebra-36-anos-construyendo-oportunidades-para-la-primera-infancia-en-la-araucania/1022317671",
+   "category": "regiones",
+   "published": "2026-10-23T02:16:34Z",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ]
+  },
+  {
+   "title": "La Serena vs. Concepción: Horario, posibles formaciones y dónde ver por TV y streaming la Liga de Primera 2026",
+   "link": "https://www.prensafutbol.cl/la-serena-concepcion-hora-ver-liga-de-primera/",
+   "category": "regiones",
+   "published": "2026-10-23T01:33:44Z",
+   "sources": [
+    "PrensaFútbol"
+   ]
+  },
+  {
    "title": "DE LOS ODESUR AL DEPORTE ESCOLAR: LA ARAUCANÍA DESTACA SUS RESULTADOS Y PROYECTA NUEVOS DESAFÍOS",
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUGd5R1hib3lBMjNqelRzQTBHOFpsR3ZlVHFRLThQVnp1bUFFY1JCUzBUSHZ6bjlEcGFObHhIbVNseDR4LTNTSF80THpGMXdlT1A4WnFDRWtFVW1wWUp3VUkzTFVWbWdUNjRzUVFhM3VGMXVCdWNnYTg1S3huUHhMRkdjZUUwQm5PTHFLTGM0T0tHUnpOM2RZaFhOaGtOU2x5dDA5YkNoa21ITnAtb1F6YlRVVUk2d2FsS3AycEk2LVR3VVRtYUxBN3dBUFd2ZndJUzgteEI3WQ?oc=5",
+   "category": "regiones",
+   "published": "2026-10-23T01:32:09Z",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ]
+  },
+  {
+   "title": "DE LOS ODESUR AL DEPORTE ESCOLAR: LA ARAUCANÍA DESTACA SUS RESULTADOS Y PROYECTA NUEVOS DESAFÍOS",
+   "link": "https://araucanianoticias.cl/2026/de-los-odesur-al-deporte-escolar-la-araucania-destaca-sus-resultados-y-proyecta-nuevos-desafios/1022317666",
    "category": "regiones",
    "published": "2026-10-23T01:32:09Z",
    "sources": [
@@ -2898,6 +3023,15 @@
    ]
   },
   {
+   "title": "Reunión de Superados - Capítulo 211: Una nueva manipulación de Max",
+   "link": "https://www.mega.cl/teleseries/reunion-de-superados/capitulos/221670-reunion-de-superados-capitulo-211-jueves-22-de-octubre.html",
+   "category": "cultura",
+   "published": "2026-10-23T01:04:00Z",
+   "sources": [
+    "Mega.cl"
+   ]
+  },
+  {
    "title": "Rarísimo caso de mujer que tenía todos sus órganos al revés sale a la luz tras presentar tumor en Perú",
    "link": "https://www.biobiochile.cl/noticias/sociedad/curiosidades/2026/10/22/rarisimo-caso-de-mujer-que-tenia-todos-sus-organos-alreves-sale-a-la-luz-tras-presentar-tumor-en-peru.shtml",
    "category": "internacional",
@@ -2909,6 +3043,15 @@
   {
    "title": "¡Comenzó Tech4Future Antofagasta! Tres jornadas de innovación y tecnología para abordar los desafíos estratégicos del norte de Chile",
    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQNy1lNHNLTEFXejhCV0w5a05EZkVKamtlVmRRaHN2clQ0clRYTmxIMXljWkJoUGFhS3NEbU5qVjFfQUF2YlFSb1lRSm9yWnIwZFpIdVNmZVBQdDJKQ0FjcWVuQzlVd0dHcUdBTkhiV3daRUVhdTRXbUFrMlpVanNSeGZfcXBDbkk2UjZISVEwR3VmZmpnOTJ5dHZVXzJ0cmF2SC0ya1ZUdWxYaGNCcFlXQnZhVzZqNjdjTGxia2JnLWRrVWdsZmNvU0RyUTE0dlZyYndVbWRKU3ZvU21KMFQ3MktmUFZaMHg5QUMxWlUzMXNuWWVjcmc?oc=5",
+   "category": "regiones",
+   "published": "2026-10-23T00:47:40Z",
+   "sources": [
+    "Diario Regionalista Antofagasta"
+   ]
+  },
+  {
+   "title": "¡Comenzó Tech4Future Antofagasta! Tres jornadas de innovación y tecnología para abordar los desafíos estratégicos del norte de Chile",
+   "link": "https://regionalista.cl/2026/10/comenzo-tech4future-antofagasta-tres-jornadas-de-innovacion-y-tecnologia-para-abordar-los-desafios-estrategicos-del-norte-de-chile/",
    "category": "regiones",
    "published": "2026-10-23T00:47:40Z",
    "sources": [
@@ -2934,6 +3077,15 @@
    ]
   },
   {
+   "title": "Bukele amenaza con \"terminar\" a pandillas de Haití por secuestro de militares salvadoreños",
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/22/bukele-amenaza-con-terminar-a-pandillas-en-haiti-por-secuestro-de-militares-salvadorenos.shtml",
+   "category": "internacional",
+   "published": "2026-10-23T00:10:37Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Tormentas dejan 45 damnificados, 104 albergados, 40 aislados y rayo sobre vivienda en zona centro-sur",
    "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/22/tormentas-dejan-45-damnificados-104-albergados-40-aislados-y-rayo-sobre-vivienda-en-zona-centro-sur.shtml",
    "category": "nacional",
@@ -2952,12 +3104,30 @@
    ]
   },
   {
+   "title": "Putin dice que Rusia está lista para negociar la paz definitiva",
+   "link": "https://www.dw.com/es/putin-dice-que-rusia-est%C3%A1-lista-para-negociar-la-paz-definitiva/a-79738139",
+   "category": "internacional",
+   "published": "2026-10-23T00:05:49Z",
+   "sources": [
+    "DW.com"
+   ]
+  },
+  {
    "title": "El descendido Español de Talca no quiere morir en LNB: prepara queja por partido de Colo Colo-Católica",
    "link": "https://www.biobiochile.cl/noticias/deportes/basquetbol/2026/10/22/el-descendido-espanol-de-talca-no-quiere-morir-en-lnb-prepara-queja-por-partido-de-colo-colo-catolica.shtml",
    "category": "deportes",
    "published": "2026-10-22T23:57:43Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "La presidenta de la Corte Suprema, por la rebaja de condenas a pederastas: “Fue el ministro de Justicia quien dictó los decretos”",
+   "link": "https://elpais.com/chile/2026-10-22/la-presidenta-de-la-corte-suprema-por-la-rebaja-de-condenas-a-agresores-sexuales-de-menores-fue-el-ministro-de-justicia-quien-dicto-los-decretos.html",
+   "category": "politica",
+   "published": "2026-10-22T23:56:29Z",
+   "sources": [
+    "EL PAÍS"
    ]
   },
   {
@@ -2970,12 +3140,39 @@
    ]
   },
   {
+   "title": "Escoltado y con vuelo exclusivo: El plan de Vozinha para asistir a la ceremonia del Balón de Oro",
+   "link": "https://redgol.cl/colocolo/escoltado-y-con-vuelo-exclusivo-el-plan-de-vozinha-para-asistir-a-la-ceremonia-del-balon-de-oro",
+   "category": "deportes",
+   "published": "2026-10-22T23:44:26Z",
+   "sources": [
+    "RedGol"
+   ]
+  },
+  {
    "title": "De Cărtărescu a Zambra: nueve voces de la literatura llegan a Puerto de Ideas Valparaíso 2026",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMHNWcEhlclBVY2EzWkVOOWdkbjZxNWUzM2ZNS2d3ellYX0FxcUlRMnVzZkZCek1oVExBRW5yWExDaWVydXhpVGUwVXg1U2NmbW9yaWdreFg4YUVWQXVQTFNUbk1zMmtHZVNMb0VhS3RXRkhWVnUyUEltYzR5X0gtc0Mzd0R5ZURZYlk4OFJlM3huVXJ2ZUlJSnhvU0p3cmp5Tk1ZUGh0VzVhX2x4TkdFclcySUtZelY5UVY1OHBuYnMxc2pK?oc=5",
    "category": "regiones",
    "published": "2026-10-22T23:43:40Z",
    "sources": [
     "G5noticias"
+   ]
+  },
+  {
+   "title": "De Cărtărescu a Zambra: nueve voces de la literatura llegan a Puerto de Ideas Valparaíso 2026",
+   "link": "https://g5noticias.cl/2026/10/22/de-cartarescu-a-zambra-nueve-voces-de-la-literatura-llegan-a-puerto-de-ideas-valparaiso-2026/",
+   "category": "regiones",
+   "published": "2026-10-22T23:43:40Z",
+   "sources": [
+    "G5noticias"
+   ]
+  },
+  {
+   "title": "Organizaciones de derechos humanos alertan sobre retrocesos en memoria, justicia y garantías democráticas ante relatora de la CIDH",
+   "link": "https://radio.uchile.cl/2026/10/22/organizaciones-de-derechos-humanos-alertan-sobre-retrocesos-en-memoria-justicia-y-garantias-democraticas-ante-relatora-de-la-cidh/",
+   "category": "politica",
+   "published": "2026-10-22T23:27:12Z",
+   "sources": [
+    "Universidad de Chile"
    ]
   },
   {
@@ -3015,6 +3212,15 @@
    ]
   },
   {
+   "title": "El amargo regreso de Darío Osorio",
+   "link": "https://chile.as.com/futbol/chilenos-por-el-mundo/el-amargo-regreso-de-dario-osorio-f202610-n/",
+   "category": "deportes",
+   "published": "2026-10-22T22:28:55Z",
+   "sources": [
+    "AS Chile"
+   ]
+  },
+  {
    "title": "Heridos y atrapados deja accidente múltiple entre autos, camión y buses en Ruta 5 altura Renca",
    "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/22/heridos-y-atrapados-deja-accidente-multiple-entre-autos-camion-y-buses-en-ruta-5-altura-renca.shtml",
    "category": "nacional",
@@ -3048,6 +3254,15 @@
    "published": "2026-10-22T21:43:11Z",
    "sources": [
     "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Lula y Flávio Bolsonaro acordaron abrir de forma total sus secretos bancarios, fiscales y telefónicos",
+   "link": "https://www.infobae.com/america/america-latina/2026/10/22/lula-y-flavio-bolsonaro-acordaron-abrir-de-forma-total-sus-secretos-bancarios-fiscales-y-telefonicos/",
+   "category": "internacional",
+   "published": "2026-10-22T21:35:00Z",
+   "sources": [
+    "Infobae"
    ]
   },
   {
@@ -3114,6 +3329,15 @@
    ]
   },
   {
+   "title": "Club de Ajedrez Concepción celebra sus 90 años con torneo y visita del destacado ajedrecista Iván Morovic",
+   "link": "https://noticias.udec.cl/club-de-ajedrez-concepcion-celebra-sus-90-anos-con-torneo-y-visita-del-destacado-ajedrecista-ivan-morovic/",
+   "category": "regiones",
+   "published": "2026-10-22T20:47:48Z",
+   "sources": [
+    "Noticias UdeC"
+   ]
+  },
+  {
    "title": "Burda expulsión de Mike Maignan: arquero del AC Milan agredió a rival y regaló penal en Europa League",
    "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2026/10/22/mike-maignan-arquero-milan-expulsado-por-burdo-golpe-a-rival.shtml",
    "category": "deportes",
@@ -3159,6 +3383,15 @@
    ]
   },
   {
+   "title": "El Gobierno de Kast rebaja las condenas de 56 sentenciados por delitos sexuales contra menores",
+   "link": "https://elpais.com/chile/2026-10-22/el-gobierno-de-kast-rebaja-las-condenas-de-56-condenados-por-delitos-sexuales-contra-menores.html",
+   "category": "politica",
+   "published": "2026-10-22T20:28:07Z",
+   "sources": [
+    "EL PAÍS"
+   ]
+  },
+  {
    "title": "\"Por más que duela\": Jesse & Joy anuncia su nueva etapa, sólo con uno de los hermanos al frente",
    "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/22/por-mas-que-duela-jesse-joy-anuncia-su-nueva-etapa-solo-con-uno-de-los-hermanos-al-frente.shtml",
    "category": "cultura",
@@ -3182,7 +3415,8 @@
    "category": "economia",
    "published": "2026-10-22T20:16:00Z",
    "sources": [
-    "Diario Financiero"
+    "Diario Financiero",
+    "BioBioChile"
    ]
   },
   {
@@ -3255,6 +3489,24 @@
    "published": "2026-10-22T19:40:19Z",
    "sources": [
     "Universidad Católica de la Santísima Concepción"
+   ]
+  },
+  {
+   "title": "Comunicadores de Iglesias de Chile se capacitan en la UCSC",
+   "link": "https://ucsc.cl/medios-ucsc/noticias/2026/10/comunicadores-de-iglesias-de-chile-se-capacitan-en-la-ucsc/",
+   "category": "regiones",
+   "published": "2026-10-22T19:40:19Z",
+   "sources": [
+    "Universidad Católica de la Santísima Concepción"
+   ]
+  },
+  {
+   "title": "PHP: el fallo crítico que afectó a internet en todo el mundo",
+   "link": "https://www.bbc.com/mundo/articles/cwx287m3n4jno",
+   "category": "economia",
+   "published": "2026-10-22T19:35:14Z",
+   "sources": [
+    "BBC"
    ]
   },
   {
@@ -4314,12 +4566,39 @@
    ]
   },
   {
+   "title": "Lula pide anular candidatura de Flávio Bolsonaro por “manipulación algorítmica”",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVjFvNnZ3Y1AxSmU4OHJha2xMNmZjSVZVblM0eVRsc3VpWW1lVW1YUFRuQVBaLURYRFFyWGIzYjdrQl9pcWpPTEF5c0ZYT0tyb1lxcVEzQW42U1RmSHlGMVdjejMxMk45WGhXRG1kNXhWLUpOX1hMQzVQMjJfYVRaYUQyX0phMGRXM0JoTXo1T3Y0X0gwMWg5TW9jWFhPZ09CZDZqcGRjcDl1S2dlQS0wZ3dDcms1VGRMTUF2X3hGa1BISndOdkIxdWxSdw?oc=5",
+   "category": "internacional",
+   "published": "2026-10-22T13:36:15Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
    "title": "Todos los rostros de Silver TV, el nuevo canal con Jorge Hevia para mayores de 60 años",
    "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/22/todos-los-rostros-de-silver-tv-el-nuevo-canal-con-jorge-hevia-para-mayores-de-60-anos.shtml",
    "category": "cultura",
    "published": "2026-10-22T13:35:59Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Consiguen reducir el arsénico del concentrado de cobre del 7 % a menos del 0,25 % sin perder prácticamente metal: ya han vendido 40 toneladas",
+   "link": "https://ecoinventos.com/consiguen-reducir-el-arsenico-del-concentrado-de-cobre-del-7-a-menos-del-025-sin-perder-practicamente-metal-ya-han-vendido-40-toneladas/",
+   "category": "tecnologia",
+   "published": "2026-10-22T13:32:37Z",
+   "sources": [
+    "EcoInventos"
+   ]
+  },
+  {
+   "title": "A qué hora y dónde ver a Chile vs. México por el Mundial Femenino Sub 17",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSml2bzNTTlhhWTM2T0RJMDZ0RnU0bU5vX1J6Q3NmZnh3YTZZZmZJYUUzeG5LOTBIVmRHbVpMWERfV2d4blRJcFk0ZFp0WUVac3pPUjRnaFY4STluZVZ5SHFBTUNiYjg2VnF0QV95RGo5a25OUHhLalVKUlVTN2pzUWtDUk8wZXE1aVlhRTZmd0ZrakplbUVBTTlBakNkQXQ2ZlBOTHNiSlNhWER1ZkJ3ejR0UWZlR2PSAdgBQVVfeXFMTi1sZHplMWVpaTVzNzdYeVZfbGJQSGZGYjJOUTlKVjZsZUQ1SUNDOFZPMVhKM3hxb3ItbUJRdk1vYVhYOFF6d2hCSnpzc2lVMS1pYnNKWXd0SFpONS1ZNU1QZWR3a0NpMFpnVFplNE9qTjY3SFRZMURVbk1MX1JwSHZLS1V5ZGVsdGF1MGo4YnNfV3QzbkpSc3BsaEs5ZDdZN2xpUUdQQ0xoVDlYYnc1WGlUNi1WZUNkNWxlTXlZMUV4d3J6TnpiTDZTbnFweXd3SXc4cHhWMWhf?oc=5",
+   "category": "deportes",
+   "published": "2026-10-22T13:30:13Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -4564,6 +4843,15 @@
    "published": "2026-10-22T12:16:48Z",
    "sources": [
     "G5noticias"
+   ]
+  },
+  {
+   "title": "Director regional de Senapred por socavón en Arauco: “El riesgo es inminente, los organismos técnicos ya lo han dicho”",
+   "link": "https://www.latercera.com/nacional/noticia/director-regional-senapred-por-socavon-en-arauco-el-riesgo-es-inminente-los-organismos-tecnicos-ya-lo-han-dicho/",
+   "category": "nacional",
+   "published": "2026-10-22T12:09:42Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
