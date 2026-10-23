@@ -1,6 +1,21 @@
 {
- "actualizado": "2026-10-23T18:57:20Z",
+ "actualizado": "2026-10-23T19:06:50Z",
  "noticias": [
+  {
+   "category": "politica",
+   "title": "U. de Chile aportará evidencia científica para elaborar la nueva Política Nacional de Envejecimiento",
+   "summary": "",
+   "image": "https://uchile.cl/dam/jcr:19b412f8-73be-42f8-b63d-6640d6a4a96d/Foto%20portada.jpg",
+   "source_url": "https://uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "coverages": [],
+   "link": "https://uchile.cl/noticias/246265/uchile-aportara-para-elaborar-la-nueva-politica-nacional-de-envejecimiento",
+   "published": "2026-10-23T19:01:07Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
+  },
   {
    "category": "regiones",
    "title": "GOBIERNO EXTIENDE HASTA DICIEMBRE EL BONO COMBUSTIBLE PARA MÁS DE 4.200 TRANSPORTISTAS EN LA ARAUCANÍA",
@@ -99,15 +114,16 @@
    "category": "regiones",
    "title": "Andes Salud Concepción es la primera clínica del sur de Chile en incorporar cirugía robótica de rodilla",
    "summary": "",
-   "image": "",
+   "image": "https://img.latribuna.cl/upload/2026/10/17161D524C42446D17150F55544944761F131918524242731C17-2000x1125.jpg",
    "source_url": "https://www.latribuna.cl",
    "sources": [
     "La Tribuna"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWW5GNWlBWTNNVG5LQkc5SmtLNHotZEtKYnc0R18wM2pVbzY2M3hmWkpoQ3FnQ0lpYzc2UlV1VF9SSUpNT0xVckhZRzZQdUJpaHFUc3BKdUVPVmtMMmNVYV9zUU0ybDBBUThBNXloS1ZWV3BjT0hJY0V2TGpqZmFpU21MMUs2XzdMRG1tRXduWnB3YlhIY0RFUjRtMXBTeFdMRDBUbzgzWEEweEpDdVFlbzhzd1pNN0gwcUI3VHJ3TEVRZEZoNmQxTkkzbGNTazVtWklzYkVnZVh6dU5iR1RvZHRoM1dlTXdDRGx3WkJNMVHSAfgBQVVfeXFMTWJmRENZRDdVMlQyRlJzZUk2Yk9SUmlQUUtSVmkzek0tckNZWDZVZnRlUkcwRFFFZEl5akdOVlRSVEdYc21hZ1FJRG9Jc2sxV1NJdGZqM3lZV0hwSEwxWGEtejg1cTFZM3NtZFc2NE5QZGYzUFlkRkdNN25PM095cm8zdUx1OWJuSW1ETXJtUVh1MnpVT3NMUzVBZ0NlMkxVblZXaE5wRGkxYXRRNHYyZ2hlc0RzRkNNQVVqVHJ6Ul95dXJLakVxTFJSUmdCdm5BdUlIZDV4QTczUVVQMUg0NXgycWpFVy1mT2lQRGVjRlZsTE5GdkljUmY?oc=5",
+   "link": "https://www.latribuna.cl/publicontenido/2026/10/23/andes-salud-concepcion-es-la-primera-clinica-del-sur-de-chile-en-incorporar-cirugia-robotica-de-rodilla.html",
    "published": "2026-10-23T18:09:42Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "deportes",
@@ -125,18 +141,34 @@
    "image_checked_at": "2026-10-23T18:57:20.007908Z"
   },
   {
-   "category": "cultura",
-   "title": "Rosalía se hace viral tras cita de la Dra. Ana María Polo en los Premios Billboard a la Música Latina",
+   "category": "internacional",
+   "title": "Tras reportes de plan de ataque de EEUU e Israel, guerra en Irán seguiría un año dice enviado de Trump",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993938-efe-archiv-por-tras-reportes-de-plan-de-ataque-de-eeuu-e-israel-guerra-en-iran-seguiria-un-ano-dice-enviado-de-trump.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQM2tGX3ROTWZsZE5FNmRoVEluZnZXNTJUd2NzN3RYaXJhQWNvQlAyN1F4dnFHNTVMNDA3cVFKc3hJamVNckM4TUVNcUhNT0NHdVQwWVR1MXEzclRGWWtEY0xlamJZUmw2OXMwbFdyWFhRV1lGLVE4LXV5WGRZTldfQm5CdzI1QW5XWV90NGFfX0pXMEJWM1JyRXdvNTdLZHI2ZFJFY2ZTWUt5Y1FqeWJHSWRoaVRrajNWZGNNVVY1YW52ZTNicWZqLUtFTUsyeGIzTVlvMVc0OG8zLVktUzFzQWkxU1hZUEtzNWhHcUFUNUlXVTE1OUY4WGYxODRsR1RnQnh2RHAzMjNaei1seXNQZVJUQ2xTakNXcUlmSGdR?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/internacional/eeuu/2026/10/23/tras-reportes-de-plan-de-ataque-de-eeuu-e-israel-guerra-en-iran-seguiria-un-ano-dice-enviado-de-trump.shtml",
+   "published": "2026-10-23T17:41:55Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Rosalía se hace viral tras cita de la Dra. Ana María Polo en los Premios Billboard a la Música Latina",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993897-rosalia-viral-cita-dra-ana-maria-polo-billboard-.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/23/rosalia-se-hace-viral-tras-cita-de-la-dra-ana-maria-polo-en-los-premios-billboard-a-la-musica-latina.shtml",
    "published": "2026-10-23T17:35:04Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "internacional",
@@ -197,6 +229,21 @@
    "first_seen": "2026-10-23T18:57:20Z"
   },
   {
+   "category": "deportes",
+   "title": "Vincent Kompany, entrenador del Bayern Múnich, ingresado tras colapsar durante un entrenamiento",
+   "summary": "",
+   "image": "",
+   "source_url": "https://efe.com",
+   "sources": [
+    "EFE - Agencia de noticias"
+   ],
+   "coverages": [],
+   "link": "https://efe.com/deportes/2026-10-23/vincent-kompany-entrenador-bayern-munich-hospital/",
+   "published": "2026-10-23T16:55:00Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
+  },
+  {
    "category": "internacional",
    "title": "Trump amenaza con vetar todas las leyes si los demócratas ganan el control del Congreso de EEUU",
    "summary": "",
@@ -248,19 +295,50 @@
    "image_checked_at": "2026-10-23T18:57:20.007908Z"
   },
   {
+   "category": "cultura",
+   "title": "Charly García y sus definiciones sobre Chile, del “Negro” Piñera a Jorge González: “Los Prisioneros son unos vendidos”",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/GUXH2DKN45ADXB7STVYWUWLIJQ.png?auth=0c5391d656759c21868cbc76130bc12f22e554c1ebe1782fe7a04f9cfd97579e&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/culto/noticia/charly-garcia-y-sus-definiciones-sobre-chile-del-negro-pinera-a-jorge-gonzalez-los-prisioneros-son-unos-vendidos/",
+   "published": "2026-10-23T16:29:00Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Jefazo de Tevex aclaró futuro laboral de Mauricio Israel en el canal en medio de rumores: “La verdad es que...”",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/TEFARK6SHRFOLJW7FPVZ4SS2HY.jpg?auth=9b95a05f9a6e9c1fb2ea070837ac920f07a0b02470b61bbcce275d2e21d8c8d4&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/jefazo-de-tevex-aclaro-futuro-laboral-de-mauricio-israel-en-el-canal-en-medio-de-rumores-la-verdad-es-que/",
+   "published": "2026-10-23T16:22:50Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
+  },
+  {
    "category": "regiones",
    "title": "ANFP anuncia nueva fecha para el duelo de revancha entre La U y Antofagasta por la Copa Chile",
    "summary": "",
-   "image": "",
+   "image": "https://media.canal9.cl/2026/10/copa-chile-la-u-antofagasta-768x405.jpg",
    "source_url": "https://www.canal9.cl",
    "sources": [
     "Canal 9 Bío Bío Televisión",
     "Antofagasta TV"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdldrNmJ0REpwS0VaYVI4ZmNhcWFTRHYybjRINTZYeGdTc0ptMTlQcEVVSVVBYkRISmJOdF9uNkFOWU1RWkFrTjYzS2RzVjBiYVdfSlNzWG1kQS1qTHdKaXVNXzdFRU1WSzVFX0hDUGc5enpsNWxUNG1kVi1mMi0yWGtCQTNGSjRmOEZOaUVQanpBLWJUd29ENTVFWXlzSmNZa1pndXg2QS14YUxFQVpMZGpsRlRCTEMxYTRFMHZ3QlNXenRhcWpwRVNKT055U3dldVVkRkg0ZkpVT2M?oc=5",
+   "link": "https://www.canal9.cl/episodios/2026/10/23/con-sede-por-confirmar-anfp-revelo-nueva-fecha-para-revancha-entre-la-u-y-antofagasta-por-copa-chile",
    "published": "2026-10-23T16:19:00Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "internacional",
@@ -276,6 +354,21 @@
    "published": "2026-10-23T16:16:12Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "image_checked_at": "2026-10-23T18:57:20.007908Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993763-teleton.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/23/diversos-artistas-y-actividades-teleton-2026-presenta-su-programacion-para-el-6-y-7-de-noviembre.shtml",
+   "published": "2026-10-23T16:00:18Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "internacional",
@@ -317,15 +410,16 @@
    "category": "cultura",
    "title": "Tras escándalo por su polémica frase: Leo Rey expone inédito registro con atrevido “gesto” de Alexítico y remece la web",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/YQMAVXHA3ZC6PPZZJEZR7XTXPU.jpg?auth=01e150a78f8cce46c4bc709b65b252d1a638521830bacf1c43b226fbe12376be&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOUndYX01RSUlYMDhlc3VWLWZET2VjU3NwbGlPREVEdFdKc0dSVEJIUUwxRmtyeHhMaTBhUTBia3Ztd2RDMjZocjUycDVHQVg3czRlaElRLVlMVFhQUnlfSERwOHc0Q01IeU1ibEdUX3hNZzlaVm54dVJfRmdHU1p6d0JURkdkSTUyanNJSlNFc2dxNWZwM05zUTZ4eC16N05TQUFBbVlpV3QwdGRoRTV1NUg2VmZ2Nm9qM1JkbHYyUnRfZ1JSTjVDLTlRWl9SZ281T3p6TVQ1dWpfVkR4eDRVX1V3X1RvU29ZTFlHdnU3dzFZWVJQN2fSAZcCQVVfeXFMTTlybjFBa3lNT2hZUlB6eC1FOS1KZTVwUkN6WlVER0FKMF9GRzE5N1R5N01ETTVvM2hUcTUxUFR0Umg5SGtyQllBZ283U1VVZ3Fvajg0NWVFX3VZNW5kV2s3aEs4SFNTbmo0N0F0aHdXcmlGQm00UXRaTENRYU9QOWk5cW1ZUzlRTW5tV0YwRTZmMnFLYUswYXR1RUJ2Z19pZ2FMUzZOd0x3ek1jN29FQl9ULVdhVzRDaG9KV0tIX3d0ZnBaTHhEOVNwTXR6aVFjNWdxZ0V0blRlTUhCc19vSy1YNDhZampfTkpscDVqcGNaNGdMWGJYQ1JNMUZNbGM1QkEzVGlLN00yVVhfSF9hZW5zcUdOVnBB?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/tras-escandalo-por-su-polemica-frase-leo-rey-expone-inedito-registro-con-atrevido-gesto-de-alexitico-y-remece-la-web/",
    "published": "2026-10-23T15:50:13Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "regiones",
@@ -409,15 +503,16 @@
    "category": "cultura",
    "title": "Padre de Mayerson Zapata dice no estar conforme con acuerdo alcanzado con Fran Maira: este es el monto que recibirán",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/3NUAK5EFDNFELMPEIHIL7GTTSM.jpg?auth=c63c54558150eebc079579acb8576edbad92e704a124e4f89ae9b2ebc34a150d&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPOG4taWtnYkNLV052cEdDRFROMlUwME9fVTVjNm1wVFRrV2wzS2E2cjdwQVo1S1lSREE5UDJSeDg4RzRMQWcxOTNOcDVibVFibWhzZnJYNEctb1I3c2gwRC1qWU1RYmtRTWtPWjQ5N0FUZmJZbWJ1UWNHN0tIcFlrVU9PcnpzRGJMTHBNNzhLNjIzTGNUNEFhWjZTUXVtUThUMFlyVEl6RkRSalhuX0FXM3kxb3B3Z2hvbjBaTVB1c3FKMWxQOFNGMWoyUG9mX2JBTnA0Q2xkME1UVWlpeGN1Y2t6X2dibGtieXNSYjZjVHJFVDNl0gGWAkFVX3lxTE83RmhGZjVRdVNrVU83OTh1M0NULWJXQUpyTndDdHRjd3BsaVFpR2N6aFhwTGJtbmJlMFpDaGJmUWNiZC1NVW5yNGZnU254MzBlYUpZSThycEg4bUF4NzVuNjFEVFVha1IySHczRUV4RUt6NXozT2VZUzU0d1I3MERnZHdZOWZfN2RsRWRZSG9CVXh1WUhPS25IUW9qRmhxazM1M1FJVDM0S3dwSEhfMVlhUEUtMUdXSUI4cG92Z25MMHZzUXQ2TFB6SnVVTUJkdlI2VlhhX1hacGRPZmh4aTJ1eVF0SGswczFYMVljYlNfaUNic3VsSDlpcVYwQ0tzQm9hMV9fZ3RRaTlpMlI2R1NHQ0cxMEFn?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/padre-de-mayerson-zapata-dice-no-estar-conforme-con-acuerdo-alcanzado-con-fran-maira-este-es-el-monto-que-recibiran/",
    "published": "2026-10-23T15:20:37Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "internacional",
@@ -483,15 +578,16 @@
    "category": "deportes",
    "title": "Colo Colo y Puerto Montt tienen nuevo horario para disputar minutos pendientes de Copa Chile",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993557-copa-chile-adelantan-nuevo-horario-para-minutos-pendientes-colo-colo-puerto-montt-1.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOOS04S1p4NzgtR0M2V3RpNUlIOVczcmxUdnlHU0FTZGZUZzFUN0l4MlFCOEI3LUViZ3hOOGpiMVBIUlhLbzVZV3ZXVVoxZmdYMEZyNkFtZ2h0aXpoQlo0TW1XUmxTdzBJVW5TUEhrN2UwZ0NJYjFleC05OGpVZTd5REpOX0hDVjA2dDV6UHRldGNaTm8xQmZGbzJjM05yajh2VWRkUlBIbU5LQkRYa0FYaERvcVg0cjB6UXFvOGdkczQ3Vk5uSHJheXdzTFlqWjVNcmdrS0k4azJMdXpucmtvblBoaWRSSkIySmhPd0tudUdsbl9iaWQtVV93?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/23/copa-chile-adelantan-nuevo-horario-para-minutos-pendientes-colo-colo-puerto-montt.shtml",
    "published": "2026-10-23T15:00:30Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "politica",
@@ -566,6 +662,21 @@
    "published": "2026-10-23T14:25:00Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "image_checked_at": "2026-10-23T18:57:20.007908Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Kramer imita a Neme y se redime de duros chistes contra Tita Ureta: su rutina completa en ’Vértigo’",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993485-kramer-imita-neme-redime-chistes-tita-ureta-rutina-completa-vertigo-.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/23/kramer-imita-a-neme-y-se-redime-de-duros-chistes-contra-tita-ureta-su-rutina-completa-en-vertigo.shtml",
+   "published": "2026-10-23T14:21:14Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "regiones",
@@ -939,15 +1050,16 @@
    "category": "cultura",
    "title": "Tita Ureta impacta con transparencia que deja poco a la imaginación y sufre impasse en Vértigo: detalle no pasó desapercibido",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/R3J37LXEGNDTLCHAOI46A6H45U.jpg?auth=8f1a23954d6d3438f3830649c1a9453031995204a7473e9c1b9519aff1b6b226&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNUjBjMVlQbVVfZ2lxMjlnbVZKZ2dvSmVaRUNOYnkybnVZM2kwVFJQV3NpVGpLbXJvV0NvMlR0d1ZfNHZPUmd3cHhKY1QzanVLUE9wMHhxR19mV0lFS2hJWUdsLWdVZG1JWlJZS2tHQ3Vqc194TE1ER05sQ1o3RGszd2FTLTY0M1AtV0YwQXFub0NIbnB6MlhjblVHUFNXeVVnQzdVRkVrWl9EcUlPV0JqOVVhNjgxTFFpd2VOTVVoUEJ5WER2VDZxbFg1SC1yaXNpa1NIbWZlaDQwNlM5bUpWbnZVS3ZsRXhMT3FIRHo0elNwMHNMS2pTVGRvX0IyVi1o0gGiAkFVX3lxTFBfU2x4dzk4cVdaU1VDS202eUxsWTlKenpvTmFiMjhUSEE0ZlVIUUEtNzQ5djdESXp6MFNrVm5KYnloMXIwbXQ0WlBGY3hwdWRfNHVBMlFlMlE5QmgxbEIyT0tSZlN2WTBsNC1jWVVmclJXTkRLLVR6bnlESVlJaXFwbXFWWnVsS0lrUWRUbFJScHJKbUtYWUFwdldIOElsbEpTMDdJbWxJRjBkdGdaSnBXbWtkcEZFRHBLMXk1c19ZaHBlVnNUalZmbzFaUnF2WjNyak5JY281QmRMRWVRVFFzeUY3bVBVUTMyOFRxLXpxcEZBb25mWW1EQ3BxeTczYkQtYm9aRjJRV092d040WnA0NS13a192YTBVX0d4WUxMbmlB?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/tita-ureta-impacta-con-transparencia-que-deja-poco-a-la-imaginacion-y-sufre-impasse-en-vertigo-detalle-no-paso-desapercibido/",
    "published": "2026-10-23T11:26:08Z",
-   "first_seen": "2026-10-23T14:58:08Z"
+   "first_seen": "2026-10-23T14:58:08Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "economia",
@@ -1019,15 +1131,16 @@
    "category": "cultura",
    "title": "Meghan Markle sabía desde 2018 que su padre consumía pornografía infantil",
    "summary": "",
-   "image": "",
+   "image": "https://www.cooperativa.cl/noticias/site/artic/20261023/imag/foto_0000000120261023080951.jpg",
    "source_url": "https://www.cooperativa.cl",
    "sources": [
     "Cooperativa"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPd2pKTTNlbVR5N3FvVkNsSFQ4bmg0NDc4QVNLNkxaaHRjcF9TOHMtWGFydVU3YXhWMmZzMXBjVW9zdkc0dExVUEVvTElsUjJvWkx2aE5YMFJuTXRybmZWNHlyOXhpanJIQzdncDZjY1Y3OUlCVnFZVGY1dUpxYkFFVldzdlFvWWE5SmgwZk0zc1I2ZExIS2NLT0hMRUdxdFlodEZqSlNjZzgzUmxiQ1pnS2FHQ1JrWU5xMGkzU0RRRW82UjlPb21xSEZ6aFpyU3hCVjMwOTlWaXFRa0VaWVY1OHFtYkx2OV9INEpHSkJaZnRsWmZIWHNn0gGMAUFVX3lxTFBfeU04cmpITXBCZDViSHdXVFpxb1JmTUZnRF9jdnJpWG1yaE13dDlhaVN4X0RqY0V1LW5QOVREMTB1YldwQ2MyWmxsMkRINUpOdk1YRDNqSGxOQXVzNkNlek1CQ0ZMWERDWmc2UGlGRE1uS1RLczdyNjI3Sk5lSmsxX2N1UjdnQ25sc09l?oc=5",
+   "link": "https://www.cooperativa.cl/noticias/mundo/reino-unido/familia-real-britanica/meghan-markle-sabia-desde-2018-que-su-padre-consumia-pornografia/2026-10-23/080951.html",
    "published": "2026-10-23T11:05:00Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "regiones",
@@ -1047,15 +1160,16 @@
    "category": "cultura",
    "title": "La Firme con Magdalena Müller: “Me hice cargo, estoy súper reconciliada y asumida con que tengo que preocuparme de mi tema de cuerpo; no lo tengo tan fácil”",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/34DY7F63BZFODGECUFEK3TGZWI.jpg?auth=ad0b87a252b5f9a91c090269067e1b11507305f84110bf200b9a93ffe24963e5&height=630&width=1200&focal=2664%2C2045",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQNHR5bjRlUk5FZWQ4eUszR2lCX2Q2N0tWelgyczhSX0h6SVJvT0JpbGlCbnpMMmhlWWVBdlFGYU1NQy1PTEFzZXRlQjNvLU1pdE1wTm1QNFM0SU1DZ19EWnM1dWdMcG1VQ2ZVRER2UkM5Z1BFaE55YTBHSnd3YlM4S1Z6eDB1cXN1RjU2dFY5cHJzd21PSENKLVgzbl95VHg2RmdtTGRKV1RRSzQ5Uzk3dnFFRENpaGtUbXBzRElRT2JQd1hhTEJsSkNmeExzM3VrLUZJNDJWNzY5Xy01SlU2cHQ5TTVxMC1xMEJVWmRGN3BnRlpEMEdXSFZxNzdlRUpveXRNOG9iWF9XWm9vLXhWdndQYlRoWWZmckZTSTBkaVk3QWQ00gHGAkFVX3lxTE1JMUUtRTBGWHJFdGFkSXRldmd6NzRDbmRCQVNhNmhJa1dfLVZzRTJHZWw5UG94MEI5NVBsdmh4NHRWUFdGekcyNldsT00tVzB1cVB0Rno5WVJvVklEYkdobzZnS0NjUnZ2RkVtWUdCeTFiXzE2QjJZY2lDTk04bnRGbFFVWDNHWWhyVjZMWVJaRzNMTVdDQ2EwYi1lQjlRZkZ3c1hfMTlyRTNmUnJPSXp2R2dUanIwVk1PbUtERkVtZjVvWGpjRHdCMHBJMEdVemEta2ZMTHRPVm80T3ZFM1RXUUFnamotUVQweloxajJwWEFmOW9XUGNYZGJRaF84eHRTQUpxQ0lEMjhPTnhiSzAwa1Eya0dxV3MtdnRSdGowaVMxVHRBTTJoYlVpODBPNjRxVVNjdEd1SGU1Q2RYWEVIeDBtcUtn?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/la-firme-con-magdalena-muller-me-hice-cargo-estoy-super-reconciliada-y-asumida-con-que-tengo-que-preocuparme-de-mi-tema-de-cuerpo-no-lo-tengo-tan-facil/",
    "published": "2026-10-23T11:02:46Z",
-   "first_seen": "2026-10-23T14:58:08Z"
+   "first_seen": "2026-10-23T14:58:08Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "deportes",
@@ -1076,15 +1190,16 @@
    "category": "cultura",
    "title": "El brutal desahogo de Cony Capelli sobre quiebre amoroso en medio de su embarazo: hizo público revelador antecedente",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/NME34EBEM5GXPO6IBUPOW4XSQQ.jpg?auth=194e09f955b3faef231c8fdac2d9db678e0698caad32b3a17b0766464377bd50&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQd3JNeGNkcGpQQTVNcDY3OXl1eGV0cFBId1h3b3J6R1h2b2F5RUI0MURiMi1lYmtjX3RNcGdLa1VKYzdnX1pTNk51cXlMVngtcklUWldvaUF2QjFvRHVJc05TVG1ZS3BZV0lrWEx2ak1tNXBENUNrYWlzZVRBX2o4ek1VS3RULS1xT1czSXhHcEJNT1VoLUJLTHk4UC1jekJaVUV0b29nSkcxdEEyYllLZjFCdkM2S3NGOTNCelZ1MVpkQ0ZVQXNXdld3bkt0bjJCeklNNE5EelVrM0ZxRzYwOEcwUEMyUUtXR1JfZWpVdVJsMTRV0gGWAkFVX3lxTE9KT181bUx4NnVlOWJoWWhabE8tQVVfajd6dHpmNENnZXZtQXE2U3JTV0VYT1NLdS1sRG12UzF3b2YxY2ZyWXdGRG1Qa0RqUXNreEFwdXJ6UTQtOXhYYnllbFdjQXdmRGphaDF0cTZVMk9LakJYRGVTNlRtbU81eXFFemVSUHpGUWZWZ1dYN1ZZRUJCZUFtQTd1SzVteDFVeVNEQTR0QThjczE1VDZKQU8xX0tFRkQyZkNndHZ2QzlMWDVleU9ET1MxNUlWQTV5TkJISTB0NXZ4aUhPRVBGNnNfeGl0MW9wa1V3SmJVcmxXUGUwOThTN2RtYmFjeTNBdEJ1ME9aRjR0LTVSalBYbzBYWkZPbUhB?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/el-brutal-desahogo-de-cony-capelli-sobre-quiebre-amoroso-en-medio-de-su-embarazo-hizo-publico-revelador-antecedente/",
    "published": "2026-10-23T10:47:14Z",
-   "first_seen": "2026-10-23T14:58:08Z"
+   "first_seen": "2026-10-23T14:58:08Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "deportes",
@@ -1160,6 +1275,21 @@
    "published": "2026-10-23T10:16:21Z",
    "first_seen": "2026-10-23T14:58:08Z",
    "image_checked_at": "2026-10-23T14:58:08.350733Z"
+  },
+  {
+   "category": "deportes",
+   "title": "¿Ir o no al Balón de Oro? El dilema de Vozinha en una semana clave para su renovación y para Colo Colo",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/KCSVCXRDUNG7DJ44HB5HT4VIGE.jpg?auth=9ba444b78fa8c439eee2cd64cf9905f566b3ed58c651b51a7224bdac9de44fe8&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/el-deportivo/noticia/ir-o-no-al-balon-de-oro-el-dilema-de-vozinha-en-una-semana-clave-para-su-renovacion-y-para-colo-colo/",
+   "published": "2026-10-23T10:16:18Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "internacional",
@@ -1324,15 +1454,16 @@
    "category": "cultura",
    "title": "Cony Capelli es la gran ganadora del segundo capítulo de Vértigo",
    "summary": "",
-   "image": "",
+   "image": "https://www.13.cl/sites/default/files/styles/manualcrop_1600x800/public/programas/articulos/field-imagen/2026-10/1792767646.jpg.jpeg?h=9874ba8b&itok=RSyoz3RU",
    "source_url": "https://www.13.cl",
    "sources": [
     "Canal 13"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeG9hMmRBZXprV0llSkJubkF4MnBLTXQyemxvZW9kX1FuOHcxdW9MVTYzVDBtWkx0UmdBRjJrYnJpU0ZFWWUzckpOQ3ZRRlY3OElhM2JPTHYxbmt1NUFsblJocFlhUTdwUnk5N2tCZHdVRFo3QlNtVXdJSFd6RE94Tlo0aG9IOGtxbnNzZUQxeHNGX0haaE5ha2Q0c2hTWFZaWXRwYzMtM0d0UVhxNXc?oc=5",
+   "link": "https://www.13.cl/programas/vertigo/momentos/cony-capelli-es-la-gran-ganadora-del-segundo-capitulo-de-vertigo",
    "published": "2026-10-23T04:54:24Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "nacional",
@@ -1389,29 +1520,31 @@
    "category": "cultura",
    "title": "El aplaudido gesto de Máximo Menem Bolocco en medio de declaraciones de Kenita Larraín: \"Qué caballero\"",
    "summary": "",
-   "image": "",
+   "image": "https://www.13.cl/sites/default/files/styles/manualcrop_1600x800/public/programas/articulos/field-imagen/2026-10/1792725428.jpg.jpeg?h=920929c4&itok=w0-bXcWs",
    "source_url": "https://www.13.cl",
    "sources": [
     "Canal 13"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWUJRYzNqdWRmS3NJYTlRd0hBRTRLRmJHUTM4VDdvM3AxMWgxVE9yWnNkZkstejV5RjY3ODZuZmNiZC1CaXJvTC12cDNQRUVjcE4yT3NGRDNiN2pya29VTFRjRlBaNWlnWWZFZHpDTnBWcUxFQllUY19Daks5V2VBMklMM2I5eTlpY3JYWnRxSzkzeTdBczd0RXo1VDBlUlFDMkdfXy1McTFZcW1QSVh6QWVfakZzSDQ?oc=5",
+   "link": "https://www.13.cl/programas/vertigo/momentos/el-aplaudido-gesto-de-maximo-menem-bolocco-en-medio-de-declaraciones-de",
    "published": "2026-10-23T03:19:12Z",
-   "first_seen": "2026-10-23T14:58:08Z"
+   "first_seen": "2026-10-23T14:58:08Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "deportes",
    "title": "Golpazo al Flamengo de Pulgar: Estudiantes saca su mística copera y está en la final de la Libertadores gracias a Muslera",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/MYTS4R3THVF2JNUOC4BPVW5OJ4.jpg?auth=1be90306be05842bc4fa852bc6f4a864ec531ddb5550b5f824e5e19e1dd43a39&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQeWFzRVVWXzdQVWstczJycURVSkxHLS1CeUhHOEduTU9UVjVxM2EyVE5mUWphS3ktR3pSbS04NVc0OWJoX3pMM2hNX1QxU3hxaF8zZFA1RlcxRzg5OXQzajl3eWVpX2U0aUJiajdpbS1tS3Frdm96c0xVM3g0ZEZiSm9SdmphejQ0Zk9xZ2ZRNTZIX1JHYXc4b0JXTlBEbXBnYU1kenlGaTRiR3JkZ0c5SG9iTFROS2NGb0g1aEVXWVU2MldyM3UwZXRqcHBXSlZPVEwyU0gyRV9UTU5vMWp1WjA1WE1tb1Q3MFViOWdVb1pNZU1uVnl2SXVEUGrSAZ4CQVVfeXFMTWk3Ymtjd05UT2NOZTFUVlMtZUlfbjZHYVJIUkJ0b20zRDJONkVFcjhIdlEybXNfTTVRUU9sOXozVkNTSHZ4UWJGWEdNM3Bnd0JHZ3JPbUNoaEppTHk5TENlV2RuQ29LMjY2TzVyTHkxNGExa2NNbVNZOGRyQ3lFMXRrZ2NQeFZBbjEybFVjMGNBMUtXb0ZuZmYydDBBOGJPMVNuV0x5SU92bXE0QVhVbnlWeHJOU0RjQ1VQZGQxQ090TGFVM0tBaG5jZ1ZvTFRyQkozQVBmTlI3dDdGd3lFWGlVUGNVaERIeWoxcmhGTnBTeXV2eW9fWmV5Q2I5VXFCc2E0Q3Q4QWlPem1kLVV5V1hlR0dabkRjSXNtYlAyUQ?oc=5",
+   "link": "https://www.latercera.com/el-deportivo/noticia/golpazo-al-flamengo-de-pulgar-estudiantes-saca-su-mistica-copera-y-esta-en-la-final-de-la-libertadores-gracias-a-muslera/",
    "published": "2026-10-23T02:59:34Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "deportes",
@@ -1477,15 +1610,16 @@
    "category": "cultura",
    "title": "Padre de Meghan Markle investigado por material de abuso sexual infantil tras denuncia de su hijo",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993136-sin-nombre-15-1-1200x633.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPalI2WS00Uk5PTHRQVW1XMDlRRE1ZbmZGc3IwVGp1RWcwbEdFbk5zR2FhWktFT21BYTR4OFJrWnJ0d3hGYzRrakJDM0VGYzcwOWJQWVk3Q3pNYmVZNk1xbVZuZHBQTlhyMmUxRWYxT1V2WUFKZUhxXzBjRy11RkVab3RDeUthV3hWT2trNmVWUXRlQ1V5RWhmMGpQNnpCMmJYOGpzVnk0QTd6Q1E5ODRrVlB5VjFMWmh0aVh3MjdjeFR0UXpTNlZNT2xfTXRqT3VqVUNOT0VjeXZGQ3lDUk43YlNIbVE0T0MwWENyS0ZCRzc2Qkx0SW1OaGtB?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/sociedad/debate/2026/10/22/padre-de-meghan-markle-investigado-por-material-de-abuso-sexual-infantil-tras-denuncia-de-su-hijo.shtml",
    "published": "2026-10-23T01:49:12Z",
-   "first_seen": "2026-10-23T14:58:08Z"
+   "first_seen": "2026-10-23T14:58:08Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "internacional",
@@ -1699,7 +1833,7 @@
    "link": "https://www.pcmrace.com/2026/10/22/wipeout-pure-psp-port-nativo-para-pc-4k/",
    "published": "2026-10-23T00:07:47Z",
    "first_seen": "2026-10-23T04:37:59Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "internacional",
@@ -1883,15 +2017,16 @@
    "category": "cultura",
    "title": "Revelan el millonario monto que pagará Fran Maira a joven atropellado",
    "summary": "",
-   "image": "",
+   "image": "https://www.cooperativa.cl/noticias/site/artic/20261022/imag/foto_0000000120261022190956.jpg",
    "source_url": "https://www.cooperativa.cl",
    "sources": [
     "Cooperativa"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNR1FKd0xpWDJFbW53aEIyLTJLdGc3NE4tRDB4cGZidExkRmlFb2ZlazA5cmQ0cjBvZ0MzcDVYSVFNMFIxWGM3VlZyNTBXZTBua29QVGhFRUpvdnBpUXcxR2RPaWN4SjM5VURZYk1yZ0hEeDhfdnRRak50VlNXNkl6YXBfWklpczZ4Z2czMnp5OWF2cWtnenoyV0FhTmhqTE4ybTZHV2xrNkRadjhUVkxmRE5MWlZuWG13R3JjeENmOTJlN19PNHU3dVU2WmVlUHZZUkR4VlpvTUJRNUJHNTNWV0hn0gGMAUFVX3lxTFBiNU5GLUN2T2x0MmlzMjV5MUR0WnpCX2pOUC04cVlJc0VtUk0yak82NGFyc3JEejFBclJLRWQ5TGExOS1wYndJMHZNQXBFdVgwSTBJRnNaaFJLclM1dkJVenYybmlvVG1uSXBzVUVrc1dDY3R4VW9lcFlVLVlMUWFobWhpWVRoVWhSZzZj?oc=5",
+   "link": "https://www.cooperativa.cl/noticias/magazine/personajes/revelan-el-millonario-monto-que-pagara-fran-maira-a-joven-atropellado/2026-10-22/190956.html",
    "published": "2026-10-22T23:02:00Z",
-   "first_seen": "2026-10-23T14:58:08Z"
+   "first_seen": "2026-10-23T14:58:08Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "economia",
@@ -1967,6 +2102,21 @@
    "published": "2026-10-22T22:00:00Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "image_checked_at": "2026-10-23T18:57:20.007908Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Tras Universidad de Chile vs Deportivo Cali: así queda la tabla del grupo D en la Copa Libertadores Femenina",
+   "summary": "",
+   "image": "https://media.bolavip.com/wp-content/uploads/sites/19/2026/10/22185523/WhatsApp-Image-2026-10-22-at-18.46.43-e1792706148407-1200x740.webp",
+   "source_url": "https://bolavip.com",
+   "sources": [
+    "Bolavip Chile"
+   ],
+   "coverages": [],
+   "link": "https://bolavip.com/cl/copa-libertadores/tras-universidad-de-chile-vs-deportivo-cali-asi-queda-la-tabla-del-grupo-d-en-la-copa-libertadores-femenina",
+   "published": "2026-10-22T21:59:28Z",
+   "first_seen": "2026-10-23T19:06:50Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "regiones",
@@ -2061,7 +2211,7 @@
    "link": "https://chile.as.com/actualidad/un-multicampeon-del-futbol-chileno-explota-contra-el-gobierno-del-presidente-kast-caras-de-raja-f202610-n/",
    "published": "2026-10-22T21:23:34Z",
    "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "cultura",
@@ -2148,15 +2298,16 @@
    "category": "deportes",
    "title": "\"Si yo fuera hincha de la UC, no le tendría fe al proyecto de Fran Pérez\"",
    "summary": "",
-   "image": "",
+   "image": "https://img.encancha.cl/I5vyHdBAdhZyH_uM52w7Kf8qNv4lugHncGT0acKmLjw/rs:fill:1200:630:1/g:fp:0.429:0.236/f:jpg/aHR0cHM6Ly9hc3NldHMuZW5jYW5jaGEuY2wvaW1nLzE3OTI2OTg0OTcyODgtNHlmdDYwLmpwZw",
    "source_url": "https://www.encancha.cl",
    "sources": [
     "En Cancha"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdmdFNXhxSjBhWHlaWWFBZWRMUGp1ZXdnMks5NkRyUHozbHBtUFE3Yk5xcXZGWDRWLVF4aVZzaDFxVXNXbjBSSF8zZXF6VXZaU0p4WDIzbEZqcGZlcGpFN3Ayb2FIQTh1ZFl3bUhKUWJxeW9Nd3BUYjA0MUg5WllLTDBXUm5KOW5La25QZmRsdl81QW84SXJEMk9yd2xrRnhrZkJ6RXZmaFpwcmhJbWlHTlVqUlppV3BGSDhXd3FaQkZQNjBYa29VdWJ2MWxtTHhlck9NRlJIWXVILU0?oc=5",
+   "link": "https://www.encancha.cl/futbol-chileno/u-catolica/2026/10/22/si-yo-fuera-hincha-de-la-uc-no-le-tendria-fe-al-proyecto-de-fran-perez-322666.html",
    "published": "2026-10-22T20:52:19Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   },
   {
    "category": "cultura",
@@ -2532,70 +2683,19 @@
    "published": "2026-10-22T19:09:00Z",
    "first_seen": "2026-10-22T19:59:52Z",
    "image_checked_at": "2026-10-22T19:59:52.269610Z"
-  },
-  {
-   "category": "economia",
-   "title": "Alivio para el fondo E: las tasas largas de EEUU se desploman por temores a una fuerte desaceleración económica",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261022/imag/foto_0000000720261022153738/454160645.jpg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/mercados/renta-fija/alivio-para-el-fondo-e-las-tasas-largas-de-eeuu-se-desploman-por-temores-a",
-   "published": "2026-10-22T19:02:00Z",
-   "first_seen": "2026-10-22T21:41:26Z",
-   "image_checked_at": "2026-10-22T21:41:26.280174Z"
-  },
-  {
-   "category": "internacional",
-   "title": "El dilema de Chancay en Perú",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/GF33KY3BM5FZ7JPIMQHIDQLU4A.jpg?auth=3a108c69d2e7cd734645432967ffa8b4947e2a0639f20ccc351db5e04915c969&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/mundo/noticia/el-dilema-de-chancay-en-peru/",
-   "published": "2026-10-22T19:00:00Z",
-   "first_seen": "2026-10-22T23:16:38Z",
-   "image_checked_at": "2026-10-22T23:16:38.243944Z"
-  },
-  {
-   "category": "cultura",
-   "title": "De Ángel Parra a Inti-Illimani: renacen 23 álbumes de Dicap, el sello emblema de la Nueva Canción Chilena",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSGN2S1ZDWTYyY0dqd0FSaVZGa0NLblpEb3FqemZiaVBEVXJORzhVVHo4U0pGZmZKT3lqYjlKRFp3RFdSRWhNY2VZSjRqS0lrY19mTlhkajk3M3B2dXctTDl3eVpqWDJzUjhURUVaZHRCem5TcVVNT3Zza3NZOVJPU1pYNTZtQVFFLW4ySmRNYnRMa091ZGJKaUNDUmhHTHQ1NkJnRFRQZ2h5TF9aeDYwNnJtLUhuTFRmeEM4dnNpbW1ySTBkazVPdjk2Y0JZWUYzWDJuY1NqbmhVaUQz0gH-AUFVX3lxTFBwcExGRGFDSVdWaWdTMlpobWkyYnRVeGl2WWZzT1FEcWtaaU1CUEhLZ3FWd2NZeHhabmpOeHhYRkpVX3JCS0dudzNtU0x0TXk2V3F3b2hwVTBaRHVYZmZIMk5HcE1tTUt4OGxZMm4yQVZZc0k4dGphVEpUNXlaNmI3ZGY0cld1d2hZNC1XR3Atdk8zNWpTSlBJTU5ENmROZnN1YkFId1B4b0lYQlhrcUkwWFVob3JuaUdmdENRNmVuTnh5TTF0OW1yVnBnRktrb1Fabnl2bEl1b0MxTzdpd1A4ZFk5VVRCUUNMaTctVlFteWRoTHNBR3VjeDlsZUpB?oc=5",
-   "published": "2026-10-22T19:00:00Z",
-   "first_seen": "2026-10-23T14:58:08Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Trump ataca a LeBron James por ’repudiable’ actitud durante himno de EEUU en NBA: \"Es una vergüenza\"",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6992711-trump-vs-lebron-james.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile",
-    "RedGol"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/deportes/basquetbol/2026/10/22/trump-ataca-a-lebron-james-por-repudiable-actitud-durante-himno-de-eeuu-en-nba-es-una-verguenza.shtml",
-   "published": "2026-10-22T18:59:21Z",
-   "first_seen": "2026-10-22T21:41:26Z",
-   "image_checked_at": "2026-10-22T21:41:26.280174Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "U. de Chile aportará evidencia científica para elaborar la nueva Política Nacional de Envejecimiento",
+   "link": "https://uchile.cl/noticias/246265/uchile-aportara-para-elaborar-la-nueva-politica-nacional-de-envejecimiento",
+   "category": "politica",
+   "published": "2026-10-23T19:01:07Z",
+   "sources": [
+    "Universidad de Chile"
+   ]
+  },
   {
    "title": "GOBIERNO EXTIENDE HASTA DICIEMBRE EL BONO COMBUSTIBLE PARA MÁS DE 4.200 TRANSPORTISTAS EN LA ARAUCANÍA",
    "link": "https://araucanianoticias.cl/2026/gobierno-extiende-hasta-diciembre-el-bono-combustible-para-mas-de-4-200-transportistas-en-la-araucania/1023317743",
@@ -2660,6 +2760,15 @@
    ]
   },
   {
+   "title": "Andes Salud Concepción es la primera clínica del sur de Chile en incorporar cirugía robótica de rodilla",
+   "link": "https://www.latribuna.cl/publicontenido/2026/10/23/andes-salud-concepcion-es-la-primera-clinica-del-sur-de-chile-en-incorporar-cirugia-robotica-de-rodilla.html",
+   "category": "regiones",
+   "published": "2026-10-23T18:09:42Z",
+   "sources": [
+    "La Tribuna"
+   ]
+  },
+  {
    "title": "Messi recibe premio Princesa de Asturias en España: las razones del reconocimiento",
    "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/23/messi-recibe-premio-princesa-de-asturias-en-espana-las-razones-del-reconocimiento.shtml",
    "category": "deportes",
@@ -2669,8 +2778,26 @@
    ]
   },
   {
+   "title": "Tras reportes de plan de ataque de EEUU e Israel, guerra en Irán seguiría un año dice enviado de Trump",
+   "link": "https://www.biobiochile.cl/noticias/internacional/eeuu/2026/10/23/tras-reportes-de-plan-de-ataque-de-eeuu-e-israel-guerra-en-iran-seguiria-un-ano-dice-enviado-de-trump.shtml",
+   "category": "internacional",
+   "published": "2026-10-23T17:41:55Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Rosalía se hace viral tras cita de la Dra. Ana María Polo en los Premios Billboard a la Música Latina",
    "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQM2tGX3ROTWZsZE5FNmRoVEluZnZXNTJUd2NzN3RYaXJhQWNvQlAyN1F4dnFHNTVMNDA3cVFKc3hJamVNckM4TUVNcUhNT0NHdVQwWVR1MXEzclRGWWtEY0xlamJZUmw2OXMwbFdyWFhRV1lGLVE4LXV5WGRZTldfQm5CdzI1QW5XWV90NGFfX0pXMEJWM1JyRXdvNTdLZHI2ZFJFY2ZTWUt5Y1FqeWJHSWRoaVRrajNWZGNNVVY1YW52ZTNicWZqLUtFTUsyeGIzTVlvMVc0OG8zLVktUzFzQWkxU1hZUEtzNWhHcUFUNUlXVTE1OUY4WGYxODRsR1RnQnh2RHAzMjNaei1seXNQZVJUQ2xTakNXcUlmSGdR?oc=5",
+   "category": "cultura",
+   "published": "2026-10-23T17:35:04Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Rosalía se hace viral tras cita de la Dra. Ana María Polo en los Premios Billboard a la Música Latina",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/23/rosalia-se-hace-viral-tras-cita-de-la-dra-ana-maria-polo-en-los-premios-billboard-a-la-musica-latina.shtml",
    "category": "cultura",
    "published": "2026-10-23T17:35:04Z",
    "sources": [
@@ -2714,6 +2841,15 @@
    ]
   },
   {
+   "title": "Vincent Kompany, entrenador del Bayern Múnich, ingresado tras colapsar durante un entrenamiento",
+   "link": "https://efe.com/deportes/2026-10-23/vincent-kompany-entrenador-bayern-munich-hospital/",
+   "category": "deportes",
+   "published": "2026-10-23T16:55:00Z",
+   "sources": [
+    "EFE - Agencia de noticias"
+   ]
+  },
+  {
    "title": "Trump amenaza con vetar todas las leyes si los demócratas ganan el control del Congreso de EEUU",
    "link": "https://www.biobiochile.cl/noticias/internacional/eeuu/2026/10/23/trump-amenaza-con-vetar-todas-las-leyes-si-los-democratas-ganan-el-control-del-congreso-de-eeuu.shtml",
    "category": "internacional",
@@ -2741,8 +2877,36 @@
    ]
   },
   {
+   "title": "Charly García y sus definiciones sobre Chile, del “Negro” Piñera a Jorge González: “Los Prisioneros son unos vendidos”",
+   "link": "https://www.latercera.com/culto/noticia/charly-garcia-y-sus-definiciones-sobre-chile-del-negro-pinera-a-jorge-gonzalez-los-prisioneros-son-unos-vendidos/",
+   "category": "cultura",
+   "published": "2026-10-23T16:29:00Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Jefazo de Tevex aclaró futuro laboral de Mauricio Israel en el canal en medio de rumores: “La verdad es que...”",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/jefazo-de-tevex-aclaro-futuro-laboral-de-mauricio-israel-en-el-canal-en-medio-de-rumores-la-verdad-es-que/",
+   "category": "cultura",
+   "published": "2026-10-23T16:22:50Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "ANFP anuncia nueva fecha para el duelo de revancha entre La U y Antofagasta por la Copa Chile",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdldrNmJ0REpwS0VaYVI4ZmNhcWFTRHYybjRINTZYeGdTc0ptMTlQcEVVSVVBYkRISmJOdF9uNkFOWU1RWkFrTjYzS2RzVjBiYVdfSlNzWG1kQS1qTHdKaXVNXzdFRU1WSzVFX0hDUGc5enpsNWxUNG1kVi1mMi0yWGtCQTNGSjRmOEZOaUVQanpBLWJUd29ENTVFWXlzSmNZa1pndXg2QS14YUxFQVpMZGpsRlRCTEMxYTRFMHZ3QlNXenRhcWpwRVNKT055U3dldVVkRkg0ZkpVT2M?oc=5",
+   "category": "regiones",
+   "published": "2026-10-23T16:19:00Z",
+   "sources": [
+    "Canal 9 Bío Bío Televisión",
+    "Antofagasta TV"
+   ]
+  },
+  {
+   "title": "ANFP anuncia nueva fecha para el duelo de revancha entre La U y Antofagasta por la Copa Chile",
+   "link": "https://www.canal9.cl/episodios/2026/10/23/con-sede-por-confirmar-anfp-revelo-nueva-fecha-para-revancha-entre-la-u-y-antofagasta-por-copa-chile",
    "category": "regiones",
    "published": "2026-10-23T16:19:00Z",
    "sources": [
@@ -2755,6 +2919,15 @@
    "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/23/rusia-confirma-alto-al-fuego-local-con-ucrania-para-evacuacion-de-civiles-desde-oleshki.shtml",
    "category": "internacional",
    "published": "2026-10-23T16:16:12Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/23/diversos-artistas-y-actividades-teleton-2026-presenta-su-programacion-para-el-6-y-7-de-noviembre.shtml",
+   "category": "cultura",
+   "published": "2026-10-23T16:00:18Z",
    "sources": [
     "BioBioChile"
    ]
@@ -2780,6 +2953,15 @@
   {
    "title": "Tras escándalo por su polémica frase: Leo Rey expone inédito registro con atrevido “gesto” de Alexítico y remece la web",
    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOUndYX01RSUlYMDhlc3VWLWZET2VjU3NwbGlPREVEdFdKc0dSVEJIUUwxRmtyeHhMaTBhUTBia3Ztd2RDMjZocjUycDVHQVg3czRlaElRLVlMVFhQUnlfSERwOHc0Q01IeU1ibEdUX3hNZzlaVm54dVJfRmdHU1p6d0JURkdkSTUyanNJSlNFc2dxNWZwM05zUTZ4eC16N05TQUFBbVlpV3QwdGRoRTV1NUg2VmZ2Nm9qM1JkbHYyUnRfZ1JSTjVDLTlRWl9SZ281T3p6TVQ1dWpfVkR4eDRVX1V3X1RvU29ZTFlHdnU3dzFZWVJQN2fSAZcCQVVfeXFMTTlybjFBa3lNT2hZUlB6eC1FOS1KZTVwUkN6WlVER0FKMF9GRzE5N1R5N01ETTVvM2hUcTUxUFR0Umg5SGtyQllBZ283U1VVZ3Fvajg0NWVFX3VZNW5kV2s3aEs4SFNTbmo0N0F0aHdXcmlGQm00UXRaTENRYU9QOWk5cW1ZUzlRTW5tV0YwRTZmMnFLYUswYXR1RUJ2Z19pZ2FMUzZOd0x3ek1jN29FQl9ULVdhVzRDaG9KV0tIX3d0ZnBaTHhEOVNwTXR6aVFjNWdxZ0V0blRlTUhCc19vSy1YNDhZampfTkpscDVqcGNaNGdMWGJYQ1JNMUZNbGM1QkEzVGlLN00yVVhfSF9hZW5zcUdOVnBB?oc=5",
+   "category": "cultura",
+   "published": "2026-10-23T15:50:13Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
+   "title": "Tras escándalo por su polémica frase: Leo Rey expone inédito registro con atrevido “gesto” de Alexítico y remece la web",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/tras-escandalo-por-su-polemica-frase-leo-rey-expone-inedito-registro-con-atrevido-gesto-de-alexitico-y-remece-la-web/",
    "category": "cultura",
    "published": "2026-10-23T15:50:13Z",
    "sources": [
@@ -2841,6 +3023,15 @@
    ]
   },
   {
+   "title": "Padre de Mayerson Zapata dice no estar conforme con acuerdo alcanzado con Fran Maira: este es el monto que recibirán",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/padre-de-mayerson-zapata-dice-no-estar-conforme-con-acuerdo-alcanzado-con-fran-maira-este-es-el-monto-que-recibiran/",
+   "category": "cultura",
+   "published": "2026-10-23T15:20:37Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Confirman 16 muertos tras terremoto en China: Xi Jinping ordena \"esfuerzo máximo\" de rescate",
    "link": "https://www.biobiochile.cl/noticias/internacional/asia/2026/10/23/confirman-16-muertos-tras-terremoto-en-china-xi-jinping-ordena-esfuerzo-maximo-de-rescate.shtml",
    "category": "internacional",
@@ -2879,6 +3070,15 @@
   {
    "title": "Colo Colo y Puerto Montt tienen nuevo horario para disputar minutos pendientes de Copa Chile",
    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOOS04S1p4NzgtR0M2V3RpNUlIOVczcmxUdnlHU0FTZGZUZzFUN0l4MlFCOEI3LUViZ3hOOGpiMVBIUlhLbzVZV3ZXVVoxZmdYMEZyNkFtZ2h0aXpoQlo0TW1XUmxTdzBJVW5TUEhrN2UwZ0NJYjFleC05OGpVZTd5REpOX0hDVjA2dDV6UHRldGNaTm8xQmZGbzJjM05yajh2VWRkUlBIbU5LQkRYa0FYaERvcVg0cjB6UXFvOGdkczQ3Vk5uSHJheXdzTFlqWjVNcmdrS0k4azJMdXpucmtvblBoaWRSSkIySmhPd0tudUdsbl9iaWQtVV93?oc=5",
+   "category": "deportes",
+   "published": "2026-10-23T15:00:30Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Colo Colo y Puerto Montt tienen nuevo horario para disputar minutos pendientes de Copa Chile",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/23/copa-chile-adelantan-nuevo-horario-para-minutos-pendientes-colo-colo-puerto-montt.shtml",
    "category": "deportes",
    "published": "2026-10-23T15:00:30Z",
    "sources": [
@@ -2928,6 +3128,15 @@
    "published": "2026-10-23T14:25:00Z",
    "sources": [
     "Diario Financiero"
+   ]
+  },
+  {
+   "title": "Kramer imita a Neme y se redime de duros chistes contra Tita Ureta: su rutina completa en ’Vértigo’",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/23/kramer-imita-a-neme-y-se-redime-de-duros-chistes-contra-tita-ureta-su-rutina-completa-en-vertigo.shtml",
+   "category": "cultura",
+   "published": "2026-10-23T14:21:14Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -3167,6 +3376,15 @@
    ]
   },
   {
+   "title": "Tita Ureta impacta con transparencia que deja poco a la imaginación y sufre impasse en Vértigo: detalle no pasó desapercibido",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/tita-ureta-impacta-con-transparencia-que-deja-poco-a-la-imaginacion-y-sufre-impasse-en-vertigo-detalle-no-paso-desapercibido/",
+   "category": "cultura",
+   "published": "2026-10-23T11:26:08Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Inauguran nuevo supermercado en la zona centro del país: ¿En dónde está ubicado?",
    "link": "https://www.meganoticias.cl/nacional/534616-lider-nuevo-supermercado-walmart-rancagua-region-ohiggins-23-10-2026.html",
    "category": "economia",
@@ -3212,6 +3430,15 @@
    ]
   },
   {
+   "title": "Meghan Markle sabía desde 2018 que su padre consumía pornografía infantil",
+   "link": "https://www.cooperativa.cl/noticias/mundo/reino-unido/familia-real-britanica/meghan-markle-sabia-desde-2018-que-su-padre-consumia-pornografia/2026-10-23/080951.html",
+   "category": "cultura",
+   "published": "2026-10-23T11:05:00Z",
+   "sources": [
+    "Cooperativa"
+   ]
+  },
+  {
    "title": "Transporte público de Valparaíso recibe sanciones por $1.749 millones tras lluvias de julio",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMWtQTDg4ZHlOLXlTeXhjNEg5WUhpUGZBRGpWb2RTRDNGMWFRcWdadkRaYkVnaHdpa2ZodzI1LVVkT1NzdlZvWTVyMUptV2FHMTBsSEJkS1BmOXRTenF2bmFzeTE4V2FyMjVlNUFxWkMxaENHUzJzYVRObzA5VUtiTF8xWm51T2E1V2x4QUo3NWFNVWVqUW50UlZlcFItSF9sdFdEaFpZSm85Z1FnbUZKMW9tVTFkZW8?oc=5",
    "category": "regiones",
@@ -3230,6 +3457,15 @@
    ]
   },
   {
+   "title": "La Firme con Magdalena Müller: “Me hice cargo, estoy súper reconciliada y asumida con que tengo que preocuparme de mi tema de cuerpo; no lo tengo tan fácil”",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/la-firme-con-magdalena-muller-me-hice-cargo-estoy-super-reconciliada-y-asumida-con-que-tengo-que-preocuparme-de-mi-tema-de-cuerpo-no-lo-tengo-tan-facil/",
+   "category": "cultura",
+   "published": "2026-10-23T11:02:46Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Revelan conversación clave entre Vozinha y Fernando Ortiz por la gala del Balón de Oro: “Si le decía…”",
    "link": "https://redgol.cl/colocolo/revelan-conversacion-clave-entre-vozinha-y-fernando-ortiz-por-la-gala-del-balon-de-oro-si-le-decia",
    "category": "deportes",
@@ -3241,6 +3477,15 @@
   {
    "title": "El brutal desahogo de Cony Capelli sobre quiebre amoroso en medio de su embarazo: hizo público revelador antecedente",
    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQd3JNeGNkcGpQQTVNcDY3OXl1eGV0cFBId1h3b3J6R1h2b2F5RUI0MURiMi1lYmtjX3RNcGdLa1VKYzdnX1pTNk51cXlMVngtcklUWldvaUF2QjFvRHVJc05TVG1ZS3BZV0lrWEx2ak1tNXBENUNrYWlzZVRBX2o4ek1VS3RULS1xT1czSXhHcEJNT1VoLUJLTHk4UC1jekJaVUV0b29nSkcxdEEyYllLZjFCdkM2S3NGOTNCelZ1MVpkQ0ZVQXNXdld3bkt0bjJCeklNNE5EelVrM0ZxRzYwOEcwUEMyUUtXR1JfZWpVdVJsMTRV0gGWAkFVX3lxTE9KT181bUx4NnVlOWJoWWhabE8tQVVfajd6dHpmNENnZXZtQXE2U3JTV0VYT1NLdS1sRG12UzF3b2YxY2ZyWXdGRG1Qa0RqUXNreEFwdXJ6UTQtOXhYYnllbFdjQXdmRGphaDF0cTZVMk9LakJYRGVTNlRtbU81eXFFemVSUHpGUWZWZ1dYN1ZZRUJCZUFtQTd1SzVteDFVeVNEQTR0QThjczE1VDZKQU8xX0tFRkQyZkNndHZ2QzlMWDVleU9ET1MxNUlWQTV5TkJISTB0NXZ4aUhPRVBGNnNfeGl0MW9wa1V3SmJVcmxXUGUwOThTN2RtYmFjeTNBdEJ1ME9aRjR0LTVSalBYbzBYWkZPbUhB?oc=5",
+   "category": "cultura",
+   "published": "2026-10-23T10:47:14Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
+   "title": "El brutal desahogo de Cony Capelli sobre quiebre amoroso en medio de su embarazo: hizo público revelador antecedente",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/el-brutal-desahogo-de-cony-capelli-sobre-quiebre-amoroso-en-medio-de-su-embarazo-hizo-publico-revelador-antecedente/",
    "category": "cultura",
    "published": "2026-10-23T10:47:14Z",
    "sources": [
@@ -3288,6 +3533,15 @@
    "link": "https://www.latercera.com/el-deportivo/noticia/vinculos-por-crimen-organizado-fichaje-de-lucas-assadi-por-el-aik-desata-un-escandalo-en-suecia/",
    "category": "deportes",
    "published": "2026-10-23T10:16:21Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "¿Ir o no al Balón de Oro? El dilema de Vozinha en una semana clave para su renovación y para Colo Colo",
+   "link": "https://www.latercera.com/el-deportivo/noticia/ir-o-no-al-balon-de-oro-el-dilema-de-vozinha-en-una-semana-clave-para-su-renovacion-y-para-colo-colo/",
+   "category": "deportes",
+   "published": "2026-10-23T10:16:18Z",
    "sources": [
     "La Tercera"
    ]
@@ -3392,6 +3646,15 @@
    ]
   },
   {
+   "title": "Cony Capelli es la gran ganadora del segundo capítulo de Vértigo",
+   "link": "https://www.13.cl/programas/vertigo/momentos/cony-capelli-es-la-gran-ganadora-del-segundo-capitulo-de-vertigo",
+   "category": "cultura",
+   "published": "2026-10-23T04:54:24Z",
+   "sources": [
+    "Canal 13"
+   ]
+  },
+  {
    "title": "Cae banda que maniató a familia durante robo en Lo Barnechea y presumió lo sustraído en redes",
    "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/23/cae-banda-que-maniato-a-familia-durante-robo-en-lo-barnechea-y-presumio-lo-sustraido-en-redes.shtml",
    "category": "nacional",
@@ -3428,8 +3691,26 @@
    ]
   },
   {
+   "title": "El aplaudido gesto de Máximo Menem Bolocco en medio de declaraciones de Kenita Larraín: \"Qué caballero\"",
+   "link": "https://www.13.cl/programas/vertigo/momentos/el-aplaudido-gesto-de-maximo-menem-bolocco-en-medio-de-declaraciones-de",
+   "category": "cultura",
+   "published": "2026-10-23T03:19:12Z",
+   "sources": [
+    "Canal 13"
+   ]
+  },
+  {
    "title": "Golpazo al Flamengo de Pulgar: Estudiantes saca su mística copera y está en la final de la Libertadores gracias a Muslera",
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQeWFzRVVWXzdQVWstczJycURVSkxHLS1CeUhHOEduTU9UVjVxM2EyVE5mUWphS3ktR3pSbS04NVc0OWJoX3pMM2hNX1QxU3hxaF8zZFA1RlcxRzg5OXQzajl3eWVpX2U0aUJiajdpbS1tS3Frdm96c0xVM3g0ZEZiSm9SdmphejQ0Zk9xZ2ZRNTZIX1JHYXc4b0JXTlBEbXBnYU1kenlGaTRiR3JkZ0c5SG9iTFROS2NGb0g1aEVXWVU2MldyM3UwZXRqcHBXSlZPVEwyU0gyRV9UTU5vMWp1WjA1WE1tb1Q3MFViOWdVb1pNZU1uVnl2SXVEUGrSAZ4CQVVfeXFMTWk3Ymtjd05UT2NOZTFUVlMtZUlfbjZHYVJIUkJ0b20zRDJONkVFcjhIdlEybXNfTTVRUU9sOXozVkNTSHZ4UWJGWEdNM3Bnd0JHZ3JPbUNoaEppTHk5TENlV2RuQ29LMjY2TzVyTHkxNGExa2NNbVNZOGRyQ3lFMXRrZ2NQeFZBbjEybFVjMGNBMUtXb0ZuZmYydDBBOGJPMVNuV0x5SU92bXE0QVhVbnlWeHJOU0RjQ1VQZGQxQ090TGFVM0tBaG5jZ1ZvTFRyQkozQVBmTlI3dDdGd3lFWGlVUGNVaERIeWoxcmhGTnBTeXV2eW9fWmV5Q2I5VXFCc2E0Q3Q4QWlPem1kLVV5V1hlR0dabkRjSXNtYlAyUQ?oc=5",
+   "category": "deportes",
+   "published": "2026-10-23T02:59:34Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Golpazo al Flamengo de Pulgar: Estudiantes saca su mística copera y está en la final de la Libertadores gracias a Muslera",
+   "link": "https://www.latercera.com/el-deportivo/noticia/golpazo-al-flamengo-de-pulgar-estudiantes-saca-su-mistica-copera-y-esta-en-la-final-de-la-libertadores-gracias-a-muslera/",
    "category": "deportes",
    "published": "2026-10-23T02:59:34Z",
    "sources": [
@@ -3475,6 +3756,15 @@
   {
    "title": "Padre de Meghan Markle investigado por material de abuso sexual infantil tras denuncia de su hijo",
    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPalI2WS00Uk5PTHRQVW1XMDlRRE1ZbmZGc3IwVGp1RWcwbEdFbk5zR2FhWktFT21BYTR4OFJrWnJ0d3hGYzRrakJDM0VGYzcwOWJQWVk3Q3pNYmVZNk1xbVZuZHBQTlhyMmUxRWYxT1V2WUFKZUhxXzBjRy11RkVab3RDeUthV3hWT2trNmVWUXRlQ1V5RWhmMGpQNnpCMmJYOGpzVnk0QTd6Q1E5ODRrVlB5VjFMWmh0aVh3MjdjeFR0UXpTNlZNT2xfTXRqT3VqVUNOT0VjeXZGQ3lDUk43YlNIbVE0T0MwWENyS0ZCRzc2Qkx0SW1OaGtB?oc=5",
+   "category": "cultura",
+   "published": "2026-10-23T01:49:12Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Padre de Meghan Markle investigado por material de abuso sexual infantil tras denuncia de su hijo",
+   "link": "https://www.biobiochile.cl/noticias/sociedad/debate/2026/10/22/padre-de-meghan-markle-investigado-por-material-de-abuso-sexual-infantil-tras-denuncia-de-su-hijo.shtml",
    "category": "cultura",
    "published": "2026-10-23T01:49:12Z",
    "sources": [
@@ -3752,6 +4042,15 @@
    ]
   },
   {
+   "title": "Revelan el millonario monto que pagará Fran Maira a joven atropellado",
+   "link": "https://www.cooperativa.cl/noticias/magazine/personajes/revelan-el-millonario-monto-que-pagara-fran-maira-a-joven-atropellado/2026-10-22/190956.html",
+   "category": "cultura",
+   "published": "2026-10-22T23:02:00Z",
+   "sources": [
+    "Cooperativa"
+   ]
+  },
+  {
    "title": "EY refuerza su negocio de consultoría en Chile con la incorporación de Aurys y más de 30 profesionales",
    "link": "https://www.df.cl/empresas/entre-codigos/ey-refuerza-su-negocio-de-consultoria-en-chile-con-la-incorporacion-de",
    "category": "economia",
@@ -3794,6 +4093,15 @@
    "published": "2026-10-22T22:00:00Z",
    "sources": [
     "Meganoticias"
+   ]
+  },
+  {
+   "title": "Tras Universidad de Chile vs Deportivo Cali: así queda la tabla del grupo D en la Copa Libertadores Femenina",
+   "link": "https://bolavip.com/cl/copa-libertadores/tras-universidad-de-chile-vs-deportivo-cali-asi-queda-la-tabla-del-grupo-d-en-la-copa-libertadores-femenina",
+   "category": "deportes",
+   "published": "2026-10-22T21:59:28Z",
+   "sources": [
+    "Bolavip Chile"
    ]
   },
   {
@@ -3907,6 +4215,15 @@
   {
    "title": "\"Si yo fuera hincha de la UC, no le tendría fe al proyecto de Fran Pérez\"",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdmdFNXhxSjBhWHlaWWFBZWRMUGp1ZXdnMks5NkRyUHozbHBtUFE3Yk5xcXZGWDRWLVF4aVZzaDFxVXNXbjBSSF8zZXF6VXZaU0p4WDIzbEZqcGZlcGpFN3Ayb2FIQTh1ZFl3bUhKUWJxeW9Nd3BUYjA0MUg5WllLTDBXUm5KOW5La25QZmRsdl81QW84SXJEMk9yd2xrRnhrZkJ6RXZmaFpwcmhJbWlHTlVqUlppV3BGSDhXd3FaQkZQNjBYa29VdWJ2MWxtTHhlck9NRlJIWXVILU0?oc=5",
+   "category": "deportes",
+   "published": "2026-10-22T20:52:19Z",
+   "sources": [
+    "En Cancha"
+   ]
+  },
+  {
+   "title": "\"Si yo fuera hincha de la UC, no le tendría fe al proyecto de Fran Pérez\"",
+   "link": "https://www.encancha.cl/futbol-chileno/u-catolica/2026/10/22/si-yo-fuera-hincha-de-la-uc-no-le-tendria-fe-al-proyecto-de-fran-perez-322666.html",
    "category": "deportes",
    "published": "2026-10-22T20:52:19Z",
    "sources": [
