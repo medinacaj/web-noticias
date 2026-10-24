@@ -12,6 +12,7 @@ on:
       - "static/**"
       - ".github/workflows/update-news.yml"
       - "scripts/**"
+      - "eventos/agenda_manual.json"
 
 permissions:
   contents: write
@@ -45,6 +46,17 @@ jobs:
           sparse-checkout: data/historial.json
           sparse-checkout-cone-mode: false
           persist-credentials: true
+
+      - name: Clonar sólo snapshots de eventos (events-data)
+        uses: actions/checkout@v4
+        with:
+          ref: events-data
+          path: .events-data
+          sparse-checkout: |
+            eventos/crawled_events.json
+            eventos/national_events.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
 
       - name: Instalar Python
         uses: actions/setup-python@v5

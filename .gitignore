@@ -1,3 +1,6 @@
 public/
 __pycache__/
 *.pyc
+.events-data/
+.events-work/
+eventos/data/eventos.db
