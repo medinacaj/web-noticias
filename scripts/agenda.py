@@ -24,7 +24,9 @@ SNAPSHOTS = (
 )
 PROJECT_URL = "https://github.com/medinacaj/eventos-biobio"
 MAX_BYTES = 5_000_000
-MAX_EVENTS = 18
+MAX_EVENTS = 36
+# Tope por región: Santiago no desplaza al Biobío ni a otras regiones con menos eventos.
+MAX_PER_REGION = 12
 TIMEOUT = 10
 TZ_CHILE = ZoneInfo("America/Santiago")
 MONTHS = ("ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic")
@@ -107,6 +109,18 @@ def _ordered(events, today):
     return sorted(events, key=lambda e: (max(e["date"], today), e["time"] or "99:99", e["title"]))
 
 
+def _balanced(events, limit=MAX_EVENTS, per_region=MAX_PER_REGION):
+    """Los más próximos, con un tope por región para que todas tengan presencia."""
+    chosen, per = [], {}
+    for event in events:
+        if per.get(event["region"], 0) < per_region:
+            per[event["region"]] = per.get(event["region"], 0) + 1
+            chosen.append(event)
+        if len(chosen) == limit:
+            break
+    return chosen
+
+
 def load_agenda(now, fetch=fetch_snapshot, snapshots=None):
     """Nunca interrumpe la publicación de noticias: un snapshot que falla solo se omite."""
     today = now.astimezone(TZ_CHILE).date()
@@ -124,7 +138,7 @@ def load_agenda(now, fetch=fetch_snapshot, snapshots=None):
             if event["link"] not in seen:
                 seen.add(event["link"])
                 events.append(event)
-    events = _ordered(events, today)[:MAX_EVENTS]
+    events = _balanced(_ordered(events, today))
     print(f"Agenda: {len(events)} eventos próximos validados en "
           f"{len({e['region'] for e in events})} regiones")
     return events
