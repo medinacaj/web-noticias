@@ -1,6 +1,27 @@
 {
- "actualizado": "2026-10-24T23:07:30Z",
+ "actualizado": "2026-10-24T23:21:44Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "\"Es nuestra última oportunidad de frenarlo\": Obama ataca a Trump mientras hace campaña para los demócratas",
+   "summary": "El expresidente Barack Obama se lanzó contra el gobierno de Donald Trump, a quien criticó por la guerra de Irán y la inflación de precios que viven los estadounidenses.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/490c/live/648b0ef0-cff8-11f1-b38c-e140dd8d3bd2.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "\"Es nuestra última oportunidad de frenarlo\": Obama ataca a Trump mientras hace campaña para los demócratas",
+     "link": "https://www.bbc.com/mundo/articles/cwnv0gjnp0p9o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-24T23:04:47Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cwnv0gjnp0p9o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-24T23:04:47Z",
+   "first_seen": "2026-10-24T23:21:44Z"
+  },
   {
    "category": "nacional",
    "title": "Fueron compañeros de colegio: lo que se sabe del crimen de joven desaparecido en Maipú",
@@ -347,6 +368,21 @@
   },
   {
    "category": "cultura",
+   "title": "José Antonio Neme lanzó su honesta opinión sobre la imitación de Kramer en Vértigo: “Los chistes no los entendí”",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/JDT7S55ONRFNFAXIGN7GKNDYTQ.jpg?auth=4c23ba865f6404d43611d653353b5a22bdf5cc73d5aea8cda36f7c284ae4f5da&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/jose-antonio-neme-lanzo-su-honesta-opinion-sobre-la-imitacion-de-kramer-en-vertigo-los-chistes-no-los-entendi/",
+   "published": "2026-10-24T19:26:53Z",
+   "first_seen": "2026-10-24T23:21:44Z",
+   "image_checked_at": "2026-10-24T23:21:44.800040Z"
+  },
+  {
+   "category": "cultura",
    "title": "Ignacia Michelson reveló detalles de su nueva cirugía estética: “Ahora estamos buscando la naturalidad”",
    "summary": "",
    "image": "https://www.lacuarta.com/resizer/v2/JXJWPJDK6NDR7HZQOUFGE34XEE.jpg?auth=1e862806e86aaca009acc31d422aa7b46b3f50b9890963f827d76825a223324e&height=630&width=1200&smart=true",
@@ -447,6 +483,22 @@
   },
   {
    "category": "cultura",
+   "title": "'La colisión', 'Porque hoy es sábado' y 'El congelador', grandes reconocimientos de la 28ª edición de Octubre Corto",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.europapress.es",
+   "sources": [
+    "Europa Press"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMFo1aHRHeGNqalNLUTBYME52eXo5VU1hRTR3RlFKeTlIQWxTUlpjTTlNUl9YNy1YX0JfMng1elAwUjdDQ2dtQ1hxWjJyWFRDejlON0lqUWZ3bFp6cWZIV0tla1ZiMVphMDB6OEF4TWhrQldMSm5HamNrVU5kR2ZWX0sxZm1RRzhweDI4TFlvay1JWnUwSzR2VU16dm1qTEVSTlpBSDZ5MUFWQU9BeVl2QXhQbE5yYWxSTUxBejRjbHpuVW5jMmpUYTlEQndtd0VqbXVPUDRLTjV2cGlrU3BXMjVKZmE?oc=5",
+   "published": "2026-10-24T18:44:52Z",
+   "first_seen": "2026-10-24T23:21:44Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
+  },
+  {
+   "category": "cultura",
    "title": "Luto en “Las Perdidas\"; muere la mamá de la influencer conocida como Kimberly “La más Preciosa”, esto se sabe:",
    "summary": "",
    "image": "",
@@ -460,6 +512,22 @@
    "first_seen": "2026-10-24T22:33:27Z",
    "metadata_only": true,
    "discovery_edition": "MX"
+  },
+  {
+   "category": "cultura",
+   "title": "Leonor recibe en solitario a los premiados de los Premios Princesa de Asturias 2026 y consolida su papel institucional",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.moncloa.com",
+   "sources": [
+    "MONCLOA.COM"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcFhxejdYemdHUnhMN2dWZ3RrZzVDeWlIMmkxX3VkWGdIZk9jMHhGd0ZTWXd5VjhGTXBTSFN2TnBKN0NjTFdqajlNQlBIaU5JRGtXbWRRRDFYbldBU1JqRzV1bU0zc3pBY19CVEIxWnpJRFlfZWtuYzBBbTZlOTlPZ01uSWZpRDhjcl9r?oc=5",
+   "published": "2026-10-24T18:33:50Z",
+   "first_seen": "2026-10-24T23:21:44Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
   },
   {
    "category": "politica",
@@ -2694,59 +2762,19 @@
    "published": "2026-10-23T23:32:25Z",
    "first_seen": "2026-10-24T00:37:33Z",
    "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Bukele despliega tropas en Haití para buscar a soldados salvadoreños emboscados y desaparecidos",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOOEM2Znk1SkYta2pkSW9kQVZaNnpmcC1LWkFPdE9NWVpCRGRwUzJad3BOcXJPZG1ESllqRl9ZSmgyM3ZXdHFlU25NSXJkU0ZDUnh3Q0dhbUlmcU5nSXNWb2FoeGNRaXFLaXNmVk1qcDJyb05yLTJaSXZoR3VZRzdkemJSRUZ1SXEyTTdtcldDTXB1Nk1wb3YzcFR3YU93UXM4eG52cnVhbmR0TVo2S1dGa0F4SW9XQ3JBZmk2Q3doOEVfN2JKOWdKb3JycFZlU2ZaR18yeG5YbjRudlM0UHA4VEF5YUZaU0daS0xHb19BMzBLUWhUbHVJUWRsU3E1M2hCNENpZmVGOEo?oc=5",
-   "published": "2026-10-23T23:12:05Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "HT",
-    "SV"
-   ]
-  },
-  {
-   "category": "cultura",
-   "title": "\"Los pocos que vi, no son chistes que yo haría\": La reacción de Neme a imitación de Kramer en Vértigo",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994405-sin-nombre-1-10-1200x633.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/23/los-pocos-que-vi-no-son-chistes-que-yo-haria-la-reaccion-de-neme-a-imitacion-de-kramer-en-vertigo.shtml",
-   "published": "2026-10-23T23:09:48Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "deportes",
-   "title": "¿Se esconde McLaren? Esto dicen las tandas largas de Estados Unidos",
-   "summary": "",
-   "image": "https://soymotor.com/media/328566/edit",
-   "source_url": "https://soymotor.com",
-   "sources": [
-    "SoyMotor.com"
-   ],
-   "coverages": [],
-   "link": "https://soymotor.com/f1/noticias/se-esconde-mclaren-esto-dicen-las-tandas-largas-de-estados-unidos",
-   "published": "2026-10-23T23:08:01Z",
-   "first_seen": "2026-10-24T09:34:27Z",
-   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "\"Es nuestra última oportunidad de frenarlo\": Obama ataca a Trump mientras hace campaña para los demócratas",
+   "link": "https://www.bbc.com/mundo/articles/cwnv0gjnp0p9o?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-24T23:04:47Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
   {
    "title": "Fueron compañeros de colegio: lo que se sabe del crimen de joven desaparecido en Maipú",
    "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/24/fueron-companeros-de-colegio-lo-que-se-sabe-del-crimen-de-joven-desaparecido-en-maipu.shtml",
@@ -2937,6 +2965,15 @@
    ]
   },
   {
+   "title": "José Antonio Neme lanzó su honesta opinión sobre la imitación de Kramer en Vértigo: “Los chistes no los entendí”",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/jose-antonio-neme-lanzo-su-honesta-opinion-sobre-la-imitacion-de-kramer-en-vertigo-los-chistes-no-los-entendi/",
+   "category": "cultura",
+   "published": "2026-10-24T19:26:53Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Ignacia Michelson reveló detalles de su nueva cirugía estética: “Ahora estamos buscando la naturalidad”",
    "link": "https://www.lacuarta.com/espectaculos/noticia/ignacia-michelson-revelo-detalles-de-su-nueva-cirugia-estetica-ahora-estamos-buscando-la-naturalidad/",
    "category": "cultura",
@@ -2991,12 +3028,30 @@
    ]
   },
   {
+   "title": "'La colisión', 'Porque hoy es sábado' y 'El congelador', grandes reconocimientos de la 28ª edición de Octubre Corto",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNMFo1aHRHeGNqalNLUTBYME52eXo5VU1hRTR3RlFKeTlIQWxTUlpjTTlNUl9YNy1YX0JfMng1elAwUjdDQ2dtQ1hxWjJyWFRDejlON0lqUWZ3bFp6cWZIV0tla1ZiMVphMDB6OEF4TWhrQldMSm5HamNrVU5kR2ZWX0sxZm1RRzhweDI4TFlvay1JWnUwSzR2VU16dm1qTEVSTlpBSDZ5MUFWQU9BeVl2QXhQbE5yYWxSTUxBejRjbHpuVW5jMmpUYTlEQndtd0VqbXVPUDRLTjV2cGlrU3BXMjVKZmE?oc=5",
+   "category": "cultura",
+   "published": "2026-10-24T18:44:52Z",
+   "sources": [
+    "Europa Press"
+   ]
+  },
+  {
    "title": "Luto en “Las Perdidas\"; muere la mamá de la influencer conocida como Kimberly “La más Preciosa”, esto se sabe:",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONUlRUFZwN0lSVTB2aEpFa2hWTEFIS0Z1YjhoWVBzRW9VNWpYSE1Lc0RtcVdiQWF0VjZfbTlJR3h3ZWdfaV94aFpZZTBiRm9yZHluWE1wMUFDZUFnOWxZNXRZdl9fUXNraTFYZmhtb3dvcWxxb0lYLWY0MFRYUm40b2pmQW1Sa1gxcHAtdnNRaW9HZGVMM2pMeVpxSnREZUpaeE83WG9kVnB3bjlmemhuNzh3M1l5VUxHM2tna1RqbmNCY1FZQWlzZWt3bkLSAdoBQVVfeXFMTTFkTlNQd2liZi01TzU5MEkxbG9ra191OFk0MWcySGhUMk9KNTI0dWlNQjFMbm9JcmVoSzNic2lNX2JVT2p0cXpveVZFdnR5VXBnMjB2TWN3dXk2bWNyVmxXa2pHT1c0RnNZWVBtRVczcFc2LWtlcGppUHF6eUFrdTB3dmlHeU5seUwwcDg5Um9hQVFIU3JWN0ZMcm5qT29PZTNrWTRQbkxaVkNFM1dWM2NDUmN1eDVaSEsxNENCbEsxZC01OF9HMnVySzY4XzhObWw2VElrckxzSHc?oc=5",
    "category": "cultura",
    "published": "2026-10-24T18:44:45Z",
    "sources": [
     "TV Azteca"
+   ]
+  },
+  {
+   "title": "Leonor recibe en solitario a los premiados de los Premios Princesa de Asturias 2026 y consolida su papel institucional",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcFhxejdYemdHUnhMN2dWZ3RrZzVDeWlIMmkxX3VkWGdIZk9jMHhGd0ZTWXd5VjhGTXBTSFN2TnBKN0NjTFdqajlNQlBIaU5JRGtXbWRRRDFYbldBU1JqRzV1bU0zc3pBY19CVEIxWnpJRFlfZWtuYzBBbTZlOTlPZ01uSWZpRDhjcl9r?oc=5",
+   "category": "cultura",
+   "published": "2026-10-24T18:33:50Z",
+   "sources": [
+    "MONCLOA.COM"
    ]
   },
   {
