@@ -70,6 +70,7 @@ GOOGLE_RSS = "https://news.google.com/rss/headlines/section/topic/{topic}?hl=es-
 
 CATEGORIES = [
     {"key": "nacional",      "label": "Nacional",                  "google_topic": "NATION",        "gnews": "nation"},
+    {"key": "latinoamerica", "label": "Latinoamérica"},
     {"key": "internacional", "label": "Internacional",             "google_topic": "WORLD",         "gnews": "world"},
     {"key": "economia",      "label": "Economía y negocios",       "google_topic": "BUSINESS",      "gnews": "business",      "short": "Economía"},
     {"key": "tecnologia",    "label": "Tecnología",                "google_topic": "TECHNOLOGY",    "gnews": "technology"},
@@ -241,7 +242,12 @@ def fetch_rss(url, category, default_source=None):
                 source = default_source
             elif " - " in title:
                 title, source = [part.strip() for part in title.rsplit(" - ", 1)]
-        published = parse_date(node.findtext("pubDate"))
+        from scripts.latam import country_codes, explicit_date
+        if (category == "latinoamerica" or (category == "internacional"
+                and any(code != "CL" for code in country_codes(title)))):
+            published = explicit_date(node.findtext("pubDate"))
+        else:
+            published = parse_date(node.findtext("pubDate"))
         items.append({
             "category": category,
             "title": title,
@@ -249,8 +255,8 @@ def fetch_rss(url, category, default_source=None):
             "source_url": (source_node.get("url") or "").strip() if source_node is not None else (url if default_source else ""),
             "link": (node.findtext("link") or "").strip(),
             "published": to_iso(published) if published else None,
-            "summary": clean_summary(title, node.findtext("description")),
-            "image": rss_image(node),
+            "summary": "" if category == "latinoamerica" else clean_summary(title, node.findtext("description")),
+            "image": "" if category == "latinoamerica" else rss_image(node),
         })
     return items
 
@@ -261,7 +267,9 @@ def fetch_gnews(cat):
     items = []
     for article in data.get("articles", []):
         title = (article.get("title") or "").strip()
-        published = parse_date(article.get("publishedAt"))
+        from scripts.latam import country_codes, explicit_date
+        regional = cat["key"] == "internacional" and any(code != "CL" for code in country_codes(title))
+        published = (explicit_date if regional else parse_date)(article.get("publishedAt"))
         items.append({
             "category": cat["key"],
             "title": title,
@@ -277,6 +285,9 @@ def fetch_gnews(cat):
 
 def category_google_url(cat):
     """Feeds de búsqueda para nuevas secciones; sin presuponer topic IDs."""
+    if cat["key"] == "latinoamerica":
+        from scripts.latam import search_urls
+        return search_urls()[0]
     if cat.get("google_query"):
         params = urllib.parse.urlencode({
             "q": cat["google_query"], "hl": "es-419", "gl": "CL", "ceid": "CL:es-419"
@@ -289,15 +300,22 @@ def collect(now):
     use_gnews = bool(GNEWS_API_KEY) and now.hour % GNEWS_EVERY_HOURS == 0
     if GNEWS_API_KEY and not use_gnews:
         print(f"GNews: se omite en esta corrida (se consulta cada {GNEWS_EVERY_HOURS} horas por la cuota gratuita).")
+    from scripts.latam import search_urls, prepare_item, country_codes
+    from scripts.regional_sources import load_catalog
+    catalog = load_catalog()
     items = []
     for cat in CATEGORIES:
         key, count = cat["key"], 0
-        try:
-            got = fetch_rss(category_google_url(cat), key)
-            items += got
-            count += len(got)
-        except Exception as error:  # una fuente caída no debe detener las demás
-            print(f"[aviso] Google Noticias falló en {key}: {error}")
+        urls = search_urls() if key == "latinoamerica" else [category_google_url(cat)]
+        for url in urls:
+            try:
+                got = fetch_rss(url, key)
+                if key == "latinoamerica":
+                    got = [record for entry in got if (record := prepare_item(entry, now, catalog))]
+                items += got
+                count += len(got)
+            except Exception as error:  # una fuente caída no debe detener las demás
+                print(f"[aviso] Google Noticias falló en {key}: {error}")
         for url, name in DIRECT_FEEDS.get(key, []):
             try:
                 got = fetch_rss(url, key, default_source=name)
@@ -318,7 +336,16 @@ def collect(now):
     items += regional
     if regional:
         print(f"RSS regionales revisados: {len(regional)} titulares recolectados")
-    return items
+    # WORLD/GNews ya consultados pueden aportar cobertura regional; misma puerta
+    # de permisos y minimización que las búsquedas nuevas, sin llamadas extra.
+    result = []
+    for item in items:
+        if (item.get("category") == "internacional"
+                and any(code != "CL" for code in country_codes(item.get("title")))):
+            item = prepare_item(item, now, catalog)
+        if item:
+            result.append(item)
+    return result
 
 
 # ---------- HISTORIAL (24 h, sin duplicados) ----------
@@ -333,7 +360,11 @@ def load_history(path):
         print(f"[aviso] No se pudo leer el historial ({error}); se parte desde cero.")
         return []
     stories = data.get("noticias", []) if isinstance(data, dict) else []
+    from scripts.latam import classify
+    from scripts.regional_sources import load_catalog
+    catalog = load_catalog()
     for story in stories:
+        classify(story, catalog)
         story["_norm"] = normalize_title(story.get("title", ""))
     return stories
 
@@ -421,7 +452,9 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
     added = 0
     limit = now - timedelta(hours=window_hours)
     future_limit = now + FUTURE_TOLERANCE
-    for item in items:
+    from scripts.latam import classify, merge_countries
+    for original in items:
+        item = classify(dict(original))
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
         if not title or not link or item.get("category") not in CATEGORY_LABELS:
@@ -452,6 +485,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
                           and not s.get("metadata_only") and not item.get("metadata_only")
                           and is_similar(norm, s["_norm"])), None)
         if match:
+            merge_countries(match, item)
             coverages = coverage_items(match)
             entry = coverage_entry(item)
             if entry and all(x["link"] != entry["link"] for x in coverages):
@@ -460,8 +494,9 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
             for source in incoming_sources:
                 if source and source not in match["sources"]:
                     match["sources"].append(source)
-            if is_google_link(match["link"]) and not is_google_link(link):
-                match["link"] = link  # preferir el enlace directo al medio
+            if ((is_google_link(match["link"]) and not is_google_link(link))
+                    or (match["link"].startswith("http://") and link.startswith("https://"))):
+                match["link"] = link  # preferir el enlace directo y HTTPS al mismo artículo
             if not match.get("summary") and item.get("summary"):
                 match["summary"] = item["summary"]
             if (not source_domain(match.get("source_url"), match.get("link"))
@@ -485,8 +520,8 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
             stories.append({
                 "category": item["category"],
                 "title": title,
-                "summary": item.get("summary") or "",
-                "image": safe_image(item.get("image")),
+                "summary": "" if item.get("metadata_only") else item.get("summary") or "",
+                "image": "" if item.get("metadata_only") else safe_image(item.get("image")),
                 "source_url": item.get("source_url") or (link if not is_google_link(link) else ""),
                 "sources": [s for s in incoming_sources if s],
                 "coverages": [coverage_entry(item)] if coverage_entry(item) else [],
@@ -495,7 +530,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
                 "first_seen": to_iso(now),
                 "_norm": norm,
                 **{key: item[key] for key in ("publisher_id", "source_country",
-                   "source_country_label", "metadata_only") if key in item},
+                   "source_country_label", "metadata_only", "coverage_countries") if key in item},
             })
             added += 1
     return added
@@ -617,7 +652,9 @@ def category_label(story):
 
 
 def title_link(story):
-    return (f'<a href="{esc(story["link"])}" target="_blank" rel="noopener" '
+    from scripts.latam import country_labels
+    countries = ", ".join(country_labels(story))
+    return (f'<a data-countries="{esc(countries)}" href="{esc(story["link"])}" target="_blank" rel="noopener" '
             f'data-cat="{esc(category_label(story))}" data-key="{story["category"]}" '
             f'data-sources="{esc(json.dumps(story.get("sources") or [], ensure_ascii=False))}">{esc(story["title"])}</a>')
 
@@ -644,8 +681,11 @@ def meta_html(story, now, read_link=False):
     fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
     country = (f'<span class="source-country">{esc(story["source_country_label"])}</span>'
                if story.get("source_country_label") else "")
+    from scripts.latam import country_labels
+    coverage = "".join(f'<span class="coverage-country" title="País mencionado en el titular">{esc(label)}</span>'
+                       for label in country_labels(story))
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'{country}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story)}</p>')
+            f'{country}{coverage}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story)}</p>')
 
 
 def dek_html(story):
@@ -834,13 +874,10 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     with open(TEMPLATE_PATH, encoding="utf-8") as handle:
         page = handle.read()
 
-    from scripts.newsletter import render_newsletter, safe_external_url
-    newsletter_enabled = os.environ.get("NEWSLETTER_READY", "").lower() == "true"
-    newsletter_url = safe_external_url(os.environ.get("NEWSLETTER_SUBSCRIBE_URL"))
-    privacy_url = safe_external_url(os.environ.get("NEWSLETTER_PRIVACY_URL"))
-    cancel_url = safe_external_url(os.environ.get("NEWSLETTER_UNSUBSCRIBE_URL"))
-    if not (newsletter_enabled and newsletter_url and privacy_url and cancel_url):
-        newsletter_url = ""
+    from scripts.newsletter import configured_newsletter, render_newsletter
+    from scripts.adsense import configured_adsense
+    newsletter = configured_newsletter(os.environ)
+    adsense = configured_adsense(os.environ, SITE_URL)
 
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
     nav = render_nav(sel)
@@ -851,6 +888,9 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%CANONICAL%%": esc(SITE_URL + "/"),
         "%%OG_IMAGE%%": esc(SITE_URL + "/og-image.png"),
         "%%GSC_META%%": f'<meta name="google-site-verification" content="{esc(gsc_code)}">' if gsc_code else "",
+        "%%ADSENSE_META%%": adsense["meta"],
+        "%%ADSENSE_SCRIPT%%": adsense["script"],
+        "%%ADSENSE_PRIVACY_LINK%%": adsense["footer"],
         "%%JSONLD%%": build_jsonld(sel, now),
         "%%UPDATED_ISO%%": to_iso(now),
         "%%UPDATED_HUMAN%%": human_datetime(now),
@@ -863,14 +903,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%RADAR%%": render_coverage_radar(stories),
         "%%SIGNALS%%": signals_html,
         "%%SECTIONS%%": render_sections(sel["by_category"], now),
-        "%%NEWSLETTER_SIGNUP%%": (
-            f'<a class="newsletter-link" href="{esc(newsletter_url)}" target="_blank" rel="noopener">'
-            'Suscribirme</a>'
-            f'<a class="newsletter-privacy" href="{esc(privacy_url)}" target="_blank" rel="noopener">'
-            'Privacidad y datos de suscripción</a>'
-            if newsletter_url
-            else '<span class="newsletter-pending">Suscripciones próximamente</span>'
-        ),
+        "%%NEWSLETTER_SIGNUP%%": newsletter["signup_html"],
     }
     for marker, value in replacements.items():
         page = page.replace(marker, value)
@@ -881,7 +914,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     # Páginas propias y estables: no convertir enlaces a medios en páginas de noticias ficticias.
     from scripts.seo_pages import render_about_page, render_sitemap
     newsletter_html = render_newsletter(
-        stories, now, SITE_URL, newsletter_url, cancel_url if newsletter_url else "")
+        stories, now, SITE_URL, configuration=newsletter)
     about_html = render_about_page(SITE_URL)
     os.makedirs(out_dir, exist_ok=True)
     if os.path.isdir(STATIC_DIR):
@@ -895,6 +928,14 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "robots.txt": f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
         "sitemap.xml": render_sitemap(SITE_URL, to_iso(now)),
     }
+    if adsense["ads_txt"]:
+        files["ads.txt"] = adsense["ads_txt"]
+    else:
+        # Reusing the output directory must not retain an earlier authorization,
+        # including one copied from static/ for a deployment at a different URL.
+        ads_path = os.path.join(out_dir, "ads.txt")
+        if os.path.lexists(ads_path):
+            os.remove(ads_path)
     for name, content in files.items():
         with open(os.path.join(out_dir, name), "w", encoding="utf-8") as handle:
             handle.write(content)

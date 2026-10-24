@@ -16,12 +16,14 @@ def canonical_key(link):
 
 
 def deduplicate(items):
+    from scripts.latam import merge_countries
     seen = {}
     result = []
     for news in items:
         key = canonical_key(news["link"])
         if key in seen:
             target = result[seen[key]]
+            merge_countries(target, news)
             merged = list(dict.fromkeys(
                 list(target.get("sources") or []) + list(news.get("sources") or [])
             ))

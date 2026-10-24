@@ -11,6 +11,7 @@ on:
       - "fetch_noticias.py"
       - "static/**"
       - ".github/workflows/update-news.yml"
+      - "scripts/**"
 
 permissions:
   contents: write
@@ -23,14 +24,27 @@ concurrency:
 
 jobs:
   actualizar:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Clonar repositorio
+      - name: Clonar código revisado de main
         uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Clonar sólo datos de news-data
+        uses: actions/checkout@v4
+        with:
+          ref: news-data
+          path: .news-data
+          sparse-checkout: data/historial.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: true
 
       - name: Instalar Python
         uses: actions/setup-python@v5
@@ -40,12 +54,22 @@ jobs:
       - name: Instalar decodificador de enlaces Google Noticias
         run: python3 -m pip install --disable-pip-version-check gnews-decoder==0.1.1
 
+      - name: Cargar historial sin ejecutar archivos de la rama de datos
+        run: |
+          python3 scripts/news_data.py load --data-repo .news-data --history data/historial.json --state "$RUNNER_TEMP/news-data-state.json"
+          python3 scripts/validate_history.py
+
       - name: Recolectar noticias y generar el sitio
         env:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
           SITE_URL: ${{ vars.SITE_URL }}
           GSC_VERIFICATION: ${{ vars.GSC_VERIFICATION }}
+          ADSENSE_PUBLISHER_ID: ${{ vars.ADSENSE_PUBLISHER_ID }}
+          ADSENSE_READY: ${{ vars.ADSENSE_READY }}
+          ADSENSE_PRIVACY_URL: ${{ vars.ADSENSE_PRIVACY_URL }}
+          ADSENSE_ROOT_CONTROLLED: ${{ vars.ADSENSE_ROOT_CONTROLLED }}
           NEWSLETTER_READY: ${{ vars.NEWSLETTER_READY }}
+          NEWSLETTER_PROVIDER: ${{ vars.NEWSLETTER_PROVIDER }}
           NEWSLETTER_SUBSCRIBE_URL: ${{ vars.NEWSLETTER_SUBSCRIBE_URL }}
           NEWSLETTER_PRIVACY_URL: ${{ vars.NEWSLETTER_PRIVACY_URL }}
           NEWSLETTER_UNSUBSCRIBE_URL: ${{ vars.NEWSLETTER_UNSUBSCRIBE_URL }}
@@ -59,17 +83,8 @@ jobs:
           python3 scripts/audit_seo.py --site public
           python3 scripts/audit_news_health.py
 
-      - name: Guardar historial de noticias
-        run: |
-          git config user.name "news-bot"
-          git config user.email "news-bot@users.noreply.github.com"
-          git add data/historial.json
-          if git diff --cached --quiet; then
-            echo "Historial sin cambios"
-          else
-            git commit -m "Historial de noticias actualizado"
-            git push
-          fi
+      - name: Guardar historial de noticias (sólo news-data, push normal)
+        run: python3 scripts/news_data.py persist --data-repo .news-data --history data/historial.json --state "$RUNNER_TEMP/news-data-state.json"
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5

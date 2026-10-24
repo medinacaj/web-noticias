@@ -57,7 +57,7 @@ function simple(node, s) {
   }
   return !s.includes('>');
 }
-function fixture({contextPosition, contextSources=['24horas'], contextOnly=false, recent=false} = {}) {
+function fixture({contextPosition, contextSources=['24horas'], contextOnly=false, recent=false, latam=false} = {}) {
   let d = new Element('document'); d.body = d;
   d.getElementById = id => d.querySelectorAll('[id]').find(x => x.attrs.id === id) || null;
   d.createElement = tag => new Element(tag); d.createTextNode = text => new Element('#text', {}, text);
@@ -68,7 +68,7 @@ function fixture({contextPosition, contextSources=['24horas'], contextOnly=false
   const main = add('main', {id:'contenido'});
   const addContext = () => {
     const context = add('section', {class:'context'}, '', main);
-    add('a', {'data-cat':'Chile','data-key':'chile','data-sources':JSON.stringify(contextSources),
+    add('a', {'data-cat':latam ? 'Latinoamérica' : 'Chile','data-key':latam ? 'latinoamerica' : 'chile','data-sources':JSON.stringify(contextSources),
       href:'https://example.com/25'}, 'Noticia común 25', context);
     if (contextOnly) add('a', {'data-cat':'Chile','data-key':'chile','data-sources':'["Contextual"]',
       href:'https://example.com/context-only'}, 'Sólo contexto', context);
@@ -80,7 +80,7 @@ function fixture({contextPosition, contextSources=['24horas'], contextOnly=false
   for (let i=0; i<26; i++) {
     const card = i===0 ? add('article', {class:'feature'}, '', grid) : add('li', i>5 ? {'data-extra':''} : {}, '', list);
     const h = add('h3', {}, '', card), names = i === 25 ? ['24horas','Teletrece','Oculto'] : [i>8 ? 'Teletrece' : 'Otro'];
-    add('a', {'data-cat':'Chile','data-key':'chile','data-sources':JSON.stringify(names), href:'https://example.com/'+i}, 'Noticia común '+i, h);
+    add('a', {'data-cat':latam ? 'Latinoamérica' : 'Chile','data-key':latam ? 'latinoamerica' : 'chile','data-countries':latam ? 'Brasil' : '', 'data-sources':JSON.stringify(names), href:'https://example.com/'+i}, 'Noticia común '+i, h);
     const meta = add('p', {class:'meta'}, '', card);
     add('span', {class:'source-name'}, i===25 ? '24horas, Teletrece' : names[0], meta);
     add('time', {datetime:new Date(recent ? Date.now()-3600000+i : Date.UTC(2026,9,22,0,i)).toISOString()}, '', meta);
@@ -166,4 +166,14 @@ test('recent sorting exposes new first stories and editorial sorting restores or
   f.change('source-sort','relevance');
   assert.equal(f.list.children[0].querySelector('a').textContent,'Noticia común 1');
   assert.equal(f.visible().length,6);
+});
+
+test('Latam filters and labels survive a context-first duplicate', () => {
+  const f = fixture({latam:true, contextPosition:'before', recent:true});
+  assert.ok(f.d.getElementById('category-preference').children.some(x => x.value==='latinoamerica'));
+  f.change('search-input','comun 25','input');
+  f.change('search-category','latinoamerica');
+  const results = f.d.getElementById('search-results').children;
+  assert.equal(results.length, 1);
+  assert.equal(results[0].querySelector('.search-result-meta').textContent,'24horas, Teletrece · Brasil');
 });

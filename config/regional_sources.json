@@ -10,11 +10,24 @@
       "source_page": "https://www.elnacional.com/",
       "terms_url": null,
       "permission_status": "pending",
-      "review_note": "Feed y condiciones RSS no verificados.",
+      "review_note": "Portada oficial devuelve 403; no se localizaron condiciones verificables. No inferir licencia.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.elnacional.com/feed/",
+        "result": "HTTP 403 informado por el conector; XML no leído.",
+        "publisher_http_status": 403,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.elnacional.com/",
+        "result": "Portada oficial devuelve 403; no se localizaron condiciones verificables. No inferir licencia.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "eluniversal-ve",
@@ -26,11 +39,24 @@
       "source_page": "https://www.eluniversal.com/",
       "terms_url": "https://www.eluniversal.com/st-condiciones-de-uso.html",
       "permission_status": "restricted",
-      "review_note": "Condición explícita de autorización para enlaces entrantes; revisar antes de activar.",
+      "review_note": "Condiciones oficiales §§1 y 3 requieren consentimiento para copiar/distribuir y autorización para enlaces entrantes; no consta autorización específica.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.eluniversal.com/rss.xml",
+        "result": "URL no accesible mediante el conector; sin código HTTP confirmado.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.eluniversal.com/st-condiciones-de-uso.html",
+        "result": "Condiciones oficiales §§1 y 3 requieren consentimiento para copiar/distribuir y autorización para enlaces entrantes; no consta autorización específica.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "elpitazo-ve",
@@ -42,11 +68,24 @@
       "source_page": "https://elpitazo.net/category/politica/",
       "terms_url": "https://elpitazo.net/wp-content/uploads/2019/12/Aviso-legal.pdf",
       "permission_status": "pending",
-      "review_note": "RSS observado; XML y condiciones específicas de titulares pendientes.",
+      "review_note": "Aviso legal PDF oficial no accesible mediante el conector; autorización de titulares para agregador comercial no demostrada.",
       "enabled": false,
       "technical_status": "observed_not_parsed",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://elpitazo.net/feed/",
+        "result": "Timeout del conector; sin código HTTP del editor ni XML leído.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://elpitazo.net/wp-content/uploads/2019/12/Aviso-legal.pdf",
+        "result": "Aviso legal PDF oficial no accesible mediante el conector; autorización de titulares para agregador comercial no demostrada.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "cocuyo-ve",
@@ -58,11 +97,24 @@
       "source_page": "https://efectococuyo.com/politica/",
       "terms_url": "https://efectococuyo.com/terminos-de-uso-y-politica-de-pagos/",
       "permission_status": "restricted",
-      "review_note": "Términos 17–18 incluyen agregación, bases de datos y enlaces profundos sin consentimiento.",
+      "review_note": "Se conservan restricciones previas §§17–18; reconsulta de términos devuelve 429 y no demuestra cambio oficial.",
       "enabled": false,
       "technical_status": "observed_not_parsed",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://efectococuyo.com/politica/feed/",
+        "result": "HTTP 429 informado por el conector; XML no leído.",
+        "publisher_http_status": 429,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://efectococuyo.com/terminos-de-uso-y-politica-de-pagos/",
+        "result": "Se conservan restricciones previas §§17–18; reconsulta de términos devuelve 429 y no demuestra cambio oficial.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "talcual-ve",
@@ -74,11 +126,24 @@
       "source_page": "https://talcualdigital.com/",
       "terms_url": null,
       "permission_status": "pending",
-      "review_note": "Acceso oficial limitado; no afirmar permiso ni prohibición.",
+      "review_note": "No se pudieron verificar condiciones oficiales; no inferir permiso ni prohibición nueva.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://talcualdigital.com/feed/",
+        "result": "URL no accesible mediante el conector; portada oficial devuelve 403.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://talcualdigital.com/",
+        "result": "No se pudieron verificar condiciones oficiales; no inferir permiso ni prohibición nueva.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "runrun-ve",
@@ -89,12 +154,25 @@
       "feed_url": "https://runrun.es/categoria/noticias/feed/",
       "source_page": "https://runrun.es/categoria/noticias/",
       "terms_url": "https://runrun.es/terminos-condiciones/2308/aviso-legal/",
-      "permission_status": "pending",
-      "review_note": "RSS de Noticias observado; XML y condiciones de sindicación pendientes.",
+      "permission_status": "restricted",
+      "review_note": "Aviso legal oficial limita explotación comercial y exige autorización previa para reproducir o distribuir contenido.",
       "enabled": false,
       "technical_status": "observed_not_parsed",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://runrun.es/categoria/noticias/feed/",
+        "result": "Content-Type application/rss+xml observado; conector no admite ese formato; cuerpo/entradas no leídos.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://runrun.es/terminos-condiciones/2308/aviso-legal/",
+        "result": "Aviso legal oficial limita explotación comercial y exige autorización previa para reproducir o distribuir contenido.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "lanacion-ar",
@@ -102,15 +180,28 @@
       "country": "AR",
       "country_label": "Argentina",
       "domain": "lanacion.com.ar",
-      "feed_url": null,
+      "feed_url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/",
       "source_page": "https://www.lanacion.com.ar/mapa-del-sitio/",
       "terms_url": "https://www.contacto.lanacion.com.ar/tyc",
       "permission_status": "pending",
-      "review_note": "Revisar condiciones de uso personal y retransmisión; RSS no verificado.",
+      "review_note": "Términos generales accesibles remiten al reglamento; reglamento no se pudo releer de forma estable. No consta licencia de agregación comercial.",
       "enabled": false,
-      "technical_status": "pending",
+      "technical_status": "observed_not_parsed",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/",
+        "result": "Content-Type application/xml observado; conector no admite ese formato; cuerpo/entradas no leídos.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.contacto.lanacion.com.ar/tyc",
+        "result": "Términos generales accesibles remiten al reglamento; reglamento no se pudo releer de forma estable. No consta licencia de agregación comercial.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "infobae-ar",
@@ -118,15 +209,28 @@
       "country": "AR",
       "country_label": "Argentina",
       "domain": "infobae.com",
-      "feed_url": null,
+      "feed_url": "https://www.infobae.com/arc/outboundfeeds/rss/",
       "source_page": "https://www.infobae.com/argentina-footer/infobae/rss/",
       "terms_url": "https://www.infobae.com/terminos-y-condiciones/",
-      "permission_status": "pending",
-      "review_note": "Revisar autorización de reutilización parcial; feed vigente no verificado.",
+      "permission_status": "restricted",
+      "review_note": "Términos oficiales §3.4 requieren autorización expresa y escrita para reutilizar contenido; §7.2 condiciona enlaces. Directorio RSS no aporta licencia.",
       "enabled": false,
-      "technical_status": "pending",
+      "technical_status": "observed_not_parsed",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.infobae.com/arc/outboundfeeds/rss/",
+        "result": "Content-Type application/xml observado; conector no admite ese formato; cuerpo/entradas no leídos.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.infobae.com/terminos-y-condiciones/",
+        "result": "Términos oficiales §3.4 requieren autorización expresa y escrita para reutilizar contenido; §7.2 condiciona enlaces. Directorio RSS no aporta licencia.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "eltiempo-co",
@@ -134,15 +238,28 @@
       "country": "CO",
       "country_label": "Colombia",
       "domain": "eltiempo.com",
-      "feed_url": null,
+      "feed_url": "https://www.eltiempo.com/rss/mundo_latinoamerica.xml",
       "source_page": "https://www.eltiempo.com/rss",
       "terms_url": "https://www.eltiempo.com/rss",
       "permission_status": "restricted",
-      "review_note": "Página RSS limita uso a personal y no comercial.",
+      "review_note": "Directorio RSS oficial: condiciones limitadas a uso personal y no comercial; no consta autorización adicional.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.eltiempo.com/rss/mundo_latinoamerica.xml",
+        "result": "Acceso restringido por el conector; sin código HTTP confirmado ni XML leído. URL publicada por directorio oficial.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.eltiempo.com/rss",
+        "result": "Directorio RSS oficial: condiciones limitadas a uso personal y no comercial; no consta autorización adicional.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "elespectador-co",
@@ -153,12 +270,25 @@
       "feed_url": null,
       "source_page": "https://www.elespectador.com/",
       "terms_url": "https://www.elespectador.com/terminos/terminos-y-condiciones/",
-      "permission_status": "pending",
-      "review_note": "Revisar reproducción, difusión y enlaces; RSS no verificado.",
+      "permission_status": "restricted",
+      "review_note": "Términos oficiales exigen autorización previa y escrita para reproducción y difusión total o parcial; no consta excepción RSS para este portal.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.elespectador.com/arc/outboundfeeds/rss/",
+        "result": "Ruta candidata en dominio oficial no accesible por el conector; feed vigente sin confirmar.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.elespectador.com/terminos/terminos-y-condiciones/",
+        "result": "Términos oficiales exigen autorización previa y escrita para reproducción y difusión total o parcial; no consta excepción RSS para este portal.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "elcomercio-pe",
@@ -166,15 +296,28 @@
       "country": "PE",
       "country_label": "Perú",
       "domain": "elcomercio.pe",
-      "feed_url": null,
+      "feed_url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
       "source_page": "https://elcomercio.pe/rss/",
       "terms_url": "https://elcomercio.pe/terminos-y-condiciones/",
-      "permission_status": "pending",
-      "review_note": "Directorio RSS localizado; vigencia XML y uso parcial pendientes.",
+      "permission_status": "restricted",
+      "review_note": "Condiciones oficiales de propiedad intelectual requieren autorización para utilización total o parcial. Directorio RSS no demuestra permiso comercial.",
       "enabled": false,
-      "technical_status": "pending",
+      "technical_status": "observed_not_parsed",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
+        "result": "Content-Type application/xml observado; conector no admite ese formato; cuerpo/entradas no leídos.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://elcomercio.pe/terminos-y-condiciones/",
+        "result": "Condiciones oficiales de propiedad intelectual requieren autorización para utilización total o parcial. Directorio RSS no demuestra permiso comercial.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "larepublica-pe",
@@ -185,12 +328,25 @@
       "feed_url": null,
       "source_page": "https://larepublica.pe/",
       "terms_url": "https://larepublica.pe/terminos-de-uso",
-      "permission_status": "pending",
-      "review_note": "Revisar limitación personal/privada y reproducción; feed no verificado.",
+      "permission_status": "restricted",
+      "review_note": "Términos oficiales limitan copia a uso personal y privado; prohíben distribución/comercialización sin autorización previa.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://larepublica.pe/rss/",
+        "result": "Ruta candidata en dominio oficial no accesible por el conector; feed vigente sin confirmar.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://larepublica.pe/terminos-de-uso",
+        "result": "Términos oficiales limitan copia a uso personal y privado; prohíben distribución/comercialización sin autorización previa.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "eluniversal-mx",
@@ -202,11 +358,24 @@
       "source_page": "https://archivo.eluniversal.com.mx/disenio/servicios/EU_rss.htm",
       "terms_url": "https://www.eluniversal.com.mx/terminos-y-condiciones/",
       "permission_status": "pending",
-      "review_note": "Directorio archivado; términos y canal actual pendientes.",
+      "review_note": "Directorio RSS archivado accesible; condiciones actuales no accesibles por el conector. Gratuidad para lector no acredita agregación comercial.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.eluniversal.com.mx/rss/universalmxm.xml",
+        "result": "Acceso restringido por el conector; sin código HTTP confirmado ni XML leído. Directorio archivado publica variante HTTP.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.eluniversal.com.mx/terminos-y-condiciones/",
+        "result": "Directorio RSS archivado accesible; condiciones actuales no accesibles por el conector. Gratuidad para lector no acredita agregación comercial.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "milenio-mx",
@@ -217,12 +386,25 @@
       "feed_url": null,
       "source_page": "https://www.milenio.com/",
       "terms_url": "https://www.milenio.com/aviso-legal",
-      "permission_status": "pending",
-      "review_note": "Canal oficial y condiciones RSS pendientes.",
+      "permission_status": "restricted",
+      "review_note": "Aviso legal oficial exige autorización expresa y escrita para copiar/difundir contenido con o sin fines de lucro.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.milenio.com/rss.xml",
+        "result": "Ruta candidata no accesible; /rss devuelve error del conector «(400) OK», sin XML ni HTTP del editor confirmados.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www.milenio.com/aviso-legal",
+        "result": "Aviso legal oficial exige autorización expresa y escrita para copiar/difundir contenido con o sin fines de lucro.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "elpais-uy",
@@ -230,15 +412,28 @@
       "country": "UY",
       "country_label": "Uruguay",
       "domain": "elpais.com.uy",
-      "feed_url": null,
+      "feed_url": "https://www.elpais.com.uy/rss",
       "source_page": "https://www.elpais.com.uy/",
       "terms_url": "https://registro.elpais.com.uy/regcondiciones.asp",
-      "permission_status": "pending",
-      "review_note": "Revisar condiciones de retransmisión y uso; RSS no verificado.",
+      "permission_status": "restricted",
+      "review_note": "Condiciones oficiales §5 limitan retransmisión a uso estrictamente personal y prohíben uso comercial y distribución.",
       "enabled": false,
-      "technical_status": "pending",
+      "technical_status": "observed_not_parsed",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://www.elpais.com.uy/rss",
+        "result": "Content-Type text/xml observado; conector no admite ese formato; cuerpo/entradas no leídos.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://registro.elpais.com.uy/regcondiciones.asp",
+        "result": "Condiciones oficiales §5 limitan retransmisión a uso estrictamente personal y prohíben uso comercial y distribución.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     },
     {
       "id": "folha-br",
@@ -249,12 +444,25 @@
       "feed_url": null,
       "source_page": "https://www1.folha.uol.com.br/tec/2013/01/740140-confira-lista-de-feeds-do-site-da-folha.shtml",
       "terms_url": "https://www1.folha.uol.com.br/paineldoleitor/2020/04/termos-e-condicoes-de-uso-folha-de-spaulo.shtml",
-      "permission_status": "pending",
-      "review_note": "Lista oficial RSS localizada; autorización y XML pendientes. Conservar portugués.",
+      "permission_status": "restricted",
+      "review_note": "Termos oficiales exigen autorización escrita de Folhapress para reproducción y limitan uso a fines no comerciales. Mantener portugués y solo metadatos si se autoriza.",
       "enabled": false,
       "technical_status": "pending",
       "permission_evidence": null,
-      "reviewed_on": "2026-10-21"
+      "reviewed_on": "2026-10-23",
+      "technical_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "attempted_url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml",
+        "result": "URL candidata del host de feeds oficial no accesible por el conector; directorio oficial accesible; XML no leído.",
+        "publisher_http_status": null,
+        "xml_validated": false
+      },
+      "conditions_evidence": {
+        "checked_at_utc": "2026-10-23T19:43:49Z",
+        "url": "https://www1.folha.uol.com.br/paineldoleitor/2020/04/termos-e-condicoes-de-uso-folha-de-spaulo.shtml",
+        "result": "Termos oficiales exigen autorización escrita de Folhapress para reproducción y limitan uso a fines no comerciales. Mantener portugués y solo metadatos si se autoriza.",
+        "report": "docs/EVIDENCIA_FUENTES_2026-10-23.md"
+      }
     }
   ]
 }

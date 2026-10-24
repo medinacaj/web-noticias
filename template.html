@@ -10,6 +10,8 @@
 <link rel="canonical" href="%%CANONICAL%%">
 <link rel="alternate" type="application/rss+xml" title="Noticias del Momento — titulares" href="rss.xml">
 %%GSC_META%%
+%%ADSENSE_META%%
+%%ADSENSE_SCRIPT%%
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="%%SITE_NAME%%">
 <meta property="og:locale" content="es_CL">
@@ -357,7 +359,7 @@
   /* ---------- Colores por categoría ---------- */
   .context-text a[class^="cat-"]{color:var(--cat);}
   .cat-nacional{--cat:var(--c-nacional);--cat-b:var(--b-nacional);}
-  .cat-internacional{--cat:var(--c-internacional);--cat-b:var(--b-internacional);}
+  .cat-latinoamerica,.cat-internacional{--cat:var(--c-internacional);--cat-b:var(--b-internacional);}
   .cat-economia{--cat:var(--c-economia);--cat-b:var(--b-economia);}
   .cat-tecnologia{--cat:var(--c-tecnologia);--cat-b:var(--b-tecnologia);}
   .cat-deportes{--cat:var(--c-deportes);--cat-b:var(--b-deportes);}
@@ -384,6 +386,8 @@
   .footer-about .footer-label a:focus-visible{outline:2px solid var(--on-navy);outline-offset:3px;border-radius:2px;}
   .footer-bottom{margin-top:24px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);font-size:11px;display:flex;align-items:baseline;justify-content:space-between;gap:6px 20px;flex-wrap:wrap;}
   .footer-updated{color:#B1C3D4;}
+  .footer-privacy-link{color:#D7E8F8;text-underline-offset:3px;text-decoration:underline;}
+  .footer-privacy-link:hover,.footer-privacy-link:focus-visible{color:#FFFFFF;}
   .section-anchor{display:block;height:0;scroll-margin-top:76px;}
 
   /* ---------- Tablet ---------- */
@@ -604,6 +608,7 @@
   <div class="container footer-bottom">
     <p>© %%YEAR%% Noticias del Momento</p>
     <p class="footer-updated">Última actualización: %%UPDATED_HUMAN%%</p>
+    %%ADSENSE_PRIVACY_LINK%%
   </div>
 </footer>
 
@@ -1168,6 +1173,7 @@
     var name = source ? source.textContent.trim() : "";
     var sourceNames = storySources(card, a);
     var timestamp = time ? Date.parse(time.getAttribute("datetime")) : NaN;
+    var countries = a.getAttribute("data-countries") || "";
     var cat = a.getAttribute("data-cat"), catKey = a.getAttribute("data-key");
     categories[catKey] = cat;
     sourceNames.forEach(function (name) {sources[name] = true;});
@@ -1175,6 +1181,7 @@
     if (existing) {
       // El contexto puede preceder a la tarjeta que aporta medio y fecha.
       if (!existing.source) existing.source = name;
+      if (!existing.countries) existing.countries = countries;
       if (!Number.isFinite(existing.time)) existing.time = timestamp;
       sourceNames.forEach(function (name) {
         if (existing.sources.indexOf(name) === -1) existing.sources.push(name);
@@ -1182,7 +1189,7 @@
       return;
     }
     var item = {href:a.href,title:a.textContent.trim(),cat:cat,catKey:catKey,
-      source:name,sources:sourceNames,time:timestamp,key:norm(a.textContent)};
+      source:name,sources:sourceNames,countries:countries,time:timestamp,key:norm(a.textContent)};
     seen[a.href] = item;
     index.push(item);
   });
@@ -1236,7 +1243,7 @@
       li.className = "cat-" + item.catKey; k.className = "kicker"; k.textContent = item.cat;
       a.href = item.href; a.target = "_blank"; a.rel = "noopener";
       highlight(a, item.title, words);
-      extra.className = "search-result-meta"; extra.textContent = item.source;
+      extra.className = "search-result-meta"; extra.textContent = [item.source, item.countries].filter(Boolean).join(" · ");
       li.appendChild(k); li.appendChild(a); li.appendChild(extra); results.appendChild(li);
     });
   }
