@@ -1,6 +1,44 @@
 {
- "actualizado": "2026-10-24T09:54:46Z",
+ "actualizado": "2026-10-24T10:26:49Z",
  "noticias": [
+  {
+   "category": "politica",
+   "title": "PwC Chile presenta: Gobierno suspende rebajas de penas y oposición presiona a Rabat / La investigación por incendio en el INBA a dos años del hecho",
+   "summary": "",
+   "image": "https://media.ellibero.cl/nuevoellibero/wp-content/uploads/2025/07/banner-PwC-el-libero-2025-600x150-1.png",
+   "source_url": "https://ellibero.cl",
+   "sources": [
+    "El Líbero"
+   ],
+   "coverages": [],
+   "link": "https://ellibero.cl/newsletter/pwc-chile-presenta-gobierno-suspende-rebajas-de-penas-y-oposicion-presiona-a-rabat-la-investigacion-por-incendio-en-el-inba-a-dos-anos-del-hecho/",
+   "published": "2026-10-24T09:58:04Z",
+   "first_seen": "2026-10-24T10:26:49Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T10:26:49.685059Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Cuando EEUU propuso entregar Tacna y Arica a Bolivia: \"Chile no dijo sí, pero Perú rechazó de plano\"",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994563-bbcl-1200-x-633-px-49.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/24/cuando-eeuu-propuso-entregar-tacna-y-arica-a-bolivia-chile-no-dijo-si-pero-peru-rechazo-de-plano.shtml",
+   "published": "2026-10-24T09:40:24Z",
+   "first_seen": "2026-10-24T10:26:49Z",
+   "coverage_countries": [
+    "BO",
+    "CL",
+    "PE"
+   ],
+   "image_checked_at": "2026-10-24T10:26:49.685059Z"
+  },
   {
    "category": "internacional",
    "title": "Mi hermano compró una brillante cápsula azul sin saber que era cesio-137 y desató el mayor accidente radiactivo de la historia de mi país",
@@ -423,6 +461,21 @@
     "MX"
    ],
    "image_checked_at": "2026-10-24T01:13:38.872905Z"
+  },
+  {
+   "category": "deportes",
+   "title": "¿Probó equipo? Revelan los detalles del reciente entrenamiento de Fernando Ortiz en Colo Colo",
+   "summary": "",
+   "image": "https://media.dalealbo.cl/wp-content/uploads/sites/14/2026/10/23210510/841140216_18636078151028547_6150745955407688776_n-e1792800371867-1200x740.webp",
+   "source_url": "https://dalealbo.cl",
+   "sources": [
+    "Dale Albo"
+   ],
+   "coverages": [],
+   "link": "https://dalealbo.cl/colocolo/probo-equipo-revelan-los-detalles-del-reciente-entrenamiento-de-fernando-ortiz-en-colo-colo",
+   "published": "2026-10-24T00:08:14Z",
+   "first_seen": "2026-10-24T10:26:49Z",
+   "image_checked_at": "2026-10-24T10:26:49.685059Z"
   },
   {
    "category": "cultura",
@@ -888,6 +941,21 @@
    "image_checked_at": "2026-10-24T00:37:33.484010Z"
   },
   {
+   "category": "cultura",
+   "title": "Dueño de Tevex refiere a supuesta salida de Mauricio Israel tras escándalo por pensión de alimentos",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994249-mauricio-israel-tevex-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/23/dueno-de-tevex-refiere-a-supuesta-salida-de-mauricio-israel-tras-escandalo-por-pension-de-alimentos.shtml",
+   "published": "2026-10-23T21:16:56Z",
+   "first_seen": "2026-10-24T10:26:49Z",
+   "image_checked_at": "2026-10-24T10:26:49.685059Z"
+  },
+  {
    "category": "deportes",
    "title": "No habrá copa en Quillota: el lío de escritorio que pone en alerta a San Luis de Chupete Suazo en la lucha por el ascenso",
    "summary": "",
@@ -1156,6 +1224,21 @@
    "coverage_countries": [
     "AR"
    ]
+  },
+  {
+   "category": "internacional",
+   "title": "Primer petrolero con diésel ruso zarpa hacia EE. UU. tras el acuerdo entre Trump y Putin",
+   "summary": "",
+   "image": "https://static.dw.com/image/79741269_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/primer-petrolero-con-di%C3%A9sel-ruso-zarpa-hacia-ee-uu-tras-el-acuerdo-entre-trump-y-putin/a-79740708",
+   "published": "2026-10-23T19:35:48Z",
+   "first_seen": "2026-10-24T10:26:49Z",
+   "image_checked_at": "2026-10-24T10:26:49.685059Z"
   },
   {
    "category": "politica",
@@ -2247,6 +2330,27 @@
    "coverage_countries": [
     "CL"
    ]
+  },
+  {
+   "category": "internacional",
+   "title": "\"Me avergüenza trabajar en Google\": los empleados que renuncian por el desarrollo de la IA con fines militares",
+   "summary": "La BBC entrevistó a varios empleados actuales y antiguos de Google DeepMind que han dejado sus puestos por su rechazo a cómo la compañía impulsa el uso de sus productos de IA en contextos bélicos.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/68b4/live/5cfc7540-cd76-11f1-bbdb-c39c91930f26.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "\"Me avergüenza trabajar en Google\": los empleados que renuncian por el desarrollo de la IA con fines militares",
+     "link": "https://www.bbc.com/mundo/articles/cxg5j1d93993o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-23T16:03:16Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cxg5j1d93993o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-23T16:03:16Z",
+   "first_seen": "2026-10-24T10:26:49Z"
   },
   {
    "category": "cultura",
@@ -3464,109 +3568,28 @@
    "published": "2026-10-23T10:30:00Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "image_checked_at": "2026-10-23T18:57:20.007908Z"
-  },
-  {
-   "category": "deportes",
-   "title": "“Vínculos por crimen organizado”: fichaje de Lucas Assadi por el AIK desata un escándalo en Suecia",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/E22WPMQFSZE6PBX4KIUXJGK5QI.jpg?auth=f5df436e357fe12784298ccf39994037935ac7ff0126a1030480eb9391e147ef&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/el-deportivo/noticia/vinculos-por-crimen-organizado-fichaje-de-lucas-assadi-por-el-aik-desata-un-escandalo-en-suecia/",
-   "published": "2026-10-23T10:16:21Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
-  },
-  {
-   "category": "deportes",
-   "title": "¿Ir o no al Balón de Oro? El dilema de Vozinha en una semana clave para su renovación y para Colo Colo",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/KCSVCXRDUNG7DJ44HB5HT4VIGE.jpg?auth=9ba444b78fa8c439eee2cd64cf9905f566b3ed58c651b51a7224bdac9de44fe8&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/el-deportivo/noticia/ir-o-no-al-balon-de-oro-el-dilema-de-vozinha-en-una-semana-clave-para-su-renovacion-y-para-colo-colo/",
-   "published": "2026-10-23T10:16:18Z",
-   "first_seen": "2026-10-23T19:06:50Z",
-   "image_checked_at": "2026-10-23T19:06:50.124924Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Amina Helmi, la científica argentina que recibió el \"Nobel de astrofísica\" por encontrar los restos de la última gran fusión de la Vía Láctea",
-   "summary": "\"Lo que es impactante del descubrimiento es que uno haya podido ir hasta hace 10 mil millones de años y poder caracterizar lo que pasó\", dijo la científica a BBC Mundo.",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4c22/live/5cc2ba90-cec9-11f1-bed9-e3a2c35dfdd6.jpg",
-   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "coverages": [
-    {
-     "source": "BBC News Mundo",
-     "title": "Amina Helmi, la científica argentina que recibió el \"Nobel de astrofísica\" por encontrar los restos de la última gran fusión de la Vía Láctea",
-     "link": "https://www.bbc.com/mundo/articles/cmqxn83eer03o?at_medium=RSS&at_campaign=rss",
-     "published": "2026-10-23T10:07:27Z"
-    }
-   ],
-   "link": "https://www.bbc.com/mundo/articles/cmqxn83eer03o?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-23T10:07:27Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "coverage_countries": [
-    "AR"
-   ]
-  },
-  {
-   "category": "nacional",
-   "title": "Detienen a escolar de 16 años por llevar arma modificada a liceo de San Miguel",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993243-arma-liceo-escolar.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/23/detienen-a-escolar-de-16-anos-por-llevar-arma-modificada-a-liceo-de-san-miguel.shtml",
-   "published": "2026-10-23T10:05:21Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Primer petrolero con diésel ruso zarpa hacia EE. UU. tras el acuerdo entre Trump y Putin",
-   "summary": "",
-   "image": "https://static.dw.com/image/79741269_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/primer-petrolero-con-di%C3%A9sel-ruso-zarpa-hacia-ee-uu-tras-el-acuerdo-entre-trump-y-putin/a-79740708",
-   "published": "2026-10-23T09:57:12Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "\"Me avergüenza trabajar en Google\": los empleados que renuncian por el desarrollo de la IA con fines militares",
-   "summary": "",
-   "image": "https://ichef.bbci.co.uk/news/1200/branded_mundo/68b4/live/5cfc7540-cd76-11f1-bbdb-c39c91930f26.jpg",
-   "source_url": "https://www.bbc.com",
-   "sources": [
-    "BBC"
-   ],
-   "coverages": [],
-   "link": "https://www.bbc.com/mundo/articles/cxg5j1d93993o",
-   "published": "2026-10-23T09:55:07Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "PwC Chile presenta: Gobierno suspende rebajas de penas y oposición presiona a Rabat / La investigación por incendio en el INBA a dos años del hecho",
+   "link": "https://ellibero.cl/newsletter/pwc-chile-presenta-gobierno-suspende-rebajas-de-penas-y-oposicion-presiona-a-rabat-la-investigacion-por-incendio-en-el-inba-a-dos-anos-del-hecho/",
+   "category": "politica",
+   "published": "2026-10-24T09:58:04Z",
+   "sources": [
+    "El Líbero"
+   ]
+  },
+  {
+   "title": "Cuando EEUU propuso entregar Tacna y Arica a Bolivia: \"Chile no dijo sí, pero Perú rechazó de plano\"",
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/10/24/cuando-eeuu-propuso-entregar-tacna-y-arica-a-bolivia-chile-no-dijo-si-pero-peru-rechazo-de-plano.shtml",
+   "category": "nacional",
+   "published": "2026-10-24T09:40:24Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
   {
    "title": "Mi hermano compró una brillante cápsula azul sin saber que era cesio-137 y desató el mayor accidente radiactivo de la historia de mi país",
    "link": "https://www.bbc.com/mundo/articles/cm5ynlx21z64o?at_medium=RSS&at_campaign=rss",
@@ -3790,6 +3813,15 @@
    "published": "2026-10-24T00:34:35Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "¿Probó equipo? Revelan los detalles del reciente entrenamiento de Fernando Ortiz en Colo Colo",
+   "link": "https://dalealbo.cl/colocolo/probo-equipo-revelan-los-detalles-del-reciente-entrenamiento-de-fernando-ortiz-en-colo-colo",
+   "category": "deportes",
+   "published": "2026-10-24T00:08:14Z",
+   "sources": [
+    "Dale Albo"
    ]
   },
   {
@@ -4058,6 +4090,15 @@
    "link": "https://www.biobiochile.cl/noticias/nacional/region-de-ohiggins/2026/10/23/sismo-sacude-a-la-registra-en-la-region-de-0higgins.shtml",
    "category": "nacional",
    "published": "2026-10-23T21:18:12Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Dueño de Tevex refiere a supuesta salida de Mauricio Israel tras escándalo por pensión de alimentos",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/23/dueno-de-tevex-refiere-a-supuesta-salida-de-mauricio-israel-tras-escandalo-por-pension-de-alimentos.shtml",
+   "category": "cultura",
+   "published": "2026-10-23T21:16:56Z",
    "sources": [
     "BioBioChile"
    ]
