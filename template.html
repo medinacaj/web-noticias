@@ -395,9 +395,21 @@
   .agenda-status{display:inline-block;margin-left:6px;padding:1px 6px;border:1px solid var(--cat-b);border-radius:3px;font-size:11px;font-weight:600;color:var(--card-ink);}
   .agenda-source{margin:6px 0 0;font-size:12px;color:var(--card-muted);}
   .agenda-note{margin:14px 0 0;font-size:13px;color:var(--muted);}
+  .agenda-list > li[hidden]{display:none;}
+  .agenda-tags{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px;}
+  .agenda-tag{font:600 11px/1 var(--sans);letter-spacing:.02em;padding:4px 7px;border:1px solid var(--card-rule);border-radius:3px;color:var(--card-ink);}
+  .agenda-tag--region{border-color:var(--cat-b);color:var(--cat-b);}
+  .agenda-tag--free{border-color:var(--b-economia);color:var(--b-economia);}
+  .agenda-filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 16px;margin:0 0 16px;}
+  .agenda-filters[hidden]{display:none;}
+  .agenda-filters label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:600;color:var(--muted);}
+  .agenda-filters select{font:500 14px var(--sans);min-height:40px;min-width:160px;max-width:100%;padding:6px 10px;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;}
+  .agenda-filters .agenda-check{flex-direction:row;align-items:center;gap:8px;min-height:40px;font-size:14px;color:var(--ink);}
+  .agenda-filters input[type=checkbox]{width:18px;height:18px;accent-color:var(--cat);}
+  .agenda-empty{flex-basis:100%;margin:0;font-size:14px;color:var(--muted);}
   .agenda-note a{color:inherit;text-decoration:underline;}
   @media (max-width:1179px){.agenda-list{grid-template-columns:repeat(2,minmax(0,1fr));}}
-  @media (max-width:767px){.agenda-list{grid-template-columns:minmax(0,1fr);gap:10px;}.agenda-item{padding:14px;}}
+  @media (max-width:767px){.agenda-list{grid-template-columns:minmax(0,1fr);gap:10px;}.agenda-item{padding:14px;}.agenda-filters label{flex:1 1 140px;}.agenda-filters select{min-width:0;width:100%;min-height:44px;}}
 
   /* ---------- Pie ---------- */
   /* Pie editorial sin segundo panel ni navegación repetida por categoría. */
@@ -1135,6 +1147,32 @@
       });
     }, {rootMargin:"-100px 0px -70% 0px", threshold:0});
     sections.forEach(function (section) { observer.observe(section); });
+  })();
+
+  // Agenda: filtros por región, categoría y gratuidad. Sin JavaScript se ve la lista completa.
+  (function () {
+    var box = d.querySelector("[data-agenda-filters]");
+    if (!box) return;
+    var section = box.closest("section"), items = section.querySelectorAll(".agenda-list > li");
+    var region = box.querySelector('[data-agenda-filter="region"]');
+    var category = box.querySelector('[data-agenda-filter="category"]');
+    var free = box.querySelector('[data-agenda-filter="free"]');
+    var empty = box.querySelector("[data-agenda-empty]"), count = section.querySelector("[data-agenda-count]");
+    var total = count ? count.textContent : "";
+    function apply() {
+      var shown = 0;
+      items.forEach(function (li) {
+        var ok = (!region || !region.value || li.getAttribute("data-region") === region.value) &&
+          (!category || !category.value || li.getAttribute("data-category") === category.value) &&
+          (!free || !free.checked || li.hasAttribute("data-free"));
+        li.hidden = !ok;
+        if (ok) shown++;
+      });
+      empty.hidden = shown > 0;
+      if (count) count.textContent = shown === items.length ? total : shown + " de " + items.length + " eventos";
+    }
+    [region, category, free].forEach(function (control) { if (control) control.addEventListener("change", apply); });
+    box.hidden = false;
   })();
 
   // Comparación bajo demanda: mantiene las tarjetas del mismo tamaño en ambos modos.
