@@ -408,7 +408,9 @@
     .utility-inner{justify-content:flex-start;}
     .masthead{flex-direction:column;align-items:flex-start;gap:10px;padding-top:20px;padding-bottom:16px;}
     .masthead-claim{text-align:left;font-size:15px;max-width:none;}
-    .bar-inner{gap:8px;}
+    .bar-inner{gap:8px;position:relative;}
+    .view-options-wrap{position:static;}
+    .view-options-panel{right:16px;}
     .brand-mini{margin-right:-8px;font-size:15px;}
     .sticky-bar.is-stuck .brand-mini{max-width:200px;}
     .js .menu-toggle{display:inline-flex;}
@@ -452,7 +454,7 @@
     .footer-nav,.footer-about{grid-column:1 / -1;}
     .meta a,.meta time{min-height:24px;}
   }
-  @media(max-width:360px){.container{padding:0 12px;}.view-options-panel{right:0;}.rail-list li{grid-template-columns:26px minmax(0,1fr);}.search-input{font-size:20px;}}
+  @media(max-width:360px){.container{padding:0 12px;}.view-options-panel{right:12px;}.rail-list li{grid-template-columns:26px minmax(0,1fr);}.search-input{font-size:20px;}}
   /* Newsletter: sección independiente, sin formularios que capturen correos falsamente. */
   .newsletter-invite{background:var(--navy);color:var(--on-navy);padding:30px 0;margin-top:42px;}
   .newsletter-invite-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}

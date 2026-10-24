@@ -89,12 +89,37 @@ pertinentes, y comprobar que sus nombres son únicos. Si se usa REST, obtener
 `required_status_checks.checks`; no usar `app_id: -1` ni adivinar el identificador.
 La administración debe revisar la regla resultante y sus destinatarios reales.
 
-La herramienta GitHub conectada de esta sesión no expone un mutador de branch
-protection/rulesets y no se dispone de credenciales administrativas locales.
+La herramienta GitHub conectada no expone un mutador de branch
+protection/rulesets. En la comprobación del 24-10-2026, la credencial local de
+`gh` autentica correctamente y el usuario tiene rol administrador, pero
+`GET branches/main/protection` devuelve HTTP 403 y exige `administration=read`.
+El rol del usuario no amplía los permisos concedidos a la integración.
 Preparar archivos no activa ninguna protección: aplicarla necesita un
 administrador en la interfaz de GitHub o un token autorizado con permiso de
 administración del repositorio. No se debe solicitar un PAT para este cambio si
 el responsable puede aplicarlo desde Settings.
+
+### Importar la configuración preparada
+
+Como alternativa a configurar cada casilla, el administrador puede importar
+[`config/main-protection.ruleset.json`](../config/main-protection.ruleset.json).
+El archivo aplica exclusivamente a `refs/heads/main`, sin actores con bypass;
+requiere PR, conversaciones resueltas y los dos checks de GitHub Actions
+verificados (app 15368), con la rama actualizada. Bloquea borrado y force push.
+Conserva cero aprobaciones obligatorias para permitir PR de un único responsable.
+
+1. Descargar el JSON desde la vista **Raw** del archivo del repositorio.
+2. Abrir **Settings → Rules → Rulesets → New ruleset → Import a ruleset**.
+3. Elegir el archivo y revisar objetivo `main`, checks y ausencia de bypass.
+4. Confirmar estado **Active** y pulsar **Create**. No importar otra regla si ya
+   existe una equivalente; revisar y conservar las exigencias vigentes.
+5. Ejecutar el publicador y verificar datos/Pages sin cambiar `main`; después,
+   comprobar que un PR exige ambos checks y un push directo se rechaza.
+
+Importar o versionar el JSON no prueba que la regla esté aplicada. Mantener
+abierto el issue #62 hasta observar la regla activa y su funcionamiento. El
+procedimiento oficial de importación requiere revisar antes de crear:
+[GitHub: importar un ruleset](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/managing-rulesets-for-a-repository#importing-a-ruleset).
 
 ## Recuperación
 
@@ -129,8 +154,9 @@ existentes; no se declara cumplimiento legal por proteger una rama.
 Referencias oficiales consultadas el 2026-10-23: confirman alcance por rama,
 exigencia de PR/checks, selección de app de origen, aplicación a administradores
 y permiso `Administration: write` para modificar protección mediante REST.
-El acceso HTTP directo del entorno está bloqueado; se consultaron mediante la
-herramienta web conectada. El permiso del conector y la protección aplicada deben
+El acceso HTTP directo estaba bloqueado al preparar la primera versión; las
+referencias se consultaron mediante la herramienta web conectada. El permiso
+del conector y la protección aplicada deben
 verificarse por separado; esta documentación no afirma que estén activos.
 
 Referencias:
