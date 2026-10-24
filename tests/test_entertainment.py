@@ -60,6 +60,13 @@ class EntertainmentTests(unittest.TestCase):
                    entry(source_url='https://www.theguardian.com', link='https://www.theguardian.com/culture/a')]
         self.assertEqual(collect_entertainment(NOW, fetch=lambda *a, **kw: invalid), [])
 
+    def test_regional_and_world_catalog_gates_apply_to_new_editions(self):
+        from scripts.entertainment import collect_entertainment
+        for domain in ('milenio.com', 'infobae.com', 'elnacional.com', 'reuters.com', 'theguardian.com'):
+            with self.subTest(domain=domain):
+                item = entry(link=f'https://{domain}/cultura/articulo', source_url=f'https://{domain}')
+                self.assertEqual(collect_entertainment(NOW, fetch=lambda *a, **kw: [item]), [])
+
     def test_collection_is_integrated_without_more_gnews_requests(self):
         with patch.object(news, 'GNEWS_API_KEY', ''), patch.object(news, 'fetch_rss', return_value=[]), \
              patch('scripts.entertainment.collect_entertainment', return_value=[entry()]) as extra, \

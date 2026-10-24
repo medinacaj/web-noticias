@@ -626,10 +626,12 @@ def select(stories, now):
     counts = {}
     for story in stories:
         counts[story["category"]] = counts.get(story["category"], 0) + 1
+    from scripts.dedupe_history import canonical_key
     latest, latest_urls = [], set()
-    dated = [s for s in stories if story_time(s) is not None]
-    for story in sorted(dated, key=story_time, reverse=True):
-        from scripts.dedupe_history import canonical_key
+    # first_seen indica recolección, no publicación: no convierte una nota
+    # sin fecha editorial en «Lo último».
+    dated = [s for s in stories if parse_date(s.get("published")) is not None]
+    for story in sorted(dated, key=lambda s: parse_date(s["published"]), reverse=True):
         url = canonical_key(story.get("link", ""))
         if not url or url in latest_urls:
             continue

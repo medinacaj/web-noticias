@@ -8,7 +8,7 @@ from urllib.parse import urlencode, urlsplit
 
 from scripts.article_images import permitted_url
 from scripts.dedupe_history import canonical_key
-from scripts.latam import explicit_date
+from scripts.latam import catalog_allowed, explicit_date
 from scripts.source_diversity import diverse_prefix, publisher_key
 
 EDITIONS = (("ES", "es", "ES:es"), ("MX", "es-419", "MX:es-419"))
@@ -22,10 +22,10 @@ def edition_url(country, language, edition):
 
 def collect_entertainment(now, fetch=None):
     from fetch_noticias import fetch_rss
-    from scripts.global_sources import load_catalog
+    from scripts.global_sources import load_catalog as load_world_catalog
+    from scripts.regional_sources import load_catalog as load_regional_catalog
     fetch = fetch_rss if fetch is None else fetch
-    restricted = {source["domain"] for source in load_catalog()
-                  if source.get("permission_status") == "restricted"}
+    catalog = load_world_catalog() + load_regional_catalog()
     results, seen = [], set()
     for country, language, edition in EDITIONS:
         try:
@@ -48,7 +48,7 @@ def collect_entertainment(now, fetch=None):
                     or not permitted_url(source_url, check_dns=False)):
                 continue
             editorial_host = (urlsplit(source_url).hostname or "").lower().rstrip(".")
-            if any(editorial_host == host or editorial_host.endswith("." + host) for host in restricted):
+            if not catalog_allowed(item, catalog):
                 continue
             try:
                 parsed = urlsplit(link)

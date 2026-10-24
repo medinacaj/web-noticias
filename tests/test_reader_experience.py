@@ -6,7 +6,7 @@ import tempfile
 from pathlib import Path
 from fetch_noticias import build_site
 
-from fetch_noticias import render_breaking, select
+from fetch_noticias import render_breaking, select, merge
 
 NOW = datetime(2026, 10, 24, 12, tzinfo=timezone.utc)
 
@@ -52,6 +52,15 @@ class LatestCarouselTests(unittest.TestCase):
         self.assertEqual(Links(render_breaking(select([story(0)], NOW), NOW)).links,
                          [story(0)["link"]])
         self.assertEqual(render_breaking(select([], NOW), NOW), "")
+
+    def test_merge_first_seen_does_not_make_an_undated_article_recent(self):
+        records = []
+        merge(records, [story(0, published=None, title="Cantante anuncia una gira mundial"),
+                        story(5, title="Festival de cine revela las películas seleccionadas")], NOW)
+        self.assertIsNone(records[0].get("published"))
+        self.assertIsNotNone(records[0].get('first_seen'))
+        rendered = render_breaking(select(records, NOW), NOW)
+        self.assertEqual(Links(rendered).links, [story(5)['link']])
 
     def test_missing_time_does_not_outrank_dated_news(self):
         stories = [story(0, published=None), story(1), story(2)]

@@ -41,7 +41,10 @@ Variables de entorno: `GNEWS_API_KEY` (secret), `SITE_URL` y `GSC_VERIFICATION` 
 ## Diseño (decisiones tomadas con el usuario)
 
 - Dirección editorial tipo Monocle basada en el documento de diseño de Blog Panorámico (sin migrar a Next.js): tokens `--navy #0A2540`, `--navy-dark #061424`, `--red #C8102E`, `--paper #FBFAF7`, `--ink #07192E`, `--muted #6D7480`, `--rule #B9C0C8`; Source Serif 4 + Inter; esquinas rectas, líneas de 1 px, sin sombras; grilla de 12 columnas (8 en tablet, 1 en móvil).
-- Masthead grande; barra de secciones fija arriba (el usuario la quiere siempre visible) que muestra la marca compacta al bajar.
+- Cabecera compacta con monograma N, nombre, actualización y controles. Navegación lateral visible por defecto desde 1024 px, plegable y con preferencia persistida; en móvil es un menú cerrado inicialmente. Sin carrusel automático de secciones. Tema automático del sistema con elección claro/oscuro/automático. Decisión del usuario delegada en UI/UX, 2026-10-24.
+- «Lo último» es un carrusel manual de hasta seis titulares distintos con fecha editorial explícita: tres visibles en escritorio, dos en tablet y uno en móvil. Los indicadores de cobertura quedan en detalles plegables del pie.
+- Cultura complementa las vías anteriores con ediciones Google Noticias de España y México; solo metadatos, respetando las puertas de los catálogos mundial y regional. Ver `docs/FUENTES_ENTRETENIMIENTO.md`.
+- Firma del pie: cápsula enlazada a `https://www.linkedin.com/in/medinacaj/`, oscura en tema claro y blanca en oscuro. Sin fotografía real, las tarjetas priorizan texto y atribución; no mostrar bloques grandes de ausencia de imagen.
 - Cada noticia es una tarjeta separada (el usuario rechazó bloques "pegados").
 - Color propio por categoría (pedido del usuario): nacional rojo, internacional azul, economía verde, tecnología violeta, deportes naranjo, cultura ciruela. Variables `--c-*` (texto sobre papel) y `--b-*` (sobre azul marino y modo oscuro). Se aplica en la línea superior y tinte de la tarjeta, etiqueta, encabezado de sección, menú y búsqueda.
 - Barra de progreso minimalista del ciclo de 1 hora, basada en la hora real de generación (`<time datetime>`). El usuario no quiere textos tipo "actualización en curso".
