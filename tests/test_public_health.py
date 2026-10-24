@@ -84,6 +84,13 @@ class PublicHealthTests(unittest.TestCase):
         warnings = assess(self.page(MAX_AGE_HOURS + 1), self.sitemap, self.now)
         self.assertTrue(any("desactualizada" in x for x in warnings))
 
+    def test_two_missed_hourly_updates_warn_without_waiting_eight_hours(self):
+        self.assertEqual(assess(self.page(2), self.sitemap, self.now), [])
+        warnings = assess(self.page(2.01), self.sitemap, self.now)
+        self.assertTrue(any("desactualizada" in warning for warning in warnings))
+        self.assertTrue(any("desactualizada" in warning
+                            for warning in assess(self.page(3.3), self.sitemap, self.now)))
+
     def test_missing_timestamp_and_title(self):
         warnings = assess("<html><body>Fuera de servicio</body></html>", self.sitemap, self.now)
         self.assertEqual(len(warnings), 2)

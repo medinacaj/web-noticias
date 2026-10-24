@@ -2,7 +2,7 @@
 
 No consulta artículos ni infiere ubicación por dominio, idioma o IP.
 """
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 import re
 import unicodedata
@@ -96,12 +96,19 @@ def explicit_date(value):
         return None
     try:
         date = parsedate_to_datetime(str(value))
-    except (TypeError, ValueError, IndexError):
+    except (TypeError, ValueError, IndexError, OverflowError):
         try:
             date = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
-        except ValueError:
+        except (ValueError, OverflowError):
             return None
-    return date if date.tzinfo is not None and date.utcoffset() is not None else None
+    try:
+        if date.tzinfo is None or date.utcoffset() is None:
+            return None
+        # Una fecha válida en su zona puede exceder datetime al convertirla a
+        # UTC. Se rechaza aquí para no abortar el feed ni los demás editores.
+        return date.astimezone(timezone.utc)
+    except (ValueError, OverflowError):
+        return None
 
 
 def catalog_allowed(item, catalog):

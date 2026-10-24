@@ -9,7 +9,8 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
 DEFAULT_SITE = "https://medinacaj.github.io/web-noticias/"
-MAX_AGE_HOURS = 8
+# Dos ciclos horarios perdidos ameritan alerta; no esperar una jornada parcial.
+MAX_AGE_HOURS = 2
 
 
 class EditionParser(html.parser.HTMLParser):

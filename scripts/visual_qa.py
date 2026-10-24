@@ -8,6 +8,14 @@ from playwright.async_api import async_playwright
 WIDTHS = (320, 375, 768, 1024, 1440)
 
 
+async def check_view_options_bounds(page, width):
+    """A popover can be clipped on the left without increasing scrollWidth."""
+    bounds = await page.locator("#view-options-panel").bounding_box()
+    assert bounds is not None, f"Opciones de vista ocultas a {width}px"
+    assert bounds["x"] >= -1 and bounds["x"] + bounds["width"] <= width + 1, (
+        f"Opciones de vista fuera de pantalla a {width}px: {bounds}")
+
+
 async def check_search(page, width, no_overflow):
     """Exercise the shipped index and filters using only stories in the page."""
     stories = await page.locator("main a[data-cat]").evaluate_all("""links => {
@@ -134,6 +142,7 @@ async def check(html, output):
             await check_search(page, width, no_overflow)
             await page.locator("#view-options-toggle").click()
             assert await page.locator("#view-options-panel").is_visible(), f"Menú visual oculto a {width}px"
+            await check_view_options_bounds(page, width)
             await no_overflow("preferencias")
             await page.screenshot(path=str(output / f"preferences-{width}.png"), full_page=False, animations="disabled")
             await page.locator("#density-switch").click()

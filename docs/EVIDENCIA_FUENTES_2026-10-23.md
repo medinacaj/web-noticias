@@ -1,5 +1,10 @@
 # Evidencia de fuentes — revisión del 23 de octubre de 2026
 
+**Actualización técnica posterior:** la [verificación del 24 de octubre](VERIFICACION_RSS_2026-10-24.md)
+comprobó 5 XML y 4 feeds compatibles con el adaptador. Todas las fuentes siguen
+desactivadas y sus permisos no cambian. Esta página conserva el corte histórico
+del día 23 y sus observaciones de condiciones; no describe disponibilidad actual.
+
 Corte de registro: **2026-10-23 19:43:49 UTC**. Alcance: las 16 candidatas de `config/regional_sources.json`, para titulares originales, fecha, atribución y enlaces de un agregador potencialmente comercial. Resultado: **0 autorizadas, 11 restringidas, 5 pendientes; 16 desactivadas; 0 feeds con XML validado**. `restricted` describe una condición editorial incompatible con activar sin autorización adicional; no constituye una conclusión sobre excepciones legales ni una prohibición universal de enlazar.
 
 La consulta utilizó el conector web sobre dominios del editor. El conector puede devolver una copia indexada: la fecha de consulta no certifica que el texto sea la versión más reciente del servidor. No se usaron credenciales, proxys de terceros, Google Noticias ni otro canal para eludir restricciones. Solo se registran códigos HTTP del editor cuando la herramienta los identifica expresamente; su error interno `400 Unsupported content-type` **no es un HTTP 400 del editor**, ni prueba un 200 o un XML válido. No se descargaron ni analizaron entradas RSS. Una URL candidata o un directorio RSS no demuestran licencia.

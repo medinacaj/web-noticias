@@ -228,7 +228,7 @@ def rss_image(node):
     return ""
 
 
-def fetch_rss(url, category, default_source=None):
+def fetch_rss(url, category, default_source=None, *, metadata_only=False):
     root = ET.fromstring(http_get(url))
     items = []
     for node in root.findall(".//item")[:RSS_LIMIT]:
@@ -243,7 +243,7 @@ def fetch_rss(url, category, default_source=None):
             elif " - " in title:
                 title, source = [part.strip() for part in title.rsplit(" - ", 1)]
         from scripts.latam import country_codes, explicit_date
-        if (category == "latinoamerica" or (category == "internacional"
+        if (metadata_only or category == "latinoamerica" or (category == "internacional"
                 and any(code != "CL" for code in country_codes(title)))):
             published = explicit_date(node.findtext("pubDate"))
         else:
@@ -255,8 +255,8 @@ def fetch_rss(url, category, default_source=None):
             "source_url": (source_node.get("url") or "").strip() if source_node is not None else (url if default_source else ""),
             "link": (node.findtext("link") or "").strip(),
             "published": to_iso(published) if published else None,
-            "summary": "" if category == "latinoamerica" else clean_summary(title, node.findtext("description")),
-            "image": "" if category == "latinoamerica" else rss_image(node),
+            "summary": "" if metadata_only or category == "latinoamerica" else clean_summary(title, node.findtext("description")),
+            "image": "" if metadata_only or category == "latinoamerica" else rss_image(node),
         })
     return items
 
@@ -331,6 +331,8 @@ def collect(now):
             except Exception as error:
                 print(f"[aviso] GNews falló en {key}: {error}")
         print(f"{cat['label']}: {count} notas recolectadas")
+    from scripts.global_sources import collect_world
+    items += collect_world(now, fetch=fetch_rss)
     from scripts.regional_sources import collect_regional
     regional = collect_regional(now)
     items += regional
@@ -905,11 +907,12 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%SECTIONS%%": render_sections(sel["by_category"], now),
         "%%NEWSLETTER_SIGNUP%%": newsletter["signup_html"],
     }
-    for marker, value in replacements.items():
-        page = page.replace(marker, value)
-    leftover = re.findall(r"%%[A-Z_]+%%", page)
+    # Only the original template supplies tokens; news text remains literal.
+    markers = re.compile(r"%%[A-Z_]+%%")
+    leftover = [marker for marker in markers.findall(page) if marker not in replacements]
     if leftover:
         raise SystemExit(f"ERROR: la plantilla quedó con marcadores sin reemplazar: {leftover}")
+    page = markers.sub(lambda match: replacements[match.group(0)], page)
 
     # Páginas propias y estables: no convertir enlaces a medios en páginas de noticias ficticias.
     from scripts.seo_pages import render_about_page, render_sitemap
