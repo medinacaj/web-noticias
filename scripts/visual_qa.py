@@ -192,10 +192,13 @@ async def check(html, output):
             await footer.scroll_into_view_if_needed()
             links = await page.locator(".site-footer .footer-nav a").evaluate_all(
                 "(nodes) => nodes.map(a => a.getAttribute('href'))")
-            assert links == ["#contenido", "#categorias", "boletin-diario.html", "rss.xml"], (
+            assert links == ["#contenido", "#categorias", "boletin-diario.html", "rss.xml", "sobre-el-portal.html"], (
                 f"Enlaces de pie no válidos a {width}px: {links}")
             assert await page.locator("#categorias").count() == 1
-            assert await page.locator(".footer-updated").is_visible()
+            assert await page.locator(".header-updated").is_visible()
+            assert await page.locator(".edition-count").is_visible()
+            assert await footer.locator(".footer-updated,.edition-details").count() == 0
+            assert (await footer.bounding_box())["height"] <= (140 if width >= 1024 else 280)
             await no_overflow("pie de página")
             await page.screenshot(path=str(output / f"footer-{width}.png"), full_page=False, animations="disabled")
             await page.locator('.site-footer a[href="#categorias"]').click()

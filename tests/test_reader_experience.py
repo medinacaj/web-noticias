@@ -68,4 +68,28 @@ class LatestCarouselTests(unittest.TestCase):
         self.assertEqual(Links(rendered).links, [story(1)["link"], story(2)["link"]])
 
 
+
+
+class EditionCountTests(unittest.TestCase):
+    def test_count_uses_published_cards_and_deduplicates_urls(self):
+        from fetch_noticias import render_edition_count
+        import re
+        first = story(0, sources=['Medio', 'Otro'])
+        repeated = story(0, sources=['Medio', 'Extra'])
+        second = story(1)
+        selection = {'lead': first, 'secondary': [repeated],
+                     'by_category': {'cultura': [second]},
+                     'total': 400, 'outlets': 90, 'latest': [story(2)]}
+        text = re.sub('<[^>]+>', '', render_edition_count(selection))
+        self.assertEqual(text, '2 noticias · 3 medios')
+
+    def test_singular_and_empty_counts(self):
+        from fetch_noticias import render_edition_count
+        import re
+        for selection, expected in (
+            ({'lead': story(0), 'secondary': [], 'by_category': {}}, '1 noticia · 1 medio'),
+            ({'lead': None, 'secondary': [], 'by_category': {}}, '0 noticias · 0 medios'),
+        ):
+            self.assertEqual(re.sub('<[^>]+>', '', render_edition_count(selection)), expected)
+
 if __name__ == "__main__": unittest.main()

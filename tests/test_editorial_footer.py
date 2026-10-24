@@ -17,9 +17,11 @@ class EditorialFooterTests(unittest.TestCase):
         for marker in (
             'href="#contenido"', 'href="#categorias"',
             'href="boletin-diario.html"', 'aria-label="Enlaces útiles"',
-            'id="footer-about-title"', '%%UPDATED_HUMAN%%', '%%YEAR%%',
+            'href="sobre-el-portal.html"', 'class="designer-signature"',
         ):
             self.assertIn(marker, footer)
+        for removed in ("%%UPDATED_HUMAN%%", "%%YEAR%%", "%%CONTEXT%%", "Datos de esta edición", "©"):
+            self.assertNotIn(removed, footer)
         self.assertNotIn("%%FOOTER_NAV%%", footer)
         self.assertNotIn("NEWSLETTER_SUBSCRIBE_URL", footer)
         self.assertIn('id="categorias"', self.template)
@@ -34,12 +36,11 @@ class EditorialFooterTests(unittest.TestCase):
 
     def test_footer_has_lighter_geometry_and_responsive_layout(self):
         for token in (
-            ".site-footer{background:var(--navy-dark);color:var(--on-navy-soft);margin-top:0;padding:32px 0 18px",
-            ".footer-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));",
+            ".site-footer{background:var(--navy-dark);color:var(--on-navy-soft);margin-top:0;padding:14px 0",
+            ".footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;",
             ".footer-nav a:focus-visible{outline:2px solid var(--on-navy)",
-            "@media (max-width:540px)",
-            ".footer-nav ul{grid-template-columns:repeat(2,minmax(0,1fr));",
-            ".footer-bottom{margin-top:24px;",
+            ".footer-nav ul{display:flex;align-items:center;flex-wrap:wrap;",
+            ".footer-attribution{font:400 10px/1.5",
         ):
             self.assertIn(token, self.template)
         self.assertNotIn("margin-top:80px;padding:52px 0 28px", self.template)
@@ -58,7 +59,9 @@ class EditorialFooterTests(unittest.TestCase):
             self.assertTrue((Path(directory) / "boletin-diario.html").is_file())
             self.assertIn('href="#categorias"', page)
             self.assertIn('id="categorias"', page)
-            self.assertIn("© 2026 Noticias del Momento", page)
+            self.assertNotIn("© 2026 Noticias del Momento", page)
+            self.assertIn('data-news-count="1"', page)
+            self.assertEqual(page.count('id="updated-at"'), 1)
             self.assertNotIn("%%FOOTER_NAV%%", page)
             self.assertNotIn("%%UPDATED_HUMAN%%", page)
 
