@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T14:27:30Z",
+ "actualizado": "2026-10-24T14:35:39Z",
  "noticias": [
   {
    "category": "internacional",
@@ -21,6 +21,42 @@
    "link": "https://www.bbc.com/mundo/articles/cm0e0d35zlwjo?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-24T14:21:38Z",
    "first_seen": "2026-10-24T14:27:30Z"
+  },
+  {
+   "category": "politica",
+   "title": "Chile justifica la rebaja de penas a presos por abusos sexuales y crímenes de la dictadura",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.france24.com",
+   "sources": [
+    "France 24"
+   ],
+   "coverages": [],
+   "link": "https://www.france24.com/es/minuto-a-minuto/20261024-chile-justifica-la-rebaja-de-penas-a-presos-por-abusos-sexuales-y-cr%C3%ADmenes-de-la-dictadura",
+   "published": "2026-10-24T14:18:55Z",
+   "first_seen": "2026-10-24T14:35:39Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T14:35:39.340258Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Temblor en Chile hoy, viernes 23 de octubre 2026: hora exacta, magnitud y dónde fue el epicentro, según el CSN",
+   "summary": "",
+   "image": "https://elcomercio.pe/resizer/v2/4WTBCNLHK5B57PI5TKKYDERZLM.jpg?auth=740abb2c8f809e717fa64902d1a0f957665e24703608a0c6d7a9de22c68ed226&width=980&height=528&quality=75&smart=true",
+   "source_url": "https://elcomercio.pe",
+   "sources": [
+    "El Comercio Perú"
+   ],
+   "coverages": [],
+   "link": "https://elcomercio.pe/mag/respuestas/cl/temblor-en-chile-hoy-23-y-24-de-octubre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-segun-el-csn-nnda-nnrt-noticia/",
+   "published": "2026-10-24T14:08:13Z",
+   "first_seen": "2026-10-24T14:35:39Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T14:35:39.340258Z"
   },
   {
    "category": "regiones",
@@ -2954,15 +2990,16 @@
    "category": "medioambiente",
    "title": "Día Internacional contra el Cambio Climático: el preocupante dato que golpea a las grandes empresas alimentarias",
    "summary": "",
-   "image": "",
+   "image": "https://www.adnradio.cl/resizer/v2/DBZLTLMZ25H57N325PVJ2JMSAQ.jpg?auth=e5dd82a54f061123dc0a93cb3ce52383634d1b1df5f1333e39c34d4b18300393&quality=70&width=1200&height=675&focal=540,336",
    "source_url": "https://www.adnradio.cl",
    "sources": [
     "ADN Radio"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQckk2SHFMT2JwQnpwNHFpM3ZYWS1XLXdBSzI3NFJNdXZyQ2N4OVRzeGh3UFRoSVotSzcwZ0lLU1AydDIwWDZBakpvWGxCZ3BMM0RGY1VBM1BVVzIyVkhXbVJkb0lMNzBxTjdjVWQ3bno1U0JSUkJsSENrOUo5VFlneTE3UFk3NzJWLUN4U043cmxTUzAwR0NEeDRXRTFuLVF4RUxIU3cxLU9tWDVHTHB6VVV2NFVIOG03RmtnR0Rlc0ZoLUo2MlZjSzJ1VGxVcXJaSzI0UGF0OTh5WUJWTDlDMdIB9AFBVV95cUxOVW14cWpNdzBEMDhrWVBTeUhOTWdkSzU4VTJDLXYxeWdCTWlBTEs0c0Y5QXVvSVhrSVg1N3VjeC1DZlRMeVliamRWUUdnaVRDRmctT0NLd2Q3TUx2SmtmbEU5MVdraXJWemlvV0loQVdIWlotNmRmTkpDaEVLTkZqdGhpdWk1bUpueW1YZUJzMk9OZUpvbk82RGV6YmZEODhNYktqeExBUkpnWHVwY0NvZF9USEVMNzM1eGdNbGc1SE9DWi1xV0c4dFBfN2hhRlFmZDJOcHRndVJadUE1M1dVTDd5aVlyMktHUkktMXZMbnRtUkN2?oc=5",
+   "link": "https://www.adnradio.cl/2026/10/23/dia-internacional-contra-el-cambio-climatico-el-preocupante-dato-que-golpea-a-las-grandes-empresas-alimentarias/",
    "published": "2026-10-23T15:31:10Z",
-   "first_seen": "2026-10-24T14:27:30Z"
+   "first_seen": "2026-10-24T14:27:30Z",
+   "image_checked_at": "2026-10-24T14:35:39.340258Z"
   },
   {
    "category": "nacional",
@@ -3215,24 +3252,6 @@
    "published": "2026-10-23T14:39:00Z",
    "first_seen": "2026-10-24T00:37:33Z",
    "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "nacional",
-   "title": "“No hay ninguna llave que Argentina pueda cerrar”: la respuesta de alcalde a exgeneral argentino",
-   "summary": "",
-   "image": "https://media-front.elmostrador.cl/2026/10/WhatsApp-Image-2026-10-23-at-11.04.11-AM.jpeg",
-   "source_url": "https://www.elmostrador.cl",
-   "sources": [
-    "El Mostrador"
-   ],
-   "coverages": [],
-   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/23/no-hay-ninguna-llave-que-argentina-pueda-cerrar-la-respuesta-de-alcalde-a-exgeneral-argentino/",
-   "published": "2026-10-23T14:30:01Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T18:57:20.007908Z",
-   "coverage_countries": [
-    "AR"
-   ]
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
@@ -3244,6 +3263,24 @@
    "published": "2026-10-24T14:21:38Z",
    "sources": [
     "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Chile justifica la rebaja de penas a presos por abusos sexuales y crímenes de la dictadura",
+   "link": "https://www.france24.com/es/minuto-a-minuto/20261024-chile-justifica-la-rebaja-de-penas-a-presos-por-abusos-sexuales-y-cr%C3%ADmenes-de-la-dictadura",
+   "category": "politica",
+   "published": "2026-10-24T14:18:55Z",
+   "sources": [
+    "France 24"
+   ]
+  },
+  {
+   "title": "Temblor en Chile hoy, viernes 23 de octubre 2026: hora exacta, magnitud y dónde fue el epicentro, según el CSN",
+   "link": "https://elcomercio.pe/mag/respuestas/cl/temblor-en-chile-hoy-23-y-24-de-octubre-2026-hora-exacta-magnitud-y-donde-fue-el-epicentro-segun-el-csn-nnda-nnrt-noticia/",
+   "category": "nacional",
+   "published": "2026-10-24T14:08:13Z",
+   "sources": [
+    "El Comercio Perú"
    ]
   },
   {
@@ -5023,6 +5060,15 @@
   {
    "title": "Día Internacional contra el Cambio Climático: el preocupante dato que golpea a las grandes empresas alimentarias",
    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQckk2SHFMT2JwQnpwNHFpM3ZYWS1XLXdBSzI3NFJNdXZyQ2N4OVRzeGh3UFRoSVotSzcwZ0lLU1AydDIwWDZBakpvWGxCZ3BMM0RGY1VBM1BVVzIyVkhXbVJkb0lMNzBxTjdjVWQ3bno1U0JSUkJsSENrOUo5VFlneTE3UFk3NzJWLUN4U043cmxTUzAwR0NEeDRXRTFuLVF4RUxIU3cxLU9tWDVHTHB6VVV2NFVIOG03RmtnR0Rlc0ZoLUo2MlZjSzJ1VGxVcXJaSzI0UGF0OTh5WUJWTDlDMdIB9AFBVV95cUxOVW14cWpNdzBEMDhrWVBTeUhOTWdkSzU4VTJDLXYxeWdCTWlBTEs0c0Y5QXVvSVhrSVg1N3VjeC1DZlRMeVliamRWUUdnaVRDRmctT0NLd2Q3TUx2SmtmbEU5MVdraXJWemlvV0loQVdIWlotNmRmTkpDaEVLTkZqdGhpdWk1bUpueW1YZUJzMk9OZUpvbk82RGV6YmZEODhNYktqeExBUkpnWHVwY0NvZF9USEVMNzM1eGdNbGc1SE9DWi1xV0c4dFBfN2hhRlFmZDJOcHRndVJadUE1M1dVTDd5aVlyMktHUkktMXZMbnRtUkN2?oc=5",
+   "category": "medioambiente",
+   "published": "2026-10-23T15:31:10Z",
+   "sources": [
+    "ADN Radio"
+   ]
+  },
+  {
+   "title": "Día Internacional contra el Cambio Climático: el preocupante dato que golpea a las grandes empresas alimentarias",
+   "link": "https://www.adnradio.cl/2026/10/23/dia-internacional-contra-el-cambio-climatico-el-preocupante-dato-que-golpea-a-las-grandes-empresas-alimentarias/",
    "category": "medioambiente",
    "published": "2026-10-23T15:31:10Z",
    "sources": [
