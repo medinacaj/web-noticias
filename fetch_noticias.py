@@ -885,7 +885,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     adsense = configured_adsense(os.environ, SITE_URL)
 
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
-    from scripts.agenda_biobio import render_agenda
+    from scripts.agenda import render_agenda
     agenda_html = render_agenda(agenda or [], now)
     nav = render_nav(sel, agenda=bool(agenda_html))
     replacements = {
@@ -1011,8 +1011,8 @@ def main():
     save_history(args.historial, stories, now, archive, signals_started)
     agenda = []
     if not args.solo_render and not args.importar:
-        # Eventos ya validados por eventos-biobio; un fallo solo oculta la sección.
-        from scripts.agenda_biobio import load_agenda
+        # Eventos ya validados por eventos-biobio (Biobío y resto de Chile); un fallo solo oculta la sección.
+        from scripts.agenda import load_agenda
         agenda = load_agenda(now)
     build_site(stories, now, args.salida, args.ventana,
                signals_archive=archive, signals_started=signals_started, agenda=agenda)

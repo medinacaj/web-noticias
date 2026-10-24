@@ -21,7 +21,7 @@ Selección: puntaje = n.º de medios que la reportan − horas de antigüedad / 
 - `static/og-image.png` — imagen Open Graph 1200×630.
 - `.github/workflows/update-news.yml` — cron cada hora (minuto 7), guarda el historial con commit y despliega con `actions/deploy-pages`.
 - `data/historial.json` — lo crea y versiona el workflow. `public/` está en `.gitignore`.
-- `scripts/agenda_biobio.py` — sección «Agenda Biobío»: en cada ejecución normal lee la lista `events` (ya validada) del snapshot de `medinacaj/eventos-biobio` (variable opcional `EVENTOS_BIOBIO_URL`; vacía la desactiva). Nunca muestra `possible_events`. Sin eventos próximos o con error de red, la sección y su enlace del menú no aparecen.
+- `scripts/agenda.py` — sección «Agenda de eventos»: en cada ejecución normal lee la lista `events` (ya validada) de los snapshots de `medinacaj/eventos-biobio`: Biobío (`crawled_events.json`) y resto de Chile (`national_events.json`, con región). Variables opcionales `EVENTOS_BIOBIO_URL` y `EVENTOS_NACIONALES_URL` (vacías desactivan cada una). Cada tarjeta lleva etiquetas de región, categoría y «Gratis»; los filtros por región, categoría y gratuidad solo aparecen con JavaScript (sin JS se ve la lista completa). Nunca muestra `possible_events`. Sin eventos próximos o con error de red, la sección y su enlace del menú no aparecen.
 - `tests/demo.json` — 11 noticias reales verificadas (una duplicada a propósito) para probar sin red.
 
 ## Comandos
