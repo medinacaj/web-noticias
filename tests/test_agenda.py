@@ -133,6 +133,16 @@ class RenderAgendaTests(unittest.TestCase):
         for absent in ("agenda-tag", "agenda-item", "agenda-note"):
             self.assertNotIn(absent, html)
 
+    def test_official_poster_replaces_date_tile(self):
+        [with_image] = upcoming_events({"events": [event(image_url="https://gam.cl/media/poster.png")]},
+                                       TODAY, "Biobío")
+        html = render_agenda([with_image], NOW)
+        self.assertIn('<figure class="media"><img src="https://gam.cl/media/poster.png" alt=""', html)
+        self.assertIn('loading="lazy"', html)
+        self.assertNotIn("media--date", html)
+        [unsafe] = upcoming_events({"events": [event(image_url="http://x.cl/a.png")]}, TODAY, "Biobío")
+        self.assertIn("media--date", render_agenda([unsafe], NOW))
+
     def test_ongoing_event_shows_today_until_end(self):
         [item] = upcoming_events({"events": [event(date="2026-10-20", end_date="2026-11-02", time="")]},
                                  TODAY, "Biobío")

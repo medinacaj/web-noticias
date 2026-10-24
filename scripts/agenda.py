@@ -97,6 +97,8 @@ def upcoming_events(payload, today, default_region="", limit=MAX_EVENTS):
             "category": _text(item.get("category"), 30),
             "status": status, "source": _text(item.get("source"), 70) or urlsplit(link).hostname,
             "link": link,
+            # Póster o imagen oficial publicada por el organizador (se referencia, no se copia).
+            "image": _https(item.get("image_url")),
         })
     return _ordered(result, today)[:limit]
 
@@ -151,6 +153,17 @@ def _when(event, today):
     return label + (f', {event["time"]} h' if event["time"] else "")
 
 
+def _figure(event, shown):
+    """Imagen oficial como en las noticias; sin imagen, la fecha ocupa su lugar."""
+    if event["image"]:
+        return (f'<figure class="media"><img src="{esc(event["image"])}" alt="" width="1200" height="630" '
+                f'loading="lazy" decoding="async" referrerpolicy="no-referrer"></figure>')
+    return (f'<figure class="media media--source media--date" role="img" '
+            f'aria-label="{shown.day} de {MONTHS[shown.month - 1]}">'
+            f'<span class="source-visual"><span class="date-mark"><span class="date-day">{shown.day}</span>'
+            f'<span class="date-month">{MONTHS[shown.month - 1]}</span></span></span></figure>')
+
+
 def render_filters(events):
     """Botones con el mismo estilo que las opciones de vista; ocultos sin JavaScript."""
     regions = sorted({e["region"] for e in events})
@@ -188,10 +201,7 @@ def render_agenda(events, now, number=None, source_mark=None):
         cards.append(
             f'<li class="cat-agenda" data-region="{esc(event["region"])}"{" data-free" if event["free"] else ""}'
             f'{" data-extra" if i >= 5 else ""}><article class="compact">'
-            f'<figure class="media media--source media--date" role="img" '
-            f'aria-label="{shown.day} de {MONTHS[shown.month - 1]}">'
-            f'<span class="source-visual"><span class="date-mark"><span class="date-day">{shown.day}</span>'
-            f'<span class="date-month">{MONTHS[shown.month - 1]}</span></span></span></figure>'
+            f'{_figure(event, shown)}'
             f'<div class="news-body"><p class="kicker">{esc(label)} · {esc(event["commune"])}</p>'
             f'<h3><a href="{esc(event["link"])}" target="_blank" rel="noopener" data-countries="" '
             f'data-cat="Agenda" data-key="agenda" '
