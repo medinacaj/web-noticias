@@ -21,7 +21,7 @@ Selección: puntaje = n.º de medios que la reportan − horas de antigüedad / 
 - `static/og-image.png` — imagen Open Graph 1200×630.
 - `.github/workflows/update-news.yml` — cron cada hora (minuto 7), guarda el historial con commit y despliega con `actions/deploy-pages`.
 - `data/historial.json` — lo crea y versiona el workflow. `public/` está en `.gitignore`.
-- `scripts/agenda.py` — sección «Agenda de eventos»: en cada ejecución normal lee la lista `events` (ya validada) de los snapshots de `medinacaj/eventos-biobio`: Biobío (`crawled_events.json`) y resto de Chile (`national_events.json`, con región). Variables opcionales `EVENTOS_BIOBIO_URL` y `EVENTOS_NACIONALES_URL` (vacías desactivan cada una). Cada tarjeta lleva etiquetas de región, categoría y «Gratis»; los filtros por región, categoría y gratuidad solo aparecen con JavaScript (sin JS se ve la lista completa). Nunca muestra `possible_events`. Sin eventos próximos o con error de red, la sección y su enlace del menú no aparecen.
+- `scripts/agenda.py` — sección «Agenda» (eventos): en cada ejecución normal lee la lista `events` (ya validada) de los snapshots de `medinacaj/eventos-biobio`: Biobío (`crawled_events.json`) y resto de Chile (`national_events.json`, con región). Variables opcionales `EVENTOS_BIOBIO_URL` y `EVENTOS_NACIONALES_URL` (vacías desactivan cada una). Se presenta como una sección más (decisión del usuario: que no se vea «forzada»): número correlativo tras las secciones de noticias, mismas tarjetas `compact` con la fecha en el lugar de la imagen, kicker «Categoría · Comuna», meta con medio, región, «Gratis» y fecha; colores de categoría existentes (Cultura→cultura, Comunidad→regiones, Empresarial→economía); entra en búsqueda, favoritos y «Ver más». Filtros por región y «Solo gratis» con botones `density-switch`, solo con JavaScript. Nunca muestra `possible_events`. Sin eventos próximos o con error de red, la sección y su enlace del menú no aparecen.
 - `tests/demo.json` — 11 noticias reales verificadas (una duplicada a propósito) para probar sin red.
 
 ## Comandos
@@ -54,6 +54,7 @@ Variables de entorno: `GNEWS_API_KEY` (secret), `SITE_URL` y `GSC_VERIFICATION` 
 - SEO técnico obligatorio en cada cambio: title, meta description, canonical, `index, follow`, Open Graph/Twitter, JSON-LD (`WebSite` + `CollectionPage`/`ItemList`), sitemap, robots, 404 con `noindex`, un solo `h1`.
 - Los extractos son la descripción entregada por cada fuente; no presentarlos como redacción propia.
 - Verificar tras cambios de diseño: sin desborde horizontal en 1440/1024/390 px, contenido legible con JS desactivado, JSON-LD válido, sintaxis JS con `node --check`.
+- Coherencia visual (lección de la Agenda, PR #87/#88 → #91): toda sección o bloque nuevo reutiliza los componentes existentes (`section-head` numerado, `section-grid`, tarjetas `.feature`/`.compact`, `.kicker`, `.meta`, `.media`, botones `.density-switch`) en vez de crear clases visuales propias. No agregar colores fuera de la paleta: usar los tokens y las clases `.cat-*` de las categorías existentes. Antes de fusionar, revisar una captura de la sección nueva junto a una sección de noticias, a 1440 y 390 px. `tests/test_design_consistency.py` lo vigila: si de verdad hace falta un color o una clase de categoría nueva, actualizar ahí su lista con la aprobación del usuario.
 
 ## Pendientes
 

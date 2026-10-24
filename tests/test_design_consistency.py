@@ -1,0 +1,78 @@
+"""Coherencia visual: nada de colores fuera de la paleta ni secciones con estructura propia.
+
+Lección de la Agenda (PR #87/#88): se crearon un color, etiquetas y tarjetas propias y la
+sección se veía ajena al resto del portal. Ver la regla de coherencia en CLAUDE.md.
+"""
+import os
+import re
+import tempfile
+import unittest
+from datetime import date, datetime, timezone
+from pathlib import Path
+from unittest.mock import patch
+
+import fetch_noticias as news
+from scripts.agenda import upcoming_events
+
+ROOT = Path(__file__).resolve().parents[1]
+NOW = datetime(2026, 10, 24, 12, tzinfo=timezone.utc)
+
+# Paleta aprobada (tokens de :root, modo oscuro y tintes ya existentes al 2026-10-24).
+# Agregar un color aquí requiere la aprobación del usuario.
+PALETTE = {
+    "#000", "#061424", "#07192E", "#0A2540", "#182639", "#1F5F8B", "#2E6B4F", "#346E99", "#388450",
+    "#39766C", "#3C5067", "#5B3F9E", "#6D7480", "#74D0A4", "#7CC0EE", "#83C4B5", "#8BDC9D", "#8DA4BA",
+    "#90C6E4", "#9C2F6F", "#A35334", "#A8BCD0", "#B1C3D4", "#B39AF5", "#B4530A", "#B7C9DA", "#B9C0C8",
+    "#C1CFDE", "#C5CFDA", "#C5E1FF", "#C8102E", "#C8D4DF", "#CAD5E0", "#D7E8F8", "#DCE6EF", "#EE8BC6",
+    "#EEF2F6", "#EFA98C", "#F0F4F8", "#F5A35C", "#FF6B7D", "#FFE0A4", "#FFF", "#FFF0AE", "#FFFFFF",
+}
+
+
+def template_css():
+    page = (ROOT / "template.html").read_text(encoding="utf-8")
+    return "\n".join(re.findall(r"<style[^>]*>(.*?)</style>", page, re.S))
+
+
+class PaletteTests(unittest.TestCase):
+    def test_no_colors_outside_the_palette(self):
+        used = {h.upper() for h in re.findall(r"#[0-9A-Fa-f]{3,8}\b", template_css())}
+        self.assertEqual(sorted(used - PALETTE), [],
+                         "Color nuevo en template.html: usa un token existente o pide aprobación")
+
+    def test_category_classes_match_real_categories(self):
+        keys = {c["key"] for c in news.CATEGORIES}
+        defined = set(re.findall(r"^\s*\.cat-([a-z-]+)\{", template_css(), re.M))
+        self.assertEqual(sorted(defined - keys), [],
+                         "Clase .cat-* sin categoría real: reutiliza el color de una categoría existente")
+
+
+class SectionStructureTests(unittest.TestCase):
+    def test_every_section_shares_the_news_structure(self):
+        stories = [{"category": cat, "title": f"Nota {i} de {cat}", "summary": "", "image": "",
+                    "sources": [f"Medio {i}"], "link": f"https://medio{i}.cl/nota",
+                    "published": f"2026-10-24T{10 - i % 5:02d}:00:00Z"}
+                   for i, cat in enumerate(["nacional", "deportes", "cultura"] * 4)]
+        agenda = upcoming_events({"events": [
+            {"title": "Concierto", "date": "2026-10-30", "time": "19:00", "commune": "Talca",
+             "region": "Maule", "category": "Cultura", "price_status": "free",
+             "source": "Teatro Regional del Maule", "source_url": "https://www.teatroregional.cl/e/1"},
+        ]}, date(2026, 10, 24))
+        with tempfile.TemporaryDirectory() as folder, patch.dict(os.environ, {}, clear=True):
+            news.build_site(stories, NOW, folder, agenda=agenda)
+            page = Path(folder, "index.html").read_text(encoding="utf-8")
+        sections = re.findall(r'<section class="section[^"]*" id="cat-[^"]+".*?</section>', page, re.S)
+        self.assertGreaterEqual(len(sections), 2)
+        self.assertTrue(any('id="cat-agenda"' in s for s in sections))
+        for number, section in enumerate(sections, start=1):
+            name = re.search(r'id="(cat-[^"]+)"', section).group(1)
+            self.assertIn(f'<span class="section-num">{number:02d}</span>', section, name)
+            self.assertRegex(section, r'<h2 id="titulo-[^"]+">', name)
+            self.assertIn('<span class="section-count"', section, name)
+            self.assertIn('class="section-grid', section, name)
+            self.assertRegex(section, r'<article class="(feature|compact)">', name)
+            self.assertIn('<p class="kicker">', section, name)
+            self.assertIn('<p class="meta">', section, name)
+
+
+if __name__ == "__main__":
+    unittest.main()
