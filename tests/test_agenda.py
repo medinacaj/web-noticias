@@ -122,15 +122,15 @@ class RenderAgendaTests(unittest.TestCase):
         html = render_agenda(self.sample(), NOW, number=12, source_mark=news.source_mark)
         self.assertIn('<span class="section-num">12</span><h2 id="titulo-agenda">Agenda</h2>', html)
         self.assertIn('<div class="section-grid" id="noticias-agenda"><ul class="compact-list">', html)
-        self.assertIn('<li class="cat-cultura" data-region="Biobío" data-free><article class="compact">', html)
-        self.assertIn('<li class="cat-regiones" data-region="Valparaíso"><article class="compact">', html)
+        self.assertIn('<li class="cat-agenda" data-region="Biobío" data-free><article class="compact">', html)
+        self.assertIn('<li class="cat-agenda" data-region="Valparaíso"><article class="compact">', html)
         self.assertIn('class="media media--source media--date"', html)
         self.assertIn('<p class="kicker">Cultura · Concepción</p>', html)
         self.assertIn('<span class="source-mark"', html)
         self.assertIn('<span class="source-name">Teatro Biobío</span>', html)
         self.assertIn('<time datetime="2026-10-30T19:30:00-03:00">vie 30 oct, 19:30 h</time>', html)
         self.assertIn('<time datetime="2026-10-25T00:00:00-03:00">Mañana</time>', html)
-        for absent in ("agenda-tag", "agenda-item", "agenda-note", "class=\"cat-agenda\""):
+        for absent in ("agenda-tag", "agenda-item", "agenda-note"):
             self.assertNotIn(absent, html)
 
     def test_ongoing_event_shows_today_until_end(self):
@@ -165,7 +165,7 @@ class RenderAgendaTests(unittest.TestCase):
             full = Path(folder, "index.html").read_text(encoding="utf-8")
         self.assertNotIn('id="cat-agenda"', empty)
         self.assertNotIn('href="#cat-agenda"', empty)
-        self.assertIn('<li><a href="#cat-agenda">Agenda</a></li>', full)
+        self.assertIn('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>', full)
         import re
         numbers = [int(n) for n in re.findall(r'<span class="section-num">(\d+)</span>', full)]
         self.assertEqual(numbers, list(range(1, len(numbers) + 1)))  # la agenda continúa la numeración

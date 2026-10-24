@@ -810,7 +810,7 @@ def render_nav(sel, agenda=False):
     links += [f'<li><a class="cat-{c["key"]}" href="#cat-{c["key"]}">{esc(PRESENTATION_LABELS.get(c["key"], c.get("short", c["label"])))}</a></li>'
               for c in CATEGORIES if c["key"] in sel["by_category"]]
     if agenda:
-        links.append('<li><a href="#cat-agenda">Agenda</a></li>')
+        links.append('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>')
     return "".join(links)
 
 

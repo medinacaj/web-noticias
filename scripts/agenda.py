@@ -129,8 +129,6 @@ def load_agenda(now, fetch=fetch_snapshot, snapshots=None):
 
 
 WEEKDAYS = ("lun", "mar", "mié", "jue", "vie", "sáb", "dom")
-# Las categorías de eventos-biobio usan los colores de categoría que ya tiene el portal.
-CATEGORY_CLASS = {"Cultura": "cultura", "Comunidad": "regiones", "Empresarial": "economia"}
 
 
 def _moment(day, hhmm):
@@ -180,7 +178,6 @@ def render_agenda(events, now, number=None, source_mark=None):
     cards = []
     for i, event in enumerate(events):
         shown = max(event["date"], today)
-        key = CATEGORY_CLASS.get(event["category"], "cultura")
         label = event["category"] or "Evento"
         mark = source_mark({"sources": [event["source"]], "source_url": event["link"],
                             "link": event["link"]}) if source_mark else ""
@@ -189,7 +186,7 @@ def render_agenda(events, now, number=None, source_mark=None):
         free = '<span class="source-country">Gratis</span>' if event["free"] else ""
         dek = " · ".join(esc(v) for v in (event["venue"], event["price"]) if v)
         cards.append(
-            f'<li class="cat-{key}" data-region="{esc(event["region"])}"{" data-free" if event["free"] else ""}'
+            f'<li class="cat-agenda" data-region="{esc(event["region"])}"{" data-free" if event["free"] else ""}'
             f'{" data-extra" if i >= 5 else ""}><article class="compact">'
             f'<figure class="media media--source media--date" role="img" '
             f'aria-label="{shown.day} de {MONTHS[shown.month - 1]}">'
@@ -208,7 +205,7 @@ def render_agenda(events, now, number=None, source_mark=None):
     more = (f'<button type="button" class="show-more" data-show-more aria-controls="noticias-agenda" '
             f'data-step="6">Ver más eventos <span aria-hidden="true">↓</span></button>' if count > 6 else "")
     num = f'<span class="section-num">{number:02d}</span>' if number else ""
-    return (f'<section class="section" id="cat-agenda" aria-labelledby="titulo-agenda">'
+    return (f'<section class="section cat-agenda" id="cat-agenda" aria-labelledby="titulo-agenda">'
             f'<div class="section-head">{num}<h2 id="titulo-agenda">Agenda</h2>'
             f'<span class="section-count" data-agenda-count>{count} {"evento" if count == 1 else "eventos"}</span></div>'
             f'{render_filters(events)}'

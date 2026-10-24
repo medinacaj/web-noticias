@@ -25,7 +25,11 @@ PALETTE = {
     "#90C6E4", "#9C2F6F", "#A35334", "#A8BCD0", "#B1C3D4", "#B39AF5", "#B4530A", "#B7C9DA", "#B9C0C8",
     "#C1CFDE", "#C5CFDA", "#C5E1FF", "#C8102E", "#C8D4DF", "#CAD5E0", "#D7E8F8", "#DCE6EF", "#EE8BC6",
     "#EEF2F6", "#EFA98C", "#F0F4F8", "#F5A35C", "#FF6B7D", "#FFE0A4", "#FFF", "#FFF0AE", "#FFFFFF",
+    # Color propio de la Agenda (dorado), pedido por el usuario el 2026-10-24.
+    "#8A6100", "#F2C14E",
 }
+# Secciones que no son categorías de noticias pero tienen color propio aprobado.
+EXTRA_SECTIONS = {"agenda"}
 
 
 def template_css():
@@ -40,7 +44,7 @@ class PaletteTests(unittest.TestCase):
                          "Color nuevo en template.html: usa un token existente o pide aprobación")
 
     def test_category_classes_match_real_categories(self):
-        keys = {c["key"] for c in news.CATEGORIES}
+        keys = {c["key"] for c in news.CATEGORIES} | EXTRA_SECTIONS
         defined = set(re.findall(r"^\s*\.cat-([a-z-]+)\{", template_css(), re.M))
         self.assertEqual(sorted(defined - keys), [],
                          "Clase .cat-* sin categoría real: reutiliza el color de una categoría existente")
