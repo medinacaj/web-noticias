@@ -61,8 +61,10 @@ class PublishQualityTests(unittest.TestCase):
 
     def test_newsletter_variables_are_opt_in_not_credentials(self):
         workflow = Path(".github/workflows/update-news.yml").read_text(encoding="utf-8")
-        for variable in ("NEWSLETTER_READY", "NEWSLETTER_SUBSCRIBE_URL",
-                         "NEWSLETTER_PRIVACY_URL", "NEWSLETTER_UNSUBSCRIBE_URL"):
+        for variable in ("NEWSLETTER_READY", "NEWSLETTER_PROVIDER", "NEWSLETTER_SUBSCRIBE_URL",
+                         "NEWSLETTER_PRIVACY_URL", "NEWSLETTER_UNSUBSCRIBE_URL",
+                         "ADSENSE_PUBLISHER_ID", "ADSENSE_READY", "ADSENSE_PRIVACY_URL",
+                         "ADSENSE_ROOT_CONTROLLED"):
             self.assertIn(f"{variable}: ${{{{ vars.{variable} }}}}", workflow)
         self.assertNotIn("NEWSLETTER_READY: true", workflow)
         self.assertNotIn("NEWSLETTER_READY: 'true'", workflow)

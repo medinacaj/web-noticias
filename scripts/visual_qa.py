@@ -73,7 +73,7 @@ async def check_search(page, width, no_overflow):
     category_counts = {key: sum(story["category"] == key for story in stories) for key in categories}
     largest_category = max(sorted(categories), key=category_counts.get)
     originals = [key for key, label in categories.items()
-                 if key.lower() in ("salud", "ciencia", "salud-ciencia", "medioambiente") or label.lower() in ("salud", "ciencia")]
+                 if key.lower() in ("salud", "ciencia", "salud-ciencia", "medioambiente", "latinoamerica") or label.lower() in ("salud", "ciencia")]
     for key in dict.fromkeys((*originals, largest_category)):
         await category_filter.select_option(key)
         await verify([story for story in stories if story["category"] == key], f"categoría {key}")

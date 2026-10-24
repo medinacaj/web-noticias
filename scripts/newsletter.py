@@ -10,11 +10,46 @@ from urllib.parse import urlsplit
 
 
 def safe_external_url(value):
+    if not isinstance(value, str) or "\\" in value or any(ord(c) < 32 or ord(c) == 127 for c in value):
+        return ""
     value = (value or "").strip()
-    parsed = urlsplit(value)
-    return (value if parsed.scheme == "https" and parsed.hostname
-            and not parsed.username and not parsed.password
-            and not any(c.isspace() for c in value) else "")
+    try:
+        parsed = urlsplit(value)
+        # Leer port detecta puertos malformados que urlsplit deja pasar.
+        port = parsed.port
+        return (value if parsed.scheme == "https" and parsed.hostname
+                and not parsed.username and not parsed.password
+                and (port is None or 1 <= port <= 65535)
+                and not any(c.isspace() for c in value) else "")
+    except ValueError:
+        return ""
+
+
+def configured_newsletter(environ=None):
+    """Centraliza el alta externa; READY confirma revisión operativa del flujo.
+
+    El proveedor debe tener doble opt-in, privacidad y baja reales comprobados
+    por el responsable. La validación de formato no verifica esas condiciones.
+    """
+    env = os.environ if environ is None else environ
+    provider = str(env.get("NEWSLETTER_PROVIDER") or "").strip()
+    requested = str(env.get("NEWSLETTER_READY") or "").strip().lower() == "true"
+    subscribe = safe_external_url(env.get("NEWSLETTER_SUBSCRIBE_URL"))
+    privacy = safe_external_url(env.get("NEWSLETTER_PRIVACY_URL"))
+    unsubscribe = safe_external_url(env.get("NEWSLETTER_UNSUBSCRIBE_URL"))
+    enabled = bool(requested and provider and subscribe and privacy and unsubscribe)
+    esc = lambda value: html.escape(value, quote=True)
+    signup_html = (
+        f'<a class="newsletter-link" href="{esc(subscribe)}" target="_blank" rel="noopener">'
+        'Suscribirme</a>'
+        f'<a class="newsletter-privacy" href="{esc(privacy)}" target="_blank" rel="noopener">'
+        'Privacidad y datos de suscripción</a>' if enabled else
+        '<span class="newsletter-pending">Suscripciones próximamente</span>'
+    )
+    return {"enabled": enabled, "requested": requested, "provider": provider,
+            "subscribe_url": subscribe if enabled else "",
+            "privacy_url": privacy if enabled else "",
+            "unsubscribe_url": unsubscribe if enabled else "", "signup_html": signup_html}
 
 
 def newsletter_stories(stories, now, limit=12):
@@ -35,12 +70,23 @@ def newsletter_stories(stories, now, limit=12):
     return eligible[:limit]
 
 
-def render_newsletter(stories, now, site_url, subscribe_url="", unsubscribe_url=""):
+def render_newsletter(stories, now, site_url, subscribe_url="", unsubscribe_url="", *, configuration=None):
     """HTML público informativo (y base futura de email), no correo enviado."""
     from fetch_noticias import CATEGORY_LABELS, TZ_CHILE, story_time
     base_url = safe_external_url(site_url) or "https://medinacaj.github.io/web-noticias"
-    subscribe = safe_external_url(subscribe_url)
-    unsubscribe = safe_external_url(unsubscribe_url)
+    # Las URLs de la firma antigua ya no autorizan el alta por sí solas.
+    # Revalidar los campos evita confiar sólo en un enabled=True incompleto.
+    config = configuration or {}
+    checked = configured_newsletter({
+        "NEWSLETTER_READY": "true" if config.get("enabled") is True else "",
+        "NEWSLETTER_PROVIDER": config.get("provider"),
+        "NEWSLETTER_SUBSCRIBE_URL": config.get("subscribe_url"),
+        "NEWSLETTER_PRIVACY_URL": config.get("privacy_url"),
+        "NEWSLETTER_UNSUBSCRIBE_URL": config.get("unsubscribe_url"),
+    })
+    subscribe = checked["subscribe_url"]
+    unsubscribe = checked["unsubscribe_url"]
+    privacy = checked["privacy_url"]
     selected = newsletter_stories(stories, now)
     esc = lambda value: html.escape(str(value or ""), quote=True)
     groups = {}
@@ -71,6 +117,7 @@ def render_newsletter(stories, now, site_url, subscribe_url="", unsubscribe_url=
            'Suscribirme al boletín</a>' if subscribe else
            '<p role="status" style="color:#596677">Suscripciones próximamente. Todavía no se reciben direcciones de correo.</p>')
     footer = (f'<p><a href="{esc(unsubscribe)}">Gestionar o cancelar suscripción</a></p>'
+              f'<p><a href="{esc(privacy)}">Privacidad y datos de suscripción</a></p>'
               if unsubscribe and subscribe else
               '<p>Cuando se active el servicio, cada correo incluirá un enlace para cancelar la suscripción.</p>')
     date = now.astimezone(TZ_CHILE).strftime("%d/%m/%Y")

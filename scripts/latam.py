@@ -1,0 +1,151 @@
+"""Cobertura explícita en titulares, independiente del país del medio.
+
+No consulta artículos ni infiere ubicación por dominio, idioma o IP.
+"""
+from datetime import datetime, timedelta
+from email.utils import parsedate_to_datetime
+import re
+import unicodedata
+from urllib.parse import urlencode, urlsplit
+
+# Alias y gentilicios controlados en español/portugués. Sin nombres de políticos,
+# ciudades o apellidos: su coincidencia no prueba el país al que alude la noticia.
+COUNTRIES = {
+    "AR": ("Argentina", r"argentina|argentinos?|argentinas?"),
+    "BO": ("Bolivia", r"bolivia|bolivianos?|bolivianas?"),
+    "BR": ("Brasil", r"brasil|brazil|brasilenos?|brasilenas?|brasileiros?|brasileiras?"),
+    "CL": ("Chile", r"chile|chilenos?|chilenas?"),
+    "CO": ("Colombia", r"colombia|colombianos?|colombianas?"),
+    "CR": ("Costa Rica", r"costa rica|costarricenses?"),
+    "CU": ("Cuba", r"cuba|cubanos?|cubanas?"),
+    "DO": ("República Dominicana", r"republica dominicana|dominicanos?|dominicanas?"),
+    "EC": ("Ecuador", r"ecuador|ecuatorianos?|ecuatorianas?|equatorianos?|equatorianas?"),
+    "GT": ("Guatemala", r"guatemala|guatemaltecos?|guatemaltecas?"),
+    "HN": ("Honduras", r"honduras|hondurenos?|hondurenas?"),
+    "HT": ("Haití", r"haiti|haitianos?|haitianas?"),
+    "MX": ("México", r"mexico|mexicanos?|mexicanas?"),
+    "NI": ("Nicaragua", r"nicaragua|nicaraguenses?"),
+    "PA": ("Panamá", r"panama|panamenos?|panamenas?"),
+    "PE": ("Perú", r"peru|peruanos?|peruanas?"),
+    "PR": ("Puerto Rico", r"puerto rico|porto rico|puertorriquenos?|puertorriquenas?"),
+    "PY": ("Paraguay", r"paraguay|paraguai|paraguayos?|paraguayas?|paraguaios?|paraguaias?"),
+    "SV": ("El Salvador", r"el salvador|salvadorenos?|salvadorenas?"),
+    "UY": ("Uruguay", r"uruguay|uruguai|uruguayos?|uruguayas?|uruguaios?|uruguaias?"),
+    "VE": ("Venezuela", r"venezuela|venezolanos?|venezolanas?|venezuelanos?|venezuelanas?"),
+}
+
+
+def _fold(value):
+    return "".join(c for c in unicodedata.normalize("NFKD", str(value or "").casefold())
+                   if not unicodedata.combining(c))
+
+
+def country_codes(title):
+    text = _fold(title)
+    return [code for code, (_, pattern) in COUNTRIES.items()
+            if re.search(r"\b(?:" + pattern + r")\b", text)]
+
+
+def combine_countries(*values):
+    return sorted({code for value in values if isinstance(value, (list, tuple))
+                   for code in value if isinstance(code, str) and code in COUNTRIES})
+
+
+def country_labels(story):
+    return [COUNTRIES[code][0] for code in combine_countries(story.get("coverage_countries"))]
+
+
+def classify(story, catalog=None):
+    """Enriquece el historial sin reemplazar la política de datos ya existente."""
+    codes = combine_countries(story.get("coverage_countries"), country_codes(story.get("title")))
+    if codes:
+        story["coverage_countries"] = codes
+    if (story.get("category") == "internacional" and any(code != "CL" for code in codes)
+            and (catalog is None or catalog_allowed(story, catalog))):
+        story["category"] = "latinoamerica"
+    return story
+
+
+def merge_countries(target, incoming):
+    codes = combine_countries(target.get("coverage_countries"), incoming.get("coverage_countries"))
+    if codes:
+        target["coverage_countries"] = codes
+    if (target.get("category") == "internacional"
+            and incoming.get("category") == "latinoamerica"
+            and any(code != "CL" for code in codes)):
+        target["category"] = "latinoamerica"
+        if incoming.get("title"):
+            target["title"] = incoming["title"]
+            if "_norm" in target:
+                from fetch_noticias import normalize_title
+                target["_norm"] = normalize_title(target["title"])
+
+
+def search_urls():
+    searches = [
+        {"q": "(Brasil OR brasileiros OR brasileiras) when:1d", "hl": "pt-BR", "gl": "BR", "ceid": "BR:pt-419"},
+        {"q": "(Argentina OR Bolivia OR Colombia OR Costa Rica OR Cuba OR Ecuador OR Guatemala OR Honduras OR Haití OR México OR Nicaragua OR Panamá OR Paraguay OR Perú OR Puerto Rico OR República Dominicana OR El Salvador OR Uruguay OR Venezuela) when:1d",
+         "hl": "es-419", "gl": "CL", "ceid": "CL:es-419"},
+    ]
+    return ["https://news.google.com/rss/search?" + urlencode(params) for params in searches]
+
+
+def explicit_date(value):
+    """Rechaza fecha ausente, inválida o sin zona; no asigna UTC implícitamente."""
+    if not value:
+        return None
+    try:
+        date = parsedate_to_datetime(str(value))
+    except (TypeError, ValueError, IndexError):
+        try:
+            date = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        except ValueError:
+            return None
+    return date if date.tzinfo is not None and date.utcoffset() is not None else None
+
+
+def catalog_allowed(item, catalog):
+    """No eludir los permisos del catálogo cambiando la vía de recolección."""
+    try:
+        hosts = [(urlsplit(item.get(field) or "").hostname or "").lower().rstrip(".")
+                 for field in ("source_url", "link")]
+    except (ValueError, TypeError):
+        return False
+    names = [_fold(name) for name in (item.get("sources") or [item.get("source")]) if name]
+    for source in catalog:
+        domain = source.get("domain", "").lower().rstrip(".")
+        known = (domain and any(host == domain or host.endswith("." + domain) for host in hosts))
+        if known or _fold(source.get("name")) in names:
+            if not (source.get("enabled") is True and source.get("permission_status") == "approved"
+                    and source.get("technical_status") == "verified" and source.get("permission_evidence")):
+                return False
+    return True
+
+
+def prepare_item(item, now, catalog):
+    """Puerta de entrada mínima para las dos búsquedas nuevas del agregador."""
+    from scripts.article_images import permitted_url
+    from fetch_noticias import to_iso
+    published = explicit_date(item.get("published"))
+    codes = country_codes(item.get("title"))
+    source_url = item.get("source_url") or ""
+    if (not item.get("title") or not any(code != "CL" for code in codes)
+            or published is None
+            or not now - timedelta(hours=24) <= published <= now + timedelta(minutes=15)
+            or not permitted_url(source_url, check_dns=False)):
+        return None
+    try:
+        link = urlsplit(item.get("link") or "")
+        source_host = (urlsplit(source_url).hostname or "").lower().rstrip(".").removeprefix("www.")
+        host = (link.hostname or "").lower().rstrip(".").removeprefix("www.")
+        if link.scheme != "https" or not host or link.username or link.password or link.port not in (None, 443):
+            return None
+        google = host == "news.google.com" and link.path.startswith(("/rss/articles/", "/articles/"))
+        editorial = (permitted_url(item.get("link"), check_dns=False) and link.path.strip("/")
+                     and (host == source_host or host.endswith("." + source_host)))
+        if not (google or editorial) or not catalog_allowed(item, catalog):
+            return None
+    except (ValueError, TypeError):
+        return None
+    return {**item, "category": "latinoamerica", "coverage_countries": codes,
+            "published": to_iso(published), "summary": "", "image": "", "metadata_only": True}

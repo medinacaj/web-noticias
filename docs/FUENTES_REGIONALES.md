@@ -2,7 +2,7 @@
 
 La incorporación regional conserva titulares originales, enlaces HTTPS del medio, fecha y atribución textual. No copia descripciones, fotografías ni artículos, y no consulta las páginas de las notas para enriquecer imágenes. El país mostrado corresponde al **medio**, no necesariamente al país donde ocurrió el hecho.
 
-El registro operativo es `config/regional_sources.json`: dieciséis candidatos de siete países, incluidos seis medios venezolanos. Los campos `permission_status` y `technical_status` son independientes. Al introducir esta función, todos tienen `enabled: false`; ninguna nueva fuente se consulta ni se declara autorizada.
+El registro operativo es `config/regional_sources.json`: dieciséis candidatos de siete países, incluidos seis medios venezolanos. Los campos `permission_status` y `technical_status` son independientes. La revisión del 23 de octubre de 2026 conserva todos con `enabled: false`: cero autorizadas, once restringidas y cinco pendientes; ningún XML se declara validado. Las consultas de comprobación y condiciones están registradas en [la evidencia por fuente](EVIDENCIA_FUENTES_2026-10-23.md); el recolector no consulta candidatas desactivadas.
 
 ## Activación por fuente
 
@@ -13,9 +13,9 @@ Para activar una fuente después de revisar sus condiciones y autorización apli
 3. Revisar los ítems reales y su clasificación. El adaptador excluye opinión, editoriales y publicidad cuando están identificados en categorías o rutas; no garantiza detectar contenidos mal etiquetados.
 4. Cambiar `enabled` a `true` mediante un PR revisado. Un booleano por sí solo no activa una fuente pendiente o restringida.
 
-No hay un interruptor global que omita estos controles. Los feeds observados con una herramienta de navegación no se marcan como XML validado si no se pudieron leer sus entradas. Un 403 o un timeout dejan la disponibilidad sin confirmar.
+No hay un interruptor global que omita estos controles. Los feeds observados con una herramienta de navegación no se marcan como XML validado si no se pudieron leer sus entradas. Un 403 o un timeout dejan la disponibilidad sin confirmar. `technical_evidence` registra la URL intentada, fecha UTC, resultado y si se validó XML; `conditions_evidence` conserva el enlace y observación de condiciones. Los códigos internos del conector no se registran como HTTP del editor. `permission_evidence` se reserva para una autorización demostrada.
 
-Los términos revisados de [Efecto Cocuyo](https://efectococuyo.com/terminos-de-uso-y-politica-de-pagos/) incluyen restricciones explícitas de agregación y enlaces profundos. [El Universal Venezuela](https://www.eluniversal.com/st-condiciones-de-uso.html) establece una condición específica para enlaces entrantes. [El Tiempo](https://www.eltiempo.com/rss) limita su RSS a uso personal y no comercial. El catálogo conserva estos casos como restringidos. En los demás casos se mantienen las observaciones y enlaces para revisar las condiciones, sin afirmar prohibición ni autorización legal.
+La evidencia previa de [Efecto Cocuyo](https://efectococuyo.com/terminos-de-uso-y-politica-de-pagos/) registra restricciones explícitas de agregación y enlaces profundos; la reconsulta del 23 de octubre devolvió 429 y no demuestra un cambio de condiciones. [El Universal Venezuela](https://www.eluniversal.com/st-condiciones-de-uso.html) establece una condición específica para enlaces entrantes. [El Tiempo](https://www.eltiempo.com/rss) limita su RSS a uso personal y no comercial. El catálogo conserva estos casos como restringidos. La revisión también documenta condiciones de autorización o uso personal/no comercial de Runrun.es, Infobae, El Espectador, El Comercio, La República, Milenio, El País Uruguay y Folha; permanecen restringidos sin autorización adicional. Los demás casos siguen pendientes. Estas clasificaciones operativas no afirman una prohibición legal universal ni autorizaciones por el mero acceso al RSS.
 
 Este control se aplica al nuevo recolector dirigido. No acredita los derechos de todo el contenido que el portal obtenía previamente por Google Noticias o GNews.
 
