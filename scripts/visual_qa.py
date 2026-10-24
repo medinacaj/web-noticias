@@ -104,6 +104,30 @@ async def check_search(page, width, no_overflow):
         f"El buscador no devuelve el foco a {width}px")
 
 
+async def check_compact_navigation(page, width, no_overflow):
+    """Regresiones del diseño publicado: franja compacta y chevrón lateral."""
+    latest = await page.locator(".breaking").bounding_box()
+    assert latest and latest["height"] <= 60, f"Lo último deja de ser una franja a {width}px: {latest}"
+    edge = page.locator("#sidebar-edge")
+    nav = page.locator("#site-nav")
+    assert await edge.count() == 1, "Falta el chevrón lateral"
+    if width >= 1024:
+        assert await edge.is_visible() and await nav.is_visible()
+        await edge.click()
+        assert not await nav.is_visible() and await edge.is_visible()
+        assert await edge.get_attribute("aria-expanded") == "false"
+        await edge.click()
+        assert await nav.is_visible()
+    else:
+        assert not await edge.is_visible()
+        await page.locator("#menu-toggle").click()
+        assert await edge.is_visible() and await nav.is_visible()
+        await edge.click()
+        assert not await nav.is_visible()
+        assert not await page.locator("#nav-backdrop").is_visible()
+    await no_overflow("chevrón lateral")
+
+
 async def check(html, output):
     output.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
@@ -122,6 +146,7 @@ async def check(html, output):
                         .filter(el => el.right > innerWidth + 2).slice(0,10)""")
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
+            await check_compact_navigation(page, width, no_overflow)
             # Ninguna miniatura debe dejar un bloque vacío por debajo del texto.
             gaps = await page.evaluate("""() => Array.from(document.querySelectorAll(
                 ".section-grid .feature, .section-grid .compact"))

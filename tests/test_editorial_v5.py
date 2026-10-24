@@ -79,7 +79,7 @@ class EditorialV5Tests(unittest.TestCase):
 
     def test_existing_comparison_and_colors_survive(self):
         for marker in ('dialog.showModal()', 'data-coverage-trigger',
-                       '--paper:#EEF2F6', '--card-bg:#182639',
+                       '--paper:#F2F1ED', '--card-bg:#FFFFFF',
                        'box-shadow:var(--card-shadow-hover)', '%%TOP%%',
                        '%%RADAR%%', '%%SECTIONS%%'):
             self.assertIn(marker, self.page)

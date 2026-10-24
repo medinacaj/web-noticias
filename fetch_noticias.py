@@ -720,22 +720,22 @@ def render_breaking(sel, now):
     if not stories:
         return ""
     slides = "".join(
-        f'<li class="breaking-item cat-{story["category"]}">'
+        f'<li class="breaking-item cat-{story["category"]}" title="{esc(story["title"])}">'
         f'<span class="breaking-category">{esc(category_label(story))}</span>'
         f'{title_link(story)}<time datetime="{to_iso(story_time(story))}">'
         f'{time_ago(story, now)}</time></li>' for story in stories
     )
     return ('<section class="breaking" data-carousel aria-label="Últimas noticias" '
-            'aria-roledescription="carrusel"><div class="container">'
-            '<div class="breaking-head"><h2 class="breaking-label">Lo último</h2>'
+            'aria-roledescription="carrusel"><div class="container breaking-inner">'
+            '<h2 class="breaking-label">Lo último</h2>'
+            f'<ol class="breaking-track" id="latest-track" tabindex="0" '
+            f'aria-label="Titulares recientes, usa las flechas para desplazarte">{slides}</ol>'
             '<div class="carousel-controls" hidden>'
             '<span class="carousel-position" aria-live="polite" aria-atomic="true"></span>'
             '<button type="button" data-carousel-prev aria-label="Titulares anteriores" '
             'aria-controls="latest-track">←</button>'
             '<button type="button" data-carousel-next aria-label="Más titulares recientes" '
-            'aria-controls="latest-track">→</button></div></div>'
-            f'<ol class="breaking-track" id="latest-track" tabindex="0" '
-            f'aria-label="Titulares recientes, usa las flechas para desplazarte">{slides}</ol>'
+            'aria-controls="latest-track">→</button></div>'
             '</div></section>')
 
 

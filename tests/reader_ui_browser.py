@@ -168,6 +168,85 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertFalse(await page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
         await context.close()
 
+    async def test_latest_is_one_compact_line_at_every_width(self):
+        await self.page.locator('.breaking-track a').first.evaluate("el => el.textContent = 'Un titular muy largo sobre noticias internacionales y cultura '.repeat(12)")
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({"width": width, "height": 1000})
+            box = await self.page.locator('.breaking').bounding_box()
+            self.assertLessEqual(box['height'], 60, (width, box))
+            track = self.page.locator('.breaking-track')
+            self.assertEqual(await track.evaluate("el => getComputedStyle(el).scrollbarWidth"), 'none')
+            first = await track.locator('li').first.bounding_box()
+            self.assertAlmostEqual(first['width'], await track.evaluate('el => el.clientWidth'), delta=2)
+            title = await track.locator('a').first.bounding_box()
+            self.assertLessEqual(title['height'], 26)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
+
+    async def test_edge_chevron_collapses_and_reopens_sidebar(self):
+        edge = self.page.locator('#sidebar-edge')
+        self.assertEqual(await edge.count(), 1)
+        self.assertTrue(await edge.is_visible())
+        self.assertEqual(await edge.get_attribute('aria-expanded'), 'true')
+        await edge.click()
+        self.assertFalse(await self.page.locator('#site-nav').is_visible())
+        self.assertTrue(await edge.is_visible())
+        self.assertEqual(await edge.get_attribute('aria-expanded'), 'false')
+        self.assertLessEqual((await edge.bounding_box())['x'], 2)
+        await self.page.reload()
+        self.assertFalse(await self.page.locator('#site-nav').is_visible())
+        await edge.click()
+        self.assertTrue(await self.page.locator('#site-nav').is_visible())
+        self.assertEqual(await self.page.locator('#menu-toggle').get_attribute('aria-expanded'), 'true')
+        await self.page.set_viewport_size({"width": 390, "height": 844})
+        self.assertFalse(await edge.is_visible())
+        await self.page.locator('#menu-toggle').click()
+        self.assertTrue(await edge.is_visible())
+        await edge.click()
+        self.assertFalse(await self.page.locator('#site-nav').is_visible())
+        self.assertFalse(await self.page.locator('#nav-backdrop').is_visible())
+
+    async def test_themes_are_neutral_and_card_text_has_real_contrast(self):
+        def hex_value(color):
+            import re
+            rgb = [int(number) for number in re.findall(r'\d+', color)[:3]]
+            return '#' + ''.join(f'{value:02x}' for value in rgb)
+        def luminance(color):
+            values = [int(color[i:i+2], 16) / 255 for i in (1, 3, 5)]
+            return sum(w * (v / 12.92 if v <= .04045 else ((v + .055)/1.055)**2.4)
+                       for w, v in zip((.2126, .7152, .0722), values))
+        def contrast(first, second):
+            a, b = sorted((luminance(first), luminance(second)), reverse=True)
+            return (a + .05)/(b + .05)
+        for theme in ('light', 'dark'):
+            await self.page.emulate_media(color_scheme=theme)
+            await self.page.wait_for_function('theme => document.documentElement.dataset.theme === theme', arg=theme)
+            colors = await self.page.evaluate("""() => {
+                const card = document.querySelector('.lead');
+                const style = getComputedStyle(card);
+                return {paper:getComputedStyle(document.body).backgroundColor,
+                    nav:getComputedStyle(document.querySelector('.site-nav')).backgroundColor,
+                    card:style.backgroundColor, ink:style.color,
+                    muted:getComputedStyle(card.querySelector('.meta')).color,
+                    label:getComputedStyle(document.querySelector('.breaking-label')).color,
+                    strip:getComputedStyle(document.querySelector('.breaking')).backgroundColor};
+            }""")
+            colors = {key: hex_value(value) for key, value in colors.items()}
+            for surface in ('paper', 'nav', 'card'):
+                values = [int(colors[surface][i:i+2], 16) for i in (1, 3, 5)]
+                self.assertLessEqual(max(values)-min(values), 24, (theme, surface, colors))
+            self.assertGreaterEqual(contrast(colors['label'], colors['strip']), 4.5)
+            self.assertGreaterEqual(contrast(colors['ink'], colors['card']), 4.5)
+            self.assertGreaterEqual(contrast(colors['muted'], colors['card']), 4.5)
+            favorite = self.page.locator('.lead .save-story')
+            if await favorite.get_attribute('aria-pressed') != 'true': await favorite.click()
+            await self.page.mouse.move(0, 0)
+            chosen = await favorite.evaluate("el => ({ink:getComputedStyle(el).color, bg:getComputedStyle(el).backgroundColor})")
+            self.assertGreaterEqual(contrast(hex_value(chosen['ink']), hex_value(chosen['bg'])), 4.5)
+            if theme == 'dark':
+                self.assertGreaterEqual(contrast(colors['paper'], colors['card']), 1.5)
+            else:
+                self.assertGreater(luminance(colors['card']), .9)
+
     async def test_blocked_storage_does_not_disable_controls(self):
         await self.context.add_init_script("Object.defineProperty(window, 'localStorage', {get() {throw new Error('blocked')}})")
         await self.page.reload()

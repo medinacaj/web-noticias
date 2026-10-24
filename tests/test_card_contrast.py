@@ -21,17 +21,29 @@ class ContrastThemeTests(unittest.TestCase):
     def setUpClass(cls):
         cls.css = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
 
-    def test_background_stays_light_and_cards_dark(self):
-        self.assertIn("--paper:#EEF2F6", self.css)
-        self.assertIn("--card-bg:#182639", self.css)
-        self.assertIn("background:var(--card-bg);color:var(--card-ink)", self.css)
-        self.assertGreater(contrast("#EEF2F6", "#182639"), 10)
+    @classmethod
+    def palette(cls, dark=False):
+        selector = r':root\[data-theme="dark"\]' if dark else r':root'
+        block = re.search(selector + r'\{([^}]+)\}', cls.css).group(1)
+        values = dict(re.findall(r'(--[a-z-]+):(#[0-9A-Fa-f]{6})', block))
+        return values
+
+    def test_light_cards_and_dark_cards_are_distinct_from_the_background(self):
+        light, dark = self.palette(), self.palette(dark=True)
+        self.assertGreater(luminance(light['--card-bg']), .9)
+        self.assertGreater(luminance(light['--card-bg']), luminance(light['--paper']))
+        self.assertGreaterEqual(contrast(dark['--card-bg'], dark['--paper']), 1.5)
+        for colors in (light, dark):
+            for token in ('--paper', '--card-bg', '--surface'):
+                rgb = [int(colors[token][i:i+2], 16) for i in (1, 3, 5)]
+                self.assertLessEqual(max(rgb) - min(rgb), 24)
 
     def test_card_readability_wcag_aa(self):
-        for fg in ("#F0F4F8", "#C1CFDE", "#C5E1FF"):
-            with self.subTest(color=fg):
-                self.assertGreaterEqual(contrast(fg, "#182639"), 4.5)
-                self.assertGreaterEqual(contrast(fg, "#223247"), 4.5)
+        for dark in (False, True):
+            colors = self.palette(dark)
+            for token in ('--card-ink', '--card-muted', '--card-link'):
+                with self.subTest(dark=dark, token=token):
+                    self.assertGreaterEqual(contrast(colors[token], colors['--card-bg']), 4.5)
 
     def test_shadows_have_soft_layers_and_motion_safe(self):
         self.assertIn("--card-shadow:0 2px 5px", self.css)
@@ -46,10 +58,10 @@ class ContrastThemeTests(unittest.TestCase):
 
     def test_system_dark_mode_and_manual_override_keep_contrast(self):
         self.assertIn('prefers-color-scheme:dark', self.css)
-        self.assertIn(':root[data-theme="dark"]', self.css)
-        for foreground in ('#F0F4F8', '#C1CFDE', '#C5E1FF'):
-            self.assertGreaterEqual(contrast(foreground, '#061424'), 4.5)
-            self.assertGreaterEqual(contrast(foreground, '#0A2540'), 4.5)
+        for dark in (False, True):
+            colors = self.palette(dark)
+            for token in ('--ink', '--muted'):
+                self.assertGreaterEqual(contrast(colors[token], colors['--surface']), 4.5)
 
 
 if __name__ == "__main__":
