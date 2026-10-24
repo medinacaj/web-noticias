@@ -54,6 +54,7 @@ Variables de entorno: `GNEWS_API_KEY` (secret), `SITE_URL` y `GSC_VERIFICATION` 
 - SEO técnico obligatorio en cada cambio: title, meta description, canonical, `index, follow`, Open Graph/Twitter, JSON-LD (`WebSite` + `CollectionPage`/`ItemList`), sitemap, robots, 404 con `noindex`, un solo `h1`.
 - Los extractos son la descripción entregada por cada fuente; no presentarlos como redacción propia.
 - Verificar tras cambios de diseño: sin desborde horizontal en 1440/1024/390 px, contenido legible con JS desactivado, JSON-LD válido, sintaxis JS con `node --check`.
+- Coherencia visual (lección de la Agenda, PR #87/#88 → #91): toda sección o bloque nuevo reutiliza los componentes existentes (`section-head` numerado, `section-grid`, tarjetas `.feature`/`.compact`, `.kicker`, `.meta`, `.media`, botones `.density-switch`) en vez de crear clases visuales propias. No agregar colores fuera de la paleta: usar los tokens y las clases `.cat-*` de las categorías existentes. Antes de fusionar, revisar una captura de la sección nueva junto a una sección de noticias, a 1440 y 390 px. `tests/test_design_consistency.py` lo vigila: si de verdad hace falta un color o una clase de categoría nueva, actualizar ahí su lista con la aprobación del usuario.
 
 ## Pendientes
 
