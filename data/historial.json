@@ -1,6 +1,138 @@
 {
- "actualizado": "2026-10-24T20:42:28Z",
+ "actualizado": "2026-10-24T22:01:08Z",
  "noticias": [
+  {
+   "category": "medioambiente",
+   "title": "Cambio climático en Chile: advierten fuerte impacto en el precio de los alimentos por crisis",
+   "summary": "",
+   "image": "https://www.adnradio.cl/resizer/v2/AKF7LH26VZAN7LHMZ4YGNTNJGA.jpeg?auth=1854c465ec9027e6da3d68f00c8354e6689da25cfe92c2741da5534ad5eb38df&quality=70&width=1200&height=675&focal=2572,1712",
+   "source_url": "https://www.adnradio.cl",
+   "sources": [
+    "ADN Radio"
+   ],
+   "coverages": [],
+   "link": "https://www.adnradio.cl/2026/10/24/cambio-climatico-en-chile-advierten-fuerte-impacto-en-el-precio-de-los-alimentos-por-crisis/",
+   "published": "2026-10-24T21:52:13Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Insólito autogol de arquero del Chelsea que reemplazó al Dibu: TV enfocó al argentino tras error",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994833-arquero-autogol-chelsea-dibu.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2026/10/24/insolito-autogol-de-arquero-del-chelsea-que-reemplazo-al-dibu-tv-enfoco-al-argentino-tras-error.shtml",
+   "published": "2026-10-24T21:13:17Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "coverage_countries": [
+    "AR"
+   ],
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "politica",
+   "title": "Otro exconcertacionista aterriza en el gobierno de José Antonio Kast: Ricardo Navarrete",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/ricardo-navarrete-700x394.jpg",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/24/otro-exconcertacionista-aterriza-en-el-gobierno-de-jose-antonio-kast-ricardo-navarrete/",
+   "published": "2026-10-24T21:00:59Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Voraz incendio destruye 95% de establecimiento educacional de Arauco: más de 240 alumnos afectados",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994811-restore-incendio-afecta-a-colegio-de-arauco-queda-con-95-de-perdidas-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/24/voraz-incendio-destruye-95-de-establecimiento-educacional-de-arauco-mas-de-240-alumnos-afectados.shtml",
+   "published": "2026-10-24T20:37:42Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Del cruce entre Larraín y Squella a las disculpas a la UDI: la disputa que remeció al oficialismo por la rebaja de condenas",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/WPX5DW3F4VAKJL7WNIIVMDOQXE.png?auth=3b8f7fdf846e47118c6e8a3705d5ba6e810d3b7f3254cb5520a1d1a23536ef57&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/politica/noticia/del-cruce-entre-larrain-y-squella-a-las-disculpas-a-la-udi-la-disputa-que-remecio-al-oficialismo-por-la-rebaja-de-condenas/",
+   "published": "2026-10-24T20:22:58Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Brasileiros já vão às urnas na Nova Zelândia; relembre os números do 1º turno",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.cartacapital.com.br",
+   "sources": [
+    "CartaCapital"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQ0ZqYW5ySVh6NWZzaklfT2w5Z2VOUlk5X24ySHVEVXpnV01Xc3g0dkNicEFwckN6VE16SXhEWk5kN0hSYkhHY2NHSVcyMU1OZVBBSkhnZWZteFExc2lMMjVRcVpWM25rcGM0ZFN1WjA1RXlrc0VhZnhVSkFxYW9rMTlMdllRMmh4b0VmZ3pWVGJEV0tSejVFVDFERTRmRXllZTJZa3hvemo4cUdDV2wzT2RzOFQzcXpmSk5VWHZOclk?oc=5",
+   "published": "2026-10-24T20:19:00Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "deportes",
+   "title": "Alexis Sánchez y otro golpe en Montreal: nueva caída en MLS, se queda sin playoffs e hinchas estallan",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994818-alexis-sanchez-montreal-derrota-mns.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/10/24/alexis-sanchez-y-otro-golpe-en-montreal-nueva-caida-en-mls-se-queda-sin-playoffs-e-hinchas-estallan.shtml",
+   "published": "2026-10-24T20:17:32Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Ahora sí que sí: La ‘U’ confirma fecha y estadio para revancha con Deportes Antofagasta por Copa Chile",
+   "summary": "",
+   "image": "https://img.soy-chile.cl/Fotos/2026/10/24/file_20261024171305.jpg",
+   "source_url": "https://www.soychile.cl",
+   "sources": [
+    "SoyChile.cl"
+   ],
+   "coverages": [],
+   "link": "https://www.soychile.cl/antofagasta/deportes/2026/10/24/970039/copa-chile-afta.html",
+   "published": "2026-10-24T20:17:01Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
   {
    "category": "regiones",
    "title": "La queja de Deportes Concepción al árbitro tras caer vs La Serena: “Es fútbol, se puede dejar correr un poc...",
@@ -101,6 +233,36 @@
    "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
+   "category": "politica",
+   "title": "De \"premios de consuelo\" a repaso por \"austeridad\": Segundo piso crea nuevo flanco en gobierno de Kast",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994758-segundo-1200x633.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/24/de-premios-de-consuelo-a-repaso-por-austeridad-segundo-piso-crea-nuevo-flanco-en-gobierno-de-kast.shtml",
+   "published": "2026-10-24T18:32:04Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Goles del Rangers vs. Cobreloa: Partido EN VIVO, resumen, videos y resultado por la Primera B 2026",
+   "summary": "",
+   "image": "https://s.t13.cl/sites/default/files/styles/manualcrop_850x475/public/t13/field-imagen/2026-10/1792877088.jpg.jpeg?itok=zABMocyh",
+   "source_url": "https://www.t13.cl",
+   "sources": [
+    "Teletrece"
+   ],
+   "coverages": [],
+   "link": "https://www.t13.cl/noticia/deportes13/goles-del-rangers-vs-cobreloa-partido-vivo-resumen-videos-resultado-por-primera-24-10-2026",
+   "published": "2026-10-24T18:30:00Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
    "category": "deportes",
    "title": "La Serena superó a Concepción y se acercó a zona de Sudamericana: lilas jugaron con hombre menos",
    "summary": "",
@@ -149,6 +311,21 @@
    "image_checked_at": "2026-10-24T19:42:32.381879Z"
   },
   {
+   "category": "nacional",
+   "title": "Emiten aviso meteorológico por tormentas eléctricas en la RM y otras dos regiones",
+   "summary": "",
+   "image": "https://www.24horas.cl/24horas/site/artic/20261024/imag/foto_0000001120261024145235/tormenta_electrica.webp",
+   "source_url": "https://www.24horas.cl",
+   "sources": [
+    "24horas"
+   ],
+   "coverages": [],
+   "link": "https://www.24horas.cl/el-tiempo/emiten-aviso-meteorologico-por-tormentas-electricas-en-la-rm-y-otras-dos-regiones",
+   "published": "2026-10-24T17:56:00Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
    "category": "internacional",
    "title": "Tal como en España y Francia: italianos marchan contra el costo de la vida y su Gobierno",
    "summary": "",
@@ -177,6 +354,21 @@
    "published": "2026-10-24T17:36:34Z",
    "first_seen": "2026-10-24T18:04:22Z",
    "image_checked_at": "2026-10-24T18:04:22.848275Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Tras La Serena vs. D. Concepción: así está la tabla de posiciones de la Liga de Primera",
+   "summary": "",
+   "image": "https://media.bolavip.com/wp-content/uploads/sites/19/2026/10/24142240/Diseno-sin-titulo-2026-10-24T142233.526-1200x740.webp",
+   "source_url": "https://bolavip.com",
+   "sources": [
+    "Bolavip Chile"
+   ],
+   "coverages": [],
+   "link": "https://bolavip.com/cl/nacional/tras-d-concepcion-vs-la-serena-asi-esta-la-tabla-de-posiciones-de-la-liga-de-primera",
+   "published": "2026-10-24T17:30:58Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
   },
   {
    "category": "cultura",
@@ -225,6 +417,21 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "cultura",
+   "title": "El ganador tras polémica por Bienal de Venecia",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/Rodrigo-Santa-Maria-700x467.png",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/cultura/cultivate/2026/10/24/el-ganador-tras-polemica-por-bienal-de-venecia/",
+   "published": "2026-10-24T17:00:52Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
   },
   {
    "category": "internacional",
@@ -291,6 +498,21 @@
    "published": "2026-10-24T16:22:40Z",
    "first_seen": "2026-10-24T20:42:28Z",
    "image_checked_at": "2026-10-24T20:42:28.697740Z"
+  },
+  {
+   "category": "deportes",
+   "title": "La Gerencia de Ligas y el Tribunal de Disciplina: los otros culpables del papelón que golpea a San Luis de Chupete Suazo",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/LPFMOLNZRBDZRFULU3MXJOOX6E.jpg?auth=f35f4b74dc730b050cdf1ffd17f529829b8dd1e26e16d42d5de021c89046b2f7&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/el-deportivo/noticia/la-gerencia-de-ligas-y-el-tribunal-de-disciplina-los-otros-culpables-del-papelon-que-golpea-a-san-luis-de-chupete-suazo/",
+   "published": "2026-10-24T16:11:26Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
   },
   {
    "category": "latinoamerica",
@@ -455,7 +677,8 @@
    "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/24114904/PS_1194551-e1792853918441-1200x740.webp",
    "source_url": "https://redgol.cl",
    "sources": [
-    "RedGol"
+    "RedGol",
+    "La Cuarta"
    ],
    "coverages": [],
    "link": "https://redgol.cl/ucatolica/u-catolica-arriesga-sanciones-avisan-denuncia-de-la-anfp-por-partido-suspendido-ante-audax",
@@ -793,6 +1016,21 @@
   },
   {
    "category": "deportes",
+   "title": "DT de Palestino llena de elogios a Colo Colo en la previa del partido: “Por algo es el líder”",
+   "summary": "",
+   "image": "https://media.dalealbo.cl/wp-content/uploads/sites/14/2026/10/24103005/dt-palestino-colo-colo.jpg-e1792848647832-1200x740.webp",
+   "source_url": "https://dalealbo.cl",
+   "sources": [
+    "Dale Albo"
+   ],
+   "coverages": [],
+   "link": "https://dalealbo.cl/liga-de-primera/dt-de-palestino-llena-de-elogios-a-colo-colo-en-la-previa-del-partido-por-algo-es-el-lider",
+   "published": "2026-10-24T13:32:28Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
+  },
+  {
+   "category": "deportes",
    "title": "Brutal ninguneo de Emiliano Astorga en Temuco: “¿Eres periodista? Ni siquiera tení titulo, yo tengo prestig...",
    "summary": "",
    "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/24100512/astorga-temuco-e1792847191377-1200x740.webp",
@@ -967,6 +1205,21 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "nacional",
+   "title": "Prisión preventiva para imputado por homicidio de mujer en Peñalolén: buscan su cuerpo en el canal San Carlos",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/URYOFBSOTBE2TI54DUUA5K3B6E.jpg?auth=46eb5b212949867c6d11ad312fe4b1a0b986acee97ca75ef49eada26559ee8b7&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/nacional/noticia/prision-preventiva-para-imputado-por-homicidio-de-mujer-en-penalolen-buscan-su-cuerpo-en-el-canal-san-carlos/",
+   "published": "2026-10-24T12:45:21Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
   },
   {
    "category": "nacional",
@@ -1488,6 +1741,21 @@
    "published": "2026-10-24T03:01:59Z",
    "first_seen": "2026-10-24T09:34:27Z",
    "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
+   "category": "economia",
+   "title": "Albemarle abre postulaciones a Programa de Aprendices 2026",
+   "summary": "",
+   "image": "https://chilepaisminero.com/wp-content/uploads/2026/10/DSC02217-1-scaled.jpg",
+   "source_url": "https://chilepaisminero.com",
+   "sources": [
+    "Chile País Minero"
+   ],
+   "coverages": [],
+   "link": "https://chilepaisminero.com/albemarle-abre-postulaciones-a-programa-de-aprendices-2026/",
+   "published": "2026-10-24T03:01:22Z",
+   "first_seen": "2026-10-24T22:01:08Z",
+   "image_checked_at": "2026-10-24T22:01:08.642891Z"
   },
   {
    "category": "latinoamerica",
@@ -2221,392 +2489,82 @@
    "published": "2026-10-23T22:03:14Z",
    "first_seen": "2026-10-24T01:13:38Z",
    "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Ministro Barros visita Colchane y afirma que zanja \"está prácticamente concluida en su extensión\"",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994329-ministro-defensa-colchane-zanja.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-tarapaca/2026/10/23/ministro-barros-visita-colchane-y-afirma-que-zanja-esta-practicamente-concluida-en-su-extension.shtml",
-   "published": "2026-10-23T21:56:10Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Participante de Tito Games rechazó 25 millones por lealtad y se fue sin nada: “A mis hijos les fallé”",
-   "summary": "",
-   "image": "https://www.lacuarta.com/resizer/v2/7CAB5ZABMFHQ3K6PS4H7O6KMBE.jpeg?auth=a043145ca1fef21ccfcedebc013892c479f2eb2169e433df76d873ed2acbd29f&height=630&width=1200&smart=true",
-   "source_url": "https://www.lacuarta.com",
-   "sources": [
-    "La Cuarta"
-   ],
-   "coverages": [],
-   "link": "https://www.lacuarta.com/espectaculos/noticia/participante-de-tito-games-rechazo-25-millones-por-lealtad-y-se-fue-sin-nada-a-mis-hijos-les-falle/",
-   "published": "2026-10-23T21:55:53Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Sorpresiva salida del director del Hospital Regional de Concepción: Servicio de Salud pidió renuncia",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994369-hospital-regional-concepcion.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/23/servicio-de-salud-pide-la-renuncia-a-director-del-hospital-regional-de-concepcion.shtml",
-   "published": "2026-10-23T21:55:28Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "regiones",
-   "title": "ProChile Valparaíso intensifica trabajo de promoción de viñas boutique en mercados internacionales",
-   "summary": "",
-   "image": "https://g5noticias.cl/wp-content/uploads/2026/10/Vina-las-cinco-hermanas-scaled.jpg",
-   "source_url": "https://g5noticias.cl",
-   "sources": [
-    "G5noticias"
-   ],
-   "coverages": [],
-   "link": "https://g5noticias.cl/2026/10/23/prochile-valparaiso-intensifica-trabajo-de-promocion-de-vinas-boutique-en-mercados-internacionales/",
-   "published": "2026-10-23T21:52:03Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Raúl Sohr ante la segunda vuelta en Brasil: “Esto es un empate técnico y es una caja de sorpresas”",
-   "summary": "",
-   "image": "",
-   "source_url": "https://radio.uchile.cl",
-   "sources": [
-    "Universidad de Chile"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVHFScnIxMm00bTJYM29oUUxJWmdwUUdpcHNDczJpMzFDNEJpdWZIdGNGYnpXNkR5R3RnYWc4VzZTUWhpeGJYMDQ0ampKUW1fcndNZXd2UmJIWjh3TmdDVWJCYWV6ckJhcVVHSFZPS3E0X0J4Szg2bkNYNzNHbTlBWXY1V0RYNmFUb3VlbGxPVVlSMkw0S3pWUkw1NmVJUUpCU1VjRzc1Skc3dGt0dFBfOWxob1FVdlpwaXpObHdFNnpHOW53VDJud1N0bw?oc=5",
-   "published": "2026-10-23T21:45:40Z",
-   "first_seen": "2026-10-24T15:08:25Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "cultura",
-   "title": "\"Ahí no era na bullying\": Leo Rey responde con foto retro a la polémica con Alexítico",
-   "summary": "",
-   "image": "https://www.24horas.cl/24horas/site/artic/20261023/imag/foto_0000002020261023180237/Leo_Rey_responde_a_la_polemica_con_Alexitico.webp",
-   "source_url": "https://www.24horas.cl",
-   "sources": [
-    "24horas"
-   ],
-   "coverages": [],
-   "link": "https://www.24horas.cl/tendencias/espectaculos/ahi-no-era-na-bullying-leo-rey-responde-a-la-polemica-con-alexitico",
-   "published": "2026-10-23T21:42:00Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
-  },
-  {
-   "category": "regiones",
-   "title": "Básquetbol femenino: La Cisterna y Valparaíso recibirán las finales Sub 13 y Sub 18 de la Libcentro",
-   "summary": "",
-   "image": "https://www.adnradio.cl/resizer/v2/AID64KV2IZDZXIOH4WDJQRCJAQ.jpeg?auth=07e2ef9d3e8f52d8733b8ec5f341f1a3e299750fa09a5dc5bba3f101e76f1ee5&quality=70&width=1200&height=675&smart=true",
-   "source_url": "https://www.adnradio.cl",
-   "sources": [
-    "ADN Radio"
-   ],
-   "coverages": [],
-   "link": "https://www.adnradio.cl/2026/10/23/basquetbol-femenino-la-cisterna-y-valparaiso-recibiran-las-finales-sub-13-y-sub-18-de-la-libcentro/",
-   "published": "2026-10-23T21:40:14Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
-  },
-  {
-   "category": "politica",
-   "title": "U. de Chile aportará evidencia científica para elaborar la nueva Política Nacional de Envejecimiento",
-   "summary": "",
-   "image": "https://uchile.cl/dam/jcr:4ed70048-a922-4f93-963d-6d0547499cba/CARRUSEL-Senama.jpg",
-   "source_url": "https://uchile.cl",
-   "sources": [
-    "Universidad de Chile"
-   ],
-   "coverages": [],
-   "link": "https://uchile.cl/noticias/246242/u-de-chile-y-ministerio-de-desarrollo-social-y-familia-firman-acuerdo",
-   "published": "2026-10-23T21:38:56Z",
-   "first_seen": "2026-10-24T19:31:07Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Golpe al Festival de Viña 2027: revelan que reconocida cantante se habría bajado del certamen",
-   "summary": "",
-   "image": "https://www.adnradio.cl/resizer/v2/3S3NIITQAFGKHILT4CYDLMRJTY.jpg?auth=c11471ecfe12d121a3172e5f78d0763ccfe08d20e67a85d92ac39298aa8354ff&quality=70&width=1200&height=675&smart=true",
-   "source_url": "https://www.adnradio.cl",
-   "sources": [
-    "ADN Radio"
-   ],
-   "coverages": [],
-   "link": "https://www.adnradio.cl/2026/10/23/golpe-al-festival-de-vina-2027-revelan-que-reconocida-cantante-se-habria-bajado-del-certamen/",
-   "published": "2026-10-23T21:35:12Z",
-   "first_seen": "2026-10-24T14:27:30Z",
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Líderes mundiais acompanham eleições no Brasil e se dividem em apoios",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.cnnbrasil.com.br",
-   "sources": [
-    "CNN Brasil"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRjFYakVLZjJwRTlMMlJQcG4yNXptSDB4RGNST05FQ0haQi13VVpnLVA0MzFOVXBCbElFa1VyelBUVUhwY1cwclFJWUpHQV9QTHNrdHVpOHRNcUZMQkxIWTR2dUpzWmJ0R2tISDFnSVBsT0dyNU9hQXgxM1FvcnBPOHBBRzZYQng1Zk45TXd6X1pKbllBb3hra0RES0pJQVdZMUVaaUxHbkxIeFlG?oc=5",
-   "published": "2026-10-23T21:32:33Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "medioambiente",
-   "title": "Día Internacional contra el Cambio Climático: académica advierte sobre los efectos del calentamiento global en los ecosistemas acuáticos",
-   "summary": "",
-   "image": "https://www.portalagrochile.cl/wp-content/uploads/2026/10/Dia-Internacional-contra-el-Cambio-Climatico-academica-advierte-sobre-los-efectos-del-calentamiento-global-en-los-ecosistemas-acuaticos.jpg",
-   "source_url": "https://www.portalagrochile.cl",
-   "sources": [
-    "Portal Agro Chile"
-   ],
-   "coverages": [],
-   "link": "https://www.portalagrochile.cl/2026/10/23/dia-internacional-contra-el-cambio-climatico-academica-advierte-sobre-los-efectos-del-calentamiento-global-en-los-ecosistemas-acuaticos/",
-   "published": "2026-10-23T21:30:24Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "regiones",
-   "title": "La U confirmó estadio para la revancha contra Antofagasta en la Copa Chile",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261023/imag/foto_0000000720261023183055.jpg",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa",
-    "SoyChile.cl"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/deportes/futbol/copa-chile/la-u-confirmo-estadio-para-la-revancha-contra-antofagasta-en-la-copa-chile/2026-10-23/183055.html",
-   "published": "2026-10-23T21:29:00Z",
-   "first_seen": "2026-10-24T18:04:22Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T18:04:22.848275Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Definidos os confrontos das semifinais da Copa do Brasil Feminina",
-   "summary": "",
-   "image": "",
-   "source_url": "https://agenciabrasil.ebc.com.br",
-   "sources": [
-    "Agência Brasil"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeUhLN0oyb3FybFd2QmhpbldIRGRENS1zMmFJZjJzeW4wbUh6T2pKMmJoMk5ZdWVkc2hUcDlmTXNHTUY2MDNfZEVaNFVLRC00bTNranlnbVdkTTdpXzFoV19ZOWY2bHRXX2x4eF8tZXRSZGJ3cDF4ZWZnemUxUy03LTdEak5tSzU5d0VFYmRhZ2E4NVRDTWRxejFBRm13dTFHb01HZFJMcEdxQTBkeEVXdm9rUW1oc0lPRy13TXJzcFA?oc=5",
-   "published": "2026-10-23T21:28:00Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "cultura",
-   "title": "Antonio deberá cuidarse: Alguien lo seguirá sin que se dé cuenta en el capítulo 47 de La Baronesa",
-   "summary": "",
-   "image": "https://images2-mega.cdn.mdstrm.com/mega/2026/10/23/antonio-carlos-diaz_221705_1_6adb7ece3d974.jpg?d=1200x675",
-   "source_url": "https://www.mega.cl",
-   "sources": [
-    "Mega.cl"
-   ],
-   "coverages": [],
-   "link": "https://www.mega.cl/teleseries/la-baronesa/avances/221705-avance-alguien-espia-a-antonio.html",
-   "published": "2026-10-23T21:20:00Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Sismo de menor intensidad se registra en la región de O’Higgins",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994334-sismo-6.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-ohiggins/2026/10/23/sismo-sacude-a-la-registra-en-la-region-de-0higgins.shtml",
-   "published": "2026-10-23T21:18:12Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Dueño de Tevex refiere a supuesta salida de Mauricio Israel tras escándalo por pensión de alimentos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994249-mauricio-israel-tevex-1200x633.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/23/dueno-de-tevex-refiere-a-supuesta-salida-de-mauricio-israel-tras-escandalo-por-pension-de-alimentos.shtml",
-   "published": "2026-10-23T21:16:56Z",
-   "first_seen": "2026-10-24T10:26:49Z",
-   "image_checked_at": "2026-10-24T10:26:49.685059Z"
-  },
-  {
-   "category": "deportes",
-   "title": "No habrá copa en Quillota: el lío de escritorio que pone en alerta a San Luis de Chupete Suazo en la lucha por el ascenso",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/LPFMOLNZRBDZRFULU3MXJOOX6E.jpg?auth=f35f4b74dc730b050cdf1ffd17f529829b8dd1e26e16d42d5de021c89046b2f7&height=630&width=1200&focal=1529%2C1036",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/el-deportivo/noticia/no-habra-copa-en-quillota-el-lio-de-escritorio-que-pone-en-alerta-a-san-luis-de-chupete-suazo-en-la-lucha-por-el-ascenso/",
-   "published": "2026-10-23T21:16:32Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Ciclista asesinado a tiros por 4 sujetos desde un taxi en Macul: imputado quedó en prisión preventiva",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994228-ciclista-asesinado-a-tiros-por-4-sujetos-desde-un-taxi-en-macul-imputado-quedo-en-prision-preventiva.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/23/ciclista-asesinado-a-tiros-por-4-sujetos-desde-un-taxi-en-macul-imputado-quedo-en-prision-preventiva.shtml",
-   "published": "2026-10-23T21:13:53Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Carrete e irresponsabilidad: Willy Sabor revela los motivos de la salida de Yoan Amor de La Noche",
-   "summary": "",
-   "image": "https://www.lacuarta.com/resizer/v2/7IUZRH4CPFGTFHP4GGASE2AOD4.jpg?auth=ce65cdcb3d6f6135883c3edc929b816086eb77bd084356ee03931d500050dfb4&height=630&width=1200&smart=true",
-   "source_url": "https://www.lacuarta.com",
-   "sources": [
-    "La Cuarta"
-   ],
-   "coverages": [],
-   "link": "https://www.lacuarta.com/espectaculos/noticia/carrete-e-irresponsabilidad-willy-sabor-revela-los-motivos-de-la-salida-de-yoan-amor-de-la-noche/",
-   "published": "2026-10-23T21:06:37Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "regiones",
-   "title": "La U confirma que la revancha ante D. Antofagasta por Copa Chile se disputará el jueves 5 en el estadio Santa Laura",
-   "summary": "",
-   "image": "https://puranoticia.pnt.cl/cms/site/artic/20261023/imag/foto_0000001620261023172622/PS_1197591.jpg",
-   "source_url": "https://puranoticia.pnt.cl",
-   "sources": [
-    "Puranoticia.cl"
-   ],
-   "coverages": [],
-   "link": "https://puranoticia.pnt.cl/deportes/la-u-confirma-que-la-revancha-ante-d-antofagasta-por-copa-chile-se",
-   "published": "2026-10-23T21:03:00Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z",
-   "coverage_countries": [
-    "CL"
-   ]
-  },
-  {
-   "category": "economia",
-   "title": "Las marcas estadounidenses que podría traer PriceSmart a Chile",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261023/imag/foto_0000001120261023175554/Price_Smart_4_copia.jpg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/senal-df/datos-de-sobremesa/las-marcas-estadounidenses-que-podria-traer-pricesmart-a-chile",
-   "published": "2026-10-23T21:00:00Z",
-   "first_seen": "2026-10-24T05:43:25Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T05:43:25.928848Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Laura Pausini se habría bajado de Viña 2027 y apuntan a Bizarro: Recibiría la Gaviota de Platino",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994283-laura-pausini-vina-1200x633.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/artes-y-cultura/musica/2026/10/23/laura-pausini-se-habria-bajado-de-vina-2027-y-apuntan-a-bizarro-recibiria-la-gaviota-de-platino.shtml",
-   "published": "2026-10-23T20:58:20Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "economia",
-   "title": "El petróleo cerró su quinta jornada consecutiva de alzas y tocó máximos de varios meses",
-   "summary": "",
-   "image": "https://www.infobae.com/resizer/v2/4AGQZVIMONAWRC4HGTAMPMUPXY.jpg?auth=3a0194870a7e436256a7c7f5c7004639603443b4d9304d884dd592c7e9d2ef5a&smart=true&width=1200&height=630&quality=85",
-   "source_url": "https://www.infobae.com",
-   "sources": [
-    "Infobae"
-   ],
-   "coverages": [],
-   "link": "https://www.infobae.com/america/mundo/2026/10/23/el-petroleo-cerro-su-quinta-jornada-consecutiva-de-alzas-y-toco-maximos-de-varios-meses/",
-   "published": "2026-10-23T20:54:00Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Gestores de contraseñas: los 8 mejores de 2026 y cuánto cuestan",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/22TFW2MGYBDQFPVE6RD5XZ74IA.jpeg?auth=218f5f9970758df3b3a73c928709a14d2738914ad4505594b2425178b4c00071&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/tecnologia/noticia/8-mejores-gestores-contrasenas-precios/",
-   "published": "2026-10-23T20:45:05Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Cambio climático en Chile: advierten fuerte impacto en el precio de los alimentos por crisis",
+   "link": "https://www.adnradio.cl/2026/10/24/cambio-climatico-en-chile-advierten-fuerte-impacto-en-el-precio-de-los-alimentos-por-crisis/",
+   "category": "medioambiente",
+   "published": "2026-10-24T21:52:13Z",
+   "sources": [
+    "ADN Radio"
+   ]
+  },
+  {
+   "title": "Insólito autogol de arquero del Chelsea que reemplazó al Dibu: TV enfocó al argentino tras error",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2026/10/24/insolito-autogol-de-arquero-del-chelsea-que-reemplazo-al-dibu-tv-enfoco-al-argentino-tras-error.shtml",
+   "category": "deportes",
+   "published": "2026-10-24T21:13:17Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Otro exconcertacionista aterriza en el gobierno de José Antonio Kast: Ricardo Navarrete",
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/24/otro-exconcertacionista-aterriza-en-el-gobierno-de-jose-antonio-kast-ricardo-navarrete/",
+   "category": "politica",
+   "published": "2026-10-24T21:00:59Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
+   "title": "Voraz incendio destruye 95% de establecimiento educacional de Arauco: más de 240 alumnos afectados",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/24/voraz-incendio-destruye-95-de-establecimiento-educacional-de-arauco-mas-de-240-alumnos-afectados.shtml",
+   "category": "nacional",
+   "published": "2026-10-24T20:37:42Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Del cruce entre Larraín y Squella a las disculpas a la UDI: la disputa que remeció al oficialismo por la rebaja de condenas",
+   "link": "https://www.latercera.com/politica/noticia/del-cruce-entre-larrain-y-squella-a-las-disculpas-a-la-udi-la-disputa-que-remecio-al-oficialismo-por-la-rebaja-de-condenas/",
+   "category": "nacional",
+   "published": "2026-10-24T20:22:58Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Brasileiros já vão às urnas na Nova Zelândia; relembre os números do 1º turno",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQ0ZqYW5ySVh6NWZzaklfT2w5Z2VOUlk5X24ySHVEVXpnV01Xc3g0dkNicEFwckN6VE16SXhEWk5kN0hSYkhHY2NHSVcyMU1OZVBBSkhnZWZteFExc2lMMjVRcVpWM25rcGM0ZFN1WjA1RXlrc0VhZnhVSkFxYW9rMTlMdllRMmh4b0VmZ3pWVGJEV0tSejVFVDFERTRmRXllZTJZa3hvemo4cUdDV2wzT2RzOFQzcXpmSk5VWHZOclk?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-24T20:19:00Z",
+   "sources": [
+    "CartaCapital"
+   ]
+  },
+  {
+   "title": "Alexis Sánchez y otro golpe en Montreal: nueva caída en MLS, se queda sin playoffs e hinchas estallan",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/10/24/alexis-sanchez-y-otro-golpe-en-montreal-nueva-caida-en-mls-se-queda-sin-playoffs-e-hinchas-estallan.shtml",
+   "category": "deportes",
+   "published": "2026-10-24T20:17:32Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Ahora sí que sí: La ‘U’ confirma fecha y estadio para revancha con Deportes Antofagasta por Copa Chile",
+   "link": "https://www.soychile.cl/antofagasta/deportes/2026/10/24/970039/copa-chile-afta.html",
+   "category": "regiones",
+   "published": "2026-10-24T20:17:01Z",
+   "sources": [
+    "SoyChile.cl"
+   ]
+  },
   {
    "title": "La queja de Deportes Concepción al árbitro tras caer vs La Serena: “Es fútbol, se puede dejar correr un poc...",
    "link": "https://redgol.cl/chile/la-queja-de-deportes-concepcion-al-arbitro-tras-caer-vs-la-serena-es-futbol-se-puede-dejar-correr-un-poco-mas",
@@ -2662,6 +2620,24 @@
    ]
   },
   {
+   "title": "De \"premios de consuelo\" a repaso por \"austeridad\": Segundo piso crea nuevo flanco en gobierno de Kast",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/24/de-premios-de-consuelo-a-repaso-por-austeridad-segundo-piso-crea-nuevo-flanco-en-gobierno-de-kast.shtml",
+   "category": "politica",
+   "published": "2026-10-24T18:32:04Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Goles del Rangers vs. Cobreloa: Partido EN VIVO, resumen, videos y resultado por la Primera B 2026",
+   "link": "https://www.t13.cl/noticia/deportes13/goles-del-rangers-vs-cobreloa-partido-vivo-resumen-videos-resultado-por-primera-24-10-2026",
+   "category": "deportes",
+   "published": "2026-10-24T18:30:00Z",
+   "sources": [
+    "Teletrece"
+   ]
+  },
+  {
    "title": "La Serena superó a Concepción y se acercó a zona de Sudamericana: lilas jugaron con hombre menos",
    "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/24/la-serena-supero-a-concepcion-y-se-acerco-a-zona-de-sudamericana-lilas-jugaron-con-hombre-menos.shtml",
    "category": "deportes",
@@ -2689,6 +2665,15 @@
    ]
   },
   {
+   "title": "Emiten aviso meteorológico por tormentas eléctricas en la RM y otras dos regiones",
+   "link": "https://www.24horas.cl/el-tiempo/emiten-aviso-meteorologico-por-tormentas-electricas-en-la-rm-y-otras-dos-regiones",
+   "category": "nacional",
+   "published": "2026-10-24T17:56:00Z",
+   "sources": [
+    "24horas"
+   ]
+  },
+  {
    "title": "Tal como en España y Francia: italianos marchan contra el costo de la vida y su Gobierno",
    "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/24/tal-como-en-espana-y-francia-italianos-marchan-contra-el-costo-de-la-vida-y-su-gobierno.shtml",
    "category": "internacional",
@@ -2704,6 +2689,15 @@
    "published": "2026-10-24T17:36:34Z",
    "sources": [
     "RedGol"
+   ]
+  },
+  {
+   "title": "Tras La Serena vs. D. Concepción: así está la tabla de posiciones de la Liga de Primera",
+   "link": "https://bolavip.com/cl/nacional/tras-d-concepcion-vs-la-serena-asi-esta-la-tabla-de-posiciones-de-la-liga-de-primera",
+   "category": "regiones",
+   "published": "2026-10-24T17:30:58Z",
+   "sources": [
+    "Bolavip Chile"
    ]
   },
   {
@@ -2731,6 +2725,15 @@
    "published": "2026-10-24T17:03:00Z",
    "sources": [
     "CBF"
+   ]
+  },
+  {
+   "title": "El ganador tras polémica por Bienal de Venecia",
+   "link": "https://www.elmostrador.cl/cultura/cultivate/2026/10/24/el-ganador-tras-polemica-por-bienal-de-venecia/",
+   "category": "cultura",
+   "published": "2026-10-24T17:00:52Z",
+   "sources": [
+    "El Mostrador"
    ]
   },
   {
@@ -2767,6 +2770,15 @@
    "published": "2026-10-24T16:22:40Z",
    "sources": [
     "CNN Chile"
+   ]
+  },
+  {
+   "title": "La Gerencia de Ligas y el Tribunal de Disciplina: los otros culpables del papelón que golpea a San Luis de Chupete Suazo",
+   "link": "https://www.latercera.com/el-deportivo/noticia/la-gerencia-de-ligas-y-el-tribunal-de-disciplina-los-otros-culpables-del-papelon-que-golpea-a-san-luis-de-chupete-suazo/",
+   "category": "deportes",
+   "published": "2026-10-24T16:11:26Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -2856,7 +2868,8 @@
    "category": "deportes",
    "published": "2026-10-24T15:21:52Z",
    "sources": [
-    "RedGol"
+    "RedGol",
+    "La Cuarta"
    ]
   },
   {
@@ -3041,6 +3054,15 @@
    ]
   },
   {
+   "title": "DT de Palestino llena de elogios a Colo Colo en la previa del partido: “Por algo es el líder”",
+   "link": "https://dalealbo.cl/liga-de-primera/dt-de-palestino-llena-de-elogios-a-colo-colo-en-la-previa-del-partido-por-algo-es-el-lider",
+   "category": "deportes",
+   "published": "2026-10-24T13:32:28Z",
+   "sources": [
+    "Dale Albo"
+   ]
+  },
+  {
    "title": "Brutal ninguneo de Emiliano Astorga en Temuco: “¿Eres periodista? Ni siquiera tení titulo, yo tengo prestig...",
    "link": "https://redgol.cl/chile/brutal-ninguneo-de-emiliano-astorga-en-temuco-eres-periodista-ni-siquiera-teni-titulo-yo-tengo-prestigio-en-el-futbol",
    "category": "deportes",
@@ -3137,6 +3159,15 @@
    "published": "2026-10-24T12:56:16Z",
    "sources": [
     "Vatican News"
+   ]
+  },
+  {
+   "title": "Prisión preventiva para imputado por homicidio de mujer en Peñalolén: buscan su cuerpo en el canal San Carlos",
+   "link": "https://www.latercera.com/nacional/noticia/prision-preventiva-para-imputado-por-homicidio-de-mujer-en-penalolen-buscan-su-cuerpo-en-el-canal-san-carlos/",
+   "category": "nacional",
+   "published": "2026-10-24T12:45:21Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3408,6 +3439,15 @@
    "published": "2026-10-24T03:01:59Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Albemarle abre postulaciones a Programa de Aprendices 2026",
+   "link": "https://chilepaisminero.com/albemarle-abre-postulaciones-a-programa-de-aprendices-2026/",
+   "category": "economia",
+   "published": "2026-10-24T03:01:22Z",
+   "sources": [
+    "Chile País Minero"
    ]
   },
   {
