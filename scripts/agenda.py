@@ -1,28 +1,33 @@
-"""Agenda de eventos validados por el proyecto eventos-biobio (Biobío y resto de Chile).
+"""Agenda de eventos validados (Biobío y resto de Chile).
 
-Solo se publica la lista `events` de los snapshots versionados de ese proyecto,
-que ya pasaron su filtro de calidad: `crawled_events.json` (Biobío) y
-`national_events.json` (resto del país, con la región de cada comuna). Los
-`possible_events` y candidatos pendientes de revisión nunca se muestran. Si un
-snapshot no responde se usa el otro; sin eventos próximos, la sección no
-aparece y la portada se publica igual.
+Solo se publica la lista `events` de tres archivos:
+- los snapshots del recolector `eventos/` (antes el repositorio eventos-biobio),
+  que el workflow «Actualizar eventos» guarda en la rama `events-data`:
+  `crawled_events.json` (Biobío) y `national_events.json` (resto del país);
+- `eventos/agenda_manual.json`: eventos que el responsable revisó a mano desde
+  la publicación oficial del organizador (p. ej. afiches de Instagram).
+Los `possible_events` y candidatos pendientes de revisión nunca se muestran.
+Si un archivo falta o no se puede leer se usan los demás; sin eventos
+próximos, la sección no aparece y la portada se publica igual.
 """
 from datetime import date, datetime, time as clock
 import html
 import json
 import os
+from pathlib import Path
 import re
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
-RAW_BASE = "https://raw.githubusercontent.com/medinacaj/eventos-biobio/claude/eventos-biobio-v1/data/"
-# (variable de entorno, URL por omisión, región cuando el snapshot no la trae)
+ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ".events-data/eventos/"  # checkout de la rama events-data en el workflow
+# (variable de entorno, ruta o URL por omisión, región cuando el archivo no la trae)
 SNAPSHOTS = (
-    ("EVENTOS_BIOBIO_URL", RAW_BASE + "crawled_events.json", "Biobío"),
-    ("EVENTOS_NACIONALES_URL", RAW_BASE + "national_events.json", ""),
+    ("EVENTOS_BIOBIO_URL", DATA_DIR + "crawled_events.json", "Biobío"),
+    ("EVENTOS_NACIONALES_URL", DATA_DIR + "national_events.json", ""),
+    ("EVENTOS_MANUAL_URL", "eventos/agenda_manual.json", ""),
 )
-PROJECT_URL = "https://github.com/medinacaj/eventos-biobio"
 MAX_BYTES = 5_000_000
 MAX_EVENTS = 36
 # Tope por región: Santiago no desplaza al Biobío ni a otras regiones con menos eventos.
@@ -36,9 +41,14 @@ esc = lambda value: html.escape(str(value), quote=True)
 
 
 def fetch_snapshot(url):
-    request = Request(url, headers={"User-Agent": "NoticiasDelMomento/2.0 (agenda)"})
-    with urlopen(request, timeout=TIMEOUT) as response:
-        raw = response.read(MAX_BYTES + 1)
+    """Archivo local (relativo a la raíz del repositorio) o URL https."""
+    if not url.startswith("https://"):
+        with open(ROOT / url, "rb") as f:
+            raw = f.read(MAX_BYTES + 1)
+    else:
+        request = Request(url, headers={"User-Agent": "NoticiasDelMomento/2.0 (agenda)"})
+        with urlopen(request, timeout=TIMEOUT) as response:
+            raw = response.read(MAX_BYTES + 1)
     if len(raw) > MAX_BYTES:
         raise ValueError("Snapshot de eventos demasiado grande")
     return json.loads(raw.decode("utf-8"))

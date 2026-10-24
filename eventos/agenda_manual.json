@@ -1,0 +1,4 @@
+{
+  "_notas": "Eventos revisados a mano por el responsable desde la publicación OFICIAL del organizador (municipio, recinto o productora), por ejemplo un afiche en Instagram. Cada evento necesita title, date (AAAA-MM-DD), commune, region y source_url https de esa publicación; opcionales: end_date, time (HH:MM), venue, price_text, price_status (free/paid), category, status, source e image_url (solo si el organizador la publica en una URL https directa). No se copian afiches de cuentas que no son del organizador. Los eventos vencidos se ocultan solos; se pueden borrar en cualquier momento.",
+  "events": []
+}

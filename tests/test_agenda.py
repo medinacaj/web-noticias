@@ -197,3 +197,35 @@ class RenderAgendaTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ManualAgendaFileTests(unittest.TestCase):
+    """eventos/agenda_manual.json: cada evento cargado a mano debe poder publicarse tal cual."""
+
+    def test_manual_events_are_complete_and_cite_the_organizer(self):
+        import json
+        payload = json.loads((ROOT / "eventos" / "agenda_manual.json").read_text(encoding="utf-8"))
+        self.assertIsInstance(payload.get("events"), list)
+        for item in payload["events"]:
+            with self.subTest(item.get("title")):
+                for field in ("title", "date", "commune", "region", "source_url", "source"):
+                    self.assertTrue(item.get(field), field)
+                self.assertTrue(item["source_url"].startswith("https://"))
+                date.fromisoformat(item["date"])
+                if item.get("time"):
+                    self.assertRegex(item["time"], r"^([01]\d|2[0-3]):[0-5]\d$")
+                self.assertEqual(upcoming_events({"events": [item]}, date(1970, 1, 1))[0]["title"],
+                                 item["title"])
+
+
+class LocalSnapshotTests(unittest.TestCase):
+    def test_reads_local_files_and_skips_missing_ones(self):
+        import json
+        from scripts.agenda import fetch_snapshot
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "snap.json"
+            path.write_text(json.dumps({"events": [event()]}), encoding="utf-8")
+            self.assertEqual(fetch_snapshot(str(path))["events"][0]["title"], "Concierto en el Teatro")
+            snapshots = (("A", str(path), "Biobío"), ("B", str(Path(tmp) / "falta.json"), ""))
+            with patch.dict(os.environ, {}, clear=True):
+                self.assertEqual(len(load_agenda(NOW, snapshots=snapshots)), 1)
