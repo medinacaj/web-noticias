@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T04:41:41Z",
+ "actualizado": "2026-10-24T05:43:25Z",
  "noticias": [
   {
    "category": "internacional",
@@ -156,6 +156,21 @@
    "published": "2026-10-24T02:17:23Z",
    "first_seen": "2026-10-24T04:33:25Z",
    "image_checked_at": "2026-10-24T04:33:25.580080Z"
+  },
+  {
+   "category": "regiones",
+   "title": "AUTORIDADES REFUERZAN LLAMADO A LA DETECCIÓN TEMPRANA DEL CÁNCER DE MAMA EN LA ARAUCANÍA",
+   "summary": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/autoridades-refuerzan-llamado-a-la-deteccion-t.jpg",
+   "source_url": "https://araucanianoticias.cl",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ],
+   "coverages": [],
+   "link": "https://araucanianoticias.cl/2026/autoridades-refuerzan-llamado-a-la-deteccion-temprana-del-cancer-de-mama-en-la-araucania/1023317757",
+   "published": "2026-10-24T02:02:38Z",
+   "first_seen": "2026-10-24T05:43:25Z",
+   "image_checked_at": "2026-10-24T05:43:25.928848Z"
   },
   {
    "category": "regiones",
@@ -745,6 +760,24 @@
    "coverage_countries": [
     "CL"
    ]
+  },
+  {
+   "category": "economia",
+   "title": "Las marcas estadounidenses que podría traer PriceSmart a Chile",
+   "summary": "",
+   "image": "https://www.df.cl/noticias/site/artic/20261023/imag/foto_0000001120261023175554/Price_Smart_4_copia.jpg",
+   "source_url": "https://www.df.cl",
+   "sources": [
+    "Diario Financiero"
+   ],
+   "coverages": [],
+   "link": "https://www.df.cl/senal-df/datos-de-sobremesa/las-marcas-estadounidenses-que-podria-traer-pricesmart-a-chile",
+   "published": "2026-10-23T21:00:00Z",
+   "first_seen": "2026-10-24T05:43:25Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T05:43:25.928848Z"
   },
   {
    "category": "cultura",
@@ -3078,6 +3111,20 @@
   },
   {
    "category": "deportes",
+   "title": "Así será el primer Mundial y Festival Sub-15: casi 190 selecciones, 1.000 partidos y 8 vs. 8",
+   "summary": "",
+   "image": "",
+   "source_url": "https://cnnespanol.cnn.com",
+   "sources": [
+    "CNN en Español"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUHJvNWFqc0pVUjVORGlmSEhaZHFIMzZxUDJIRV9pNmY1anMwaC12bWU4MXl6dDdTaGZjMDlJNHUxVEp6NDFBRmlnbDFXNk5hWXpNUi1lOTRmWVp1QmpDOXRacUU2UFYybDNiZ0NjWlkxM09uMjlDb2FJQUQ1TzNIT0RNUUdnVUxaLUxIUlBWSQ?oc=5",
+   "published": "2026-10-23T11:00:00Z",
+   "first_seen": "2026-10-24T05:43:25Z"
+  },
+  {
+   "category": "deportes",
    "title": "Revelan conversación clave entre Vozinha y Fernando Ortiz por la gala del Balón de Oro: “Si le decía…”",
    "summary": "",
    "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/23073832/Vozinha-Colo-Colo-9-e1792751961860-1200x740.webp",
@@ -3504,21 +3551,6 @@
    "coverage_countries": [
     "BR"
    ]
-  },
-  {
-   "category": "cultura",
-   "title": "Cony Capelli es la gran ganadora del segundo capítulo de Vértigo",
-   "summary": "",
-   "image": "https://www.13.cl/sites/default/files/styles/manualcrop_1600x800/public/programas/articulos/field-imagen/2026-10/1792767646.jpg.jpeg?h=9874ba8b&itok=RSyoz3RU",
-   "source_url": "https://www.13.cl",
-   "sources": [
-    "Canal 13"
-   ],
-   "coverages": [],
-   "link": "https://www.13.cl/programas/vertigo/momentos/cony-capelli-es-la-gran-ganadora-del-segundo-capitulo-de-vertigo",
-   "published": "2026-10-23T04:54:24Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T19:06:50.124924Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
@@ -3602,6 +3634,15 @@
    "published": "2026-10-24T02:17:23Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "AUTORIDADES REFUERZAN LLAMADO A LA DETECCIÓN TEMPRANA DEL CÁNCER DE MAMA EN LA ARAUCANÍA",
+   "link": "https://araucanianoticias.cl/2026/autoridades-refuerzan-llamado-a-la-deteccion-temprana-del-cancer-de-mama-en-la-araucania/1023317757",
+   "category": "regiones",
+   "published": "2026-10-24T02:02:38Z",
+   "sources": [
+    "Araucanía Noticias Temuco"
    ]
   },
   {
@@ -3953,6 +3994,15 @@
    "published": "2026-10-23T21:03:00Z",
    "sources": [
     "Puranoticia.cl"
+   ]
+  },
+  {
+   "title": "Las marcas estadounidenses que podría traer PriceSmart a Chile",
+   "link": "https://www.df.cl/senal-df/datos-de-sobremesa/las-marcas-estadounidenses-que-podria-traer-pricesmart-a-chile",
+   "category": "economia",
+   "published": "2026-10-23T21:00:00Z",
+   "sources": [
+    "Diario Financiero"
    ]
   },
   {
@@ -5575,6 +5625,15 @@
    "published": "2026-10-23T11:02:46Z",
    "sources": [
     "La Cuarta"
+   ]
+  },
+  {
+   "title": "Así será el primer Mundial y Festival Sub-15: casi 190 selecciones, 1.000 partidos y 8 vs. 8",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUHJvNWFqc0pVUjVORGlmSEhaZHFIMzZxUDJIRV9pNmY1anMwaC12bWU4MXl6dDdTaGZjMDlJNHUxVEp6NDFBRmlnbDFXNk5hWXpNUi1lOTRmWVp1QmpDOXRacUU2UFYybDNiZ0NjWlkxM09uMjlDb2FJQUQ1TzNIT0RNUUdnVUxaLUxIUlBWSQ?oc=5",
+   "category": "deportes",
+   "published": "2026-10-23T11:00:00Z",
+   "sources": [
+    "CNN en Español"
    ]
   },
   {
