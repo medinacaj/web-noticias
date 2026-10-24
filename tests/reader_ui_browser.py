@@ -257,7 +257,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             date = self.page.locator('.header-updated')
             self.assertTrue(await date.is_visible(), width)
             bounds = await date.bounding_box()
-            self.assertGreater(bounds['x'] + bounds['width'], width - 40)
+            bar = await self.page.locator('.bar-inner').bounding_box()
+            self.assertGreater(bounds['x'] + bounds['width'], bar['x'] + bar['width'] - 40)
             self.assertTrue(await count.is_visible())
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
 
@@ -299,6 +300,43 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await pause.get_attribute('aria-pressed'), 'true')
         await self.page.wait_for_timeout(6500)
         self.assertEqual(await self.page.locator('.carousel-position').inner_text(), '1 de 6')
+
+    async def test_shared_grid_aligns_all_bands_open_and_closed(self):
+        for width in (320, 390, 768, 1024, 1440, 1920, 2560):
+            await self.page.set_viewport_size({"width": width, "height": 1000})
+            for collapsed in ((False, True) if width >= 1024 else (False,)):
+                if width >= 1024:
+                    actual = await self.page.locator('html').get_attribute('data-sidebar')
+                    if (actual == 'hidden') != collapsed: await self.page.locator('#menu-toggle').click()
+                boxes = await self.page.evaluate("""() => {
+                    const selectors=['.bar-inner','.breaking-inner','main.container','.newsletter-invite-inner','.site-footer > .container'];
+                    return selectors.map(selector => {const el=document.querySelector(selector), r=el.getBoundingClientRect(), css=getComputedStyle(el);
+                      return {selector,x:r.x,width:r.width,left:r.x+parseFloat(css.paddingLeft),right:r.right-parseFloat(css.paddingRight)};});
+                }""")
+                main = boxes[2]
+                for box in boxes:
+                    self.assertAlmostEqual(box['left'], main['left'], delta=1, msg=(width, collapsed, boxes))
+                    self.assertAlmostEqual(box['right'], main['right'], delta=1, msg=(width, collapsed, boxes))
+                if width >= 1920: self.assertGreaterEqual(main['width'], 1400)
+                self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
+        await self.page.set_viewport_size({"width": 1920, "height": 1080})
+        ARTIFACTS.mkdir(exist_ok=True)
+        for collapsed in (False, True):
+            actual = await self.page.locator('html').get_attribute('data-sidebar')
+            if (actual == 'hidden') != collapsed: await self.page.locator('#menu-toggle').click()
+            await self.page.screenshot(path=str(ARTIFACTS / f'aligned-1920-{collapsed}.png'))
+
+    async def test_header_is_compact_without_losing_controls(self):
+        for width in (320, 390, 768, 1024, 1440, 1920, 2560):
+            await self.page.set_viewport_size({"width": width, "height": 1000})
+            header = await self.page.locator('.site-header').bounding_box()
+            self.assertLessEqual(header['height'], 80 if width < 1024 else 68, (width, header))
+            for selector in ('#menu-toggle','#search-toggle','#view-options-toggle','#library-toggle','.header-updated','.edition-count'):
+                self.assertTrue(await self.page.locator(selector).is_visible(), (width, selector))
+            boxes = [await item.bounding_box() for item in await self.page.locator('.bar-inner .icon-btn:visible').all()]
+            boxes.sort(key=lambda box: box['x'])
+            self.assertTrue(all(a['x']+a['width'] <= b['x'] for a,b in zip(boxes, boxes[1:])), (width, boxes))
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
 
     async def test_blocked_storage_does_not_disable_controls(self):
         await self.context.add_init_script("Object.defineProperty(window, 'localStorage', {get() {throw new Error('blocked')}})")
