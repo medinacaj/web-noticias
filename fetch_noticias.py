@@ -907,11 +907,12 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%SECTIONS%%": render_sections(sel["by_category"], now),
         "%%NEWSLETTER_SIGNUP%%": newsletter["signup_html"],
     }
-    for marker, value in replacements.items():
-        page = page.replace(marker, value)
-    leftover = re.findall(r"%%[A-Z_]+%%", page)
+    # Only the original template supplies tokens; news text remains literal.
+    markers = re.compile(r"%%[A-Z_]+%%")
+    leftover = [marker for marker in markers.findall(page) if marker not in replacements]
     if leftover:
         raise SystemExit(f"ERROR: la plantilla quedó con marcadores sin reemplazar: {leftover}")
+    page = markers.sub(lambda match: replacements[match.group(0)], page)
 
     # Páginas propias y estables: no convertir enlaces a medios en páginas de noticias ficticias.
     from scripts.seo_pages import render_about_page, render_sitemap

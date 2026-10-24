@@ -5,7 +5,7 @@ on:
     workflows: ["Actualizar Noticias del Momento"]
     types: [completed]
   schedule:
-    - cron: "37 */6 * * *"
+    - cron: "37 * * * *"  # separado del publicador de las :07
   workflow_dispatch: {}
 
 permissions:

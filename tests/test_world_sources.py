@@ -171,6 +171,22 @@ class WorldSourcesTests(unittest.TestCase):
                 self.assertTrue(found[0]["image"])
                 self.assertFalse(found[0].get("metadata_only"))
 
+    def test_unrepresentable_utc_dates_do_not_discard_valid_items_or_other_editors(self):
+        catalog = [source(0), source(1)]
+        for extreme in ("9999-12-31T23:59:59-12:00", "0001-01-01T00:00:00+12:00"):
+            with self.subTest(date=extreme):
+                def fetch(url):
+                    query = parse_qs(urlsplit(url).query).get("q", [""])[0]
+                    for medium in catalog:
+                        if query == f'site:{medium["search_scope"]} when:1d':
+                            return rss([item(medium, index=0, published=extreme),
+                                        item(medium, index=1)])
+                    return EMPTY
+                records = self.collect(fetch, catalog)
+                self.assertEqual(len(records), 2)
+                self.assertEqual({record["publisher_id"] for record in records}, {"world-0", "world-1"})
+                self.assertTrue(all(record["link"].endswith("article-1") for record in records))
+
     def test_explicit_metadata_mode_validates_date_without_changing_category(self):
         records = [item(index=0, published="2026-10-24T11:00:00"), item(index=1)]
         with patch.object(news, "http_get", return_value=rss(records)):
