@@ -202,6 +202,9 @@ async def check(html, output):
             await no_overflow("preferencias")
             await page.screenshot(path=str(output / f"preferences-{width}.png"), full_page=False, animations="disabled")
             await page.locator("#density-switch").click()
+            compact_gap = await page.locator(".section-grid").first.evaluate("el => getComputedStyle(el).gap")
+            rail_gap = await page.locator(".rail-list").evaluate("el => getComputedStyle(el).gap")
+            assert compact_gap == rail_gap, f"Separaciones distintas en Compacta a {width}px: {compact_gap} / {rail_gap}"
             await page.locator("#density-switch").click()
             assert await page.locator("#contenido").evaluate("(el) => el.classList.contains('is-headlines')"), f"Vista titulares inactiva a {width}px"
             await page.screenshot(path=str(output / f"headlines-{width}.png"), full_page=False, animations="disabled")
