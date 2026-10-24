@@ -891,7 +891,7 @@
     grid.dataset.visibleLimit = String(limit);
     var count = 0;
     grid.querySelectorAll(".feature,.compact-list li").forEach(function (item) {
-      var matches = !item.hasAttribute("data-source-hidden");
+      var matches = !item.hasAttribute("data-source-hidden") && !item.hasAttribute("data-filtered");
       item.toggleAttribute("data-extra", matches && ++count > limit);
     });
     var button = d.querySelector('[data-show-more][aria-controls="' + grid.getAttribute("id") + '"]');
@@ -1128,7 +1128,8 @@
   (function () {
     var box = d.querySelector("[data-agenda-filters]");
     if (!box) return;
-    var items = d.querySelectorAll("#noticias-agenda > .compact-list > li");
+    var grid = d.getElementById("noticias-agenda");
+    var items = grid.querySelectorAll(".compact-list > li");
     var count = d.querySelector("[data-agenda-count]"), total = count ? count.textContent : "";
     var region = "", free = false;
     function apply() {
@@ -1141,6 +1142,8 @@
         b.setAttribute("aria-pressed", String(b.getAttribute("data-agenda-region") === region));
       });
       if (count) count.textContent = shown === items.length ? total : shown + " de " + items.length + " eventos";
+      // Las coincidencias ocultas tras «Ver más» deben volver a la vista al filtrar.
+      refreshSection(grid, 6);
     }
     box.addEventListener("click", function (event) {
       var button = event.target.closest("button");

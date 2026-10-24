@@ -96,6 +96,18 @@ class LoadAgendaTests(unittest.TestCase):
         with patch.dict(os.environ, {"AGENDA_A": "", "AGENDA_B": ""}, clear=True):
             self.assertEqual(load_agenda(NOW, fetch=fetch, snapshots=self.SNAPSHOTS), [])
 
+    def test_crowded_region_does_not_push_out_the_others(self):
+        # Caso real del 2026-10-24: 17 eventos de Santiago dejaban fuera al Biobío.
+        santiago = [event(title=f"Obra {i}", commune="Santiago", region="Metropolitana",
+                          source_url=f"https://m.cl/{i}", date="2026-10-25") for i in range(30)]
+        payloads = {"https://x.cl/a.json": {"events": [event(date="2026-12-20")]},
+                    "https://x.cl/b.json": {"events": santiago}}
+        with patch.dict(os.environ, {}, clear=True):
+            events = load_agenda(NOW, fetch=payloads.__getitem__, snapshots=self.SNAPSHOTS)
+        regions = [e["region"] for e in events]
+        self.assertEqual(regions.count("Metropolitana"), 12)
+        self.assertIn("Biobío", regions)
+
 
 class RenderAgendaTests(unittest.TestCase):
     def sample(self):
