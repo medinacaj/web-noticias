@@ -27,7 +27,7 @@ class ReadingExperienceTests(unittest.TestCase):
     def test_navigation_does_not_interfere_with_carousel(self):
         self.assertIn('link.setAttribute("aria-current", "location")', self.html)
         self.assertIn('link.classList.toggle("is-current", active)', self.html)
-        self.assertIn('window.requestAnimationFrame(animate)', self.html)
+        self.assertIn('src="reader-ui.js"', self.html)
 
     def test_photos_and_layout_remain_stable(self):
         for marker in ('var usedNewsImages = Object.create(null)',

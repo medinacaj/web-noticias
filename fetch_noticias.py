@@ -331,6 +331,9 @@ def collect(now):
             except Exception as error:
                 print(f"[aviso] GNews falló en {key}: {error}")
         print(f"{cat['label']}: {count} notas recolectadas")
+    from scripts.entertainment import collect_entertainment
+    if any(cat["key"] == "cultura" for cat in CATEGORIES):
+        items += collect_entertainment(now, fetch=fetch_rss)
     from scripts.global_sources import collect_world
     items += collect_world(now, fetch=fetch_rss)
     from scripts.regional_sources import collect_regional
@@ -511,7 +514,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
             previous_time = story_time(match)
             if published and (not previous_time or incoming_time <= previous_time):
                 match["published"] = published
-            for field in ("publisher_id", "source_country", "source_country_label"):
+            for field in ("publisher_id", "source_country", "source_country_label", "discovery_edition"):
                 if not match.get(field) and item.get(field):
                     match[field] = item[field]
             if item.get("metadata_only") or match.get("metadata_only"):
@@ -532,7 +535,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
                 "first_seen": to_iso(now),
                 "_norm": norm,
                 **{key: item[key] for key in ("publisher_id", "source_country",
-                   "source_country_label", "metadata_only", "coverage_countries") if key in item},
+                   "source_country_label", "metadata_only", "coverage_countries", "discovery_edition") if key in item},
             })
             added += 1
     return added
@@ -613,16 +616,32 @@ def select(stories, now):
     by_category = {}
     for cat in CATEGORIES:
         candidates = [s for s in rest if s["category"] == cat["key"] and id(s) not in used]
-        chosen = balance_section_sources(candidates)
+        if cat["key"] == "cultura":
+            from scripts.entertainment import balance_entertainment
+            chosen = balance_entertainment(candidates, STORIES_PER_CATEGORY)
+        else:
+            chosen = balance_section_sources(candidates)
         if chosen:
             by_category[cat["key"]] = chosen
     counts = {}
     for story in stories:
         counts[story["category"]] = counts.get(story["category"], 0) + 1
+    latest, latest_urls = [], set()
+    dated = [s for s in stories if story_time(s) is not None]
+    for story in sorted(dated, key=story_time, reverse=True):
+        from scripts.dedupe_history import canonical_key
+        url = canonical_key(story.get("link", ""))
+        if not url or url in latest_urls:
+            continue
+        latest.append(story)
+        latest_urls.add(url)
+        if len(latest) == 6:
+            break
     return {
         "lead": lead,
         "secondary": secondary,
         "by_category": by_category,
+        "latest": latest,
         "most_reported": max(ranked, key=lambda s: (len(s["sources"]), -hours_old(s, now))) if ranked else None,
         "most_recent": min(rest, key=lambda s: hours_old(s, now)) if rest else None,  # distinta de la portada
         "busiest": max(counts.items(), key=lambda kv: kv[1]) if counts else None,
@@ -695,12 +714,27 @@ def dek_html(story):
 
 
 def render_breaking(sel, now):
-    story = sel["most_recent"]
-    if not story:
+    stories = sel.get("latest", [sel["most_recent"]] if sel.get("most_recent") else [])
+    if not stories:
         return ""
-    return (f'<div class="breaking"><div class="container breaking-inner">'
-            f'<span class="breaking-label">Lo último</span>{title_link(story)}'
-            f'<time datetime="{to_iso(story_time(story) or now)}">{time_ago(story, now)}</time></div></div>')
+    slides = "".join(
+        f'<li class="breaking-item cat-{story["category"]}">'
+        f'<span class="breaking-category">{esc(category_label(story))}</span>'
+        f'{title_link(story)}<time datetime="{to_iso(story_time(story))}">'
+        f'{time_ago(story, now)}</time></li>' for story in stories
+    )
+    return ('<section class="breaking" data-carousel aria-label="Últimas noticias" '
+            'aria-roledescription="carrusel"><div class="container">'
+            '<div class="breaking-head"><h2 class="breaking-label">Lo último</h2>'
+            '<div class="carousel-controls" hidden>'
+            '<span class="carousel-position" aria-live="polite" aria-atomic="true"></span>'
+            '<button type="button" data-carousel-prev aria-label="Titulares anteriores" '
+            'aria-controls="latest-track">←</button>'
+            '<button type="button" data-carousel-next aria-label="Más titulares recientes" '
+            'aria-controls="latest-track">→</button></div></div>'
+            f'<ol class="breaking-track" id="latest-track" tabindex="0" '
+            f'aria-label="Titulares recientes, usa las flechas para desplazarte">{slides}</ol>'
+            '</div></section>')
 
 
 def render_top(sel, now):
@@ -745,7 +779,9 @@ def render_context(sel, now, window_hours):
         f'{esc(label)}</p><p class="context-text">{text}</p><p class="context-note">{esc(note)}</p></div>'
         for i, (label, text, note) in enumerate(units, start=1)
     )
-    return f'<section class="context" aria-label="Resumen del día">{cells}</section>'
+    return (f'<details class="edition-details"><summary>Datos de esta edición · '
+            f'{sel["total"]} noticias · {sel["outlets"]} medios</summary>'
+            f'<section class="context" aria-label="Resumen del día">{cells}</section></details>')
 
 
 def render_coverage_radar(stories):

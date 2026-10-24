@@ -15,33 +15,23 @@ class NavigationPolishTests(unittest.TestCase):
                        'class="nav-controls"'):
             self.assertNotIn(marker, self.html)
 
-    def test_click_pause_and_mouse_drag(self):
-        for marker in ('pointerdown', 'pointermove', 'pointerup',
-                       'pressX = event.clientX',
-                       'startScroll - delta', 'event.preventDefault()',
-                       'paused = !paused', 'dataset.paused', 'requestAnimationFrame',
-                       'scrollLeft += elapsed * 0.055', 'scrollLeft -= cycleWidth'):
-            self.assertIn(marker, self.html)
+    def test_navigation_is_static_and_has_no_duplicated_automatic_track(self):
+        self.assertNotIn('requestAnimationFrame(animate)', self.html)
+        self.assertNotIn('clone.setAttribute("aria-hidden", "true")', self.html)
+        self.assertNotIn('Carrusel de secciones;', self.html)
+        self.assertIn('aria-label="Secciones de noticias"', self.html)
 
-    def test_no_stepwise_movement_or_hover_pauses(self):
-        self.assertNotIn("window.setInterval(function () {", self.html)
-        self.assertNotIn("hovered || focused", self.html)
-        self.assertIn('clone.setAttribute("aria-hidden", "true")', self.html)
-        self.assertIn('el.setAttribute("tabindex", "-1")', self.html)
+    def test_compact_header_has_one_brand_and_no_long_claim(self):
+        self.assertEqual(self.html.count('<h1'), 1)
+        self.assertIn('class="brand-logo"', self.html)
+        self.assertNotIn('Lo más relevante de Chile y el mundo, actualizado cada hora', self.html)
 
-    def test_accessible_motion_preferences_and_keyboard(self):
-        for marker in ('prefers-reduced-motion: reduce',
-                       'event.key === "Enter"', 'event.key === "ArrowRight"',
-                       'aria-label="Carrusel de secciones;',
-                       'tabindex="0"', 'touch-action:pan-x'):
-            self.assertIn(marker, self.html)
-
-    def test_mobile_menu_is_preserved(self):
-        for marker in ('id="menu-toggle"', 'id="site-nav"',
-                       'nav.classList.toggle("open", open)',
-                       '.js .site-nav.open{display:block;}',
-                       'window.innerWidth > 767'):
-            self.assertIn(marker, self.html)
+    def test_mobile_and_desktop_share_the_section_navigation(self):
+        self.assertEqual(self.html.count('id="site-nav"'), 1)
+        self.assertIn('aria-controls="site-nav"', self.html)
+        self.assertIn('.js .site-nav.open{display:block;}', self.html)
+        self.assertIn('id="nav-backdrop"', self.html)
+        self.assertIn('@media (min-width:1024px)', self.html)
 
     def test_category_palette_and_news_functions_remain(self):
         self.assertGreaterEqual(len(CATEGORIES), 10)
