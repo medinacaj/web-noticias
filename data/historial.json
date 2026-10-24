@@ -1,6 +1,36 @@
 {
- "actualizado": "2026-10-24T22:55:01Z",
+ "actualizado": "2026-10-24T23:07:30Z",
  "noticias": [
+  {
+   "category": "nacional",
+   "title": "Fueron compañeros de colegio: lo que se sabe del crimen de joven desaparecido en Maipú",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994853-fueron-companeros-de-colegio-lo-que-se-sabe-del-crimen-de-joven-desaparecido-en-maipu.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/24/fueron-companeros-de-colegio-lo-que-se-sabe-del-crimen-de-joven-desaparecido-en-maipu.shtml",
+   "published": "2026-10-24T22:33:33Z",
+   "first_seen": "2026-10-24T23:07:30Z",
+   "image_checked_at": "2026-10-24T23:07:30.763167Z"
+  },
+  {
+   "category": "nacional",
+   "title": "De ’Mamá a los 15’ a la calle y a posible víctima de homicidio: el duro caso de Sofía Sánchez",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994856-sofia-sanchez-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/sociedad/historia/2026/10/24/de-mama-a-los-15-a-la-calle-y-a-posible-victima-de-homicidio-el-duro-caso-de-sofia-sanchez.shtml",
+   "published": "2026-10-24T22:28:06Z",
+   "first_seen": "2026-10-24T23:07:30Z",
+   "image_checked_at": "2026-10-24T23:07:30.763167Z"
+  },
   {
    "category": "salud-ciencia",
    "title": "\"Ozempic genérico\" en Chile: ¿Es igual de efectivo que el original? Experta explica las diferencias",
@@ -296,6 +326,39 @@
    "first_seen": "2026-10-24T22:33:27Z",
    "metadata_only": true,
    "discovery_edition": "ES"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Qual região do Brasil tem mais eleitores",
+   "summary": "",
+   "image": "",
+   "source_url": "https://jovempan.com.br",
+   "sources": [
+    "Jovem Pan"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1vOG1fT2lJdXZtcTV0YWJYczhsSHJiSnpUZ01TblV5M3ZGMVFGWTJGTWFWNE5YaHgxTlJTTXNia1JjcDJHdlc0QzhlOHlJSVlfY1I2dE9oeHp4cGFnVkZPbFUtanFjNXRVTEo4WVZsRkNFRlYydVhaVkp3ZEZkckk?oc=5",
+   "published": "2026-10-24T19:30:00Z",
+   "first_seen": "2026-10-24T23:07:30Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "cultura",
+   "title": "Ignacia Michelson reveló detalles de su nueva cirugía estética: “Ahora estamos buscando la naturalidad”",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/JXJWPJDK6NDR7HZQOUFGE34XEE.jpg?auth=1e862806e86aaca009acc31d422aa7b46b3f50b9890963f827d76825a223324e&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/ignacia-michelson-revelo-detalles-de-su-nueva-cirugia-estetica-ahora-estamos-buscando-la-naturalidad/",
+   "published": "2026-10-24T19:22:27Z",
+   "first_seen": "2026-10-24T23:07:30Z",
+   "image_checked_at": "2026-10-24T23:07:30.763167Z"
   },
   {
    "category": "latinoamerica",
@@ -1434,6 +1497,21 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "internacional",
+   "title": "Israel cierra accesos a Hebrón y desplaza familias en represalia por el ataque palestino de ayer",
+   "summary": "",
+   "image": "https://static.dw.com/image/79749094_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/israel-cierra-accesos-a-hebr%C3%B3n-y-desplaza-familias-en-represalia-por-el-ataque-palestino-de-ayer/a-79750727",
+   "published": "2026-10-24T13:04:44Z",
+   "first_seen": "2026-10-24T23:07:30Z",
+   "image_checked_at": "2026-10-24T23:07:30.763167Z"
   },
   {
    "category": "nacional",
@@ -2665,25 +2743,28 @@
    "published": "2026-10-23T23:08:01Z",
    "first_seen": "2026-10-24T09:34:27Z",
    "image_checked_at": "2026-10-24T09:34:27.603656Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Así quedaría la tabla de la Primera B si se aplican sanciones a San Marcos y Puerto Montt: vuelco total",
-   "summary": "",
-   "image": "https://www.adnradio.cl/resizer/v2/PJSCAZJKBFCATBCLMS4G6NA6SY.jpg?auth=f9d78b15255f1a161f7ff070c6158d9a90027af8ca178291e6771e2509329332&quality=70&width=1200&height=675&smart=true",
-   "source_url": "https://www.adnradio.cl",
-   "sources": [
-    "ADN Radio"
-   ],
-   "coverages": [],
-   "link": "https://www.adnradio.cl/2026/10/23/asi-quedaria-la-tabla-de-la-primera-b-si-se-aplican-sanciones-a-san-marcos-y-puerto-montt-vuelco-total/",
-   "published": "2026-10-23T23:05:43Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Fueron compañeros de colegio: lo que se sabe del crimen de joven desaparecido en Maipú",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/24/fueron-companeros-de-colegio-lo-que-se-sabe-del-crimen-de-joven-desaparecido-en-maipu.shtml",
+   "category": "nacional",
+   "published": "2026-10-24T22:33:33Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "De ’Mamá a los 15’ a la calle y a posible víctima de homicidio: el duro caso de Sofía Sánchez",
+   "link": "https://www.biobiochile.cl/noticias/sociedad/historia/2026/10/24/de-mama-a-los-15-a-la-calle-y-a-posible-victima-de-homicidio-el-duro-caso-de-sofia-sanchez.shtml",
+   "category": "nacional",
+   "published": "2026-10-24T22:28:06Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
   {
    "title": "\"Ozempic genérico\" en Chile: ¿Es igual de efectivo que el original? Experta explica las diferencias",
    "link": "https://www.elobservatodo.cl/noticia/sociedad/ozempic-generico-en-chile-es-igual-de-efectivo-que-el-original-experta-explica-las-",
@@ -2844,6 +2925,24 @@
    "published": "2026-10-24T19:34:21Z",
    "sources": [
     "RTVE.es"
+   ]
+  },
+  {
+   "title": "Qual região do Brasil tem mais eleitores",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1vOG1fT2lJdXZtcTV0YWJYczhsSHJiSnpUZ01TblV5M3ZGMVFGWTJGTWFWNE5YaHgxTlJTTXNia1JjcDJHdlc0QzhlOHlJSVlfY1I2dE9oeHp4cGFnVkZPbFUtanFjNXRVTEo4WVZsRkNFRlYydVhaVkp3ZEZkckk?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-24T19:30:00Z",
+   "sources": [
+    "Jovem Pan"
+   ]
+  },
+  {
+   "title": "Ignacia Michelson reveló detalles de su nueva cirugía estética: “Ahora estamos buscando la naturalidad”",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/ignacia-michelson-revelo-detalles-de-su-nueva-cirugia-estetica-ahora-estamos-buscando-la-naturalidad/",
+   "category": "cultura",
+   "published": "2026-10-24T19:22:27Z",
+   "sources": [
+    "La Cuarta"
    ]
   },
   {
@@ -3476,6 +3575,15 @@
    "published": "2026-10-24T13:07:51Z",
    "sources": [
     "CNN Brasil"
+   ]
+  },
+  {
+   "title": "Israel cierra accesos a Hebrón y desplaza familias en represalia por el ataque palestino de ayer",
+   "link": "https://www.dw.com/es/israel-cierra-accesos-a-hebr%C3%B3n-y-desplaza-familias-en-represalia-por-el-ataque-palestino-de-ayer/a-79750727",
+   "category": "internacional",
+   "published": "2026-10-24T13:04:44Z",
+   "sources": [
+    "DW.com"
    ]
   },
   {
