@@ -21,7 +21,8 @@ async def check_search(page, width, no_overflow):
             category: link.getAttribute("data-key"),
             label: link.getAttribute("data-cat"),
             sources: JSON.parse(link.getAttribute("data-sources") || "[]"),
-            key: link.textContent.normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase()
+            key: (link.textContent + " " + (link.getAttribute("data-countries") || ""))
+                .normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase()
         }));
     }""")
     assert stories, f"No hay noticias indexables a {width}px"
@@ -77,6 +78,7 @@ async def check_search(page, width, no_overflow):
     for key in dict.fromkeys((*originals, largest_category)):
         await category_filter.select_option(key)
         await verify([story for story in stories if story["category"] == key], f"categoría {key}")
+    print(f"Filtros comprobados a {width}px: {', '.join(dict.fromkeys((*originals, largest_category)))}")
     await category_filter.select_option("")
 
     # A real text query reaches beyond twenty whenever the published headlines allow it.

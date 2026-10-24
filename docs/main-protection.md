@@ -58,9 +58,11 @@ es el de `news-data`, por lo que un desarrollo local debe cargarlo explícitamen
 si necesita reproducir la edición más reciente.
 
 La QA visual usa `scripts/render_visual_fixture.py`: toma como reloj la fecha
-editorial máxima del fixture, copia sus bytes a un directorio temporal y ejecuta
-el CLI real con `--solo-render --ahora`. No consulta fuentes ni modifica la copia
-versionada; un fixture vacío o sin fechas falla. Así el check sigue siendo útil
+editorial máxima del fixture, prepara una copia temporal y ejecuta el CLI real
+con `--solo-render --ahora`. Añade ocho titulares identificados como «Fixture
+visual», sólo en esa copia, para probar Latinoamérica incluso sin noticias
+reales de esa sección. No consulta fuentes ni modifica la copia versionada;
+un fixture vacío o sin fechas falla. Así el check sigue siendo útil
 cuando transcurren más de 24 horas sin cambios del código. El publicador conserva
 el reloj real y la caducidad de 24 horas; este helper se usa sólo para QA.
 

@@ -26,6 +26,24 @@ class VisualFixtureTests(unittest.TestCase):
             self.assertEqual(source.read_bytes(), before)
             self.assertTrue((output / "rss.xml").is_file())
 
+    def test_render_always_exercises_latam_even_when_live_history_has_none(self):
+        with tempfile.TemporaryDirectory() as folder:
+            source = Path(folder) / "history.json"
+            source.write_text(json.dumps({"noticias": [{
+                "category": "nacional", "title": "Titular nacional de prueba",
+                "link": "https://medio.example/nacional", "sources": ["Medio"],
+                "published": "2001-01-01T12:00:00Z", "first_seen": "2001-01-01T12:00:00Z"
+            }]}), encoding="utf-8")
+            output = Path(folder) / "public"
+            render_fixture(source, output)
+            page = (output / "index.html").read_text(encoding="utf-8")
+            self.assertIn('href="#cat-latinoamerica"', page)
+            self.assertIn('class="coverage-country"', page)
+            self.assertIn('data-countries="Brasil', page)
+            self.assertIn("Fixture visual", page)
+            self.assertIn('data-key="latinoamerica"', page)
+            self.assertNotIn("Fixture visual", source.read_text(encoding="utf-8"))
+
     def test_empty_or_undated_fixture_fails_before_publishing(self):
         for stories in ([], [{"category": "nacional", "title": "Sin fecha"}]):
             with self.subTest(stories=stories), tempfile.TemporaryDirectory() as folder:
