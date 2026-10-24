@@ -7,7 +7,7 @@ que ya pasaron su filtro de calidad: `crawled_events.json` (Biobío) y
 snapshot no responde se usa el otro; sin eventos próximos, la sección no
 aparece y la portada se publica igual.
 """
-from datetime import date
+from datetime import date, datetime, time as clock
 import html
 import json
 import os
@@ -69,16 +69,6 @@ def _https(url):
     return parts.geturl()
 
 
-def _tags(value):
-    items = value if isinstance(value, list) else []
-    tags = []
-    for item in items:
-        tag = _text(item, 24).lower()
-        if tag and tag not in tags:
-            tags.append(tag)
-    return tags[:2]
-
-
 def upcoming_events(payload, today, default_region="", limit=MAX_EVENTS):
     """Eventos validados vigentes (fin >= hoy), no cancelados y con enlace a su fuente."""
     items = payload.get("events") if isinstance(payload, dict) else None
@@ -97,15 +87,14 @@ def upcoming_events(payload, today, default_region="", limit=MAX_EVENTS):
         if end < today or status.lower() == "cancelado" or link in seen:
             continue
         seen.add(link)
-        time = _text(item.get("time"), 5)
+        hhmm = _text(item.get("time"), 5)
         result.append({
             "title": title, "commune": commune, "region": region, "date": start, "end_date": end,
-            "time": time if TIME_RE.match(time) else "",
+            "time": hhmm if TIME_RE.match(hhmm) else "",
             "venue": _text(item.get("venue"), 90),
             "price": _text(item.get("price_text"), 70),
             "free": item.get("price_status") == "free",
             "category": _text(item.get("category"), 30),
-            "tags": _tags(item.get("tags")),
             "status": status, "source": _text(item.get("source"), 70) or urlsplit(link).hostname,
             "link": link,
         })
@@ -139,79 +128,89 @@ def load_agenda(now, fetch=fetch_snapshot, snapshots=None):
     return events
 
 
+WEEKDAYS = ("lun", "mar", "mié", "jue", "vie", "sáb", "dom")
+# Las categorías de eventos-biobio usan los colores de categoría que ya tiene el portal.
+CATEGORY_CLASS = {"Cultura": "cultura", "Comunidad": "regiones", "Empresarial": "economia"}
+
+
+def _moment(day, hhmm):
+    hour, minute = (int(x) for x in (hhmm or "00:00").split(":"))
+    return datetime.combine(day, clock(hour, minute), TZ_CHILE).isoformat()
+
+
 def _when(event, today):
+    """Fecha legible para la línea de metadatos, como «hace 2 h» en las noticias."""
     start, end = event["date"], event["end_date"]
-    if end > start:
-        return (f"Hasta el {end.day} {MONTHS[end.month - 1]}" if start <= today else
-                f"{start.day} {MONTHS[start.month - 1]} al {end.day} {MONTHS[end.month - 1]}")
-    return "Hoy" if start == today else ("Mañana" if (start - today).days == 1 else "")
-
-
-def _options(values, label, name):
-    options = "".join(f'<option value="{esc(v)}">{esc(v)}</option>' for v in sorted(values))
-    return (f'<label>{label}<select data-agenda-filter="{name}">'
-            f'<option value="">Todas</option>{options}</select></label>')
+    shown = max(start, today)
+    if shown == today:
+        label = "Hoy"
+    elif (shown - today).days == 1:
+        label = "Mañana"
+    else:
+        label = f"{WEEKDAYS[shown.weekday()]} {shown.day} {MONTHS[shown.month - 1]}"
+    if end > shown:
+        label += f" al {end.day} {MONTHS[end.month - 1]}"
+    return label + (f', {event["time"]} h' if event["time"] else "")
 
 
 def render_filters(events):
-    """Controles inertes sin JavaScript: quedan ocultos y se ve la lista completa."""
-    regions = {e["region"] for e in events}
-    categories = {e["category"] for e in events if e["category"]}
-    controls = []
-    if len(regions) > 1:
-        controls.append(_options(regions, "Región", "region"))
-    if len(categories) > 1:
-        controls.append(_options(categories, "Categoría", "category"))
-    if any(e["free"] for e in events) and not all(e["free"] for e in events):
-        controls.append('<label class="agenda-check"><input type="checkbox" data-agenda-filter="free"> '
-                        'Solo gratis</label>')
-    if not controls:
+    """Botones con el mismo estilo que las opciones de vista; ocultos sin JavaScript."""
+    regions = sorted({e["region"] for e in events})
+    some_free = any(e["free"] for e in events) and not all(e["free"] for e in events)
+    if len(regions) < 2 and not some_free:
         return ""
+    buttons = []
+    if len(regions) > 1:
+        buttons.append('<button type="button" class="density-switch" data-agenda-region="" '
+                       'aria-pressed="true">Todo Chile</button>')
+        buttons += [f'<button type="button" class="density-switch" data-agenda-region="{esc(r)}" '
+                    f'aria-pressed="false">{esc(r)}</button>' for r in regions]
+    if some_free:
+        buttons.append('<button type="button" class="density-switch" data-agenda-free '
+                       'aria-pressed="false">Solo gratis</button>')
     return (f'<div class="agenda-filters" data-agenda-filters hidden role="group" '
-            f'aria-label="Filtrar eventos">{"".join(controls)}'
-            f'<p class="agenda-empty" data-agenda-empty hidden>No hay eventos con esos filtros.</p></div>')
+            f'aria-label="Filtrar eventos">{"".join(buttons)}</div>')
 
 
-def render_agenda(events, now):
+def render_agenda(events, now, number=None, source_mark=None):
+    """Misma estructura que una sección de noticias: encabezado numerado y tarjetas compactas."""
     if not events:
         return ""
     today = now.astimezone(TZ_CHILE).date()
     cards = []
-    for event in events:
+    for i, event in enumerate(events):
         shown = max(event["date"], today)
-        details = " · ".join(esc(v) for v in (event["venue"], event["time"] and f'{event["time"]} h',
-                                              event["price"]) if v)
-        when = _when(event, today)
-        badge = (f'<span class="agenda-status">{esc(event["status"])}</span>'
+        key = CATEGORY_CLASS.get(event["category"], "cultura")
+        label = event["category"] or "Evento"
+        mark = source_mark({"sources": [event["source"]], "source_url": event["link"],
+                            "link": event["link"]}) if source_mark else ""
+        badge = (f'<span class="source-country">{esc(event["status"])}</span>'
                  if event["status"] and event["status"].lower() != "confirmado" else "")
-        labels = [("region", event["region"])]
-        labels += [("category", event["category"])] if event["category"] else []
-        labels += [("free", "Gratis")] if event["free"] else []
-        labels += [("tag", tag) for tag in event["tags"]]
-        tags = "".join(f'<li class="agenda-tag agenda-tag--{kind}">{esc(text)}</li>' for kind, text in labels)
+        free = '<span class="source-country">Gratis</span>' if event["free"] else ""
+        dek = " · ".join(esc(v) for v in (event["venue"], event["price"]) if v)
         cards.append(
-            f'<li data-region="{esc(event["region"])}" data-category="{esc(event["category"])}"'
-            f'{" data-free" if event["free"] else ""}><article class="agenda-item">'
-            f'<time class="agenda-date" datetime="{shown.isoformat()}">'
-            f'<span class="agenda-day">{shown.day}</span>'
-            f'<span class="agenda-month">{MONTHS[shown.month - 1]}</span></time>'
-            f'<div class="agenda-body">'
-            f'<p class="kicker">{esc(when) + " · " if when else ""}{esc(event["commune"])}</p>'
-            f'<h3><a href="{esc(event["link"])}" target="_blank" rel="noopener">{esc(event["title"])}</a></h3>'
-            f'{f"<p class=\"agenda-meta\">{details}{badge}</p>" if details or badge else ""}'
-            f'<ul class="agenda-tags" aria-label="Etiquetas">{tags}</ul>'
-            f'<p class="agenda-source">Fuente: {esc(event["source"])}</p>'
+            f'<li class="cat-{key}" data-region="{esc(event["region"])}"{" data-free" if event["free"] else ""}'
+            f'{" data-extra" if i >= 5 else ""}><article class="compact">'
+            f'<figure class="media media--source media--date" role="img" '
+            f'aria-label="{shown.day} de {MONTHS[shown.month - 1]}">'
+            f'<span class="source-visual"><span class="date-mark"><span class="date-day">{shown.day}</span>'
+            f'<span class="date-month">{MONTHS[shown.month - 1]}</span></span></span></figure>'
+            f'<div class="news-body"><p class="kicker">{esc(label)} · {esc(event["commune"])}</p>'
+            f'<h3><a href="{esc(event["link"])}" target="_blank" rel="noopener" data-countries="" '
+            f'data-cat="Agenda" data-key="agenda" '
+            f'data-sources="{esc(json.dumps([event["source"]], ensure_ascii=False))}">{esc(event["title"])}</a></h3>'
+            f'{f"<p class=\"dek\">{dek}</p>" if dek else ""}'
+            f'<p class="meta"><span class="src">{mark}<span class="source-name">{esc(event["source"])}</span></span>'
+            f'<span class="source-country">{esc(event["region"])}</span>{free}{badge}'
+            f'<time datetime="{_moment(shown, event["time"])}">{esc(_when(event, today))}</time></p>'
             f'</div></article></li>')
     count = len(events)
-    regions = len({e["region"] for e in events})
-    scope = f'{regions} {"región" if regions == 1 else "regiones"}'
-    return (f'<section class="section cat-agenda" id="cat-agenda" aria-labelledby="titulo-agenda">'
-            f'<div class="section-head"><span class="section-num">Chile</span>'
-            f'<h2 id="titulo-agenda">Agenda de eventos</h2>'
-            f'<span class="section-count" data-agenda-count>{count} {"evento" if count == 1 else "eventos"} · {scope}</span></div>'
+    more = (f'<button type="button" class="show-more" data-show-more aria-controls="noticias-agenda" '
+            f'data-step="6">Ver más eventos <span aria-hidden="true">↓</span></button>' if count > 6 else "")
+    num = f'<span class="section-num">{number:02d}</span>' if number else ""
+    return (f'<section class="section" id="cat-agenda" aria-labelledby="titulo-agenda">'
+            f'<div class="section-head">{num}<h2 id="titulo-agenda">Agenda</h2>'
+            f'<span class="section-count" data-agenda-count>{count} {"evento" if count == 1 else "eventos"}</span></div>'
             f'{render_filters(events)}'
-            f'<ul class="agenda-list">{"".join(cards)}</ul>'
-            f'<p class="agenda-note">Eventos públicos validados por el proyecto '
-            f'<a href="{PROJECT_URL}" target="_blank" rel="noopener">Eventos Región del Biobío</a>, '
-            f'que también rastrea fuentes oficiales del resto del país. '
-            f'Confirma fecha, hora y acceso con el organizador antes de asistir.</p></section>')
+            f'<div class="section-grid" id="noticias-agenda"><ul class="compact-list">{"".join(cards)}</ul></div>'
+            f'{more}</section>')

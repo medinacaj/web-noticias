@@ -376,40 +376,14 @@
   .cat-tecnologia{--cat:var(--c-tecnologia);--cat-b:var(--b-tecnologia);}
   .cat-deportes{--cat:var(--c-deportes);--cat-b:var(--b-deportes);}
   .cat-cultura{--cat:var(--c-cultura);--cat-b:var(--b-cultura);}
-  .cat-agenda{--cat:#0F6E67;--cat-b:#5FD4C4;}
-  /* ---------- Agenda Biobío (eventos validados por eventos-biobio) ---------- */
-  .agenda-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
-  .agenda-list li{background:var(--card-bg);color:var(--card-ink);border:1px solid var(--card-rule);border-radius:var(--radius-card);box-shadow:var(--card-shadow);min-width:0;transition:box-shadow var(--motion-card) ease,transform var(--motion-card) ease,border-color var(--motion-card) ease;}
-  .agenda-list li:hover,.agenda-list li:focus-within{border-color:var(--cat-b);box-shadow:var(--card-shadow-hover);transform:translateY(-2px);}
-  .agenda-item{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;padding:16px;min-width:0;}
-  .agenda-date{display:flex;flex-direction:column;align-items:center;justify-content:center;align-self:start;height:60px;border:1px solid var(--cat-b);border-radius:5px;color:var(--card-ink);}
-  .agenda-day{font:700 24px/1 var(--serif);}
-  .agenda-month{font:700 10px/1.6 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--cat-b);}
-  .agenda-body{min-width:0;}
-  .agenda-body .kicker{margin:0 0 6px;color:var(--card-muted);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;overflow-wrap:anywhere;}
-  .agenda-body h3{font:600 17px/1.32 var(--serif);margin:0;overflow-wrap:anywhere;}
-  .agenda-body h3 a{color:var(--card-ink);}
-  .agenda-body h3 a:hover,.agenda-body h3 a:focus-visible{color:var(--card-link);}
-  .agenda-body h3 a:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;border-radius:2px;}
-  .agenda-meta{margin:8px 0 0;font-size:13px;line-height:1.45;color:var(--card-muted);overflow-wrap:anywhere;}
-  .agenda-status{display:inline-block;margin-left:6px;padding:1px 6px;border:1px solid var(--cat-b);border-radius:3px;font-size:11px;font-weight:600;color:var(--card-ink);}
-  .agenda-source{margin:6px 0 0;font-size:12px;color:var(--card-muted);}
-  .agenda-note{margin:14px 0 0;font-size:13px;color:var(--muted);}
-  .agenda-list > li[hidden]{display:none;}
-  .agenda-tags{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px;}
-  .agenda-tag{font:600 11px/1 var(--sans);letter-spacing:.02em;padding:4px 7px;border:1px solid var(--card-rule);border-radius:3px;color:var(--card-ink);}
-  .agenda-tag--region{border-color:var(--cat-b);color:var(--cat-b);}
-  .agenda-tag--free{border-color:var(--b-economia);color:var(--b-economia);}
-  .agenda-filters{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 16px;margin:0 0 16px;}
+  /* Agenda: mismas tarjetas que las secciones; la fecha ocupa el lugar de la imagen. */
+  .media--date .date-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;width:56px;height:60px;border-radius:8px;background:var(--surface);box-shadow:0 3px 14px rgba(0,0,0,.09);color:var(--cat,var(--navy));}
+  .media--date .date-day{font:700 24px/1 var(--serif);}
+  .media--date .date-month{font:700 10px/1.6 var(--sans);letter-spacing:.12em;text-transform:uppercase;}
+  #noticias-agenda .dek{font:500 13px/1.45 var(--sans);color:var(--card-muted);margin:8px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+  .agenda-filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;}
   .agenda-filters[hidden]{display:none;}
-  .agenda-filters label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:600;color:var(--muted);}
-  .agenda-filters select{font:500 14px var(--sans);min-height:40px;min-width:160px;max-width:100%;padding:6px 10px;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;}
-  .agenda-filters .agenda-check{flex-direction:row;align-items:center;gap:8px;min-height:40px;font-size:14px;color:var(--ink);}
-  .agenda-filters input[type=checkbox]{width:18px;height:18px;accent-color:var(--cat);}
-  .agenda-empty{flex-basis:100%;margin:0;font-size:14px;color:var(--muted);}
-  .agenda-note a{color:inherit;text-decoration:underline;}
-  @media (max-width:1179px){.agenda-list{grid-template-columns:repeat(2,minmax(0,1fr));}}
-  @media (max-width:767px){.agenda-list{grid-template-columns:minmax(0,1fr);gap:10px;}.agenda-item{padding:14px;}.agenda-filters label{flex:1 1 140px;}.agenda-filters select{min-width:0;width:100%;min-height:44px;}}
+  #noticias-agenda li[data-filtered]{display:none !important;}
 
   /* ---------- Pie ---------- */
   /* Pie editorial sin segundo panel ni navegación repetida por categoría. */
@@ -1149,29 +1123,32 @@
     sections.forEach(function (section) { observer.observe(section); });
   })();
 
-  // Agenda: filtros por región, categoría y gratuidad. Sin JavaScript se ve la lista completa.
+  // Agenda: filtros por región y gratuidad. Sin JavaScript se ve la lista completa.
   (function () {
     var box = d.querySelector("[data-agenda-filters]");
     if (!box) return;
-    var section = box.closest("section"), items = section.querySelectorAll(".agenda-list > li");
-    var region = box.querySelector('[data-agenda-filter="region"]');
-    var category = box.querySelector('[data-agenda-filter="category"]');
-    var free = box.querySelector('[data-agenda-filter="free"]');
-    var empty = box.querySelector("[data-agenda-empty]"), count = section.querySelector("[data-agenda-count]");
-    var total = count ? count.textContent : "";
+    var items = d.querySelectorAll("#noticias-agenda > .compact-list > li");
+    var count = d.querySelector("[data-agenda-count]"), total = count ? count.textContent : "";
+    var region = "", free = false;
     function apply() {
       var shown = 0;
       items.forEach(function (li) {
-        var ok = (!region || !region.value || li.getAttribute("data-region") === region.value) &&
-          (!category || !category.value || li.getAttribute("data-category") === category.value) &&
-          (!free || !free.checked || li.hasAttribute("data-free"));
-        li.hidden = !ok;
-        if (ok) shown++;
+        var ok = (!region || li.getAttribute("data-region") === region) && (!free || li.hasAttribute("data-free"));
+        if (ok) { li.removeAttribute("data-filtered"); shown++; } else li.setAttribute("data-filtered", "");
       });
-      empty.hidden = shown > 0;
+      box.querySelectorAll("[data-agenda-region]").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-agenda-region") === region));
+      });
       if (count) count.textContent = shown === items.length ? total : shown + " de " + items.length + " eventos";
     }
-    [region, category, free].forEach(function (control) { if (control) control.addEventListener("change", apply); });
+    box.addEventListener("click", function (event) {
+      var button = event.target.closest("button");
+      if (!button) return;
+      if (button.hasAttribute("data-agenda-free")) {
+        free = !free; button.setAttribute("aria-pressed", String(free));
+      } else region = button.getAttribute("data-agenda-region");
+      apply();
+    });
     box.hidden = false;
   })();
 

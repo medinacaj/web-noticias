@@ -1,4 +1,4 @@
-"""Agenda de eventos: solo validados, vigentes y con fuente; etiquetas y filtros; nunca bloquea la portada."""
+"""Agenda: solo eventos validados, vigentes y con fuente; mismas tarjetas que las noticias; nunca bloquea la portada."""
 import os
 import tempfile
 import unittest
@@ -51,11 +51,6 @@ class UpcomingEventsTests(unittest.TestCase):
         events = upcoming_events(payload, TODAY)
         self.assertEqual([(e["commune"], e["region"]) for e in events], [("Valparaíso", "Valparaíso")])
 
-    def test_tags_are_normalized_and_limited(self):
-        [item] = upcoming_events({"events": [event()]}, TODAY, "Biobío")
-        self.assertEqual(item["tags"], ["música", "rock"])
-        self.assertTrue(item["free"])
-
     def test_escaped_html_becomes_plain_text(self):
         # Caso real de GAM en national_events.json (2026-10-24).
         [item] = upcoming_events({"events": [event(
@@ -107,7 +102,8 @@ class RenderAgendaTests(unittest.TestCase):
         return upcoming_events({"events": [
             event(region="Biobío", source_url="https://a.cl/1"),
             event(title="Feria", region="Valparaíso", commune="Valparaíso", category="Comunidad",
-                  price_status="paid", price_text="$3.000", tags=[], source_url="https://a.cl/2")]}, TODAY)
+                  price_status="paid", price_text="$3.000", date="2026-10-25", time="",
+                  source_url="https://a.cl/2")]}, TODAY)
 
     def test_empty_agenda_renders_nothing(self):
         self.assertEqual(render_agenda([], NOW), "")
@@ -117,28 +113,37 @@ class RenderAgendaTests(unittest.TestCase):
             event(title="<script>alert(1)</script>", status="Por confirmar")]}, TODAY, "Biobío")
         html = render_agenda(events, NOW)
         self.assertNotIn("<script>", html)
-        self.assertIn('rel="noopener">alert(1)</a>', html)  # etiquetas eliminadas, texto escapado
-        self.assertIn('href="https://teatrobiobio.cl/concierto/" target="_blank" rel="noopener"', html)
-        self.assertIn('<time class="agenda-date" datetime="2026-10-30">', html)
-        self.assertIn("Teatro Biobío · 19:30 h · Gratis", html)
-        self.assertIn('<span class="agenda-status">Por confirmar</span>', html)
+        self.assertIn('rel="noopener" data-countries="" data-cat="Agenda" data-key="agenda"', html)
+        self.assertIn(">alert(1)</a>", html)
+        self.assertIn('href="https://teatrobiobio.cl/concierto/" target="_blank"', html)
+        self.assertIn('<span class="source-country">Por confirmar</span>', html)
 
-    def test_cards_carry_tags_and_filter_attributes(self):
-        html = render_agenda(self.sample(), NOW)
-        self.assertIn('<li data-region="Biobío" data-category="Cultura" data-free>', html)
-        self.assertIn('<li data-region="Valparaíso" data-category="Comunidad">', html)
-        for tag in ('agenda-tag--region">Valparaíso', 'agenda-tag--category">Comunidad',
-                    'agenda-tag--free">Gratis', 'agenda-tag--tag">rock'):
-            self.assertIn(tag, html)
-        self.assertIn("2 eventos · 2 regiones", html)
+    def test_reuses_news_section_structure(self):
+        html = render_agenda(self.sample(), NOW, number=12, source_mark=news.source_mark)
+        self.assertIn('<span class="section-num">12</span><h2 id="titulo-agenda">Agenda</h2>', html)
+        self.assertIn('<div class="section-grid" id="noticias-agenda"><ul class="compact-list">', html)
+        self.assertIn('<li class="cat-cultura" data-region="Biobío" data-free><article class="compact">', html)
+        self.assertIn('<li class="cat-regiones" data-region="Valparaíso"><article class="compact">', html)
+        self.assertIn('class="media media--source media--date"', html)
+        self.assertIn('<p class="kicker">Cultura · Concepción</p>', html)
+        self.assertIn('<span class="source-mark"', html)
+        self.assertIn('<span class="source-name">Teatro Biobío</span>', html)
+        self.assertIn('<time datetime="2026-10-30T19:30:00-03:00">vie 30 oct, 19:30 h</time>', html)
+        self.assertIn('<time datetime="2026-10-25T00:00:00-03:00">Mañana</time>', html)
+        for absent in ("agenda-tag", "agenda-item", "agenda-note", "class=\"cat-agenda\""):
+            self.assertNotIn(absent, html)
+
+    def test_ongoing_event_shows_today_until_end(self):
+        [item] = upcoming_events({"events": [event(date="2026-10-20", end_date="2026-11-02", time="")]},
+                                 TODAY, "Biobío")
+        self.assertIn(">Hoy al 2 nov</time>", render_agenda([item], NOW))
 
     def test_filters_hidden_until_js_and_only_when_useful(self):
         html = render_filters(self.sample())
         self.assertIn("data-agenda-filters hidden", html)
-        self.assertIn('data-agenda-filter="region"', html)
-        self.assertIn('<option value="Valparaíso">Valparaíso</option>', html)
-        self.assertIn('data-agenda-filter="category"', html)
-        self.assertIn('data-agenda-filter="free"', html)
+        self.assertIn('class="density-switch" data-agenda-region="" aria-pressed="true">Todo Chile', html)
+        self.assertIn('data-agenda-region="Valparaíso"', html)
+        self.assertIn("data-agenda-free", html)
         [single] = upcoming_events({"events": [event()]}, TODAY, "Biobío")
         self.assertEqual(render_filters([single]), "")
 
@@ -146,12 +151,13 @@ class RenderAgendaTests(unittest.TestCase):
         page = (ROOT / "template.html").read_text(encoding="utf-8")
         self.assertIn('d.querySelector("[data-agenda-filters]")', page)
         self.assertIn("box.hidden = false;", page)
-        self.assertIn(".agenda-list > li[hidden]{display:none;}", page)
+        self.assertIn("#noticias-agenda li[data-filtered]{display:none !important;}", page)
 
-    def test_site_shows_section_and_nav_only_with_events(self):
-        stories = [{"category": "nacional", "title": "Nota nacional", "summary": "",
-                    "image": "", "sources": ["Medio"], "link": "https://medio.cl/nota",
-                    "published": "2026-10-24T11:00:00Z"}]
+    def test_site_numbers_agenda_after_news_sections(self):
+        stories = [{"category": cat, "title": f"Nota {i} de {cat}", "summary": "",
+                    "image": "", "sources": [f"Medio {i}"], "link": f"https://medio{i}.cl/nota",
+                    "published": f"2026-10-24T{10 - i % 5:02d}:00:00Z"}
+                   for i, cat in enumerate(["nacional", "deportes"] * 4)]
         with tempfile.TemporaryDirectory() as folder, patch.dict(os.environ, {}, clear=True):
             news.build_site(stories, NOW, folder)
             empty = Path(folder, "index.html").read_text(encoding="utf-8")
@@ -159,9 +165,11 @@ class RenderAgendaTests(unittest.TestCase):
             full = Path(folder, "index.html").read_text(encoding="utf-8")
         self.assertNotIn('id="cat-agenda"', empty)
         self.assertNotIn('href="#cat-agenda"', empty)
-        self.assertNotIn("%%AGENDA%%", empty)
-        self.assertIn('<a class="cat-agenda" href="#cat-agenda">Agenda</a>', full)
-        self.assertIn('<h2 id="titulo-agenda">Agenda de eventos</h2>', full)
+        self.assertIn('<li><a href="#cat-agenda">Agenda</a></li>', full)
+        import re
+        numbers = [int(n) for n in re.findall(r'<span class="section-num">(\d+)</span>', full)]
+        self.assertEqual(numbers, list(range(1, len(numbers) + 1)))  # la agenda continúa la numeración
+        self.assertIn(f'<span class="section-num">{numbers[-1]:02d}</span><h2 id="titulo-agenda">', full)
         self.assertEqual(full.count("<h1"), 1)
 
 

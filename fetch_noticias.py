@@ -810,7 +810,7 @@ def render_nav(sel, agenda=False):
     links += [f'<li><a class="cat-{c["key"]}" href="#cat-{c["key"]}">{esc(PRESENTATION_LABELS.get(c["key"], c.get("short", c["label"])))}</a></li>'
               for c in CATEGORIES if c["key"] in sel["by_category"]]
     if agenda:
-        links.append('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>')
+        links.append('<li><a href="#cat-agenda">Agenda</a></li>')
     return "".join(links)
 
 
@@ -886,7 +886,8 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
 
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
     from scripts.agenda import render_agenda
-    agenda_html = render_agenda(agenda or [], now)
+    sections_shown = sum(1 for c in CATEGORIES if c["key"] in sel["by_category"])
+    agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1, source_mark=source_mark)
     nav = render_nav(sel, agenda=bool(agenda_html))
     replacements = {
         "%%TITLE%%": esc(SITE_TITLE),
