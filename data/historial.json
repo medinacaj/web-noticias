@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T14:35:39Z",
+ "actualizado": "2026-10-24T14:52:57Z",
  "noticias": [
   {
    "category": "internacional",
@@ -57,6 +57,21 @@
     "CL"
    ],
    "image_checked_at": "2026-10-24T14:35:39.340258Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Detienen a sujeto por el homicidio y desaparición de Sofía Sánchez, exprotagonista de \"Mamá a los 15\"",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994648-sofiasanchez.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/24/detienen-a-sujeto-por-homicidio-y-desaparicion-de-sofia-sanchez-exprotagonista-de-mama-a-los-15.shtml",
+   "published": "2026-10-24T14:04:26Z",
+   "first_seen": "2026-10-24T14:52:57Z",
+   "image_checked_at": "2026-10-24T14:52:57.545974Z"
   },
   {
    "category": "regiones",
@@ -176,6 +191,21 @@
    "image_checked_at": "2026-10-24T14:27:30.848093Z"
   },
   {
+   "category": "tecnologia",
+   "title": "Nuevo récord: estudio revela más de 50 mil muertes por calor extremo durante el verano europeo 2026",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994589-calor-europa.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/medio-ambiente-cyt/2026/10/24/nuevo-record-estudio-revela-mas-de-50-mil-muertes-por-calor-extremo-durante-el-verano-europeo-2026.shtml",
+   "published": "2026-10-24T11:20:03Z",
+   "first_seen": "2026-10-24T14:52:57Z",
+   "image_checked_at": "2026-10-24T14:52:57.545974Z"
+  },
+  {
    "category": "nacional",
    "title": "El desahogo de Bárbara Hernández tras su libro: \"No todo lo que vale la pena significa una hipotermia\"",
    "summary": "",
@@ -204,6 +234,21 @@
    "published": "2026-10-24T10:00:00Z",
    "first_seen": "2026-10-24T14:27:30Z",
    "image_checked_at": "2026-10-24T14:27:30.848093Z"
+  },
+  {
+   "category": "economia",
+   "title": "Codelco ha perdido US$ 1.780 millones en fundiciones y refinerías en los últimos cuatro años",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/2QXAS4BQ6VHXBO573NVSB6HTGU.jpg?auth=b7ae212550366e6be6b2a84385854dfbe0f259556f9b0713b5d7681b151d0410&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/pulso/noticia/codelco-ha-perdido-us-1780-millones-en-fundiciones-y-refinerias-en-los-ultimos-cuatro-anos/",
+   "published": "2026-10-24T10:00:00Z",
+   "first_seen": "2026-10-24T14:52:57Z",
+   "image_checked_at": "2026-10-24T14:52:57.545974Z"
   },
   {
    "category": "politica",
@@ -1486,6 +1531,21 @@
    "published": "2026-10-23T20:27:25Z",
    "first_seen": "2026-10-24T00:37:33Z",
    "image_checked_at": "2026-10-24T00:37:33.484010Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Fernando Ortiz confirma que Claudio Aquino podría volver a las citaciones ante Palestino",
+   "summary": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/23165926/aquino-cc-1200x740.webp",
+   "source_url": "https://redgol.cl",
+   "sources": [
+    "RedGol"
+   ],
+   "coverages": [],
+   "link": "https://redgol.cl/colocolo/fernando-ortiz-claudio-aquino-citacion-regreso-colo-colo-palestino",
+   "published": "2026-10-23T20:26:04Z",
+   "first_seen": "2026-10-24T14:52:57Z",
+   "image_checked_at": "2026-10-24T14:52:57.545974Z"
   },
   {
    "category": "nacional",
@@ -3177,81 +3237,6 @@
    "published": "2026-10-23T14:59:12Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "economia",
-   "title": "Quiebra empresa de venta de carbón de Eduardo Menichetti y acumula pasivos por $8.570 millones",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/WS5YX3EJZFAJLMQRNI6SSKDLZY.jpg?auth=93c7603bf6e2312e03ce5892debd67d79700b60a5318fe186b24ed67d226348e&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/pulso/noticia/quiebra-empresa-de-venta-de-carbon-de-eduardo-menichetti-y-acumula-pasivos-por-8570-millones/",
-   "published": "2026-10-23T14:50:00Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T18:57:20.007908Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Aramco y Enex se suman a Copec y rechazan integrar listado de infraestructura crítica de ciberseguridad",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/A43FLLYOTFBMXG6SASISFPAFNY.jpg?auth=7925cd3afa4841268b6d2108cc47fbca24f3d5f15f1d81382005cdec0ad389ba&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/pulso/noticia/aramco-y-enex-se-suman-a-copec-y-rechazan-integrar-listado-de-infraestructura-critica-de-ciberseguridad/",
-   "published": "2026-10-23T14:50:00Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T18:57:20.007908Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Eyzaguirre critica manejo fiscal de Quiroz: \"Se ha equivocado completa y totalmente\"",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261023/imag/foto_0000000120261023113127.jpg",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/pais/politica/eyzaguirre-critica-manejo-fiscal-de-quiroz-se-ha-equivocado-completa-y/2026-10-23/113127.html",
-   "published": "2026-10-23T14:48:00Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "cultura",
-   "title": "El gesto de Máximo Menem Bolocco con Kenita Larraín en 'Vértigo': joven fue aplaudido por el público",
-   "summary": "",
-   "image": "https://s.t13.cl/sites/default/files/styles/manualcrop_850x475/public/t13/field-imagen/2026-10/1792766383.jpg.jpeg?itok=U0x7ZZJZ",
-   "source_url": "https://www.t13.cl",
-   "sources": [
-    "Teletrece"
-   ],
-   "coverages": [],
-   "link": "https://www.t13.cl/noticia/espectaculos/gesto-maximo-menem-bolocco-kenita-larrain-vertigo-joven-aplaudido-23-10-2026",
-   "published": "2026-10-23T14:45:00Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "economia",
-   "title": "Sonda más que duplica sus utilidades en los primeros nueve meses de 2026 y dispara en 49% sus contratos adjudicados",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261023/imag/foto_0000002120261023114440/Edificio_SONDA_Corp.jpg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/empresas/industria/sonda-eleva-en-un-126-sus-utilidades-y-dispara-en-un-49-sus-contratos",
-   "published": "2026-10-23T14:39:00Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
@@ -3281,6 +3266,15 @@
    "published": "2026-10-24T14:08:13Z",
    "sources": [
     "El Comercio Perú"
+   ]
+  },
+  {
+   "title": "Detienen a sujeto por el homicidio y desaparición de Sofía Sánchez, exprotagonista de \"Mamá a los 15\"",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/24/detienen-a-sujeto-por-homicidio-y-desaparicion-de-sofia-sanchez-exprotagonista-de-mama-a-los-15.shtml",
+   "category": "nacional",
+   "published": "2026-10-24T14:04:26Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -3347,6 +3341,15 @@
    ]
   },
   {
+   "title": "Nuevo récord: estudio revela más de 50 mil muertes por calor extremo durante el verano europeo 2026",
+   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/medio-ambiente-cyt/2026/10/24/nuevo-record-estudio-revela-mas-de-50-mil-muertes-por-calor-extremo-durante-el-verano-europeo-2026.shtml",
+   "category": "tecnologia",
+   "published": "2026-10-24T11:20:03Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "El desahogo de Bárbara Hernández tras su libro: \"No todo lo que vale la pena significa una hipotermia\"",
    "link": "https://www.biobiochile.cl/noticias/deportes/mas-deportes/2026/10/24/el-desahogo-de-barbara-hernandez-tras-su-libro-no-todo-lo-que-vale-la-pena-significa-una-hipotermia.shtml",
    "category": "nacional",
@@ -3358,6 +3361,15 @@
   {
    "title": "Gerente general de PlanVital y caída del Fondo E: “Hemos cumplido fielmente con nuestro deber de buscar la adecuada rentabilidad y seguridad de los fondos”",
    "link": "https://www.latercera.com/pulso/noticia/gerente-general-de-planvital-y-caida-del-fondo-e-hemos-cumplido-fielmente-con-nuestro-deber-de-buscar-la-adecuada-rentabilidad-y-seguridad-de-los-fondos/",
+   "category": "economia",
+   "published": "2026-10-24T10:00:00Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Codelco ha perdido US$ 1.780 millones en fundiciones y refinerías en los últimos cuatro años",
+   "link": "https://www.latercera.com/pulso/noticia/codelco-ha-perdido-us-1780-millones-en-fundiciones-y-refinerias-en-los-ultimos-cuatro-anos/",
    "category": "economia",
    "published": "2026-10-24T10:00:00Z",
    "sources": [
@@ -4083,6 +4095,15 @@
    "published": "2026-10-23T20:27:25Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Fernando Ortiz confirma que Claudio Aquino podría volver a las citaciones ante Palestino",
+   "link": "https://redgol.cl/colocolo/fernando-ortiz-claudio-aquino-citacion-regreso-colo-colo-palestino",
+   "category": "deportes",
+   "published": "2026-10-23T20:26:04Z",
+   "sources": [
+    "RedGol"
    ]
   },
   {
