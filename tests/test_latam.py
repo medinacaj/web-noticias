@@ -158,7 +158,7 @@ class LatamTests(unittest.TestCase):
 
     def test_collect_uses_two_localized_searches_and_no_extra_gnews(self):
         requests, api = [], []
-        def rss(url, category, default_source=None):
+        def rss(url, category, default_source=None, **kwargs):
             requests.append((url, category))
             if category != "latinoamerica":
                 return []
@@ -184,7 +184,7 @@ class LatamTests(unittest.TestCase):
 
     def test_world_feed_reclassification_cannot_bypass_metadata_or_catalog_gate(self):
         records = [item(), item("Venezuela anuncia medidas", source_url="https://www.elnacional.com")]
-        def rss(url, category, default_source=None):
+        def rss(url, category, default_source=None, **kwargs):
             return records if category == "internacional" and not default_source else []
         with patch.object(news, "fetch_rss", side_effect=rss), patch.object(news, "GNEWS_API_KEY", ""), \
              patch("scripts.regional_sources.collect_regional", return_value=[]):
@@ -207,7 +207,7 @@ class LatamTests(unittest.TestCase):
         invalid += [{**base, "title": "Francia anuncia medidas"},
                     {**base, "source_url": "https://www.elnacional.com"}]
         calls = []
-        def rss(url, category, default_source=None):
+        def rss(url, category, default_source=None, **kwargs):
             if category != "latinoamerica":
                 return []
             calls.append(url)

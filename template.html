@@ -3,7 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>document.documentElement.classList.add("js");</script>
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add("js");
+  var preference = "system", sidebar = "visible";
+  try {
+    preference = localStorage.getItem("noticias:theme:v1") || "system";
+    sidebar = localStorage.getItem("noticias:sidebar:v1") || "visible";
+  } catch (error) {}
+  if (["system", "light", "dark"].indexOf(preference) < 0) preference = "system";
+  root.dataset.themePreference = preference;
+  root.dataset.theme = preference === "system"
+    ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : preference;
+  root.dataset.sidebar = sidebar === "hidden" ? "hidden" : "visible";
+})();
+</script>
 <title>%%TITLE%%</title>
 <meta name="description" content="%%DESCRIPTION%%">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -51,8 +66,7 @@
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
   }
-  /* Identidad editorial fija: el sistema oscuro no debe anular el fondo gris humo.
-     Las tarjetas mantienen su tratamiento oscuro de alto contraste. */
+  /* Tema claro editorial; las preferencias del lector se aplican antes del primer render. */
   *,*::before,*::after{box-sizing:border-box;}
   [hidden]{display:none !important;}
   html{scroll-padding-top:env(safe-area-inset-top,0px);}
@@ -73,28 +87,41 @@
   .refresh-bar{display:inline-block;width:96px;height:2px;background:rgba(255,255,255,.18);overflow:hidden;}
   .refresh-bar-fill{display:block;height:100%;width:0;background:var(--red);transition:width 1s linear;}
 
-  /* ---------- Masthead ---------- */
-  .masthead-wrap{border-bottom:4px double var(--strong);}
-  .masthead{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;padding-top:30px;padding-bottom:22px;}
-  .masthead-title{font-family:var(--serif);font-weight:700;text-transform:uppercase;letter-spacing:-.01em;line-height:.95;font-size:clamp(34px,6.2vw,86px);margin:0;}
-  .masthead-claim{font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.4;color:var(--muted);max-width:290px;margin:0;text-align:right;}
-
-  /* ---------- Barra de secciones (fija) ---------- */
-  .sticky-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:100;background:var(--navy);color:var(--on-navy);}
-  .bar-inner{display:flex;align-items:center;gap:18px;min-height:52px;}
-  .brand-mini{font-family:var(--serif);font-weight:700;font-size:17px;text-transform:uppercase;white-space:nowrap;max-width:0;overflow:hidden;visibility:hidden;opacity:0;margin-right:-18px;transition:opacity .2s;}
-  .sticky-bar.is-stuck .brand-mini{max-width:280px;visibility:visible;opacity:1;margin-right:0;}
-  .site-nav{flex:1;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-behavior:smooth;mask-image:linear-gradient(to right,#000 0%,#000 97%,transparent 100%);}
-  .site-nav::-webkit-scrollbar{display:none;}
-  .site-nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;}
-  .site-nav a{display:flex;align-items:center;min-height:52px;padding:0 12px;white-space:nowrap;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--on-navy-soft);border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
-  .site-nav a:hover,.site-nav a:focus-visible{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.07);}
-  .site-nav a.is-active{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--red));background:rgba(255,255,255,.10);}
-  .js .site-nav{cursor:grab;touch-action:pan-x;user-select:none;position:relative;scroll-behavior:auto;}
-  .js .site-nav.is-dragging{cursor:grabbing;scroll-behavior:auto;}
-  .site-nav[data-paused="true"]{box-shadow:inset 0 -2px 0 rgba(255,255,255,.2);}
-  .site-nav[data-paused="true"]::after{content:"EN PAUSA";pointer-events:none;position:sticky;right:0;float:right;margin-top:-39px;padding:3px 7px;border-radius:3px;background:var(--navy);color:var(--on-navy-soft);font:600 10px/1.4 var(--sans);letter-spacing:.08em;}
-  .site-nav a[class^="cat-"]::before,.footer-nav a[class^="cat-"]::before{content:"";display:inline-block;flex-shrink:0;width:8px;height:8px;margin-right:8px;background:var(--cat-b);}
+  /* ---------- Cabecera compacta y navegación lateral ---------- */
+  :root{--sidebar-width:216px;--header-height:76px;}
+  html{scroll-padding-top:calc(var(--header-height) + 16px);}
+  .site-header{position:sticky;top:0;z-index:100;}
+  .sticky-bar{position:relative;background:var(--surface);color:var(--ink);border-bottom:1px solid var(--rule);}
+  .bar-inner{display:flex;align-items:center;gap:10px;min-height:var(--header-height);max-width:none;}
+  .masthead-wrap{flex:1;min-width:0;}
+  .masthead-title{font:700 21px/1.1 var(--serif);letter-spacing:-.035em;margin:0;}
+  .brand-link{display:inline-flex;align-items:center;gap:10px;}
+  .brand-logo{width:40px;height:40px;flex:none;}
+  .brand-logo rect{fill:var(--navy);}
+  .brand-logo path{stroke:var(--on-navy);}
+  .brand-logo .logo-accent{stroke:var(--b-nacional);}
+  .header-updated{font:500 10px/1.4 var(--sans);color:var(--muted);margin:3px 0 0 50px;}
+  .header-updated .refresh-bar{width:38px;background:var(--rule);vertical-align:middle;margin-left:6px;}
+  .site-nav{background:var(--surface);color:var(--ink);padding:20px 12px;overflow-y:auto;overscroll-behavior:contain;}
+  .nav-heading{font:700 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 12px 12px;}
+  .site-nav ul{display:grid;gap:3px;list-style:none;margin:0;padding:0;}
+  .site-nav a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border-radius:8px;font:600 12px/1.4 var(--sans);overflow-wrap:anywhere;border:1px solid transparent;}
+  .site-nav a:hover,.site-nav a:focus-visible{background:var(--paper);color:var(--ink);}
+  .site-nav a.is-active,.site-nav a.is-current{background:color-mix(in srgb,var(--cat,var(--navy)) 10%,var(--surface));border-color:color-mix(in srgb,var(--cat,var(--navy)) 25%,var(--surface));color:var(--ink);}
+  .site-nav a[class^="cat-"]::before{content:"";width:7px;height:7px;flex:none;border-radius:50%;margin-right:10px;background:var(--cat);}
+  .nav-backdrop{position:fixed;inset:var(--header-height) 0 0;border:0;background:rgba(6,20,36,.35);z-index:85;}
+  @media (min-width:1024px){
+    body{padding-left:var(--sidebar-width);}
+    .site-header{margin-left:calc(-1 * var(--sidebar-width));}
+    .site-nav{position:fixed;top:var(--header-height);bottom:0;left:0;width:var(--sidebar-width);border-right:1px solid var(--rule);z-index:90;}
+    :root[data-sidebar="hidden"] body{padding-left:0;}
+    :root[data-sidebar="hidden"] .site-header{margin-left:0;}
+    :root[data-sidebar="hidden"] .site-nav{display:none;}
+  }
+  @media (max-width:1023px){
+    .js .site-nav{display:none;position:fixed;z-index:90;top:var(--header-height);bottom:0;left:0;width:min(300px,calc(100vw - 32px));border-right:1px solid var(--rule);box-shadow:8px 0 28px rgba(6,20,36,.12);}
+    .js .site-nav.open{display:block;}
+  }
   .icon-btn{display:none;align-items:center;justify-content:center;gap:8px;min-width:44px;min-height:44px;padding:0 8px;background:none;border:0;color:var(--on-navy);font:600 12.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;}
   .js .search-toggle{display:inline-flex;margin-left:auto;}
   .icon-btn svg{width:20px;height:20px;}
@@ -276,7 +303,7 @@
   .meta time[data-fresh="true"]{font-weight:700;color:var(--card-link);}
   .breaking time[data-fresh="true"]{color:var(--red);}
   .view-options-wrap{position:relative;flex:none;}
-  .js .view-options-toggle{display:inline-flex;margin-left:-12px;}
+  .js .view-options-toggle{display:inline-flex;margin-left:0;}
   .view-options-toggle[aria-expanded="true"]{background:rgba(255,255,255,.12);}
   .view-options-panel{position:absolute;right:0;top:calc(100% + 7px);z-index:150;width:245px;max-width:calc(100vw - 24px);padding:15px;border-radius:9px;background:var(--surface);border:1px solid var(--rule);box-shadow:0 8px 20px rgba(6,20,36,.13),0 18px 42px rgba(6,20,36,.13);color:var(--ink);}
   .view-options-panel[hidden]{display:none;}
@@ -356,7 +383,6 @@
   .is-compact .section-grid .news-body{min-height:92px;}
   .is-compact .feature .dek{display:none;}
   .is-compact .section-grid .meta{padding-top:8px;}
-  .site-nav a.is-current{color:var(--on-navy);border-bottom-color:var(--cat-b,var(--on-navy));}
   .lead a:focus-visible,.feature a:focus-visible,.rail-list a:focus-visible,.compact-list a:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;border-radius:2px;}
   .js .section-grid [data-extra]{display:none !important;}
   .show-more{display:none;margin:16px auto 0;padding:10px 18px;font:600 13px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;cursor:pointer;min-height:44px;}
@@ -429,19 +455,11 @@
     .container{padding:0 16px;}
     .utility p{display:none;}
     .utility-inner{justify-content:flex-start;}
-    .masthead{flex-direction:column;align-items:flex-start;gap:10px;padding-top:20px;padding-bottom:16px;}
-    .masthead-claim{text-align:left;font-size:15px;max-width:none;}
     .bar-inner{gap:8px;position:relative;}
     .view-options-wrap{position:static;}
     .view-options-panel{right:16px;}
-    .brand-mini{margin-right:-8px;font-size:15px;}
-    .sticky-bar.is-stuck .brand-mini{max-width:200px;}
     .js .menu-toggle{display:inline-flex;}
-    .js .site-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);border-top:1px solid rgba(255,255,255,.12);max-height:70vh;overflow-y:auto;mask-image:none;}
-    .js .site-nav{cursor:auto;touch-action:auto;user-select:auto;}
     .js .site-nav.open{display:block;}
-    .js .site-nav ul{flex-direction:column;}
-    .js .site-nav a{min-height:48px;padding:0 18px;border-bottom:1px solid rgba(255,255,255,.08);}
     .js .search-toggle{margin-left:auto;}
     main.container{padding-top:20px;}
     .dek{font-size:17px;}
@@ -516,38 +534,94 @@
     .lead:hover .media > img,.feature:hover .media > img,.compact-list li:hover .media > img,.rail-list li:hover .media > img{transform:scale(1.025);}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto !important;transform:none !important;}}
+
+  /* Controles comunes: superficies suaves, objetivos táctiles y foco visible. */
+  .icon-btn,.density-switch,.reader-close,.show-more,.carousel-controls button{border-radius:10px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);transition:background .15s,border-color .15s;}
+  .js .menu-toggle,.js .theme-toggle{display:inline-flex;}
+  .icon-btn{min-width:40px;min-height:40px;padding:8px;letter-spacing:normal;}
+  .icon-btn:hover,.density-switch:hover,.reader-close:hover,.carousel-controls button:hover{background:var(--paper);border-color:var(--muted);}
+  .icon-btn[aria-expanded="true"]{background:var(--paper);border-color:var(--strong);}
+  .js .search-toggle{margin-left:0;}
+  .theme-toggle{font-size:22px;}
+  .search-results mark{color:#07192E;}
+  .coverage-close{color:var(--ink);}
+  .section,.section-anchor,#portada{scroll-margin-top:16px;}
+  .theme-label{display:grid;gap:6px;font:600 12px var(--sans);color:var(--muted);margin-bottom:14px;}
+  .theme-label select{min-height:40px;border:1px solid var(--rule);border-radius:8px;padding:8px;background:var(--surface);color:var(--ink);}
+  .save-story,.share-story{min-width:36px;min-height:36px;border:1px solid var(--card-rule);border-radius:9px;background:rgba(255,255,255,.04);}
+  .card-actions{gap:4px;}
+  .save-story:hover,.share-story:hover{background:rgba(255,255,255,.12);}
+  .density-switch[aria-pressed="true"]{background:var(--navy);color:var(--on-navy);}
+  /* Una noticia sin foto se presenta como texto, sin reservar una imagen ficticia. */
+  .media--source:not(.media--date){display:none;}
+  .rail-item:has(> .media--source){grid-template-columns:minmax(0,1fr);}
+  .top-grid:has(.lead > .media--source){align-items:start;}
+  @media (min-width:1180px){
+    .top-grid:has(.lead > .media--source) > .lead,.top-grid:has(.lead > .media--source) > .top-aside{grid-column:1 / -1;}
+    .top-grid:has(.lead > .media--source) .rail-list{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto;}
+    .top-grid:has(.lead > .media--source) .lead-title{max-width:40ch;}
+  }
+  .lead--text .lead-title{font-size:clamp(30px,3.2vw,46px);}
+  /* Carrusel manual: tres titulares legibles; deslizamiento nativo sin JS. */
+  .breaking{padding:18px 0 20px;background:var(--surface);}
+  .breaking-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;}
+  .breaking-label{margin:0;padding:0;border:0;font:700 11px var(--sans);letter-spacing:.12em;color:var(--c-nacional);text-transform:uppercase;}
+  .carousel-controls{display:flex;align-items:center;gap:6px;}
+  .carousel-controls button{width:36px;height:36px;cursor:pointer;font-size:19px;}
+  .carousel-controls button:disabled{opacity:.35;cursor:default;}
+  .carousel-position{font:500 11px var(--sans);color:var(--muted);margin-right:6px;}
+  .breaking-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 32px)/3);gap:16px;list-style:none;padding:0 0 8px;margin:0;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--rule) transparent;}
+  .breaking-item{scroll-snap-align:start;min-width:0;border-left:2px solid var(--cat,var(--rule));padding:0 14px;display:flex;flex-direction:column;gap:5px;}
+  .breaking-category{font:600 10px var(--sans);color:var(--muted);}
+  .breaking-item a{font:600 15px/1.35 var(--serif);white-space:normal;overflow:visible;text-overflow:clip;}
+  .breaking-item time{font-size:11px;margin-top:auto;padding-top:3px;}
+  .edition-details{margin-top:28px;border-top:1px solid rgba(255,255,255,.16);font-size:12px;}
+  .edition-details summary{cursor:pointer;padding:16px 0;color:var(--on-navy-soft);}
+  .edition-details .context{margin:0;border:0;background:transparent;box-shadow:none;color:var(--on-navy);}
+  .edition-details .context-text{font-size:16px;}
+  .edition-details .context-label,.edition-details .context-note{color:var(--on-navy-soft);}
+  .edition-details .context-num{display:none;}
+  .designer-signature{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:9px 14px;margin:8px 0;border:1px solid rgba(255,255,255,.18);border-radius:100px;background:rgba(6,20,36,.92);color:#F0F4F8;box-shadow:0 2px 8px rgba(0,0,0,.12);font:500 11px var(--sans);white-space:nowrap;}
+  .designer-signature > span:first-child{color:#C5CFDA;}
+  .designer-signature strong{font-weight:650;}
+  .designer-signature:hover{border-color:currentColor;}
+  @media (min-width:1024px) and (max-width:1379px){.section-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media (min-width:600px) and (max-width:1023px){.breaking-track{grid-auto-columns:calc((100% - 16px)/2);}}
+  @media (max-width:767px){
+    .bar-inner{gap:6px;min-height:var(--header-height);}
+    .brand-logo{width:30px;height:30px;}
+    .brand-link{gap:8px;}
+    .masthead-title{font-size:16px;letter-spacing:-.025em;}
+    .brand-second-line{display:block;}
+    .header-updated{display:none;}
+    .save-story,.share-story{min-width:40px;min-height:40px;}
+    .site-nav a{min-height:48px;}
+  }
+  @media (max-width:599px){.breaking-track{grid-auto-columns:100%;}.breaking-item a{font-size:17px;}.carousel-controls button{width:40px;height:40px;}}
+  @media (max-width:479px){.js .theme-toggle{display:none;}.masthead-title{font-size:14px;}.bar-inner{gap:4px;}.icon-btn{min-width:36px;padding:6px;}.designer-signature{min-height:44px;}}
+  :root[data-theme="dark"]{--paper:#061424;--surface:#0A2540;--ink:#F0F4F8;--muted:#C1CFDE;--rule:#3C5067;--strong:#C5E1FF;--c-nacional:#FF6B7D;--c-internacional:#7CC0EE;--c-economia:#74D0A4;--c-tecnologia:#B39AF5;--c-deportes:#F5A35C;--c-cultura:#EE8BC6;--c-agenda:#F2C14E;color-scheme:dark;}
+  :root[data-theme="dark"] .designer-signature{background:rgba(255,255,255,.94);color:#07192E;border-color:rgba(255,255,255,.6);}
+  :root[data-theme="dark"] .designer-signature > span:first-child{color:#6D7480;}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]):not([data-theme="dark"]){--paper:#061424;--surface:#0A2540;--ink:#F0F4F8;--muted:#C1CFDE;--rule:#3C5067;--strong:#C5E1FF;--c-nacional:#FF6B7D;--c-internacional:#7CC0EE;--c-economia:#74D0A4;--c-tecnologia:#B39AF5;--c-deportes:#F5A35C;--c-cultura:#EE8BC6;--c-agenda:#F2C14E;color-scheme:dark;}}
 </style>
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <header class="site-header">
-  <div class="utility">
-    <div class="container utility-inner">
-      <p>La vista del día · Chile y el mundo</p>
-      <div class="utility-status">
-        <span>Actualizado <time id="updated-at" datetime="%%UPDATED_ISO%%">%%UPDATED_HUMAN%%</time></span>
-        <span class="refresh-bar" role="progressbar" aria-label="Tiempo transcurrido hasta la próxima actualización" aria-valuemin="0" aria-valuemax="100"><span class="refresh-bar-fill" id="refresh-fill"></span></span>
-      </div>
-    </div>
-  </div>
-  <div class="masthead-wrap">
-    <div class="container masthead">
-      <h1 class="masthead-title">Noticias del Momento</h1>
-      <p class="masthead-claim">Lo más relevante de Chile y el mundo, actualizado cada hora y con enlace a cada fuente.</p>
-    </div>
-  </div>
-</header>
-
 <div class="sticky-bar">
   <div class="container bar-inner">
-    <a class="brand-mini" href="#contenido">Noticias del Momento</a>
-    <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Secciones
+    <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Mostrar u ocultar secciones" title="Secciones">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
-    <nav class="site-nav" id="site-nav" aria-label="Carrusel de secciones; arrastra para mover, pulsa para pausar o reanudar" title="Arrastra para mover · clic para pausar o reanudar" tabindex="0">
-      <ul>%%NAV%%</ul>
-    </nav>
+    <div class="masthead-wrap">
+      <h1 class="masthead-title"><a class="brand-link" href="#contenido">
+        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9"/><path d="M12 28V12l16 16V12" fill="none" stroke-width="3" stroke-linejoin="round"/><path class="logo-accent" d="M12 33h16" stroke-width="2"/></svg>
+        <span>Noticias <span class="brand-second-line">del Momento</span></span>
+      </a></h1>
+      <p class="header-updated">Actualizado <time id="updated-at" datetime="%%UPDATED_ISO%%">%%UPDATED_HUMAN%%</time><span class="refresh-bar" role="progressbar" aria-label="Tiempo transcurrido hasta la próxima actualización" aria-valuemin="0" aria-valuemax="100"><span class="refresh-bar-fill" id="refresh-fill"></span></span></p>
+    </div>
+    <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Tema automático"><span aria-hidden="true">◐</span></button>
     <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
     </button>
@@ -557,6 +631,7 @@
       </button>
       <div class="view-options-panel" id="view-options-panel" hidden aria-label="Opciones de visualización">
         <p class="view-options-heading">Personalizar vista</p>
+        <label class="theme-label" for="theme-select">Tema<select id="theme-select"><option value="system">Automático</option><option value="light">Claro</option><option value="dark">Oscuro</option></select></label>
         <div class="news-toolbar"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div>
         <div class="view-option-extra">
           <label for="source-preference">Medio<select id="source-preference"><option value="">Todos los medios</option></select></label>
@@ -580,6 +655,13 @@
   </div>
 </div>
 
+</header>
+<button class="nav-backdrop" id="nav-backdrop" type="button" aria-label="Cerrar secciones" tabindex="-1" hidden></button>
+<nav class="site-nav" id="site-nav" aria-label="Secciones de noticias">
+  <p class="nav-heading">Explorar secciones</p>
+  <ul>%%NAV%%</ul>
+</nav>
+
 %%BREAKING%%
 
 <main id="contenido" class="container">
@@ -589,7 +671,6 @@
   <p class="reader-hint">Solo se guardan las noticias que marcas voluntariamente como favoritas en este navegador.</p>
 </div>
 %%TOP%%
-%%CONTEXT%%
 %%RADAR%%
 %%SIGNALS%%
 <span class="section-anchor" id="categorias" aria-hidden="true"></span>
@@ -633,13 +714,16 @@
       <p>Recopilamos automáticamente titulares y referencias informativas. Los artículos y su contenido pertenecen a sus respectivos medios de origen.</p>
     </section>
   </div>
+  <div class="container">%%CONTEXT%%</div>
   <div class="container footer-bottom">
     <p>© %%YEAR%% Noticias del Momento</p>
     <p class="footer-updated">Última actualización: %%UPDATED_HUMAN%%</p>
     %%ADSENSE_PRIVACY_LINK%%
+    <a class="designer-signature" href="https://www.linkedin.com/in/medinacaj/" target="_blank" rel="noopener noreferrer" aria-label="Diseñado por @medinacaj, abrir LinkedIn en una pestaña nueva"><span>Diseñado por</span> <strong>@medinacaj</strong> <span aria-hidden="true">✦ ↗</span></a>
   </div>
 </footer>
 
+<script src="reader-ui.js"></script>
 <script>
 (function () {
   var d = document;
@@ -686,124 +770,17 @@
     if (img.complete && img.naturalWidth === 0) fallback(); else img.addEventListener("error", fallback);
   });
 
-  // Marca compacta en la barra fija cuando el masthead sale de pantalla
-  var bar = d.querySelector(".sticky-bar"), mast = d.querySelector(".masthead-wrap");
-  if (bar && mast && "IntersectionObserver" in window) {
-    new IntersectionObserver(function (entries) {
-      bar.classList.toggle("is-stuck", !entries[0].isIntersecting);
-    }).observe(mast);
-  }
-
-  // Menú móvil
+  // La navegación lateral vive en reader-ui.js; búsqueda solo cierra el panel móvil.
   var menuBtn = d.getElementById("menu-toggle"), nav = d.getElementById("site-nav");
   function setMenu(open) {
-    if (!menuBtn || !nav) return;
-    nav.classList.toggle("open", open);
-    menuBtn.setAttribute("aria-expanded", String(open));
+    if (window.NewsReader) window.NewsReader.setMenu(open);
   }
-  if (menuBtn && nav) {
-    menuBtn.addEventListener("click", function () { setSearch(false); setMenu(!nav.classList.contains("open")); });
-    nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
-  }
-
-  // Carrusel: desplazamiento automático, arrastre manual y clic para pausa.
-  (function () {
-    var strip = d.getElementById("site-nav");
-    if (!strip) return;
-    var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
-    var paused = !!(reduced && reduced.matches), dragging = false, moved = false;
-    var pressX = 0, startScroll = 0, pointerId = null, lastManual = 0;
-    var focused = false, cycleWidth = 0, lastFrame = 0;
-    var track = strip.querySelector("ul");
-    if (track) {
-      cycleWidth = track.scrollWidth;
-      if (cycleWidth > strip.clientWidth + 6) {
-        Array.prototype.slice.call(track.children).forEach(function (item) {
-          var clone = item.cloneNode(true);
-          clone.setAttribute("aria-hidden", "true");
-          clone.querySelectorAll("a,button,[tabindex]").forEach(function (el) {
-            el.setAttribute("tabindex", "-1");
-            el.setAttribute("aria-hidden", "true");
-          });
-          track.appendChild(clone);
-        });
-      }
-    }
-    function canMove() { return cycleWidth > strip.clientWidth + 6 && window.innerWidth > 767; }
-    function updatePause() {
-      strip.dataset.paused = String(paused);
-      strip.setAttribute("aria-label", paused
-        ? "Carrusel de secciones en pausa; pulsa para reanudar, o arrastra"
-        : "Carrusel de secciones en movimiento; pulsa para pausar, o arrastra");
-    }
-    strip.addEventListener("focusin", function () {focused = true;});
-    strip.addEventListener("focusout", function (event) {
-      if (!strip.contains(event.relatedTarget)) focused = false;
-    });
-    strip.addEventListener("pointerdown", function (event) {
-      if (!canMove() || (event.pointerType !== "mouse" && event.pointerType !== "pen")
-          || event.button !== 0) return;
-      dragging = true; moved = false; pointerId = event.pointerId;
-      pressX = event.clientX; startScroll = strip.scrollLeft;
-      lastManual = Date.now();
-    });
-    strip.addEventListener("pointermove", function (event) {
-      if (!dragging || event.pointerId !== pointerId) return;
-      var delta = event.clientX - pressX;
-      if (Math.abs(delta) > 5) {
-        moved = true;
-        if (!strip.classList.contains("is-dragging")) strip.classList.add("is-dragging");
-        strip.scrollLeft = startScroll - delta;
-      }
-    });
-    function endDrag(event) {
-      if (!dragging || event.pointerId !== pointerId) return;
-      dragging = false; pointerId = null;
-      strip.classList.remove("is-dragging");
-      if (moved) lastManual = Date.now();
-    }
-    strip.addEventListener("pointerup", endDrag);
-    strip.addEventListener("pointercancel", endDrag);
-    // Si se arrastró, el enlace no debe abrirse; un clic normal sí funciona.
-    strip.addEventListener("click", function (event) {
-      if (moved) {
-        event.preventDefault(); event.stopPropagation(); moved = false;
-        return;
-      }
-      if (!canMove()) return;
-      paused = !paused; lastManual = Date.now();
-      updatePause();
-    }, true);
-    strip.addEventListener("keydown", function (event) {
-      if (event.target !== strip) return;
-      if (event.key === " " || event.key === "Enter") {
-        event.preventDefault(); paused = !paused; updatePause();
-      } else if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
-        event.preventDefault(); lastManual = Date.now();
-        strip.scrollBy({left:event.key === "ArrowRight" ? 160 : -160,behavior:"smooth"});
-      }
-    });
-    strip.addEventListener("wheel", function (event) {
-      if (Math.abs(event.deltaX) > 0) lastManual = Date.now();
-    }, {passive:true});
-    if (reduced && reduced.addEventListener) reduced.addEventListener("change", function (event) {
-      if (event.matches) paused = true;
-      updatePause();
-    });
-    // Movimiento continuo: velocidad constante sin pausas entre pasos.
-    function animate(timestamp) {
-      var elapsed = lastFrame ? Math.min(timestamp - lastFrame, 60) : 0;
-      lastFrame = timestamp;
-      if (!paused && !focused && !dragging && !d.hidden && canMove() &&
-          Date.now() - lastManual >= 900 && !(reduced && reduced.matches)) {
-        strip.scrollLeft += elapsed * 0.055;
-        if (strip.scrollLeft >= cycleWidth) strip.scrollLeft -= cycleWidth;
-      }
-      window.requestAnimationFrame(animate);
-    }
-    window.requestAnimationFrame(animate);
-    updatePause();
-  })();
+  if (menuBtn) menuBtn.addEventListener("click", function () {
+    setSearch(false);
+    var options = d.getElementById("view-options-panel"), optionsToggle = d.getElementById("view-options-toggle");
+    if (options) options.hidden = true;
+    if (optionsToggle) optionsToggle.setAttribute("aria-expanded", "false");
+  });
 
   // Opciones de vista en la navegación, sin reservar espacio sobre portada.
   (function () {
@@ -812,6 +789,7 @@
     var search = d.getElementById("search-toggle");
     if (!toggle || !panel) return;
     function setOpen(open) {
+      if (open) { setMenu(false); setSearch(false); }
       panel.hidden = !open;
       toggle.setAttribute("aria-expanded", String(open));
     }
@@ -1048,6 +1026,7 @@
       });
     }
     libraryToggle.addEventListener("click", function () {
+      setMenu(false); setSearch(false);
       library.hidden = !library.hidden;
       libraryToggle.setAttribute("aria-expanded", String(!library.hidden));
       if (!library.hidden) library.scrollIntoView({block:"nearest",behavior:"instant"});
@@ -1101,10 +1080,10 @@
     syncSaved(); renderList(savedList, saved, true);
   })();
 
-  // La sección visible se identifica sin desplazar el carrusel ni forzar animaciones.
+  // Marcar la sección visible sin mover la navegación; Portada al volver al inicio.
   (function () {
     if (!("IntersectionObserver" in window)) return;
-    var links = d.querySelectorAll(".site-nav a[href^='#cat-']");
+    var links = d.querySelectorAll(".site-nav a[href^='#']");
     var sections = d.querySelectorAll("main section.section[id]");
     if (!links.length || !sections.length) return;
     var observer = new IntersectionObserver(function () {
@@ -1113,7 +1092,7 @@
         var y = section.getBoundingClientRect().top;
         if (y <= 160 && Math.abs(y) < best) { current = section.id; best = Math.abs(y); }
       });
-      if (!current) return;
+      if (!current) current = "portada";
       links.forEach(function (link) {
         var active = link.getAttribute("href") === "#" + current;
         link.classList.toggle("is-current", active);

@@ -86,7 +86,10 @@ class WorldSourcesTests(unittest.TestCase):
                      gnews=lambda cat: api.append(cat["key"]) or [])
         self.assertEqual(len(api), 6)
         self.assertFalse(any("site:" in parse_qs(urlsplit(url).query).get("q", [""])[0] for url in requests))
-        self.assertEqual(len(requests), len(news.CATEGORIES) + 2)  # Latam extra search + BBC.
+        self.assertEqual(len(requests), len(news.CATEGORIES) + 4)  # Latam extra + BBC + two entertainment editions.
+        editions = [parse_qs(urlsplit(url).query).get("gl") for url in requests]
+        self.assertIn(["ES"], editions)
+        self.assertIn(["MX"], editions)
 
     def test_each_missing_gate_prevents_requests_and_guardian_stays_blocked(self):
         variants = [("enabled", False), ("enabled", "true"), ("permission_status", "pending"),

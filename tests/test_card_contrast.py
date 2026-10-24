@@ -44,13 +44,12 @@ class ContrastThemeTests(unittest.TestCase):
                     ".source-mark", ".media--source", ".top-grid", "%%NAV%%"):
             self.assertIn(key, self.css)
 
-    def test_system_dark_mode_cannot_override_smoke_background(self):
-        self.assertNotIn("prefers-color-scheme:dark", self.css)
-        self.assertNotIn(":root[data-theme=\"dark\"]", self.css)
-        self.assertNotIn("--paper:#0B1420", self.css)
-        self.assertIn("color-scheme:light;", self.css)
-        self.assertIn("--paper:#EEF2F6", self.css)
-        self.assertIn("--card-bg:#182639", self.css)
+    def test_system_dark_mode_and_manual_override_keep_contrast(self):
+        self.assertIn('prefers-color-scheme:dark', self.css)
+        self.assertIn(':root[data-theme="dark"]', self.css)
+        for foreground in ('#F0F4F8', '#C1CFDE', '#C5E1FF'):
+            self.assertGreaterEqual(contrast(foreground, '#061424'), 4.5)
+            self.assertGreaterEqual(contrast(foreground, '#0A2540'), 4.5)
 
 
 if __name__ == "__main__":
