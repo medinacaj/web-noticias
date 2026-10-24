@@ -5,7 +5,7 @@ import asyncio
 from pathlib import Path
 from playwright.async_api import async_playwright
 
-WIDTHS = (320, 375, 768, 1024, 1440)
+WIDTHS = (320, 375, 768, 1024, 1440, 1920, 2560)
 
 
 async def check_view_options_bounds(page, width):
@@ -48,6 +48,9 @@ async def check_search(page, width, no_overflow):
     await toggle.click()
     assert await panel.is_visible(), f"Buscador oculto a {width}px"
     assert await toggle.get_attribute("aria-expanded") == "true"
+    if width >= 1024:
+        link = page.locator(".site-nav a").first
+        assert await link.evaluate("el => {const r=el.getBoundingClientRect(); return el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}"), "El buscador tapa la navegación lateral"
 
     async def verify(expected, stage):
         actual = await page.locator("#search-results li > a").evaluate_all(
@@ -104,10 +107,39 @@ async def check_search(page, width, no_overflow):
         f"El buscador no devuelve el foco a {width}px")
 
 
+async def check_shared_alignment(page, width):
+    """Todas las bandas utilizan las mismas guías de contenido."""
+    boxes = await page.evaluate("""() => ['.bar-inner','.breaking-inner','main.container',
+        '.newsletter-invite-inner','.site-footer > .container'].map(selector => {
+          const el=document.querySelector(selector), r=el.getBoundingClientRect(), css=getComputedStyle(el);
+          return {selector, left:r.x+parseFloat(css.paddingLeft), right:r.right-parseFloat(css.paddingRight), width:r.width};
+        })""")
+    main = boxes[2]
+    assert all(abs(box['left']-main['left']) <= 1 and abs(box['right']-main['right']) <= 1
+               for box in boxes), f"Guías desalineadas a {width}px: {boxes}"
+    if width >= 1920:
+        assert main['width'] >= 1400, f"Contenido estrecho a {width}px: {main}"
+    header = await page.locator('.site-header').bounding_box()
+    assert header['height'] <= (80 if width < 1024 else 68), f"Cabecera alta a {width}px: {header}"
+    aligned_cards = await page.evaluate("""() => {
+      const rail=document.querySelector('.rail-list'), grid=document.querySelector('.section-grid');
+      if (!rail || !grid || getComputedStyle(rail).gridTemplateColumns.split(' ').length !== 3 ||
+          getComputedStyle(grid).gridTemplateColumns.split(' ').length !== 3) return true;
+      const first=Array.from(rail.querySelectorAll('li')).slice(0,3);
+      const second=Array.from(grid.querySelectorAll('.feature,.compact-list > li')).slice(0,3);
+      return first.length === second.length && first.every((el,index) => {
+        const a=el.getBoundingClientRect(),b=second[index].getBoundingClientRect();
+        return Math.abs(a.x-b.x)<=1 && Math.abs(a.right-b.right)<=1;
+      });
+    }""")
+    assert aligned_cards, f"Columnas de Destacadas y secciones desalineadas a {width}px"
+
+
 async def check_compact_navigation(page, width, no_overflow):
     """Regresiones del diseño publicado: franja compacta y chevrón lateral."""
     latest = await page.locator(".breaking").bounding_box()
     assert latest and latest["height"] <= 60, f"Lo último deja de ser una franja a {width}px: {latest}"
+    await check_shared_alignment(page, width)
     edge = page.locator("#sidebar-edge")
     nav = page.locator("#site-nav")
     assert await edge.count() == 1, "Falta el chevrón lateral"
@@ -116,6 +148,7 @@ async def check_compact_navigation(page, width, no_overflow):
         await edge.click()
         assert not await nav.is_visible() and await edge.is_visible()
         assert await edge.get_attribute("aria-expanded") == "false"
+        await check_shared_alignment(page, width)
         await edge.click()
         assert await nav.is_visible()
     else:
@@ -125,6 +158,7 @@ async def check_compact_navigation(page, width, no_overflow):
         await edge.click()
         assert not await nav.is_visible()
         assert not await page.locator("#nav-backdrop").is_visible()
+    await check_shared_alignment(page, width)
     await no_overflow("chevrón lateral")
 
 
@@ -171,6 +205,9 @@ async def check(html, output):
             await no_overflow("preferencias")
             await page.screenshot(path=str(output / f"preferences-{width}.png"), full_page=False, animations="disabled")
             await page.locator("#density-switch").click()
+            compact_gap = await page.locator(".section-grid").first.evaluate("el => getComputedStyle(el).gap")
+            rail_gap = await page.locator(".rail-list").evaluate("el => getComputedStyle(el).gap")
+            assert compact_gap == rail_gap, f"Separaciones distintas en Compacta a {width}px: {compact_gap} / {rail_gap}"
             await page.locator("#density-switch").click()
             assert await page.locator("#contenido").evaluate("(el) => el.classList.contains('is-headlines')"), f"Vista titulares inactiva a {width}px"
             await page.screenshot(path=str(output / f"headlines-{width}.png"), full_page=False, animations="disabled")
