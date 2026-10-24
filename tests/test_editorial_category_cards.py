@@ -21,7 +21,7 @@ class EditorialCategoryCardTests(unittest.TestCase):
     def test_category_identity_is_minimal(self):
         self.assertIn(".lead .kicker::before,.feature .kicker::before", self.template)
         self.assertIn("width:7px;height:7px;border-radius:50%", self.template)
-        self.assertIn("background:var(--cat-b,var(--card-link))", self.template)
+        self.assertIn("background:var(--cat,var(--card-link))", self.template)
         self.assertNotIn(".section-head h2::before", self.template)
         self.assertNotIn("border-top:3px solid var(--cat", self.template)
 

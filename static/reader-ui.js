@@ -4,6 +4,7 @@
   var d = document, root = d.documentElement;
   var menu = d.getElementById("menu-toggle"), nav = d.getElementById("site-nav");
   var backdrop = d.getElementById("nav-backdrop");
+  var edge = d.getElementById("sidebar-edge");
   var desktop = window.matchMedia("(min-width: 1024px)");
   function remember(key, value) {
     try { localStorage.setItem(key, value); } catch (error) {}
@@ -13,6 +14,13 @@
     var open = desktop.matches ? root.dataset.sidebar !== "hidden" : nav.classList.contains("open");
     menu.setAttribute("aria-expanded", String(open));
     menu.setAttribute("aria-label", open ? "Ocultar secciones" : "Mostrar secciones");
+    root.dataset.menuOpen = String(!desktop.matches && open);
+    if (edge) {
+      edge.setAttribute("aria-expanded", String(open));
+      edge.setAttribute("aria-label", open ? "Ocultar barra lateral" : "Mostrar barra lateral");
+      edge.title = open ? "Ocultar barra lateral" : "Mostrar barra lateral";
+      edge.querySelector("path").setAttribute("d", open ? "m14 6-6 6 6 6" : "m10 6 6 6-6 6");
+    }
     if (backdrop) backdrop.hidden = desktop.matches || !open;
   }
   function setMenu(open) {
@@ -30,6 +38,10 @@
       } else {
         setMenu(!nav.classList.contains("open"));
       }
+    });
+    if (edge) edge.addEventListener("click", function () {
+      menu.click();
+      if (!desktop.matches) menu.focus();
     });
     nav.addEventListener("click", function (event) {
       if (event.target.closest("a")) setMenu(false);
@@ -84,13 +96,12 @@
       previous.disabled = track.scrollLeft <= 2;
       next.disabled = track.scrollLeft >= max - 2;
       var item = track.firstElementChild;
-      var step = item ? item.getBoundingClientRect().width + 16 : 1;
+      var step = item ? item.getBoundingClientRect().width : 1;
       var first = Math.round(track.scrollLeft / step) + 1;
-      var last = Math.min(track.children.length, first + Math.round((track.clientWidth + 16) / step) - 1);
-      if (position) position.textContent = first + "–" + last + " de " + track.children.length;
+      if (position) position.textContent = first + " de " + track.children.length;
     }
     function move(direction) {
-      track.scrollBy({left: direction * (track.clientWidth + 16), behavior: reduced.matches ? "instant" : "smooth"});
+      track.scrollBy({left: direction * track.clientWidth, behavior: reduced.matches ? "instant" : "smooth"});
     }
     previous.addEventListener("click", function () { move(-1); });
     next.addEventListener("click", function () { move(1); });
