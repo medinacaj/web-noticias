@@ -376,6 +376,28 @@
   .cat-tecnologia{--cat:var(--c-tecnologia);--cat-b:var(--b-tecnologia);}
   .cat-deportes{--cat:var(--c-deportes);--cat-b:var(--b-deportes);}
   .cat-cultura{--cat:var(--c-cultura);--cat-b:var(--b-cultura);}
+  .cat-agenda{--cat:#0F6E67;--cat-b:#5FD4C4;}
+  /* ---------- Agenda Biobío (eventos validados por eventos-biobio) ---------- */
+  .agenda-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}
+  .agenda-list li{background:var(--card-bg);color:var(--card-ink);border:1px solid var(--card-rule);border-radius:var(--radius-card);box-shadow:var(--card-shadow);min-width:0;transition:box-shadow var(--motion-card) ease,transform var(--motion-card) ease,border-color var(--motion-card) ease;}
+  .agenda-list li:hover,.agenda-list li:focus-within{border-color:var(--cat-b);box-shadow:var(--card-shadow-hover);transform:translateY(-2px);}
+  .agenda-item{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;padding:16px;min-width:0;}
+  .agenda-date{display:flex;flex-direction:column;align-items:center;justify-content:center;align-self:start;height:60px;border:1px solid var(--cat-b);border-radius:5px;color:var(--card-ink);}
+  .agenda-day{font:700 24px/1 var(--serif);}
+  .agenda-month{font:700 10px/1.6 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--cat-b);}
+  .agenda-body{min-width:0;}
+  .agenda-body .kicker{margin:0 0 6px;color:var(--card-muted);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;overflow-wrap:anywhere;}
+  .agenda-body h3{font:600 17px/1.32 var(--serif);margin:0;overflow-wrap:anywhere;}
+  .agenda-body h3 a{color:var(--card-ink);}
+  .agenda-body h3 a:hover,.agenda-body h3 a:focus-visible{color:var(--card-link);}
+  .agenda-body h3 a:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;border-radius:2px;}
+  .agenda-meta{margin:8px 0 0;font-size:13px;line-height:1.45;color:var(--card-muted);overflow-wrap:anywhere;}
+  .agenda-status{display:inline-block;margin-left:6px;padding:1px 6px;border:1px solid var(--cat-b);border-radius:3px;font-size:11px;font-weight:600;color:var(--card-ink);}
+  .agenda-source{margin:6px 0 0;font-size:12px;color:var(--card-muted);}
+  .agenda-note{margin:14px 0 0;font-size:13px;color:var(--muted);}
+  .agenda-note a{color:inherit;text-decoration:underline;}
+  @media (max-width:1179px){.agenda-list{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  @media (max-width:767px){.agenda-list{grid-template-columns:minmax(0,1fr);gap:10px;}.agenda-item{padding:14px;}}
 
   /* ---------- Pie ---------- */
   /* Pie editorial sin segundo panel ni navegación repetida por categoría. */
@@ -585,6 +607,7 @@
 %%SIGNALS%%
 <span class="section-anchor" id="categorias" aria-hidden="true"></span>
 %%SECTIONS%%
+%%AGENDA%%
 </main>
 <button id="back-to-top" class="back-to-top" type="button" hidden aria-label="Volver a la portada">↑ Portada</button>
 

@@ -804,11 +804,13 @@ def render_sections(by_category, now):
     return "\n".join(blocks)
 
 
-def render_nav(sel):
+def render_nav(sel, agenda=False):
     from scripts.presentation_groups import PRESENTATION_LABELS
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
     links += [f'<li><a class="cat-{c["key"]}" href="#cat-{c["key"]}">{esc(PRESENTATION_LABELS.get(c["key"], c.get("short", c["label"])))}</a></li>'
               for c in CATEGORIES if c["key"] in sel["by_category"]]
+    if agenda:
+        links.append('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>')
     return "".join(links)
 
 
@@ -865,7 +867,7 @@ PAGE_404 = """<!DOCTYPE html>
 
 
 def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
-               signals_archive=None, signals_started=""):
+               signals_archive=None, signals_started="", agenda=None):
     sel = select(stories, now)
     from scripts.presentation_groups import group_sections
     sel["by_category"] = group_sections(sel["by_category"], STORIES_PER_CATEGORY)
@@ -883,7 +885,9 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     adsense = configured_adsense(os.environ, SITE_URL)
 
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
-    nav = render_nav(sel)
+    from scripts.agenda_biobio import render_agenda
+    agenda_html = render_agenda(agenda or [], now)
+    nav = render_nav(sel, agenda=bool(agenda_html))
     replacements = {
         "%%TITLE%%": esc(SITE_TITLE),
         "%%DESCRIPTION%%": esc(SITE_DESCRIPTION),
@@ -906,6 +910,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%RADAR%%": render_coverage_radar(stories),
         "%%SIGNALS%%": signals_html,
         "%%SECTIONS%%": render_sections(sel["by_category"], now),
+        "%%AGENDA%%": agenda_html,
         "%%NEWSLETTER_SIGNUP%%": newsletter["signup_html"],
     }
     # Only the original template supplies tokens; news text remains literal.
@@ -1004,8 +1009,13 @@ def main():
     archive = update_archive(archive, stories, now)
     signals_started = signals_started or to_iso(now)
     save_history(args.historial, stories, now, archive, signals_started)
+    agenda = []
+    if not args.solo_render and not args.importar:
+        # Eventos ya validados por eventos-biobio; un fallo solo oculta la sección.
+        from scripts.agenda_biobio import load_agenda
+        agenda = load_agenda(now)
     build_site(stories, now, args.salida, args.ventana,
-               signals_archive=archive, signals_started=signals_started)
+               signals_archive=archive, signals_started=signals_started, agenda=agenda)
 
 
 if __name__ == "__main__":
