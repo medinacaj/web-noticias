@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T23:21:44Z",
+ "actualizado": "2026-10-24T23:49:19Z",
  "noticias": [
   {
    "category": "internacional",
@@ -104,13 +104,30 @@
    "image_checked_at": "2026-10-24T22:01:08.642891Z"
   },
   {
+   "category": "cultura",
+   "title": "Eurovisión Junior 2026: Todas las actuaciones y resumen",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.rtve.es",
+   "sources": [
+    "RTVE.es"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUFBEa0c5VHQ3MGN2alNvR3c1SkJkRWxkY2R3MU00aEJ0Q2NIdlQ1X0Ywdnp3eDIzT2ZFbmFJRS14RzE5U3FPOUpZOXZ2d1RaeVJIVEltWm52UW82Yk1yQjYwT0hFbW1JVXdYUEdjYWdXQk4xbHlPQ3B5M1dCQXBMR3FNOXdrYjd0QkRFcEdSZjk0V29zRlItQjVnRDRNN1NYcGR6WUgxeXA4ZllGWEcxdy1kYnVfYzg?oc=5",
+   "published": "2026-10-24T21:44:00Z",
+   "first_seen": "2026-10-24T23:49:19Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
+  },
+  {
    "category": "internacional",
    "title": "Gobierno de Chile condena ataque a iglesia en Jordania que dejó nueve fallecidos y más de 30 heridos",
    "summary": "",
    "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994830-gobierno-de-chile-condena-ataque-a-iglesia-en-jordania-que-dejo-nueve-fallecidos-y-mas-de-30-heridos.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "El Periodista"
    ],
    "coverages": [],
    "link": "https://www.biobiochile.cl/noticias/internacional/mediooriente/2026/10/24/gobierno-de-chile-condena-ataque-a-iglesia-en-jordania-que-dejo-nueve-fallecidos-y-mas-de-30-heridos.shtml",
@@ -575,6 +592,22 @@
    "image_checked_at": "2026-10-24T19:42:32.381879Z"
   },
   {
+   "category": "cultura",
+   "title": "“Se me parte el corazón”: Cancelan show de Luli Pampín tras lluvias",
+   "summary": "",
+   "image": "",
+   "source_url": "https://puentelibre.mx",
+   "sources": [
+    "Puente Libre"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSTkwdkVGOWRkNjNKanJJZWhXdlVhR2JpSUVqbU5FTTJDZlVHbm9WOVNhTkY3MHcwaThvbUtrTFJoWVplMERmWUZSOUlOQ2lCYlFUalo1cXBuaEdORHZEa2tTSTdHZUdEVkstZk5iWGZkZHFkSFFwUWpvdUJMYWctdENQQTgyZkdGRzFPQ1dHdXRkSzl2WFIxdWZRWVdkZVVGLVVaX3JmZG9tNXFkdFB3?oc=5",
+   "published": "2026-10-24T18:20:10Z",
+   "first_seen": "2026-10-24T23:49:19Z",
+   "metadata_only": true,
+   "discovery_edition": "MX"
+  },
+  {
    "category": "politica",
    "title": "Chile entrará como \"observador\" a la coalición anticárteles de Trump",
    "summary": "",
@@ -606,6 +639,36 @@
    "published": "2026-10-24T18:13:17Z",
    "first_seen": "2026-10-24T19:42:32Z",
    "image_checked_at": "2026-10-24T19:42:32.381879Z"
+  },
+  {
+   "category": "deportes",
+   "title": "¿Cobreloa supera a San Luis? Así quedaría la tabla de posiciones de Primera B si la ANFP castiga a Arica y Puerto Montt",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/4JB2X2POLNGABHVBI3QUF2NC6Q.jpg?auth=ebc3a4a6083723c97d60e8a5677ca3974ac635eaefb4bfa2be8bd789c81e4911&height=630&width=1200&focal=1872%2C243",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/el-deportivo/noticia/con-cobreloa-beneficiado-por-escritorio-por-sobre-san-luis-los-posibles-escenarios-que-marcan-la-definicion-de-la-primera-b/",
+   "published": "2026-10-24T18:03:56Z",
+   "first_seen": "2026-10-24T23:49:19Z",
+   "image_checked_at": "2026-10-24T23:49:19.647015Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Leonardo Boff: “La eventual victoria de Flávio Bolsonaro sería continuar la obra destructiva iniciada por su padre Jair”",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/2QQUY66WP5GBNPRMZZMXC3KDA4.jpg?auth=113cb186077a892352580e77b8603c9c06a0ccbf3da3dc7a1e9d428eb63f2877&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/mundo/noticia/leonardo-boff-la-eventual-victoria-de-flavio-bolsonaro-seria-continuar-la-obra-destructiva-iniciada-por-su-padre-jair/",
+   "published": "2026-10-24T17:59:13Z",
+   "first_seen": "2026-10-24T23:49:19Z",
+   "image_checked_at": "2026-10-24T23:49:19.647015Z"
   },
   {
    "category": "nacional",
@@ -1178,7 +1241,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+   "image_checked_at": "2026-10-24T23:49:19.647015Z"
   },
   {
    "category": "cultura",
@@ -1357,7 +1420,7 @@
    "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-25-de-octubre-domingo-parte-despejado-p",
    "published": "2026-10-24T13:45:54Z",
    "first_seen": "2026-10-24T14:27:30Z",
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+   "image_checked_at": "2026-10-24T23:49:19.647015Z"
   },
   {
    "category": "internacional",
@@ -1546,7 +1609,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+   "image_checked_at": "2026-10-24T23:49:19.647015Z"
   },
   {
    "category": "latinoamerica",
@@ -2669,99 +2732,6 @@
    "published": "2026-10-24T00:03:10Z",
    "first_seen": "2026-10-24T00:37:33Z",
    "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Milei celebra su sobreseimiento en causa por caso $LIBRA: “¿Y ahora quién me compensa?”",
-   "summary": "",
-   "image": "https://media-front.elmostrador.cl/2026/10/de4b518822d6c27de91053f4195341f03d472c3ew-700x468.webp",
-   "source_url": "https://www.elmostrador.cl",
-   "sources": [
-    "El Mostrador"
-   ],
-   "coverages": [],
-   "link": "https://www.elmostrador.cl/noticias/mundo/2026/10/23/milei-celebra-su-sobreseimiento-en-causa-por-caso-libra-la-verdad-termina-imponiendose/",
-   "published": "2026-10-23T23:44:03Z",
-   "first_seen": "2026-10-24T09:34:27Z",
-   "image_checked_at": "2026-10-24T09:34:27.603656Z"
-  },
-  {
-   "category": "politica",
-   "title": "Chile: rebaja de condenas a 56 pederastas enfrenta al Gobierno de Kast con el Poder Judicial",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.france24.com",
-   "sources": [
-    "France 24"
-   ],
-   "coverages": [],
-   "link": "https://www.france24.com/es/am%C3%A9rica-latina/20261023-chile-rebaja-de-condenas-a-56-pederastas-enfrenta-al-gobierno-de-kast-con-el-poder-judicial",
-   "published": "2026-10-23T23:42:00Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T19:31:07.556450Z",
-   "coverage_countries": [
-    "CL"
-   ]
-  },
-  {
-   "category": "deportes",
-   "title": "San Luis puede ser campeón sin título por problemas de escritorio de San Marcos y Puerto Montt",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261023/imag/foto_0000000720261023204719.jpg",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/deportes/futbol/liga-de-ascenso/san-luis-puede-ser-campeon-sin-titulo-por-problemas-de-escritorio-de-san/2026-10-23/204719.html",
-   "published": "2026-10-23T23:42:00Z",
-   "first_seen": "2026-10-24T20:42:28Z",
-   "image_checked_at": "2026-10-24T20:42:28.697740Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Ferrari da el primer golpe en Austin: ¿candidatos a todo o espejismo de viernes?",
-   "summary": "",
-   "image": "https://soymotor.com/media/328569/edit",
-   "source_url": "https://soymotor.com",
-   "sources": [
-    "SoyMotor.com"
-   ],
-   "coverages": [],
-   "link": "https://soymotor.com/f1/noticias/ferrari-da-el-primer-golpe-en-austin-candidatos-todo-o-espejismo-de-viernes",
-   "published": "2026-10-23T23:38:00Z",
-   "first_seen": "2026-10-24T14:27:30Z",
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Pareja de adultos mayores llevaba una semana fallecida en vivienda que arrendaban en Punta Arenas",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994415-fotojet-29.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-magallanes/2026/10/23/pareja-de-adultos-mayores-llevaba-una-semana-fallecida-en-vivienda-que-arrendaban-en-punta-arenas.shtml",
-   "published": "2026-10-23T23:36:02Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "economia",
-   "title": "De qué se trata el PHP y cómo es que desencadenó una crisis global en materia de ciberseguridad",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994416-sin-nombre-2-6-1200x633.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/pc-e-internet/2026/10/23/de-que-se-trata-el-php-y-como-es-que-desencadeno-una-crisis-global-en-materia-de-ciberseguridad.shtml",
-   "published": "2026-10-23T23:32:25Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
@@ -2821,12 +2791,22 @@
    ]
   },
   {
+   "title": "Eurovisión Junior 2026: Todas las actuaciones y resumen",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUFBEa0c5VHQ3MGN2alNvR3c1SkJkRWxkY2R3MU00aEJ0Q2NIdlQ1X0Ywdnp3eDIzT2ZFbmFJRS14RzE5U3FPOUpZOXZ2d1RaeVJIVEltWm52UW82Yk1yQjYwT0hFbW1JVXdYUEdjYWdXQk4xbHlPQ3B5M1dCQXBMR3FNOXdrYjd0QkRFcEdSZjk0V29zRlItQjVnRDRNN1NYcGR6WUgxeXA4ZllGWEcxdy1kYnVfYzg?oc=5",
+   "category": "cultura",
+   "published": "2026-10-24T21:44:00Z",
+   "sources": [
+    "RTVE.es"
+   ]
+  },
+  {
    "title": "Gobierno de Chile condena ataque a iglesia en Jordania que dejó nueve fallecidos y más de 30 heridos",
    "link": "https://www.biobiochile.cl/noticias/internacional/mediooriente/2026/10/24/gobierno-de-chile-condena-ataque-a-iglesia-en-jordania-que-dejo-nueve-fallecidos-y-mas-de-30-heridos.shtml",
    "category": "internacional",
    "published": "2026-10-24T21:28:22Z",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "El Periodista"
    ]
   },
   {
@@ -3082,6 +3062,15 @@
    ]
   },
   {
+   "title": "“Se me parte el corazón”: Cancelan show de Luli Pampín tras lluvias",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSTkwdkVGOWRkNjNKanJJZWhXdlVhR2JpSUVqbU5FTTJDZlVHbm9WOVNhTkY3MHcwaThvbUtrTFJoWVplMERmWUZSOUlOQ2lCYlFUalo1cXBuaEdORHZEa2tTSTdHZUdEVkstZk5iWGZkZHFkSFFwUWpvdUJMYWctdENQQTgyZkdGRzFPQ1dHdXRkSzl2WFIxdWZRWVdkZVVGLVVaX3JmZG9tNXFkdFB3?oc=5",
+   "category": "cultura",
+   "published": "2026-10-24T18:20:10Z",
+   "sources": [
+    "Puente Libre"
+   ]
+  },
+  {
    "title": "Chile entrará como \"observador\" a la coalición anticárteles de Trump",
    "link": "https://www.cooperativa.cl/noticias/pais/relaciones-exteriores/ee-uu/chile-entrara-como-observador-a-la-coalicion-anticarteles-de-trump/2026-10-24/140543.html",
    "category": "politica",
@@ -3097,6 +3086,24 @@
    "published": "2026-10-24T18:13:17Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "¿Cobreloa supera a San Luis? Así quedaría la tabla de posiciones de Primera B si la ANFP castiga a Arica y Puerto Montt",
+   "link": "https://www.latercera.com/el-deportivo/noticia/con-cobreloa-beneficiado-por-escritorio-por-sobre-san-luis-los-posibles-escenarios-que-marcan-la-definicion-de-la-primera-b/",
+   "category": "deportes",
+   "published": "2026-10-24T18:03:56Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Leonardo Boff: “La eventual victoria de Flávio Bolsonaro sería continuar la obra destructiva iniciada por su padre Jair”",
+   "link": "https://www.latercera.com/mundo/noticia/leonardo-boff-la-eventual-victoria-de-flavio-bolsonaro-seria-continuar-la-obra-destructiva-iniciada-por-su-padre-jair/",
+   "category": "internacional",
+   "published": "2026-10-24T17:59:13Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
