@@ -1,6 +1,24 @@
 {
- "actualizado": "2026-10-24T19:31:07Z",
+ "actualizado": "2026-10-24T19:42:32Z",
  "noticias": [
+  {
+   "category": "latinoamerica",
+   "title": "Brasileiros já podem votar no exterior; veja quando saem os resultados",
+   "summary": "",
+   "image": "",
+   "source_url": "https://valor.globo.com",
+   "sources": [
+    "Valor Econômico"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdkotT0U2VlUyMW5kRkZmb3dKaF9vQUhGVURzeDdxVGlFNkRGV3pTWnMxQTdRbzdja19nbHUwUTRSSGdDdWlWMHNaZ1l0TzBFeFp5ZjZVdUZXa2tNc2szNF9IOEM0dXlnQTNtbkhmOE5hMTFaZkxGZGhseTNPT2NTcmdhMEJfRXN5S3U0cVItcWFEdWhfX3oyTDZ6R1JsNm1YX3lqSWRoYXdzZDN4TXhjRGxOcFpzYV9Uaks4ampWTFVrbThBazg1Ukw5NmRaTFgtWV9zYVhZU27SAecBQVVfeXFMTmdDbVlXNl9SQl84eXplRWdVMTlWc2lIOHRVWW1zWFh4RTRkeVFPTU5CeGs5V3NrZXpkRXBWQldQWExPN0NySS1Id3FkSXIxVnhhcEwxWmxGUHEtRTN2ekNUblJQdW5BbjU4NFJmZ1pwd2Q5VUVoVld6S29ySHhnSC11Q0VuMkRTUVFXM1QwZm9PalpMY0czLVplWm5UMW1mMGJ2N24wTWthaXBSSnVIZVhmMmhpVmJOY1p4NUVXck1WN3QycUJaVjc1bmsyNjlzdDEyRm55bnJWNk5FOGwxN2RYblpmMVNR?oc=5",
+   "published": "2026-10-24T19:00:00Z",
+   "first_seen": "2026-10-24T19:42:32Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
   {
    "category": "regiones",
    "title": "Aprovechará el parón por la fecha FIFA: Colo Colo jugará un amistoso ante Racing en Concepción",
@@ -15,6 +33,21 @@
    "published": "2026-10-24T18:46:23Z",
    "first_seen": "2026-10-24T19:31:07Z",
    "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
+   "category": "deportes",
+   "title": "La Serena superó a Concepción y se acercó a zona de Sudamericana: lilas jugaron con hombre menos",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994770-la-serena-vs-deportes-concepcion.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/24/la-serena-supero-a-concepcion-y-se-acerco-a-zona-de-sudamericana-lilas-jugaron-con-hombre-menos.shtml",
+   "published": "2026-10-24T18:29:03Z",
+   "first_seen": "2026-10-24T19:42:32Z",
+   "image_checked_at": "2026-10-24T19:42:32.381879Z"
   },
   {
    "category": "politica",
@@ -33,6 +66,21 @@
     "CL"
    ],
    "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Castro: director de Seguridad Pública renuncia tras ser denunciado por robo de electricidad a vecino",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994747-castro-robo-de-electricidad.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2026/10/24/castro-director-de-seguridad-publica-renuncia-tras-ser-denunciado-por-robo-de-electricidad-a-vecino.shtml",
+   "published": "2026-10-24T18:13:17Z",
+   "first_seen": "2026-10-24T19:42:32Z",
+   "image_checked_at": "2026-10-24T19:42:32.381879Z"
   },
   {
    "category": "internacional",
@@ -518,19 +566,19 @@
    ]
   },
   {
-   "category": "regiones",
-   "title": "Pronóstico del tiempo en Valparaíso de este 25 de octubre: domingo parte despejado, pero las nubes ganarán terreno",
+   "category": "politica",
+   "title": "[Lo+Leído]Kast nombra a Gonzalo Arenas como nuevo vocero de Gobierno tras salida de Lagos",
    "summary": "",
-   "image": "",
-   "source_url": "https://www.elmartutino.cl",
+   "image": "https://media-front.elmostrador.cl/2026/10/nuevo-vocero-1-700x369.webp",
+   "source_url": "https://www.elmostrador.cl",
    "sources": [
-    "El Martutino"
+    "El Mostrador"
    ],
    "coverages": [],
-   "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-25-de-octubre-domingo-parte-despejado-p",
-   "published": "2026-10-24T14:00:05Z",
-   "first_seen": "2026-10-24T14:27:30Z",
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/24/loleidokast-nombra-a-gonzalo-arenas-como-nuevo-vocero-de-gobierno-tras-salida-de-lagos/",
+   "published": "2026-10-24T14:00:07Z",
+   "first_seen": "2026-10-24T19:42:32Z",
+   "image_checked_at": "2026-10-24T19:42:32.381879Z"
   },
   {
    "category": "deportes",
@@ -564,6 +612,22 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "regiones",
+   "title": "Pronóstico del tiempo en Valparaíso de este 25 de octubre: domingo parte despejado, pero las nubes ganarán terreno",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmartutino.cl",
+   "sources": [
+    "El Martutino",
+    "El Nortero"
+   ],
+   "coverages": [],
+   "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-25-de-octubre-domingo-parte-despejado-p",
+   "published": "2026-10-24T13:45:54Z",
+   "first_seen": "2026-10-24T14:27:30Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "internacional",
@@ -2485,76 +2549,19 @@
    "published": "2026-10-23T19:44:00Z",
    "first_seen": "2026-10-24T01:13:38Z",
    "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "internacional",
-   "title": "No quería ser padre y asesinó a su pareja embarazada en EEUU: ahora hizo inesperada petición al juez",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994130-hombre-que-mato-a-su-pareja-embarazada-pide-al-juez-que-lo-sentencie-a-muerte-en-eeuu.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/sociedad/historia/2026/10/23/no-queria-ser-padre-y-asesino-a-su-pareja-embarazada-en-eeuu-ahora-hizo-inesperada-peticion-al-juez.shtml",
-   "published": "2026-10-23T19:39:36Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Justicia argentina sobresee a Javier Milei y su hermana en causa por escándalo de criptomoneda $LIBRA",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQaXVYcEtTZ0JhMlVYNm9veWtjQUNGcEhJV0w0YVo1ekRDZ2gyM1hxeldxZUVlU09aUkwwM2hXcEtRMFZob2dPdWNqNjhMUzhKd0FGbkRMelhmVWYzYXpTeHN4QWtQd3M4M2JKVzBmdWR6Rm1hUm1UNXpZTEN2S3VWVTM4bnVTRzdJNzZ4dXhQR3hBRm5FUy02YXpKQkZnS0dHazBycjR0QzRGWl9pdUU1dnVDTjgyNjlLLWFLbHNhbTlNOGp6OS1ybDZiMFZBYlNhYXVSNFdkN3l2a0lNdEJHWUt4Rk1HdHZMT2RGQTNMb0hvRUVURVhLcXlNOHJWNVJoa2E2VThVN1hMQzJmWFRV?oc=5",
-   "published": "2026-10-23T19:38:00Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "AR"
-   ]
-  },
-  {
-   "category": "internacional",
-   "title": "Primer petrolero con diésel ruso zarpa hacia EE. UU. tras el acuerdo entre Trump y Putin",
-   "summary": "",
-   "image": "https://static.dw.com/image/79741269_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/primer-petrolero-con-di%C3%A9sel-ruso-zarpa-hacia-ee-uu-tras-el-acuerdo-entre-trump-y-putin/a-79740708",
-   "published": "2026-10-23T19:35:48Z",
-   "first_seen": "2026-10-24T10:26:49Z",
-   "image_checked_at": "2026-10-24T10:26:49.685059Z"
-  },
-  {
-   "category": "politica",
-   "title": "Universidad de Chile realizará el 1er Congreso de Terapias de las Artes de Latinoamérica",
-   "summary": "",
-   "image": "https://artes.uchile.cl/dam/jcr:a2dc0acd-1f0a-432e-b608-341db6d9c379/1er%20congreso%20de%20las%20terapias%2001111111.jpg",
-   "source_url": "https://artes.uchile.cl",
-   "sources": [
-    "Facultad de Artes - Universidad de Chile"
-   ],
-   "coverages": [],
-   "link": "https://artes.uchile.cl/noticias/246269/u-de-chile-realizara-el-1er-congreso-de-terapias-de-las-artes",
-   "published": "2026-10-23T19:35:45Z",
-   "first_seen": "2026-10-24T19:31:07Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Brasileiros já podem votar no exterior; veja quando saem os resultados",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdkotT0U2VlUyMW5kRkZmb3dKaF9vQUhGVURzeDdxVGlFNkRGV3pTWnMxQTdRbzdja19nbHUwUTRSSGdDdWlWMHNaZ1l0TzBFeFp5ZjZVdUZXa2tNc2szNF9IOEM0dXlnQTNtbkhmOE5hMTFaZkxGZGhseTNPT2NTcmdhMEJfRXN5S3U0cVItcWFEdWhfX3oyTDZ6R1JsNm1YX3lqSWRoYXdzZDN4TXhjRGxOcFpzYV9Uaks4ampWTFVrbThBazg1Ukw5NmRaTFgtWV9zYVhZU27SAecBQVVfeXFMTmdDbVlXNl9SQl84eXplRWdVMTlWc2lIOHRVWW1zWFh4RTRkeVFPTU5CeGs5V3NrZXpkRXBWQldQWExPN0NySS1Id3FkSXIxVnhhcEwxWmxGUHEtRTN2ekNUblJQdW5BbjU4NFJmZ1pwd2Q5VUVoVld6S29ySHhnSC11Q0VuMkRTUVFXM1QwZm9PalpMY0czLVplWm5UMW1mMGJ2N24wTWthaXBSSnVIZVhmMmhpVmJOY1p4NUVXck1WN3QycUJaVjc1bmsyNjlzdDEyRm55bnJWNk5FOGwxN2RYblpmMVNR?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-24T19:00:00Z",
+   "sources": [
+    "Valor Econômico"
+   ]
+  },
   {
    "title": "Aprovechará el parón por la fecha FIFA: Colo Colo jugará un amistoso ante Racing en Concepción",
    "link": "https://www.prensafutbol.cl/colo-colo-amistoso-racing-concepcion-fecha/",
@@ -2565,12 +2572,30 @@
    ]
   },
   {
+   "title": "La Serena superó a Concepción y se acercó a zona de Sudamericana: lilas jugaron con hombre menos",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/24/la-serena-supero-a-concepcion-y-se-acerco-a-zona-de-sudamericana-lilas-jugaron-con-hombre-menos.shtml",
+   "category": "deportes",
+   "published": "2026-10-24T18:29:03Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Chile entrará como \"observador\" a la coalición anticárteles de Trump",
    "link": "https://www.cooperativa.cl/noticias/pais/relaciones-exteriores/ee-uu/chile-entrara-como-observador-a-la-coalicion-anticarteles-de-trump/2026-10-24/140543.html",
    "category": "politica",
    "published": "2026-10-24T18:14:00Z",
    "sources": [
     "Cooperativa"
+   ]
+  },
+  {
+   "title": "Castro: director de Seguridad Pública renuncia tras ser denunciado por robo de electricidad a vecino",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2026/10/24/castro-director-de-seguridad-publica-renuncia-tras-ser-denunciado-por-robo-de-electricidad-a-vecino.shtml",
+   "category": "nacional",
+   "published": "2026-10-24T18:13:17Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -2835,12 +2860,12 @@
    ]
   },
   {
-   "title": "Pronóstico del tiempo en Valparaíso de este 25 de octubre: domingo parte despejado, pero las nubes ganarán terreno",
-   "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-25-de-octubre-domingo-parte-despejado-p",
-   "category": "regiones",
-   "published": "2026-10-24T14:00:05Z",
+   "title": "[Lo+Leído]Kast nombra a Gonzalo Arenas como nuevo vocero de Gobierno tras salida de Lagos",
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/24/loleidokast-nombra-a-gonzalo-arenas-como-nuevo-vocero-de-gobierno-tras-salida-de-lagos/",
+   "category": "politica",
+   "published": "2026-10-24T14:00:07Z",
    "sources": [
-    "El Martutino"
+    "El Mostrador"
    ]
   },
   {
@@ -2859,6 +2884,16 @@
    "published": "2026-10-24T13:52:21Z",
    "sources": [
     "Exame"
+   ]
+  },
+  {
+   "title": "Pronóstico del tiempo en Valparaíso de este 25 de octubre: domingo parte despejado, pero las nubes ganarán terreno",
+   "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-25-de-octubre-domingo-parte-despejado-p",
+   "category": "regiones",
+   "published": "2026-10-24T13:45:54Z",
+   "sources": [
+    "El Martutino",
+    "El Nortero"
    ]
   },
   {
