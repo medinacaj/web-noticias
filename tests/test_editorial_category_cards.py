@@ -1,5 +1,6 @@
 """Regresión del diseño editorial sin barras superiores de categoría."""
 import unittest
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from fetch_noticias import TEMPLATE_PATH, render_sections
@@ -12,7 +13,8 @@ class EditorialCategoryCardTests(unittest.TestCase):
         cls.generator = Path(__file__).resolve().parents[1].joinpath("fetch_noticias.py").read_text(encoding="utf-8")
 
     def test_cards_are_not_decorated_by_top_border(self):
-        card_css = self.template.split("/* Tarjetas oscuras sobre gris humo;", 1)[1].split("/* ---------- Portada ---------- */", 1)[0]
+        card_css = re.search(r"\.lead,\.feature,\.rail-list li,\.compact-list li\{([^}]+)\}",
+                             self.template).group(1)
         self.assertNotIn("border-top:", card_css)
         self.assertNotIn("border-top-width:", self.template)
         self.assertIn("background:var(--card-bg)", card_css)
