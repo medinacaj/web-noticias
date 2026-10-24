@@ -1,0 +1,90 @@
+name: Actualizar eventos
+
+# Recolector de la Agenda (antes en medinacaj/eventos-biobio). El código se toma
+# de main; los snapshots viven solo en la rama events-data, que scripts/events_data.py
+# actualiza sin ejecutar nada de esa rama. La portada los lee en su próxima corrida.
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "35 11 * * *"   # diario; GitHub puede retrasar el cron
+  push:
+    branches: [main]
+    paths:
+      - "eventos/**"
+      - "!eventos/agenda_manual.json"
+      - "scripts/events_data.py"
+      - ".github/workflows/actualizar-eventos.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eventos-rastreo
+  cancel-in-progress: false
+
+jobs:
+  recopilar:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      WORK: ${{ github.workspace }}/.events-work
+    steps:
+      - name: Clonar código revisado de main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Clonar sólo datos de events-data
+        uses: actions/checkout@v4
+        with:
+          ref: events-data
+          path: .events-data
+          sparse-checkout: eventos
+          persist-credentials: true
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validar código offline
+        working-directory: eventos
+        run: python3 -m unittest discover -s tests -t . -v
+
+      - name: Cargar snapshots anteriores sin ejecutar archivos de la rama de datos
+        run: python3 scripts/events_data.py load --data-repo .events-data --workdir "$WORK" --state "$RUNNER_TEMP/events-state.json"
+
+      - name: Rastreo del Biobío
+        working-directory: eventos
+        run: python3 actualizar.py --workers 4 --snapshot "$WORK/eventos/crawled_events.json" --estado-fuentes "$WORK/eventos/sources_status.json"
+
+      - name: Exigir evidencia HTTP del Biobío y auditar cobertura
+        working-directory: eventos
+        run: |
+          python3 scripts/check_snapshot.py "$WORK/eventos/crawled_events.json" config/communes.json
+          python3 scripts/report_coverage.py "$WORK/eventos/crawled_events.json" config/communes.json "$WORK/eventos/sources_status.json" "$WORK/eventos/coverage.md"
+
+      # Rastreo nacional separado: si falla, se guarda igual el del Biobío.
+      - name: Rastreo nacional
+        id: nacional
+        continue-on-error: true
+        working-directory: eventos
+        run: |
+          cp "$WORK/eventos/national_events.json" "$RUNNER_TEMP/national_previous.json" 2>/dev/null || true
+          python3 actualizar.py --nacional --workers 4 --snapshot "$WORK/eventos/national_events.json" --estado-fuentes "$WORK/eventos/national_sources_status.json"
+          python3 scripts/check_snapshot.py "$WORK/eventos/national_events.json" config/chile_communes.json
+
+      - name: Descartar un rastreo nacional sin evidencia
+        if: steps.nacional.outcome != 'success'
+        run: |
+          if [ -f "$RUNNER_TEMP/national_previous.json" ]; then
+            cp "$RUNNER_TEMP/national_previous.json" "$WORK/eventos/national_events.json"
+          else
+            rm -f "$WORK/eventos/national_events.json"
+          fi
+          rm -f "$WORK/eventos/national_sources_status.json"
+
+      - name: Guardar snapshots validados (sólo events-data, push normal)
+        run: python3 scripts/events_data.py persist --data-repo .events-data --workdir "$WORK" --state "$RUNNER_TEMP/events-state.json"
