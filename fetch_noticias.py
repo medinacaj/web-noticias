@@ -713,7 +713,8 @@ def render_top(sel, now):
         f'<h2 class="lead-title">{title_link(lead)}</h2>{dek_html(lead)}{meta_html(lead, now, True)}</article>'
     )
     items = "".join(
-        f'<li class="cat-{s["category"]}"><article class="rail-item"><p class="kicker">{esc(category_label(s))}</p>'
+        f'<li class="cat-{s["category"]}"><article class="rail-item">{figure_html(s)}'
+        f'<p class="kicker">{esc(category_label(s))}</p>'
         f'<h3>{title_link(s)}</h3>{meta_html(s, now)}</article></li>'
         for s in sel["secondary"]
     )
