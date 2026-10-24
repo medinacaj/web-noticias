@@ -732,6 +732,9 @@ def render_breaking(sel, now):
             f'aria-label="Titulares recientes, usa las flechas para desplazarte">{slides}</ol>'
             '<div class="carousel-controls" hidden>'
             '<span class="carousel-position" aria-live="polite" aria-atomic="true"></span>'
+            '<button type="button" data-carousel-pause aria-label="Pausar titulares automáticos" '
+            'aria-pressed="false" aria-controls="latest-track" title="Pausar titulares automáticos">'
+            '<span aria-hidden="true">Ⅱ</span></button>'
             '<button type="button" data-carousel-prev aria-label="Titulares anteriores" '
             'aria-controls="latest-track">←</button>'
             '<button type="button" data-carousel-next aria-label="Más titulares recientes" '
@@ -760,30 +763,18 @@ def render_top(sel, now):
             f'<h2 class="rail-title">Destacadas</h2><ol class="rail-list">{items}</ol></div></div>')
 
 
-def render_context(sel, now, window_hours):
-    units = []
-    reported = sel["most_reported"]
-    if reported:
-        n = len(reported["sources"])
-        units.append(("Lo más cubierto", title_link(reported),
-                      f"{n} medio lo reporta" if n == 1 else f"{n} medios lo reportan"))
-    if sel["busiest"]:
-        from scripts.presentation_groups import canonical_section
-        key, count = sel["busiest"]
-        units.append(("Sección más activa",
-                      f'<a class="cat-{key}" href="#cat-{canonical_section(key)}">{esc(CATEGORY_LABELS[key])}</a>',
-                      f"{count} noticia publicada" if count == 1 else f"{count} noticias publicadas"))
-    period = f"en las últimas {int(window_hours)} horas" if window_hours <= 48 else "en el período publicado"
-    units.append(("Cobertura", f'{sel["total"]} noticias de {sel["outlets"]} medios',
-                  f"Recopiladas {period}; se actualiza cada hora"))
-    cells = "".join(
-        f'<div class="context-unit"><p class="context-label"><span class="context-num">{i:02d}</span>'
-        f'{esc(label)}</p><p class="context-text">{text}</p><p class="context-note">{esc(note)}</p></div>'
-        for i, (label, text, note) in enumerate(units, start=1)
-    )
-    return (f'<details class="edition-details"><summary>Datos de esta edición · '
-            f'{sel["total"]} noticias · {sel["outlets"]} medios</summary>'
-            f'<section class="context" aria-label="Resumen del día">{cells}</section></details>')
+def render_edition_count(sel):
+    """Contar las noticias publicadas en tarjetas, sin duplicar URLs o medios."""
+    from scripts.dedupe_history import canonical_key
+    published = ([sel["lead"]] if sel.get("lead") else []) + sel.get("secondary", [])
+    published += [story for items in sel.get("by_category", {}).values() for story in items]
+    urls = {canonical_key(story["link"]) for story in published}
+    sources = {name.strip() for story in published for name in story.get("sources", []) if name.strip()}
+    count, outlets = len(urls), len(sources)
+    return (f'<p class="edition-count" data-news-count="{count}" '
+            f'title="Noticias publicadas en esta portada y sus secciones">'
+            f'{count} {"noticia" if count == 1 else "noticias"} · '
+            f'{outlets} {"medio" if outlets == 1 else "medios"}</p>')
 
 
 def render_coverage_radar(stories):
@@ -945,7 +936,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%FOOTER_NAV%%": nav,
         "%%BREAKING%%": render_breaking(sel, now),
         "%%TOP%%": render_top(sel, now),
-        "%%CONTEXT%%": render_context(sel, now, window_hours),
+        "%%EDITION_COUNT%%": render_edition_count(sel),
         "%%RADAR%%": render_coverage_radar(stories),
         "%%SIGNALS%%": signals_html,
         "%%SECTIONS%%": render_sections(sel["by_category"], now),

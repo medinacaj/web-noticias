@@ -247,6 +247,59 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             else:
                 self.assertGreater(luminance(colors['card']), .9)
 
+    async def test_date_is_right_aligned_and_count_matches_published_cards(self):
+        expected = await self.page.locator('main .lead h2 a, main .rail-item h3 a, main .feature h3 a, main .compact h3 a').evaluate_all('nodes => new Set(nodes.map(a => a.href)).size')
+        count = self.page.locator('.edition-count')
+        self.assertEqual(await count.count(), 1)
+        self.assertEqual(int(await count.get_attribute('data-news-count')), expected)
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({"width": width, "height": 1000})
+            date = self.page.locator('.header-updated')
+            self.assertTrue(await date.is_visible(), width)
+            bounds = await date.bounding_box()
+            self.assertGreater(bounds['x'] + bounds['width'], width - 40)
+            self.assertTrue(await count.is_visible())
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
+
+    async def test_footer_has_only_useful_links_attribution_and_signature(self):
+        footer = self.page.locator('.site-footer')
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({"width": width, "height": 1000})
+            await footer.scroll_into_view_if_needed()
+            text = await footer.inner_text()
+            self.assertNotIn('Datos de esta edición', text)
+            self.assertNotIn('Última actualización', text)
+            self.assertNotIn('©', text)
+            self.assertTrue(await footer.locator('.designer-signature').is_visible())
+            self.assertTrue(await footer.locator('.designer-signature').evaluate("el => {const r=el.getBoundingClientRect(); return [r.x+8,r.x+r.width/2,r.right-8].every(x => el.contains(document.elementFromPoint(x,r.y+r.height/2))); }"), width)
+            self.assertLessEqual((await footer.bounding_box())['height'], 140 if width >= 1024 else 280)
+
+    async def test_latest_advances_automatically_and_can_pause_and_resume(self):
+        await self.page.emulate_media(reduced_motion='no-preference')
+        await self.page.reload()
+        await self.page.mouse.move(0, 0)
+        self.assertEqual(await self.page.locator('[data-carousel-pause]').count(), 1)
+        await self.page.wait_for_function("document.querySelector('.carousel-position').textContent === '2 de 6'", timeout=8500)
+        await self.page.wait_for_function("Math.abs(document.querySelector('.breaking-track').scrollLeft - document.querySelector('.breaking-track').clientWidth) < 2")
+        pause = self.page.locator('[data-carousel-pause]')
+        await pause.click()
+        await self.page.mouse.move(0, 0)
+        self.assertEqual(await pause.get_attribute('aria-pressed'), 'true')
+        before = await self.page.locator('.carousel-position').inner_text()
+        await self.page.wait_for_timeout(6500)
+        self.assertEqual(await self.page.locator('.carousel-position').inner_text(), before)
+        await pause.click()
+        await self.page.mouse.move(0, 0)
+        await self.page.locator('.brand-link').focus()
+        await self.page.wait_for_function("document.querySelector('.carousel-position').textContent === '3 de 6'", timeout=8500)
+
+    async def test_reduced_motion_does_not_auto_start(self):
+        pause = self.page.locator('[data-carousel-pause]')
+        self.assertEqual(await pause.count(), 1)
+        self.assertEqual(await pause.get_attribute('aria-pressed'), 'true')
+        await self.page.wait_for_timeout(6500)
+        self.assertEqual(await self.page.locator('.carousel-position').inner_text(), '1 de 6')
+
     async def test_blocked_storage_does_not_disable_controls(self):
         await self.context.add_init_script("Object.defineProperty(window, 'localStorage', {get() {throw new Error('blocked')}})")
         await self.page.reload()

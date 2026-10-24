@@ -87,24 +87,72 @@
   d.querySelectorAll("[data-carousel]").forEach(function (carousel) {
     var track = carousel.querySelector(".breaking-track"), controls = carousel.querySelector(".carousel-controls");
     var previous = carousel.querySelector("[data-carousel-prev]"), next = carousel.querySelector("[data-carousel-next]");
-    var position = carousel.querySelector(".carousel-position");
+    var pause = carousel.querySelector("[data-carousel-pause]"), position = carousel.querySelector(".carousel-position");
     if (!track || !controls || !previous || !next) return;
     var reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var timer = null, userPlay = null, hovering = false, focused = false;
+    function wantsPlay() { return userPlay === null ? !reduced.matches : userPlay; }
+    function canPlay() {
+      return pause && wantsPlay() && !hovering && !focused && !d.hidden
+        && track.children.length > 1 && track.clientWidth > 0;
+    }
+    function index() {
+      return Math.max(0, Math.min(track.children.length - 1,
+        Math.round(track.scrollLeft / Math.max(1, track.clientWidth))));
+    }
+    function schedule() {
+      window.clearTimeout(timer); timer = null;
+      var active = canPlay();
+      if (pause) {
+        pause.disabled = track.children.length <= 1;
+        pause.setAttribute("aria-label", "Pausar avance automático");
+        pause.setAttribute("aria-pressed", String(!wantsPlay()));
+        pause.title = wantsPlay() ? "Pausar carrusel" : "Reanudar carrusel";
+        pause.querySelector("span").textContent = wantsPlay() ? "Ⅱ" : "\u25B6\uFE0E";
+      }
+      // No anunciar cambios automáticos; las interacciones manuales sí se anuncian.
+      if (position) position.setAttribute("aria-live", active ? "off" : "polite");
+      if (active) timer = window.setTimeout(function () {
+        timer = null;
+        if (!canPlay()) { schedule(); return; }
+        var target = (index() + 1) % track.children.length;
+        track.scrollTo({left: target * track.clientWidth,
+          behavior: reduced.matches || target === 0 ? "instant" : "smooth"});
+        schedule();
+      }, 6000);
+    }
     function update() {
       var max = track.scrollWidth - track.clientWidth;
       controls.hidden = max < 3;
       previous.disabled = track.scrollLeft <= 2;
       next.disabled = track.scrollLeft >= max - 2;
-      var item = track.firstElementChild;
-      var step = item ? item.getBoundingClientRect().width : 1;
-      var first = Math.round(track.scrollLeft / step) + 1;
-      if (position) position.textContent = first + " de " + track.children.length;
+      if (position) position.textContent = (index() + 1) + " de " + track.children.length;
+      schedule();
     }
     function move(direction) {
       track.scrollBy({left: direction * track.clientWidth, behavior: reduced.matches ? "instant" : "smooth"});
+      schedule();
     }
     previous.addEventListener("click", function () { move(-1); });
     next.addEventListener("click", function () { move(1); });
+    if (pause) pause.addEventListener("click", function () {
+      userPlay = !wantsPlay();
+      // Reanudar es una petición explícita, aun si el botón conserva el foco.
+      if (userPlay) { hovering = false; focused = false; }
+      schedule();
+    });
+    carousel.addEventListener("mouseenter", function () { hovering = true; schedule(); });
+    track.addEventListener("mouseenter", function () { hovering = true; schedule(); });
+    carousel.addEventListener("mouseleave", function () { hovering = false; schedule(); });
+    carousel.addEventListener("focusin", function () { focused = true; schedule(); });
+    carousel.addEventListener("focusout", function (event) {
+      if (!carousel.contains(event.relatedTarget)) { focused = false; schedule(); }
+    });
+    d.addEventListener("visibilitychange", schedule);
+    reduced.addEventListener("change", function (event) {
+      if (event.matches && userPlay === true) userPlay = null;
+      schedule();
+    });
     track.addEventListener("keydown", function (event) {
       if (event.target !== track || ["ArrowLeft", "ArrowRight"].indexOf(event.key) < 0) return;
       event.preventDefault(); move(event.key === "ArrowRight" ? 1 : -1);
