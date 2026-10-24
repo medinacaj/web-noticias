@@ -56,6 +56,17 @@ class UpcomingEventsTests(unittest.TestCase):
         self.assertEqual(item["tags"], ["música", "rock"])
         self.assertTrue(item["free"])
 
+    def test_escaped_html_becomes_plain_text(self):
+        # Caso real de GAM en national_events.json (2026-10-24).
+        [item] = upcoming_events({"events": [event(
+            venue="Centro Gabriela Mistral - GAM - &lt;p&gt;&lt;b&gt;Plaza Central&lt;/b&gt;&lt;/p&gt;",
+            title="Trueque &amp;amp; Novelas")]}, TODAY, "Biobío")
+        self.assertEqual(item["venue"], "Centro Gabriela Mistral - GAM - Plaza Central")
+        self.assertEqual(item["title"], "Trueque & Novelas")
+        html = render_agenda([item], NOW)
+        self.assertIn("Trueque &amp; Novelas", html)
+        self.assertNotIn("&lt;p&gt;", html)
+
     def test_malformed_payloads_yield_nothing(self):
         for payload in (None, [], {"events": "x"}, {"events": [None, 3, "a"]}):
             self.assertEqual(upcoming_events(payload, TODAY, "Biobío"), [])
@@ -106,7 +117,7 @@ class RenderAgendaTests(unittest.TestCase):
             event(title="<script>alert(1)</script>", status="Por confirmar")]}, TODAY, "Biobío")
         html = render_agenda(events, NOW)
         self.assertNotIn("<script>", html)
-        self.assertIn("&lt;script&gt;", html)
+        self.assertIn('rel="noopener">alert(1)</a>', html)  # etiquetas eliminadas, texto escapado
         self.assertIn('href="https://teatrobiobio.cl/concierto/" target="_blank" rel="noopener"', html)
         self.assertIn('<time class="agenda-date" datetime="2026-10-30">', html)
         self.assertIn("Teatro Biobío · 19:30 h · Gratis", html)

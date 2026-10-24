@@ -43,7 +43,11 @@ def fetch_snapshot(url):
 
 
 def _text(value, limit):
-    text = " ".join(str(value or "").split())
+    # Algunos editores publican HTML escapado («&lt;p&gt;Sala&lt;/p&gt;»): se muestra solo el texto.
+    text = str(value or "")
+    for _ in range(2):
+        text = html.unescape(text)
+    text = " ".join(re.sub(r"<[^>]*>", " ", text).split())
     return text[:limit].rstrip() if text else ""
 
 
