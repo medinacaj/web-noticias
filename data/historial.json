@@ -1,6 +1,87 @@
 {
- "actualizado": "2026-10-24T05:43:25Z",
+ "actualizado": "2026-10-24T09:34:27Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "Mi hermano compró una brillante cápsula azul sin saber que era cesio-137 y desató el mayor accidente radiactivo de la historia de mi país",
+   "summary": "Cuando unos recolectores de basura encontraron una extraña cápsula brillante, nadie se dio cuenta de que era altamente radiactiva y que destruiría la vida de todos los que la tocaran.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/a2eb/live/2c7ff5d0-cd4f-11f1-8177-0f8bd59b54c4.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "Mi hermano compró una brillante cápsula azul sin saber que era cesio-137 y desató el mayor accidente radiactivo de la historia de mi país",
+     "link": "https://www.bbc.com/mundo/articles/cm5ynlx21z64o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-24T08:49:02Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cm5ynlx21z64o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-24T08:49:02Z",
+   "first_seen": "2026-10-24T09:34:27Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "El Congreso Internacional de Startups Indoamericano reunirá en Ecuador a referentes mundiales de la innovación, la tecnología y la inversión",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.diariosigloxxi.com",
+   "sources": [
+    "Diario Siglo XXI"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOLXd6N084QVZTSGFrMFVPZnFYTkJvS24zWHo2UkVnOXIwVTZTd0lXQmVaUjliMWhDRk93MUtYOG5lQnlXd2xna0p0QURGYnFlQk14R3k0UmxXMEJWTUVpMVBFM3NnUU11bE01UjJYemUtOVhQR2dtWk00WkpUb2tXMkVsQlNKdkh5eGZmcmtwdTlPSHJRSWdhRUlQd3ZxUTltZHgtN2duRUV1empNV1dyNlZ4ZkVVZVdtVHVqdU5LZkpGYnNBem1BU0Z2d2dXUElqS3Q2aVFCaURRaFBYeWhPZ0xrSHVKVFF5Z1hOSkp5YXpnczJLQ0RQRkhFVlJFTnlJelVveQ?oc=5",
+   "published": "2026-10-24T08:14:00Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "EC"
+   ]
+  },
+  {
+   "category": "internacional",
+   "title": "El misterioso órgano de los cachalotes que les da fuerza para hundir barcos",
+   "summary": "Un superviviente del naufragio que inspiró la novela \"Moby Dick\" tenía una teoría sobre cómo un cachalote podía destruir un barco que lo multiplicaba en tamaño; 200 años después, se demostró que tenía razón.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/1970/live/16a23b10-c0cf-11f1-bc2e-018d645d8d21.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "El misterioso órgano de los cachalotes que les da fuerza para hundir barcos",
+     "link": "https://www.bbc.com/mundo/articles/crkg794zyjd5o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-24T07:58:05Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/crkg794zyjd5o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-24T07:58:05Z",
+   "first_seen": "2026-10-24T09:34:27Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Arrestan a una persona tras el incendio en el refugio \"Nido del Águila\" de Adolf Hitler",
+   "summary": "Alrededor de 200 efectivos de emergencia han sido desplegados para combatir el incendio en la residencia alpina del dictador nazi en Alemania.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/afa3/live/13c014a0-cf73-11f1-93e1-3b657b665bcf.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "Arrestan a una persona tras el incendio en el refugio \"Nido del Águila\" de Adolf Hitler",
+     "link": "https://www.bbc.com/mundo/articles/ck20r82dnlr1o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-24T06:29:54Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/ck20r82dnlr1o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-24T06:29:54Z",
+   "first_seen": "2026-10-24T09:34:27Z"
+  },
   {
    "category": "internacional",
    "title": "Fatima El Mansouri: cómo la primera mujer en liderar el gobierno de Marruecos está atrapada entre el rey, los clérigos y el feminismo",
@@ -90,6 +171,21 @@
    "coverage_countries": [
     "AR"
    ]
+  },
+  {
+   "category": "cultura",
+   "title": "Tras años de dudas, Tonka Tomicic habría solicitado el divorcio de Parived por cese de convivencia",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994526-divorcio-tonka-tomicic-parived-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/24/tras-anos-de-dudas-tonka-tomicic-habria-solicitado-el-divorcio-de-parived-por-cese-de-convivencia.shtml",
+   "published": "2026-10-24T03:01:59Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "latinoamerica",
@@ -186,6 +282,36 @@
    "published": "2026-10-24T02:02:30Z",
    "first_seen": "2026-10-24T04:33:25Z",
    "image_checked_at": "2026-10-24T04:33:25.580080Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Pelea en la derecha por rebajas de penas: Squella lanza dardo a Larraín con alusión a Paul Schäfer",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/squella_larrain_foto_nota-700x394.jpg",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/23/pelea-en-la-derecha-por-rebajas-de-penas-squella-lanza-dardo-a-larrain-con-alusion-a-paul-schafer/",
+   "published": "2026-10-24T01:51:50Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Hito en Alto Mando del Ejército 2027: María Soledad Acevedo se convierte en la primera mujer en ascender al grado de general",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/6GCWGPEJKNG7ZFHXW7RRKDJNRI.jpeg?auth=b172a1b884ab2f323e2bbed63e83a91ad5ddebf6ebee425814c68da55f32ecf0&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/nacional/noticia/hito-en-alto-mando-del-ejercito-2027-maria-soledad-acevedo-se-convierte-en-la-primera-mujer-en-ascender-al-grado-de-general/",
+   "published": "2026-10-24T01:41:35Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "latinoamerica",
@@ -314,6 +440,21 @@
    "image_checked_at": "2026-10-24T00:37:33.484010Z"
   },
   {
+   "category": "tecnologia",
+   "title": "Milei celebra su sobreseimiento en causa por caso $LIBRA: “¿Y ahora quién me compensa?”",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/de4b518822d6c27de91053f4195341f03d472c3ew-700x468.webp",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/noticias/mundo/2026/10/23/milei-celebra-su-sobreseimiento-en-causa-por-caso-libra-la-verdad-termina-imponiendose/",
+   "published": "2026-10-23T23:44:03Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
    "category": "politica",
    "title": "Chile: rebaja de condenas a 56 pederastas enfrenta al Gobierno de Kast con el Poder Judicial",
    "summary": "",
@@ -326,7 +467,7 @@
    "link": "https://www.france24.com/es/am%C3%A9rica-latina/20261023-chile-rebaja-de-condenas-a-56-pederastas-enfrenta-al-gobierno-de-kast-con-el-poder-judicial",
    "published": "2026-10-23T23:42:00Z",
    "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T04:41:41.941219Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z",
    "coverage_countries": [
     "CL"
    ]
@@ -397,6 +538,21 @@
   },
   {
    "category": "deportes",
+   "title": "¿Se esconde McLaren? Esto dicen las tandas largas de Estados Unidos",
+   "summary": "",
+   "image": "https://soymotor.com/media/328566/edit",
+   "source_url": "https://soymotor.com",
+   "sources": [
+    "SoyMotor.com"
+   ],
+   "coverages": [],
+   "link": "https://soymotor.com/f1/noticias/se-esconde-mclaren-esto-dicen-las-tandas-largas-de-estados-unidos",
+   "published": "2026-10-23T23:08:01Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
+   "category": "deportes",
    "title": "Así quedaría la tabla de la Primera B si se aplican sanciones a San Marcos y Puerto Montt: vuelco total",
    "summary": "",
    "image": "https://www.adnradio.cl/resizer/v2/PJSCAZJKBFCATBCLMS4G6NA6SY.jpg?auth=f9d78b15255f1a161f7ff070c6158d9a90027af8ca178291e6771e2509329332&quality=70&width=1200&height=675&smart=true",
@@ -409,6 +565,21 @@
    "published": "2026-10-23T23:05:43Z",
    "first_seen": "2026-10-24T04:33:25Z",
    "image_checked_at": "2026-10-24T04:33:25.580080Z"
+  },
+  {
+   "category": "cultura",
+   "title": "“No estamos en absoluto de acuerdo”: Padre de Mayerson Zapata rompe el silencio tras acuerdo reparatorio con Fran Maira",
+   "summary": "",
+   "image": "https://media.chilevision.cl/2026/10/padre-de-mayerson-zapata-1200x675.jpg",
+   "source_url": "https://www.chilevision.cl",
+   "sources": [
+    "Chilevisión"
+   ],
+   "coverages": [],
+   "link": "https://www.chilevision.cl/noticias/show/no-estamos-en-absoluto-de-acuerdo-padre-de-mayerson-zapata-rompe-el-silencio-tras-acuerdo-reparatorio-con-fran-maira/",
+   "published": "2026-10-23T22:54:15Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "internacional",
@@ -468,6 +639,24 @@
    ]
   },
   {
+   "category": "deportes",
+   "title": "Mientras Gago elogia cancha de Rancagua, U de Chile confirma otro estadio vs Antofagasta en Copa Chile",
+   "summary": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/23181112/PS_1194815-e1792789921685-1200x740.webp",
+   "source_url": "https://redgol.cl",
+   "sources": [
+    "RedGol"
+   ],
+   "coverages": [],
+   "link": "https://redgol.cl/udechile/mientras-gago-elogia-cancha-de-rancagua-u-de-chile-confirma-otro-estadio-vs-antofagasta-en-copa-chile",
+   "published": "2026-10-23T22:24:02Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
    "category": "internacional",
    "title": "Primer ministro británico aborda con Kast autodeterminación de Malvinas y cooperación militar",
    "summary": "",
@@ -495,7 +684,7 @@
    "link": "https://chefandhotel.cl/noticias/congreso-hotelero-2026-en-aysen-inversion-y-conectividad-marcaron-el-encuentro-de-la-hoteleria/",
    "published": "2026-10-23T22:10:30Z",
    "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "cultura",
@@ -1194,7 +1383,7 @@
    "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/ciencia/2026/10/23/primeros-habitantes-de-hawai-llegaron-en-canoa-desde-rapa-nui-cuando-europa-estaba-en-la-edad-media.shtml",
    "published": "2026-10-23T18:53:27Z",
    "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "nacional",
@@ -1300,7 +1489,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "economia",
@@ -1553,7 +1742,7 @@
    "link": "https://elpais.com/chile/2026-10-23/queda-en-libertad-la-mayoria-de-los-56-pederastas-a-los-que-el-gobierno-de-kast-les-rebajo-la-condena.html",
    "published": "2026-10-23T18:18:32Z",
    "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "economia",
@@ -1676,6 +1865,21 @@
   },
   {
    "category": "cultura",
+   "title": "Teletón confirma parrilla completa para su edición 2026: estos son los artistas que se tomarán la cruzada solidaria",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/VCK6KXKHXJCZFOC2DFFKLNSAGU.jpg?auth=f4f91385fb82d33b7d83c34486c39861a594ee4778bbf07bb16813212220a208&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/teleton-confirma-parrilla-completa-para-su-edicion-2026-estos-son-los-artistas-que-se-tomaran-la-cruzada-solidaria/",
+   "published": "2026-10-23T17:35:17Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
+   "category": "cultura",
    "title": "Rosalía se hace viral tras cita de la Dra. Ana María Polo en los Premios Billboard a la Música Latina",
    "summary": "",
    "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993897-rosalia-viral-cita-dra-ana-maria-polo-billboard-.jpg",
@@ -1775,6 +1979,36 @@
    "image_checked_at": "2026-10-23T22:06:26.073292Z"
   },
   {
+   "category": "nacional",
+   "title": "Allanamientos, detenidos y hasta avioneta incautada: la arremetida de la PDI y Fiscalía contra servicios de IPTV ilegales",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/K5ICYOICXNHNTM2ADPXULQ7X2E.jpg?auth=e4532abfe13d83164a0aff343cd8a8ee4f5e7d0b43c4d06f764908408b6e82ce&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/nacional/noticia/allanamientos-detenidos-y-hasta-avioneta-incautada-la-arremetida-de-la-pdi-y-fiscalia-contra-servicios-de-iptv-ilegales/",
+   "published": "2026-10-23T17:21:26Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
+   "category": "regiones",
+   "title": "¡Oficial! Duelo entre La U y Deportes Antofagasta por cuartos ya tiene programación",
+   "summary": "",
+   "image": "",
+   "source_url": "https://tntsports.cl",
+   "sources": [
+    "TNT Sports"
+   ],
+   "coverages": [],
+   "link": "https://tntsports.cl/copachile/Duelo-entre-La-U-y-Antofagasta-por-cuartos-Copa-Chile-Coca-Cola-Zero-Azucar-ya-tiene-programacion-20261023-0012.html",
+   "published": "2026-10-23T17:21:00Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
+  },
+  {
    "category": "politica",
    "title": "Vocero defiende actuar de Rabat por reducción de penas a abusadores y lo compara con gobierno anterior",
    "summary": "",
@@ -1788,6 +2022,21 @@
    "published": "2026-10-23T17:09:26Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "image_checked_at": "2026-10-24T04:41:41.941219Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Fernando Ortiz analiza a Palestino y lanza una advertencia antes del partido de Colo Colo",
+   "summary": "",
+   "image": "https://media.dalealbo.cl/wp-content/uploads/sites/14/2026/10/23140539/fernando-ortiz-liga-de-primera-colo-colo-palestino-e1792775161112-1200x740.webp",
+   "source_url": "https://dalealbo.cl",
+   "sources": [
+    "Dale Albo"
+   ],
+   "coverages": [],
+   "link": "https://dalealbo.cl/liga-de-primera/fernando-ortiz-analiza-a-palestino-y-lanza-una-advertencia-antes-del-partido-de-colo-colo",
+   "published": "2026-10-23T17:07:13Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "deportes",
@@ -1811,7 +2060,7 @@
    "category": "deportes",
    "title": "Vincent Kompany, entrenador del Bayern Múnich, ingresado tras colapsar durante un entrenamiento",
    "summary": "",
-   "image": "",
+   "image": "https://efe.com/wp-content/uploads/2026/10/vincent-kompany-hospital-entrenador-bayern-munich.webp",
    "source_url": "https://efe.com",
    "sources": [
     "EFE - Agencia de noticias"
@@ -1820,7 +2069,7 @@
    "link": "https://efe.com/deportes/2026-10-23/vincent-kompany-entrenador-bayern-munich-hospital/",
    "published": "2026-10-23T16:55:00Z",
    "first_seen": "2026-10-23T19:06:50Z",
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "internacional",
@@ -2512,6 +2761,21 @@
    "published": "2026-10-23T14:21:14Z",
    "first_seen": "2026-10-23T19:06:50Z",
    "image_checked_at": "2026-10-23T19:06:50.124924Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Tiroteo en Cisjordania ocupada: Netanyahu cancela actos de campaña y anuncia \"cierre total\"",
+   "summary": "",
+   "image": "https://static.dw.com/image/79739420_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/tiroteo-en-cisjordania-ocupada-netanyahu-cancela-actos-de-campa%C3%B1a-en-israel/a-79739210",
+   "published": "2026-10-23T14:03:28Z",
+   "first_seen": "2026-10-24T09:34:27Z",
+   "image_checked_at": "2026-10-24T09:34:27.603656Z"
   },
   {
    "category": "regiones",
@@ -3370,191 +3634,46 @@
    "link": "https://www.bbc.com/mundo/articles/cxg5j1d93993o?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-23T09:35:57Z",
    "first_seen": "2026-10-23T09:58:25Z"
-  },
-  {
-   "category": "salud-ciencia",
-   "title": "Columna de Ricardo Ruiz Escalona : Alumno perplejo: salud pública castigada pese a su buena evaluación",
-   "summary": "",
-   "image": "https://opinion.cooperativa.cl/opinion/imag/share.jpg?=20261024014155",
-   "source_url": "https://opinion.cooperativa.cl",
-   "sources": [
-    "Opinión - Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://opinion.cooperativa.cl/opinion/salud/alumno-perplejo-salud-publica-castigada-pese-a-su-buena-evaluacion/2026-10-23/062316.html",
-   "published": "2026-10-23T09:25:40Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "nacional",
-   "title": "A qué hora llueve hoy en Santiago y en qué momento será el “peak” de precipitaciones",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/O3YHFAETD5GZRG7FA7O6TRORTI.jpg?auth=fa38031a9bb2b87cf2e751898b75e86dd2630cc6331bf21e60f75483adb19e03&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/tendencias/noticia/a-que-hora-llueve-hoy-en-santiago-y-en-que-momento-sera-el-peak-de-precipitaciones/",
-   "published": "2026-10-23T09:02:00Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "De Brasil a Colombia, Perú y Chile: las acciones que miran los analistas para inversiones más agresivas",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.bloomberglinea.com",
-   "sources": [
-    "Bloomberg Línea"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNanc5VFI1QVg1cWF1enZWSm1pZ1VUWUo5dGM0VXJOMU1DU2ZGU3NwLU16RkdrY0Y4c0JoZXBHY09QODFZMGtWWDJUQkNCRjg5Q0VPbzh3M1pBTUlaTVhyZVlJcWJfOFFZMHdtUFAycG5hWmhIRmJ4aVhhSVN5SjNUS1BLTkRlNGJKSS1MRk5RcXJkelk0bF95RGJrN0VCMDFkeTgyWjVWR2JUOXRrQ3NMcnRRZm5RNDNrX0NDX3oxUndfU2l3ZHg0ME9qOEhRcXA1X2k0U3M5Y3JuWmNER29iU9IB9AFBVV95cUxOVGhiV0g2NzRKU0I5dzRCMHlJaHZQbVp2RlpGSVJpc2J2RVJMU2ptQTgwUlFkMGxKSTg2LUZPTE1PNEFjSnhPRG5RTTBLZ21ZX1FmeG5pRWNxYVgxNTRvR0tkNXhoUThLRVYwMmFtM1J0ZkpNWUl5a3oyZTEtdXRlZ2RkalZhdnJXMmU4SkU0Y2pBb1I4bjgwOG1vMmFaSjl6ZFM5b2FJZDRCUDUzOURnd2ZaVXd2cHNvU19qazFCWC15U2hicHIxcTFZWjZfVGRfR3ZsQUZEVVplSzBJblRVYWw5U3dGSURsams2UjFjaVJvdHNi?oc=5",
-   "published": "2026-10-23T09:00:00Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR",
-    "CL",
-    "CO",
-    "PE"
-   ]
-  },
-  {
-   "category": "internacional",
-   "title": "Tiroteo en Cisjordania ocupada: Netanyahu cancela actos de campaña y anuncia \"cierre total\"",
-   "summary": "",
-   "image": "https://static.dw.com/image/79739420_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/tiroteo-en-cisjordania-ocupada-netanyahu-cancela-actos-de-campa%C3%B1a-en-israel/a-79739210",
-   "published": "2026-10-23T08:11:19Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Cómo Trump está tratando de influir para que Bolsonaro gane en Brasil",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.elmostrador.cl",
-   "sources": [
-    "El Mostrador"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPN2FkbnQzaHpTYUJpVzZOVElZeTBHUDNjWGtjVXNyWWs5dGVXZjA2XzAzYWRQb1J2akdNUk5nR0wyU0dNXzhVYjk0NEhOMFZBcmNEa0FaQlpVNlhKMHlpNllGcElxVTE1bHVLMk1zMjRrVFFqc2lxUFQ4cEk0QWsxM1R0SzM0M3I3LVFVb2lGaUE5UEVxbzAzb2Jra3JNMkVXdEdMcDJJcTVRQ08wNlZzY0syTnVyVEl6UHBuRXI2MHUyZ1NNUUJZ?oc=5",
-   "published": "2026-10-23T08:00:02Z",
-   "first_seen": "2026-10-24T04:41:41Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "economia",
-   "title": "Fintual confirma creación de AFP y asegura que en el fondo E “se tomó un exceso de riesgo”",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261022/imag/foto_0000000620261022204636.jpg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/mercados/pensiones/fintual-confirma-creacion-de-afp-y-asegura-que-en-el-fondo-e-se-tomo-un",
-   "published": "2026-10-23T07:00:00Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "image_checked_at": "2026-10-23T14:58:08.350733Z"
-  },
-  {
-   "category": "politica",
-   "title": "Chile seguiría pegado en el 2%: proyección para el crecimiento del PIB de largo plazo no logra despegar",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261022/imag/foto_0000000320261022202041.jpg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/economia-y-politica/macro/chile-seguiria-pegado-en-el-2-proyeccion-para-el-crecimiento-del-pib-de",
-   "published": "2026-10-23T07:00:00Z",
-   "first_seen": "2026-10-23T14:58:08Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Los mejores sistemas de pensiones de América Latina en 2026: Chile lidera y Argentina queda última",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.bloomberglinea.com",
-   "sources": [
-    "Bloomberg Línea"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZVlkdlRGc01LOGF2N0V6QmxOdnpybXZ3bVpBTENIZ1AzaU9ESzVnbDIzeWFWOFpIYm14Qm0yQXJTa2EwR29hamZTYVZNeUdoQW5oYWVTNUNLcTRkQURxWjdXRmtzU2VldkcxNnQ4Mlk3RkJnYUpQRlUzU29QTU5fWXdMaEtiSmhGU3RJSHFtblNycHlGX19DaXVzaDhvcDJmRHRHTDFiSmwwRVVQQjVOQlU1SkYyZjVvaTFOTjVQRTRRM0ZYSzVHWEF4N1pjME16dHcyR9IB6AFBVV95cUxPSG45UzBtUXZFZlBVMGFEYTRiclA4U2pOSXNWX3lnVEZvdDhEd000MHZaQUF2MUp5c2IyNldpTXVsU3NsREU2Y1pjczFELUFrYUZWendYcmJBdklOWElMSXVNYlpZb1B6TktDNE10YmVhMHJKTDVFLW5teWl6NHRnNXBhNGdJWmVPc3kyTU9pWWNLNS04bjA2MEdGZjdPZkdhdE40aVNwejExMFU0RkJ4elFaQnhxcWRsOGQtaTJrZnN0QkJNRjVUZ2ZHbkgwVWh3a1FxS1JQVEVrSjhBaWdoX3kyQTNRZmlG?oc=5",
-   "published": "2026-10-23T07:00:00Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "AR",
-    "CL"
-   ]
-  },
-  {
-   "category": "internacional",
-   "title": "Macron anuncia restricciones a manifestaciones en Francia",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLTI4NDQ3U2ZXNmZEeGFjU0JGZERWanBJeU03bktFRTQ0V0FpQXpCWk94RVRkRkpEMDVOMDNWNDUxNllwNWVsbS1MTkphRHd2U0h5allmX0lybGVxUzNlRGM1RnFnd2RDSmNtRU1fcUNVRWN0Y1NKa0xpVlpjTUFkOUt1RnV0Z25Ta1FsZUNJcUdEZDQy?oc=5",
-   "published": "2026-10-23T06:44:52Z",
-   "first_seen": "2026-10-23T22:06:26Z"
-  },
-  {
-   "category": "internacional",
-   "title": "La geopolítica de las Malvinas",
-   "summary": "",
-   "image": "",
-   "source_url": "https://elordenmundial.com",
-   "sources": [
-    "El Orden Mundial"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54MVJrcHQxalJSSjdGeWpPaUp4RU5sSDBzVWZIWmJWaHl6NzI3dmc2LXVhLU1XSzM5cTV2czVMVTdhQWtaUHUzSGRrQTlPTkVrNi1IMjJ2Yy01cFMxUDQ1Q3paWnJjYzZSMFRaU1VBUUY5MG1fUC1nbE9R?oc=5",
-   "published": "2026-10-23T06:00:20Z",
-   "first_seen": "2026-10-24T04:33:25Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Atemorizada por Bolsonaro, la izquierda de Brasil usa las redes y las calles para impulsar a Lula",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.infobae.com",
-   "sources": [
-    "Infobae"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNTFNNYTUtcGpySDQyR2c0SUs0al82RUhObzNsLUJTbDFIb2Rvb1R3Y09yRFMwblNTNm84UkxraThva3QteXNrUXlWc24wdE5uaV9aa3dvVHB4ak1qZGxaSUh2V3RJbHE3ZWFvamJ1RzQ3WGVOR3VwR0tuTXJQcUxrdjhleDU3WUdPTzJOV3gzWGVPWlByQkNLUlcwa3lQUk5zZGNXUWVJRWgzNmdmR3c1MjR6ZkRwOExXc29ZQk5yb0kzLTl0YXA5WXhmZ1pHWjI4X1NDbWd2ZkNBZkpmNkl5SE1CemFVWnJ5anlB0gGGAkFVX3lxTE91UWx3MHpBSERqeWpJOGozNlhDc19iakxIZFpZWWtoVUx4UlkwYjh4cHRYMjBpUElqZTl5aWttakJPT0hXV1d0bkhWMDhreWRPR081WkpNQXNPX0tTVkVGZFY4b1duSjhHa2gzbzF4UERzYWgtRFR1OWtkQVJFWE5WUUU3OHNWOVMtaW5YS3VpMDE4dnpzQm9JWWdfcloycmI0LVpmQ1lCRzhoazJGdjVMdDRvZHJzelBwNklwVWxiSHB6RzBRaS0tYy02eUlRc0NsRHQwSG5GbDM2OU40aUlhZkQyMHNYVmpSdFZTWlR0Q2ZFdUtpZDI4ZkN0bWk0bmpwSWtleFE?oc=5",
-   "published": "2026-10-23T05:51:00Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "coverage_countries": [
-    "BR"
-   ]
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Mi hermano compró una brillante cápsula azul sin saber que era cesio-137 y desató el mayor accidente radiactivo de la historia de mi país",
+   "link": "https://www.bbc.com/mundo/articles/cm5ynlx21z64o?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-24T08:49:02Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "El Congreso Internacional de Startups Indoamericano reunirá en Ecuador a referentes mundiales de la innovación, la tecnología y la inversión",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOLXd6N084QVZTSGFrMFVPZnFYTkJvS24zWHo2UkVnOXIwVTZTd0lXQmVaUjliMWhDRk93MUtYOG5lQnlXd2xna0p0QURGYnFlQk14R3k0UmxXMEJWTUVpMVBFM3NnUU11bE01UjJYemUtOVhQR2dtWk00WkpUb2tXMkVsQlNKdkh5eGZmcmtwdTlPSHJRSWdhRUlQd3ZxUTltZHgtN2duRUV1empNV1dyNlZ4ZkVVZVdtVHVqdU5LZkpGYnNBem1BU0Z2d2dXUElqS3Q2aVFCaURRaFBYeWhPZ0xrSHVKVFF5Z1hOSkp5YXpnczJLQ0RQRkhFVlJFTnlJelVveQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-24T08:14:00Z",
+   "sources": [
+    "Diario Siglo XXI"
+   ]
+  },
+  {
+   "title": "El misterioso órgano de los cachalotes que les da fuerza para hundir barcos",
+   "link": "https://www.bbc.com/mundo/articles/crkg794zyjd5o?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-24T07:58:05Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Arrestan a una persona tras el incendio en el refugio \"Nido del Águila\" de Adolf Hitler",
+   "link": "https://www.bbc.com/mundo/articles/ck20r82dnlr1o?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-24T06:29:54Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
   {
    "title": "Fatima El Mansouri: cómo la primera mujer en liderar el gobierno de Marruecos está atrapada entre el rey, los clérigos y el feminismo",
    "link": "https://www.bbc.com/mundo/articles/c39wzvkynkj9o?at_medium=RSS&at_campaign=rss",
@@ -3598,6 +3717,15 @@
    "published": "2026-10-24T03:03:33Z",
    "sources": [
     "El Ecosistema Startup"
+   ]
+  },
+  {
+   "title": "Tras años de dudas, Tonka Tomicic habría solicitado el divorcio de Parived por cese de convivencia",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/24/tras-anos-de-dudas-tonka-tomicic-habria-solicitado-el-divorcio-de-parived-por-cese-de-convivencia.shtml",
+   "category": "cultura",
+   "published": "2026-10-24T03:01:59Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -3652,6 +3780,24 @@
    "published": "2026-10-24T02:02:30Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Pelea en la derecha por rebajas de penas: Squella lanza dardo a Larraín con alusión a Paul Schäfer",
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/23/pelea-en-la-derecha-por-rebajas-de-penas-squella-lanza-dardo-a-larrain-con-alusion-a-paul-schafer/",
+   "category": "nacional",
+   "published": "2026-10-24T01:51:50Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
+   "title": "Hito en Alto Mando del Ejército 2027: María Soledad Acevedo se convierte en la primera mujer en ascender al grado de general",
+   "link": "https://www.latercera.com/nacional/noticia/hito-en-alto-mando-del-ejercito-2027-maria-soledad-acevedo-se-convierte-en-la-primera-mujer-en-ascender-al-grado-de-general/",
+   "category": "nacional",
+   "published": "2026-10-24T01:41:35Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3727,6 +3873,15 @@
    ]
   },
   {
+   "title": "Milei celebra su sobreseimiento en causa por caso $LIBRA: “¿Y ahora quién me compensa?”",
+   "link": "https://www.elmostrador.cl/noticias/mundo/2026/10/23/milei-celebra-su-sobreseimiento-en-causa-por-caso-libra-la-verdad-termina-imponiendose/",
+   "category": "tecnologia",
+   "published": "2026-10-23T23:44:03Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
    "title": "Chile: rebaja de condenas a 56 pederastas enfrenta al Gobierno de Kast con el Poder Judicial",
    "link": "https://www.france24.com/es/am%C3%A9rica-latina/20261023-chile-rebaja-de-condenas-a-56-pederastas-enfrenta-al-gobierno-de-kast-con-el-poder-judicial",
    "category": "politica",
@@ -3772,12 +3927,30 @@
    ]
   },
   {
+   "title": "¿Se esconde McLaren? Esto dicen las tandas largas de Estados Unidos",
+   "link": "https://soymotor.com/f1/noticias/se-esconde-mclaren-esto-dicen-las-tandas-largas-de-estados-unidos",
+   "category": "deportes",
+   "published": "2026-10-23T23:08:01Z",
+   "sources": [
+    "SoyMotor.com"
+   ]
+  },
+  {
    "title": "Así quedaría la tabla de la Primera B si se aplican sanciones a San Marcos y Puerto Montt: vuelco total",
    "link": "https://www.adnradio.cl/2026/10/23/asi-quedaria-la-tabla-de-la-primera-b-si-se-aplican-sanciones-a-san-marcos-y-puerto-montt-vuelco-total/",
    "category": "deportes",
    "published": "2026-10-23T23:05:43Z",
    "sources": [
     "ADN Radio"
+   ]
+  },
+  {
+   "title": "“No estamos en absoluto de acuerdo”: Padre de Mayerson Zapata rompe el silencio tras acuerdo reparatorio con Fran Maira",
+   "link": "https://www.chilevision.cl/noticias/show/no-estamos-en-absoluto-de-acuerdo-padre-de-mayerson-zapata-rompe-el-silencio-tras-acuerdo-reparatorio-con-fran-maira/",
+   "category": "cultura",
+   "published": "2026-10-23T22:54:15Z",
+   "sources": [
+    "Chilevisión"
    ]
   },
   {
@@ -3805,6 +3978,15 @@
    "published": "2026-10-23T22:31:57Z",
    "sources": [
     "CNN Brasil"
+   ]
+  },
+  {
+   "title": "Mientras Gago elogia cancha de Rancagua, U de Chile confirma otro estadio vs Antofagasta en Copa Chile",
+   "link": "https://redgol.cl/udechile/mientras-gago-elogia-cancha-de-rancagua-u-de-chile-confirma-otro-estadio-vs-antofagasta-en-copa-chile",
+   "category": "deportes",
+   "published": "2026-10-23T22:24:02Z",
+   "sources": [
+    "RedGol"
    ]
   },
   {
@@ -4574,6 +4756,15 @@
    ]
   },
   {
+   "title": "Teletón confirma parrilla completa para su edición 2026: estos son los artistas que se tomarán la cruzada solidaria",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/teleton-confirma-parrilla-completa-para-su-edicion-2026-estos-son-los-artistas-que-se-tomaran-la-cruzada-solidaria/",
+   "category": "cultura",
+   "published": "2026-10-23T17:35:17Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Rosalía se hace viral tras cita de la Dra. Ana María Polo en los Premios Billboard a la Música Latina",
    "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQM2tGX3ROTWZsZE5FNmRoVEluZnZXNTJUd2NzN3RYaXJhQWNvQlAyN1F4dnFHNTVMNDA3cVFKc3hJamVNckM4TUVNcUhNT0NHdVQwWVR1MXEzclRGWWtEY0xlamJZUmw2OXMwbFdyWFhRV1lGLVE4LXV5WGRZTldfQm5CdzI1QW5XWV90NGFfX0pXMEJWM1JyRXdvNTdLZHI2ZFJFY2ZTWUt5Y1FqeWJHSWRoaVRrajNWZGNNVVY1YW52ZTNicWZqLUtFTUsyeGIzTVlvMVc0OG8zLVktUzFzQWkxU1hZUEtzNWhHcUFUNUlXVTE1OUY4WGYxODRsR1RnQnh2RHAzMjNaei1seXNQZVJUQ2xTakNXcUlmSGdR?oc=5",
    "category": "cultura",
@@ -4646,6 +4837,24 @@
    ]
   },
   {
+   "title": "Allanamientos, detenidos y hasta avioneta incautada: la arremetida de la PDI y Fiscalía contra servicios de IPTV ilegales",
+   "link": "https://www.latercera.com/nacional/noticia/allanamientos-detenidos-y-hasta-avioneta-incautada-la-arremetida-de-la-pdi-y-fiscalia-contra-servicios-de-iptv-ilegales/",
+   "category": "nacional",
+   "published": "2026-10-23T17:21:26Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "¡Oficial! Duelo entre La U y Deportes Antofagasta por cuartos ya tiene programación",
+   "link": "https://tntsports.cl/copachile/Duelo-entre-La-U-y-Antofagasta-por-cuartos-Copa-Chile-Coca-Cola-Zero-Azucar-ya-tiene-programacion-20261023-0012.html",
+   "category": "regiones",
+   "published": "2026-10-23T17:21:00Z",
+   "sources": [
+    "TNT Sports"
+   ]
+  },
+  {
    "title": "Vocero defiende actuar de Rabat por reducción de penas a abusadores y lo compara con gobierno anterior",
    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNaVBaTWxtMkdWX2h3Nmk0U2J6YUkxOXZ3LXJFaTc5M3UyNGZ5OGVkUlZoMGNUcUxZZ1FYNk94ZU5VbGV1RVMxbzVDbG5BcGZaRlR5S1ZWQmx6Z0tkbWtuV2p6NEhSNDV0cUNjbkhkN3J3ZklBUGE3X1BUdmZzbVJZdHdURWFISldCSjExd21JZFFETDhoejNRSFdOT2g3X2ZpR3I5ZlNMZ3BpY0tyWlMxU0NZVlQ4Smp4ci1Ha0tFWmk3Y3RPaC1YUGJ3MjM1TTZFc29CWUlmcGE5cncxYUZQdTF5V1JscnR4SzVvLXgyM0RzdGl2Qjk5QnpNeXdsTEk?oc=5",
    "category": "politica",
@@ -4661,6 +4870,15 @@
    "published": "2026-10-23T17:09:26Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Fernando Ortiz analiza a Palestino y lanza una advertencia antes del partido de Colo Colo",
+   "link": "https://dalealbo.cl/liga-de-primera/fernando-ortiz-analiza-a-palestino-y-lanza-una-advertencia-antes-del-partido-de-colo-colo",
+   "category": "deportes",
+   "published": "2026-10-23T17:07:13Z",
+   "sources": [
+    "Dale Albo"
    ]
   },
   {
