@@ -1,6 +1,54 @@
 {
- "actualizado": "2026-10-24T18:04:22Z",
+ "actualizado": "2026-10-24T19:31:07Z",
  "noticias": [
+  {
+   "category": "regiones",
+   "title": "Aprovechará el parón por la fecha FIFA: Colo Colo jugará un amistoso ante Racing en Concepción",
+   "summary": "",
+   "image": "https://cdn.prensafutbol.cl/wp-content/uploads/2025/05/colo-colo-v-racing-club-copa-conmebol-libertadores-2025-3.jpg",
+   "source_url": "https://www.prensafutbol.cl",
+   "sources": [
+    "Prensa Fútbol"
+   ],
+   "coverages": [],
+   "link": "https://www.prensafutbol.cl/colo-colo-amistoso-racing-concepcion-fecha/",
+   "published": "2026-10-24T18:46:23Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
+   "category": "politica",
+   "title": "Chile entrará como \"observador\" a la coalición anticárteles de Trump",
+   "summary": "",
+   "image": "https://www.cooperativa.cl/noticias/site/artic/20261024/imag/foto_0000000120261024140543.png",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa"
+   ],
+   "coverages": [],
+   "link": "https://www.cooperativa.cl/noticias/pais/relaciones-exteriores/ee-uu/chile-entrara-como-observador-a-la-coalicion-anticarteles-de-trump/2026-10-24/140543.html",
+   "published": "2026-10-24T18:14:00Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Tal como en España y Francia: italianos marchan contra el costo de la vida y su Gobierno",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994753-italia-1200x633.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/24/tal-como-en-espana-y-francia-italianos-marchan-contra-el-costo-de-la-vida-y-su-gobierno.shtml",
+   "published": "2026-10-24T17:48:14Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
   {
    "category": "regiones",
    "title": "Tabla de la Liga de Primera: La Serena derrota a Concepción y se ilusiona con Sudamericana",
@@ -15,6 +63,21 @@
    "published": "2026-10-24T17:36:34Z",
    "first_seen": "2026-10-24T18:04:22Z",
    "image_checked_at": "2026-10-24T18:04:22.848275Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Caos en organización del Festival de Viña: negociación con artista internacional se habría caído",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/KVIYT6PY2NHWBKQIFWRUJP7CPQ.jpg?auth=fe0beba55777edf5c9b9903db1c819cd506f5ad4c5fa0e378bb9878b6df84451&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/espectaculos/noticia/caos-en-organizacion-del-festival-de-vina-negociacion-con-artista-internacional-se-habria-caido/",
+   "published": "2026-10-24T17:12:47Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "nacional",
@@ -71,6 +134,36 @@
    "first_seen": "2026-10-24T18:04:22Z"
   },
   {
+   "category": "nacional",
+   "title": "¿Guardamos el paraguas? Pronostican pausa en las lluvias para la próxima semana en algunas zonas",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994727-sol.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/24/guardamos-el-paraguas-pronostican-pausa-en-las-lluvias-para-la-proxima-semana-y-alza-en-temperaturas.shtml",
+   "published": "2026-10-24T16:38:45Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Duro golpe a Arturo Vidal: filtran propuesta para que renueve en Colo Colo, pero con importante reducción de sueldo",
+   "summary": "",
+   "image": "https://www.lacuarta.com/resizer/v2/EKQKLHEJJBFN5CBQAGUHU6VXXM.jpg?auth=e88a449ae895438f852007677703a578ad1e3233e382b7a5468770530f266fd1&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
+   "sources": [
+    "La Cuarta"
+   ],
+   "coverages": [],
+   "link": "https://www.lacuarta.com/deportes/noticia/duro-golpe-a-arturo-vidal-filtran-propuesta-para-que-renueve-en-colo-colo-pero-con-importante-reduccion-de-sueldo/",
+   "published": "2026-10-24T16:36:29Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "Milei arremete contra periodistas argentinos por caso $LIBRA: \"se tienen que quemar en la hoguera\"",
    "summary": "",
@@ -86,6 +179,24 @@
    "metadata_only": true,
    "coverage_countries": [
     "AR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Lula diz estar confiante de que vencerá eleição porque 'brasileiros não podem levar um miliciano para o Palácio do Planalto'",
+   "summary": "",
+   "image": "",
+   "source_url": "https://g1.globo.com",
+   "sources": [
+    "G1"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNalE2R1ZwY0hJUmEzeTA4d2xuTURvdTZ2dU02enRQMTVDc28yOGg0d2xaUTkxSTM3OU1Kak9penhTanMzWkpyVXN5WmtzQlVWb0NMa2dMa0ExX0VtX2NvcHVVWTdOZFlHQi1QZWx2cmNCVG1ZemJ0ZHJmR1dQTzVpRVc4bDlCZk5uYjdXSGFFTllvQmRLcWfSAaQBQVVfeXFMT1VjMmJiUHFlX3FmMlhPWUxyaE83OGVSanNaSWlDclpFT1QzTmxTRnJ5TFp3Vjd5dDRaazMtSkZwRmtQMmV0bmI0Wm9oamVHZ2ttOWlfMC1teEp5cWVKaVZLamRnSDhEdFZkcXF6eURhRzZFWXVZVkRiUzVEeFpVVGxCc05jd3pFT21DQUhpTGp0WWI4NlBJcnJhVFI0Rk1VS213a08?oc=5",
+   "published": "2026-10-24T16:06:52Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
    ]
   },
   {
@@ -123,6 +234,21 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "nacional",
+   "title": "Ramírez (UDI) también emplaza a Squella por dichos contra exministro Larraín y sube tensión oficialista por rebaja de penas",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/KMSHM7GBCBEKBEA7FIR7UMCKWA.JPG?auth=022aed9be1a875f92a5443a0d4b102671aa9e448eaf205eb72c5000fef9132b4&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/politica/noticia/ramirez-udi-tambien-emplaza-a-squella-por-dichos-contra-exministro-larrain-y-sube-tension-oficialista-por-rebaja-de-penas/",
+   "published": "2026-10-24T15:59:41Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "internacional",
@@ -224,6 +350,21 @@
    "image_checked_at": "2026-10-24T18:04:22.848275Z"
   },
   {
+   "category": "deportes",
+   "title": "“Yo tengo un prestigio en el fútbol, no como tú, que ni siquiera tienes el título de periodista”",
+   "summary": "",
+   "image": "https://img.asmedia.epimg.net/resizer/v2/NPOKHFCESRFRXITPG3LRIVZHKM.jpg?auth=779126e2f5403958312fe459bf6369f3f7111576809e18699804c24f15aab114&width=1472&height=828&focal=587%2C242",
+   "source_url": "https://chile.as.com",
+   "sources": [
+    "AS Chile"
+   ],
+   "coverages": [],
+   "link": "https://chile.as.com/futbol/yo-tengo-un-prestigio-en-el-futbol-no-como-tu-que-ni-siquiera-tienes-el-titulo-de-periodista-f202610-n/",
+   "published": "2026-10-24T14:42:29Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
    "category": "cultura",
    "title": "Reportan muerte del aclamado novelista japonés Ryu Murakami a los 74 años",
    "summary": "",
@@ -275,7 +416,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-24T14:35:39.340258Z"
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "nacional",
@@ -359,6 +500,24 @@
    ]
   },
   {
+   "category": "latinoamerica",
+   "title": "Brasil: tres claves del duelo final entre Flávio Bolsonaro y Lula da Silva",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSk54WW5nS2hCdDBGV2Q1RDJHc0ZwTmEwcGI3UERya1daM0tFRVIxb1pUZklvSjU5WmdrV1Jrbmh3bEJOOXVmU1pvdk1zVk5qcjVWNXA4dms4SE8ybXFDdUJDeXMxa1QxN1NhNHQwd2RYZ1RzY2oyd18tYlJ4YzJHdktVLXhSQTZqYmVIeUtuTGUzcThsVldtZzFoWGFDRmU2TU9hVndCaEdwN2xzNUZ6ZjU3VlM5ZWJzOWRHMFNxcHpTMEY2bGc?oc=5",
+   "published": "2026-10-24T14:00:36Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
    "category": "regiones",
    "title": "Pronóstico del tiempo en Valparaíso de este 25 de octubre: domingo parte despejado, pero las nubes ganarán terreno",
    "summary": "",
@@ -371,7 +530,7 @@
    "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-25-de-octubre-domingo-parte-despejado-p",
    "published": "2026-10-24T14:00:05Z",
    "first_seen": "2026-10-24T14:27:30Z",
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "deportes",
@@ -452,6 +611,21 @@
    "image_checked_at": "2026-10-24T14:27:30.848093Z"
   },
   {
+   "category": "tecnologia",
+   "title": "La inédita medida del Borussia Dortmund para que sus hinchas no usen el celular en el estadio",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/ILJ2FOXMTRBKXCV6HX7X5OFU74.jpg?auth=cd91078ee1595f49591011517d211cac987f42c17cbeb1a91530f8a4b17f672a&height=630&width=1200&focal=2492%2C1254",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/el-deportivo/noticia/la-inedita-medida-del-borussia-dortmund-para-que-sus-hinchas-no-usen-el-celular-en-el-estadio/",
+   "published": "2026-10-24T13:19:03Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
    "category": "deportes",
    "title": "Flamengo pide los puntos ante Estudiantes de La Plata y clasificar por escritorio a la final de la Copa Libertadores",
    "summary": "",
@@ -465,6 +639,21 @@
    "published": "2026-10-24T13:18:34Z",
    "first_seen": "2026-10-24T18:04:22Z",
    "image_checked_at": "2026-10-24T18:04:22.848275Z"
+  },
+  {
+   "category": "regiones",
+   "title": "DETIENEN EN PUCÓN AL ÚLTIMO INTEGRANTE DE PELIGROSA BANDA DE ENCERRONAS EN LA ARAUCANÍA",
+   "summary": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/detienen-en-pucon-al-ultimo-integrante-de-peli.jpg",
+   "source_url": "https://araucanianoticias.cl",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ],
+   "coverages": [],
+   "link": "https://araucanianoticias.cl/2026/detienen-en-pucon-al-ultimo-integrante-de-peligrosa-banda-de-encerronas-en-la-araucania/1024317768",
+   "published": "2026-10-24T13:17:39Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "cultura",
@@ -515,7 +704,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "latinoamerica",
@@ -567,6 +756,24 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "nacional",
+   "title": "Temblor hoy, sábado 24 en Chile: consulta epicentro y magnitud",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/WJVZ4RZ2GVAFNLSDARBLUVBWJA.png?auth=7a114d5945e0d34ed544719bc7a5c07e3e9178c8069b1a79187db905b3eeea27&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/servicios/noticia/temblor-hoy-sabado-24-en-chile-consulta-epicentro-y-magnitud/",
+   "published": "2026-10-24T12:40:25Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "internacional",
@@ -828,6 +1035,21 @@
    "first_seen": "2026-10-24T09:34:27Z"
   },
   {
+   "category": "internacional",
+   "title": "Francia desplegará más de 70.000 policías para evitar nuevos disturbios",
+   "summary": "",
+   "image": "https://static.dw.com/image/79692287_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/francia-desplegar%C3%A1-m%C3%A1s-de-70000-polic%C3%ADas-para-evitar-nuevos-disturbios/a-79747260",
+   "published": "2026-10-24T08:46:09Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "El Congreso Internacional de Startups Indoamericano reunirá en Ecuador a referentes mundiales de la innovación, la tecnología y la inversión",
    "summary": "",
@@ -948,7 +1170,8 @@
    "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994545-loro-coiron.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "El Mostrador"
    ],
    "coverages": [],
    "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/24/muere-thierry-defert-loro-coiron-el-artista-frances-que-retrato-la-vida-de-valparaiso.shtml",
@@ -1059,7 +1282,7 @@
    "category": "deportes",
    "title": "Duro golpe a San Luis de Quillota: un nuevo papelón sacude al fútbol chileno",
    "summary": "",
-   "image": "",
+   "image": "https://img.asmedia.epimg.net/resizer/v2/YZLITV5DEJBL7N4HUVJB6QSMQ4.jpg?auth=5c504a8ae65e3ddc62822c2f8fa0a8d6e63d99905d8fd47fbc4ba4dfc7b298b1&width=1472&height=828&focal=2612%2C1111",
    "source_url": "https://chile.as.com",
    "sources": [
     "AS Chile"
@@ -1071,7 +1294,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "latinoamerica",
@@ -1446,7 +1669,7 @@
    "link": "https://www.france24.com/es/am%C3%A9rica-latina/20261023-chile-rebaja-de-condenas-a-56-pederastas-enfrenta-al-gobierno-de-kast-con-el-poder-judicial",
    "published": "2026-10-23T23:42:00Z",
    "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T14:27:30.848093Z",
+   "image_checked_at": "2026-10-24T19:31:07.556450Z",
    "coverage_countries": [
     "CL"
    ]
@@ -1693,7 +1916,7 @@
    "link": "https://chefandhotel.cl/noticias/congreso-hotelero-2026-en-aysen-inversion-y-conectividad-marcaron-el-encuentro-de-la-hoteleria/",
    "published": "2026-10-23T22:10:30Z",
    "first_seen": "2026-10-24T04:33:25Z",
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "cultura",
@@ -1832,6 +2055,24 @@
    "published": "2026-10-23T21:40:14Z",
    "first_seen": "2026-10-24T04:33:25Z",
    "image_checked_at": "2026-10-24T04:33:25.580080Z"
+  },
+  {
+   "category": "politica",
+   "title": "U. de Chile aportará evidencia científica para elaborar la nueva Política Nacional de Envejecimiento",
+   "summary": "",
+   "image": "https://uchile.cl/dam/jcr:4ed70048-a922-4f93-963d-6d0547499cba/CARRUSEL-Senama.jpg",
+   "source_url": "https://uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "coverages": [],
+   "link": "https://uchile.cl/noticias/246242/u-de-chile-y-ministerio-de-desarrollo-social-y-familia-firman-acuerdo",
+   "published": "2026-10-23T21:38:56Z",
+   "first_seen": "2026-10-24T19:31:07Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   },
   {
    "category": "cultura",
@@ -2304,654 +2545,43 @@
    ],
    "coverages": [],
    "link": "https://artes.uchile.cl/noticias/246269/u-de-chile-realizara-el-1er-congreso-de-terapias-de-las-artes",
-   "published": "2026-10-23T19:30:00Z",
-   "first_seen": "2026-10-23T22:06:26Z",
+   "published": "2026-10-23T19:35:45Z",
+   "first_seen": "2026-10-24T19:31:07Z",
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Soldado ucraniano amputó su propio pie para sobrevivir y fue rescatado por dron tras resistir 500 días",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994092-kostiantyn-vlasenko-ucrania.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/23/soldado-ucraniano-amputo-su-propio-pie-para-sobrevivir-y-fue-rescatado-por-dron-tras-resistir-500-dias.shtml",
-   "published": "2026-10-23T19:22:06Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Francia desplegará más de 70.000 policías para evitar nuevos disturbios",
-   "summary": "",
-   "image": "https://static.dw.com/image/79692287_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/francia-desplegar%C3%A1-m%C3%A1s-de-70000-polic%C3%ADas-para-evitar-nuevos-disturbios/a-79747260",
-   "published": "2026-10-23T19:17:25Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "politica",
-   "title": "Chile supera las 2.000 expulsiones de extranjeros en 2026: 1.704 se concretaron bajo el actual Gobierno",
-   "summary": "",
-   "image": "https://media.cnnchile.com/2026/10/DSC02957-e1776375213561.jpg__1440x2000_q70_subsampling-2-768x553.jpg",
-   "source_url": "https://www.cnnchile.com",
-   "sources": [
-    "CNN Chile"
-   ],
-   "coverages": [],
-   "link": "https://www.cnnchile.com/pais/chile-supera-las-2-000-expulsiones-de-extranjeros-en-2026-1-704-se-concretaron-bajo-el-actual-gobierno/",
-   "published": "2026-10-23T19:14:15Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Avengers Doomsday estrena avance en la Serie Mundial 2026: a qué hora comienza y dónde verlo",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994070-avengers.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/23/avengers-doomsday-estrena-avance-en-la-serie-mundial-2026-a-que-hora-comienza-y-donde-verlo.shtml",
-   "published": "2026-10-23T19:13:41Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "salud-ciencia",
-   "title": "“Ozempic genérico” en Chile: ¿Qué tan comparable es con el original y qué considerar antes de usarlo?",
-   "summary": "",
-   "image": "https://portalredsalud.cl/wp-content/uploads/2026/10/Ozempic-generico-en-Chile-¿Que-tan-comparable-es-con-el-original-y-que-considerar-antes-de-usarlo.jpg",
-   "source_url": "https://portalredsalud.cl",
-   "sources": [
-    "Portal Red Salud"
-   ],
-   "coverages": [],
-   "link": "https://portalredsalud.cl/2026/10/23/ozempic-generico-en-chile-que-tan-comparable-es-con-el-original-y-que-considerar-antes-de-usarlo/",
-   "published": "2026-10-23T19:06:14Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "politica",
-   "title": "U. de Chile aportará evidencia científica para elaborar la nueva Política Nacional de Envejecimiento",
-   "summary": "",
-   "image": "https://uchile.cl/dam/jcr:19b412f8-73be-42f8-b63d-6640d6a4a96d/Foto%20portada.jpg",
-   "source_url": "https://uchile.cl",
-   "sources": [
-    "Universidad de Chile"
-   ],
-   "coverages": [],
-   "link": "https://uchile.cl/noticias/246265/uchile-aportara-para-elaborar-la-nueva-politica-nacional-de-envejecimiento",
-   "published": "2026-10-23T19:01:07Z",
-   "first_seen": "2026-10-23T19:06:50Z",
-   "image_checked_at": "2026-10-23T19:06:50.124924Z",
-   "coverage_countries": [
-    "CL"
-   ]
-  },
-  {
-   "category": "economia",
-   "title": "Dólar salta $ 10 este viernes y cierra la semana en máximos desde abril de 2025 por el incansable rally del petróleo",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261023/imag/foto_0000004820261023080403/grafico_dolar.png",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/mercados/bolsa-monedas/dolar-hoy-ddc9m",
-   "published": "2026-10-23T19:00:00Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Nuevo golpe para Francisca Crovetto: falleció el entrenador que marcó sus primeros pasos en el tiro",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994093-francisca-crovetto-entrenador-muerte.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/deportes/mas-deportes/2026/10/23/nuevo-golpe-para-francisca-crovetto-fallecio-el-entrenador-que-marco-sus-primeros-pasos-en-el-tiro.shtml",
-   "published": "2026-10-23T18:58:38Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "\"Primer caso de este calibre\": descubren que premiada novela peruana fue escrita 99% con IA",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994043-primer-caso-calibre-descubren-premiada-novela-peruana-escrita-99-ia-.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/artes-y-cultura/libros/2026/10/23/primer-caso-de-este-calibre-descubren-que-premiada-novela-peruana-fue-escrita-99-con-ia.shtml",
-   "published": "2026-10-23T18:57:32Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z",
-   "coverage_countries": [
-    "PE"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "\"Primer caso de este calibre\": descubren que premiada novela peruana fue escrita 99% con IA",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPWGc3T0owN3R0bi1vTUZReWtILTkwUjlCYmtSNDVuS1VKcmtXTXpCVW1oNVBVSlZUVTFuUlZrZ2V1SVEtVldmNmhuMkowREdNUDFIN2hSUGJVZlltQ0ZzX2dtVE01Ni12OFVraFU5a214ZlVTbkx1MUNKYjFNSGowdUJ5SkxaOEJDSjZDd3ZGOWktNVdxbFZ1eG1WeWFoaWNWM1FaWHRaSlotN0lfNGp6WFNZUTh6NkxHVHFKelo4WUF5ZmhxekV0YXhRcHhxSWlrbmF1UmRuMTNIbk12S0FLSTd0eDBSTDd1aWd0TXNoT0tVOEdTbGc?oc=5",
-   "published": "2026-10-23T18:57:32Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "PE"
-   ]
-  },
-  {
-   "category": "cultura",
-   "title": "“No la dejaba tomar agua”: Revelan detalles del control de Parived sobre Tonka y cuentan por qué aún no están divorciados",
-   "summary": "",
-   "image": "https://www.lacuarta.com/resizer/v2/A2X5YNJDPZHFPCDQN46IQTTLJQ.jpg?auth=a415077641027a824ccc09c83d14366bbbac30b0f236c3a1d9b14ff2f947bc28&height=630&width=1200&smart=true",
-   "source_url": "https://www.lacuarta.com",
-   "sources": [
-    "La Cuarta"
-   ],
-   "coverages": [],
-   "link": "https://www.lacuarta.com/espectaculos/noticia/no-la-dejaba-tomar-agua-revelan-detalles-del-control-de-parived-sobre-tonka-y-cuentan-por-que-aun-no-estan-divorciados/",
-   "published": "2026-10-23T18:57:31Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Primeros habitantes de Hawái llegaron en canoa desde Rapa Nui cuando Europa estaba en la Edad Media",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994042-no-es-un-mito-estudio-senala-que-los-primeros-habitantes-de-hawai-llegaron-en-canoa-desde-rapa-nui.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/ciencia/2026/10/23/estudio-en-prestigiosa-revista-cientifica-revela-la-conexion-genetica-entre-rapa-nui-y-hawai.shtml",
-   "published": "2026-10-23T18:53:27Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Primeros habitantes de Hawái llegaron en canoa desde Rapa Nui cuando Europa estaba en la Edad Media",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/ciencia/2026/10/23/primeros-habitantes-de-hawai-llegaron-en-canoa-desde-rapa-nui-cuando-europa-estaba-en-la-edad-media.shtml",
-   "published": "2026-10-23T18:53:27Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Brasil apunta a cobrar fuerte IVA al salmón y levanta alertas en la industria chilena",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994063-brasil-podria-empezara-cobrar-fuerte-iva-al-salmon-chileno-y-levanta-alertas-en-la-industria.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/23/brasil-apunta-a-cobrar-fuerte-iva-al-salmon-y-levanta-alertas-en-la-industria-chilena.shtml",
-   "published": "2026-10-23T18:50:38Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z",
-   "coverage_countries": [
-    "BR",
-    "CL"
-   ]
-  },
-  {
-   "category": "politica",
-   "title": "Qué dijo el Gobierno sobre el eventual ingreso de Chile a la Coalición contra los Carteles de Trump",
-   "summary": "",
-   "image": "https://s.t13.cl/sites/default/files/styles/manualcrop_850x475/public/t13/field-imagen/2026-10/1792780602.jpg.jpeg?itok=_0to4Qro",
-   "source_url": "https://www.t13.cl",
-   "sources": [
-    "Teletrece"
-   ],
-   "coverages": [],
-   "link": "https://www.t13.cl/noticia/politica/que-dijo-gobierno-sobre-eventual-ingreso-chile-coalicion-contra-carteles-trump-23-10-2026",
-   "published": "2026-10-23T18:50:00Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T04:33:25.580080Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Coalición contra Cárteles: las dudas de Chile por ofensiva de Trump y las garantías que ofrece EEUU",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993508-trump-eeuu.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/10/23/coalicion-contra-carteles-las-dudas-de-chile-por-ofensiva-de-trump-y-las-garantias-que-ofrece-eeuu.shtml",
-   "published": "2026-10-23T18:48:40Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z",
-   "coverage_countries": [
-    "CL"
-   ]
-  },
-  {
-   "category": "internacional",
-   "title": "\"Eres una horrible reporterilla\": Trump vuelve a insultar a periodista y hace gesto para callarla",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993988-eres-una-horrible-reporterilla-trump-vuelve-a-insultar-a-periodista-y-hace-gesto-para-callarla.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/eeuu/2026/10/23/eres-una-horrible-reporterilla-trump-vuelve-a-insultar-a-periodista-y-hace-gesto-para-callarla.shtml",
-   "published": "2026-10-23T18:48:35Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "medioambiente",
-   "title": "Un desastre cíclico: Las advertencias que debe enfrentar Chile ante el cambio climático",
-   "summary": "",
-   "image": "https://www.tvn.cl/tvn/site/artic/20261023/imag/foto_0000002720261023154817/aluvion.jpg",
-   "source_url": "https://www.tvn.cl",
-   "sources": [
-    "TVN"
-   ],
-   "coverages": [],
-   "link": "https://www.tvn.cl/actualidad-y-tendencias/actualidad/un-desastre-ciclico-las-advertencias-que-debe-enfrentar-chile-",
-   "published": "2026-10-23T18:46:00Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Contratos mineros bajo la lupa: Chile busca reducir pérdidas millonarias con ayuda de la IA",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.rumbominero.com",
-   "sources": [
-    "Rumbo Minero"
-   ],
-   "coverages": [],
-   "link": "https://www.rumbominero.com/chile/contratos-mineros-bajo-la-lupa-chile-busca-reducir-perdidas-millonarias-con-ayuda-de-la-ia/",
-   "published": "2026-10-23T18:44:54Z",
-   "first_seen": "2026-10-24T04:33:25Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
-  },
-  {
-   "category": "economia",
-   "title": "Más proteína no siempre es mejor: la letra chica detrás de la moda de los batidos y suplementos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994055-batidos-de-proteina.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/salud-y-bienestar/vida-fitness/2026/10/23/mas-proteina-no-siempre-es-mejor-la-letra-chica-detras-de-la-moda-de-los-batidos-y-suplementos.shtml",
-   "published": "2026-10-23T18:43:39Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "“Más fútbol, menos celular”: Borussia Dortmud premiará a hinchas que no usen el teléfono en los partidos",
-   "summary": "",
-   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/23153752/GettyImages-2294205940-e1792780775202-1200x740.webp",
-   "source_url": "https://redgol.cl",
-   "sources": [
-    "RedGol"
-   ],
-   "coverages": [],
-   "link": "https://redgol.cl/internacional/mas-futbol-menos-celular-borussia-dortmud-premiara-a-hinchas-que-no-usen-el-telefono-en-los-partidos",
-   "published": "2026-10-23T18:42:05Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "economia",
-   "title": "“Fue una colilla”: aseguradoras demandan a Cencosud y Bodegas San Francisco por US$ 10,8 millones por incendio de Lo Aguirre",
-   "summary": "",
-   "image": "https://www.df.cl/noticias/site/artic/20261023/imag/foto_0000000220261023154415/Incendio-Bodegas-San-Francisco-_A1.jpg",
-   "source_url": "https://www.df.cl",
-   "sources": [
-    "Diario Financiero"
-   ],
-   "coverages": [],
-   "link": "https://www.df.cl/senal-df/datos-de-sobremesa/fue-una-colilla-aseguradoras-demandan-a-cencosud-y-bodegas-san-francisco",
-   "published": "2026-10-23T18:42:00Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "deportes",
-   "title": "Gonzalo Jara categórico con Alexis Sánchez: “No me gustaría que vuelva a Chile”",
-   "summary": "",
-   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/23151453/jara-alexis-1200x740.webp",
-   "source_url": "https://redgol.cl",
-   "sources": [
-    "RedGol"
-   ],
-   "coverages": [],
-   "link": "https://redgol.cl/alexis/gonzalo-jara-futuro-alexis-sanchez-no-vuelva-al-futbol-chileno",
-   "published": "2026-10-23T18:41:22Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z",
-   "coverage_countries": [
-    "CL"
-   ]
-  },
-  {
-   "category": "nacional",
-   "title": "Línea 36 incorpora nuevo recorrido para conectar sectores de Chillán con Hospital Regional",
-   "summary": "",
-   "image": "https://ladiscusion.cl/wp-content/uploads/2026/10/TXC-Linea-36-1-1.jpg",
-   "source_url": "https://ladiscusion.cl",
-   "sources": [
-    "La Discusión"
-   ],
-   "coverages": [],
-   "link": "https://ladiscusion.cl/linea-36-incorpora-nuevo-recorrido-para-conectar-sectores-de-chillan-con-hospital-regional/",
-   "published": "2026-10-23T18:40:27Z",
-   "first_seen": "2026-10-24T04:41:41Z",
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Cómo la previsión de lluvia y el voto de los mayores de 70 años pueden ser claves para la definición presidencial en Brasil",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/L62MC5FWZZDNZJVC4OOLDI6ZIU.jpg?auth=0722b09aae5e028a1db9eca41fe88a8884ad2cad348fae8471e1a6174811b0e3&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/mundo/noticia/como-la-prevision-de-lluvia-y-el-voto-de-los-mayores-de-70-anos-pueden-ser-claves-para-la-definicion-presidencial-en-brasil/",
-   "published": "2026-10-23T18:34:47Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z",
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Cómo la previsión de lluvia y el voto de los mayores de 70 años pueden ser claves para la definición presidencial en Brasil",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNakw4eFU2UTlaRXRjcENXcHJRb3BJcmRHSjVJWFNfdnpPcUZhVm51NTBacVFVamhvSXg3NG1LRlJfYWp0SFQ0d01Pc2xYSzNUZGlBYlRHdXg5UkRVakdtT1pOSkk3Ql8xcktFZVZWN2JtYkU4b0FtTERXTU1LUW4wdDl2R3NXcUZObDhlV01QdGlrZ3E0RzlDUlZESkViaHhYdmhzd2tUVHVUX2FZR3NRUk9aakJNeTdfNXRja1RrMTVva3YzUU9mOUpveHBVNldJbDUtRzd4Mkg1cS1COVdrLWFBTXFGR1ZhODIxOTVWTjl6aXZSMDVZ0gGYAkFVX3lxTE1FMHFkNjlhUjk0Rk5HMXZwSThXY21JU1NZVnNmZFo0RjY3TnpNRDVkTEU2aW1tSDZEQ3lvRG9zZ3BBRXlmcC04Rl9qeklLUlpIN0ZOV3dNV1BwbldGYUxxYnA5Z1dsQ3QzcWVsNUs4QzZsNHNwM1BhSm9laWRYM1UydFJUajdyX1YtN3RveHNhQkNwbkpsUFFsNjBzUDh5NU9ha3VRMkFlQmc1Skx6VTAycUZlQ0pXU0p1MDFzNUJMTEZ5V1dOSUQzSEtfTVN3X2M1U1ZudjBrNUIwTS00TE9aRFdQRURRZkx2bFlvU1dRSklPeDJUNEFFZUo3MGY5MHV5VFc5cUdySTZGcjNIZnN5aFhWel9WTjg?oc=5",
-   "published": "2026-10-23T18:34:47Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "regiones",
-   "title": "GOBIERNO EXTIENDE HASTA DICIEMBRE EL BONO COMBUSTIBLE PARA MÁS DE 4.200 TRANSPORTISTAS EN LA ARAUCANÍA",
-   "summary": "",
-   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/gobierno-extiende-hasta-diciembre-el-bono-com.jpeg",
-   "source_url": "https://araucanianoticias.cl",
-   "sources": [
-    "Araucanía Noticias Temuco",
-    "Alerta Noticias Temuco.cl"
-   ],
-   "coverages": [],
-   "link": "https://araucanianoticias.cl/2026/gobierno-extiende-hasta-diciembre-el-bono-combustible-para-mas-de-4-200-transportistas-en-la-araucania/1023317743",
-   "published": "2026-10-23T18:32:36Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T18:57:20.007908Z"
-  },
-  {
-   "category": "regiones",
-   "title": "Tras hallazgo de rayado amenazante: evacúan mall de Antofagasta por alerta de bomba",
-   "summary": "",
-   "image": "https://www.adnradio.cl/resizer/v2/3XOOON7WLNEEJDY5M2DY7ZXCFQ.jpg?auth=38e7e626843a01575be6bbbbaa7a69e12a0592f2bc8bb4c5a5aff2250ba8a31c&quality=70&width=1200&height=675&smart=true",
-   "source_url": "https://www.adnradio.cl",
-   "sources": [
-    "ADN Radio"
-   ],
-   "coverages": [],
-   "link": "https://www.adnradio.cl/2026/10/23/tras-hallazgo-de-rayado-amenazante-evacuan-mall-de-antofagasta-por-alerta-de-bomba/",
-   "published": "2026-10-23T18:29:51Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T18:57:20.007908Z"
-  },
-  {
-   "category": "economia",
-   "title": "Ofrecen vacantes en minería con sueldos de hasta $2,7 millones",
-   "summary": "",
-   "image": "https://www.24horas.cl/24horas/site/artic/20261023/imag/foto_0000002220261023133236/MINERiA_TRBAJOS.webp",
-   "source_url": "https://www.24horas.cl",
-   "sources": [
-    "24horas"
-   ],
-   "coverages": [],
-   "link": "https://www.24horas.cl/te-sirve/empleos/ofrecen-vacantes-mineria-sueldos-millonarios",
-   "published": "2026-10-23T18:29:00Z",
-   "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
-  },
-  {
-   "category": "medioambiente",
-   "title": "La geografía como herramienta para enfrentar los desafíos del cambio climático en Chile",
-   "summary": "",
-   "image": "https://uchile.cl/dam/jcr:1380cd92-ccc1-4837-9ffd-e7c995d48051/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(18).jpg",
-   "source_url": "https://uchile.cl",
-   "sources": [
-    "Universidad de Chile"
-   ],
-   "coverages": [],
-   "link": "https://uchile.cl/noticias/246259/la-geografia-como-herramienta-para-enfrentar-el-cambio-climatico",
-   "published": "2026-10-23T18:26:05Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "nacional",
-   "title": "\"He tenido una gran desilusión de mi gobierno\": Moreira tras rebaja de penas a abusadores de menores",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993919-moreira-rebaja-penas.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/23/he-tenido-una-gran-desilusion-de-mi-gobierno-moreira-tras-rebaja-de-penas-a-abusadores-de-menores.shtml",
-   "published": "2026-10-23T18:23:36Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T18:57:20.007908Z"
-  },
-  {
-   "category": "regiones",
-   "title": "SENCE LA ARAUCANÍA Y SEREMI DE LA MUJER SE UNEN PARA POTENCIAR LA EQUIDAD DE GÉNERO Y EMPLEABILIDAD",
-   "summary": "",
-   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/sence-la-araucania-y-seremi-de-la-mujer-se-un.jpeg",
-   "source_url": "https://araucanianoticias.cl",
-   "sources": [
-    "Araucanía Noticias Temuco"
-   ],
-   "coverages": [],
-   "link": "https://araucanianoticias.cl/2026/sence-la-araucania-y-seremi-de-la-mujer-se-unen-para-potenciar-la-equidad-de-genero-y-empleabilidad/1023317721",
-   "published": "2026-10-23T18:22:35Z",
-   "first_seen": "2026-10-24T01:13:38Z",
-   "image_checked_at": "2026-10-24T01:13:38.872905Z"
-  },
-  {
-   "category": "medioambiente",
-   "title": "Día contra el Cambio Climático: Alerta por los escasos avances sobre el bienestar animal",
-   "summary": "",
-   "image": "https://www.tvn.cl/tvn/site/artic/20261023/imag/foto_0000002520261023152700/Captura_de_pantalla_2026-10-23_152655.png",
-   "source_url": "https://www.tvn.cl",
-   "sources": [
-    "TVN"
-   ],
-   "coverages": [],
-   "link": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/dia-contra-el-cambio-climatico-alerta-por-los-escasos-avances-sobre-el-bienestar",
-   "published": "2026-10-23T18:22:00Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-24T04:41:41.941219Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Postulaciones al jardín infantil finalizan el próximo mes: revisa cómo hacer el trámite a tiempo",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994025-jardin.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/23/postulaciones-al-jardin-infantil-finalizan-el-proximo-mes-revisa-como-hacer-el-tramite-a-tiempo.shtml",
-   "published": "2026-10-23T18:19:34Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "politica",
-   "title": "Los 56 pederastas a los que el Gobierno de Kast les rebajó la condena están en su “mayoría” en libertad",
-   "summary": "",
-   "image": "",
-   "source_url": "https://elpais.com",
-   "sources": [
-    "EL PAÍS"
-   ],
-   "coverages": [],
-   "link": "https://elpais.com/chile/2026-10-23/queda-en-libertad-la-mayoria-de-los-56-pederastas-a-los-que-el-gobierno-de-kast-les-rebajo-la-condena.html",
-   "published": "2026-10-23T18:18:32Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-24T14:27:30.848093Z"
-  },
-  {
-   "category": "economia",
-   "title": "Empresa rematará decenas de vehículos en Quilicura desde $211 mil: revisa cómo participar",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993942-remate-vehiculos-quilicura.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/23/empresa-rematara-decenas-de-vehiculos-en-quilicura-desde-211-mil-revisa-como-participar.shtml",
-   "published": "2026-10-23T18:11:05Z",
-   "first_seen": "2026-10-23T22:06:26Z",
-   "image_checked_at": "2026-10-23T22:06:26.073292Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Exclusiva BBC: el video que muestra cómo entra droga sintética a una cárcel de Chicago",
-   "summary": "Las drogas sintéticas, que son más potentes y abundantes, han transformado el panorama de las drogas en Estados Unidos.",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/5c2f/live/aed519b0-cee5-11f1-a701-fddedf244c16.jpg",
-   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "coverages": [
-    {
-     "source": "BBC News Mundo",
-     "title": "Exclusiva BBC: el video que muestra cómo entra droga sintética a una cárcel de Chicago",
-     "link": "https://www.bbc.com/mundo/articles/c6x295j0p434o?at_medium=RSS&at_campaign=rss",
-     "published": "2026-10-23T18:10:30Z"
-    }
-   ],
-   "link": "https://www.bbc.com/mundo/articles/c6x295j0p434o?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-23T18:10:30Z",
-   "first_seen": "2026-10-23T18:57:20Z"
-  },
-  {
-   "category": "regiones",
-   "title": "Andes Salud Concepción es la primera clínica del sur de Chile en incorporar cirugía robótica de rodilla",
-   "summary": "",
-   "image": "https://img.latribuna.cl/upload/2026/10/17161D524C42446D17150F55544944761F131918524242731C17-2000x1125.jpg",
-   "source_url": "https://www.latribuna.cl",
-   "sources": [
-    "La Tribuna"
-   ],
-   "coverages": [],
-   "link": "https://www.latribuna.cl/publicontenido/2026/10/23/andes-salud-concepcion-es-la-primera-clinica-del-sur-de-chile-en-incorporar-cirugia-robotica-de-rodilla.html",
-   "published": "2026-10-23T18:09:42Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T19:06:50.124924Z",
-   "coverage_countries": [
-    "CL"
-   ]
-  },
-  {
-   "category": "deportes",
-   "title": "Messi recibe premio Princesa de Asturias en España: las razones del reconocimiento",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994011-messi-princesa-de-asturias.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/23/messi-recibe-premio-princesa-de-asturias-en-espana-las-razones-del-reconocimiento.shtml",
-   "published": "2026-10-23T18:05:21Z",
-   "first_seen": "2026-10-23T18:57:20Z",
-   "image_checked_at": "2026-10-23T18:57:20.007908Z"
+   "image_checked_at": "2026-10-24T19:31:07.556450Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Aprovechará el parón por la fecha FIFA: Colo Colo jugará un amistoso ante Racing en Concepción",
+   "link": "https://www.prensafutbol.cl/colo-colo-amistoso-racing-concepcion-fecha/",
+   "category": "regiones",
+   "published": "2026-10-24T18:46:23Z",
+   "sources": [
+    "Prensa Fútbol"
+   ]
+  },
+  {
+   "title": "Chile entrará como \"observador\" a la coalición anticárteles de Trump",
+   "link": "https://www.cooperativa.cl/noticias/pais/relaciones-exteriores/ee-uu/chile-entrara-como-observador-a-la-coalicion-anticarteles-de-trump/2026-10-24/140543.html",
+   "category": "politica",
+   "published": "2026-10-24T18:14:00Z",
+   "sources": [
+    "Cooperativa"
+   ]
+  },
+  {
+   "title": "Tal como en España y Francia: italianos marchan contra el costo de la vida y su Gobierno",
+   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/24/tal-como-en-espana-y-francia-italianos-marchan-contra-el-costo-de-la-vida-y-su-gobierno.shtml",
+   "category": "internacional",
+   "published": "2026-10-24T17:48:14Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
   {
    "title": "Tabla de la Liga de Primera: La Serena derrota a Concepción y se ilusiona con Sudamericana",
    "link": "https://redgol.cl/chile/tabla-de-la-liga-de-primera-la-serena-derrota-a-concepcion-y-se-ilusiona-con-sudamericana",
@@ -2959,6 +2589,15 @@
    "published": "2026-10-24T17:36:34Z",
    "sources": [
     "RedGol"
+   ]
+  },
+  {
+   "title": "Caos en organización del Festival de Viña: negociación con artista internacional se habría caído",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/caos-en-organizacion-del-festival-de-vina-negociacion-con-artista-internacional-se-habria-caido/",
+   "category": "cultura",
+   "published": "2026-10-24T17:12:47Z",
+   "sources": [
+    "La Cuarta"
    ]
   },
   {
@@ -2989,12 +2628,39 @@
    ]
   },
   {
+   "title": "¿Guardamos el paraguas? Pronostican pausa en las lluvias para la próxima semana en algunas zonas",
+   "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/24/guardamos-el-paraguas-pronostican-pausa-en-las-lluvias-para-la-proxima-semana-y-alza-en-temperaturas.shtml",
+   "category": "nacional",
+   "published": "2026-10-24T16:38:45Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Duro golpe a Arturo Vidal: filtran propuesta para que renueve en Colo Colo, pero con importante reducción de sueldo",
+   "link": "https://www.lacuarta.com/deportes/noticia/duro-golpe-a-arturo-vidal-filtran-propuesta-para-que-renueve-en-colo-colo-pero-con-importante-reduccion-de-sueldo/",
+   "category": "deportes",
+   "published": "2026-10-24T16:36:29Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Milei arremete contra periodistas argentinos por caso $LIBRA: \"se tienen que quemar en la hoguera\"",
    "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxObHdYRlI5ZkVVMTd5b2JSQnFlOUVZWFdqRXRsamtIYjgyVUxVbFFKclBXcEIxbGJPWkZTQk54S29jak01VnVyalRSOFNHcmJBUjV0N2NZaXZ2UUhRc2lnT3dJWF93TWdNUG1jN1BzTm1aN3MxLXZVc3BqdEcxMEYxZ2FFUjF3NjVaZW4tRkRWbWMxWkVKSVptOVkxUTB1U3Rjajg5Skh3WlFMYzQ2cDQyRlZpWGoxNmFtV1NvVWFnRlFaLU4tVjJHWjltdzJKTGpFR3E5eEdJNWhLWjF2T2U5eU84VEdfWkFwTTBtQ2xoNklpZTdTZkdoalJSR3dwRTVPRTl0YWp4VQ?oc=5",
    "category": "latinoamerica",
    "published": "2026-10-24T16:10:58Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Lula diz estar confiante de que vencerá eleição porque 'brasileiros não podem levar um miliciano para o Palácio do Planalto'",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNalE2R1ZwY0hJUmEzeTA4d2xuTURvdTZ2dU02enRQMTVDc28yOGg0d2xaUTkxSTM3OU1Kak9penhTanMzWkpyVXN5WmtzQlVWb0NMa2dMa0ExX0VtX2NvcHVVWTdOZFlHQi1QZWx2cmNCVG1ZemJ0ZHJmR1dQTzVpRVc4bDlCZk5uYjdXSGFFTllvQmRLcWfSAaQBQVVfeXFMT1VjMmJiUHFlX3FmMlhPWUxyaE83OGVSanNaSWlDclpFT1QzTmxTRnJ5TFp3Vjd5dDRaazMtSkZwRmtQMmV0bmI0Wm9oamVHZ2ttOWlfMC1teEp5cWVKaVZLamRnSDhEdFZkcXF6eURhRzZFWXVZVkRiUzVEeFpVVGxCc05jd3pFT21DQUhpTGp0WWI4NlBJcnJhVFI0Rk1VS213a08?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-24T16:06:52Z",
+   "sources": [
+    "G1"
    ]
   },
   {
@@ -3013,6 +2679,15 @@
    "published": "2026-10-24T16:00:00Z",
    "sources": [
     "ge"
+   ]
+  },
+  {
+   "title": "Ramírez (UDI) también emplaza a Squella por dichos contra exministro Larraín y sube tensión oficialista por rebaja de penas",
+   "link": "https://www.latercera.com/politica/noticia/ramirez-udi-tambien-emplaza-a-squella-por-dichos-contra-exministro-larrain-y-sube-tension-oficialista-por-rebaja-de-penas/",
+   "category": "nacional",
+   "published": "2026-10-24T15:59:41Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3067,6 +2742,15 @@
    "published": "2026-10-24T14:53:45Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "“Yo tengo un prestigio en el fútbol, no como tú, que ni siquiera tienes el título de periodista”",
+   "link": "https://chile.as.com/futbol/yo-tengo-un-prestigio-en-el-futbol-no-como-tu-que-ni-siquiera-tienes-el-titulo-de-periodista-f202610-n/",
+   "category": "deportes",
+   "published": "2026-10-24T14:42:29Z",
+   "sources": [
+    "AS Chile"
    ]
   },
   {
@@ -3142,6 +2826,15 @@
    ]
   },
   {
+   "title": "Brasil: tres claves del duelo final entre Flávio Bolsonaro y Lula da Silva",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSk54WW5nS2hCdDBGV2Q1RDJHc0ZwTmEwcGI3UERya1daM0tFRVIxb1pUZklvSjU5WmdrV1Jrbmh3bEJOOXVmU1pvdk1zVk5qcjVWNXA4dms4SE8ybXFDdUJDeXMxa1QxN1NhNHQwd2RYZ1RzY2oyd18tYlJ4YzJHdktVLXhSQTZqYmVIeUtuTGUzcThsVldtZzFoWGFDRmU2TU9hVndCaEdwN2xzNUZ6ZjU3VlM5ZWJzOWRHMFNxcHpTMEY2bGc?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-24T14:00:36Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
    "title": "Pronóstico del tiempo en Valparaíso de este 25 de octubre: domingo parte despejado, pero las nubes ganarán terreno",
    "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-25-de-octubre-domingo-parte-despejado-p",
    "category": "regiones",
@@ -3196,12 +2889,30 @@
    ]
   },
   {
+   "title": "La inédita medida del Borussia Dortmund para que sus hinchas no usen el celular en el estadio",
+   "link": "https://www.latercera.com/el-deportivo/noticia/la-inedita-medida-del-borussia-dortmund-para-que-sus-hinchas-no-usen-el-celular-en-el-estadio/",
+   "category": "tecnologia",
+   "published": "2026-10-24T13:19:03Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
    "title": "Flamengo pide los puntos ante Estudiantes de La Plata y clasificar por escritorio a la final de la Copa Libertadores",
    "link": "https://www.latercera.com/el-deportivo/noticia/flamengo-pide-los-puntos-ante-estudiantes-de-la-plata-y-clasificar-por-escritorio-a-la-final-de-la-copa-libertadores/",
    "category": "deportes",
    "published": "2026-10-24T13:18:34Z",
    "sources": [
     "La Tercera"
+   ]
+  },
+  {
+   "title": "DETIENEN EN PUCÓN AL ÚLTIMO INTEGRANTE DE PELIGROSA BANDA DE ENCERRONAS EN LA ARAUCANÍA",
+   "link": "https://araucanianoticias.cl/2026/detienen-en-pucon-al-ultimo-integrante-de-peligrosa-banda-de-encerronas-en-la-araucania/1024317768",
+   "category": "regiones",
+   "published": "2026-10-24T13:17:39Z",
+   "sources": [
+    "Araucanía Noticias Temuco"
    ]
   },
   {
@@ -3256,6 +2967,15 @@
    "published": "2026-10-24T12:56:16Z",
    "sources": [
     "Vatican News"
+   ]
+  },
+  {
+   "title": "Temblor hoy, sábado 24 en Chile: consulta epicentro y magnitud",
+   "link": "https://www.latercera.com/servicios/noticia/temblor-hoy-sabado-24-en-chile-consulta-epicentro-y-magnitud/",
+   "category": "nacional",
+   "published": "2026-10-24T12:40:25Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3462,7 +3182,8 @@
    "category": "regiones",
    "published": "2026-10-24T03:12:18Z",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "El Mostrador"
    ]
   },
   {
@@ -3958,6 +3679,15 @@
    "published": "2026-10-23T21:40:14Z",
    "sources": [
     "ADN Radio"
+   ]
+  },
+  {
+   "title": "U. de Chile aportará evidencia científica para elaborar la nueva Política Nacional de Envejecimiento",
+   "link": "https://uchile.cl/noticias/246242/u-de-chile-y-ministerio-de-desarrollo-social-y-familia-firman-acuerdo",
+   "category": "politica",
+   "published": "2026-10-23T21:38:56Z",
+   "sources": [
+    "Universidad de Chile"
    ]
   },
   {
