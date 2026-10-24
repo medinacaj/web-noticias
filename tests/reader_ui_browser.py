@@ -338,6 +338,13 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertTrue(all(a['x']+a['width'] <= b['x'] for a,b in zip(boxes, boxes[1:])), (width, boxes))
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
 
+    async def test_search_keeps_sidebar_navigation_unobstructed(self):
+        await self.page.locator('#search-toggle').click()
+        link = self.page.locator('.site-nav a').first
+        self.assertTrue(await link.evaluate("el => {const r=el.getBoundingClientRect(); return el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}"))
+        await self.page.keyboard.press('Escape')
+        self.assertFalse(await self.page.locator('#search-panel').is_visible())
+
     async def test_blocked_storage_does_not_disable_controls(self):
         await self.context.add_init_script("Object.defineProperty(window, 'localStorage', {get() {throw new Error('blocked')}})")
         await self.page.reload()

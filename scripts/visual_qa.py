@@ -48,6 +48,9 @@ async def check_search(page, width, no_overflow):
     await toggle.click()
     assert await panel.is_visible(), f"Buscador oculto a {width}px"
     assert await toggle.get_attribute("aria-expanded") == "true"
+    if width >= 1024:
+        link = page.locator(".site-nav a").first
+        assert await link.evaluate("el => {const r=el.getBoundingClientRect(); return el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}"), "El buscador tapa la navegación lateral"
 
     async def verify(expected, stage):
         actual = await page.locator("#search-results li > a").evaluate_all(

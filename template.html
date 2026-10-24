@@ -122,7 +122,7 @@
   @media (min-width:1024px){
     body{padding-left:var(--sidebar-width);}
     .site-header{margin-left:0;}
-    .sticky-bar::before{content:"";position:absolute;right:100%;top:0;bottom:-1px;width:var(--sidebar-width);background:var(--surface);border-bottom:1px solid var(--rule);}
+    .sticky-bar::before{content:"";position:absolute;right:100%;top:0;height:calc(var(--header-height) + 1px);width:var(--sidebar-width);background:var(--surface);border-bottom:1px solid var(--rule);}
     .js .menu-toggle{position:absolute;left:calc(16px - var(--sidebar-width));top:calc((var(--header-height) - 40px)/2);}
     :root[data-sidebar="hidden"] .menu-toggle{position:static;}
     :root[data-sidebar="hidden"] .sticky-bar::before{display:none;}
