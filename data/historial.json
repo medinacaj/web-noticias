@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-24T04:33:25Z",
+ "actualizado": "2026-10-24T04:41:41Z",
  "noticias": [
   {
    "category": "internacional",
@@ -123,6 +123,24 @@
    "published": "2026-10-24T02:39:09Z",
    "first_seen": "2026-10-24T04:33:25Z",
    "image_checked_at": "2026-10-24T04:33:25.580080Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Trump diz que eleição no Brasil é muito importante e que acompanha de perto",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.cnnbrasil.com.br",
+   "sources": [
+    "CNN Brasil"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeW9xSGJDb1lkMDJTNUV4V2tRcEgtOXNMdkQyNGJwWUdtanZUUkd3U25McnZzLTZRemV1RTFzT2dxaV81QWpPZVVFM2wwSVhpQWNObGM3UEo0OTBGVnBfQkVJaFhCajJjLVNQN1FWeGg4TEpBLXlHX24xcW55R1Z3Mk5vUUYzalRYQXlEMlNfa005YmdDaVZpRnUyMHRBaWJ3T1RZZ0dmb0gtdUx1Y2pmM3BJVDZWTUplelFV?oc=5",
+   "published": "2026-10-24T02:18:35Z",
+   "first_seen": "2026-10-24T04:41:41Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
   },
   {
    "category": "cultura",
@@ -293,7 +311,7 @@
    "link": "https://www.france24.com/es/am%C3%A9rica-latina/20261023-chile-rebaja-de-condenas-a-56-pederastas-enfrenta-al-gobierno-de-kast-con-el-poder-judicial",
    "published": "2026-10-23T23:42:00Z",
    "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z",
+   "image_checked_at": "2026-10-24T04:41:41.941219Z",
    "coverage_countries": [
     "CL"
    ]
@@ -1002,18 +1020,19 @@
    "category": "salud-ciencia",
    "title": "“Ozempic genérico” en Chile: ¿Qué tan comparable es con el original y qué considerar antes de usarlo?",
    "summary": "",
-   "image": "",
+   "image": "https://portalredsalud.cl/wp-content/uploads/2026/10/Ozempic-generico-en-Chile-¿Que-tan-comparable-es-con-el-original-y-que-considerar-antes-de-usarlo.jpg",
    "source_url": "https://portalredsalud.cl",
    "sources": [
     "Portal Red Salud"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRjZVdlZGcjJzQm5nNEZzSGZobzdLZkpabG5ueFloVkdSVHN6SkFoUHU1dzVYVlNUaEtMSURiOHA2TnVNNXlYaE5OdmpmNkp6Y0tpM0hveG5haTJfaHhVMEhoYlNDbWVjOFEyTVdZYmtOUTdCSFhFd1FnTjNXN1U1bkt0R0Z2RE1WeWgzNFZZcXpvb0IxZ1RjVURxUF8xSTNsOU5KSEtmaVU0YWFrREx4d1NJLXY2WVN6c2hxaFFpYkJQUFZmQjBFdHcxckRFazA?oc=5",
+   "link": "https://portalredsalud.cl/2026/10/23/ozempic-generico-en-chile-que-tan-comparable-es-con-el-original-y-que-considerar-antes-de-usarlo/",
    "published": "2026-10-23T19:06:14Z",
    "first_seen": "2026-10-24T01:13:38Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "politica",
@@ -1142,7 +1161,7 @@
    "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/ciencia/2026/10/23/primeros-habitantes-de-hawai-llegaron-en-canoa-desde-rapa-nui-cuando-europa-estaba-en-la-edad-media.shtml",
    "published": "2026-10-23T18:53:27Z",
    "first_seen": "2026-10-24T00:37:33Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "nacional",
@@ -1218,18 +1237,19 @@
    "category": "medioambiente",
    "title": "Un desastre cíclico: Las advertencias que debe enfrentar Chile ante el cambio climático",
    "summary": "",
-   "image": "",
+   "image": "https://www.tvn.cl/tvn/site/artic/20261023/imag/foto_0000002720261023154817/aluvion.jpg",
    "source_url": "https://www.tvn.cl",
    "sources": [
     "TVN"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSnRORmllc1MzN2wyUUNiWlpvY0I5YXZGX0w4aXdvMHRwY1BBUzBLTXVHam5uWXd3elFEdHVUc0szNlpweDlTTkdmS0hiazBuTE9DV3V2b3htTEJaWWctMkdzaVl1NHBRQTRQZk1WVmtOZzVXQnlvQVR2REI2bTZtMnhCN0d1NTU0MXVSWmszaldYdEZXSnFseDZKTXlndTVYWkhxMG5UUTluVlcwZk1zdDFyenJaWlnSAbwBQVVfeXFMTXRWWnQwT0Q0TEM1X1NBMXNlazQ3bElzTWlkeXZDMm5tVW9NbWZ0dmllZlVWZVo4a3VYcHNhMkFFOFFKZVNFcWxQQnZLRlh4a2duMno0RDhMS0VpVk5IaEY1R1V4RG4wbmJ1ZG5lbFg5eEYxVzhoakJJMzlkOVVXVTdPeUkzZjhNb2s4d0VwekxpOGY1NVRxTGRZSG5wZHh4WGw5TXo3MFV5SWduNGpqOC04SmdDd2ZncmYxQm4?oc=5",
+   "link": "https://www.tvn.cl/actualidad-y-tendencias/actualidad/un-desastre-ciclico-las-advertencias-que-debe-enfrentar-chile-",
    "published": "2026-10-23T18:46:00Z",
    "first_seen": "2026-10-24T00:37:33Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "tecnologia",
@@ -1311,6 +1331,21 @@
    "coverage_countries": [
     "CL"
    ]
+  },
+  {
+   "category": "nacional",
+   "title": "Línea 36 incorpora nuevo recorrido para conectar sectores de Chillán con Hospital Regional",
+   "summary": "",
+   "image": "https://ladiscusion.cl/wp-content/uploads/2026/10/TXC-Linea-36-1-1.jpg",
+   "source_url": "https://ladiscusion.cl",
+   "sources": [
+    "La Discusión"
+   ],
+   "coverages": [],
+   "link": "https://ladiscusion.cl/linea-36-incorpora-nuevo-recorrido-para-conectar-sectores-de-chillan-con-hospital-regional/",
+   "published": "2026-10-23T18:40:27Z",
+   "first_seen": "2026-10-24T04:41:41Z",
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "latinoamerica",
@@ -1398,18 +1433,19 @@
    "category": "medioambiente",
    "title": "La geografía como herramienta para enfrentar los desafíos del cambio climático en Chile",
    "summary": "",
-   "image": "",
+   "image": "https://uchile.cl/dam/jcr:1380cd92-ccc1-4837-9ffd-e7c995d48051/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(18).jpg",
    "source_url": "https://uchile.cl",
    "sources": [
     "Universidad de Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPV1JLcW01NDlFVTNnVEY4T3lURFNBWU16ZWczbnhkcTJJNVFvRHpuTVdObC1fa1RtNEltakdJWTZRM1JGQ3JkZG1vendKWURlTm9JR3NYelRwYUk5UUFHZFpzVEJLckFRM1ktVWs2WFZRMmZ6MGotMWYwZmFFUU1YeFNBNGFzTEgxaHRKcF9YWGo1dHVaWU81RU05RHF1Z2c?oc=5",
+   "link": "https://uchile.cl/noticias/246259/la-geografia-como-herramienta-para-enfrentar-el-cambio-climatico",
    "published": "2026-10-23T18:26:05Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "nacional",
@@ -1445,15 +1481,16 @@
    "category": "medioambiente",
    "title": "Día contra el Cambio Climático: Alerta por los escasos avances sobre el bienestar animal",
    "summary": "",
-   "image": "",
+   "image": "https://www.tvn.cl/tvn/site/artic/20261023/imag/foto_0000002520261023152700/Captura_de_pantalla_2026-10-23_152655.png",
    "source_url": "https://www.tvn.cl",
    "sources": [
     "TVN"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRjQxMWRSdzFjdzhsTmg0UGYzbUx1UGFwTFh4VWlCV085YTlMN2RpMldrNVUzVUZMbERMYkE3XzVGS0pYSC1aWlFOdHlQTnc5Y3JyNGJjTXV4clJSQXFvMFBZU0ZfZkVDc05VMkJ6Z0ZWVFpHbGZ1SFdCQkxWd2JGNHh2YWxyOUpYcG5YdFA1bWgwcXhmaVNZT0FONl9sOFhBRUxGQ1p4X2tyLXhTeVM5V1E2a3RaWTFFVl94bzJDSzV1ZlJLYnk0cWxFSHE4aknSAdQBQVVfeXFMTlF1MDFGRkk2R2ZFc2ltTGxXaVhCTW5WT0FfNmdvVF95OUlyaWktbjl4VDdURGJab1ZvV3pocVF2Z3Q0eEp5bjkwaFBMdDdOOWVQRTNKb2x1ZjRCMy1US2RGMWd1WHNvSDUydF9yM2V1T2xVQm1UV3pHWHNCT3hZdzRBc2oyTG9WTkhtcXFQc1k2Z2VUc2hGU09VOXFmWnhuTXRLSV9SZHdWUnJMZTlQdmNzbjlsMGNTaWthX2M4ZGc5dXBVRzJtbGVCQnA5WWtlSEY2OW4?oc=5",
+   "link": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/dia-contra-el-cambio-climatico-alerta-por-los-escasos-avances-sobre-el-bienestar",
    "published": "2026-10-23T18:22:00Z",
-   "first_seen": "2026-10-23T22:06:26Z"
+   "first_seen": "2026-10-23T22:06:26Z",
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "nacional",
@@ -1708,15 +1745,16 @@
    "category": "politica",
    "title": "Vocero defiende actuar de Rabat por reducción de penas a abusadores y lo compara con gobierno anterior",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6993803-vocero-defiende-actuar-de-rabat-por-reduccion-de-penas-a-abusadores-y-lo-compara-con-gobierno-anterior.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNaVBaTWxtMkdWX2h3Nmk0U2J6YUkxOXZ3LXJFaTc5M3UyNGZ5OGVkUlZoMGNUcUxZZ1FYNk94ZU5VbGV1RVMxbzVDbG5BcGZaRlR5S1ZWQmx6Z0tkbWtuV2p6NEhSNDV0cUNjbkhkN3J3ZklBUGE3X1BUdmZzbVJZdHdURWFISldCSjExd21JZFFETDhoejNRSFdOT2g3X2ZpR3I5ZlNMZ3BpY0tyWlMxU0NZVlQ4Smp4ci1Ha0tFWmk3Y3RPaC1YUGJ3MjM1TTZFc29CWUlmcGE5cncxYUZQdTF5V1JscnR4SzVvLXgyM0RzdGl2Qjk5QnpNeXdsTEk?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/23/vocero-defiende-actuar-de-rabat-por-reduccion-de-penas-a-abusadores-y-lo-compara-con-gobierno-anterior.shtml",
    "published": "2026-10-23T17:09:26Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "deportes",
@@ -1749,7 +1787,7 @@
    "link": "https://efe.com/deportes/2026-10-23/vincent-kompany-entrenador-bayern-munich-hospital/",
    "published": "2026-10-23T16:55:00Z",
    "first_seen": "2026-10-23T19:06:50Z",
-   "image_checked_at": "2026-10-24T00:37:33.484010Z"
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "internacional",
@@ -2013,19 +2051,20 @@
    "category": "salud-ciencia",
    "title": "Actores del ecosistema en salud acuerdan colaboración y confianza para potenciar un modelo de salud mixto en Chile",
    "summary": "",
-   "image": "",
+   "image": "https://cienciaenchilecl.nyc3.digitaloceanspaces.com/wp-content/uploads/2026/10/Banner-Web-principal-ok-64.jpg",
    "source_url": "https://www.cienciaenchile.cl",
    "sources": [
     "Ciencia en Chile",
     "Portal Innova"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOYjNIeE1PaWhFRjRUTU5tcnEtSEZ5d214OW80OG9HMkF3VWgwMTNBV3NiaGdVRk4xMFJ1QzVFV1pFZTBrd04xdFJ3aGg3Sk82aDc1OTQtUFNxUEs3VERub05Icng3cjlOeFd5T2NfYzQ2bGpfZndXU2t5MllPbmY0cnh3b192eXdHWGRBNVkyWnA1TW5FS21YYjV1alR6M0JSeWlHcmJwbjEycWt1bmRWM2UwQlZTczBDNC1vc3djd01YNUtCUmRzYkhnbnNTak5FWUJkeGVnWk1PVXdFSmc?oc=5",
+   "link": "https://www.cienciaenchile.cl/actores-del-ecosistema-en-salud-acuerdan-colaboracion-y-confianza-para-potenciar-un-modelo-de-salud-mixto-en-chile/",
    "published": "2026-10-23T15:50:13Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "cultura",
@@ -2079,18 +2118,19 @@
    "category": "politica",
    "title": "Seminario CIPS UDD analiza de qué manera está Chile resolviendo el cáncer",
    "summary": "",
-   "image": "",
+   "image": "https://gobierno.udd.cl/files/2026/10/image00001-scaled.jpeg",
    "source_url": "https://gobierno.udd.cl",
    "sources": [
     "Facultad de Gobierno UDD"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSkpmSkRTSVNGWU81b0NFWklDRFR6SHE4c3pZZGkteFBoUmpHbURSdkw0RGlfX0NPcHBvNjAxYnVGaW84SVlzMzMtV0ZZOGU5ZUNBcjdDNGEyV0VaZlJRaEN3a1V1ZV9TQ2xBRG5CQ3U3bU9QcjV4NlE1YVpUcXJNRFFDSlQ2dk1zRkNabTRpTENIeXNyWlZfMm9uS2NfdWQ2b0ExWDVxZnNCd1ZLRkFUOHRUMFhuQQ?oc=5",
+   "link": "https://gobierno.udd.cl/noticias/2026/10/seminario-cips-udd-analiza-de-que-manera-esta-chile-resolviendo-el-cancer/",
    "published": "2026-10-23T15:41:36Z",
    "first_seen": "2026-10-23T18:57:20Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "deportes",
@@ -2111,15 +2151,16 @@
    "category": "politica",
    "title": "Este es el argumento con que el gobierno anterior se opuso en tribunales a rebajar las condenas de agresores sexuales de niños",
    "summary": "",
-   "image": "",
+   "image": "https://www.ciperchile.cl/wp-content/uploads/Condenas_web.png",
    "source_url": "https://www.ciperchile.cl",
    "sources": [
     "- CIPER Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNekJFbFdrMWNvODFWRUdTYWVjby16di0yRzB5N0w2TS1FRXJyVnJRa2hmRE9vSm1JS29ia20zbDhjbVFva1J6THRIODZ5NFNzcURyYTZwTVp2S3pyVDU0bHZwNkhZY0ktT3M5bGJoLWloVEJ2ejdOeU5UVWNyd3p5X3BXTVNGc1lpSXI3YjJYLUJ2T0xxdkp4eERnekFWMS1PLXk3XzlVcVAxemh1T19KMWY0WDZjSXFrcGFFNzNVN0VfTUN0MlhDNGE3ckgyb0MxSHl3TzhLUE9RWDFhdFFSSzJCZnVKSFBBQnlzOEVJelRvUUtCdzRB?oc=5",
+   "link": "https://www.ciperchile.cl/2026/10/23/este-es-el-argumento-con-que-el-gobierno-anterior-se-opuso-en-tribunales-a-rebajar-las-condenas-de-agresores-sexuales-de-ninos/",
    "published": "2026-10-23T15:36:31Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "latinoamerica",
@@ -2305,15 +2346,16 @@
    "category": "politica",
    "title": "PC refuerza el “trabajo de masas” y se declara en “resistencia estratégica” contra gobierno de Kast",
    "summary": "",
-   "image": "",
+   "image": "https://www.ex-ante.cl/wp-content/uploads/2026/05/Lautaro-Carmona.webp",
    "source_url": "https://www.ex-ante.cl",
    "sources": [
     "Ex-ante"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9FcFlpT05ZbzgySm9IYTFrRmlfTGowTmgzT05QU1BoMHAtdHRFQzVZbUNlTTEzX3dCQnNzdDlvdzFfc2hrekRnQmVsT2YtRV9lWXhHcU1peUIwX3VRNHd5SjRST0NXLVpXWm1IZ2xWSUZVc3lHb2RHNA?oc=5",
+   "link": "https://www.ex-ante.cl/politica/pc-anuncia-trabajo-masas-contra-kast/",
    "published": "2026-10-23T14:59:12Z",
-   "first_seen": "2026-10-23T18:57:20Z"
+   "first_seen": "2026-10-23T18:57:20Z",
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "economia",
@@ -2858,18 +2900,19 @@
    "category": "politica",
    "title": "La Fuerza Aérea de Chile presenta al Senado sus necesidades de equipamiento y desarrollo de capacidades",
    "summary": "",
-   "image": "",
+   "image": "https://www.infodefensa.com/images/showid/7929611",
    "source_url": "https://www.infodefensa.com",
    "sources": [
     "Infodefensa"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSEVlWmtSZzl4MTVMY25remwxd3IxeER5Zk52SmFJQ1BRdnZ2U0dFMEtOdHJhTE8xX0I4NjFvdmcwWU5HMV9qdmdUZlBsZGJxYzAtVDhJdXBBUnl4NzdXNmV3M0VFX0JyemFuWEphQlJ1eF9lZ1VGeDR0R3ljZ3hzVkVTUm9VVDYwMTlUOGpGUEp5RDNyLWVaQS1SVjRyT2xLUjN6NHoyb2NuT2hzaVBZa0ZDQ0hfVlFXbUZYbzQ2Q2RELXM?oc=5",
+   "link": "https://www.infodefensa.com/texto-diario/mostrar/6062924/fach-presenta-senado-necesidades-equipamiento-desarrollo-capacidades",
    "published": "2026-10-23T11:43:09Z",
    "first_seen": "2026-10-23T14:58:08Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "internacional",
@@ -3231,18 +3274,19 @@
    "category": "politica",
    "title": "Defensa Nacional de Chile presenta a senadores los desafíos de la FACh para los próximos 20 a 30 años",
    "summary": "",
-   "image": "",
+   "image": "https://www.defensa.com/adjuntos/fichero_46851_20261023.jpg",
    "source_url": "https://www.defensa.com",
    "sources": [
     "Defensa.com"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdHBoYTdNSDJ0aXd0NGlOU0FfTkxvQVpPLWJXSThyWkt6U0kwa2Q4M1R3eDBfTUJ1RWtsNXlBLUhpRlE0UWVGTjdTUXZNUDhFNXVGQWFWMHVRTmxrYU12TE9ESUVsRGF1U1czZ2tHZXNvV1VSMWZ3OGN3d0xZbWVabWRTdGpfWUpEX1M5SmxEWS1mRExLc3g4?oc=5",
+   "link": "https://www.defensa.com/chile/defensa-nacional-chile-presenta-senadores-desaf-iacute-os-fach",
    "published": "2026-10-23T09:39:00Z",
    "first_seen": "2026-10-23T14:58:08Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "nacional",
@@ -3284,15 +3328,16 @@
    "category": "salud-ciencia",
    "title": "Columna de Ricardo Ruiz Escalona : Alumno perplejo: salud pública castigada pese a su buena evaluación",
    "summary": "",
-   "image": "",
+   "image": "https://opinion.cooperativa.cl/opinion/imag/share.jpg?=20261024014155",
    "source_url": "https://opinion.cooperativa.cl",
    "sources": [
     "Opinión - Cooperativa"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSFhXTTR1cHV3UGNoVjd0YTlpVldBMi1XQ0lMaW5PckZPR2kwZjItMmlUZTcycFV3ZlJfR05GMS1wWjNXcEZkX2R5NzdNMzJDUDVhT3h2STBPRTh5Tk9hTDRfeUdIVGVrM0IteS1GeDlFdTB3b2RsWGVoelBhQ2Y0NUJGUWNmTGlVd2plZ0dHWExhR1ZUc0hFM25sYkVxZ0R6N1JxRGtyY0tqMU8xVW1UaDhVbTNfbTNYR0RVbnk5MWNPMGxvVkRjNWh6aWVQcmM?oc=5",
+   "link": "https://opinion.cooperativa.cl/opinion/salud/alumno-perplejo-salud-publica-castigada-pese-a-su-buena-evaluacion/2026-10-23/062316.html",
    "published": "2026-10-23T09:25:40Z",
-   "first_seen": "2026-10-23T14:58:08Z"
+   "first_seen": "2026-10-23T14:58:08Z",
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "nacional",
@@ -3346,6 +3391,24 @@
    "image_checked_at": "2026-10-23T14:58:08.350733Z"
   },
   {
+   "category": "latinoamerica",
+   "title": "Cómo Trump está tratando de influir para que Bolsonaro gane en Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPN2FkbnQzaHpTYUJpVzZOVElZeTBHUDNjWGtjVXNyWWs5dGVXZjA2XzAzYWRQb1J2akdNUk5nR0wyU0dNXzhVYjk0NEhOMFZBcmNEa0FaQlpVNlhKMHlpNllGcElxVTE1bHVLMk1zMjRrVFFqc2lxUFQ4cEk0QWsxM1R0SzM0M3I3LVFVb2lGaUE5UEVxbzAzb2Jra3JNMkVXdEdMcDJJcTVRQ08wNlZzY0syTnVyVEl6UHBuRXI2MHUyZ1NNUUJZ?oc=5",
+   "published": "2026-10-23T08:00:02Z",
+   "first_seen": "2026-10-24T04:41:41Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
    "category": "economia",
    "title": "Fintual confirma creación de AFP y asegura que en el fondo E “se tomó un exceso de riesgo”",
    "summary": "",
@@ -3364,18 +3427,19 @@
    "category": "politica",
    "title": "Chile seguiría pegado en el 2%: proyección para el crecimiento del PIB de largo plazo no logra despegar",
    "summary": "",
-   "image": "",
+   "image": "https://www.df.cl/noticias/site/artic/20261022/imag/foto_0000000320261022202041.jpg",
    "source_url": "https://www.df.cl",
    "sources": [
     "Diario Financiero"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPay02eWd2SngxUFhpQzFVbkNWeVcwS1IxcC1YRkxNaG1mTV9aTE1XekdMZlkyS2dMeVFHUUVXOHljTlZ3SXh2OFFiY2Z1WkhKRGlFRmtqdmVNeUFFODhKWHhGc1FxbVQwQTNtWkNFR3RKWGVHbjY5VDRIbEt0Zk9WMm9qUU9KOTVBRkZGWjZPbGlxUkNJcFRsTHVXTlV5T1hlMUlKWDVVZ25iVkVDZXp1ODRxQTNodw?oc=5",
+   "link": "https://www.df.cl/economia-y-politica/macro/chile-seguiria-pegado-en-el-2-proyeccion-para-el-crecimiento-del-pib-de",
    "published": "2026-10-23T07:00:00Z",
    "first_seen": "2026-10-23T14:58:08Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-24T04:41:41.941219Z"
   },
   {
    "category": "latinoamerica",
@@ -3469,7 +3533,7 @@
    ]
   },
   {
-   "title": "Domingo é dia de decidir o futuro do Brasil. De escolher entre a democracia e o retrocesso, entre seguir avançando com o povo ou entregar o país a quem ameaça nossas conquistas. Minha história de luta se conecta com a história de ",
+   "title": "Domingo é dia de decidir o futuro do Brasil. De escolher entre a democracia e o retrocesso, entre seguir avançando com o povo ou entregar o país a quem ameaça nossas conquistas. Minha história de luta se conecta com a história de",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9uVlB0UU1ZMUk1UzMzUlZET0REbkhwdWtCUEVndzNMYW95NzVQMW9wU0dRLU1vYU9uZTB2ZEFPSGpLNUhiLVJIQVNKblJRcHFIV0ttRmd2VmVQd2N1R0MyQXJkQkUxV3ExbF9jMA?oc=5",
    "category": "latinoamerica",
    "published": "2026-10-24T03:43:04Z",
@@ -3520,6 +3584,15 @@
    "published": "2026-10-24T02:39:09Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Trump diz que eleição no Brasil é muito importante e que acompanha de perto",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeW9xSGJDb1lkMDJTNUV4V2tRcEgtOXNMdkQyNGJwWUdtanZUUkd3U25McnZzLTZRemV1RTFzT2dxaV81QWpPZVVFM2wwSVhpQWNObGM3UEo0OTBGVnBfQkVJaFhCajJjLVNQN1FWeGg4TEpBLXlHX24xcW55R1Z3Mk5vUUYzalRYQXlEMlNfa005YmdDaVZpRnUyMHRBaWJ3T1RZZ0dmb0gtdUx1Y2pmM3BJVDZWTUplelFV?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-24T02:18:35Z",
+   "sources": [
+    "CNN Brasil"
    ]
   },
   {
@@ -4054,6 +4127,15 @@
    ]
   },
   {
+   "title": "“Ozempic genérico” en Chile: ¿Qué tan comparable es con el original y qué considerar antes de usarlo?",
+   "link": "https://portalredsalud.cl/2026/10/23/ozempic-generico-en-chile-que-tan-comparable-es-con-el-original-y-que-considerar-antes-de-usarlo/",
+   "category": "salud-ciencia",
+   "published": "2026-10-23T19:06:14Z",
+   "sources": [
+    "Portal Red Salud"
+   ]
+  },
+  {
    "title": "U. de Chile aportará evidencia científica para elaborar la nueva Política Nacional de Envejecimiento",
    "link": "https://uchile.cl/noticias/246265/uchile-aportara-para-elaborar-la-nueva-politica-nacional-de-envejecimiento",
    "category": "politica",
@@ -4180,6 +4262,15 @@
    ]
   },
   {
+   "title": "Un desastre cíclico: Las advertencias que debe enfrentar Chile ante el cambio climático",
+   "link": "https://www.tvn.cl/actualidad-y-tendencias/actualidad/un-desastre-ciclico-las-advertencias-que-debe-enfrentar-chile-",
+   "category": "medioambiente",
+   "published": "2026-10-23T18:46:00Z",
+   "sources": [
+    "TVN"
+   ]
+  },
+  {
    "title": "Contratos mineros bajo la lupa: Chile busca reducir pérdidas millonarias con ayuda de la IA",
    "link": "https://www.rumbominero.com/chile/contratos-mineros-bajo-la-lupa-chile-busca-reducir-perdidas-millonarias-con-ayuda-de-la-ia/",
    "category": "tecnologia",
@@ -4222,6 +4313,15 @@
    "published": "2026-10-23T18:41:22Z",
    "sources": [
     "RedGol"
+   ]
+  },
+  {
+   "title": "Línea 36 incorpora nuevo recorrido para conectar sectores de Chillán con Hospital Regional",
+   "link": "https://ladiscusion.cl/linea-36-incorpora-nuevo-recorrido-para-conectar-sectores-de-chillan-con-hospital-regional/",
+   "category": "nacional",
+   "published": "2026-10-23T18:40:27Z",
+   "sources": [
+    "La Discusión"
    ]
   },
   {
@@ -4280,6 +4380,15 @@
    ]
   },
   {
+   "title": "La geografía como herramienta para enfrentar los desafíos del cambio climático en Chile",
+   "link": "https://uchile.cl/noticias/246259/la-geografia-como-herramienta-para-enfrentar-el-cambio-climatico",
+   "category": "medioambiente",
+   "published": "2026-10-23T18:26:05Z",
+   "sources": [
+    "Universidad de Chile"
+   ]
+  },
+  {
    "title": "\"He tenido una gran desilusión de mi gobierno\": Moreira tras rebaja de penas a abusadores de menores",
    "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/23/he-tenido-una-gran-desilusion-de-mi-gobierno-moreira-tras-rebaja-de-penas-a-abusadores-de-menores.shtml",
    "category": "nacional",
@@ -4300,6 +4409,15 @@
   {
    "title": "Día contra el Cambio Climático: Alerta por los escasos avances sobre el bienestar animal",
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRjQxMWRSdzFjdzhsTmg0UGYzbUx1UGFwTFh4VWlCV085YTlMN2RpMldrNVUzVUZMbERMYkE3XzVGS0pYSC1aWlFOdHlQTnc5Y3JyNGJjTXV4clJSQXFvMFBZU0ZfZkVDc05VMkJ6Z0ZWVFpHbGZ1SFdCQkxWd2JGNHh2YWxyOUpYcG5YdFA1bWgwcXhmaVNZT0FONl9sOFhBRUxGQ1p4X2tyLXhTeVM5V1E2a3RaWTFFVl94bzJDSzV1ZlJLYnk0cWxFSHE4aknSAdQBQVVfeXFMTlF1MDFGRkk2R2ZFc2ltTGxXaVhCTW5WT0FfNmdvVF95OUlyaWktbjl4VDdURGJab1ZvV3pocVF2Z3Q0eEp5bjkwaFBMdDdOOWVQRTNKb2x1ZjRCMy1US2RGMWd1WHNvSDUydF9yM2V1T2xVQm1UV3pHWHNCT3hZdzRBc2oyTG9WTkhtcXFQc1k2Z2VUc2hGU09VOXFmWnhuTXRLSV9SZHdWUnJMZTlQdmNzbjlsMGNTaWthX2M4ZGc5dXBVRzJtbGVCQnA5WWtlSEY2OW4?oc=5",
+   "category": "medioambiente",
+   "published": "2026-10-23T18:22:00Z",
+   "sources": [
+    "TVN"
+   ]
+  },
+  {
+   "title": "Día contra el Cambio Climático: Alerta por los escasos avances sobre el bienestar animal",
+   "link": "https://www.tvn.cl/actualidad-y-tendencias/tendencias/dia-contra-el-cambio-climatico-alerta-por-los-escasos-avances-sobre-el-bienestar",
    "category": "medioambiente",
    "published": "2026-10-23T18:22:00Z",
    "sources": [
@@ -4480,6 +4598,15 @@
   {
    "title": "Vocero defiende actuar de Rabat por reducción de penas a abusadores y lo compara con gobierno anterior",
    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNaVBaTWxtMkdWX2h3Nmk0U2J6YUkxOXZ3LXJFaTc5M3UyNGZ5OGVkUlZoMGNUcUxZZ1FYNk94ZU5VbGV1RVMxbzVDbG5BcGZaRlR5S1ZWQmx6Z0tkbWtuV2p6NEhSNDV0cUNjbkhkN3J3ZklBUGE3X1BUdmZzbVJZdHdURWFISldCSjExd21JZFFETDhoejNRSFdOT2g3X2ZpR3I5ZlNMZ3BpY0tyWlMxU0NZVlQ4Smp4ci1Ha0tFWmk3Y3RPaC1YUGJ3MjM1TTZFc29CWUlmcGE5cncxYUZQdTF5V1JscnR4SzVvLXgyM0RzdGl2Qjk5QnpNeXdsTEk?oc=5",
+   "category": "politica",
+   "published": "2026-10-23T17:09:26Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Vocero defiende actuar de Rabat por reducción de penas a abusadores y lo compara con gobierno anterior",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/23/vocero-defiende-actuar-de-rabat-por-reduccion-de-penas-a-abusadores-y-lo-compara-con-gobierno-anterior.shtml",
    "category": "politica",
    "published": "2026-10-23T17:09:26Z",
    "sources": [
@@ -4692,6 +4819,16 @@
    ]
   },
   {
+   "title": "Actores del ecosistema en salud acuerdan colaboración y confianza para potenciar un modelo de salud mixto en Chile",
+   "link": "https://www.cienciaenchile.cl/actores-del-ecosistema-en-salud-acuerdan-colaboracion-y-confianza-para-potenciar-un-modelo-de-salud-mixto-en-chile/",
+   "category": "salud-ciencia",
+   "published": "2026-10-23T15:50:13Z",
+   "sources": [
+    "Ciencia en Chile",
+    "Portal Innova"
+   ]
+  },
+  {
    "title": "Capacitación portuaria abre nuevas oportunidades laborales para usuarios del CAIS de Valparaíso",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQjdId0NmZ0ZlRWdzM2FUeWswZFRxNGJmTW5vdWVULUU3MDdtckdyMkhVY3hrOExmaFpUQ2NScTJfd1VkazhmaUctMmNNMHRSckI0TE5qaS14VVpxVENubkJITXlYeFN4OUlqdXVNSlY5ZWpReVE0Y2NrUEwxY0dLSmh6N0ZaS0V5Ukl1eHZsS0NSVVE1R1BRRm40ZUhldXgyeEEyczltWUVSV0pXSkdhTjF1LWdrTDFjTGhsT0p1bGlCcUQ0Zkt1Sw?oc=5",
    "category": "regiones",
@@ -4728,6 +4865,15 @@
    ]
   },
   {
+   "title": "Seminario CIPS UDD analiza de qué manera está Chile resolviendo el cáncer",
+   "link": "https://gobierno.udd.cl/noticias/2026/10/seminario-cips-udd-analiza-de-que-manera-esta-chile-resolviendo-el-cancer/",
+   "category": "politica",
+   "published": "2026-10-23T15:41:36Z",
+   "sources": [
+    "Facultad de Gobierno UDD"
+   ]
+  },
+  {
    "title": "Adelantó su llegada y saludó a los funcionarios junto a Matías Claro: los detalles del primer día de Pérez Lázaro en la UC",
    "link": "https://www.latercera.com/el-deportivo/noticia/adelanto-su-llegada-y-saludo-a-los-funcionarios-junto-a-matias-claro-los-detalles-del-primer-dia-de-perez-lazaro-en-la-uc/",
    "category": "deportes",
@@ -4739,6 +4885,15 @@
   {
    "title": "Este es el argumento con que el gobierno anterior se opuso en tribunales a rebajar las condenas de agresores sexuales de niños",
    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNekJFbFdrMWNvODFWRUdTYWVjby16di0yRzB5N0w2TS1FRXJyVnJRa2hmRE9vSm1JS29ia20zbDhjbVFva1J6THRIODZ5NFNzcURyYTZwTVp2S3pyVDU0bHZwNkhZY0ktT3M5bGJoLWloVEJ2ejdOeU5UVWNyd3p5X3BXTVNGc1lpSXI3YjJYLUJ2T0xxdkp4eERnekFWMS1PLXk3XzlVcVAxemh1T19KMWY0WDZjSXFrcGFFNzNVN0VfTUN0MlhDNGE3ckgyb0MxSHl3TzhLUE9RWDFhdFFSSzJCZnVKSFBBQnlzOEVJelRvUUtCdzRB?oc=5",
+   "category": "politica",
+   "published": "2026-10-23T15:36:31Z",
+   "sources": [
+    "- CIPER Chile"
+   ]
+  },
+  {
+   "title": "Este es el argumento con que el gobierno anterior se opuso en tribunales a rebajar las condenas de agresores sexuales de niños",
+   "link": "https://www.ciperchile.cl/2026/10/23/este-es-el-argumento-con-que-el-gobierno-anterior-se-opuso-en-tribunales-a-rebajar-las-condenas-de-agresores-sexuales-de-ninos/",
    "category": "politica",
    "published": "2026-10-23T15:36:31Z",
    "sources": [
@@ -4865,6 +5020,15 @@
   {
    "title": "PC refuerza el “trabajo de masas” y se declara en “resistencia estratégica” contra gobierno de Kast",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9FcFlpT05ZbzgySm9IYTFrRmlfTGowTmgzT05QU1BoMHAtdHRFQzVZbUNlTTEzX3dCQnNzdDlvdzFfc2hrekRnQmVsT2YtRV9lWXhHcU1peUIwX3VRNHd5SjRST0NXLVpXWm1IZ2xWSUZVc3lHb2RHNA?oc=5",
+   "category": "politica",
+   "published": "2026-10-23T14:59:12Z",
+   "sources": [
+    "Ex-ante"
+   ]
+  },
+  {
+   "title": "PC refuerza el “trabajo de masas” y se declara en “resistencia estratégica” contra gobierno de Kast",
+   "link": "https://www.ex-ante.cl/politica/pc-anuncia-trabajo-masas-contra-kast/",
    "category": "politica",
    "published": "2026-10-23T14:59:12Z",
    "sources": [
@@ -5270,6 +5434,15 @@
    ]
   },
   {
+   "title": "La Fuerza Aérea de Chile presenta al Senado sus necesidades de equipamiento y desarrollo de capacidades",
+   "link": "https://www.infodefensa.com/texto-diario/mostrar/6062924/fach-presenta-senado-necesidades-equipamiento-desarrollo-capacidades",
+   "category": "politica",
+   "published": "2026-10-23T11:43:09Z",
+   "sources": [
+    "Infodefensa"
+   ]
+  },
+  {
    "title": "Tiroteos en la periferia de París se investigan como acto terrorista",
    "link": "https://www.dw.com/es/tiroteos-en-la-periferia-de-par%C3%ADs-se-investigan-como-acto-terrorista/a-79742189",
    "category": "internacional",
@@ -5531,6 +5704,15 @@
    ]
   },
   {
+   "title": "Defensa Nacional de Chile presenta a senadores los desafíos de la FACh para los próximos 20 a 30 años",
+   "link": "https://www.defensa.com/chile/defensa-nacional-chile-presenta-senadores-desaf-iacute-os-fach",
+   "category": "politica",
+   "published": "2026-10-23T09:39:00Z",
+   "sources": [
+    "Defensa.com"
+   ]
+  },
+  {
    "title": "Hombre queda grave tras ser baleado durante ataque en una plaza de Puente Alto",
    "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/23/hombre-queda-grave-tras-ser-baleado-durante-ataque-en-una-plaza-de-puente-alto.shtml",
    "category": "nacional",
@@ -5551,6 +5733,15 @@
   {
    "title": "Columna de Ricardo Ruiz Escalona : Alumno perplejo: salud pública castigada pese a su buena evaluación",
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSFhXTTR1cHV3UGNoVjd0YTlpVldBMi1XQ0lMaW5PckZPR2kwZjItMmlUZTcycFV3ZlJfR05GMS1wWjNXcEZkX2R5NzdNMzJDUDVhT3h2STBPRTh5Tk9hTDRfeUdIVGVrM0IteS1GeDlFdTB3b2RsWGVoelBhQ2Y0NUJGUWNmTGlVd2plZ0dHWExhR1ZUc0hFM25sYkVxZ0R6N1JxRGtyY0tqMU8xVW1UaDhVbTNfbTNYR0RVbnk5MWNPMGxvVkRjNWh6aWVQcmM?oc=5",
+   "category": "salud-ciencia",
+   "published": "2026-10-23T09:25:40Z",
+   "sources": [
+    "Opinión - Cooperativa"
+   ]
+  },
+  {
+   "title": "Columna de Ricardo Ruiz Escalona : Alumno perplejo: salud pública castigada pese a su buena evaluación",
+   "link": "https://opinion.cooperativa.cl/opinion/salud/alumno-perplejo-salud-publica-castigada-pese-a-su-buena-evaluacion/2026-10-23/062316.html",
    "category": "salud-ciencia",
    "published": "2026-10-23T09:25:40Z",
    "sources": [
@@ -5585,6 +5776,15 @@
    ]
   },
   {
+   "title": "Cómo Trump está tratando de influir para que Bolsonaro gane en Brasil",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPN2FkbnQzaHpTYUJpVzZOVElZeTBHUDNjWGtjVXNyWWs5dGVXZjA2XzAzYWRQb1J2akdNUk5nR0wyU0dNXzhVYjk0NEhOMFZBcmNEa0FaQlpVNlhKMHlpNllGcElxVTE1bHVLMk1zMjRrVFFqc2lxUFQ4cEk0QWsxM1R0SzM0M3I3LVFVb2lGaUE5UEVxbzAzb2Jra3JNMkVXdEdMcDJJcTVRQ08wNlZzY0syTnVyVEl6UHBuRXI2MHUyZ1NNUUJZ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-23T08:00:02Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
    "title": "Fintual confirma creación de AFP y asegura que en el fondo E “se tomó un exceso de riesgo”",
    "link": "https://www.df.cl/mercados/pensiones/fintual-confirma-creacion-de-afp-y-asegura-que-en-el-fondo-e-se-tomo-un",
    "category": "economia",
@@ -5609,6 +5809,15 @@
    "published": "2026-10-23T07:00:00Z",
    "sources": [
     "Bloomberg Línea"
+   ]
+  },
+  {
+   "title": "Chile seguiría pegado en el 2%: proyección para el crecimiento del PIB de largo plazo no logra despegar",
+   "link": "https://www.df.cl/economia-y-politica/macro/chile-seguiria-pegado-en-el-2-proyeccion-para-el-crecimiento-del-pib-de",
+   "category": "politica",
+   "published": "2026-10-23T07:00:00Z",
+   "sources": [
+    "Diario Financiero"
    ]
   },
   {
