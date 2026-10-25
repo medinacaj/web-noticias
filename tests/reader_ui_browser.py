@@ -55,6 +55,65 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#search-toggle').click()
         self.assertTrue(await self.page.locator('#search-input').is_visible())
 
+    async def prime_previous_edition(self):
+        await self.page.evaluate("""() => {
+          const edition = Date.parse(document.querySelector('#updated-at').dateTime);
+          localStorage.setItem('noticias:last-edition:v1:' + location.pathname, String(edition - 25 * 3600000));
+        }""")
+        await self.page.reload()
+
+    async def test_visit_updates_are_quiet_first_time_and_not_repeated_on_reload(self):
+        self.assertFalse(await self.page.locator('#visit-updates').is_visible())
+        await self.prime_previous_edition()
+        button = self.page.locator('#visit-updates')
+        self.assertTrue(await button.is_visible())
+        self.assertGreater(await self.page.locator('.new-story-label').count(), 0)
+        await button.click()
+        self.assertTrue(await self.page.evaluate("document.activeElement.matches('a[data-first-seen]')"))
+        await self.page.reload()
+        self.assertFalse(await button.is_visible())
+        self.assertEqual(await self.page.locator('.new-story-label').count(), 0)
+
+    async def test_visit_updates_respect_filters_and_reset_preserves_order(self):
+        await self.prime_previous_edition()
+        total = await self.page.locator('#visit-updates').text_content()
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#source-sort').select_option('recent')
+        category = self.page.locator('#category-preference')
+        await category.select_option(index=1)
+        self.assertTrue(await self.page.locator('#preferences-reset').is_visible())
+        expected = await self.page.evaluate("""() => [...document.querySelectorAll('.new-story-label')]
+            .filter(el => !el.closest('[data-source-hidden],[data-filtered],[hidden]')).length""")
+        self.assertEqual(await self.page.locator('#visit-updates').is_visible(), expected > 0)
+        if expected:
+            self.assertTrue((await self.page.locator('#visit-updates').text_content()).startswith(str(expected) + ' '))
+        await self.page.locator('#preferences-reset').click()
+        self.assertEqual(await category.input_value(), '')
+        self.assertEqual(await self.page.locator('#source-sort').input_value(), 'recent')
+        self.assertEqual(await self.page.locator('#visit-updates').text_content(), total)
+        await self.page.locator('#view-options-toggle').click()
+        for width in (320, 390, 768, 1024, 1440, 1920, 2560):
+            await self.page.set_viewport_size({'width': width, 'height': 1000})
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
+        await self.page.set_viewport_size({'width': 390, 'height': 1000})
+        await self.page.screenshot(path='/tmp/news-discovery-return-390.png')
+        await self.page.set_viewport_size({'width': 1440, 'height': 1000})
+        await self.page.screenshot(path='/tmp/news-discovery-return-1440.png')
+
+    async def test_visit_updates_ignore_corrupt_and_newer_watermarks(self):
+        for value in ('broken', '-1', 'Infinity', '99999999999999'):
+            await self.page.evaluate("v => localStorage.setItem('noticias:last-edition:v1:' + location.pathname, v)", value)
+            await self.page.reload()
+            self.assertFalse(await self.page.locator('#visit-updates').is_visible(), value)
+        await self.page.evaluate("""() => {
+          const newer = Date.parse(document.querySelector('#updated-at').dateTime) + 60000;
+          localStorage.setItem('noticias:last-edition:v1:' + location.pathname, String(newer));
+        }""")
+        before = await self.page.evaluate("localStorage.getItem('noticias:last-edition:v1:' + location.pathname)")
+        await self.page.reload()
+        self.assertFalse(await self.page.locator('#visit-updates').is_visible())
+        self.assertEqual(await self.page.evaluate("localStorage.getItem('noticias:last-edition:v1:' + location.pathname)"), before)
+
     async def test_desktop_sidebar_defaults_visible_and_choice_survives_reload(self):
         nav, toggle = self.page.locator('#site-nav'), self.page.locator('#menu-toggle')
         self.assertTrue(await nav.is_visible())

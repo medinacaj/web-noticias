@@ -51,7 +51,9 @@ Variables de entorno: `GNEWS_API_KEY` (secret), `SITE_URL` y `GSC_VERIFICATION` 
 - Búsqueda local sobre los titulares publicados (sin tildes), menú móvil desplegable, modo oscuro, `prefers-reduced-motion`.
 - Franja de contexto con datos reales (lo más cubierto, sección más activa, cobertura) en lugar de "Dato / Por qué / Implicancia", que exigiría inventar análisis.
 - El usuario no quiere mostrar "Verificado en X fuentes" (el dato `sources` se mantiene internamente).
-- Cada titular enlaza a la nota concreta, nunca a la portada del medio.
+- Cada titular enlaza a la nota concreta, nunca a la portada del medio. «Otras coberturas» conserva el diálogo existente de fuentes relacionadas.
+- Descubrimiento natural: Destacadas prioriza medios y secciones de presentación distintos entre los doce candidatos recientes mejor clasificados, sin vaciar secciones; después rellena con el orden editorial.
+- Novedades desde la visita anterior: acción discreta junto a Destacadas, basada en `first_seen`, no en fecha de publicación. Solo recuerda la última edición visitada en almacenamiento local, sin historial de lectura ni envíos al servidor. Primera visita y misma edición no muestran aviso; respeta filtros y revela Ver más al navegar.
 - Descartado a pedido del usuario: sección de Ofertas/comparador de precios. Sin newsletter (no hay backend).
 
 ## Reglas del proyecto
