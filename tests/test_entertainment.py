@@ -27,10 +27,11 @@ class EntertainmentTests(unittest.TestCase):
             calls.append((url, category, kwargs))
             return [entry(i) for i in range(20)]
         items = collect_entertainment(NOW, fetch=fetch)
-        self.assertEqual(len(calls), 2)
-        self.assertEqual({parse_qs(urlsplit(url).query)['gl'][0] for url, _, _ in calls}, {'ES', 'MX'})
+        # Ediciones ES y MX más dos búsquedas temáticas en Chile (cine y conciertos).
+        self.assertEqual(len(calls), 4)
+        self.assertEqual({parse_qs(urlsplit(url).query)['gl'][0] for url, _, _ in calls}, {'ES', 'MX', 'CL'})
         self.assertTrue(all(kwargs.get('metadata_only') for _, _, kwargs in calls))
-        self.assertLessEqual(len(items), 12)
+        self.assertLessEqual(len(items), 24)  # hasta seis por edición o búsqueda
         self.assertTrue(items)
         self.assertTrue(all(item['category'] == 'cultura' and item['metadata_only']
                             and item['summary'] == item['image'] == '' for item in items))
@@ -44,7 +45,7 @@ class EntertainmentTests(unittest.TestCase):
             if len(calls) == 1: raise OSError('feed down')
             return [entry()]
         self.assertEqual(len(collect_entertainment(NOW, fetch=fetch)), 1)
-        self.assertEqual(len(calls), 2)
+        self.assertEqual(len(calls), 4)
 
     def test_invalid_dates_links_and_restricted_editors_are_not_accepted(self):
         from scripts.entertainment import collect_entertainment
@@ -99,6 +100,24 @@ class EntertainmentTests(unittest.TestCase):
         stories = [{**entry(i), 'sources': ['Medio']} for i in range(8)]
         self.assertEqual(len(balance_entertainment(stories, 24)), 8)
         self.assertEqual(len(balance_entertainment(stories, 2)), 2)
+
+
+class FilmAndConcertSearchTests(unittest.TestCase):
+    def test_chile_searches_cover_film_and_concerts_and_stay_in_cultura(self):
+        from scripts.entertainment import collect_entertainment, SEARCHES
+        calls = []
+        def fetch(url, category, **kwargs):
+            calls.append(url)
+            return [entry(len(calls) * 10 + i) for i in range(3)]
+        items = collect_entertainment(NOW, fetch=fetch)
+        searches = [parse_qs(urlsplit(url).query) for url in calls if "/rss/search" in url]
+        self.assertEqual(len(searches), len(SEARCHES))
+        self.assertTrue(any("cine" in q["q"][0] for q in searches))
+        self.assertTrue(any("concierto" in q["q"][0] for q in searches))
+        self.assertTrue(all(q["gl"] == ["CL"] for q in searches))
+        labels = {item["discovery_edition"] for item in items}
+        self.assertTrue({"CL-CINE", "CL-CONCIERTOS"} <= labels)
+        self.assertTrue(all(item["category"] == "cultura" and item["metadata_only"] for item in items))
 
 
 if __name__ == '__main__': unittest.main()

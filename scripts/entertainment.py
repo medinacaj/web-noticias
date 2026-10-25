@@ -12,12 +12,31 @@ from scripts.latam import catalog_allowed, explicit_date
 from scripts.source_diversity import diverse_prefix, publisher_key
 
 EDITIONS = (("ES", "es", "ES:es"), ("MX", "es-419", "MX:es-419"))
+# Búsquedas temáticas en la edición de Chile (pedido del usuario, 2026-10-25): estrenos de cine
+# y anuncios de conciertos. Misma vía Google Noticias y mismas puertas; las fechas y lugares de
+# actividades próximas van en la Agenda, no aquí.
+SEARCHES = (
+    ("CL-CINE", "(estreno OR estrenos OR cartelera) (cine OR película OR películas) Chile"),
+    ("CL-CONCIERTOS", "(concierto OR conciertos OR gira OR festival) (entradas OR anuncia OR confirma) Chile"),
+)
 MAX_PER_EDITION = 6
 
 
 def edition_url(country, language, edition):
     return "https://news.google.com/rss/headlines/section/topic/ENTERTAINMENT?" + urlencode(
         {"hl": language, "gl": country, "ceid": edition})
+
+
+def search_url(query):
+    return "https://news.google.com/rss/search?" + urlencode(
+        {"q": query + " when:2d", "hl": "es-419", "gl": "CL", "ceid": "CL:es-419"})
+
+
+def _sources():
+    for country, language, edition in EDITIONS:
+        yield country, edition_url(country, language, edition)
+    for label, query in SEARCHES:
+        yield label, search_url(query)
 
 
 def collect_entertainment(now, fetch=None):
@@ -27,9 +46,9 @@ def collect_entertainment(now, fetch=None):
     fetch = fetch_rss if fetch is None else fetch
     catalog = load_world_catalog() + load_regional_catalog()
     results, seen = [], set()
-    for country, language, edition in EDITIONS:
+    for country, url in _sources():
         try:
-            items = fetch(edition_url(country, language, edition), "cultura", metadata_only=True)
+            items = fetch(url, "cultura", metadata_only=True)
         except Exception as error:
             print(f"[aviso] Entretenimiento ({country}) no disponible: {error}")
             continue
