@@ -175,6 +175,71 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#theme-toggle').click()
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
 
+    async def test_menu_covers_all_published_categories_and_real_targets(self):
+        missing = await self.page.evaluate("""() => {
+          const categories = new Set([...document.querySelectorAll('main h2 a[data-key],main h3 a[data-key]')].map(a=>a.dataset.key));
+          return [...categories].filter(key=>!document.querySelector('#site-nav a[href="#cat-'+key+'"]'));
+        }""")
+        self.assertEqual(missing, [])
+        self.assertTrue(await self.page.evaluate("""() => [...document.querySelectorAll('#site-nav a')]
+          .every(a=>document.getElementById(a.hash.slice(1)))"""))
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-medioambiente"]').inner_text(), 'Medioambiente y clima')
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-salud-ciencia"]').inner_text(), 'Salud y ciencia')
+
+    async def test_grouped_menu_topics_reveal_and_highlight_their_news(self):
+        for width in (1440, 390):
+            await self.page.set_viewport_size({'width': width, 'height': 1000})
+            await self.page.reload()
+            for category in ('medioambiente', 'salud-ciencia'):
+                if width < 1024:
+                    await self.page.locator('#menu-toggle').click()
+                link = self.page.locator('#site-nav a[href="#cat-' + category + '"]')
+                await link.click()
+                target = self.page.locator('#cat-' + category)
+                self.assertTrue(await target.is_visible(), (width, category))
+                self.assertTrue(await target.locator('a[data-key="' + category + '"]').count())
+                await self.page.wait_for_function("document.querySelector('#site-nav a[href=\"#cat-" + category + "\"]').getAttribute('aria-current') === 'location'")
+                if width < 1024:
+                    self.assertFalse(await self.page.locator('#site-nav').is_visible())
+        await self.page.set_viewport_size({'width': 1440, 'height': 1000})
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#category-preference').select_option('cultura')
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
+        self.assertTrue(await self.page.locator('#cat-medioambiente').is_visible())
+        self.assertEqual(await self.page.locator('#category-preference').input_value(), '')
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#category-preference').select_option('cultura')
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#site-nav a[href="#cat-nacional"]').click()
+        self.assertTrue(await self.page.locator('#cat-nacional .feature').is_visible())
+        self.assertEqual(await self.page.locator('#category-preference').input_value(), '')
+
+    async def test_grouped_category_hash_works_on_direct_load_and_reload(self):
+        for category in ('medioambiente', 'salud-ciencia'):
+            await self.page.goto(self.url + '?category-entry=1#cat-' + category)
+            target = self.page.locator('#cat-' + category)
+            await target.wait_for(state='visible', timeout=2000)
+            await self.page.wait_for_function("document.querySelector('#cat-" + category + "').getBoundingClientRect().top > 0 && document.querySelector('#cat-" + category + "').getBoundingClientRect().top < 180")
+            await self.page.reload()
+            self.assertTrue(await target.is_visible())
+
+    async def test_back_to_topic_hash_preserves_later_category_filter(self):
+        await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#category-preference').select_option('cultura')
+        await self.page.locator('#view-options-toggle').click()
+        hidden = await self.page.locator('[data-source-hidden]').count()
+        link = self.page.locator('.section-grid h3 a[data-key="cultura"]').first
+        destination = await link.get_attribute('href')
+        await self.page.route(destination, lambda route: route.fulfill(status=200, content_type='text/html', body='<h1>Noticia</h1>'))
+        await link.click()
+        await self.page.wait_for_url(destination)
+        await self.page.go_back()
+        self.assertEqual(await self.page.locator('#category-preference').input_value(), 'cultura')
+        self.assertEqual(await self.page.evaluate('JSON.parse(localStorage.getItem("noticias:category:v1"))'), 'cultura')
+        self.assertEqual(await self.page.locator('[data-source-hidden]').count(), hidden)
+
     async def test_desktop_sidebar_defaults_visible_and_choice_survives_reload(self):
         nav, toggle = self.page.locator('#site-nav'), self.page.locator('#menu-toggle')
         self.assertTrue(await nav.is_visible())

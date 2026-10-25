@@ -34,6 +34,28 @@ class GroupedSiteTests(unittest.TestCase):
         parser.feed(news.title_link(story))
         self.assertEqual(json.loads(parser.anchors[0]["data-sources"]), story["sources"])
 
+    def test_menu_exposes_grouped_topics_and_lead_only_category(self):
+        from scripts.presentation_groups import group_sections
+        now = datetime(2026, 10, 25, tzinfo=timezone.utc)
+        def article(category, i):
+            return {'title': f'Nota {category} {i}', 'category': category, 'sources': [f'Medio {i}'],
+                    'link': f'https://medio.example/{category}/{i}', 'published': now.isoformat(), 'image': '', 'summary': ''}
+        topics = ['deportes'] + ['nacional'] * 4 + ['medioambiente'] * 3 + ['tecnologia'] * 4 + ['salud-ciencia'] * 3
+        stories = [article(category, i) for i, category in enumerate(topics)]
+        sel = news.select(stories, now)
+        sel['by_category'] = group_sections(sel['by_category'])
+        menu = PageInspector(); menu.feed(news.render_nav(sel))
+        html = news.render_top(sel, now) + news.render_sections(sel['by_category'], now)
+        body = PageInspector(); body.feed(html)
+        hrefs = {a.get('href') for a in menu.anchors}
+        for topic in set(topics):
+            self.assertIn('#cat-' + topic, hrefs)
+        for href in hrefs:
+            self.assertIn(href[1:], body.ids)
+        self.assertEqual(len(body.ids), len(set(body.ids)))
+        self.assertIn('Medioambiente y clima', news.render_nav(sel))
+        self.assertIn('Salud y ciencia', news.render_nav(sel))
+
     def test_generation_groups_sections_and_preserves_original_categories(self):
         now = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)
         stories = []

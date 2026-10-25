@@ -746,19 +746,31 @@ def render_breaking(sel, now):
             '</div></section>')
 
 
+def topic_anchor(story, reserved):
+    """Una ancla por tema publicado que no tiene sección independiente."""
+    category = story["category"]
+    if category in reserved:
+        return ""
+    reserved.add(category)
+    return f' id="cat-{esc(category)}" data-nav-topic="{esc(category)}"'
+
+
 def render_top(sel, now):
     lead = sel["lead"]
     if not lead:
         return ""
+    grouped = sel.get("by_category", {})
+    reserved = set(grouped) | {s["category"] for items in grouped.values() for s in items}
+    lead_anchor = topic_anchor(lead, reserved)
     lead_html = (
         f'<article class="lead cat-{lead["category"]}{" lead--text" if not safe_image(lead.get("image")) else ""}" id="portada">{figure_html(lead, eager=True)}'
         f'<p class="kicker">Portada · {esc(category_label(lead))}</p>'
-        f'<h2 class="lead-title">{title_link(lead)}</h2>{dek_html(lead)}{meta_html(lead, now, True)}</article>'
+        f'<h2 class="lead-title"{lead_anchor}>{title_link(lead)}</h2>{dek_html(lead)}{meta_html(lead, now, True)}</article>'
     )
     items = "".join(
         f'<li class="cat-{s["category"]}"><article class="rail-item">{figure_html(s)}'
         f'<p class="kicker">{esc(category_label(s))}</p>'
-        f'<h3>{title_link(s)}</h3>{meta_html(s, now)}</article></li>'
+        f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</article></li>'
         for s in sel["secondary"]
     )
     if not items:
@@ -801,7 +813,8 @@ def render_coverage_radar(stories):
 
 
 def render_sections(by_category, now):
-    from scripts.presentation_groups import PRESENTATION_LABELS, canonical_section
+    from scripts.presentation_groups import PRESENTATION_LABELS
+    reserved = set(by_category)
     blocks = []
     present = [c for c in CATEGORIES if c["key"] in by_category]
     for number, cat in enumerate(present, start=1):
@@ -809,12 +822,12 @@ def render_sections(by_category, now):
         feature, rest = stories[0], stories[1:]
         feature_html = (f'<article class="feature">{figure_html(feature)}'
                         f'<div class="news-body"><p class="kicker">{esc(category_label(feature))}</p>'
-                        f'<h3 class="feature-title">{title_link(feature)}</h3>'
+                        f'<h3 class="feature-title"{topic_anchor(feature, reserved)}>{title_link(feature)}</h3>'
                         f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
         compact = "".join(
             f'<li{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
             f'<div class="news-body"><p class="kicker">{esc(category_label(s))}</p>'
-            f'<h3>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
+            f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
             for i, s in enumerate(rest))
         grid_class = "section-grid" if compact else "section-grid section-grid--single"
         compact_html = f'<ul class="compact-list">{compact}</ul>' if compact else ""
@@ -823,12 +836,8 @@ def render_sections(by_category, now):
                 f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
                 f'Ver más noticias <span aria-hidden="true">↓</span></button>'
                 if count > 6 else "")
-        aliases = "".join(f'<span class="section-anchor" id="cat-{origin}" aria-hidden="true"></span>'
-                          for origin in ("salud-ciencia", "medioambiente")
-                          if canonical_section(origin) == cat["key"] and origin not in by_category)
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
-            f'{aliases}'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count} {"noticia" if count == 1 else "noticias"}</span></div>'
@@ -839,10 +848,32 @@ def render_sections(by_category, now):
 
 
 def render_nav(sel, agenda=False):
-    from scripts.presentation_groups import PRESENTATION_LABELS
+    from scripts.presentation_groups import PRESENTATION_LABELS, canonical_section
+    sections = set(sel["by_category"])
+    published = ([sel["lead"]] if sel.get("lead") else []) + sel.get("secondary", [])
+    published += [story for items in sel["by_category"].values() for story in items]
+    available = sections | {story["category"] for story in published}
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
-    links += [f'<li><a class="cat-{c["key"]}" href="#cat-{c["key"]}">{esc(PRESENTATION_LABELS.get(c["key"], c.get("short", c["label"])))}</a></li>'
-              for c in CATEGORIES if c["key"] in sel["by_category"]]
+    emitted = set()
+    def entry(category, child=False):
+        key = category["key"]
+        label = PRESENTATION_LABELS.get(key, category["label"])
+        kind = " nav-subtopic" if child else ""
+        return f'<li><a class="cat-{key}{kind}" href="#cat-{key}">{esc(label)}</a></li>'
+    for category in CATEGORIES:
+        key = category["key"]
+        if key not in available or key in emitted:
+            continue
+        parent = canonical_section(key)
+        if parent != key and parent in sections:
+            continue
+        links.append(entry(category))
+        emitted.add(key)
+        for child in CATEGORIES:
+            child_key = child["key"]
+            if child_key != key and child_key in available and child_key not in emitted and canonical_section(child_key) == key:
+                links.append(entry(child, child=True))
+                emitted.add(child_key)
     if agenda:
         links.append('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>')
     return "".join(links)
