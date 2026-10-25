@@ -75,6 +75,12 @@ class LatestCarouselTests(unittest.TestCase):
         self.assertIn('data-news-id=', title_link(item))
         self.assertIn('data-first-seen=""', title_link(story(1)))
 
+    def test_article_links_follow_browser_history(self):
+        from fetch_noticias import title_link, render_coverage_radar
+        self.assertNotIn('target="_blank"', title_link(story(1)))
+        self.assertNotIn('target="_blank"', render_breaking(select([story(1)], NOW), NOW))
+        self.assertNotIn('target="_blank"', render_coverage_radar([story(1, sources=['A','B','C','D'])]))
+
     def test_repeated_url_is_not_a_second_slide(self):
         stories = [story(0), story(1, link=story(0)["link"]), story(2), story(3)]
         rendered = render_breaking(select(stories, NOW), NOW)

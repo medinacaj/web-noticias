@@ -127,7 +127,7 @@ class RenderAgendaTests(unittest.TestCase):
         self.assertNotIn("<script>", html)
         self.assertIn('rel="noopener" data-countries="" data-cat="Agenda" data-key="agenda"', html)
         self.assertIn(">alert(1)</a>", html)
-        self.assertIn('href="https://teatrobiobio.cl/concierto/" target="_blank"', html)
+        self.assertIn('href="https://teatrobiobio.cl/concierto/"', html)
         self.assertIn('<span class="source-country">Por confirmar</span>', html)
 
     def test_reuses_news_section_structure(self):

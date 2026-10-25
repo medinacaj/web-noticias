@@ -192,7 +192,7 @@ def render_signals(trends, timeline):
     sections = []
     if trends:
         entries = "".join(
-            '<li><a href="' + esc(x["link"]) + '" target="_blank" rel="noopener">'
+            '<li><a href="' + esc(x["link"]) + '" rel="noopener">'
             + esc(x["label"]) + '</a><span>' + str(x["stories"]) + ' publicaciones · '
             + str(x["sources"]) + ' medios</span></li>' for x in trends)
         sections.append(
@@ -206,7 +206,7 @@ def render_signals(trends, timeline):
         for index, group in enumerate(timeline):
             entries = "".join(
                 '<li><time datetime="' + esc(x["published"]) + '">' + esc(x["published"][:16].replace("T", " "))
-                + ' UTC</time><a href="' + esc(x["link"]) + '" target="_blank" rel="noopener">'
+                + ' UTC</time><a href="' + esc(x["link"]) + '" rel="noopener">'
                 + esc(x["title"]) + '</a></li>' for x in group)
             sections.append(
                 '<section class="coverage-radar signal-timeline" aria-labelledby="timeline-title-'

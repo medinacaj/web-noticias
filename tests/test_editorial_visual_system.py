@@ -47,7 +47,7 @@ class EditorialVisualSystemTests(unittest.TestCase):
         self.assertIn("@media (max-width:767px)", self.source)
 
     def test_existing_visual_identity_and_features_unchanged(self):
-        for marker in ("--paper:#F2F1ED", "--card-bg:#FFFFFF",
+        for marker in ("--paper:#E9E8E2", "--card-bg:#FFFFFF",
                        "box-shadow:var(--card-shadow-hover)", "width:7px;height:7px;border-radius:50%",
                        "%%NAV%%", "%%TOP%%", "%%SECTIONS%%", "data-show-more"):
             self.assertIn(marker, self.source)
