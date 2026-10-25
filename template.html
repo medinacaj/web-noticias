@@ -58,7 +58,7 @@
     --card-rule:#D7DBD4; --card-link:#31584A;
     --brand:#31584A; --callout-bg:#E7EDE6; --callout-ink:#31584A; --callout-muted:#526257; --callout-rule:#9EAEA1;
     --signature-bg:#202529; --signature-ink:#F7F6F2; --signature-muted:#C4C7CC;
-    --space-section:72px; --radius-card:8px; --motion-card:.2s;
+    --space-section:48px; --radius-card:8px; --motion-card:.2s;
     --card-shadow:0 2px 5px rgba(25,30,27,.04),0 6px 16px rgba(25,30,27,.035),0 14px 28px rgba(25,30,27,.02);
     --card-shadow-hover:0 4px 9px rgba(25,30,27,.06),0 10px 22px rgba(25,30,27,.05),0 18px 36px rgba(25,30,27,.025);
     --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
@@ -251,7 +251,7 @@
 
   .lead .media{aspect-ratio:16/9;height:auto;max-height:360px;flex-shrink:0;}
   .lead--text .media--source{height:156px;aspect-ratio:auto;}
-  .lead--text .lead-title{font-size:clamp(30px,3.2vw,46px);}
+  .lead--text .lead-title{font-size:clamp(28px,3vw,42px);}
   .lead .dek{font-size:17px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
   .lead .meta{margin-top:auto;padding-top:12px;}
   /* ---------- Franja de contexto ---------- */
@@ -265,7 +265,7 @@
 
   /* ---------- Secciones ---------- */
   .section{margin-top:var(--space-section);}
-  .section-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid color-mix(in srgb,var(--rule) 58%,transparent);padding:10px 0 16px;margin-bottom:22px;}
+  .section-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid color-mix(in srgb,var(--rule) 58%,transparent);padding:10px 0 16px;margin-bottom:16px;}
   .section-num{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--cat,var(--red));}
   
   .section-head h2{font:700 30px/1.16 var(--serif);letter-spacing:-.025em;margin:0;text-wrap:balance;}
@@ -475,7 +475,7 @@
     .context{grid-template-columns:minmax(0,1fr);margin-top:28px;}
     .context-unit,.context-unit:first-child{padding:18px 20px;border-left:0;border-top:1px solid var(--rule);}
     .context-unit:first-child{border-top:0;}
-    .section{margin-top:44px;}
+    .section{margin-top:32px;}
     .section-head{margin-bottom:14px;}
     .section-head h2{font-size:25px;}
     .feature-title,.compact h3{font-size:17px;line-height:1.35;}
@@ -524,6 +524,8 @@
   .icon-btn[aria-expanded="true"]{background:var(--paper);border-color:var(--strong);}
   .js .search-toggle{margin-left:0;}
   .theme-toggle{font-size:22px;}
+  .control-label{display:none;}
+  @media (min-width:1380px){.control-label{display:inline;font:600 12px/1 var(--sans);}.search-toggle,.view-options-toggle{padding-inline:10px;}}
   .search-results mark{color:#07192E;}
   .coverage-close{color:var(--ink);}
   .section,.section-anchor,#portada{scroll-margin-top:16px;}
@@ -542,7 +544,8 @@
     .top-grid:has(.lead > .media--source) .rail-list{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto;}
     .top-grid:has(.lead > .media--source) .lead-title{max-width:40ch;}
   }
-  .lead--text .lead-title{font-size:clamp(30px,3.2vw,46px);}
+  .lead--text .lead-title{font-size:clamp(28px,3vw,42px);}
+  .lead .dek{max-width:68ch;}
   /* Una franja, una noticia: enlaces íntegros, avance manual y sin scrollbar visible. */
   .breaking{border-bottom:1px solid var(--rule);background:var(--surface);}
   .breaking-inner{display:flex;align-items:center;gap:16px;min-height:56px;}
@@ -568,6 +571,7 @@
   @media (min-width:1024px) and (max-width:1379px){.section-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
   @media (max-width:767px){
     .bar-inner{gap:6px;min-height:var(--header-height);}
+    .lead--text .lead-title{font-size:clamp(26px,6vw,34px);}
     .brand-logo{width:30px;height:30px;}
     .brand-link{gap:8px;}
     .masthead-title{font-size:16px;letter-spacing:-.025em;}
@@ -608,12 +612,12 @@
 
     </div>
     <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Tema automático"><span aria-hidden="true">◐</span></button>
-    <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+    <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias" title="Buscar noticias">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span class="control-label" aria-hidden="true">Buscar</span>
     </button>
     <div class="view-options-wrap">
       <button type="button" class="icon-btn view-options-toggle" id="view-options-toggle" aria-label="Opciones de visualización" aria-expanded="false" aria-controls="view-options-panel" title="Opciones de visualización">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.4" fill="var(--navy)"/><circle cx="16" cy="17" r="2.4" fill="var(--navy)"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.4" fill="var(--navy)"/><circle cx="16" cy="17" r="2.4" fill="var(--navy)"/></svg><span class="control-label" aria-hidden="true">Vista</span>
       </button>
       <div class="view-options-panel" id="view-options-panel" hidden aria-label="Opciones de visualización">
         <p class="view-options-heading">Personalizar vista</p>

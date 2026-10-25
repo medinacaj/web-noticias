@@ -7,6 +7,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 import ipaddress
+import json
 import logging
 import re
 import socket
@@ -58,15 +59,54 @@ class PictureMetadata(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.candidates = {}
+        self.structured = []
+        self.script_parts = None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == "script" and attrs.get("type", "").lower() == "application/ld+json":
+            self.script_parts = []
         if tag == "meta":
             key = (attrs.get("property") or attrs.get("name") or attrs.get("itemprop") or "").lower()
             if key in ("og:image:secure_url", "og:image", "twitter:image", "twitter:image:src", "image"):
                 self.candidates.setdefault(key, attrs.get("content", "").strip())
         elif tag == "link" and "image_src" in (attrs.get("rel") or "").lower():
             self.candidates.setdefault("image_src", attrs.get("href", "").strip())
+
+    def handle_data(self, data):
+        if self.script_parts is not None:
+            self.script_parts.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "script" and self.script_parts is not None:
+            try:
+                self.structured.append(json.loads("".join(self.script_parts)))
+            except (ValueError, RecursionError):
+                pass
+            self.script_parts = None
+
+
+def article_images(node, depth=0):
+    """Solo imágenes de artículos, sin confundir logos del editor con fotografías."""
+    if depth > 12:
+        return
+    if isinstance(node, list):
+        for item in node:
+            yield from article_images(item, depth + 1)
+    elif isinstance(node, dict):
+        types = node.get("@type", [])
+        types = [types] if isinstance(types, str) else types
+        if isinstance(types, list) and any(t in ("NewsArticle", "Article", "ReportageNewsArticle", "BlogPosting") for t in types):
+            images = node.get("image", [])
+            for image in images if isinstance(images, list) else [images]:
+                if isinstance(image, str):
+                    yield image
+                elif isinstance(image, dict):
+                    value = image.get("url") or image.get("contentUrl")
+                    if isinstance(value, str):
+                        yield value
+        for key in ("@graph", "mainEntity"):
+            yield from article_images(node.get(key), depth + 1)
 
 
 def image_from_html(html_text, article_url):
@@ -75,6 +115,11 @@ def image_from_html(html_text, article_url):
     for key in ("og:image:secure_url", "og:image", "twitter:image", "twitter:image:src", "image", "image_src"):
         value = parser.candidates.get(key)
         if value:
+            image_url = urljoin(article_url, value)
+            if permitted_url(image_url, check_dns=False):
+                return image_url
+    for data in parser.structured:
+        for value in article_images(data):
             image_url = urljoin(article_url, value)
             if permitted_url(image_url, check_dns=False):
                 return image_url
