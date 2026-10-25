@@ -110,6 +110,7 @@
   .nav-heading{font:700 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 12px 12px;}
   .site-nav ul{display:grid;gap:3px;list-style:none;margin:0;padding:0;}
   .site-nav a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border-radius:8px;font:600 12px/1.4 var(--sans);overflow-wrap:anywhere;border:1px solid transparent;}
+  .site-nav a.nav-subtopic{padding-left:24px;font-size:11px;}
   .site-nav a:hover,.site-nav a:focus-visible{background:var(--paper);color:var(--ink);}
   .site-nav a.is-active,.site-nav a.is-current{background:color-mix(in srgb,var(--cat,var(--navy)) 10%,var(--surface));border-color:color-mix(in srgb,var(--cat,var(--navy)) 25%,var(--surface));color:var(--ink);}
   .site-nav a[class^="cat-"]::before{content:"";width:7px;height:7px;flex:none;border-radius:50%;margin-right:10px;background:var(--cat);}
@@ -1081,11 +1082,12 @@
   (function () {
     if (!("IntersectionObserver" in window)) return;
     var links = d.querySelectorAll(".site-nav a[href^='#']");
-    var sections = d.querySelectorAll("main section.section[id]");
+    var sections = d.querySelectorAll("main section.section[id], main [data-nav-topic]");
     if (!links.length || !sections.length) return;
     var observer = new IntersectionObserver(function () {
       var current = null, best = Number.POSITIVE_INFINITY;
       sections.forEach(function (section) {
+        if (!section.getClientRects().length) return;
         var y = section.getBoundingClientRect().top;
         if (y <= 160 && Math.abs(y) < best) { current = section.id; best = Math.abs(y); }
       });
@@ -1098,6 +1100,51 @@
       });
     }, {rootMargin:"-100px 0px -70% 0px", threshold:0});
     sections.forEach(function (section) { observer.observe(section); });
+  })();
+
+  // Un acceso a un tema agrupado puede apuntar a una noticia en Ver más.
+  (function () {
+    var navigation = d.getElementById("site-nav");
+    if (!navigation) return;
+    function reveal(hash) {
+      var known = Array.from(navigation.querySelectorAll("a")).some(function (link) {
+        return link.getAttribute("href") === hash;
+      });
+      var target = known && d.getElementById(hash.slice(1));
+      if (!target) return null;
+      var reset = d.getElementById("preferences-reset");
+      var cards = Array.from(target.querySelectorAll(".feature,.compact-list li"));
+      var excluded = target.closest("[data-source-hidden],[data-filtered]")
+        || (cards.length && cards.every(function (item) {return item.hasAttribute("data-source-hidden");}));
+      if (excluded && reset) reset.click();
+      var grid = target.closest(".section-grid");
+      var card = target.closest(".feature,.compact-list li");
+      if (grid && card && card.hasAttribute("data-extra")) {
+        var matches = Array.from(grid.querySelectorAll(".feature,.compact-list li")).filter(function (item) {
+          return !item.hasAttribute("data-source-hidden") && !item.hasAttribute("data-filtered");
+        });
+        refreshSection(grid, Math.max(Number(grid.dataset.visibleLimit) || 6, matches.indexOf(card) + 1));
+      }
+      return target;
+    }
+    navigation.addEventListener("click", function (event) {
+      var link = event.target.closest("a[href^='#']");
+      if (link) reveal(link.getAttribute("href"));
+    });
+    function restoringView() {
+      var state = window.history.state;
+      return state && state.newsView && typeof state.newsView === "object";
+    }
+    function followHash(event) {
+      // Restaurar una vista conserva sus filtros, incluso si su hash es anterior.
+      if (event.persisted || (event.type === "pageshow" && restoringView())) return;
+      var target = reveal(window.location.hash);
+      if (!target) return;
+      window.requestAnimationFrame(function () {target.scrollIntoView({block:"start",behavior:"instant"});});
+    }
+    window.addEventListener("hashchange", followHash);
+    window.addEventListener("pageshow", followHash);
+    if (!restoringView()) reveal(window.location.hash);
   })();
 
   // Agenda: filtros por región y gratuidad. Sin JavaScript se ve la lista completa.
