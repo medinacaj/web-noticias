@@ -41,8 +41,11 @@
 <meta name="twitter:title" content="%%TITLE%%">
 <meta name="twitter:description" content="%%DESCRIPTION%%">
 <meta name="twitter:image" content="%%OG_IMAGE%%">
-<meta name="theme-color" content="#272D31">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23272D31'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='62' font-weight='700' fill='%23FBFAF7' text-anchor='middle'%3EN%3C/text%3E%3Crect x='18' y='82' width='64' height='5' fill='%23C8102E'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#31584A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap">
@@ -99,9 +102,10 @@
   .masthead-title{font:700 21px/1.1 var(--serif);letter-spacing:-.035em;margin:0;}
   .brand-link{display:inline-flex;align-items:center;gap:10px;}
   .brand-logo{width:40px;height:40px;flex:none;}
-  .brand-logo rect{fill:var(--brand);}
-  .brand-logo path{stroke:var(--on-navy);}
-  .brand-logo .logo-accent{stroke:var(--b-nacional);}
+  /* Símbolo de marca: mismos colores fijos que favicon.svg e íconos (no cambian con el tema). */
+  .brand-logo rect{fill:#31584A;}
+  .brand-logo path{stroke:#F7F6F2;}
+  .brand-logo .logo-accent{stroke:#FF907F;}
   .header-status{flex:none;display:grid;gap:2px;text-align:right;margin-left:12px;}
   .header-updated{font:500 10px/1.4 var(--sans);color:var(--muted);margin:0;white-space:nowrap;}
   .edition-count{font:600 11px/1.4 var(--sans);color:var(--ink);margin:0;white-space:nowrap;}
@@ -613,7 +617,7 @@
     </button>
     <div class="masthead-wrap">
       <h1 class="masthead-title"><a class="brand-link" href="#contenido">
-        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9"/><path d="M12 28V12l16 16V12" fill="none" stroke-width="3" stroke-linejoin="round"/><path class="logo-accent" d="M12 33h16" stroke-width="2"/></svg>
+        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9"/><path d="M12.5 28V12l15 16V12" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path class="logo-accent" d="M12.5 33h15" stroke-width="2.4" stroke-linecap="round"/></svg>
         <span>Noticias <span class="brand-second-line">del Momento</span></span>
       </a></h1>
 

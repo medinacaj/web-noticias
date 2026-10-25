@@ -54,7 +54,9 @@ def render_about_page(site_url):
 <meta name="twitter:title" content="Sobre Noticias del Momento">
 <meta name="twitter:description" content="Cómo funciona el agregador y cómo se atribuyen las noticias a sus fuentes.">
 <meta name="twitter:image" content="{esc(base)}/og-image.png">
-<meta name="theme-color" content="#0A2540">
+<meta name="theme-color" content="#31584A">
+<link rel="icon" href="{esc(base)}/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{esc(base)}/apple-touch-icon.png">
 <script type="application/ld+json">{jsonld}</script>
 <style>
 :root{{color-scheme:light}}

@@ -911,6 +911,7 @@ PAGE_404 = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Página no encontrada · Noticias del Momento</title>
 <meta name="robots" content="noindex">
+<link rel="icon" href="%%HOME%%favicon.svg" type="image/svg+xml">
 <style>
   body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
     background:#FBFAF7;color:#07192E;text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
