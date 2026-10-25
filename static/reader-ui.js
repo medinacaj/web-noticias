@@ -85,10 +85,14 @@
   applyTheme(root.dataset.themePreference || "system");
 
   d.querySelectorAll("[data-carousel]").forEach(function (carousel) {
-    var track = carousel.querySelector(".breaking-track"), controls = carousel.querySelector(".carousel-controls");
-    var previous = carousel.querySelector("[data-carousel-prev]"), next = carousel.querySelector("[data-carousel-next]");
-    var pause = carousel.querySelector("[data-carousel-pause]"), position = carousel.querySelector(".carousel-position");
-    if (!track || !controls || !previous || !next) return;
+    var track = carousel.querySelector(".breaking-track");
+    var pause = carousel.querySelector("[data-carousel-pause]");
+    if (!track) return;
+    if (pause) {
+      pause.hidden = false;
+      var staticLabel = carousel.querySelector("[data-breaking-label]");
+      if (staticLabel) staticLabel.hidden = true;
+    }
     var reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
     var count = track.children.length;
     if (count > 1) {
@@ -117,13 +121,10 @@
       var active = canPlay();
       if (pause) {
         pause.disabled = count <= 1;
-        pause.setAttribute("aria-label", wantsPlay() ? "Pausar avance automático" : "Reanudar avance automático");
+        pause.setAttribute("aria-label", wantsPlay() ? "Pausar deslizamiento de Lo último" : "Reanudar deslizamiento de Lo último");
         pause.setAttribute("aria-pressed", String(!wantsPlay()));
         pause.title = wantsPlay() ? "Pausar carrusel" : "Reanudar carrusel";
-        pause.querySelector("span").textContent = wantsPlay() ? "Ⅱ" : "\u25B6\uFE0E";
       }
-      // No anunciar cambios automáticos; las interacciones manuales sí se anuncian.
-      if (position) position.setAttribute("aria-live", active ? "off" : "polite");
       if (active) frame = window.requestAnimationFrame(tick);
     }
     function tick(time) {
@@ -140,20 +141,14 @@
     }
 
     function update() {
-      var max = (count - 1) * track.clientWidth;
-      controls.hidden = max < 3;
-      previous.disabled = track.scrollLeft <= 2;
-      next.disabled = track.scrollLeft >= max - 2;
-      var label = (index() + 1) + " de " + count;
-      if (position && position.textContent !== label) position.textContent = label;
+      if (pause) pause.disabled = count <= 1;
     }
+
     function move(direction) {
       var target = Math.max(0, Math.min(count - 1, index() + direction));
       track.scrollTo({left: target * track.clientWidth, behavior: reduced.matches ? "instant" : "smooth"});
       schedule();
     }
-    previous.addEventListener("click", function () { move(-1); });
-    next.addEventListener("click", function () { move(1); });
     if (pause) pause.addEventListener("click", function () {
       userPlay = !wantsPlay();
       // Reanudar es una petición explícita, aun si el botón conserva el foco.

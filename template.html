@@ -560,12 +560,11 @@
   .breaking-item a{flex:1;min-width:0;font:600 13px/24px var(--sans);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .breaking-item a:hover{text-decoration:underline;text-underline-offset:3px;}
   .breaking-item time{flex:none;color:var(--muted);font:500 11px/24px var(--sans);}
-  .carousel-controls{flex:none;display:flex;align-items:center;gap:4px;}
-  .carousel-controls button{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;cursor:pointer;font-size:17px;}
-  .carousel-controls button:disabled{opacity:.35;cursor:default;}
-  .carousel-position{font:500 10px var(--sans);color:var(--muted);margin-right:6px;white-space:nowrap;}
+  .breaking-pause{appearance:none;border:0;background:none;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;padding:0;min-height:36px;cursor:pointer;}
+  .breaking-pause:hover,.breaking-pause[aria-pressed="true"]{text-decoration:underline;text-decoration-style:dotted;text-underline-offset:4px;}
+  .breaking-pause:disabled{cursor:default;text-decoration:none;}
   @media (max-width:1179px){.breaking-category{display:none;}}
-  @media (max-width:767px){.breaking-inner{gap:10px;min-height:52px;}.carousel-position,.breaking-item time{display:none;}.breaking-label{font-size:9px;letter-spacing:.05em;}.breaking-label::before{margin-right:5px;}.carousel-controls button{width:32px;height:36px;}.breaking-item a{font-size:12px;}}
+  @media (max-width:767px){.breaking-inner{gap:10px;min-height:52px;}.breaking-item time{display:none;}.breaking-label{font-size:9px;letter-spacing:.05em;}.breaking-label::before{margin-right:5px;}.breaking-item a{font-size:12px;}}
   .designer-signature{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:9px 14px;margin:8px 0;border:1px solid color-mix(in srgb,var(--signature-ink) 15%,transparent);border-radius:100px;background:var(--signature-bg);color:var(--signature-ink);box-shadow:0 2px 8px rgba(0,0,0,.12);font:500 11px var(--sans);white-space:nowrap;}
   .designer-signature > span:first-child{color:var(--signature-muted);}
   .designer-signature strong{font-weight:650;}

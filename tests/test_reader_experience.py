@@ -43,6 +43,13 @@ class LatestCarouselTests(unittest.TestCase):
         self.assertEqual(Links(rendered).links, [story(i)["link"] for i in range(6)])
         self.assertIn('data-carousel', rendered)
 
+    def test_latest_has_no_arrow_toolbar(self):
+        rendered = render_breaking(select([story(i) for i in range(3)], NOW), NOW)
+        self.assertNotIn('data-carousel-prev', rendered)
+        self.assertNotIn('data-carousel-next', rendered)
+        self.assertNotIn('carousel-controls', rendered)
+        self.assertIn('data-carousel-pause', rendered)
+
     def test_repeated_url_is_not_a_second_slide(self):
         stories = [story(0), story(1, link=story(0)["link"]), story(2), story(3)]
         rendered = render_breaking(select(stories, NOW), NOW)
