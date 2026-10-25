@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-25T17:18:32Z",
+ "actualizado": "2026-10-25T17:21:41Z",
  "noticias": [
   {
    "category": "deportes",
@@ -151,6 +151,22 @@
    "published": "2026-10-25T15:45:00Z",
    "first_seen": "2026-10-25T16:30:35Z",
    "image_checked_at": "2026-10-25T16:30:35.818633Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Fernando Espí lleva la guitarra española al Ateneo de Cádiz",
+   "summary": "",
+   "image": "",
+   "source_url": "https://ondacadiz.es",
+   "sources": [
+    "Onda Cádiz"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSHB1LWlvRjF2WDEyRm5aS1Z3WnJPQnNmQTZPX0d5OEJ6SzVsVXZZYmpaSFp5bFdSdV9aeTlIYWtxMURDVUZ0dkJYLU9HS0ZwMlhwQzNiZW4xcng2Wmpsb0lGZHZLUGpldTlwQXJ6V3ZvcnhaeFpVTW5LQ1lhX3UwSWg4U1FxUmJHdVJPZlk3WlV4c2pyQUNEZ29uZzhodw?oc=5",
+   "published": "2026-10-25T15:41:30Z",
+   "first_seen": "2026-10-25T17:21:41Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
   },
   {
    "category": "nacional",
@@ -3008,20 +3024,6 @@
     "CL"
    ],
    "image_checked_at": "2026-10-25T17:18:32.903732Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Formalizan a 55 acusados de robo de cobre desde Codelco: un excarabinero es sindicado como el líder",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPU1BkblRaTzctUHJFYzQ2cXRDTUVXd1hYZFFSYkg4UWNfODdabVpCcC1ETzJnVjVZZVRqSWZEVzdWQmhkRy15dmRhbGdObl9ub1kzajVRcXBJRUNzeGo2bHR6R2xJU09PZmVTdzYzYldBNmxNODZNcHEtSXp0RTJXZi1nQmNUOFk5bXl4ZjZzOU5RbUtxSUtRdTd2Z1BwLV9MdmRlT1NWUThHYzBMcEc1aWU4cWNZQnpIVC1haU5peVV0RmNFc1FmYzBWX1NMY2oxaXZhRENZbGE5YmRMWWxfWUlUbjBtN3Q3OVRlU3l1d280VE03MktWNWZfaWY3dzdIUUxnUTJ1Tm5yZDQ?oc=5",
-   "published": "2026-10-24T17:20:20Z",
-   "first_seen": "2026-10-25T16:30:35Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
@@ -3096,6 +3098,15 @@
    "published": "2026-10-25T15:45:00Z",
    "sources": [
     "El MorroCotudo"
+   ]
+  },
+  {
+   "title": "Fernando Espí lleva la guitarra española al Ateneo de Cádiz",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSHB1LWlvRjF2WDEyRm5aS1Z3WnJPQnNmQTZPX0d5OEJ6SzVsVXZZYmpaSFp5bFdSdV9aeTlIYWtxMURDVUZ0dkJYLU9HS0ZwMlhwQzNiZW4xcng2Wmpsb0lGZHZLUGpldTlwQXJ6V3ZvcnhaeFpVTW5LQ1lhX3UwSWg4U1FxUmJHdVJPZlk3WlV4c2pyQUNEZ29uZzhodw?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T15:41:30Z",
+   "sources": [
+    "Onda Cádiz"
    ]
   },
   {
