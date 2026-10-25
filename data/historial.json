@@ -1,6 +1,21 @@
 {
- "actualizado": "2026-10-25T04:31:13Z",
+ "actualizado": "2026-10-25T04:57:19Z",
  "noticias": [
+  {
+   "category": "nacional",
+   "title": "Incendio afecta a cuatro viviendas en Viña del Mar: Bomberos combate llamas en segunda alarma",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994991-bbcl-1200-x-633-px-51.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/10/25/incendio-afecta-a-cuatro-viviendas-en-vina-del-mar-bomberos-combate-llamas-en-segunda-alarma.shtml",
+   "published": "2026-10-25T03:57:35Z",
+   "first_seen": "2026-10-25T04:57:19Z",
+   "image_checked_at": "2026-10-25T04:57:19.843172Z"
+  },
   {
    "category": "internacional",
    "title": "Quién es Gadi Eisenkot, el general retirado que perdió un hijo en Gaza y desafía a Netanyahu en las primeras elecciones en Israel desde el ataque del 7 de octubre",
@@ -2199,6 +2214,22 @@
    "discovery_edition": "ES"
   },
   {
+   "category": "cultura",
+   "title": "Ricardo Gómez, director de ‘Una familia’: «El cine que más me gusta es el que tiene una vinculación con la persona que lo hace",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.seminci.com",
+   "sources": [
+    "SEMINCI"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQU0VYYkJKM1JRQzRkUjhWZU9MMVdMUlc1S2FNSkYzaGRsMGVHbS1NcHRzVldkbnAyd0t2RTJGQjhwWEthYWwwQVh5anZfT19QbkJzbTFKalZfMkkyZUpQSEZrWmdJVm9FX0s4R29TSF9LSFNCa2hrVmZMRktIbHg0VXBDMXFwOGVyYmtRWm9JZE5qb1JyTVZ5bjJRMXc5c2Q2X29ZX1NQUTJQRDFtRFVveFdZNmtmZkhXQ3lDekxUeG9zb3BMbk1vUHRHOW9tRzlQWVYzMWNTei1tTjMwNDY2R2Y0d2RQUl9rVFotM2hqYkl5QQ?oc=5",
+   "published": "2026-10-24T12:09:15Z",
+   "first_seen": "2026-10-25T04:57:19Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
+  },
+  {
    "category": "economia",
    "title": "BancoEstado sortea 100 premios para comprar en supermercados: cómo participar",
    "summary": "",
@@ -2212,6 +2243,21 @@
    "published": "2026-10-24T12:05:27Z",
    "first_seen": "2026-10-24T15:08:25Z",
    "image_checked_at": "2026-10-24T15:08:25.601985Z"
+  },
+  {
+   "category": "economia",
+   "title": "Revelan los primeros resultados de una prometedora vacuna experimental contra el cáncer",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/MIRWEYNGYBDRJLPYFHOOMEXNAI.jpg?auth=9fe8b47b5fcf5762d3fbca89479b56b2cf446d01102e14395c5407cb0ed9c379&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/tendencias/noticia/revelan-los-primeros-resultados-de-una-prometedora-vacuna-experimental-contra-el-cancer/",
+   "published": "2026-10-24T12:01:00Z",
+   "first_seen": "2026-10-25T04:57:19Z",
+   "image_checked_at": "2026-10-25T04:57:19.843172Z"
   },
   {
    "category": "deportes",
@@ -2648,6 +2694,15 @@
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Incendio afecta a cuatro viviendas en Viña del Mar: Bomberos combate llamas en segunda alarma",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/10/25/incendio-afecta-a-cuatro-viviendas-en-vina-del-mar-bomberos-combate-llamas-en-segunda-alarma.shtml",
+   "category": "nacional",
+   "published": "2026-10-25T03:57:35Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
   {
    "title": "Quién es Gadi Eisenkot, el general retirado que perdió un hijo en Gaza y desafía a Netanyahu en las primeras elecciones en Israel desde el ataque del 7 de octubre",
    "link": "https://www.bbc.com/mundo/articles/cj1dw0en7n36o?at_medium=RSS&at_campaign=rss",
@@ -3868,12 +3923,30 @@
    ]
   },
   {
+   "title": "Ricardo Gómez, director de ‘Una familia’: «El cine que más me gusta es el que tiene una vinculación con la persona que lo hace",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQU0VYYkJKM1JRQzRkUjhWZU9MMVdMUlc1S2FNSkYzaGRsMGVHbS1NcHRzVldkbnAyd0t2RTJGQjhwWEthYWwwQVh5anZfT19QbkJzbTFKalZfMkkyZUpQSEZrWmdJVm9FX0s4R29TSF9LSFNCa2hrVmZMRktIbHg0VXBDMXFwOGVyYmtRWm9JZE5qb1JyTVZ5bjJRMXc5c2Q2X29ZX1NQUTJQRDFtRFVveFdZNmtmZkhXQ3lDekxUeG9zb3BMbk1vUHRHOW9tRzlQWVYzMWNTei1tTjMwNDY2R2Y0d2RQUl9rVFotM2hqYkl5QQ?oc=5",
+   "category": "cultura",
+   "published": "2026-10-24T12:09:15Z",
+   "sources": [
+    "SEMINCI"
+   ]
+  },
+  {
    "title": "BancoEstado sortea 100 premios para comprar en supermercados: cómo participar",
    "link": "https://www.elmostrador.cl/datos-utiles/2026/10/24/supermercado-gratis-por-un-ano-bancoestado-sortea-100-premios-en-octubre/",
    "category": "economia",
    "published": "2026-10-24T12:05:27Z",
    "sources": [
     "El Mostrador"
+   ]
+  },
+  {
+   "title": "Revelan los primeros resultados de una prometedora vacuna experimental contra el cáncer",
+   "link": "https://www.latercera.com/tendencias/noticia/revelan-los-primeros-resultados-de-una-prometedora-vacuna-experimental-contra-el-cancer/",
+   "category": "economia",
+   "published": "2026-10-24T12:01:00Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
