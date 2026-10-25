@@ -26,6 +26,25 @@ class PublisherImagesTests(unittest.TestCase):
             self.assertEqual(image_from_html(f'<meta property="og:image" content="{value}">',
                                              "https://medio.cl/nota"), "")
 
+    def test_article_structured_image_supports_graph_lists_and_objects(self):
+        import json
+        for image in ('/foto.jpg', {'url': '/foto.jpg'}, [{'contentUrl': '/foto.jpg'}]):
+            data = {'@graph': [{'@type': 'Organization', 'image': '/logo.jpg'},
+                               {'@type': ['NewsArticle', 'Article'], 'image': image}]}
+            page = '<script type="application/ld+json">' + json.dumps(data) + '</script>'
+            self.assertEqual(image_from_html(page, 'https://medio.cl/nota'), 'https://medio.cl/foto.jpg')
+
+    def test_structured_images_ignore_logos_malformed_and_private_urls(self):
+        for data in ('{oops', '{"@type":"Organization","image":"/logo.jpg"}',
+                     '{"@type":"NewsArticle","image":"https://127.0.0.1/a.jpg"}'):
+            page = '<script type="application/ld+json">' + data + '</script>'
+            self.assertEqual(image_from_html(page, 'https://medio.cl/nota'), '')
+
+    def test_open_graph_stays_preferred_over_structured_image(self):
+        page = ('<meta property="og:image" content="/official.jpg">'
+                '<script type="application/ld+json">{"@type":"NewsArticle","image":"/other.jpg"}</script>')
+        self.assertEqual(image_from_html(page, 'https://medio.cl/nota'), 'https://medio.cl/official.jpg')
+
     def test_resolves_google_and_stores_photo_with_official_article(self):
         now = datetime(2026, 10, 20, tzinfo=timezone.utc)
         story = {"category": "nacional", "title": "Nota",

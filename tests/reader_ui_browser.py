@@ -43,6 +43,18 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.pw.stop()
         self.assertEqual(self.errors, [])
 
+    async def test_reading_hierarchy_and_control_labels(self):
+        self.assertTrue(await self.page.locator('#search-toggle .control-label').is_visible())
+        self.assertTrue(await self.page.locator('#view-options-toggle .control-label').is_visible())
+        desktop_gap = await self.page.locator('.section').first.evaluate('el => parseFloat(getComputedStyle(el).marginTop)')
+        self.assertLessEqual(desktop_gap, 48)
+        await self.page.set_viewport_size({"width": 390, "height": 844})
+        self.assertFalse(await self.page.locator('#search-toggle .control-label').is_visible())
+        lead_size = await self.page.locator('.lead-title').evaluate('el => parseFloat(getComputedStyle(el).fontSize)')
+        self.assertLessEqual(lead_size, 34)
+        await self.page.locator('#search-toggle').click()
+        self.assertTrue(await self.page.locator('#search-input').is_visible())
+
     async def test_desktop_sidebar_defaults_visible_and_choice_survives_reload(self):
         nav, toggle = self.page.locator('#site-nav'), self.page.locator('#menu-toggle')
         self.assertTrue(await nav.is_visible())
