@@ -229,7 +229,7 @@ async def check(html, output):
             await footer.scroll_into_view_if_needed()
             links = await page.locator(".site-footer .footer-nav a").evaluate_all(
                 "(nodes) => nodes.map(a => a.getAttribute('href'))")
-            assert links == ["#contenido", "#categorias", "boletin-diario.html", "rss.xml", "sobre-el-portal.html"], (
+            assert links == ["#contenido", "#categorias", "boletin-diario.html", "rss.xml", "archivo/", "sobre-el-portal.html"], (
                 f"Enlaces de pie no válidos a {width}px: {links}")
             assert await page.locator("#categorias").count() == 1
             assert await page.locator(".header-updated").is_visible()
