@@ -6,7 +6,7 @@ name: Actualizar eventos
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "35 11 * * *"   # diario; GitHub puede retrasar el cron
+    - cron: "23 9 * * *"    # diario 06:23 Chile (horario de verano; 05:23 en invierno); GitHub puede retrasar el cron
   push:
     branches: [main]
     paths:
