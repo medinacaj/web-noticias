@@ -1,6 +1,91 @@
 {
- "actualizado": "2026-10-25T17:35:04Z",
+ "actualizado": "2026-10-25T18:22:11Z",
  "noticias": [
+  {
+   "category": "cultura",
+   "title": "'You can see everything' recauda casi 20 millones de dólares este fin de semana y busca llegar a los Oscar",
+   "summary": "",
+   "image": "",
+   "source_url": "https://forbes.cl",
+   "sources": [
+    "Forbes Chile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNkI1OVNMSGNoZkJMN2JqWlJXbEtPc29UZXhIS2tvM1RRUmNuTTBhMUxmdlJFWDNLS2EwSDJ2OG9IaGJYazJuQ0MwTmlfTlhSNGpNZEtpaFl2TVVMd3BMeXhTbjVBY2FaQ21ING13VTgwcHJWWFFoc3ptcW8xNGo1ZE5hTkNtbW1SUk5lcS16eHp1Z2c2OHFKUEtjUV9xWFZzMC1ZSlBaNVRKbkJOeTBmYnYzN3liazZreFRRTWgzOHhFSlNVV1ZNRVFGNWt2dW9aOFMwRWFn?oc=5",
+   "published": "2026-10-25T17:52:47Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "metadata_only": true,
+   "discovery_edition": "CL-CINE"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "O voto dos brasileiros no exterior no 2º turno de 2026",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.nexojornal.com.br",
+   "sources": [
+    "Nexo Jornal"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNY2t6cFFmd2dvNFh4eUdLNGIyVTFEZ2tLeFd0ZVpNcjc2eE9fTUN6UGU2NHdweU1LQVQ5U1ZxQlRUT1p0bGoxaW1hTGgzdmFkcE5uclhmSlhtZmZwUDhwT2hncU1OZTNhUndnU2FNdXZYV3QtbjUyeUkyNVdFZXhoNFhCX2hvZi1ic2FCMVBjQQ?oc=5",
+   "published": "2026-10-25T17:42:41Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "deportes",
+   "title": "Ñublense venció a Coquimbo y trepó lugares en Liga de Primera: sigue en la pelea por ir a Sudamericana",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995210-liga-de-primera-nublense-coquimbo-fecha-25.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/25/liga-de-primera-nublense-coquimbo-fecha-25.shtml",
+   "published": "2026-10-25T17:35:24Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "\"Estoy aquí. Con ustedes\": María Corina Machado estaría de regreso en Venezuela tras enigmático tuiteo",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQMGJvR2VaN0EyNVZqdFd4WnBuMVZ6Qjk3SEpnN1A0Zy1ZaUhrRkZmdTd3M1ZyMDNFRWJkM2dvUEwteDNYalhCN2FCWHZLRlYxdWJfSi1XSUhpVGZRclp5a3NDTkhscWlFOW5kQ2twWjlkX0ZYaVpPamtmbUxaeVVjVzY5ZVdQVDJNRGlNNTFfSDFjaEloU2FqNUU5QVY3VFE4SzdISWhQTEVnQzJJMFFlRERXanVLTDlQMDMyZUYwbGtmV1J3b0EyLVJDNWxma1BFVjJNeVNUZ01GV1VaSFg1ZjJ4NFJ0bEhTZmlldWRnNmxPUVlmMVZBWWVOYWY?oc=5",
+   "published": "2026-10-25T17:23:32Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "VE"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "A declaração de Trump sobre o segundo turno das eleições no Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://veja.abril.com.br",
+   "sources": [
+    "VEJA"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ3hlQzJ2ZlhNZFdwYzdHSTVZQkZXVkM0d21MdGVIQnczNmR1TGxEeE5wa1FBUkZla2hrWnRGM1h0V1A5QnFaem5ZeGlabUFEVEQ2aW95X29peXBjOUs2eExoUGN4UlEwN0tVS2hBWTdWYTgwN0stTnVCVFlwNTBGblpLVnNCb0RKc0hndGJBM2JJYXM1VWVuZGVDMGdydG9oNUQxM0hjekxhVVQ4SGU1ZA?oc=5",
+   "published": "2026-10-25T17:22:00Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
   {
    "category": "deportes",
    "title": "Manchester United es un desastre: fue humillado por Bournemouth en Old trafford y se hunde en Premier",
@@ -164,6 +249,22 @@
    "first_seen": "2026-10-25T16:30:35Z"
   },
   {
+   "category": "cultura",
+   "title": "'Siegfried' se instala en Santa Cecilia, a la sombra del Vaticano",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.abc.es",
+   "sources": [
+    "ABC"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNLWtGbTJvRXRWUXlsSmxDazVJMFI4VC0wdzB0YlVnc2pKQmVtSHBPMnRYMjR0cFVONzNpNDAzRXY2VVU2dnZ1cFhWUGFJUWhOdndKTU9tSDhGOU5BZEpYbUNhZS1CUFlkd1dqRzZud09sRlZsVFpqb09mUGxvM1pxWlRxeDFRaXpfVl9tZkRYYUViU3FqNVNLNkI0N2NBSlk2N19adjVna9IBrAFBVV95cUxNNVh3N1lMNW84VS1mRTVoU00wMnlxZUdMS2dWZGZCLUFlbVppV1JvV2FqcVNjd2pQajlCRkJQbmZDREN1TmcxOWY5N1lEYk1hbUtmY3oxRWhDUnJNbnZ2UGJ0dVBnR0JuWGxzNmw2VGFsS0tiOHkzMl8zQjBxN1BUZmxOWFFZMm41S3d4RGxxRFlWSHRRY1J1eDVHdVNrenFzTEpmdGNYRlJKbEpL?oc=5",
+   "published": "2026-10-25T16:01:25Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
+  },
+  {
    "category": "tecnologia",
    "title": "Economista Jefe de Wall Street indica que la IA ha dado \"cero peso\" de ganancias a empresas de EEUU",
    "summary": "",
@@ -290,6 +391,21 @@
     "CL"
    ],
    "image_checked_at": "2026-10-25T16:30:35.818633Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Trabajo Minería: Kinross abre su Programa Trainee 2026",
+   "summary": "",
+   "image": "https://chilepaisminero.com/wp-content/uploads/2026/10/IMG_3653.webp",
+   "source_url": "https://chilepaisminero.com",
+   "sources": [
+    "Chile País Minero"
+   ],
+   "coverages": [],
+   "link": "https://chilepaisminero.com/trabajo-mineria-kinross-abre-su-programa-trainee-2026/",
+   "published": "2026-10-25T15:11:11Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "regiones",
@@ -499,6 +615,21 @@
    "image_checked_at": "2026-10-25T14:18:31.935659Z"
   },
   {
+   "category": "internacional",
+   "title": "Túneles submarinos de Lota: Un monumento que podría incomodar al negacionismo climático",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995081-6-planimetria-elaborada-por-enacar-que-representa-la-red-de-tuneles-y-galerias-mineras-bajo-la-ciudad-de-lota-y-el-oceano-pacifico.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/10/25/tuneles-submarinos-de-lota-un-monumento-que-podria-incomodar-al-negacionismo-climatico.shtml",
+   "published": "2026-10-25T13:58:35Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
+  },
+  {
    "category": "politica",
    "title": "Heitor Kadri, director regional de ONU Turismo: \"Chile tiene las condiciones para ser una potencia turística\"",
    "summary": "",
@@ -529,7 +660,7 @@
    "link": "https://www.elmartutino.cl/noticia/sociedad/alerta-en-la-region-de-valparaiso-prohiben-banarse-en-dos-playas-por-presencia-de-f",
    "published": "2026-10-25T13:52:30Z",
    "first_seen": "2026-10-25T14:18:31Z",
-   "image_checked_at": "2026-10-25T14:18:31.935659Z"
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "regiones",
@@ -544,7 +675,7 @@
    "link": "https://www.elmartutino.cl/noticia/sociedad/aumento-de-las-temperaturas-lissette-aguilera-anticipo-cuanto-calor-hara-en-santiag",
    "published": "2026-10-25T13:52:30Z",
    "first_seen": "2026-10-25T14:18:31Z",
-   "image_checked_at": "2026-10-25T14:18:31.935659Z"
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "cultura",
@@ -851,6 +982,21 @@
     "BR"
    ],
    "image_checked_at": "2026-10-25T12:57:14.255415Z"
+  },
+  {
+   "category": "deportes",
+   "title": "A qué hora y dónde ver el clásico de Barcelona vs. Real Madrid en TV y streaming",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/BCJP564665GTJN5FGQD2EERZBA.jpg?auth=f06f1177bec9652eda7361be08e26f5d17fbc93d1b7f168f478b9e6c82b227ee&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/servicios/noticia/a-que-hora-y-donde-ver-el-clasico-de-barcelona-vs-real-madrid-en-tv-y-streaming/",
+   "published": "2026-10-25T12:00:00Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "internacional",
@@ -1807,7 +1953,7 @@
    "link": "https://www.fiscaliadechile.cl/actualidad/noticias/regionales/fiscalia-de-antofagasta-acusa-22-personas-por-trata-de-personas-y",
    "published": "2026-10-25T01:57:19Z",
    "first_seen": "2026-10-25T14:18:31Z",
-   "image_checked_at": "2026-10-25T14:18:31.935659Z"
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "internacional",
@@ -2023,6 +2169,22 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "cultura",
+   "title": "Todas las celebridades en la alfombra roja de la Gala Vogue de Día de Muertos 2026: Vota por tu look favorito",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.vogue.mx",
+   "sources": [
+    "Vogue México"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwOVNnX3JtdTlXc25IZFY2SjN1OEhmUkpfS1FpT2RnbkhDYm1WM2JwMjZVZE9Wamx5b1owblFaMmgxNVZMUG5MRTl1Z0RfZm96dXIzR3VIM094Nlo4cDZ6Qlh2djNJWXpYa0E?oc=5",
+   "published": "2026-10-25T00:46:21Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "metadata_only": true,
+   "discovery_edition": "MX"
   },
   {
    "category": "latinoamerica",
@@ -2302,7 +2464,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-25T14:18:31.935659Z"
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "cultura",
@@ -2365,7 +2527,7 @@
    "link": "https://www.espn.com.ar/deporte-motor/f1/nota/_/id/17416267/f1-en-vivo-gp-de-estados-unidos-2026-clasificacion-verstappen-antonelli-russell",
    "published": "2026-10-24T22:00:00Z",
    "first_seen": "2026-10-25T04:31:13Z",
-   "image_checked_at": "2026-10-25T14:18:31.935659Z"
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "internacional",
@@ -2448,6 +2610,21 @@
    "first_seen": "2026-10-24T23:49:19Z",
    "metadata_only": true,
    "discovery_edition": "ES"
+  },
+  {
+   "category": "nacional",
+   "title": "\"De chubascos a 27 °C en 48 horas\": marcado contraste térmico afectará a la zona central esta semana",
+   "summary": "",
+   "image": "https://services.meteored.com/img/article/de-chubascos-a-27-c-en-48-horas-marcado-contraste-termico-afectara-a-la-zona-central-esta-semana-1792855086215_1280.png",
+   "source_url": "https://www.meteored.cl",
+   "sources": [
+    "Meteored Chile"
+   ],
+   "coverages": [],
+   "link": "https://www.meteored.cl/noticias/prediccion/de-chubascos-a-27-c-en-48-horas-marcado-contraste-termico-afectara-a-la-zona-central-esta-semana.html",
+   "published": "2026-10-24T21:30:00Z",
+   "first_seen": "2026-10-25T18:22:11Z",
+   "image_checked_at": "2026-10-25T18:22:11.276459Z"
   },
   {
    "category": "internacional",
@@ -2790,6 +2967,20 @@
    "discovery_edition": "ES"
   },
   {
+   "category": "nacional",
+   "title": "Timonel republicano se disculpa con la UDI y Hernán Larraín",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNRkstTDlrVlNEejNVZkVGeXZWbmxpRzJzUldaMmxjem51UnNEZFo4cldJdEhCSjN0bWd2MFdjcm9MbGlDYWEzSjl5aVdLT3BxdmdMcW5MVElrRk5oVmtNTnJRclNnNWRXSkljSVRtZkR5RDZSLWFDUENzWGJDeHpWUk9IZWxyQVc0eW5lXy1EMVEwY0hoTjlpNlhFLWhSSXRtRGVoVGdaQWxGSXVSVlp1b0R0YzFUTkpRX3lSZjNaczdBbi1QWXJPS2xIR1dmaTZJRC0zYWNJd0QyWVZiMVg0SlI3alNMbWfSAYwBQVVfeXFMTjVXbnhGLTBVeXZBNHBBNy1JMTI1WllEdVNteV9jTVI0bWZQU1M0U2hqMi1vOG9RYmxia0NOMDY2YmVxRm5JNVU1bmIzeHZKOE92cHBBWTgwUXdNVHZpNGU0RDhoYVZzSF9nbU43VkdpUnR1SkU5QlN6bDJPaGVvYVFjajVkSG9WTmpNZ1Q?oc=5",
+   "published": "2026-10-24T19:32:00Z",
+   "first_seen": "2026-10-25T18:22:11Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "Qual região do Brasil tem mais eleitores",
    "summary": "",
@@ -3046,180 +3237,55 @@
    "published": "2026-10-24T18:29:03Z",
    "first_seen": "2026-10-24T19:42:32Z",
    "image_checked_at": "2026-10-24T19:42:32.381879Z"
-  },
-  {
-   "category": "cultura",
-   "title": "“Se me parte el corazón”: Cancelan show de Luli Pampín tras lluvias",
-   "summary": "",
-   "image": "",
-   "source_url": "https://puentelibre.mx",
-   "sources": [
-    "Puente Libre"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSTkwdkVGOWRkNjNKanJJZWhXdlVhR2JpSUVqbU5FTTJDZlVHbm9WOVNhTkY3MHcwaThvbUtrTFJoWVplMERmWUZSOUlOQ2lCYlFUalo1cXBuaEdORHZEa2tTSTdHZUdEVkstZk5iWGZkZHFkSFFwUWpvdUJMYWctdENQQTgyZkdGRzFPQ1dHdXRkSzl2WFIxdWZRWVdkZVVGLVVaX3JmZG9tNXFkdFB3?oc=5",
-   "published": "2026-10-24T18:20:10Z",
-   "first_seen": "2026-10-24T23:49:19Z",
-   "metadata_only": true,
-   "discovery_edition": "MX"
-  },
-  {
-   "category": "cultura",
-   "title": "Dani Martín anuncia la muerte de su padre y se despide de él: \"Vuela alto, capitán\"",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.libertaddigital.com",
-   "sources": [
-    "Libertad Digital"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQR1plM1BPS05FLUt2ZWZBeW1idGhILVRETTE0S1FsTWJmMC1yeTR4TmE4bEdSZ3g1V2dtamltdUc5Zlg1ZEdjYlJkVFVEWERkVkpGajl2ZmhPbkRiS2kySUxmcDJ1QkQ1UDBCYWVuVmN1bnByQWlQWjBVNS1JNW1DdVRRMXNxQ3lMSDhnZnZ1eHp6eDRJWnFEVmt5SzE3aTFjUm11c2drY2VMZ0M1MGJJcnExbVpGc3RxYXY0M01kaERKUXctUVhXRndId01sYlhQLVBaN0gwdzFmWlNp?oc=5",
-   "published": "2026-10-24T18:18:35Z",
-   "first_seen": "2026-10-25T09:45:04Z",
-   "metadata_only": true,
-   "discovery_edition": "ES"
-  },
-  {
-   "category": "politica",
-   "title": "Chile entrará como \"observador\" a la coalición anticárteles de Trump",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261024/imag/foto_0000000120261024140543.png",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/pais/relaciones-exteriores/ee-uu/chile-entrara-como-observador-a-la-coalicion-anticarteles-de-trump/2026-10-24/140543.html",
-   "published": "2026-10-24T18:14:00Z",
-   "first_seen": "2026-10-24T19:31:07Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Castro: director de Seguridad Pública renuncia tras ser denunciado por robo de electricidad a vecino",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994747-castro-robo-de-electricidad.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2026/10/24/castro-director-de-seguridad-publica-renuncia-tras-ser-denunciado-por-robo-de-electricidad-a-vecino.shtml",
-   "published": "2026-10-24T18:13:17Z",
-   "first_seen": "2026-10-24T19:42:32Z",
-   "image_checked_at": "2026-10-24T19:42:32.381879Z"
-  },
-  {
-   "category": "deportes",
-   "title": "¿Cobreloa supera a San Luis? Así quedaría la tabla de posiciones de Primera B si la ANFP castiga a Arica y Puerto Montt",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/4JB2X2POLNGABHVBI3QUF2NC6Q.jpg?auth=ebc3a4a6083723c97d60e8a5677ca3974ac635eaefb4bfa2be8bd789c81e4911&height=630&width=1200&focal=1872%2C243",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/el-deportivo/noticia/con-cobreloa-beneficiado-por-escritorio-por-sobre-san-luis-los-posibles-escenarios-que-marcan-la-definicion-de-la-primera-b/",
-   "published": "2026-10-24T18:03:56Z",
-   "first_seen": "2026-10-24T23:49:19Z",
-   "image_checked_at": "2026-10-24T23:49:19.647015Z"
-  },
-  {
-   "category": "economia",
-   "title": "Hackeos con IA desbordan Internet: falla en PHP expuso al 70% de la web",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/ZFUUKO4FB5HH5K2NEEQC36G4NU.jpeg?auth=69ef7aed82e56aa926e5bd3e9c5687202bd931ccb3bfa1beeeeb602ca2978ee4&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/tecnologia/noticia/php2shell-hackeos-con-ia-falla-php/",
-   "published": "2026-10-24T17:59:14Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "image_checked_at": "2026-10-25T04:31:13.539667Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Leonardo Boff: “La eventual victoria de Flávio Bolsonaro sería continuar la obra destructiva iniciada por su padre Jair”",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/2QQUY66WP5GBNPRMZZMXC3KDA4.jpg?auth=113cb186077a892352580e77b8603c9c06a0ccbf3da3dc7a1e9d428eb63f2877&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/mundo/noticia/leonardo-boff-la-eventual-victoria-de-flavio-bolsonaro-seria-continuar-la-obra-destructiva-iniciada-por-su-padre-jair/",
-   "published": "2026-10-24T17:59:13Z",
-   "first_seen": "2026-10-24T23:49:19Z",
-   "image_checked_at": "2026-10-24T23:49:19.647015Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Emiten aviso meteorológico por tormentas eléctricas en la RM y otras dos regiones",
-   "summary": "",
-   "image": "https://www.24horas.cl/24horas/site/artic/20261024/imag/foto_0000001120261024145235/tormenta_electrica.webp",
-   "source_url": "https://www.24horas.cl",
-   "sources": [
-    "24horas"
-   ],
-   "coverages": [],
-   "link": "https://www.24horas.cl/el-tiempo/emiten-aviso-meteorologico-por-tormentas-electricas-en-la-rm-y-otras-dos-regiones",
-   "published": "2026-10-24T17:56:00Z",
-   "first_seen": "2026-10-24T22:01:08Z",
-   "image_checked_at": "2026-10-24T22:01:08.642891Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Tal como en España y Francia: italianos marchan contra el costo de la vida y su Gobierno",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994753-italia-1200x633.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/24/tal-como-en-espana-y-francia-italianos-marchan-contra-el-costo-de-la-vida-y-su-gobierno.shtml",
-   "published": "2026-10-24T17:48:14Z",
-   "first_seen": "2026-10-24T19:31:07Z",
-   "image_checked_at": "2026-10-24T19:31:07.556450Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Joven que participó en el programa \"Mamá a los 15\" murió asesinada a golpes",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261024/imag/foto_0000002420261024140442.jpg",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/pais/policial/homicidios/joven-que-participo-en-el-programa-mama-a-los-15-murio-asesinada-a/2026-10-24/140442.html",
-   "published": "2026-10-24T17:47:00Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "image_checked_at": "2026-10-25T04:31:13.539667Z"
-  },
-  {
-   "category": "regiones",
-   "title": "Tabla de la Liga de Primera: La Serena derrota a Concepción y se ilusiona con Sudamericana",
-   "summary": "",
-   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/24141943/la-serena-concepcion-liga-de-primera-e1792862408965-1200x740.webp",
-   "source_url": "https://redgol.cl",
-   "sources": [
-    "RedGol"
-   ],
-   "coverages": [],
-   "link": "https://redgol.cl/chile/tabla-de-la-liga-de-primera-la-serena-derrota-a-concepcion-y-se-ilusiona-con-sudamericana",
-   "published": "2026-10-24T17:36:34Z",
-   "first_seen": "2026-10-24T18:04:22Z",
-   "image_checked_at": "2026-10-24T18:04:22.848275Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "'You can see everything' recauda casi 20 millones de dólares este fin de semana y busca llegar a los Oscar",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNkI1OVNMSGNoZkJMN2JqWlJXbEtPc29UZXhIS2tvM1RRUmNuTTBhMUxmdlJFWDNLS2EwSDJ2OG9IaGJYazJuQ0MwTmlfTlhSNGpNZEtpaFl2TVVMd3BMeXhTbjVBY2FaQ21ING13VTgwcHJWWFFoc3ptcW8xNGo1ZE5hTkNtbW1SUk5lcS16eHp1Z2c2OHFKUEtjUV9xWFZzMC1ZSlBaNVRKbkJOeTBmYnYzN3liazZreFRRTWgzOHhFSlNVV1ZNRVFGNWt2dW9aOFMwRWFn?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T17:52:47Z",
+   "sources": [
+    "Forbes Chile"
+   ]
+  },
+  {
+   "title": "O voto dos brasileiros no exterior no 2º turno de 2026",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNY2t6cFFmd2dvNFh4eUdLNGIyVTFEZ2tLeFd0ZVpNcjc2eE9fTUN6UGU2NHdweU1LQVQ5U1ZxQlRUT1p0bGoxaW1hTGgzdmFkcE5uclhmSlhtZmZwUDhwT2hncU1OZTNhUndnU2FNdXZYV3QtbjUyeUkyNVdFZXhoNFhCX2hvZi1ic2FCMVBjQQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T17:42:41Z",
+   "sources": [
+    "Nexo Jornal"
+   ]
+  },
+  {
+   "title": "Ñublense venció a Coquimbo y trepó lugares en Liga de Primera: sigue en la pelea por ir a Sudamericana",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/25/liga-de-primera-nublense-coquimbo-fecha-25.shtml",
+   "category": "deportes",
+   "published": "2026-10-25T17:35:24Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "\"Estoy aquí. Con ustedes\": María Corina Machado estaría de regreso en Venezuela tras enigmático tuiteo",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQMGJvR2VaN0EyNVZqdFd4WnBuMVZ6Qjk3SEpnN1A0Zy1ZaUhrRkZmdTd3M1ZyMDNFRWJkM2dvUEwteDNYalhCN2FCWHZLRlYxdWJfSi1XSUhpVGZRclp5a3NDTkhscWlFOW5kQ2twWjlkX0ZYaVpPamtmbUxaeVVjVzY5ZVdQVDJNRGlNNTFfSDFjaEloU2FqNUU5QVY3VFE4SzdISWhQTEVnQzJJMFFlRERXanVLTDlQMDMyZUYwbGtmV1J3b0EyLVJDNWxma1BFVjJNeVNUZ01GV1VaSFg1ZjJ4NFJ0bEhTZmlldWRnNmxPUVlmMVZBWWVOYWY?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T17:23:32Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "A declaração de Trump sobre o segundo turno das eleições no Brasil",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ3hlQzJ2ZlhNZFdwYzdHSTVZQkZXVkM0d21MdGVIQnczNmR1TGxEeE5wa1FBUkZla2hrWnRGM1h0V1A5QnFaem5ZeGlabUFEVEQ2aW95X29peXBjOUs2eExoUGN4UlEwN0tVS2hBWTdWYTgwN0stTnVCVFlwNTBGblpLVnNCb0RKc0hndGJBM2JJYXM1VWVuZGVDMGdydG9oNUQxM0hjekxhVVQ4SGU1ZA?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T17:22:00Z",
+   "sources": [
+    "VEJA"
+   ]
+  },
   {
    "title": "Manchester United es un desastre: fue humillado por Bournemouth en Old trafford y se hunde en Premier",
    "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/notas-futbol-internacional/2026/10/25/premier-league-manchester-united-fue-humillado-por-bournemouth-en-old-trafford.shtml",
@@ -3293,6 +3359,15 @@
    ]
   },
   {
+   "title": "'Siegfried' se instala en Santa Cecilia, a la sombra del Vaticano",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNLWtGbTJvRXRWUXlsSmxDazVJMFI4VC0wdzB0YlVnc2pKQmVtSHBPMnRYMjR0cFVONzNpNDAzRXY2VVU2dnZ1cFhWUGFJUWhOdndKTU9tSDhGOU5BZEpYbUNhZS1CUFlkd1dqRzZud09sRlZsVFpqb09mUGxvM1pxWlRxeDFRaXpfVl9tZkRYYUViU3FqNVNLNkI0N2NBSlk2N19adjVna9IBrAFBVV95cUxNNVh3N1lMNW84VS1mRTVoU00wMnlxZUdMS2dWZGZCLUFlbVppV1JvV2FqcVNjd2pQajlCRkJQbmZDREN1TmcxOWY5N1lEYk1hbUtmY3oxRWhDUnJNbnZ2UGJ0dVBnR0JuWGxzNmw2VGFsS0tiOHkzMl8zQjBxN1BUZmxOWFFZMm41S3d4RGxxRFlWSHRRY1J1eDVHdVNrenFzTEpmdGNYRlJKbEpL?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T16:01:25Z",
+   "sources": [
+    "ABC"
+   ]
+  },
+  {
    "title": "Economista Jefe de Wall Street indica que la IA ha dado \"cero peso\" de ganancias a empresas de EEUU",
    "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/adelantos/2026/10/25/economista-jefe-de-wall-street-indica-que-la-ia-ha-dado-cero-peso-de-ganancias-a-empresas-de-eeuu.shtml",
    "category": "tecnologia",
@@ -3362,6 +3437,15 @@
    "published": "2026-10-25T15:29:05Z",
    "sources": [
     "Notimérica"
+   ]
+  },
+  {
+   "title": "Trabajo Minería: Kinross abre su Programa Trainee 2026",
+   "link": "https://chilepaisminero.com/trabajo-mineria-kinross-abre-su-programa-trainee-2026/",
+   "category": "nacional",
+   "published": "2026-10-25T15:11:11Z",
+   "sources": [
+    "Chile País Minero"
    ]
   },
   {
@@ -3480,6 +3564,15 @@
    "published": "2026-10-25T14:00:00Z",
    "sources": [
     "Teletrece"
+   ]
+  },
+  {
+   "title": "Túneles submarinos de Lota: Un monumento que podría incomodar al negacionismo climático",
+   "link": "https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/10/25/tuneles-submarinos-de-lota-un-monumento-que-podria-incomodar-al-negacionismo-climatico.shtml",
+   "category": "internacional",
+   "published": "2026-10-25T13:58:35Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -3669,6 +3762,15 @@
    "published": "2026-10-25T12:00:38Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "A qué hora y dónde ver el clásico de Barcelona vs. Real Madrid en TV y streaming",
+   "link": "https://www.latercera.com/servicios/noticia/a-que-hora-y-donde-ver-el-clasico-de-barcelona-vs-real-madrid-en-tv-y-streaming/",
+   "category": "deportes",
+   "published": "2026-10-25T12:00:00Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -4302,6 +4404,15 @@
    ]
   },
   {
+   "title": "Todas las celebridades en la alfombra roja de la Gala Vogue de Día de Muertos 2026: Vota por tu look favorito",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwOVNnX3JtdTlXc25IZFY2SjN1OEhmUkpfS1FpT2RnbkhDYm1WM2JwMjZVZE9Wamx5b1owblFaMmgxNVZMUG5MRTl1Z0RfZm96dXIzR3VIM094Nlo4cDZ6Qlh2djNJWXpYa0E?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T00:46:21Z",
+   "sources": [
+    "Vogue México"
+   ]
+  },
+  {
    "title": "Equipo Cuba de Futsal se alista en Nicaragua para Copa de Naciones",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc0RmbGVWdVRMZ3RrcXVBRkZJMFQ2WVJXT1V0S3VMem54T2NtWVZha0paVDRMT041d1VjLVZ3RzU2Z2gtblJoVG16NGNhcWFRUXluclU2dm13WUtFNUNQTnVId2h4T1ZtS2JhSmI4WEsxVm9EX2g2QVpIY255NWljcEhuamhiZGJ3MkNXaXlseVpVM0NFc3M2ZndrX2ZJY0htT3h0UXR5TGs1OEk?oc=5",
    "category": "latinoamerica",
@@ -4520,6 +4631,15 @@
    ]
   },
   {
+   "title": "\"De chubascos a 27 °C en 48 horas\": marcado contraste térmico afectará a la zona central esta semana",
+   "link": "https://www.meteored.cl/noticias/prediccion/de-chubascos-a-27-c-en-48-horas-marcado-contraste-termico-afectara-a-la-zona-central-esta-semana.html",
+   "category": "nacional",
+   "published": "2026-10-24T21:30:00Z",
+   "sources": [
+    "Meteored Chile"
+   ]
+  },
+  {
    "title": "Gobierno de Chile condena ataque a iglesia en Jordania que dejó nueve fallecidos y más de 30 heridos",
    "link": "https://www.biobiochile.cl/noticias/internacional/mediooriente/2026/10/24/gobierno-de-chile-condena-ataque-a-iglesia-en-jordania-que-dejo-nueve-fallecidos-y-mas-de-30-heridos.shtml",
    "category": "internacional",
@@ -4707,6 +4827,15 @@
    "published": "2026-10-24T19:34:21Z",
    "sources": [
     "RTVE.es"
+   ]
+  },
+  {
+   "title": "Timonel republicano se disculpa con la UDI y Hernán Larraín",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNRkstTDlrVlNEejNVZkVGeXZWbmxpRzJzUldaMmxjem51UnNEZFo4cldJdEhCSjN0bWd2MFdjcm9MbGlDYWEzSjl5aVdLT3BxdmdMcW5MVElrRk5oVmtNTnJRclNnNWRXSkljSVRtZkR5RDZSLWFDUENzWGJDeHpWUk9IZWxyQVc0eW5lXy1EMVEwY0hoTjlpNlhFLWhSSXRtRGVoVGdaQWxGSXVSVlp1b0R0YzFUTkpRX3lSZjNaczdBbi1QWXJPS2xIR1dmaTZJRC0zYWNJd0QyWVZiMVg0SlI3alNMbWfSAYwBQVVfeXFMTjVXbnhGLTBVeXZBNHBBNy1JMTI1WllEdVNteV9jTVI0bWZQU1M0U2hqMi1vOG9RYmxia0NOMDY2YmVxRm5JNVU1bmIzeHZKOE92cHBBWTgwUXdNVHZpNGU0RDhoYVZzSF9nbU43VkdpUnR1SkU5QlN6bDJPaGVvYVFjajVkSG9WTmpNZ1Q?oc=5",
+   "category": "nacional",
+   "published": "2026-10-24T19:32:00Z",
+   "sources": [
+    "Cooperativa"
    ]
   },
   {
