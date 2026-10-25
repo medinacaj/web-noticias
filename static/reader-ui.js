@@ -95,7 +95,6 @@
       var clone = track.firstElementChild.cloneNode(true);
       clone.dataset.carouselClone = "true";
       clone.setAttribute("aria-hidden", "true");
-      clone.setAttribute("inert", "");
       clone.querySelectorAll("[id]").forEach(function (el) { el.removeAttribute("id"); });
       clone.querySelectorAll("a,button").forEach(function (el) { el.tabIndex = -1; });
       track.appendChild(clone);
