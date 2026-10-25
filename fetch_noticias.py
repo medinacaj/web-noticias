@@ -1009,6 +1009,12 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         ads_path = os.path.join(out_dir, "ads.txt")
         if os.path.lexists(ads_path):
             os.remove(ads_path)
+    # Archivo «Últimos 7 días» (noindex): se regenera completo para que no queden días vencidos.
+    from scripts.archive_pages import DIR as ARCHIVE_DIR, render_archive
+    from scripts.presentation_groups import canonical_section
+    shutil.rmtree(os.path.join(out_dir, ARCHIVE_DIR), ignore_errors=True)
+    os.makedirs(os.path.join(out_dir, ARCHIVE_DIR), exist_ok=True)
+    files.update(render_archive(archive, now, SITE_URL, CATEGORIES, canonical_section))
     for name, content in files.items():
         with open(os.path.join(out_dir, name), "w", encoding="utf-8") as handle:
             handle.write(content)
