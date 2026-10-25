@@ -49,10 +49,18 @@ class PublishQualityTests(unittest.TestCase):
 
     def test_hourly_workflow_gates_deploy_before_upload(self):
         workflow = Path(".github/workflows/update-news.yml").read_text(encoding="utf-8")
-        self.assertLess(workflow.index("Verificar contenido y calidad antes de publicar"),
-                        workflow.index("Guardar historial de noticias"))
-        self.assertLess(workflow.index("Verificar contenido y calidad antes de publicar"),
-                        workflow.index("Subir sitio generado"))
+        quality = workflow.index("Verificar contenido y calidad antes de publicar")
+        history_artifact = workflow.index("Transferir exclusivamente el historial")
+        pages_artifact = workflow.index("Preparar artefacto GitHub Pages")
+        persist_job = workflow.index("\n  guardar_historial:")
+        deploy_job = workflow.index("\n  publicar_pages:")
+        self.assertLess(quality, history_artifact)
+        self.assertLess(quality, pages_artifact)
+        self.assertLess(history_artifact, persist_job)
+        self.assertLess(pages_artifact, deploy_job)
+        self.assertLess(persist_job, deploy_job)
+        # Desplegar depende del job de escritura: un historial fallido bloquea Pages.
+        self.assertIn("needs: [generar, guardar_historial]", workflow)
         for expected in ("python3 scripts/validate_history.py",
                          "python3 scripts/audit_editorial_quality.py --strict",
                          "python3 scripts/audit_seo.py --site public",
