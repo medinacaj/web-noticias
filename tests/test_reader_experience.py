@@ -61,12 +61,13 @@ class LatestCarouselTests(unittest.TestCase):
 
     def test_highlights_use_displayed_sections_for_variety(self):
         from scripts.presentation_groups import canonical_section
-        categories = ['nacional'] * 3 + ['medioambiente'] * 3 + ['cultura'] * 3 + ['internacional'] * 3
+        # Salud se presenta dentro de Ciencia y tecnología: cuenta como la misma sección.
+        categories = ['tecnologia'] * 3 + ['salud-ciencia'] * 3 + ['cultura'] * 3 + ['internacional'] * 3
         articles = [story(i, category=category, source_url=f'https://editor{i}.example', sources=[f'Medio {i}'])
                     for i, category in enumerate(categories)]
         selected = select(articles, NOW)
         self.assertEqual({canonical_section(s['category']) for s in selected['secondary']},
-                         {'nacional', 'cultura', 'internacional'})
+                         {'tecnologia', 'cultura', 'internacional'})
 
     def test_title_exposes_incorporation_not_publication_date(self):
         from fetch_noticias import title_link

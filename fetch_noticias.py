@@ -73,13 +73,16 @@ CATEGORIES = [
     {"key": "latinoamerica", "label": "Latinoamérica"},
     {"key": "internacional", "label": "Internacional",             "google_topic": "WORLD",         "gnews": "world"},
     {"key": "economia",      "label": "Economía y negocios",       "google_topic": "BUSINESS",      "gnews": "business",      "short": "Economía"},
-    {"key": "tecnologia",    "label": "Tecnología",                "google_topic": "TECHNOLOGY",    "gnews": "technology"},
+    {"key": "tecnologia",    "label": "Ciencia y tecnología",      "google_topic": "TECHNOLOGY",    "gnews": "technology"},
     {"key": "deportes",      "label": "Deportes",                  "google_topic": "SPORTS",        "gnews": "sports"},
     {"key": "cultura",       "label": "Cultura y entretenimiento", "google_topic": "ENTERTAINMENT", "gnews": "entertainment", "short": "Cultura"},
     {"key": "regiones", "label": "Regiones", "google_query": "(Biobío OR Ñuble OR Concepción OR Valparaíso OR Antofagasta OR Araucanía) noticias Chile"},
     {"key": "politica", "label": "Política", "google_query": "(Gobierno OR Congreso OR Senado OR política) Chile"},
-    {"key": "medioambiente", "label": "Medioambiente y clima", "google_query": "(medioambiente OR cambio climático OR meteorología OR clima) Chile", "short": "Clima"},
-    {"key": "salud-ciencia", "label": "Salud y ciencia", "google_query": "(salud pública OR medicina OR ciencia OR investigación) Chile", "short": "Salud y ciencia"},
+    # Medioambiente incluye clima y es sección propia (decisión del usuario, 2026-10-25).
+    {"key": "medioambiente", "label": "Medioambiente", "google_query": "(medioambiente OR cambio climático OR meteorología OR clima) Chile"},
+    # Salud es un subtema de «Ciencia y tecnología»: rótulo propio en tarjetas y filtros, sin entrada
+    # aparte en el menú. La clave se mantiene para no romper el historial ni las anclas publicadas.
+    {"key": "salud-ciencia", "label": "Salud", "google_query": "(salud pública OR medicina OR hospitales OR enfermedades) Chile"},
 ]
 CATEGORY_LABELS = {c["key"]: c["label"] for c in CATEGORIES}
 
@@ -855,11 +858,10 @@ def render_nav(sel, agenda=False):
     available = sections | {story["category"] for story in published}
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
     emitted = set()
-    def entry(category, child=False):
+    def entry(category):
         key = category["key"]
         label = PRESENTATION_LABELS.get(key, category["label"])
-        kind = " nav-subtopic" if child else ""
-        return f'<li><a class="cat-{key}{kind}" href="#cat-{key}">{esc(label)}</a></li>'
+        return f'<li><a class="cat-{key}" href="#cat-{key}">{esc(label)}</a></li>'
     for category in CATEGORIES:
         key = category["key"]
         if key not in available or key in emitted:
@@ -869,11 +871,6 @@ def render_nav(sel, agenda=False):
             continue
         links.append(entry(category))
         emitted.add(key)
-        for child in CATEGORIES:
-            child_key = child["key"]
-            if child_key != key and child_key in available and child_key not in emitted and canonical_section(child_key) == key:
-                links.append(entry(child, child=True))
-                emitted.add(child_key)
     if agenda:
         links.append('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>')
     return "".join(links)

@@ -1,11 +1,10 @@
 """Group displayed sections without changing ingestion or story categories."""
 
-PRESENTATION_LABELS = {
-    "tecnologia": "Ciencia, salud y tecnología",
-    "nacional": "Nacional",
-}
+# Los rótulos salen de CATEGORIES: menú, sección, tarjetas y filtros usan el mismo nombre.
+PRESENTATION_LABELS = {}
 
-_DESTINATIONS = {"salud-ciencia": "tecnologia", "medioambiente": "nacional"}
+# Salud se publica dentro de «Ciencia y tecnología»; Medioambiente tiene sección propia.
+_DESTINATIONS = {"salud-ciencia": "tecnologia"}
 _SUBTOPICS = {destination: origin for origin, destination in _DESTINATIONS.items()}
 
 
