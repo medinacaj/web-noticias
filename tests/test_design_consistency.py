@@ -26,7 +26,7 @@ PALETTE = {
     "#C1CFDE", "#C5CFDA", "#C5E1FF", "#C8102E", "#C8D4DF", "#CAD5E0", "#D7E8F8", "#DCE6EF", "#EE8BC6",
     "#EEF2F6", "#EFA98C", "#F0F4F8", "#F5A35C", "#FF6B7D", "#FFE0A4", "#FFF", "#FFF0AE", "#FFFFFF",
     # Revisión de paleta pedida por el usuario: neutros, coral y verde (2026-10-24).
-    "#F2F1ED", "#FAFAF7", "#282C30", "#626970", "#D7DBD4", "#343A43", "#31584A", "#C04C3E",
+    "#E9E8E2", "#F2F1ED", "#FAFAF7", "#282C30", "#626970", "#D7DBD4", "#343A43", "#31584A", "#C04C3E",
     "#272D31", "#202529", "#F7F6F2", "#CED1D6", "#E7EDE6", "#526257", "#9EAEA1", "#C4C7CC",
     "#151719", "#111315", "#1C1F23", "#4C545E", "#CCD1D6", "#66717D", "#B4DCC8", "#FF907F",
     "#94B9E4", "#93CDB5", "#C7B2E8", "#F2BE86", "#E7ACD1", "#E6C773", "#27362F", "#DEEDDE",

@@ -68,17 +68,17 @@
     if (themeSelect) themeSelect.value = preference;
     if (themeToggle) {
       var label = {system: "automático", light: "claro", dark: "oscuro"};
-      var next = themes[(themes.indexOf(preference) + 1) % themes.length];
+      var next = root.dataset.theme === "dark" ? "light" : "dark";
       themeToggle.setAttribute("aria-label", "Tema " + label[preference] + ". Cambiar a " + label[next]);
-      themeToggle.title = "Tema " + label[preference];
-      themeToggle.querySelector("span").textContent = {system: "◐", light: "☀", dark: "☾"}[preference];
+      themeToggle.title = "Activar tema " + label[next];
+      themeToggle.querySelector("span").textContent = next === "dark" ? "☾" : "☀";
     }
   }
   if (themeSelect) themeSelect.addEventListener("change", function () {
     applyTheme(themeSelect.value); remember("noticias:theme:v1", themeSelect.value);
   });
   if (themeToggle) themeToggle.addEventListener("click", function () {
-    var next = themes[(themes.indexOf(root.dataset.themePreference) + 1) % themes.length];
+    var next = root.dataset.theme === "dark" ? "light" : "dark";
     applyTheme(next); remember("noticias:theme:v1", next);
   });
   systemTheme.addEventListener("change", function () { applyTheme(root.dataset.themePreference); });

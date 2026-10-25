@@ -42,7 +42,7 @@ class InterfaceV4Tests(unittest.TestCase):
             self.assertIn(part, self.page)
 
     def test_prior_editorial_features_preserved(self):
-        for part in ('--paper:#F2F1ED', '--card-bg:#FFFFFF',
+        for part in ('--paper:#E9E8E2', '--card-bg:#FFFFFF',
                      'dialog.className = "coverage-dialog"', 'data-coverage-trigger',
                      'dialog.showModal()', 'src="reader-ui.js"',
                      'data-show-more', '.media--source', '%%TOP%%', '%%SECTIONS%%'):

@@ -1,5 +1,6 @@
 """Checks against the real generated document and Chromium; run explicitly."""
 import asyncio
+import json
 from functools import partial
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from threading import Thread
@@ -113,6 +114,66 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.reload()
         self.assertFalse(await self.page.locator('#visit-updates').is_visible())
         self.assertEqual(await self.page.evaluate("localStorage.getItem('noticias:last-edition:v1:' + location.pathname)"), before)
+
+    async def test_article_back_navigation_preserves_scroll_and_preferences(self):
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#text-size').select_option('large')
+        await self.page.locator('#view-options-toggle').click()
+        link = self.page.locator('.section-grid h3 a').first
+        await link.scroll_into_view_if_needed()
+        before = await self.page.evaluate('scrollY')
+        destination = await link.get_attribute('href')
+        await self.page.route(destination, lambda route: route.fulfill(status=200, content_type='text/html', body='<h1>Artículo original</h1>'))
+        await link.click()
+        await self.page.wait_for_url(destination)
+        self.assertEqual(len(self.context.pages), 1)
+        await self.page.go_back()
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'large')
+        await self.page.wait_for_function('Math.abs(scrollY - ' + str(before) + ') < 40')
+
+    async def test_back_restores_expanded_news_and_position(self):
+        more = self.page.locator('[data-show-more]:visible').first
+        grid = self.page.locator('#' + await more.get_attribute('aria-controls'))
+        link = grid.locator('[data-extra] h3 a').first
+        destination = await link.get_attribute('href')
+        link = grid.locator('h3 a[href=' + json.dumps(destination) + ']').first
+        await more.click()
+        await link.scroll_into_view_if_needed()
+        before = await self.page.evaluate('scrollY')
+        await self.page.route(destination, lambda route: route.fulfill(status=200, content_type='text/html', body='<h1>Artículo original</h1>'))
+        await link.click()
+        await self.page.wait_for_url(destination)
+        await self.page.go_back()
+        self.assertTrue(await link.is_visible())
+        await self.page.wait_for_function('Math.abs(scrollY - ' + str(before) + ') < 40')
+
+    async def test_back_restores_search_and_results(self):
+        await self.page.locator('#search-toggle').click()
+        await self.page.locator('#search-category').select_option('cultura')
+        before = await self.page.locator('#search-results li').count()
+        self.assertGreater(before, 0)
+        link = self.page.locator('#search-results a').first
+        destination = await link.get_attribute('href')
+        await self.page.route(destination, lambda route: route.fulfill(status=200, content_type='text/html', body='<h1>Artículo original</h1>'))
+        await link.click()
+        await self.page.wait_for_url(destination)
+        await self.page.go_back()
+        self.assertTrue(await self.page.locator('#search-panel').is_visible())
+        self.assertEqual(await self.page.locator('#search-category').input_value(), 'cultura')
+        self.assertEqual(await self.page.locator('#search-results li').count(), before)
+
+    async def test_mobile_theme_control_is_visible_and_works(self):
+        for width in (320, 360, 375, 390, 479):
+            await self.page.set_viewport_size({'width': width, 'height': 844})
+            toggle = self.page.locator('#theme-toggle')
+            self.assertTrue(await toggle.is_visible(), width)
+            self.assertTrue(await toggle.evaluate('el => {const r=el.getBoundingClientRect(); return el.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));}'), width)
+            self.assertLessEqual((await self.page.locator('.site-header').bounding_box())['height'], 80)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
+        await self.page.locator('#theme-toggle').click()
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'dark')
+        await self.page.locator('#theme-toggle').click()
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
 
     async def test_desktop_sidebar_defaults_visible_and_choice_survives_reload(self):
         nav, toggle = self.page.locator('#site-nav'), self.page.locator('#menu-toggle')
@@ -377,9 +438,12 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await clone.locator('a').get_attribute('tabindex'), '-1')
         await track.hover()
         await track.evaluate('el => el.scrollLeft = el.clientWidth * 5.8')
-        async with self.page.expect_popup(timeout=3000) as popup:
-            await clone.locator('a').click()
-        await (await popup.value).close()
+        destination = await clone.locator('a').get_attribute('href')
+        await self.page.route(destination, lambda route: route.fulfill(status=200, content_type='text/html', body='<h1>Artículo original</h1>'))
+        await clone.locator('a').click()
+        await self.page.wait_for_url(destination)
+        self.assertEqual(len(self.context.pages), 1)
+        await self.page.go_back()
         await self.page.locator('.brand-link').focus()
         await self.page.mouse.move(0, 0)
         await track.evaluate('el => el.scrollLeft = el.clientWidth * 6 - 5')
@@ -423,7 +487,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.set_viewport_size({"width": width, "height": 1000})
             header = await self.page.locator('.site-header').bounding_box()
             self.assertLessEqual(header['height'], 80 if width < 1024 else 68, (width, header))
-            for selector in ('#menu-toggle','#search-toggle','#view-options-toggle','#library-toggle','.header-updated','.edition-count'):
+            for selector in ('#menu-toggle','#theme-toggle','#search-toggle','#view-options-toggle','#library-toggle','.header-updated','.edition-count'):
                 self.assertTrue(await self.page.locator(selector).is_visible(), (width, selector))
             boxes = [await item.bounding_box() for item in await self.page.locator('.bar-inner .icon-btn:visible').all()]
             boxes.sort(key=lambda box: box['x'])

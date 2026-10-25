@@ -439,7 +439,7 @@ def coverage_control(story):
         return ""
     content = "".join(
         f'<li><span class="coverage-source">{esc(x["source"])}</span>'
-        f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["title"])}</a>'
+        f'<a href="{esc(x["link"])}" rel="noopener">{esc(x["title"])}</a>'
         + (f'<time datetime="{esc(x["published"])}">{esc(x["published"][:10])}</time>'
            if x["published"] else "") + '</li>'
         for x in rows
@@ -687,7 +687,7 @@ def title_link(story):
     first_seen = story.get("first_seen") or ""
     if not parse_date(first_seen):
         first_seen = ""
-    return (f'<a data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" target="_blank" rel="noopener" '
+    return (f'<a data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" rel="noopener" '
             f'data-cat="{esc(category_label(story))}" data-key="{story["category"]}" '
             f'data-sources="{esc(json.dumps(story.get("sources") or [], ensure_ascii=False))}">{esc(story["title"])}</a>')
 
@@ -789,7 +789,7 @@ def render_coverage_radar(stories):
     if not prominent:
         return ""
     items = "".join(
-        f'<li><a href="{esc(story["link"])}" target="_blank" rel="noopener">'
+        f'<li><a href="{esc(story["link"])}" rel="noopener">'
         f'{esc(story["title"])}</a><span>{len(set(story["sources"]))} medios distintos</span></li>'
         for story in prominent[:5]
     )

@@ -227,7 +227,7 @@ def render_agenda(events, now, number=None, source_mark=None):
             f'{" data-extra" if i >= 5 else ""}><article class="compact">'
             f'{_figure(event, shown)}'
             f'<div class="news-body"><p class="kicker">{esc(label)} · {esc(event["commune"])}</p>'
-            f'<h3><a href="{esc(event["link"])}" target="_blank" rel="noopener" data-countries="" '
+            f'<h3><a href="{esc(event["link"])}" rel="noopener" data-countries="" '
             f'data-cat="Agenda" data-key="agenda" '
             f'data-sources="{esc(json.dumps([event["source"]], ensure_ascii=False))}">{esc(event["title"])}</a></h3>'
             f'{f"<p class=\"dek\">{dek}</p>" if dek else ""}'
