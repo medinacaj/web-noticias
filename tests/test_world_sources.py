@@ -86,7 +86,8 @@ class WorldSourcesTests(unittest.TestCase):
                      gnews=lambda cat: api.append(cat["key"]) or [])
         self.assertEqual(len(api), 6)
         self.assertFalse(any("site:" in parse_qs(urlsplit(url).query).get("q", [""])[0] for url in requests))
-        self.assertEqual(len(requests), len(news.CATEGORIES) + 4)  # Latam extra + BBC + two entertainment editions.
+        # Latam extra + BBC + dos ediciones de entretenimiento + búsquedas de cine y conciertos en Chile.
+        self.assertEqual(len(requests), len(news.CATEGORIES) + 6)
         editions = [parse_qs(urlsplit(url).query).get("gl") for url in requests]
         self.assertIn(["ES"], editions)
         self.assertIn(["MX"], editions)
