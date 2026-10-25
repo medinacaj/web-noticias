@@ -98,13 +98,13 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.wait_for_function("document.documentElement.dataset.theme === 'light'")
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
 
-    async def test_carousel_next_previous_and_keyboard(self):
+    async def test_carousel_is_clean_and_keeps_keyboard_navigation(self):
         track = self.page.locator('.breaking-track')
         self.assertGreaterEqual(await track.locator('a').count(), 3)
-        await self.page.locator('[data-carousel-next]').click()
-        await self.page.wait_for_function("document.querySelector('.breaking-track').scrollLeft > 10")
-        await self.page.locator('[data-carousel-prev]').click()
-        await self.page.wait_for_function("document.querySelector('.breaking-track').scrollLeft < 2")
+        self.assertEqual(await self.page.locator('[data-carousel-prev],[data-carousel-next],.carousel-controls').count(), 0)
+        pause = self.page.locator('[data-carousel-pause]')
+        self.assertEqual(await pause.text_content(), 'Lo último')
+        self.assertEqual(await pause.evaluate('el => getComputedStyle(el).borderTopWidth'), '0px')
         await track.focus()
         await self.page.keyboard.press('ArrowRight')
         await self.page.wait_for_function("document.querySelector('.breaking-track').scrollLeft > 10")
@@ -325,14 +325,14 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.mouse.move(0, 0)
         await track.evaluate('el => el.scrollLeft = el.clientWidth * 6 - 5')
         await self.page.wait_for_function('document.querySelector(".breaking-track").scrollLeft < 100')
-        self.assertEqual(await self.page.locator('.carousel-position').inner_text(), '1 de 6')
+        self.assertLess(await self.page.locator('.breaking-track').evaluate('el => el.scrollLeft'), 100)
 
     async def test_reduced_motion_does_not_auto_start(self):
         pause = self.page.locator('[data-carousel-pause]')
         self.assertEqual(await pause.count(), 1)
         self.assertEqual(await pause.get_attribute('aria-pressed'), 'true')
         await self.page.wait_for_timeout(6500)
-        self.assertEqual(await self.page.locator('.carousel-position').inner_text(), '1 de 6')
+        self.assertEqual(await self.page.locator('.breaking-track').evaluate('el => el.scrollLeft'), 0)
 
     async def test_shared_grid_aligns_all_bands_open_and_closed(self):
         for width in (320, 390, 768, 1024, 1440, 1920, 2560):

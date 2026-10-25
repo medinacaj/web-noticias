@@ -727,18 +727,12 @@ def render_breaking(sel, now):
     )
     return ('<section class="breaking" data-carousel aria-label="Últimas noticias" '
             'aria-roledescription="carrusel"><div class="container breaking-inner">'
-            '<h2 class="breaking-label">Lo último</h2>'
+            '<h2 class="breaking-label"><span data-breaking-label>Lo último</span>'
+            '<button type="button" class="breaking-pause" data-carousel-pause hidden '
+            'aria-label="Pausar deslizamiento de Lo último" aria-pressed="false" '
+            'aria-controls="latest-track" title="Pausar titulares">Lo último</button></h2>'
             f'<ol class="breaking-track" id="latest-track" tabindex="0" '
             f'aria-label="Titulares recientes, usa las flechas para desplazarte">{slides}</ol>'
-            '<div class="carousel-controls" hidden>'
-            '<span class="carousel-position" aria-live="polite" aria-atomic="true"></span>'
-            '<button type="button" data-carousel-pause aria-label="Pausar titulares automáticos" '
-            'aria-pressed="false" aria-controls="latest-track" title="Pausar titulares automáticos">'
-            '<span aria-hidden="true">Ⅱ</span></button>'
-            '<button type="button" data-carousel-prev aria-label="Titulares anteriores" '
-            'aria-controls="latest-track">←</button>'
-            '<button type="button" data-carousel-next aria-label="Más titulares recientes" '
-            'aria-controls="latest-track">→</button></div>'
             '</div></section>')
 
 
