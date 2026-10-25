@@ -552,6 +552,8 @@
   .breaking-label{flex:none;margin:0;padding:0;font:700 10px/1.2 var(--sans);letter-spacing:.1em;color:var(--red);text-transform:uppercase;white-space:nowrap;}
   .breaking-label::before{content:"";display:inline-block;width:6px;height:6px;margin-right:8px;border-radius:50%;background:currentColor;vertical-align:middle;}
   .breaking-track{flex:1;min-width:0;display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:0;list-style:none;padding:0;margin:0;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;}
+  .breaking-track.is-sliding{scroll-snap-type:none;}
+  .breaking-track.is-sliding .breaking-item{padding-right:24px;}
   .breaking-track::-webkit-scrollbar{display:none;}
   .breaking-item{scroll-snap-align:start;min-width:0;display:flex;align-items:center;gap:12px;line-height:24px;}
   .breaking-category{flex:none;font:600 10px/1.2 var(--sans);color:var(--muted);}
