@@ -90,47 +90,66 @@
     var pause = carousel.querySelector("[data-carousel-pause]"), position = carousel.querySelector(".carousel-position");
     if (!track || !controls || !previous || !next) return;
     var reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    var timer = null, userPlay = null, hovering = false, focused = false;
+    var count = track.children.length;
+    if (count > 1) {
+      var clone = track.firstElementChild.cloneNode(true);
+      clone.dataset.carouselClone = "true";
+      clone.setAttribute("aria-hidden", "true");
+      clone.querySelectorAll("[id]").forEach(function (el) { el.removeAttribute("id"); });
+      clone.querySelectorAll("a,button").forEach(function (el) { el.tabIndex = -1; });
+      track.appendChild(clone);
+      track.classList.add("is-sliding");
+    }
+    var frame = null, lastTime = null, offset = track.scrollLeft;
+    var userPlay = null, hovering = false, focused = false;
     function wantsPlay() { return userPlay === null ? !reduced.matches : userPlay; }
     function canPlay() {
       return pause && wantsPlay() && !hovering && !focused && !d.hidden
-        && track.children.length > 1 && track.clientWidth > 0;
+        && count > 1 && track.clientWidth > 0;
     }
     function index() {
-      return Math.max(0, Math.min(track.children.length - 1,
+      return Math.max(0, Math.min(count - 1,
         Math.round(track.scrollLeft / Math.max(1, track.clientWidth))));
     }
     function schedule() {
-      window.clearTimeout(timer); timer = null;
+      if (frame !== null) window.cancelAnimationFrame(frame);
+      frame = null; lastTime = null; offset = track.scrollLeft;
       var active = canPlay();
       if (pause) {
-        pause.disabled = track.children.length <= 1;
-        pause.setAttribute("aria-label", "Pausar avance automático");
+        pause.disabled = count <= 1;
+        pause.setAttribute("aria-label", wantsPlay() ? "Pausar avance automático" : "Reanudar avance automático");
         pause.setAttribute("aria-pressed", String(!wantsPlay()));
         pause.title = wantsPlay() ? "Pausar carrusel" : "Reanudar carrusel";
         pause.querySelector("span").textContent = wantsPlay() ? "Ⅱ" : "\u25B6\uFE0E";
       }
       // No anunciar cambios automáticos; las interacciones manuales sí se anuncian.
       if (position) position.setAttribute("aria-live", active ? "off" : "polite");
-      if (active) timer = window.setTimeout(function () {
-        timer = null;
-        if (!canPlay()) { schedule(); return; }
-        var target = (index() + 1) % track.children.length;
-        track.scrollTo({left: target * track.clientWidth,
-          behavior: reduced.matches || target === 0 ? "instant" : "smooth"});
-        schedule();
-      }, 6000);
+      if (active) frame = window.requestAnimationFrame(tick);
     }
+    function tick(time) {
+      frame = null;
+      if (!canPlay()) { schedule(); return; }
+      // Velocidad constante, independiente de la frecuencia de pantalla.
+      if (lastTime !== null) offset += Math.min(time - lastTime, 50) * 0.04;
+      lastTime = time;
+      var length = count * track.clientWidth;
+      if (offset >= length) offset %= length;
+      track.scrollLeft = offset;
+      update();
+      frame = window.requestAnimationFrame(tick);
+    }
+
     function update() {
-      var max = track.scrollWidth - track.clientWidth;
+      var max = (count - 1) * track.clientWidth;
       controls.hidden = max < 3;
       previous.disabled = track.scrollLeft <= 2;
       next.disabled = track.scrollLeft >= max - 2;
-      if (position) position.textContent = (index() + 1) + " de " + track.children.length;
-      schedule();
+      var label = (index() + 1) + " de " + count;
+      if (position && position.textContent !== label) position.textContent = label;
     }
     function move(direction) {
-      track.scrollBy({left: direction * track.clientWidth, behavior: reduced.matches ? "instant" : "smooth"});
+      var target = Math.max(0, Math.min(count - 1, index() + direction));
+      track.scrollTo({left: target * track.clientWidth, behavior: reduced.matches ? "instant" : "smooth"});
       schedule();
     }
     previous.addEventListener("click", function () { move(-1); });
@@ -157,9 +176,14 @@
       if (event.target !== track || ["ArrowLeft", "ArrowRight"].indexOf(event.key) < 0) return;
       event.preventDefault(); move(event.key === "ArrowRight" ? 1 : -1);
     });
-    track.addEventListener("scroll", update, {passive: true});
-    if ("ResizeObserver" in window) new ResizeObserver(update).observe(track);
-    else window.addEventListener("resize", update);
-    update();
+    track.addEventListener("scroll", function () {
+      // Conservar fracciones de píxel del avance; sincronizar gestos manuales.
+      if (Math.abs(track.scrollLeft - offset) > 2) offset = track.scrollLeft;
+      update();
+    }, {passive: true});
+    function resized() { update(); schedule(); }
+    if ("ResizeObserver" in window) new ResizeObserver(resized).observe(track);
+    else window.addEventListener("resize", resized);
+    update(); schedule();
   });
 })();
