@@ -18,9 +18,9 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: URLError: <urlopen error timed out>. Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: URLError: <urlopen error timed out>. Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:07:08",
+        "at": "2026-10-25T06:13:36",
         "ok": false,
         "http_status": null,
         "error": "URLError: <urlopen error timed out>"
@@ -43,9 +43,9 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl,c:1010)>. Dominio observado en resultados de búsqueda web el 2026-10-03. Sección /actividades observada en búsqueda.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl,c:1010)>. Dominio observado en resultados de búsqueda web el 2026-10-03. Sección /actividades observada en búsqueda.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:11",
+        "at": "2026-10-25T06:07:38",
         "ok": false,
         "http_status": null,
         "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
@@ -68,9 +68,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "resumen_de_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 18 página(s), 0 evento(s)). URL obtenida de un resumen de búsqueda, no de un resultado directo; confianza baja.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 18 página(s), 0 evento(s)). URL obtenida de un resumen de búsqueda, no de un resultado directo; confianza baja.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:35",
+        "at": "2026-10-25T06:08:03",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -93,14 +93,14 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "no_confirmado",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de San Pedro de la Paz; queda guardado tras la primera respuesta verificada.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de San Pedro de la Paz; queda guardado tras la primera respuesta verificada.",
       "url_candidates": [
         "https://www.sanpedrodelapaz.cl/",
         "https://sanpedrodelapaz.cl/",
         "https://www.spdp.cl/"
       ],
       "last_live_check": {
-        "at": "2026-10-24T22:01:05",
+        "at": "2026-10-25T06:07:32",
         "ok": false,
         "http_status": null,
         "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz"
@@ -123,9 +123,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 5 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 5 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:14",
+        "at": "2026-10-25T06:07:40",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -148,9 +148,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:15",
+        "at": "2026-10-25T06:07:41",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -173,9 +173,9 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: HTTP 403. Dominio observado en resultados de búsqueda web el 2026-10-03. Existe sección /eventos/ según resultados de búsqueda.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: HTTP 403. Dominio observado en resultados de búsqueda web el 2026-10-03. Existe sección /eventos/ según resultados de búsqueda.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:15",
+        "at": "2026-10-25T06:07:40",
         "ok": false,
         "http_status": 403,
         "error": "HTTP 403"
@@ -198,9 +198,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 4 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 4 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:33",
+        "at": "2026-10-25T06:07:58",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -223,9 +223,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:38",
+        "at": "2026-10-25T06:08:04",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -248,9 +248,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "dominio_candidato_verificado_en_vivo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Hualqui; queda guardado tras la primera respuesta verificada.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Hualqui; queda guardado tras la primera respuesta verificada.",
       "last_live_check": {
-        "at": "2026-10-24T22:04:06",
+        "at": "2026-10-25T06:08:16",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -273,9 +273,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "dominio_candidato_verificado_en_vivo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 3 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Santa Juana; queda guardado tras la primera respuesta verificada.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 3 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Santa Juana; queda guardado tras la primera respuesta verificada.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:48",
+        "at": "2026-10-25T06:08:12",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -298,9 +298,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 3 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 3 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:01:51",
+        "at": "2026-10-25T06:08:17",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -323,9 +323,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 1 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 1 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:03:07",
+        "at": "2026-10-25T06:09:35",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -348,9 +348,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 10 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 10 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:02:21",
+        "at": "2026-10-25T06:08:47",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -373,9 +373,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:02:34",
+        "at": "2026-10-25T06:08:31",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -398,14 +398,14 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "no_confirmado",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Curanilahue; queda guardado tras la primera respuesta verificada.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Curanilahue; queda guardado tras la primera respuesta verificada.",
       "url_candidates": [
         "https://www.curanilahue.cl/",
         "https://www.municuranilahue.cl/",
         "https://www.munichue.cl/"
       ],
       "last_live_check": {
-        "at": "2026-10-24T22:05:38",
+        "at": "2026-10-25T06:11:39",
         "ok": false,
         "http_status": null,
         "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue"
@@ -428,9 +428,9 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: HTTP 403. Dominio observado en resultados de búsqueda web el 2026-10-03. Sección /eventos/ observada; incluye eventos de años anteriores.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: HTTP 403. Dominio observado en resultados de búsqueda web el 2026-10-03. Sección /eventos/ observada; incluye eventos de años anteriores.",
       "last_live_check": {
-        "at": "2026-10-24T22:03:07",
+        "at": "2026-10-25T06:08:48",
         "ok": false,
         "http_status": 403,
         "error": "HTTP 403"
@@ -451,14 +451,14 @@
       "commune": "Los Álamos",
       "province": "Arauco",
       "parser": "generic",
-      "verified_live": true,
+      "verified_live": false,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: HTTP 522. Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:03:29",
-        "ok": true,
-        "http_status": 200,
-        "error": null
+        "at": "2026-10-25T06:09:12",
+        "ok": false,
+        "http_status": 522,
+        "error": "HTTP 522"
       }
     },
     {
@@ -478,14 +478,14 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "no_confirmado",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Tirúa; queda guardado tras la primera respuesta verificada.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Tirúa; queda guardado tras la primera respuesta verificada.",
       "url_candidates": [
         "https://www.tirua.cl/",
         "https://www.munitirua.cl/",
         "https://tirua.cl/"
       ],
       "last_live_check": {
-        "at": "2026-10-24T22:03:43",
+        "at": "2026-10-25T06:09:24",
         "ok": false,
         "http_status": 200,
         "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
@@ -508,9 +508,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:03:53",
+        "at": "2026-10-25T06:09:35",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -533,14 +533,14 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "no_confirmado",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Antuco; queda guardado tras la primera respuesta verificada.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Antuco; queda guardado tras la primera respuesta verificada.",
       "url_candidates": [
         "https://www.antuco.cl/",
         "https://www.muniantuco.cl/",
         "https://antuco.cl/"
       ],
       "last_live_check": {
-        "at": "2026-10-24T22:04:00",
+        "at": "2026-10-25T06:09:41",
         "ok": false,
         "http_status": 200,
         "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco"
@@ -563,9 +563,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:04:04",
+        "at": "2026-10-25T06:09:39",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -588,9 +588,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "dominio_candidato_verificado_en_vivo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 8 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Laja; queda guardado tras la primera respuesta verificada.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 8 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Laja; queda guardado tras la primera respuesta verificada.",
       "last_live_check": {
-        "at": "2026-10-24T22:04:31",
+        "at": "2026-10-25T06:09:59",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -613,9 +613,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 4 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 4 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:04:16",
+        "at": "2026-10-25T06:09:51",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -638,9 +638,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 1 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Sección /actividades observada en búsqueda.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 1 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Sección /actividades observada en búsqueda.",
       "last_live_check": {
-        "at": "2026-10-24T22:04:30",
+        "at": "2026-10-25T06:10:02",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -663,9 +663,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 9 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 9 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:05:06",
+        "at": "2026-10-25T06:10:37",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -688,14 +688,14 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "no_confirmado",
-      "notes": "Última verificación en vivo 2026-10-24: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Quilaco; queda guardado tras la primera respuesta verificada.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco. Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Quilaco; queda guardado tras la primera respuesta verificada.",
       "url_candidates": [
         "https://www.quilaco.cl/",
         "https://www.muniquilaco.cl/",
         "https://quilaco.cl/"
       ],
       "last_live_check": {
-        "at": "2026-10-24T22:04:44",
+        "at": "2026-10-25T06:10:15",
         "ok": false,
         "http_status": null,
         "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco"
@@ -716,14 +716,14 @@
       "commune": "Quilleco",
       "province": "Biobío",
       "parser": "generic",
-      "verified_live": true,
+      "verified_live": false,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Dominio visto solo en documentos de transparencia.",
+      "notes": "Última verificación en vivo 2026-10-25: falló. Error: HTTP 403. Dominio observado en resultados de búsqueda web el 2026-10-03. Dominio visto solo en documentos de transparencia.",
       "last_live_check": {
-        "at": "2026-10-24T22:04:50",
-        "ok": true,
-        "http_status": 200,
-        "error": null
+        "at": "2026-10-25T06:10:17",
+        "ok": false,
+        "http_status": 403,
+        "error": "HTTP 403"
       }
     },
     {
@@ -743,9 +743,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "dominio_candidato_verificado_en_vivo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 18 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de San Rosendo; queda guardado tras la primera respuesta verificada. Dominio municipalidadsanrosendo.cl visto en un afiche oficial de la Fiesta del Vino 2026 (aportado por el responsable).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 18 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de San Rosendo; queda guardado tras la primera respuesta verificada. Dominio municipalidadsanrosendo.cl visto en un afiche oficial de la Fiesta del Vino 2026 (aportado por el responsable).",
       "last_live_check": {
-        "at": "2026-10-24T22:05:30",
+        "at": "2026-10-25T06:11:05",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -768,9 +768,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 10 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 10 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:05:29",
+        "at": "2026-10-25T06:11:00",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -793,9 +793,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "dominio_candidato_verificado_en_vivo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 5 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Tucapel; queda guardado tras la primera respuesta verificada.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 5 página(s), 0 evento(s)). Dominio sin confirmar: el rastreo prueba url_candidates y solo acepta el que se presenta como Municipalidad de Tucapel; queda guardado tras la primera respuesta verificada.",
       "last_live_check": {
-        "at": "2026-10-24T22:05:38",
+        "at": "2026-10-25T06:11:11",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -818,9 +818,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 4 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 4 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:05:52",
+        "at": "2026-10-25T06:11:29",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -843,9 +843,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 21 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 21 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:19",
+        "at": "2026-10-25T06:11:56",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -868,9 +868,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Las fichas de evento (p.ej. /inarbolece/) se ven en resultados de búsqueda con fecha, hora, sala y precio. Venta de entradas vía Ticketplus.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Las fichas de evento (p.ej. /inarbolece/) se ven en resultados de búsqueda con fecha, hora, sala y precio. Venta de entradas vía Ticketplus.",
       "last_live_check": {
-        "at": "2026-10-24T22:05:59",
+        "at": "2026-10-25T06:11:48",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -893,9 +893,9 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Página de empresa en Ticketplus observada en búsqueda.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Página de empresa en Ticketplus observada en búsqueda.",
       "last_live_check": {
-        "at": "2026-10-24T22:05:55",
+        "at": "2026-10-25T06:11:40",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -918,9 +918,9 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Observada en búsqueda.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Observada en búsqueda.",
       "last_live_check": {
-        "at": "2026-10-24T22:05:56",
+        "at": "2026-10-25T06:11:40",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -943,9 +943,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 8 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Sitio citado por prensa como web oficial del Teatro UdeC.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 8 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Sitio citado por prensa como web oficial del Teatro UdeC.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:04",
+        "at": "2026-10-25T06:11:48",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -968,9 +968,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 15 página(s), 1 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. No se encontraron fechas confirmadas de la edición 2026.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 15 página(s), 1 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. No se encontraron fechas confirmadas de la edición 2026.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:09",
+        "at": "2026-10-25T06:12:05",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -993,9 +993,9 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 30 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Listado regional de Ticketplus observado en búsqueda. La comuna se infiere desde el recinto/dirección.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 30 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Listado regional de Ticketplus observado en búsqueda. La comuna se infiere desde el recinto/dirección.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:25",
+        "at": "2026-10-25T06:12:14",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1018,9 +1018,9 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 30 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Catálogo nacional; solo se guardan eventos cuyo recinto/dirección menciona una comuna del Biobío.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 30 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Catálogo nacional; solo se guardan eventos cuyo recinto/dirección menciona una comuna del Biobío.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:41",
+        "at": "2026-10-25T06:12:31",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1043,9 +1043,9 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "conocimiento_previo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 1 página(s), 0 evento(s)). Catálogo nacional; no se encontró URL de filtro regional.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 1 página(s), 0 evento(s)). Catálogo nacional; no se encontró URL de filtro regional.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:28",
+        "at": "2026-10-25T06:12:16",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1068,9 +1068,9 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "conocimiento_previo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). No se encontró URL de filtro regional.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). No se encontró URL de filtro regional.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:36",
+        "at": "2026-10-25T06:12:31",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1093,9 +1093,9 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "conocimiento_previo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 16 página(s), 0 evento(s)). No se encontró URL de filtro regional.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 16 página(s), 0 evento(s)). No se encontró URL de filtro regional.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:39",
+        "at": "2026-10-25T06:12:24",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1118,9 +1118,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 9 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Portal de noticias UdeC (observado). Se usa como radar: genera 'posibles eventos' para revisión, no eventos publicados.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 7 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Portal de noticias UdeC (observado). Se usa como radar: genera 'posibles eventos' para revisión, no eventos publicados.",
       "last_live_check": {
-        "at": "2026-10-24T22:06:46",
+        "at": "2026-10-25T06:12:32",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1143,9 +1143,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Publica boletines mensuales en PDF (observados); el parser HTML no lee PDF.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Publica boletines mensuales en PDF (observados); el parser HTML no lee PDF.",
       "last_live_check": {
-        "at": "2026-10-24T22:07:07",
+        "at": "2026-10-25T06:12:51",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1187,9 +1187,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 19 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Publica notas regionales del Biobío (observado).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 19 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Publica notas regionales del Biobío (observado).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:06",
+        "at": "2026-10-25T06:12:56",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1212,9 +1212,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado (sección exacta no confirmada) en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado (sección exacta no confirmada) en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:26",
+        "at": "2026-10-25T06:13:15",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1237,9 +1237,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:25",
+        "at": "2026-10-25T06:13:11",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1262,9 +1262,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:19",
+        "at": "2026-10-25T06:13:11",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1287,9 +1287,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 16 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 14 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:38",
+        "at": "2026-10-25T06:13:24",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1312,9 +1312,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:35",
+        "at": "2026-10-25T06:13:28",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1337,9 +1337,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 8 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 8 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:27",
+        "at": "2026-10-25T06:13:16",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1362,9 +1362,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 3 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 3 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:30",
+        "at": "2026-10-25T06:13:20",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1387,9 +1387,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 13 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 13 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-10-24T22:07:58",
+        "at": "2026-10-25T06:13:48",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1412,9 +1412,9 @@
       "parser": "rss",
       "verified_live": true,
       "url_evidence": "conocimiento_previo",
-      "notes": "Verificada en vivo el 2026-10-24 (HTTP 200; 1 página(s), 0 evento(s)). Supone un feed WordPress estándar en /feed/; sin confirmar.",
+      "notes": "Verificada en vivo el 2026-10-25 (HTTP 200; 1 página(s), 0 evento(s)). Supone un feed WordPress estándar en /feed/; sin confirmar.",
       "last_live_check": {
-        "at": "2026-10-24T22:07:31",
+        "at": "2026-10-25T06:13:25",
         "ok": true,
         "http_status": 200,
         "error": null

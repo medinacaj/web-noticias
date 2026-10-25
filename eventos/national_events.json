@@ -1,14 +1,14 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-10-24T22:09:33",
+  "generated_at": "2026-10-25T06:15:27",
   "summary": {
     "sources_attempted": 9,
     "sources_ok": 8,
     "sources_failed": 1,
-    "events_found": 26,
-    "events_inserted": 21,
-    "events_merged": 0,
-    "possible_events": 0,
+    "events_found": 25,
+    "events_inserted": 20,
+    "events_merged": 2,
+    "possible_events": 1,
     "quarantined_candidates": 0,
     "candidates": 0,
     "errors": [
@@ -41,7 +41,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -53,145 +53,18 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Paredones y San Vicente celebrarán el Mes de la Música con conciertos gratuitos de cumbia, rock y cueca brava",
-      "description": null,
-      "date": "2026-10-24",
-      "end_date": "2026-10-30",
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "San Vicente",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/paredones-y-san-vicente-celebraran-el-mes-de-la-musica-con-conciertos-gratuitos-de-cumbia-rock-y-cueca-brava/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/la-juerga-450x300.jpg",
-      "discovered_at": "2026-10-24T22:08:14",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/paredones-y-san-vicente-celebraran-el-mes-de-la-musica-con-conciertos-gratuitos-de-cumbia-rock-y-cueca-brava/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-24T22:08:14"
-        }
-      ],
-      "changes": [],
-      "region": "O'Higgins"
-    },
-    {
-      "title": "TALLER INICIAL DE DIRECCIÓN ESCÉNICA EN LA ÓPERA / Día de la Ópera",
-      "description": null,
-      "date": "2026-10-24",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Talca",
-      "category": "Comunidad",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Teatro Regional del Maule",
-      "source_url": "https://www.teatroregional.cl/archivo/28521",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": null,
-      "discovered_at": "2026-10-24T22:08:56",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Teatro Regional del Maule",
-          "url": "https://www.teatroregional.cl/archivo/28521",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-24T22:08:56"
-        }
-      ],
-      "changes": [],
-      "region": "Maule"
-    },
-    {
-      "title": "Trueque de Novelas",
-      "description": "¡Trae hasta tres novelas y cámbialas por otras! En esta actividad, podrás hacer circular tus historias de ficción, conocer nuevos autores y novelistas, y hac...",
-      "date": "2026-10-24",
-      "end_date": "2026-11-21",
-      "time": "10:00",
-      "end_time": null,
-      "venue": "Centro Gabriela Mistral - GAM - Plaza Central",
-      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Confirmado",
-      "source": "Centro Cultural Gabriela Mistral (GAM)",
-      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://gam.cl/media/images/PORTADA_3.2e16d0ba.fill-1200x630.png",
-      "discovered_at": "2026-10-24T10:28:52",
-      "changed_at": "2026-10-24T10:40:52",
-      "tags": [],
-      "sources": [
-        {
-          "name": "Centro Cultural Gabriela Mistral (GAM)",
-          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-24T22:07:58"
-        }
-      ],
-      "changes": [
-        {
-          "field": "venue",
-          "old_value": "Centro Gabriela Mistral - GAM - &lt;p&gt;&lt;b&gt;Plaza Central&lt;/b&gt;&lt;/p&gt;",
-          "new_value": "Centro Gabriela Mistral - GAM - Plaza Central",
-          "source": "Centro Cultural Gabriela Mistral (GAM)",
-          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
-          "changed_at": "2026-10-24T10:40:52"
-        }
-      ],
       "region": "Metropolitana"
     },
     {
       "title": "Teatro Musical: Estación Ópera",
       "description": null,
-      "date": "2026-10-24",
+      "date": "2026-10-25",
       "end_date": "2026-11-01",
-      "time": "16:00",
+      "time": "12:00",
       "end_time": null,
       "venue": null,
       "address": null,
@@ -208,7 +81,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -220,7 +93,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -229,10 +102,10 @@
     {
       "title": "Laboratorio Ciudadano de Danza 2026: Presentado por SURA",
       "description": "El Laboratorio Ciudadano de Danza llega en su segunda versión como un espacio de encuentro y creación colectiva que invita a personas de distintas edades y t...",
-      "date": "2026-10-24",
+      "date": "2026-10-25",
       "end_date": "2026-10-25",
       "time": "17:00",
-      "end_time": null,
+      "end_time": "17:00",
       "venue": "Centro Gabriela Mistral - GAM - Sala N2 (Edificio B, piso 2)",
       "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
       "commune": "Santiago",
@@ -241,7 +114,7 @@
       "access": null,
       "price_value": 0,
       "price_status": "free",
-      "status": "Confirmado",
+      "status": "Reprogramado",
       "source": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-ciudadano-danza-2026/",
       "source_type": "venue",
@@ -249,7 +122,7 @@
       "official": true,
       "image_url": "https://gam.cl/media/images/PortadaLabdanzaGAM.2e16d0ba.fill-1200x630.png",
       "discovered_at": "2026-10-24T10:28:52",
-      "changed_at": "2026-10-24T10:40:52",
+      "changed_at": "2026-10-25T06:14:39",
       "tags": [],
       "sources": [
         {
@@ -258,7 +131,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:07:58"
+          "seen_at": "2026-10-25T06:13:48"
         }
       ],
       "changes": [
@@ -269,6 +142,22 @@
           "source": "Centro Cultural Gabriela Mistral (GAM)",
           "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-ciudadano-danza-2026/",
           "changed_at": "2026-10-24T10:40:52"
+        },
+        {
+          "field": "date",
+          "old_value": "2026-10-24",
+          "new_value": "2026-10-25",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-ciudadano-danza-2026/",
+          "changed_at": "2026-10-25T06:14:39"
+        },
+        {
+          "field": "status",
+          "old_value": "Confirmado",
+          "new_value": "Reprogramado",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-ciudadano-danza-2026/",
+          "changed_at": "2026-10-25T06:14:39"
         }
       ],
       "region": "Metropolitana"
@@ -295,7 +184,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/10/Odisea-del-espacio_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-24T22:08:29",
+      "discovered_at": "2026-10-25T06:14:31",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -307,7 +196,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:29"
+          "seen_at": "2026-10-25T06:14:31"
         }
       ],
       "changes": [],
@@ -335,7 +224,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -347,7 +236,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -375,7 +264,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/bafona--450x300.jpg",
-      "discovered_at": "2026-10-24T22:08:14",
+      "discovered_at": "2026-10-25T06:14:04",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -387,7 +276,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:14"
+          "seen_at": "2026-10-25T06:14:04"
         }
       ],
       "changes": [],
@@ -415,7 +304,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/09/Girls-Boys_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-24T22:08:29",
+      "discovered_at": "2026-10-25T06:14:31",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -427,11 +316,51 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:29"
+          "seen_at": "2026-10-25T06:14:31"
         }
       ],
       "changes": [],
       "region": "Metropolitana"
+    },
+    {
+      "title": "Paredones y San Vicente celebrarán el Mes de la Música con conciertos gratuitos de cumbia, rock y cueca brava",
+      "description": null,
+      "date": "2026-10-30",
+      "end_date": null,
+      "time": "18:30",
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Paredones",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/paredones-y-san-vicente-celebraran-el-mes-de-la-musica-con-conciertos-gratuitos-de-cumbia-rock-y-cueca-brava/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/la-juerga-450x300.jpg",
+      "discovered_at": "2026-10-25T06:14:04",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/paredones-y-san-vicente-celebraran-el-mes-de-la-musica-con-conciertos-gratuitos-de-cumbia-rock-y-cueca-brava/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-25T06:14:04"
+        }
+      ],
+      "changes": [],
+      "region": "O'Higgins"
     },
     {
       "title": "Mes del Diseño 2026 revela su programación con más de 50 actividades en ocho regiones del país",
@@ -455,7 +384,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/banner-mes-diseno-2-450x300.jpg",
-      "discovered_at": "2026-10-24T22:08:14",
+      "discovered_at": "2026-10-25T06:14:04",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -467,7 +396,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:14"
+          "seen_at": "2026-10-25T06:14:04"
         }
       ],
       "changes": [],
@@ -495,7 +424,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:56",
+      "discovered_at": "2026-10-25T06:14:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -507,7 +436,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:56"
+          "seen_at": "2026-10-25T06:14:49"
         }
       ],
       "changes": [],
@@ -535,7 +464,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/05-concierto-de-colores-450x300.jpg",
-      "discovered_at": "2026-10-24T22:08:14",
+      "discovered_at": "2026-10-25T06:14:04",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -547,7 +476,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:14"
+          "seen_at": "2026-10-25T06:14:04"
         }
       ],
       "changes": [],
@@ -585,7 +514,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:07:58"
+          "seen_at": "2026-10-25T06:13:48"
         }
       ],
       "changes": [
@@ -622,7 +551,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -634,7 +563,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -662,7 +591,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -674,10 +603,73 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Trueque de Novelas",
+      "description": "¡Trae hasta tres novelas y cámbialas por otras! En esta actividad, podrás hacer circular tus historias de ficción, conocer nuevos autores y novelistas, y hac...",
+      "date": "2026-11-20",
+      "end_date": "2026-11-21",
+      "time": "10:00",
+      "end_time": null,
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Central",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Reprogramado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/PORTADA_3.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-10-24T10:28:52",
+      "changed_at": "2026-10-25T06:14:39",
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-25T06:13:48"
+        }
+      ],
+      "changes": [
+        {
+          "field": "venue",
+          "old_value": "Centro Gabriela Mistral - GAM - &lt;p&gt;&lt;b&gt;Plaza Central&lt;/b&gt;&lt;/p&gt;",
+          "new_value": "Centro Gabriela Mistral - GAM - Plaza Central",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
+          "changed_at": "2026-10-24T10:40:52"
+        },
+        {
+          "field": "date",
+          "old_value": "2026-10-24",
+          "new_value": "2026-11-20",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
+          "changed_at": "2026-10-25T06:14:39"
+        },
+        {
+          "field": "status",
+          "old_value": "Confirmado",
+          "new_value": "Reprogramado",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/trueque-novelas-2026/",
+          "changed_at": "2026-10-25T06:14:39"
+        }
+      ],
       "region": "Metropolitana"
     },
     {
@@ -702,7 +694,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -714,7 +706,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -742,7 +734,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -754,7 +746,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -782,7 +774,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:56",
+      "discovered_at": "2026-10-25T06:14:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -794,7 +786,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:56"
+          "seen_at": "2026-10-25T06:14:49"
         }
       ],
       "changes": [],
@@ -822,7 +814,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -834,7 +826,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -862,7 +854,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-10-24T22:08:14",
+      "discovered_at": "2026-10-25T06:14:10",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -874,7 +866,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:14"
+          "seen_at": "2026-10-25T06:14:10"
         }
       ],
       "changes": [],
@@ -902,7 +894,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -914,7 +906,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -942,7 +934,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-24T22:08:33",
+      "discovered_at": "2026-10-25T06:14:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -954,7 +946,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-24T22:08:33"
+          "seen_at": "2026-10-25T06:14:20"
         }
       ],
       "changes": [],
@@ -965,8 +957,8 @@
     {
       "source_name": "Agenda Cultural del Ministerio de las Culturas",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:14",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:14:04",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 19,
@@ -979,22 +971,22 @@
     {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:38",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:14:39",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 3,
       "events_inserted": 0,
-      "events_merged": 0,
+      "events_merged": 2,
       "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:14",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:14:10",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1007,8 +999,8 @@
     {
       "source_name": "ChileCultura (Ministerio de las Culturas)",
       "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:04",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:13:53",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -1021,8 +1013,8 @@
     {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:29",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:14:31",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1035,22 +1027,22 @@
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:09:33",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:15:27",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 1,
       "error": null
     },
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:33",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:14:20",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1063,8 +1055,8 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:42",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:14:42",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -1077,69 +1069,19 @@
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-10-24T22:07:58",
-      "finished_at": "2026-10-24T22:08:56",
+      "started_at": "2026-10-25T06:13:48",
+      "finished_at": "2026-10-25T06:14:49",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 16,
-      "events_found": 3,
-      "events_inserted": 3,
+      "events_found": 2,
+      "events_inserted": 2,
       "events_merged": 0,
       "possible_found": 0,
       "error": null
     }
   ],
   "possible_events": [
-    {
-      "title": "Información importante: Daniil Trifonov",
-      "raw_text": "Por motivos de salud tras sufrir un accidente, el pianista Daniil Trifonov debió posponer su gira por América Latina, incluido su recital del 24 de octubre en el Teatro Municipal de Santiago. Conoce los detalles sobre tus entradas y opciones de reembolso aquí.",
-      "date": "2026-10-24",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Sábado 24 de octubre – 16:00 horas / Función familiar",
-      "raw_text": "Sábado 24 de octubre – 16:00 horas / Función familiar",
-      "date": "2026-10-24",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/teatro-musical-estacion-opera/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "Jinny Jopler, Los Costinos, Tierra Linda de Paredones y Kala kala ká son parte de la cartelera. Los conciertos se realizarán el 24 de octubre en Paredones y el 30 de octubre en San Vicente de Tagua Tagua.",
-      "date": "2026-10-24",
-      "commune": "San Vicente",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/paredones-y-san-vicente-celebraran-el-mes-de-la-musica-con-conciertos-gratuitos-de-cumbia-rock-y-cueca-brava/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "O'Higgins"
-    },
-    {
-      "title": "Roberto Bravo con Musica de Peliculas – 24 de Octubre 19:00 hrs.",
-      "raw_text": "Roberto Bravo con Musica de Peliculas – 24 de Octubre 19:00 hrs.",
-      "date": "2026-10-24",
-      "commune": "Temuco",
-      "source": "Teatro Municipal de Temuco",
-      "source_url": "https://ww2.teatromunicipaltemuco.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "La Araucanía"
-    },
-    {
-      "title": "SÁBADO 24 DE OCTUBRE DE 2026",
-      "raw_text": "SÁBADO 24 DE OCTUBRE DE 2026",
-      "date": "2026-10-24",
-      "commune": "Talca",
-      "source": "Teatro Regional del Maule",
-      "source_url": "https://www.teatroregional.cl/archivo/28521",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Maule"
-    },
     {
       "title": "Domingo 25 de octubre – 12:00 horas / Función familiar",
       "raw_text": "Domingo 25 de octubre – 12:00 horas / Función familiar",
@@ -2464,6 +2406,16 @@
       "title": "Lunes 21 de junio",
       "raw_text": "Lunes 21 de junio",
       "date": "2027-06-21",
+      "commune": "Valparaíso",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/cocina-indigena-aymara/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Valparaíso"
+    },
+    {
+      "title": "Martes 22 de junio",
+      "raw_text": "Martes 22 de junio",
+      "date": "2027-06-22",
       "commune": "Valparaíso",
       "source": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/events/cocina-indigena-aymara/",
