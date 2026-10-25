@@ -22,9 +22,16 @@ class CardShadowTests(unittest.TestCase):
         for token in ("box-shadow:var(--card-shadow);",
                       "box-shadow:var(--card-shadow-hover);",
                       ".lead:focus-within,.feature:focus-within",
-                      "transform:translateY(-2px)",
                       "prefers-reduced-motion:reduce"):
             self.assertIn(token, self.css)
+
+    def test_highlight_does_not_move_cards(self):
+        # Pedido del usuario (2026-10-25): resaltar sin desplazar ni desalinear tarjetas.
+        rule = re.search(r"\.lead:focus-within,[^{]+\{([^}]+)\}", self.css).group(1)
+        self.assertNotIn("transform", rule)
+        self.assertIn("outline-color:var(--card-accent)", rule)
+        self.assertIn("@media (hover:hover)", self.css)
+        self.assertIn(".compact-list li:active", self.css)
 
     def test_no_new_card_height_or_padding_rules(self):
         self.assertIn("--radius-card:8px", self.css)

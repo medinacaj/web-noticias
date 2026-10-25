@@ -33,8 +33,8 @@ class EditorialCategoryCardTests(unittest.TestCase):
                     "image": "", "summary": "", "published": "2026-10-22T12:00:00Z"}
                    for category in ("tecnologia", "salud-ciencia")]
         output = render_sections({"tecnologia": stories}, datetime(2026, 10, 22, 12, tzinfo=timezone.utc))
-        self.assertIn('<p class="kicker">Tecnología</p>', output)
-        self.assertIn('<p class="kicker">Salud y ciencia</p>', output)
+        self.assertIn('<p class="kicker">Ciencia y tecnología</p>', output)
+        self.assertIn('<p class="kicker">Salud</p>', output)
         self.assertIn('data-key="salud-ciencia"', output)
         self.assertIn('class="feature-title"', output)
 

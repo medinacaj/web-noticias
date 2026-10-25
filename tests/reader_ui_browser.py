@@ -178,19 +178,21 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_menu_covers_all_published_categories_and_real_targets(self):
         missing = await self.page.evaluate("""() => {
           const categories = new Set([...document.querySelectorAll('main h2 a[data-key],main h3 a[data-key]')].map(a=>a.dataset.key));
-          return [...categories].filter(key=>!document.querySelector('#site-nav a[href="#cat-'+key+'"]'));
+          // Salud se publica dentro de Ciencia y tecnología, sin entrada propia en el menú.
+          return [...categories].filter(key=>key!=='salud-ciencia'&&!document.querySelector('#site-nav a[href="#cat-'+key+'"]'));
         }""")
         self.assertEqual(missing, [])
         self.assertTrue(await self.page.evaluate("""() => [...document.querySelectorAll('#site-nav a')]
           .every(a=>document.getElementById(a.hash.slice(1)))"""))
-        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-medioambiente"]').inner_text(), 'Medioambiente y clima')
-        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-salud-ciencia"]').inner_text(), 'Salud y ciencia')
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-medioambiente"]').inner_text(), 'Medioambiente')
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-salud-ciencia"]').count(), 0)
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-tecnologia"]').inner_text(), 'Ciencia y tecnología')
 
     async def test_grouped_menu_topics_reveal_and_highlight_their_news(self):
         for width in (1440, 390):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
             await self.page.reload()
-            for category in ('medioambiente', 'salud-ciencia'):
+            for category in ('medioambiente', 'tecnologia'):
                 if width < 1024:
                     await self.page.locator('#menu-toggle').click()
                 link = self.page.locator('#site-nav a[href="#cat-' + category + '"]')
@@ -216,7 +218,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await self.page.locator('#category-preference').input_value(), '')
 
     async def test_grouped_category_hash_works_on_direct_load_and_reload(self):
-        for category in ('medioambiente', 'salud-ciencia'):
+        # Salud conserva su ancla (enlaces ya compartidos) aunque no tenga entrada en el menú.
+        for category in ('tecnologia', 'salud-ciencia'):
             await self.page.goto(self.url + '?category-entry=1#cat-' + category)
             target = self.page.locator('#cat-' + category)
             await target.wait_for(state='visible', timeout=2000)

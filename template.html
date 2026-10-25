@@ -110,15 +110,16 @@
   .nav-heading{font:700 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 12px 12px;}
   .site-nav ul{display:grid;gap:3px;list-style:none;margin:0;padding:0;}
   .site-nav a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border-radius:8px;font:600 12px/1.4 var(--sans);overflow-wrap:anywhere;border:1px solid transparent;}
-  .site-nav a.nav-subtopic{padding-left:24px;font-size:11px;}
   .site-nav a:hover,.site-nav a:focus-visible{background:var(--paper);color:var(--ink);}
   .site-nav a.is-active,.site-nav a.is-current{background:color-mix(in srgb,var(--cat,var(--navy)) 10%,var(--surface));border-color:color-mix(in srgb,var(--cat,var(--navy)) 25%,var(--surface));color:var(--ink);}
   .site-nav a[class^="cat-"]::before{content:"";width:7px;height:7px;flex:none;border-radius:50%;margin-right:10px;background:var(--cat);}
-  .sidebar-edge{display:none;position:fixed;z-index:95;align-items:center;justify-content:center;left:calc(var(--sidebar-width) - 16px);top:50%;width:32px;height:48px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);box-shadow:0 2px 8px rgba(25,30,27,.12);cursor:pointer;}
+  .sidebar-edge{display:none;position:fixed;z-index:95;align-items:center;justify-content:center;left:calc(var(--sidebar-width) - 16px);top:calc((100vh + var(--header-height)) / 2);top:calc((100dvh + var(--header-height)) / 2);transform:translateY(-50%);width:32px;height:48px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);box-shadow:0 2px 8px rgba(25,30,27,.12);cursor:pointer;}
   .sidebar-edge svg{width:20px;height:20px;}
+  /* Centrada en el espacio bajo la cabecera; área táctil de 44 px aunque se vea más angosta. */
+  .sidebar-edge::before{content:"";position:absolute;inset:-2px -6px;}
   .sidebar-edge:hover{border-color:var(--muted);background:var(--paper);}
   @media (min-width:1024px){.js .sidebar-edge{display:flex;}:root[data-sidebar="hidden"] .sidebar-edge{left:0;border-radius:0 10px 10px 0;}}
-  @media (max-width:1023px){:root[data-menu-open="true"] .sidebar-edge{display:flex;top:calc(var(--header-height) + 12px);left:min(278px,calc(100vw - 54px));width:44px;height:44px;}}
+  @media (max-width:1023px){:root[data-menu-open="true"] .sidebar-edge{display:flex;top:calc(var(--header-height) + 12px);transform:none;left:min(278px,calc(100vw - 54px));width:44px;height:44px;}}
   .nav-backdrop{position:fixed;inset:var(--header-height) 0 0;border:0;background:rgba(6,20,36,.35);z-index:85;}
   @media (min-width:1024px){
     body{padding-left:var(--sidebar-width);}
@@ -187,13 +188,24 @@
     border:1px solid var(--card-rule);
     border-radius:var(--radius-card);
     box-shadow:var(--card-shadow);
-    transition:box-shadow var(--motion-card) ease,transform var(--motion-card) ease,border-color var(--motion-card) ease;
+    transition:box-shadow var(--motion-card) ease,border-color var(--motion-card) ease,outline-color var(--motion-card) ease;
   }
-  .lead:hover,.feature:hover,.rail-list li:hover,.compact-list li:hover,
+  /* Resalte al interactuar: borde con el color de la categoría y sombra suave. El grosor
+     extra es un contorno interior (outline con desplazamiento negativo), así que nada se mueve. */
+  .lead,.feature,.rail-list li,.compact-list li{--card-accent:color-mix(in srgb,var(--cat,var(--card-link)) 70%,var(--card-rule));outline:1px solid transparent;outline-offset:-2px;}
   .lead:focus-within,.feature:focus-within,.rail-list li:focus-within,.compact-list li:focus-within{
-    border-color:var(--cat-b,var(--card-rule));
+    border-color:var(--card-accent);outline-color:var(--card-accent);
     box-shadow:var(--card-shadow-hover);
-    transform:translateY(-2px);
+  }
+  @media (hover:hover){
+    .lead:hover,.feature:hover,.rail-list li:hover,.compact-list li:hover{
+      border-color:var(--card-accent);outline-color:var(--card-accent);
+      box-shadow:var(--card-shadow-hover);
+    }
+  }
+  /* En pantallas táctiles, respuesta breve mientras se toca; no queda seleccionada. */
+  @media (hover:none){
+    .lead:active,.feature:active,.rail-list li:active,.compact-list li:active{border-color:var(--card-accent);outline-color:var(--card-accent);}
   }
   /* La identidad de la categoría se expresa junto al texto, no en un borde decorativo. */
   .lead .kicker,.feature .kicker,.rail-list .kicker,.compact-list .kicker{
@@ -1084,13 +1096,18 @@
     var links = d.querySelectorAll(".site-nav a[href^='#']");
     var sections = d.querySelectorAll("main section.section[id], main [data-nav-topic]");
     if (!links.length || !sections.length) return;
-    var observer = new IntersectionObserver(function () {
+    function update() {
       var current = null, best = Number.POSITIVE_INFINITY;
       sections.forEach(function (section) {
         if (!section.getClientRects().length) return;
         var y = section.getBoundingClientRect().top;
         if (y <= 160 && Math.abs(y) < best) { current = section.id; best = Math.abs(y); }
       });
+      // Las últimas secciones no alcanzan a subir hasta la cabecera: al final de la página
+      // manda la sección elegida en el menú si está a la vista.
+      var target = location.hash && d.getElementById(location.hash.slice(1));
+      if (target && innerHeight + scrollY >= d.documentElement.scrollHeight - 4
+          && target.getBoundingClientRect().top < innerHeight) current = target.id;
       if (!current) current = "portada";
       links.forEach(function (link) {
         var active = link.getAttribute("href") === "#" + current;
@@ -1098,8 +1115,10 @@
         if (active) link.setAttribute("aria-current", "location");
         else link.removeAttribute("aria-current");
       });
-    }, {rootMargin:"-100px 0px -70% 0px", threshold:0});
+    }
+    var observer = new IntersectionObserver(update, {rootMargin:"-100px 0px -70% 0px", threshold:0});
     sections.forEach(function (section) { observer.observe(section); });
+    window.addEventListener("hashchange", function () { setTimeout(update, 50); });
   })();
 
   // Un acceso a un tema agrupado puede apuntar a una noticia en Ver más.
