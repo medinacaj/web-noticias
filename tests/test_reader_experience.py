@@ -50,6 +50,31 @@ class LatestCarouselTests(unittest.TestCase):
         self.assertNotIn('carousel-controls', rendered)
         self.assertIn('data-carousel-pause', rendered)
 
+    def test_highlights_diversify_categories_without_emptying_sections(self):
+        articles = [story(i, category='nacional', sources=[f'Medio {i}'], source_url=f'https://editor{i}.example') for i in range(6)]
+        articles += [story(i, category='internacional', sources=[f'Medio {i}'], source_url=f'https://editor{i}.example') for i in range(6, 9)]
+        articles += [story(i, category='cultura', sources=[f'Medio {i}'], source_url=f'https://editor{i}.example') for i in range(9, 12)]
+        selected = select(articles, NOW)
+        self.assertEqual({s['category'] for s in selected['secondary']}, {'nacional', 'internacional', 'cultura'})
+        for category in ('nacional', 'internacional', 'cultura'):
+            self.assertTrue(selected['by_category'][category])
+
+    def test_highlights_use_displayed_sections_for_variety(self):
+        from scripts.presentation_groups import canonical_section
+        categories = ['nacional'] * 3 + ['medioambiente'] * 3 + ['cultura'] * 3 + ['internacional'] * 3
+        articles = [story(i, category=category, source_url=f'https://editor{i}.example', sources=[f'Medio {i}'])
+                    for i, category in enumerate(categories)]
+        selected = select(articles, NOW)
+        self.assertEqual({canonical_section(s['category']) for s in selected['secondary']},
+                         {'nacional', 'cultura', 'internacional'})
+
+    def test_title_exposes_incorporation_not_publication_date(self):
+        from fetch_noticias import title_link
+        item = story(1, first_seen=NOW.isoformat())
+        self.assertIn('data-first-seen="' + NOW.isoformat() + '"', title_link(item))
+        self.assertIn('data-news-id=', title_link(item))
+        self.assertIn('data-first-seen=""', title_link(story(1)))
+
     def test_repeated_url_is_not_a_second_slide(self):
         stories = [story(0), story(1, link=story(0)["link"]), story(2), story(3)]
         rendered = render_breaking(select(stories, NOW), NOW)

@@ -445,8 +445,8 @@ def coverage_control(story):
         for x in rows
     )
     return (f'<button type="button" class="coverage-trigger" aria-haspopup="dialog" '
-            f'data-coverage-trigger>Comparar <span aria-hidden="true">↗</span></button>'
-            f'<template class="coverage-data"><h2>Comparación de coberturas</h2>'
+            f'data-coverage-trigger>Otras coberturas <span aria-hidden="true">↗</span></button>'
+            f'<template class="coverage-data"><h2>Otras coberturas de esta noticia</h2>'
             f'<p>Publicaciones relacionadas detectadas de {len(rows)} medios. '
             f'Los enlaces conservan los titulares originales; no se infieren diferencias de enfoque.</p>'
             f'<ol class="coverage-list">{content}</ol></template>')
@@ -598,8 +598,11 @@ def select(stories, now):
     from scripts.source_diversity import publisher_key
     secondary = []
     used_editors = {publisher_key(lead)} if lead else set()
-    for require_new_editor in (True, False):
-        for story in rest:
+    from scripts.presentation_groups import canonical_section
+    used_categories = {canonical_section(lead["category"])} if lead else set()
+    relevant = [s for s in rest if hours_old(s, now) <= 12][:12]
+    for require_new_editor, require_new_category in ((True, True), (True, False), (False, False)):
+        for story in relevant if require_new_category else rest:
             if len(secondary) == 3:
                 break
             if any(story is selected for selected in secondary):
@@ -607,11 +610,14 @@ def select(stories, now):
             if remaining[story["category"]] < 2:
                 continue
             editor = publisher_key(story)
+            if require_new_category and canonical_section(story["category"]) in used_categories:
+                continue
             if require_new_editor and editor in used_editors:
                 continue
             secondary.append(story)
             remaining[story["category"]] -= 1
             used_editors.add(editor)
+            used_categories.add(canonical_section(story["category"]))
     used = {id(s) for s in secondary}
     by_category = {}
     for cat in CATEGORIES:
@@ -677,7 +683,11 @@ def category_label(story):
 def title_link(story):
     from scripts.latam import country_labels
     countries = ", ".join(country_labels(story))
-    return (f'<a data-countries="{esc(countries)}" href="{esc(story["link"])}" target="_blank" rel="noopener" '
+    from scripts.dedupe_history import canonical_key
+    first_seen = story.get("first_seen") or ""
+    if not parse_date(first_seen):
+        first_seen = ""
+    return (f'<a data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" target="_blank" rel="noopener" '
             f'data-cat="{esc(category_label(story))}" data-key="{story["category"]}" '
             f'data-sources="{esc(json.dumps(story.get("sources") or [], ensure_ascii=False))}">{esc(story["title"])}</a>')
 
@@ -754,7 +764,8 @@ def render_top(sel, now):
     if not items:
         return f'<div class="top-grid top-grid--single">{lead_html}</div>'
     return (f'<div class="top-grid">{lead_html}<div class="top-aside">'
-            f'<h2 class="rail-title">Destacadas</h2><ol class="rail-list">{items}</ol></div></div>')
+            f'<h2 class="rail-title"><span>Destacadas</span><button type="button" '
+            f'id="visit-updates" class="visit-updates" hidden></button></h2><ol class="rail-list">{items}</ol></div></div>')
 
 
 def render_edition_count(sel):

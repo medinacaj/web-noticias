@@ -24,7 +24,7 @@ class CoverageComparisonTests(unittest.TestCase):
         self.assertEqual(len(stories), 1)
         self.assertEqual(len(coverage_items(stories[0])), 2)
         result = coverage_control(stories[0])
-        self.assertIn("Comparar", result)
+        self.assertIn("Otras coberturas", result)
         self.assertIn("https://medio1.cl/nota", result)
         self.assertIn("https://medio2.cl/nota", result)
         self.assertIn("Publicaciones relacionadas", result)
