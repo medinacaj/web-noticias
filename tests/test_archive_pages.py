@@ -40,7 +40,7 @@ class ArchivePagesTests(unittest.TestCase):
             self.assertIn('<meta name="robots" content="noindex, follow">', page, name)
             self.assertEqual(page.count("<h1"), 1, name)
             self.assertIn('<link rel="canonical" href="https://sitio.example/archivo/', page)
-            self.assertIn('href="https://sitio.example/favicon.svg"', page)
+            self.assertIn('href="https://sitio.example/favicon.svg?v=editorial"', page)
             self.assertIn('property="og:title"', page)
             self.assertIn('name="twitter:card"', page)
             structured = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', page).group(1))

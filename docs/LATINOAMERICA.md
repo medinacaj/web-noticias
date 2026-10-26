@@ -15,3 +15,7 @@ La búsqueda y favoritos siguen siendo locales y usan las categorías existentes
 ## Permisos y límites abiertos
 
 Confirmado: se minimizan los datos nuevos, se enlaza al medio y se aplican las restricciones del catálogo; no se consulta el artículo para extraer contenido. No verificado: licencia o autorización contractual suficiente para agregar/publicar metadatos obtenidos de Google Noticias en cada jurisdicción implicada (Chile, Brasil y los demás países latinoamericanos). La disponibilidad pública del RSS no demuestra una licencia. El responsable del portal debe resolver esta revisión antes de considerar autorizado el uso; estas pruebas técnicas no declaran cumplimiento legal ni permisos editoriales. No se añade tratamiento de datos personales, tracking ni almacenamiento del lector.
+
+## Ficha visual en portada
+
+Las notas sin fotografía muestran una miniatura gráfica del editor y los países de cobertura ya identificados en el titular (`media--region`). Es una ficha tipográfica, no una fotografía del hecho. Si no hay país verificado se rotula «Latinoamérica»; no se infiere del país del medio. Los favicons reutilizan el servicio y la atribución existentes, con inicial como respaldo si falla. No se modifica `metadata_only`, no se extraen fotografías ni se amplían permisos de los catálogos. Una imagen real ya admitida conserva su presentación. Las vistas compacto y solo titulares ocultan también estas fichas.

@@ -41,10 +41,10 @@
 <meta name="twitter:title" content="%%TITLE%%">
 <meta name="twitter:description" content="%%DESCRIPTION%%">
 <meta name="twitter:image" content="%%OG_IMAGE%%">
-<meta name="theme-color" content="#31584A">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#282C30">
+<link rel="icon" href="favicon.svg?v=editorial" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png?v=editorial" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=editorial">
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,10 +102,7 @@
   .masthead-title{font:700 21px/1.1 var(--serif);letter-spacing:-.035em;margin:0;}
   .brand-link{display:inline-flex;align-items:center;gap:10px;}
   .brand-logo{width:40px;height:40px;flex:none;}
-  /* Símbolo de marca: mismos colores fijos que favicon.svg e íconos (no cambian con el tema). */
-  .brand-logo rect{fill:#31584A;}
-  .brand-logo path{stroke:#F7F6F2;}
-  .brand-logo .logo-accent{stroke:#FF907F;}
+  /* El SVG compartido mantiene la misma identidad en cabecera, archivo e iconos. */
   .header-status{flex:none;display:grid;gap:2px;text-align:right;margin-left:12px;}
   .header-updated{font:500 10px/1.4 var(--sans);color:var(--muted);margin:0;white-space:nowrap;}
   .edition-count{font:600 11px/1.4 var(--sans);color:var(--ink);margin:0;white-space:nowrap;}
@@ -185,6 +182,8 @@
   .media--source .source-mark img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:10px;background:var(--surface);}
   .media--source .source-initial{font-size:32px;font-weight:700;color:var(--cat,var(--navy));}
   .source-visual-name{font:700 13px/1.4 var(--sans);color:var(--ink);overflow-wrap:anywhere;}
+  .region-label{font:600 12px/1.35 var(--sans);color:var(--card-ink);overflow-wrap:anywhere;text-wrap:balance;}
+  .media--region .source-visual{gap:8px;}
 
   /* Tarjetas adaptadas al tema, con contraste y elevación suave. */
   .lead,.feature,.rail-list li,.compact-list li{
@@ -267,6 +266,13 @@
   .rail-item .media--source .source-mark img{padding:5px;}
   .rail-item .media--source .source-initial{font-size:18px;}
   .rail-item .source-visual-name{display:none;}
+  .rail-item > .media--region{padding:4px;}
+  .rail-item .media--region .source-visual{gap:4px;}
+  .rail-item .media--region .source-mark{width:24px;height:24px;border-radius:6px;}
+  .rail-item .media--region .source-mark img{padding:3px;}
+  .rail-item .media--region .source-initial{font-size:12px;}
+  .rail-item .region-label{font-size:10px;line-height:1.1;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;}
+  .is-compact .lead .media--region,.is-headlines .lead .media--region{display:none;}
   .is-compact .rail-item > .media,.is-headlines .rail-item > .media{display:none;}
   .is-compact .rail-item,.is-headlines .rail-item{grid-template-columns:minmax(0,1fr);}
 
@@ -556,14 +562,14 @@
   .card-actions{gap:4px;}
   .save-story:hover,.share-story:hover{background:rgba(255,255,255,.12);}
   .density-switch[aria-pressed="true"]{background:var(--navy);color:var(--on-navy);}
-  /* Una noticia sin foto se presenta como texto, sin reservar una imagen ficticia. */
-  .media--source:not(.media--date){display:none;}
-  .rail-item:has(> .media--source){grid-template-columns:minmax(0,1fr);}
-  .top-grid:has(.lead > .media--source){align-items:start;}
+  /* Latinoamérica conserva una ficha de país/medio, diferenciada de una foto. */
+  .media--source:not(.media--date):not(.media--region){display:none;}
+  .rail-item:has(> .media--source:not(.media--region)){grid-template-columns:minmax(0,1fr);}
+  .top-grid:has(.lead > .media--source:not(.media--region)){align-items:start;}
   @media (min-width:1180px){
-    .top-grid:has(.lead > .media--source) > .lead,.top-grid:has(.lead > .media--source) > .top-aside{grid-column:1 / -1;}
-    .top-grid:has(.lead > .media--source) .rail-list{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto;}
-    .top-grid:has(.lead > .media--source) .lead-title{max-width:40ch;}
+    .top-grid:has(.lead > .media--source:not(.media--region)) > .lead,.top-grid:has(.lead > .media--source:not(.media--region)) > .top-aside{grid-column:1 / -1;}
+    .top-grid:has(.lead > .media--source:not(.media--region)) .rail-list{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto;}
+    .top-grid:has(.lead > .media--source:not(.media--region)) .lead-title{max-width:40ch;}
   }
   .lead--text .lead-title{font-size:clamp(28px,3vw,42px);}
   .lead .dek{max-width:68ch;}
@@ -628,7 +634,7 @@
     </button>
     <div class="masthead-wrap">
       <h1 class="masthead-title"><a class="brand-link" href="#contenido">
-        <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9"/><path d="M12.5 28V12l15 16V12" fill="none" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path class="logo-accent" d="M12.5 33h15" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <img class="brand-logo" src="logo-simbolo.svg?v=editorial" width="40" height="40" alt="">
         <span>Noticias <span class="brand-second-line">del Momento</span></span>
       </a></h1>
 
