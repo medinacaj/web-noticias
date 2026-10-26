@@ -1,6 +1,22 @@
 {
- "actualizado": "2026-10-26T02:30:37Z",
+ "actualizado": "2026-10-26T02:58:50Z",
  "noticias": [
+  {
+   "category": "cultura",
+   "title": "Netflix se suma a la nueva edición de la Incubadora Queer Santiago-Guadalajara de SANFIC Industria y FICG",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.mundopeliculas.tv",
+   "sources": [
+    "Mundo Películas"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdzhOY3RfZ2xhQk14NS1jbTNYYWo0WWR4TFhuek96U0dVNGJyV0haLWxJMjFoNEJybVNzdkNxQUxDTmUzVVAtUnRDYTlLYzZxQy1NSF9BZHhrZnZSMThxWWEzekZnSkMzUXd3Tloycno4TEFRMTB2dWFqTExqR19uQTZrZmI?oc=5",
+   "published": "2026-10-26T02:51:56Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "metadata_only": true,
+   "discovery_edition": "CL-CINE"
+  },
   {
    "category": "internacional",
    "title": "Lula logra una histórica remontada contra Flávio Bolsonaro, quien dice que \"es imposible reconocer los resultados\"",
@@ -58,6 +74,52 @@
    "discovery_edition": "CL-CINE"
   },
   {
+   "category": "cultura",
+   "title": "La Granja VIP eliminado: Ver GRATIS y EN VIVO la séptima Gala de Eliminación HOY, domingo 25 de octubre; trans",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.tvazteca.com",
+   "sources": [
+    "TV Azteca"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNU1JnQ1EyNnp3dkd0b0xfVHZOUjZqQUV2dWtFTDdGVklrVEJNdHdfSDdaSnB6SGtlNHIxTFVvRzZQZ2ctOGxLX3NaTWMwS1lBNUxPY2FjdDJBeXk3RDhlaTVVQ3FoOUl5eUV6aWVPVm5IdEdFN1drb3VOelpUOThCbFlLUTh4dHhMYXEyZThSRzRqLVZYR08zTzNZWXdiRC1rSGQ5bmZwVmRUSU56b19yYm9vQTc5MTBRdmFBdU05NHBmXzlvUGV2VVBaRnRwajVVYkRJQThfUmlNaXd10gHqAUFVX3lxTE50eTIwSkw5dDFORXpaZFhEbGxsbUtBV0oyMG00eVNDWkc4Q3ZyQ0VUcnRFV3ZNcHNaRFRhaE12ZXVBSUtwekI0N0dGSHh1UUs5bkVQUTdjM0RxdnhVeEVzY0NyQjhKOFphejBKTC1DSEl4YVNiZWl1c1FlNHNrN2hEMUotWnNBN3RNS05VVVZNcktuLTBhRnZCclRRUHY4OV9mTXhrcW81Z0tRZHBWQ1FCNFlNWHBNR01IeExsV3FfMENkVklHeG1LUERRUEVPb05fN1J1OVRFN3VIck9rTEJ2bWFMa1J0QzR2dw?oc=5",
+   "published": "2026-10-26T01:36:45Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "metadata_only": true,
+   "discovery_edition": "MX"
+  },
+  {
+   "category": "regiones",
+   "title": "Se percibe sismo de magnitud 4.1 en la ciudad de Valparaíso este domingo 25 de octubre",
+   "summary": "",
+   "image": "https://www.infobae.com/resizer/v2/QN56SMYRTJG4XGT5ZM5NPJV6MU.jpg?auth=2b08bda76efa520115ae99fcfc410130a72056b4b564dcebb451d1cbc8c9a9b1&smart=true&width=1200&height=630&quality=85",
+   "source_url": "https://www.infobae.com",
+   "sources": [
+    "Infobae"
+   ],
+   "coverages": [],
+   "link": "https://www.infobae.com/noticias/2026/10/26/se-percibe-sismo-de-magnitud-41-en-la-ciudad-de-valparaiso-este-domingo-25-de-octubre/",
+   "published": "2026-10-26T01:32:56Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "image_checked_at": "2026-10-26T02:58:50.046957Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Persecución policial en Valparaíso termina con menor de edad arrestado y conductora lesionada",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995481-persecucion-policial-en-valparaiso-termina-con-menor-de-edad-arrestado-y-conductora-lesionada.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/10/25/persecucion-policial-en-valparaiso-termina-con-menor-de-edad-arrestado-y-conductora-lesionada.shtml",
+   "published": "2026-10-26T01:26:39Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "image_checked_at": "2026-10-26T02:58:50.046957Z"
+  },
+  {
    "category": "deportes",
    "title": "Lakers vencen a los Jazz en otra noche excepcional de Luka: anotó 52 puntos y superó marca de LeBron",
    "summary": "",
@@ -71,6 +133,21 @@
    "published": "2026-10-26T01:26:03Z",
    "first_seen": "2026-10-26T02:30:37Z",
    "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Deportes Limache derrotó como visitante a la Universidad de Concepción y confirma sus credenciales para clasificar a Copa Sudamericana",
+   "summary": "",
+   "image": "https://g5noticias.cl/wp-content/uploads/2026/10/IMG_6338.jpg-scaled.jpeg",
+   "source_url": "https://g5noticias.cl",
+   "sources": [
+    "G5noticias"
+   ],
+   "coverages": [],
+   "link": "https://g5noticias.cl/2026/10/25/deportes-limache-derroto-como-visitante-a-la-universidad-de-concepcion-y-confirma-sus-credenciales-para-clasificar-a-copa-sudamericana/",
+   "published": "2026-10-26T01:12:55Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "image_checked_at": "2026-10-26T02:58:50.046957Z"
   },
   {
    "category": "deportes",
@@ -248,6 +325,21 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "internacional",
+   "title": "Zelenski anuncia que habrá reunión entre Ucrania, Rusia y EEUU en noviembre",
+   "summary": "",
+   "image": "https://static.dw.com/image/79737875_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/zelenski-anuncia-que-habr%C3%A1-reuni%C3%B3n-entre-ucrania-rusia-y-eeuu-en-noviembre/a-79758302",
+   "published": "2026-10-26T00:06:46Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "image_checked_at": "2026-10-26T02:58:50.046957Z"
   },
   {
    "category": "internacional",
@@ -472,6 +564,24 @@
   },
   {
    "category": "latinoamerica",
+   "title": "Quién es Pablo Souza, el funcionario señalado por la reducción de autobuses durante las elecciones brasileñas",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQ05ydmRmTWYtZ1dUZHNvN1dua1NmR2l5Nzd3N0tDSXNkNUtscTV6MzZUOGxlVFZycFRwY1JwMUpEemtFRzc3bU4xSG5xaGtqX0RlVDhUZVIyQmVRS3NCcTkxa2pncDVDZGE0OXJkNGFvcUszcGVKZmdRRXozdjh6WlJuRWdzVno0em9rNTZVMjE2SkJqRTg3VUxzeWxlZ2ZXQ0xhVVhKcWpsYVBWNVlfT1hhWnFlZjRHYmpQblZmaC1HWENhS3o5N0dnU3l3Uk1rb0xLRWxrX3dsQnVjVHhkVHI5MNIBhAJBVV95cUxOTnZJZVN3bkF6c3djc3FzVjNZdlI2QUI3cUR1MVJILUlpZzNpaFdGMHk4N0RLUERwRkFVSkN3akxFWDF1a18xMk8xNkgwTTNUcFVJV2Fvd2tJcHlycHNZejlkZ1NFTExFcHJYWGh1LU9OS3NYSjloZjl6dFQ4SWxpSmdEWmlCeUhLWHNOVjBma2lDQm83ZGR0ZFJnYVlXaGNTaERHMWxucmhfVWxFQ29peWhzazhXTGdZMEtMR3JMb3RnQlhEX1dzWFJ2T0FILTJMVTYySE05X25idi1CYnJoTTVSTjlqTXJETG1HSHptdXMxNDIxRTZlRVlUMFhiWE9fbS1oZA?oc=5",
+   "published": "2026-10-25T22:49:52Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
    "title": "Lula vs. Bolsonaro: los resultados muestran máxima igualdad en la carrera por ganar las elecciones de Brasil",
    "summary": "",
    "image": "",
@@ -502,6 +612,21 @@
    "published": "2026-10-25T22:40:54Z",
    "first_seen": "2026-10-26T00:11:54Z",
    "image_checked_at": "2026-10-26T00:11:54.746529Z"
+  },
+  {
+   "category": "politica",
+   "title": "Lautaro Carmona sobre la administración Kast: “Nos lleva a un callejón sin salida si pensamos en los derechos e intereses de la mayoría”",
+   "summary": "",
+   "image": "https://uchile-media-storage.nyc3.cdn.digitaloceanspaces.com/2025/12/Lautaro-Carmona.jpg",
+   "source_url": "https://radio.uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "coverages": [],
+   "link": "https://radio.uchile.cl/2026/10/25/lautaro-carmona-sobre-la-administracion-kast-nos-lleva-a-un-callejon-sin-salida-si-pensamos-en-los-derechos-e-intereses-de-la-mayoria/",
+   "published": "2026-10-25T22:31:33Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "image_checked_at": "2026-10-26T02:58:50.046957Z"
   },
   {
    "category": "cultura",
@@ -719,24 +844,6 @@
    ]
   },
   {
-   "category": "latinoamerica",
-   "title": "Tras una inusual prórroga de última hora, sigue la votación en la ajustada disputa entre Lula y Bolsonaro por la presidencia de Brasil",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.bbc.com",
-   "sources": [
-    "BBC"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9VbzBnTUlET2poODZHX2E3UjlhRmFzRVR3RTJRVUcxZ3hjOGNraFdoeW14S3FPWm1RVk1oS3V4NjJGWG8zUVdNYnVBYkp5dXczOTRvU3RJNA?oc=5",
-   "published": "2026-10-25T21:33:45Z",
-   "first_seen": "2026-10-25T21:41:42Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
    "category": "cultura",
    "title": "El cine latinoamericano busca conquistar el Oscar a Mejor Película Internacional",
    "summary": "",
@@ -799,22 +906,6 @@
    "image_checked_at": "2026-10-26T00:11:54.746529Z"
   },
   {
-   "category": "regiones",
-   "title": "Incendio que afecta a edificio ubicado en pleno centro de Concepción deja dos fallecidos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995257-incendio-que-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion-deja-dos-fallecidos.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile",
-    "El Informador Chile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/25/incendio-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion.shtml",
-   "published": "2026-10-25T19:12:52Z",
-   "first_seen": "2026-10-25T21:41:42Z",
-   "image_checked_at": "2026-10-26T00:11:54.746529Z"
-  },
-  {
    "category": "latinoamerica",
    "title": "OEA diz acompanhar denúncias sobre falta de ônibus em eleições do Brasil",
    "summary": "",
@@ -831,6 +922,22 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "cultura",
+   "title": "Esta noche Kevyn descubrirá que “Bronco” grabó el tema de Granjo el potrillo de La Granja VIP; esto debes sabe",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.tvazteca.com",
+   "sources": [
+    "TV Azteca"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV29WOFdlX2pWLUhVWmRndmFBd0NxSHlaNjJUeVNQcl9xekxRdXREU1g0a3Y0cV8wLUliUTh1NGhGTTNUbHBFOEVjWWNVMWJQRlZZOHpRZVhNc3ZRSVRrSXFDdm1hbFlsLXVoRF9iMnJ3QzF4Wm1sSGRtU0RORlJxbGxsdnczaWNNRHllY3RzUF9xUnFBUGhwdTZreXp4NG5PdHF3dGZ5TWxFQdIBtwFBVV95cUxPRk50T3R1Um50TXZHWHlLcEFycEpnX1ZkZmNrQ2VqazZvRGlFdjRKYXlHYlhFYTZWd0poTU1ieEF2dThFcEtId0F5cm5ISmNrX1ExbGR5RHFWTHBGOVdpdWs3V0k5c3paZnAwbW16ZnlDaUZpQ1BoRnhyQVJnTVk2TVNTQWg5X01jS01RUHBvc1ZWTHFOcHNzX3V6cVVvdUZXOGtrYzgwWkJ1RXBhTDZHQWtZTkJLZEU?oc=5",
+   "published": "2026-10-25T20:23:47Z",
+   "first_seen": "2026-10-26T02:58:50Z",
+   "metadata_only": true,
+   "discovery_edition": "MX"
   },
   {
    "category": "deportes",
@@ -1055,6 +1162,22 @@
    "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
+   "category": "regiones",
+   "title": "Incendio que afecta a edificio ubicado en pleno centro de Concepción deja dos fallecidos",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995257-incendio-que-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion-deja-dos-fallecidos.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile",
+    "El Informador Chile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/25/incendio-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion.shtml",
+   "published": "2026-10-25T19:12:52Z",
+   "first_seen": "2026-10-25T21:41:42Z",
+   "image_checked_at": "2026-10-26T00:11:54.746529Z"
+  },
+  {
    "category": "deportes",
    "title": "\"El único destello\": hinchas del Crystal Palace elogian a Darío Osorio y exigen más minutos para él",
    "summary": "",
@@ -1276,6 +1399,24 @@
    "coverages": [],
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82UV9rMlhETkdfTEFmTnpTdkpHY1RyVjhLSExvNFhUTm42LWl2cnJVR2N5VDczd0tndlEzaC10WGJrUHBjR093NUtCdlpMc3JfNXhyLXRhdElRVVN1dEhkb2Q5ZnhERGdKQ1EtZ1Y0UzZ3RFRBMkhULU1wYTBaaDg?oc=5",
    "published": "2026-10-25T18:12:36Z",
+   "first_seen": "2026-10-25T21:41:42Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Tras una inusual prórroga de última hora, sigue la votación en la ajustada disputa entre Lula y Bolsonaro por la presidencia de Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.bbc.com",
+   "sources": [
+    "BBC"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9VbzBnTUlET2poODZHX2E3UjlhRmFzRVR3RTJRVUcxZ3hjOGNraFdoeW14S3FPWm1RVk1oS3V4NjJGWG8zUVdNYnVBYkp5dXczOTRvU3RJNA?oc=5",
+   "published": "2026-10-25T18:04:12Z",
    "first_seen": "2026-10-25T21:41:42Z",
    "metadata_only": true,
    "coverage_countries": [
@@ -3588,44 +3729,19 @@
    "coverage_countries": [
     "BR"
    ]
-  },
-  {
-   "category": "cultura",
-   "title": "¡Cine en La Red! Prepárate para una nueva semana de grandes películas e historias imperdibles. Del lunes 26 al viernes 30 de octubre, disfruta de una cartelera llena de acción, suspenso y entretención. ¡Mira aquí un adelanto de lo que se viene!",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.lared.cl",
-   "sources": [
-    "lared.cl"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPUkRPcVMzVG12RXppMnRTQ3hrVkJNRFpiWWZVOXpPQ1h3djQ0Nm9XcWtOakVPa3Jmem9ZUlF2NVBmcWx3YzNBRm1vbHExYkVpQkU0aVowbDl6STNZdWhldXEwekpETVhhMTh5bnptTjJ0OTVRUVVWM3RXeUhyOFlKLUpPUWx1Y1dVaFMtZFY0clFSa3h2LXZwaVdyaVB1UDJqMDZkWlRmVHRXM0t3RGZFN0Z2bTNjb3VVaElqM3NuTHhGSjY1WkRmcWJycUxKcXFVYWVvX2dKSzdLaGgyYXNVb0NKa056NW1FTlh5SVJhYnQxTGlkdDVsVDhWUUFnN2hSQXV6Z0Y3RjBRWDdPY2F2Rk5zbFlfUVV4TWdmOWR3MXZaS1ZEYlYwR2ZIbEhEUlBRSHpsVDVuT1h2RGJaWjhlMmtCcw?oc=5",
-   "published": "2026-10-25T02:53:10Z",
-   "first_seen": "2026-10-25T21:41:42Z",
-   "metadata_only": true,
-   "discovery_edition": "CL-CINE"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Brasil llega al balotaje con empate técnico entre Lula y Bolsonaro, según últimas encuestas",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPU2Vva3F3YWJVTmlROWw3MlZOQ3o3Mk1FaDRHNUVRYzE4bEpSM2c0MUxEQkw5eVNucVFaQUZILTg4eHU5MWtmTTRCOW5BZ0tOYTJsQ0Q2MldyUWZkcTJwMkYwcl8xaWhjbFhoXzZfUWpSc1VkYlhpZnlYTDBGcHNZNDNPWXMwLTExdTdIRHZMMXp3cXVHVHp4NkM0RUxwMXFXRDRHRmRYOUpwVDllU1NEMXVhXzExejA4aWhvazBXNWU5bGhERHd6cndscUY0cFhNT2dyaDJvaklyWWpRSHlTSW1pSjlkdjZXdi1RN2k1dWNGWXd6Ykg2cnY1TE9sQUJJelE?oc=5",
-   "published": "2026-10-25T02:48:56Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Netflix se suma a la nueva edición de la Incubadora Queer Santiago-Guadalajara de SANFIC Industria y FICG",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdzhOY3RfZ2xhQk14NS1jbTNYYWo0WWR4TFhuek96U0dVNGJyV0haLWxJMjFoNEJybVNzdkNxQUxDTmUzVVAtUnRDYTlLYzZxQy1NSF9BZHhrZnZSMThxWWEzekZnSkMzUXd3Tloycno4TEFRMTB2dWFqTExqR19uQTZrZmI?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T02:51:56Z",
+   "sources": [
+    "Mundo Películas"
+   ]
+  },
   {
    "title": "Lula logra una histórica remontada contra Flávio Bolsonaro, quien dice que \"es imposible reconocer los resultados\"",
    "link": "https://www.bbc.co.uk/mundo/live/cm5ynp5y1871t?at_medium=RSS&at_campaign=rss",
@@ -3654,12 +3770,48 @@
    ]
   },
   {
+   "title": "La Granja VIP eliminado: Ver GRATIS y EN VIVO la séptima Gala de Eliminación HOY, domingo 25 de octubre; trans",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNU1JnQ1EyNnp3dkd0b0xfVHZOUjZqQUV2dWtFTDdGVklrVEJNdHdfSDdaSnB6SGtlNHIxTFVvRzZQZ2ctOGxLX3NaTWMwS1lBNUxPY2FjdDJBeXk3RDhlaTVVQ3FoOUl5eUV6aWVPVm5IdEdFN1drb3VOelpUOThCbFlLUTh4dHhMYXEyZThSRzRqLVZYR08zTzNZWXdiRC1rSGQ5bmZwVmRUSU56b19yYm9vQTc5MTBRdmFBdU05NHBmXzlvUGV2VVBaRnRwajVVYkRJQThfUmlNaXd10gHqAUFVX3lxTE50eTIwSkw5dDFORXpaZFhEbGxsbUtBV0oyMG00eVNDWkc4Q3ZyQ0VUcnRFV3ZNcHNaRFRhaE12ZXVBSUtwekI0N0dGSHh1UUs5bkVQUTdjM0RxdnhVeEVzY0NyQjhKOFphejBKTC1DSEl4YVNiZWl1c1FlNHNrN2hEMUotWnNBN3RNS05VVVZNcktuLTBhRnZCclRRUHY4OV9mTXhrcW81Z0tRZHBWQ1FCNFlNWHBNR01IeExsV3FfMENkVklHeG1LUERRUEVPb05fN1J1OVRFN3VIck9rTEJ2bWFMa1J0QzR2dw?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T01:36:45Z",
+   "sources": [
+    "TV Azteca"
+   ]
+  },
+  {
+   "title": "Se percibe sismo de magnitud 4.1 en la ciudad de Valparaíso este domingo 25 de octubre",
+   "link": "https://www.infobae.com/noticias/2026/10/26/se-percibe-sismo-de-magnitud-41-en-la-ciudad-de-valparaiso-este-domingo-25-de-octubre/",
+   "category": "regiones",
+   "published": "2026-10-26T01:32:56Z",
+   "sources": [
+    "Infobae"
+   ]
+  },
+  {
+   "title": "Persecución policial en Valparaíso termina con menor de edad arrestado y conductora lesionada",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/10/25/persecucion-policial-en-valparaiso-termina-con-menor-de-edad-arrestado-y-conductora-lesionada.shtml",
+   "category": "regiones",
+   "published": "2026-10-26T01:26:39Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Lakers vencen a los Jazz en otra noche excepcional de Luka: anotó 52 puntos y superó marca de LeBron",
    "link": "https://www.biobiochile.cl/noticias/deportes/basquetbol/2026/10/25/lakers-vencen-a-los-jazz-en-otra-noche-excepcional-de-luka-anoto-52-puntos-y-supero-marca-de-lebron.shtml",
    "category": "deportes",
    "published": "2026-10-26T01:26:03Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Deportes Limache derrotó como visitante a la Universidad de Concepción y confirma sus credenciales para clasificar a Copa Sudamericana",
+   "link": "https://g5noticias.cl/2026/10/25/deportes-limache-derroto-como-visitante-a-la-universidad-de-concepcion-y-confirma-sus-credenciales-para-clasificar-a-copa-sudamericana/",
+   "category": "regiones",
+   "published": "2026-10-26T01:12:55Z",
+   "sources": [
+    "G5noticias"
    ]
   },
   {
@@ -3750,6 +3902,15 @@
    "published": "2026-10-26T00:11:00Z",
    "sources": [
     "Agência Brasil"
+   ]
+  },
+  {
+   "title": "Zelenski anuncia que habrá reunión entre Ucrania, Rusia y EEUU en noviembre",
+   "link": "https://www.dw.com/es/zelenski-anuncia-que-habr%C3%A1-reuni%C3%B3n-entre-ucrania-rusia-y-eeuu-en-noviembre/a-79758302",
+   "category": "internacional",
+   "published": "2026-10-26T00:06:46Z",
+   "sources": [
+    "DW.com"
    ]
   },
   {
@@ -3870,6 +4031,15 @@
    ]
   },
   {
+   "title": "Quién es Pablo Souza, el funcionario señalado por la reducción de autobuses durante las elecciones brasileñas",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQ05ydmRmTWYtZ1dUZHNvN1dua1NmR2l5Nzd3N0tDSXNkNUtscTV6MzZUOGxlVFZycFRwY1JwMUpEemtFRzc3bU4xSG5xaGtqX0RlVDhUZVIyQmVRS3NCcTkxa2pncDVDZGE0OXJkNGFvcUszcGVKZmdRRXozdjh6WlJuRWdzVno0em9rNTZVMjE2SkJqRTg3VUxzeWxlZ2ZXQ0xhVVhKcWpsYVBWNVlfT1hhWnFlZjRHYmpQblZmaC1HWENhS3o5N0dnU3l3Uk1rb0xLRWxrX3dsQnVjVHhkVHI5MNIBhAJBVV95cUxOTnZJZVN3bkF6c3djc3FzVjNZdlI2QUI3cUR1MVJILUlpZzNpaFdGMHk4N0RLUERwRkFVSkN3akxFWDF1a18xMk8xNkgwTTNUcFVJV2Fvd2tJcHlycHNZejlkZ1NFTExFcHJYWGh1LU9OS3NYSjloZjl6dFQ4SWxpSmdEWmlCeUhLWHNOVjBma2lDQm83ZGR0ZFJnYVlXaGNTaERHMWxucmhfVWxFQ29peWhzazhXTGdZMEtMR3JMb3RnQlhEX1dzWFJ2T0FILTJMVTYySE05X25idi1CYnJoTTVSTjlqTXJETG1HSHptdXMxNDIxRTZlRVlUMFhiWE9fbS1oZA?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T22:49:52Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
    "title": "Lula vs. Bolsonaro: los resultados muestran máxima igualdad en la carrera por ganar las elecciones de Brasil",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqVGp4ZGM4aHpyYUVrcXZCcDhXWkhJeXFoQ0htdU9KYTBySHMyR1lva2pNV0NibUxJUjVZWlotMlVGa1hwOHYtQ0djNTF0OEZUcURjdlktVGNKVzRi0gFiQVVfeXFMT0s0cjZSQ2RxOTlNc3ZzREI2Z0JMS2w3Um5aTTg5NlBoUVRjamhwWlIxUy04R29HcjdPbFVBQVZxOGlIVHd1aGV4eVpwV0h3dGxiZ3k0SDlKbW53czZVZlRNLWc?oc=5",
    "category": "latinoamerica",
@@ -3885,6 +4055,15 @@
    "published": "2026-10-25T22:40:54Z",
    "sources": [
     "AS Chile"
+   ]
+  },
+  {
+   "title": "Lautaro Carmona sobre la administración Kast: “Nos lleva a un callejón sin salida si pensamos en los derechos e intereses de la mayoría”",
+   "link": "https://radio.uchile.cl/2026/10/25/lautaro-carmona-sobre-la-administracion-kast-nos-lleva-a-un-callejon-sin-salida-si-pensamos-en-los-derechos-e-intereses-de-la-mayoria/",
+   "category": "politica",
+   "published": "2026-10-25T22:31:33Z",
+   "sources": [
+    "Universidad de Chile"
    ]
   },
   {
@@ -4005,15 +4184,6 @@
    ]
   },
   {
-   "title": "Tras una inusual prórroga de última hora, sigue la votación en la ajustada disputa entre Lula y Bolsonaro por la presidencia de Brasil",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9VbzBnTUlET2poODZHX2E3UjlhRmFzRVR3RTJRVUcxZ3hjOGNraFdoeW14S3FPWm1RVk1oS3V4NjJGWG8zUVdNYnVBYkp5dXczOTRvU3RJNA?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-25T21:33:45Z",
-   "sources": [
-    "BBC"
-   ]
-  },
-  {
    "title": "El cine latinoamericano busca conquistar el Oscar a Mejor Película Internacional",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdFlYWnBYVzBveUJ3elNnZm9XU2hreWJNWXY4NzgtWEtoUEQzbERzVUFJX055cmkzdnRRdTA1X1l1Rm9aQ3o1RjROMkhNWUxLU19sRWU1RXhKaXlPc280c3FJajNza2R4aUV0dVFzODk2S0I1VjY3MEJKWFozT0xVU2R4TlZPYzk1MkhqbHc0NmhGSDdPUXVWNDJhbDV1MC0wbVV5ZkJsWdIBrAFBVV95cUxPSUhUY1JqZ0pzcHZhUk5mUC14dmdlUTBNa2dPN2dqeDJxZWFvNzg2amxMOWdHRzIxdkVkR3hVWG5VWmVJRzJmOHpDblJYSjBRTFJySFNTZC16M25CbnpSNmsxcTV0OUlBLTRLOHZYa0RlQmhscTEwOWJUNEtad0NFWFliRm15Q0UybFd1ZXdITjFPdlg1cl9yVXRnUXQ5aExBRmgzc2k4LThXNUlV?oc=5",
    "category": "cultura",
@@ -4056,6 +4226,15 @@
    "published": "2026-10-25T20:26:31Z",
    "sources": [
     "CNN Brasil"
+   ]
+  },
+  {
+   "title": "Esta noche Kevyn descubrirá que “Bronco” grabó el tema de Granjo el potrillo de La Granja VIP; esto debes sabe",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV29WOFdlX2pWLUhVWmRndmFBd0NxSHlaNjJUeVNQcl9xekxRdXREU1g0a3Y0cV8wLUliUTh1NGhGTTNUbHBFOEVjWWNVMWJQRlZZOHpRZVhNc3ZRSVRrSXFDdm1hbFlsLXVoRF9iMnJ3QzF4Wm1sSGRtU0RORlJxbGxsdnczaWNNRHllY3RzUF9xUnFBUGhwdTZreXp4NG5PdHF3dGZ5TWxFQdIBtwFBVV95cUxPRk50T3R1Um50TXZHWHlLcEFycEpnX1ZkZmNrQ2VqazZvRGlFdjRKYXlHYlhFYTZWd0poTU1ieEF2dThFcEtId0F5cm5ISmNrX1ExbGR5RHFWTHBGOVdpdWs3V0k5c3paZnAwbW16ZnlDaUZpQ1BoRnhyQVJnTVk2TVNTQWg5X01jS01RUHBvc1ZWTHFOcHNzX3V6cVVvdUZXOGtrYzgwWkJ1RXBhTDZHQWtZTkJLZEU?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T20:23:47Z",
+   "sources": [
+    "TV Azteca"
    ]
   },
   {
@@ -4311,6 +4490,15 @@
    "published": "2026-10-25T18:12:36Z",
    "sources": [
     "Nexo Jornal"
+   ]
+  },
+  {
+   "title": "Tras una inusual prórroga de última hora, sigue la votación en la ajustada disputa entre Lula y Bolsonaro por la presidencia de Brasil",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9VbzBnTUlET2poODZHX2E3UjlhRmFzRVR3RTJRVUcxZ3hjOGNraFdoeW14S3FPWm1RVk1oS3V4NjJGWG8zUVdNYnVBYkp5dXczOTRvU3RJNA?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T18:04:12Z",
+   "sources": [
+    "BBC"
    ]
   },
   {
