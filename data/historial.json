@@ -1,6 +1,58 @@
 {
- "actualizado": "2026-10-26T02:58:50Z",
+ "actualizado": "2026-10-26T03:52:05Z",
  "noticias": [
+  {
+   "category": "politica",
+   "title": "Coalición contra los carteles: Barros empuja que Chile se mantenga como observador y Kast cita a reunión extraordinaria",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/2Y7QMYA2UBA2DOH4Q6HIFINYPY.jpg?auth=376cdced36f5e1095e01c26368c6cf2bd180171e226f6eefd29ac12ccfbe8e6d&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/nacional/noticia/coalicion-contra-los-carteles-barros-empuja-que-chile-se-mantenga-como-observador-y-kast-cita-a-reunion-extraordinaria/",
+   "published": "2026-10-26T03:24:21Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-26T03:52:05.509856Z"
+  },
+  {
+   "category": "politica",
+   "title": "Chile envía helicóptero a Perú para combatir incendios forestales que dejan al menos 12 muertos",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995515-chile-envia-helicoptero-a-peru-para-combatir-incendios-forestales-que-dejan-al-menos-12-muertos.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/chile-envia-helicoptero-a-peru-para-combatir-incendios-forestales-que-dejan-al-menos-12-muertos.shtml",
+   "published": "2026-10-26T03:22:20Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "coverage_countries": [
+    "CL",
+    "PE"
+   ],
+   "image_checked_at": "2026-10-26T03:52:05.509856Z"
+  },
+  {
+   "category": "regiones",
+   "title": "EN LA ARAUCANÍA CASI NO CAMBIA EL GASTO EN RESTAURANTES, PERO AUMENTA 8% EN CAFETERÍAS Y CASINOS",
+   "summary": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/en-la-araucania-casi-no-cambia-el-gasto-en-res.jpg",
+   "source_url": "https://araucanianoticias.cl",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ],
+   "coverages": [],
+   "link": "https://araucanianoticias.cl/2026/en-la-araucania-casi-no-cambia-el-gasto-en-restaurantes-pero-aumenta-8-en-cafeterias-y-casinos/1026317784",
+   "published": "2026-10-26T03:01:40Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "image_checked_at": "2026-10-26T03:52:05.509856Z"
+  },
   {
    "category": "cultura",
    "title": "Netflix se suma a la nueva edición de la Incubadora Queer Santiago-Guadalajara de SANFIC Industria y FICG",
@@ -16,6 +68,39 @@
    "first_seen": "2026-10-26T02:58:50Z",
    "metadata_only": true,
    "discovery_edition": "CL-CINE"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Com virada histórica, Lula é eleito presidente do Brasil pela quarta vez",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www12.senado.leg.br",
+   "sources": [
+    "Senado"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUFV6cTNHME9WaFZpb1h2SjNVRzdFUU5NdUhvSVl0c2h0dlpTMTVsYTZ4MFoyb1M5VWp5Z0I0andSUFBhUzVDclhnWkNscEtVNS1YV2EwajhLLWtZYVhMRU8tOXpxMHVHdmJNS1djbHRLNXZtTGZ3dl9nNnBHai1JdC1CWG5LZ2x2OE01RWhrOHNWNG4zOVE?oc=5",
+   "published": "2026-10-26T02:46:00Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "cultura",
+   "title": "MEO echa por tierra rumores de quiebre con Karen Doggenweiler: \"No nos entra ni una fisura\"",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995526-meo-echa-por-tierra-rumores-de-quiebre-con-karen_-_no-nos-entra-ni-una-fisura_-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/25/meo-echa-por-tierra-rumores-de-quiebre-con-karen-doggenweiler-no-nos-entra-ni-una-fisura.shtml",
+   "published": "2026-10-26T02:32:30Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "image_checked_at": "2026-10-26T03:52:05.509856Z"
   },
   {
    "category": "internacional",
@@ -52,6 +137,24 @@
    "published": "2026-10-26T02:21:30Z",
    "first_seen": "2026-10-26T02:30:37Z",
    "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Flávio Bolsonaro desconoce el resultado electoral y anuncia que pedirá la anulación de la segunda vuelta en Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRzVhOV9mVlVkTC1mbURsZy0zaFgwVEpqbk1PZk41YlBQeDhfYkRWV0RzdWJXZFpoZDQwTDZhZzVkMzAzSEdiaGt4RnlUdUhIX2JuRDF1OVRYNUo5WGExbHNUTTFBQXlJMS1GYkZIeXBMYzhhWFNLZzNJa3JtQUxiSWZ3NzhHaDd4Rzd5SnlLcnVzNHcwMnFrcDlJYVZDbDRvcS1iNVhnOGlEenRHS1N6VkUtOFBhMGVhbndlOWdXMVpuZ1JvenZaWjhzVFU2MWwzNTFrYTNvazRiNC1obF9sM1o4VHdYWlZ4cnVR0gGMAkFVX3lxTFAxeVpVVEthb0RpZ0tGV1ZVRnJ4ejhWU1VQTWlXZ210Z0VzcVo5RGVTTE9RNjZnR2pYSGJFR3l4ZWtpa25jczRMQVdyYldsdmJ6SjRvSVV2YjVSWWNMTXlrckNRSEtCakNVQ2VkVW42bks5dmxxU0VVRE5zakhrREVwZTFoY2JFMFRWbEU1MWZZWHZFWFBfWDRHWjZoWDVWcmo3d21QVVRvR0ExZGFjUkVZcVdBVlE0dHo3QXhCT2JJX3d1NXJoYnd6VFhpSUpONmZYRlhxdXRMSnZPNHZxZmkxZEZESDBZZG40bF9uUGI1ZG96eUJWWlAyZWJ5eUlwbW5mNU1ka0d6VnRQdzQ?oc=5",
+   "published": "2026-10-26T02:12:18Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
   },
   {
    "category": "cultura",
@@ -133,6 +236,24 @@
    "published": "2026-10-26T01:26:03Z",
    "first_seen": "2026-10-26T02:30:37Z",
    "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "RD participó como país invitado en la feria turística FITPAR de Paraguay",
+   "summary": "",
+   "image": "",
+   "source_url": "https://newsinamerica.com",
+   "sources": [
+    "Periódico Digital Centroamericano y del Caribe"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY3Z1TmlSaTZxZ011d2w5NkpwQ0k0LTYxT2lfUHZmOHJNaHZ4NS1MVnNPVDUtbDVoNU55d1dOb3gwVC02X056Vmd6d2U3OUhadlg1TUg2V0xvcjNKVmdhSWFKeTJMZS1MYUpFNlpTbmU4SFF1b2ZVam82RkhpNkJSM2tXUXJwSkhzVERIMFo4dkgyNlBIMGZhV3QtMkFPSlhIZ3J1Q21vcnZSdjE1bjFtNGtSdUtIZHY4?oc=5",
+   "published": "2026-10-26T01:25:41Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "PY"
+   ]
   },
   {
    "category": "regiones",
@@ -271,6 +392,21 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "deportes",
+   "title": "Pelota al piso: Javier Correa no se esconde y envía mensaje a los hinchas de Colo Colo",
+   "summary": "",
+   "image": "https://media.dalealbo.cl/wp-content/uploads/sites/14/2026/10/25212027/PS_1202490-1-1200x740.webp",
+   "source_url": "https://dalealbo.cl",
+   "sources": [
+    "Dale Albo"
+   ],
+   "coverages": [],
+   "link": "https://dalealbo.cl/colocolo/pelota-al-piso-javier-correa-no-se-esconde-y-envia-mensaje-a-los-hinchas-de-colo-colo",
+   "published": "2026-10-26T00:21:17Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "image_checked_at": "2026-10-26T03:52:05.509856Z"
   },
   {
    "category": "latinoamerica",
@@ -856,6 +992,22 @@
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdFlYWnBYVzBveUJ3elNnZm9XU2hreWJNWXY4NzgtWEtoUEQzbERzVUFJX055cmkzdnRRdTA1X1l1Rm9aQ3o1RjROMkhNWUxLU19sRWU1RXhKaXlPc280c3FJajNza2R4aUV0dVFzODk2S0I1VjY3MEJKWFozT0xVU2R4TlZPYzk1MkhqbHc0NmhGSDdPUXVWNDJhbDV1MC0wbVV5ZkJsWdIBrAFBVV95cUxPSUhUY1JqZ0pzcHZhUk5mUC14dmdlUTBNa2dPN2dqeDJxZWFvNzg2amxMOWdHRzIxdkVkR3hVWG5VWmVJRzJmOHpDblJYSjBRTFJySFNTZC16M25CbnpSNmsxcTV0OUlBLTRLOHZYa0RlQmhscTEwOWJUNEtad0NFWFliRm15Q0UybFd1ZXdITjFPdlg1cl9yVXRnUXQ5aExBRmgzc2k4LThXNUlV?oc=5",
    "published": "2026-10-25T21:28:20Z",
    "first_seen": "2026-10-26T00:11:54Z",
+   "metadata_only": true,
+   "discovery_edition": "CL-CINE"
+  },
+  {
+   "category": "cultura",
+   "title": "El cine latinoamericano busca conquistar el Oscar a Mejor Película Internacional",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.mundiario.com",
+   "sources": [
+    "MUNDIARIO"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSUhUY1JqZ0pzcHZhUk5mUC14dmdlUTBNa2dPN2dqeDJxZWFvNzg2amxMOWdHRzIxdkVkR3hVWG5VWmVJRzJmOHpDblJYSjBRTFJySFNTZC16M25CbnpSNmsxcTV0OUlBLTRLOHZYa0RlQmhscTEwOWJUNEtad0NFWFliRm15Q0UybFd1ZXdITjFPdlg1cl9yVXRnUXQ5aExBRmgzc2k4LThXNUlV0gGsAUFVX3lxTE9JSFRjUmpnSnNwdmFSTmZQLXh2Z2VRME1rZ083Z2p4MnFlYW83ODZqbEw5Z0dHMjF2RWRHeFVYblVaZUlHMmY4ekNuUlhKMFFMUnJIU1NkLXozbkJuelI2azFxNXQ5SUEtNEs4dlhrRGVCaGxxMTA5YlQ0S1p3Q0VYWWJGbXlDRTJsV3Vld0hOMU92WDVyX3JVdGdRdDloTEFGaDNzaTgtOFc1SVU?oc=5",
+   "published": "2026-10-25T21:28:20Z",
+   "first_seen": "2026-10-26T03:52:05Z",
    "metadata_only": true,
    "discovery_edition": "CL-CINE"
   },
@@ -1677,6 +1829,21 @@
     "CL"
    ],
    "discovery_edition": "CL-CONCIERTOS"
+  },
+  {
+   "category": "politica",
+   "title": "El ministro de Kast que bajó las condenas a 56 pederastas: “No he pensado en renunciar”",
+   "summary": "",
+   "image": "https://imagenes.elpais.com/resizer/v2/N734RRNGAJHQJDI5O5FQBA6HDU.jpg?auth=f1664ecfaadfa954d4ced2d84d0fe4b1cf9ee9c90ba5ce10252f9e426e84d05f&width=1200",
+   "source_url": "https://elpais.com",
+   "sources": [
+    "EL PAÍS"
+   ],
+   "coverages": [],
+   "link": "https://elpais.com/chile/2026-10-25/el-ministro-de-kast-que-bajo-las-condenas-a-56-pederastras-no-he-pensado-en-renunciar.html",
+   "published": "2026-10-25T16:54:20Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "image_checked_at": "2026-10-26T03:52:05.509856Z"
   },
   {
    "category": "cultura",
@@ -3614,6 +3781,22 @@
    "discovery_edition": "ES"
   },
   {
+   "category": "cultura",
+   "title": "Avance semanal de 'Valle Salvaje' del 26 de octubre: Victoria tiene un plan para destruir a José Luis",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.rtve.es",
+   "sources": [
+    "RTVE.es"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUU5mYXBVTUppTkNhbVMxSVdIQ3JzYlllSUMtOXBBQzlady15MnNOMlpDaHlXMnRIeE1HakFZMUZwaU1ZVWIyRkNMQlRLbGhZN1FPUzl3dmtPdGhEUU01WUFPdEpRRFhUcnlUOFd3Mk9tTXM1akRkS1p6RzB1cTdFczBmZXZ5X01yaDU2dXR6LTQzZTN3cWdfb3NROE14T19HZHpSczNxVTlTM2lpSWotSHdZTlpaTV9fZFVxb0plaVFQTWFHX2kwM2FsZGhWRGI5M0d6WFJCRkJkSXo0V0twMg?oc=5",
+   "published": "2026-10-25T04:00:57Z",
+   "first_seen": "2026-10-26T03:52:05Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
+  },
+  {
    "category": "nacional",
    "title": "Incendio afecta a cuatro viviendas en Viña del Mar: Bomberos combate llamas en segunda alarma",
    "summary": "",
@@ -3627,112 +3810,37 @@
    "published": "2026-10-25T03:57:35Z",
    "first_seen": "2026-10-25T04:57:19Z",
    "image_checked_at": "2026-10-25T04:57:19.843172Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Luis Jara recordó la vez que una folclorista rechazó cantar con él: “Usted es del otro lado político”",
-   "summary": "",
-   "image": "https://www.lacuarta.com/resizer/v2/7647VU35JNGOTO7PUVJQYMY6BM.jpg?auth=2a15b7ef0db557aede23fdc246becdbb2d5f027daeef2b27284b3828d0597396&height=630&width=1200&smart=true",
-   "source_url": "https://www.lacuarta.com",
-   "sources": [
-    "La Cuarta",
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.lacuarta.com/espectaculos/noticia/luis-jara-recordo-la-vez-que-una-folclorista-rechazo-cantar-con-el-usted-es-del-otro-lado-politico/",
-   "published": "2026-10-25T03:49:11Z",
-   "first_seen": "2026-10-25T14:18:31Z",
-   "image_checked_at": "2026-10-25T14:18:31.935659Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Quién es Gadi Eisenkot, el general retirado que perdió un hijo en Gaza y desafía a Netanyahu en las primeras elecciones en Israel desde el ataque del 7 de octubre",
-   "summary": "El excomandante supone la mayor amenaza política para el primer ministro Benjamin Netanyahu en las próximas elecciones generales.",
-   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/c2dd/live/b4c06e70-ce58-11f1-a166-e30097724580.png",
-   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "coverages": [
-    {
-     "source": "BBC News Mundo",
-     "title": "Quién es Gadi Eisenkot, el general retirado que perdió un hijo en Gaza y desafía a Netanyahu en las primeras elecciones en Israel desde el ataque del 7 de octubre",
-     "link": "https://www.bbc.com/mundo/articles/cj1dw0en7n36o?at_medium=RSS&at_campaign=rss",
-     "published": "2026-10-25T03:35:00Z"
-    }
-   ],
-   "link": "https://www.bbc.com/mundo/articles/cj1dw0en7n36o?at_medium=RSS&at_campaign=rss",
-   "published": "2026-10-25T03:35:00Z",
-   "first_seen": "2026-10-25T04:31:13Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Bamba día 1: Juanes cumple un sueño, el fervor popular de Los Vásquez y Jovanotti canta El Pueblo Unido",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/BUWC47CHNRAJLERBPT6MPTWOHE.jpg?auth=81b5f735c00ac63fced197c27be1f52d065b7585a530cd3658fba1b76dac625f&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/culto/noticia/bamba-dia-1-juanes-cumple-un-sueno-el-fervor-popular-de-los-vasquez-y-jovanotti-canta-el-pueblo-unido/",
-   "published": "2026-10-25T03:18:27Z",
-   "first_seen": "2026-10-25T14:18:31Z",
-   "image_checked_at": "2026-10-25T14:18:31.935659Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Pescadores de Acapulco rechazan película de Netflix sobre Otis: “Es una falta de respeto”",
-   "summary": "",
-   "image": "",
-   "source_url": "https://oem.com.mx",
-   "sources": [
-    "El Sol de México"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcDl0cGo1WVhLTE1JRGNKbjI0WnV4SG8wM3FXalIyQlJ0RGhDWE0ybjVsQ0daTHNRZjVYUEd0Mnotdm9RSmZZREE2YUNEc3lzU3p1X1VkRFY3T1UxMnhoSDlhUHJwZWdEOENkR1BweXJTRllxbURkd01HRTZ4bDNxcEpXTTZoZjdpYnVyTVBLeDVmbGwzc0ItLWlnMHg1ZkpBV2g4MnRTdGdrWUNKSFVsX0xjQUtsUDJmb05zbGN1Znl5cXVpLVliOERIcVdwLWpQeGc?oc=5",
-   "published": "2026-10-25T03:15:05Z",
-   "first_seen": "2026-10-25T16:30:35Z",
-   "metadata_only": true,
-   "discovery_edition": "MX"
-  },
-  {
-   "category": "cultura",
-   "title": "Tecate Península reúne a grandes figuras de la música en Tijuana",
-   "summary": "",
-   "image": "",
-   "source_url": "https://oem.com.mx",
-   "sources": [
-    "El Sol de México"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdktwWHFUT0dETF9PcWFSN2Rza0hSeXRLSmF5Wm10dDExT01TMUdWWlVnbldwd0htMVlyOVdUTGlMVGNpV2hKWGRRSGp6X2RvT0xyeXcwcmlzekhHY0hpODRUdnRTOVk1dHZaRkZlcnVTcTRDalpCTTBkeW5kVU4yZGMybFZnQ2JHcHpSMXFWWU81ME1nN3F4b3h6elJ1QWF2X2FsNGJ4TlNqdlZUSGktRkFvQQ?oc=5",
-   "published": "2026-10-25T03:07:33Z",
-   "first_seen": "2026-10-25T16:30:35Z",
-   "metadata_only": true,
-   "discovery_edition": "MX"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Brasil escolhe hoje entre o retorno de um Bolsonaro e o 4º mandato de Lula",
-   "summary": "",
-   "image": "",
-   "source_url": "https://noticias.uol.com.br",
-   "sources": [
-    "UOL Notícias"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQenM5Ty1RX2lza2gwb0doX0pFWDlpUF9fekhVYklHY0xfb0w0TXViT19KMFhORnkxSHBSM0NQUjA0NURrZ2ZsTGtlRmNNVW1wMkdibl9kZnUxMDQ0SEZ4Zlk3X3FvTmI4R0NUQ19KS3dtR2xwSzNzODZKSk1XYUJqYVBHb19BSnMtaHotd1BaaWNjemhhZHVqUEwxa05CbWRBMWZQczVaWjRLT3NSMkFvdDBTZTZqOFVQbEdQRzAySQ?oc=5",
-   "published": "2026-10-25T03:01:00Z",
-   "first_seen": "2026-10-25T09:45:04Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Coalición contra los carteles: Barros empuja que Chile se mantenga como observador y Kast cita a reunión extraordinaria",
+   "link": "https://www.latercera.com/nacional/noticia/coalicion-contra-los-carteles-barros-empuja-que-chile-se-mantenga-como-observador-y-kast-cita-a-reunion-extraordinaria/",
+   "category": "politica",
+   "published": "2026-10-26T03:24:21Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Chile envía helicóptero a Perú para combatir incendios forestales que dejan al menos 12 muertos",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/chile-envia-helicoptero-a-peru-para-combatir-incendios-forestales-que-dejan-al-menos-12-muertos.shtml",
+   "category": "politica",
+   "published": "2026-10-26T03:22:20Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "EN LA ARAUCANÍA CASI NO CAMBIA EL GASTO EN RESTAURANTES, PERO AUMENTA 8% EN CAFETERÍAS Y CASINOS",
+   "link": "https://araucanianoticias.cl/2026/en-la-araucania-casi-no-cambia-el-gasto-en-restaurantes-pero-aumenta-8-en-cafeterias-y-casinos/1026317784",
+   "category": "regiones",
+   "published": "2026-10-26T03:01:40Z",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ]
+  },
   {
    "title": "Netflix se suma a la nueva edición de la Incubadora Queer Santiago-Guadalajara de SANFIC Industria y FICG",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdzhOY3RfZ2xhQk14NS1jbTNYYWo0WWR4TFhuek96U0dVNGJyV0haLWxJMjFoNEJybVNzdkNxQUxDTmUzVVAtUnRDYTlLYzZxQy1NSF9BZHhrZnZSMThxWWEzekZnSkMzUXd3Tloycno4TEFRMTB2dWFqTExqR19uQTZrZmI?oc=5",
@@ -3740,6 +3848,24 @@
    "published": "2026-10-26T02:51:56Z",
    "sources": [
     "Mundo Películas"
+   ]
+  },
+  {
+   "title": "Com virada histórica, Lula é eleito presidente do Brasil pela quarta vez",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUFV6cTNHME9WaFZpb1h2SjNVRzdFUU5NdUhvSVl0c2h0dlpTMTVsYTZ4MFoyb1M5VWp5Z0I0andSUFBhUzVDclhnWkNscEtVNS1YV2EwajhLLWtZYVhMRU8tOXpxMHVHdmJNS1djbHRLNXZtTGZ3dl9nNnBHai1JdC1CWG5LZ2x2OE01RWhrOHNWNG4zOVE?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T02:46:00Z",
+   "sources": [
+    "Senado"
+   ]
+  },
+  {
+   "title": "MEO echa por tierra rumores de quiebre con Karen Doggenweiler: \"No nos entra ni una fisura\"",
+   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/25/meo-echa-por-tierra-rumores-de-quiebre-con-karen-doggenweiler-no-nos-entra-ni-una-fisura.shtml",
+   "category": "cultura",
+   "published": "2026-10-26T02:32:30Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -3758,6 +3884,15 @@
    "published": "2026-10-26T02:21:30Z",
    "sources": [
     "canchaycalle.cl"
+   ]
+  },
+  {
+   "title": "Flávio Bolsonaro desconoce el resultado electoral y anuncia que pedirá la anulación de la segunda vuelta en Brasil",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRzVhOV9mVlVkTC1mbURsZy0zaFgwVEpqbk1PZk41YlBQeDhfYkRWV0RzdWJXZFpoZDQwTDZhZzVkMzAzSEdiaGt4RnlUdUhIX2JuRDF1OVRYNUo5WGExbHNUTTFBQXlJMS1GYkZIeXBMYzhhWFNLZzNJa3JtQUxiSWZ3NzhHaDd4Rzd5SnlLcnVzNHcwMnFrcDlJYVZDbDRvcS1iNVhnOGlEenRHS1N6VkUtOFBhMGVhbndlOWdXMVpuZ1JvenZaWjhzVFU2MWwzNTFrYTNvazRiNC1obF9sM1o4VHdYWlZ4cnVR0gGMAkFVX3lxTFAxeVpVVEthb0RpZ0tGV1ZVRnJ4ejhWU1VQTWlXZ210Z0VzcVo5RGVTTE9RNjZnR2pYSGJFR3l4ZWtpa25jczRMQVdyYldsdmJ6SjRvSVV2YjVSWWNMTXlrckNRSEtCakNVQ2VkVW42bks5dmxxU0VVRE5zakhrREVwZTFoY2JFMFRWbEU1MWZZWHZFWFBfWDRHWjZoWDVWcmo3d21QVVRvR0ExZGFjUkVZcVdBVlE0dHo3QXhCT2JJX3d1NXJoYnd6VFhpSUpONmZYRlhxdXRMSnZPNHZxZmkxZEZESDBZZG40bF9uUGI1ZG96eUJWWlAyZWJ5eUlwbW5mNU1ka0d6VnRQdzQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T02:12:18Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3803,6 +3938,15 @@
    "published": "2026-10-26T01:26:03Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "RD participó como país invitado en la feria turística FITPAR de Paraguay",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY3Z1TmlSaTZxZ011d2w5NkpwQ0k0LTYxT2lfUHZmOHJNaHZ4NS1MVnNPVDUtbDVoNU55d1dOb3gwVC02X056Vmd6d2U3OUhadlg1TUg2V0xvcjNKVmdhSWFKeTJMZS1MYUpFNlpTbmU4SFF1b2ZVam82RkhpNkJSM2tXUXJwSkhzVERIMFo4dkgyNlBIMGZhV3QtMkFPSlhIZ3J1Q21vcnZSdjE1bjFtNGtSdUtIZHY4?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T01:25:41Z",
+   "sources": [
+    "Periódico Digital Centroamericano y del Caribe"
    ]
   },
   {
@@ -3875,6 +4019,15 @@
    "published": "2026-10-26T00:23:00Z",
    "sources": [
     "Agência Brasil"
+   ]
+  },
+  {
+   "title": "Pelota al piso: Javier Correa no se esconde y envía mensaje a los hinchas de Colo Colo",
+   "link": "https://dalealbo.cl/colocolo/pelota-al-piso-javier-correa-no-se-esconde-y-envia-mensaje-a-los-hinchas-de-colo-colo",
+   "category": "deportes",
+   "published": "2026-10-26T00:21:17Z",
+   "sources": [
+    "Dale Albo"
    ]
   },
   {
@@ -4186,6 +4339,15 @@
   {
    "title": "El cine latinoamericano busca conquistar el Oscar a Mejor Película Internacional",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdFlYWnBYVzBveUJ3elNnZm9XU2hreWJNWXY4NzgtWEtoUEQzbERzVUFJX055cmkzdnRRdTA1X1l1Rm9aQ3o1RjROMkhNWUxLU19sRWU1RXhKaXlPc280c3FJajNza2R4aUV0dVFzODk2S0I1VjY3MEJKWFozT0xVU2R4TlZPYzk1MkhqbHc0NmhGSDdPUXVWNDJhbDV1MC0wbVV5ZkJsWdIBrAFBVV95cUxPSUhUY1JqZ0pzcHZhUk5mUC14dmdlUTBNa2dPN2dqeDJxZWFvNzg2amxMOWdHRzIxdkVkR3hVWG5VWmVJRzJmOHpDblJYSjBRTFJySFNTZC16M25CbnpSNmsxcTV0OUlBLTRLOHZYa0RlQmhscTEwOWJUNEtad0NFWFliRm15Q0UybFd1ZXdITjFPdlg1cl9yVXRnUXQ5aExBRmgzc2k4LThXNUlV?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T21:28:20Z",
+   "sources": [
+    "MUNDIARIO"
+   ]
+  },
+  {
+   "title": "El cine latinoamericano busca conquistar el Oscar a Mejor Película Internacional",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSUhUY1JqZ0pzcHZhUk5mUC14dmdlUTBNa2dPN2dqeDJxZWFvNzg2amxMOWdHRzIxdkVkR3hVWG5VWmVJRzJmOHpDblJYSjBRTFJySFNTZC16M25CbnpSNmsxcTV0OUlBLTRLOHZYa0RlQmhscTEwOWJUNEtad0NFWFliRm15Q0UybFd1ZXdITjFPdlg1cl9yVXRnUXQ5aExBRmgzc2k4LThXNUlV0gGsAUFVX3lxTE9JSFRjUmpnSnNwdmFSTmZQLXh2Z2VRME1rZ083Z2p4MnFlYW83ODZqbEw5Z0dHMjF2RWRHeFVYblVaZUlHMmY4ekNuUlhKMFFMUnJIU1NkLXozbkJuelI2azFxNXQ5SUEtNEs4dlhrRGVCaGxxMTA5YlQ0S1p3Q0VYWWJGbXlDRTJsV3Vld0hOMU92WDVyX3JVdGdRdDloTEFGaDNzaTgtOFc1SVU?oc=5",
    "category": "cultura",
    "published": "2026-10-25T21:28:20Z",
    "sources": [
@@ -4634,6 +4796,15 @@
    "published": "2026-10-25T17:02:00Z",
    "sources": [
     "Futuro Chile"
+   ]
+  },
+  {
+   "title": "El ministro de Kast que bajó las condenas a 56 pederastas: “No he pensado en renunciar”",
+   "link": "https://elpais.com/chile/2026-10-25/el-ministro-de-kast-que-bajo-las-condenas-a-56-pederastras-no-he-pensado-en-renunciar.html",
+   "category": "politica",
+   "published": "2026-10-25T16:54:20Z",
+   "sources": [
+    "EL PAÍS"
    ]
   },
   {
@@ -5671,6 +5842,15 @@
    "published": "2026-10-25T04:54:08Z",
    "sources": [
     "Baluarte"
+   ]
+  },
+  {
+   "title": "Avance semanal de 'Valle Salvaje' del 26 de octubre: Victoria tiene un plan para destruir a José Luis",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUU5mYXBVTUppTkNhbVMxSVdIQ3JzYlllSUMtOXBBQzlady15MnNOMlpDaHlXMnRIeE1HakFZMUZwaU1ZVWIyRkNMQlRLbGhZN1FPUzl3dmtPdGhEUU01WUFPdEpRRFhUcnlUOFd3Mk9tTXM1akRkS1p6RzB1cTdFczBmZXZ5X01yaDU2dXR6LTQzZTN3cWdfb3NROE14T19HZHpSczNxVTlTM2lpSWotSHdZTlpaTV9fZFVxb0plaVFQTWFHX2kwM2FsZGhWRGI5M0d6WFJCRkJkSXo0V0twMg?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T04:00:57Z",
+   "sources": [
+    "RTVE.es"
    ]
   },
   {
