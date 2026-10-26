@@ -27,6 +27,11 @@
     if (!nav || desktop.matches) return;
     nav.classList.toggle("open", open);
     renderMenu();
+    if (open) {
+      nav.scrollTop = 0;
+      var firstSection = nav.querySelector("a");
+      if (firstSection) firstSection.focus({preventScroll: true});
+    }
   }
   window.NewsReader = {setMenu: setMenu};
   if (menu && nav) {
@@ -50,6 +55,12 @@
     d.addEventListener("keydown", function (event) {
       if (event.key === "Escape" && nav.classList.contains("open")) {
         setMenu(false); menu.focus();
+      }
+    });
+    d.addEventListener("focusin", function (event) {
+      if (!desktop.matches && nav.classList.contains("open")
+          && !event.target.closest("#site-nav,#menu-toggle,#sidebar-edge,.site-header")) {
+        setMenu(false);
       }
     });
     desktop.addEventListener("change", function () {

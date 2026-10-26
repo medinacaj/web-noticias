@@ -393,7 +393,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(dates, sorted(dates, reverse=True))
 
     async def test_desktop_sidebar_defaults_visible_and_choice_survives_reload(self):
-        nav, toggle = self.page.locator('#site-nav'), self.page.locator('#menu-toggle')
+        nav, toggle = self.page.locator('#site-nav'), self.page.locator('#sidebar-edge')
+        self.assertFalse(await self.page.locator('#menu-toggle').is_visible())
         self.assertTrue(await nav.is_visible())
         self.assertEqual(await toggle.get_attribute('aria-expanded'), 'true')
         await toggle.click()
@@ -418,6 +419,32 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertFalse(await nav.is_visible())
         await self.page.set_viewport_size({"width": 1440, "height": 1000})
         self.assertTrue(await nav.is_visible())
+
+    async def test_mobile_menu_starts_at_sections_and_closes_before_background_focus(self):
+        await self.page.set_viewport_size({'width':390,'height':844})
+        await self.page.locator('#menu-toggle').click()
+        self.assertTrue(await self.page.evaluate("!!document.activeElement.closest('#site-nav')"))
+        await self.page.locator('#site-nav a').last.focus()
+        await self.page.keyboard.press('Tab')
+        self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'sidebar-edge')
+        await self.page.keyboard.press('Tab')
+        self.assertFalse(await self.page.locator('#site-nav').is_visible())
+        self.assertFalse(await self.page.locator('#nav-backdrop').is_visible())
+        self.assertTrue(await self.page.evaluate("document.activeElement.matches('[data-carousel-pause]')"))
+
+    async def test_reopening_scrolled_mobile_menu_keeps_focused_link_visible(self):
+        await self.page.set_viewport_size({'width':844,'height':390})
+        await self.page.locator('#menu-toggle').click()
+        await self.page.locator('#site-nav').evaluate('el=>el.scrollTop=el.scrollHeight')
+        await self.page.locator('#sidebar-edge').click()
+        before = await self.page.evaluate('scrollY')
+        await self.page.locator('#menu-toggle').click()
+        bounds = await self.page.locator('#site-nav').bounding_box()
+        focused = await self.page.evaluate("""()=>{const r=document.activeElement.getBoundingClientRect();return {top:r.top,bottom:r.bottom,inNav:!!document.activeElement.closest('#site-nav')}}""")
+        self.assertTrue(focused['inNav'])
+        self.assertGreaterEqual(focused['top'], bounds['y'])
+        self.assertLessEqual(focused['bottom'], bounds['y'] + bounds['height'])
+        self.assertEqual(await self.page.evaluate('scrollY'), before)
 
     async def test_theme_follows_system_and_manual_choice_is_retained(self):
         await self.page.emulate_media(color_scheme='dark')
@@ -538,12 +565,14 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         edge = self.page.locator('#sidebar-edge')
         self.assertEqual(await edge.count(), 1)
         self.assertTrue(await edge.is_visible())
+        self.assertTrue(await edge.evaluate("el=>{const r=el.getBoundingClientRect();return document.elementFromPoint(r.left-1,r.top+r.height/2)?.closest('#sidebar-edge')===el}"))
         self.assertEqual(await edge.get_attribute('aria-expanded'), 'true')
         await edge.click()
         self.assertFalse(await self.page.locator('#site-nav').is_visible())
         self.assertTrue(await edge.is_visible())
         self.assertEqual(await edge.get_attribute('aria-expanded'), 'false')
         self.assertLessEqual((await edge.bounding_box())['x'], 2)
+        self.assertTrue(await edge.evaluate("el=>{const r=el.getBoundingClientRect();return document.elementFromPoint(r.right+3,r.top+r.height/2)?.closest('#sidebar-edge')===el}"))
         await self.page.reload()
         self.assertFalse(await self.page.locator('#site-nav').is_visible())
         await edge.click()
@@ -685,7 +714,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             for collapsed in ((False, True) if width >= 1024 else (False,)):
                 if width >= 1024:
                     actual = await self.page.locator('html').get_attribute('data-sidebar')
-                    if (actual == 'hidden') != collapsed: await self.page.locator('#menu-toggle').click()
+                    if (actual == 'hidden') != collapsed: await self.page.locator('#sidebar-edge').click()
                 boxes = await self.page.evaluate("""() => {
                     const selectors=['.bar-inner','.breaking-inner','main.container','.newsletter-invite-inner','.site-footer > .container'];
                     return selectors.map(selector => {const el=document.querySelector(selector), r=el.getBoundingClientRect(), css=getComputedStyle(el);
@@ -701,7 +730,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         ARTIFACTS.mkdir(exist_ok=True)
         for collapsed in (False, True):
             actual = await self.page.locator('html').get_attribute('data-sidebar')
-            if (actual == 'hidden') != collapsed: await self.page.locator('#menu-toggle').click()
+            if (actual == 'hidden') != collapsed: await self.page.locator('#sidebar-edge').click()
             await self.page.screenshot(path=str(ARTIFACTS / f'aligned-1920-{collapsed}.png'))
 
     async def test_header_is_compact_without_losing_controls(self):
@@ -709,7 +738,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.set_viewport_size({"width": width, "height": 1000})
             header = await self.page.locator('.site-header').bounding_box()
             self.assertLessEqual(header['height'], 80 if width < 1024 else 68, (width, header))
-            for selector in ('#menu-toggle','#theme-toggle','#search-toggle','#view-options-toggle','#library-toggle','.header-updated','.edition-count'):
+            self.assertEqual(await self.page.locator('#menu-toggle').is_visible(), width < 1024, width)
+            for selector in ('#theme-toggle','#search-toggle','#view-options-toggle','#library-toggle','.header-updated','.edition-count'):
                 self.assertTrue(await self.page.locator(selector).is_visible(), (width, selector))
             boxes = [await item.bounding_box() for item in await self.page.locator('.bar-inner .icon-btn:visible').all()]
             boxes.sort(key=lambda box: box['x'])
@@ -726,7 +756,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_blocked_storage_does_not_disable_controls(self):
         await self.context.add_init_script("Object.defineProperty(window, 'localStorage', {get() {throw new Error('blocked')}})")
         await self.page.reload()
-        await self.page.locator('#menu-toggle').click()
+        await self.page.locator('#sidebar-edge').click()
         self.assertFalse(await self.page.locator('#site-nav').is_visible())
         await self.page.locator('#theme-toggle').click()
         self.assertIn(await self.page.locator('html').get_attribute('data-theme'), ('light', 'dark'))
