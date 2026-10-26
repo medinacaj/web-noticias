@@ -56,8 +56,7 @@ class ContrastThemeTests(unittest.TestCase):
                     ".source-mark", ".media--source", ".top-grid", "%%NAV%%"):
             self.assertIn(key, self.css)
 
-    def test_system_dark_mode_and_manual_override_keep_contrast(self):
-        self.assertIn('prefers-color-scheme:dark', self.css)
+    def test_available_themes_keep_contrast(self):
         for dark in (False, True):
             colors = self.palette(dark)
             for token in ('--ink', '--muted'):

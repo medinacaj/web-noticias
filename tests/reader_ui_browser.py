@@ -290,6 +290,31 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await self.page.locator('#site-nav a[href="#cat-salud-ciencia"]').count(), 0)
         await self.page.wait_for_function("document.querySelector('#site-nav a[href=\"#cat-tecnologia\"]').getAttribute('aria-current') === 'location'")
 
+    async def test_defaults_are_light_normal_recent_and_sections_have_no_rules(self):
+        await self.page.emulate_media(color_scheme='dark')
+        await self.page.reload()
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'normal')
+        self.assertEqual(await self.page.locator('#source-sort').input_value(), 'recent')
+        for selector, edge in (('.section-head','borderBottomWidth'),('.rail-title','borderTopWidth')):
+            self.assertEqual(await self.page.locator(selector).first.evaluate('(el, edge) => getComputedStyle(el)[edge]', edge), '0px')
+
+    async def test_recent_and_editorial_sort_include_the_first_card(self):
+        grid = self.page.locator('.section-grid').first
+        await grid.evaluate("""grid => {
+          const cards=[...grid.querySelectorAll('.feature,.compact-list li')];
+          cards.forEach((card,i)=>card.dataset.originalOrder=String(i+2));
+          cards[0].dataset.originalOrder='1'; cards[1].dataset.originalOrder='0';
+          cards[0].querySelector('time').dateTime=new Date().toISOString();
+        }""")
+        await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#source-sort').select_option('relevance')
+        self.assertFalse(await grid.locator('.feature,.compact-list li').first.evaluate("el=>el.classList.contains('feature')"))
+        await self.page.locator('#source-sort').select_option('recent')
+        self.assertTrue(await grid.locator('.feature,.compact-list li').first.evaluate("el=>el.classList.contains('feature')"))
+        dates = await grid.evaluate("grid=>[...grid.querySelectorAll('.feature,.compact-list li')].map(el=>Date.parse(el.querySelector('time').dateTime)||0)")
+        self.assertEqual(dates, sorted(dates, reverse=True))
+
     async def test_desktop_sidebar_defaults_visible_and_choice_survives_reload(self):
         nav, toggle = self.page.locator('#site-nav'), self.page.locator('#menu-toggle')
         self.assertTrue(await nav.is_visible())
@@ -319,9 +344,10 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_theme_follows_system_and_manual_choice_is_retained(self):
         await self.page.emulate_media(color_scheme='dark')
-        await self.page.wait_for_function("document.documentElement.dataset.theme === 'dark'")
-        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'dark')
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
         await self.page.locator('#view-options-toggle').click()
+        await self.page.locator('#theme-select').select_option('system')
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'dark')
         await self.page.locator('#theme-select').select_option('light')
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
         await self.page.reload()
@@ -356,7 +382,9 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                 self.assertFalse(await figure.is_visible())
         ARTIFACTS.mkdir(exist_ok=True)
         for theme in ('light', 'dark'):
-            await self.page.emulate_media(color_scheme=theme)
+            await self.page.locator('#view-options-toggle').click()
+            await self.page.locator('#theme-select').select_option(theme)
+            await self.page.locator('#view-options-toggle').click()
             for width in (390, 1440):
                 await self.page.set_viewport_size({"width": width, "height": 1000})
                 await self.page.evaluate('scrollTo(0,0)')
@@ -465,7 +493,9 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             a, b = sorted((luminance(first), luminance(second)), reverse=True)
             return (a + .05)/(b + .05)
         for theme in ('light', 'dark'):
-            await self.page.emulate_media(color_scheme=theme)
+            await self.page.locator('#view-options-toggle').click()
+            await self.page.locator('#theme-select').select_option(theme)
+            await self.page.locator('#view-options-toggle').click()
             await self.page.wait_for_function('theme => document.documentElement.dataset.theme === theme', arg=theme)
             colors = await self.page.evaluate("""() => {
                 const card = document.querySelector('.lead');

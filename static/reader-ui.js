@@ -62,7 +62,7 @@
   var themeSelect = d.getElementById("theme-select"), themeToggle = d.getElementById("theme-toggle");
   var themes = ["system", "light", "dark"];
   function applyTheme(preference) {
-    if (themes.indexOf(preference) < 0) preference = "system";
+    if (themes.indexOf(preference) < 0) preference = "light";
     root.dataset.themePreference = preference;
     root.dataset.theme = preference === "system" ? (systemTheme.matches ? "dark" : "light") : preference;
     if (themeSelect) themeSelect.value = preference;
@@ -82,7 +82,7 @@
     applyTheme(next); remember("noticias:theme:v1", next);
   });
   systemTheme.addEventListener("change", function () { applyTheme(root.dataset.themePreference); });
-  applyTheme(root.dataset.themePreference || "system");
+  applyTheme(root.dataset.themePreference || "light");
 
   d.querySelectorAll("[data-carousel]").forEach(function (carousel) {
     var track = carousel.querySelector(".breaking-track");
