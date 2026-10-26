@@ -20,10 +20,10 @@ MONTHS = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agost
 
 THEME_BOOT = """<script>
 (function () {
-  var root = document.documentElement, preference = "system";
+  var root = document.documentElement, preference = "light";
   root.classList.add("js");
-  try { preference = localStorage.getItem("noticias:theme:v1") || "system"; } catch (error) {}
-  if (["system", "light", "dark"].indexOf(preference) < 0) preference = "system";
+  try { preference = localStorage.getItem("noticias:theme:v1") || "light"; } catch (error) {}
+  if (["system", "light", "dark"].indexOf(preference) < 0) preference = "light";
   root.dataset.themePreference = preference;
   root.dataset.theme = preference === "system"
     ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : preference;
@@ -103,7 +103,6 @@ def _head(title, description, url, base):
 <style>
 :root{{color-scheme:light;--paper:#E9E8E2;--card:#FFFFFF;--surface:#FAFAF7;--ink:#282C30;--muted:#626970;--rule:#D7DBD4;--brand:#31584A;--accent:#C04C3E}}
 :root[data-theme="dark"]{{color-scheme:dark;--brand:#B4DCC8;--paper:#111315;--card:#343A43;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#66717D;--accent:#FF907F}}
-@media (prefers-color-scheme:dark){{:root:not([data-theme="light"]){{color-scheme:dark;--brand:#B4DCC8;--paper:#111315;--card:#343A43;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#66717D;--accent:#FF907F}}}}
 *,*::before,*::after{{box-sizing:border-box}}
 body{{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}}
 a{{color:inherit;text-underline-offset:3px}}

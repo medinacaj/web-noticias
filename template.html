@@ -7,12 +7,12 @@
 (function () {
   var root = document.documentElement;
   root.classList.add("js");
-  var preference = "system", sidebar = "visible";
+  var preference = "light", sidebar = "visible";
   try {
-    preference = localStorage.getItem("noticias:theme:v1") || "system";
+    preference = localStorage.getItem("noticias:theme:v1") || "light";
     sidebar = localStorage.getItem("noticias:sidebar:v1") || "visible";
   } catch (error) {}
-  if (["system", "light", "dark"].indexOf(preference) < 0) preference = "system";
+  if (["system", "light", "dark"].indexOf(preference) < 0) preference = "light";
   root.dataset.themePreference = preference;
   root.dataset.theme = preference === "system"
     ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : preference;
@@ -61,7 +61,7 @@
     --card-rule:#D7DBD4; --card-link:#31584A;
     --brand:#31584A; --callout-bg:#E7EDE6; --callout-ink:#31584A; --callout-muted:#526257; --callout-rule:#9EAEA1;
     --signature-bg:#202529; --signature-ink:#F7F6F2; --signature-muted:#C4C7CC;
-    --space-section:48px; --radius-card:8px; --motion-card:.2s;
+    --space-section:32px; --radius-card:8px; --motion-card:.2s;
     --card-shadow:0 2px 5px rgba(25,30,27,.04),0 6px 16px rgba(25,30,27,.035),0 14px 28px rgba(25,30,27,.02);
     --card-shadow-hover:0 4px 9px rgba(25,30,27,.06),0 10px 22px rgba(25,30,27,.05),0 18px 36px rgba(25,30,27,.025);
     --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
@@ -252,7 +252,7 @@
   .top-grid--single .lead{grid-column:1 / -1;}
   .lead-title{font-family:var(--serif);font-weight:650;font-size:clamp(29px,3vw,42px);line-height:1.15;letter-spacing:-.023em;margin:5px 0 13px;text-wrap:balance;}
   .top-aside{grid-column:8 / span 5;display:flex;flex-direction:column;min-width:0;}
-  .rail-title{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-top:3px solid var(--strong);padding-top:10px;margin:0 0 12px;}
+  .rail-title{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:0;padding-top:0;margin:0 0 12px;}
   .rail-list{list-style:none;margin:0;padding:0;counter-reset:rail;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:var(--grid-gap);flex:1;}
   .rail-list li{counter-increment:rail;display:grid;grid-template-columns:32px minmax(0,1fr);padding:12px 14px;}
   .rail-list li::before{content:counter(rail);font:600 30px/1 var(--serif);color:var(--card-muted);}
@@ -286,7 +286,7 @@
 
   /* ---------- Secciones ---------- */
   .section{margin-top:var(--space-section);}
-  .section-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid color-mix(in srgb,var(--rule) 58%,transparent);padding:10px 0 16px;margin-bottom:16px;}
+  .section-head{display:flex;align-items:baseline;gap:14px;border:0;padding:4px 0 0;margin-bottom:14px;}
   .section-num{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--cat,var(--red));}
   
   .section-head h2{font:700 30px/1.16 var(--serif);letter-spacing:-.025em;margin:0;text-wrap:balance;}
@@ -338,7 +338,7 @@
   .view-options-panel .news-toolbar label{font:600 12px var(--sans);color:var(--muted);}
   .view-options-panel .news-toolbar select{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:7px;color:var(--ink);font:500 12px var(--sans);}
   .view-options-panel .news-toolbar .density-switch{width:100%;}
-  .coverage-radar{margin:34px 0 6px;padding:20px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .coverage-radar{margin:34px 0 6px;padding:12px 0;border:0;}
   .radar-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}
   .radar-head h2{font:700 25px/1.2 var(--serif);margin:0;}
   .radar-head span,.coverage-radar p{font-size:12px;color:var(--muted);}
@@ -496,7 +496,7 @@
     .context{grid-template-columns:minmax(0,1fr);margin-top:28px;}
     .context-unit,.context-unit:first-child{padding:18px 20px;border-left:0;border-top:1px solid var(--rule);}
     .context-unit:first-child{border-top:0;}
-    .section{margin-top:32px;}
+    .section{margin-top:24px;}
     .section-head{margin-bottom:14px;}
     .section-head h2{font-size:25px;}
     .feature-title,.compact h3{font-size:17px;line-height:1.35;}
@@ -605,7 +605,6 @@
   @media (max-width:359px){.brand-logo{display:none;}}
   :root[data-theme="dark"]{--navy-dark:#151719;--red:#FF907F;--paper:#111315;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#4C545E;--strong:#CCD1D6;--card-bg:#343A43;--card-ink:#F7F6F2;--card-muted:#C4C7CC;--card-rule:#66717D;--card-link:#B4DCC8;--c-nacional:#FF907F;--c-internacional:#94B9E4;--c-economia:#93CDB5;--c-tecnologia:#C7B2E8;--c-deportes:#F2BE86;--c-cultura:#E7ACD1;--c-agenda:#E6C773;--callout-bg:#27362F;--callout-ink:#DEEDDE;--callout-muted:#BED0C4;--callout-rule:#789087;--signature-bg:#FAFAF7;--signature-ink:#282C30;--signature-muted:#626970;color-scheme:dark;}
   :root[data-theme="dark"] :is(.cat-regiones,.cat-politica,.cat-medioambiente,.cat-salud-ciencia){--cat:var(--cat-b);}
-  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]):not([data-theme="dark"]){--navy-dark:#151719;--red:#FF907F;--paper:#111315;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#4C545E;--strong:#CCD1D6;--card-bg:#343A43;--card-ink:#F7F6F2;--card-muted:#C4C7CC;--card-rule:#66717D;--card-link:#B4DCC8;--c-nacional:#FF907F;--c-internacional:#94B9E4;--c-economia:#93CDB5;--c-tecnologia:#C7B2E8;--c-deportes:#F2BE86;--c-cultura:#E7ACD1;--c-agenda:#E6C773;--callout-bg:#27362F;--callout-ink:#DEEDDE;--callout-muted:#BED0C4;--callout-rule:#789087;--signature-bg:#FAFAF7;--signature-ink:#282C30;--signature-muted:#626970;color-scheme:dark;}:root:not([data-theme="light"]) :is(.cat-regiones,.cat-politica,.cat-medioambiente,.cat-salud-ciencia){--cat:var(--cat-b);}}
   @media (max-width:1023px){
     :root{--header-height:76px;}
     .bar-inner{flex-wrap:wrap;align-content:center;row-gap:4px;padding-top:6px;padding-bottom:6px;}
@@ -644,11 +643,11 @@
       </button>
       <div class="view-options-panel" id="view-options-panel" hidden aria-label="Opciones de visualización">
         <p class="view-options-heading">Personalizar vista</p>
-        <label class="theme-label" for="theme-select">Tema<select id="theme-select"><option value="system">Automático</option><option value="light">Claro</option><option value="dark">Oscuro</option></select></label>
+        <label class="theme-label" for="theme-select">Tema<select id="theme-select"><option value="system">Automático</option><option value="light" selected>Claro</option><option value="dark">Oscuro</option></select></label>
         <div class="news-toolbar"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><button type="button" id="density-switch" class="density-switch" aria-pressed="false">Compacta</button></div>
         <div class="view-option-extra">
           <label for="source-preference">Mostrar noticias de<select id="source-preference"><option value="">Todos los medios</option></select></label>
-          <label for="source-sort">Ordenar noticias<select id="source-sort"><option value="relevance">Orden editorial</option><option value="recent">Recientes en cada sección</option></select></label>
+          <label for="source-sort">Ordenar noticias<select id="source-sort"><option value="relevance">Orden editorial</option><option value="recent" selected>Recientes en cada sección</option></select></label>
           <label for="category-preference">Sección<select id="category-preference"><option value="">Todas las categorías</option></select></label>
         </div>
         <p class="reader-hint">Tus opciones se recuerdan en este navegador.</p>
@@ -1046,9 +1045,8 @@
       });
     });
     main.querySelectorAll(".section-grid").forEach(function (grid) {
-      var container = grid.querySelector(".compact-list");
-      if (container) Array.prototype.slice.call(container.children).forEach(function (li, idx) {
-        li.dataset.originalOrder = String(idx);
+      grid.querySelectorAll(".feature,.compact-list li").forEach(function (item, index) {
+        if (!item.hasAttribute("data-original-order")) item.dataset.originalOrder = String(index);
       });
     });
     var resetPreferences = d.getElementById("preferences-reset");
@@ -1062,17 +1060,29 @@
         card.toggleAttribute("data-source-hidden", !matches);
       });
       main.querySelectorAll(".section-grid").forEach(function (grid) {
-        var parent = grid.querySelector(".compact-list");
-        if (!parent) return;
-        var items = Array.prototype.slice.call(parent.children);
-        items.sort(function (a,b) {
-          if (sortSelect.value !== "recent")
-            return Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
-          var ta = Date.parse(a.querySelector("time")?.dateTime || "") || 0;
-          var tb = Date.parse(b.querySelector("time")?.dateTime || "") || 0;
-          return tb - ta || Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
-        });
-        items.forEach(function (item) {parent.appendChild(item);});
+        if (grid.getAttribute("id") !== "noticias-agenda") {
+          var items = Array.from(grid.querySelectorAll(".feature,.compact-list li"));
+          items.sort(function (a,b) {
+            var original = Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
+            if (sortSelect.value !== "recent") return original;
+            var ta = Date.parse(a.querySelector("time")?.dateTime || "") || 0;
+            var tb = Date.parse(b.querySelector("time")?.dateTime || "") || 0;
+            return tb - ta || original;
+          });
+          // Mover nodos completos conserva controles, foco y orden de lectura.
+          // Las listas a ambos lados de la tarjeta feature siguen siendo HTML válido.
+          var primary = grid.querySelector(".compact-list"), parts = [], bucket = null;
+          if (primary) primary.replaceChildren();
+          items.forEach(function (item) {
+            if (item.classList.contains("feature")) { parts.push(item); bucket = null; return; }
+            if (!bucket) {
+              bucket = primary || d.createElement("ul"); primary = null;
+              bucket.className = "compact-list"; parts.push(bucket);
+            }
+            bucket.appendChild(item);
+          });
+          grid.replaceChildren.apply(grid, parts);
+        }
         refreshSection(grid, 6);
       });
     }
@@ -1084,7 +1094,8 @@
     });
     sourceSelect.value = get(sourceKey, "") || "";
     categorySelect.value = get(categoryKey, "") || "";
-    sortSelect.value = get(sortKey, "relevance") || "relevance";
+    var savedSort = get(sortKey, "recent");
+    sortSelect.value = ["recent","relevance"].indexOf(savedSort) >= 0 ? savedSort : "recent";
     [sourceSelect,categorySelect,sortSelect].forEach(function (select) {
       select.addEventListener("change", function () {
         set(sourceKey, sourceSelect.value); set(categoryKey, categorySelect.value);

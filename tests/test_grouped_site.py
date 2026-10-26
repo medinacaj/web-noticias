@@ -75,6 +75,18 @@ class GroupedSiteTests(unittest.TestCase):
         self.assertIn('cat-salud-ciencia', body.ids)
         self.assertEqual(len(body.ids), len(set(body.ids)))
 
+    def test_sections_render_recent_first_without_changing_editorial_input(self):
+        from datetime import timedelta
+        now = datetime(2026,10,25,15,tzinfo=timezone.utc)
+        stories = [{'title':f'Noticia {i}', 'category':'nacional', 'sources':['Medio'],
+                    'link':f'https://medio.example/{i}', 'published':(now-timedelta(hours=3-i)).isoformat(),
+                    'image':'', 'summary':''} for i in range(3)]
+        original = copy.deepcopy(stories)
+        parser = PageInspector(); parser.feed(news.render_sections({'nacional':stories}, now))
+        self.assertEqual([a['href'] for a in parser.anchors if a.get('data-key') == 'nacional'],
+                         [stories[i]['link'] for i in (2,1,0)])
+        self.assertEqual(stories, original)
+
     def test_generation_groups_sections_and_preserves_original_categories(self):
         now = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)
         stories = []

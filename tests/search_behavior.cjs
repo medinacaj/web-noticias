@@ -29,7 +29,7 @@ class Element {
   toggleAttribute(k, yes) {if (yes ?? !(k in this.attrs)) this.setAttribute(k, ''); else this.removeAttribute(k);}
   appendChild(c) {if (c.parentNode) c.parentNode.children.splice(c.parentNode.children.indexOf(c), 1);
     this.children.push(c); c.parentNode = this; return c;}
-  replaceChildren(...children) {this.children = []; this.text = ''; children.forEach(c => this.appendChild(c));}
+  replaceChildren(...children) {this.children.forEach(c=>{c.parentNode=null;}); this.children = []; this.text = ''; children.forEach(c => this.appendChild(c));}
   addEventListener(type, fn) {(this.events[type] ||= []).push(fn);}
   fire(type) {(this.events[type] || []).forEach(fn => fn({target:this}));}
   focus() {}

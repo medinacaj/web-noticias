@@ -824,20 +824,27 @@ def render_coverage_radar(stories):
             f'<ul>{items}</ul></section>')
 
 
+def recent_section_stories(stories):
+    """Orden visible inicial; conserva la selección editorial y no muta la entrada."""
+    return sorted(stories, key=lambda story: story_time(story).timestamp() if story_time(story) else float("-inf"), reverse=True)
+
+
 def render_sections(by_category, now):
     from scripts.presentation_groups import PRESENTATION_LABELS
     reserved = set(by_category)
     blocks = []
     present = [c for c in CATEGORIES if c["key"] in by_category]
     for number, cat in enumerate(present, start=1):
-        stories = by_category[cat["key"]]
+        original = by_category[cat["key"]]
+        editorial_order = {id(story): index for index, story in enumerate(original)}
+        stories = recent_section_stories(original)
         feature, rest = stories[0], stories[1:]
-        feature_html = (f'<article class="feature">{figure_html(feature)}'
+        feature_html = (f'<article class="feature" data-original-order="{editorial_order[id(feature)]}">{figure_html(feature)}'
                         f'<div class="news-body"><p class="kicker">{esc(category_label(feature))}</p>'
                         f'<h3 class="feature-title"{topic_anchor(feature, reserved)}>{title_link(feature)}</h3>'
                         f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
         compact = "".join(
-            f'<li{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
+            f'<li data-original-order="{editorial_order[id(s)]}"{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
             f'<div class="news-body"><p class="kicker">{esc(category_label(s))}</p>'
             f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
             for i, s in enumerate(rest))
@@ -888,7 +895,7 @@ def render_nav(sel, agenda=False):
 def build_jsonld(sel, now):
     page_url = SITE_URL + "/"
     ordered = ([sel["lead"]] if sel["lead"] else []) + sel["secondary"] + \
-        [s for k in sel["by_category"] for s in sel["by_category"][k]]
+        [s for k in sel["by_category"] for s in recent_section_stories(sel["by_category"][k])]
     data = {
         "@context": "https://schema.org",
         "@graph": [
