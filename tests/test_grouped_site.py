@@ -60,6 +60,21 @@ class GroupedSiteTests(unittest.TestCase):
         self.assertIn('>Ciencia y tecnología<', nav)
         self.assertNotIn('>Salud<', nav)
 
+    def test_health_only_lead_uses_science_menu_and_preserves_legacy_anchor(self):
+        from scripts.presentation_groups import group_sections
+        now = datetime(2026, 10, 25, tzinfo=timezone.utc)
+        story = {'title':'Avance médico', 'category':'salud-ciencia', 'sources':['Medio'],
+                 'link':'https://medio.example/salud', 'published':now.isoformat(), 'image':'', 'summary':''}
+        sel = news.select([story], now)
+        sel['by_category'] = group_sections(sel['by_category'])
+        menu = news.render_nav(sel)
+        self.assertIn('href="#cat-tecnologia">Ciencia y tecnología</a>', menu)
+        self.assertNotIn('href="#cat-salud-ciencia"', menu)
+        body = PageInspector(); body.feed(news.render_top(sel, now))
+        self.assertIn('cat-tecnologia', body.ids)
+        self.assertIn('cat-salud-ciencia', body.ids)
+        self.assertEqual(len(body.ids), len(set(body.ids)))
+
     def test_generation_groups_sections_and_preserves_original_categories(self):
         now = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)
         stories = []

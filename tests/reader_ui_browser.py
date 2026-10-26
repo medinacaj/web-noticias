@@ -220,6 +220,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_grouped_category_hash_works_on_direct_load_and_reload(self):
         # Salud conserva su ancla (enlaces ya compartidos) aunque no tenga entrada en el menú.
         for category in ('tecnologia', 'salud-ciencia'):
+            if not await self.page.locator('#cat-' + category).count():
+                continue  # Una edición real puede no publicar este tema; el caso Salud se prueba con fixture propio.
             await self.page.goto(self.url + '?category-entry=1#cat-' + category)
             target = self.page.locator('#cat-' + category)
             await target.wait_for(state='visible', timeout=2000)
@@ -242,6 +244,51 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await self.page.locator('#category-preference').input_value(), 'cultura')
         self.assertEqual(await self.page.evaluate('JSON.parse(localStorage.getItem("noticias:category:v1"))'), 'cultura')
         self.assertEqual(await self.page.locator('[data-source-hidden]').count(), hidden)
+
+    async def test_sidebar_arrow_is_centered_on_desktop_and_mobile(self):
+        for width in (320, 390, 768, 1440):
+            await self.page.set_viewport_size({'width':width,'height':844})
+            if width < 1024:
+                await self.page.locator('#menu-toggle').click()
+            bounds = await self.page.locator('#site-nav').bounding_box()
+            edge = await self.page.locator('#sidebar-edge').bounding_box()
+            self.assertAlmostEqual(edge['y'] + edge['height']/2, bounds['y'] + bounds['height']/2, delta=1, msg=width)
+            if width < 1024:
+                await self.page.locator('#menu-toggle').click()
+
+    async def test_archive_preserves_manual_theme_and_has_no_mobile_overflow(self):
+        await self.page.locator('#theme-toggle').click()
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'dark')
+        await self.page.goto(self.url + 'archivo/index.html')
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'dark')
+        toggle = self.page.locator('#theme-toggle')
+        self.assertTrue(await toggle.is_visible())
+        await toggle.click()
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
+        for width in (320,390,768,1440):
+            await self.page.set_viewport_size({'width':width,'height':844})
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
+            self.assertTrue(await toggle.is_visible())
+        await self.page.screenshot(path='/tmp/news-pending-archive-light.png')
+        await self.page.goto(self.url)
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
+
+    async def test_legacy_health_url_reveals_grouped_news_without_extra_menu_entry(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        now = datetime(2026,10,25,15,tzinfo=timezone.utc)
+        stories = [{'title':f'Nota {category} {i}', 'category':category, 'sources':[f'Medio {i}'],
+                    'link':f'https://editor{i}.example/{category}', 'published':now.isoformat(), 'image':'', 'summary':''}
+                   for i,category in enumerate(['tecnologia']*12 + ['salud-ciencia']*4)]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(stories, now, folder)
+            body = Path(folder,'index.html').read_text()
+        await self.page.route('**/?legacy-health=1', lambda route: route.fulfill(status=200,content_type='text/html',body=body))
+        await self.page.goto(self.url + '?legacy-health=1#cat-salud-ciencia')
+        await self.page.locator('#cat-salud-ciencia').wait_for(state='visible', timeout=2000)
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-salud-ciencia"]').count(), 0)
+        await self.page.wait_for_function("document.querySelector('#site-nav a[href=\"#cat-tecnologia\"]').getAttribute('aria-current') === 'location'")
 
     async def test_desktop_sidebar_defaults_visible_and_choice_survives_reload(self):
         nav, toggle = self.page.locator('#site-nav'), self.page.locator('#menu-toggle')

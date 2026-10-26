@@ -8,6 +8,7 @@ enlace, sección, fecha y medios. Sin fotografías, resúmenes ni texto de terce
 """
 from datetime import datetime, timedelta
 import html
+import json
 from zoneinfo import ZoneInfo
 
 TZ_CHILE = ZoneInfo("America/Santiago")
@@ -16,6 +17,19 @@ DIR = "archivo"
 WEEKDAYS = ("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo")
 MONTHS = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
           "septiembre", "octubre", "noviembre", "diciembre")
+
+THEME_BOOT = """<script>
+(function () {
+  var root = document.documentElement, preference = "system";
+  root.classList.add("js");
+  try { preference = localStorage.getItem("noticias:theme:v1") || "system"; } catch (error) {}
+  if (["system", "light", "dark"].indexOf(preference) < 0) preference = "system";
+  root.dataset.themePreference = preference;
+  root.dataset.theme = preference === "system"
+    ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : preference;
+})();
+</script>"""
+
 
 esc = lambda value: html.escape(str(value), quote=True)
 
@@ -58,31 +72,51 @@ def _by_day(archive, days):
 
 
 def _head(title, description, url, base):
+    structured = json.dumps({"@context":"https://schema.org", "@type":"CollectionPage",
+                            "name":title, "description":description, "url":url,
+                            "isPartOf":{"@type":"WebSite", "name":"Noticias del Momento", "url":base + "/"}},
+                           ensure_ascii=False).replace("</", "<\\/")
     return f"""<!DOCTYPE html>
 <html lang="es-CL">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{THEME_BOOT}
+<script src="../reader-ui.js" defer></script>
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="{esc(url)}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="{esc(url)}">
+<meta property="og:image" content="{esc(base)}/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(description)}">
+<meta name="twitter:image" content="{esc(base)}/og-image.png">
+<script type="application/ld+json">{structured}</script>
 <meta name="theme-color" content="#31584A">
 <link rel="icon" href="{esc(base)}/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{esc(base)}/apple-touch-icon.png">
 <style>
-:root{{color-scheme:light dark;--paper:#F2F1ED;--card:#FFFFFF;--ink:#282C30;--muted:#626970;--rule:#D7DBD4;--brand:#31584A;--accent:#C04C3E}}
-@media (prefers-color-scheme:dark){{:root{{--paper:#111315;--card:#1C1F23;--ink:#F7F6F2;--muted:#CCD1D6;--rule:#4C545E;--accent:#FF907F}}}}
+:root{{color-scheme:light;--paper:#E9E8E2;--card:#FFFFFF;--surface:#FAFAF7;--ink:#282C30;--muted:#626970;--rule:#D7DBD4;--brand:#31584A;--accent:#C04C3E}}
+:root[data-theme="dark"]{{color-scheme:dark;--brand:#B4DCC8;--paper:#111315;--card:#343A43;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#66717D;--accent:#FF907F}}
+@media (prefers-color-scheme:dark){{:root:not([data-theme="light"]){{color-scheme:dark;--brand:#B4DCC8;--paper:#111315;--card:#343A43;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#66717D;--accent:#FF907F}}}}
 *,*::before,*::after{{box-sizing:border-box}}
 body{{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}}
 a{{color:inherit;text-underline-offset:3px}}
 a:focus-visible,button:focus-visible{{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}}
 .wrap{{max-width:960px;margin:0 auto;padding:0 24px}}
-header{{background:var(--card);border-bottom:1px solid var(--rule)}}
+header{{background:var(--surface);border-bottom:1px solid var(--rule)}}
 header .wrap{{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}}
 .brand{{display:inline-flex;align-items:center;gap:10px;font:700 18px/1.2 "Source Serif 4",Georgia,serif;text-decoration:none}}
-.brand svg{{width:32px;height:32px;flex:none}}
+.brand img{{width:32px;height:32px;flex:none}}
 .back{{font-size:13px;font-weight:600}}
+.header-actions{{display:flex;align-items:center;gap:12px;flex:none}}
+.theme-toggle{{display:none;align-items:center;justify-content:center;min-width:40px;min-height:40px;padding:6px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);font:22px/1 system-ui;cursor:pointer}}
+.js .theme-toggle{{display:inline-flex}}
 main{{padding:32px 0 56px}}
 .eyebrow{{font:700 11px/1.4 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}}
 h1{{font:700 clamp(28px,4.5vw,40px)/1.2 "Source Serif 4",Georgia,serif;margin:6px 0 8px}}
@@ -99,11 +133,11 @@ ol li a{{font:600 16px/1.4 "Source Serif 4",Georgia,serif;text-decoration-thickn
 .meta{{display:block;margin-top:4px;color:var(--muted);font-size:12px}}
 .empty{{color:var(--muted)}}
 footer{{border-top:1px solid var(--rule);padding:20px 0;color:var(--muted);font-size:12px}}
-@media (max-width:600px){{.wrap{{padding:0 16px}}main{{padding-top:22px}}}}
+@media (max-width:600px){{.wrap{{padding:0 16px}}main{{padding-top:22px}}.brand{{font-size:14px}}.brand-tail{{display:block}}}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="{esc(base)}/"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#31584A"/><path d="M12.5 28V12l15 16V12" fill="none" stroke="#F7F6F2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.5 33h15" stroke="#FF907F" stroke-width="2.4" stroke-linecap="round"/></svg>Noticias del Momento</a><a class="back" href="{esc(base)}/">Volver a la portada</a></div></header>
+<header><div class="wrap"><a class="brand" href="{esc(base)}/"><img src="../logo-simbolo.svg" width="32" height="32" alt=""><span>Noticias <span class="brand-tail">del Momento</span></span></a><div class="header-actions"><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema"><span aria-hidden="true">◐</span></button><a class="back" href="{esc(base)}/" aria-label="Volver a la portada">Portada</a></div></div></header>
 """
 
 
