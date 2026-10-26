@@ -1,6 +1,269 @@
 {
- "actualizado": "2026-10-26T00:11:54Z",
+ "actualizado": "2026-10-26T02:30:37Z",
  "noticias": [
+  {
+   "category": "internacional",
+   "title": "Lula logra una histórica remontada contra Flávio Bolsonaro, quien dice que \"es imposible reconocer los resultados\"",
+   "summary": "A pesar de haber perdido en la primera vuelta, Luiz Inácio Lula da Silva logró una inédita victoria frente a Flávio Bolsonaro y será presidente por cuarta vez. La izquierda seguirá gobernando en la democracia más…",
+   "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/02fd/live/eb53b7a0-d0e0-11f1-93e1-3b657b665bcf.jpg",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "Lula logra una histórica remontada contra Flávio Bolsonaro, quien dice que \"es imposible reconocer los resultados\"",
+     "link": "https://www.bbc.co.uk/mundo/live/cm5ynp5y1871t?at_medium=RSS&at_campaign=rss",
+     "published": ""
+    }
+   ],
+   "link": "https://www.bbc.co.uk/mundo/live/cm5ynp5y1871t?at_medium=RSS&at_campaign=rss",
+   "published": null,
+   "first_seen": "2026-10-26T02:30:37Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Universidad de Concepción conquista el título nacional de básquetbol universitario en Antofagasta",
+   "summary": "",
+   "image": "https://canchaycalle.cl/wp-content/uploads/2026/10/Celebracion-del-equipo-campeon-UdeC.png",
+   "source_url": "https://canchaycalle.cl",
+   "sources": [
+    "canchaycalle.cl"
+   ],
+   "coverages": [],
+   "link": "https://canchaycalle.cl/universidad-de-concepcion-conquista-el-titulo-nacional-de-basquetbol-universitario-en-antofagasta/",
+   "published": "2026-10-26T02:21:30Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "cultura",
+   "title": "El documental chileno “El Método de Roumeau: De la cárcel al teatro” tendrá dos funciones en México",
+   "summary": "",
+   "image": "",
+   "source_url": "https://portalmetropolitano.cl",
+   "sources": [
+    "Portal Metropolitano"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSHluMWVDSkNEbVZVSklLYW5IbHA3bElsb1pyd3RiTi1VdnJnOVNYaDdINnpMRFJpUFN1TnJRdFpvZnRjcW44Tjg5el9wYjRqUjhWaWM0ckFVYmRlYm5LUnd2LTJnQ0FHWjRJMkdUbEhxcjZRQkxhUUFCSG9YZGFEclEwZlZjdDgzNVJZQ0dPMHJkSDNBOFhpTUtWenZRUkVBSElaM1lBOGJvUHFwdUp2blZmdW9nWUUwUUg3RUYxX3FxU0luakRN?oc=5",
+   "published": "2026-10-26T02:01:54Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "CL",
+    "MX"
+   ],
+   "discovery_edition": "CL-CINE"
+  },
+  {
+   "category": "deportes",
+   "title": "Lakers vencen a los Jazz en otra noche excepcional de Luka: anotó 52 puntos y superó marca de LeBron",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995486-lakers-vencen-a-los-jazz-en-otra-noche-excepcional-de-luka_-anoto-52-puntos-y-supero-marca-de-lebron.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/basquetbol/2026/10/25/lakers-vencen-a-los-jazz-en-otra-noche-excepcional-de-luka-anoto-52-puntos-y-supero-marca-de-lebron.shtml",
+   "published": "2026-10-26T01:26:03Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "deportes",
+   "title": "UdeC no levanta cabeza en Liga de Primera: cayó en casa ante Limache y se complica con el descenso",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995448-udec-no-levanta-cabeza-en-liga-de-primera_-cayo-en-casa-ante-limache-y-se-complica-con-el-descenso.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/25/udec-no-levanta-cabeza-en-liga-de-primera-cayo-en-casa-ante-limache-y-se-complica-con-el-descenso.shtml",
+   "published": "2026-10-26T00:59:11Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Lula conquista virada inédita e terá quarto mandato como presidente do Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.bbc.com",
+   "sources": [
+    "BBC"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoLWFxT3RLMXRuM0N6dzFzUzlDaDFzYnBKQW5zWGxqX01oVDU3QXJ2UkdjTk5MeW9YbVJwWmZKamluUmVlZVlaTGVZUjRvWEpCbjZKVFFDbmxTck9GWmJXdm1nRQ?oc=5",
+   "published": "2026-10-26T00:56:15Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Representantes de 46 países conhecem de perto votação e apuração das eleições no Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.tse.jus.br",
+   "sources": [
+    "Tribunal Superior Eleitoral"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTmE4MjhPcDZtRzlGZTYxSEVNRHBJLV8tSl8wRFlJc2JvY0UxeDVuX2hSNjBMZVZmV3owT2hPWFZLellPbjV5blZSUmEyd29mTzJEM1FsNkEwbHZOeHRQaXVFYVg0ZU5Zb2NpZE0wbDBlX011ZFdDNThjbVQ0S1M2b1RIS2dhZmZaaUJpOHJNQ0EtY1l2RUdIUXI3aS1qaDdqN3hXUWhwSmdJVzFVS0ZLVDBiSTF0SGl0bEYzOTFjbFc3Q2JGbmJpd0d2anlMN3FDX3J1S0M2NHhSSjdv?oc=5",
+   "published": "2026-10-26T00:51:00Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "politica",
+   "title": "Apoyo al gobierno de Chile cae en encuestas de opinión",
+   "summary": "",
+   "image": "https://www.prensa-latina.cu/wp-content/uploads/2026/08/Jose-Antonio-Kast-1.jpg",
+   "source_url": "https://www.prensa-latina.cu",
+   "sources": [
+    "Prensa Latina"
+   ],
+   "coverages": [],
+   "link": "https://www.prensa-latina.cu/2026/10/25/apoyo-al-gobierno-de-chile-cae-en-encuestas-de-opinion/",
+   "published": "2026-10-26T00:43:00Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Trump cuestiona triunfo de Lula en Brasil y afirma que se aplicó el \"manual de Joe Biden\"",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOb0ItQWpyUnRQRG1ONVJIRENPT0VaS0dwdWJoYklQZjQ2Z1duT1M1QmZKcEpJR3Q3a3FXbmNLMG91VWEwV25mQ3prcWpldDgwbE02REw4NDV3WG1RdXlncDhiTFFNMWllZUJrNHJIdk9ra2Vha29BdjFYNTQtZWFrMFdDdlF1ZDRiai1fTDZkemkwZ1RaQVpQdWhManpHb3N1U0VsT2V6RFFueVN3RjBFWXdsODR5VkdqakFlUjdWMkVYck9Xd1ZRQldjbno2eGVHRTdBOW1pbTVRT1JFei1SOUpBcUNZTnFYVGtELWExdVY0TTlzU3htaUQ5MU9FZw?oc=5",
+   "published": "2026-10-26T00:33:21Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "politica",
+   "title": "Tras remontada electoral, Lula da Silva es reelegido Presidente de Brasil",
+   "summary": "",
+   "image": "https://uchile-media-storage.nyc3.digitaloceanspaces.com/wp-content/uploads/2026/10/04121742/lula.jpg",
+   "source_url": "https://radio.uchile.cl",
+   "sources": [
+    "Universidad de Chile"
+   ],
+   "coverages": [],
+   "link": "https://radio.uchile.cl/2026/10/25/tras-remontada-electoral-lula-da-silva-es-reelegido-presidente-de-brasil/",
+   "published": "2026-10-26T00:24:12Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "coverage_countries": [
+    "BR"
+   ],
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Brasil, Lula vai completa 81 anos eleito presidente pela quarta vez",
+   "summary": "",
+   "image": "",
+   "source_url": "https://agenciabrasil.ebc.com.br",
+   "sources": [
+    "Agência Brasil"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSkJiajNPWmhka2F5YVo1dDBGOUxPQWRuNlVOMEo4dW9GaHdvaEtSTmI3S0p6MFlvcm8tUWlGcFBxdU1feTZpSjJYUGpzUDVfal9UNmNqdEZ6blBiVUVwRzFreUVReGdtT19XYWE4a1pxUVlBMFd6NENsUm93S3lZRl9BcWpuT1VLMkZxRWg0dFJTS2htRmJjUW5uRHV5TDJBOEIzRTF3NDZPYXMxcUZxb2gxNnE2cG1vUHQ2NVJHalBGTW85ZlA5RVFTanhDZUZhS0NxSXdNZ2RqR082N2c?oc=5",
+   "published": "2026-10-26T00:23:00Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Lula reeleito: imprensa internacional repercute resultado do 2º turno da eleição no Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://g1.globo.com",
+   "sources": [
+    "G1"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQi1mWVdYMEc4cFBucTNOeVFZam1KZV9zTmtaWlE0UUp2Ml91Rkd4UkVDX1JiQnBGdkNXREt6VmdPQk1uY1RVOERMU3B3ZU1KUXVQaTJ6LWZxWWE3ajRpczd0M0xpc1hmb09xNmNQejhxdmI2cWd5N0hFb2lmUzFPQkgxTE1EeWkwQm5mSGp4bVVQaUVseFA0SHlaOS1wR2doVkxpODZXRTZIMzhRWFlOQm9PbzR4bnVqWDhxek1Vb2RhMzJld0N5ZXd3aksyZFVsWk9JdjVhcjjSAecBQVVfeXFMTlE0c1hWRUhLOEdQUXRLTDZ4Y1ZyQWViQVgzWlFxSXhiOWU2d1k0LWNITVdadGhzekY5cC1vX2tLbFk5Mlp3S1F6eGxWTDlLTXdfbm44WGJ3SFBWOXM5MjlfV0Zua0JrN1Awd01acHpCMjFtajdwdGc1ZVZybUdDSXRkdkQ2VXE4S2VRak9SbTNxUWxDSE5RMG90NExHeEhqTWZTekc2YXdGbE9DR1hpMlVCNk5icVFhQmNybk50YzY3M2dVZ2VxX0RPTFlZS2NtelBVNDhtbXVLZ1lhcDVMS0tUeUpYUDZv?oc=5",
+   "published": "2026-10-26T00:20:08Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "regiones",
+   "title": "Vuelven las ☔️ Lluvias y Tormentas mañana lunes en Chile central",
+   "summary": "",
+   "image": "https://nubleonline.cl/wp-content/uploads/2026/10/lluvia-2-1.jpg",
+   "source_url": "https://nubleonline.cl",
+   "sources": [
+    "ñuble online"
+   ],
+   "coverages": [],
+   "link": "https://nubleonline.cl/lluvias-y-tormentas-este-lunes-26-en-chile-central/",
+   "published": "2026-10-26T00:11:55Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Lula é reeleito presidente do Brasil em virada histórica",
+   "summary": "",
+   "image": "",
+   "source_url": "https://agenciabrasil.ebc.com.br",
+   "sources": [
+    "Agência Brasil"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa3QyYXdNQW83dEU5RFRFNkRHZkZUS1lVbnp6bk5tU192dk9FVFJIZW1RTmthZWxqU3pMSGctQ0FMOVAyMFVxVldhOElKUk9GSEU2UXFCeXpWX1J0aGNIM3YtZDVvUGYtaEtqam5iZHVLUVQ2dzhtM19yY1lOdU5QSkd5bkJFVmVtNHhramwzaUV6bi14WDc5T1lEODZCSHNESzZZcnBORkp1MUt4bFBoMDlQRmU?oc=5",
+   "published": "2026-10-26T00:11:00Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "internacional",
+   "title": "Israel celebrará sus elecciones más importantes en años. ¿Qué está en juego?",
+   "summary": "",
+   "image": "https://media.cnn.com/api/v1/images/stellar/prod/ap26294328761487-20261025211630780.jpg?c=16x9&q=w_800,c_fill",
+   "source_url": "https://cnnespanol.cnn.com",
+   "sources": [
+    "CNN en Español"
+   ],
+   "coverages": [],
+   "link": "https://cnnespanol.cnn.com/2026/10/25/mundo/netanyahu-eisenkot-israel-elecciones-trax",
+   "published": "2026-10-26T00:02:00Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
   {
    "category": "internacional",
    "title": "El veterano gobernante de Serbia, Aleksandar Vucic, reconoce la derrota electoral ante un movimiento de protesta liderado por estudiantes",
@@ -23,6 +286,42 @@
    "first_seen": "2026-10-26T00:11:54Z"
   },
   {
+   "category": "latinoamerica",
+   "title": "Policía brasileña investiga a mujer acusada de hacer saludo nazi tras votar en Rio de Janeiro",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQaF9CLUEzdFJfX25GZEE1U29ZS3JJNjZLeEZVWXZqVjItZnBtSDlvNjdzR2tVMG9IeGwwMVlKbko2MGlSaXl6NTdwX08yYUZaZWNyUm0xZ2MxX1ZDaUlOeTlqOW1vc2RJLUQxLVpXZGFteGtHdkQ3eDM2WlpMUXg2aExhdlFiMldtTGxJNEJqaWN1WTdkOWtxSlVENGpTdnJWY2d2WkJxRlJzS3RXdTAyX2ptZmQxRnRqOFNPWWJMYzU5ZVZzdFpEdUlBTi04YVhDdTEyNEZuVWRzMWNlQTh0amcxS2VTY1J3ZVJJeHR4WmdXNi1C?oc=5",
+   "published": "2026-10-25T23:52:13Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Lula se impone a Bolsonaro en balotaje en Brasil y asegura su cuarto mandato",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOenRBWXhZYm9hNDBraWkzUTU1aGs2aXQ2U0M3ang0N193NC02RWtxYm5GdzY2cXNicXNvZDc2b0VGSnRfQzlndzNCcERVUl9sYU5SOXIxR2tpS1gtbnRBSGtuTkN0VDEyUzdjdHJRUk5yR2kzNEZpbHAxZHZnYUNfcTZWNkhMQnljMnBobWdsU3R3VllNcXVRbmhQa1l0RFFQRUHSAcMBQVVfeXFMTmZYcjdlR0duMUJGREhtRVFIbDJHa1FNYjdjS1c5clBoUFVYak0xVDRESlg3dGJnOGR3N0JsVUZvbjRGamtJYm1wdjVaSlhEVzkwc0VRNW9PRVdnX25NVThiWWdSZlVDazVmZXZ5dUlaelF0X3AxVHY3QUM4dExOTHlqWkVFODZTMllMdUUwLUpQUDdaXzVUaDZkVlVoYk53SGt0NXprQ09PWmEyNlZhZGxGVmdRaVBOTTZKUWVRTzdMR2RB?oc=5",
+   "published": "2026-10-25T23:45:53Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
    "category": "cultura",
    "title": "¿Tom Brady y Candice Swanepoel son pareja?",
    "summary": "",
@@ -37,6 +336,21 @@
    "first_seen": "2026-10-26T00:11:54Z",
    "metadata_only": true,
    "discovery_edition": "MX"
+  },
+  {
+   "category": "deportes",
+   "title": "Preocupación en Colo Colo: el primer diagnóstico de Leandro Hernández tras la fuerte entrada",
+   "summary": "",
+   "image": "https://media.dalealbo.cl/wp-content/uploads/sites/14/2026/10/25203204/colo-colo-liga-de-primera-leandro-hernandez-palestino-e1792971137178-1200x740.webp",
+   "source_url": "https://dalealbo.cl",
+   "sources": [
+    "Dale Albo"
+   ],
+   "coverages": [],
+   "link": "https://dalealbo.cl/liga-de-primera/preocupacion-en-colo-colo-el-primer-diagnostico-de-leandro-hernandez-tras-la-fuerte-entrada",
+   "published": "2026-10-25T23:33:10Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "deportes",
@@ -57,6 +371,40 @@
    "image_checked_at": "2026-10-26T00:11:54.746529Z"
   },
   {
+   "category": "cultura",
+   "title": "Quién es el ELIMINADO de La Granja VIP hoy, domingo 25 de octubre, y se va de la competencia en la Segunda Tem",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.tvazteca.com",
+   "sources": [
+    "TV Azteca"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS3JYTlZlNVI5LU15QzJCZmVNTXF0eTdBOU0zM3hkbVJmd0dXbTNwZm9PUHdCRlJQWk9aalZkM214QnNVRHdmVTNFcjR6WENkSHpSTE1qQUE4QmhkQjIyWVdrcjNoekliVFJtWGo1N0NpZDdmOWViUjVKR3hoamdlZ1N4MmFhRXA4Q1BTdnRmZk00aFNFQi1neENMYU5TMXVHVERqeURrYVN1TENjeW9FcEprcXFwbG1nMHoyZDlob9IBzAFBVV95cUxQRmlsSlVfNTYxaTczZXR1SU5sYTNadEhiUGNvSXZyR3U4eEJyRzJlcXBBcGV3d2M5ODNtWmpuN2lhUkFfR2pQbU1INzN3OEZaNFhMNzJYclNubWxLd3J6Vml6UlhkSldUYk90WjRMbjVHRHBTSVlqaFZxRHRZZVJxMl9yOS1lejZvLV9EOU9TYjcyNTN6SHc2aUJPRjhSVE96aGltQmMtRW14NFRERkdtOXVfbzZWWk9uUUxQdFotVTZvVnFxMG5nRW10eHY?oc=5",
+   "published": "2026-10-25T23:31:40Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "discovery_edition": "MX"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Imprensa internacional repercute confusão após extensão da votação no Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.brasildefato.com.br",
+   "sources": [
+    "Brasil de Fato"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNTNQWjJOY2E3WmdNMTMwMXlTSnRQUG4tZnVtLWUySG1zcVZLN3ZXemJHRzdBQ2FVZ1NyclpmZnMzM0hmWXB5R0pQVzVrR3FDdWxjb2d0SXNQQkVUQ194bU8tMlFJQlZvS0huLW9xS2g0bThWcHBHMnlycThXTU56X1kyTExqSWozeEhrVGNGb2NycTd3c0VVXzRuMFh6SmpyQzZmNDQ0QzdwZ0w5NDVnRl95UnVBVDZ2QVV6Nw?oc=5",
+   "published": "2026-10-25T23:16:00Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
    "category": "latinoamerica",
    "title": "Quem é o novo presidente do Brasil? Acompanhe a apuração do segundo turno",
    "summary": "",
@@ -73,6 +421,36 @@
    "coverage_countries": [
     "BR"
    ]
+  },
+  {
+   "category": "nacional",
+   "title": "Gonzalo Arenas llega con santos en la corte a la vocería",
+   "summary": "",
+   "image": "https://media-front.elmostrador.cl/2026/10/Arenas-700x411.png",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/25/gonzalo-arenas-llega-con-santos-en-la-corte-a-la-voceria/",
+   "published": "2026-10-25T23:00:05Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Las atajadas de Vozinha no bastaron: Colo Colo se enreda con Palestino y suma cuatro fechas sin ganar en el torneo",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/OWIXERO22NAOLD25L4V6QDCMWA.jpg?auth=d77b012f46d80807c2111515f9226ac96ebab921cf4b87ecd22f1243367e0de6&height=630&width=1200&focal=1825%2C1093",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/el-deportivo/noticia/las-atajadas-de-vozinha-no-bastaron-colo-colo-se-enreda-en-la-madeja-de-palestino-y-suma-cuatro-fechas-sin-ganar-en-la-liga/",
+   "published": "2026-10-25T22:54:03Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "regiones",
@@ -146,19 +524,54 @@
    "discovery_edition": "CL-CONCIERTOS"
   },
   {
-   "category": "nacional",
-   "title": "Gran columna de humo y fuertes estruendos en incendio que consume a planta industrial en Puerto Montt",
+   "category": "cultura",
+   "title": "Hasta las 7 de la mañana: Así fueron los shows de Solomun en Argentina en la previa de su regreso a Chile",
    "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995267-gran-columna-de-humo-y-fuertes-estruendos-en-incendio-que-consume-a-planta-salmonera-en-puerto-montt-1200x633.jpg",
+   "image": "",
+   "source_url": "https://los40.cl",
+   "sources": [
+    "LOS40"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY0c2RVFoWnpVMVlTb0N3N1F3S1l6OVZvZnR2ajhxc1BjVFJiZ28wb1R5VjJ0YVprVl80YkF0ZVNocnB5S3RNMW91SGoxT1l6b25jLVhpNUZZYXl3ZUFWaVN4bG93eGg2V0F2UXJtSGRQU1hqQTBmamk1aWJadEx5M2laUENWUmRlVVVYcEYyUHNpRWU3YzExTlhfeHZsbWtHNXlUeXdHYW9vRkFZN2c5aHVkTENHV0x6TFdkWkQ2UWdsakViUGRJQnQ3bzhfUdIB4gFBVV95cUxPRHlNVzdtWE0zbEdPQWJtY3hHS2gwampTUFJ3bmtQVXl1UUVpUXVIQXlPVTY3YkRsekNFbHI5TTJLNjdvRGZfMS1ZTHU0M2prQThUX0loclpKY010UjY2OWdCZE1ObDlKcTlCa09paHpXSU9LSkRxckVsWm1fajVZSTIzdVBjb0NBbVJDbGpET1dVcng0bV9xMG1CbGhIdXp2bmRQazJSTmRSeDRDODBlUlU2MDdvOWlhdjJVQm96OGc1WGxvZTBPV1RVWUlNUERURFVPeWZJZ1k4cDZZSlM3TUFn?oc=5",
+   "published": "2026-10-25T22:21:09Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "AR",
+    "CL"
+   ],
+   "discovery_edition": "CL-CONCIERTOS"
+  },
+  {
+   "category": "nacional",
+   "title": "García Ruminot admite errores del Gobierno en reforma de seguridad: \"Debimos haber explicado mejor\"",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995352-garcia-ruminot-admite-errores-del-gobierno-en-reforma-de-seguridad-debimos-haber-explicado-mejor.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2026/10/25/incendio-en-planta-salmonera-en-puerto-montt-alertan-por-quimicos-y-petroleo-en-bodegas.shtml",
-   "published": "2026-10-25T20:46:52Z",
-   "first_seen": "2026-10-25T21:41:42Z",
-   "image_checked_at": "2026-10-26T00:11:54.746529Z"
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/25/garcia-ruminot-admite-errores-del-gobierno-en-reforma-de-seguridad-debimos-haber-explicado-mejor.shtml",
+   "published": "2026-10-25T22:14:40Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Modders duplican el rendimiento de IA en las GeForce RTX 20, 30 y 40 para Linux y sus precios se disparan poco después",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.pcmrace.com",
+   "sources": [
+    "PC Master Race Latinoamérica"
+   ],
+   "coverages": [],
+   "link": "https://www.pcmrace.com/2026/10/25/geforce-rtx-20-30-40-gpu-unlock-linux/",
+   "published": "2026-10-25T22:10:53Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "deportes",
@@ -174,6 +587,21 @@
    "published": "2026-10-25T22:10:42Z",
    "first_seen": "2026-10-26T00:11:54Z",
    "image_checked_at": "2026-10-26T00:11:54.746529Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Cinco conclusiones rápidas del GP de Estados Unidos de F1 2026 en Austin",
+   "summary": "",
+   "image": "https://cdn-7.motorsport.com/images/amp/6Alv4g1Y/s6/andrea-kimi-antonelli-mercedes.jpg",
+   "source_url": "https://lat.motorsport.com",
+   "sources": [
+    "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally"
+   ],
+   "coverages": [],
+   "link": "https://lat.motorsport.com/f1/news/cinco-conclusiones-rapidas-gp-estados-unidos/10868341/",
+   "published": "2026-10-25T22:10:06Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "deportes",
@@ -265,7 +693,7 @@
    ],
    "coverages": [],
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQVI2UUpIcXk2c3NEbGExeWlMTnNuOUFneDZJYWcweldZb2J1QldmSER4bHNIM1dkRUNSQnNNTjktZHgxRzJKSENoaUtBYTkwT1YxZjNjR3pJam5KdnNPS1huMFotWGxXSUdfb2g3LVlQZ3owZTlWdE9FdFRrVXExOW9hZW42V01sWDFwc3JkeHpYQU0?oc=5",
-   "published": "2026-10-25T21:46:53Z",
+   "published": "2026-10-25T21:45:34Z",
    "first_seen": "2026-10-26T00:11:54Z",
    "metadata_only": true,
    "coverage_countries": [
@@ -289,22 +717,6 @@
    "coverage_countries": [
     "BR"
    ]
-  },
-  {
-   "category": "regiones",
-   "title": "Incendio que afecta a edificio ubicado en pleno centro de Concepción deja dos fallecidos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995257-incendio-que-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion-deja-dos-fallecidos.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile",
-    "El Informador Chile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/25/incendio-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion.shtml",
-   "published": "2026-10-25T20:41:22Z",
-   "first_seen": "2026-10-25T21:41:42Z",
-   "image_checked_at": "2026-10-26T00:11:54.746529Z"
   },
   {
    "category": "latinoamerica",
@@ -384,6 +796,22 @@
    "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/25/tras-presion-de-anfp-uc-confirma-que-se-acepto-propuesta-de-duelo-contra-audax-en-fecha-que-no-queria.shtml",
    "published": "2026-10-25T20:42:37Z",
    "first_seen": "2026-10-26T00:11:54Z",
+   "image_checked_at": "2026-10-26T00:11:54.746529Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Incendio que afecta a edificio ubicado en pleno centro de Concepción deja dos fallecidos",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995257-incendio-que-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion-deja-dos-fallecidos.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile",
+    "El Informador Chile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/25/incendio-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion.shtml",
+   "published": "2026-10-25T19:12:52Z",
+   "first_seen": "2026-10-25T21:41:42Z",
    "image_checked_at": "2026-10-26T00:11:54.746529Z"
   },
   {
@@ -472,6 +900,22 @@
    "published": "2026-10-25T20:08:11Z",
    "first_seen": "2026-10-25T21:41:42Z",
    "image_checked_at": "2026-10-25T21:41:42.605232Z"
+  },
+  {
+   "category": "cultura",
+   "title": "¿Qué significa el \"GOLF\" en la camiseta del Barcelona para el Clásico contra Real Madrid?",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.si.com",
+   "sources": [
+    "Sports Illustrated"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSW56R3J4cVNNbkthWTRoU3VJT1pLeldNUUZVTHFJQU4xaVZFZHpFcVdrYXduVkE0MVBZMkV6UmVjdG5Za2lfRDFlT1RXRWZCbDZCa2tPSlBaUEw4VkNOYy1FZ3JOcmgxcUh5cmloRExNODNRWEFoNVMyV2lUcDJFZ2IzakN6ZmJEamszSzJjckRaZ25oRHI0ajJGeG8zeFdWUzRpcW54SlphTHhYUEhZ?oc=5",
+   "published": "2026-10-25T20:06:52Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "discovery_edition": "ES"
   },
   {
    "category": "latinoamerica",
@@ -578,6 +1022,21 @@
    "discovery_edition": "MX"
   },
   {
+   "category": "nacional",
+   "title": "Gran columna de humo y fuertes estruendos en incendio que consume a planta industrial en Puerto Montt",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995267-gran-columna-de-humo-y-fuertes-estruendos-en-incendio-que-consume-a-planta-salmonera-en-puerto-montt-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2026/10/25/incendio-en-planta-salmonera-en-puerto-montt-alertan-por-quimicos-y-petroleo-en-bodegas.shtml",
+   "published": "2026-10-25T19:43:49Z",
+   "first_seen": "2026-10-25T21:41:42Z",
+   "image_checked_at": "2026-10-26T00:11:54.746529Z"
+  },
+  {
    "category": "regiones",
    "title": "El norte de Chile vibró con la 1ª edición del Tour Desafío Antofagasta",
    "summary": "",
@@ -593,7 +1052,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-25T21:41:42.605232Z"
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "deportes",
@@ -624,6 +1083,21 @@
    "published": "2026-10-25T19:00:00Z",
    "first_seen": "2026-10-26T00:11:54Z",
    "image_checked_at": "2026-10-26T00:11:54.746529Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Ordenan detener al secretario de transporte de Salvador por falta de buses para electores y PT pide extender votación",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/IPPED6VSYBFVJAJJMU7ACVXB3E.jpeg?auth=42fc21b6c3dbbeedeb73deb1148db0271b5daef90700e9be590c3dd8f653503d&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/mundo/noticia/ordenan-detener-al-secretario-de-transporte-de-salvador-por-falta-de-buses-para-electores-y-pt-pide-extender-votacion/",
+   "published": "2026-10-25T18:59:48Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "internacional",
@@ -825,6 +1299,22 @@
   },
   {
    "category": "cultura",
+   "title": "Arturo Elias Slim y Paula Albarrán celebran su boda; los primeros detalles",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.revistaclase.mx",
+   "sources": [
+    "Revista Clase"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaXJPVGdYc252Y2twVjY2blZXNF8xSFhBZ2NOMWxIQ051ZENSNko3RlBwcGZlSk0wMk4xcjlteUVOaTFjRUkwSTdvMTRMdXNCRTZzTUJ2d2UxXzVmZVZVaDVIMDRRZktSWkdvRTZ1OW1OdHBjanF5empQV3BSN1Bxd09IS3JqaEVrV09SMXM5dzRFYk9ORjB1bFhLeXZJQmZERF9PRXFXX1JGcFBBZjc1Ng?oc=5",
+   "published": "2026-10-25T17:55:13Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "discovery_edition": "MX"
+  },
+  {
+   "category": "cultura",
    "title": "'You can see everything' recauda casi 20 millones de dólares este fin de semana y busca llegar a los Oscar",
    "summary": "",
    "image": "",
@@ -941,6 +1431,24 @@
   },
   {
    "category": "latinoamerica",
+   "title": "Líder opositora María Corina Machado regresa a Venezuela",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN0JqbDZEQnFVM3hjYVB1amZDbWR6cmJ4NFlUNk9ZU2ktdHhoNldPaHk3OVFObk80eEhEM2FZVzFwYWNNRGQ2QjZpNUp6bmMyUzBPNUwxanNNaDhHMWItRnFJSHllU0pJOHJ3dHpyU0JKdEZKNTFCMmtWOUttWDUtbkFOSWZhZ3NUNVFRUVlNYy1SWHFGczZvLTF5LTZEb2NfNXdDYjVCaXV1NGdPOHFF?oc=5",
+   "published": "2026-10-25T17:21:52Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "VE"
+   ]
+  },
+  {
+   "category": "latinoamerica",
    "title": "Brasil pode ser próximo em 'onda MAGA' e última chance de Lula 'gigante da esquerda': como a imprensa internacional vê a eleição",
    "summary": "",
    "image": "",
@@ -1043,6 +1551,21 @@
    "published": "2026-10-25T16:47:22Z",
    "first_seen": "2026-10-26T00:11:54Z",
    "image_checked_at": "2026-10-26T00:11:54.746529Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "¿Puede Alemania reformar su economía antes de que la AfD siga creciendo?",
+   "summary": "",
+   "image": "https://static.dw.com/image/79310135_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/puede-alemania-reformar-su-econom%C3%ADa-antes-de-que-la-afd-siga-creciendo/a-79749406",
+   "published": "2026-10-25T16:45:44Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "deportes",
@@ -1183,6 +1706,22 @@
    "image_checked_at": "2026-10-25T17:18:32.903732Z"
   },
   {
+   "category": "cultura",
+   "title": "Ballet Folclórico de la UdeG celebra 60 años con más de 200 artistas en escena",
+   "summary": "",
+   "image": "",
+   "source_url": "https://oem.com.mx",
+   "sources": [
+    "El Sol de México"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYVBBREFKZlVMTHhBdEFyb09kMzF4SDloT0tfSTlUX3hQazhlN1VEZVNuQVhGcVR3QnJybEV0TkI5ektfVjZzVHM4c1hJU2xXZEhvWldrUzdIT19zNnh4d2JRLWYwTVhVTjNtWmFzdGhwOUVtR2xUWUpjYkZ5cWhpN3JVbkRqSmY1Yi15RzVTbl9pT3hQYVQtcC0zNzJaXzZqQTN5TTMxM294MjBnTHFOOEVJRmg1VmZiRjlMWUotR3NaRTVTOGc?oc=5",
+   "published": "2026-10-25T16:12:08Z",
+   "first_seen": "2026-10-26T02:30:37Z",
+   "metadata_only": true,
+   "discovery_edition": "MX"
+  },
+  {
    "category": "politica",
    "title": "Senadora Provoste emplaza a Gobierno del presidente Kast por protección de la infancia: «los niños y niñas de Chile no pueden esperar y nosotros no vamos a callar",
    "summary": "",
@@ -1295,7 +1834,7 @@
    "link": "https://www.elboyaldia.cl/noticia/sociedad/bhp-tiene-vacantes-en-dos-importantes-mineras-de-antofagasta-como-postular-este-mes",
    "published": "2026-10-25T15:48:23Z",
    "first_seen": "2026-10-25T16:30:35Z",
-   "image_checked_at": "2026-10-25T21:41:42.605232Z"
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "regiones",
@@ -1310,7 +1849,7 @@
    "link": "https://www.elmorrocotudo.cl/noticia/sociedad/minera-meridian-el-penon-ofrece-puesto-profesional-en-antofagasta-hasta-el-30-de-oc",
    "published": "2026-10-25T15:45:00Z",
    "first_seen": "2026-10-25T16:30:35Z",
-   "image_checked_at": "2026-10-25T21:41:42.605232Z"
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "deportes",
@@ -1583,7 +2122,7 @@
    "link": "https://www.elnortero.cl/noticia/sociedad/pronostico-del-tiempo-en-antofagasta-de-este-26-de-octubre-viento-de-hasta-40-kmh-m",
    "published": "2026-10-25T14:43:44Z",
    "first_seen": "2026-10-25T16:30:35Z",
-   "image_checked_at": "2026-10-25T21:41:42.605232Z"
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "regiones",
@@ -1598,7 +2137,7 @@
    "link": "https://www.elmartutino.cl/noticia/sociedad/pronostico-del-tiempo-en-valparaiso-de-este-26-de-octubre-las-nubes-dominaran-el-lu",
    "published": "2026-10-25T14:43:44Z",
    "first_seen": "2026-10-25T16:30:35Z",
-   "image_checked_at": "2026-10-25T21:41:42.605232Z"
+   "image_checked_at": "2026-10-26T02:30:37.872920Z"
   },
   {
    "category": "deportes",
@@ -1695,6 +2234,20 @@
    "published": "2026-10-25T13:58:35Z",
    "first_seen": "2026-10-25T18:22:11Z",
    "image_checked_at": "2026-10-25T18:22:11.276459Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Magdalena Müller sobre Kast: \"Venían a solucionar el desempleo y ha sido una mentira\"",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSWVBZXlyRzlZYUlIMGRtc0xpUVMyN2c5LUloSW1oa2dRTXVpc2RBNUZSTUgzbU5lVmhkWFhDWHgxT2Iya0pua1VxQk9ucjgzZDdxODdad0MxbXhqdUlHNFp4OGdPY3FYRlAzUEhiOERCY01aUzZIbmpiOWpMb1BfbmdZWVdqRTNYOFgxbHBGel80ckU5MENkZEdNSzZUOFRxOHk5ZlJaZ0FzcF9yd2tGbjVJeDJXY3lXcm9Bam9ubGx3ZzIxYWRhQUdUM1BMcWR3dEFSLWRKRjhWU3ZhWDZRd203WdIBjAFBVV95cUxQY1BMc1NCR0kyTGxLQ2VwS3EwRF9acXl0VEY2MWdQa3NxeXBVN3Q4eEVURkZaQzRkN05oN1dsRzFQcHBsV0t0TXVkUi1OZ0p5TGlnckRjaHZ4OWJXQTZPQU56R1l4cFdPdGdpaGVxXzUxMHhERkJoNHFSbXk5Y3FtV1BZU0oybVUwSms4NA?oc=5",
+   "published": "2026-10-25T13:55:00Z",
+   "first_seen": "2026-10-26T02:30:37Z"
   },
   {
    "category": "politica",
@@ -2168,6 +2721,20 @@
    "discovery_edition": "ES"
   },
   {
+   "category": "deportes",
+   "title": "Barcelona vs Real Madrid: Dónde ver EN VIVO y ONLINE el clásico de España",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.chilevision.cl",
+   "sources": [
+    "Chilevisión"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSlVEWDdaYjZZSHZ4X2RoLWRtMTYzQTlzck5LamxFU2kzS1QzZTRMUUVRZExpanRya3I4QnF4S0FNcGEzM2dsZ3RjUmpfeURWZW9PZzk3TGRYTENpREY0bjc3WkZyeEpXZExtSjZ5WVdENHNTTDlQSmdIOXRuRVZaUlJQeVp2TVJTVV83bU5sdEVSTm1PZDREV1dfR2dnRGw3dFdpSW41cTZaWnlrVU0wVUc3Wi1FNThlcExJT0xxMlFCUQ?oc=5",
+   "published": "2026-10-25T11:16:58Z",
+   "first_seen": "2026-10-26T02:30:37Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "Brasileiros decidem entre continuidade da esquerda e retorno do bolsonarismo à presidência",
    "summary": "",
@@ -2184,21 +2751,6 @@
    "coverage_countries": [
     "BR"
    ]
-  },
-  {
-   "category": "internacional",
-   "title": "Obama acusa a Trump de \"caos y crueldad\" antes de las elecciones de medio mandato",
-   "summary": "",
-   "image": "https://static.dw.com/image/79754011_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/obama-acusa-a-trump-de-caos-y-crueldad-en-m%C3%ADtines-por-los-dem%C3%B3cratas/a-79754422",
-   "published": "2026-10-25T11:13:48Z",
-   "first_seen": "2026-10-25T16:30:35Z",
-   "image_checked_at": "2026-10-25T16:30:35.818633Z"
   },
   {
    "category": "cultura",
@@ -2265,6 +2817,21 @@
    "first_seen": "2026-10-25T16:48:40Z",
    "metadata_only": true,
    "discovery_edition": "MX"
+  },
+  {
+   "category": "internacional",
+   "title": "Obama acusa a Trump de \"caos y crueldad\" antes de las elecciones de medio mandato",
+   "summary": "",
+   "image": "https://static.dw.com/image/79754011_6.jpg",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://www.dw.com/es/obama-acusa-a-trump-de-caos-y-crueldad-en-m%C3%ADtines-por-los-dem%C3%B3cratas/a-79754422",
+   "published": "2026-10-25T11:02:37Z",
+   "first_seen": "2026-10-25T16:30:35Z",
+   "image_checked_at": "2026-10-25T16:30:35.818633Z"
   },
   {
    "category": "nacional",
@@ -3055,322 +3622,145 @@
    "coverage_countries": [
     "BR"
    ]
-  },
-  {
-   "category": "nacional",
-   "title": "Funcionaria acumuló 345 días de licencias médicas, fue desvinculada y Corte respaldó la decisión",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994954-trabajadora-que-acumulo-345-dias-de-licencia-medica-fue-removida-del-cargo.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-magallanes/2026/10/24/funcionaria-acumulo-345-dias-de-licencias-medicas-fue-desvinculada-y-corte-respaldo-la-decision.shtml",
-   "published": "2026-10-25T02:19:28Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "image_checked_at": "2026-10-25T04:31:13.539667Z"
-  },
-  {
-   "category": "regiones",
-   "title": "Fiscalía de Antofagasta acusa a 22 personas por trata de personas y pide penas que suman 642 años",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.fiscaliadechile.cl",
-   "sources": [
-    "Fiscalía de Chile"
-   ],
-   "coverages": [],
-   "link": "https://www.fiscaliadechile.cl/actualidad/noticias/regionales/fiscalia-de-antofagasta-acusa-22-personas-por-trata-de-personas-y",
-   "published": "2026-10-25T01:57:19Z",
-   "first_seen": "2026-10-25T14:18:31Z",
-   "image_checked_at": "2026-10-26T00:11:54.746529Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Israel desplaza a miles de residentes de Hebrón tras ataque que terminó con dos soldados muertos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994936-israel-desplaza-a-miles-de-residentes-de-hebron-tras-ataque-que-termino-con-dos-soldados-muertos.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/mediooriente/2026/10/24/israel-desplaza-a-miles-de-residentes-de-hebron-tras-ataque-que-termino-con-dos-soldados-muertos.shtml",
-   "published": "2026-10-25T01:46:54Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "image_checked_at": "2026-10-25T04:31:13.539667Z"
-  },
-  {
-   "category": "cultura",
-   "title": "BTS, TXT, SEVENTEEN y más: HYBE CINE FEST 2026 llega a Chile con conciertos y experiencias en 3D",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.meganoticias.cl",
-   "sources": [
-    "Meganoticias"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWkwwaGEwZEhnZEZ4NlhmS3plN1hGY1ZhUUppM2xaZVd3NExpTWNoWUlaYWpxTFRCY2tqT1BlNld5UmNBamRvS1FvV2NxUEVtSUNKeWc3S2w1WEctcllFQW9YM3p3YmNLM3NFd1V0ajFNdHR4Vk1WbkUwREdMSFZWbnVDTlhIUmhQaEFRQzVUSFB0a01LVFVSNTBsZFotOFZmOFBGNG5iTmZXdnRQTmZLR1RFajJEUdIBuwFBVV95cUxPVEdKNkNjR0U1WC1zQXBmX1lYd3hpVFVJYkVSVk42RXVNOVRfNXFSRF9wemhvcVV6MGtLR0EyQTlSN29yMlY2eDBmNnFUOGZueHFjYjh0Z0dMOHJMS0NJVTN4STJ0VFV2QTlWbWdURHFuM1piRG43aVJSLXI1cDB5MXI4ZS14a25Dc1NJM0JKUExZNW5kcmNJcTBRemRVMk9PcFlReGs4UHB2VG9KR1NIRGk2c0FOZFlsMW04?oc=5",
-   "published": "2026-10-25T01:44:00Z",
-   "first_seen": "2026-10-25T17:22:54Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "CL"
-   ],
-   "discovery_edition": "CL-CINE"
-  },
-  {
-   "category": "cultura",
-   "title": "BTS, TXT, SEVENTEEN y más: HYBE CINE FEST 2026 llega a Chile con conciertos y experiencias en 3D",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.meganoticias.cl",
-   "sources": [
-    "Meganoticias"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVEdKNkNjR0U1WC1zQXBmX1lYd3hpVFVJYkVSVk42RXVNOVRfNXFSRF9wemhvcVV6MGtLR0EyQTlSN29yMlY2eDBmNnFUOGZueHFjYjh0Z0dMOHJMS0NJVTN4STJ0VFV2QTlWbWdURHFuM1piRG43aVJSLXI1cDB5MXI4ZS14a25Dc1NJM0JKUExZNW5kcmNJcTBRemRVMk9PcFlReGs4UHB2VG9KR1NIRGk2c0FOZFlsMW040gG7AUFVX3lxTE9UR0o2Q2NHRTVYLXNBcGZfWVh3eGlUVUliRVJWTjZFdU05VF81cVJEX3B6aG9xVXowa0tHQTJBOVI3b3IyVjZ4MGY2cVQ4Zm54cWNiOHRnR0w4ckxLQ0lVM3hJMnRUVXZBOVZtZ1REcW4zWmJEbjdpUlItcjVwMHkxcjhlLXhrbkNzU0kzQkpQTFk1bmRyY0lxMFF6ZFUyT09wWVF4azhQcHZUb0pHU0hEaTZzQU5kWWwxbTg?oc=5",
-   "published": "2026-10-25T01:44:00Z",
-   "first_seen": "2026-10-25T17:22:54Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "CL"
-   ],
-   "discovery_edition": "CL-CONCIERTOS"
-  },
-  {
-   "category": "regiones",
-   "title": "Armada de Chile participó en la conmemoración del Día de la Música en Valparaíso",
-   "summary": "",
-   "image": "https://www.armada.cl/armada/site/artic/20261024/imag/foto_0000002420261024224323/whatsapp_image_20261024_at_143513.jpeg",
-   "source_url": "https://www.armada.cl",
-   "sources": [
-    "| Armada de Chile"
-   ],
-   "coverages": [],
-   "link": "https://www.armada.cl/armada-de-chile-participo-en-la-conmemoracion-del-dia-de-la-musica-en",
-   "published": "2026-10-25T01:42:00Z",
-   "first_seen": "2026-10-25T09:45:04Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-25T09:45:04.339953Z"
-  },
-  {
-   "category": "tecnologia",
-   "title": "¿Puede Alemania reformar su economía antes de que la AfD siga creciendo?",
-   "summary": "",
-   "image": "https://static.dw.com/image/79310135_6.jpg",
-   "source_url": "https://www.dw.com",
-   "sources": [
-    "DW.com"
-   ],
-   "coverages": [],
-   "link": "https://www.dw.com/es/puede-alemania-reformar-su-econom%C3%ADa-antes-de-que-la-afd-siga-creciendo/a-79749406",
-   "published": "2026-10-25T01:35:05Z",
-   "first_seen": "2026-10-25T09:45:04Z",
-   "image_checked_at": "2026-10-25T09:45:04.339953Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Ecuador reúne 100 startups en congreso indoamericano",
-   "summary": "",
-   "image": "",
-   "source_url": "https://ecosistemastartup.com",
-   "sources": [
-    "El Ecosistema Startup"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSTBYS2RHcVA1cTVfUUExS3ZVeDN0cjg2emdKSk5vNUxZaFo0LUFuc2JVNjVTbnVMVndYOTUwWVVtMEl3SDFtZWxjc05nbjhBZG42cVhtUk1JUzBObWJadkljdUoyelNTXzRra3J4VElVaU1fa1NKeGhOcnQ4QzZaV0R5a1RZVWNqUWw4?oc=5",
-   "published": "2026-10-25T01:33:32Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "EC"
-   ]
-  },
-  {
-   "category": "deportes",
-   "title": "Las grandes sorpresas de Colo Colo en la lista de citados para visitar a Palestino en la Liga de Primera",
-   "summary": "",
-   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/24221714/fernando-ortiz-citados-colo-colo-palestino-e1792891276212-1200x740.webp",
-   "source_url": "https://redgol.cl",
-   "sources": [
-    "RedGol"
-   ],
-   "coverages": [],
-   "link": "https://redgol.cl/colocolo/las-grandes-sorpresa-de-colo-colo-en-la-lista-de-citados-para-visitar-a-palestino-en-la-liga-de-primera",
-   "published": "2026-10-25T01:29:04Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "image_checked_at": "2026-10-25T04:31:13.539667Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Meteorología emitió nuevos avisos de tormentas, granizos y fuertes vientos en siete regiones",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261024/imag/foto_0000000120261024215634.png",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/pais/tiempo/meteorologia-emitio-nuevos-avisos-de-tormentas-granizos-y-fuertes/2026-10-24/215634.html",
-   "published": "2026-10-25T01:19:00Z",
-   "first_seen": "2026-10-25T09:45:04Z",
-   "image_checked_at": "2026-10-25T09:45:04.339953Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Detienen a adolescente de 15 años por encerrona a Mónica Rincón: banda estaría detrás de otros robos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994928-detienen-a-adolescente-de-15-anos-por-encerrona-a-monica-rincon-banda-estaria-detras-de-otros-robos.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/24/detienen-a-adolescente-de-15-anos-por-encerrona-a-monica-rincon-banda-estaria-detras-de-otros-robos.shtml",
-   "published": "2026-10-25T01:15:43Z",
-   "first_seen": "2026-10-25T12:57:14Z",
-   "image_checked_at": "2026-10-25T12:57:14.255415Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Brasil de Pelotas goleia o União Frederiquense e garante acesso ao Gauchão 2027",
-   "summary": "",
-   "image": "",
-   "source_url": "https://gauchazh.clicrbs.com.br",
-   "sources": [
-    "GZH"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNZVJnbksyRTF1ZU1ZbFpuRXB2RXVaVnJLX1ZXcUlsbzJ6TEZ0U2tzV243Nm9ic2NGeDgxUW1OcGhHMTlMRUxHdTFPMTZCa01CdXc1OU1aZ202YkRyYzF2OS05VTBNeGhqQlVKbVJCT3hwemVWR3FQUGNXTTZzVGZialdXdl93UV9malI0S01iX2R4cFFzdzhjN0RZSWVsLWpaX0VYMTJzT1dteTY0U3BHMkhwd0lDNkxoUkFNbFdTdnJ0MVNxNHFRN29pU0NqNElwdEFETk1PZlFERlFQLTlzVkNueF9mSl90RXNPNXJwLTlNZDk0OHdxM0JFeXFCOWx5d3dHZFVuOA?oc=5",
-   "published": "2026-10-25T01:08:09Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "deportes",
-   "title": "Un tiempo por lado y el descenso asedia: O’Higgins iguala ante Cobresal y ninguno respira tranquilo en la t...",
-   "summary": "",
-   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/24220212/cobresal-ohiggins-liga-de-primera-2026-e1792890149410-1200x740.webp",
-   "source_url": "https://redgol.cl",
-   "sources": [
-    "RedGol"
-   ],
-   "coverages": [],
-   "link": "https://redgol.cl/chile/un-tiempo-por-lado-y-el-descenso-asedia-ohiggins-iguala-ante-cobresal-y-ninguno-respira-tranquilo-en-la-tabla",
-   "published": "2026-10-25T01:03:48Z",
-   "first_seen": "2026-10-25T17:18:32Z",
-   "image_checked_at": "2026-10-25T17:18:32.903732Z"
-  },
-  {
-   "category": "deportes",
-   "title": "O’Higgins y Cobresal igualaron en Rancagua y aún no logran alejar el fantasma de la Primera B",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6994925-ohiggins-cobresal-liga-de-primera.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/24/ohiggins-y-cobresal-igualaron-en-rancagua-y-aun-no-logran-alejar-el-fantasma-de-la-primera-b.shtml",
-   "published": "2026-10-25T00:59:54Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "image_checked_at": "2026-10-25T04:31:13.539667Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Brasil vence o União Frederiquense por 3 a 0 e está de volta à elite do futebol gaúcho",
-   "summary": "",
-   "image": "",
-   "source_url": "https://ahoradosul.com.br",
-   "sources": [
-    "A Hora do Sul"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdVh4Mnd4VGN0bjNXWXdxZnhweXFmVl9uX1k0S1pwODZIQVJUTU1WbGZBVTY3dWJVdUlaZXpibmtTZGRxcHVSY1c5Uk9mRHRWRkROLXpnT1ZqR19IVGNnM3c3OVN6WVB5bXFaR2hoSFBTT2F3UmtORktNMTVqWkN6eXVSTEtDR3Utbmc2Mm5wSkpZZk9DX0tCT3JESkVFXzJrX2Zrc3pMbk45LTlvZGl5NmE3R0g4ZnEwNmJXNHlQMWRxT2ltay1paG9qRTd6c2M?oc=5",
-   "published": "2026-10-25T00:53:00Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "cultura",
-   "title": "Todas las celebridades en la alfombra roja de la Gala Vogue de Día de Muertos 2026: Vota por tu look favorito",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.vogue.mx",
-   "sources": [
-    "Vogue México"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwOVNnX3JtdTlXc25IZFY2SjN1OEhmUkpfS1FpT2RnbkhDYm1WM2JwMjZVZE9Wamx5b1owblFaMmgxNVZMUG5MRTl1Z0RfZm96dXIzR3VIM094Nlo4cDZ6Qlh2djNJWXpYa0E?oc=5",
-   "published": "2026-10-25T00:46:21Z",
-   "first_seen": "2026-10-25T18:22:11Z",
-   "metadata_only": true,
-   "discovery_edition": "MX"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Equipo Cuba de Futsal se alista en Nicaragua para Copa de Naciones",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.prensa-latina.cu",
-   "sources": [
-    "Prensa Latina"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc0RmbGVWdVRMZ3RrcXVBRkZJMFQ2WVJXT1V0S3VMem54T2NtWVZha0paVDRMT041d1VjLVZ3RzU2Z2gtblJoVG16NGNhcWFRUXluclU2dm13WUtFNUNQTnVId2h4T1ZtS2JhSmI4WEsxVm9EX2g2QVpIY255NWljcEhuamhiZGJ3MkNXaXlseVpVM0NFc3M2ZndrX2ZJY0htT3h0UXR5TGs1OEk?oc=5",
-   "published": "2026-10-25T00:23:00Z",
-   "first_seen": "2026-10-25T04:31:13Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "CU",
-    "NI"
-   ]
-  },
-  {
-   "category": "cultura",
-   "title": "El Renzi se renueva con el estreno de la película de terror “Madre Siniestra”",
-   "summary": "",
-   "image": "",
-   "source_url": "https://diariolapluma.com.ar",
-   "sources": [
-    "https://diariolapluma.com.ar/"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbDZGbjJXYjJKbXBoaUZ2WDI2V3VZZzMtOEhwR0NSZGVYTXAxbWZZdkhGZXFEQ1ZXdnlRV01PTHZSWU5CdGItTU8zemZIYzVUblJ1R3A5bFVBUnl0N1hYdXRoLUZVa0VVQzZWTWtfRE1FTmd6bDlZVlBhSG1QeVhrclFGQkZLM0s1X3RISTRIcFVhb1Vaa3ZtOXdLMGtndEtvQWxyY0RrU0w?oc=5",
-   "published": "2026-10-25T00:21:42Z",
-   "first_seen": "2026-10-25T21:41:42Z",
-   "metadata_only": true,
-   "discovery_edition": "CL-CINE"
-  },
-  {
-   "category": "cultura",
-   "title": "‘Chicharito’ desafina al cantar con Cristian Castro un éxito de José José y acepta: “Soy un volcán apagado”",
-   "summary": "",
-   "image": "",
-   "source_url": "https://latinus.us",
-   "sources": [
-    "LatinUS"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNV05ud3dKT2M2ZjNQOXEtalFtTEQ3RlhaREZiZTh2NElXQVlKQmNQNEtQQ1VuXzNIekM3NTA0Tm93LWw0UWNRRlhYRDNYc3lnSEgxLUJCN1YzR29mM2I3SVRzN3g3WjAySmxWUnFfM05Nekc4VWp0RzlzZnpHdDZMT0pjTWFiNlpibkhFZFJMQkhoRmxNbGVGbU4yZmczLTZVQVUzWmR6TXdxTzFuN0ZIQmFvcFY4UjA1bVR3N3UyVzJUWF82UFkxYjMxUXFEbHZTQWNodzltVFhJUi1RcWdBckEzbk5EQ0VSQlZzNE0tQ2tka2dJSlV5SjhCRQ?oc=5",
-   "published": "2026-10-25T00:12:52Z",
-   "first_seen": "2026-10-25T21:41:42Z",
-   "metadata_only": true,
-   "discovery_edition": "MX"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Lula logra una histórica remontada contra Flávio Bolsonaro, quien dice que \"es imposible reconocer los resultados\"",
+   "link": "https://www.bbc.co.uk/mundo/live/cm5ynp5y1871t?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-26T02:30:37Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Universidad de Concepción conquista el título nacional de básquetbol universitario en Antofagasta",
+   "link": "https://canchaycalle.cl/universidad-de-concepcion-conquista-el-titulo-nacional-de-basquetbol-universitario-en-antofagasta/",
+   "category": "regiones",
+   "published": "2026-10-26T02:21:30Z",
+   "sources": [
+    "canchaycalle.cl"
+   ]
+  },
+  {
+   "title": "El documental chileno “El Método de Roumeau: De la cárcel al teatro” tendrá dos funciones en México",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSHluMWVDSkNEbVZVSklLYW5IbHA3bElsb1pyd3RiTi1VdnJnOVNYaDdINnpMRFJpUFN1TnJRdFpvZnRjcW44Tjg5el9wYjRqUjhWaWM0ckFVYmRlYm5LUnd2LTJnQ0FHWjRJMkdUbEhxcjZRQkxhUUFCSG9YZGFEclEwZlZjdDgzNVJZQ0dPMHJkSDNBOFhpTUtWenZRUkVBSElaM1lBOGJvUHFwdUp2blZmdW9nWUUwUUg3RUYxX3FxU0luakRN?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T02:01:54Z",
+   "sources": [
+    "Portal Metropolitano"
+   ]
+  },
+  {
+   "title": "Lakers vencen a los Jazz en otra noche excepcional de Luka: anotó 52 puntos y superó marca de LeBron",
+   "link": "https://www.biobiochile.cl/noticias/deportes/basquetbol/2026/10/25/lakers-vencen-a-los-jazz-en-otra-noche-excepcional-de-luka-anoto-52-puntos-y-supero-marca-de-lebron.shtml",
+   "category": "deportes",
+   "published": "2026-10-26T01:26:03Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "UdeC no levanta cabeza en Liga de Primera: cayó en casa ante Limache y se complica con el descenso",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/25/udec-no-levanta-cabeza-en-liga-de-primera-cayo-en-casa-ante-limache-y-se-complica-con-el-descenso.shtml",
+   "category": "deportes",
+   "published": "2026-10-26T00:59:11Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Lula conquista virada inédita e terá quarto mandato como presidente do Brasil",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoLWFxT3RLMXRuM0N6dzFzUzlDaDFzYnBKQW5zWGxqX01oVDU3QXJ2UkdjTk5MeW9YbVJwWmZKamluUmVlZVlaTGVZUjRvWEpCbjZKVFFDbmxTck9GWmJXdm1nRQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T00:56:15Z",
+   "sources": [
+    "BBC"
+   ]
+  },
+  {
+   "title": "Representantes de 46 países conhecem de perto votação e apuração das eleições no Brasil",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTmE4MjhPcDZtRzlGZTYxSEVNRHBJLV8tSl8wRFlJc2JvY0UxeDVuX2hSNjBMZVZmV3owT2hPWFZLellPbjV5blZSUmEyd29mTzJEM1FsNkEwbHZOeHRQaXVFYVg0ZU5Zb2NpZE0wbDBlX011ZFdDNThjbVQ0S1M2b1RIS2dhZmZaaUJpOHJNQ0EtY1l2RUdIUXI3aS1qaDdqN3hXUWhwSmdJVzFVS0ZLVDBiSTF0SGl0bEYzOTFjbFc3Q2JGbmJpd0d2anlMN3FDX3J1S0M2NHhSSjdv?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T00:51:00Z",
+   "sources": [
+    "Tribunal Superior Eleitoral"
+   ]
+  },
+  {
+   "title": "Apoyo al gobierno de Chile cae en encuestas de opinión",
+   "link": "https://www.prensa-latina.cu/2026/10/25/apoyo-al-gobierno-de-chile-cae-en-encuestas-de-opinion/",
+   "category": "politica",
+   "published": "2026-10-26T00:43:00Z",
+   "sources": [
+    "Prensa Latina"
+   ]
+  },
+  {
+   "title": "Trump cuestiona triunfo de Lula en Brasil y afirma que se aplicó el \"manual de Joe Biden\"",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOb0ItQWpyUnRQRG1ONVJIRENPT0VaS0dwdWJoYklQZjQ2Z1duT1M1QmZKcEpJR3Q3a3FXbmNLMG91VWEwV25mQ3prcWpldDgwbE02REw4NDV3WG1RdXlncDhiTFFNMWllZUJrNHJIdk9ra2Vha29BdjFYNTQtZWFrMFdDdlF1ZDRiai1fTDZkemkwZ1RaQVpQdWhManpHb3N1U0VsT2V6RFFueVN3RjBFWXdsODR5VkdqakFlUjdWMkVYck9Xd1ZRQldjbno2eGVHRTdBOW1pbTVRT1JFei1SOUpBcUNZTnFYVGtELWExdVY0TTlzU3htaUQ5MU9FZw?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T00:33:21Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Tras remontada electoral, Lula da Silva es reelegido Presidente de Brasil",
+   "link": "https://radio.uchile.cl/2026/10/25/tras-remontada-electoral-lula-da-silva-es-reelegido-presidente-de-brasil/",
+   "category": "politica",
+   "published": "2026-10-26T00:24:12Z",
+   "sources": [
+    "Universidad de Chile"
+   ]
+  },
+  {
+   "title": "Brasil, Lula vai completa 81 anos eleito presidente pela quarta vez",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSkJiajNPWmhka2F5YVo1dDBGOUxPQWRuNlVOMEo4dW9GaHdvaEtSTmI3S0p6MFlvcm8tUWlGcFBxdU1feTZpSjJYUGpzUDVfal9UNmNqdEZ6blBiVUVwRzFreUVReGdtT19XYWE4a1pxUVlBMFd6NENsUm93S3lZRl9BcWpuT1VLMkZxRWg0dFJTS2htRmJjUW5uRHV5TDJBOEIzRTF3NDZPYXMxcUZxb2gxNnE2cG1vUHQ2NVJHalBGTW85ZlA5RVFTanhDZUZhS0NxSXdNZ2RqR082N2c?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T00:23:00Z",
+   "sources": [
+    "Agência Brasil"
+   ]
+  },
+  {
+   "title": "Lula reeleito: imprensa internacional repercute resultado do 2º turno da eleição no Brasil",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQi1mWVdYMEc4cFBucTNOeVFZam1KZV9zTmtaWlE0UUp2Ml91Rkd4UkVDX1JiQnBGdkNXREt6VmdPQk1uY1RVOERMU3B3ZU1KUXVQaTJ6LWZxWWE3ajRpczd0M0xpc1hmb09xNmNQejhxdmI2cWd5N0hFb2lmUzFPQkgxTE1EeWkwQm5mSGp4bVVQaUVseFA0SHlaOS1wR2doVkxpODZXRTZIMzhRWFlOQm9PbzR4bnVqWDhxek1Vb2RhMzJld0N5ZXd3aksyZFVsWk9JdjVhcjjSAecBQVVfeXFMTlE0c1hWRUhLOEdQUXRLTDZ4Y1ZyQWViQVgzWlFxSXhiOWU2d1k0LWNITVdadGhzekY5cC1vX2tLbFk5Mlp3S1F6eGxWTDlLTXdfbm44WGJ3SFBWOXM5MjlfV0Zua0JrN1Awd01acHpCMjFtajdwdGc1ZVZybUdDSXRkdkQ2VXE4S2VRak9SbTNxUWxDSE5RMG90NExHeEhqTWZTekc2YXdGbE9DR1hpMlVCNk5icVFhQmNybk50YzY3M2dVZ2VxX0RPTFlZS2NtelBVNDhtbXVLZ1lhcDVMS0tUeUpYUDZv?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T00:20:08Z",
+   "sources": [
+    "G1"
+   ]
+  },
+  {
+   "title": "Vuelven las ☔️ Lluvias y Tormentas mañana lunes en Chile central",
+   "link": "https://nubleonline.cl/lluvias-y-tormentas-este-lunes-26-en-chile-central/",
+   "category": "regiones",
+   "published": "2026-10-26T00:11:55Z",
+   "sources": [
+    "ñuble online"
+   ]
+  },
+  {
+   "title": "Lula é reeleito presidente do Brasil em virada histórica",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa3QyYXdNQW83dEU5RFRFNkRHZkZUS1lVbnp6bk5tU192dk9FVFJIZW1RTmthZWxqU3pMSGctQ0FMOVAyMFVxVldhOElKUk9GSEU2UXFCeXpWX1J0aGNIM3YtZDVvUGYtaEtqam5iZHVLUVQ2dzhtM19yY1lOdU5QSkd5bkJFVmVtNHhramwzaUV6bi14WDc5T1lEODZCSHNESzZZcnBORkp1MUt4bFBoMDlQRmU?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T00:11:00Z",
+   "sources": [
+    "Agência Brasil"
+   ]
+  },
+  {
+   "title": "Israel celebrará sus elecciones más importantes en años. ¿Qué está en juego?",
+   "link": "https://cnnespanol.cnn.com/2026/10/25/mundo/netanyahu-eisenkot-israel-elecciones-trax",
+   "category": "internacional",
+   "published": "2026-10-26T00:02:00Z",
+   "sources": [
+    "CNN en Español"
+   ]
+  },
   {
    "title": "El veterano gobernante de Serbia, Aleksandar Vucic, reconoce la derrota electoral ante un movimiento de protesta liderado por estudiantes",
    "link": "https://www.bbc.com/mundo/articles/cmx28l1xy5j2o?at_medium=RSS&at_campaign=rss",
@@ -3378,6 +3768,24 @@
    "published": "2026-10-26T00:00:46Z",
    "sources": [
     "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Policía brasileña investiga a mujer acusada de hacer saludo nazi tras votar en Rio de Janeiro",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQaF9CLUEzdFJfX25GZEE1U29ZS3JJNjZLeEZVWXZqVjItZnBtSDlvNjdzR2tVMG9IeGwwMVlKbko2MGlSaXl6NTdwX08yYUZaZWNyUm0xZ2MxX1ZDaUlOeTlqOW1vc2RJLUQxLVpXZGFteGtHdkQ3eDM2WlpMUXg2aExhdlFiMldtTGxJNEJqaWN1WTdkOWtxSlVENGpTdnJWY2d2WkJxRlJzS3RXdTAyX2ptZmQxRnRqOFNPWWJMYzU5ZVZzdFpEdUlBTi04YVhDdTEyNEZuVWRzMWNlQTh0amcxS2VTY1J3ZVJJeHR4WmdXNi1C?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T23:52:13Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Lula se impone a Bolsonaro en balotaje en Brasil y asegura su cuarto mandato",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOenRBWXhZYm9hNDBraWkzUTU1aGs2aXQ2U0M3ang0N193NC02RWtxYm5GdzY2cXNicXNvZDc2b0VGSnRfQzlndzNCcERVUl9sYU5SOXIxR2tpS1gtbnRBSGtuTkN0VDEyUzdjdHJRUk5yR2kzNEZpbHAxZHZnYUNfcTZWNkhMQnljMnBobWdsU3R3VllNcXVRbmhQa1l0RFFQRUHSAcMBQVVfeXFMTmZYcjdlR0duMUJGREhtRVFIbDJHa1FNYjdjS1c5clBoUFVYak0xVDRESlg3dGJnOGR3N0JsVUZvbjRGamtJYm1wdjVaSlhEVzkwc0VRNW9PRVdnX25NVThiWWdSZlVDazVmZXZ5dUlaelF0X3AxVHY3QUM4dExOTHlqWkVFODZTMllMdUUwLUpQUDdaXzVUaDZkVlVoYk53SGt0NXprQ09PWmEyNlZhZGxGVmdRaVBOTTZKUWVRTzdMR2RB?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T23:45:53Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3390,6 +3798,15 @@
    ]
   },
   {
+   "title": "Preocupación en Colo Colo: el primer diagnóstico de Leandro Hernández tras la fuerte entrada",
+   "link": "https://dalealbo.cl/liga-de-primera/preocupacion-en-colo-colo-el-primer-diagnostico-de-leandro-hernandez-tras-la-fuerte-entrada",
+   "category": "deportes",
+   "published": "2026-10-25T23:33:10Z",
+   "sources": [
+    "Dale Albo"
+   ]
+  },
+  {
    "title": "\"El chileno fue Riquelme\": hinchas de Boca alucinaron con Carlos Palacios en triunfo a Independiente",
    "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/10/25/el-chileno-fue-riquelme-hinchas-de-boca-alucinaron-con-carlos-palacios-en-triunfo-ante-independient.shtml",
    "category": "deportes",
@@ -3399,12 +3816,48 @@
    ]
   },
   {
+   "title": "Quién es el ELIMINADO de La Granja VIP hoy, domingo 25 de octubre, y se va de la competencia en la Segunda Tem",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS3JYTlZlNVI5LU15QzJCZmVNTXF0eTdBOU0zM3hkbVJmd0dXbTNwZm9PUHdCRlJQWk9aalZkM214QnNVRHdmVTNFcjR6WENkSHpSTE1qQUE4QmhkQjIyWVdrcjNoekliVFJtWGo1N0NpZDdmOWViUjVKR3hoamdlZ1N4MmFhRXA4Q1BTdnRmZk00aFNFQi1neENMYU5TMXVHVERqeURrYVN1TENjeW9FcEprcXFwbG1nMHoyZDlob9IBzAFBVV95cUxQRmlsSlVfNTYxaTczZXR1SU5sYTNadEhiUGNvSXZyR3U4eEJyRzJlcXBBcGV3d2M5ODNtWmpuN2lhUkFfR2pQbU1INzN3OEZaNFhMNzJYclNubWxLd3J6Vml6UlhkSldUYk90WjRMbjVHRHBTSVlqaFZxRHRZZVJxMl9yOS1lejZvLV9EOU9TYjcyNTN6SHc2aUJPRjhSVE96aGltQmMtRW14NFRERkdtOXVfbzZWWk9uUUxQdFotVTZvVnFxMG5nRW10eHY?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T23:31:40Z",
+   "sources": [
+    "TV Azteca"
+   ]
+  },
+  {
+   "title": "Imprensa internacional repercute confusão após extensão da votação no Brasil",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNTNQWjJOY2E3WmdNMTMwMXlTSnRQUG4tZnVtLWUySG1zcVZLN3ZXemJHRzdBQ2FVZ1NyclpmZnMzM0hmWXB5R0pQVzVrR3FDdWxjb2d0SXNQQkVUQ194bU8tMlFJQlZvS0huLW9xS2g0bThWcHBHMnlycThXTU56X1kyTExqSWozeEhrVGNGb2NycTd3c0VVXzRuMFh6SmpyQzZmNDQ0QzdwZ0w5NDVnRl95UnVBVDZ2QVV6Nw?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T23:16:00Z",
+   "sources": [
+    "Brasil de Fato"
+   ]
+  },
+  {
    "title": "Quem é o novo presidente do Brasil? Acompanhe a apuração do segundo turno",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNX1JqZC0wcENhN3lKMkN5cm5jNnVud1RfbVlxMzExZ0s2YXRycDRSb2JDdkx6bV9LRW9iSlUxN1hfbnBXeEhyS0dwTjhyMy03SDlCMEowZWR6RV9xSFlDc0RZbDJHVV9Yb1hVTFhfY0xvYzFKNzJXcmhwNE1XYldRdkFGRHZOUy1lNEMwX1J1VmctSW9mQVZTdmVjX2ctWVRZS29IZFdQZXVUUkRobjJJUjBQcWF1eFRIR25ibDRWc3IxYWkwRmtRY096Ty1Fck5IYWhlNnNNNzBSQjB00gHrAUFVX3lxTE9URzBMWlh2bFlORFdHd0lGcW9Jc25GQl9rS2xSR2FxaU50M09fTmhhWVNCbms4eFg5aGxNTFdxTzZUcHhYY0JId3ZOY182aENoU2RFcmlIUElzLWFfT3UzVURqNTNfc29GRkFUS1RRZVZFOXB5ZXRRLVMzUlRGZlA1TnJyYVpfc29KeWJ1ZHlsV2NlM09KVDBDZFVYRWFnYXBlR0x1ckVNcDZhSUI1QXFEQkdncmZNMlYwdmVqdWFRWTdkT1B2Qi1NeVR4VFVVUHY0RFoyd2RsVzE2elpkQ2Jzc3VNRHV6djFMeTA?oc=5",
    "category": "latinoamerica",
    "published": "2026-10-25T23:06:25Z",
    "sources": [
     "Valor Econômico"
+   ]
+  },
+  {
+   "title": "Gonzalo Arenas llega con santos en la corte a la vocería",
+   "link": "https://www.elmostrador.cl/noticias/pais/2026/10/25/gonzalo-arenas-llega-con-santos-en-la-corte-a-la-voceria/",
+   "category": "nacional",
+   "published": "2026-10-25T23:00:05Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
+   "title": "Las atajadas de Vozinha no bastaron: Colo Colo se enreda con Palestino y suma cuatro fechas sin ganar en el torneo",
+   "link": "https://www.latercera.com/el-deportivo/noticia/las-atajadas-de-vozinha-no-bastaron-colo-colo-se-enreda-en-la-madeja-de-palestino-y-suma-cuatro-fechas-sin-ganar-en-la-liga/",
+   "category": "deportes",
+   "published": "2026-10-25T22:54:03Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3444,12 +3897,48 @@
    ]
   },
   {
+   "title": "Hasta las 7 de la mañana: Así fueron los shows de Solomun en Argentina en la previa de su regreso a Chile",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY0c2RVFoWnpVMVlTb0N3N1F3S1l6OVZvZnR2ajhxc1BjVFJiZ28wb1R5VjJ0YVprVl80YkF0ZVNocnB5S3RNMW91SGoxT1l6b25jLVhpNUZZYXl3ZUFWaVN4bG93eGg2V0F2UXJtSGRQU1hqQTBmamk1aWJadEx5M2laUENWUmRlVVVYcEYyUHNpRWU3YzExTlhfeHZsbWtHNXlUeXdHYW9vRkFZN2c5aHVkTENHV0x6TFdkWkQ2UWdsakViUGRJQnQ3bzhfUdIB4gFBVV95cUxPRHlNVzdtWE0zbEdPQWJtY3hHS2gwampTUFJ3bmtQVXl1UUVpUXVIQXlPVTY3YkRsekNFbHI5TTJLNjdvRGZfMS1ZTHU0M2prQThUX0loclpKY010UjY2OWdCZE1ObDlKcTlCa09paHpXSU9LSkRxckVsWm1fajVZSTIzdVBjb0NBbVJDbGpET1dVcng0bV9xMG1CbGhIdXp2bmRQazJSTmRSeDRDODBlUlU2MDdvOWlhdjJVQm96OGc1WGxvZTBPV1RVWUlNUERURFVPeWZJZ1k4cDZZSlM3TUFn?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T22:21:09Z",
+   "sources": [
+    "LOS40"
+   ]
+  },
+  {
+   "title": "García Ruminot admite errores del Gobierno en reforma de seguridad: \"Debimos haber explicado mejor\"",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/25/garcia-ruminot-admite-errores-del-gobierno-en-reforma-de-seguridad-debimos-haber-explicado-mejor.shtml",
+   "category": "nacional",
+   "published": "2026-10-25T22:14:40Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Modders duplican el rendimiento de IA en las GeForce RTX 20, 30 y 40 para Linux y sus precios se disparan poco después",
+   "link": "https://www.pcmrace.com/2026/10/25/geforce-rtx-20-30-40-gpu-unlock-linux/",
+   "category": "tecnologia",
+   "published": "2026-10-25T22:10:53Z",
+   "sources": [
+    "PC Master Race Latinoamérica"
+   ]
+  },
+  {
    "title": "Vozinha se enciende previo al Balón de Oro y se luce con tapadones ante la arremetida de Palestino",
    "link": "https://www.biobiochile.cl/noticias/deportes/futbol/colo-colo/2026/10/25/vozinha-se-enciende-previo-al-balon-de-oro-y-mantiene-su-arco-en-cero-ante-la-arremetida-de-palestino.shtml",
    "category": "deportes",
    "published": "2026-10-25T22:10:42Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "Cinco conclusiones rápidas del GP de Estados Unidos de F1 2026 en Austin",
+   "link": "https://lat.motorsport.com/f1/news/cinco-conclusiones-rapidas-gp-estados-unidos/10868341/",
+   "category": "deportes",
+   "published": "2026-10-25T22:10:06Z",
+   "sources": [
+    "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally"
    ]
   },
   {
@@ -3501,7 +3990,7 @@
    "title": "F1 GP de México 2026: Horarios completos, canal de TV y cómo ver en vivo por país",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQVI2UUpIcXk2c3NEbGExeWlMTnNuOUFneDZJYWcweldZb2J1QldmSER4bHNIM1dkRUNSQnNNTjktZHgxRzJKSENoaUtBYTkwT1YxZjNjR3pJam5KdnNPS1huMFotWGxXSUdfb2g3LVlQZ3owZTlWdE9FdFRrVXExOW9hZW42V01sWDFwc3JkeHpYQU0?oc=5",
    "category": "latinoamerica",
-   "published": "2026-10-25T21:46:53Z",
+   "published": "2026-10-25T21:45:34Z",
    "sources": [
     "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally"
    ]
@@ -3552,31 +4041,12 @@
    ]
   },
   {
-   "title": "Incendio en planta salmonera en Puerto Montt: alertan por químicos y petróleo en bodegas",
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2026/10/25/incendio-en-planta-salmonera-en-puerto-montt-alertan-por-quimicos-y-petroleo-en-bodegas.shtml",
-   "category": "nacional",
-   "published": "2026-10-25T20:46:52Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
    "title": "Tras presión de ANFP: UC confirma que se aceptó propuesta de duelo contra Audax en fecha que no quería",
    "link": "https://www.biobiochile.cl/noticias/deportes/futbol/futbol-nacional/2026/10/25/tras-presion-de-anfp-uc-confirma-que-se-acepto-propuesta-de-duelo-contra-audax-en-fecha-que-no-queria.shtml",
    "category": "deportes",
    "published": "2026-10-25T20:42:37Z",
    "sources": [
     "BioBioChile"
-   ]
-  },
-  {
-   "title": "Incendio que afecta a edificio ubicado en pleno centro de Concepción deja dos fallecidos",
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/25/incendio-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion.shtml",
-   "category": "nacional",
-   "published": "2026-10-25T20:41:22Z",
-   "sources": [
-    "BioBioChile",
-    "El Informador Chile"
    ]
   },
   {
@@ -3622,6 +4092,15 @@
    "published": "2026-10-25T20:08:11Z",
    "sources": [
     "BioBioChile"
+   ]
+  },
+  {
+   "title": "¿Qué significa el \"GOLF\" en la camiseta del Barcelona para el Clásico contra Real Madrid?",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSW56R3J4cVNNbkthWTRoU3VJT1pLeldNUUZVTHFJQU4xaVZFZHpFcVdrYXduVkE0MVBZMkV6UmVjdG5Za2lfRDFlT1RXRWZCbDZCa2tPSlBaUEw4VkNOYy1FZ3JOcmgxcUh5cmloRExNODNRWEFoNVMyV2lUcDJFZ2IzakN6ZmJEamszSzJjckRaZ25oRHI0ajJGeG8zeFdWUzRpcW54SlphTHhYUEhZ?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T20:06:52Z",
+   "sources": [
+    "Sports Illustrated"
    ]
   },
   {
@@ -3679,12 +4158,31 @@
    ]
   },
   {
+   "title": "Incendio en planta salmonera en Puerto Montt: alertan por químicos y petróleo en bodegas",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-los-lagos/2026/10/25/incendio-en-planta-salmonera-en-puerto-montt-alertan-por-quimicos-y-petroleo-en-bodegas.shtml",
+   "category": "nacional",
+   "published": "2026-10-25T19:43:49Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "El norte de Chile vibró con la 1ª edición del Tour Desafío Antofagasta",
    "link": "https://www.ridechile.cl/2026/10/el-norte-de-chile-vibro-con-la-1a-edicion-del-tour-desafio-antofagasta/",
    "category": "regiones",
    "published": "2026-10-25T19:13:24Z",
    "sources": [
     "Ridechile"
+   ]
+  },
+  {
+   "title": "Incendio que afecta a edificio ubicado en pleno centro de Concepción deja dos fallecidos",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/25/incendio-afecta-a-edificio-ubicado-en-pleno-centro-de-concepcion.shtml",
+   "category": "nacional",
+   "published": "2026-10-25T19:12:52Z",
+   "sources": [
+    "BioBioChile",
+    "El Informador Chile"
    ]
   },
   {
@@ -3703,6 +4201,15 @@
    "published": "2026-10-25T19:00:00Z",
    "sources": [
     "Meganoticias"
+   ]
+  },
+  {
+   "title": "Ordenan detener al secretario de transporte de Salvador por falta de buses para electores y PT pide extender votación",
+   "link": "https://www.latercera.com/mundo/noticia/ordenan-detener-al-secretario-de-transporte-de-salvador-por-falta-de-buses-para-electores-y-pt-pide-extender-votacion/",
+   "category": "internacional",
+   "published": "2026-10-25T18:59:48Z",
+   "sources": [
+    "La Tercera"
    ]
   },
   {
@@ -3816,6 +4323,15 @@
    ]
   },
   {
+   "title": "Arturo Elias Slim y Paula Albarrán celebran su boda; los primeros detalles",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaXJPVGdYc252Y2twVjY2blZXNF8xSFhBZ2NOMWxIQ051ZENSNko3RlBwcGZlSk0wMk4xcjlteUVOaTFjRUkwSTdvMTRMdXNCRTZzTUJ2d2UxXzVmZVZVaDVIMDRRZktSWkdvRTZ1OW1OdHBjanF5empQV3BSN1Bxd09IS3JqaEVrV09SMXM5dzRFYk9ORjB1bFhLeXZJQmZERF9PRXFXX1JGcFBBZjc1Ng?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T17:55:13Z",
+   "sources": [
+    "Revista Clase"
+   ]
+  },
+  {
    "title": "'You can see everything' recauda casi 20 millones de dólares este fin de semana y busca llegar a los Oscar",
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNkI1OVNMSGNoZkJMN2JqWlJXbEtPc29UZXhIS2tvM1RRUmNuTTBhMUxmdlJFWDNLS2EwSDJ2OG9IaGJYazJuQ0MwTmlfTlhSNGpNZEtpaFl2TVVMd3BMeXhTbjVBY2FaQ21ING13VTgwcHJWWFFoc3ptcW8xNGo1ZE5hTkNtbW1SUk5lcS16eHp1Z2c2OHFKUEtjUV9xWFZzMC1ZSlBaNVRKbkJOeTBmYnYzN3liazZreFRRTWgzOHhFSlNVV1ZNRVFGNWt2dW9aOFMwRWFn?oc=5",
    "category": "cultura",
@@ -3876,6 +4392,15 @@
    "published": "2026-10-25T17:22:00Z",
    "sources": [
     "VEJA"
+   ]
+  },
+  {
+   "title": "Líder opositora María Corina Machado regresa a Venezuela",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNN0JqbDZEQnFVM3hjYVB1amZDbWR6cmJ4NFlUNk9ZU2ktdHhoNldPaHk3OVFObk80eEhEM2FZVzFwYWNNRGQ2QjZpNUp6bmMyUzBPNUwxanNNaDhHMWItRnFJSHllU0pJOHJ3dHpyU0JKdEZKNTFCMmtWOUttWDUtbkFOSWZhZ3NUNVFRUVlNYy1SWHFGczZvLTF5LTZEb2NfNXdDYjVCaXV1NGdPOHFF?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-25T17:21:52Z",
+   "sources": [
+    "El Mostrador"
    ]
   },
   {
@@ -3993,6 +4518,15 @@
    "published": "2026-10-25T16:17:18Z",
    "sources": [
     "Futuro Chile"
+   ]
+  },
+  {
+   "title": "Ballet Folclórico de la UdeG celebra 60 años con más de 200 artistas en escena",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYVBBREFKZlVMTHhBdEFyb09kMzF4SDloT0tfSTlUX3hQazhlN1VEZVNuQVhGcVR3QnJybEV0TkI5ektfVjZzVHM4c1hJU2xXZEhvWldrUzdIT19zNnh4d2JRLWYwTVhVTjNtWmFzdGhwOUVtR2xUWUpjYkZ5cWhpN3JVbkRqSmY1Yi15RzVTbl9pT3hQYVQtcC0zNzJaXzZqQTN5TTMxM294MjBnTHFOOEVJRmg1VmZiRjlMWUotR3NaRTVTOGc?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T16:12:08Z",
+   "sources": [
+    "El Sol de México"
    ]
   },
   {
@@ -4285,6 +4819,15 @@
    ]
   },
   {
+   "title": "Magdalena Müller sobre Kast: \"Venían a solucionar el desempleo y ha sido una mentira\"",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSWVBZXlyRzlZYUlIMGRtc0xpUVMyN2c5LUloSW1oa2dRTXVpc2RBNUZSTUgzbU5lVmhkWFhDWHgxT2Iya0pua1VxQk9ucjgzZDdxODdad0MxbXhqdUlHNFp4OGdPY3FYRlAzUEhiOERCY01aUzZIbmpiOWpMb1BfbmdZWVdqRTNYOFgxbHBGel80ckU5MENkZEdNSzZUOFRxOHk5ZlJaZ0FzcF9yd2tGbjVJeDJXY3lXcm9Bam9ubGx3ZzIxYWRhQUdUM1BMcWR3dEFSLWRKRjhWU3ZhWDZRd203WdIBjAFBVV95cUxQY1BMc1NCR0kyTGxLQ2VwS3EwRF9acXl0VEY2MWdQa3NxeXBVN3Q4eEVURkZaQzRkN05oN1dsRzFQcHBsV0t0TXVkUi1OZ0p5TGlnckRjaHZ4OWJXQTZPQU56R1l4cFdPdGdpaGVxXzUxMHhERkJoNHFSbXk5Y3FtV1BZU0oybVUwSms4NA?oc=5",
+   "category": "cultura",
+   "published": "2026-10-25T13:55:00Z",
+   "sources": [
+    "Cooperativa"
+   ]
+  },
+  {
    "title": "Heitor Kadri, director regional de ONU Turismo: \"Chile tiene las condiciones para ser una potencia turística\"",
    "link": "https://www.ex-ante.cl/negocios/visita-director-onu-turismo-chile-potencia/",
    "category": "politica",
@@ -4538,21 +5081,21 @@
    ]
   },
   {
+   "title": "Barcelona vs Real Madrid: Dónde ver EN VIVO y ONLINE el clásico de España",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSlVEWDdaYjZZSHZ4X2RoLWRtMTYzQTlzck5LamxFU2kzS1QzZTRMUUVRZExpanRya3I4QnF4S0FNcGEzM2dsZ3RjUmpfeURWZW9PZzk3TGRYTENpREY0bjc3WkZyeEpXZExtSjZ5WVdENHNTTDlQSmdIOXRuRVZaUlJQeVp2TVJTVV83bU5sdEVSTm1PZDREV1dfR2dnRGw3dFdpSW41cTZaWnlrVU0wVUc3Wi1FNThlcExJT0xxMlFCUQ?oc=5",
+   "category": "deportes",
+   "published": "2026-10-25T11:16:58Z",
+   "sources": [
+    "Chilevisión"
+   ]
+  },
+  {
    "title": "Brasileiros decidem entre continuidade da esquerda e retorno do bolsonarismo à presidência",
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTmhZZkJWUXQ5WlVkYlpNM1N5T0ZUR0VyZzNWRWZHaGZLLVJJMUVLVzVmNVE0WG90REk1RzJSTzhmeEItemFRRi1IR2dINFZOX0dtSy1RYk5HT3VvcG9FeDhZNDgtVnM5TmxKbFFnWFhmQ1lINW85WHE3WDloTTd3R0hBa3lGcnQ2Qm9LVWFxRXRHWHk3RUNlUlJIcFdSOUxyWHNreWxjYlVGZlZWUzF4SGxka0JkemRJb2x1U3d3WXJhMFhLMTc0cFhTbXh1TEU?oc=5",
    "category": "latinoamerica",
    "published": "2026-10-25T11:15:00Z",
    "sources": [
     "Brasil de Fato"
-   ]
-  },
-  {
-   "title": "Obama acusa a Trump de \"caos y crueldad\" antes de las elecciones de medio mandato",
-   "link": "https://www.dw.com/es/obama-acusa-a-trump-de-caos-y-crueldad-en-m%C3%ADtines-por-los-dem%C3%B3cratas/a-79754422",
-   "category": "internacional",
-   "published": "2026-10-25T11:13:48Z",
-   "sources": [
-    "DW.com"
    ]
   },
   {
@@ -4589,6 +5132,15 @@
    "published": "2026-10-25T11:02:54Z",
    "sources": [
     "Reforma"
+   ]
+  },
+  {
+   "title": "Obama acusa a Trump de \"caos y crueldad\" antes de las elecciones de medio mandato",
+   "link": "https://www.dw.com/es/obama-acusa-a-trump-de-caos-y-crueldad-en-m%C3%ADtines-por-los-dem%C3%B3cratas/a-79754422",
+   "category": "internacional",
+   "published": "2026-10-25T11:02:37Z",
+   "sources": [
+    "DW.com"
    ]
   },
   {
