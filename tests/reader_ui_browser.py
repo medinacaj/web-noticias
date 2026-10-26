@@ -70,7 +70,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#contenido').evaluate("el => {el.classList.remove('is-compact'); el.classList.add('is-headlines')}")
         self.assertFalse(await figures.first.is_visible())
 
-    async def load_latam_lead_fixture(self):
+    async def load_latam_lead_fixture(self, publisher_html=None):
         import sys, tempfile
         from datetime import datetime, timezone
         sys.path.insert(0, str(ROOT))
@@ -81,11 +81,39 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                     "sources": [f"Medio {i}"], "image": "", "summary": "", "metadata_only": True,
                     "coverage_countries": ["BR", "MX"], "published": now.isoformat()}
                    for i in range(12)]
+        if publisher_html:
+            from unittest.mock import patch
+            from urllib.parse import urlsplit
+            from scripts.article_images import enrich_visible_images, image_from_html
+            for story in stories:
+                story['metadata_only'] = False
+            with patch('scripts.article_images.permitted_url', return_value=True):
+                enrich_visible_images(stories, news.select(stories, now), now,
+                                      fetch_image=lambda url: image_from_html(
+                                          publisher_html.replace('{publisher}', urlsplit(url).hostname), url))
+            self.assertTrue(all(story['image'] for story in stories))
         with tempfile.TemporaryDirectory() as folder:
+            if publisher_html:
+                history = Path(folder, 'history.json')
+                news.save_history(history, stories, now)
+                stories = news.load_history(history)
             news.build_site(stories, now, folder)
             body = Path(folder, 'index.html').read_text()
         await self.page.route('**/?latam-visual=1', lambda route: route.fulfill(status=200, content_type='text/html', body=body))
         await self.page.goto(self.url + '?latam-visual=1')
+
+    async def test_latam_photos_survive_enrichment_history_and_load_as_images(self):
+        # Recurso controlado de prueba, nunca se publica como foto de una noticia.
+        await self.page.route('https://images.example/*.png', lambda route: route.fulfill(
+            content_type='image/png', body=(ROOT / 'static' / 'icon-192.png').read_bytes()))
+        await self.load_latam_lead_fixture('<meta property="og:image" content="https://images.example/{publisher}.png">')
+        for width in (390, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 1000})
+            image = self.page.locator('.section-grid .media > img').first
+            await image.scroll_into_view_if_needed()
+            await self.page.wait_for_function("[...document.querySelectorAll('.section-grid .media > img')].some(img=>img.complete&&img.naturalWidth>0)")
+            self.assertGreater(await image.evaluate('img=>img.naturalWidth'), 0)
+            self.assertEqual(await self.page.locator('.media--region').count(), 0)
 
     async def test_latam_lead_respects_dense_views(self):
         await self.load_latam_lead_fixture()

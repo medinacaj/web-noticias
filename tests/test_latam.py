@@ -22,6 +22,59 @@ def item(title="Brasil anuncia novas medidas", **changes):
 
 
 class LatamTests(unittest.TestCase):
+    def test_generic_latam_keeps_publisher_photo_and_legacy_history_can_enrich(self):
+        from scripts.latam import prepare_item, restore_legacy_image_policy
+        from scripts.article_images import enrich_visible_images
+        candidate = prepare_item(item(), NOW, [])
+        self.assertFalse(candidate.get('metadata_only'))
+        self.assertEqual(candidate['summary'], '')
+        self.assertEqual(candidate['image'], 'https://medio.example/foto.jpg')
+        legacy = {**item(), 'link': 'https://news.google.com/rss/articles/CBMlatam',
+                  'category': 'latinoamerica', 'metadata_only': True,
+                  'sources': ['Medio'], 'image': '', 'summary': '', 'first_seen': news.to_iso(NOW)}
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'history.json'
+            path.write_text(json.dumps({'noticias': [legacy]}))
+            loaded = news.load_history(path)
+            self.assertTrue(loaded[0]['metadata_only'])
+            # Reparación explícita del snapshot publicado, nunca por cargar un archivo.
+            restore_legacy_image_policy(loaded[0], [])
+            self.assertFalse(loaded[0].get('metadata_only'))
+            with patch('scripts.article_images.permitted_url', return_value=True):
+                result = enrich_visible_images(loaded, {'lead': loaded[0], 'secondary': [], 'by_category': {}},
+                                              NOW, decoder=lambda urls, **kwargs: {url: 'https://medio.example/nota' for url in urls},
+                                              fetch_image=lambda url: 'https://medio.example/foto.jpg')
+            self.assertEqual(result, (1, 1))
+            news.save_history(path, deduplicate(loaded), NOW)
+            self.assertEqual(news.load_history(path)[0]['image'], 'https://medio.example/foto.jpg')
+
+    def test_legacy_migration_preserves_explicit_source_restrictions(self):
+        from scripts.latam import prepare_item, restore_legacy_image_policy
+        original = {**item(), 'category': 'latinoamerica', 'metadata_only': True, 'sources': ['Medio']}
+        for changes, catalog in (({'publisher_id': 'publisher'}, []),
+                                 ({'discovery_edition': 'MX'}, []),
+                                 ({'metadata_policy': 'source'}, []),
+                                 ({}, [{'name': 'Medio', 'domain': 'medio.example', 'enabled': False}])):
+            record = original | changes
+            restore_legacy_image_policy(record, catalog)
+            self.assertTrue(record['metadata_only'])
+        # La restricción explícita de un importador continúa teniendo prioridad.
+        candidate = prepare_item(item(metadata_only=True), NOW, [])
+        self.assertTrue(candidate['metadata_only'])
+        self.assertEqual(candidate['image'], '')
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'history.json'
+            news.save_history(path, [candidate], NOW)
+            self.assertTrue(news.load_history(path)[0]['metadata_only'])
+
+    def test_old_explicit_import_without_marker_stays_restricted_when_loaded(self):
+        record = {**item(metadata_only=True), 'category': 'latinoamerica', 'sources': ['Medio']}
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'history.json'
+            path.write_text(json.dumps({'noticias': [record]}))
+            loaded = news.load_history(path)
+        self.assertTrue(loaded[0]['metadata_only'])
+
     def test_explicit_countries_and_controlled_demonyms_classify_without_publisher_inference(self):
         examples = [("Brasil y Venezuela acuerdan con Argentina", ["AR", "BR", "VE"]),
                     ("Brasileiros e peruanos celebram", ["BR", "PE"]),
@@ -102,7 +155,7 @@ class LatamTests(unittest.TestCase):
         news.merge(stories, [record], NOW)
         self.assertEqual((stories[0]["summary"], stories[0]["image"]), ("", ""))
 
-    def test_real_rss_parser_rejects_timezone_less_dates_and_discards_content(self):
+    def test_real_rss_parser_rejects_timezone_less_dates_and_keeps_publisher_photo(self):
         raw = b'''<rss><channel><item><title>Brasil anuncia medidas</title>
           <link>https://medio.example/a</link><source url="https://medio.example">Medio</source>
           <pubDate>Fri, 23 Oct 2026 11:00:00 GMT</pubDate><description>Extracto ajeno</description>
@@ -118,7 +171,8 @@ class LatamTests(unittest.TestCase):
                 records = news.collect(NOW)
             self.assertEqual(len(records), count)
             self.assertTrue(all(x["title"] == "Brasil anuncia medidas" for x in records))
-            self.assertTrue(all(not x["summary"] and not x["image"] for x in records))
+            self.assertTrue(all(not x["summary"] and x["image"] == 'https://medio.example/photo.jpg'
+                                and not x['metadata_only'] for x in records))
 
     def test_catalog_gate_requires_every_activation_condition_even_through_aggregator(self):
         catalog = dict(name="Medio", domain="medio.example", enabled=True,
@@ -180,19 +234,23 @@ class LatamTests(unittest.TestCase):
         self.assertEqual(latam[1][1]["hl"], ["es-419"])
         self.assertEqual(len(api), 6)
         self.assertEqual(len(collected), 2)
-        self.assertTrue(all(x["metadata_only"] and not x["summary"] and not x["image"] for x in collected))
+        self.assertTrue(all(not x["metadata_only"] and not x["summary"]
+                            and x["image"] == 'https://medio.example/foto.jpg' for x in collected))
 
-    def test_world_feed_reclassification_cannot_bypass_metadata_or_catalog_gate(self):
-        records = [item(), item("Venezuela anuncia medidas", source_url="https://www.elnacional.com")]
+    def test_world_reclassification_keeps_regular_photos_and_explicit_restrictions(self):
+        records = [item(), item("Venezuela anuncia medidas", source_url="https://www.elnacional.com"),
+                   item('Perú anuncia medidas', metadata_only=True, link='https://medio.example/b')]
         def rss(url, category, default_source=None, **kwargs):
             return records if category == "internacional" and not default_source else []
         with patch.object(news, "fetch_rss", side_effect=rss), patch.object(news, "GNEWS_API_KEY", ""), \
              patch("scripts.regional_sources.collect_regional", return_value=[]):
             collected = news.collect(NOW)
-        self.assertEqual(len(collected), 1)
+        self.assertEqual(len(collected), 2)
         self.assertEqual(collected[0]["category"], "latinoamerica")
-        self.assertTrue(collected[0]["metadata_only"])
-        self.assertEqual((collected[0]["summary"], collected[0]["image"]), ("", ""))
+        self.assertFalse(collected[0]["metadata_only"])
+        self.assertEqual((collected[0]["summary"], collected[0]["image"]), ("", "https://medio.example/foto.jpg"))
+        self.assertTrue(collected[1]["metadata_only"])
+        self.assertEqual((collected[1]["summary"], collected[1]["image"]), ("", ""))
 
     def test_new_search_rejects_catalog_restrictions_bad_sources_and_dates_independently(self):
         base = item()

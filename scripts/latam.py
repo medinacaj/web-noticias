@@ -129,10 +129,38 @@ def catalog_allowed(item, catalog):
     return True
 
 
+def source_requires_metadata_only(item, catalog):
+    """Conservar restricciones de colectores especializados y fuentes catalogadas."""
+    if item.get("metadata_policy") == "source" or item.get("publisher_id") or item.get("discovery_edition"):
+        return True
+    from scripts.global_sources import load_catalog as load_world_catalog
+    try:
+        hosts = [(urlsplit(item.get(field) or "").hostname or "").lower().rstrip(".")
+                 for field in ("source_url", "link")]
+    except (ValueError, TypeError):
+        return True
+    names = [_fold(name) for name in (item.get("sources") or [item.get("source")]) if name]
+    for source in list(catalog) + load_world_catalog():
+        domain = source.get("domain", "").lower().rstrip(".")
+        if ((domain and any(host == domain or host.endswith("." + domain) for host in hosts))
+                or _fold(source.get("name")) in names):
+            return True
+    return False
+
+
+def restore_legacy_image_policy(story, catalog):
+    """Reparación explícita de datos conocidos; nunca se aplica al cargar un archivo."""
+    from scripts.article_images import is_google_news
+    if (story.get("category") == "latinoamerica" and story.get("metadata_only")
+            and is_google_news(story.get("link"))
+            and not source_requires_metadata_only(story, catalog)):
+        story["metadata_only"] = False
+
+
 def prepare_item(item, now, catalog):
     """Puerta de entrada mínima para las dos búsquedas nuevas del agregador."""
     from scripts.article_images import permitted_url
-    from fetch_noticias import to_iso
+    from fetch_noticias import to_iso, safe_image
     published = explicit_date(item.get("published"))
     codes = country_codes(item.get("title"))
     source_url = item.get("source_url") or ""
@@ -154,5 +182,8 @@ def prepare_item(item, now, catalog):
             return None
     except (ValueError, TypeError):
         return None
+    metadata_only = bool(item.get("metadata_only")) or source_requires_metadata_only(item, catalog)
     return {**item, "category": "latinoamerica", "coverage_countries": codes,
-            "published": to_iso(published), "summary": "", "image": "", "metadata_only": True}
+            "published": to_iso(published), "summary": "",
+            "image": "" if metadata_only else safe_image(item.get("image")),
+            "metadata_only": metadata_only}

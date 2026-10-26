@@ -259,7 +259,7 @@ def fetch_rss(url, category, default_source=None, *, metadata_only=False):
             "link": (node.findtext("link") or "").strip(),
             "published": to_iso(published) if published else None,
             "summary": "" if metadata_only or category == "latinoamerica" else clean_summary(title, node.findtext("description")),
-            "image": "" if metadata_only or category == "latinoamerica" else rss_image(node),
+            "image": "" if metadata_only else rss_image(node),
         })
     return items
 
@@ -394,6 +394,10 @@ def load_signals(path):
 def save_history(path, stories, now, signals_archive=None, signals_started=""):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     clean = [{k: v for k, v in s.items() if not k.startswith("_")} for s in stories]
+    # Distinguir restricciones explícitas nuevas del antiguo veto por sección.
+    for story in clean:
+        if story.get("metadata_only"):
+            story["metadata_policy"] = "source"
     data = {"actualizado": to_iso(now), "noticias": clean}
     if signals_archive is not None:
         data["senales_inicio"] = signals_started or to_iso(now)
