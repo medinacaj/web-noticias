@@ -1,8 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 48" role="img" aria-label="Noticias del Momento">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 48" role="img" aria-label="Noticias del Momento">
   <g transform="translate(4 4)">
-    <rect width="40" height="40" rx="9" fill="#31584A"/>
-    <path d="M12.5 28V12l15 16V12" fill="none" stroke="#F7F6F2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M12.5 33h15" stroke="#FF907F" stroke-width="2.4" stroke-linecap="round"/>
+    <g fill="#F7F6F2" stroke="#282C30" stroke-width="2.6" stroke-linejoin="round">
+      <path d="M22 12 34 8v22l-12 5Z"/>
+      <path d="M4 7a2 2 0 0 1 2.6-1.9L22 10.5V35L5.3 29.2A2 2 0 0 1 4 27.3Z"/>
+      <path d="m9 14 8 2.8m-8 3.7 8 2.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <circle cx="33" cy="8" r="5" fill="#C04C3E" stroke="#F7F6F2" stroke-width="2"/>
   </g>
   <text x="56" y="32" fill="#282C30" font-family="'Source Serif 4',Georgia,'Times New Roman',serif" font-size="24" font-weight="700" letter-spacing="-.3">Noticias del Momento</text>
 </svg>

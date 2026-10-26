@@ -97,9 +97,9 @@ def _head(title, description, url, base):
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{esc(base)}/og-image.png">
 <script type="application/ld+json">{structured}</script>
-<meta name="theme-color" content="#31584A">
-<link rel="icon" href="{esc(base)}/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="{esc(base)}/apple-touch-icon.png">
+<meta name="theme-color" content="#282C30">
+<link rel="icon" href="{esc(base)}/favicon.svg?v=editorial" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{esc(base)}/apple-touch-icon.png?v=editorial">
 <style>
 :root{{color-scheme:light;--paper:#E9E8E2;--card:#FFFFFF;--surface:#FAFAF7;--ink:#282C30;--muted:#626970;--rule:#D7DBD4;--brand:#31584A;--accent:#C04C3E}}
 :root[data-theme="dark"]{{color-scheme:dark;--brand:#B4DCC8;--paper:#111315;--card:#343A43;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#66717D;--accent:#FF907F}}
@@ -136,7 +136,7 @@ footer{{border-top:1px solid var(--rule);padding:20px 0;color:var(--muted);font-
 </style>
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="{esc(base)}/"><img src="../logo-simbolo.svg" width="32" height="32" alt=""><span>Noticias <span class="brand-tail">del Momento</span></span></a><div class="header-actions"><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema"><span aria-hidden="true">◐</span></button><a class="back" href="{esc(base)}/" aria-label="Volver a la portada">Portada</a></div></div></header>
+<header><div class="wrap"><a class="brand" href="{esc(base)}/"><img src="../logo-simbolo.svg?v=editorial" width="32" height="32" alt=""><span>Noticias <span class="brand-tail">del Momento</span></span></a><div class="header-actions"><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema"><span aria-hidden="true">◐</span></button><a class="back" href="{esc(base)}/" aria-label="Volver a la portada">Portada</a></div></div></header>
 """
 
 

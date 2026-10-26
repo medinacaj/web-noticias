@@ -699,9 +699,18 @@ def figure_html(story, eager=False):
     image = safe_image(story.get("image"))
     if not image:
         source = (story.get("sources") or ["Fuente"])[0]
-        return (f'<figure class="media media--source" role="img" '
-                f'aria-label="Medio de origen: {esc(source)}">'
+        region_class, region_label = "", ""
+        description = f"Medio de origen: {source}"
+        if story.get("category") == "latinoamerica":
+            from scripts.latam import country_labels
+            countries = " · ".join(country_labels(story)) or "Latinoamérica"
+            region_class = " media--region"
+            region_label = f'<span class="region-label">{esc(countries)}</span>'
+            description = f"Ficha de {countries}. Medio: {source}"
+        return (f'<figure class="media media--source{region_class}" role="img" '
+                f'aria-label="{esc(description)}">'
                 f'<span class="source-visual">{source_mark(story)}'
+                f'{region_label}'
                 f'<span class="source-visual-name">{esc(source)}</span></span>'
                 f'</figure>')
     loading = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
@@ -924,7 +933,7 @@ PAGE_404 = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Página no encontrada · Noticias del Momento</title>
 <meta name="robots" content="noindex">
-<link rel="icon" href="%%HOME%%favicon.svg" type="image/svg+xml">
+<link rel="icon" href="%%HOME%%favicon.svg?v=editorial" type="image/svg+xml">
 <style>
   body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
     background:#FBFAF7;color:#07192E;text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}

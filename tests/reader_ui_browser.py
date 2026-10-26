@@ -56,6 +56,55 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#search-toggle').click()
         self.assertTrue(await self.page.locator('#search-input').is_visible())
 
+    async def test_latam_visuals_are_visible_and_respect_reader_density(self):
+        figures = self.page.locator('.cat-latinoamerica .media--region')
+        self.assertGreater(await figures.count(), 0)
+        for width in (320, 390, 768, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 1000})
+            self.assertTrue(await figures.first.is_visible(), width)
+            self.assertTrue(await figures.first.locator('.region-label').is_visible(), width)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
+        # Las miniaturas también deben poder ocultarse al elegir una vista densa.
+        await self.page.locator('#contenido').evaluate("el => el.classList.add('is-compact')")
+        self.assertFalse(await figures.first.is_visible())
+        await self.page.locator('#contenido').evaluate("el => {el.classList.remove('is-compact'); el.classList.add('is-headlines')}")
+        self.assertFalse(await figures.first.is_visible())
+
+    async def load_latam_lead_fixture(self):
+        import sys, tempfile
+        from datetime import datetime, timezone
+        sys.path.insert(0, str(ROOT))
+        import fetch_noticias as news
+        now = datetime(2026, 10, 26, 2, tzinfo=timezone.utc)
+        stories = [{"category": "latinoamerica", "title": f"Brasil y México cooperan {i}",
+                    "link": f"https://medio{i}.example/nota", "source_url": f"https://medio{i}.example",
+                    "sources": [f"Medio {i}"], "image": "", "summary": "", "metadata_only": True,
+                    "coverage_countries": ["BR", "MX"], "published": now.isoformat()}
+                   for i in range(12)]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(stories, now, folder)
+            body = Path(folder, 'index.html').read_text()
+        await self.page.route('**/?latam-visual=1', lambda route: route.fulfill(status=200, content_type='text/html', body=body))
+        await self.page.goto(self.url + '?latam-visual=1')
+
+    async def test_latam_lead_respects_dense_views(self):
+        await self.load_latam_lead_fixture()
+        figure = self.page.locator('.lead .media--region')
+        self.assertTrue(await figure.is_visible())
+        for density in ('is-compact', 'is-headlines'):
+            await self.page.locator('#contenido').evaluate('(el, density) => el.className=density', density)
+            self.assertFalse(await figure.is_visible(), density)
+
+    async def test_latam_rail_countries_and_mark_fit_inside_thumbnail(self):
+        await self.load_latam_lead_fixture()
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 1000})
+            figure = self.page.locator('.rail-item .media--region').first
+            bounds = await figure.bounding_box()
+            for selector in ('.source-mark', '.region-label'):
+                box = await figure.locator(selector).bounding_box()
+                self.assertGreaterEqual(box['y'], bounds['y'], (width, selector))
+                self.assertLessEqual(box['y'] + box['height'], bounds['y'] + bounds['height'], (width, selector))
     async def prime_previous_edition(self):
         await self.page.evaluate("""() => {
           const edition = Date.parse(document.querySelector('#updated-at').dateTime);
@@ -378,7 +427,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         for width in (320, 390, 768, 1024, 1440):
             await self.page.set_viewport_size({"width": width, "height": 1000})
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
-            for figure in await self.page.locator('.media--source:not(.media--date)').all():
+            for figure in await self.page.locator('.media--source:not(.media--date):not(.media--region)').all():
                 self.assertFalse(await figure.is_visible())
         ARTIFACTS.mkdir(exist_ok=True)
         for theme in ('light', 'dark'):

@@ -75,6 +75,32 @@ class SourceFaviconsTests(unittest.TestCase):
         self.assertIn('class="source-initial">M', rendered)
         self.assertIn("Medio", rendered)
 
+    def test_latam_without_photo_has_country_and_publisher_visual(self):
+        story = {"category": "latinoamerica", "metadata_only": True, "image": "",
+                 "sources": ["Diario Regional"], "coverage_countries": ["MX", "PE"],
+                 "source_url": "https://diario.example"}
+        rendered = figure_html(story)
+        self.assertIn('class="media media--source media--region"', rendered)
+        self.assertIn('class="region-label">México · Perú', rendered)
+        self.assertIn('Ficha de México · Perú. Medio: Diario Regional', rendered)
+        self.assertIn('class="source-mark"', rendered)
+        self.assertEqual(story["image"], "")
+
+    def test_latam_visual_without_known_country_does_not_infer_publisher_location(self):
+        rendered = figure_html({"category": "latinoamerica", "image": "",
+                                "sources": ["Medio & diario"], "source_country": "BR",
+                                "coverage_countries": ["<script>", "ZZ"]})
+        self.assertIn('class="region-label">Latinoamérica', rendered)
+        self.assertIn('Medio &amp; diario', rendered)
+        self.assertNotIn("Brasil", rendered)
+        self.assertNotIn("<script>", rendered)
+
+    def test_latam_real_photo_keeps_original_image(self):
+        rendered = figure_html({"category": "latinoamerica", "image": "https://medio.example/foto.jpg",
+                                "coverage_countries": ["BR"], "sources": ["Medio"]})
+        self.assertIn('src="https://medio.example/foto.jpg"', rendered)
+        self.assertNotIn("media--region", rendered)
+
     def test_publisher_name_is_escaped_in_image_placeholder(self):
         rendered = figure_html({"image": "", "sources": ['<bad attr="x">']})
         self.assertNotIn("<bad", rendered)
