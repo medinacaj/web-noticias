@@ -9,6 +9,17 @@ from scripts.article_images import (
 
 
 class PublisherImagesTests(unittest.TestCase):
+    def test_initial_section_cards_are_enriched_before_hidden_national_cards(self):
+        now = datetime(2026, 10, 26, tzinfo=timezone.utc)
+        national = [{'category': 'nacional', 'link': f'https://medio.example/n/{i}', 'image': ''} for i in range(24)]
+        latam = [{'category': 'latinoamerica', 'link': f'https://medio.example/l/{i}', 'image': ''} for i in range(6)]
+        selected = {'lead': None, 'secondary': [], 'by_category': {'nacional': national, 'latinoamerica': latam}}
+        with patch('scripts.article_images.permitted_url', return_value=True):
+            enrich_visible_images(national + latam, selected, now, max_lookups=12,
+                                  fetch_image=lambda url: 'https://medio.example/photo.jpg')
+        self.assertTrue(all(story['image'] for story in latam))
+        self.assertFalse(national[6]['image'])
+
     def test_extracts_official_open_graph_image(self):
         page = '''<html><head><meta property="og:image" content="/media/reportaje.jpg">
                   <meta name="twitter:image" content="https://cdn.example.com/other.jpg"></head></html>'''

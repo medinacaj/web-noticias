@@ -158,8 +158,13 @@ def enrich_visible_images(stories, selected, now, decoder=None, fetch_image=publ
                           max_lookups=MAX_LOOKUPS):
     """Solo artículos publicados, caché de errores y máximo de URLs por ejecución."""
     visible = ([selected["lead"]] if selected["lead"] else []) + selected["secondary"]
-    for category_items in selected["by_category"].values():
-        visible.extend(category_items)
+    from fetch_noticias import recent_section_stories
+    sections = [recent_section_stories(items) for items in selected["by_category"].values()]
+    # La portada muestra seis por sección: atenderlas antes de las de «Ver más».
+    for items in sections:
+        visible.extend(items[:6])
+    for items in sections:
+        visible.extend(items[6:])
     unique, seen = [], set()
     for story in visible:
         key = id(story)
