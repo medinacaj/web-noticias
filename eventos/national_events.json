@@ -1,16 +1,16 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-10-25T13:54:02",
+  "generated_at": "2026-10-26T16:21:22",
   "summary": {
     "sources_attempted": 9,
     "sources_ok": 8,
     "sources_failed": 1,
-    "events_found": 25,
-    "events_inserted": 20,
-    "events_merged": 2,
-    "possible_events": 2,
+    "events_found": 26,
+    "events_inserted": 22,
+    "events_merged": 0,
+    "possible_events": 4,
     "quarantined_candidates": 0,
-    "candidates": 0,
+    "candidates": 7,
     "errors": [
       {
         "source": "ChileCultura (Ministerio de las Culturas)",
@@ -41,7 +41,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -53,47 +53,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Teatro Musical: Estación Ópera",
-      "description": null,
-      "date": "2026-10-25",
-      "end_date": "2026-11-01",
-      "time": "12:00",
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/teatro-musical-estacion-opera/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Teatro Municipal de Santiago",
-          "url": "https://municipal.cl/espectaculos/teatro-musical-estacion-opera/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -131,7 +91,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:10"
+          "seen_at": "2026-10-26T16:19:24"
         }
       ],
       "changes": [
@@ -171,44 +131,44 @@
       "region": "Metropolitana"
     },
     {
-      "title": "Odisea del Espacio: 25 años de Matucana 100",
+      "title": "BAFONA llega a Los Lagos con el estreno de “Caguach”, un homenaje a la fe, la memoria y la identidad de Chiloé",
       "description": null,
-      "date": "2026-10-27",
-      "end_date": null,
+      "date": "2026-10-26",
+      "end_date": "2026-10-28",
       "time": null,
       "end_time": null,
       "venue": null,
       "address": null,
-      "commune": "Estación Central",
+      "commune": "Los Lagos",
       "category": "Cultura",
       "audience": null,
       "access": null,
       "price_value": null,
       "price_status": "pending",
       "status": "Por confirmar",
-      "source": "Matucana 100",
-      "source_url": "https://www.m100.cl/programacion/artes-visuales/odisea-del-espacio-25-anos-de-matucana-100/",
-      "source_type": "venue",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-llega-a-los-lagos-con-el-estreno-de-caguach-un-homenaje-a-la-fe-la-memoria-y-la-identidad-de-chiloe/",
+      "source_type": "aggregator",
       "source_priority": 1,
       "official": true,
-      "image_url": "https://www.m100.cl/wp-content/uploads/2026/10/Odisea-del-espacio_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-25T13:52:49",
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/bafona1-450x300.jpg",
+      "discovered_at": "2026-10-26T16:19:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
       ],
       "sources": [
         {
-          "name": "Matucana 100",
-          "url": "https://www.m100.cl/programacion/artes-visuales/odisea-del-espacio-25-anos-de-matucana-100/",
-          "type": "venue",
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/bafona-llega-a-los-lagos-con-el-estreno-de-caguach-un-homenaje-a-la-fe-la-memoria-y-la-identidad-de-chiloe/",
+          "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:49"
+          "seen_at": "2026-10-26T16:19:49"
         }
       ],
       "changes": [],
-      "region": "Metropolitana"
+      "region": "Los Ríos"
     },
     {
       "title": "Noche de grandes coreógrafos",
@@ -232,7 +192,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -244,7 +204,47 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "VVV [Trippin' you] por primera vez en Chile",
+      "description": null,
+      "date": "2026-10-28",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Estación Central",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 12000,
+      "price_status": "paid",
+      "status": "Por confirmar",
+      "source": "Matucana 100",
+      "source_url": "https://www.m100.cl/programacion/musica/vvv-trippin-you/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.m100.cl/wp-content/uploads/2026/07/VVV_slidehome_1920x1488.jpg",
+      "discovered_at": "2026-10-26T16:20:10",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Matucana 100",
+          "url": "https://www.m100.cl/programacion/musica/vvv-trippin-you/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-26T16:20:10"
         }
       ],
       "changes": [],
@@ -272,7 +272,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/bafona--450x300.jpg",
-      "discovered_at": "2026-10-25T13:52:29",
+      "discovered_at": "2026-10-26T16:19:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -284,7 +284,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:29"
+          "seen_at": "2026-10-26T16:19:49"
         }
       ],
       "changes": [],
@@ -312,7 +312,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/09/Girls-Boys_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-25T13:52:49",
+      "discovered_at": "2026-10-26T16:20:10",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -324,7 +324,47 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:49"
+          "seen_at": "2026-10-26T16:20:10"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Lanzamiento de \"El Hambre y las Ganas de Comer\" - La Estrategia del Caracol + Cámara Chilena de la Destrucción",
+      "description": null,
+      "date": "2026-10-30",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Estación Central",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 6000,
+      "price_status": "paid",
+      "status": "Por confirmar",
+      "source": "Matucana 100",
+      "source_url": "https://www.m100.cl/programacion/musica/la-estrategia-del-caracol-camara-chilena-de-la-destruccion/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.m100.cl/wp-content/uploads/2026/07/estrategia-caracolcamara-destrucción_slidehome_1920x1488.jpg",
+      "discovered_at": "2026-10-26T16:20:10",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Matucana 100",
+          "url": "https://www.m100.cl/programacion/musica/la-estrategia-del-caracol-camara-chilena-de-la-destruccion/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-26T16:20:10"
         }
       ],
       "changes": [],
@@ -352,7 +392,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/la-juerga-450x300.jpg",
-      "discovered_at": "2026-10-25T13:52:29",
+      "discovered_at": "2026-10-26T16:19:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -364,11 +404,51 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:29"
+          "seen_at": "2026-10-26T16:19:49"
         }
       ],
       "changes": [],
       "region": "O'Higgins"
+    },
+    {
+      "title": "Teatro Musical: Estación Ópera",
+      "description": null,
+      "date": "2026-10-31",
+      "end_date": "2026-11-01",
+      "time": "16:00",
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/espectaculos/teatro-musical-estacion-opera/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": null,
+      "discovered_at": "2026-10-26T16:19:56",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Teatro Municipal de Santiago",
+          "url": "https://municipal.cl/espectaculos/teatro-musical-estacion-opera/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-26T16:19:56"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
     },
     {
       "title": "Mes del Diseño 2026 revela su programación con más de 50 actividades en ocho regiones del país",
@@ -392,7 +472,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/banner-mes-diseno-2-450x300.jpg",
-      "discovered_at": "2026-10-25T13:52:29",
+      "discovered_at": "2026-10-26T16:19:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -404,7 +484,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:29"
+          "seen_at": "2026-10-26T16:19:49"
         }
       ],
       "changes": [],
@@ -432,7 +512,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:53:12",
+      "discovered_at": "2026-10-26T16:20:38",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -444,7 +524,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:53:12"
+          "seen_at": "2026-10-26T16:20:38"
         }
       ],
       "changes": [],
@@ -472,7 +552,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/05-concierto-de-colores-450x300.jpg",
-      "discovered_at": "2026-10-25T13:52:29",
+      "discovered_at": "2026-10-26T16:19:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -484,7 +564,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:29"
+          "seen_at": "2026-10-26T16:19:49"
         }
       ],
       "changes": [],
@@ -522,7 +602,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:10"
+          "seen_at": "2026-10-26T16:19:24"
         }
       ],
       "changes": [
@@ -559,7 +639,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -571,7 +651,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -599,7 +679,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -611,7 +691,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -649,7 +729,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:10"
+          "seen_at": "2026-10-26T16:19:24"
         }
       ],
       "changes": [
@@ -710,7 +790,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -722,7 +802,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -750,7 +830,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -762,7 +842,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -790,7 +870,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:53:12",
+      "discovered_at": "2026-10-26T16:20:38",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -802,7 +882,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:53:12"
+          "seen_at": "2026-10-26T16:20:38"
         }
       ],
       "changes": [],
@@ -830,7 +910,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -842,7 +922,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -870,7 +950,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-10-25T13:52:40",
+      "discovered_at": "2026-10-26T16:20:10",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -882,7 +962,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:40"
+          "seen_at": "2026-10-26T16:20:10"
         }
       ],
       "changes": [],
@@ -910,7 +990,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -922,7 +1002,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -950,7 +1030,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-25T13:52:42",
+      "discovered_at": "2026-10-26T16:19:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -962,7 +1042,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-25T13:52:42"
+          "seen_at": "2026-10-26T16:19:56"
         }
       ],
       "changes": [],
@@ -973,13 +1053,13 @@
     {
       "source_name": "Agenda Cultural del Ministerio de las Culturas",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:52:29",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:19:49",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 20,
-      "events_found": 4,
-      "events_inserted": 4,
+      "pages_fetched": 19,
+      "events_found": 5,
+      "events_inserted": 5,
       "events_merged": 0,
       "possible_found": 1,
       "error": null
@@ -987,36 +1067,36 @@
     {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:52:57",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:20:10",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 3,
+      "events_found": 2,
       "events_inserted": 0,
-      "events_merged": 2,
+      "events_merged": 0,
       "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:52:40",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:20:10",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 1,
       "events_inserted": 1,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "ChileCultura (Ministerio de las Culturas)",
       "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:52:13",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:19:27",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -1029,13 +1109,13 @@
     {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:52:49",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:20:10",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 2,
-      "events_inserted": 2,
+      "events_found": 3,
+      "events_inserted": 3,
       "events_merged": 0,
       "possible_found": 0,
       "error": null
@@ -1043,22 +1123,22 @@
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:54:02",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:21:22",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 1,
       "error": null
     },
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:52:42",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:19:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1071,22 +1151,22 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:53:00",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:20:20",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 2,
       "error": null
     },
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-10-25T13:52:10",
-      "finished_at": "2026-10-25T13:53:12",
+      "started_at": "2026-10-26T16:19:24",
+      "finished_at": "2026-10-26T16:20:38",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 16,
@@ -1099,46 +1179,6 @@
   ],
   "possible_events": [
     {
-      "title": "Domingo 25 de octubre – 12:00 horas / Función familiar",
-      "raw_text": "Domingo 25 de octubre – 12:00 horas / Función familiar",
-      "date": "2026-10-25",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/teatro-musical-estacion-opera/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "Cada 25 de octubre se conmemora el Día Mundial de la Ópera, una iniciativa internacional que busca relevar el valor de esta arte escénica y su aporte a la sociedad. La celebración se realiza desde 2019 y su fecha recuerda el nacimiento de los compositores Georges Bizet y Johann Strauss II.",
-      "date": "2026-10-25",
-      "commune": "Nacimiento",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/dia-mundial-de-la-opera-se-celebra-con-actividades-que-buscan-acercar-esta-arte-escenica-a-nuevos-publicos/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Biobío"
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "La celebración se realizará el sábado 24 y domingo 25 de octubre. Impulsada por la Seremi de las Culturas y el SERPAT, junto a diversas organizaciones, la edición de este año pondrá un especial énfasis en valorar el legado de la comunidad chilota en la zona austral.",
-      "date": "2026-10-25",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/dia-del-patrimonio-cultural-regional-de-magallanes-ofrecera-mas-de-50-actividades-este-fin-de-semana/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "PUBLICADO EL 25 OCTUBRE, 2026",
-      "raw_text": "PUBLICADO EL 25 OCTUBRE, 2026",
-      "date": "2026-10-25",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/actualidad/mas-de-mil-personas-disfrutaron-este-sabado-del-concierto-de-javiera-parra-que-cerro-el-dia-de-la-musica-chilena-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
       "title": "La Elvira – 26 Octubre, 19:30 hrs.",
       "raw_text": "La Elvira – 26 Octubre, 19:30 hrs.",
       "date": "2026-10-26",
@@ -1147,6 +1187,16 @@
       "source_url": "https://ww2.teatromunicipaltemuco.cl/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "La Araucanía"
+    },
+    {
+      "title": "26.10.2026 / Los Lagos",
+      "raw_text": "26.10.2026 / Los Lagos",
+      "date": "2026-10-26",
+      "commune": "Los Lagos",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Los Ríos"
     },
     {
       "title": "27 al 30 de octubre ·",
@@ -1679,6 +1729,16 @@
       "region": "Metropolitana"
     },
     {
+      "title": "Gala Bafote 2026 «Catrinas: Más Allá de la Vida» 20 Noviembre, 20:00 hrs.",
+      "raw_text": "Gala Bafote 2026 «Catrinas: Más Allá de la Vida» 20 Noviembre, 20:00 hrs.",
+      "date": "2026-11-20",
+      "commune": "Temuco",
+      "source": "Teatro Municipal de Temuco",
+      "source_url": "https://ww2.teatromunicipaltemuco.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "La Araucanía"
+    },
+    {
       "title": "Sábado 21 de noviembre – 18:00 horas",
       "raw_text": "Sábado 21 de noviembre – 18:00 horas",
       "date": "2026-11-21",
@@ -1767,6 +1827,16 @@
       "source_url": "https://www.teatroregional.cl/archivo/28463",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "Metropolitana"
+    },
+    {
+      "title": "Concierto IX – Haydn: Los Adioses, 27 Noviembre 20:00 hrs.",
+      "raw_text": "Concierto IX – Haydn: Los Adioses, 27 Noviembre 20:00 hrs.",
+      "date": "2026-11-27",
+      "commune": "Temuco",
+      "source": "Teatro Municipal de Temuco",
+      "source_url": "https://ww2.teatromunicipaltemuco.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "La Araucanía"
     },
     {
       "title": "Sábado 28 de noviembre – 18:00 horas",
@@ -2457,6 +2527,16 @@
       "source_url": "https://parquecultural.cl/events/cocina-indigena-aymara/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "Valparaíso"
+    },
+    {
+      "title": "Miércoles 23 de junio",
+      "raw_text": "Miércoles 23 de junio",
+      "date": "2027-06-23",
+      "commune": "Valparaíso",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/cocina-indigena-aymara/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Valparaíso"
     }
   ],
   "source_candidates": [
@@ -3118,6 +3198,48 @@
       "url": "http://www.festivalsintesisteatralvalparaiso.cl",
       "domain": "www.festivalsintesisteatralvalparaiso.cl",
       "found_on": "https://parquecultural.cl/events/dia-nacional-del-teatro-festival-sintesis-teatral-valparaiso-realizara-segunda-version-en-linea/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/kalkutun",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/cine/kalkutun-juicios-a-los-brujos/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/vvv-trippin-you",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/musica/vvv-trippin-you/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/lanzamiento-de-el-hambre-y-las-ganas-de-comer-la-estrategia-del-caracol-camara-chilena-de-la-destruccion",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/musica/la-estrategia-del-caracol-camara-chilena-de-la-destruccion/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/abelocain",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/musica/abelocain/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/chaito-sapito-matar-a-grax-junto-a-nisuyai-y-fosfenos",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/musica/chaito-sapito-matar-a-grax-junto-a-nisuyai-y-fosfenos/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ww2.teatromunicipaltemuco.cl/product/concierto-ix-haydn-los-adioses-27-noviembre-2000-hrs/",
+      "domain": "ww2.teatromunicipaltemuco.cl",
+      "found_on": "https://www.teatromunicipaltemuco.cl/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ww2.teatromunicipaltemuco.cl/product/gala-bafote-2026-catrinas-mas-alla-de-la-vida/",
+      "domain": "ww2.teatromunicipaltemuco.cl",
+      "found_on": "https://www.teatromunicipaltemuco.cl/",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]
