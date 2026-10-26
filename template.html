@@ -117,13 +117,13 @@
   .site-nav a:hover,.site-nav a:focus-visible{background:var(--paper);color:var(--ink);}
   .site-nav a.is-active,.site-nav a.is-current{background:color-mix(in srgb,var(--cat,var(--navy)) 10%,var(--surface));border-color:color-mix(in srgb,var(--cat,var(--navy)) 25%,var(--surface));color:var(--ink);}
   .site-nav a[class^="cat-"]::before{content:"";width:7px;height:7px;flex:none;border-radius:50%;margin-right:10px;background:var(--cat);}
-  .sidebar-edge{display:none;position:fixed;z-index:95;align-items:center;justify-content:center;left:calc(var(--sidebar-width) - 16px);top:calc((100vh + var(--header-height)) / 2);top:calc((100dvh + var(--header-height)) / 2);transform:translateY(-50%);width:32px;height:48px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);box-shadow:0 2px 8px rgba(25,30,27,.12);cursor:pointer;}
+  .sidebar-edge{--edge-height:48px;display:none;position:fixed;z-index:95;align-items:center;justify-content:center;left:calc(var(--sidebar-width) - 16px);top:calc((100vh + var(--header-height) - var(--edge-height)) / 2);top:calc((100dvh + var(--header-height) - var(--edge-height)) / 2);width:32px;height:var(--edge-height);border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);box-shadow:0 2px 8px rgba(25,30,27,.12);cursor:pointer;}
   .sidebar-edge svg{width:20px;height:20px;}
   /* Centrada en el espacio bajo la cabecera; área táctil de 44 px aunque se vea más angosta. */
   .sidebar-edge::before{content:"";position:absolute;inset:-2px -6px;}
   .sidebar-edge:hover{border-color:var(--muted);background:var(--paper);}
   @media (min-width:1024px){.js .sidebar-edge{display:flex;}:root[data-sidebar="hidden"] .sidebar-edge{left:0;border-radius:0 10px 10px 0;}}
-  @media (max-width:1023px){:root[data-menu-open="true"] .sidebar-edge{display:flex;top:calc(var(--header-height) + 12px);transform:none;left:min(278px,calc(100vw - 54px));width:44px;height:44px;}}
+  @media (max-width:1023px){:root[data-menu-open="true"] .sidebar-edge{--edge-height:44px;display:flex;left:min(278px,calc(100vw - 54px));width:44px;height:44px;}}
   .nav-backdrop{position:fixed;inset:var(--header-height) 0 0;border:0;background:rgba(6,20,36,.35);z-index:85;}
   @media (min-width:1024px){
     body{padding-left:var(--sidebar-width);}
@@ -1106,13 +1106,13 @@
       sections.forEach(function (section) {
         if (!section.getClientRects().length) return;
         var y = section.getBoundingClientRect().top;
-        if (y <= 160 && Math.abs(y) < best) { current = section.id; best = Math.abs(y); }
+        if (y <= 160 && Math.abs(y) < best) { current = section.dataset.navSection ? "cat-" + section.dataset.navSection : section.id; best = Math.abs(y); }
       });
       // Las últimas secciones no alcanzan a subir hasta la cabecera: al final de la página
       // manda la sección elegida en el menú si está a la vista.
       var target = location.hash && d.getElementById(location.hash.slice(1));
       if (target && innerHeight + scrollY >= d.documentElement.scrollHeight - 4
-          && target.getBoundingClientRect().top < innerHeight) current = target.id;
+          && target.getBoundingClientRect().top < innerHeight) current = target.dataset.navSection ? "cat-" + target.dataset.navSection : target.id;
       if (!current) current = "portada";
       links.forEach(function (link) {
         var active = link.getAttribute("href") === "#" + current;
@@ -1134,8 +1134,8 @@
       var known = Array.from(navigation.querySelectorAll("a")).some(function (link) {
         return link.getAttribute("href") === hash;
       });
-      var target = known && d.getElementById(hash.slice(1));
-      if (!target) return null;
+      var target = d.getElementById(hash.slice(1));
+      if (!target || (!known && !target.hasAttribute("data-nav-topic"))) return null;
       var reset = d.getElementById("preferences-reset");
       var cards = Array.from(target.querySelectorAll(".feature,.compact-list li"));
       var excluded = target.closest("[data-source-hidden],[data-filtered]")

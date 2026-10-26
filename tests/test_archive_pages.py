@@ -1,5 +1,7 @@
 """Archivo «Últimos 7 días»: una página por día, noindex, sin días vacíos (2026-10-25)."""
 import os
+import json
+import re
 import tempfile
 import unittest
 from datetime import datetime, timezone
@@ -39,6 +41,11 @@ class ArchivePagesTests(unittest.TestCase):
             self.assertEqual(page.count("<h1"), 1, name)
             self.assertIn('<link rel="canonical" href="https://sitio.example/archivo/', page)
             self.assertIn('href="https://sitio.example/favicon.svg"', page)
+            self.assertIn('property="og:title"', page)
+            self.assertIn('name="twitter:card"', page)
+            structured = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', page).group(1))
+            self.assertEqual(structured['@type'], 'CollectionPage')
+            self.assertTrue(structured['url'].startswith('https://sitio.example/archivo/'))
 
     def test_health_is_shown_inside_science_and_technology(self):
         archive = [record("Vacuna nueva", "2026-10-24T15:00:00Z", "salud-ciencia"),

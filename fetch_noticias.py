@@ -755,7 +755,15 @@ def topic_anchor(story, reserved):
     if category in reserved:
         return ""
     reserved.add(category)
-    return f' id="cat-{esc(category)}" data-nav-topic="{esc(category)}"'
+    from scripts.presentation_groups import canonical_section
+    section = canonical_section(category)
+    return f' id="cat-{esc(category)}" data-nav-topic="{esc(category)}" data-nav-section="{esc(section)}"'
+
+
+def parent_topic_anchor(story, reserved):
+    from scripts.presentation_groups import canonical_section
+    parent = canonical_section(story["category"])
+    return topic_anchor({"category": parent}, reserved) if parent != story["category"] else ""
 
 
 def render_top(sel, now):
@@ -765,14 +773,15 @@ def render_top(sel, now):
     grouped = sel.get("by_category", {})
     reserved = set(grouped) | {s["category"] for items in grouped.values() for s in items}
     lead_anchor = topic_anchor(lead, reserved)
+    parent_anchor = parent_topic_anchor(lead, reserved)
     lead_html = (
         f'<article class="lead cat-{lead["category"]}{" lead--text" if not safe_image(lead.get("image")) else ""}" id="portada">{figure_html(lead, eager=True)}'
-        f'<p class="kicker">Portada · {esc(category_label(lead))}</p>'
+        f'<p class="kicker"{parent_anchor}>Portada · {esc(category_label(lead))}</p>'
         f'<h2 class="lead-title"{lead_anchor}>{title_link(lead)}</h2>{dek_html(lead)}{meta_html(lead, now, True)}</article>'
     )
     items = "".join(
         f'<li class="cat-{s["category"]}"><article class="rail-item">{figure_html(s)}'
-        f'<p class="kicker">{esc(category_label(s))}</p>'
+        f'<p class="kicker"{parent_topic_anchor(s, reserved)}>{esc(category_label(s))}</p>'
         f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</article></li>'
         for s in sel["secondary"]
     )
@@ -855,7 +864,7 @@ def render_nav(sel, agenda=False):
     sections = set(sel["by_category"])
     published = ([sel["lead"]] if sel.get("lead") else []) + sel.get("secondary", [])
     published += [story for items in sel["by_category"].values() for story in items]
-    available = sections | {story["category"] for story in published}
+    available = sections | {canonical_section(story["category"]) for story in published}
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
     emitted = set()
     def entry(category):
@@ -867,7 +876,7 @@ def render_nav(sel, agenda=False):
         if key not in available or key in emitted:
             continue
         parent = canonical_section(key)
-        if parent != key and parent in sections:
+        if parent != key:
             continue
         links.append(entry(category))
         emitted.add(key)

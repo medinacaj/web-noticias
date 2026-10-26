@@ -77,3 +77,5 @@ Variables de entorno: `GNEWS_API_KEY` (secret), `SITE_URL` y `GSC_VERIFICATION` 
 
 ## Marco legal-tecnológico
 Leer `docs/ASESOR_LEGAL_TECNOLOGICO.md` en tareas con implicaciones legales, datos, IA, derechos de contenido, seguridad, proveedores, contratos o continuidad. Aplicar solo los controles pertinentes y distinguir requisitos jurídicos verificados de buenas prácticas; registrar evidencia, jurisdicción, riesgo y validación pendiente. Coordinar con `AGENTS.md`.
+
+- Integración móvil/archivo: flecha centrada en el área bajo la cabecera también en móvil y movimiento reducido; Salud siempre se representa por Ciencia y tecnología en el menú, con anclas antiguas funcionales. El archivo reutiliza el control de tema de portada y respeta la preferencia local; mantiene noindex, canonical y metadatos de compartición.
