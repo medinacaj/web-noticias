@@ -30,9 +30,9 @@ class BalancedSourcesTests(unittest.TestCase):
         articles = [item("A", i) for i in range(2)]
         self.assertEqual(balance_section_sources(articles), articles)
         self.assertEqual(len(balance_section_sources(articles, limit=1)), 1)
-        many = [item("A", i) for i in range(30)]
-        self.assertEqual(len(balance_section_sources(many)), 24)
-        self.assertEqual(len({id(x) for x in balance_section_sources(many)}), 24)
+        many = [item("A", i) for i in range(60)]
+        self.assertEqual(len(balance_section_sources(many)), 48)
+        self.assertEqual(len({id(x) for x in balance_section_sources(many)}), 48)
 
     def test_no_sources_falls_back_without_error(self):
         articles = [{"title": f"Item {i}", "sources": []} for i in range(8)]

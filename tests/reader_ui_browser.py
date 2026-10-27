@@ -44,6 +44,18 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.pw.stop()
         self.assertEqual(self.errors, [])
 
+    async def toggle_view_options(self):
+        button = self.page.locator('#view-options-toggle')
+        if not await button.is_visible():
+            await self.page.locator('#menu-toggle').click()
+        await button.click()
+
+    async def toggle_library(self):
+        button = self.page.locator('#library-toggle')
+        if not await button.is_visible():
+            await self.page.locator('#menu-toggle').click()
+        await button.click()
+
     async def test_reading_hierarchy_and_control_labels(self):
         self.assertTrue(await self.page.locator('#search-toggle .control-label').is_visible())
         self.assertTrue(await self.page.locator('#view-options-toggle .control-label').is_visible())
@@ -56,9 +68,9 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#search-toggle').click()
         self.assertTrue(await self.page.locator('#search-input').is_visible())
 
-    async def test_header_clock_uses_current_gmt_instead_of_edition_time(self):
+    async def test_header_clock_uses_the_device_timezone(self):
         from datetime import datetime, timezone
-        context = await self.browser.new_context(timezone_id='Asia/Tokyo')
+        context = await self.browser.new_context(timezone_id='America/Santiago')
         try:
             await context.route('https://**/*', lambda route: route.abort())
             page = await context.new_page()
@@ -66,11 +78,12 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await page.goto(self.url)
             clock = page.locator('#site-clock')
             self.assertEqual(await clock.count(), 1)
-            self.assertEqual(await clock.inner_text(), '18:06 GMT')
+            self.assertEqual(await clock.inner_text(), '15:06')
+            self.assertIn('America/Santiago', await clock.get_attribute('title'))
             self.assertFalse(await page.locator('#updated-at').is_visible())
             self.assertNotIn('Actualizado', await page.locator('.header-status').inner_text())
             await page.clock.fast_forward(60000)
-            self.assertEqual(await clock.inner_text(), '18:07 GMT')
+            self.assertEqual(await clock.inner_text(), '15:07')
         finally:
             await context.close()
 
@@ -90,7 +103,52 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await progress.focus()
         await self.page.clock.fast_forward(16 * 60000)
         self.assertIn('pendiente', await self.page.locator('#refresh-help').text_content())
-        self.assertEqual(await progress.get_attribute('aria-valuenow'), '100')
+        self.assertEqual(await progress.get_attribute('aria-valuenow'), '0')
+
+    async def test_initial_bar_has_no_loading_animation(self):
+        fill = self.page.locator('#refresh-fill')
+        self.assertEqual(await fill.evaluate('el => getComputedStyle(el).transitionDuration'), '0s')
+
+    async def test_header_groups_remain_in_one_row_and_mobile_tools_are_reachable(self):
+        for width in (320, 375, 390, 768, 1024, 1440, 2560):
+            await self.page.set_viewport_size({'width': width, 'height': 900})
+            boxes = [await self.page.locator(s).bounding_box() for s in
+                     ('.brand-link','#theme-toggle','#search-toggle','#site-clock','.edition-count','#refresh-now')]
+            centers = [b['y'] + b['height'] / 2 for b in boxes]
+            self.assertLessEqual(max(centers) - min(centers), 4, (width, centers))
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
+            if width < 1024:
+                self.assertFalse(await self.page.locator('#view-options-toggle').is_visible())
+                await self.page.locator('#menu-toggle').click()
+                self.assertTrue(await self.page.locator('#nav-tools #view-options-toggle').is_visible())
+                self.assertTrue(await self.page.locator('#nav-tools #library-toggle').is_visible())
+                await self.page.locator('#menu-toggle').click()
+
+    async def test_cards_lift_smoothly_and_respect_reduced_motion(self):
+        await self.page.emulate_media(reduced_motion='no-preference')
+        card = self.page.locator('.section-grid .feature').first
+        await card.scroll_into_view_if_needed()
+        original = await card.evaluate('el => ({top:el.offsetTop,height:el.offsetHeight})')
+        await card.hover()
+        await self.page.wait_for_function("getComputedStyle(document.querySelector('.section-grid .feature')).transform !== 'none'")
+        moved = await card.evaluate('el => ({top:el.offsetTop,height:el.offsetHeight})')
+        self.assertEqual(original, moved)
+        await self.page.emulate_media(reduced_motion='reduce')
+        self.assertEqual(await card.evaluate('el => getComputedStyle(el).transform'), 'none')
+
+    async def test_resizing_with_view_settings_open_keeps_keyboard_focus_visible(self):
+        await self.page.set_viewport_size({'width': 900, 'height': 900})
+        await self.toggle_view_options()
+        await self.page.locator('#text-size').focus()
+        await self.page.set_viewport_size({'width': 1200, 'height': 900})
+        await self.page.wait_for_function("document.querySelector('#view-options-toggle').closest('#header-actions')")
+        self.assertFalse(await self.page.locator('#view-options-panel').is_visible())
+        self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'view-options-toggle')
+        await self.toggle_view_options()
+        await self.page.locator('#text-size').focus()
+        await self.page.set_viewport_size({'width': 900, 'height': 900})
+        await self.page.wait_for_function("document.querySelector('#view-options-toggle').closest('#nav-tools')")
+        self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'menu-toggle')
 
     async def test_refresh_same_edition_preserves_reading_position(self):
         button = self.page.locator('#refresh-now')
@@ -194,7 +252,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await context.close()
 
     async def test_view_selector_shows_current_mode_and_preserves_choice(self):
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         selector = self.page.get_by_label('Vista', exact=True)
         self.assertEqual(await selector.evaluate('el => el.tagName'), 'SELECT')
         self.assertEqual(await selector.input_value(), 'editorial')
@@ -203,7 +261,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await selector.select_option(mode)
             self.assertEqual(await self.page.locator('#contenido').evaluate("el => [...el.classList].filter(c => c === 'is-compact' || c === 'is-headlines').join(' ')"), css_class)
             await self.page.reload()
-            await self.page.locator('#view-options-toggle').click()
+            await self.toggle_view_options()
             self.assertEqual(await selector.input_value(), mode)
         await self.page.locator('#text-size').select_option('large')
         await selector.select_option('compact')
@@ -366,7 +424,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_visit_updates_respect_filters_and_reset_preserves_order(self):
         await self.prime_previous_edition()
         total = await self.page.locator('#visit-updates').text_content()
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#source-sort').select_option('recent')
         category = self.page.locator('#category-preference')
         await category.select_option(index=1)
@@ -380,7 +438,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await category.input_value(), '')
         self.assertEqual(await self.page.locator('#source-sort').input_value(), 'recent')
         self.assertEqual(await self.page.locator('#visit-updates').text_content(), total)
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         for width in (320, 390, 768, 1024, 1440, 1920, 2560):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
@@ -404,9 +462,9 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await self.page.evaluate("localStorage.getItem('noticias:last-edition:v1:' + location.pathname)"), before)
 
     async def test_article_back_navigation_preserves_scroll_and_preferences(self):
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#text-size').select_option('large')
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         link = self.page.locator('.section-grid h3 a').first
         await link.scroll_into_view_if_needed()
         before = await self.page.evaluate('scrollY')
@@ -492,15 +550,15 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                 if width < 1024:
                     self.assertFalse(await self.page.locator('#site-nav').is_visible())
         await self.page.set_viewport_size({'width': 1440, 'height': 1000})
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#category-preference').select_option('cultura')
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
         self.assertTrue(await self.page.locator('#cat-medioambiente').is_visible())
         self.assertEqual(await self.page.locator('#category-preference').input_value(), '')
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#category-preference').select_option('cultura')
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#site-nav a[href="#cat-nacional"]').click()
         self.assertTrue(await self.page.locator('#cat-nacional .feature').is_visible())
         self.assertEqual(await self.page.locator('#category-preference').input_value(), '')
@@ -519,9 +577,9 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_back_to_topic_hash_preserves_later_category_filter(self):
         await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#category-preference').select_option('cultura')
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         hidden = await self.page.locator('[data-source-hidden]').count()
         link = self.page.locator('.section-grid h3 a[data-key="cultura"]').first
         destination = await link.get_attribute('href')
@@ -595,7 +653,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
           cards[0].dataset.originalOrder='1'; cards[1].dataset.originalOrder='0';
           cards[0].querySelector('time').dateTime=new Date().toISOString();
         }""")
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#source-sort').select_option('relevance')
         self.assertFalse(await grid.locator('.feature,.compact-list li').first.evaluate("el=>el.classList.contains('feature')"))
         await self.page.locator('#source-sort').select_option('recent')
@@ -637,6 +695,10 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(await self.page.evaluate("!!document.activeElement.closest('#site-nav')"))
         await self.page.locator('#site-nav a').last.focus()
         await self.page.keyboard.press('Tab')
+        self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'view-options-toggle')
+        await self.page.keyboard.press('Tab')
+        self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'library-toggle')
+        await self.page.keyboard.press('Tab')
         self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'sidebar-edge')
         await self.page.keyboard.press('Tab')
         self.assertFalse(await self.page.locator('#site-nav').is_visible())
@@ -660,14 +722,14 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_theme_follows_system_and_manual_choice_is_retained(self):
         await self.page.emulate_media(color_scheme='dark')
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#theme-select').select_option('system')
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'dark')
         await self.page.locator('#theme-select').select_option('light')
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
         await self.page.reload()
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'light')
-        await self.page.locator('#view-options-toggle').click()
+        await self.toggle_view_options()
         await self.page.locator('#theme-select').select_option('system')
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'), 'dark')
         await self.page.emulate_media(color_scheme='light')
@@ -697,9 +759,9 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                 self.assertFalse(await figure.is_visible())
         ARTIFACTS.mkdir(exist_ok=True)
         for theme in ('light', 'dark'):
-            await self.page.locator('#view-options-toggle').click()
+            await self.toggle_view_options()
             await self.page.locator('#theme-select').select_option(theme)
-            await self.page.locator('#view-options-toggle').click()
+            await self.toggle_view_options()
             for width in (390, 1440):
                 await self.page.set_viewport_size({"width": width, "height": 1000})
                 await self.page.evaluate('scrollTo(0,0)')
@@ -721,9 +783,11 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#search-toggle').click()
         await self.page.locator('#menu-toggle').click()
         self.assertFalse(await self.page.locator('#search-panel').is_visible())
-        await self.page.locator('#view-options-toggle').click()
-        self.assertFalse(await self.page.locator('#site-nav').is_visible())
+        await self.toggle_view_options()
+        self.assertTrue(await self.page.locator('#site-nav').is_visible())
         self.assertTrue(await self.page.locator('#view-options-panel').is_visible())
+        await self.page.keyboard.press('Escape')
+        self.assertFalse(await self.page.locator('#site-nav').is_visible())
 
     async def test_active_navigation_returns_to_portada(self):
         await self.page.locator('.site-footer').scroll_into_view_if_needed()
@@ -740,11 +804,11 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         for width in (390, 1440):
             await self.page.set_viewport_size({"width": width, "height": 1000})
             await check_search(self.page, width, no_overflow)
-            await self.page.locator('#view-options-toggle').click()
+            await self.toggle_view_options()
             await check_view_options_bounds(self.page, width)
-            await self.page.locator('#view-options-toggle').click()
+            await self.toggle_view_options()
         await self.page.locator('.save-story:visible').first.click()
-        await self.page.locator('#library-toggle').click()
+        await self.toggle_library()
         self.assertGreater(await self.page.locator('#saved-stories a').count(), 0)
 
     async def test_without_javascript_news_and_navigation_remain_available(self):
@@ -810,9 +874,9 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             a, b = sorted((luminance(first), luminance(second)), reverse=True)
             return (a + .05)/(b + .05)
         for theme in ('light', 'dark'):
-            await self.page.locator('#view-options-toggle').click()
+            await self.toggle_view_options()
             await self.page.locator('#theme-select').select_option(theme)
-            await self.page.locator('#view-options-toggle').click()
+            await self.toggle_view_options()
             await self.page.wait_for_function('theme => document.documentElement.dataset.theme === theme', arg=theme)
             colors = await self.page.evaluate("""() => {
                 const card = document.querySelector('.lead');
@@ -950,7 +1014,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             header = await self.page.locator('.site-header').bounding_box()
             self.assertLessEqual(header['height'], 80 if width < 1024 else 68, (width, header))
             self.assertEqual(await self.page.locator('#menu-toggle').is_visible(), width < 1024, width)
-            for selector in ('#theme-toggle','#search-toggle','#view-options-toggle','#library-toggle','#site-clock','#refresh-progress','#refresh-now','.edition-count'):
+            for selector in ('#theme-toggle','#search-toggle','#site-clock','#refresh-progress','#refresh-now','.edition-count'):
                 self.assertTrue(await self.page.locator(selector).is_visible(), (width, selector))
             boxes = [await item.bounding_box() for item in await self.page.locator('.bar-inner .icon-btn:visible').all()]
             boxes.sort(key=lambda box: box['x'])

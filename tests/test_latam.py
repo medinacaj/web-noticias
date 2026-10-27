@@ -163,7 +163,7 @@ class LatamTests(unittest.TestCase):
           <item><title>Venezuela anuncia medidas</title><link>https://medio.example/b</link>
           <source url="https://medio.example">Medio</source><pubDate>2026-10-23T11:00:00</pubDate>
           </item></channel></rss>'''
-        for category, count in (("latinoamerica", 2), ("internacional", 1)):
+        for category, count in (("latinoamerica", 4), ("internacional", 1)):
             with self.subTest(category=category), patch.object(news, "http_get", return_value=raw), \
                  patch.object(news, "CATEGORIES", [{"key": category, "label": category, "google_topic": "WORLD"}]), \
                  patch.object(news, "DIRECT_FEEDS", {}), \
@@ -188,7 +188,7 @@ class LatamTests(unittest.TestCase):
                  patch("scripts.regional_sources.load_catalog", return_value=[{**catalog, field: value}]), \
                  patch("scripts.regional_sources.collect_regional", return_value=[]):
                 records = news.collect(NOW)
-            self.assertEqual(len(records), 2 if value is True else 0)
+            self.assertEqual(len(records), 4 if value is True else 0)
 
     def test_blocked_legacy_is_tagged_but_stays_international(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -210,14 +210,16 @@ class LatamTests(unittest.TestCase):
                 self.assertIsNone(prepare_item(item(link=url), NOW, []))
         self.assertIsNotNone(prepare_item(item(link="https://news.google.com/rss/articles/ABC"), NOW, []))
 
-    def test_collect_uses_two_localized_searches_and_no_extra_gnews(self):
+    def test_collect_covers_subregions_without_more_gnews_and_keeps_country_evidence(self):
         requests, api = [], []
         def rss(url, category, default_source=None, **kwargs):
             requests.append((url, category))
             if category != "latinoamerica":
                 return []
             params = parse_qs(urlsplit(url).query)
-            record = item("Brasil anuncia novas medidas" if params.get("gl") == ["BR"] else "Venezuela anuncia medidas")
+            titles = {"BR": "Brasil anuncia novas medidas", "MX": "México anuncia medidas",
+                      "CO": "Colombia anuncia medidas", "AR": "Argentina anuncia medidas"}
+            record = item(titles.get(params["gl"][0], "Venezuela anuncia medidas"))
             record["category"] = category
             record["link"] += "-" + str(len(requests))
             return [record]
@@ -226,14 +228,17 @@ class LatamTests(unittest.TestCase):
              patch("scripts.regional_sources.collect_regional", return_value=[]):
             collected = news.collect(NOW)
         latam = [(url, parse_qs(urlsplit(url).query)) for url, key in requests if key == "latinoamerica"]
-        self.assertEqual(len(latam), 2)
+        self.assertEqual(len(latam), 4)
         self.assertEqual(latam[0][1]["hl"], ["pt-BR"])
         self.assertEqual(latam[0][1]["gl"], ["BR"])
         self.assertEqual(latam[0][1]["ceid"], ["BR:pt-419"])
         self.assertIn("Brasil", latam[0][1]["q"][0])
-        self.assertEqual(latam[1][1]["hl"], ["es-419"])
+        self.assertEqual({params["gl"][0] for _, params in latam}, {"BR", "MX", "CO", "AR"})
+        self.assertTrue(all("when:1d" in params["q"][0] for _, params in latam))
+        self.assertEqual({tuple(x["coverage_countries"]) for x in collected},
+                         {("BR",), ("MX",), ("CO",), ("AR",)})
         self.assertEqual(len(api), 6)
-        self.assertEqual(len(collected), 2)
+        self.assertEqual(len(collected), 4)
         self.assertTrue(all(not x["metadata_only"] and not x["summary"]
                             and x["image"] == 'https://medio.example/foto.jpg' for x in collected))
 
@@ -275,8 +280,8 @@ class LatamTests(unittest.TestCase):
         with patch.object(news, "fetch_rss", side_effect=rss), patch.object(news, "GNEWS_API_KEY", ""), \
              patch("scripts.regional_sources.collect_regional", return_value=[]):
             records = news.collect(NOW)
-        self.assertEqual(len(calls), 2)
-        self.assertEqual(len(records), 1)
+        self.assertEqual(len(calls), 4)
+        self.assertEqual(len(records), 3)
         self.assertEqual(records[0]["coverage_countries"], ["BR"])
 
     def test_generated_portal_has_latam_tags_filters_feed_and_single_canonical(self):

@@ -8,6 +8,13 @@ from playwright.async_api import async_playwright
 WIDTHS = (320, 375, 768, 1024, 1440, 1920, 2560)
 
 
+async def toggle_view_options(page):
+    button = page.locator("#view-options-toggle")
+    if not await button.is_visible():
+        await page.locator("#menu-toggle").click()
+    await button.click()
+
+
 async def check_view_options_bounds(page, width):
     """A popover can be clipped on the left without increasing scrollWidth."""
     bounds = await page.locator("#view-options-panel").bounding_box()
@@ -205,7 +212,7 @@ async def check(html, output):
                 f"Miniaturas deformadas a {width}px: {thumbnails}")
             await page.screenshot(path=str(output / f"home-{width}.png"), full_page=True, animations="disabled")
             await check_search(page, width, no_overflow)
-            await page.locator("#view-options-toggle").click()
+            await toggle_view_options(page)
             assert await page.locator("#view-options-panel").is_visible(), f"Menú visual oculto a {width}px"
             await check_view_options_bounds(page, width)
             await no_overflow("preferencias")
@@ -218,7 +225,7 @@ async def check(html, output):
             await page.locator("#density-switch").select_option("headlines")
             assert await page.locator("#contenido").evaluate("(el) => el.classList.contains('is-headlines')"), f"Vista titulares inactiva a {width}px"
             await page.screenshot(path=str(output / f"headlines-{width}.png"), full_page=False, animations="disabled")
-            await page.locator("#view-options-toggle").click()
+            await toggle_view_options(page)
             # Validar botones reales en una tarjeta, no solo el panel de favoritos.
             favorite = page.locator(".save-story:visible").first
             share = page.locator(".share-story:visible").first
@@ -226,6 +233,8 @@ async def check(html, output):
             await favorite.click()
             assert await favorite.get_attribute("aria-pressed") == "true", f"No se guardó favorito a {width}px"
             await no_overflow("acciones de tarjeta")
+            if not await page.locator("#library-toggle").is_visible():
+                await page.locator("#menu-toggle").click()
             await page.locator("#library-toggle").click()
             assert await page.locator("#library-panel").is_visible(), f"Favoritos ocultos a {width}px"
             assert await page.locator("#saved-stories a").count() >= 1, f"Biblioteca no sincronizada a {width}px"
