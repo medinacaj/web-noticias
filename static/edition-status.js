@@ -5,14 +5,39 @@
   var edition = d.getElementById("updated-at"), clock = d.getElementById("site-clock");
   var progress = d.getElementById("refresh-progress"), fill = d.getElementById("refresh-fill");
   var button = d.getElementById("refresh-now"), notice = d.getElementById("refresh-status");
-  if (!edition || !clock || !progress || !fill || !button || !notice) return;
+  var help = d.getElementById("refresh-help");
+  if (!edition || !clock || !progress || !fill || !button || !notice || !help) return;
   var published = Date.parse(edition.dateTime);
   var minute = Number(progress.dataset.refreshMinute);
   if (!Number.isInteger(minute) || minute < 0 || minute > 59) minute = 7;
   var scheduled = new Date(published);
   scheduled.setUTCMinutes(minute, 0, 0);
   if (scheduled.getTime() <= published) scheduled.setUTCHours(scheduled.getUTCHours() + 1);
-  var deadline = scheduled.getTime(), noticeTimer;
+  var deadline = scheduled.getTime(), noticeTimer, helpTimer;
+  function hideHelp() { window.clearTimeout(helpTimer); help.hidden = true; }
+  function showHelp() {
+    window.clearTimeout(helpTimer);
+    notice.hidden = true;
+    help.hidden = false;
+  }
+  function leaveHelp() {
+    helpTimer = window.setTimeout(function () {
+      if (d.activeElement !== progress && !help.matches(":hover") && !progress.matches(":hover")) hideHelp();
+    }, 180);
+  }
+  progress.addEventListener("mouseenter", showHelp);
+  progress.addEventListener("mouseleave", leaveHelp);
+  progress.addEventListener("focus", showHelp);
+  progress.addEventListener("blur", hideHelp);
+  progress.addEventListener("click", function () { progress.focus({preventScroll: true}); showHelp(); });
+  help.addEventListener("mouseenter", showHelp);
+  help.addEventListener("mouseleave", leaveHelp);
+  d.addEventListener("pointerdown", function (event) {
+    if (!progress.contains(event.target) && !help.contains(event.target)) hideHelp();
+  });
+  d.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && !help.hidden) { hideHelp(); event.stopPropagation(); }
+  }, true);
   function pad(number) { return String(number).padStart(2, "0"); }
   function tick() {
     var now = new Date();
@@ -31,9 +56,10 @@
     fill.style.width = percent + "%";
     progress.setAttribute("aria-valuenow", String(Math.round(percent)));
     progress.setAttribute("aria-valuetext", message);
-    progress.title = message;
+    help.textContent = message;
   }
   function announce(message) {
+    hideHelp();
     window.clearTimeout(noticeTimer);
     notice.textContent = message;
     notice.hidden = false;
@@ -59,7 +85,7 @@
       var next = data && typeof data.updated === "string" ? Date.parse(data.updated) : NaN;
       if (!Number.isFinite(next) || !Number.isFinite(published)) throw new Error("Invalid edition");
       if (next > published) {
-        announce("Hay noticias nuevas. Cargando edición…");
+        announce("Hay una edición más reciente. Cargando…");
         // Guardar antes de iniciar la recarga; pagehide llega después de su captura.
         d.dispatchEvent(new Event("news:save-view"));
         var destination = new URL(window.location.href);

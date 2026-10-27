@@ -112,7 +112,7 @@
   .refresh-now svg{width:16px;height:16px;}
   .refresh-now:hover{background:var(--paper);border-color:var(--muted);}
   .refresh-now:disabled{cursor:wait;opacity:.65;}
-  .refresh-notice{position:absolute;z-index:160;top:calc(100% + 8px);right:0;width:260px;max-width:calc(100vw - 24px);padding:10px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);box-shadow:var(--card-shadow);font:500 12px/1.5 var(--sans);text-align:left;}
+  .refresh-notice,.refresh-help{position:absolute;z-index:160;top:calc(100% + 8px);right:0;width:260px;max-width:calc(100vw - 24px);padding:10px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);box-shadow:var(--card-shadow);font:500 12px/1.5 var(--sans);text-align:left;}
   .edition-count{font:600 11px/1.4 var(--sans);color:var(--ink);margin:0;white-space:nowrap;}
   .site-nav{background:var(--surface);color:var(--ink);padding:20px 12px;overflow-y:auto;overscroll-behavior:contain;}
   .nav-heading{font:700 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 12px 12px;}
@@ -684,7 +684,8 @@
     <div class="header-status">
       <time id="updated-at" datetime="%%UPDATED_ISO%%" hidden>%%UPDATED_HUMAN%%</time>
       <div class="refresh-controls">
-        <span class="refresh-bar" id="refresh-progress" data-refresh-minute="7" role="progressbar" tabindex="0" aria-label="Ciclo previsto de actualización de noticias" aria-valuemin="0" aria-valuemax="100"><span class="refresh-track"><span class="refresh-bar-fill" id="refresh-fill"></span></span></span>
+        <span class="refresh-bar" id="refresh-progress" data-refresh-minute="7" role="progressbar" tabindex="0" aria-describedby="refresh-help" aria-label="Ciclo previsto de actualización de noticias" aria-valuemin="0" aria-valuemax="100"><span class="refresh-track"><span class="refresh-bar-fill" id="refresh-fill"></span></span></span>
+        <span class="refresh-help" id="refresh-help" role="tooltip" hidden></span>
         <button type="button" class="refresh-now" id="refresh-now" aria-label="Comprobar noticias nuevas" title="Comprobar la última edición publicada" aria-busy="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.5-1L20 9M4 15l2.4 3A7 7 0 0 0 17.9 17"/></svg></button>
         <time class="site-clock" id="site-clock" aria-label="Hora actual GMT, UTC más cero" title="Hora GMT (UTC+0), según el reloj de tu dispositivo">--:-- GMT</time>
       </div>

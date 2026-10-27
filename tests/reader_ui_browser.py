@@ -85,11 +85,11 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.clock.install(time=scheduled - timedelta(minutes=15))
         await self.page.reload()
         progress = self.page.locator('#refresh-progress')
-        self.assertIn('15 min', await progress.get_attribute('title'))
+        self.assertIn('15 min', await self.page.locator('#refresh-help').text_content())
         self.assertIn('prevista', await progress.get_attribute('aria-valuetext'))
         await progress.focus()
         await self.page.clock.fast_forward(16 * 60000)
-        self.assertIn('pendiente', await progress.get_attribute('title'))
+        self.assertIn('pendiente', await self.page.locator('#refresh-help').text_content())
         self.assertEqual(await progress.get_attribute('aria-valuenow'), '100')
 
     async def test_refresh_same_edition_preserves_reading_position(self):
@@ -160,6 +160,38 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.wait_for_function("document.querySelector('#refresh-now').getAttribute('aria-busy') === 'false'")
         self.assertIn('No se pudo comprobar', await self.page.locator('#refresh-status').inner_text())
         self.assertTrue(await button.is_enabled())
+
+    async def test_refresh_help_is_visible_on_hover_focus_and_touch(self):
+        progress = self.page.locator('#refresh-progress')
+        help_text = self.page.locator('#refresh-help')
+        self.assertEqual(await help_text.count(), 1)
+        await progress.hover()
+        self.assertTrue(await help_text.is_visible())
+        await help_text.hover()
+        self.assertTrue(await help_text.is_visible())
+        await self.page.keyboard.press('Escape')
+        self.assertFalse(await help_text.is_visible())
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 900})
+            await self.page.locator('.brand-link').focus()
+            await progress.focus()
+            self.assertTrue(await help_text.is_visible(), width)
+            bounds = await help_text.bounding_box()
+            self.assertGreaterEqual(bounds['x'], 0, width)
+            self.assertLessEqual(bounds['x'] + bounds['width'], width, width)
+            await self.page.keyboard.press('Escape')
+            self.assertFalse(await help_text.is_visible())
+        context = await self.browser.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True)
+        try:
+            await context.route('https://**/*', lambda route: route.abort())
+            page = await context.new_page()
+            await page.goto(self.url)
+            await page.locator('#refresh-progress').tap()
+            self.assertTrue(await page.locator('#refresh-help').is_visible())
+            await page.touchscreen.tap(10, 400)
+            self.assertFalse(await page.locator('#refresh-help').is_visible())
+        finally:
+            await context.close()
 
     async def test_view_selector_shows_current_mode_and_preserves_choice(self):
         await self.page.locator('#view-options-toggle').click()
