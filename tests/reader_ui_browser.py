@@ -56,13 +56,87 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#search-toggle').click()
         self.assertTrue(await self.page.locator('#search-input').is_visible())
 
+    async def test_view_selector_shows_current_mode_and_preserves_choice(self):
+        await self.page.locator('#view-options-toggle').click()
+        selector = self.page.get_by_label('Vista', exact=True)
+        self.assertEqual(await selector.evaluate('el => el.tagName'), 'SELECT')
+        self.assertEqual(await selector.input_value(), 'editorial')
+        self.assertEqual(await selector.locator('option:checked').inner_text(), 'Normal')
+        for mode, css_class in (('compact', 'is-compact'), ('headlines', 'is-headlines'), ('editorial', '')):
+            await selector.select_option(mode)
+            self.assertEqual(await self.page.locator('#contenido').evaluate("el => [...el.classList].filter(c => c === 'is-compact' || c === 'is-headlines').join(' ')"), css_class)
+            await self.page.reload()
+            await self.page.locator('#view-options-toggle').click()
+            self.assertEqual(await selector.input_value(), mode)
+        await self.page.locator('#text-size').select_option('large')
+        await selector.select_option('compact')
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'large')
+
+    async def test_history_can_be_opened_with_keyboard_without_javascript(self):
+        from scripts.editorial_signals import render_signals
+        published = '2026-10-26T10:16:00+00:00'
+        timeline = render_signals([], [[{'title': 'Publicación de prueba',
+            'link': 'https://example.org/historia', 'published': published}]])
+        body = (ROOT / 'public/index.html').read_text().replace('</main>', timeline.replace('timeline-title-0', 'qa-timeline') + '</main>')
+        context = await self.browser.new_context(java_script_enabled=False)
+        try:
+            await context.route('https://**/*', lambda route: route.abort())
+            await context.route('**/?timeline-qa=1', lambda route: route.fulfill(content_type='text/html', body=body))
+            page = await context.new_page()
+            await page.goto(self.url + '?timeline-qa=1')
+            history = page.locator('details[aria-labelledby="qa-timeline"]')
+            self.assertFalse(await history.locator('a').is_visible())
+            await history.locator('summary').focus()
+            await page.keyboard.press('Enter')
+            self.assertTrue(await history.locator('a').is_visible())
+            self.assertEqual(await history.locator('time').get_attribute('datetime'), published)
+            self.assertEqual(await history.locator('time').inner_text(), '26 oct 2026, 07:16')
+        finally:
+            await context.close()
+
+    async def test_card_actions_leave_category_clear_and_have_separate_touch_targets(self):
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 900})
+            cards = self.page.locator('.lead,.rail-list li,.section-grid .feature,.section-grid .compact-list li').filter(has=self.page.locator('.save-story'))
+            for card in await cards.all():
+                if not await card.is_visible():
+                    continue
+                self.assertEqual(await card.locator('.kicker .card-actions').count(), 0, width)
+                footer = card.locator('.card-footer')
+                self.assertEqual(await footer.locator('.meta').count(), 1)
+                buttons = await footer.locator('.save-story,.share-story').all()
+                boxes = [await b.bounding_box() for b in buttons]
+                for box in boxes:
+                    self.assertGreaterEqual(box['width'], 44, width)
+                    self.assertGreaterEqual(box['height'], 44, width)
+                self.assertLessEqual(boxes[0]['x'] + boxes[0]['width'], boxes[1]['x'], width)
+
+    async def test_section_photos_keep_landscape_ratio_with_long_headlines(self):
+        await self.page.route('https://images.example/*.png', lambda route: route.fulfill(
+            content_type='image/png', body=(ROOT / 'static' / 'icon-192.png').read_bytes()))
+        await self.load_latam_lead_fixture('<meta property="og:image" content="https://images.example/{publisher}.png">')
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 900})
+            card = self.page.locator('.section-grid .feature').first
+            await card.locator('h3 a').evaluate("el => el.textContent = 'Un titular excepcionalmente largo sobre ciencia, salud y tecnología que conserva todo su texto sin alargar ni deformar la fotografía de la noticia'")
+            image = await card.locator('.media').bounding_box()
+            self.assertAlmostEqual(image['width'] / image['height'], 4 / 3, delta=.03, msg=str(width))
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
+
     async def test_latam_visuals_are_visible_and_respect_reader_density(self):
+        await self.load_latam_lead_fixture(coverage_countries=['AR', 'BR', 'CO', 'MX'])
         figures = self.page.locator('.cat-latinoamerica .media--region')
         self.assertGreater(await figures.count(), 0)
         for width in (320, 390, 768, 1440):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
             self.assertTrue(await figures.first.is_visible(), width)
             self.assertTrue(await figures.first.locator('.region-label').is_visible(), width)
+            fallback = self.page.locator('.section-grid .media--region:visible').first
+            box = await fallback.bounding_box()
+            for part in ('.source-mark', '.region-label'):
+                child = await fallback.locator(part).bounding_box()
+                self.assertGreaterEqual(child['y'], box['y'], (width, part))
+                self.assertLessEqual(child['y'] + child['height'], box['y'] + box['height'], (width, part))
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
         # Las miniaturas también deben poder ocultarse al elegir una vista densa.
         await self.page.locator('#contenido').evaluate("el => el.classList.add('is-compact')")
@@ -70,7 +144,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#contenido').evaluate("el => {el.classList.remove('is-compact'); el.classList.add('is-headlines')}")
         self.assertFalse(await figures.first.is_visible())
 
-    async def load_latam_lead_fixture(self, publisher_html=None):
+    async def load_latam_lead_fixture(self, publisher_html=None, coverage_countries=None):
         import sys, tempfile
         from datetime import datetime, timezone
         sys.path.insert(0, str(ROOT))
@@ -79,7 +153,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         stories = [{"category": "latinoamerica", "title": f"Brasil y México cooperan {i}",
                     "link": f"https://medio{i}.example/nota", "source_url": f"https://medio{i}.example",
                     "sources": [f"Medio {i}"], "image": "", "summary": "", "metadata_only": True,
-                    "coverage_countries": ["BR", "MX"], "published": now.isoformat()}
+                    "coverage_countries": coverage_countries or ["BR", "MX"], "published": now.isoformat()}
                    for i in range(12)]
         if publisher_html:
             from unittest.mock import patch
@@ -631,7 +705,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                 self.assertGreater(luminance(colors['card']), .9)
 
     async def test_date_is_right_aligned_and_count_matches_published_cards(self):
-        expected = await self.page.locator('main .lead h2 a, main .rail-item h3 a, main .feature h3 a, main .compact h3 a').evaluate_all('nodes => new Set(nodes.map(a => a.href)).size')
+        expected = await self.page.locator('main .lead h2 a, main .rail-item h3 a, main .section:not(.cat-agenda) .feature h3 a, main .section:not(.cat-agenda) .compact h3 a').evaluate_all('nodes => new Set(nodes.map(a => a.href)).size')
         count = self.page.locator('.edition-count')
         self.assertEqual(await count.count(), 1)
         self.assertEqual(int(await count.get_attribute('data-news-count')), expected)

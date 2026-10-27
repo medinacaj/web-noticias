@@ -107,3 +107,13 @@ Recomendación: probar miniaturas de proporción estable, aproximadamente 4:3, a
 5. Validar Safari/VoiceOver y medir rendimiento de producción antes de añadir funciones o componentes.
 
 Los cambios publicados en esta entrega se limitan al control del menú, su visibilidad, la navegación por teclado y el contraste de los números. Las demás filas son recomendaciones evaluadas, no funcionalidades que se declaren implementadas.
+
+## Aplicación autorizada de las recomendaciones — 27 de octubre de 2026
+
+El usuario pidió aplicar las mejoras sugeridas (Issue #137). El seguimiento pasa a un desplegable cerrado inicialmente, accesible con teclado y sin JavaScript, con fechas de Chile y valores `datetime` intactos. «Vista» muestra el modo actual mediante un selector nativo, compatible con las preferencias anteriores.
+
+Las fotografías de sección usan miniaturas 4:3 estables; las fichas de fecha son cuadradas y las de país parten de esa altura mínima, creciendo si varios nombres lo requieren para no recortar sus textos. Guardar y compartir pasan a un pie de tarjeta con los metadatos, fuera de las categorías, con botones independientes de 44×44 px. La portada se alinea arriba en lugar de estirarse al alto de Destacadas, y limita su imagen a 280 px en escritorio/tablet; móvil mantiene 16:9. Los metadatos tienen 13 px y la actualización móvil 11 px. Se conserva la cabecera de 65/77 px reales, las guías y los temas. En móviles estrechos se priorizan el nombre en dos líneas y controles separados de 36/40 px de ancho por 44 px de alto; forzar cinco botones de 44 px de ancho no cabe junto a la marca a 320 px. «Vista» presenta etiqueta desde 1180 px y el tema usa SVG de línea también en el archivo.
+
+En la misma geometría y edición del informe, con las fuentes cargadas y las imágenes reservadas, la atribución de portada a 1440 px pasa de aproximadamente y=759 a y=657; la primera sección queda alrededor de y=909 (antes y=1056). A 390 px pasa de y=1937 a y=1439 aproximadamente. Son medidas locales de recorrido, no métricas de rendimiento real.
+
+La pausa sigue integrada en «Lo último», con foco, nombre accesible y ayuda al pasar el cursor. No se añaden los controles que el usuario rechazó. Se conserva la protección ante imágenes repetidas; no se incorpora un clasificador especulativo de fotografías genéricas. La disponibilidad y pertinencia de cada imagen depende de lo que declare el editor. Safari/iPhone, VoiceOver y las métricas de producción continúan como comprobaciones que requieren el dispositivo o datos reales; no se presentan como realizadas.

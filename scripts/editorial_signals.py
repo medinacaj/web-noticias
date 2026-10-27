@@ -10,6 +10,7 @@ from math import sqrt
 import re
 import unicodedata
 from urllib.parse import urlsplit
+from zoneinfo import ZoneInfo
 
 MAX_ARCHIVE = 2000
 ARCHIVE_DAYS = 8
@@ -203,17 +204,24 @@ def render_signals(trends, timeline):
             'Mínimo cuatro publicaciones de cuatro medios; no representa popularidad entre lectores.</p>'
             '<ul>' + entries + '</ul></section>')
     if timeline:
+        months = ("ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sept", "oct", "nov", "dic")
+        def local_date(value):
+            when = moment(value)
+            if not when:
+                return esc(value)
+            when = when.astimezone(ZoneInfo("America/Santiago"))
+            return f"{when.day} {months[when.month - 1]} {when.year}, {when:%H:%M}"
         for index, group in enumerate(timeline):
             entries = "".join(
-                '<li><time datetime="' + esc(x["published"]) + '">' + esc(x["published"][:16].replace("T", " "))
-                + ' UTC</time><a href="' + esc(x["link"]) + '" rel="noopener">'
+                '<li><time datetime="' + esc(x["published"]) + '">' + local_date(x["published"])
+                + '</time><a href="' + esc(x["link"]) + '" rel="noopener">'
                 + esc(x["title"]) + '</a></li>' for x in group)
             sections.append(
-                '<section class="coverage-radar signal-timeline" aria-labelledby="timeline-title-'
-                + str(index) + '"><div class="radar-head"><h2 id="timeline-title-' + str(index)
-                + '">Seguimiento de publicaciones</h2><span>Historial de titulares</span></div>'
+                '<details class="coverage-radar signal-timeline" aria-labelledby="timeline-title-'
+                + str(index) + '"><summary id="timeline-title-' + str(index)
+                + '">Seguimiento de publicaciones</summary>'
                 '<p>Notas de distintos medios con titulares muy semejantes en momentos diferentes. '
-                'La coincidencia no demuestra que describan exactamente el mismo hecho.</p>'
-                '<ul>' + entries + '</ul></section>')
+                'La coincidencia no demuestra que describan exactamente el mismo hecho. Hora de Chile.</p>'
+                '<ul>' + entries + '</ul></details>')
     return "".join(sections)
 

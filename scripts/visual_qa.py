@@ -181,22 +181,28 @@ async def check(html, output):
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
             await check_compact_navigation(page, width, no_overflow)
-            # Ninguna miniatura debe dejar un bloque vacío por debajo del texto.
-            gaps = await page.evaluate("""() => Array.from(document.querySelectorAll(
+            # Fotos estables; la ficha de país puede crecer para mostrar su texto.
+            thumbnails = await page.evaluate("""() => Array.from(document.querySelectorAll(
                 ".section-grid .feature, .section-grid .compact"))
                 .filter(card => card.getClientRects().length)
                 .map(card => {
                     const image = card.querySelector(".media");
                     const body = card.querySelector(".news-body");
                     if (!image || !body || getComputedStyle(image).display === "none") return null;
-                    return {gap: Math.round(body.getBoundingClientRect().height -
-                                            image.getBoundingClientRect().height),
-                            photo: Math.round(image.getBoundingClientRect().height),
-                            body: Math.round(body.getBoundingClientRect().height)};
+                    const bounds = image.getBoundingClientRect();
+                    const region = image.matches('.media--region');
+                    return {ratio: bounds.width / bounds.height,
+                            expected: region ? null : image.matches('.media--date') ? 1 : 4/3,
+                            readable: !region || (bounds.height >= bounds.width - 1 &&
+                                [...image.querySelectorAll('.source-mark,.region-label')].every(el => {
+                                    const r = el.getBoundingClientRect();
+                                    return r.top >= bounds.top && r.bottom <= bounds.bottom;
+                                }))};
                 }).filter(Boolean).slice(0, 12)""")
-            assert gaps, f"No se encontraron miniaturas para comprobar a {width}px"
-            assert all(item["gap"] <= 4 for item in gaps), (
-                f"Miniaturas sin ocupar la altura disponible a {width}px: {gaps}")
+            assert thumbnails, f"No se encontraron miniaturas para comprobar a {width}px"
+            assert all(item["readable"] and (item["expected"] is None or
+                       abs(item["ratio"] - item["expected"]) < .04) for item in thumbnails), (
+                f"Miniaturas deformadas a {width}px: {thumbnails}")
             await page.screenshot(path=str(output / f"home-{width}.png"), full_page=True, animations="disabled")
             await check_search(page, width, no_overflow)
             await page.locator("#view-options-toggle").click()
@@ -204,11 +210,12 @@ async def check(html, output):
             await check_view_options_bounds(page, width)
             await no_overflow("preferencias")
             await page.screenshot(path=str(output / f"preferences-{width}.png"), full_page=False, animations="disabled")
-            await page.locator("#density-switch").click()
+            await page.locator("#density-switch").select_option("compact")
+            assert await page.locator("#contenido").evaluate("el => el.classList.contains('is-compact')"), f"Vista compacta inactiva a {width}px"
             compact_gap = await page.locator(".section-grid").first.evaluate("el => getComputedStyle(el).gap")
             rail_gap = await page.locator(".rail-list").evaluate("el => getComputedStyle(el).gap")
             assert compact_gap == rail_gap, f"Separaciones distintas en Compacta a {width}px: {compact_gap} / {rail_gap}"
-            await page.locator("#density-switch").click()
+            await page.locator("#density-switch").select_option("headlines")
             assert await page.locator("#contenido").evaluate("(el) => el.classList.contains('is-headlines')"), f"Vista titulares inactiva a {width}px"
             await page.screenshot(path=str(output / f"headlines-{width}.png"), full_page=False, animations="disabled")
             await page.locator("#view-options-toggle").click()
