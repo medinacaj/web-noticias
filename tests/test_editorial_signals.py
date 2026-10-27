@@ -96,6 +96,18 @@ class EditorialSignalsTests(unittest.TestCase):
         self.assertNotIn("<alert>", html)
         self.assertIn('rel="noopener"', html)
 
+    def test_timeline_is_collapsed_and_formats_chile_time_without_changing_dates(self):
+        for published, local in (("2026-10-26T10:16:00+00:00", "26 oct 2026, 07:16"),
+                                 ("2026-06-26T10:16:00+00:00", "26 jun 2026, 06:16")):
+            story = {"published": published, "title": "Una publicación", "link": "https://example.org/nota"}
+            html = render_signals([], [[story]])
+            self.assertIn('<details class="coverage-radar signal-timeline"', html)
+            self.assertNotIn(' open', html)
+            self.assertIn('<summary', html)
+            self.assertIn(f'datetime="{published}"', html)
+            self.assertIn(local, html)
+            self.assertIn('Hora de Chile', html)
+
     def test_save_and_reload_metadata_without_touching_24_hour_portada(self):
         with tempfile.TemporaryDirectory() as directory:
             path = str(Path(directory) / "historial.json")
