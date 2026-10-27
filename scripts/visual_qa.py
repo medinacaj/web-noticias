@@ -239,7 +239,8 @@ async def check(html, output):
             assert links == ["#contenido", "#categorias", "boletin-diario.html", "rss.xml", "archivo/", "sobre-el-portal.html"], (
                 f"Enlaces de pie no válidos a {width}px: {links}")
             assert await page.locator("#categorias").count() == 1
-            assert await page.locator(".header-updated").is_visible()
+            assert await page.locator("#site-clock").is_visible()
+            assert await page.locator("#refresh-now").is_visible()
             assert await page.locator(".edition-count").is_visible()
             assert await footer.locator(".footer-updated,.edition-details").count() == 0
             assert (await footer.bounding_box())["height"] <= (140 if width >= 1024 else 280)
