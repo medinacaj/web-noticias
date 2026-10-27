@@ -56,6 +56,143 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#search-toggle').click()
         self.assertTrue(await self.page.locator('#search-input').is_visible())
 
+    async def test_header_clock_uses_current_gmt_instead_of_edition_time(self):
+        from datetime import datetime, timezone
+        context = await self.browser.new_context(timezone_id='Asia/Tokyo')
+        try:
+            await context.route('https://**/*', lambda route: route.abort())
+            page = await context.new_page()
+            await page.clock.install(time=datetime(2026, 10, 27, 18, 6, tzinfo=timezone.utc))
+            await page.goto(self.url)
+            clock = page.locator('#site-clock')
+            self.assertEqual(await clock.count(), 1)
+            self.assertEqual(await clock.inner_text(), '18:06 GMT')
+            self.assertFalse(await page.locator('#updated-at').is_visible())
+            self.assertNotIn('Actualizado', await page.locator('.header-status').inner_text())
+            await page.clock.fast_forward(60000)
+            self.assertEqual(await clock.inner_text(), '18:07 GMT')
+        finally:
+            await context.close()
+
+    async def test_refresh_bar_reports_estimate_and_pending_publication(self):
+        from datetime import datetime, timedelta
+        self.assertTrue(await self.page.locator('#refresh-progress').count())
+        stamp = await self.page.locator('#updated-at').get_attribute('datetime')
+        edition = datetime.fromisoformat(stamp)
+        scheduled = edition.replace(minute=7, second=0, microsecond=0)
+        if scheduled <= edition:
+            scheduled += timedelta(hours=1)
+        await self.page.clock.install(time=scheduled - timedelta(minutes=15))
+        await self.page.reload()
+        progress = self.page.locator('#refresh-progress')
+        self.assertIn('15 min', await self.page.locator('#refresh-help').text_content())
+        self.assertIn('prevista', await progress.get_attribute('aria-valuetext'))
+        await progress.focus()
+        await self.page.clock.fast_forward(16 * 60000)
+        self.assertIn('pendiente', await self.page.locator('#refresh-help').text_content())
+        self.assertEqual(await progress.get_attribute('aria-valuenow'), '100')
+
+    async def test_refresh_same_edition_preserves_reading_position(self):
+        button = self.page.locator('#refresh-now')
+        self.assertEqual(await button.count(), 1)
+        body = json.dumps({'updated': await self.page.locator('#updated-at').get_attribute('datetime')})
+        requests = []
+        async def current_edition(route):
+            requests.append((route.request.method, route.request.url))
+            await route.fulfill(content_type='application/json', body=body)
+        await self.page.route('**/edition.json?edition_check=*', current_edition)
+        await self.page.evaluate('window.scrollTo(0, 400)')
+        before = await self.page.evaluate('scrollY')
+        box = await button.bounding_box()
+        await self.page.mouse.click(box['x'] + box['width'] / 2, box['y'] + box['height'] / 2)
+        await self.page.wait_for_function("document.querySelector('#refresh-status').textContent.includes('No hay una edición')")
+        self.assertEqual(await self.page.evaluate('scrollY'), before)
+        self.assertEqual(len(requests), 1)
+        self.assertEqual(requests[0][0], 'GET')
+        self.assertTrue(requests[0][1].startswith(self.url))
+        self.assertTrue(await button.is_enabled())
+        self.assertEqual(await button.get_attribute('aria-busy'), 'false')
+
+    async def test_refresh_loads_new_edition_and_keeps_search_context(self):
+        from datetime import datetime, timedelta
+        self.assertEqual(await self.page.locator('#refresh-now').count(), 1)
+        previous = await self.page.locator('#updated-at').get_attribute('datetime')
+        newer = (datetime.fromisoformat(previous) + timedelta(minutes=1)).isoformat()
+        body = (ROOT / 'public/index.html').read_text().replace(previous, newer)
+        await self.page.route('**/edition.json?edition_check=*', lambda route: route.fulfill(content_type='application/json', body=json.dumps({'updated': newer})))
+        await self.page.route(self.url + '?edition=*', lambda route: route.fulfill(content_type='text/html', body=body))
+        await self.page.locator('#search-toggle').click()
+        await self.page.locator('#search-input').fill('Brasil')
+        history_length = await self.page.evaluate('history.length')
+        await self.page.locator('#refresh-now').click()
+        await self.page.wait_for_function('stamp => document.querySelector("#updated-at").dateTime === stamp', arg=newer)
+        self.assertEqual(await self.page.locator('#search-input').input_value(), 'Brasil')
+        self.assertTrue(await self.page.locator('#search-panel').is_visible())
+        self.assertEqual(await self.page.evaluate('history.length'), history_length)
+
+    async def test_refresh_failure_keeps_news_available_and_allows_retry(self):
+        button = self.page.locator('#refresh-now')
+        self.assertEqual(await button.count(), 1)
+        stamp = await self.page.locator('#updated-at').get_attribute('datetime')
+        responses = [(503, 'Servicio no disponible'), (200, json.dumps({'updated': 'fecha inválida'})),
+                     (200, json.dumps({'updated': stamp}))]
+        async def respond(route):
+            status, body = responses.pop(0)
+            await route.fulfill(status=status, content_type='application/json', body=body)
+        await self.page.route('**/edition.json?edition_check=*', respond)
+        for _ in range(2):
+            await button.click()
+            await self.page.wait_for_function("document.querySelector('#refresh-status').textContent.includes('No se pudo comprobar')")
+            self.assertTrue(await self.page.locator('.lead-title').is_visible())
+            self.assertTrue(await button.is_enabled())
+        await button.click()
+        await self.page.wait_for_function("document.querySelector('#refresh-status').textContent.includes('No hay una edición')")
+
+    async def test_refresh_timeout_releases_the_button(self):
+        button = self.page.locator('#refresh-now')
+        self.assertEqual(await button.count(), 1)
+        await self.page.clock.install()
+        pending = []
+        await self.page.route('**/edition.json?edition_check=*', lambda route: pending.append(route))
+        await button.click()
+        await self.page.wait_for_function("document.querySelector('#refresh-now').getAttribute('aria-busy') === 'true'")
+        await self.page.clock.fast_forward(12000)
+        await self.page.wait_for_function("document.querySelector('#refresh-now').getAttribute('aria-busy') === 'false'")
+        self.assertIn('No se pudo comprobar', await self.page.locator('#refresh-status').inner_text())
+        self.assertTrue(await button.is_enabled())
+
+    async def test_refresh_help_is_visible_on_hover_focus_and_touch(self):
+        progress = self.page.locator('#refresh-progress')
+        help_text = self.page.locator('#refresh-help')
+        self.assertEqual(await help_text.count(), 1)
+        await progress.hover()
+        self.assertTrue(await help_text.is_visible())
+        await help_text.hover()
+        self.assertTrue(await help_text.is_visible())
+        await self.page.keyboard.press('Escape')
+        self.assertFalse(await help_text.is_visible())
+        for width in (320, 390, 768, 1024, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 900})
+            await self.page.locator('.brand-link').focus()
+            await progress.focus()
+            self.assertTrue(await help_text.is_visible(), width)
+            bounds = await help_text.bounding_box()
+            self.assertGreaterEqual(bounds['x'], 0, width)
+            self.assertLessEqual(bounds['x'] + bounds['width'], width, width)
+            await self.page.keyboard.press('Escape')
+            self.assertFalse(await help_text.is_visible())
+        context = await self.browser.new_context(viewport={'width': 390, 'height': 844}, has_touch=True, is_mobile=True)
+        try:
+            await context.route('https://**/*', lambda route: route.abort())
+            page = await context.new_page()
+            await page.goto(self.url)
+            await page.locator('#refresh-progress').tap()
+            self.assertTrue(await page.locator('#refresh-help').is_visible())
+            await page.touchscreen.tap(10, 400)
+            self.assertFalse(await page.locator('#refresh-help').is_visible())
+        finally:
+            await context.close()
+
     async def test_view_selector_shows_current_mode_and_preserves_choice(self):
         await self.page.locator('#view-options-toggle').click()
         selector = self.page.get_by_label('Vista', exact=True)
@@ -704,14 +841,14 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             else:
                 self.assertGreater(luminance(colors['card']), .9)
 
-    async def test_date_is_right_aligned_and_count_matches_published_cards(self):
+    async def test_clock_is_right_aligned_and_count_matches_published_cards(self):
         expected = await self.page.locator('main .lead h2 a, main .rail-item h3 a, main .section:not(.cat-agenda) .feature h3 a, main .section:not(.cat-agenda) .compact h3 a').evaluate_all('nodes => new Set(nodes.map(a => a.href)).size')
         count = self.page.locator('.edition-count')
         self.assertEqual(await count.count(), 1)
         self.assertEqual(int(await count.get_attribute('data-news-count')), expected)
         for width in (320, 390, 768, 1024, 1440):
             await self.page.set_viewport_size({"width": width, "height": 1000})
-            date = self.page.locator('.header-updated')
+            date = self.page.locator('#site-clock')
             self.assertTrue(await date.is_visible(), width)
             bounds = await date.bounding_box()
             bar = await self.page.locator('.bar-inner').bounding_box()
@@ -813,7 +950,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             header = await self.page.locator('.site-header').bounding_box()
             self.assertLessEqual(header['height'], 80 if width < 1024 else 68, (width, header))
             self.assertEqual(await self.page.locator('#menu-toggle').is_visible(), width < 1024, width)
-            for selector in ('#theme-toggle','#search-toggle','#view-options-toggle','#library-toggle','.header-updated','.edition-count'):
+            for selector in ('#theme-toggle','#search-toggle','#view-options-toggle','#library-toggle','#site-clock','#refresh-progress','#refresh-now','.edition-count'):
                 self.assertTrue(await self.page.locator(selector).is_visible(), (width, selector))
             boxes = [await item.bounding_box() for item in await self.page.locator('.bar-inner .icon-btn:visible').all()]
             boxes.sort(key=lambda box: box['x'])

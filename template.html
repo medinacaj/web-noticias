@@ -89,7 +89,8 @@
   .utility p{margin:0;letter-spacing:.08em;text-transform:uppercase;font-weight:600;}
   .utility-status{display:flex;align-items:center;gap:12px;}
   .utility time{color:var(--on-navy);font-weight:600;}
-  .refresh-bar{display:inline-block;width:96px;height:2px;background:rgba(255,255,255,.18);overflow:hidden;}
+  .refresh-bar{display:inline-flex;align-items:center;width:38px;height:24px;cursor:help;}
+  .refresh-track{display:block;width:100%;height:3px;background:var(--rule);border-radius:4px;overflow:hidden;}
   .refresh-bar-fill{display:block;height:100%;width:0;background:var(--red);transition:width 1s linear;}
 
   /* ---------- Cabecera compacta y navegación lateral ---------- */
@@ -103,10 +104,16 @@
   .brand-link{display:inline-flex;align-items:center;gap:10px;}
   .brand-logo{width:40px;height:40px;flex:none;}
   /* El SVG compartido mantiene la misma identidad en cabecera, archivo e iconos. */
-  .header-status{flex:none;display:grid;gap:2px;text-align:right;margin-left:12px;}
-  .header-updated{font:500 10px/1.4 var(--sans);color:var(--muted);margin:0;white-space:nowrap;}
+  .header-status{position:relative;flex:none;display:grid;gap:2px;text-align:right;margin-left:12px;}
+  .refresh-controls{display:none;align-items:center;justify-content:flex-end;gap:6px;}
+  .js .refresh-controls{display:flex;}
+  .site-clock{font:500 11px/1.4 var(--sans);font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap;}
+  .refresh-now{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;padding:4px;border:1px solid var(--rule);border-radius:8px;color:var(--ink);background:var(--surface);cursor:pointer;}
+  .refresh-now svg{width:16px;height:16px;}
+  .refresh-now:hover{background:var(--paper);border-color:var(--muted);}
+  .refresh-now:disabled{cursor:wait;opacity:.65;}
+  .refresh-notice,.refresh-help{position:absolute;z-index:160;top:calc(100% + 8px);right:0;width:260px;max-width:calc(100vw - 24px);padding:10px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);box-shadow:var(--card-shadow);font:500 12px/1.5 var(--sans);text-align:left;}
   .edition-count{font:600 11px/1.4 var(--sans);color:var(--ink);margin:0;white-space:nowrap;}
-  .header-updated .refresh-bar{width:38px;background:var(--rule);vertical-align:middle;margin-left:6px;}
   .site-nav{background:var(--surface);color:var(--ink);padding:20px 12px;overflow-y:auto;overscroll-behavior:contain;}
   .nav-heading{font:700 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 12px 12px;}
   .site-nav ul{display:grid;gap:3px;list-style:none;margin:0;padding:0;}
@@ -623,10 +630,11 @@
   :root[data-theme="dark"] :is(.cat-regiones,.cat-politica,.cat-medioambiente,.cat-salud-ciencia){--cat:var(--cat-b);}
   @media (max-width:1023px){
     :root{--header-height:76px;}
-    .bar-inner{flex-wrap:wrap;align-content:center;row-gap:4px;padding-top:6px;padding-bottom:6px;}
+    .bar-inner{flex-wrap:wrap;align-content:center;row-gap:4px;padding-top:2px;padding-bottom:2px;}
     .header-status{order:10;flex:1 0 100%;display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0;}
-    .header-updated{order:2;font-size:11px;}
-    .header-updated .refresh-bar{display:none;}
+    .refresh-controls{order:2;}
+    .refresh-now{width:24px;height:24px;padding:3px;}
+    .refresh-bar{width:28px;}
     .edition-count{order:1;font-size:10px;}
     .footer-top{gap:8px 16px;}
     .footer-nav a{min-height:32px;}
@@ -673,8 +681,16 @@
     <button type="button" class="icon-btn library-toggle" id="library-toggle" aria-expanded="false" aria-controls="library-panel" aria-label="Noticias guardadas" title="Noticias guardadas">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg>
     </button>
-    <div class="header-status"><p class="header-updated">Actualizado <time id="updated-at" datetime="%%UPDATED_ISO%%">%%UPDATED_HUMAN%%</time><span class="refresh-bar" role="progressbar" aria-label="Tiempo transcurrido hasta la próxima actualización" aria-valuemin="0" aria-valuemax="100"><span class="refresh-bar-fill" id="refresh-fill"></span></span></p>
+    <div class="header-status">
+      <time id="updated-at" datetime="%%UPDATED_ISO%%" hidden>%%UPDATED_HUMAN%%</time>
+      <div class="refresh-controls">
+        <span class="refresh-bar" id="refresh-progress" data-refresh-minute="7" role="progressbar" tabindex="0" aria-describedby="refresh-help" aria-label="Ciclo previsto de actualización de noticias" aria-valuemin="0" aria-valuemax="100"><span class="refresh-track"><span class="refresh-bar-fill" id="refresh-fill"></span></span></span>
+        <span class="refresh-help" id="refresh-help" role="tooltip" hidden></span>
+        <button type="button" class="refresh-now" id="refresh-now" aria-label="Comprobar noticias nuevas" title="Comprobar la última edición publicada" aria-busy="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.5-1L20 9M4 15l2.4 3A7 7 0 0 0 17.9 17"/></svg></button>
+        <time class="site-clock" id="site-clock" aria-label="Hora actual GMT, UTC más cero" title="Hora GMT (UTC+0), según el reloj de tu dispositivo">--:-- GMT</time>
+      </div>
       %%EDITION_COUNT%%
+      <output class="refresh-notice" id="refresh-status" role="status" aria-live="polite" hidden></output>
     </div>
   </div>
   <div class="search-panel" id="search-panel" hidden>
@@ -749,19 +765,6 @@
 <script>
 (function () {
   var d = document;
-
-  // Barra de ciclo de actualización (1 hora desde la última generación real del sitio)
-  var time = d.getElementById("updated-at"), fill = d.getElementById("refresh-fill");
-  if (time && fill) {
-    var last = new Date(time.getAttribute("datetime")).getTime();
-    var tick = function () {
-      var pct = Math.max(0, Math.min(100, ((Date.now() - last) / 3600000) * 100));
-      fill.style.width = pct + "%";
-      fill.parentNode.setAttribute("aria-valuenow", String(Math.round(pct)));
-    };
-    tick();
-    setInterval(tick, 5000);
-  }
 
   // Si una imagen externa falla, conservar la composición y mostrar la fuente real.
   // No generar ilustraciones ficticias ni dejar espacios vacíos.
@@ -1427,6 +1430,7 @@
       } catch (error) {}
     }
     window.addEventListener("pagehide", saveView);
+    d.addEventListener("news:save-view", saveView);
     d.addEventListener("click", function (event) {
       var link = event.target.closest && event.target.closest("a[href]");
       if (link && event.button === 0 && !event.ctrlKey && !event.metaKey && !event.shiftKey
@@ -1476,6 +1480,7 @@
 })();
 </script>
 <script src="visit-updates.js"></script>
+<script src="edition-status.js"></script>
 </body>
 </html>
 

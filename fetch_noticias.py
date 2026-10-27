@@ -1024,6 +1024,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
 
     files = {
         "index.html": page,
+        "edition.json": json.dumps({"updated": to_iso(now)}, ensure_ascii=False),
         "sobre-el-portal.html": about_html,
         "boletin-diario.html": newsletter_html,
         "404.html": PAGE_404.replace("%%HOME%%", esc(SITE_URL + "/")),

@@ -1,5 +1,6 @@
 """Pie editorial compacto: destinos reales, atribución y responsive."""
 import tempfile
+import json
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
@@ -62,6 +63,10 @@ class EditorialFooterTests(unittest.TestCase):
             self.assertNotIn("© 2026 Noticias del Momento", page)
             self.assertIn('data-news-count="1"', page)
             self.assertEqual(page.count('id="updated-at"'), 1)
+            self.assertTrue((Path(directory) / 'edition.json').exists())
+            edition = json.loads((Path(directory) / 'edition.json').read_text())
+            self.assertEqual(datetime.fromisoformat(edition['updated']), now)
+            self.assertIn('datetime="' + edition['updated'] + '"', page)
             self.assertNotIn("%%FOOTER_NAV%%", page)
             self.assertNotIn("%%UPDATED_HUMAN%%", page)
 
