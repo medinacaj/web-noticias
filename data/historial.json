@@ -1,6 +1,217 @@
 {
- "actualizado": "2026-10-27T02:01:25Z",
+ "actualizado": "2026-10-27T04:53:37Z",
  "noticias": [
+  {
+   "category": "tecnologia",
+   "title": "Microsoft abre la puerta de salida a 60.000 empleados con un nuevo retiro voluntario",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6997160-microsoft-abre-la-puerta-de-salida-a-60-000-empleados-con-un-nuevo-retiro-voluntario.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/internacional/mundo/2026/10/27/microsoft-abre-la-puerta-de-salida-a-60-000-empleados-con-un-nuevo-retiro-voluntario.shtml",
+   "published": "2026-10-27T03:45:19Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "internacional",
+   "title": "El desafío del \"rey Bibi\": cómo el legado del 7 de octubre define si Netanyahu logra un séptimo mandato como líder de Israel",
+   "summary": "Es el primer ministro israelí que más tiempo ha estado en el cargo y espera conseguir otro mandato cuando Israel celebre elecciones parlamentarias este martes.",
+   "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/3df0/live/ab437ae0-c8b8-11f1-a64c-550be9e3c66b.png",
+   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+   "sources": [
+    "BBC News Mundo"
+   ],
+   "coverages": [
+    {
+     "source": "BBC News Mundo",
+     "title": "El desafío del \"rey Bibi\": cómo el legado del 7 de octubre define si Netanyahu logra un séptimo mandato como líder de Israel",
+     "link": "https://www.bbc.com/mundo/articles/cjg473r01g73o?at_medium=RSS&at_campaign=rss",
+     "published": "2026-10-27T03:39:17Z"
+    }
+   ],
+   "link": "https://www.bbc.com/mundo/articles/cjg473r01g73o?at_medium=RSS&at_campaign=rss",
+   "published": "2026-10-27T03:39:17Z",
+   "first_seen": "2026-10-27T04:53:37Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Festival Internacional de Butoh en Chile",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elmostrador.cl",
+   "sources": [
+    "El Mostrador"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSTdwV19LOWRCX3I4d1ZiTzdnRkY1c3l5VUVzZ3FxOXRwRlh4aEsyd09jOFJTMXJKUU9fcnFIdGpROTNiTlllZjl5Zm1lTWtRanM5aTFsLWZtaXJGcnRvSWFzMFR3UEtRdDhUZHJwVTNkZWMwTTA5c0M1QW1FVWxxWkdUaFNJaU5uN0tYeDNWOWwwa3NxRjE0ZzVn?oc=5",
+   "published": "2026-10-27T03:30:44Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "CL"
+   ],
+   "discovery_edition": "CL-CONCIERTOS",
+   "metadata_policy": "source"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Trump faz insinuações e afirma, sem provas, que eleição no Brasil pareceu fraudada; Alckmin rebate",
+   "summary": "",
+   "image": "https://s2-g1.glbimg.com/6cy0Lmm73n3R03w8R8gaQG6QKWo=/3840x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/Q/D/NZcxPbRxy2HtiGEdRpwQ/globo-canal-4-20261026-2000-frame-188161.jpeg",
+   "source_url": "https://g1.globo.com",
+   "sources": [
+    "G1"
+   ],
+   "coverages": [],
+   "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/27/trump-faz-insinuacoes-e-afirma-sem-provas-que-eleicao-no-brasil-pareceu-fraudada-alckmin-rebate.ghtml",
+   "published": "2026-10-27T03:09:38Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "BR"
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Isla en alerta: Haití no puede reconstruirse a costa de soberanía dominicana",
+   "summary": "",
+   "image": "https://media.acento.com.do/media/storage02/uploads/2022/01/pjaf3261-copy.webp",
+   "source_url": "https://acento.com.do",
+   "sources": [
+    "Acento"
+   ],
+   "coverages": [],
+   "link": "https://acento.com.do/opinion/isla-en-alerta-haiti-no-puede-reconstruirse-a-costa-de-la-soberania-dominicana-9777485.html",
+   "published": "2026-10-27T03:03:26Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "DO",
+    "HT"
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "cultura",
+   "title": "In-Edit Chile anuncia su Panorama Nacional, un homenaje a Álvaro Peña y una gala con Fernanda Abreu",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.potq.net",
+   "sources": [
+    "POTQ Magazine"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZnQwUmhuZk90NEoxMGxMeHZFV25ZZ0owWkVFMlRvSHMtRHB6YUNsbWZfVnJteEZRWEtLRnRTQjA2LVVpS19iSUphS205MkIydXpFMXdfUHJKSUZOVzlzMHY1LW9aZVZ2c3dvVlBkYVpOV25VNG5acjMzQnBhUnI5ME8xR3AzUU5QLU1VSFNqZWppTHYxS0xCaUpIeG81b0pIZnJmTU9EN3ZhZS1EZE9lVm9RQ3dZRWp1LVNaNHZIMlJSTXZDX3k1cQ?oc=5",
+   "published": "2026-10-27T02:59:45Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "CL"
+   ],
+   "discovery_edition": "CL-CINE",
+   "metadata_policy": "source"
+  },
+  {
+   "category": "internacional",
+   "title": "Tregua humanitaria entre Ucrania y Rusia entra en vigor en la ciudad de Oleshki",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6997147-efe-por-tregua-humanitaria-entre-ucrania-y-rusia-entra-en-vigor-en-la-ciudad-de-oleshki.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/26/tregua-humanitaria-entre-ucrania-y-rusia-entra-en-vigor-en-la-ciudad-de-oleshki.shtml",
+   "published": "2026-10-27T02:59:36Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Menor de tres años muere tras caer desde un piso 13 en Santiago Centro",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6997134-menor-de-tres-anos-muere-tras-caer-desde-un-piso-13-en-santiago-centro.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/26/menor-de-tres-anos-muere-tras-caer-desde-un-piso-13-en-santiago-centro.shtml",
+   "published": "2026-10-27T02:54:56Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "politica",
+   "title": "Rocío Montes aborda el giro de Kast en política exterior: “Muestran señales de mayor prudencia de Chile”",
+   "summary": "",
+   "image": "https://media.cnnchile.com/2026/10/vlcsnap-2026-10-26-23h41m45s513-768x532.png",
+   "source_url": "https://www.cnnchile.com",
+   "sources": [
+    "CNN Chile"
+   ],
+   "coverages": [],
+   "link": "https://www.cnnchile.com/lodijeronencnn/rocio-montes-aborda-el-giro-de-kast-en-politica-exterior-muestran-senales-de-mayor-prudencia-de-chile/",
+   "published": "2026-10-27T02:42:33Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Balance Senapred por sistema frontal: Clases suspendidas en Requínoa y polígono de Las Condes",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6997089-balance-senapred-por-sistema-frontal_-clases-suspendidas-en-requinoa-y-poligono-de-las-condes.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/balance-senapred-por-sistema-frontal-clases-suspendidas-solo-en-requinoa-y-normales-en-resto-del-pais.shtml",
+   "published": "2026-10-27T01:45:40Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Sistema frontal en Chile, en vivo: cortes de luz, activación de quebradas, pronóstico de lluvia, granizos, tornados y últimas noticias",
+   "summary": "",
+   "image": "https://www.adnradio.cl/resizer/v2/ZAOMWLOQVJH3RMZZYPXFD7TKWE.jpg?auth=64977521194024d597df4a09d77fc23c0d44a7516332aad1069a0192b72327d1&quality=70&width=1200&height=675&smart=true",
+   "source_url": "https://www.adnradio.cl",
+   "sources": [
+    "ADN Radio"
+   ],
+   "coverages": [],
+   "link": "https://www.adnradio.cl/2026/10/26/sistema-frontal-en-chile-en-vivo-cortes-de-luz-activacion-de-quebradas-pronostico-de-lluvia-granizos-tornados-y-ultimas-noticias/",
+   "published": "2026-10-27T01:44:24Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Enel anuncia corte de luz para 11 comunas de Santiago durante las próximas horas",
+   "summary": "",
+   "image": "https://media.chilevision.cl/2026/10/TE-AYUDO-NUEVO-6-1-1200x675.jpg",
+   "source_url": "https://www.chilevision.cl",
+   "sources": [
+    "Chilevisión"
+   ],
+   "coverages": [],
+   "link": "https://www.chilevision.cl/noticias/te-ayuda/enel-anuncia-corte-de-luz-para-11-comunas-de-santiago-durante-las-proximas-horas-2/",
+   "published": "2026-10-27T01:35:07Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
   {
    "category": "cultura",
    "title": "Parived enfrenta querella por cheque de $36 millones sin fondos: piden que Tonka Tomicic testifique",
@@ -23,7 +234,8 @@
    "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6997102-quebrada-honda.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "La Tercera"
    ],
    "coverages": [],
    "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/senapred-activa-nuevamente-alerta-sae-por-repentino-desborde-de-quebrada-honda-en-las-condes.shtml",
@@ -63,6 +275,21 @@
    "published": "2026-10-27T01:03:16Z",
    "first_seen": "2026-10-27T02:01:25Z",
    "image_checked_at": "2026-10-27T02:01:25.951007Z"
+  },
+  {
+   "category": "internacional",
+   "title": "El futuro judicial de Flávio Bolsonaro se nubla tras su derrota electoral",
+   "summary": "",
+   "image": "https://www.cooperativa.cl/noticias/site/artic/20261026/imag/foto_0000000120261026215356.jpg",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa"
+   ],
+   "coverages": [],
+   "link": "https://www.cooperativa.cl/noticias/mundo/brasil/elecciones/el-futuro-judicial-de-flavio-bolsonaro-se-nubla-tras-su-derrota-electoral/2026-10-26/215356.html",
+   "published": "2026-10-27T00:57:00Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "nacional",
@@ -134,6 +361,21 @@
    "image_checked_at": "2026-10-27T02:01:25.951007Z"
   },
   {
+   "category": "nacional",
+   "title": "Kast regresa a Santiago desde Atacama para monitorear emergencia por intensas lluvias en la RM",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6997066-kast.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/kast-regresa-a-santiago-desde-atacama-para-monitorear-emergencia-por-intensas-lluvias-en-la-rm.shtml",
+   "published": "2026-10-27T00:17:14Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
    "category": "cultura",
    "title": "No lo dejó pasar y envió mensaje en vivo: Tonka Tomicic reacciona a rumor de supuesto romance con destacado periodista",
    "summary": "",
@@ -149,6 +391,21 @@
    "image_checked_at": "2026-10-27T02:01:25.951007Z"
   },
   {
+   "category": "politica",
+   "title": "Oposición fija ultimátum de 48 horas al Gobierno para remover al ministro Rabat y convoca a sesión especial en la Cámara",
+   "summary": "",
+   "image": "https://media.cnnchile.com/2026/10/A_UNO_1775354-1-768x511.jpg",
+   "source_url": "https://www.cnnchile.com",
+   "sources": [
+    "CNN Chile"
+   ],
+   "coverages": [],
+   "link": "https://www.cnnchile.com/pais/oposicion-fija-ultimatum-de-48-horas-al-gobierno-para-remover-al-ministro-rabat-y-convoca-a-sesion-especial-en-la-camara/",
+   "published": "2026-10-27T00:06:22Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
    "category": "regiones",
    "title": "ALCALDE FRANN BARBIERI SE REÚNE CON AGUAS ARAUCANÍA PARA IMPULSAR PROYECTOS CLAVE EN PURÉN",
    "summary": "",
@@ -162,6 +419,21 @@
    "published": "2026-10-27T00:03:04Z",
    "first_seen": "2026-10-27T02:01:25Z",
    "image_checked_at": "2026-10-27T02:01:25.951007Z"
+  },
+  {
+   "category": "internacional",
+   "title": "Nuevo revés de la familia Bolsonaro frente a Lula pone en duda el protagonismo del clan",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/YLEAQG22XNA6VDHHQ7T7JNFX4U.jpg?auth=d4c0f79186393b86f372c24502acea3e457720366ed05a64f88d7721772ca98d&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/mundo/noticia/nuevo-reves-de-la-familia-bolsonaro-frente-a-lula-pone-en-duda-el-protagonismo-del-clan/",
+   "published": "2026-10-26T23:50:44Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "internacional",
@@ -184,6 +456,36 @@
    "link": "https://www.bbc.com/mundo/articles/cm4g172l4k87o?at_medium=RSS&at_campaign=rss",
    "published": "2026-10-26T23:48:16Z",
    "first_seen": "2026-10-27T02:01:25Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Balón de Oro 2026: en qué puesto quedó Vozinha como Mejor Arquero",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.espn.cl",
+   "sources": [
+    "ESPN Chile"
+   ],
+   "coverages": [],
+   "link": "https://www.espn.cl/futbol/nota/_/id/17435193/balon-de-oro-mejor-arquero-vozinha-en-que-puesto-termino",
+   "published": "2026-10-26T23:36:39Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
+   "category": "deportes",
+   "title": "Harry Kane gana el Balón de Oro 2026: aquí la lista completa de todos los premios",
+   "summary": "",
+   "image": "",
+   "source_url": "https://tntsports.cl",
+   "sources": [
+    "TNT Sports"
+   ],
+   "coverages": [],
+   "link": "https://tntsports.cl/internacional/EN-VIVO-sigue-la-gala-del-Balon-de-Oro-2026-minuto-a-minuto-con-Vozinha-de-Colo-Colo-nominado-20261026-0014.html",
+   "published": "2026-10-26T23:34:00Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "latinoamerica",
@@ -310,6 +612,41 @@
    "image_checked_at": "2026-10-26T23:47:45.720396Z"
   },
   {
+   "category": "cultura",
+   "title": "Mawiza dará su primera gira por Chile",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.rockaxis.com",
+   "sources": [
+    "Rockaxis"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTFub0dRQlQ0UzlacG1ZQzBWRkNxNUc3cHdDUFZ1Z28xaXczdXgxSWI4eDBrNzZmbjFobTk3V2k5ZGVBdVJId3FkZ0ZucEM0OTBPZnVPYnBIYk1weVByczhKNWY3MFZuM1VEdGkyMU0zbndmNDVPcEdVQ2RwMWFIdHVadlhRTmN3RUg0?oc=5",
+   "published": "2026-10-26T23:00:11Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "coverage_countries": [
+    "CL"
+   ],
+   "discovery_edition": "CL-CONCIERTOS",
+   "metadata_policy": "source"
+  },
+  {
+   "category": "deportes",
+   "title": "Al ritmo de Eduardo Vargas: la U golea a Everton y sigue acortando la distancia con Colo Colo",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/EV65XX535ZCZPOVI7D7NPNOIJA.jpg?auth=e6eea6bbf296dc312042652ee9753bd532612d0833001dffd272766c520ee59f&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/el-deportivo/noticia/al-ritmo-de-eduardo-vargas-la-u-golea-a-everton-y-sigue-acortando-la-distancia-con-colo-colo/",
+   "published": "2026-10-26T22:59:06Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
    "category": "deportes",
    "title": "Supera a Mbappé y Haaland: Harry Kane triunfa en su casa y conquista por primera vez el Balón de Oro",
    "summary": "",
@@ -340,17 +677,35 @@
    "image_checked_at": "2026-10-26T23:47:45.720396Z"
   },
   {
+   "category": "cultura",
+   "title": "Meghan Markle y el príncipe Harry se refugian fuera del Reino Unido tras acusaciones contra su padre",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.hola.com",
+   "sources": [
+    "HOLA"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZjByd1lxM1EtOC1qaDZzQjRCejlzSEpaOW9UczRxdjNvekpvTzdHb2hYVFg4TnB5d2hyb3ZDcnhYN25lTUJIbzVYektSbEI2Y3hvSngyWHBhQjk5d21iU2ZGUUJ2bzZwVGdWNlExbVlyeEpWMzVPRm5CUUVPcFpyblR2M1RhYXJraEo1YUI4eDNESlVURHVUaW9nclJoNlV6Q0ZaQUpzRHQ4VUdDUjQ4?oc=5",
+   "published": "2026-10-26T22:36:00Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "discovery_edition": "MX",
+   "metadata_policy": "source"
+  },
+  {
    "category": "nacional",
    "title": "Senapred declara Alerta Roja en 10 comunas precordilleranas de la RM por remoción en masa tras lluvias",
    "summary": "",
    "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6996939-senapred-declara-alerta-roja-en-10-comunas-precordilleranas-de-la-rm-por-remocion-en-masa-tras-lluvias.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "Teletrece"
    ],
    "coverages": [],
    "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/26/senapred-declara-alerta-roja-en-10-comunas-precordilleranas-de-la-rm-por-remocion-en-masa-tras-lluvias.shtml",
-   "published": "2026-10-26T22:39:07Z",
+   "published": "2026-10-26T22:35:00Z",
    "first_seen": "2026-10-26T23:47:45Z",
    "image_checked_at": "2026-10-26T23:47:45.720396Z"
   },
@@ -370,7 +725,7 @@
    "coverage_countries": [
     "CL"
    ],
-   "image_checked_at": "2026-10-26T23:47:45.720396Z"
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "regiones",
@@ -467,6 +822,23 @@
   },
   {
    "category": "cultura",
+   "title": "La Granja VIP: los finalistas que competirán por ser el NUEVO CAPATAZ de la semana 8",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.tvazteca.com",
+   "sources": [
+    "TV Azteca"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWG5mel9zRjAxaVR0cl9mUk9SYWRTc1l5VVd2MHVPazhUWFdwWGtEN0xLUHFjR2hpOEpPWGRuOGgwS1dvOWUzWVFpTklmTWxuVzFJWkNlZU8wbVF2RGdEQkx0U3ZGaHZoSjJ2Y2ZxS2d0MGFCRWNrbzhWTWFhNjB2SEpHcXNZUWVKVUtXS0hRVnY4eDgzNS1hNUlR0gGnAUFVX3lxTE1zSi15ZzhqaWNNdEEwLUV2bzkySnpTUkZGbC0tdjQxLUxRdUYydndPZmc1YWc5S0N5a0N3b1lLTUY0d0ZXWEE1Zng0X3hpai0zRHQ3dmRkZjZRVkJaNklkT2VXUDIxR0k5VVNFMFROWDVDYmhUQlV3WkdSemVsbmg0bUFqelVtdmZrREczYWRsN1V6Ml9hdVVwLUdqNXNNb1Z2MVp3eXZn?oc=5",
+   "published": "2026-10-26T22:03:41Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "discovery_edition": "MX",
+   "metadata_policy": "source"
+  },
+  {
+   "category": "cultura",
    "title": "ExpoGan 2026: multarán con más de 1.5 mdp a Los Tucanes de Tijuana y Marca Registrada por cantar narcocorridos",
    "summary": "",
    "image": "",
@@ -535,15 +907,16 @@
    "category": "nacional",
    "title": "Nueva tormenta eléctrica en Santiago",
    "summary": "",
-   "image": "",
+   "image": "https://www.cooperativa.cl/noticias/site/artic/20261026/imag/foto_0000001320261026164714.jpg",
    "source_url": "https://www.cooperativa.cl",
    "sources": [
     "Cooperativa"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUlBNaDNSVHJZeDBvdkVLXy1LR2Q0Vlo0Y1FvSXhRTFdhNnpMSzByNzNjekhVbWpCTVpJbUZqaW5IZDZmNnFoTGlmdnFoWEI3ZXZHdWFvSTNiSWZMRm5VQzdhTU1oNnBZc1NTXzYtMGpEZVNKN3cwZzlJYTNWbkJ5eWRaNGR6NVVEWjByZzZ5QnI4X053U21TU3lSSy1EY1RlWHFnQ1hyaHhaMnPSAYwBQVVfeXFMT3R5NlhLa1IxY3FHeUlGQTl2NWFhNGxwbUd2ZDJaUlFGbW1xZWhyWV9NUTFxU0MtQXVKOUl1eFBIbkZJRzU1ZmQtTFJEcURZMUVkX2V4TUd2U0x6dUdxaWg3NUdOTDJKcGpCb01Wc0RySXdPUEdBMmFlcWFIeV8tMXFJTjQ4eTVxYWlvNWI?oc=5",
+   "link": "https://www.cooperativa.cl/noticias/pais/tiempo/nueva-tormenta-electrica-en-santiago/2026-10-26/164714.html",
    "published": "2026-10-26T21:43:35Z",
-   "first_seen": "2026-10-27T02:01:25Z"
+   "first_seen": "2026-10-27T02:01:25Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "cultura",
@@ -563,15 +936,16 @@
    "category": "nacional",
    "title": "Tornado provoca daños en 70 viviendas y un colegio en Requínoa: DMC lo clasifica en la categoría EF-2",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/QNXXGPD6SZGUZIFTCZV2BAPCLM.jpg?auth=014e60c0f6af7850ab2036aed470fc90174a2678fdc96abdfde2ca7f2279edac&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUE5tQ0lNcXp6MHcxdDJlZWNONUtfMk9YLTJNeDUwTERzbzhZS3h6QlNhWmExVXI2V0gwY2hhdUJSUXNiTjJFclhWMF91cEYzUVdMNTZuVHJjd295VGV5U3dzd2lEeU5rMXlDdzI3TFlVMGZCRUpLYmNJSG9rUXA2Zlp2SmFiUlZwSEgySHBUVEVxLU1FLTZMMEVkQjNwWldoT3FIaTlqbHo0R1BmYzc5eDRiRVBveGJpNXE0dDh4eWjSAeIBQVVfeXFMTkhwVTlINExfR1NzVW84THJyWGpqRFM3SkxibTg5a1JvTDc2cWE0X2FQbUxaSmZpUjdUM1B3LVg0T1l4Q0hld1YwTzJqMmFmd1dwRXhIeldiQmJwMlJOQ3c1Q2NudHV4Zkw5cHl0cDVYRXRmdUVBRkpmVDl5UjFpUk5KVzU5YVpIaXRxQnM5NmVnR183TUx6SVg5OW9XSWlyTXhMdnZqOFM3THU3MUoyRkpDQUowYmpRbVhKNmpiQUZ1QTVONlJkLTFvRmhsclVzMWRvNlVnclNjcU92MFA3bkxRZw?oc=5",
+   "link": "https://www.latercera.com/nacional/noticia/tornado-se-registra-en-comuna-de-requinoa-dmc-lo-clasifica-en-la-categoria-ef-2/",
    "published": "2026-10-26T21:32:42Z",
-   "first_seen": "2026-10-27T02:01:25Z"
+   "first_seen": "2026-10-27T02:01:25Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "deportes",
@@ -711,18 +1085,19 @@
    "category": "nacional",
    "title": "Impacto en Melipilla: muere mujer boliviana que cayó de auto en movimiento cuando sufría abuso sexual",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6996720-impacto-en-melipilla_-muere-mujer-boliviana-que-cayo-de-auto-en-movimiento-cuando-sufria-abuso-sexua.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOYXBPNGdVcjNCMU42T052MkhMb2dHV3B4ZVk3RTJOQ1psQWU5YzlpUnlVN3k4RXdhdGFvblJXS3Y3YnQ0ZHdMWXFrU1ZJWDNGWFpmWUVlQWR5V2lZQTM2Wnh0bjdiR0Y2d0RfcmxteWgzX19vVF94ZllWOURSb0VQYWZQdUFFd3huRFZnQU0xV0wxVzBMbnowTmhzWFMwWTdKMFdONnNjTzBpc3FWM3c0RmpobVI2WDhES0Z3NnFLUl91eUNYSXI5bUwxUEYyaTBmb1dQXzJxdFMyUE5ZWk5FNjFITnR6Mm9pcF96VnJGeDZqaHA0cjUwV2JYYWpvSDNVN0kxa0Yya0ZCeUhGYkhULQ?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/26/impacto-en-melipilla-muere-mujer-boliviana-que-cayo-de-auto-en-movimiento-cuando-sufria-abuso-sexual.shtml",
    "published": "2026-10-26T20:51:02Z",
    "first_seen": "2026-10-27T02:01:25Z",
    "coverage_countries": [
     "BO"
-   ]
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "nacional",
@@ -824,6 +1199,20 @@
    "metadata_policy": "source"
   },
   {
+   "category": "cultura",
+   "title": "Stephanie Vaquer explica a sus fans por qué le complica grabar videos para alianzas: \"No es mala onda\"",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOMlRqRndrQjBocURPRmlMdVMxbFlpbXpUdlBpRTQ1NlhDeExKRlZLblZDVzg0UVdrS2dfdi12RTZ4czBFMHhMVDB4bWQzMWFwclotUkQ0YTc1TTJZdGNlOURpaWo1Q2J5MUtsNU9Ba1BhelVZMm9sU3BpUXFpamdpSTQ2RXFWZzRfVlVYSzNDUHVWUWlwTEN1eWFjX0tjZ3JJTTF5bDFxUEJPcGNuZU1mUm5jQXNIVXloV0ljcTFsOURmcXpoM2V0Y2JWSHRia2dMWHotdDZlU05MX3NmRGlSV0ktSXZCY0F0QzQtNk02aFhvX0lWeVdrQXB1QVN5NVRhbHlQdA?oc=5",
+   "published": "2026-10-26T20:27:05Z",
+   "first_seen": "2026-10-27T04:53:37Z"
+  },
+  {
    "category": "regiones",
    "title": "Valparaíso vibró con colorida “Fiesta de la Música” en pleno Barrio Puerto",
    "summary": "",
@@ -854,6 +1243,20 @@
    "metadata_only": true,
    "discovery_edition": "CL-CONCIERTOS",
    "metadata_policy": "source"
+  },
+  {
+   "category": "deportes",
+   "title": "Tribunal resolvió un capítulo del \"escritoriazo\" del Ascenso",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.cooperativa.cl",
+   "sources": [
+    "Cooperativa"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQX0NxUjRoSl9WdENwSGVWOEZhSk9WaHI0dDZVNkNHazM1aWZiUElFeHo5dW1reExESWg4aE9DNmJ4RVBMNUZDcUtIeHdIY09tcFZzUU9oTmxVWVJxNmg5YXh2TW93YV9HUUM2MDVoVEp6ejV1Mk93REp5THBzR3pLNWlINXBab0s4dHlOLXI4amg3VXZPRV8tcnJzNG1vdVo2Y2pjUUlFVVE4ZUp4dktOUk5qQmZvRmZROGU0TzNvUGI4R29BdDJ1QkkwOWZmN2xVb0JjOVNYb3dhRjB3Y202ZGc3ONIBjAFBVV95cUxQc3VGTEcwMVE3MldubEZwcmh3bVhjbU5hNWZrZEczRjhEczU2WDlZc2c3QXEwTUV3N2dPaGlVUENZVkg3eWVESHo3cmxpVmVndWo3aDdvcEZHdzBKOXA4MlRTSVB4d2pvanZRUnR0OXk1V2lBa3JiMGdsdG01MzF6WU9RUWlZTEZkVGpuSA?oc=5",
+   "published": "2026-10-26T20:18:00Z",
+   "first_seen": "2026-10-27T04:53:37Z"
   },
   {
    "category": "regiones",
@@ -1011,6 +1414,20 @@
    "image_checked_at": "2026-10-27T02:01:25.951007Z"
   },
   {
+   "category": "deportes",
+   "title": "Diego Ulloa habla por primera vez sobre su ausencia en Colo Colo y deja un duro mensaje",
+   "summary": "",
+   "image": "",
+   "source_url": "https://chile.as.com",
+   "sources": [
+    "AS Chile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVjluLXFCajlhdDlVenFxRXBGYUFoVFR1S3JBWElYZDloTkFYdkp5VWQyQlVyZ0laSHFIMDY1OTBVZEVFWDBaTTltOEZ3RURmeEp1LTBEUnllZFVMM3MzRk90ZWdidlpxZVB2WnBqVHN6dTZJbkl0VDZUZk5mM1laeUp6dHN1Rk5PMEFkdDFmc3BNb29vbGFoa1U2YmtHbTBJa0Z6OTBBQ05GNnJ6bzlfZjdiVG5TUUVIbmFZcHdObTN4M0ZL0gHYAUFVX3lxTE14ME1GWUNybnZ0ZjhMQ0x1bU9JeEVSOFpfaVkyTkxPUFRod09ieWZhcmJmb1RERGJ3WlZ0RjNmcDU2clI4bDhCdlNiRTUwRkxWM3gtYmhyeVZRSHBzZXBqTEpSYUgtTWxVT3hsT2lvellRUjVpQS1obmFDX0NRV2RGdXZnUkJicm5Tdzg1Z2VoZWZ0MVY1MldaY0MxRGYxSUpwVjZwMnhPMUlYNm40TWtmVVZLU2ZMdkpwTkJPUGxVZkNLeDUzU2xmaDFJUi1SVEVSTjIxRFpVMQ?oc=5",
+   "published": "2026-10-26T19:38:47Z",
+   "first_seen": "2026-10-27T04:53:37Z"
+  },
+  {
    "category": "internacional",
    "title": "Los siete problemas más urgentes de Lula, cuya reelección sembró pánico en los mercados el primer día",
    "summary": "",
@@ -1049,7 +1466,8 @@
    "image": "https://s2-g1.glbimg.com/AINCOBIB3EJjOQieVzuBrtJWYpA=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/V/n/0ShdjyTk2CEV7ls3BywA/whatsapp-image-2026-05-07-at-15.21.15.jpeg",
    "source_url": "https://g1.globo.com",
    "sources": [
-    "G1"
+    "G1",
+    "Bloomberg Línea Brasil"
    ],
    "coverages": [],
    "link": "https://g1.globo.com/mundo/noticia/2026/10/26/trump-fala-sobre-eleicao-no-brasil-pareceu-mais-uma-eleicao-fraudada.ghtml",
@@ -1285,6 +1703,20 @@
    "published": "2026-10-26T18:43:25Z",
    "first_seen": "2026-10-26T23:47:45Z",
    "image_checked_at": "2026-10-26T23:47:45.720396Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Luto en la tripulación: muere Walter Koenig, el histórico Pavel Chekov de ’Star Trek’",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOZnZrR1FfSnplUGU0WGd4XzlScGtfRThRYU0xdGl3REx0cFllSnJXNlBBTkJnUnBJZF9WSkhOdW15MVdQTFpnemhKWkd5SkZYQnNPeFVRU3JhV2NtMVFfYjQ2ekhTLXFZeEp0S0RoYjR0RGRIR3owVldNcWd1bXZlV3N5NUdoNFVmTFkxUVRGbENkaTJJMXNmdEh0aS1QbndOMF9WUEtNbWtlREZ4bDRaY0ItOWhIYTJaMFV0QnhqZmRpM0xkYUhhOXlxU3dMc0pHVG5tUURJNHRnWTVKcGd6aW1nLWplNlVVVk12dzJfLWMycV9GdXZjd0RYamlDQXc?oc=5",
+   "published": "2026-10-26T18:37:59Z",
+   "first_seen": "2026-10-27T04:53:37Z"
   },
   {
    "category": "deportes",
@@ -1540,6 +1972,23 @@
   },
   {
    "category": "cultura",
+   "title": "'La Promesa': avance del capítulo 935 que Televisión Española emite este martes 27 de octubre, Julieta quiere recuperar a Manuel",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.lecturas.com",
+   "sources": [
+    "Lecturas"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeDNkd0NaZm1NenRrNzE1VTdvZDFYUmxWUzh0SDBaa01fZHBsWEhIU2pveE5zV3BPcWRrR2dtQV9yUFJETFNsWVRBSUpMNVcyOUNoVnNyRXpVOTNTb3NCTmQwd0xnQUIxbEVUX2ZGUDdnN1FoRWNJaTJIZExyVnJ0UG9nM1Z0NUJTNFMtaEFocUlwaG10Rk54ZUJwOWg3SmJBRDZEQ2I2a1l2Z2NNTGRaY0w2QmlBbmNxdWI5RFVzS3k?oc=5",
+   "published": "2026-10-26T18:00:00Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "discovery_edition": "ES",
+   "metadata_policy": "source"
+  },
+  {
+   "category": "cultura",
    "title": "MUBI en noviembre de 2026: estrenos, películas y series",
    "summary": "",
    "image": "",
@@ -1596,12 +2045,13 @@
     "Instituto de Salud Pública de Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNTTBoYkg3cDQ2LWw5Y3Rpakd2M1F6VHdSLWdqaTdUVGpLOTVPWFZoNEhtbWlpTEpob04yTjZLYmdYRXg2OVdMX1VhMmJaRjNiTjVTQ2pmTHg5VkRuYVR3RDJfdUVCYlRoWkhKSTNXd3JDT3BmVVFCbGhya0UtMlZNZjUtZEtRaG9SLWtEX21xZTdWNzZMNzBtOG9zNnBFRzlQTmozQVpQR0U1ZW1OYldjUGdCQWV6QTFMSmxPUm9vNHRzb21TRmxON0Z6Q1hKN2l0eVRPRVlSWXBiUHFIaEdUcWozOS1oRWpEck1kNEkyeDg1aFBJVjUzX2tOcF9oY0VGcVRJb2pOUVBBbFE?oc=5",
+   "link": "https://www.ispch.cl/noticia/necesidad-de-un-marco-legal-unico-y-exclusivo-entre-las-conclusiones-del-taller-sistema-nacional-de-tecnovigilancia-desafios-y-oportunidades-en-chile/",
    "published": "2026-10-26T17:52:47Z",
    "first_seen": "2026-10-26T19:12:27Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "cultura",
@@ -1998,6 +2448,24 @@
    "image_checked_at": "2026-10-26T19:12:27.590086Z"
   },
   {
+   "category": "medioambiente",
+   "title": "Gepe reversiona sus éxitos y lamenta que el invierno de su canción ya no exista en Chile por el cambio climático",
+   "summary": "",
+   "image": "",
+   "source_url": "https://oem.com.mx",
+   "sources": [
+    "El Sol de México"
+   ],
+   "coverages": [],
+   "link": "https://oem.com.mx/elsoldemexico/gossip/gepe-reversiona-sus-exitos-y-lamenta-que-el-invierno-de-su-cancion-ya-no-exista-en-chile-por-el-cambio-climatico-32748697",
+   "published": "2026-10-26T16:39:20Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
    "category": "regiones",
    "title": "VIDEO | Operativo conjunto en Los Arenales de Antofagasta dejó a una persona detenida por porte de munición",
    "summary": "",
@@ -2105,6 +2573,20 @@
    "first_seen": "2026-10-26T19:12:27Z"
   },
   {
+   "category": "deportes",
+   "title": "Zanahoria Pérez cuenta la clave de Palestino para dominar a Colo Colo: “Buscar el espacio entre sus volante...",
+   "summary": "",
+   "image": "",
+   "source_url": "https://redgol.cl",
+   "sources": [
+    "RedGol"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQbXByVFRsS2pCU3ZIQ3hvWWFrVDZOMmlLdlJibnc2RGFDWXdBd0Mxbzg0X3hiMEd3MEg3XzZHUndFMWNXVUVtemRTN1hBbDhjLVNlTjZQc1VzZkVRS003eTM3YVdCUXdacXk4RTc2bVI2cVBPZ1ZNcm94VV9Hb2lSUFZDYmRwdXU2RG5lQ01fdnpOeEE0N0dPc0VSOWNGQk9nY1ZkcFJ2d00xdWIyNlRXdWlNb255RjZZTmdCTmkxSl9Rd0owTi04N0ZaNVVBSzdfRHBFcm14dVFIUXo1WnfSAeMBQVVfeXFMTXdSRHEzdmVsdXdtMmlXUTFIckZEVFNsd3JEUHlkbHZFaWhVLWpJbldrMWRrbDV6Vk5ZUUlxV0pMSlZ2QnlBcjFNS0VlRmM2OWM5azFHLU9XdFJiYWFkZFhfMGRxTW9UUUZzX1JBUkYzNndVbTNTeVIwMXhFWjRWV3pPaktZYmtrSHdtMzNxeTc1U3ByTGpGYlBBcHhvYlc4S0tPeHFmRGJYNkhNNWs1T1ZxZG5GTEg2MnlFOF9FbGdwUTBadnA0a2t4YWFSaFl4R1VZa1dKeGthMHE5M2hyOGlBQTA?oc=5",
+   "published": "2026-10-26T16:22:29Z",
+   "first_seen": "2026-10-27T04:53:37Z"
+  },
+  {
    "category": "cultura",
    "title": "Estrenos de MUBI en noviembre de 2026: llegan The Curse, Making Marie Antoinette y más",
    "summary": "",
@@ -2134,6 +2616,23 @@
    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQM296Sy0wQmU4VlRhY0xtWTZUMlVQOUNrMzRPSlhUR1oyQWNZbHV2LV9XV2piMDRxSTZrQ05PZ2MxN0FyTk9SaW00UHZzWDNYNVVubVNyVE1rak9XZVF0SGJ4Q0xLODFXdGd6VVVrRGNLTUsxeUUxRU9ESlhQbGVzclc5QnRoUWdsYnUwNFh4MWdfcGFnM3JqTDR6NWZKOXFVazlwOFVWdGN4MXdTVTVWVGtOc2NNeHkzRlNFeGQ4TlhKTHRwWEc3MS03eEN3NGYyVU96MXY4cDhweGNzZXllVkxzeU5SQQ?oc=5",
    "published": "2026-10-26T16:22:11Z",
    "first_seen": "2026-10-26T19:12:27Z",
+   "coverage_countries": [
+    "CL"
+   ]
+  },
+  {
+   "category": "deportes",
+   "title": "Los tres jugadores de Universidad de Chile que arriesgan perderse el clásico ante Universidad Católica",
+   "summary": "",
+   "image": "",
+   "source_url": "https://bolavip.com",
+   "sources": [
+    "Bolavip Chile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcy1tclNNNDZUODJWbGRsY2xWV3daV1F0T1ZmQUNtNG92MjhfNDBQQUU1TGVlUXVGUC1pSWR4djQwaWN4N3RMNURkZjVNODJIaEVrNENEeEJ4djY3NFljRUhaVGp0UUViV0FSMnd3amdDS2Zibk5rZVhnXzdNU042RUpmTThSSWxhazd0cmF0enlpcC1HUE5BdnlfczcxVnFRTHVKZVAxcW5jMDRuVXdTbk5aTU5Td0pfa2l2QTByZ3Vfd3c4SVZ0UWxUUWdzV2PSAdQBQVVfeXFMUGs3MWxLczNRWEJicWJuNThVUEI0d183dXhzeEhnbHh0dHpCNjlrOENTSVRpTzlMUTZsbmc0MmhIRW5VVHZCNnRUelpwaWxfQVJDNTRGOHJHSmlLWkNuUHgybEZYblVCU0o3V0I2a25qWENGQjVhYlMtVURvNDVjLVh5MjRhZXRtVkdaMG9DNVRwOUZUaEcyN1l6MUJYRXZPNnN2S1FtRUp1aVVjakFpY3JfY05OVFpKb1FiZzNhZ2dCeVh2S1lYQUFzUGJDdldsU1RZUHE?oc=5",
+   "published": "2026-10-26T16:21:19Z",
+   "first_seen": "2026-10-27T04:53:37Z",
    "coverage_countries": [
     "CL"
    ]
@@ -2193,15 +2692,16 @@
    "category": "internacional",
    "title": "Fallece el empresario bancario e inmobiliario Jacob Ergas",
    "summary": "",
-   "image": "",
+   "image": "https://www.df.cl/noticias/site/artic/20261026/imag/foto_0000001820261026130955/Jacob_Ergas.jpeg",
    "source_url": "https://www.df.cl",
    "sources": [
     "Diario Financiero"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUG5WUFNNVng3ZzFLUjNsMXJXMzhhRUVMYWQ0OFZsOXNLdkFybEZmYjl4SWhkOUhvVlg3Tmwyd0QtMmpqUGFRbUlWV3ZBanBRcDdtLWg2amY0djBSalF4ZUU5RUxiMXhfRU45QmFGa1A0MTNUemIzNVpjQmVOX0RHeDFKNllHcG5TamlReVJqM29MOVpJM0JWZk1Mcw?oc=5",
+   "link": "https://www.df.cl/empresas/actualidad/fallece-el-empresario-bancario-e-inmobiliario-jacob-ergas",
    "published": "2026-10-26T16:07:00Z",
-   "first_seen": "2026-10-27T02:01:25Z"
+   "first_seen": "2026-10-27T02:01:25Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "cultura",
@@ -2352,18 +2852,19 @@
    "category": "salud-ciencia",
    "title": "Premio Innovadoras en Salud 2026: Cinco reconocimientos a mujeres que están transformando la ciencia, las decisiones y la salud en Chile",
    "summary": "",
-   "image": "",
+   "image": "https://portalredsalud.cl/wp-content/uploads/2026/10/Premio-Innovadoras-en-Salud-2026-Cinco-reconocimientos-a-mujeres-que-estan-transformando-la-ciencia-las-decisiones-y-la-salud-en-Chile-.jpg",
    "source_url": "https://portalredsalud.cl",
    "sources": [
     "Portal Red Salud"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNVzREZjJzTjkyTGpfXzY5OTJnVGpuQ21ydGRNWWpfWGlnUVhSaDZERWhXSHdGcGh4WDUxa3lVZ1NzVnhnam96TlhwU21IdmlOTi1GV0psaGgyNzVhOUREckxVWmdVZjJFalFxSnJ3NFBfQ3VLME5fYXVyZmhudkVSNzJ3dG4zYU85bU5UaWg5M3ZMLTVaQnM3M1ZnaFpfaEZfSmw2ZTctbVpMTlJ3SmhyY1JqTjhnbDlkeEkzOUlraWlIR2dYOGN5UkFGeWVwR2tESjVKUWZ6eVZnZkktcWw3Z1FaWG5OYVFoVkF4YTFaQS01dFlHT3pTVFBBczZrWnk4Vmc?oc=5",
+   "link": "https://portalredsalud.cl/2026/10/26/premio-innovadoras-en-salud-2026-cinco-reconocimientos-a-mujeres-que-estan-transformando-la-ciencia-las-decisiones-y-la-salud-en-chile/",
    "published": "2026-10-26T15:42:44Z",
    "first_seen": "2026-10-26T19:12:27Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "cultura",
@@ -2430,6 +2931,24 @@
    "first_seen": "2026-10-26T19:12:27Z"
   },
   {
+   "category": "economia",
+   "title": "Los nuevos empleos que abrirá el Black Friday en Chile: ofrecen sueldos de hasta $900 mil",
+   "summary": "",
+   "image": "https://images2-mega.cdn.mdstrm.com/meganoticias/2026/10/26/trabajadora-de-bodega_534819_1_6adf642848d44.jpg?d=1200x675",
+   "source_url": "https://www.meganoticias.cl",
+   "sources": [
+    "Meganoticias"
+   ],
+   "coverages": [],
+   "link": "https://www.meganoticias.cl/dato-util/534819-empleos-black-friday-2026-sueldos-trabajos-ofertas-laborales-26-10-2026.html",
+   "published": "2026-10-26T15:30:00Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "coverage_countries": [
+    "CL"
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
+  },
+  {
    "category": "cultura",
    "title": "Canarias Manga Festival cierra una edición de éxito con 11.000 asistentes y un impacto económico de casi 800.000 euros | Cabildo",
    "summary": "",
@@ -2464,15 +2983,16 @@
    "category": "nacional",
    "title": "Caso Embotelladora Llacolén: formalizan a alcalde de Coronel, Boris Chamorro, por fraude al Fisco",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995949-formalizacion-caso-embotelladora-llacolen.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQeWlSWEZ6OUt2MTZXbTl5cDZrMUppeklaXzJJY0dSVTlUdklBVnJNMjB1dmRteExEZ2xpWWIwRFlvMjJYUHNmV2dVVkROb1VSTkJiSGJsTUhLMmZuelpNYk1SdlVqQ2d0eG9WMVFTRzA0MmpLWHBrZkdpZlM2LTNJQlRSb0xNcE5CSXc2ZFNzMkZFY21Dd1hkRm04RWhZUnhOenRJd0RCcWxVSnJiU2RMOXJTX21OeDMxNHh6RTB6RWlzbVhIbnA1aldoeGdUSk5KNmZvQWNOM2RPa0RNOC1sN1d3X29FLTRJSy1EMnp0bnV4NTV0aGVZcVpLTmxoaUZsUlhzZHpR?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/26/caso-embotelladora-llacolen-formalizan-a-alcalde-de-coronel-boris-chamorro-por-fraude-al-fisco.shtml",
    "published": "2026-10-26T15:23:51Z",
-   "first_seen": "2026-10-26T23:47:45Z"
+   "first_seen": "2026-10-26T23:47:45Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "politica",
@@ -2677,24 +3197,6 @@
    "image_checked_at": "2026-10-26T19:12:27.590086Z"
   },
   {
-   "category": "latinoamerica",
-   "title": "Mercados brasileños se derrumban tras triunfo de Lula: Bovespa cae 17% y grandes bancos pierden casi un tercio de su valor en Nueva York",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYjl5VUpLd1I0RmFVdkJoOUFSRW5EUkdwM2RYTlpOWExORUJxQTR6ZDkwTDNJeDdXeFBNTlY3UU1BaHNMYlZFLUJQNlg2Q2l6cjhVM0RpMnptOFhVcDFVZTUxU0h5Q29UV2Ezb3lBUzA3cW9MZjBHSi1mcGpQekRIM2JqWmx3bVo0SU8zSmUzemVNMG5pOFJ4eXFxcEQxeUFIZjBvNWxqRlB4QTdPN2pfOHJrbUtmQkJ1eFN6bzMwSk9PTjZHcWfSAecBQVVfeXFMUG1wR1BJMnpUbTA3MEpCX2N0cU5zc2NEQVVpLVNvTXNFeXZ2OUJJeHdVZ0NpVTlfcXNsNS1ibkQ3dTBlUll6c0VyQ0Vjd3g1MEtmeDFzUVhmbEhhNXA5aDd3aWJoeGY0MXpwXzFlZi1kejZOU01XVUZ4RjFWczRqMmtuU1pDc0FjZVdZYkZQNm54NWMyR2todnQ1d0gxcHRnRVVPcE01T0VaZWg0TXFmQzZkMWtWVHd2SmpBektsZHpKWXZITzNJZHZjZWZjQ0w3LVNVYXZrTlVZVnVTUlZ3QW8yNjdPeFZF?oc=5",
-   "published": "2026-10-26T14:57:16Z",
-   "first_seen": "2026-10-26T23:47:45Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
    "category": "cultura",
    "title": "Noches de Tel Aviv",
    "summary": "",
@@ -2776,7 +3278,8 @@
    "source_url": "https://www.cooperativa.cl",
    "sources": [
     "Cooperativa",
-    "www.diarioeldia.cl"
+    "www.diarioeldia.cl",
+    "El Día"
    ],
    "coverages": [],
    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQa0ZrRHJEa2N4c2o1dnZrcDRXLXdaMkFmMkVfSHNkWG1OSi1FbkprQjVmTDlrQ2tXU0dkcjJwcGJWTmZoOUZQUkxydHVNajN5NXRCeEVnZEFNVlIxajNsdHdFTXlxMHhtbE92YkVrQ0h1QncyWnNzbTF0T2F6RHhCb01GSVdDS3ZWMjUxXzFGZ3RuRy05QXpwbE5fM0lhaVZMQjAtX3NJZDNsRmFnTjNTRGF6SzNlWXc5NTNwMFJsNDZlTjl1Q0VSOE84QTFCM2VKSlBKRk9JWU9jZUZRaFRCZ091aGVaRWN4YXoyNzQwdzhhWWMwb2dj0gGMAUFVX3lxTE5ZdU4yUDVodC1qRjliVkJNU0pPQXNFQzNQbDZ5REQtN2RaUkNPUXpHQnpqY3QtQ2htTEhRbWlMZjAxcnRpSHBEdVl3N1huY3c5VVlEaUpjc3kyc2dzdEs2ZVhxb0t1YUtOQUlnRmVEWXJPUFpPaWhTaDZjTVNlSzhzYW1BUGZLRmpiVEhM?oc=5",
@@ -2884,19 +3387,20 @@
    "category": "latinoamerica",
    "title": "Fernanda Cornejo Doggenweiler vaticinó el triunfo de Lula en Brasil y compartió foto con el mandatario",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995924-sin-nombre-20-1200x633.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxONkNEazZNelRGTE5sZXVLdFBUWlZJVnZ0SXhhVDhKUUFIdWV4ZDYwWTVYUkE2aXJVY1g0U2xFb0Rlck9GRXlqSUZsWVlXU2UtZlB0VkhkZTg5d2V5TmVkbjIxc19XSFc0OTg1MVphd2dQcFVfcFYwYjM0MERkTTJYOTU3MDY3SGVGcDZENDhOQ2ZfazFrUzdQNHNhM0VNTTZiUEJFYU5TQWhCbWlBNVZYRm5TVF9hS2dVclpsQVVMeHBxSm43WF93cU1DVFljXzRlUFdEdDJhVWc0SllyZXd5UnNEQzF1VVFsWE84TWl0UUQ4cjY0QjJBVUxKM0J2emNLZ2JKT0o2Q1Z5Rk5lRC1OQkh6WQ?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/26/fernanda-cornejo-doggenweiler-vaticio-el-triunfo-de-lula-en-brasil-y-compartio-foto-con-el-mandatario.shtml",
    "published": "2026-10-26T14:26:59Z",
    "first_seen": "2026-10-26T23:47:45Z",
    "metadata_only": false,
    "coverage_countries": [
     "BR"
-   ]
+   ],
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "nacional",
@@ -3008,15 +3512,16 @@
    "category": "internacional",
    "title": "Quién era Komanche, el reconocido streamer e influencer que falleció a los 30 años",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/CZ6DQJFJUZGC3NTBXL7WLWFNOE.png?auth=875b32918731cb4449375cc4dc2b4edb0bcf58a3379fe3a5e163e894be868f6f&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMkFNVkVvM1JnakFBMG9seUtwZkRWaHBVUFFXWGc4UTloT3c0bXlzQVU3YnRWNHBxVzNsWHlxOEU5a3JCZzcwZ2FnOFp2akhvMUpCYnJ0dVlUenVRa3IxbXl2cXAwdUtUbXh2NG1RNXVjUmhCSGd5WWtBRU9EeGpUNU9pblNiYl9rOFhtcHpEd1FFWmgwRkpqU3RvNzd5WlpNaWNvekJBMWI0aFhrNVMzbVByV2EzR1Jxci1tdVd2Sno3YVlPRUHSAecBQVVfeXFMTXZDSjFiVDJRYmYzdl83NWYwZmJ3Z05BNFdnVWYtZkJacUJ5RWVQMTFZTWZ3OTNOWWRnQ3RQOTlJaWtpZldQRnVTR3NVbEpKUUtURF9WR1NQaVlteWFfNldDNWFJMjJvUURFbDlpaHZ0cTRNNW5BWnkyQnJ3bExIRlZMaUV4ODV1VlVyYkd0aUJBQkN2akdqemdCUUtON2dfNzVJMXVDb3ZldGx2SXM3WGw4cmRrZHMxS25sckp6alZlX3NVZ0RKUlBKbHp4Q3FUd1p2SWVsU1NZOUx4YzdfRWswNzllUlhJ?oc=5",
+   "link": "https://www.latercera.com/tendencias/noticia/quien-era-komanche-el-reconocido-streamer-e-influencer-que-fallecio-a-los-30-anos/",
    "published": "2026-10-26T13:52:12Z",
-   "first_seen": "2026-10-27T02:01:25Z"
+   "first_seen": "2026-10-27T02:01:25Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "regiones",
@@ -3183,6 +3688,23 @@
    "metadata_policy": "source"
   },
   {
+   "category": "cultura",
+   "title": "080 Barcelona Fashion hace balance de su última edición: más de 18.000 visitantes, y de 5 millones de visualizaciones",
+   "summary": "",
+   "image": "",
+   "source_url": "https://fashionunited.es",
+   "sources": [
+    "FashionUnited"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQNWN1TU9DaVZMZE5WczBiRHVtMWZxUHM3WkFiaU5NM0dfNlUtZ2wzQ3Rmcnl2ZE1IU1BrZVp3MU5td0Z3OXNRQWJQRDZhbmNUUVhXR1VWUlN5LUs5dER4SWREUGJpckg4S082eDhaTE9jTHZoTE8wT25jYWYyelFsTm9kLUFZNi1FWjdOdW5CbXhoM0lZd0RaMEUwaWVoajJDWWFWOTFsbThFaEYtNG9XZEd1ODhoT0xEX05acElTNnZIUDJPQmRqY2lteW1pZHFxZElMbmx6cmRXVUx4Yl9sMC1TZEZUTDBtMV9xWXhEdkhGN2kwUnVOLVU2N3k?oc=5",
+   "published": "2026-10-26T12:49:31Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "discovery_edition": "ES",
+   "metadata_policy": "source"
+  },
+  {
    "category": "tecnologia",
    "title": "Países Bajos despedirá 25.000 funcionarios públicos por la IA: ahorrará USD 3.900 millones",
    "summary": "",
@@ -3263,15 +3785,16 @@
    "category": "internacional",
    "title": "Macron advierte que las protestas del sábado 31 en Francia también serán de alto riesgo",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995715-emmanuel-macron-1-1200x633.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPb21jWU1HX1VpaU9ncTM5Tk9NcFg3Ujd0V2xISW1ja1IxdFBOQTRzNXhQUGdud1NmZVNURGNLc3dPMFJzNmdXcmxfMEVObkU4S2V2Q3FEV25waTFydkk3a2RnRWdOck1ENi0weWNhSkxjcDMxZDZfM3FJSW1LWDlLZ01vSlhTZjM5RFBtdHpnbFRBUkgwejFoeURrVmhUNEIwc0dhcG5mekJhbVVzOFlYLUx0TmlDWHdPRnBKMjlJenIwOHZSZGE1NG51dTB6RG41My1nZ0xMeFZQMHlsekJCVUJUTTd3aTR0aDB6dE5YQndOS3c?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/26/macron-advierte-que-las-protestas-del-sabado-31-en-francia-tambien-seran-de-alto-riesgo.shtml",
    "published": "2026-10-26T12:16:56Z",
-   "first_seen": "2026-10-26T19:12:27Z"
+   "first_seen": "2026-10-26T19:12:27Z",
+   "image_checked_at": "2026-10-27T04:53:37.128597Z"
   },
   {
    "category": "cultura",
@@ -3315,7 +3838,8 @@
    "image": "",
    "source_url": "https://www.lacuarta.com",
    "sources": [
-    "La Cuarta"
+    "La Cuarta",
+    "El Informador Chile"
    ],
    "coverages": [],
    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNNmgzWTNSeEdyTEo4ak02Y2o5RlZ6NTNvaC1jaWo1UGI3RTBWRldIQ1F0aFNmbmpRZlpPRDlWRTR2Uk9uRzQzQnl6MGp3VXZxdmJydGJaT0FJQVBDTlJiaGl1WUJMRUkwcUkySDc0djN3eWlYaFBFY1J6WHlBVHItbzdiWmI0VUNUTnZSemx3bVhMRkdTZ205MWdOcTVTQk9rMmhRNnhJa1RqcnpaY0hHQmR5SzVGRHZrQW1kVjVPX3FaV1p5dnQtZm9xR0JsTFdYYXg2NTJyRFg5cGstN0FhM0dLbGtxZzVJdFktREQwWnNkUdIBkwJBVV95cUxOUUdFbzlxVmxJcG9sX29FSEtQb1Y5V0tySnJsMFlJc0ZjdE9MVVdpWlFZNjQ1WlJHOEhfdDhhc3hZRzNhMEZxVndyQ0JxRkhGRUVRbzN5b2t2RW5mT3FnNER3RTh6OE9aM1BKRi1Hdy1WN1JqaWlhOVZydHRwQVBCUmVvTWRRUGc1eE9XYWxzZ096QXFDTjVXVkd3T3hXRVNFLVluMzVrS2tvVWtna2RJaE5kOFNjQ0RoM1FaandSbzRHdUZnRlo3U0ZVaUF2RUNScEw0aGxPQmFELWRzelM5LS1ORGlmOHVTS3VzVVFxWlZ1c0twT09wSTdxY1JUQ1NRWGluWXI5VnZRR3RhZ0c4SmpFZw?oc=5",
@@ -3386,6 +3910,23 @@
     "BR"
    ],
    "image_checked_at": "2026-10-26T12:17:38.305665Z"
+  },
+  {
+   "category": "cultura",
+   "title": "Los propietarios de los derechos de Elvis Presley demandan a Anthropic por utilizar sus canciones para entrenar su IA",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elcorreo.com",
+   "sources": [
+    "El Correo"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTDQ4bkEtelF4dUhkdnNEUTk1bTQtUWFWajI4dFBtTVVBaDFJYjlYeVRWRXprY0ZDcmh2ejhYNXhIZFZ4V0VFZjRMak9zV1FjOGtLV3Y4dS00THljTjNnMjYzcGVEWHMxSVR1empJbUFrMmNHMjVWSXZUSHdET2xOcmtfZTBaMjFaWkJUbjdUOWp0Ry1wM1E5a21lYUdPYkE3WXhNTTgxM0tDWm04aWU5UFB3ckIxcTNNNFBkd05aLTNGbDVKTU1LVdIBzgFBVV95cUxPRVctcERDSU9qYlV2YlFaRlpJQnJMUVprM3hlWG9paDdCT1YtQnJYbEx3a0VuNXpBZlAzRWlsY1lDMWQ4X2l1eVh3NnJ5cnpLdDV1SWFkX3BMd05NWDBZWi14Z3lPZlRkdzhocUxFdk5pTGxobW13QmZOZGJRVzdKeDlaYjVSZENmZDJUMnZrR1c3anRXQWhiVG9SM1lIRW5WNjVvQ1ZHQTk5TkVZZ0pXblBQTGFOQUhVY1J0UnVrOTFBWlNwdUpYbXZxVnBwUQ?oc=5",
+   "published": "2026-10-26T11:57:28Z",
+   "first_seen": "2026-10-27T04:53:37Z",
+   "metadata_only": true,
+   "discovery_edition": "ES",
+   "metadata_policy": "source"
   },
   {
    "category": "internacional",
@@ -3591,6 +4132,20 @@
    "image_checked_at": "2026-10-26T12:17:38.305665Z"
   },
   {
+   "category": "deportes",
+   "title": "Daniel Garnero apunta al gran problema en Universidad Católica: “Nos cuesta generar situaciones”",
+   "summary": "",
+   "image": "",
+   "source_url": "https://bolavip.com",
+   "sources": [
+    "Bolavip Chile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZi1KYzZyMjFXTkNFZG94OTlRQTFsNlpZY21PcWp3UEpnYmZyckhfdFNVUHdsdlRmYVV0US13VURwZTRsMUg4cmdwMVY3ZTNtS3NvWll2U3gxQkl5S2RPbVlyVDBFYmRUYTBJeTAtOF9aNnJuelFnS1gxNmt4c0kyOFh0OFBOamJPQ29VVk5xNmdxLUZVSG1DMXZSUEJZN2tNbEEzVnJYZHIxWXJUUWJKblVJdkZzQW5FS2FOamlZTENNb2tk0gHKAUFVX3lxTFBkSGQwRUsyWmdEZnRoRDkzSkNYMEcwbTZYNnVlVHpPTDNsOTJYNldUUEhkTmVvOENGMXU1bHhYVERVLU9oZU1Ma202WFBMczJrbm51M0N0VmEweFpDYW8yQk5ka0hMd29MakpPTXQxTjlNNjItV1J6ckJEWHM4cWpuZ1I4STlHc3dEMHlYLW9HVUdjVWt1SzNkUjE3bHBjUmQzak5tWUdxakRDRC1aZ1dJX3o5eElJUjV4ZnNiVm11NFd5aWgxekpfQUE?oc=5",
+   "published": "2026-10-26T11:29:47Z",
+   "first_seen": "2026-10-27T04:53:37Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "Mercado anticipa una fuerte caída en la bolsa brasileña ante la cuarta elección de Lula da Silva",
    "summary": "",
@@ -3695,6 +4250,20 @@
    "metadata_only": true,
    "discovery_edition": "ES",
    "metadata_policy": "source"
+  },
+  {
+   "category": "economia",
+   "title": "RAM lanzó una nueva 2500: 436 CV, casi 9 toneladas de remolque y equipamiento exclusivo",
+   "summary": "",
+   "image": "",
+   "source_url": "https://transportemundial.com.ar",
+   "sources": [
+    "Transporte Mundial"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZ0hhU09NNThQRHNpNzJpQnZ0QldLVG02Q1g0cDd0M1BBWFJGWGRKclFEdjdicXkxZmRrcDNsQzJaNXVZVmhWOTZ5c0pNekJTLXF5d2pja0dZTFNkckRpekpQUlcwOXpRWENOOFJRUENncVJ2YVI1T0RHN3ZjaWhIRUtaV0kzcm05OHNPVmJBTkFndUpHUlktQXY4WUpJNTF3V0hNSV9vTVNKRzhsU2U1dDlHbGZnaVFwYVVGazdhOFFhYWFSMUE?oc=5",
+   "published": "2026-10-26T11:13:18Z",
+   "first_seen": "2026-10-27T04:53:37Z"
   },
   {
    "category": "deportes",
@@ -4604,6 +5173,20 @@
    ]
   },
   {
+   "category": "internacional",
+   "title": "Movimiento estudiantil declara victoria electoral frente a la derecha gobernante de Serbia",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.dw.com",
+   "sources": [
+    "DW.com"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR1lTVE9VOThlczRDX2gxZWwzRXZacm5KUGkzcnVkX3dkV0hqYW8xcEZBWEQ5dDhRRmVYVHZSbmhhM0xaSUlaSWNJb2c3azZoWGU3Q3ZibUQtLXoxdGpRRFpRYlZwZFVuaXNCV283Sm1uQ2JxZmMxMW15LXNvdVpXTzI0ZGptNVlyck9ScEI3bnZUdEc0bWpZQmhCbE1UbG1QLTgxa2Z0Z2hpYWxNek4wa2hLOVNqWHZGOTBPZkxyV3HSAcABQVVfeXFMTjFqZVUyU01pdVhmbTlZVU0yV2ZiTFJrNmx6UVVPNVJHcGRON05kWFdkRXo3Vmlzc29meVZBb2kxbGNlVEoyTmJSOGtCU0FhSFZMd2xuN0YxbEF6NEdZNHdwX2h6YVFERVVhQ250ZTdsSHNrSmdxM25MdE1fMkNSdmZfU2NNVElwSlVRNGtSc29SRVh3WFNha3gzdHV0OVd0SkU3dU9naGFyUUs0ZFpOTG5LQ2QxeWk4RU5HM2RZN1pk?oc=5",
+   "published": "2026-10-26T06:48:01Z",
+   "first_seen": "2026-10-27T04:53:37Z"
+  },
+  {
    "category": "politica",
    "title": "Crisis por rebaja de condena a violadores golpea al gobierno chileno",
    "summary": "",
@@ -4673,450 +5256,118 @@
    "metadata_only": true,
    "discovery_edition": "MX",
    "metadata_policy": "source"
-  },
-  {
-   "category": "cultura",
-   "title": "Liran’ Roll conquista Toluca con sus clásicos del rock urbano en la Feria del Alfeñique",
-   "summary": "",
-   "image": "",
-   "source_url": "https://oem.com.mx",
-   "sources": [
-    "El Sol de México"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbUpzWTd2NHpTMmg5MjNSQnZUVUJyU3hWN25yWFJibnZrX3ROV3dVMVZ0cUt4WW45MURKUmhkVVBFRW52UElUZWlwa254b2dFckRzUXFQNlg0TF93VjljUkxONEp1Q2JDbVJHZVVPY3hydEhxZWtFX3pOY3N3MllIUmQ1ZVNBZ3Zja1FETXZXOFFBdHVFeWo0TEdqYzZYWEJ5RlZDQ3ZEZmFldmxMRHh1emJUTF9nYnMyOTN2OHNyVmEtRGlyMjF0ZkdQc0VhU2M?oc=5",
-   "published": "2026-10-26T04:50:48Z",
-   "first_seen": "2026-10-27T02:01:25Z",
-   "metadata_only": true,
-   "discovery_edition": "MX",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "cultura",
-   "title": "FOTOS | Festival Bamba – Día 2",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.agendamusical.cl",
-   "sources": [
-    "Agenda Musical -"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9UWDFzZHdPUDJqTEx2Nkt6aUlXWnAxY1o5MmZPRTlidmFlVDhCVU44TUlGU2hzZDdncW5Ga0k5QVM3MXpIMzRoT1I5NVFlN0dGWEdLR3p3YWV1am41a1J0anBEU1JaV00?oc=5",
-   "published": "2026-10-26T04:09:26Z",
-   "first_seen": "2026-10-26T06:02:55Z",
-   "metadata_only": true,
-   "discovery_edition": "CL-CONCIERTOS",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "tecnologia",
-   "title": "Nueva propuesta de reforma constitucional en seguridad: menos de lo mismo",
-   "summary": "",
-   "image": "https://media-front.elmostrador.cl/2025/09/A_UNO_1542330-700x467.jpg",
-   "source_url": "https://www.elmostrador.cl",
-   "sources": [
-    "El Mostrador"
-   ],
-   "coverages": [],
-   "link": "https://www.elmostrador.cl/noticias/opinion/columnas/2026/10/26/nueva-propuesta-de-reforma-constitucional-en-seguridad-menos-de-lo-mismo/",
-   "published": "2026-10-26T04:05:45Z",
-   "first_seen": "2026-10-26T10:15:04Z",
-   "image_checked_at": "2026-10-26T10:15:04.921392Z"
-  },
-  {
-   "category": "regiones",
-   "title": "CUATRO CAMIONES CON SALMONES SON ROBADOS EN 21 DÍAS EN LA ARAUCANÍA Y SUPERAN EL MILLÓN DE DÓLARES EN PÉRDIDAS",
-   "summary": "",
-   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/cuatro-camiones-con-salmones-son-robados-en-21.jpg",
-   "source_url": "https://araucanianoticias.cl",
-   "sources": [
-    "Araucanía Noticias Temuco"
-   ],
-   "coverages": [],
-   "link": "https://araucanianoticias.cl/2026/cuatro-camiones-con-salmones-son-robados-en-21-dias-en-la-araucania-y-superan-el-millon-de-dolares-en-perdidas/1026317786",
-   "published": "2026-10-26T03:55:57Z",
-   "first_seen": "2026-10-26T10:15:04Z",
-   "image_checked_at": "2026-10-26T10:15:04.921392Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Ataque contra equipo que combatía brote de ébola en Congo deja una persona muerta y otra herida",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995572-bbcl-1200-x-633-px-53.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/africa/2026/10/26/ataque-contra-equipo-que-combatia-brote-de-ebola-en-congo-deja-una-persona-muerta-y-otra-herida.shtml",
-   "published": "2026-10-26T03:53:50Z",
-   "first_seen": "2026-10-26T10:15:04Z",
-   "image_checked_at": "2026-10-26T10:15:04.921392Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Fiscalía investiga grupos de Telegram que difundían imágenes íntimas de mujeres en La Araucanía",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995569-bbcl-1200-x-633-px-52.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-la-araucania/2026/10/26/fiscalia-investiga-grupos-de-telegram-que-difundian-imagenes-intimas-de-mujeres-en-la-araucania.shtml",
-   "published": "2026-10-26T03:40:51Z",
-   "first_seen": "2026-10-26T06:02:55Z",
-   "image_checked_at": "2026-10-26T06:02:55.072788Z"
-  },
-  {
-   "category": "cultura",
-   "title": "La Granja VIP eliminado: Ver EN VIVO, totalmente GRATIS y POR INTERNET la Gala de Eliminación HOY, domingo 25",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.tvazteca.com",
-   "sources": [
-    "TV Azteca"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPeGg5NFBiSzN1VzJZSW1tUlowaV9tZG94TkVtX3NPUEVMc0hVbWFFY2NaZXAzaElVUlFoZEsxRENqc2huZEZYTndHQXdjQlFRM3czRFQ4bUJYQm8ybjZ1cEFsNE94U2xJRUV3TmIxU3ZiTVZ4aVJUVlZDanVqelNrOWNqakFEYU9KRUNmamVFQzZwTEFfbGdSN2stcDhpZDAwc3Y0Y2Vjb2FQUVhkeFVZWmdIY2FxSDc2Vm9DN1Nva0hQLUJnbjZ2aUpGTTRXTW1MM0dVMjEzcjlSTFBjMnRQS1dhdWh3aTIwRnBycHRKNNIB_AFBVV95cUxNek51cUV4UTRzaFo4Nm5CckRxUkJxQjBqb1EweFNqRFNuVHAta0RDc3MtUVQ0clZITER0Z0xPUEF0aVgtbFppXzZlZ2QwT1RDWWhSNG9CNW5LQVprZF80WEJyRTNtbDh1MHI4SXlXVkR3VG1QRUZ1N3FPTFdKSy1QdVdpVF9IcnZTcHhjOVVnNWNHYnBGZkNnNE1Ga3lUX2VYOWJnLUNvQnpFQ0Z1SlVmREpUbTRGUDlvY3p5NDdobVhyS3JHT3o5T1hrR1RHM3o1U3l2c1JWWnNTMkwwYUd6RW8zZmQ5TUJKd19XYTBrZUptZHZhQ3lMVWV4Yk8?oc=5",
-   "published": "2026-10-26T03:33:32Z",
-   "first_seen": "2026-10-26T06:02:55Z",
-   "metadata_only": true,
-   "discovery_edition": "MX",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "internacional",
-   "title": "Jair Bolsonaro: autor intelectual de la derrota de su hijo",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.ex-ante.cl",
-   "sources": [
-    "Ex-ante"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wX2RsVm9zYm1iVnVaakwtci1qd1J5cmlnZlNmaDl3S0x4dEYxVG53bFpjZG9UNkVzSS1uMUkxT1JENjloa2p0azBtb3RsTngyYnMzOF9ZRjVTOHJSSkVpcFUxN2hFYk9vdTdpcmtFck1qZG9jcTFubmNYR3EwQQ?oc=5",
-   "published": "2026-10-26T03:25:44Z",
-   "first_seen": "2026-10-27T02:01:25Z"
-  },
-  {
-   "category": "politica",
-   "title": "Coalición contra los carteles: Barros empuja que Chile se mantenga como observador y Kast cita a reunión extraordinaria",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/2Y7QMYA2UBA2DOH4Q6HIFINYPY.jpg?auth=376cdced36f5e1095e01c26368c6cf2bd180171e226f6eefd29ac12ccfbe8e6d&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/nacional/noticia/coalicion-contra-los-carteles-barros-empuja-que-chile-se-mantenga-como-observador-y-kast-cita-a-reunion-extraordinaria/",
-   "published": "2026-10-26T03:24:21Z",
-   "first_seen": "2026-10-26T03:52:05Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-26T03:52:05.509856Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Coalición contra los carteles: Barros empuja que Chile se mantenga como observador y Kast cita a reunión extraordinaria",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOWTRlTnJPS3EzdFV5dGxPUm85aklsZG8tNUJDNUpMQno5UG1kT0d6bHpTYUkwRkJLMEhCR0F3Sl9wdHZvSFo2djRPX09KN3dDeDNoaVZWaHlVWmxUQmtVSDd2MkEyLVlkcEwyS09NR3BuQ3JTSXRieEJ0WlU5QklSU3FOdDdWa0lsSWlDbmRaUllieS0tQ0JlenVHUmlxa09EN1ZENVBRbWVEWk5CT29yTklZOW9hMjB6YTFSSnY3WDN0c3E5VS05a0dTWTJ0WkJGV1dxNkdvdzZETk5uVThpVnhzZ3o4b2ZLWWc4S3VJbGx5WjJp0gGWAkFVX3lxTE5Femp3blNvdGtfY0tXODVoYjhqazh5SmtkTjBWWXpONnBuc2hwbV8xbGR0Uk51VU1mbDZuTER4TGFCeWUtRWp4NGZYTVJOZ0tLZHBobmZKZWlaWWlKWllENXZRMV90N0s3WUt0ejhaeDRxeUtOSU8tdmpTamotaW01T1R2N3VqejQ0YWhkaUdLblhDZnlaNlB6dTVIYWk4MkQzRG0zVVpybUtYLVYyeUgzOVNjOW1xYzR4SW0ySTVjZEF4eXIzZVQ5ME00X1JSdVV0Z0pRUFdPMjYzT3Rma0MwamhMRHI5Qy1nVFo2RC1uWHdPQUhuZmp1Z2lhWF9jNXBSaUhtLWlvSUE2Nnd6ZW1vdGF2bE9n?oc=5",
-   "published": "2026-10-26T03:24:21Z",
-   "first_seen": "2026-10-26T19:12:27Z",
-   "coverage_countries": [
-    "CL"
-   ]
-  },
-  {
-   "category": "politica",
-   "title": "Chile envía helicóptero a Perú para combatir incendios forestales que dejan al menos 12 muertos",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995515-chile-envia-helicoptero-a-peru-para-combatir-incendios-forestales-que-dejan-al-menos-12-muertos.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/chile-envia-helicoptero-a-peru-para-combatir-incendios-forestales-que-dejan-al-menos-12-muertos.shtml",
-   "published": "2026-10-26T03:22:20Z",
-   "first_seen": "2026-10-26T03:52:05Z",
-   "coverage_countries": [
-    "CL",
-    "PE"
-   ],
-   "image_checked_at": "2026-10-26T03:52:05.509856Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Presidente Lula assina Medida Provisória que proíbe as bets no Brasil — Planalto",
-   "summary": "",
-   "image": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2026/09/presidente-lula-assina-medida-provisoria-que-proibe-as-bets-no-brasil/mp-bets.jpg/@@images/a499eadf-0b51-4f58-bf2a-f024604bbbdf.jpeg",
-   "source_url": "https://www.gov.br",
-   "sources": [
-    "Governo Federal"
-   ],
-   "coverages": [],
-   "link": "https://www.gov.br/planalto/pt-br/acompanhe-o-planalto/noticias/2026/09/presidente-lula-assina-medida-provisoria-que-proibe-as-bets-no-brasil",
-   "published": "2026-10-26T03:02:33Z",
-   "first_seen": "2026-10-26T06:02:55Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ],
-   "image_checked_at": "2026-10-26T10:15:04.921392Z"
-  },
-  {
-   "category": "regiones",
-   "title": "EN LA ARAUCANÍA CASI NO CAMBIA EL GASTO EN RESTAURANTES, PERO AUMENTA 8% EN CAFETERÍAS Y CASINOS",
-   "summary": "",
-   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/10/en-la-araucania-casi-no-cambia-el-gasto-en-res.jpg",
-   "source_url": "https://araucanianoticias.cl",
-   "sources": [
-    "Araucanía Noticias Temuco"
-   ],
-   "coverages": [],
-   "link": "https://araucanianoticias.cl/2026/en-la-araucania-casi-no-cambia-el-gasto-en-restaurantes-pero-aumenta-8-en-cafeterias-y-casinos/1026317784",
-   "published": "2026-10-26T03:01:40Z",
-   "first_seen": "2026-10-26T03:52:05Z",
-   "image_checked_at": "2026-10-26T03:52:05.509856Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Netflix se suma a la nueva edición de la Incubadora Queer Santiago-Guadalajara de SANFIC Industria y FICG",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.mundopeliculas.tv",
-   "sources": [
-    "Mundo Películas"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdzhOY3RfZ2xhQk14NS1jbTNYYWo0WWR4TFhuek96U0dVNGJyV0haLWxJMjFoNEJybVNzdkNxQUxDTmUzVVAtUnRDYTlLYzZxQy1NSF9BZHhrZnZSMThxWWEzekZnSkMzUXd3Tloycno4TEFRMTB2dWFqTExqR19uQTZrZmI?oc=5",
-   "published": "2026-10-26T02:51:56Z",
-   "first_seen": "2026-10-26T02:58:50Z",
-   "metadata_only": true,
-   "discovery_edition": "CL-CINE",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "cultura",
-   "title": "Coni Piccoli interpretó “Corre” de Jesse & Joy para continuar en Fiebre de Canto",
-   "summary": "",
-   "image": "https://media.chilevision.cl/2026/10/coni-piccoli-balada-1200x675.jpg",
-   "source_url": "https://www.chilevision.cl",
-   "sources": [
-    "Chilevisión"
-   ],
-   "coverages": [],
-   "link": "https://www.chilevision.cl/programas/fiebre-de-canto/coni-piccoli-interpreto-exito-de-jesse-joy-para-continuar-en-fiebre-de-canto/",
-   "published": "2026-10-26T02:50:54Z",
-   "first_seen": "2026-10-26T12:49:46Z",
-   "image_checked_at": "2026-10-26T12:49:46.842056Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Así celebró Brasil la victoria de Lula",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.jornada.com.mx",
-   "sources": [
-    "La Jornada"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeTBsYmdfeFFpanUxZFNPOENjcHBMblpVcWVxSS00eElWT21fX2dleV82dXJJMi1KY3IyTzh0djg1Z25UN3JvbllnTzJMMUt1MWNKd0RDT1pTRTFIOGo1OHhZMmthd2pIeUZvOFh5cGx5LVJCVTBISWdfdmx6UkVERDI2S0Q4d3ZZM2Fxd1A3eHduZUxB?oc=5",
-   "published": "2026-10-26T02:49:00Z",
-   "first_seen": "2026-10-26T23:47:45Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "BR"
-   ],
-   "discovery_edition": "MX",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Com virada histórica, Lula é eleito presidente do Brasil pela quarta vez",
-   "summary": "",
-   "image": "https://www12.senado.leg.br/radio/1/noticia/2026/10/25/lula-e-reeleito-presidente-do-brasil/@@images/93a35f22-4456-4a8e-8c36-998d3201e5b7.jpeg",
-   "source_url": "https://www12.senado.leg.br",
-   "sources": [
-    "Senado"
-   ],
-   "coverages": [],
-   "link": "https://www12.senado.leg.br/radio/1/noticia/2026/10/25/lula-e-reeleito-presidente-do-brasil",
-   "published": "2026-10-26T02:46:00Z",
-   "first_seen": "2026-10-26T03:52:05Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ],
-   "image_checked_at": "2026-10-26T10:15:04.921392Z"
-  },
-  {
-   "category": "politica",
-   "title": "Kast reconoce el triunfo de Lula antes de que Bolsonaro pidiera anular las elecciones",
-   "summary": "",
-   "image": "",
-   "source_url": "https://elpais.com",
-   "sources": [
-    "EL PAÍS"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUU4xUWVIZW52aUVodVEzRmFUclhFTVNDb1djNTZDcEZtRWZaX1BWcEJTaHVOeEh1bUQzTEtVWEd0eUpaYlVRRUxRQUlQTTl3VWozYjlyR0Q1Q3RGa1F0ZWtIaFFTZGlPbDBkeTQ1UUJuUmdIQXNQOGFvWnFobW85LXkyNFkxVHMwUTZKazhSTFpSemtHd2EwOGRUa04zYU1iMkh0T01MMkV6eFFZdFpjQWhyYkFXVW9HeGM4MlJHdDh6M0520gHYAUFVX3lxTE9YYy1MSVVQbUlOekg2Y29CVkcyd1ZSOVh5WFZMTURGWXJlS1Q3Y1BjX2puRTVkVlJQcUlNLWk4SWo5SUNBZl90SzN0RmRLMUsyOWtuRGpHZmdqZ2VhQWpsUDktY2JVcllpT0NSR293ZlNyVThiVjZ2QnRBQnF5V2d4NXhOVDlzWjZZLUZYZnFmamVkLWJ6TFFYUmhiZkc0OVdlUUo3SzNUeFpFM1MyaV84THBkOUpvQnBXRmJfb2JjbkFFSksyMW0zQWFJdlJLYzR6amNIaUpORQ?oc=5",
-   "published": "2026-10-26T02:44:39Z",
-   "first_seen": "2026-10-26T19:12:27Z"
-  },
-  {
-   "category": "cultura",
-   "title": "MEO echa por tierra rumores de quiebre con Karen Doggenweiler: \"No nos entra ni una fisura\"",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995526-meo-echa-por-tierra-rumores-de-quiebre-con-karen_-_no-nos-entra-ni-una-fisura_-1200x633.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/dopamina/2026/10/25/meo-echa-por-tierra-rumores-de-quiebre-con-karen-doggenweiler-no-nos-entra-ni-una-fisura.shtml",
-   "published": "2026-10-26T02:32:30Z",
-   "first_seen": "2026-10-26T03:52:05Z",
-   "image_checked_at": "2026-10-26T03:52:05.509856Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Lula logra una histórica remontada contra Flávio Bolsonaro, quien dice que \"es imposible reconocer los resultados\"",
-   "summary": "A pesar de haber perdido en la primera vuelta, Luiz Inácio Lula da Silva logró una inédita victoria frente a Flávio Bolsonaro y será presidente por cuarta vez. La izquierda seguirá gobernando en la democracia más…",
-   "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/02fd/live/eb53b7a0-d0e0-11f1-93e1-3b657b665bcf.jpg",
-   "source_url": "https://feeds.bbci.co.uk/mundo/rss.xml",
-   "sources": [
-    "BBC News Mundo"
-   ],
-   "coverages": [
-    {
-     "source": "BBC News Mundo",
-     "title": "Lula logra una histórica remontada contra Flávio Bolsonaro, quien dice que \"es imposible reconocer los resultados\"",
-     "link": "https://www.bbc.co.uk/mundo/live/cm5ynp5y1871t?at_medium=RSS&at_campaign=rss",
-     "published": ""
-    }
-   ],
-   "link": "https://www.bbc.co.uk/mundo/live/cm5ynp5y1871t?at_medium=RSS&at_campaign=rss",
-   "published": null,
-   "first_seen": "2026-10-26T02:30:37Z"
-  },
-  {
-   "category": "regiones",
-   "title": "Universidad de Concepción conquista el título nacional de básquetbol universitario en Antofagasta",
-   "summary": "",
-   "image": "https://canchaycalle.cl/wp-content/uploads/2026/10/Celebracion-del-equipo-campeon-UdeC.png",
-   "source_url": "https://canchaycalle.cl",
-   "sources": [
-    "canchaycalle.cl"
-   ],
-   "coverages": [],
-   "link": "https://canchaycalle.cl/universidad-de-concepcion-conquista-el-titulo-nacional-de-basquetbol-universitario-en-antofagasta/",
-   "published": "2026-10-26T02:20:45Z",
-   "first_seen": "2026-10-26T02:30:37Z",
-   "image_checked_at": "2026-10-26T02:30:37.872920Z"
-  },
-  {
-   "category": "deportes",
-   "title": "La U y Everton protagonizan un duelo crucial en la carrera por el \"Chile 2\" de Libertadores",
-   "summary": "",
-   "image": "https://www.cooperativa.cl/noticias/site/artic/20261025/imag/foto_0000000120261025151134.png",
-   "source_url": "https://www.cooperativa.cl",
-   "sources": [
-    "Cooperativa"
-   ],
-   "coverages": [],
-   "link": "https://www.cooperativa.cl/noticias/deportes/futbol/liga-de-primera/la-u-y-everton-protagonizan-un-duelo-crucial-en-la-carrera-por-el-chile/2026-10-25/151134.html",
-   "published": "2026-10-26T02:12:47Z",
-   "first_seen": "2026-10-26T12:49:46Z",
-   "coverage_countries": [
-    "CL"
-   ],
-   "image_checked_at": "2026-10-26T12:49:46.842056Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Flávio Bolsonaro desconoce el resultado electoral y anuncia que pedirá la anulación de la segunda vuelta en Brasil",
-   "summary": "",
-   "image": "https://www.latercera.com/resizer/v2/RNGQ3BMUZZH57OYF2EBHK3SKX4.jpeg?auth=9ba9efb49a28579b451ed780541b968a65f574f5c3136ae2c83cd26e312ede5c&height=630&width=1200&smart=true",
-   "source_url": "https://www.latercera.com",
-   "sources": [
-    "La Tercera",
-    "El Mostrador"
-   ],
-   "coverages": [],
-   "link": "https://www.latercera.com/mundo/noticia/flavio-bolsonaro-desconoce-el-resultado-electoral-y-anuncia-que-pedira-la-anulacion-de-la-segunda-vuelta-en-brasil/",
-   "published": "2026-10-26T02:12:18Z",
-   "first_seen": "2026-10-26T03:52:05Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ],
-   "image_checked_at": "2026-10-26T10:15:04.921392Z"
-  },
-  {
-   "category": "internacional",
-   "title": "Marine Le Pen entra en carrera presidencial y promete \"devolver el poder al pueblo de Francia\"",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/10/social-6995521-marine-le-pen-entra-en-carrera-presidencial-y-promete-_devolver-el-poder-al-pueblo-de-francia_-1200x633.jpg",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/25/marine-le-pen-entra-en-carrera-presidencial-y-promete-devolver-el-poder-al-pueblo-de-francia.shtml",
-   "published": "2026-10-26T02:08:27Z",
-   "first_seen": "2026-10-26T06:02:55Z",
-   "image_checked_at": "2026-10-26T06:02:55.072788Z"
-  },
-  {
-   "category": "cultura",
-   "title": "Frida Kahlo inspira las faldas largas con olanes para usar con botas en otoño 2026",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.vogue.mx",
-   "sources": [
-    "Vogue México"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaFc3SFlsRjlLcFVZQnhiUmdYR0ZGa3Q2T0pkeUNoOThKMUlXZlNYQi14enBYUC1IUzlZV29uNHRYNmROdEp2UVNBNk5rNDBDZk5ZSGhrT0JxN1hvUGVEWHZSeEVxYWh3R2IzaFROdHBhVnZuOVdkMUUyNDJkZjRzRjhWZFpSa1dJSzlNUTZnS0lYOVdzc3NZeXFPXzFMQ2s5ZmJyeklwZ2F0S3h3WDl0d1JtNA?oc=5",
-   "published": "2026-10-26T02:03:13Z",
-   "first_seen": "2026-10-26T12:17:38Z",
-   "metadata_only": true,
-   "discovery_edition": "MX",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "cultura",
-   "title": "El documental chileno “El Método de Roumeau: De la cárcel al teatro” tendrá dos funciones en México",
-   "summary": "",
-   "image": "",
-   "source_url": "https://portalmetropolitano.cl",
-   "sources": [
-    "Portal Metropolitano"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSHluMWVDSkNEbVZVSklLYW5IbHA3bElsb1pyd3RiTi1VdnJnOVNYaDdINnpMRFJpUFN1TnJRdFpvZnRjcW44Tjg5el9wYjRqUjhWaWM0ckFVYmRlYm5LUnd2LTJnQ0FHWjRJMkdUbEhxcjZRQkxhUUFCSG9YZGFEclEwZlZjdDgzNVJZQ0dPMHJkSDNBOFhpTUtWenZRUkVBSElaM1lBOGJvUHFwdUp2blZmdW9nWUUwUUg3RUYxX3FxU0luakRN?oc=5",
-   "published": "2026-10-26T02:01:54Z",
-   "first_seen": "2026-10-26T02:30:37Z",
-   "metadata_only": true,
-   "coverage_countries": [
-    "CL",
-    "MX"
-   ],
-   "discovery_edition": "CL-CINE",
-   "metadata_policy": "source"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Microsoft abre la puerta de salida a 60.000 empleados con un nuevo retiro voluntario",
+   "link": "https://www.biobiochile.cl/noticias/internacional/mundo/2026/10/27/microsoft-abre-la-puerta-de-salida-a-60-000-empleados-con-un-nuevo-retiro-voluntario.shtml",
+   "category": "tecnologia",
+   "published": "2026-10-27T03:45:19Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "El desafío del \"rey Bibi\": cómo el legado del 7 de octubre define si Netanyahu logra un séptimo mandato como líder de Israel",
+   "link": "https://www.bbc.com/mundo/articles/cjg473r01g73o?at_medium=RSS&at_campaign=rss",
+   "category": "internacional",
+   "published": "2026-10-27T03:39:17Z",
+   "sources": [
+    "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Festival Internacional de Butoh en Chile",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSTdwV19LOWRCX3I4d1ZiTzdnRkY1c3l5VUVzZ3FxOXRwRlh4aEsyd09jOFJTMXJKUU9fcnFIdGpROTNiTlllZjl5Zm1lTWtRanM5aTFsLWZtaXJGcnRvSWFzMFR3UEtRdDhUZHJwVTNkZWMwTTA5c0M1QW1FVWxxWkdUaFNJaU5uN0tYeDNWOWwwa3NxRjE0ZzVn?oc=5",
+   "category": "cultura",
+   "published": "2026-10-27T03:30:44Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
+   "title": "Trump faz insinuações e afirma, sem provas, que eleição no Brasil pareceu fraudada; Alckmin rebate",
+   "link": "https://g1.globo.com/jornal-nacional/noticia/2026/10/27/trump-faz-insinuacoes-e-afirma-sem-provas-que-eleicao-no-brasil-pareceu-fraudada-alckmin-rebate.ghtml",
+   "category": "latinoamerica",
+   "published": "2026-10-27T03:09:38Z",
+   "sources": [
+    "G1"
+   ]
+  },
+  {
+   "title": "Isla en alerta: Haití no puede reconstruirse a costa de soberanía dominicana",
+   "link": "https://acento.com.do/opinion/isla-en-alerta-haiti-no-puede-reconstruirse-a-costa-de-la-soberania-dominicana-9777485.html",
+   "category": "latinoamerica",
+   "published": "2026-10-27T03:03:26Z",
+   "sources": [
+    "Acento"
+   ]
+  },
+  {
+   "title": "In-Edit Chile anuncia su Panorama Nacional, un homenaje a Álvaro Peña y una gala con Fernanda Abreu",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZnQwUmhuZk90NEoxMGxMeHZFV25ZZ0owWkVFMlRvSHMtRHB6YUNsbWZfVnJteEZRWEtLRnRTQjA2LVVpS19iSUphS205MkIydXpFMXdfUHJKSUZOVzlzMHY1LW9aZVZ2c3dvVlBkYVpOV25VNG5acjMzQnBhUnI5ME8xR3AzUU5QLU1VSFNqZWppTHYxS0xCaUpIeG81b0pIZnJmTU9EN3ZhZS1EZE9lVm9RQ3dZRWp1LVNaNHZIMlJSTXZDX3k1cQ?oc=5",
+   "category": "cultura",
+   "published": "2026-10-27T02:59:45Z",
+   "sources": [
+    "POTQ Magazine"
+   ]
+  },
+  {
+   "title": "Tregua humanitaria entre Ucrania y Rusia entra en vigor en la ciudad de Oleshki",
+   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/26/tregua-humanitaria-entre-ucrania-y-rusia-entra-en-vigor-en-la-ciudad-de-oleshki.shtml",
+   "category": "internacional",
+   "published": "2026-10-27T02:59:36Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Menor de tres años muere tras caer desde un piso 13 en Santiago Centro",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/26/menor-de-tres-anos-muere-tras-caer-desde-un-piso-13-en-santiago-centro.shtml",
+   "category": "nacional",
+   "published": "2026-10-27T02:54:56Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Rocío Montes aborda el giro de Kast en política exterior: “Muestran señales de mayor prudencia de Chile”",
+   "link": "https://www.cnnchile.com/lodijeronencnn/rocio-montes-aborda-el-giro-de-kast-en-politica-exterior-muestran-senales-de-mayor-prudencia-de-chile/",
+   "category": "politica",
+   "published": "2026-10-27T02:42:33Z",
+   "sources": [
+    "CNN Chile"
+   ]
+  },
+  {
+   "title": "Balance Senapred por sistema frontal: Clases suspendidas en Requínoa y polígono de Las Condes",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/balance-senapred-por-sistema-frontal-clases-suspendidas-solo-en-requinoa-y-normales-en-resto-del-pais.shtml",
+   "category": "nacional",
+   "published": "2026-10-27T01:45:40Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Sistema frontal en Chile, en vivo: cortes de luz, activación de quebradas, pronóstico de lluvia, granizos, tornados y últimas noticias",
+   "link": "https://www.adnradio.cl/2026/10/26/sistema-frontal-en-chile-en-vivo-cortes-de-luz-activacion-de-quebradas-pronostico-de-lluvia-granizos-tornados-y-ultimas-noticias/",
+   "category": "nacional",
+   "published": "2026-10-27T01:44:24Z",
+   "sources": [
+    "ADN Radio"
+   ]
+  },
+  {
+   "title": "Enel anuncia corte de luz para 11 comunas de Santiago durante las próximas horas",
+   "link": "https://www.chilevision.cl/noticias/te-ayuda/enel-anuncia-corte-de-luz-para-11-comunas-de-santiago-durante-las-proximas-horas-2/",
+   "category": "nacional",
+   "published": "2026-10-27T01:35:07Z",
+   "sources": [
+    "Chilevisión"
+   ]
+  },
   {
    "title": "Parived enfrenta querella por cheque de $36 millones sin fondos: piden que Tonka Tomicic testifique",
    "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/26/parived-enfrenta-querella-por-cheque-de-36-millones-sin-fondos-piden-que-tonka-tomicic-testifique.shtml",
@@ -5132,7 +5383,8 @@
    "category": "nacional",
    "published": "2026-10-27T01:12:40Z",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "La Tercera"
    ]
   },
   {
@@ -5151,6 +5403,15 @@
    "published": "2026-10-27T01:03:16Z",
    "sources": [
     "La Tercera"
+   ]
+  },
+  {
+   "title": "El futuro judicial de Flávio Bolsonaro se nubla tras su derrota electoral",
+   "link": "https://www.cooperativa.cl/noticias/mundo/brasil/elecciones/el-futuro-judicial-de-flavio-bolsonaro-se-nubla-tras-su-derrota-electoral/2026-10-26/215356.html",
+   "category": "internacional",
+   "published": "2026-10-27T00:57:00Z",
+   "sources": [
+    "Cooperativa"
    ]
   },
   {
@@ -5191,12 +5452,30 @@
    ]
   },
   {
+   "title": "Kast regresa a Santiago desde Atacama para monitorear emergencia por intensas lluvias en la RM",
+   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/26/kast-regresa-a-santiago-desde-atacama-para-monitorear-emergencia-por-intensas-lluvias-en-la-rm.shtml",
+   "category": "nacional",
+   "published": "2026-10-27T00:17:14Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "No lo dejó pasar y envió mensaje en vivo: Tonka Tomicic reacciona a rumor de supuesto romance con destacado periodista",
    "link": "https://www.lacuarta.com/espectaculos/noticia/no-lo-dejo-pasar-y-envio-mensaje-en-vivo-tonka-tomicic-reacciona-a-rumor-de-supuesto-romance-con-destacado-periodista/",
    "category": "cultura",
    "published": "2026-10-27T00:13:34Z",
    "sources": [
     "La Cuarta"
+   ]
+  },
+  {
+   "title": "Oposición fija ultimátum de 48 horas al Gobierno para remover al ministro Rabat y convoca a sesión especial en la Cámara",
+   "link": "https://www.cnnchile.com/pais/oposicion-fija-ultimatum-de-48-horas-al-gobierno-para-remover-al-ministro-rabat-y-convoca-a-sesion-especial-en-la-camara/",
+   "category": "politica",
+   "published": "2026-10-27T00:06:22Z",
+   "sources": [
+    "CNN Chile"
    ]
   },
   {
@@ -5209,6 +5488,15 @@
    ]
   },
   {
+   "title": "Nuevo revés de la familia Bolsonaro frente a Lula pone en duda el protagonismo del clan",
+   "link": "https://www.latercera.com/mundo/noticia/nuevo-reves-de-la-familia-bolsonaro-frente-a-lula-pone-en-duda-el-protagonismo-del-clan/",
+   "category": "internacional",
+   "published": "2026-10-26T23:50:44Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
    "title": "Bolsonaro se presenta como líder de la oposición a Lula sin admitir la derrota y su partido sí reconoce los resultados",
    "link": "https://www.bbc.com/mundo/articles/cm4g172l4k87o?at_medium=RSS&at_campaign=rss",
    "category": "internacional",
@@ -5216,6 +5504,24 @@
    "sources": [
     "BBC",
     "BBC News Mundo"
+   ]
+  },
+  {
+   "title": "Balón de Oro 2026: en qué puesto quedó Vozinha como Mejor Arquero",
+   "link": "https://www.espn.cl/futbol/nota/_/id/17435193/balon-de-oro-mejor-arquero-vozinha-en-que-puesto-termino",
+   "category": "deportes",
+   "published": "2026-10-26T23:36:39Z",
+   "sources": [
+    "ESPN Chile"
+   ]
+  },
+  {
+   "title": "Harry Kane gana el Balón de Oro 2026: aquí la lista completa de todos los premios",
+   "link": "https://tntsports.cl/internacional/EN-VIVO-sigue-la-gala-del-Balon-de-Oro-2026-minuto-a-minuto-con-Vozinha-de-Colo-Colo-nominado-20261026-0014.html",
+   "category": "deportes",
+   "published": "2026-10-26T23:34:00Z",
+   "sources": [
+    "TNT Sports"
    ]
   },
   {
@@ -5283,6 +5589,24 @@
    ]
   },
   {
+   "title": "Mawiza dará su primera gira por Chile",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTFub0dRQlQ0UzlacG1ZQzBWRkNxNUc3cHdDUFZ1Z28xaXczdXgxSWI4eDBrNzZmbjFobTk3V2k5ZGVBdVJId3FkZ0ZucEM0OTBPZnVPYnBIYk1weVByczhKNWY3MFZuM1VEdGkyMU0zbndmNDVPcEdVQ2RwMWFIdHVadlhRTmN3RUg0?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T23:00:11Z",
+   "sources": [
+    "Rockaxis"
+   ]
+  },
+  {
+   "title": "Al ritmo de Eduardo Vargas: la U golea a Everton y sigue acortando la distancia con Colo Colo",
+   "link": "https://www.latercera.com/el-deportivo/noticia/al-ritmo-de-eduardo-vargas-la-u-golea-a-everton-y-sigue-acortando-la-distancia-con-colo-colo/",
+   "category": "deportes",
+   "published": "2026-10-26T22:59:06Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
    "title": "Supera a Mbappé y Haaland: Harry Kane triunfa en su casa y conquista por primera vez el Balón de Oro",
    "link": "https://www.latercera.com/el-deportivo/noticia/harry-kane-triunfa-en-su-casa-y-conquista-por-primera-vez-el-balon-de-oro/",
    "category": "deportes",
@@ -5301,12 +5625,22 @@
    ]
   },
   {
+   "title": "Meghan Markle y el príncipe Harry se refugian fuera del Reino Unido tras acusaciones contra su padre",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZjByd1lxM1EtOC1qaDZzQjRCejlzSEpaOW9UczRxdjNvekpvTzdHb2hYVFg4TnB5d2hyb3ZDcnhYN25lTUJIbzVYektSbEI2Y3hvSngyWHBhQjk5d21iU2ZGUUJ2bzZwVGdWNlExbVlyeEpWMzVPRm5CUUVPcFpyblR2M1RhYXJraEo1YUI4eDNESlVURHVUaW9nclJoNlV6Q0ZaQUpzRHQ4VUdDUjQ4?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T22:36:00Z",
+   "sources": [
+    "HOLA"
+   ]
+  },
+  {
    "title": "Senapred declara Alerta Roja en 10 comunas precordilleranas de la RM por remoción en masa tras lluvias",
    "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/26/senapred-declara-alerta-roja-en-10-comunas-precordilleranas-de-la-rm-por-remocion-en-masa-tras-lluvias.shtml",
    "category": "nacional",
-   "published": "2026-10-26T22:39:07Z",
+   "published": "2026-10-26T22:35:00Z",
    "sources": [
-    "BioBioChile"
+    "BioBioChile",
+    "Teletrece"
    ]
   },
   {
@@ -5400,6 +5734,15 @@
    ]
   },
   {
+   "title": "La Granja VIP: los finalistas que competirán por ser el NUEVO CAPATAZ de la semana 8",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWG5mel9zRjAxaVR0cl9mUk9SYWRTc1l5VVd2MHVPazhUWFdwWGtEN0xLUHFjR2hpOEpPWGRuOGgwS1dvOWUzWVFpTklmTWxuVzFJWkNlZU8wbVF2RGdEQkx0U3ZGaHZoSjJ2Y2ZxS2d0MGFCRWNrbzhWTWFhNjB2SEpHcXNZUWVKVUtXS0hRVnY4eDgzNS1hNUlR0gGnAUFVX3lxTE1zSi15ZzhqaWNNdEEwLUV2bzkySnpTUkZGbC0tdjQxLUxRdUYydndPZmc1YWc5S0N5a0N3b1lLTUY0d0ZXWEE1Zng0X3hpai0zRHQ3dmRkZjZRVkJaNklkT2VXUDIxR0k5VVNFMFROWDVDYmhUQlV3WkdSemVsbmg0bUFqelVtdmZrREczYWRsN1V6Ml9hdVVwLUdqNXNNb1Z2MVp3eXZn?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T22:03:41Z",
+   "sources": [
+    "TV Azteca"
+   ]
+  },
+  {
    "title": "ExpoGan 2026: multarán con más de 1.5 mdp a Los Tucanes de Tijuana y Marca Registrada por cantar narcocorridos",
    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOMW9sZHdSSnNzM3AycHBwWUZ2ME9vOW1ycEpyRDFhdl9rMlhYWXE3UURzNDU5R0ZiUkFlM3U3T2hiNGQyV25rczlJaEptUGRYRFplWUY3cXJhRzBtQ1lfdHo1YXdhVDliNnJUcV90aTdkQnZ2Z29mZHpJVTFuMFdwSkc0NlNwVXliTWVoZVJpREoxRFU3dm9QbjIxTkgzZnFSQ1AwNm5KeDhJUHpYUFBHMU1EWXZFd3dGNi0xWTJXdGhwVzAxQU9IYjFNc0xtOWo5eWEtS2RSMmtyS0JhcEZTNnRSV21XUm45MEM5VTFlRU1helVpY0U4?oc=5",
    "category": "cultura",
@@ -5454,6 +5797,15 @@
    ]
   },
   {
+   "title": "Nueva tormenta eléctrica en Santiago",
+   "link": "https://www.cooperativa.cl/noticias/pais/tiempo/nueva-tormenta-electrica-en-santiago/2026-10-26/164714.html",
+   "category": "nacional",
+   "published": "2026-10-26T21:43:35Z",
+   "sources": [
+    "Cooperativa"
+   ]
+  },
+  {
    "title": "Los Vásquez explican por qué no se han presentado en el Festival de Viña y detallan sus condiciones",
    "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNeVktOEk3OTNoYllFNDRHMG1LekxBRlRhaWpDV2dxdnUxWTRwRUI0VnotbHpkVlVTazE1OF9seDg5Sk45RjFDZUFVY3V0VjVVc1VtTXNNVXVQbFh3QU56QVIxTVJBOFZGakptQk4zY2IyNGNDNTRBQk4zSnhaWTZMX1UzUzQ1QXhPV1NGQUwzMXFVMHFQU3VWRWtYX1AwSVh0YWNMcXRfNXpOU3BWTWo1T3N6bDE0OEJaN1pwaTFLdXFKOVRHamlpS2Eya3pXdjNfbXZhVThzWUVDOXFNVDQ1ZTRrdjZrRFNSaTVPNGNvdHpIb1BGWFl2V0Y1U0F0QjdGNnNRNVk0TVpsRXV1bWdQTTU2SjU0WGpnaVNUZw?oc=5",
    "category": "cultura",
@@ -5465,6 +5817,15 @@
   {
    "title": "Tornado provoca daños en 70 viviendas y un colegio en Requínoa: DMC lo clasifica en la categoría EF-2",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUE5tQ0lNcXp6MHcxdDJlZWNONUtfMk9YLTJNeDUwTERzbzhZS3h6QlNhWmExVXI2V0gwY2hhdUJSUXNiTjJFclhWMF91cEYzUVdMNTZuVHJjd295VGV5U3dzd2lEeU5rMXlDdzI3TFlVMGZCRUpLYmNJSG9rUXA2Zlp2SmFiUlZwSEgySHBUVEVxLU1FLTZMMEVkQjNwWldoT3FIaTlqbHo0R1BmYzc5eDRiRVBveGJpNXE0dDh4eWjSAeIBQVVfeXFMTkhwVTlINExfR1NzVW84THJyWGpqRFM3SkxibTg5a1JvTDc2cWE0X2FQbUxaSmZpUjdUM1B3LVg0T1l4Q0hld1YwTzJqMmFmd1dwRXhIeldiQmJwMlJOQ3c1Q2NudHV4Zkw5cHl0cDVYRXRmdUVBRkpmVDl5UjFpUk5KVzU5YVpIaXRxQnM5NmVnR183TUx6SVg5OW9XSWlyTXhMdnZqOFM3THU3MUoyRkpDQUowYmpRbVhKNmpiQUZ1QTVONlJkLTFvRmhsclVzMWRvNlVnclNjcU92MFA3bkxRZw?oc=5",
+   "category": "nacional",
+   "published": "2026-10-26T21:32:42Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Tornado provoca daños en 70 viviendas y un colegio en Requínoa: DMC lo clasifica en la categoría EF-2",
+   "link": "https://www.latercera.com/nacional/noticia/tornado-se-registra-en-comuna-de-requinoa-dmc-lo-clasifica-en-la-categoria-ef-2/",
    "category": "nacional",
    "published": "2026-10-26T21:32:42Z",
    "sources": [
@@ -5562,6 +5923,15 @@
    ]
   },
   {
+   "title": "Impacto en Melipilla: muere mujer boliviana que cayó de auto en movimiento cuando sufría abuso sexual",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/26/impacto-en-melipilla-muere-mujer-boliviana-que-cayo-de-auto-en-movimiento-cuando-sufria-abuso-sexual.shtml",
+   "category": "nacional",
+   "published": "2026-10-26T20:51:02Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Impactante registro: rayo cae sobre estación de trenes de Talca y provoca el corte del servicio",
    "link": "https://www.chilevision.cl/noticias/nacional/impactante-registro-rayo-cae-sobre-estacion-de-trenes-de-talca-y-provoca-el-corte-del-servicio/",
    "category": "nacional",
@@ -5616,6 +5986,15 @@
    ]
   },
   {
+   "title": "Stephanie Vaquer explica a sus fans por qué le complica grabar videos para alianzas: \"No es mala onda\"",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOMlRqRndrQjBocURPRmlMdVMxbFlpbXpUdlBpRTQ1NlhDeExKRlZLblZDVzg0UVdrS2dfdi12RTZ4czBFMHhMVDB4bWQzMWFwclotUkQ0YTc1TTJZdGNlOURpaWo1Q2J5MUtsNU9Ba1BhelVZMm9sU3BpUXFpamdpSTQ2RXFWZzRfVlVYSzNDUHVWUWlwTEN1eWFjX0tjZ3JJTTF5bDFxUEJPcGNuZU1mUm5jQXNIVXloV0ljcTFsOURmcXpoM2V0Y2JWSHRia2dMWHotdDZlU05MX3NmRGlSV0ktSXZCY0F0QzQtNk02aFhvX0lWeVdrQXB1QVN5NVRhbHlQdA?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T20:27:05Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Valparaíso vibró con colorida “Fiesta de la Música” en pleno Barrio Puerto",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVWVURkthVjM1SnBOckRHbkFBTGYzVVR2YnlTQ3dxR3lwd21KRkhERF9jVTM3cTlUTnJDd3BuTmdBbmsxZ0gzYmZJcXpPbmZ1eEQwVWZZQk80Qm5kNE0yLTlacnExTmtpTVZpVnpzbHRfSzI1eFFmd19Fem1BdGtVZHZzSDBVeTN1ZGpFWktCNXFxU1VxbWZQcTEzTl80TGR3QzZZWlJIVEs1QQ?oc=5",
    "category": "regiones",
@@ -5640,6 +6019,15 @@
    "published": "2026-10-26T20:24:45Z",
    "sources": [
     "LOS40"
+   ]
+  },
+  {
+   "title": "Tribunal resolvió un capítulo del \"escritoriazo\" del Ascenso",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQX0NxUjRoSl9WdENwSGVWOEZhSk9WaHI0dDZVNkNHazM1aWZiUElFeHo5dW1reExESWg4aE9DNmJ4RVBMNUZDcUtIeHdIY09tcFZzUU9oTmxVWVJxNmg5YXh2TW93YV9HUUM2MDVoVEp6ejV1Mk93REp5THBzR3pLNWlINXBab0s4dHlOLXI4amg3VXZPRV8tcnJzNG1vdVo2Y2pjUUlFVVE4ZUp4dktOUk5qQmZvRmZROGU0TzNvUGI4R29BdDJ1QkkwOWZmN2xVb0JjOVNYb3dhRjB3Y202ZGc3ONIBjAFBVV95cUxQc3VGTEcwMVE3MldubEZwcmh3bVhjbU5hNWZrZEczRjhEczU2WDlZc2c3QXEwTUV3N2dPaGlVUENZVkg3eWVESHo3cmxpVmVndWo3aDdvcEZHdzBKOXA4MlRTSVB4d2pvanZRUnR0OXk1V2lBa3JiMGdsdG01MzF6WU9RUWlZTEZkVGpuSA?oc=5",
+   "category": "deportes",
+   "published": "2026-10-26T20:18:00Z",
+   "sources": [
+    "Cooperativa"
    ]
   },
   {
@@ -5742,6 +6130,15 @@
    ]
   },
   {
+   "title": "Diego Ulloa habla por primera vez sobre su ausencia en Colo Colo y deja un duro mensaje",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVjluLXFCajlhdDlVenFxRXBGYUFoVFR1S3JBWElYZDloTkFYdkp5VWQyQlVyZ0laSHFIMDY1OTBVZEVFWDBaTTltOEZ3RURmeEp1LTBEUnllZFVMM3MzRk90ZWdidlpxZVB2WnBqVHN6dTZJbkl0VDZUZk5mM1laeUp6dHN1Rk5PMEFkdDFmc3BNb29vbGFoa1U2YmtHbTBJa0Z6OTBBQ05GNnJ6bzlfZjdiVG5TUUVIbmFZcHdObTN4M0ZL0gHYAUFVX3lxTE14ME1GWUNybnZ0ZjhMQ0x1bU9JeEVSOFpfaVkyTkxPUFRod09ieWZhcmJmb1RERGJ3WlZ0RjNmcDU2clI4bDhCdlNiRTUwRkxWM3gtYmhyeVZRSHBzZXBqTEpSYUgtTWxVT3hsT2lvellRUjVpQS1obmFDX0NRV2RGdXZnUkJicm5Tdzg1Z2VoZWZ0MVY1MldaY0MxRGYxSUpwVjZwMnhPMUlYNm40TWtmVVZLU2ZMdkpwTkJPUGxVZkNLeDUzU2xmaDFJUi1SVEVSTjIxRFpVMQ?oc=5",
+   "category": "deportes",
+   "published": "2026-10-26T19:38:47Z",
+   "sources": [
+    "AS Chile"
+   ]
+  },
+  {
    "title": "Los siete problemas más urgentes de Lula, cuya reelección sembró pánico en los mercados el primer día",
    "link": "https://www.ex-ante.cl/internacional/7-problemas-lula-y-panico-mercados/",
    "category": "internacional",
@@ -5765,7 +6162,8 @@
    "category": "latinoamerica",
    "published": "2026-10-26T19:36:06Z",
    "sources": [
-    "G1"
+    "G1",
+    "Bloomberg Línea Brasil"
    ]
   },
   {
@@ -5899,6 +6297,15 @@
    "link": "https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/10/26/hechos-inaceptables-gobierno-ordena-a-enap-que-colabore-ante-irregularidades-de-emisiones.shtml",
    "category": "nacional",
    "published": "2026-10-26T18:43:25Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Luto en la tripulación: muere Walter Koenig, el histórico Pavel Chekov de ’Star Trek’",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOZnZrR1FfSnplUGU0WGd4XzlScGtfRThRYU0xdGl3REx0cFllSnJXNlBBTkJnUnBJZF9WSkhOdW15MVdQTFpnemhKWkd5SkZYQnNPeFVRU3JhV2NtMVFfYjQ2ekhTLXFZeEp0S0RoYjR0RGRIR3owVldNcWd1bXZlV3N5NUdoNFVmTFkxUVRGbENkaTJJMXNmdEh0aS1QbndOMF9WUEtNbWtlREZ4bDRaY0ItOWhIYTJaMFV0QnhqZmRpM0xkYUhhOXlxU3dMc0pHVG5tUURJNHRnWTVKcGd6aW1nLWplNlVVVk12dzJfLWMycV9GdXZjd0RYamlDQXc?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T18:37:59Z",
    "sources": [
     "BioBioChile"
    ]
@@ -6057,6 +6464,15 @@
    ]
   },
   {
+   "title": "'La Promesa': avance del capítulo 935 que Televisión Española emite este martes 27 de octubre, Julieta quiere recuperar a Manuel",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeDNkd0NaZm1NenRrNzE1VTdvZDFYUmxWUzh0SDBaa01fZHBsWEhIU2pveE5zV3BPcWRrR2dtQV9yUFJETFNsWVRBSUpMNVcyOUNoVnNyRXpVOTNTb3NCTmQwd0xnQUIxbEVUX2ZGUDdnN1FoRWNJaTJIZExyVnJ0UG9nM1Z0NUJTNFMtaEFocUlwaG10Rk54ZUJwOWg3SmJBRDZEQ2I2a1l2Z2NNTGRaY0w2QmlBbmNxdWI5RFVzS3k?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T18:00:00Z",
+   "sources": [
+    "Lecturas"
+   ]
+  },
+  {
    "title": "MUBI en noviembre de 2026: estrenos, películas y series",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTkJZZmNKRnF3bDMzc3VmN1h4WDdKbUFpUk9lSG1MZ0tZdWpmUjNwM1ZiZ0ROQzlrNzJkUDRXaEtQVTExSVpiZVdESDc5dzRjbE1Ha2cxMS0yTFFmOXJMbnlkYjczc3A3VndCeFpWRVhMcFdFZ1pzYms5MlJseUd0UUVpMURvZ09XLU1JNXVMSUVuTUdCVDJqRlNlRVptN2Yxb1Y5Qlo5c2pHeDJaSm9DOHY4MGJzZ9IBtgFBVV95cUxOTkJZZmNKRnF3bDMzc3VmN1h4WDdKbUFpUk9lSG1MZ0tZdWpmUjNwM1ZiZ0ROQzlrNzJkUDRXaEtQVTExSVpiZVdESDc5dzRjbE1Ha2cxMS0yTFFmOXJMbnlkYjczc3A3VndCeFpWRVhMcFdFZ1pzYms5MlJseUd0UUVpMURvZ09XLU1JNXVMSUVuTUdCVDJqRlNlRVptN2Yxb1Y5Qlo5c2pHeDJaSm9DOHY4MGJzZw?oc=5",
    "category": "cultura",
@@ -6086,6 +6502,15 @@
   {
    "title": "Necesidad de un marco legal único y exclusivo entre las conclusiones del taller “Sistema nacional de tecnovigilancia: Desafíos y oportunidades en Chile” | Instituto de Salud Pública de Chile",
    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNTTBoYkg3cDQ2LWw5Y3Rpakd2M1F6VHdSLWdqaTdUVGpLOTVPWFZoNEhtbWlpTEpob04yTjZLYmdYRXg2OVdMX1VhMmJaRjNiTjVTQ2pmTHg5VkRuYVR3RDJfdUVCYlRoWkhKSTNXd3JDT3BmVVFCbGhya0UtMlZNZjUtZEtRaG9SLWtEX21xZTdWNzZMNzBtOG9zNnBFRzlQTmozQVpQR0U1ZW1OYldjUGdCQWV6QTFMSmxPUm9vNHRzb21TRmxON0Z6Q1hKN2l0eVRPRVlSWXBiUHFIaEdUcWozOS1oRWpEck1kNEkyeDg1aFBJVjUzX2tOcF9oY0VGcVRJb2pOUVBBbFE?oc=5",
+   "category": "salud-ciencia",
+   "published": "2026-10-26T17:52:47Z",
+   "sources": [
+    "Instituto de Salud Pública de Chile"
+   ]
+  },
+  {
+   "title": "Necesidad de un marco legal único y exclusivo entre las conclusiones del taller “Sistema nacional de tecnovigilancia: Desafíos y oportunidades en Chile” | Instituto de Salud Pública de Chile",
+   "link": "https://www.ispch.cl/noticia/necesidad-de-un-marco-legal-unico-y-exclusivo-entre-las-conclusiones-del-taller-sistema-nacional-de-tecnovigilancia-desafios-y-oportunidades-en-chile/",
    "category": "salud-ciencia",
    "published": "2026-10-26T17:52:47Z",
    "sources": [
@@ -6327,6 +6752,15 @@
    ]
   },
   {
+   "title": "Gepe reversiona sus éxitos y lamenta que el invierno de su canción ya no exista en Chile por el cambio climático",
+   "link": "https://oem.com.mx/elsoldemexico/gossip/gepe-reversiona-sus-exitos-y-lamenta-que-el-invierno-de-su-cancion-ya-no-exista-en-chile-por-el-cambio-climatico-32748697",
+   "category": "medioambiente",
+   "published": "2026-10-26T16:39:20Z",
+   "sources": [
+    "El Sol de México"
+   ]
+  },
+  {
    "title": "VIDEO | Operativo conjunto en Los Arenales de Antofagasta dejó a una persona detenida por porte de munición",
    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQUXhBTDlIaVZhMWd0RFAyeW9SZ1ZuUnRKa1VqUDAwZ1daQVp4VmxCd0FBMEttajN6amU5dFgyeTdGQ0ZIbmtwV3h1blYwSjRfM0daalVGbVpGa3VSWXQ3ci0xakh1UFVRR0JRaVZRLXozSDZvQ2lmYlRaLWVfcy1EUGg5WEZudERGcVMwQmlMVzI0NXExR2JVc3FuZzNvNUtKdGlkMUctajc0UnVvSl9JS0RrTnFaTHFLZE9IT3ZGc2ludFJRRzM1cnNWOXdRQXFWSEpFYXFnRUc3MHZFSnVfbDJMSjk2ZXlZbmtKaTJR?oc=5",
    "category": "regiones",
@@ -6390,6 +6824,15 @@
    ]
   },
   {
+   "title": "Zanahoria Pérez cuenta la clave de Palestino para dominar a Colo Colo: “Buscar el espacio entre sus volante...",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQbXByVFRsS2pCU3ZIQ3hvWWFrVDZOMmlLdlJibnc2RGFDWXdBd0Mxbzg0X3hiMEd3MEg3XzZHUndFMWNXVUVtemRTN1hBbDhjLVNlTjZQc1VzZkVRS003eTM3YVdCUXdacXk4RTc2bVI2cVBPZ1ZNcm94VV9Hb2lSUFZDYmRwdXU2RG5lQ01fdnpOeEE0N0dPc0VSOWNGQk9nY1ZkcFJ2d00xdWIyNlRXdWlNb255RjZZTmdCTmkxSl9Rd0owTi04N0ZaNVVBSzdfRHBFcm14dVFIUXo1WnfSAeMBQVVfeXFMTXdSRHEzdmVsdXdtMmlXUTFIckZEVFNsd3JEUHlkbHZFaWhVLWpJbldrMWRrbDV6Vk5ZUUlxV0pMSlZ2QnlBcjFNS0VlRmM2OWM5azFHLU9XdFJiYWFkZFhfMGRxTW9UUUZzX1JBUkYzNndVbTNTeVIwMXhFWjRWV3pPaktZYmtrSHdtMzNxeTc1U3ByTGpGYlBBcHhvYlc4S0tPeHFmRGJYNkhNNWs1T1ZxZG5GTEg2MnlFOF9FbGdwUTBadnA0a2t4YWFSaFl4R1VZa1dKeGthMHE5M2hyOGlBQTA?oc=5",
+   "category": "deportes",
+   "published": "2026-10-26T16:22:29Z",
+   "sources": [
+    "RedGol"
+   ]
+  },
+  {
    "title": "Estrenos de MUBI en noviembre de 2026: llegan The Curse, Making Marie Antoinette y más",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcVJRTFlxdW5OckUzZ2ptX3ktblNZNHBERDZRa21jNUNNRWtGSlJsUW1tN0VndGtpdmtrNWE5REtLVDVxZ04wSUFldGVRbWstTm9XejNRVEx3eEd1SmJxYzZONURmU2xqNWh5bGNVVGZSUUpWdXVoN19vV2Y4cEJYeDVUX1lFS2JfMjZ2N3JQU0NnWk05S0FxVDh3Mjc5S2JmdFV2LXpB?oc=5",
    "category": "cultura",
@@ -6405,6 +6848,15 @@
    "published": "2026-10-26T16:22:11Z",
    "sources": [
     "El Mostrador"
+   ]
+  },
+  {
+   "title": "Los tres jugadores de Universidad de Chile que arriesgan perderse el clásico ante Universidad Católica",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcy1tclNNNDZUODJWbGRsY2xWV3daV1F0T1ZmQUNtNG92MjhfNDBQQUU1TGVlUXVGUC1pSWR4djQwaWN4N3RMNURkZjVNODJIaEVrNENEeEJ4djY3NFljRUhaVGp0UUViV0FSMnd3amdDS2Zibk5rZVhnXzdNU042RUpmTThSSWxhazd0cmF0enlpcC1HUE5BdnlfczcxVnFRTHVKZVAxcW5jMDRuVXdTbk5aTU5Td0pfa2l2QTByZ3Vfd3c4SVZ0UWxUUWdzV2PSAdQBQVVfeXFMUGs3MWxLczNRWEJicWJuNThVUEI0d183dXhzeEhnbHh0dHpCNjlrOENTSVRpTzlMUTZsbmc0MmhIRW5VVHZCNnRUelpwaWxfQVJDNTRGOHJHSmlLWkNuUHgybEZYblVCU0o3V0I2a25qWENGQjVhYlMtVURvNDVjLVh5MjRhZXRtVkdaMG9DNVRwOUZUaEcyN1l6MUJYRXZPNnN2S1FtRUp1aVVjakFpY3JfY05OVFpKb1FiZzNhZ2dCeVh2S1lYQUFzUGJDdldsU1RZUHE?oc=5",
+   "category": "deportes",
+   "published": "2026-10-26T16:21:19Z",
+   "sources": [
+    "Bolavip Chile"
    ]
   },
   {
@@ -6438,6 +6890,15 @@
   {
    "title": "Fallece el empresario bancario e inmobiliario Jacob Ergas",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUG5WUFNNVng3ZzFLUjNsMXJXMzhhRUVMYWQ0OFZsOXNLdkFybEZmYjl4SWhkOUhvVlg3Tmwyd0QtMmpqUGFRbUlWV3ZBanBRcDdtLWg2amY0djBSalF4ZUU5RUxiMXhfRU45QmFGa1A0MTNUemIzNVpjQmVOX0RHeDFKNllHcG5TamlReVJqM29MOVpJM0JWZk1Mcw?oc=5",
+   "category": "internacional",
+   "published": "2026-10-26T16:07:00Z",
+   "sources": [
+    "Diario Financiero"
+   ]
+  },
+  {
+   "title": "Fallece el empresario bancario e inmobiliario Jacob Ergas",
+   "link": "https://www.df.cl/empresas/actualidad/fallece-el-empresario-bancario-e-inmobiliario-jacob-ergas",
    "category": "internacional",
    "published": "2026-10-26T16:07:00Z",
    "sources": [
@@ -6536,6 +6997,15 @@
    ]
   },
   {
+   "title": "Premio Innovadoras en Salud 2026: Cinco reconocimientos a mujeres que están transformando la ciencia, las decisiones y la salud en Chile",
+   "link": "https://portalredsalud.cl/2026/10/26/premio-innovadoras-en-salud-2026-cinco-reconocimientos-a-mujeres-que-estan-transformando-la-ciencia-las-decisiones-y-la-salud-en-chile/",
+   "category": "salud-ciencia",
+   "published": "2026-10-26T15:42:44Z",
+   "sources": [
+    "Portal Red Salud"
+   ]
+  },
+  {
    "title": "Muere Eric Bauza, voz en inglés de Bugs Bunny y Pato Lucas, a los 46 años",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLVBUNDN6YjdRU3dmZGM2N0xHekFMUXZ1bFgzRHZXNjV6WlNxWGxxUE9BVWMzMTlBbWRzdWt6OEhhQVczTXJXaU9wbC0zYmNJOW5PVUs0WEFFWGp0MG45bXhocF93NkFVTS03ZUowb0dEVUhuRnllUjJuay1FRDFYSTZjc1R3SlJUT0FSaTZ2YjZFdUtONDZqV0hpTXZQbHFWQmhCRl9oVDY4OGFvMGVn?oc=5",
    "category": "cultura",
@@ -6573,6 +7043,15 @@
    ]
   },
   {
+   "title": "Los nuevos empleos que abrirá el Black Friday en Chile: ofrecen sueldos de hasta $900 mil",
+   "link": "https://www.meganoticias.cl/dato-util/534819-empleos-black-friday-2026-sueldos-trabajos-ofertas-laborales-26-10-2026.html",
+   "category": "economia",
+   "published": "2026-10-26T15:30:00Z",
+   "sources": [
+    "Meganoticias"
+   ]
+  },
+  {
    "title": "Canarias Manga Festival cierra una edición de éxito con 11.000 asistentes y un impacto económico de casi 800.000 euros | Cabildo",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE95NkhydVZYZEUwRGoxbG1PYi03OVVGRWZTTjNjSGxjYzZSX0Vpc055LW12b2xkZzlfcHdtdmx0V3RIaG9HcTBBRm1TNGNDMUpUQUp3M09TUzQ1eDJDMWRJUzRDVUFqZktoN3NESnZ2WmZjc0p6?oc=5",
    "category": "cultura",
@@ -6593,6 +7072,15 @@
   {
    "title": "Caso Embotelladora Llacolén: formalizan a alcalde de Coronel, Boris Chamorro, por fraude al Fisco",
    "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQeWlSWEZ6OUt2MTZXbTl5cDZrMUppeklaXzJJY0dSVTlUdklBVnJNMjB1dmRteExEZ2xpWWIwRFlvMjJYUHNmV2dVVkROb1VSTkJiSGJsTUhLMmZuelpNYk1SdlVqQ2d0eG9WMVFTRzA0MmpLWHBrZkdpZlM2LTNJQlRSb0xNcE5CSXc2ZFNzMkZFY21Dd1hkRm04RWhZUnhOenRJd0RCcWxVSnJiU2RMOXJTX21OeDMxNHh6RTB6RWlzbVhIbnA1aldoeGdUSk5KNmZvQWNOM2RPa0RNOC1sN1d3X29FLTRJSy1EMnp0bnV4NTV0aGVZcVpLTmxoaUZsUlhzZHpR?oc=5",
+   "category": "nacional",
+   "published": "2026-10-26T15:23:51Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Caso Embotelladora Llacolén: formalizan a alcalde de Coronel, Boris Chamorro, por fraude al Fisco",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/10/26/caso-embotelladora-llacolen-formalizan-a-alcalde-de-coronel-boris-chamorro-por-fraude-al-fisco.shtml",
    "category": "nacional",
    "published": "2026-10-26T15:23:51Z",
    "sources": [
@@ -6768,7 +7256,8 @@
    "published": "2026-10-26T14:49:00Z",
    "sources": [
     "Cooperativa",
-    "www.diarioeldia.cl"
+    "www.diarioeldia.cl",
+    "El Día"
    ]
   },
   {
@@ -6828,6 +7317,15 @@
   {
    "title": "Fernanda Cornejo Doggenweiler vaticinó el triunfo de Lula en Brasil y compartió foto con el mandatario",
    "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxONkNEazZNelRGTE5sZXVLdFBUWlZJVnZ0SXhhVDhKUUFIdWV4ZDYwWTVYUkE2aXJVY1g0U2xFb0Rlck9GRXlqSUZsWVlXU2UtZlB0VkhkZTg5d2V5TmVkbjIxc19XSFc0OTg1MVphd2dQcFVfcFYwYjM0MERkTTJYOTU3MDY3SGVGcDZENDhOQ2ZfazFrUzdQNHNhM0VNTTZiUEJFYU5TQWhCbWlBNVZYRm5TVF9hS2dVclpsQVVMeHBxSm43WF93cU1DVFljXzRlUFdEdDJhVWc0SllyZXd5UnNEQzF1VVFsWE84TWl0UUQ4cjY0QjJBVUxKM0J2emNLZ2JKT0o2Q1Z5Rk5lRC1OQkh6WQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-26T14:26:59Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Fernanda Cornejo Doggenweiler vaticinó el triunfo de Lula en Brasil y compartió foto con el mandatario",
+   "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/26/fernanda-cornejo-doggenweiler-vaticio-el-triunfo-de-lula-en-brasil-y-compartio-foto-con-el-mandatario.shtml",
    "category": "latinoamerica",
    "published": "2026-10-26T14:26:59Z",
    "sources": [
@@ -6900,6 +7398,15 @@
   {
    "title": "Quién era Komanche, el reconocido streamer e influencer que falleció a los 30 años",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMkFNVkVvM1JnakFBMG9seUtwZkRWaHBVUFFXWGc4UTloT3c0bXlzQVU3YnRWNHBxVzNsWHlxOEU5a3JCZzcwZ2FnOFp2akhvMUpCYnJ0dVlUenVRa3IxbXl2cXAwdUtUbXh2NG1RNXVjUmhCSGd5WWtBRU9EeGpUNU9pblNiYl9rOFhtcHpEd1FFWmgwRkpqU3RvNzd5WlpNaWNvekJBMWI0aFhrNVMzbVByV2EzR1Jxci1tdVd2Sno3YVlPRUHSAecBQVVfeXFMTXZDSjFiVDJRYmYzdl83NWYwZmJ3Z05BNFdnVWYtZkJacUJ5RWVQMTFZTWZ3OTNOWWRnQ3RQOTlJaWtpZldQRnVTR3NVbEpKUUtURF9WR1NQaVlteWFfNldDNWFJMjJvUURFbDlpaHZ0cTRNNW5BWnkyQnJ3bExIRlZMaUV4ODV1VlVyYkd0aUJBQkN2akdqemdCUUtON2dfNzVJMXVDb3ZldGx2SXM3WGw4cmRrZHMxS25sckp6alZlX3NVZ0RKUlBKbHp4Q3FUd1p2SWVsU1NZOUx4YzdfRWswNzllUlhJ?oc=5",
+   "category": "internacional",
+   "published": "2026-10-26T13:52:12Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Quién era Komanche, el reconocido streamer e influencer que falleció a los 30 años",
+   "link": "https://www.latercera.com/tendencias/noticia/quien-era-komanche-el-reconocido-streamer-e-influencer-que-fallecio-a-los-30-anos/",
    "category": "internacional",
    "published": "2026-10-26T13:52:12Z",
    "sources": [
@@ -7006,6 +7513,15 @@
    ]
   },
   {
+   "title": "080 Barcelona Fashion hace balance de su última edición: más de 18.000 visitantes, y de 5 millones de visualizaciones",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQNWN1TU9DaVZMZE5WczBiRHVtMWZxUHM3WkFiaU5NM0dfNlUtZ2wzQ3Rmcnl2ZE1IU1BrZVp3MU5td0Z3OXNRQWJQRDZhbmNUUVhXR1VWUlN5LUs5dER4SWREUGJpckg4S082eDhaTE9jTHZoTE8wT25jYWYyelFsTm9kLUFZNi1FWjdOdW5CbXhoM0lZd0RaMEUwaWVoajJDWWFWOTFsbThFaEYtNG9XZEd1ODhoT0xEX05acElTNnZIUDJPQmRqY2lteW1pZHFxZElMbmx6cmRXVUx4Yl9sMC1TZEZUTDBtMV9xWXhEdkhGN2kwUnVOLVU2N3k?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T12:49:31Z",
+   "sources": [
+    "FashionUnited"
+   ]
+  },
+  {
    "title": "Países Bajos despedirá 25.000 funcionarios públicos por la IA: ahorrará USD 3.900 millones",
    "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/adelantos/2026/10/26/paises-bajos-despedira-25-000-funcionarios-publicos-por-la-ia-ahorrara-usd-3-900-millones.shtml",
    "category": "tecnologia",
@@ -7060,6 +7576,15 @@
    ]
   },
   {
+   "title": "Macron advierte que las protestas del sábado 31 en Francia también serán de alto riesgo",
+   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/26/macron-advierte-que-las-protestas-del-sabado-31-en-francia-tambien-seran-de-alto-riesgo.shtml",
+   "category": "internacional",
+   "published": "2026-10-26T12:16:56Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Festival Fauna Primavera confirma line up para su edición 2026",
    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1vSXoyd2U5aUwzTUhodkx1Q2hUMFBXbVdsQWFISGRLdkhzdGRpa2FzN1RFMjg3ZzBabVVBeVhJR2dSWk1oWDZrWA?oc=5",
    "category": "cultura",
@@ -7083,7 +7608,8 @@
    "category": "cultura",
    "published": "2026-10-26T12:05:44Z",
    "sources": [
-    "La Cuarta"
+    "La Cuarta",
+    "El Informador Chile"
    ]
   },
   {
@@ -7120,6 +7646,15 @@
    "published": "2026-10-26T11:58:08Z",
    "sources": [
     "BBC"
+   ]
+  },
+  {
+   "title": "Los propietarios de los derechos de Elvis Presley demandan a Anthropic por utilizar sus canciones para entrenar su IA",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOTDQ4bkEtelF4dUhkdnNEUTk1bTQtUWFWajI4dFBtTVVBaDFJYjlYeVRWRXprY0ZDcmh2ejhYNXhIZFZ4V0VFZjRMak9zV1FjOGtLV3Y4dS00THljTjNnMjYzcGVEWHMxSVR1empJbUFrMmNHMjVWSXZUSHdET2xOcmtfZTBaMjFaWkJUbjdUOWp0Ry1wM1E5a21lYUdPYkE3WXhNTTgxM0tDWm04aWU5UFB3ckIxcTNNNFBkd05aLTNGbDVKTU1LVdIBzgFBVV95cUxPRVctcERDSU9qYlV2YlFaRlpJQnJMUVprM3hlWG9paDdCT1YtQnJYbEx3a0VuNXpBZlAzRWlsY1lDMWQ4X2l1eVh3NnJ5cnpLdDV1SWFkX3BMd05NWDBZWi14Z3lPZlRkdzhocUxFdk5pTGxobW13QmZOZGJRVzdKeDlaYjVSZENmZDJUMnZrR1c3anRXQWhiVG9SM1lIRW5WNjVvQ1ZHQTk5TkVZZ0pXblBQTGFOQUhVY1J0UnVrOTFBWlNwdUpYbXZxVnBwUQ?oc=5",
+   "category": "cultura",
+   "published": "2026-10-26T11:57:28Z",
+   "sources": [
+    "El Correo"
    ]
   },
   {
@@ -7232,6 +7767,15 @@
    ]
   },
   {
+   "title": "Daniel Garnero apunta al gran problema en Universidad Católica: “Nos cuesta generar situaciones”",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZi1KYzZyMjFXTkNFZG94OTlRQTFsNlpZY21PcWp3UEpnYmZyckhfdFNVUHdsdlRmYVV0US13VURwZTRsMUg4cmdwMVY3ZTNtS3NvWll2U3gxQkl5S2RPbVlyVDBFYmRUYTBJeTAtOF9aNnJuelFnS1gxNmt4c0kyOFh0OFBOamJPQ29VVk5xNmdxLUZVSG1DMXZSUEJZN2tNbEEzVnJYZHIxWXJUUWJKblVJdkZzQW5FS2FOamlZTENNb2tk0gHKAUFVX3lxTFBkSGQwRUsyWmdEZnRoRDkzSkNYMEcwbTZYNnVlVHpPTDNsOTJYNldUUEhkTmVvOENGMXU1bHhYVERVLU9oZU1Ma202WFBMczJrbm51M0N0VmEweFpDYW8yQk5ka0hMd29MakpPTXQxTjlNNjItV1J6ckJEWHM4cWpuZ1I4STlHc3dEMHlYLW9HVUdjVWt1SzNkUjE3bHBjUmQzak5tWUdxakRDRC1aZ1dJX3o5eElJUjV4ZnNiVm11NFd5aWgxekpfQUE?oc=5",
+   "category": "deportes",
+   "published": "2026-10-26T11:29:47Z",
+   "sources": [
+    "Bolavip Chile"
+   ]
+  },
+  {
    "title": "Mercado anticipa una fuerte caída en la bolsa brasileña ante la cuarta elección de Lula da Silva",
    "link": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/10/26/mercado-anticipa-una-fuerte-caida-en-la-bolsa-brasilena-ante-la-cuarta-reeleccion-de-lula-da-silva.shtml",
    "category": "latinoamerica",
@@ -7284,6 +7828,15 @@
    "published": "2026-10-26T11:13:51Z",
    "sources": [
     "Ópera Actual"
+   ]
+  },
+  {
+   "title": "RAM lanzó una nueva 2500: 436 CV, casi 9 toneladas de remolque y equipamiento exclusivo",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZ0hhU09NNThQRHNpNzJpQnZ0QldLVG02Q1g0cDd0M1BBWFJGWGRKclFEdjdicXkxZmRrcDNsQzJaNXVZVmhWOTZ5c0pNekJTLXF5d2pja0dZTFNkckRpekpQUlcwOXpRWENOOFJRUENncVJ2YVI1T0RHN3ZjaWhIRUtaV0kzcm05OHNPVmJBTkFndUpHUlktQXY4WUpJNTF3V0hNSV9vTVNKRzhsU2U1dDlHbGZnaVFwYVVGazdhOFFhYWFSMUE?oc=5",
+   "category": "economia",
+   "published": "2026-10-26T11:13:18Z",
+   "sources": [
+    "Transporte Mundial"
    ]
   },
   {
@@ -7818,6 +8371,15 @@
    "published": "2026-10-26T07:00:00Z",
    "sources": [
     "Diario Financiero"
+   ]
+  },
+  {
+   "title": "Movimiento estudiantil declara victoria electoral frente a la derecha gobernante de Serbia",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR1lTVE9VOThlczRDX2gxZWwzRXZacm5KUGkzcnVkX3dkV0hqYW8xcEZBWEQ5dDhRRmVYVHZSbmhhM0xaSUlaSWNJb2c3azZoWGU3Q3ZibUQtLXoxdGpRRFpRYlZwZFVuaXNCV283Sm1uQ2JxZmMxMW15LXNvdVpXTzI0ZGptNVlyck9ScEI3bnZUdEc0bWpZQmhCbE1UbG1QLTgxa2Z0Z2hpYWxNek4wa2hLOVNqWHZGOTBPZkxyV3HSAcABQVVfeXFMTjFqZVUyU01pdVhmbTlZVU0yV2ZiTFJrNmx6UVVPNVJHcGRON05kWFdkRXo3Vmlzc29meVZBb2kxbGNlVEoyTmJSOGtCU0FhSFZMd2xuN0YxbEF6NEdZNHdwX2h6YVFERVVhQ250ZTdsSHNrSmdxM25MdE1fMkNSdmZfU2NNVElwSlVRNGtSc29SRVh3WFNha3gzdHV0OVd0SkU3dU9naGFyUUs0ZFpOTG5LQ2QxeWk4RU5HM2RZN1pk?oc=5",
+   "category": "internacional",
+   "published": "2026-10-26T06:48:01Z",
+   "sources": [
+    "DW.com"
    ]
   },
   {
