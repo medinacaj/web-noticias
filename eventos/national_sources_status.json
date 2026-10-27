@@ -19,9 +19,9 @@
       "parser": "generic",
       "verified_live": false,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Última verificación en vivo 2026-10-26: falló. Error: HTTP 403. Plataforma oficial colaborativa donde organizaciones culturales y municipios publican actividades de todas las regiones (según prensa regional, 2026). Sin comuna fija: solo se publican eventos cuya ubicación estructurada identifique una comuna de Chile.",
+      "notes": "Última verificación en vivo 2026-10-27: falló. Error: HTTP 403. Plataforma oficial colaborativa donde organizaciones culturales y municipios publican actividades de todas las regiones (según prensa regional, 2026). Sin comuna fija: solo se publican eventos cuya ubicación estructurada identifique una comuna de Chile.",
       "last_live_check": {
-        "at": "2026-10-26T16:19:27",
+        "at": "2026-10-27T15:31:36",
         "ok": false,
         "http_status": 403,
         "error": "HTTP 403"
@@ -45,9 +45,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 19 página(s), 5 evento(s)). Sección agendacultural de cultura.gob.cl observada en resultados de búsqueda (notas de 2013 a 2026). Sin comuna fija.",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 20 página(s), 6 evento(s)). Sección agendacultural de cultura.gob.cl observada en resultados de búsqueda (notas de 2013 a 2026). Sin comuna fija.",
       "last_live_check": {
-        "at": "2026-10-26T16:19:49",
+        "at": "2026-10-27T15:31:51",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -71,9 +71,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 25 página(s), 2 evento(s)). Dominio gam.cl observado en búsqueda (páginas institucionales y sala de prensa).",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 25 página(s), 2 evento(s)). Dominio gam.cl observado en búsqueda (páginas institucionales y sala de prensa).",
       "last_live_check": {
-        "at": "2026-10-26T16:20:10",
+        "at": "2026-10-27T15:32:17",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -97,9 +97,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 25 página(s), 1 evento(s)). Sección 'Calendario de actividades' de cclm.cl observada en búsqueda.",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 25 página(s), 1 evento(s)). Sección 'Calendario de actividades' de cclm.cl observada en búsqueda.",
       "last_live_check": {
-        "at": "2026-10-26T16:20:10",
+        "at": "2026-10-27T15:32:02",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -123,9 +123,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 25 página(s), 13 evento(s)). Dominio municipal.cl citado como sitio oficial (Wikipedia).",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 25 página(s), 13 evento(s)). Dominio municipal.cl citado como sitio oficial (Wikipedia).",
       "last_live_check": {
-        "at": "2026-10-26T16:19:56",
+        "at": "2026-10-27T15:32:10",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -149,9 +149,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 25 página(s), 3 evento(s)). Dominio m100.cl citado en prensa (El Mostrador, 2020) para venta de entradas. La dirección Matucana 100 está en Estación Central según conocimiento previo; verificar.",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 25 página(s), 4 evento(s)). Dominio m100.cl citado en prensa (El Mostrador, 2020) para venta de entradas. La dirección Matucana 100 está en Estación Central según conocimiento previo; verificar.",
       "last_live_check": {
-        "at": "2026-10-26T16:20:10",
+        "at": "2026-10-27T15:32:07",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -175,9 +175,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 25 página(s), 0 evento(s)). Dominio parquecultural.cl citado por la Universidad de Valparaíso y en su memoria 2024.",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 25 página(s), 0 evento(s)). Dominio parquecultural.cl citado por la Universidad de Valparaíso y en su memoria 2024.",
       "last_live_check": {
-        "at": "2026-10-26T16:21:22",
+        "at": "2026-10-27T15:33:25",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -201,9 +201,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 16 página(s), 2 evento(s)). Dominio teatroregional.cl observado en búsqueda (memorias institucionales) y en el directorio de Opera Latinoamérica.",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 16 página(s), 3 evento(s)). Dominio teatroregional.cl observado en búsqueda (memorias institucionales) y en el directorio de Opera Latinoamérica.",
       "last_live_check": {
-        "at": "2026-10-26T16:20:38",
+        "at": "2026-10-27T15:32:40",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -227,9 +227,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "resumen_de_busqueda",
-      "notes": "Verificada en vivo el 2026-10-26 (HTTP 200; 1 página(s), 0 evento(s)). Dominio indicado por el directorio IbsenStage; confianza baja hasta verificar.",
+      "notes": "Verificada en vivo el 2026-10-27 (HTTP 200; 1 página(s), 0 evento(s)). Dominio indicado por el directorio IbsenStage; confianza baja hasta verificar.",
       "last_live_check": {
-        "at": "2026-10-26T16:20:20",
+        "at": "2026-10-27T15:32:21",
         "ok": true,
         "http_status": 200,
         "error": null
