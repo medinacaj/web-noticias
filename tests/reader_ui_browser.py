@@ -124,7 +124,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'), width)
 
     async def test_latam_visuals_are_visible_and_respect_reader_density(self):
-        await self.load_latam_lead_fixture()
+        await self.load_latam_lead_fixture(coverage_countries=['AR', 'BR', 'CO', 'MX'])
         figures = self.page.locator('.cat-latinoamerica .media--region')
         self.assertGreater(await figures.count(), 0)
         for width in (320, 390, 768, 1440):
@@ -144,7 +144,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.locator('#contenido').evaluate("el => {el.classList.remove('is-compact'); el.classList.add('is-headlines')}")
         self.assertFalse(await figures.first.is_visible())
 
-    async def load_latam_lead_fixture(self, publisher_html=None):
+    async def load_latam_lead_fixture(self, publisher_html=None, coverage_countries=None):
         import sys, tempfile
         from datetime import datetime, timezone
         sys.path.insert(0, str(ROOT))
@@ -153,7 +153,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         stories = [{"category": "latinoamerica", "title": f"Brasil y México cooperan {i}",
                     "link": f"https://medio{i}.example/nota", "source_url": f"https://medio{i}.example",
                     "sources": [f"Medio {i}"], "image": "", "summary": "", "metadata_only": True,
-                    "coverage_countries": ["BR", "MX"], "published": now.isoformat()}
+                    "coverage_countries": coverage_countries or ["BR", "MX"], "published": now.isoformat()}
                    for i in range(12)]
         if publisher_html:
             from unittest.mock import patch

@@ -181,7 +181,7 @@ async def check(html, output):
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
             await check_compact_navigation(page, width, no_overflow)
-            # El titular no debe estirar la foto; respaldos de país/fecha cuadrados.
+            # Fotos estables; la ficha de país puede crecer para mostrar su texto.
             thumbnails = await page.evaluate("""() => Array.from(document.querySelectorAll(
                 ".section-grid .feature, .section-grid .compact"))
                 .filter(card => card.getClientRects().length)
@@ -190,11 +190,18 @@ async def check(html, output):
                     const body = card.querySelector(".news-body");
                     if (!image || !body || getComputedStyle(image).display === "none") return null;
                     const bounds = image.getBoundingClientRect();
+                    const region = image.matches('.media--region');
                     return {ratio: bounds.width / bounds.height,
-                            expected: image.matches('.media--region,.media--date') ? 1 : 4/3};
+                            expected: region ? null : image.matches('.media--date') ? 1 : 4/3,
+                            readable: !region || (bounds.height >= bounds.width - 1 &&
+                                [...image.querySelectorAll('.source-mark,.region-label')].every(el => {
+                                    const r = el.getBoundingClientRect();
+                                    return r.top >= bounds.top && r.bottom <= bounds.bottom;
+                                }))};
                 }).filter(Boolean).slice(0, 12)""")
             assert thumbnails, f"No se encontraron miniaturas para comprobar a {width}px"
-            assert all(abs(item["ratio"] - item["expected"]) < .04 for item in thumbnails), (
+            assert all(item["readable"] and (item["expected"] is None or
+                       abs(item["ratio"] - item["expected"]) < .04) for item in thumbnails), (
                 f"Miniaturas deformadas a {width}px: {thumbnails}")
             await page.screenshot(path=str(output / f"home-{width}.png"), full_page=True, animations="disabled")
             await check_search(page, width, no_overflow)

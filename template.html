@@ -310,7 +310,8 @@
   .section-grid .feature,.section-grid .compact{align-items:flex-start;flex-wrap:wrap;row-gap:10px;}
   .section-grid .media{flex:0 0 104px;width:104px;height:auto;min-height:0;align-self:flex-start;aspect-ratio:4/3;margin:0;min-width:0;border-radius:5px;}
   .section-grid .media--source{padding:8px;}
-  .section-grid .media--region,.section-grid .media--date{aspect-ratio:1;}
+  .section-grid .media--date{aspect-ratio:1;}
+  .section-grid .media--region{aspect-ratio:auto;min-height:104px;}
   .section-grid .media--source .source-mark{width:38px;height:38px;border-radius:8px;}
   .section-grid .media--source .source-mark img{padding:5px;}
   .section-grid .media--source .source-initial{font-size:18px;}
@@ -514,6 +515,7 @@
     .feature-title,.compact h3{font-size:17px;line-height:1.35;}
     .feature,.compact-list li{min-height:0;}
     .section-grid .media{flex-basis:92px;width:92px;height:auto;min-height:0;}
+    .section-grid .media--region{min-height:92px;}
     .section-grid .meta{padding-top:12px;}
     .section-head{gap:9px;flex-wrap:wrap;}
     .section-count{font-size:10px;}
