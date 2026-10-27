@@ -52,10 +52,10 @@ class EditionV2Tests(unittest.TestCase):
         html = news.render_sections({"nacional": items}, self.now)
         self.assertNotIn("data-show-more", html)
 
-    def test_select_retains_24_category_stories(self):
-        items = [self.make_story("politica", i) for i in range(30)]
+    def test_select_retains_48_category_stories(self):
+        items = [self.make_story("politica", i) for i in range(60)]
         result = news.select(items, self.now)
-        self.assertEqual(len(result["by_category"]["politica"]), 24)
+        self.assertEqual(len(result["by_category"]["politica"]), 48)
 
     def test_lead_prefers_real_photo_among_highest_ranked(self):
         items = [self.make_story("nacional", i) for i in range(6)]

@@ -91,7 +91,7 @@
   .utility time{color:var(--on-navy);font-weight:600;}
   .refresh-bar{display:inline-flex;align-items:center;width:38px;height:24px;cursor:help;}
   .refresh-track{display:block;width:100%;height:3px;background:var(--rule);border-radius:4px;overflow:hidden;}
-  .refresh-bar-fill{display:block;height:100%;width:0;background:var(--red);transition:width 1s linear;}
+  .refresh-bar-fill{display:block;height:100%;width:0;background:var(--red);}
 
   /* ---------- Cabecera compacta y navegación lateral ---------- */
   :root{--sidebar-width:216px;--header-height:64px;--page-width:1440px;--grid-gap:16px;}
@@ -99,12 +99,14 @@
   .site-header{position:sticky;top:0;z-index:100;}
   .sticky-bar{position:relative;background:var(--surface);color:var(--ink);border-bottom:1px solid var(--rule);}
   .bar-inner{display:flex;align-items:center;gap:10px;min-height:var(--header-height);}
+  .header-brand-group{display:flex;align-items:center;gap:10px;flex:1;min-width:0;}
+  .header-actions{display:flex;align-items:center;gap:6px;flex:none;padding-left:10px;border-left:1px solid var(--rule);}
   .masthead-wrap{flex:1;min-width:0;}
   .masthead-title{font:700 21px/1.1 var(--serif);letter-spacing:-.035em;margin:0;}
   .brand-link{display:inline-flex;align-items:center;gap:10px;}
   .brand-logo{width:40px;height:40px;flex:none;}
   /* El SVG compartido mantiene la misma identidad en cabecera, archivo e iconos. */
-  .header-status{position:relative;flex:none;display:grid;gap:2px;text-align:right;margin-left:12px;}
+  .header-status{position:relative;flex:none;display:flex;align-items:center;gap:8px;text-align:right;padding-left:10px;border-left:1px solid var(--rule);}
   .refresh-controls{display:none;align-items:center;justify-content:flex-end;gap:6px;}
   .js .refresh-controls{display:flex;}
   .site-clock{font:500 11px/1.4 var(--sans);font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap;}
@@ -113,7 +115,13 @@
   .refresh-now:hover{background:var(--paper);border-color:var(--muted);}
   .refresh-now:disabled{cursor:wait;opacity:.65;}
   .refresh-notice,.refresh-help{position:absolute;z-index:160;top:calc(100% + 8px);right:0;width:260px;max-width:calc(100vw - 24px);padding:10px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);box-shadow:var(--card-shadow);font:500 12px/1.5 var(--sans);text-align:left;}
-  .edition-count{font:600 11px/1.4 var(--sans);color:var(--ink);margin:0;white-space:nowrap;}
+  .edition-count{order:-1;font:600 11px/1.4 var(--sans);color:var(--ink);margin:0;white-space:nowrap;}
+  .nav-tools{padding-top:12px;margin-top:12px;border-top:1px solid var(--rule);}
+  .nav-tools .view-options-wrap{position:static;width:100%;}
+  .nav-tools .icon-btn{width:100%;justify-content:flex-start;min-height:44px;}
+  .nav-tools .control-label{display:inline;font:600 12px/1 var(--sans);}
+  .nav-tools .view-options-panel{position:static;width:100%;max-width:100%;margin-top:8px;box-shadow:none;}
+  .nav-tools .library-toggle{margin-top:8px;}
   .site-nav{background:var(--surface);color:var(--ink);padding:20px 12px;overflow-y:auto;overscroll-behavior:contain;}
   .nav-heading{font:700 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 12px 12px;}
   .site-nav ul{display:grid;gap:3px;list-style:none;margin:0;padding:0;}
@@ -196,7 +204,7 @@
     border:1px solid var(--card-rule);
     border-radius:var(--radius-card);
     box-shadow:var(--card-shadow);
-    transition:box-shadow var(--motion-card) ease,border-color var(--motion-card) ease,outline-color var(--motion-card) ease;
+    transition:transform .32s cubic-bezier(.2,.8,.2,1),box-shadow .32s ease,border-color var(--motion-card) ease,outline-color var(--motion-card) ease;
   }
   /* Resalte al interactuar: borde con el color de la categoría y sombra suave. El grosor
      extra es un contorno interior (outline con desplazamiento negativo), así que nada se mueve. */
@@ -210,6 +218,9 @@
       border-color:var(--card-accent);outline-color:var(--card-accent);
       box-shadow:var(--card-shadow-hover);
     }
+  }
+  @media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+    .lead:hover,.feature:hover,.rail-list li:hover,.compact-list li:hover{transform:translateY(-3px) scale(1.005);}
   }
   /* En pantallas táctiles, respuesta breve mientras se toca; no queda seleccionada. */
   @media (hover:none){
@@ -366,6 +377,11 @@
   .signal-timeline summary{font:600 13px/1.5 var(--sans);color:var(--muted);cursor:pointer;min-height:44px;padding:12px 0;}
   .signal-timeline[open] summary{color:var(--ink);}
   .signal-timeline{margin-top:20px;padding:0;}
+  .satire-links{margin-top:20px;padding:16px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);}
+  .satire-links h3{margin:0 0 6px;font:600 19px/1.3 var(--serif);}
+  .satire-links p{margin:0 0 12px;font:400 12px/1.5 var(--sans);color:var(--muted);}
+  .satire-links ul{display:grid;gap:10px;padding:0;list-style:none;}
+  .satire-links a{font:500 13px/1.5 var(--sans);text-decoration:underline;text-underline-offset:3px;}
   @media (max-width:600px){.signal-timeline li{grid-template-columns:1fr;gap:3px;}.signal-timeline li time{padding-top:0;}}
 
   .reader-panel{border:1px solid var(--rule);border-radius:8px;padding:18px;margin:0 0 18px;background:var(--surface);box-shadow:0 4px 14px rgba(6,20,36,.08);}
@@ -623,22 +639,23 @@
     .brand-second-line{display:block;}
     .site-nav a{min-height:48px;}
   }
-  @media (max-width:479px){.masthead-title{font-size:13px;}.brand-logo{width:24px;height:24px;}.brand-link{gap:6px;}.bar-inner{gap:4px;}.icon-btn{min-width:36px;padding:6px;}.designer-signature{min-height:44px;}}
-  @media (min-width:375px) and (max-width:479px){.icon-btn{min-width:40px;}}
-  @media (max-width:359px){.brand-logo{display:none;}}
+  @media (max-width:479px){.masthead-title{font-size:12px;}.brand-logo{width:22px;height:22px;}.brand-link{gap:4px;}.bar-inner{gap:4px;}.header-brand-group{gap:4px;}.icon-btn{min-width:32px;min-height:36px;padding:6px;}.designer-signature{min-height:44px;}}
+  @media (max-width:374px){.brand-link > span{display:none;}}
   :root[data-theme="dark"]{--navy-dark:#151719;--red:#FF907F;--paper:#111315;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#4C545E;--strong:#CCD1D6;--card-bg:#343A43;--card-ink:#F7F6F2;--card-muted:#C4C7CC;--card-rule:#66717D;--card-link:#B4DCC8;--c-nacional:#FF907F;--c-internacional:#94B9E4;--c-economia:#93CDB5;--c-tecnologia:#C7B2E8;--c-deportes:#F2BE86;--c-cultura:#E7ACD1;--c-agenda:#E6C773;--callout-bg:#27362F;--callout-ink:#DEEDDE;--callout-muted:#BED0C4;--callout-rule:#789087;--signature-bg:#FAFAF7;--signature-ink:#282C30;--signature-muted:#626970;color-scheme:dark;}
   :root[data-theme="dark"] :is(.cat-regiones,.cat-politica,.cat-medioambiente,.cat-salud-ciencia){--cat:var(--cat-b);}
   @media (max-width:1023px){
-    :root{--header-height:76px;}
-    .bar-inner{flex-wrap:wrap;align-content:center;row-gap:4px;padding-top:2px;padding-bottom:2px;}
-    .header-status{order:10;flex:1 0 100%;display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0;}
-    .refresh-controls{order:2;}
+    :root{--header-height:56px;}
+    .bar-inner{flex-wrap:nowrap;align-items:center;padding-top:0;padding-bottom:0;}
+    .header-status{gap:4px;padding-left:6px;}
+    .header-actions{gap:4px;padding-left:6px;}
+    .refresh-controls{gap:4px;}
     .refresh-now{width:24px;height:24px;padding:3px;}
-    .refresh-bar{width:28px;}
-    .edition-count{order:1;font-size:10px;}
+    .refresh-bar{width:20px;}
+    .edition-count{order:-1;font-size:10px;}
     .footer-top{gap:8px 16px;}
     .footer-nav a{min-height:32px;}
   }
+  @media (max-width:767px){.edition-detail{display:none;}}
 </style>
 </head>
 <body>
@@ -647,16 +664,19 @@
 <header class="site-header">
 <div class="sticky-bar">
   <div class="container bar-inner">
+    <div class="header-brand-group">
     <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Mostrar u ocultar secciones" title="Secciones">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
     <div class="masthead-wrap">
-      <h1 class="masthead-title"><a class="brand-link" href="#contenido">
+      <h1 class="masthead-title"><a class="brand-link" href="#contenido" aria-label="Noticias del Momento">
         <img class="brand-logo" src="logo-simbolo.svg?v=editorial" width="40" height="40" alt="">
         <span>Noticias <span class="brand-second-line">del Momento</span></span>
       </a></h1>
 
     </div>
+    </div>
+    <div class="header-actions" id="header-actions">
     <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Tema automático"><span aria-hidden="true">◐</span></button>
     <button class="icon-btn search-toggle" id="search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar noticias" title="Buscar noticias">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span class="control-label" aria-hidden="true">Buscar</span>
@@ -680,14 +700,16 @@
     </div>
     <button type="button" class="icon-btn library-toggle" id="library-toggle" aria-expanded="false" aria-controls="library-panel" aria-label="Noticias guardadas" title="Noticias guardadas">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg>
+      <span class="control-label" aria-hidden="true">Guardadas</span>
     </button>
+    </div>
     <div class="header-status">
       <time id="updated-at" datetime="%%UPDATED_ISO%%" hidden>%%UPDATED_HUMAN%%</time>
       <div class="refresh-controls">
-        <span class="refresh-bar" id="refresh-progress" data-refresh-minute="7" role="progressbar" tabindex="0" aria-describedby="refresh-help" aria-label="Ciclo previsto de actualización de noticias" aria-valuemin="0" aria-valuemax="100"><span class="refresh-track"><span class="refresh-bar-fill" id="refresh-fill"></span></span></span>
+        <span class="refresh-bar" id="refresh-progress" data-refresh-minute="7" role="progressbar" tabindex="0" aria-describedby="refresh-help" aria-label="Tiempo restante hasta la actualización prevista" aria-valuemin="0" aria-valuemax="100"><span class="refresh-track"><span class="refresh-bar-fill" id="refresh-fill"></span></span></span>
         <span class="refresh-help" id="refresh-help" role="tooltip" hidden></span>
         <button type="button" class="refresh-now" id="refresh-now" aria-label="Comprobar noticias nuevas" title="Comprobar la última edición publicada" aria-busy="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 7a7 7 0 0 1 11.5-1L20 9M4 15l2.4 3A7 7 0 0 0 17.9 17"/></svg></button>
-        <time class="site-clock" id="site-clock" aria-label="Hora actual GMT, UTC más cero" title="Hora GMT (UTC+0), según el reloj de tu dispositivo">--:-- GMT</time>
+        <time class="site-clock" id="site-clock" aria-label="Hora local" title="Hora del dispositivo">--:--</time>
       </div>
       %%EDITION_COUNT%%
       <output class="refresh-notice" id="refresh-status" role="status" aria-live="polite" hidden></output>
@@ -709,6 +731,7 @@
 <nav class="site-nav" id="site-nav" aria-label="Secciones de noticias">
   <p class="nav-heading">Explorar secciones</p>
   <ul>%%NAV%%</ul>
+  <div class="nav-tools" id="nav-tools" hidden></div>
 </nav>
 <button class="sidebar-edge" id="sidebar-edge" type="button" aria-controls="site-nav" aria-expanded="true" aria-label="Ocultar barra lateral" title="Ocultar barra lateral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
 
@@ -814,20 +837,23 @@
     var search = d.getElementById("search-toggle");
     if (!toggle || !panel) return;
     function setOpen(open) {
-      if (open) { setMenu(false); setSearch(false); }
+      if (open) { if (!toggle.closest("#nav-tools")) setMenu(false); setSearch(false); }
       panel.hidden = !open;
       toggle.setAttribute("aria-expanded", String(open));
     }
     toggle.addEventListener("click", function () {
       setOpen(panel.hidden);
       if (!panel.hidden) d.getElementById("text-size").focus();
+      else if (toggle.closest("#nav-tools")) { setMenu(false); menuBtn.focus({preventScroll:true}); }
     });
     d.addEventListener("pointerdown", function (event) {
       if (!panel.hidden && !event.target.closest(".view-options-wrap")) setOpen(false);
     });
     d.addEventListener("keydown", function (event) {
       if (event.key === "Escape" && !panel.hidden) {
-        setOpen(false); toggle.focus();
+        setOpen(false);
+        if (toggle.closest("#nav-tools")) { setMenu(false); menuBtn.focus({preventScroll:true}); }
+        else toggle.focus();
       }
     });
     if (search) search.addEventListener("click", function () {setOpen(false);});
@@ -1058,12 +1084,13 @@
       library.hidden = !library.hidden;
       libraryToggle.setAttribute("aria-expanded", String(!library.hidden));
       if (!library.hidden) library.scrollIntoView({block:"nearest",behavior:"instant"});
+      if (!library.hidden && libraryToggle.closest("#nav-tools")) library.querySelector("button").focus({preventScroll:true});
     });
     d.querySelectorAll('[data-close-panel="library-panel"]').forEach(function (button) {
       button.addEventListener("click", function () {
         library.hidden = true;
         libraryToggle.setAttribute("aria-expanded","false");
-        libraryToggle.focus();
+        if (libraryToggle.closest("#nav-tools")) menuBtn.focus({preventScroll:true}); else libraryToggle.focus();
       });
     });
     main.querySelectorAll(".section-grid").forEach(function (grid) {

@@ -84,8 +84,12 @@ def merge_countries(target, incoming):
 def search_urls():
     searches = [
         {"q": "(Brasil OR brasileiros OR brasileiras) when:1d", "hl": "pt-BR", "gl": "BR", "ceid": "BR:pt-419"},
-        {"q": "(Argentina OR Bolivia OR Colombia OR Costa Rica OR Cuba OR Ecuador OR Guatemala OR Honduras OR Haití OR México OR Nicaragua OR Panamá OR Paraguay OR Perú OR Puerto Rico OR República Dominicana OR El Salvador OR Uruguay OR Venezuela) when:1d",
-         "hl": "es-419", "gl": "CL", "ceid": "CL:es-419"},
+        {"q": '(México OR Guatemala OR Honduras OR "El Salvador" OR Nicaragua OR "Costa Rica" OR Panamá) when:1d',
+         "hl": "es-419", "gl": "MX", "ceid": "MX:es-419"},
+        {"q": "(Bolivia OR Colombia OR Ecuador OR Perú OR Venezuela) when:1d",
+         "hl": "es-419", "gl": "CO", "ceid": "CO:es-419"},
+        {"q": '(Argentina OR Paraguay OR Uruguay OR Cuba OR Haití OR "Puerto Rico" OR "República Dominicana") when:1d',
+         "hl": "es-419", "gl": "AR", "ceid": "AR:es-419"},
     ]
     return ["https://news.google.com/rss/search?" + urlencode(params) for params in searches]
 
@@ -158,7 +162,7 @@ def restore_legacy_image_policy(story, catalog):
 
 
 def prepare_item(item, now, catalog):
-    """Puerta de entrada mínima para las dos búsquedas nuevas del agregador."""
+    """Misma puerta de entrada para las búsquedas de cada subregión."""
     from scripts.article_images import permitted_url
     from fetch_noticias import to_iso, safe_image
     published = explicit_date(item.get("published"))

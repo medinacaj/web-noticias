@@ -49,7 +49,7 @@ DEFAULT_OUT = os.path.join(BASE_DIR, "public")
 TZ_CHILE = ZoneInfo("America/Santiago")
 USER_AGENT = "Mozilla/5.0 (compatible; NoticiasDelMomento/2.0)"
 
-STORIES_PER_CATEGORY = 24  # seis iniciales, resto progresivo
+STORIES_PER_CATEGORY = 48  # seis iniciales, resto progresivo y buscable
 WINDOW_HOURS = 24            # cuánto tiempo permanece una noticia en el sitio
 FUTURE_TOLERANCE = timedelta(minutes=15)  # pequeño desfase del reloj editorial
 MAX_HISTORY = 400            # tope de noticias guardadas en el historial
@@ -231,10 +231,10 @@ def rss_image(node):
     return ""
 
 
-def fetch_rss(url, category, default_source=None, *, metadata_only=False):
+def fetch_rss(url, category, default_source=None, *, metadata_only=False, limit=RSS_LIMIT):
     root = ET.fromstring(http_get(url))
     items = []
-    for node in root.findall(".//item")[:RSS_LIMIT]:
+    for node in root.findall(".//item")[:max(1, min(60, int(limit)))]:
         title = html.unescape((node.findtext("title") or "").strip())
         source_node = node.find("source")
         source = source_node.text.strip() if source_node is not None and source_node.text else ""
@@ -305,14 +305,19 @@ def collect(now):
         print(f"GNews: se omite en esta corrida (se consulta cada {GNEWS_EVERY_HOURS} horas por la cuota gratuita).")
     from scripts.latam import search_urls, prepare_item, country_codes
     from scripts.regional_sources import load_catalog
-    catalog = load_catalog()
+    from scripts.global_sources import load_catalog as load_world_catalog
+    catalog = load_catalog() + load_world_catalog()
     items = []
     for cat in CATEGORIES:
         key, count = cat["key"], 0
         urls = search_urls() if key == "latinoamerica" else [category_google_url(cat)]
+        if key == "regiones":
+            urls.append("https://news.google.com/rss/search?" + urllib.parse.urlencode({
+                "q": "(Biobío OR Ñuble) (seguridad OR servicios OR comunas) when:1d",
+                "hl": "es-419", "gl": "CL", "ceid": "CL:es-419"}))
         for url in urls:
             try:
-                got = fetch_rss(url, key)
+                got = fetch_rss(url, key, limit=60)
                 if key == "latinoamerica":
                     got = [record for entry in got if (record := prepare_item(entry, now, catalog))]
                 items += got
@@ -336,7 +341,8 @@ def collect(now):
         print(f"{cat['label']}: {count} notas recolectadas")
     from scripts.entertainment import collect_entertainment
     if any(cat["key"] == "cultura" for cat in CATEGORIES):
-        items += collect_entertainment(now, fetch=fetch_rss)
+        items += collect_entertainment(now, fetch=lambda url, category, **options:
+                                       fetch_rss(url, category, limit=60, **options))
     from scripts.global_sources import collect_world
     items += collect_world(now, fetch=fetch_rss)
     from scripts.regional_sources import collect_regional
@@ -347,11 +353,12 @@ def collect(now):
     # WORLD/GNews ya consultados pueden aportar cobertura regional; misma puerta
     # de permisos y minimización que las búsquedas nuevas, sin llamadas extra.
     result = []
+    from scripts.satire import is_satire
     for item in items:
         if (item.get("category") == "internacional"
                 and any(code != "CL" for code in country_codes(item.get("title")))):
             item = prepare_item(item, now, catalog)
-        if item:
+        if item and not is_satire(item):
             result.append(item)
     return result
 
@@ -593,6 +600,8 @@ def balance_section_sources(candidates, limit=STORIES_PER_CATEGORY):
 
 
 def select(stories, now):
+    from scripts.satire import is_satire
+    stories = [story for story in stories if not is_satire(story)]
     ranked = sorted(stories, key=lambda s: score(s, now), reverse=True)
     recent = [s for s in ranked if hours_old(s, now) <= 12]
     candidates = (recent or ranked)[:5]
@@ -813,10 +822,10 @@ def render_edition_count(sel):
     urls = {canonical_key(story["link"]) for story in published}
     sources = {name.strip() for story in published for name in story.get("sources", []) if name.strip()}
     count, outlets = len(urls), len(sources)
-    return (f'<p class="edition-count" data-news-count="{count}" '
-            f'title="Noticias publicadas en esta portada y sus secciones">'
-            f'{count} {"noticia" if count == 1 else "noticias"} · '
-            f'{outlets} {"medio" if outlets == 1 else "medios"}</p>')
+    label = f'{count} {"noticia" if count == 1 else "noticias"} · {outlets} {"medio" if outlets == 1 else "medios"}'
+    return (f'<p class="edition-count" data-news-count="{count}" aria-label="{label}" title="{label}">'
+            f'{count}<span class="edition-detail"> {"noticia" if count == 1 else "noticias"} · '
+            f'{outlets} {"medio" if outlets == 1 else "medios"}</span></p>')
 
 
 def render_coverage_radar(stories):
@@ -842,7 +851,7 @@ def recent_section_stories(stories):
     return sorted(stories, key=lambda story: story_time(story).timestamp() if story_time(story) else float("-inf"), reverse=True)
 
 
-def render_sections(by_category, now):
+def render_sections(by_category, now, satire_items=None):
     from scripts.presentation_groups import PRESENTATION_LABELS
     reserved = set(by_category)
     blocks = []
@@ -868,13 +877,15 @@ def render_sections(by_category, now):
                 f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
                 f'Ver más noticias <span aria-hidden="true">↓</span></button>'
                 if count > 6 else "")
+        from scripts.satire import render_satire
+        satire_html = render_satire(satire_items or []) if cat["key"] == "cultura" else ""
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count} {"noticia" if count == 1 else "noticias"}</span></div>'
             f'<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
-            f'{more}</section>'
+            f'{more}{satire_html}</section>'
         )
     return "\n".join(blocks)
 
@@ -959,12 +970,14 @@ PAGE_404 = """<!DOCTYPE html>
 
 
 def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
-               signals_archive=None, signals_started="", agenda=None):
+               signals_archive=None, signals_started="", agenda=None, satire_items=None):
+    from scripts.satire import is_satire
+    stories = [story for story in stories if not is_satire(story)]
     sel = select(stories, now)
     from scripts.presentation_groups import group_sections
     sel["by_category"] = group_sections(sel["by_category"], STORIES_PER_CATEGORY)
     from scripts.editorial_signals import trending_topics, related_timeline, render_signals
-    archive = signals_archive or []
+    archive = [story for story in (signals_archive or []) if not is_satire(story)]
     signals_html = render_signals(
         trending_topics(archive, now, signals_started),
         related_timeline(archive, now))
@@ -1002,7 +1015,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%EDITION_COUNT%%": render_edition_count(sel),
         "%%RADAR%%": render_coverage_radar(stories),
         "%%SIGNALS%%": signals_html,
-        "%%SECTIONS%%": render_sections(sel["by_category"], now),
+        "%%SECTIONS%%": render_sections(sel["by_category"], now, satire_items=satire_items),
         "%%AGENDA%%": agenda_html,
         "%%NEWSLETTER_SIGNUP%%": newsletter["signup_html"],
     }
@@ -1109,13 +1122,17 @@ def main():
     archive = update_archive(archive, stories, now)
     signals_started = signals_started or to_iso(now)
     save_history(args.historial, stories, now, archive, signals_started)
-    agenda = []
+    agenda, satire_items = [], []
     if not args.solo_render and not args.importar:
         # Eventos ya validados por eventos-biobio (Biobío y resto de Chile); un fallo solo oculta la sección.
         from scripts.agenda import load_agenda
         agenda = load_agenda(now)
+        from scripts.satire import collect_satire
+        satire_items = collect_satire(now, fetch=lambda url, category, **options:
+                                     fetch_rss(url, category, limit=60, **options))
     build_site(stories, now, args.salida, args.ventana,
-               signals_archive=archive, signals_started=signals_started, agenda=agenda)
+               signals_archive=archive, signals_started=signals_started, agenda=agenda,
+               satire_items=satire_items)
 
 
 if __name__ == "__main__":

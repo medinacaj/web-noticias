@@ -1,4 +1,4 @@
-/* Reloj GMT y consulta manual de la edición pública; sin credenciales ni rastreo. */
+/* Hora local y consulta manual de la edición pública; sin credenciales ni rastreo. */
 (function () {
   "use strict";
   var d = document;
@@ -38,17 +38,19 @@
   d.addEventListener("keydown", function (event) {
     if (event.key === "Escape" && !help.hidden) { hideHelp(); event.stopPropagation(); }
   }, true);
-  function pad(number) { return String(number).padStart(2, "0"); }
+  var localTime = new Intl.DateTimeFormat("es-CL", {hour: "2-digit", minute: "2-digit", hourCycle: "h23"});
+  var zone = localTime.resolvedOptions().timeZone;
   function tick() {
     var now = new Date();
-    clock.textContent = pad(now.getUTCHours()) + ":" + pad(now.getUTCMinutes()) + " GMT";
+    clock.textContent = localTime.format(now);
     clock.dateTime = now.toISOString();
-    clock.setAttribute("aria-label", "Hora actual: " + clock.textContent + " (UTC+0)");
+    clock.setAttribute("aria-label", "Hora local: " + clock.textContent + " (" + zone + ")");
+    clock.title = "Hora del dispositivo: " + zone;
     var remaining = deadline - now.getTime(), message, percent = 0;
     if (!Number.isFinite(deadline)) {
       message = "Horario de actualización no disponible. Puedes comprobar si hay noticias nuevas.";
     } else {
-      percent = Math.max(0, Math.min(100, 100 - remaining / 3600000 * 100));
+      percent = Math.max(0, Math.min(100, remaining / 3600000 * 100));
       message = remaining > 0
         ? "Próxima actualización prevista en " + Math.ceil(remaining / 60000) + " min. La publicación puede demorarse."
         : "Actualización prevista pendiente de publicación. Puedes comprobar si hay noticias nuevas.";
