@@ -136,6 +136,20 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.emulate_media(reduced_motion='reduce')
         self.assertEqual(await card.evaluate('el => getComputedStyle(el).transform'), 'none')
 
+    async def test_resizing_with_view_settings_open_keeps_keyboard_focus_visible(self):
+        await self.page.set_viewport_size({'width': 900, 'height': 900})
+        await self.toggle_view_options()
+        await self.page.locator('#text-size').focus()
+        await self.page.set_viewport_size({'width': 1200, 'height': 900})
+        await self.page.wait_for_function("document.querySelector('#view-options-toggle').closest('#header-actions')")
+        self.assertFalse(await self.page.locator('#view-options-panel').is_visible())
+        self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'view-options-toggle')
+        await self.toggle_view_options()
+        await self.page.locator('#text-size').focus()
+        await self.page.set_viewport_size({'width': 900, 'height': 900})
+        await self.page.wait_for_function("document.querySelector('#view-options-toggle').closest('#nav-tools')")
+        self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'menu-toggle')
+
     async def test_refresh_same_edition_preserves_reading_position(self):
         button = self.page.locator('#refresh-now')
         self.assertEqual(await button.count(), 1)
