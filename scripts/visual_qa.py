@@ -115,15 +115,18 @@ async def check_search(page, width, no_overflow):
 
 
 async def check_shared_alignment(page, width):
-    """Todas las bandas utilizan las mismas guías de contenido."""
+    """Guías comunes de contenido; Lo último ocupa la ventana completa."""
     boxes = await page.evaluate("""() => ['.bar-inner','.breaking-inner','main.container',
         '.newsletter-invite-inner','.site-footer > .container'].map(selector => {
           const el=document.querySelector(selector), r=el.getBoundingClientRect(), css=getComputedStyle(el);
-          return {selector, left:r.x+parseFloat(css.paddingLeft), right:r.right-parseFloat(css.paddingRight), width:r.width};
+          return {selector, x:r.x, left:r.x+parseFloat(css.paddingLeft), right:r.right-parseFloat(css.paddingRight), width:r.width};
         })""")
     main = boxes[2]
     assert all(abs(box['left']-main['left']) <= 1 and abs(box['right']-main['right']) <= 1
-               for box in boxes), f"Guías desalineadas a {width}px: {boxes}"
+               for box in boxes if box['selector'] != '.breaking-inner'), f"Guías desalineadas a {width}px: {boxes}"
+    full_bar = boxes[1]
+    assert abs(full_bar['x']) <= 1 and abs(full_bar['width']-width) <= 1, (
+        f"Lo último no ocupa la página completa a {width}px: {full_bar}")
     if width >= 1920:
         assert main['width'] >= 1400, f"Contenido estrecho a {width}px: {main}"
     header = await page.locator('.site-header').bounding_box()
@@ -145,7 +148,7 @@ async def check_shared_alignment(page, width):
 async def check_compact_navigation(page, width, no_overflow):
     """Regresiones del diseño publicado: franja compacta y chevrón lateral."""
     latest = await page.locator(".breaking").bounding_box()
-    assert latest and latest["height"] <= 60, f"Lo último deja de ser una franja a {width}px: {latest}"
+    assert latest and abs(latest["height"]-36) <= 1, f"Lo último no mide 36 px a {width}px: {latest}"
     await check_shared_alignment(page, width)
     edge = page.locator("#sidebar-edge")
     nav = page.locator("#site-nav")

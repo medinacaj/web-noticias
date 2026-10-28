@@ -1049,6 +1049,10 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                 }""")
                 main = boxes[2]
                 for box in boxes:
+                    if box['selector'] == '.breaking-inner':
+                        self.assertAlmostEqual(box['x'], 0, delta=1, msg=(width, collapsed, boxes))
+                        self.assertAlmostEqual(box['width'], width, delta=1, msg=(width, collapsed, boxes))
+                        continue
                     self.assertAlmostEqual(box['left'], main['left'], delta=1, msg=(width, collapsed, boxes))
                     self.assertAlmostEqual(box['right'], main['right'], delta=1, msg=(width, collapsed, boxes))
                 sidebar = 216 if width >= 1024 and not collapsed else 0
@@ -1062,6 +1066,82 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             actual = await self.page.locator('html').get_attribute('data-sidebar')
             if (actual == 'hidden') != collapsed: await self.page.locator('#sidebar-edge').click()
             await self.page.screenshot(path=str(ARTIFACTS / f'aligned-1920-{collapsed}.png'))
+
+    async def test_latest_is_36px_edge_to_edge_with_navigation_below_it(self):
+        from scripts.visual_qa import check_shared_alignment
+        for width in (320,390,768,1024,1440,1920,2560):
+            await self.page.set_viewport_size({'width':width,'height':1000})
+            await self.page.evaluate('scrollTo(0,0)')
+            for scrolled in (False,True):
+                if scrolled: await self.page.evaluate('scrollTo(0,300)')
+                strip=await self.page.locator('.breaking').bounding_box()
+                self.assertAlmostEqual(strip['x'],0,delta=1,msg=(width,scrolled,strip))
+                self.assertAlmostEqual(strip['width'],width,delta=1,msg=(width,scrolled,strip))
+                self.assertAlmostEqual(strip['height'],36,delta=1,msg=(width,scrolled,strip))
+                if width<1024: await self.page.locator('#menu-toggle').click()
+                nav=await self.page.locator('#site-nav').bounding_box()
+                self.assertAlmostEqual(nav['y'],strip['y']+strip['height'],delta=1,msg=(width,scrolled,nav,strip))
+                self.assertTrue(await self.page.locator('.breaking').evaluate('el=>{const r=el.getBoundingClientRect();return el.contains(document.elementFromPoint(24,r.y+r.height/2));}'))
+                if width<1024: await self.page.locator('#menu-toggle').click()
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'))
+            await check_shared_alignment(self.page,width)
+
+    async def test_photo_lead_and_highlights_share_top_and_bottom_without_blank_padding(self):
+        import tempfile
+        from datetime import datetime,timezone
+        import fetch_noticias as news
+        now=datetime(2026,10,28,18,tzinfo=timezone.utc)
+        titles=('Titular principal de prueba con una fotografía y varias líneas para comprobar toda la portada',
+                'Una noticia destacada breve sin fotografía',
+                'Una segunda noticia de prueba con una fotografía cuadrada y un titular de varias líneas',
+                'Tercera noticia destacada con fotografía y otras fuentes para consultar',
+                'Una noticia adicional de reserva para conservar la sección del portal')
+        stories=[{'category':'internacional','title':title,'link':f'https://fixture.example/news/{i}',
+                  'sources':[f'Fuente informativa {n}' for n in range(4 if i==0 else 2)],
+                  'published':now.isoformat(),'image':'https://fixture.example/photo.png' if i!=1 else ''}
+                 for i,title in enumerate(titles)]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(stories,now,folder)
+            body=Path(folder,'index.html').read_text()
+        await self.page.route('**/?photo-alignment=1',lambda route:route.fulfill(status=200,content_type='text/html',body=body))
+        # Recurso local decodificable: ejercita la fotografía cargada, sin depender de un editor externo.
+        await self.page.route('https://fixture.example/photo.png',lambda route:route.fulfill(status=200,content_type='image/png',body=(ROOT/'static/og-image.png').read_bytes()))
+        await self.page.goto(self.url+'?photo-alignment=1')
+        await self.page.wait_for_function('document.querySelector(".lead .media > img").naturalWidth>0')
+        await self.page.wait_for_function('[...document.querySelectorAll(".rail-item .media > img")].every(img=>img.naturalWidth>0)')
+        for width in (1280,1440,1920,2560):
+            await self.page.set_viewport_size({'width':width,'height':1100})
+            for collapsed in (False,True):
+                actual=await self.page.locator('html').get_attribute('data-sidebar')
+                if (actual=='hidden')!=collapsed: await self.page.locator('#sidebar-edge').click()
+                for text_size in ('normal','large'):
+                    await self.page.locator('#contenido').evaluate('(el,size)=>el.dataset.textSize=size',text_size)
+                    # También cubre el rótulo que gana altura al mostrar las novedades de una visita.
+                    await self.page.locator('#visit-updates').evaluate('el=>{el.hidden=false;el.textContent="12 nuevas · Ver";}')
+                    lead=await self.page.locator('.lead').bounding_box()
+                    cards=await self.page.locator('.rail-list > li').all()
+                    first,last=await cards[0].bounding_box(),await cards[-1].bounding_box()
+                    self.assertAlmostEqual(lead['y'],first['y'],delta=1,msg=(width,collapsed,text_size,lead,first))
+                    self.assertAlmostEqual(lead['y']+lead['height'],last['y']+last['height'],delta=1,msg=(width,collapsed,text_size,lead,last))
+                    title=await self.page.locator('.lead-title').bounding_box()
+                    footer=await self.page.locator('.lead > .card-footer').bounding_box()
+                    self.assertLessEqual(footer['y']-(title['y']+title['height']),40,(width,collapsed,text_size))
+                    image=self.page.locator('.lead > .media > img')
+                    self.assertGreater(await image.evaluate('el=>el.naturalWidth'),0)
+                    self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'))
+        # Si hay menos destacadas, no se reserva una fila vacía para la tercera.
+        await self.page.set_viewport_size({'width':1440,'height':1100})
+        for remaining in (2,1):
+            await self.page.locator('.rail-list > li').last.evaluate('el=>el.remove()')
+            self.assertEqual(await self.page.locator('.rail-list > li').count(),remaining)
+            lead=await self.page.locator('.lead').bounding_box()
+            last=await self.page.locator('.rail-list > li').last.bounding_box()
+            self.assertAlmostEqual(lead['y']+lead['height'],last['y']+last['height'],delta=1,msg=remaining)
+        await self.page.locator('.lead .media > img').evaluate('el=>el.src="https://fixture.example/missing.jpg"')
+        await self.page.wait_for_function('document.querySelector(".lead > .media").classList.contains("media--source")')
+        self.assertFalse(await self.page.locator('.lead-heading').is_visible())
+        self.assertLess((await self.page.locator('.lead').bounding_box())['height'],420)
+        self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'))
 
     async def test_header_has_a_solid_neutral_surface_in_both_themes(self):
         for theme in ('light', 'dark'):
