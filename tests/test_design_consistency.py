@@ -33,6 +33,10 @@ PALETTE = {
     "#BED0C4", "#789087",
     # Color propio de la Agenda (dorado), pedido por el usuario el 2026-10-24.
     "#8A6100", "#F2C14E",
+    # Cabecera y controles con más color, solicitados por el usuario el 2026-10-28.
+    "#F3D5CD", "#E9DDEA", "#D9E8E1", "#BDAFB8", "#8A5D18", "#24675C",
+    "#6845A4", "#A33E62", "#594763", "#312931", "#302F45", "#243C35",
+    "#776779", "#E8BC78", "#98D6C1", "#CBB4F2", "#EBAAC5", "#CDC0E0",
 }
 # Secciones que no son categorías de noticias pero tienen color propio aprobado.
 EXTRA_SECTIONS = {"agenda"}
