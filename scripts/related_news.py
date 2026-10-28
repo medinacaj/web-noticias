@@ -10,6 +10,7 @@ from xml.etree.ElementTree import ParseError
 from scripts.article_images import permitted_url
 from scripts.dedupe_history import canonical_key
 from scripts.latam import catalog_allowed, explicit_date
+from scripts.satire import is_satire
 from scripts.source_diversity import publisher_key
 
 MAX_SEARCHES = 2
@@ -102,6 +103,19 @@ def _catalog():
     return load_catalog() + load_world_catalog()
 
 
+def _source_key(item):
+    source = item.get('source')
+    sources = item.get('sources')
+    if not isinstance(source, str):
+        source = sources[0] if isinstance(sources, list) and sources else ''
+    return publisher_key({'source': source})
+
+
+def _relevant(title, common, anchor):
+    words = _words(title)
+    return (not anchor or anchor in words) and len(words & common) >= min(3, len(common))
+
+
 def _record(item, now, catalog):
     title, source = item.get('title'), item.get('source')
     sources = item.get('sources')
@@ -115,6 +129,7 @@ def _record(item, now, catalog):
             or any(char.isspace() or ord(char) < 32 or char == '\\' for char in source_url + link)
             or not permitted_url(source_url, check_dns=False) or published is None
             or (now is not None and not now - timedelta(hours=24) <= published <= now + timedelta(minutes=15))
+            or is_satire({'source': source, 'source_url': source_url, 'link': link})
             or not catalog_allowed({'source': source, 'source_url': source_url, 'link': link}, catalog)):
         return None
     if not _google_article(link):
@@ -155,20 +170,44 @@ def combine_related(current, incoming, now=None, catalog=None):
     return result
 
 
-def enrich_coverages(items, now, *, fetch, catalog):
+def enrich_coverages(items, now, *, fetch, catalog, history=()):
     """Hasta dos búsquedas derivadas del RSS; no consulta páginas de editores."""
     result = [dict(item) for item in items]
     candidates = []
     for item in result:
         published = explicit_date(item.get('published'))
         rows = item.get('_coverage_cluster') or []
-        if (item.get('category') != 'internacional' or not published
+        if (item.get('category') != 'internacional' or not published or is_satire(item)
                 or not now - timedelta(hours=24) <= published <= now + timedelta(minutes=15)
-                or not catalog_allowed(item, catalog)):
+                or not rows):
             continue
+        allowed = catalog_allowed(item, catalog)
+        if not allowed:
+            rows = [row for row in rows if _source_key(row) != _source_key(item)]
         topic = _topic(rows)
         if topic:
-            candidates.append((published, item, rows, topic))
+            target = item
+            if not allowed:
+                # El grupo de Google no otorga permiso para usar a su editor principal.
+                # Adjuntar solo a una publicación permitida que ya llegó por otra vía.
+                _, common, anchor = topic
+                members = {_source_key(row) for row in rows}
+                anchors = [entry for entry in result + list(history)
+                           if entry.get('category') == 'internacional'
+                           and _source_key(entry) in members and not is_satire(entry)
+                           and catalog_allowed(entry, catalog)
+                           and (date := explicit_date(entry.get('published'))) is not None
+                           and now - timedelta(hours=24) <= date <= now + timedelta(minutes=15)
+                           and (_google_article(entry.get('link'))
+                                or permitted_url(entry.get('link'), check_dns=False))
+                           and _relevant(entry.get('title') or '', common, anchor)]
+                if not anchors:
+                    continue
+                target = max(anchors, key=lambda entry: explicit_date(entry['published']))
+                if not any(target is entry for entry in result):
+                    target = dict(target)
+                    result.append(target)
+            candidates.append((published, target, rows, topic))
     searched = set()
     for _, item, rows, (query, common, anchor) in sorted(candidates, key=lambda row: row[0], reverse=True):
         if query in searched:
@@ -180,15 +219,14 @@ def enrich_coverages(items, now, *, fetch, catalog):
             {'q': query, 'hl': 'es-419', 'gl': 'CL', 'ceid': 'CL:es-419'})
         try:
             found = []
-            primary = publisher_key(item)
+            primary = {publisher_key(item), _source_key(item)}
             cluster_editors = {publisher_key(row) for row in rows}
             cluster_names = {_fold(row['source']) for row in rows}
             for raw in fetch(url, 'internacional', metadata_only=True, limit=60):
                 row = _record(raw, now, catalog)
-                if row is None or publisher_key(row) == primary:
+                if row is None or publisher_key(row) in primary or _source_key(row) in primary:
                     continue
-                words = _words(row['title'])
-                if (anchor and anchor not in words) or len(words & common) < min(3, len(common)):
+                if not _relevant(row['title'], common, anchor):
                     continue
                 found.append(row)
             found.sort(key=lambda row: publisher_key(row) not in cluster_editors
@@ -206,10 +244,8 @@ def display_coverages(story, direct, now=None):
     related = combine_related([], story.get('related_coverages'), now)
     if not related:
         return direct
-    catalog = _catalog()
-    primary = _record(story, now, catalog)
     result, names, links = [], set(), set()
-    for row in direct + ([primary] if primary else []) + related:
+    for row in direct + related:
         name = row['source'].casefold()
         if name in names or row['link'] in links:
             continue

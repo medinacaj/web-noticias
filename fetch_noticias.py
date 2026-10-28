@@ -305,7 +305,7 @@ def category_google_url(cat):
     return GOOGLE_RSS.format(topic=cat["google_topic"])
 
 
-def collect(now):
+def collect(now, *, history=()):
     use_gnews = bool(GNEWS_API_KEY) and now.hour % GNEWS_EVERY_HOURS == 0
     if GNEWS_API_KEY and not use_gnews:
         print(f"GNews: se omite en esta corrida (se consulta cada {GNEWS_EVERY_HOURS} horas por la cuota gratuita).")
@@ -357,7 +357,7 @@ def collect(now):
     if regional:
         print(f"RSS regionales revisados: {len(regional)} titulares recolectados")
     from scripts.related_news import enrich_coverages
-    items = enrich_coverages(items, now, fetch=fetch_rss, catalog=catalog)
+    items = enrich_coverages(items, now, fetch=fetch_rss, catalog=catalog, history=history)
     # WORLD/GNews ya consultados pueden aportar cobertura regional; misma puerta
     # de permisos y minimización que las búsquedas nuevas, sin llamadas extra.
     result = []
@@ -1109,7 +1109,7 @@ def main():
             items = json.load(handle)
         print(f"Importadas: {merge(stories, items, now, args.ventana)} noticias nuevas")
     elif not args.solo_render:
-        items = collect(now)
+        items = collect(now, history=stories)
         if not items:
             print("[aviso] Ninguna fuente respondió; se publica con el historial existente.")
         print(f"Nuevas: {merge(stories, items, now, args.ventana)} (el resto ya estaba publicado y solo sumó fuentes)")

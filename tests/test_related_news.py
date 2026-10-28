@@ -2,6 +2,7 @@
 from datetime import datetime, timedelta, timezone
 from html import escape
 import json
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -158,6 +159,98 @@ class RelatedDeliveryTests(unittest.TestCase):
         result = deduplicate([first, second])
         self.assertEqual(len(result), 1)
         self.assertEqual([row['source'] for row in result[0].get('related_coverages', [])], ['Teletrece'])
+
+    def test_dialog_never_assigns_the_groups_earliest_date_to_the_primary_editor(self):
+        children = (rss_item('España: imágenes del choque de trenes', 'CNN Chile',
+                             'www.cnnchile.com', 'cnn')
+                    + rss_item('España: nuevas imágenes del choque de trenes', 'Teletrece',
+                               'www.t13.cl', 't13', 'Wed, 28 Oct 2026 11:15:00 GMT'))
+        items, _ = self.collect_fixture(children)
+        stories = []
+        news.merge(stories, items, NOW)
+        news.merge(stories, [{'category': 'internacional', 'title': stories[0]['title'],
+                             'source': 'Teletrece', 'source_url': 'https://www.t13.cl',
+                             'link': GOOGLE + 't13earlier', 'published': '2026-10-28T11:00:00Z'}], NOW)
+        self.assertEqual(stories[0]['published'], '2026-10-28T11:00:00Z')
+        dialog = news.coverage_control(stories[0], NOW)
+        self.assertNotIn('class="coverage-source">BioBioChile</span>', dialog)
+        self.assertIn('class="coverage-source">Teletrece</span>', dialog)
+        self.assertIn('datetime="2026-10-28T11:15:00Z"', dialog)
+
+    def test_satire_is_excluded_from_collected_and_saved_references(self):
+        satire = rss_item('España: imágenes del choque de trenes', 'El Chigüire Bipolar',
+                          'www.elchiguirebipolar.net', 'satire')
+        items, _ = self.collect_fixture(satire)
+        self.assertFalse(items[0].get('related_coverages'))
+        stories = []
+        incoming = {**items[0], 'related_coverages': [
+            {'title': 'España: imágenes del choque de trenes', 'source': 'El Chigüire Bipolar',
+             'source_url': 'https://www.elchiguirebipolar.net', 'link': GOOGLE + 'satire',
+             'published': NOW.isoformat()}]}
+        news.merge(stories, [incoming], NOW)
+        self.assertFalse(stories[0].get('related_coverages'))
+
+    def test_a_restricted_cluster_lead_does_not_hide_other_permitted_editors(self):
+        description = cluster().replace('</ol>', '<li><a href="' + GOOGLE + 'bbcLive">'
+            'Qué se sabe del choque de trenes en España</a><font>BBC</font></li></ol>')
+        lead = rss_item('Choque de trenes en España', 'DW.com', 'www.dw.com',
+                        'restricted', description=description)
+        bbc = rss_item('Qué se sabe del choque de trenes en España', 'BBC News Mundo',
+                       'www.bbc.com', 'bbc', 'Wed, 28 Oct 2026 11:01:00 GMT')
+        bbc = bbc.replace('<source url="https://www.bbc.com">BBC News Mundo</source>', '')
+        bbc = bbc.replace(GOOGLE + 'bbc', 'https://www.bbc.com/mundo/nota')
+        extra = (rss_item('España: imágenes del choque de trenes', 'CNN Chile',
+                          'www.cnnchile.com', 'cnn')
+                 + rss_item('Qué se sabe del choque de trenes en España', 'BBC',
+                            'www.bbc.com', 'bbcLive'))
+        world = news.category_google_url(next(c for c in news.CATEGORIES if c['key'] == 'internacional'))
+
+        def response(url):
+            query = parse_qs(urlsplit(url).query).get('q', [''])[0]
+            body = lead if url == world else bbc if 'feeds.bbci.co.uk' in url else (
+                extra if all(w in query for w in ('choque', 'espana', 'trenes')) else '')
+            return '<rss><channel>' + body + '</channel></rss>'
+
+        with patch.object(news, 'GNEWS_API_KEY', ''), patch.object(news, 'http_get', side_effect=response):
+            items = news.collect(NOW)
+        allowed = next(item for item in items if item['source'] == 'BBC News Mundo')
+        blocked = next(item for item in items if item['source'] == 'DW.com')
+        self.assertEqual([row['source'] for row in allowed.get('related_coverages', [])], ['CNN Chile'])
+        self.assertFalse(blocked.get('related_coverages'))
+
+    def test_already_published_allowed_story_can_receive_related_references(self):
+        description = cluster().replace('</ol>', '<li><a href="' + GOOGLE + 'bbcLive">'
+            'Qué se sabe del choque de trenes en España</a><font>BBC</font></li></ol>')
+        lead = rss_item('Choque de trenes en España', 'DW.com', 'www.dw.com',
+                        'restricted', description=description)
+        child = rss_item('España: imágenes del choque de trenes', 'CNN Chile',
+                         'www.cnnchile.com', 'cnn')
+        world = news.category_google_url(next(c for c in news.CATEGORIES if c['key'] == 'internacional'))
+
+        def response(url):
+            query = parse_qs(urlsplit(url).query).get('q', [''])[0]
+            body = lead if url == world else child if all(w in query for w in ('choque', 'espana', 'trenes')) else ''
+            return '<rss><channel>' + body + '</channel></rss>'
+
+        existing = {'category': 'internacional', 'title': 'Qué se sabe del choque de trenes en España',
+                    'link': 'https://www.bbc.com/mundo/nota', 'source_url': 'https://www.bbc.com',
+                    'sources': ['BBC News Mundo'], 'published': '2026-10-28T11:01:00Z',
+                    'first_seen': '2026-10-28T11:02:00Z', 'image': '', 'summary': ''}
+        with tempfile.TemporaryDirectory() as folder:
+            history = Path(folder, 'history.json')
+            news.save_history(history, [existing], NOW)
+            argv = ['fetch_noticias.py', '--historial', str(history), '--salida', str(Path(folder, 'site')),
+                    '--ahora', NOW.isoformat()]
+            with patch.object(sys, 'argv', argv), patch.object(news, 'GNEWS_API_KEY', ''), \
+                 patch.object(news, 'http_get', side_effect=response), \
+                 patch('scripts.article_images.enrich_visible_images'), \
+                 patch('scripts.agenda.load_agenda', return_value=[]), \
+                 patch('scripts.satire.collect_satire', return_value=[]):
+                news.main()
+            saved = next(item for item in news.load_history(history) if item['link'] == existing['link'])
+            self.assertEqual([row['source'] for row in saved.get('related_coverages', [])], ['CNN Chile'])
+            self.assertEqual(saved['published'], existing['published'])
+            self.assertEqual(saved['first_seen'], existing['first_seen'])
 
     def test_repeated_related_lookup_does_not_renew_a_publication_date(self):
         child = rss_item('España: imágenes del choque de trenes', 'CNN Chile',
