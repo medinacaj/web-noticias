@@ -20,7 +20,7 @@ class CardShadowTests(unittest.TestCase):
 
     def test_card_hover_and_focus_use_shared_tokens(self):
         for token in ("box-shadow:var(--card-shadow);",
-                      "box-shadow:var(--card-shadow-hover);",
+                      "box-shadow:var(--card-shadow-hover)",
                       ".lead:focus-within,.feature:focus-within",
                       "prefers-reduced-motion:reduce"):
             self.assertIn(token, self.css)

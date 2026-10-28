@@ -898,7 +898,17 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             favorite = self.page.locator('.lead .save-story')
             if await favorite.get_attribute('aria-pressed') != 'true': await favorite.click()
             await self.page.mouse.move(0, 0)
-            chosen = await favorite.evaluate("el => ({ink:getComputedStyle(el).color, bg:getComputedStyle(el).backgroundColor})")
+            chosen = await favorite.evaluate("""async el => {
+                await Promise.allSettled(el.getAnimations().map(animation => animation.finished));
+                const canvas = document.createElement('canvas');
+                canvas.width = canvas.height = 1;
+                const ctx = canvas.getContext('2d');
+                const rgb = color => {
+                    ctx.clearRect(0, 0, 1, 1); ctx.fillStyle = color; ctx.fillRect(0, 0, 1, 1);
+                    return 'rgb(' + [...ctx.getImageData(0, 0, 1, 1).data].slice(0, 3).join(',') + ')';
+                };
+                return {ink:rgb(getComputedStyle(el).color), bg:rgb(getComputedStyle(el).backgroundColor)};
+            }""")
             self.assertGreaterEqual(contrast(hex_value(chosen['ink']), hex_value(chosen['bg'])), 4.5)
             if theme == 'dark':
                 self.assertGreaterEqual(contrast(colors['paper'], colors['card']), 1.5)
