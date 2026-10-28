@@ -190,6 +190,17 @@ class RelatedDeliveryTests(unittest.TestCase):
         news.merge(stories, [incoming], NOW)
         self.assertFalse(stories[0].get('related_coverages'))
 
+    def test_one_valid_related_editor_remains_accessible_without_a_synthetic_primary(self):
+        child = rss_item('España: imágenes del choque de trenes', 'CNN Chile',
+                         'www.cnnchile.com', 'cnn')
+        items, _ = self.collect_fixture(child)
+        stories = []
+        news.merge(stories, items, NOW)
+        dialog = news.coverage_control(stories[0], NOW)
+        self.assertIn('Otras coberturas', dialog)
+        self.assertIn('class="coverage-source">CNN Chile</span>', dialog)
+        self.assertNotIn('class="coverage-source">BioBioChile</span>', dialog)
+
     def test_a_restricted_cluster_lead_does_not_hide_other_permitted_editors(self):
         description = cluster().replace('</ol>', '<li><a href="' + GOOGLE + 'bbcLive">'
             'Qué se sabe del choque de trenes en España</a><font>BBC</font></li></ol>')

@@ -240,10 +240,13 @@ def enrich_coverages(items, now, *, fetch, catalog, history=()):
 
 
 def display_coverages(story, direct, now=None):
-    """Solo presentación: estas referencias no cambian fuentes, puntuación ni feeds."""
+    """Filas y presencia de referencias válidas; no modifica fuentes ni feeds."""
     related = combine_related([], story.get('related_coverages'), now)
+    primary = {publisher_key(story), _source_key(story)}
+    related = [row for row in related if publisher_key(row) not in primary
+               and _source_key(row) not in primary]
     if not related:
-        return direct
+        return direct, False
     result, names, links = [], set(), set()
     for row in direct + related:
         name = row['source'].casefold()
@@ -252,4 +255,4 @@ def display_coverages(story, direct, now=None):
         names.add(name)
         links.add(row['link'])
         result.append(row)
-    return result[:12]
+    return result[:12], True

@@ -457,8 +457,8 @@ def coverage_items(story):
 
 def coverage_control(story, now=None):
     from scripts.related_news import display_coverages
-    rows = display_coverages(story, coverage_items(story), now)
-    if len(rows) < 2:
+    rows, has_related = display_coverages(story, coverage_items(story), now)
+    if not rows or (len(rows) < 2 and not has_related):
         return ""
     content = "".join(
         f'<li><span class="coverage-source">{esc(x["source"])}</span>'
