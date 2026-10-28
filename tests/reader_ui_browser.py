@@ -1051,7 +1051,10 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                 for box in boxes:
                     self.assertAlmostEqual(box['left'], main['left'], delta=1, msg=(width, collapsed, boxes))
                     self.assertAlmostEqual(box['right'], main['right'], delta=1, msg=(width, collapsed, boxes))
-                if width >= 1920: self.assertGreaterEqual(main['width'], 1400)
+                sidebar = 216 if width >= 1024 and not collapsed else 0
+                gutter = 12 if width <= 360 else 16 if width <= 767 else 32
+                self.assertAlmostEqual(main['left'], sidebar + gutter, delta=1, msg=(width, collapsed, boxes))
+                self.assertAlmostEqual(main['right'], width - gutter, delta=1, msg=(width, collapsed, boxes))
                 self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth > innerWidth + 2'))
         await self.page.set_viewport_size({"width": 1920, "height": 1080})
         ARTIFACTS.mkdir(exist_ok=True)
@@ -1059,6 +1062,60 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             actual = await self.page.locator('html').get_attribute('data-sidebar')
             if (actual == 'hidden') != collapsed: await self.page.locator('#sidebar-edge').click()
             await self.page.screenshot(path=str(ARTIFACTS / f'aligned-1920-{collapsed}.png'))
+
+    async def test_header_has_a_solid_neutral_surface_in_both_themes(self):
+        for theme in ('light', 'dark'):
+            await self.page.locator('html').evaluate('(el,theme)=>el.dataset.theme=theme', theme)
+            colors = await self.page.locator('.sticky-bar').evaluate('''el=>{
+                const style=getComputedStyle(el);
+                const canvas=document.createElement('canvas'),ctx=canvas.getContext('2d');
+                ctx.fillStyle=style.backgroundColor;ctx.fillRect(0,0,1,1);
+                return {image:style.backgroundImage,rgba:[...ctx.getImageData(0,0,1,1).data]};
+            }''')
+            self.assertEqual(colors['image'], 'none', (theme, colors))
+            self.assertEqual(colors['rgba'][3], 255)
+            self.assertLessEqual(max(colors['rgba'][:3])-min(colors['rgba'][:3]), 16)
+
+    async def test_radar_cards_keep_counts_close_and_wrap_long_titles(self):
+        import tempfile
+        from datetime import datetime, timezone
+        import fetch_noticias as news
+        now = datetime(2026, 10, 28, 13, tzinfo=timezone.utc)
+        stories = [{'category':'internacional', 'title':title,
+                    'link':f'https://qa.example/radar/{index}',
+                    'sources':['A','B','C','D'], 'published':now.isoformat()}
+                   for index,title in enumerate(('Una noticia breve',
+                     'Un titular internacional extenso que debe conservar su lectura dentro de la tarjeta del radar de cobertura',
+                     'Unapalabrasinespacios' * 12))]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(stories, now, folder)
+            body = Path(folder, 'index.html').read_text()
+        await self.page.route('**/?radar-fixture=1', lambda route: route.fulfill(status=200,content_type='text/html',body=body))
+        await self.page.goto(self.url + '?radar-fixture=1')
+        for width in (320,390,768,1024,1440,1920,2560):
+            await self.page.set_viewport_size({'width':width,'height':1000})
+            cards = self.page.locator('.coverage-radar ul > li')
+            self.assertEqual(await cards.count(), 3)
+            metrics = await cards.evaluate_all('''els=>els.map(el=>{
+                const r=el.getBoundingClientRect(),a=el.querySelector('a').getBoundingClientRect(),s=el.querySelector('span').getBoundingClientRect(),css=getComputedStyle(el);
+                return {x:r.x,y:r.y,right:r.right,height:r.height,titleX:a.x,titleY:a.y,titleRight:a.right,countX:s.x,countBottom:s.bottom,bg:css.backgroundColor,border:parseFloat(css.borderTopWidth),overflow:el.scrollWidth>el.clientWidth+1};
+            })''')
+            for card in metrics:
+                self.assertEqual(card['border'], 1, (width,metrics))
+                self.assertFalse(card['overflow'], (width,metrics))
+                self.assertAlmostEqual(card['titleX'],card['countX'],delta=1)
+                self.assertGreaterEqual(card['titleY'],card['countBottom'])
+                self.assertLessEqual(card['titleY']-card['countBottom'],16)
+                self.assertLessEqual(card['titleRight'],card['right'])
+            columns = 1 if width < 768 else 2 if width < 1380 else 3
+            self.assertEqual(sum(abs(card['y']-metrics[0]['y'])<1 for card in metrics),columns,(width,metrics))
+            overflow = await self.page.evaluate('''() => [...document.querySelectorAll('main h2,main h3,main .coverage-radar li')]
+                .filter(el=>el.getBoundingClientRect().right>innerWidth+2)
+                .map(el=>({tag:el.tagName,cls:el.className,right:el.getBoundingClientRect().right})).slice(0,8)''')
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'), (width,overflow))
+        await cards.first.locator('a').focus()
+        self.assertTrue(await cards.first.locator('a').evaluate('el=>document.activeElement===el'))
+        self.assertIsNone(await cards.first.locator('a').get_attribute('target'))
 
     async def test_header_is_compact_without_losing_controls(self):
         for width in (320, 390, 768, 1024, 1440, 1920, 2560):
