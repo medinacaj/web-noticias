@@ -1068,6 +1068,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.screenshot(path=str(ARTIFACTS / f'aligned-1920-{collapsed}.png'))
 
     async def test_latest_is_36px_edge_to_edge_with_navigation_below_it(self):
+        from scripts.visual_qa import check_shared_alignment
         for width in (320,390,768,1024,1440,1920,2560):
             await self.page.set_viewport_size({'width':width,'height':1000})
             await self.page.evaluate('scrollTo(0,0)')
@@ -1083,6 +1084,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                 self.assertTrue(await self.page.locator('.breaking').evaluate('el=>{const r=el.getBoundingClientRect();return el.contains(document.elementFromPoint(24,r.y+r.height/2));}'))
                 if width<1024: await self.page.locator('#menu-toggle').click()
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'))
+            await check_shared_alignment(self.page,width)
 
     async def test_photo_lead_and_highlights_share_top_and_bottom_without_blank_padding(self):
         import tempfile
