@@ -827,7 +827,7 @@ def render_top(sel, now):
     )
     if not items:
         return f'<div class="top-grid top-grid--single">{lead_html}</div>'
-    return (f'<div class="top-grid">{lead_html}<div class="top-aside">'
+    return (f'<div class="top-grid"><p class="lead-heading" aria-hidden="true">En portada</p>{lead_html}<div class="top-aside">'
             f'<h2 class="rail-title"><span>Destacadas</span><button type="button" '
             f'id="visit-updates" class="visit-updates" hidden></button></h2><ol class="rail-list">{items}</ol></div></div>')
 
