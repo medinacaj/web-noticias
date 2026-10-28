@@ -17,6 +17,7 @@ def canonical_key(link):
 
 def deduplicate(items):
     from scripts.latam import merge_countries
+    from scripts.related_news import combine_related
     seen = {}
     result = []
     for news in items:
@@ -48,12 +49,23 @@ def deduplicate(items):
                     covered_links.add(item["link"])
             if coverage:
                 target["coverages"] = coverage[:12]
+            related = combine_related(target.get('related_coverages'), news.get('related_coverages'))
+            if related:
+                target['related_coverages'] = related
+            else:
+                target.pop('related_coverages', None)
             for field in ("published", "first_seen"):
                 if news.get(field) and (not target.get(field) or news[field] < target[field]):
                     target[field] = news[field]
             continue
         seen[key] = len(result)
         entry = dict(news)
+        if 'related_coverages' in entry:
+            related = combine_related([], entry['related_coverages'])
+            if related:
+                entry['related_coverages'] = related
+            else:
+                entry.pop('related_coverages')
         if entry.get("metadata_only"):
             entry["summary"] = ""
             entry["image"] = ""
