@@ -150,6 +150,48 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.wait_for_function("document.querySelector('#view-options-toggle').closest('#nav-tools')")
         self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'menu-toggle')
 
+    async def test_related_media_open_with_their_own_dates_without_extra_cards(self):
+        import sys
+        import tempfile
+        from datetime import datetime, timezone
+        sys.path.insert(0, str(ROOT))
+        import fetch_noticias as news
+        now = datetime(2026, 10, 28, 13, tzinfo=timezone.utc)
+        story = {'category': 'internacional', 'title': 'Cobertura internacional de prueba',
+                 'sources': ['BioBioChile'], 'source_url': 'https://www.biobiochile.cl',
+                 'link': 'https://www.biobiochile.cl/nota', 'published': now.isoformat(),
+                 'related_coverages': [
+                     {'source': 'CNN Chile', 'source_url': 'https://www.cnnchile.com',
+                      'title': 'Titular original de CNN Chile',
+                      'link': 'https://news.google.com/rss/articles/testCNN',
+                      'published': '2026-10-28T10:55:00Z'},
+                     {'source': 'Teletrece', 'source_url': 'https://www.t13.cl',
+                      'title': 'Titular original de Teletrece',
+                      'link': 'https://news.google.com/rss/articles/testT13',
+                      'published': '2026-10-28T11:05:00Z'}]}
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site([story], now, folder)
+            body = Path(folder, 'index.html').read_text()
+        await self.page.route('**/?related-fixture=1', lambda route: route.fulfill(
+            status=200, content_type='text/html', body=body))
+        for width in (390, 1440):
+            await self.page.set_viewport_size({'width': width, 'height': 900})
+            await self.page.goto(self.url + '?related-fixture=1')
+            self.assertEqual(await self.page.locator('.edition-count').get_attribute('data-news-count'), '1')
+            trigger = self.page.locator('[data-coverage-trigger]')
+            await trigger.click()
+            dialog = self.page.locator('.coverage-dialog')
+            self.assertTrue(await dialog.is_visible())
+            self.assertIn('CNN Chile', await dialog.inner_text())
+            self.assertIn('Teletrece', await dialog.inner_text())
+            row = dialog.locator('li').filter(has_text='Titular original de CNN Chile')
+            self.assertEqual(await row.locator('time').get_attribute('datetime'), '2026-10-28T10:55:00Z')
+            self.assertIsNone(await row.locator('a').get_attribute('target'))
+            self.assertFalse(await dialog.evaluate('el=>el.scrollWidth > el.clientWidth + 2'))
+            await self.page.keyboard.press('Escape')
+            self.assertFalse(await dialog.is_visible())
+            self.assertTrue(await trigger.evaluate('el=>document.activeElement === el'))
+
     async def test_refresh_same_edition_preserves_reading_position(self):
         button = self.page.locator('#refresh-now')
         self.assertEqual(await button.count(), 1)

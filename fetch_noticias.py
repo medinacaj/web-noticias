@@ -251,7 +251,7 @@ def fetch_rss(url, category, default_source=None, *, metadata_only=False, limit=
             published = explicit_date(node.findtext("pubDate"))
         else:
             published = parse_date(node.findtext("pubDate"))
-        items.append({
+        record = {
             "category": category,
             "title": title,
             "source": source or "Fuente",
@@ -260,7 +260,13 @@ def fetch_rss(url, category, default_source=None, *, metadata_only=False, limit=
             "published": to_iso(published) if published else None,
             "summary": "" if metadata_only or category == "latinoamerica" else clean_summary(title, node.findtext("description")),
             "image": "" if metadata_only else rss_image(node),
-        })
+        }
+        if category == "internacional" and urllib.parse.urlsplit(url).hostname == "news.google.com":
+            from scripts.related_news import cluster_entries
+            cluster = cluster_entries(node.findtext("description"))
+            if cluster:
+                record['_coverage_cluster'] = cluster
+        items.append(record)
     return items
 
 
@@ -350,6 +356,8 @@ def collect(now):
     items += regional
     if regional:
         print(f"RSS regionales revisados: {len(regional)} titulares recolectados")
+    from scripts.related_news import enrich_coverages
+    items = enrich_coverages(items, now, fetch=fetch_rss, catalog=catalog)
     # WORLD/GNews ya consultados pueden aportar cobertura regional; misma puerta
     # de permisos y minimización que las búsquedas nuevas, sin llamadas extra.
     result = []
@@ -447,14 +455,16 @@ def coverage_items(story):
     return result[:12]
 
 
-def coverage_control(story):
-    rows = coverage_items(story)
+def coverage_control(story, now=None):
+    from scripts.related_news import display_coverages
+    rows = display_coverages(story, coverage_items(story), now)
     if len(rows) < 2:
         return ""
     content = "".join(
         f'<li><span class="coverage-source">{esc(x["source"])}</span>'
         f'<a href="{esc(x["link"])}" rel="noopener">{esc(x["title"])}</a>'
-        + (f'<time datetime="{esc(x["published"])}">{esc(x["published"][:10])}</time>'
+        + (f'<time datetime="{esc(x["published"])}">'
+           f'{esc(time_ago(x, now) if now is not None else x["published"][:10])}</time>'
            if x["published"] else "") + '</li>'
         for x in rows
     )
@@ -462,7 +472,7 @@ def coverage_control(story):
             f'data-coverage-trigger>Otras coberturas <span aria-hidden="true">↗</span></button>'
             f'<template class="coverage-data"><h2>Otras coberturas de esta noticia</h2>'
             f'<p>Publicaciones relacionadas detectadas de {len(rows)} medios. '
-            f'Los enlaces conservan los titulares originales; no se infieren diferencias de enfoque.</p>'
+            f'Los enlaces conservan sus titulares y fechas originales; las cifras pueden variar entre medios.</p>'
             f'<ol class="coverage-list">{content}</ol></template>')
 
 
@@ -472,6 +482,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
     limit = now - timedelta(hours=window_hours)
     future_limit = now + FUTURE_TOLERANCE
     from scripts.latam import classify, merge_countries
+    from scripts.related_news import combine_related
     for original in items:
         item = classify(dict(original))
         title = (item.get("title") or "").strip()
@@ -504,6 +515,11 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
                           and not s.get("metadata_only") and not item.get("metadata_only")
                           and is_similar(norm, s["_norm"])), None)
         if match:
+            related = combine_related(match.get('related_coverages'), item.get('related_coverages'), now)
+            if related:
+                match['related_coverages'] = related
+            else:
+                match.pop('related_coverages', None)
             merge_countries(match, item)
             coverages = coverage_items(match)
             entry = coverage_entry(item)
@@ -536,6 +552,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
                 match["summary"] = ""
                 match["image"] = ""
         else:
+            related = combine_related([], item.get('related_coverages'), now)
             stories.append({
                 "category": item["category"],
                 "title": title,
@@ -548,6 +565,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
                 "published": published,
                 "first_seen": to_iso(now),
                 "_norm": norm,
+                **({'related_coverages': related} if related else {}),
                 **{key: item[key] for key in ("publisher_id", "source_country",
                    "source_country_label", "metadata_only", "coverage_countries", "discovery_edition") if key in item},
             })
@@ -743,7 +761,7 @@ def meta_html(story, now, read_link=False):
     coverage = "".join(f'<span class="coverage-country" title="País mencionado en el titular">{esc(label)}</span>'
                        for label in country_labels(story))
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'{country}{coverage}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story)}</p>')
+            f'{country}{coverage}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story, now)}</p>')
 
 
 def dek_html(story):

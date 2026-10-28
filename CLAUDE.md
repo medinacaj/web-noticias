@@ -17,6 +17,7 @@ Selección: puntaje = n.º de medios que la reportan − horas de antigüedad / 
 ## Archivos
 
 - `fetch_noticias.py` — recolector + generador. Marcadores `%%NOMBRE%%` se reemplazan en `template.html`; si queda alguno sin reemplazar, falla.
+- `scripts/related_news.py` — referencias adicionales para grupos de Internacional del RSS de Google. Hasta dos búsquedas temáticas por ejecución, 60 resultados y diez editores adicionales por grupo, con fechas propias y las puertas de ambos catálogos. `related_coverages` se conserva en historial y deduplicación; solo aparece en «Otras coberturas», separado de las fuentes que respaldan el titular, puntuación, conteos, RSS y JSON-LD. No heredar fechas del grupo ni copiar fotos/extractos de estas referencias.
 - `template.html` — diseño completo (CSS y JS en línea).
 - Cabecera (revisión visual solicitada el 2026-10-28): degradado coral, lavanda y salvia en claro, ciruela/grafito/verde en oscuro; acentos funcionales ámbar para tema, verde para búsqueda, violeta para Vista y frambuesa para Guardadas. Mantener una fila y sus separadores, tarjetas claras sobre papel cálido y movimiento breve que respete `prefers-reduced-motion`. Los acentos de tarjetas siguen su categoría; no trasladar la paleta de cabecera al fondo de todas las noticias.
 - `static/og-image.png` — imagen Open Graph 1200×630.
