@@ -1156,6 +1156,53 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(colors['rgba'][3], 255)
             self.assertLessEqual(max(colors['rgba'][:3])-min(colors['rgba'][:3]), 16)
 
+    async def test_weekly_guides_align_with_culture_and_keep_clear_source_dates(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        now = datetime.now(timezone.utc)
+        guides = [{"title": f"Estrenos Netflix esta semana: películas y series · Guía de prueba {i}",
+                   "source": "Cine PREMIERE", "source_url": "https://cinepremiere.com.mx",
+                   "link": f"https://cinepremiere.com.mx/qa/{i}", "published": now.isoformat()}
+                  for i in range(3)]
+        story = {"title":"Noticia nacional de prueba", "link":"https://qa.example/nacional",
+                 "source_url":"https://qa.example", "sources":["Medio QA"], "category":"nacional",
+                 "published":now.isoformat(), "first_seen":now.isoformat(), "image":"", "summary":""}
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site([story],now,folder,release_guides=guides)
+            document = (Path(folder)/'index.html').read_text()
+        await self.page.route('**/qa-estrenos.html',lambda route:route.fulfill(body=document,content_type='text/html'))
+        await self.page.goto(self.url+'qa-estrenos.html')
+        self.assertEqual(await self.page.locator('nav a[href="#estrenos-semana"]').count(),1)
+        block = self.page.locator('#estrenos-semana')
+        self.assertEqual(await block.locator('.release-card').count(), 3)
+        self.assertIn('Guía publicada', await block.inner_text())
+        self.assertIn('Guía de México', await block.inner_text())
+        self.assertEqual(await block.locator('[data-key],.save-story,.share-story,img').count(), 0)
+        self.assertEqual(await block.locator('a[target]').count(), 0)
+        for width, columns in ((1440,3),(768,2),(390,1),(320,1)):
+            await self.page.set_viewport_size({"width":width,"height":900})
+            bounds = await block.evaluate('''el=>{
+              const culture=el.closest('.section').getBoundingClientRect(), grid=el.querySelector('.release-grid'), r=grid.getBoundingClientRect();
+              return {left:r.left-culture.left,right:r.right-culture.right,
+                columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,
+                overflow:document.documentElement.scrollWidth-innerWidth,
+                shadow:getComputedStyle(grid.querySelector('li')).boxShadow};
+            }''')
+            self.assertAlmostEqual(bounds['left'],0,delta=1)
+            self.assertAlmostEqual(bounds['right'],0,delta=1)
+            self.assertEqual(bounds['columns'],columns)
+            self.assertLessEqual(bounds['overflow'],1)
+            self.assertNotEqual(bounds['shadow'],'none')
+        for theme in ('light','dark'):
+            await self.page.evaluate('(theme)=>document.documentElement.dataset.theme=theme',theme)
+            self.assertTrue(await block.locator('h3').is_visible())
+        await self.page.evaluate('document.documentElement.dataset.theme="light"')
+        await self.page.set_viewport_size({"width":1440,"height":1000})
+        await block.scroll_into_view_if_needed()
+        ARTIFACTS.mkdir(exist_ok=True)
+        await block.screenshot(path=str(ARTIFACTS/'weekly-releases.png'))
+
     async def test_business_directory_is_grouped_accessible_and_keeps_verified_links(self):
         await self.page.goto(self.url+'sobre-el-portal.html#fuentes-negocios')
         directory=self.page.locator('section[aria-labelledby="fuentes-negocios"]')
