@@ -1245,6 +1245,31 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertIn('Inter',styles['font'])
         self.assertGreaterEqual(await guide_card.locator('.share-story').evaluate("el=>parseFloat(getComputedStyle(el).borderRadius)"),100)
 
+    async def test_single_cinema_card_fills_the_grid_in_each_reading_view(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        now=datetime.now(timezone.utc)
+        guide={"title":"Estrenos Netflix esta semana · Guía QA única","source":"Cine PREMIERE",
+               "source_url":"https://cinepremiere.com.mx","link":"https://cinepremiere.com.mx/qa/unica",
+               "published":now.isoformat()}
+        story={"title":"Noticia QA","category":"nacional","sources":["Medio QA"],
+               "source_url":"https://qa.example","link":"https://qa.example/qa/unica",
+               "published":now.isoformat(),"first_seen":now.isoformat(),"image":"","summary":""}
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site([story],now,folder,release_guides=[guide])
+            document=(Path(folder)/'index.html').read_text()
+        await self.page.route('**/qa-cine-unico.html',lambda route:route.fulfill(body=document,content_type='text/html'))
+        await self.page.goto(self.url+'qa-cine-unico.html')
+        grid=self.page.locator('#cat-cine-streaming .section-grid')
+        self.assertEqual(await grid.locator('.feature,.compact-list>li').count(),1)
+        for mode in ('normal','compact','headlines'):
+            await self.page.locator('#contenido').evaluate("(el,m)=>{el.classList.toggle('is-compact',m==='compact');el.classList.toggle('is-headlines',m==='headlines');}",mode)
+            for width in (320,768,1024,1440,1920):
+                await self.page.set_viewport_size({"width":width,"height":1000})
+                sizes=await grid.evaluate("el=>({grid:el.getBoundingClientRect().width,card:el.querySelector('.feature').getBoundingClientRect().width})")
+                self.assertAlmostEqual(sizes['grid'],sizes['card'],delta=1,msg=str((mode,width,sizes)))
+
     async def test_business_directory_is_grouped_accessible_and_keeps_verified_links(self):
         await self.page.goto(self.url+'sobre-el-portal.html#fuentes-negocios')
         directory=self.page.locator('section[aria-labelledby="fuentes-negocios"]')

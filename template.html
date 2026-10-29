@@ -736,6 +736,8 @@
     .footer-nav a{min-height:32px;}
   }
   @media (max-width:767px){.edition-detail{display:none;}}
+  /* Una sola tarjeta ocupa la fila también al cambiar densidad o breakpoint. */
+  .section-grid.section-grid--single{grid-template-columns:minmax(0,1fr);}
 </style>
 </head>
 <body>
