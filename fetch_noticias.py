@@ -875,12 +875,20 @@ def recent_section_stories(stories):
     return sorted(stories, key=lambda story: story_time(story).timestamp() if story_time(story) else float("-inf"), reverse=True)
 
 
-def render_sections(by_category, now, satire_items=None):
+def render_sections(by_category, now, satire_items=None, release_guides=None):
     from scripts.presentation_groups import PRESENTATION_LABELS
     reserved = set(by_category)
     blocks = []
-    present = [c for c in CATEGORIES if c["key"] in by_category]
+    from scripts.weekly_releases import render_releases
+    releases_html = render_releases(release_guides or [], now)
+    present = [c for c in CATEGORIES if c["key"] in by_category or (c["key"] == "cultura" and releases_html)]
     for number, cat in enumerate(present, start=1):
+        if cat["key"] not in by_category:
+            blocks.append(f'<section class="section cat-cultura" id="cat-cultura" aria-labelledby="titulo-cultura">'
+                          f'<div class="section-head"><span class="section-num">{number:02d}</span>'
+                          '<h2 id="titulo-cultura">Cultura y entretenimiento</h2></div>'
+                          f'{releases_html}</section>')
+            continue
         original = by_category[cat["key"]]
         editorial_order = {id(story): index for index, story in enumerate(original)}
         stories = recent_section_stories(original)
@@ -909,17 +917,19 @@ def render_sections(by_category, now, satire_items=None):
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count} {"noticia" if count == 1 else "noticias"}</span></div>'
             f'<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
-            f'{more}{satire_html}</section>'
+            f'{more}{releases_html if cat["key"] == "cultura" else ""}{satire_html}</section>'
         )
     return "\n".join(blocks)
 
 
-def render_nav(sel, agenda=False):
+def render_nav(sel, agenda=False, releases=False):
     from scripts.presentation_groups import PRESENTATION_LABELS, canonical_section
     sections = set(sel["by_category"])
     published = ([sel["lead"]] if sel.get("lead") else []) + sel.get("secondary", [])
     published += [story for items in sel["by_category"].values() for story in items]
     available = sections | {canonical_section(story["category"]) for story in published}
+    if releases:
+        available.add("cultura")
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
     emitted = set()
     def entry(category):
@@ -934,6 +944,8 @@ def render_nav(sel, agenda=False):
         if parent != key:
             continue
         links.append(entry(category))
+        if key == "cultura" and releases:
+            links.append('<li class="nav-subitem"><a class="cat-cultura" href="#estrenos-semana">Cine y streaming</a></li>')
         emitted.add(key)
     if agenda:
         links.append('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>')
@@ -994,7 +1006,7 @@ PAGE_404 = """<!DOCTYPE html>
 
 
 def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
-               signals_archive=None, signals_started="", agenda=None, satire_items=None):
+               signals_archive=None, signals_started="", agenda=None, satire_items=None, release_guides=None):
     from scripts.satire import is_satire
     stories = [story for story in stories if not is_satire(story)]
     sel = select(stories, now)
@@ -1015,9 +1027,13 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
 
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
     from scripts.agenda import render_agenda
+    from scripts.weekly_releases import render_releases
+    has_releases = bool(render_releases(release_guides or [], now))
     sections_shown = sum(1 for c in CATEGORIES if c["key"] in sel["by_category"])
+    if has_releases and "cultura" not in sel["by_category"]:
+        sections_shown += 1
     agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1, source_mark=source_mark)
-    nav = render_nav(sel, agenda=bool(agenda_html))
+    nav = render_nav(sel, agenda=bool(agenda_html), releases=has_releases)
     replacements = {
         "%%TITLE%%": esc(SITE_TITLE),
         "%%DESCRIPTION%%": esc(SITE_DESCRIPTION),
@@ -1039,7 +1055,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%EDITION_COUNT%%": render_edition_count(sel),
         "%%RADAR%%": render_coverage_radar(stories),
         "%%SIGNALS%%": signals_html,
-        "%%SECTIONS%%": render_sections(sel["by_category"], now, satire_items=satire_items),
+        "%%SECTIONS%%": render_sections(sel["by_category"], now, satire_items=satire_items, release_guides=release_guides),
         "%%AGENDA%%": agenda_html,
         "%%NEWSLETTER_SIGNUP%%": newsletter["signup_html"],
     }
@@ -1146,7 +1162,7 @@ def main():
     archive = update_archive(archive, stories, now)
     signals_started = signals_started or to_iso(now)
     save_history(args.historial, stories, now, archive, signals_started)
-    agenda, satire_items = [], []
+    agenda, satire_items, release_guides = [], [], []
     if not args.solo_render and not args.importar:
         # Eventos ya validados por eventos-biobio (Biobío y resto de Chile); un fallo solo oculta la sección.
         from scripts.agenda import load_agenda
@@ -1154,9 +1170,11 @@ def main():
         from scripts.satire import collect_satire
         satire_items = collect_satire(now, fetch=lambda url, category, **options:
                                      fetch_rss(url, category, limit=60, **options))
+        from scripts.weekly_releases import collect_releases
+        release_guides = collect_releases(now, fetch=fetch_rss)
     build_site(stories, now, args.salida, args.ventana,
                signals_archive=archive, signals_started=signals_started, agenda=agenda,
-               satire_items=satire_items)
+               satire_items=satire_items, release_guides=release_guides)
 
 
 if __name__ == "__main__":
