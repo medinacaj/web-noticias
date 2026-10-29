@@ -164,6 +164,8 @@
   .search-input{width:100%;font:500 24px/1.3 var(--serif);color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--strong);padding:8px 0;border-radius:0;}
   .search-input:focus{outline:none;border-bottom-color:var(--red);}
   .search-status{font-size:13px;color:var(--muted);margin:12px 0 4px;}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0;}
+  .content-note{font-weight:600;color:var(--card-ink);}
   .search-results{list-style:none;margin:0;padding:0;max-height:50vh;overflow-y:auto;}
   .search-results li{padding:12px 0;border-bottom:1px solid var(--rule);}
   .search-results a{display:block;font:600 18px/1.3 var(--serif);}
@@ -392,33 +394,6 @@
   .signal-timeline summary{font:600 13px/1.5 var(--sans);color:var(--muted);cursor:pointer;min-height:44px;padding:12px 0;}
   .signal-timeline[open] summary{color:var(--ink);}
   .signal-timeline{margin-top:20px;padding:0;}
-  .satire-links{margin-top:20px;padding:16px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);}
-  .satire-links h3{margin:0 0 6px;font:600 19px/1.3 var(--serif);}
-  .satire-links p{margin:0 0 12px;font:400 12px/1.5 var(--sans);color:var(--muted);}
-  .satire-links ul{display:grid;gap:10px;padding:0;list-style:none;}
-  .satire-links a{font:500 13px/1.5 var(--sans);text-decoration:underline;text-underline-offset:3px;}
-  .weekly-releases{margin-top:20px;scroll-margin-top:calc(var(--chrome-height) + 16px);}
-  .releases-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;margin-bottom:7px;}
-  .releases-head h3{margin:0;font:600 23px/1.3 var(--serif);}
-  .releases-head>span,.releases-intro{font:400 12px/1.5 var(--sans);color:var(--muted);}
-  .releases-intro{margin:0 0 14px;}
-  .release-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--grid-gap);margin:0;padding:0;list-style:none;}
-  .release-grid--balanced{grid-template-columns:repeat(2,minmax(0,1fr));}
-  .release-card{min-width:0;padding:17px;border:1px solid var(--card-rule);border-radius:8px;background:var(--card-bg);color:var(--card-ink);box-shadow:var(--card-shadow);transition:border-color .2s,box-shadow .2s,transform .2s;}
-  .release-card article{height:100%;display:flex;flex-direction:column;}
-  .release-platform{margin:0 0 10px;font:600 11px/1.5 var(--sans);color:var(--c-cultura);}
-  .release-card h4{margin:0 0 16px;font:600 19px/1.35 var(--serif);overflow-wrap:anywhere;text-wrap:pretty;}
-  .release-card h4 a{text-decoration:none;color:inherit;}
-  .release-card h4 a:hover{text-decoration:underline;text-underline-offset:3px;}
-  .release-card a:focus-visible{outline:2px solid var(--c-cultura);outline-offset:4px;border-radius:2px;}
-  .release-source,.release-date{font:400 11px/1.5 var(--sans);color:var(--card-muted);margin:0;overflow-wrap:anywhere;}
-  .release-source{margin-top:auto;}
-  .release-card:focus-within{border-color:var(--c-cultura);box-shadow:0 0 0 1px var(--c-cultura);}
-  .site-nav .nav-subitem a{font-size:12px;padding-top:5px;padding-bottom:8px;padding-left:28px;color:var(--muted);}
-  @media(hover:hover) and (pointer:fine){.release-card:hover{border-color:var(--c-cultura);box-shadow:0 8px 20px rgb(0 0 0 / .09);}}
-  @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.release-card:hover{transform:translateY(-3px);}}
-  @media(max-width:1100px){.release-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
-  @media(max-width:600px){.release-grid{grid-template-columns:minmax(0,1fr);}.release-card{padding:15px;}.releases-head h3{font-size:21px;}}
   @media (max-width:600px){.signal-timeline li{grid-template-columns:1fr;gap:3px;}.signal-timeline li time{padding-top:0;}}
 
   .reader-panel{border:1px solid var(--rule);border-radius:8px;padding:18px;margin:0 0 18px;background:var(--surface);box-shadow:0 4px 14px rgba(6,20,36,.08);}
@@ -1080,7 +1055,7 @@
         if (removable) {
           var button = d.createElement("button");
           button.type = "button"; button.textContent = "Quitar";
-          button.setAttribute("aria-label", "Quitar noticia guardada: " + entry.title);
+          button.setAttribute("aria-label", "Quitar de guardadas: " + entry.title);
           button.addEventListener("click", function () {
             saved = saved.filter(function (x) { return x.url !== entry.url; });
             set(storageKey, saved); syncSaved(); renderList(savedList, saved, true);
@@ -1093,6 +1068,7 @@
     function syncSaved() {
       cards.forEach(function (card) {
         var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+        var noun = link.hasAttribute("data-content-kind") ? "contenido" : "noticia";
         var active = saved.some(function (x) {return x.url === link.href;});
         var meta = card.querySelector(".meta");
         var footer = card.querySelector(".card-footer");
@@ -1109,7 +1085,7 @@
         var button = card.querySelector(".save-story");
         if (!button) {
           button = d.createElement("button"); button.type = "button"; button.className = "save-story";
-          button.setAttribute("aria-label", "Guardar noticia para después");
+          button.setAttribute("aria-label", "Guardar " + noun + " para después");
           button.textContent = "☆";
           button.addEventListener("click", function () {
             var exists = saved.some(function (x) {return x.url === link.href;});
@@ -1125,8 +1101,8 @@
           share = d.createElement("button");
           share.type = "button";
           share.className = "share-story";
-          share.setAttribute("aria-label", "Compartir noticia: " + link.textContent.trim());
-          share.title = "Compartir noticia";
+          share.setAttribute("aria-label", "Compartir " + noun + ": " + link.textContent.trim());
+          share.title = "Compartir " + noun;
           share.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.3 10.8 7.4-4.6M8.3 13.2l7.4 4.6"/></svg>';
           share.addEventListener("click", async function () {
             var news = {title: link.textContent.trim(), url: link.href};
@@ -1152,18 +1128,18 @@
               share.setAttribute("aria-label", "Enlace copiado");
               share.title = "Enlace copiado";
               setTimeout(function () {
-                share.setAttribute("aria-label", "Compartir noticia: " + link.textContent.trim());
-                share.title = "Compartir noticia";
+                share.setAttribute("aria-label", "Compartir " + noun + ": " + link.textContent.trim());
+                share.title = "Compartir " + noun;
               }, 1600);
             } else {
-              window.prompt("Copia el enlace de la noticia:", link.href);
+              window.prompt("Copia el enlace:", link.href);
             }
           });
           if (actions) actions.appendChild(share);
         }
         button.textContent = active ? "★" : "☆";
         button.setAttribute("aria-pressed", String(active));
-        button.setAttribute("aria-label", (active ? "Quitar de guardadas: " : "Guardar noticia: ") + link.textContent.trim());
+        button.setAttribute("aria-label", (active ? "Quitar de guardadas: " : "Guardar " + noun + ": ") + link.textContent.trim());
       });
     }
     libraryToggle.addEventListener("click", function () {

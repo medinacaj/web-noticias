@@ -127,19 +127,17 @@ class WeeklyReleasesTests(unittest.TestCase):
 
     def test_render_is_attributed_escaped_and_labels_the_guide_date(self):
         result=self.collect([guide(title='Estrenos Netflix esta semana <script>bad()</script>')])
-        body=releases.render_releases(result,NOW)
-        self.assertIn('Estrenos de la semana',body)
-        self.assertIn('26 oct',body)
-        self.assertIn('1 nov',body)
+        body=news.render_sections({},NOW,release_guides=result)
+        self.assertIn('Cine y streaming',body)
         self.assertIn('Guía de México',body)
         self.assertIn('Guía publicada',body)
         self.assertIn('Cine PREMIERE',body)
         self.assertNotIn('<script>',body)
         self.assertNotIn('target="_blank"',body)
-        self.assertNotIn('data-key=',body)
-        self.assertNotIn('<img',body)
-        self.assertEqual(releases.render_releases([],NOW),'')
-        self.assertEqual(releases.render_releases(result,NOW+timedelta(days=7)),'')
+        self.assertIn('data-key="cultura"',body)
+        self.assertNotIn('<script>',body)
+        self.assertEqual(releases.current_guides([],NOW),[])
+        self.assertEqual(releases.current_guides(result,NOW+timedelta(days=7)),[])
 
     def test_site_includes_culture_and_its_menu_even_when_there_are_only_release_guides(self):
         story={'title':'Otra noticia nacional','link':'https://news.example/nacional',
@@ -150,7 +148,7 @@ class WeeklyReleasesTests(unittest.TestCase):
             news.build_site([story],NOW,folder,release_guides=result)
             page=(Path(folder)/'index.html').read_text()
         self.assertIn('href="#cat-cultura"',page)
-        self.assertIn('href="#estrenos-semana"',page)
+        self.assertNotIn('href="#estrenos-semana"',page)
         self.assertEqual(page.count('id="estrenos-semana"'),1)
         self.assertIn('data-news-count="1"',page)
         self.assertNotIn('Cine PREMIERE',page.split('<script type="application/ld+json">')[1].split('</script>')[0])

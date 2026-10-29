@@ -724,12 +724,19 @@ def title_link(story):
     first_seen = story.get("first_seen") or ""
     if not parse_date(first_seen):
         first_seen = ""
-    return (f'<a data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" rel="noopener" '
+    from scripts.culture_content import content_kind
+    kind=content_kind(story)
+    prefix='Sátira y humor: ' if kind.startswith('satire') else 'Guía de estrenos: ' if kind=='guide' else ''
+    content=f' data-content-kind="{kind}"' if kind else ''
+    prefix_html=f'<span class="sr-only">{prefix}</span>' if prefix else ''
+    return (f'<a{content} data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" rel="noopener" '
             f'data-cat="{esc(category_label(story))}" data-key="{story["category"]}" '
-            f'data-sources="{esc(json.dumps(story.get("sources") or [], ensure_ascii=False))}">{esc(story["title"])}</a>')
+            f'data-sources="{esc(json.dumps(story.get("sources") or [], ensure_ascii=False))}">{prefix_html}{esc(story["title"])}</a>')
 
 
 def figure_html(story, eager=False):
+    from scripts.culture_content import content_kind
+    if content_kind(story):return ''
     image = safe_image(story.get("image"))
     if not image:
         source = (story.get("sources") or ["Fuente"])[0]
@@ -756,6 +763,11 @@ def figure_html(story, eager=False):
 def meta_html(story, now, read_link=False):
     sources = story["sources"]
     label = ", ".join(sources[:3]) + (f" y {len(sources) - 3} más" if len(sources) > 3 else "")
+    from scripts.culture_content import content_kind
+    content=content_kind(story)
+    if content=='satire-source':
+        return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
+                '<span class="content-note">Humor y ficción</span></p>')
     moment = story_time(story) or now
     fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
     country = (f'<span class="source-country">{esc(story["source_country_label"])}</span>'
@@ -766,8 +778,10 @@ def meta_html(story, now, read_link=False):
     source_kind = story.get('source_kind')
     kind_label = {'institutional':'Institucional','analysis':'Análisis'}.get(source_kind) if isinstance(source_kind,str) else None
     kind = f'<span class="source-kind">{kind_label}</span>' if kind_label else ''
+    note = '<span class="content-note">Ficción satírica</span>' if content=='satire' else ''
+    date_label = f'Guía publicada {moment.astimezone(TZ_CHILE).day} {MESES[moment.astimezone(TZ_CHILE).month-1]}' if content=='guide' else time_ago(story,now)
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'{country}{coverage}{kind}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story, now)}</p>')
+            f'{country}{coverage}{kind}{note}<time datetime="{to_iso(moment)}"{fresh}>{date_label}</time>{coverage_control(story, now)}</p>')
 
 
 def dek_html(story):
@@ -797,6 +811,10 @@ def render_breaking(sel, now):
 
 def topic_anchor(story, reserved):
     """Una ancla por tema publicado que no tiene sección independiente."""
+    from scripts.culture_content import content_kind
+    if content_kind(story)=='guide' and 'estrenos-semana' not in reserved:
+        reserved.add('estrenos-semana')
+        return ' id="estrenos-semana" data-nav-topic="cultura" data-nav-section="cultura"'
     category = story["category"]
     if category in reserved:
         return ""
@@ -877,59 +895,56 @@ def recent_section_stories(stories):
 
 def render_sections(by_category, now, satire_items=None, release_guides=None):
     from scripts.presentation_groups import PRESENTATION_LABELS
-    reserved = set(by_category)
     blocks = []
-    from scripts.weekly_releases import render_releases
-    releases_html = render_releases(release_guides or [], now)
-    present = [c for c in CATEGORIES if c["key"] in by_category or (c["key"] == "cultura" and releases_html)]
+    from scripts.culture_content import add_culture_content, card_label, content_kind
+    if satire_items is not None or release_guides is not None:
+        by_category=add_culture_content(by_category,now,satire_items=satire_items,release_guides=release_guides)
+    reserved = set(by_category)
+    present = [c for c in CATEGORIES if c["key"] in by_category]
     for number, cat in enumerate(present, start=1):
-        if cat["key"] not in by_category:
-            blocks.append(f'<section class="section cat-cultura" id="cat-cultura" aria-labelledby="titulo-cultura">'
-                          f'<div class="section-head"><span class="section-num">{number:02d}</span>'
-                          '<h2 id="titulo-cultura">Cultura y entretenimiento</h2></div>'
-                          f'{releases_html}</section>')
-            continue
         original = by_category[cat["key"]]
         editorial_order = {id(story): index for index, story in enumerate(original)}
         stories = recent_section_stories(original)
         feature, rest = stories[0], stories[1:]
-        feature_html = (f'<article class="feature" data-original-order="{editorial_order[id(feature)]}">{figure_html(feature)}'
-                        f'<div class="news-body"><p class="kicker">{esc(category_label(feature))}</p>'
+        def attributes(story):
+            kind=content_kind(story)
+            return f' data-content-kind="{kind}"' if kind else ''
+        feature_html = (f'<article class="feature"{attributes(feature)} data-original-order="{editorial_order[id(feature)]}">{figure_html(feature)}'
+                        f'<div class="news-body"><p class="kicker">{esc(card_label(feature) or category_label(feature))}</p>'
                         f'<h3 class="feature-title"{topic_anchor(feature, reserved)}>{title_link(feature)}</h3>'
                         f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
         compact = "".join(
-            f'<li data-original-order="{editorial_order[id(s)]}"{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
-            f'<div class="news-body"><p class="kicker">{esc(category_label(s))}</p>'
+            f'<li{attributes(s)} data-original-order="{editorial_order[id(s)]}"{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
+            f'<div class="news-body"><p class="kicker">{esc(card_label(s) or category_label(s))}</p>'
             f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
             for i, s in enumerate(rest))
         grid_class = "section-grid" if compact else "section-grid section-grid--single"
         compact_html = f'<ul class="compact-list">{compact}</ul>' if compact else ""
         count = len(stories)
+        has_content=any(content_kind(story) for story in stories)
+        more_label='contenidos' if has_content else 'noticias'
         more = (f'<button type="button" class="show-more" data-show-more '
                 f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
-                f'Ver más noticias <span aria-hidden="true">↓</span></button>'
+                f'Ver más {more_label} <span aria-hidden="true">↓</span></button>'
                 if count > 6 else "")
-        from scripts.satire import render_satire
-        satire_html = render_satire(satire_items or []) if cat["key"] == "cultura" else ""
+        count_label=f'{count} '+(('contenido' if count==1 else 'contenidos') if has_content else ('noticia' if count==1 else 'noticias'))
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
-            f'<span class="section-count">{count} {"noticia" if count == 1 else "noticias"}</span></div>'
+            f'<span class="section-count">{count_label}</span></div>'
             f'<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
-            f'{more}{releases_html if cat["key"] == "cultura" else ""}{satire_html}</section>'
+            f'{more}</section>'
         )
     return "\n".join(blocks)
 
 
-def render_nav(sel, agenda=False, releases=False):
+def render_nav(sel, agenda=False):
     from scripts.presentation_groups import PRESENTATION_LABELS, canonical_section
     sections = set(sel["by_category"])
     published = ([sel["lead"]] if sel.get("lead") else []) + sel.get("secondary", [])
     published += [story for items in sel["by_category"].values() for story in items]
     available = sections | {canonical_section(story["category"]) for story in published}
-    if releases:
-        available.add("cultura")
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
     emitted = set()
     def entry(category):
@@ -944,8 +959,6 @@ def render_nav(sel, agenda=False, releases=False):
         if parent != key:
             continue
         links.append(entry(category))
-        if key == "cultura" and releases:
-            links.append('<li class="nav-subitem"><a class="cat-cultura" href="#estrenos-semana">Cine y streaming</a></li>')
         emitted.add(key)
     if agenda:
         links.append('<li><a class="cat-agenda" href="#cat-agenda">Agenda</a></li>')
@@ -1027,13 +1040,12 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
 
     gsc_code = os.environ.get("GSC_VERIFICATION", "").strip()
     from scripts.agenda import render_agenda
-    from scripts.weekly_releases import render_releases
-    has_releases = bool(render_releases(release_guides or [], now))
-    sections_shown = sum(1 for c in CATEGORIES if c["key"] in sel["by_category"])
-    if has_releases and "cultura" not in sel["by_category"]:
-        sections_shown += 1
+    from scripts.culture_content import add_culture_content
+    display_sections=add_culture_content(sel['by_category'],now,satire_items=satire_items,
+                     release_guides=release_guides,existing=([sel['lead']] if sel['lead'] else [])+sel['secondary'])
+    sections_shown = sum(1 for c in CATEGORIES if c["key"] in display_sections)
     agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1, source_mark=source_mark)
-    nav = render_nav(sel, agenda=bool(agenda_html), releases=has_releases)
+    nav = render_nav({**sel,'by_category':display_sections}, agenda=bool(agenda_html))
     replacements = {
         "%%TITLE%%": esc(SITE_TITLE),
         "%%DESCRIPTION%%": esc(SITE_DESCRIPTION),
@@ -1055,7 +1067,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%EDITION_COUNT%%": render_edition_count(sel),
         "%%RADAR%%": render_coverage_radar(stories),
         "%%SIGNALS%%": signals_html,
-        "%%SECTIONS%%": render_sections(sel["by_category"], now, satire_items=satire_items, release_guides=release_guides),
+        "%%SECTIONS%%": render_sections(display_sections, now),
         "%%AGENDA%%": agenda_html,
         "%%NEWSLETTER_SIGNUP%%": newsletter["signup_html"],
     }
@@ -1162,7 +1174,7 @@ def main():
     archive = update_archive(archive, stories, now)
     signals_started = signals_started or to_iso(now)
     save_history(args.historial, stories, now, archive, signals_started)
-    agenda, satire_items, release_guides = [], [], []
+    agenda, satire_items, release_guides = [], None, []
     if not args.solo_render and not args.importar:
         # Eventos ya validados por eventos-biobio (Biobío y resto de Chile); un fallo solo oculta la sección.
         from scripts.agenda import load_agenda

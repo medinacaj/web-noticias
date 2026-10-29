@@ -1156,52 +1156,82 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(colors['rgba'][3], 255)
             self.assertLessEqual(max(colors['rgba'][:3])-min(colors['rgba'][:3]), 16)
 
-    async def test_weekly_guides_align_with_culture_and_keep_clear_source_dates(self):
-        from datetime import datetime, timezone
+    async def test_culture_content_uses_common_cards_and_remains_responsive(self):
+        from datetime import datetime, timedelta, timezone
         import tempfile
         import fetch_noticias as news
         now = datetime.now(timezone.utc)
-        guides = [{"title": f"Estrenos Netflix esta semana: películas y series · Guía de prueba {i}",
+        guides = [{"title": f"Estrenos Netflix esta semana · Guía QA {i}",
                    "source": "Cine PREMIERE", "source_url": "https://cinepremiere.com.mx",
                    "link": f"https://cinepremiere.com.mx/qa/{i}", "published": now.isoformat()}
-                  for i in range(3)]
-        story = {"title":"Noticia nacional de prueba", "link":"https://qa.example/nacional",
-                 "source_url":"https://qa.example", "sources":["Medio QA"], "category":"nacional",
-                 "published":now.isoformat(), "first_seen":now.isoformat(), "image":"", "summary":""}
+                  for i in range(2)]
+        satire = [{"title": f"Historia de humor QA {i}", "source":"El Chigüire Bipolar",
+                   "source_url":"https://www.elchiguirebipolar.net",
+                   "link":f"https://www.elchiguirebipolar.net/qa/{i}/", "published":now.isoformat()}
+                  for i in range(2)]
+        stories = [{"title":f"Noticia cultural de prueba {i}", "link":f"https://qa.example/cultura/{i}",
+                    "source_url":"https://qa.example", "sources":["Medio QA"],
+                    "category":"cultura" if i else "nacional", "published":(now-timedelta(hours=1)).isoformat(),
+                    "first_seen":now.isoformat(), "image":"", "summary":""} for i in range(9)]
         with tempfile.TemporaryDirectory() as folder:
-            news.build_site([story],now,folder,release_guides=guides)
+            news.build_site(stories,now,folder,release_guides=guides,satire_items=satire)
             document = (Path(folder)/'index.html').read_text()
-        await self.page.route('**/qa-estrenos.html',lambda route:route.fulfill(body=document,content_type='text/html'))
-        await self.page.goto(self.url+'qa-estrenos.html')
-        self.assertEqual(await self.page.locator('nav a[href="#estrenos-semana"]').count(),1)
-        block = self.page.locator('#estrenos-semana')
-        self.assertEqual(await block.locator('.release-card').count(), 3)
-        self.assertIn('Guía publicada', await block.inner_text())
-        self.assertIn('Guía de México', await block.inner_text())
-        self.assertEqual(await block.locator('[data-key],.save-story,.share-story,img').count(), 0)
-        self.assertEqual(await block.locator('a[target]').count(), 0)
-        for width, columns in ((1440,3),(768,2),(390,1),(320,1)):
-            await self.page.set_viewport_size({"width":width,"height":900})
-            bounds = await block.evaluate('''el=>{
-              const culture=el.closest('.section').getBoundingClientRect(), grid=el.querySelector('.release-grid'), r=grid.getBoundingClientRect();
-              return {left:r.left-culture.left,right:r.right-culture.right,
-                columns:getComputedStyle(grid).gridTemplateColumns.split(' ').length,
-                overflow:document.documentElement.scrollWidth-innerWidth,
-                shadow:getComputedStyle(grid.querySelector('li')).boxShadow};
-            }''')
-            self.assertAlmostEqual(bounds['left'],0,delta=1)
-            self.assertAlmostEqual(bounds['right'],0,delta=1)
-            self.assertEqual(bounds['columns'],columns)
-            self.assertLessEqual(bounds['overflow'],1)
-            self.assertNotEqual(bounds['shadow'],'none')
+        await self.page.route('**/qa-cultura.html',lambda route:route.fulfill(body=document,content_type='text/html'))
+        await self.page.goto(self.url+'qa-cultura.html')
+        block = self.page.locator('#cat-cultura')
+        self.assertEqual(await self.page.locator('nav a[href="#cat-cultura"]').count(),1)
+        self.assertEqual(await self.page.locator('.weekly-releases,.satire-links,.release-grid,.nav-subitem').count(),0)
+        self.assertEqual(await block.locator('.section-grid').count(),1)
+        self.assertIn('Guía publicada',await block.inner_text())
+        self.assertIn('Guía de México',await block.inner_text())
+        self.assertIn('Ficción satírica',await block.inner_text())
+        self.assertEqual(await block.locator('a[target]').count(),0)
+        self.assertEqual(await self.page.locator('.edition-count').get_attribute('data-news-count'),'9')
+        satire_card = block.locator('.feature[data-content-kind="satire"],li[data-content-kind="satire"]').first
+        guide_card = block.locator('.feature[data-content-kind="guide"],li[data-content-kind="guide"]').first
+        self.assertIn('sátira y humor',(await satire_card.locator('.kicker').inner_text()).lower())
+        self.assertIn('cine y streaming',(await guide_card.locator('.kicker').inner_text()).lower())
+        await satire_card.locator('.save-story').click()
+        await self.toggle_library()
+        self.assertIn('Sátira y humor:',await self.page.locator('#saved-stories').inner_text())
+        await self.page.locator('[data-close-panel="library-panel"]').click()
+        await self.page.evaluate('Object.defineProperty(navigator,"share",{configurable:true,value:async p=>{window.qaShared=p;}})')
+        share = satire_card.locator('.share-story')
+        self.assertIn('Compartir contenido',await share.get_attribute('aria-label'))
+        await share.click()
+        self.assertTrue((await self.page.evaluate('window.qaShared.title')).startswith('Sátira y humor:'))
+        await self.page.locator('#search-toggle').click()
+        await self.page.locator('#search-input').fill('Sátira y humor')
+        self.assertIn('Historia de humor QA',await self.page.locator('#search-results').inner_text())
+        await self.page.locator('#search-toggle').click()
+        more=block.locator('[data-show-more]')
+        await more.click()
+        self.assertIn('contenidos',await more.inner_text())
         for theme in ('light','dark'):
-            await self.page.evaluate('(theme)=>document.documentElement.dataset.theme=theme',theme)
-            self.assertTrue(await block.locator('h3').is_visible())
+            await self.page.evaluate('(v)=>document.documentElement.dataset.theme=v',theme)
+            for width in (320,390,768,1024,1440,1920):
+                await self.page.set_viewport_size({"width":width,"height":1000})
+                bounds=await block.evaluate("""el=>{
+                    const g=el.querySelector('.section-grid').getBoundingClientRect(),r=el.getBoundingClientRect();
+                    return {left:g.left-r.left,right:g.right-r.right,overflow:document.documentElement.scrollWidth-innerWidth};
+                }""")
+                self.assertAlmostEqual(bounds['left'],0,delta=1)
+                self.assertAlmostEqual(bounds['right'],0,delta=1)
+                self.assertLessEqual(bounds['overflow'],1,(theme,width,bounds))
+            for density in ('compact','headlines'):
+                await self.page.locator('#contenido').evaluate("""(el,v)=>{
+                  el.classList.toggle('is-compact',v==='compact');el.classList.toggle('is-headlines',v==='headlines');el.dataset.textSize='large';
+                }""",density)
+                for width in (320,1440):
+                    await self.page.set_viewport_size({"width":width,"height":1000})
+                    self.assertLessEqual(await self.page.evaluate('document.documentElement.scrollWidth-innerWidth'),1)
+            await self.page.locator('#contenido').evaluate("el=>{el.classList.remove('is-compact','is-headlines');el.dataset.textSize='normal';}")
         await self.page.evaluate('document.documentElement.dataset.theme="light"')
-        await self.page.set_viewport_size({"width":1440,"height":1000})
-        await block.scroll_into_view_if_needed()
         ARTIFACTS.mkdir(exist_ok=True)
-        await block.screenshot(path=str(ARTIFACTS/'weekly-releases.png'))
+        for width in (1440,390):
+            await self.page.set_viewport_size({"width":width,"height":1000})
+            await block.scroll_into_view_if_needed()
+            await block.screenshot(path=str(ARTIFACTS/f'culture-integrated-{width}.png'))
 
     async def test_business_directory_is_grouped_accessible_and_keeps_verified_links(self):
         await self.page.goto(self.url+'sobre-el-portal.html#fuentes-negocios')
