@@ -31,6 +31,10 @@ PALETTE = {
     "#151719", "#111315", "#1C1F23", "#4C545E", "#CCD1D6", "#66717D", "#B4DCC8", "#FF907F",
     "#94B9E4", "#93CDB5", "#C7B2E8", "#F2BE86", "#E7ACD1", "#E6C773", "#27362F", "#DEEDDE",
     "#BED0C4", "#789087",
+    # Referencia Rootly adjunta y adaptación legible solicitadas por el usuario (2026-10-29).
+    "#F3F1F8", "#FBFAFF", "#100F12", "#65646E", "#DDD7E9", "#44434E", "#4A3E8A",
+    "#EBE5FF", "#D9CFFA", "#D0CCD9", "#121116", "#1B1921", "#554D64", "#6A607C",
+    "#30283F", "#F0EBFF", "#8D6FDE", "#383441",
     # Color propio de la Agenda (dorado), pedido por el usuario el 2026-10-24.
     "#8A6100", "#F2C14E",
     # Cabecera y controles con más color, solicitados por el usuario el 2026-10-28.
@@ -39,7 +43,7 @@ PALETTE = {
     "#776779", "#E8BC78", "#98D6C1", "#CBB4F2", "#EBAAC5", "#CDC0E0",
 }
 # Secciones que no son categorías de noticias pero tienen color propio aprobado.
-EXTRA_SECTIONS = {"agenda"}
+EXTRA_SECTIONS = {"agenda", "cine-streaming"}
 
 
 def template_css():

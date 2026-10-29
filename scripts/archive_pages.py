@@ -97,12 +97,12 @@ def _head(title, description, url, base):
 <meta name="twitter:description" content="{esc(description)}">
 <meta name="twitter:image" content="{esc(base)}/og-image.png">
 <script type="application/ld+json">{structured}</script>
-<meta name="theme-color" content="#282C30">
+<meta name="theme-color" content="#100F12">
 <link rel="icon" href="{esc(base)}/favicon.svg?v=editorial" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{esc(base)}/apple-touch-icon.png?v=editorial">
 <style>
-:root{{color-scheme:light;--paper:#E9E8E2;--card:#FFFFFF;--surface:#FAFAF7;--ink:#282C30;--muted:#626970;--rule:#D7DBD4;--brand:#31584A;--accent:#C04C3E}}
-:root[data-theme="dark"]{{color-scheme:dark;--brand:#B4DCC8;--paper:#111315;--card:#343A43;--surface:#1C1F23;--ink:#F7F6F2;--muted:#C4C7CC;--rule:#66717D;--accent:#FF907F}}
+:root{{color-scheme:light;--paper:#F3F1F8;--card:#FFFFFF;--surface:#FBFAFF;--ink:#100F12;--muted:#65646E;--rule:#DDD7E9;--brand:#4A3E8A;--accent:#4A3E8A}}
+:root[data-theme="dark"]{{color-scheme:dark;--brand:#D9CFFA;--paper:#121116;--card:#383441;--surface:#1B1921;--ink:#FBFAFF;--muted:#D0CCD9;--rule:#6A607C;--accent:#D9CFFA}}
 *,*::before,*::after{{box-sizing:border-box}}
 body{{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}}
 a{{color:inherit;text-underline-offset:3px}}
@@ -110,25 +110,25 @@ a:focus-visible,button:focus-visible{{outline:2px solid var(--accent);outline-of
 .wrap{{max-width:960px;margin:0 auto;padding:0 24px}}
 header{{background:var(--surface);border-bottom:1px solid var(--rule)}}
 header .wrap{{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}}
-.brand{{display:inline-flex;align-items:center;gap:10px;font:700 18px/1.2 "Source Serif 4",Georgia,serif;text-decoration:none}}
+.brand{{display:inline-flex;align-items:center;gap:10px;font:700 18px/1.2 Inter,system-ui,sans-serif;text-decoration:none}}
 .brand img{{width:32px;height:32px;flex:none}}
 .back{{font-size:13px;font-weight:600}}
 .header-actions{{display:flex;align-items:center;gap:12px;flex:none}}
-.theme-toggle{{display:none;align-items:center;justify-content:center;min-width:40px;min-height:40px;padding:6px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);font:22px/1 system-ui;cursor:pointer}}
+.theme-toggle{{display:none;align-items:center;justify-content:center;min-width:40px;min-height:40px;padding:6px;border:1px solid var(--rule);border-radius:999px;background:var(--surface);color:var(--ink);font:22px/1 system-ui;cursor:pointer}}
 .js .theme-toggle{{display:inline-flex}}
 main{{padding:32px 0 56px}}
 .eyebrow{{font:700 11px/1.4 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}}
-h1{{font:700 clamp(28px,4.5vw,40px)/1.2 "Source Serif 4",Georgia,serif;margin:6px 0 8px}}
+h1{{font:700 clamp(28px,4.5vw,40px)/1.2 Inter,system-ui,sans-serif;margin:6px 0 8px}}
 .intro{{color:var(--muted);margin:0 0 20px;max-width:720px}}
 .days,.filters{{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0;list-style:none}}
 .days a,.filters button{{display:inline-flex;align-items:center;min-height:40px;padding:8px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--card);color:var(--ink);font:600 13px Inter,sans-serif;text-decoration:none;cursor:pointer}}
 .days a[aria-current="page"],.filters button[aria-pressed="true"]{{border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}}
 .filters[hidden]{{display:none}}
 section{{margin-top:28px}}
-h2{{font:700 22px/1.3 "Source Serif 4",Georgia,serif;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--rule)}}
+h2{{font:700 22px/1.3 Inter,system-ui,sans-serif;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--rule)}}
 ol{{list-style:none;margin:0;padding:0;display:grid;gap:8px}}
 ol li{{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}}
-ol li a{{font:600 16px/1.4 "Source Serif 4",Georgia,serif;text-decoration-thickness:1px}}
+ol li a{{font:600 16px/1.4 Inter,system-ui,sans-serif;text-decoration-thickness:1px}}
 .meta{{display:block;margin-top:4px;color:var(--muted);font-size:12px}}
 .empty{{color:var(--muted)}}
 footer{{border-top:1px solid var(--rule);padding:20px 0;color:var(--muted);font-size:12px}}
