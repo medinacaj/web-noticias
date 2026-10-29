@@ -64,6 +64,7 @@ class WorldSourcesTests(unittest.TestCase):
              patch.object(news, "http_get", side_effect=fetch), \
              patch.object(news, "GNEWS_API_KEY", "fixture" if gnews else ""), \
              patch.object(news, "fetch_gnews", side_effect=gnews or (lambda cat: [])), \
+             patch("scripts.business_sources.collect_business", return_value=[]), \
              patch("scripts.regional_sources.collect_regional", return_value=[]):
             return news.collect(NOW)
 

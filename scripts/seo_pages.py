@@ -34,6 +34,8 @@ def render_about_page(site_url):
         ],
     }
     jsonld = json.dumps(schema, ensure_ascii=False).replace("</", "<\\/")
+    from scripts.business_sources import render_directory
+    directory = render_directory()
     return f"""<!DOCTYPE html>
 <html lang="es-CL">
 <head>
@@ -61,24 +63,30 @@ def render_about_page(site_url):
 <style>
 :root{{color-scheme:light}}
 *,*::before,*::after{{box-sizing:border-box}}
-body{{margin:0;background:#EEF2F6;color:#102338;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}}
-a{{color:#0A456D;text-underline-offset:3px}}
-a:focus-visible{{outline:3px solid #C8102E;outline-offset:4px}}
-header{{background:#0A2540;color:#fff}}
+body{{margin:0;background:#E9E8E2;color:#282C30;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}}
+a{{color:#31584A;text-underline-offset:3px}}
+a:focus-visible{{outline:3px solid #C04C3E;outline-offset:4px}}
+header{{background:#FAFAF7;color:#282C30}}
 .wrap{{max-width:900px;margin:0 auto;padding:0 28px}}
 header .wrap{{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:17px;padding-bottom:17px;flex-wrap:wrap}}
 header p{{margin:0;font:700 18px/1.3 Georgia,serif}}
-header a{{color:#fff;font-size:14px}}
+header a{{color:#31584A;font-size:14px}}
 main{{max-width:900px;margin:0 auto;padding:50px 28px 56px}}
-.eyebrow{{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#557087}}
-h1,h2{{font-family:Georgia,"Times New Roman",serif;line-height:1.23;color:#122940}}
+.eyebrow{{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#626970}}
+h1,h2{{font-family:Georgia,"Times New Roman",serif;line-height:1.23;color:#282C30}}
 h1{{font-size:clamp(32px,5vw,46px);margin:9px 0 20px;letter-spacing:-.025em}}
 h2{{font-size:24px;margin:0 0 11px}}
-.intro{{max-width:720px;font-size:19px;line-height:1.55;color:#364A60;margin:0 0 36px}}
-section{{padding:23px 0;border-top:1px solid #CBD6E0;max-width:760px}}
-section p{{margin:0;color:#34485C}}
-footer{{background:#061424;color:#C5CFDA;padding:25px 0;font-size:13px}}
-footer a{{color:#E5F1FC}}
+.intro{{max-width:720px;font-size:19px;line-height:1.55;color:#626970;margin:0 0 36px}}
+section{{padding:23px 0;border-top:1px solid #D7DBD4;max-width:760px}}
+section p{{margin:0;color:#626970}}
+.source-group{{margin-top:16px;padding:10px 0;border-top:1px solid #D7DBD4}}
+.source-group summary{{cursor:pointer;font-weight:600}}
+.source-group ul{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;list-style:none;margin:16px 0 0;padding:0}}
+.source-group li{{min-width:0;overflow-wrap:anywhere}}
+.source-group li span{{display:block;font-size:12px;color:#626970}}
+@media(max-width:600px){{.source-group ul{{grid-template-columns:minmax(0,1fr)}}}}
+footer{{background:#202529;color:#CED1D6;padding:25px 0;font-size:13px}}
+footer a{{color:#F7F6F2}}
 footer .wrap{{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}}
 @media(max-width:600px){{main{{padding:32px 18px 42px}}.wrap{{padding-left:18px;padding-right:18px}}.intro{{font-size:17px}}}}
 </style>
@@ -101,6 +109,7 @@ footer .wrap{{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
 <p>La portada muestra las últimas 24 horas. Los titulares de los siete días anteriores pueden consultarse en el <a href="{esc(base)}/archivo/">archivo por día</a>, ordenados por sección y con enlace a cada medio. Esas páginas no se indexan en buscadores y se eliminan a los siete días.</p></section>
 <section aria-labelledby="funciones"><h2 id="funciones">Opciones para lectores</h2>
 <p>Puedes cambiar la presentación y marcar noticias como favoritas en este navegador. Para señalar incorporaciones desde tu visita anterior, se recuerda localmente la fecha de la última edición visitada. No se guarda un historial de noticias abiertas ni se envía ese dato a un servidor. La posición, la búsqueda y las secciones desplegadas se conservan en la entrada de navegación de la pestaña para facilitar el botón Atrás, sin enviar ese estado al servidor. La página también ofrece una <a href="{esc(base)}/boletin-diario.html">vista previa del boletín diario</a>, pero la suscripción por correo solo estará disponible cuando se conecte un proveedor de envíos y bajas.</p></section>
+{directory}
 </main>
 <footer><div class="wrap"><span>Noticias del Momento · Agregador informativo</span><a href="{esc(base)}/">Portada</a></div></footer>
 </body></html>"""
