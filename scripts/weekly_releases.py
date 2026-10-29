@@ -4,7 +4,6 @@ Una publicación reciente no acredita un estreno: sólo se admiten guías que
 mencionan la semana o fechas de su intervalo. No se inventa un catálogo de obras.
 """
 from datetime import datetime, time, timedelta
-from html import escape
 from itertools import islice
 import re
 import unicodedata
@@ -140,32 +139,12 @@ def collect_releases(now,fetch=None,restrictions=None):
     return result
 
 
-def render_releases(items,now):
-    """Las guías no se contabilizan como noticias ni como obras con estreno confirmado."""
-    valid=[];seen=set()
+def current_guides(items,now):
+    """Metadatos vigentes para las tarjetas compartidas de Cultura."""
+    valid=[];seen=set();restrictions=_restrictions()
     for item in items:
-        record=_prepare(item,now,_restrictions())
+        record=_prepare(item,now,restrictions)
         if record and (key:=canonical_key(record['link'])) not in seen:
             seen.add(key);valid.append(record)
         if len(valid)==6:break
-    if not valid:return ''
-    start,end=week_bounds(now);sunday=end-timedelta(days=1)
-    label=f'{start.day} {SHORT_MONTHS[start.month-1]} – {sunday.day} {SHORT_MONTHS[sunday.month-1]}'
-    cards=[]
-    for record in valid:
-        labels=record['platforms'][:2] or ['Cine en Chile']
-        if len(record['platforms'])>2:labels.append('y más')
-        stamp=explicit_date(record['published']).astimezone(TZ)
-        cards.append('<li class="release-card"><article>'
-            f'<p class="release-platform">{escape(" · ".join(labels))}</p>'
-            f'<h4><a href="{escape(record["link"],quote=True)}" rel="noopener">{escape(record["title"])}</a></h4>'
-            f'<p class="release-source">{escape(record["source"])} · Guía de {escape(record["market"])}</p>'
-            f'<p class="release-date">Guía publicada <time datetime="{record["published"]}">'
-            f'{stamp.day} {SHORT_MONTHS[stamp.month-1]}</time></p></article></li>')
-    grid_class='release-grid release-grid--balanced' if len(valid) in (2,4) else 'release-grid'
-    return ('<section class="weekly-releases" id="estrenos-semana" aria-labelledby="estrenos-titulo">'
-            '<div class="releases-head"><h3 id="estrenos-titulo">Estrenos de la semana</h3>'
-            f'<span>{label}</span></div>'
-            '<p class="releases-intro">Cine, películas y series en streaming. Guías de medios; '
-            'consulta fechas y disponibilidad para tu país en cada fuente.</p>'
-            f'<ul class="{grid_class}">'+''.join(cards)+'</ul></section>')
+    return valid

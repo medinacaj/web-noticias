@@ -4,7 +4,6 @@ La identidad de El Chigüire Bipolar identifica sátira, no hechos verificados.
 Google RSS aporta solo metadatos; su disponibilidad no acredita una licencia.
 """
 from datetime import timedelta
-from html import escape
 from urllib.parse import urlencode, urlsplit
 from xml.etree.ElementTree import ParseError
 
@@ -101,18 +100,27 @@ def collect_satire(now, fetch=None):
     return result
 
 
-def render_satire(items=()):
-    """Lista independiente sin atributos de tarjetas ni inclusión en noticias."""
-    links = []
+def validated_items(items,now):
+    """Validación local de metadatos; no consulta fuentes ni incluye la portada del medio."""
+    from scripts.global_sources import load_catalog as world
+    from scripts.regional_sources import load_catalog as regional
+    catalog=world()+regional()
+    result=[];seen=set()
     for item in items:
-        title, link = item.get("title"), item.get("link")
-        if isinstance(title, str) and title.strip() and _valid_link(link) and is_satire(item):
-            links.append(f'<li><a href="{escape(link, quote=True)}" rel="noopener">'
-                         f'{escape(title)}</a></li>')
-        if len(links) == 3:
-            break
-    listing = '<ul>' + "".join(links) + '</ul>' if links else ""
-    return ('<aside class="satire-links" aria-label="Sátira y humor">'
-            '<h3>Sátira y humor</h3><p>El Chigüire Bipolar publica humor y ficción satírica. '
-            'Estos enlaces no describen hechos verificados.</p>' + listing +
-            f'<a href="{SOURCE_URL}" rel="noopener">El Chigüire Bipolar · Sátira</a></aside>')
+        if not isinstance(item,dict):continue
+        title=item.get('title');name=item.get('source');source=_url(item.get('source_url'))
+        published=explicit_date(item.get('published'));link=item.get('link')
+        if (not isinstance(title,str) or not title.strip() or len(title)>500
+                or not isinstance(name,str) or name.strip().casefold()!=SOURCE_NAME.casefold()
+                or source is None or (source.hostname or '').lower().rstrip('.') not in _HOSTS
+                or published is None or not now-timedelta(hours=24)<=published<=now+timedelta(minutes=15)
+                or not _valid_link(link) or not catalog_allowed(item,catalog)):
+            continue
+        key=canonical_key(link)
+        if key in seen:continue
+        seen.add(key)
+        result.append({'title':title.strip(),'link':link,'source':SOURCE_NAME,'source_url':SOURCE_URL,
+                       'published':published.isoformat().replace('+00:00','Z'),'category':'satira',
+                       'metadata_only':True,'summary':'','image':''})
+        if len(result)==3:break
+    return result

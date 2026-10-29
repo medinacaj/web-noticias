@@ -63,7 +63,8 @@ class CoverageDeliveryTests(unittest.TestCase):
     def test_satire_is_labelled_inside_culture_and_excluded_from_feeds_and_schema(self):
         self.assertIn('satire_items', inspect.signature(news.build_site).parameters)
         satire = self.story(99, title='Ejemplo satírico claramente separado',
-                            link='https://www.elchiguirebipolar.net/ejemplo/', sources=['El Chigüire Bipolar'])
+                            link='https://www.elchiguirebipolar.net/ejemplo/', sources=['El Chigüire Bipolar'],
+                            source='El Chigüire Bipolar', source_url='https://www.elchiguirebipolar.net')
         stories = [self.story(i, 'cultura' if i else 'nacional') for i in range(5)]
         with tempfile.TemporaryDirectory() as folder:
             news.build_site(stories + [satire], self.now, folder, satire_items=[satire])

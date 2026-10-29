@@ -69,13 +69,11 @@ class SatireTests(unittest.TestCase):
         records = satire.collect_satire(NOW, fetch=lambda *a, **k: invalid + [entry(30)])
         self.assertEqual([x['title'] for x in records], ['Titular satírico 30'])
 
-    def test_failure_is_empty_and_widget_preserves_labelled_official_link(self):
+    def test_failed_collection_and_validation_stay_empty(self):
         satire = self.module()
         def unavailable(*args, **kwargs): raise OSError('RSS no disponible')
         self.assertEqual(satire.collect_satire(NOW, fetch=unavailable), [])
-        rendered = satire.render_satire([])
-        self.assertIn('Sátira', rendered)
-        self.assertIn('https://www.elchiguirebipolar.net/', rendered)
+        self.assertEqual(satire.validated_items([],NOW),[])
 
     def test_catalog_restriction_prevents_query_even_when_editor_is_satire(self):
         satire = self.module()
@@ -85,17 +83,16 @@ class SatireTests(unittest.TestCase):
             records = satire.collect_satire(NOW, fetch=lambda *a, **k: self.fail('Consultó fuente bloqueada'))
         self.assertEqual(records, [])
 
-    def test_widget_escapes_titles_and_links_and_does_not_create_news_cards(self):
+    def test_validated_metadata_preserves_original_text_for_the_shared_renderer(self):
         satire = self.module()
         record = entry(title='<img src=x onerror=alert(1)> & humor',
                        link='https://www.elchiguirebipolar.net/nota?tema=a&otro="valor"')
-        rendered = satire.render_satire([record])
-        self.assertIn('&lt;img src=x onerror=alert(1)&gt; &amp; humor', rendered)
-        self.assertIn('&amp;otro=&quot;valor&quot;', rendered)
-        self.assertNotIn('<img', rendered)
-        self.assertNotIn('data-key=', rendered)
-        self.assertNotIn('data-story-id=', rendered)
-        self.assertIn('humor', rendered)
+        result = satire.validated_items([record],NOW)
+        self.assertEqual(len(result),1)
+        self.assertEqual(result[0]['title'],record['title'])
+        self.assertEqual(result[0]['link'],record['link'])
+        self.assertEqual(result[0]['category'],'satira')
+        self.assertEqual((result[0]['summary'],result[0]['image']),('',''))
 
 
 if __name__ == '__main__': unittest.main()
