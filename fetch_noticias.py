@@ -306,6 +306,7 @@ def category_google_url(cat):
 
 
 def collect(now, *, history=()):
+    history=tuple(history)
     use_gnews = bool(GNEWS_API_KEY) and now.hour % GNEWS_EVERY_HOURS == 0
     if GNEWS_API_KEY and not use_gnews:
         print(f"GNews: se omite en esta corrida (se consulta cada {GNEWS_EVERY_HOURS} horas por la cuota gratuita).")
@@ -356,6 +357,8 @@ def collect(now, *, history=()):
     items += regional
     if regional:
         print(f"RSS regionales revisados: {len(regional)} titulares recolectados")
+    from scripts.business_sources import collect_business
+    items += collect_business(now,fetch=fetch_rss,restrictions=catalog,existing=items+list(history))
     from scripts.related_news import enrich_coverages
     items = enrich_coverages(items, now, fetch=fetch_rss, catalog=catalog, history=history)
     # WORLD/GNews ya consultados pueden aportar cobertura regional; misma puerta
@@ -567,7 +570,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
                 "_norm": norm,
                 **({'related_coverages': related} if related else {}),
                 **{key: item[key] for key in ("publisher_id", "source_country",
-                   "source_country_label", "metadata_only", "coverage_countries", "discovery_edition") if key in item},
+                   "source_country_label", "metadata_only", "coverage_countries", "discovery_edition", "source_kind") if key in item},
             })
             added += 1
     return added
@@ -760,8 +763,11 @@ def meta_html(story, now, read_link=False):
     from scripts.latam import country_labels
     coverage = "".join(f'<span class="coverage-country" title="País mencionado en el titular">{esc(label)}</span>'
                        for label in country_labels(story))
+    source_kind = story.get('source_kind')
+    kind_label = {'institutional':'Institucional','analysis':'Análisis'}.get(source_kind) if isinstance(source_kind,str) else None
+    kind = f'<span class="source-kind">{kind_label}</span>' if kind_label else ''
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
-            f'{country}{coverage}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story, now)}</p>')
+            f'{country}{coverage}{kind}<time datetime="{to_iso(moment)}"{fresh}>{time_ago(story, now)}</time>{coverage_control(story, now)}</p>')
 
 
 def dek_html(story):

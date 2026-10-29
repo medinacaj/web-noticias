@@ -1156,6 +1156,25 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(colors['rgba'][3], 255)
             self.assertLessEqual(max(colors['rgba'][:3])-min(colors['rgba'][:3]), 16)
 
+    async def test_business_directory_is_grouped_accessible_and_keeps_verified_links(self):
+        await self.page.goto(self.url+'sobre-el-portal.html#fuentes-negocios')
+        directory=self.page.locator('section[aria-labelledby="fuentes-negocios"]')
+        self.assertTrue(await directory.is_visible())
+        groups=directory.locator('details')
+        self.assertGreaterEqual(await groups.count(),5)
+        for group in await groups.all():
+            await group.locator('summary').click()
+            self.assertTrue(await group.evaluate('el=>el.open'))
+        links=directory.locator('li a')
+        self.assertGreater(await links.count(),80)
+        for width in (320,390,768,1440):
+            await self.page.set_viewport_size({'width':width,'height':1000})
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'))
+        self.assertTrue(await directory.get_by_role('link',name='El Referente',exact=True).is_visible())
+        self.assertEqual(await directory.locator('a[href*="redinnova.com"],a[href*="startupschilenas.cl"]').count(),0)
+        self.assertTrue(all(value.startswith('https://') for value in await links.evaluate_all('els=>els.map(el=>el.href)')))
+        self.assertEqual(await directory.locator('a[target="_blank"]').count(),0)
+
     async def test_radar_cards_keep_counts_close_and_wrap_long_titles(self):
         import tempfile
         from datetime import datetime, timezone

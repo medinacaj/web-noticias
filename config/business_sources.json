@@ -1,0 +1,3341 @@
+{
+  "version": 1,
+  "reviewed_at_utc": "2026-10-29",
+  "scope": "Identidades y descubrimiento por RSS Google Noticias existente; no autorización de editores ni feeds directos",
+  "sources": [
+    {
+      "id": "biz-1-startups-chilenas",
+      "request_id": 1,
+      "name": "Startups Chilenas",
+      "group": "startups",
+      "kind": "news",
+      "market": "Chile",
+      "domain": "startupschilenas.cl",
+      "url": "https://startupschilenas.cl",
+      "search_scope": "startupschilenas.cl",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": true,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:43Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Astartupschilenas.cl&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://startupschilenas.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Migrante cierra serie A por US$ 29 millones y debutará en Colombia durante el segundo semestre de 2022",
+          "published": "2022-03-29T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWjI3NV8wMlN4MnAyVS1fQjZRUUF2ZUM0bTNTLW1kbHcxX2NrbnBnRzcxbkRCRkpWQ3M2U1V2cFFFQlVqUHA0dDFhMjk5b1lnVWtmeVB6cnZfR2NjU0tMQkl4dkU1aW9rcE9zNlRodTJpNkxwM3NYWldlMzk0dWM3dzBqcFJncHlyNWNFeEFRYXVlQ3BYLXJPUjQ0Q3ZobXZWYldtWk45QmFuYjE4NXU1UFFMa1pUbWkxQ2VwWmZKTlRtR05iOTZRR0x2WVg5Zw?oc=5"
+        }
+      },
+      "notes": [
+        "Hay atribución propia en startupschilenas.cl, pero los ejemplos periodísticos localizados son de 2022. No se ha establecido actividad reciente.",
+        "El índice también contiene títulos sobre casinos y apuestas; revisión de continuidad y calidad editorial pendiente antes de considerar activación."
+      ]
+    },
+    {
+      "id": "biz-2-tekios",
+      "request_id": 2,
+      "name": "Tekios",
+      "group": "startups",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "tekiosmag.com",
+      "url": "https://tekiosmag.com",
+      "search_scope": "tekiosmag.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:43Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Atekiosmag.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://tekiosmag.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Celes cierra Serie A de US$5 millones para expandir su IA de abastecimiento retail en Brasil",
+          "published": "2026-10-29T02:37:30Z",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNjFjNnRaYUdLVWJVOWkyRktUdkd5N0theUNxMlktYXRRUVYxNEMtdVdVYkt6NkZjWVFURVR5SGJWTlo1aUJoTld1Tk0zRWM4VzRteGR3ZnpQRVZhWVB1ZTFFb0JPNzI4VndoNnY3bVlQZkR5dUY1bUNFZURQMlVFZGc2N2xoXzBia2lkSThEa2lYb3hnaHRXVmdsSlZqNnFZeGJZU0g3YzRQa2hEOGdqSFdFc1F1UFZwSHZtV3N4SDdHem8?oc=5"
+        }
+      },
+      "notes": [
+        "El índice atribuye a tekiosmag.com noticias de startups latinoamericanas. El país de establecimiento no queda demostrado por esta evidencia."
+      ]
+    },
+    {
+      "id": "biz-3-contxto",
+      "request_id": 3,
+      "name": "Contxto",
+      "group": "startups",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "contxto.com",
+      "url": "https://contxto.com",
+      "search_scope": "contxto.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:45Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acontxto.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://contxto.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Fen Ventures anuncia su cuarto fondo de hasta $50 millones de dólares para startups de IA",
+          "published": "2026-09-29T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWHUzMF9sTllzT2daaWg3akZ1YzN1ZVFFWDhreUxUQmFBelkybi1xSFlzWGJ1bkZVeDFUcHI0aHZKbVJSVWw5M3JCWDZPNHMyRzRqUmhRYl9FaFVpemwwYkhIQ1hVWHBrbHpQM2FJSU4xSjg0aGdScXQ2X2NhNUVFWDhuZFBfZnlZN1laVkphS2t3aXpYa1JvRmtSeVdhQW11cTNQMDdIM2cyV0h5YkFNamhOT3ZhVmRZSTRXeU1oVFVtWGNtYzRPYVZKOA?oc=5"
+        }
+      },
+      "notes": [
+        "Se observaron source_url con y sin www; ambos se conservan. Cobertura regional, sin país de establecimiento determinado."
+      ]
+    },
+    {
+      "id": "biz-4-startups-latam",
+      "request_id": 4,
+      "name": "Startups Latam",
+      "group": "startups",
+      "kind": "news",
+      "market": "Chile",
+      "domain": "startupslatam.com",
+      "url": "https://startupslatam.com",
+      "search_scope": "startupslatam.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:45Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Astartupslatam.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://startupslatam.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Reuse levanta US$21 millones para escalar el mercado de tecnología reacondicionada en Latinoamérica",
+          "published": "2026-10-05T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMjgyMTl6by15YllhXzR4MmU2MUJROS1obXVZTDhTWTRTaFpLSVMxZ0s3anRNeFI4UkNJMkJpT1pYZXpUN25jVThfSlBpcHZfczljOWJnNEJoME5Bb051ei1IYWRMdzJuNWNqZTRVSjhKZlRQcjFBUUhOSEdIZkpFak1FRm9nWTViZEp1Z0JwME5XOFd0anhMb2lXbEwybmZjc2pMLVpySGFrbHo0eUprdGZMTjRRNHRqT0ExcEkwMWRJYTQ?oc=5"
+        }
+      },
+      "notes": [
+        "La identidad indexada coincide con Startups Latam; cobertura regional de startups."
+      ]
+    },
+    {
+      "id": "biz-5-procommercio",
+      "request_id": 5,
+      "name": "ProCommercio",
+      "group": "startups",
+      "kind": "news",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:47Z",
+        "query_url": "https://news.google.com/rss/search?q=%22ProCommercio%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "PENDIENTE: dos consultas, incluida la grafía literal ProCommercio, no aportaron resultados. Nombre, dominio, país y perfil editorial sin confirmar."
+      ]
+    },
+    {
+      "id": "biz-6-distrito-emprendedor",
+      "request_id": 6,
+      "name": "Distrito Emprendedor",
+      "group": "startups",
+      "kind": "news",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:47Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Distrito+Emprendedor%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "PENDIENTE: el nombre aparece en proyectos o eventos de países distintos. Ningún resultado identificó un publisher propio llamado Distrito Emprendedor.",
+        "La consulta sin espacios devolvió YouTube; no demuestra la identidad de un portal ni un dominio editorial."
+      ]
+    },
+    {
+      "id": "biz-7-el-referente",
+      "request_id": 7,
+      "name": "El Referente",
+      "group": "startups",
+      "kind": "news",
+      "market": "España",
+      "domain": "elreferente.es",
+      "url": "https://elreferente.es",
+      "search_scope": "elreferente.es",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:48Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aelreferente.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://elreferente.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Namirial firma un acuerdo para adquirir ZeroComa",
+          "published": "2026-10-26T10:19:13Z",
+          "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNS19UN1RBVWx1bGx1eEFJUlZiRWdkdExNQzFZeGx0UExqUWozX1NWUmtfWi1jSlZkLVBSZEwwZkFqZzVHQ3E2aEpzQm5RdDlTd3VDT3NzMElrV0pZN0NZV0UzRGZBZ2FSWnFyS1dMSmJyZmZXR1R2NkY0RzduNFp2dURpRzdPNjhaQmphV0drVF9FYnB1ay10aGgzNkQwbTY5RHJDdGhjdVU3REZ6a0xIUThFdlBXb01Jd3d1cGVCcVo5d0VUZWFIRVJGT2pLaUpMMGVlYWw2S3otdkFSNXEyLVJNcVBrZ2ZuVWlV?oc=5"
+        }
+      },
+      "notes": [
+        "Medio de noticias de emprendimiento e inversión con publisher El Referente."
+      ]
+    },
+    {
+      "id": "biz-8-startupxplore-blog",
+      "request_id": 8,
+      "name": "Startupxplore Blog",
+      "group": "startups",
+      "kind": "analysis",
+      "market": "España",
+      "domain": "startupxplore.com",
+      "url": "https://startupxplore.com",
+      "search_scope": "startupxplore.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:48Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Astartupxplore.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://startupxplore.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Guía sobre la deducción por inversión en startups en España (Ley 28/2022)",
+          "published": "2026-05-20T08:31:36Z",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNY3gxSTgwNkFiY0VsaDdibEF1UEx4V2VudVFpVmNVR1V3TjR6ampMS0x3X2JhNTRtRlhBQzRuRHlZazFkU0MzdlJoRUtNaHlSdXE1X3pvVVhaU2JRZ3BIbHhSV3J2X2ZIaWpQUzF0YjdFaVhnYzJNaHJXYU9jbnpIc0lvWk55NU0xdWsxZ1Byb1lRMHRXc0pXaWV4MGkwZk5XSk03NTNPcURsQQ?oc=5"
+        }
+      },
+      "notes": [
+        "La consulta restringida a /es/blog sí aporta artículos del blog. La plataforma publica también ofertas de inversión; clasificación analysis."
+      ]
+    },
+    {
+      "id": "biz-9-start-up-chile",
+      "request_id": 9,
+      "name": "Start-Up Chile",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Chile",
+      "domain": "startupchile.org",
+      "url": "https://startupchile.org",
+      "search_scope": "startupchile.org",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:50Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Astartupchile.org&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://startupchile.org",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "BIG 12: Descubre las startups seleccionadas",
+          "published": "2026-07-22T18:23:27Z",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdWdITm15ejBnQlp4bzNLMWJMeXFfVzBab0QzU3gxOGZ2X0twSzJHNkQwaU9JT0hmZVBFa1BjUDc2Xzk0a3ROR1BhWjduSlVyeE1Ra1VyUzNNOS1UMlV4bjhIbDRncDdNVnhNZFE3V0NWMVYxSGNRNmlpZ0NYRk12eElVbTZCWm8?oc=5"
+        }
+      },
+      "notes": [
+        "Programa de aceleración: publicaciones institucionales, no medio independiente."
+      ]
+    },
+    {
+      "id": "biz-10-endeavor-espana",
+      "request_id": 10,
+      "name": "Endeavor España",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "España",
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:50Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aendeavor.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "PENDIENTE: endeavor.es y la alternativa endeavor.org.es no devolvieron publicaciones propias en las consultas realizadas.",
+        "Los resultados por nombre son noticias de terceros sobre Endeavor España; no prueban que esos terceros sean su sitio ni confirman el dominio propuesto."
+      ]
+    },
+    {
+      "id": "biz-11-wayra-insights",
+      "request_id": 11,
+      "name": "Wayra Insights",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Latinoamérica",
+      "domain": "wayra.com",
+      "url": "https://wayra.com",
+      "search_scope": "wayra.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:35Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Awayra.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://wayra.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Wayra participates in a €3.7M investment round in Capably to lead the next wave of intelligent automation",
+          "published": "2026-04-21T22:20:20Z",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNN05XMUQ2MDhoZXZxTExvYVJZVzQxNWhkN3kxZDFPSDBMYk9TVVZvd0hjQlhnWDNQaG5jVDJ5UnE0bHZiNERDOFBQMUtzcXZkUUpfSEtJOF9icGptWFhONldDUzI1VXl4SHI0b1ZCMDhwYVZYaDZSOEV6ZHdGbERqcE1rTmZwejM2bEZPVVd3OW9BQUR2NFgwMmtxc0pMN1c5ckxSMEpKaGRJUHl4eUJKNHJaUzJBVGdVSk5ZOUhhaE1BSXhYcHQwZGhSYnZsVVBnd0VmYjFSbHlNUWM?oc=5"
+        }
+      },
+      "notes": [
+        "wayra.es no aportó resultados; wayra.com sí tiene publisher propio y anuncios de inversión.",
+        "La etiqueta solicitada Wayra Insights no se identificó como publisher separado; se respalda Wayra en wayra.com."
+      ]
+    },
+    {
+      "id": "biz-12-platzi-startups",
+      "request_id": 12,
+      "name": "Platzi Startups",
+      "group": "startups",
+      "kind": "analysis",
+      "market": "Latinoamérica",
+      "domain": "platzi.com",
+      "url": "https://platzi.com",
+      "search_scope": "platzi.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:52Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aplatzi.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://platzi.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Aplica al Demoday 2026 de GoFest y Platzi",
+          "published": "2026-06-24T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGV05Od2lVbkdvTGltQURxYVNnQkhJY2lGRTNFMkVsQmtCUHdQQW9selBFS05lbWtSSFg2dkxKVzhPM1B3VFoxd19DUWRMcW9Za19jdQ?oc=5"
+        }
+      },
+      "notes": [
+        "La consulta /blog startups aporta publicaciones de Platzi sobre startups. Platzi Startups no se identificó como publisher separado.",
+        "Es contenido de la empresa/plataforma formativa; el índice no determina un país de establecimiento único."
+      ]
+    },
+    {
+      "id": "biz-13-endeavor-chile",
+      "request_id": 13,
+      "name": "Endeavor Chile",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Chile",
+      "domain": "endeavor.cl",
+      "url": "https://endeavor.cl",
+      "search_scope": "endeavor.cl",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:53Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aendeavor.cl&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://endeavor.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Chile sabe emprender. Ahora tenemos que aprender a escalar.",
+          "published": "2026-10-23T13:17:25Z",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZmFHUkt5akFRS3ZWZFBKeE5YVFJQcDR4Wkdib3FPUmJOMkowYnhiMEN2MjhOU01RUC0zcUlVbjBwT1NQb1lxVkJHS0xVckszOHY1X05nUXFfRW8zMHE5Q0xGWTd5RTQwZVdQR2hTZEpoTlZUaVJBQnU3eTIxWXZaSlFkNzI?oc=5"
+        }
+      },
+      "notes": [
+        "Identidad propia Endeavor Chile. Contenido institucional y de análisis de su ecosistema."
+      ]
+    },
+    {
+      "id": "biz-14-ruta-n",
+      "request_id": 14,
+      "name": "Ruta N",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Colombia",
+      "domain": "rutanmedellin.org",
+      "url": "https://rutanmedellin.org",
+      "search_scope": "rutanmedellin.org",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:54Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arutanmedellin.org&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://rutanmedellin.org",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Ruta N revela primera radiografía del ecosistema de innovación antes de publicar el primer ranking oficial de Medellín",
+          "published": "2026-10-05T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOa3d4QnhGM3JkeVJsUjlvTHlNelRQWHVWYjU5TnZ2ODYxcHhPLXYtZ0JCSjA3WTNOX0haMGNGUjhLc192SmZKUHpscjQ5ZW12eWFkY295elpwOENlMTNjeXVZRGhKYUtsT1pWb0k3OEVDYWdGVlRBRkxneDRvV3U3eGUxWHRIZU5Dc3NvbUFQZ2dXcW5rdEZQNDdqandwYVEtS21sbHJaT1BFN3RvUHhNR3J3T2JwUWFMelYwNUlDSW1ka3BNMHFZMHB1MW1jUFZtTXNMRUFMVENZLVQxZTlOaXNWckxHYWJjN3Q3NUptbjRzaWVoTjdUZS1SY1TSAYwCQVVfeXFMUFlwTW90THhmRjBsdDA4OWhpWVNPSDh1c3VfLWlpWF9jWkVCdEE3VnpYZEYyWGhQUzZiZzRIVEx0YjhpWnY0aDJJb1Nlb0E5eG83X0pFYzA1QlhoX3NGeGhDMWprNzBCcUtLakNzdmFBcGNwM0ZRMnlFM3VOSTc5VkhNYWNZYk0yX2k4SzVGWWRmQUR1YkxhZzI5SkpnR1lwRWlWTXhxT0U2WHc2RkRKQ0txNWRNUHVZajZmMENGMHdIZHE1QnVBVENEc0hyQkVpRUtkai1od0ZJSXBhbTNEaDZGZllFZFVxM3FreGIxRFF4cFduckxfVDY3a3ZFQ0tDM2hSaVN3bS1yeXlLMA?oc=5"
+        }
+      },
+      "notes": [
+        "Identidad propia Ruta N Medellín. Se excluyeron de los ejemplos los sistemas y subdominios documentales."
+      ]
+    },
+    {
+      "id": "biz-15-arcap",
+      "request_id": 15,
+      "name": "ARCAP",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Argentina",
+      "domain": "arcap.org",
+      "url": "https://arcap.org",
+      "search_scope": "arcap.org",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:54Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aarcap.org&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://arcap.org",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Panorama del Capital Emprendedor Argentino 2026",
+          "published": "2026-06-03T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeWM2QmtqRjZtWlhtamdjb0xwVTBQZ0ltWUNKdWlYMldfcVNGZWNtVlFURlpKRnB5OXVyYU45NGJTYjF5R0lSenNwdUh6TlRDMDF3UEdyZ1lOSldkUng2RjdHQTNDdjNRUU80MWFjNmMyODJLUUVDMUdQbWYxVWFUYlgxNlFxckJJaFZRNkJsQQ?oc=5"
+        }
+      },
+      "notes": [
+        "Asociación de capital privado/emprendedor. Los ejemplos incluyen informes y directorios, no un flujo de noticias independiente."
+      ]
+    },
+    {
+      "id": "biz-16-socialab",
+      "request_id": 16,
+      "name": "Socialab",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Latinoamérica",
+      "domain": "blog.socialab.com",
+      "url": "https://blog.socialab.com",
+      "search_scope": "blog.socialab.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:56Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Asocialab.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://blog.socialab.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "10 Ejemplos de Emprendimiento Social - Blog Socialab -",
+          "published": "2019-03-14T14:58:40Z",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBya3AwNkdPYzFfRjRUU0RHeldzSjB5Zm1valFkMWF1a3hqOERHb3lFS05CTEZkaXVrd01nM2J2S3pYazdfd20yUWZlYjFEczdwdlRoaTFDWDlOV3J4eFg5VDE1cS1iNU5aN2ZONjNILWw?oc=5"
+        }
+      },
+      "notes": [
+        "Sólo se comprobó atribución indexada en subdominios Socialab. El blog ofrece un ejemplo con título no vacío de 2019.",
+        "No se establece actualización actual del blog ni se presume que las páginas de comunidad sean artículos."
+      ]
+    },
+    {
+      "id": "biz-17-amexcap",
+      "request_id": 17,
+      "name": "AMEXCAP",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "México",
+      "domain": "amexcap.com",
+      "url": "https://amexcap.com",
+      "search_scope": "amexcap.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:56Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aamexcap.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://amexcap.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "ILPA Institute en México: dos cursos simultáneos para GPs y LPs",
+          "published": "2026-10-01T20:44:04Z",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNE1pcTN2b3FaSDFJSmdORUZhS0dNeFBiUDNCTmVDMjJPU1Zlem1VOFY0S0tac3ZuN3RtOUN1X3Y5RGVkdk5leGtTc2pzTDVWNTl6MTNiREdPSkZOVGk4NzFQekhlUENWNXY1S3ZkU3FfRjdhbTZZZ05MbS14Z1FrbU5JcVJMT19kR01Z?oc=5"
+        }
+      },
+      "notes": [
+        "Asociación mexicana de capital privado. Comunicados y actividades institucionales."
+      ]
+    },
+    {
+      "id": "biz-18-startup-mexico",
+      "request_id": 18,
+      "name": "Startup México",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "México",
+      "domain": "startupmexico.com",
+      "url": "https://startupmexico.com",
+      "search_scope": "startupmexico.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:57Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Astartupmexico.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://startupmexico.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Primero AI levanta 12 millones de dólares para automatizar procesos corporativos",
+          "published": "2026-09-02T17:23:17Z",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFB0clhXV3B2ZHlTeEUzZE1telQtaERqYkd6THpVLWdWV1lnYmJrLXk1WXNDQXlZeXpCM3Itbi1UTS1rdHVLZjFHQnBWYlNCQkhqREVzWFhyQ250U0xmMnZxenp3MjlHQUNzc203MEFHNkNFdlNSSE8zWTFwTEJ2bGVhR25KSVlLRVAxN0wzUl9JZndReGp2YkJwYjNZWGE5bkV1QmpJbjZMTkE?oc=5"
+        }
+      },
+      "notes": [
+        "Publisher propio Startup México; el carácter institucional es una clasificación propuesta y debe revisarse con el sitio al poder acceder."
+      ]
+    },
+    {
+      "id": "biz-19-ccb-innovacion",
+      "request_id": 19,
+      "name": "CCB Innovación",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Colombia",
+      "domain": "www.ccb.org.co",
+      "url": "https://www.ccb.org.co",
+      "search_scope": "www.ccb.org.co",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:57Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Accb.org.co&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.ccb.org.co",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "El sentido de innovar",
+          "published": "2026-10-21T17:57:58Z",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5UNzB4R3NVQWNsdTVnc1pvYXd5WXQ0NGJoNnpzNndoY1dRN1loUE4wQ2tKNlQyeXJxT1dRRWJLRWRORUhjSTJDQWNUeGNjeUdzSzR0bGlVVC1tbDhoeXBJeS15d243RHVPYUNBb1FjZ3lvcGlXaHdrN1RaQi1xUQ?oc=5"
+        }
+      },
+      "notes": [
+        "La fuente indexada es Cámara de Comercio de Bogotá. CCB Innovación es la sección/tema solicitado, no un publisher separado confirmado."
+      ]
+    },
+    {
+      "id": "biz-20-rockstart-latam",
+      "request_id": 20,
+      "name": "Rockstart Latam",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Latinoamérica",
+      "domain": "rockstart.com",
+      "url": "https://rockstart.com",
+      "search_scope": "rockstart.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:58Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arockstart.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://rockstart.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "El Error al Confundir Cap con Valoración",
+          "published": "2022-08-16T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWTFNMm9RUlR1MENTM1Vtb0VfREZxMWFucUc2Q2M2cTJJTlI2V1A3N3drc3EwZGp6SkNvTV9Lb1VpSmhwcFZoYWQzSWsyUldQZ0pXQlFZNi03ZFZHbFRqdmxCRWxOMk1aN2JTcTNzc3RsREEtOTJ4MFBLQkNPRHVMQi11dUx4dw?oc=5"
+        }
+      },
+      "notes": [
+        "El publisher del dominio rockstart.com tiene artículos en español sobre Latinoamérica; no se identificó un publisher separado llamado Rockstart Latam.",
+        "Los ejemplos localizados son de 2022–2023; continuidad actual sin comprobar."
+      ]
+    },
+    {
+      "id": "biz-21-asea",
+      "request_id": 21,
+      "name": "ASEA",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Argentina",
+      "domain": "asea.org.ar",
+      "url": "https://asea.org.ar",
+      "search_scope": "asea.org.ar",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:59Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aasea.org.ar&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://asea.org.ar",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "¿Querés difundir la Encuesta Nacional de Emprendedores #2?",
+          "published": "2025-12-17T11:23:25Z",
+          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBib28yaVN4eDJkc3lkaGVRSXRqOXlfcmR4bUlpbVBGRjM3LWZPSFJZaFBLVUtSckxwc0puWDBPaVJTQXJ5?oc=5"
+        }
+      },
+      "notes": [
+        "La atribución dice ASEA - Asociación de Emprendedores de Argentina; permite distinguirla de otras entidades que comparten las siglas."
+      ]
+    },
+    {
+      "id": "biz-22-hubbog",
+      "request_id": 22,
+      "name": "HubBOG",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Colombia",
+      "domain": "www.hubbog.com",
+      "url": "https://www.hubbog.com",
+      "search_scope": "www.hubbog.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:00Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Ahubbog.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.hubbog.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Validación vs. planeación: el cambio de mentalidad que exige la inteligencia artificial",
+          "published": "2026-08-05T23:42:50Z",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fQkJXbVQwOHhQanliSTZlYTlNQUZ4RGZic1dtZFpkT0w2N0NnMnlaTzRPT0ZiOEplSGFWVnJNT05DTUx2VHVhYm43YUNGVm1vS1h6aFFkS1VkbloyV1NCM2xRVnhNOFF3RHczSVJWOG5xUQ?oc=5"
+        }
+      },
+      "notes": [
+        "El publisher propio es HubBOG en www.hubbog.com; los ejemplos son análisis/formación empresarial."
+      ]
+    },
+    {
+      "id": "biz-23-kushki-insights",
+      "request_id": 23,
+      "name": "Kushki Insights",
+      "group": "startups",
+      "kind": "analysis",
+      "market": "Latinoamérica",
+      "domain": "www.kushkipagos.com",
+      "url": "https://www.kushkipagos.com",
+      "search_scope": "www.kushkipagos.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:00Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Akushkipagos.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.kushkipagos.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Kushki Insights | Papers y Webinars sobre Pagos en LATAM",
+          "published": "2026-03-14T01:01:03Z",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPOUxmM0NmY2hBNVhNaVFydHRfOTlrelZmaS1mcWtKaEE4WHYtQTlpRHhhOXNHQ01IWVNvT0lQNVQ2RGpDeEpKVXRiLWY5bDhoTXRmNnQzajR2R3BMZ05OcDRtQkszR2M?oc=5"
+        }
+      },
+      "notes": [
+        "La consulta general devolvía mucha documentación técnica. Los ejemplos se restringen al publisher www.kushkipagos.com.",
+        "Se identificó una página Kushki Insights y una publicación de Kushki; no se verifica un feed específico de Insights."
+      ]
+    },
+    {
+      "id": "biz-24-masschallenge-mexico",
+      "request_id": 24,
+      "name": "MassChallenge México",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "México",
+      "domain": "masschallenge.org",
+      "url": "https://masschallenge.org",
+      "search_scope": "masschallenge.org",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:00Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Amasschallenge.org&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://masschallenge.org",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "35 startups compiten por $2 millones de pesos mexicanos",
+          "published": "2019-06-06T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUDZvMS14ZUN4MFVtLWlyQ0ZBelNvcXBRR2pOSVkyRkg1VGZ6RGpTaFVZT3JaVDFYRDN4RjN1OEhaNVdvTzJNZ1RMZG9SNzVIb2JRRkZ1eGtCSTgxRjVrbEZOY0ZXblQyM1N0V05Wd1hhOHV2S3I5N2VrLXdSY2ZZTldRdkprMHZ5bEJsbzk2TXZJZw?oc=5"
+        }
+      },
+      "notes": [
+        "Únicamente apareció una publicación propia relacionada con México, de 2019. La vigencia de una sección México y su flujo actual siguen pendientes."
+      ]
+    },
+    {
+      "id": "biz-25-latamlist",
+      "request_id": 25,
+      "name": "LatamList",
+      "group": "startups",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "latamlist.com",
+      "url": "https://latamlist.com",
+      "search_scope": "latamlist.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:02Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Alatamlist.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://latamlist.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Kubo Financiero and Crédito Maestro advance $35.6M merger",
+          "published": "2026-02-18T08:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUllkTElIb0t4cnVhY1hPSEdVSzQwNTJWdTdxMG53ckxaQWRTbHVPZGU1TlpnSFVpRWNvYnoteGRQSzJqWWJfS1YtaHV1OC11bEw5OGFUZmhuLUhhTUx6SE9fRjJLU0JGOXVzSzI2bzVkOU5JelBCdkdWYlZYNHZPOFRnOUpQd9IBiwFBVV95cUxPekZkU0lBZF9PM1AxVk16MmRFUDZLR0U2STcyNEE0ZktKN0VUbmRhY01VYy1la19TOFJGT1E3Zk5KRVJ1SWZGclJ0aGFfamFCUHFIY3M5VThwLUpQOWt0TmZESG5QMmg0Tk1neG9Ib2JHYkgtXzVWcFM4eHktaUNRakxaeHNqZ3FLSERB?oc=5"
+        }
+      },
+      "notes": [
+        "Medio regional en inglés con publisher LatamList; país de establecimiento no demostrado."
+      ]
+    },
+    {
+      "id": "biz-26-finnovista",
+      "request_id": 26,
+      "name": "Finnovista",
+      "group": "startups",
+      "kind": "analysis",
+      "market": "Latinoamérica",
+      "domain": "www.finnovista.com",
+      "url": "https://www.finnovista.com",
+      "search_scope": "www.finnovista.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:02Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Afinnovista.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.finnovista.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "RADAR ARGENTINA 2024",
+          "published": "2024-11-28T00:14:08Z",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdlRHWS16WWlHRG51MUdsS0xLNmxnRU9kaTlpRGJPTTlTQUdoMWkyNmF1MDJEV1U4NlZYVFJNLWljMXQ3MTlOTGoyOE9OMUJLS295cV9adGcwMEx2bU5CSmZVNm5HQ0g2UjVBb0JzSlJXTFhySUpmSi1fX05lWmp5NzduTG5kc0tfMmlzTHhwbXEtLXFUMzdWem10SGxYQQ?oc=5"
+        }
+      },
+      "notes": [
+        "Firma de innovación/inversión fintech; índice de informes y análisis. Actividad editorial posterior a 2024 no establecida en esta muestra."
+      ]
+    },
+    {
+      "id": "biz-27-pecap",
+      "request_id": 27,
+      "name": "PECAP",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "Perú",
+      "domain": "www.pecap.pe",
+      "url": "https://www.pecap.pe",
+      "search_scope": "www.pecap.pe",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:03Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Apecap.pe&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.pecap.pe",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Censo de Startups",
+          "published": "2023-07-25T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqLTlVRUZUX1lNUEV6QjV0eWFrQzhHcTdFeXFOXy1xX3c3XzRPWklvckhxY0ZKV0xhVjZQbUR0eW42SjhLT1N6d0NIbmhyZ0k?oc=5"
+        }
+      },
+      "notes": [
+        "La atribución identifica Asociación Peruana de Capital Semilla y Emprendedor. Los ejemplos son censo y recursos institucionales."
+      ]
+    },
+    {
+      "id": "biz-28-impact-hub-madrid",
+      "request_id": 28,
+      "name": "Impact Hub Madrid",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "España",
+      "domain": "madrid.impacthub.net",
+      "url": "https://madrid.impacthub.net",
+      "search_scope": "madrid.impacthub.net",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:03Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Amadrid.impacthub.net&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://madrid.impacthub.net",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Alberto Alonso, nuevo director de Impact Hub Madrid para consolidar los proyectos de impacto en el ecosistema",
+          "published": "2026-05-28T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMjlxdTRYMVh0UERkTDZ3eWQ0YlJGZUVoN2JPa0tiUXJ0VFhjdWNoTm5JdGhQZWwwYWVxT2x0bzdKRG9nbFR5RlRSX0VHRnozNjZQUl9pclRHZ004QWtqTm5mM0xJZ1RlX3ZqOFZOS3JXME9jcWJXQkY0a281UzN3MUpFa3dBQQ?oc=5"
+        }
+      },
+      "notes": [
+        "Publicaciones institucionales y explicativas del hub; no medio independiente."
+      ]
+    },
+    {
+      "id": "biz-29-gridx",
+      "request_id": 29,
+      "name": "GridX",
+      "group": "startups",
+      "kind": "analysis",
+      "market": "Argentina",
+      "domain": "www.gridexponential.com",
+      "url": "https://www.gridexponential.com",
+      "search_scope": "www.gridexponential.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:23Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Agridexponential.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.gridexponential.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "GRIDX | A life-centered fund for a life-centered revolution",
+          "published": "2017-01-19T01:45:34Z",
+          "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBkSzFTbUtqcDREcG43MEtSeElEVmZYQllTeXVwRVk4QVpSS0dVdDlFRjdSaUpreGJsQTk2ZVZYTFpFZUVENmc4?oc=5"
+        }
+      },
+      "notes": [
+        "gridx.bio no devolvió resultados. El dominio alternativo www.gridexponential.com tiene publisher Grid Exponential y un título que contiene GRIDX.",
+        "Se confirma identidad indexada por esa asociación, pero los resultados son portada, portfolio, contacto y convocatoria; no se localizó un artículo propio ni un feed."
+      ]
+    },
+    {
+      "id": "biz-30-startups-real",
+      "request_id": 30,
+      "name": "Startups Real",
+      "group": "startups",
+      "kind": "news",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:05Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Startups+Real%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "PENDIENTE: las grafías Startups Real y StartupsReal no identificaron un publisher propio ni un portal inequívoco.",
+        "Los resultados se refieren a startups o a Real Madrid; no se asignan los dominios de esos artículos a la fuente solicitada."
+      ]
+    },
+    {
+      "id": "biz-31-south-summit",
+      "request_id": 31,
+      "name": "South Summit",
+      "group": "startups",
+      "kind": "institutional",
+      "market": "España",
+      "domain": "www.southsummit.io",
+      "url": "https://www.southsummit.io",
+      "search_scope": "www.southsummit.io",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:24Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Asouthsummit.io&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.southsummit.io",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Article | South Summit Madrid 2026 reveals 100 AI-driven finalist",
+          "published": "2026-05-19T11:38:49Z",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdGctNDZaR0o4YWRlVEtDTTNDajBMcHhRQmZ5TFBRQ1VCYjdiNWpVbTZydURrdnY1djJLdGY2ZFdrQ19NOTBvaGJoV2Vmb2dTRUZYaktHTUZEYkd5WEZiV2k0VTZOakg1aFlwei0wRzI0bS12R0h3dGRNTDd4Q1ByaXJWTUp6V2p0eU9qUzhIR1NIQzVIemJGZ21GbTBQaHc0Y0Rn?oc=5"
+        }
+      },
+      "notes": [
+        "southsummit.co no devolvió resultados. www.southsummit.io sí atribuye publicaciones a southsummit.io y contiene títulos South Summit.",
+        "Los ejemplos son comunicación del organizador y su informe Entrepreneurship Map."
+      ]
+    },
+    {
+      "id": "biz-32-encomenda-smart-capital",
+      "request_id": 32,
+      "name": "Encomenda Smart Capital",
+      "group": "startups",
+      "kind": "analysis",
+      "market": "España",
+      "domain": "encomenda.com",
+      "url": "https://encomenda.com",
+      "search_scope": "encomenda.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:05Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aencomenda.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://encomenda.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La red que mueve el VC",
+          "published": "2026-05-27T07:51:58Z",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kejJJRFJzN2dlV1ZOaEhfWjJNUm05SzQyTlJTNS1ZMmZDeXlDbWlRUm9zWUZ3aVNHMlFKVi1pN2JYd2VwcjQ5UE1STFk0UkItUzU2Sm5vRTdkYVNhQXpkMUQxODN5WTN5R1JtLQ?oc=5"
+        }
+      },
+      "notes": [
+        "Publisher propio encomenda.com con análisis de venture capital. No se verifica de forma independiente propiedad, equipo ni denominación social."
+      ]
+    },
+    {
+      "id": "biz-extra-startupi",
+      "request_id": null,
+      "name": "Startupi",
+      "group": "startups",
+      "kind": "news",
+      "market": "Brasil",
+      "domain": "startupi.com.br",
+      "url": "https://startupi.com.br",
+      "search_scope": "startupi.com.br",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:40Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Startupi%22&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+        "source_url": "https://startupi.com.br",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "A terceira onda do venture capital latino-americano tem endereço: Monashees, Google e B3 inauguram hub de IA em São Paulo",
+          "published": "2026-09-03T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMDJqT1ZQMzM1LThpVGY5VktXQ29wa3RTSVlGZXY1VXlKU2UwWTFBbTVHMjlkeExaR01BblI0VGNpMDNFQTBJY2d2RDlLLU1JUHFDaW53bzBLVDFMVHR0QkhfZU13TGlsSnd4eDV2elcySVRreWhxeE9NaUNfY0drS3ZWc3dOME44NkdnaHg2SFBjM1Q4WkJlVmxKSnBTWUJKWXJlRlJBbVNrZzFmUElKTUFPRVJNdnhKWWw1STBTY1R4M0RxdHFvVXYzenRHRFh3anQ5TFBEdjYyX3NX?oc=5"
+        }
+      },
+      "notes": [
+        "La consulta con locale español no aportó resultados; la búsqueda en portugués identifica publisher Startupi en startupi.com.br.",
+        "Los resultados de otro publisher que menciona Startupi se excluyeron de los ejemplos propios."
+      ]
+    },
+    {
+      "id": "biz-extra-latitud",
+      "request_id": null,
+      "name": "Latitud",
+      "group": "startups",
+      "kind": "analysis",
+      "market": "Latinoamérica",
+      "domain": "latitud.com",
+      "url": "https://latitud.com",
+      "search_scope": "latitud.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:41Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Alatitud.com&hl=en-US&gl=US&ceid=US%3Aen",
+        "source_url": "https://latitud.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Latitud",
+          "published": "2023-11-03T10:01:43Z",
+          "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE4wV00tWXhkZUdpNDRTZ0FfQ3JvclhzTVZMOVN4OHVVQWhwZEttY0tMTUk2ak9wc29xNlR0VVZBQ2h5Z2c?oc=5"
+        }
+      },
+      "notes": [
+        "El locale inglés muestra atribución propia en latitud.com y sus subdominios.",
+        "No se localizaron artículos en /blog; los dos ejemplos son páginas institucional y de evento. Identidad indexada, utilidad como flujo editorial pendiente."
+      ]
+    },
+    {
+      "id": "biz-extra-iupana",
+      "request_id": null,
+      "name": "iupana",
+      "group": "startups",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "iupana.com",
+      "url": "https://iupana.com",
+      "search_scope": "iupana.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:07Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aiupana.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://iupana.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Banco Central de Perú aclara los límites contractuales de los adquirentes",
+          "published": "2026-10-28T11:05:31Z",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZko0LUF0alR5NUxVZmVsUEo3d0h2UTd1RXEwdjh3QWQ2cXpaeUxDSzV6V2dMS0trVXpQQjlVYmh3TTZJaXcwRV9LODFtcjJPMFhKbW5kOXF2NHZmLWNYMG1CbnNDcTJGbFJtUTlXMFl0cHRYNkNIYlNSOGgyUzUwejVXb091NER2SmdXRVJvbFIxVEJXSk1vSktMMnJkb1NBbVhfS21rclIyRk45VGh3SUotNTNfTXFpNE5sRlRkaVNjNDFVUlNXcWR1ZWdkUGM?oc=5"
+        }
+      },
+      "notes": [
+        "Medio de banca digital/fintech latinoamericana con publicaciones en español; país de establecimiento no determinado."
+      ]
+    },
+    {
+      "id": "biz-extra-emprendedores-news",
+      "request_id": null,
+      "name": "Emprendedores News",
+      "group": "startups",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "emprendedoresnews.com",
+      "url": "https://emprendedoresnews.com",
+      "search_scope": "emprendedoresnews.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:08Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aemprendedoresnews.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://emprendedoresnews.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Latam tiene un nuevo unicornio: Tractian",
+          "published": "2026-10-28T14:32:35Z",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMURPZkxHUDYxN3Q5czJzc05JY2kzZWo3Zk8xdkpJTEd3SW5VQi1TYXp4em1RNmVQQVJDLVhITnpsbWNkU1VScVVsNmVlZVlxYXJ5Z2RIV0JXYTRreTBPMk53X0VkQWpZUWt6TXVXR1FEU09TUllzNkNMbmctN0xVeTMzOWFUcm42dnhsWWZZaEtmQQ?oc=5"
+        }
+      },
+      "notes": [
+        "Medio de emprendimiento regional con publicaciones en español. Argentina es una clasificación contextual aún no corroborada por acceso al sitio."
+      ]
+    },
+    {
+      "id": "biz-33-insider-latam",
+      "request_id": 33,
+      "name": "Insider Latam",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "insiderlatam.com",
+      "url": "https://insiderlatam.com",
+      "search_scope": "insiderlatam.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:53.995670Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Ainsiderlatam.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://insiderlatam.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Mercado Libre estrena \"Juntos\", su nueva campaña con Franco Colapinto - Insider Latam",
+          "published": "2026-10-28T23:34:26Z",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdkswMzg1Nk85RmRtZzBTal9mZ2tZbkE5Qm4td3MwOUkxdTRxa09EY2tLd2RZejhWQUFHbmw0MnFaSEMxZmRWbS1CelA3TmdiZDNwajd6UGM3M0lkQWdJMjR5TjZWSy0zU2lrZkx1dWxTR0g3c1pPVUVCU2pOZ3djUl9WTjA2bzBSM2xvTVA5ZHBZZWxxc3ZV?oc=5"
+        }
+      },
+      "notes": [
+        "Fuente directa indexada con contenido de marketing, publicidad y negocios. La sede jurídica no se verificó."
+      ]
+    },
+    {
+      "id": "biz-34-red-innova",
+      "request_id": 34,
+      "name": "Red Innova",
+      "group": "corporate",
+      "kind": "analysis",
+      "market": "Iberoamérica",
+      "domain": "redinnova.com",
+      "url": "https://www.redinnova.com",
+      "search_scope": "redinnova.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": true,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:53.996043Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aredinnova.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.redinnova.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Mobile: el teléfono como control remoto - redinnova.com",
+          "published": "2017-11-08T08:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdjd3NWJKWW5La0pHTFVhWnA0S1k1dWJTMEVWbWZ5WXlnR1dkQy1ObDNISTdIaUZPR2k1WW0tR2s5MEtQUUpPcnpDMmhGU2l0N1c5Ym9wdVZrWkFrZVdaZ21Ib2hXRFBIbjkwLTRaVEgzZ2laTWNFMzNkaTRYLWtqWHRn?oc=5"
+        }
+      },
+      "notes": [
+        "El dominio devuelve Red Innova y un artículo de tecnología de 2017, pero también contenido de casinos de 2025. La continuidad del proyecto editorial de innovación no está demostrada; revisar identidad y pertinencia antes de incorporarlo.",
+        "La clasificación analysis es provisional por el contenido histórico; no se comprobó una redacción periodística activa.",
+        "Los resultados de terceros con «Red Innova» mezclan comunidades y programas distintos y no prueban que pertenezcan a redinnova.com."
+      ]
+    },
+    {
+      "id": "biz-35-saas-latinoamerica",
+      "request_id": 35,
+      "name": "SaaS Latinoamérica",
+      "group": "corporate",
+      "kind": "analysis",
+      "market": "Latinoamérica",
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "tecnologia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:55.332360Z",
+        "query_url": "https://news.google.com/rss/search?q=%22SaaS+Latinoam%C3%A9rica%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "«SaaS Latinoamérica» y «SaaS Latam» devuelven contenido sobre SaaS en otros medios, no una publicación identificada con ese nombre.",
+        "saaslatam.com es sólo el candidato recibido; su consulta de dominio devolvió cero resultados. No se establece URL oficial."
+      ]
+    },
+    {
+      "id": "biz-36-prochile-innovacion",
+      "request_id": 36,
+      "name": "ProChile Innovación",
+      "group": "corporate",
+      "kind": "institutional",
+      "market": "Chile",
+      "domain": "prochile.gob.cl",
+      "url": "https://www.prochile.gob.cl",
+      "search_scope": "prochile.gob.cl",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:55.839498Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aprochile.gob.cl+innovaci%C3%B3n&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.prochile.gob.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "ProChile impulsa la expansión de 14 startups chilenas hacia mercados estratégicos de Asia - Prochile",
+          "published": "2026-10-15T12:09:04Z",
+          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNTlBpbHotM01Kc1lqZHlSZzBhc2JSMWpudEtWZTU4MW1CUVRkbzFOR1JCN1JMa2FXWUFtTkFMSWpxTzd0Q0FyaDFUcE0tTHMzRkl1V1lvdllnanUtVlNhV0FMSlVZQ0dEWFFIR0k4bjhUS1BaN3ZoX3NRUGtfeGx5X1pTLU9nRW0tWkJsUTIyU0tSVmdsRWE3MVlwZXR3VmxQYUxCN2wzLUFXU0UwbGgwckpldGIzM2lmYnROd2M0MzBYWGx1c0VtamFVamRBU0xaMTZDN2k2Qm9MNERUOGE2WEFzR0RfTDZwNzQzQ283Y3l2c1Qxa0E?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma el dominio institucional de ProChile y noticias de innovación/startups. «Innovación» no se comprobó como publicación independiente."
+      ]
+    },
+    {
+      "id": "biz-37-revista-emprendedores",
+      "request_id": 37,
+      "name": "Revista Emprendedores",
+      "group": "corporate",
+      "kind": "news",
+      "market": "España",
+      "domain": "emprendedores.es",
+      "url": "https://emprendedores.es",
+      "search_scope": "emprendedores.es",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:56.473161Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aemprendedores.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://emprendedores.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Contratar después del 5 de octubre: lo que tu empresa tendrá que explicar antes del primer día - Revista Emprendedores",
+          "published": "2026-10-27T07:01:13Z",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWUZaT3k3cVUtQVcxNy1UTWFfTnlCWVJtV09nYl94aEFUMEUxUkxPZ2JTeXNyNWUwM096cVNVWUlmM0d6YmtmWU5JQVlPTmRIV1NzNUYyNVJwSmJBYWlYSlEzZ3o2TzlFMFhKWXdlN2lwdjZ5d0ZpZjYyb0I3TFl0MnJWdWwxU3BmSXRqWU9FdWw0b0lISGpiQU5WWmIyc29ybVpkSVo1Z2NmS1F1S29nMGRJb1ZPRHFJRUZVSDh1bXhMYVF0?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-38-asech",
+      "request_id": 38,
+      "name": "ASECH",
+      "group": "corporate",
+      "kind": "institutional",
+      "market": "Chile",
+      "domain": "asech.cl",
+      "url": "https://asech.cl",
+      "search_scope": "asech.cl",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:57.717272Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aasech.cl&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://asech.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "CONVOCATORIA A ELECCIONES DE DIRECTORIO ASECH A.G. - ASECH",
+          "published": "2026-04-30T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZk95ZXkwbjFfcXFVYTVsczJQMzBKY3o1RnJZVEVjWGgtYmYzN2ctOUx5emVZT2t6SmpQSWg0X2U0YUJDeE5PX3kzZnBIWk5vaElfaXp6TVEzOTBubl9tMWtwLWYtbFN5aFF1VUhlOXhYYUJtUW9FZzc3NUh5WWZtUzlLS1QzaWlrU0xJ?oc=5"
+        }
+      },
+      "notes": [
+        "Asociación de emprendedores con páginas, convocatorias y contenidos propios. Es fuente institucional, no medio independiente."
+      ]
+    },
+    {
+      "id": "biz-39-anid",
+      "request_id": 39,
+      "name": "ANID",
+      "group": "corporate",
+      "kind": "institutional",
+      "market": "Chile",
+      "domain": "anid.cl",
+      "url": "https://anid.cl",
+      "search_scope": "anid.cl",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:58.839042Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aanid.cl&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://anid.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Beca de Doctorado Nacional Año Académico 2027 - ANID",
+          "published": "2026-10-09T20:58:53Z",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5TSlRvYzdZUHZ2cFJkOWo4TmVWMnNpQzlNZnVzbDZRZmtmaElXNks1TGhMS2FaSmlqcHgtQ0tKOW1OLVJuUGxkMk8wMjJ6T3N1ZDdsbFljR1pDNTI3aTdjTHk3RWhkWHpRbjVFZGY2emVpWVc1bmNLZGNpVzQ?oc=5"
+        }
+      },
+      "notes": [
+        "Agencia institucional: convocatorias, programas y noticias. El primer sitio de resultados mezcla numerosos subdominios; las muestras elegidas proceden de anid.cl."
+      ]
+    },
+    {
+      "id": "biz-40-revista-gerencia",
+      "request_id": 40,
+      "name": "Revista Gerencia",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Chile",
+      "domain": "gerencia.cl",
+      "url": "https://www.gerencia.cl",
+      "search_scope": "gerencia.cl",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:09:59.332596Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Revista+Gerencia%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.gerencia.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Cuando medir la inteligencia artificial se convierte en el problema - Revista Gerencia",
+          "published": "2026-10-28T18:35:12Z",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQd0NVaGFaeGY0REh1TU8xQmcxSi1TSzhTenVoWlpHNmtxME1yR1FGNjlEVkdrdFNYRDhtb2w2SnpEdzZERW1XX0NQdk1hTDJIYjVGc1ZtZGYwRUw2WDFXTDVydE11QVVGRmdZWHpOVVJ1YjBUNTVJMnRtMFBNamNyRDc3TlgyTkkzMzhXWElaOXd5TGlMUUg3QjY1ZUVEM2NMQklDUVVKUlF6eDI3ZnlNeWM1aGxob1E?oc=5"
+        }
+      },
+      "notes": [
+        "La marca Revista Gerencia y el dominio gerencia.cl coinciden en los resultados propios. No se confirmó en esta revisión la relación o redirección desde emb.cl/gerencia."
+      ]
+    },
+    {
+      "id": "biz-41-vc-magazine",
+      "request_id": 41,
+      "name": "VC Magazine",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Por confirmar; resultados de terceros en Chile",
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:01.030250Z",
+        "query_url": "https://news.google.com/rss/search?q=%22VC+Magazine%22+latinoamerica&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "No hay dominio propio confirmado. Las consultas exactas devolvieron resultados de Patagonia Radio, Diario Emprende e Instagram. Son coincidencias en fuentes ajenas y no demuestran indexación de VC Magazine como editor.",
+        "No se equiparó con otras publicaciones de venture capital. kind=news es provisional por el nombre solicitado."
+      ]
+    },
+    {
+      "id": "biz-42-the-standard-cio",
+      "request_id": 42,
+      "name": "The Standard CIO",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "thestandardcio.com",
+      "url": "https://thestandardcio.com",
+      "search_scope": "thestandardcio.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:01.191363Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Athestandardcio.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://thestandardcio.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Oracle quiere que la IA ejecute el negocio mediante agentes - The Standard CIO",
+          "published": "2026-10-28T11:56:43Z",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00Nnk3aXdudm8ySldEY0xCT0RfcGg3bEVPWkFoUS1JTWJLTzRxZzFWV3pkSXRtOTlUN3hjbm5SbGwxQ1dsTWVXZG9GQVZiaU5YSTdHdGNWN3U1TExGTE1JV2huSUNzYjBTZHpzclFFMm1yeTdaYURBUmNOWUQySGM?oc=5"
+        }
+      },
+      "notes": [
+        "Publicación propia con las etiquetas The Standard CIO y thestandardcio.com. La sede jurídica no se verificó."
+      ]
+    },
+    {
+      "id": "biz-43-tldr-business-magazine",
+      "request_id": 43,
+      "name": "TLDR Business Magazine",
+      "group": "corporate",
+      "kind": "news",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:02.346913Z",
+        "query_url": "https://news.google.com/rss/search?q=%22TLDR+Business+Magazine%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "Dos consultas sin resultados. No se equiparó automáticamente con TLDR, tldr.tech, boletines ni canales de YouTube. Identidad, país y URL oficial pendientes. kind=news es provisional."
+      ]
+    },
+    {
+      "id": "biz-44-cio-advisory-board-latam",
+      "request_id": 44,
+      "name": "CIO Advisory Board Latam",
+      "group": "corporate",
+      "kind": "analysis",
+      "market": "Latinoamérica (según nombre solicitado)",
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "tecnologia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:02.799761Z",
+        "query_url": "https://news.google.com/rss/search?q=%22CIO+Advisory+Board%22+Latam&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "Dos consultas exactas sin resultados. No se pudo determinar si es consejo asesor, comunidad, evento o publicación. No hay URL oficial confirmada. kind=analysis es provisional."
+      ]
+    },
+    {
+      "id": "biz-45-misionpyme",
+      "request_id": 45,
+      "name": "MisiónPyme",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Colombia",
+      "domain": "misionpyme.com",
+      "url": "https://misionpyme.com",
+      "search_scope": "misionpyme.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:03.971084Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Amisionpyme.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://misionpyme.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "El asistente virtual de la VUE: disponible para ti 24/7 - MisiónPyme",
+          "published": "2026-09-28T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbnlNWXFaTV9MVVhJcjNSQnI3SUEtZGdabkpScTh4OFM5cHFCWWJIaGo1N2NheTBJZ0U2S3JnRmRFeS1lZnd5bkhTM1hCdVA2cTdvZEFCcExlZE10UmhkSERlWmJoVzhielYzRjRVQzNVbWcyQXRsd19hU2ZEdHZsWW1QMXpmTVplbl8zdFM4eEZodw?oc=5"
+        }
+      },
+      "notes": [
+        "Los contenidos propios de VUE y FONTUR dan contexto editorial colombiano; no se verificó la sede jurídica."
+      ]
+    },
+    {
+      "id": "biz-46-dirigentes-digital",
+      "request_id": 46,
+      "name": "Dirigentes Digital",
+      "group": "corporate",
+      "kind": "news",
+      "market": "España",
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:04.194326Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Adirigentesdigital.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "El dominio candidato dirigentesdigital.com no produjo resultados propios. La búsqueda de nombre devuelve otras publicaciones; sus menciones no prueban indexación del editor.",
+        "España es un país candidato por contexto de las menciones; no una sede verificada. No se establece URL oficial."
+      ]
+    },
+    {
+      "id": "biz-47-iebs-hub",
+      "request_id": 47,
+      "name": "IEBS Hub",
+      "group": "corporate",
+      "kind": "analysis",
+      "market": "España",
+      "domain": "iebschool.com",
+      "url": "https://www.iebschool.com",
+      "search_scope": "iebschool.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:05.721593Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aiebschool.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.iebschool.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Cómo hacer un plan de marketing digital: pasos y ejemplo completo - IEBS Business School",
+          "published": "2026-09-27T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8tWVlkZDNkMnloQ0t4TS1ncTBLNGNjVDFxekN6cVltQno3b0tmcXNTU1dDQVRXTHNZcG1ER1VVSTUyZktJREVsb1hsbnZrSy1oOGVOQlBjUmRKWGtEbGRCM2NiN2R6d1k?oc=5"
+        }
+      },
+      "notes": [
+        "El dominio devuelve contenidos propios bajo la etiqueta IEBS Business School. «IEBS Hub» no aparece en la consulta exacta y site:iebschool.com/blog devuelve cero resultados.",
+        "Se confirma iebschool.com como fuente de contenidos de análisis educativo; el nombre Hub y la ruta /blog permanecen sin corroborar. La URL oficial registrada es la raíz observada en source_url, sin inventar un permalink."
+      ]
+    },
+    {
+      "id": "biz-48-el-blog-salmon",
+      "request_id": 48,
+      "name": "El Blog Salmón",
+      "group": "corporate",
+      "kind": "analysis",
+      "market": "España",
+      "domain": "elblogsalmon.com",
+      "url": "https://www.elblogsalmon.com",
+      "search_scope": "elblogsalmon.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:05.889382Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aelblogsalmon.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.elblogsalmon.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "¿Quién congeló las pensiones en España? Del 0% de Zapatero al 0,25% de Rajoy y las subidas inasumibles de la era Sánchez - El Blog Salmón",
+          "published": "2026-10-20T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQT0ZiZjRlbkh4R0dJMXVLUzI4aDR1RXpjckF6QXFxNFRzNHdJcHNlbktDTFgya0NwOE53d2FCSmZIR2ZoSFhuUnp6Wm1Cc0wzUFVJYmlud2xKLVRDRHJ2dEtDQVFfNGZ4OW54ZGhkeVYwVU5oWV9MYmpkRG56ZVpsMzkwU2pXTWZhTk9NeG5hRVdOTXMydlp4cGtqeGkzWm5reGR0NDZKdmNxVHJXRWhfTGtjd0o1T3QtUWxKNHFTQnhXNnPSAcgBQVVfeXFMT0FRbVBydzZNVWVJVVdLS1lVdmNQZGp3YlNBUnhsWndZcGlWZXZ0aVk2SVpkUmV5SUhJcVJtY00waEJRbV81M0J1UVFmeF83cmVVRXVneDVTTXFqMkRHTm8xTHVnQmdpMEctdnQ5TmpncnhsNEpaMEl3VEMwX05hQk9QUm5ZTDJTVC03dDU0NG5LNFVFeFFydi1USmE1S2lFbDhaTlVCbWVRQS03S3NXMVNGVDdnUTBoTFA4S0s4SmM2Qm9sc3F6TkM?oc=5"
+        }
+      },
+      "notes": [
+        "Análisis económico y financiero con enfoque español; la sede jurídica no se verificó."
+      ]
+    },
+    {
+      "id": "biz-49-ipmark",
+      "request_id": 49,
+      "name": "IPMARK",
+      "group": "corporate",
+      "kind": "news",
+      "market": "España",
+      "domain": "ipmark.com",
+      "url": "https://ipmark.com",
+      "search_scope": "ipmark.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:07.363140Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aipmark.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://ipmark.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Teka reivindica el valor de las cocinas en su última campaña - IPMARK",
+          "published": "2026-10-27T12:02:46Z",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTnFMMDlNV1FqaFN3QjRKZDVTLW9KS1hZcGt3VGxlU3k3YVY4UjhpbmtmTXd5UDA1TXJJSThCX2ZQOEpXQ2JjNjJUSl9YWktNcm1uSUZOdGFIZFktRk9SUzEwUXczSC1DazBRRm1qTU5GajAzdVNwbDJvN1k1N2lLcnY4QTlPUWc?oc=5"
+        }
+      },
+      "notes": [
+        "Publicación especializada en marketing, publicidad y negocios. España se indica como contexto editorial; sede no verificada en esta consulta."
+      ]
+    },
+    {
+      "id": "biz-50-revista-ganar-ganar",
+      "request_id": 50,
+      "name": "Revista Ganar-Ganar",
+      "group": "corporate",
+      "kind": "news",
+      "market": "México",
+      "domain": "ganar-ganar.mx",
+      "url": "https://ganar-ganar.mx",
+      "search_scope": "ganar-ganar.mx",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:07.638124Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aganar-ganar.mx&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://ganar-ganar.mx",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "PrepaTec impulsa más de 2,000 proyectos tecnológicos con impacto social - Revista Ganar-Ganar",
+          "published": "2026-10-21T14:38:29Z",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2dLNXpqcWdPbGtPVzUycXBMUHhBY1RkdjQxenNSUlRWVVFTTjBObER1azJSWTRTM3FGWGRlc1RfYmdINFhCZHRlR2hVUWdFMGNzNFJoRmdTNExxVXNEUXVEN3hmZmlGbWdOQnVNdFY4YXd6VDV0enRkdkpzbG55cFV2NTM1dW5jbWZzVzRnd1BhMzFrSzlUNnN2b2RtaklGWlVOQ0R3ci0?oc=5"
+        }
+      },
+      "notes": [
+        "Publicación de sostenibilidad, responsabilidad social y empresas con dominio mexicano."
+      ]
+    },
+    {
+      "id": "biz-51-factor-capital",
+      "request_id": 51,
+      "name": "Factor Capital",
+      "group": "corporate",
+      "kind": "news",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:08.617917Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Factor+Capital%22+revista&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "Los resultados corresponden a uso del término económico y a nombres parciales, incluido «Factor Capital Humano». No hay dominio de una publicación «Factor Capital» identificado.",
+        "No se atribuyó por el nombre de un fondo ni se equiparó con una revista distinta. kind=news es provisional."
+      ]
+    },
+    {
+      "id": "biz-52-americaeconomia",
+      "request_id": 52,
+      "name": "AméricaEconomía",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Chile",
+      "domain": "americaeconomia.com",
+      "url": "https://www.americaeconomia.com",
+      "search_scope": "americaeconomia.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:09.306237Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aamericaeconomia.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.americaeconomia.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Negocios e Industrias - America Economia - América Economía",
+          "published": "2023-03-12T13:23:55Z",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1YRXVyem9TejhJMVRYSEF6cVE0bDVzejdveEI4ZS1USktYTjhhSklJTU1vVmtEUlliR0x5UFJWMGdRWTZGTjQ0bGJTVlJLWEtsdEc3dHFrV05ReExFc1VSd005Zw?oc=5"
+        }
+      },
+      "notes": [
+        "Hay resultados atribuidos al dominio propio, pero predominan páginas de sección, títulos vacíos y una muestra antigua de mba.americaeconomia.com. No demuestra actualidad del flujo de noticias.",
+        "La búsqueda del nombre también devuelve información de terceros, incluida una noticia de 2022 sobre quiebra en Chile: se conserva como contexto separado, no como prueba de cierre actual ni de indexación propia.",
+        "Chile figura como contexto histórico de la marca; la entidad y sede actuales no se verificaron."
+      ]
+    },
+    {
+      "id": "biz-53-corporate-excellence",
+      "request_id": 53,
+      "name": "Corporate Excellence",
+      "group": "corporate",
+      "kind": "institutional",
+      "market": "España",
+      "domain": "corporateexcellence.org",
+      "url": "https://www.corporateexcellence.org",
+      "search_scope": "corporateexcellence.org",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:10.105948Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acorporateexcellence.org&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.corporateexcellence.org",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Nuevas métricas e inteligencia artificial abren una nueva etapa en la medición de los intangibles - Corporate Excellence",
+          "published": "2026-10-01T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQN0RjVG14STJjeEZhem9nSFNlb3FpS09rZmJaZXVyTnN1T21XUkNyelZSbzZVUTNIcmFIUko5YktiMHhEMnRMejB1SUxZZ3JkdjF6aUY1TmN0d3hUTFQ1Ny0ySHVTbXBJZDFqX0d4cE9wcloya0RmWHJNUnNlekZVUVBIV3RwbGhIVlBPMUNoNmdTaTVlVmVfdW1pRXlYTUlrNjUwRlJ3UDFiaXAzMXFscjlUZ2h4b1NqaFlYcjB0LUZZRW1EdnhIWA?oc=5"
+        }
+      },
+      "notes": [
+        "Fuente institucional de reputación, intangibles y gestión empresarial. España figura como referencia contextual; sede no verificada en las respuestas RSS."
+      ]
+    },
+    {
+      "id": "biz-54-america-retail",
+      "request_id": 54,
+      "name": "América Retail",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Latinoamérica",
+      "domain": "americaretail-malls.com",
+      "url": "https://americaretail-malls.com",
+      "search_scope": "americaretail-malls.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:42.105161Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Am%C3%A9rica+Retail%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://americaretail-malls.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "D1 transforma la competencia en centros comerciales - AmericaMalls & Retail",
+          "published": "2026-07-22T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdjB4d1NmaHlVZWc1dUpPR18wVW5LYkM1VVdteHJxZVd4YWJTbVRwdHQ5YXRxMDVUNUtISGJkUzNPdWhkY0hlVC1XbEEyWmFZbWgzMnd0eHE1OW4xME00Y3Q3U01DemNWeFhvdVhRdmtaZVkxTl9TenhrS2tvRTd6UjNtbm9oSkpVU3dkUVdPTzVQVzZfQ1VoNUlHZUhUTnRVZTA0YTBFOGY?oc=5"
+        }
+      },
+      "notes": [
+        "El candidato america-retail.com sólo devuelve una portada Chile fechada en 2021. La búsqueda de nombre y el dominio actual americaretail-malls.com devuelven publicaciones propias bajo las etiquetas America Retail y AmericaMalls & Retail.",
+        "Se respalda el dominio actual por source_url del RSS. No se comprobó redirección HTTP ni continuidad societaria con el dominio antiguo."
+      ]
+    },
+    {
+      "id": "biz-extra-revista-summa",
+      "request_id": null,
+      "name": "Revista SUMMA",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Costa Rica",
+      "domain": "revistasumma.com",
+      "url": "https://revistasumma.com",
+      "search_scope": "revistasumma.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:11.752599Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arevistasumma.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://revistasumma.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Costa Rica: ICE promueve inversión de $200 millones con siete plantas solares nuevas en Puntarenas - Revista SUMMA",
+          "published": "2026-10-02T21:31:47Z",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa085blp3Qk9RZlZkSEdrN2Q0Uzl1V25jZFg4eTN3YTQ5QWNRd0RvUFhKSHhqVnUzbmNOOWlhZG9CMGE0OGdxNmktR3ZvVlBLanh4a25uazYzdUN6dWtPdnMtWFIzVjVYTmVaQ3MzcnVfLTlyVXJBTW1Wb1JFVUhlOXJiNHhMTFdXd0g2dHBRdlo3TlA3RUZpOWZUYjRNV01yNUlqcUVTQ2x5MzJUUjBXLTBScVY5MkRpTnQyUVUxZw?oc=5"
+        }
+      },
+      "notes": [
+        "Medio de negocios regional comparable. Costa Rica se indica como referencia editorial contextual; no se comprobó sede jurídica con RSS."
+      ]
+    },
+    {
+      "id": "biz-extra-ekos-negocios",
+      "request_id": null,
+      "name": "Ekos Negocios",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Ecuador",
+      "domain": "ekosnegocios.com",
+      "url": "https://ekosnegocios.com",
+      "search_scope": "ekosnegocios.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:12.342584Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aekosnegocios.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://ekosnegocios.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Empresas que transforman: así se vivió la certificación ODS - Ekos Negocios",
+          "published": "2026-04-22T07:00:00Z",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOajlJQWZDdDVzV2ZhSks0TGRxQ1l2N25icTFUdV84ZWdQN3Z5YVF5dC1iQXJJQmQ5c28wQXFOa0twLTJSYklqN3luamF5VHJrYUlqbXVEN250RWkxVElXRzh0aDNjVVVUdElTMDAyc2dsYmw2ZFVRQVVIUVNRdzlyX3NjUXc5R29nWV9jWW14ZmJNeWw1S2FJ?oc=5"
+        }
+      },
+      "notes": [
+        "Medio de negocios y empresas comparable. Ecuador se indica como referencia editorial contextual; sede no comprobada con RSS."
+      ]
+    },
+    {
+      "id": "biz-extra-estrategia-negocios",
+      "request_id": null,
+      "name": "Estrategia & Negocios",
+      "group": "corporate",
+      "kind": "news",
+      "market": "Centroamérica",
+      "domain": "revistaeyn.com",
+      "url": "https://www.revistaeyn.com",
+      "search_scope": "revistaeyn.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:42.263048Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arevistaeyn.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.revistaeyn.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Gobierno de Honduras aprobó la Política Nacional de Vivienda y Asentamientos Humanos - www.revistaeyn.com",
+          "published": "2026-10-27T13:20:00Z",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOFdnUDJvMXd4QWUyNTBHODR0VzdUM3NLdWxUZTRKU0tkdjVzTzBUdmpKdE16VWt3c1o5Nk1sbjVOM2JVbFdBMXd6QkNQTURxSGN0NFdQUzV3M0h5el9rZjJRRnZHSF9vX1FsYUI5YlQxNTFNSkIyR2J5LVpabGJZRlo3eGo2eXZpeFV2dW43TzZ6U20yWkFMQ1gzbEZNdFE4QXZFWjVtQTZ2U1dkQmdTLTA5RUk0czNiT25McnhBcE8wMkZ1WFMxNU5PU0tvYk9NZ0Y2bGtrazc3QQ?oc=5"
+        }
+      },
+      "notes": [
+        "El dominio candidato estrategiaynegocios.net devolvió la etiqueta www.revistaeyn.com; la consulta del dominio revistaeyn.com confirma 100 resultados propios. No se verificó redirección HTTP ni sede jurídica."
+      ]
+    },
+    {
+      "id": "biz-55-trendtic",
+      "request_id": 55,
+      "name": "trendTIC",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Chile",
+      "domain": "trendtic.cl",
+      "url": "https://www.trendtic.cl",
+      "search_scope": "trendtic.cl",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:30.957020+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Atrendtic.cl&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.trendtic.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Pagar sin tarjeta: así funcionará la Iniciación de Pagos en Chile - trendTIC",
+          "published": "2026-10-20T09:20:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbnpHNXBrTk1ybERqdl9ZNU1mUWtkR0k0RHNkMmpJTXdBMHhJcVRDTHBmd1NuN0sxTkY2V1M5Z0pnclUwaVdaS0pQZ2YzSGRQR3ZBS0ptaFhYNDE4MmpYeU9COE1EREVSQW5weHpTZ0lLNS0tbkhEc3NMN2M2U1JxdTFXSDUyZGVnLTZQRWJXbU9tYWhDQjZPSkw0bGxPd9IBpgFBVV95cUxORzU0RnVKZ0M1cTRMRGVDemlQaFA4UGpQNlp5OVplZW9hNlplS2lGQ3hwRENOVG9VdG1RMFNoVU4xNTFzaFZ0enBvRFFIa0dRdGFZakc2SnVYM0hXTUxYUzNhN1U5MWd5aEF3VDlJaTd3cERXN01Ga2dRZ256MVktODdKVDU0UzBKTTEyYjJlV3lNU0VvMXVmZDNDZDlrb1lxOGRQTTFR?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-56-itsitio",
+      "request_id": 56,
+      "name": "ITSitio",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "itsitio.com",
+      "url": "https://www.itsitio.com",
+      "search_scope": "itsitio.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:33.010696+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aitsitio.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.itsitio.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "HPE unifica EdgeConnect, Mist y Aruba Central para automatizar redes - ITSitio",
+          "published": "2026-10-28T18:46:37+00:00",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaXNwcjJfRTNLYlYwVlpieDlNRjRmNk5BR01LZTJOcjNnWmJpU0Z3UGpxQ1Z0UVRyN1Nrd2RrNlpCX1JwT1p6YU5HT0xnam9paWV4SDZiME9sUDFQVWV2cTFqeGpTZnRLRHNvNHIxRTRWNjR5VlloeUMwdkdYeDNUdGNHbHBXWjE2YTFrWWRzNFBHRWNMVm5sdmFHQVFkRDF2Yk1vcERsR1V5NDVX?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-57-portal-erp",
+      "request_id": 57,
+      "name": "Portal ERP",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "portalerp.com",
+      "url": "https://portalerp.com",
+      "search_scope": "portalerp.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:34.296130+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aportalerp.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://portalerp.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Qué hacer cuando una empresa informa una brecha de datos - Portal ERP",
+          "published": "2026-10-29T01:08:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVWNaMTF3X2ZTTm9tV05QT2J2Rk50QjMybldKOWRhVEVERm1aa19QNHN5LTNBZHJrM2E1WGM0YUQ2WjlJdllQSDJqdlFBUi1nNGRIdEJ4UFUyYW9QWllXSUFqZWFTSk9WVk1mN1I4Nl9GR19oR2duLUV5WlhkOG9fVWtrM3dhSUFXazhvVW0xbDZNR00?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-58-prensario-ti",
+      "request_id": 58,
+      "name": "Prensario TI",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "prensariotila.com",
+      "url": "https://prensariotila.com",
+      "search_scope": "prensariotila.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:35.961556+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aprensariotila.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://prensariotila.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Matcom presenta su oferta tecnológica en AOG Patagonia 2026 - Prensario TILA",
+          "published": "2026-10-16T06:45:53+00:00",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdDJKSDFmVjFGdW90bUZrNGY0RUpzNjI2V0RRcGJlSmtDSU1EQ1F0MWlULUc3RThaVlFpUW9SYUtQam5vdlF4Q0F4U3ZZWFRzTDBNWTVDc1Fma3hmM2FYZWhlemFWcnVIbC1rY01OYWV1OF9SeEoxWjdINkVub01xajhSV1lGQUp3dlFjZ2NVbw?oc=5"
+        }
+      },
+      "notes": [
+        "El nombre editorial atribuido por Google News es Prensario TILA; se conserva como resolución de la propuesta Prensario TI."
+      ]
+    },
+    {
+      "id": "biz-59-cios-latam",
+      "request_id": 59,
+      "name": "CIO’s LATAM",
+      "group": "b2b",
+      "kind": "news",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "tecnologia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:36.721348+00:00",
+        "query_url": "https://news.google.com/rss/search?q=%22CIO%27s+LATAM%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "Ninguna consulta devuelve un editor atribuido a CIO’s LATAM. Los resultados son menciones publicadas por YouTube, IT Masters Mag y otros medios. No se elige dominio ni se sustituye por CIO España."
+      ]
+    },
+    {
+      "id": "biz-60-infoweek",
+      "request_id": 60,
+      "name": "InfoWeek",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Chile",
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "tecnologia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:37.809329+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Ainfoweek.biz+OR+site%3Ainfoweek.cl&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "Sólo aparece una ficha «- Infoweek -» de 2014 bajo infoweek.biz. No hay muestra de artículo ni prueba de actividad actual. infoweek.cl queda sin confirmación."
+      ]
+    },
+    {
+      "id": "biz-61-tyn-magazine",
+      "request_id": 61,
+      "name": "TyN Magazine",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "tynmagazine.com",
+      "url": "https://tynmagazine.com",
+      "search_scope": "tynmagazine.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": true,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:38.841721+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Atynmagazine.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://tynmagazine.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Una alerta global muestra qué tan rápido está cambiando la ciberseguridad - TyN Magazine",
+          "published": "2026-10-28T12:34:58+00:00",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUVFoM3cxQWdHdHY0bGpxUmlfYWlxNloxbXVua1NPZWJSWE80bGI2TWlpQU1HcnlKaFd6Uk9Kb3lYYnc4bVdJNTNvWTljT1hsaHg2QWRScV9uZWRLV2wyc0lPMDl5R1R6RUVCNE1YNFZwbmI2M25RMi1ZYThTLUV4SzRuNnlTNjdjcDNvelByQUIxbWRBOVJTZm9KTURBT3c?oc=5"
+        }
+      },
+      "notes": [
+        "El mismo editor indexado devuelve contenidos tecnológicos y un anuncio «Premium 5CLADBA Raw Material ... B2B Quote». Es una señal de contenido ajeno al ámbito propuesto que requiere revisión editorial; no permite concluir compromiso del sitio."
+      ]
+    },
+    {
+      "id": "biz-62-computerworld-mexico",
+      "request_id": 62,
+      "name": "Computerworld México",
+      "group": "b2b",
+      "kind": "news",
+      "market": "México",
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "tecnologia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:40.057301+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acomputerworldmexico.com.mx+OR+site%3Acomputerworld.com.mx&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "computerworldmexico.com.mx devuelve dos entradas de 2024 con títulos SEO genéricos, incluidas las ganancias de un youtuber, con source_name igual al dominio. No acredita la identidad editorial vigente de Computerworld México. computerworld.com.mx no devuelve resultados. No se asume que los dominios sean oficiales de la marca."
+      ]
+    },
+    {
+      "id": "biz-63-evaluando-software",
+      "request_id": 63,
+      "name": "Evaluando Software",
+      "group": "b2b",
+      "kind": "analysis",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "evaluandosoftware.com",
+      "url": "https://www.evaluandosoftware.com",
+      "search_scope": "evaluandosoftware.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:40.719449+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aevaluandosoftware.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.evaluandosoftware.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Por qué implementar sistemas de información en tu empresa - Evaluando Software",
+          "published": "2023-11-24T02:35:05+00:00",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNXRiamxNYW9uSmF2OXdkcUxnVi0wM2FfTkVqUTRJY1Zmci1Ib3Rwb3pUNjJHNzFOd3Fhd194SlFTT0hkS0U4MEpwbHZuV05CLU1vM0U1TmZBRHBjaEpBeDktMF9RcVZaemdUNjR3aDhqQlcwVmFJS2ZWSWxlZ0tMcnNRUU93UXBhRkVMQm80UHBUY3lYME9lWGhVc0l1VzQ?oc=5"
+        }
+      },
+      "notes": [
+        "La ficha indexada se describe como «Consultora de Software de LATAM»; se clasifica como análisis/recursos empresariales. Las muestras propias encontradas son de noviembre de 2023. Los resultados de 2025–2026 por nombre pertenecen a otros editores y no prueban actividad propia reciente."
+      ]
+    },
+    {
+      "id": "biz-64-directortic",
+      "request_id": 64,
+      "name": "DirectorTIC",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "directortic.es",
+      "url": "https://directortic.es",
+      "search_scope": "directortic.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:41.997846+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Adirectortic.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://directortic.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "INFORMA D&B acerca la inteligencia artificial fiable al entorno B2B con ConfIA - DirectorTIC",
+          "published": "2026-10-22T10:18:30+00:00",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZ1NEdDNIZk5ZNG9UWWtBRmlTYUNtSXdkZjN1S0RJX1A0SkRXNXBsLWk2SVFPa3RIdUdLQUdES1hwbFA3bzhNWS1UdmxWWjB2LTR2akFxLUJSVl9sUmVYSHNMejNiY21iUEotcjdGUFBkYmRKNGtockl3dDJtbEtIYzg5Z3JUaVBtM0xTazEwckdMRzRFS25yOFFQbUxpekJQUWF1d2xwNzU3LW9LZ3VkUFZ2SWNxUk5sZ0JhVUJjY2lmRW5sQlE?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-65-cio-espana",
+      "request_id": 65,
+      "name": "CIO España",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "cio.com",
+      "url": "https://www.cio.com",
+      "search_scope": "cio.com/es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:43.206515+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acio.com%2Fes&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.cio.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "BBVA crea un modelo para escalar la IA en todo el grupo - www.cio.com",
+          "published": "2026-10-07T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZ0diSDdvNEVUNnFTcDBwd1ZrZzdISGRwdzNLYk5vUlFseWR6aDVYUTBmSTFOdXVLYUVoVHQ4b2FNOTY2Q1BlaG85T290WGtwOXdyVzRYZVRKTmQwWHZpX3VQUTFaN0VMc3oxcDQ3MXFqZkhwZmNURnMzd3lMbjVRTWlRUXk5X2NlZ0tRckNBQ0pCdE9McmtkMGppTzg?oc=5"
+        }
+      },
+      "notes": [
+        "El editor atribuido es cio.com, www.cio.com o CIO España, siempre con source_url https://www.cio.com. /es es una ruta candidata respaldada por búsqueda restringida; no se comprobó su respuesta HTTP. cio.es no devolvió resultados."
+      ]
+    },
+    {
+      "id": "biz-66-computerworld-espana",
+      "request_id": 66,
+      "name": "ComputerWorld España",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "computerworld.es",
+      "url": "https://www.computerworld.es",
+      "search_scope": "computerworld.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:44.539726+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acomputerworld.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.computerworld.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Las tendencias tecnológicas de Gartner para 2027 amplían (y limitan) las capacidades de la IA - COMPUTERWORLD ESPAÑA",
+          "published": "2026-10-21T07:55:37+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNejMxY0ZpSFNTVlhGTzBvN0FDZTlMdTN2M3V5dkJVOVdRQ3l0M3AxeFg3cVBIWl9OVjZOdmZLVVE4NEpPNDExeFQ5R0VnQVIwb3N0YzZ1TnZpQUJzN0paNmpGY0l4R1hibGlJZHZlOVVKUTI1N013STFlbkY5VlMtYy1mNlF2MjNhVVo0TUFBYXdrMmFIck1HaVIwNjF0M3A3aWoydDNIQzIxMVNZUWtDWXYzdkhnV0xnaXF2WHY5TlczSV83a3JUVDFvZXVqYlRFbE5QeThIa2xjZzJCUmctTVlTOXU0R2w4?oc=5"
+        }
+      },
+      "notes": [
+        "La atribución es COMPUTERWORLD ESPAÑA y el source_url es https://www.computerworld.es. No se hallaron resultados para computerworld.com/es; no se presume migración a ese candidato."
+      ]
+    },
+    {
+      "id": "biz-67-redes-telecom",
+      "request_id": 67,
+      "name": "Redes&Telecom",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "redestelecom.es",
+      "url": "https://www.redestelecom.es",
+      "search_scope": "redestelecom.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:45.828637+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aredestelecom.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.redestelecom.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Amper consigue 50 millones de Cofides para la compra de Teltronic - Redes & Telecom",
+          "published": "2026-10-28T13:25:52+00:00",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaFE1TGdCY0t2alFCUmRlWVVuWmp2TGNaQzhBUnJ5X2tiM2ZPSExiT2lVTlN4a0NGU3R0YXUzTXNWLTZDU0dCdWhzeDdUZmtIOEJzU3NzbGZZaVRVXy1tM2xxN3AwbVRtNUYwYzF5a1lmRmZDVmpuR1p6Q05HMTlsbWhiQ0xqbG9zRW9qQjRwSHhIT09oNXIwZzBUSFF4dmo5Uklkbg?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-68-ciberseguridadtic",
+      "request_id": 68,
+      "name": "CiberseguridadTIC",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "ciberseguridadtic.es",
+      "url": "https://ciberseguridadtic.es",
+      "search_scope": "ciberseguridadtic.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:47.058415+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aciberseguridadtic.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://ciberseguridadtic.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "20ENISE: más tecnología, nuevos riesgos y viejos problemas por resolver - Ciberseguridadtic",
+          "published": "2026-10-26T11:06:18+00:00",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZV83d2h4MXRwNlhOS2pqd0dVN1FpV2VHMEIxdFhocVY3WmpZWjVMbFVUdmYwUzBiMG9ISElzX2JTNU9pSlRFZ29qOU1FWlpPZ1JDSWlkRWdPV1ZXa09qQkZJTE9KUGx2LWZZelJOeDJYbG4tRGk5eHNsdFFlaUxDWHhTMHJsT1VSYXZBQWN1aU5HOGxka1QzTElaUVpBV2tFdjBKdGJUZXBCZmY4M29iaVFxenMxYm8taVZMLV85TkNsZkZiX0E?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-69-silicon-espana",
+      "request_id": 69,
+      "name": "Silicon España",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "silicon.es",
+      "url": "https://www.silicon.es",
+      "search_scope": "silicon.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:47.906658+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Asilicon.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.silicon.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Lenovo y NVIDIA aceleran la carrera de la IA híbrida - Silicon",
+          "published": "2026-10-05T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeUtiRmhadVc4OU1qNlNjTEl4N09zTE1VRXItWFA4UV94TjF4Q2EyU1I1bGxwb3Nqc1ZXRDlMUklTR3o1YmN1MEYxM1FBM2wtQVduUXA0Nmw1X2xrX2FTYUJTaUFmcjAySy11YjlqT2JMRXA0SElGTi1HeEoxODEzc19GWE1xZDl6S19B0gGQAUFVX3lxTE16MmtfMjV0T0pBbVpFM3BUUENxN3RoeFNLQS16aURlRm53MFZwUS1JUGw5eHp6RzNTWE0wOEQ0Rk9oWjZ5S2pxNkRwRHBETUdjX1VQWFZ6bXEyT2VMamE0WWFheDJMcVkxUTg4b1VKVEZKTko4Tk5WNGROQmZ4RDVuUWQwc1JINTVnZGNJV3RlbQ?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-70-channel-partner",
+      "request_id": 70,
+      "name": "Channel Partner",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "channelpartner.es",
+      "url": "https://www.channelpartner.es",
+      "search_scope": "channelpartner.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:48.935373+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Achannelpartner.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.channelpartner.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Microsoft ofrece una salida de la compañía a 60.000 empleados en plena expansión de la IA - BPS Channel Partner",
+          "published": "2026-10-27T07:45:11+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYkdRd0JzUmxwUll0N3N4ZlUtci1xN3ZCRjUweWJ3c0h6eThXMHF6RFIydG5CUjFyYUNfeThWOXd5TTJCYkxsdmdLeVFxRGc3NEZIOFBaZ1M2QUtWbUk1Wk5RU3poSU56SkZ4T2xTSnVMNFZldGR3el9jODJEeGJta1VGLWJfbVdEekt4ckV3RnhYOVFJNXU4Tk5SclI3X1dwQVA0ZUN3SmFNZ0VLdGUxV2NTVDdnamM5WVdjN0VyaGZ4Z1RtYld5emp3?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-71-it-user",
+      "request_id": 71,
+      "name": "IT User",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "ituser.es",
+      "url": "https://www.ituser.es",
+      "search_scope": "ituser.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:50.936964+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aituser.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.ituser.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La mitad de las empresas mantiene copias de seguridad vulnerables - IT User",
+          "published": "2026-10-23T07:30:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUjdoLUV2NmRocm1NZEtNNXQxbTVEVlNSb3RzTVVYNTZMYnRsV2FzRWFuMVlHeWdWZnNaUTBtUWRPRmxfUG9ES0pROFZtWGM1UkNrSEo3eUVxLVVVTFlxOHFvd3lxaC1zTGVLY3ZaZ1NMdEthazdsb0hFdURqbVJlbEhyVDJ5U21nYk5sTHNrMU80RFE3YXdIeUFSamE0SmdSS1NVWEJNZDY?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-72-computing",
+      "request_id": 72,
+      "name": "Computing",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "computing.es",
+      "url": "https://www.computing.es",
+      "search_scope": "computing.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:52.274530+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acomputing.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.computing.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "El sector de los centros de datos demanda acelerar la capacidad de ejecución y evitar los frenos regulatorios - Computing BPS",
+          "published": "2026-10-23T11:58:10+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUjlPcXJrSXhyUFRWQ3lYWkRzUWtIMkViWG1sNVpxck1iR3ZHY216eTc3MDRMcWYyMEpmcUtCVHl6dXNMRFRERUdfcDNBRFRHQkNNN1AzanVxUzVRVERzcjRKWEpuOXktWWR0UXU4LVBjeHRhMDQwY0p0V3dNQnRtNUhoc3ZuV285b3pfTUFTend5WDdKU3hpdER1amlUaUt0UXZGbVBZekNYNnIxdGFKZXNwTVBWZ3FlaWYtaWxyMU1pM29hTkQ4ZF83Y1JQSlgweTZnazE3Y0VlejQ?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-73-eleconomista-digital-ia",
+      "request_id": 73,
+      "name": "elEconomista Digital&IA",
+      "group": "business_media",
+      "kind": "news",
+      "market": "España",
+      "domain": "eleconomista.es",
+      "url": "https://www.eleconomista.es",
+      "search_scope": "eleconomista.es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:53.179319+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aeleconomista.es+%22Digital+%26+IA%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.eleconomista.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La experiencia digital ya es una cuestión de negocio: por qué importa apostar por la IA y la gestión IT - El Economista",
+          "published": "2026-10-26T06:00:11+00:00",
+          "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNRE00MXNRTGJzUktERmNHdnJ6UEZTVVdleWNiclRQQXQxQlVCdk9Dc0FPUkR5X0NSVEdiMnVZdFNoZUprQnoyRUh1S3ZqRUtOZ3JUd3lFQlloVFZjNXJKSUthREJPZ1NjQ24xVGc2dUhPZFVRZ2FQb1JQUkRiX1JYQ3BqXzRUYnBDcVg0REpORFJMVDF1YkVodHg0aldSd0ZMdFJ1QmwzNUlXUU9ZOThJa1dYeXdaSHc0b3g3MV85RU01Z0w2bDRYS0tqUHAycHFQU21KWm1NcVE4SnN5SGFPQnZOMkZLWFpyOTlLNEs0OFVkaGpDS0YxVll2cmprUGZCa2dxNHJ3?oc=5"
+        }
+      },
+      "notes": [
+        "Se indexan dos fichas tituladas «Digital & IA» con fechas de 2026, además de artículos de elEconomista.es. Esto respalda el nombre de la publicación temática; no determina su URL exacta ni verifica una licencia o RSS propio."
+      ]
+    },
+    {
+      "id": "biz-74-interempresas-tic",
+      "request_id": 74,
+      "name": "Interempresas TIC",
+      "group": "business_media",
+      "kind": "news",
+      "market": "España",
+      "domain": "interempresas.net",
+      "url": "https://www.interempresas.net",
+      "search_scope": "interempresas.net/TIC",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:54.406037+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Ainterempresas.net%2FTIC&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.interempresas.net",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "El software empresarial entra en la era de la IA agéntica - Tecnologías de la información y comunicación - Interempresas Media",
+          "published": "2026-10-05T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbTg3RDVJdHZsYVR0TEdzLUdiMlZsczhJWF9rdE10UVpQNml6eEZwYjBIV0hYeF9iUDRGTjY3TnVUbkZGWE9xZkI4SjNpRVdhdVVwQld2TGVMZlRlLU4tRGZBckZ6Z0JiY3BabmNlei1rVWdobTlDSHU3enM1eHlGV3FOOUsxcWxrVDFDWlJoWU1DSzVGeXFRd05aRENTc245aFBocnpR?oc=5"
+        }
+      },
+      "notes": [
+        "La consulta restringida a interempresas.net/TIC devuelve la sección «Tecnologías de la información y comunicación». El editor atribuido es Interempresas Media, compartido con otras verticales."
+      ]
+    },
+    {
+      "id": "biz-75-muycomputerpro",
+      "request_id": 75,
+      "name": "MuyComputerPRO",
+      "group": "business_media",
+      "kind": "news",
+      "market": "España",
+      "domain": "muycomputerpro.com",
+      "url": "https://www.muycomputerpro.com",
+      "search_scope": "muycomputerpro.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:56.379483+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Amuycomputerpro.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.muycomputerpro.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La IA baja el ritmo - MuyComputerPRO",
+          "published": "2026-10-21T11:07:57+00:00",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAtX2RYcEg0Q1B4bnBLY0pTVHlHbjQ5Z0Z3SjQzNWRnRUlvQVYxR3JmeXpsSWo3ZEQtQ1JlVmZiV0lucm5GMXdzN0hkRmY1MklhTmZZTUI2RW02dk1TVGpuQmdqTEdvOFFFWVVBLXlR?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-76-expansion-economia-digital",
+      "request_id": 76,
+      "name": "Expansión Economía Digital",
+      "group": "business_media",
+      "kind": "news",
+      "market": "España",
+      "domain": "expansion.com",
+      "url": "https://www.expansion.com",
+      "search_scope": "expansion.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:57.526581+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aexpansion.com+%22econom%C3%ADa+digital%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.expansion.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Bit2Me STX, autorizada por la CNMV para crear su bolsa de valores nativa en blockchain - Expansión",
+          "published": "2026-10-28T10:49:45+00:00",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYmFWdUFXdEdQaGRJcjBDXzFFYnlqT3lkOXZ2NnBjUmpON3U0dU83SmJ1cEM3XzEyWk1FSzVLVHBGM3EtRDd0Q09ERDVVNTAyMGZCM2dLZ1RFaTh0RG8yWGEydjdnRGlWNTZGMFc2YjBpLVRmWXRGTzdzYndQb2wxeFRuUXdwdkJvMnVqQ05IU1BsZHVRMEkyNnFxajJXUm5zaXhPZUQ2VDJxVTRSUF9LNGI0OG40UdIBtgFBVV95cUxOcVV3Z2wxYmxnb1NxSFVySjlVaEZ2Rm1wLVNuRW1QTGNsWURLNTRJUEF6YkhreDA0dXlfcno3aDVDWG9ieUQ2YzQwdzZXVWZlaXRXRXdsX2NSYkVFZjRURnJuZlZ2Q2JwaGlteVlsY0dWMXlwd1JLWmtXMGxzZElLU3RtVmJwYVFsTGVoWTdqQk45ci03SzJQRGIzb2ZXcWRLNlVLc19ZUnQ5bGxqRXM1SWZkWHhtZw?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma Expansión como editor de artículos de economía y transformación digital. No se acredita una sección independiente llamada exactamente «Economía Digital» ni su URL."
+      ]
+    },
+    {
+      "id": "biz-77-harvard-business-review-en-espanol",
+      "request_id": 77,
+      "name": "Harvard Business Review en español",
+      "group": "business_media",
+      "kind": "analysis",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:58.694459+00:00",
+        "query_url": "https://news.google.com/rss/search?q=%22Harvard+Business+Review%22+%22espa%C3%B1ol%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "No se identifica una edición vigente de Harvard Business Review en español. La búsqueda hbr.org devuelve cuatro títulos en inglés, no muestras en español. Las demás consultas devuelven menciones de terceros. No se sustituye por Harvard Deusto ni se identifica esa marca como edición de HBR."
+      ]
+    },
+    {
+      "id": "biz-78-forbes-espana",
+      "request_id": 78,
+      "name": "Forbes España",
+      "group": "business_media",
+      "kind": "news",
+      "market": "España",
+      "domain": "forbes.es",
+      "url": "https://forbes.es",
+      "search_scope": "forbes.es",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:59.570350+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aforbes.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://forbes.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Microsoft gana un 32% más en su primer trimestre fiscal, impulsado por el crecimiento de Azure - Forbes España",
+          "published": "2026-10-28T20:45:47+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONlhFVmhYWWZNMk8tbXVJbm5jSFZvREEyN3FWVks5MjdGamhLOERpUjhPYm11VWRoOFJMNUpzMFBqZUVsVDJkZWU4M0ZwREtQc3l0cnZ1MDVOVDc0bE8tQ1BmMV9hMURTZVV6Q2tmUENXRE4xdU9EUVFEbmtiZnRVZ2d6Z29DdktvVXREZUVYYl9JWGNHMzJRYklrcjJ1R0ozWER1NVhaejVua1N5cmtsbWpaVUl2T041MzhGZnp2QnBVRTlmX19OUUJJVQ?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-78-forbes-mexico",
+      "request_id": 78,
+      "name": "Forbes México",
+      "group": "business_media",
+      "kind": "news",
+      "market": "México",
+      "domain": "forbes.com.mx",
+      "url": "https://forbes.com.mx",
+      "search_scope": "forbes.com.mx",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:00.667546+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aforbes.com.mx&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://forbes.com.mx",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Riviera Maya: la importancia de invertir con disciplina en el mercado inmobiliario - Forbes México",
+          "published": "2026-10-29T03:06:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOWcyaTI0VUZySjV4Ui1YZHA5SlJkMmxXZkVGNEFFbW9uM2VVVWVfaXFpV1hqWmJfLTkzSWxNT0JWdGRTMGtUYnhxbVROVmN2UEJvNnlzNUcwNTFQNEVQZlpldmhPcEF2OXl3eFQydzAxN29MMmRNMkJNekFlNmRLSHlyLTFFYVI2Rjhlc2dNMDhVR2FyMFBJX3otSWtub0NyV1pVcFNUbC1MRWxzVEtkNkFGV3NOZXM?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-78-forbes-chile",
+      "request_id": 78,
+      "name": "Forbes Chile",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Chile",
+      "domain": "forbes.cl",
+      "url": "https://forbes.cl",
+      "search_scope": "forbes.cl",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:49.778828+00:00",
+        "query_url": "https://news.google.com/rss/search?q=%22Forbes+Chile%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://forbes.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Esta startup barranquillera levantó US$5 millones para su expansión y los chilenos de Taram Capital la apoyan - Forbes Chile",
+          "published": "2026-10-28T15:05:15+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOHMtTS0xcHVUTnh0VlloTVhYWEFaSkJQRmxwdmpxTTZWY3lTV25EZDFSTU5WWkNwZWFnUWhES0FqMnVHUXlsWDdCbXU5STdYX29KRHRNenhwTElDUGt3OG5lTlhmOWZwdEtBZFpDbU5fR2p5WF9sZkVmN1dkMjE1d21oN0JaMGlLUnRwY25jejJZUDJDVHY0Q3BNb21qQi1hTGFtamhpTDlpdy0tY1Jqb0wtZmE2ZjBSTktXQUdMQ3ZiRWFlOHZ3MkN6N3NhaTlRWEs4b2t4dkRsV1hyX3pfUQ?oc=5"
+        }
+      },
+      "notes": [
+        "La atribución editorial Forbes Chile corresponde a https://forbes.cl. Las dos consultas sobre el candidato forbeschile.cl no devolvieron resultados. La consulta por el nombre permite corregir el dominio, sin afirmar redirección entre ambos."
+      ]
+    },
+    {
+      "id": "biz-78-forbes-argentina",
+      "request_id": 78,
+      "name": "Forbes Argentina",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Argentina",
+      "domain": "forbesargentina.com",
+      "url": "https://www.forbesargentina.com",
+      "search_scope": "forbesargentina.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:03.807664+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aforbesargentina.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.forbesargentina.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La apuesta de dos empresas neuquinas que crecieron al ritmo de Vaca Muerta - Forbes Argentina",
+          "published": "2026-10-21T14:24:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYmNRaVA1Q2VwX0huakZaX1A2NXVwekxhekJsLU43MDdlaEs2UFp0QnZCUVEwYXZUdXV4YllzR29USWpRMm9iaGRsLWhmb3g4Vmlpb0FLX1dEUFhGWnMyb3hhWnVFMVVIcWp3RlpON3Rsd0hYbGxtNWJHV0xqNVk0V1YxZXVLN0F1eHI5UTlFdllJSjVvbWdPYXJEbnlzYTd3ekI4MnhuS1ZWNzlmVzdrcUV30gG3AUFVX3lxTE9mTjZNRkZVRUlFUWxyY0dCSTZrQjRfMDBLM1VMREtRSWh1RWFCSDRVNk10bDlUc2F1NXhRNnFoRXNsYjhXYWdKV0Itc3h2NzlOWHlUVjZjNXllWklQQVRLRkpxUm9PTHRfbEgwdzl1ZlVYM3NxeHJVdHdjbTZ5S2hFTWp1MDRzblltUVJFVXAwbC1oXzRXbWhpRXJFME9LU0RvajlhaWFfd01IN2VnUkpkcjN0NUZpQQ?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-78-forbes-colombia",
+      "request_id": 78,
+      "name": "Forbes Colombia",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Colombia",
+      "domain": "forbes.co",
+      "url": "https://forbes.co",
+      "search_scope": "forbes.co",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:05.115072+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aforbes.co&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://forbes.co",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "¿Cómo una empresa de suplementos pasa de $600 millones en ventas a $20.000 millones en menos de 2 años? - Forbes Colombia",
+          "published": "2026-10-22T18:36:24+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMTY3RkpXNGJSLXZTOS03Y1o4T3JkaVlPODRHTEFQSC1IQ0NMVFdpMDhVSE1EY1E5YTNWZVd4R3JLQVRYOFdFLXZtaG5UMjh6VTR2REZCRHhDOEczelBFTFdDUGZuMU9rRWU0WWNENEJybFFfN292RmVaTGl4QjZicjlTUGxuSHI0LUl4SWR6VHEtaFRmY1J6b3dEX2pkY1hKZHVzSERMRlNfWGxVOVQ5TEJrWjRKaWZBZTJRT2FHMDRIV2NTR0xLaDhGbTNIM3JWb2RvdQ?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-79-bloomberg-linea",
+      "request_id": 79,
+      "name": "Bloomberg Línea",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "bloomberglinea.com",
+      "url": "https://www.bloomberglinea.com",
+      "search_scope": "bloomberglinea.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:06.090491+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Abloomberglinea.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.bloomberglinea.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Reunión de la Fed y resultados de Microsoft y Alphabet anticipan un supermiércoles para el mercado - Bloomberg Línea",
+          "published": "2026-10-28T11:00:01+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPTDJzUDVuR2pRZ2w2cXBxVXh0TlNZbzFjWlBVbkI5bzExZmVjMDZ2WHowQ3F5VC1TcnY3VExMSENQU1ltUm5POVhxUmZuckwwSXFVZTB1R0NST3VrMTJBNUl2ZXVpZmZSWDR1VUVGaUx1VVl5MjcyZTh6eEZGOGtQV05UbVZQeUJwX3pFazNkWmtFSk9yNm8wc3BjTmdHakU5TzVuMllXZldiNjVnMzF3cEhYTTBRei1ER2luUDFWWVdBOVlwcVJ4bllOVFpqSWdmN0xSSEx30gHqAUFVX3lxTE83dWlpU2Nra2RydFV4VzlFVG80WkMwVFVBZTZsZW5qUE5OYXpZRXJBTlNMdFJTOHo0b0g1ME9TeFJZTjItSER2RHR3ZThvM2dBamM3bVhaRWF6Mm9FWF9wc1JySVRTanM2eUxaMlN2MG1VRENEdlh1NG50RTQyazllRlJQNmtkZ29jNDd2UWFwd1hzQnVYYXZGX2VneF95aHhZRGxYTXlteTFJZUxtRDZIVHBqOWFVdjZQdGhrRFJ3QVZaVnFJNzM1cy03LVVwXzY4MU1EblFTWmxyOWdrZUpGVW54bUJVb0JPZw?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-80-business-insider-espana",
+      "request_id": 80,
+      "name": "Business Insider España",
+      "group": "business_media",
+      "kind": "news",
+      "market": "España",
+      "domain": "businessinsider.es",
+      "url": "https://www.businessinsider.es",
+      "search_scope": "businessinsider.es",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:06.943373+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Abusinessinsider.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.businessinsider.es",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Microsoft ofrece la salida a 60.000 empleados entre bajas voluntarias y prejubilaciones. Esta es la carta de Recursos Humanos - Business Insider España",
+          "published": "2026-10-26T16:15:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPaTBiSVNsLW01a0dSQWZwNHk1YkZuTGRrcVZtRlc3NDdnZ19yQktnbzlLNUxZeFR2VmY3UVZrV0pFWGI5Nll6c1V4Y1N6b2FNUTF3a29mQzJIaGJ1eGNfU1N4SUYwcklqaktDTm9Yb2JOWXJnQzdjWlhfS3NpU2F4dlNiVnh1YXprMVhoSkRZMDh3WWRNSEdaY3V3VTZoX1h4cGxjWEM2b0VGbVVybXJ2UEJPZUpkcUY1LWM5Y0RPdXBNN21sSFZfTWU0eVRrZmZjamZDeHh1cENYdXRjd1FyMGFodzVfbHF6NVNKVV9NTW5TZXRPcF9VY0Nn?oc=5"
+        }
+      },
+      "notes": [
+        "Las muestras actuales continúan atribuidas a Business Insider España bajo https://www.businessinsider.es. No se presupone una migración de dominio."
+      ]
+    },
+    {
+      "id": "biz-81-wired-en-espanol",
+      "request_id": 81,
+      "name": "WIRED en español",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "es.wired.com",
+      "url": "https://es.wired.com",
+      "search_scope": "es.wired.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:08.623191+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aes.wired.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://es.wired.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Probé los principales agentes de IA durante un día entero y este es el mejor - WIRED",
+          "published": "2026-10-27T19:12:15+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdGRLVVVPVVFwNk9kVXB3Y0ZqT2JITHk4RE1pM1hMOW5PSFhEV1JGTUpLay1nbW9GMi1Palc3M210YXI2REphZUhpMkdsRTMwbmFfTGJ4LXN6NF9pTEFLc1VFUFBHQTBnQll2eGMyZjA2Sk12ZDlQdFpjOHAyUDBWVlJRVUozMUZBcDNKQ2h4Zl9hVENjQTRsakpENWc0QVIwQnpfLXpIc2ZDU28?oc=5"
+        }
+      },
+      "notes": [
+        "El subdominio es.wired.com y los títulos en español respaldan la edición en español. El alcance regional no equivale a una sede societaria verificada."
+      ]
+    },
+    {
+      "id": "biz-82-bnamericas-tic",
+      "request_id": 82,
+      "name": "BNamericas TIC",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "bnamericas.com",
+      "url": "https://www.bnamericas.com",
+      "search_scope": "bnamericas.com/es",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:10.869661+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Abnamericas.com%2Fes+%22TIC%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.bnamericas.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Brasil va a segunda vuelta: ¿qué puede esperar el sector TIC? - BNamericas",
+          "published": "2026-10-05T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSkJqaXZsblBpcWFsd29wTjlaNHdHM05aYW40U1Rid29oRGZWVlJqN0pCenFReTBLelItTDZnY0dDT0hMU3FENmxSMWdlcEVIemtwRkZIa0tRakdkdVZTZFBQQ2F2RVBCUy1DZTc4UkFXRi1fUXQxM3p0ODBYQTczLWZxU0RTZEdaVHg4T2U1dmJzZ3RqOENmNGxzdFNqZw?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma BNamericas como editor de noticias y análisis TIC en español. TIC se trata como cobertura temática; el source_url no confirma una publicación independiente denominada BNamericas TIC."
+      ]
+    },
+    {
+      "id": "biz-83-el-economista-tecnologia-mexico",
+      "request_id": 83,
+      "name": "El Economista Tecnología México",
+      "group": "business_media",
+      "kind": "news",
+      "market": "México",
+      "domain": "eleconomista.com.mx",
+      "url": "https://www.eleconomista.com.mx",
+      "search_scope": "eleconomista.com.mx",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:12.051958+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aeleconomista.com.mx+%22tecnolog%C3%ADa%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.eleconomista.com.mx",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Multan con 67 millones de pesos a empresas que simularon competir por contratos de tecnología - El Economista",
+          "published": "2026-10-27T18:29:20+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdkp6cVdUTGNZaUtneGlJY3dvS3VidnVpWnJ6WDgxM280NXF5ZGpXQ1ZuQ3NCUWJGWFhMdWYwQTJGRGlvcTN0QVdUWWJ1eGVsMkhqWUNDTmRkZWhjZmJRbmxKUU1QcXM4amRKNy11bXRVMy01NnNWRjB5N0FxSEpEWjR0S1kyX3VKS29PUkVQXzJZak90UnBkclp4VkhJTE4yYlJLYTFnVTVpVUl2U19PLXA1Y1BGaW5XV0o4cXIxV3lFNUJEdVRLTG1Sc9IB0AFBVV95cUxNRjk3c3gwRC1VSkd2WGZMT0hqMVFYaU5jNEJ4WkJNLTBheTcyY2k1dk52OHJQc1pZWUJNY1MydXRoZGZlWHozMEdmQlhoSFgxV1Vwd2JDZVg0cllhNEstSmg4TmNhTldJYlVoUm1DQ2ZKaVYxWElVYzNKa2dnTDZIYWVrRDI2R1NERi1xc0Q0eDA2UFdzQ3ota19XOEZSWGR4UVQ2OS01S3haRFJuYnVSRDlkTE1Td2V3MFpLbjdSelMzb2lQaTlycGEzcmpmNENB?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma El Economista de México y la cobertura tecnológica. Las consultas temáticas no determinan la ruta canónica de la sección."
+      ]
+    },
+    {
+      "id": "biz-84-df-lab",
+      "request_id": 84,
+      "name": "DF LAB",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Chile",
+      "domain": "df.cl",
+      "url": "https://www.df.cl",
+      "search_scope": "df.cl/df-lab",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:14.341678+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Adf.cl%2Fdf-lab&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.df.cl",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Las claves del proyecto de fondo de fondos para capital de riesgo que ingresó el gobierno al Congreso - Diario Financiero",
+          "published": "2026-10-28T14:06:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSng0eWFob3h6RWtsV240b2NDbk9JOHNPNTc5a3hlMFRkeU11ZlhWd0EwZ0JPeU1GeUIyX0JKVk1ycVl1Yi1yTUNpQnBqSGhmMDVoczQyOU5tdTBpYUstNmt4TXR0VzJzOS1JVjRacTVKWS1xVmpxR3AzbmhvVXUxaGZfTUlJZV8taUROM0VSdXVtOUxwYkZXZE1VOG5idVdFRHZaZWV3b2tIUjc3VDFfOHlUMS1jYzQ?oc=5"
+        }
+      },
+      "notes": [
+        "La búsqueda restringida a df.cl/df-lab devuelve artículos de Diario Financiero actuales sobre IA, emprendimiento y capital de riesgo. Es evidencia indexada de la sección, sin comprobación HTTP directa de su portada."
+      ]
+    },
+    {
+      "id": "biz-85-portafolio-innovacion",
+      "request_id": 85,
+      "name": "Portafolio Innovación",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Colombia",
+      "domain": "portafolio.co",
+      "url": "https://www.portafolio.co",
+      "search_scope": "portafolio.co",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:15.061824+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aportafolio.co+%22innovaci%C3%B3n%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.portafolio.co",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Hub de Innovación del Centro Financiero Internacional de Dubái crece con más de 1.900 'startups' tecnológicas - Portafolio.co",
+          "published": "2026-10-19T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNa0ZfOFB0TzFZek9xZG03dW13US01X2lzYmpoczhfN0l3ZjlEN1RuXzdCYnVGeUNnWDFzZmNVSmtTQnU0czFPRmx6bDY2SDJNSHIwdUVHbG0tdk1odWd2NmtaYktPNWtHYm8weGpnTEp2Z2g5eE51dTdzN3lUOXNhNEhfSnlPYzRRazFqZVBNRmVfbHoxdFE5S2txdnVoSm1hQ0pjWWdwbmVCWTk5SDc2N3VjeTNZNHFEanF1VFk3RzVOOW1jc1h5dkZIVG0tMUNXYlJWQUY2Y2w4YmtQdTJrbmpmVFNId9IB6wFBVV95cUxOTUlwWWZsUGxVNXA5UkpwT3IyS2g2MnRvdzdnYXFPSmU4S2xBQ2lzMU9jUW1KdzJteUsyaDFlNlU0UGRrSkMwZVpNREhPTFJPNW1QdVNPQ2dELWNxTkZSX3dZcE1sMnFNdHNaXzZZWU9YTnBDUlVfR3dqdk1idkpDaThFQTdwbUZLc01FTWpCdl9HNm83UDh1VmVCWV80OUVEc2c0MXZnTVNiU0Nla05tY3ZwYlRicnBTZG0xaUZQTjlvd2NDR1dNTThZczZXcDJEaXdtbzFYS0NxUWZyanBmdXZVWkdjMDF4VWFF?oc=5"
+        }
+      },
+      "notes": [
+        "Se eligieron muestras atribuidas a Portafolio.co en www.portafolio.co. Se excluyeron los resultados de Blogs Portafolio (blogs.portafolio.co), que no se usan para confirmar producción de la redacción principal. La ruta exacta de Innovación no está verificada."
+      ]
+    },
+    {
+      "id": "biz-86-gestion-tecnologia",
+      "request_id": 86,
+      "name": "Gestión Tecnología",
+      "group": "business_media",
+      "kind": "news",
+      "market": "Perú",
+      "domain": "gestion.pe",
+      "url": "https://gestion.pe",
+      "search_scope": "gestion.pe",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:16.138067+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Agestion.pe+%22tecnolog%C3%ADa%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://gestion.pe",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Una tecnología con inteligencia artificial busca acelerar la clasificación del café en Cajamarca - Gestión",
+          "published": "2026-10-28T21:15:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdWladGZ4V2RUQ0d2SXVXdWx4OHdkNVFqNVJ2UjJ1cEFrSEZ1OGhqVDRGUGU4clVwOWJhTUR6OENMbHVObG9tMUZ1SHJ3Q0xOYldoZC1JY2V2c0xGSzlYbmNEMk05X0NmY0NNMTB5MHhVUDNrRmVXVEdXc193ZERhdS1SYXlHb0NDS0dSdWE4VWJydExoSXNMUnlzOHJ2TkNlUTQzYjl4Qzl6OWZvZlVZdFkySW02aGpVTXNBdU1YcDJiM3ZDMFA4RDRwT2V5VmpSSnJTell4MA?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma Gestión y su cobertura de tecnología; varios títulos históricos llevan la etiqueta TECNOLOGIA. No se verificó la URL canónica de la sección."
+      ]
+    },
+    {
+      "id": "biz-87-cinco-dias",
+      "request_id": 87,
+      "name": "Cinco Días",
+      "group": "business_media",
+      "kind": "news",
+      "market": "España",
+      "domain": "cincodias.elpais.com",
+      "url": "https://cincodias.elpais.com",
+      "search_scope": "cincodias.elpais.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:18.131529+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acincodias.elpais.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://cincodias.elpais.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La española Big Sur Ventures lanza un fondo de 100 millones para ‘start-ups’ de tecnología ‘deeptech’ - Cinco Días",
+          "published": "2026-10-19T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU21BbXV3UklCeFJRM2p4YlZCNEdSRkJNSDF2YWdadThJXzduSG8wWVdwelRaWjBpc2x2NGI5MGdEUUhCaXotSjhyU0lmMktzSEkxZm5WQS02YTdEaGx6WmhRaGpqRmVrcGpGRXlqM1c5WmYzSnRxbi1hYW1MdW9hNnNHRVc0a2REdmVpdk9UR0MzeUx6RnpUaUNsWFduSm1yemhfTmtBZTc1ZGY4bEtuWjNaTEJqM0szRklLQUx6N2Yzd2Z5SGxVdF9nekl2TzRSRlN4SG9qaTZjdHcxU3ctaUdnZ1lHd0XSAfsBQVVfeXFMT0xicjM4Sm5GNU9zNnM2WF9RYnRUSXZHSEhHTmJMNGdwVDI1SkxrbDhmXzN6ZlNIbVkzQXNrQU5lOVRsZVl2QXYzSmRPRVlYUEJTZFJzVjhGc2hmSk5LSTV0ekhaTFFqaFh6WmI3WG95OUtzeFFoTG9zNm5FWDNPTi1hZUlhRGViZ0dzd3pLZnpaWXlGNHU2ZXdNM09BMl9Ha2tWSk80eGRzVlc2SklOSmNnWkhac0R4QXZNSFFLUEtaWXM2dEFqTy1aQy1tdnFtc1VGX0Uxb2JrMFIzZmJ6U1ljZlNuTFJXV0ZUNlpaZmNQRVg1LUswUjRFRTg?oc=5"
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "biz-extra-dpl-news",
+      "request_id": null,
+      "name": "DPL News",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "dplnews.com",
+      "url": "https://dplnews.com",
+      "search_scope": "dplnews.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:19.488286+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Adplnews.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://dplnews.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Oracle invertirá 1,000 mdd para fortalecer su red de socios - DPL News",
+          "published": "2026-10-27T15:43:23+00:00",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1BZzBXXzFyT3M2Y2lhbUZSODVyTkZKYXNfVFFKZUdGZzQ2TEI1QWxKSmxlOWtIMFAyQnZ2LUtNd2NIT1ZoX1o0M2VOT08yZnNocGV4YVRIUmNlM1FxUFFhVHVXRXhhdk5EbjFv?oc=5"
+        }
+      },
+      "notes": [
+        "Medio especializado en telecomunicaciones y políticas digitales. Se confirma la atribución DPL News; no se presupone que todas sus entradas sean producción original, pues la auditoría sólo lee metadatos."
+      ]
+    },
+    {
+      "id": "biz-extra-genbeta",
+      "request_id": null,
+      "name": "Genbeta",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "genbeta.com",
+      "url": "https://www.genbeta.com",
+      "search_scope": "genbeta.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:20.577951+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Agenbeta.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.genbeta.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "OpenAI despide a tres trabajadores por manejar de manera inapropiada “información sensible” - Genbeta",
+          "published": "2026-10-16T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQSHVjc20yRTJLYUVlN0hqQUtIMXRRdTV0OTE3d2ZNLXE1OGRhNDlsOVMzN2dYS2gxdjE1bFhoY0U1eE5wZmZWd2FBaU1xZDJRZEMzYVJaUHdoTzgzU2VtZWY1d3pldFlCMENtRHdpXy1yeUpzTEI5TGlIZ3Z3cVl2TERwNHZ0S2Q2S0pKM3dPMFp4NHlXUmZYdVFRdmxsMWEzaUpsWHAtTzZublNLdFJWSEczWVFLOVZR0gG-AUFVX3lxTFBfeUhkNjRrY1AyQkk3SUJBUFhUV1dqZkliWVEzSUx1SWxxNUN5Vm9ZRklpTmVENUM4V3JQem1QRWh3U0ZMLVlUalJxTE5LZWhhRG1qc1hDRDJKTDY2akk5OXQtZ3VuOGtQYXR0VVdpYndUdVV2TG5wVjBNM0g1NUNHNFRjSGNCWDF0OHF0U0x1cmxtV1NVd3FTSWdjbmkwTzk0MlhjOWgyTElpRVRCYy0yalB3Q2RzVWFlWjBCY2c?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma Genbeta como medio tecnológico generalista con muestras sobre empresas. No equivale a un medio exclusivamente B2B."
+      ]
+    },
+    {
+      "id": "biz-extra-hipertextual",
+      "request_id": null,
+      "name": "Hipertextual",
+      "group": "b2b",
+      "kind": "news",
+      "market": "Regional (Latinoamérica / edición en español)",
+      "domain": "hipertextual.com",
+      "url": "https://hipertextual.com",
+      "search_scope": "hipertextual.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:22.249514+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Ahipertextual.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://hipertextual.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Samsung y otros fabricantes de memoria enfrentan una demanda por inflar los precios de la RAM - Hipertextual",
+          "published": "2026-06-29T07:00:00+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWmFRbmxpeGpNb2gyTG5tckJCNVp5OWRwR3NHTnJhNEtUc1RBSXpUbkpGTGtrWThXV2tMYXpYUkdWSUlhSWIyYVZaS3I0aTVkeENEejdYUVFFX1RrS0JUNkNKaUZscTdtS2FyQ3RwTFVEUEFoeUJQUk9vN1FTZXpXV2NuWEJYcWZLaHc?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma Hipertextual como medio tecnológico generalista con cobertura empresarial; las muestras se limitan a tecnología y empresas."
+      ]
+    },
+    {
+      "id": "biz-extra-xataka-empresas",
+      "request_id": null,
+      "name": "Xataka empresas",
+      "group": "b2b",
+      "kind": "news",
+      "market": "España",
+      "domain": "xataka.com",
+      "url": "https://www.xataka.com",
+      "search_scope": "xataka.com",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": true,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:11:22.935610+00:00",
+        "query_url": "https://news.google.com/rss/search?q=site%3Axataka.com+%22empresas%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.xataka.com",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Los despidos tecnológicos de 2026 ya rozan los 197.000 en pleno giro del capital hacia la IA - Xataka",
+          "published": "2026-10-28T18:31:29+00:00",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZGx4WWJDTHVYbmRlaU9TUXJKZUlHZ1JNN0lKaTY3QVFwSGxjakw3ZTBMZV9Zbms0eW9DZkZ3WnY3U1UzNlJaWm9BV3BJdTNzMTBONHU1SlJ3ZGpTdm5zM0xlMzhER2xycWYzcjI1cGRRMWJ5NWM3a3h1Tm9HeWxxcFdoZ2IxVXF0cmE0T2piR0N4UjZnbXRmWi1ERWhOX1I2ODBUZ0R3UznSAa4BQVVfeXFMT3R5NUFHS0pNV0tnbFRISG83cXBtMkNjQXdsVUNWT0I2NkMyeENITENrbDRBeTE5bXNkbTZodkhSaTVyZ2pwcU1kbE5JOXBfTlFGdkxyTU9JUHdpZzd4X08xMGZzd2hRaGpoSm1sV29mUUR1QjF4TWNMZE9lU3RmTnA2bnQzcUVKalRNTEpJRjJDMWpLalEzZTBsX1hSSTVwbnNmSENsUTNZVVhHcFBR?oc=5"
+        }
+      },
+      "notes": [
+        "Se confirma Xataka como medio y su cobertura de empresas tecnológicas. «Xataka empresas» es aquí un filtro temático propuesto, sin prueba de una edición o fuente independiente con ese nombre."
+      ]
+    },
+    {
+      "id": "biz-88-journal-of-technology-management-innovation-jotmi",
+      "request_id": 88,
+      "name": "Journal of Technology Management & Innovation (JOTMI)",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "jotmi.org",
+      "url": "https://www.jotmi.org/",
+      "search_scope": "jotmi.org",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:28.538390Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Ajotmi.org&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.jotmi.org/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "http://www.jotmi.org - Journal of Technology Management and Innovation",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wZUlkYVZCZ0pmVmRoUzFxb21qc1E2NEhScnZTc0k4a1U3OURuLUpVMlRja1RSMm5TVExYMFRTcjZvZzJfdGhOUjZQRUNnSWw3aVMzRUdhRGlvX2NCYllGQmh6SkhMbHhnZE1pM3lJcw?oc=5"
+        }
+      },
+      "notes": [
+        "El RSS de la búsqueda por dominio devuelve 28 registros cuyo editor identifica Journal of Technology Management and Innovation y cuya URL de editor es www.jotmi.org. Incluye una entrada de portada y un volumen de la revista. Identidad y dominio respaldados por el índice; no se accedió al sitio original."
+      ]
+    },
+    {
+      "id": "biz-89-direccion-y-organizacion-dyo",
+      "request_id": 89,
+      "name": "Dirección y Organización (DyO)",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "revistadyo.es",
+      "url": "https://revistadyo.es/",
+      "search_scope": "revistadyo.es",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:30.798849Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arevistadyo.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://revistadyo.es/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Guerra por el talento: retos para los recursos humanos del sector hotelero - Dirección y Organización",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDOUhPZFVNV1hLVkYwMFp1LUhGMUlKdkVnZUtHUTNnOEFYTkhoMWFIc2l5S29qeVRmNF9IMDFiaE1SQnpWdkxOd3dvS3l3RHhtX1U2Wnp1Y21aU1p0X18zNVQwVWRCR28?oc=5"
+        }
+      },
+      "notes": [
+        "28 registros del dominio revistadyo.es presentan el editor Dirección y Organización; hay entradas del sitio y artículos. Se observaron las variantes con y sin www. La identidad tiene respaldo directo del editor indexado."
+      ]
+    },
+    {
+      "id": "biz-90-revista-latinoamericana-de-economia-y-sociedad-digital",
+      "request_id": 90,
+      "name": "Revista Latinoamericana de Economía y Sociedad Digital",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "revistalatam.digital",
+      "url": "https://revistalatam.digital/",
+      "search_scope": "revistalatam.digital",
+      "category": "tecnologia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:31.659072Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arevistalatam.digital&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://revistalatam.digital/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Acerca de la RLESD - revistalatam.digital",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1KaVBEanpaRTV3cWpRc3FYREplWkhqR0k0WHdvVS1PdnZFb0J0QVMtZ3RjSEdJLWxVWklVVWxaQW1BRHBadE9NN3RkOUdNdGVUSU9uMHFMekRXbXhI?oc=5"
+        }
+      },
+      "notes": [
+        "El dominio candidato devuelve 34 registros en la búsqueda de dominio y 51 al añadir Revista Latinoamericana. Entre ellos aparecen Acerca de la RLESD, Nosotros, Publicaciones y una categoría Editorial. Esto respalda el vínculo del dominio con la revista candidata; el nombre legal completo, entidad editora y país no se inspeccionaron en el sitio original."
+      ]
+    },
+    {
+      "id": "biz-91-revista-espacios",
+      "request_id": 91,
+      "name": "Revista ESPACIOS",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "revistaespacios.com",
+      "url": "https://www.revistaespacios.com/",
+      "search_scope": "revistaespacios.com",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:33.562066Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arevistaespacios.com&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.revistaespacios.com/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Inserción laboral de las personas con discapacidad en Ecuador - Revista Espacios",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oTjJYSHI0OGI5YkpBYmFfVXlKMjFMV0UwWllfakpKaFBJOWpPRG9YazRyRUR3amwyVjZYX0ptOFZ2dW9hYS1GMDFxbWgwZkRMWldkelRGX2NNUFU2T2JRdzdEbGxvWmlxWmc?oc=5"
+        }
+      },
+      "notes": [
+        "El RSS identifica como editor Revista Espacios en revistaespacios.com y devuelve un volumen y artículos. La búsqueda general también contiene homónimos ajenos, que no se usaron como prueba de esta identidad."
+      ]
+    },
+    {
+      "id": "biz-92-revista-gestion-y-economia",
+      "request_id": 92,
+      "name": "Revista Gestión y Economía",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "economia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:35.063494Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Revista+Gesti%C3%B3n+y+Econom%C3%ADa%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado"
+      },
+      "notes": [
+        "La búsqueda exacta Revista Gestión y Economía no devuelve resultados. Las otras dos consultas ofrecen menciones dispersas y publicaciones de salud o noticias universitarias, sin una revista inequívoca, institución editora ni dominio oficial. No se seleccionó una institución por semejanza del nombre."
+      ]
+    },
+    {
+      "id": "biz-93-innovar",
+      "request_id": 93,
+      "name": "Innovar",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "revistas.unal.edu.co",
+      "url": "https://revistas.unal.edu.co/",
+      "search_scope": "revistas.unal.edu.co",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:36.173110Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arevistas.unal.edu.co+%22Innovar%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://revistas.unal.edu.co/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Vol. 36 Núm. 101 (2026) | Innovar - Revistas UNAL",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5WMHZ6VFpCSVpIZWhyVW1NZXc5OFF5NFZucjJVU3UwSGhsUkdSVWl1TDlaUlppX0tuOVFmRndfNnlWNjRYdUJSRnBfUTVDdk9HX0plNjIxamprU1huYWZvSkUxR2xRTTFqc0VBX2gzWQ?oc=5"
+        }
+      },
+      "notes": [
+        "El portal Revistas UNAL devuelve dos números de Innovar y un editorial de la revista. El dominio y la relación revista/editor están respaldados. La ruta /index.php/innovar queda como referencia candidata porque el RSS muestra el dominio del editor, no una comprobación HTTP de esa ruta."
+      ]
+    },
+    {
+      "id": "biz-94-estudios-gerenciales",
+      "request_id": 94,
+      "name": "Estudios Gerenciales",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "icesi.edu.co",
+      "url": "https://www.icesi.edu.co/",
+      "search_scope": "icesi.edu.co",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:37.481972Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aicesi.edu.co+%22Estudios+Gerenciales%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.icesi.edu.co/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Vol. 30 N° 132 Jul - Sep 2014 | Estudios Gerenciales - Universidad Icesi",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZTE3WEt3WEpoWUJuNl9PcmQ1WENMV1VkS3o3YUx2SXVlSzI3MmhBRWZIYnZrcWJTOWFKOV9udWNpZmF3RnlrdXNjeFZFbHRvcVdUOTdJcXlXS2o3YU81TnNRUTBXUXZ2QXNUaGk2ZUxVaXZoRk1paVNtRmwycE5fS2M0X2tBVFZtaEE?oc=5"
+        }
+      },
+      "notes": [
+        "Universidad Icesi aparece como editor de resultados que incluyen el nombre Estudios Gerenciales, un número de la revista y Cabecera editorial. El dominio editorial está respaldado; la ruta de la revista es candidata sin comprobación directa. Los resultados de Elsevier de la consulta general no se trataron como el sitio oficial actual."
+      ]
+    },
+    {
+      "id": "biz-95-revista-venezolana-de-gerencia",
+      "request_id": 95,
+      "name": "Revista Venezolana de Gerencia",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "produccioncientificaluz.org",
+      "url": "https://produccioncientificaluz.org/",
+      "search_scope": "produccioncientificaluz.org",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:38.301556Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aproduccioncientificaluz.org+%22Gerencia%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://produccioncientificaluz.org/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Sistema de Arbitraje de la Revista Venezolana de Gerencia (RVG) - produccioncientificaluz.org",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiqANBVV95cUxNa1NxS3VqbWhUblExQVkzT1RxSGpVS2tvMXhhTFhiOXZsS212TDZJRVYyYk9XY1Z5VmlBcmdEdll1Y3JfSTFzREdYZ29pLW51eDVKWTB6ZEJLbWhVbnJqaEFLT2paRkxDVmNrdXJDbnVyaHVoUHNPNUR4TnpMRmYzV3ZkOE1PUVJMd0s2MjlnZnZUUENydVRTR2xYclEycUdaRzJESEI0WEM1TmN2djRVOXktWERJNzIya0xRdDZVU1RsZ2g4bWxZbHFsQ25FSHRIMTNpR1RUVFR2NXZVSkItWk91US1sc2diUkJEdl9FSzJGX1E2U0g2Qm5tRkJZbV9nNkd3WUtVdV8xSnJoYnllSlV1Z2w0cElZYmRaRVBoYXNhRkFxcC1zdVpfLXA3c2I1Qk44bk8wNGdxU3VjY3FSVGUwTEc1TERyTjIxbUlOUl9SNlUxa0tVbEhqb3FpZTRFNmJjYlN1a0dYVndHYTE5bWVnT2hrcHp6QUJvUVRlTGxoX252QzB0QmxadGs2aGE2cXhiUldOMG9IeWI5SW5KRTVFSjRUYy1l?oc=5"
+        }
+      },
+      "notes": [
+        "El dominio produccioncientificaluz.org devuelve Sistema de Arbitraje y Equipo editorial de la Revista Venezolana de Gerencia, además de artículos. Estas páginas de la propia revista respaldan la identidad, sin depender de papers de terceros que la mencionen. La ruta /index.php/rvg sigue como referencia candidata."
+      ]
+    },
+    {
+      "id": "biz-96-revista-dos-tecnologia-y-negocios",
+      "request_id": 96,
+      "name": "Revista DOS Tecnología y Negocios",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": null,
+      "url": null,
+      "search_scope": null,
+      "category": "tecnologia",
+      "identity_status": "unconfirmed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:38.614880Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Revista+DOS%22+%22Tecnolog%C3%ADa%22+%22Negocios%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Thomson Reuters compró a la empresa de software local Sistemas Bejerman - iProfesional",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOHVTU2ttOUVGd3JYNmV6aWVNbEhaQXU5TkNmbzJTR3d5aW93cjVvbl90RXhPNVlSbmg0dUZ6M29KNWQxZzZFQWJIWlNmaUllS1BuZ1poVDlxcFhiOGJxMHg0N0g0SHdzWDlraHNBby1IUzdtR2lKU1ZyLUU4MkgwQzR0akZiQzNzZUFnOE94OHdsUFVWbUtYWDJPSlFqOGpyVDI2QU12ek0zaU1lMm5oU0JZZzZCQUxzZEHSAb8BQVVfeXFMTlJVSGxzbVRCUlR1MXQwUTJTaUF4N1p4ajBvNzlnRmlrUnJUZUNkWGVtRUxUMDREM1NmRVEzQnRWZmhwa3lsdU56bzBtb0VsUHBvN2NGTGNReXpmTm1OakxDRnViaDUxQWptQkQ1MjNKV2FMamR2UjJCc2lGU0gxaFNCR1VOM0UxWW44a3ExY2RZLUhBWE1nTmI3c09DaWJaMDgzWFdvcnEzSlB4QUR6VXFramViM3dNSEtvT3FXeVk?oc=5"
+        }
+      },
+      "notes": [
+        "Las consultas exactas no identifican una revista académica inequívoca. Un resultado de iProfesional sobre la compra de Sistemas Bejerman es una noticia ajena y se conserva sólo para documentar el falso positivo; no prueba editor, sitio, revisión por pares ni indexación académica. No se asignó dominio."
+      ]
+    },
+    {
+      "id": "biz-97-gcg-globalization-competitiveness-and-governability",
+      "request_id": 97,
+      "name": "GCG: Globalization, Competitiveness and Governability",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "gcg.universia.net",
+      "url": null,
+      "search_scope": "gcg.universia.net",
+      "category": "economia",
+      "identity_status": "reference_only",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:40.465272Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Agcg.universia.net&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": null,
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Análisis de la Exposición Económica al Riesgo Cambiario en el Mercado Español - Universia",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02SWlwZXJBV2t1ZHlQVTJHOGlrd0JrTnFVRkVMZmNjUHZVSllLc2hhcTMtNFRlMVV6Vm5zalFTSzJreV9fcHB3cW5ycDJZbHYzbDhPbFhwU1BhbVc0?oc=5"
+        }
+      },
+      "notes": [
+        "Sólo se encontró un registro del dominio gcg.universia.net, con editor Universia y título de un artículo sobre riesgo cambiario. La consulta que añade Globalization no devuelve registros. El dominio tiene presencia en el índice, pero la respuesta visible no confirma el título completo GCG ni las condiciones editoriales: se conserva como referencia, sin elevarlo a identidad confirmada."
+      ]
+    },
+    {
+      "id": "biz-98-ciriec-espana-revista-de-economia-publica-social-y-coopera",
+      "request_id": 98,
+      "name": "CIRIEC-España, Revista de Economía Pública, Social y Cooperativa",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "ciriec-revistaeconomia.es",
+      "url": "https://ciriec-revistaeconomia.es/",
+      "search_scope": "ciriec-revistaeconomia.es",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:41.455328Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aciriec-revistaeconomia.es&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://ciriec-revistaeconomia.es/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La revista de economía de CIRIEC-España, vinculada a la Universitat, indexada en JCR y entre las de mayor calidad internacional - Universitat de València",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxQTlRQUjZRdU43UU51LUg2a1JBOThLY3NNTmlhQ1lYLU84cnNMeTRQUDUweGxOOXplLU1VWlhQMy1oVXFMQi1meG1OTF9CbURodmNwamlRdklDTGNKaGdybGxTX2h3dFVhTkhFTkJBZGU4ZjMyaHlMazhVeGswc0xhX1NPa2g2SzZ6dk1fNWI3OXhYaDNaNVNxcmx3aWgtNWNfRWFjOUpkZDFQaU1kd0hFMHNNNlkydzdJcEtHYnJkaUFjRk5XTE5nNnNhUDRoQ0c3eTVzMTZaU3EwMGVnckl1aGd2YzF0RE9YYjVRZGdiZzJmcVc2ZHBSam11MFhVbTAxQ0E4bG1OUHdJcXVELXdyUEQyTlhnaFJwSmRSTTJBN2tKZHVLR1NBMGpTVnhCYWdUeTFKUGRucEUzY2Zsdl83VWMyZklZTVM0cWN2d1cwX3NqUmxkNDU5OA?oc=5"
+        }
+      },
+      "notes": [
+        "El dominio ciriec-revistaeconomia.es devuelve registros bajo el editor Revista de Economía Pública, Social y Cooperativa. Noticias de la Universitat de València nombran explícitamente a CIRIEC-España como revista. La identidad y el dominio tienen respaldo; los titulares sobre JCR/Scopus no se convierten en verificación actual de esas bases."
+      ]
+    },
+    {
+      "id": "biz-99-spanish-accounting-review-revista-de-contabilidad",
+      "request_id": 99,
+      "name": "Spanish Accounting Review / Revista de Contabilidad",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "revistas.um.es",
+      "url": "https://revistas.um.es/",
+      "search_scope": "revistas.um.es/rcsar",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:42.144599Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Arevistas.um.es%2Frcsar&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://revistas.um.es/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Revista de Contabilidad - Spanish Accounting Review - Revistas Científicas de la Universidad de Murcia",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE43NGV6YUI5UWV6VENGMVFscVN5NjBRWXZuZDNwa1ZvWEVzVXlCenp4LU5YWjM4NFZTUXdmZVlybVRWakE2d0k0TU14TG5lWEZKaFBqejFEcE1JR1Fq?oc=5"
+        }
+      },
+      "notes": [
+        "El editor Revistas Científicas de la Universidad de Murcia presenta el título completo Revista de Contabilidad - Spanish Accounting Review y dos números de la revista. El dominio editorial está respaldado; /rcsar queda como ruta candidata sin comprobación directa."
+      ]
+    },
+    {
+      "id": "biz-100-ecos-de-economia",
+      "request_id": 100,
+      "name": "Ecos de Economía",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "publicaciones.eafit.edu.co",
+      "url": "https://publicaciones.eafit.edu.co/",
+      "search_scope": "publicaciones.eafit.edu.co",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:42.904223Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Apublicaciones.eafit.edu.co+%22Ecos%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://publicaciones.eafit.edu.co/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Ecos de Economía - 19039 - Revistas Universidad EAFIT",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiugNBVV95cUxQaVdKS1h6a2RSQ2pFeGc4czBXaVlfUk1vLXVNYmZpRUc2RkxHbEotcDliT0lGYnYwWEM0cHl3RHE1bGtOX19mR2o4UXZ1bmRLUGlDRTJOZDRpREhvQWVVanBuaWY4VkhhcXN3VmtpMU5feC1GMkNERlk4N2o5cUVxWGlxeGROVUpkemRRZEdobWVHdUhVOHJIdEE1Zld5QzN1MDBrcERuUHFTdlRrc1FycjZGbFdoWmRSeXBBWll6emYwZ0hiamMtUUJYc25ER0dZSVFaWEhKaWM1azY2bl9GVnpYZHRaUFdtNXVrTVg0a3M4TWZ1SHlURGdUUGppWGpHdU5TdUhHUTB3QVJGTy1EeTBQR2E4M2loWUFTN3VxOHZEX2NSUmc4MjVURmVCZ0t4N0E3V2k3WXNuMlFrVHVBczJYQjg3STduaUVNRTZpMHJOMWl6TUxDN05ndUxoU2NZNXBJZ2EwMk56WFVOemFVRGhsQ1puRmhLYzRSNmhKRWY5cjRHRU1fSVFGUkYwV0tWcF9ESDFBMXZWWVRxaGFrRUNVZDFHRmVGUVIwQUY4OW4xcmFISjhZSVpB?oc=5"
+        }
+      },
+      "notes": [
+        "El editor Revistas Universidad EAFIT presenta dos entradas tituladas Ecos de Economía y artículos de esa revista. El dominio está respaldado; la ruta /index.php/ecos-economia sigue como candidata sin comprobación directa."
+      ]
+    },
+    {
+      "id": "biz-extra-rae-revista-de-administracao-de-empresas",
+      "request_id": null,
+      "name": "RAE - Revista de Administração de Empresas",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "periodicos.fgv.br",
+      "url": "https://periodicos.fgv.br/",
+      "search_scope": "periodicos.fgv.br/rae",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:44.226925Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Aperiodicos.fgv.br%2Frae&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://periodicos.fgv.br/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Pensar desde a América Latina em diálogo com a organização das lutas sociais descoloniais: Explorando possibilidades | RAE - Revista de Administracao de Empresas - OJS@FGV",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9oLW1Fc21BTmkxaUFuRFU2UmFIaXFiRWxwVWVxS2p6eGJXeXJxWVNRcjlqclRxNmhNS1RON2tPbzY0Qk1xblhJMFZ6cmNQQXhPZ1dELW9ieTJuRTVD?oc=5"
+        }
+      },
+      "notes": [
+        "Referencia similar: el editor OJS@FGV presenta artículos con el título RAE - Revista de Administracao de Empresas, bajo periodicos.fgv.br. Identidad y dominio editorial respaldados; la ruta /rae sigue como candidata sin comprobación directa."
+      ]
+    },
+    {
+      "id": "biz-extra-revista-de-la-cepal",
+      "request_id": null,
+      "name": "Revista de la CEPAL",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "cepal.org",
+      "url": "https://www.cepal.org/",
+      "search_scope": "cepal.org",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:45.357128Z",
+        "query_url": "https://news.google.com/rss/search?q=%22Revista+de+la+CEPAL%22&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.cepal.org/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "Revista CEPAL cumple 50 años: un bien público regional para enfrentar los desafíos del desarrollo en América Latina y el Caribe - Comisión Económica para América Latina y el Caribe",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbU84MkU2MDNGSkE4RkNnbDhCUmZvYkd0T2YteGg5aFNpaTNRNmpCM1V3d3l1c01HeG41cnZCVjFrVi1KSnJBQjdWT2I0S1BaMFJpVTFUOFkzQzduOHVyWXhsazlHZHBXOVVWUWw2akY1VGFrNnpwMS1YMGV0b3lNRkZVem4zQnk1a2F1cGFhaTZGbVBTMGE4RUJNV2s1OXhSemFMVmtrbGsyeWs3OTFmQWY0UENYZW5qRVNZbA?oc=5"
+        }
+      },
+      "notes": [
+        "Referencia similar: la Comisión Económica para América Latina y el Caribe presenta la revista y sus números en sus dominios oficiales indexados. La consulta general incluye un anuncio de los 50 años de Revista CEPAL. El portal cepal.org está respaldado; la ruta de la colección sigue como candidata sin comprobación HTTP directa."
+      ]
+    },
+    {
+      "id": "biz-extra-contaduria-y-administracion",
+      "request_id": null,
+      "name": "Contaduría y Administración",
+      "group": "academic",
+      "kind": "academic",
+      "market": null,
+      "domain": "cya.unam.mx",
+      "url": "https://www.cya.unam.mx/",
+      "search_scope": "cya.unam.mx",
+      "category": "economia",
+      "identity_status": "indexed",
+      "discovery_enabled": false,
+      "review_required": false,
+      "evidence": {
+        "checked_at_utc": "2026-10-29T04:10:46.703483Z",
+        "query_url": "https://news.google.com/rss/search?q=site%3Acya.unam.mx&hl=es-419&gl=CL&ceid=CL%3Aes-419",
+        "source_url": "https://www.cya.unam.mx/",
+        "basis": "Atribución del editor en metadatos RSS Google Noticias; sitio original no inspeccionado",
+        "sample": {
+          "title": "La revista Contaduría y Administración ingresa al Sistema Nacional de Publicaciones Científicas y Humanísticas - Gaceta UNAM",
+          "published": null,
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUkJ6cTlFNXlnOVQtaHJXSGJ6V0xDOXlIblFBRV8ydGpXZWNGazBYcEI1a2ZhQVE4ZDBTRXptMnkyRGpnNEpHT0lDNUExTWhSa29EMlVGdHpkVWtRcHNHRVZyVUJnd3RSajhGaEZ1Y0NvMEowWTVVOUJ3ZDg3VG9MdjU2SDk5VTRqQ1pBZktqbUhpOW1tUTU1SzR0ZElTUG5yUHk5NzJvcjgxdUpyTHlKb1FzV1RjU3dsaEQ1QncxRXJIcTJycWUxOUlGdlBHYTZvcDVWUw?oc=5"
+        }
+      },
+      "notes": [
+        "Referencia similar: el editor revista Contaduría y Administración devuelve números de la revista en www.cya.unam.mx. Gaceta UNAM publica titulares que identifican expresamente la misma revista. Identidad y dominio respaldados."
+      ]
+    }
+  ]
+}
