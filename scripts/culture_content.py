@@ -1,5 +1,17 @@
-"""Adaptadores de presentación: Cultura comparte tarjetas, no la ingesta factual."""
+"""Categorías de entretenimiento: tarjetas comunes, independientes de la ingesta factual."""
 from scripts.dedupe_history import canonical_key
+
+CINEMA_SECTION={'key':'cine-streaming','label':'Cine y streaming'}
+
+
+def section_categories(categories):
+    """Categoría de presentación, sin incorporar consultas de ingesta."""
+    result=[]
+    for category in categories:
+        result.append(category)
+        if category['key']=='cultura':result.append(CINEMA_SECTION)
+    if not any(c['key']==CINEMA_SECTION['key'] for c in result):result.append(CINEMA_SECTION)
+    return result
 
 
 def add_culture_content(by_category,now,*,satire_items=None,release_guides=None,existing=()):
@@ -28,7 +40,8 @@ def add_culture_content(by_category,now,*,satire_items=None,release_guides=None,
         key=canonical_key(item['link'])
         if key in seen:continue
         seen.add(key)
-        result.setdefault('cultura',[]).append({**item,'category':'cultura',
+        destination=CINEMA_SECTION['key'] if item['content_kind']=='guide' else 'cultura'
+        result.setdefault(destination,[]).append({**item,'category':destination,
                    'sources':[item['source']],'first_seen':''})
     return result
 

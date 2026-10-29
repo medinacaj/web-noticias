@@ -84,7 +84,9 @@ CATEGORIES = [
     # aparte en el menú. La clave se mantiene para no romper el historial ni las anclas publicadas.
     {"key": "salud-ciencia", "label": "Salud", "google_query": "(salud pública OR medicina OR hospitales OR enfermedades) Chile"},
 ]
+from scripts.culture_content import section_categories
 CATEGORY_LABELS = {c["key"]: c["label"] for c in CATEGORIES}
+DISPLAY_CATEGORY_LABELS = {c["key"]: c["label"] for c in section_categories(CATEGORIES)}
 
 # Feeds RSS directos de medios (opcional). Sus enlaces apuntan a la nota original y no a
 # Google Noticias. Si un feed falla, se informa en el registro y el resto sigue funcionando.
@@ -714,7 +716,7 @@ def human_datetime(moment):
 
 
 def category_label(story):
-    return CATEGORY_LABELS[story["category"]]
+    return DISPLAY_CATEGORY_LABELS[story["category"]]
 
 
 def title_link(story):
@@ -814,7 +816,7 @@ def topic_anchor(story, reserved):
     from scripts.culture_content import content_kind
     if content_kind(story)=='guide' and 'estrenos-semana' not in reserved:
         reserved.add('estrenos-semana')
-        return ' id="estrenos-semana" data-nav-topic="cultura" data-nav-section="cultura"'
+        return ' id="estrenos-semana" data-nav-topic="cine-streaming" data-nav-section="cine-streaming"'
     category = story["category"]
     if category in reserved:
         return ""
@@ -900,7 +902,7 @@ def render_sections(by_category, now, satire_items=None, release_guides=None):
     if satire_items is not None or release_guides is not None:
         by_category=add_culture_content(by_category,now,satire_items=satire_items,release_guides=release_guides)
     reserved = set(by_category)
-    present = [c for c in CATEGORIES if c["key"] in by_category]
+    present = [c for c in section_categories(CATEGORIES) if c["key"] in by_category]
     for number, cat in enumerate(present, start=1):
         original = by_category[cat["key"]]
         editorial_order = {id(story): index for index, story in enumerate(original)}
@@ -919,6 +921,7 @@ def render_sections(by_category, now, satire_items=None, release_guides=None):
             f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
             for i, s in enumerate(rest))
         grid_class = "section-grid" if compact else "section-grid section-grid--single"
+        if len(stories) in (2,4):grid_class += " section-grid--balanced"
         compact_html = f'<ul class="compact-list">{compact}</ul>' if compact else ""
         count = len(stories)
         has_content=any(content_kind(story) for story in stories)
@@ -927,13 +930,20 @@ def render_sections(by_category, now, satire_items=None, release_guides=None):
                 f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
                 f'Ver más {more_label} <span aria-hidden="true">↓</span></button>'
                 if count > 6 else "")
-        count_label=f'{count} '+(('contenido' if count==1 else 'contenidos') if has_content else ('noticia' if count==1 else 'noticias'))
+        count_unit=('guía' if count==1 else 'guías') if cat['key']=='cine-streaming' else (('contenido' if count==1 else 'contenidos') if has_content else ('noticia' if count==1 else 'noticias'))
+        count_label=f'{count} {count_unit}'
+        section_note=''
+        if cat['key']=='cine-streaming':
+            from scripts.weekly_releases import week_bounds
+            start,end=week_bounds(now);end-=timedelta(days=1)
+            period=f'{start.day} {MESES[start.month-1]} – {end.day} {MESES[end.month-1]}'
+            section_note=f'<p class="section-note">Estrenos de la semana · {period}. La disponibilidad puede variar según tu país.</p>'
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count_label}</span></div>'
-            f'<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
+            f'{section_note}<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
             f'{more}</section>'
         )
     return "\n".join(blocks)
@@ -951,7 +961,7 @@ def render_nav(sel, agenda=False):
         key = category["key"]
         label = PRESENTATION_LABELS.get(key, category["label"])
         return f'<li><a class="cat-{key}" href="#cat-{key}">{esc(label)}</a></li>'
-    for category in CATEGORIES:
+    for category in section_categories(CATEGORIES):
         key = category["key"]
         if key not in available or key in emitted:
             continue
@@ -1043,7 +1053,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     from scripts.culture_content import add_culture_content
     display_sections=add_culture_content(sel['by_category'],now,satire_items=satire_items,
                      release_guides=release_guides,existing=([sel['lead']] if sel['lead'] else [])+sel['secondary'])
-    sections_shown = sum(1 for c in CATEGORIES if c["key"] in display_sections)
+    sections_shown = sum(1 for c in section_categories(CATEGORIES) if c["key"] in display_sections)
     agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1, source_mark=source_mark)
     nav = render_nav({**sel,'by_category':display_sections}, agenda=bool(agenda_html))
     replacements = {

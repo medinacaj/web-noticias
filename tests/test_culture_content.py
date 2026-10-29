@@ -43,18 +43,20 @@ class CultureContentTests(unittest.TestCase):
     def setUp(self):
         self.assertIsNotNone(culture,'Falta integrar entretenimiento con las tarjetas de Cultura')
 
-    def test_display_combines_cards_without_mutating_news_or_changing_their_dates(self):
+    def test_display_separates_cinema_and_keeps_satire_in_culture_without_mutating_news(self):
         original={'cultura':[story()]}
         result=culture.add_culture_content(original,NOW,satire_items=[satire()],release_guides=[guide()])
         self.assertEqual(len(original['cultura']),1)
         self.assertIs(result['cultura'][0],original['cultura'][0])
-        self.assertEqual(len(result['cultura']),3)
-        self.assertEqual({s.get('content_kind') for s in result['cultura']},{None,'guide','satire'})
+        self.assertEqual(len(result['cultura']),2)
+        self.assertEqual({s.get('content_kind') for s in result['cultura']},{None,'satire'})
+        self.assertEqual(len(result['cine-streaming']),1)
         for item in result['cultura'][1:]:
             self.assertEqual(item['category'],'cultura')
             self.assertEqual(item.get('first_seen',''),'')
             self.assertEqual((item['summary'],item['image']),('',''))
-        self.assertEqual(result['cultura'][-1]['published'],guide()['published'])
+        self.assertEqual(result['cine-streaming'][0]['published'],guide()['published'])
+        self.assertEqual(result['cine-streaming'][0]['category'],'cine-streaming')
 
     def test_existing_urls_are_not_duplicated_even_when_they_are_in_the_front_page(self):
         original={'cultura':[story(link=guide()['link'])]}
@@ -65,7 +67,8 @@ class CultureContentTests(unittest.TestCase):
 
     def test_new_culture_section_and_previous_premieres_anchor_are_unique(self):
         body=news.render_sections({},NOW,release_guides=[guide(),guide(link='https://cinepremiere.com.mx/otra')])
-        self.assertEqual(body.count('id="cat-cultura"'),1)
+        self.assertEqual(body.count('id="cat-cine-streaming"'),1)
+        self.assertNotIn('id="cat-cultura"',body)
         self.assertEqual(body.count('id="estrenos-semana"'),1)
 
     def test_unavailable_satire_keeps_a_source_card_without_a_fabricated_publication(self):
@@ -98,7 +101,8 @@ class CultureContentTests(unittest.TestCase):
         result=culture.add_culture_content({'cultura':[story()]},NOW,
                     satire_items=[satire(title='<script>Ficción</script>')],release_guides=[guide()])
         rendered=news.render_sections(result,NOW)
-        self.assertEqual(rendered.count('class="section-grid"'),1)
+        self.assertEqual(rendered.count('class="section-grid section-grid--balanced"'),1)
+        self.assertEqual(rendered.count('class="section-grid section-grid--single"'),1)
         self.assertIn('data-content-kind="guide"',rendered)
         self.assertIn('data-content-kind="satire"',rendered)
         self.assertIn('Guía publicada',rendered)
@@ -112,8 +116,10 @@ class CultureContentTests(unittest.TestCase):
         self.assertNotIn('satire-links',rendered)
         self.assertNotIn('release-grid',rendered)
         self.assertNotIn('target="_blank"',rendered)
-        self.assertEqual(rendered.count('data-key="cultura"'),3)
-        self.assertIn('3 contenidos',rendered)
+        self.assertEqual(rendered.count('data-key="cultura"'),2)
+        self.assertEqual(rendered.count('data-key="cine-streaming"'),1)
+        self.assertIn('2 contenidos',rendered)
+        self.assertIn('1 guía',rendered)
 
     def test_site_keeps_one_culture_menu_and_does_not_promote_guides_or_satire_as_news(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -123,6 +129,7 @@ class CultureContentTests(unittest.TestCase):
             feed=(Path(folder)/'rss.xml').read_text()
         self.assertIn('id="cat-cultura"',page)
         self.assertIn('href="#cat-cultura"',page)
+        self.assertIn('href="#cat-cine-streaming"',page)
         self.assertNotIn('nav-subitem',page)
         self.assertNotIn('href="#estrenos-semana"',page)
         self.assertIn('id="estrenos-semana"',page)
@@ -132,6 +139,17 @@ class CultureContentTests(unittest.TestCase):
         self.assertNotIn('El Chigüire',feed)
         self.assertNotIn('Cine PREMIERE',feed)
         self.assertNotIn('%%',page)
+
+    def test_cinema_is_a_display_category_and_does_not_add_news_feed_queries(self):
+        from scripts.culture_content import section_categories
+        self.assertNotIn('cine-streaming',{c['key'] for c in news.CATEGORIES})
+        categories=section_categories(news.CATEGORIES)
+        keys=[c['key'] for c in categories]
+        self.assertEqual(keys.count('cine-streaming'),1)
+        self.assertEqual(keys.index('cine-streaming'),keys.index('cultura')+1)
+        self.assertEqual(next(c['label'] for c in categories if c['key']=='cine-streaming'),'Cine y streaming')
+        display=culture.add_culture_content({},NOW,release_guides=[guide(published=news.to_iso(NOW))])
+        self.assertEqual(news.merge([],display['cine-streaming'],NOW),0)
 
 
 if __name__=='__main__':unittest.main()

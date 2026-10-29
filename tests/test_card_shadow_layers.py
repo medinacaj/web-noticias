@@ -10,12 +10,12 @@ class CardShadowTests(unittest.TestCase):
     def setUpClass(cls):
         cls.css = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
 
-    def test_layered_shadows_not_flat_or_hard_edged(self):
+    def test_restrained_shadows_have_no_inset_or_heavy_layers(self):
         for token in ("--card-shadow", "--card-shadow-hover"):
             match = re.search(rf"{re.escape(token)}:([^;]+);", self.css)
             self.assertIsNotNone(match)
             shadow = match.group(1)
-            self.assertEqual(shadow.count("rgba("), 3)
+            self.assertEqual(shadow.count("rgba("), 1)
             self.assertNotIn("inset", shadow)
 
     def test_card_hover_and_focus_use_shared_tokens(self):
@@ -34,7 +34,7 @@ class CardShadowTests(unittest.TestCase):
         self.assertIn(".compact-list li:active", self.css)
 
     def test_no_new_card_height_or_padding_rules(self):
-        self.assertIn("--radius-card:8px", self.css)
+        self.assertIn("--radius-card:17px", self.css)
         self.assertIn(".lead{grid-column:1 / span 7;--pad:22px;", self.css)
 
 

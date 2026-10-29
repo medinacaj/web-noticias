@@ -56,37 +56,37 @@ def render_about_page(site_url):
 <meta name="twitter:title" content="Sobre Noticias del Momento">
 <meta name="twitter:description" content="Cómo funciona el agregador y cómo se atribuyen las noticias a sus fuentes.">
 <meta name="twitter:image" content="{esc(base)}/og-image.png">
-<meta name="theme-color" content="#282C30">
+<meta name="theme-color" content="#100F12">
 <link rel="icon" href="{esc(base)}/favicon.svg?v=editorial" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{esc(base)}/apple-touch-icon.png?v=editorial">
 <script type="application/ld+json">{jsonld}</script>
 <style>
 :root{{color-scheme:light}}
 *,*::before,*::after{{box-sizing:border-box}}
-body{{margin:0;background:#E9E8E2;color:#282C30;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}}
-a{{color:#31584A;text-underline-offset:3px}}
+body{{margin:0;background:#F3F1F8;color:#100F12;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}}
+a{{color:#4A3E8A;text-underline-offset:3px}}
 a:focus-visible{{outline:3px solid #C04C3E;outline-offset:4px}}
-header{{background:#FAFAF7;color:#282C30}}
+header{{background:#FBFAFF;color:#100F12}}
 .wrap{{max-width:900px;margin:0 auto;padding:0 28px}}
 header .wrap{{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:17px;padding-bottom:17px;flex-wrap:wrap}}
-header p{{margin:0;font:700 18px/1.3 Georgia,serif}}
-header a{{color:#31584A;font-size:14px}}
+header p{{margin:0;font:700 18px/1.3 Inter,system-ui,sans-serif}}
+header a{{color:#4A3E8A;font-size:14px}}
 main{{max-width:900px;margin:0 auto;padding:50px 28px 56px}}
-.eyebrow{{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#626970}}
-h1,h2{{font-family:Georgia,"Times New Roman",serif;line-height:1.23;color:#282C30}}
+.eyebrow{{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#65646E}}
+h1,h2{{font-family:Inter,system-ui,sans-serif;line-height:1.23;color:#100F12}}
 h1{{font-size:clamp(32px,5vw,46px);margin:9px 0 20px;letter-spacing:-.025em}}
 h2{{font-size:24px;margin:0 0 11px}}
-.intro{{max-width:720px;font-size:19px;line-height:1.55;color:#626970;margin:0 0 36px}}
-section{{padding:23px 0;border-top:1px solid #D7DBD4;max-width:760px}}
-section p{{margin:0;color:#626970}}
-.source-group{{margin-top:16px;padding:10px 0;border-top:1px solid #D7DBD4}}
+.intro{{max-width:720px;font-size:19px;line-height:1.55;color:#65646E;margin:0 0 36px}}
+section{{padding:23px 0;border-top:1px solid #DDD7E9;max-width:760px}}
+section p{{margin:0;color:#65646E}}
+.source-group{{margin-top:16px;padding:10px 0;border-top:1px solid #DDD7E9}}
 .source-group summary{{cursor:pointer;font-weight:600}}
 .source-group ul{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;list-style:none;margin:16px 0 0;padding:0}}
 .source-group li{{min-width:0;overflow-wrap:anywhere}}
-.source-group li span{{display:block;font-size:12px;color:#626970}}
+.source-group li span{{display:block;font-size:12px;color:#65646E}}
 @media(max-width:600px){{.source-group ul{{grid-template-columns:minmax(0,1fr)}}}}
-footer{{background:#202529;color:#CED1D6;padding:25px 0;font-size:13px}}
-footer a{{color:#F7F6F2}}
+footer{{background:#100F12;color:#D0CCD9;padding:25px 0;font-size:13px}}
+footer a{{color:#FBFAFF}}
 footer .wrap{{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}}
 @media(max-width:600px){{main{{padding:32px 18px 42px}}.wrap{{padding-left:18px;padding-right:18px}}.intro{{font-size:17px}}}}
 </style>

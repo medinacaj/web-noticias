@@ -1156,7 +1156,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(colors['rgba'][3], 255)
             self.assertLessEqual(max(colors['rgba'][:3])-min(colors['rgba'][:3]), 16)
 
-    async def test_culture_content_uses_common_cards_and_remains_responsive(self):
+    async def test_cinema_has_its_own_category_and_rootly_controls_remain_responsive(self):
         from datetime import datetime, timedelta, timezone
         import tempfile
         import fetch_noticias as news
@@ -1179,16 +1179,21 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.route('**/qa-cultura.html',lambda route:route.fulfill(body=document,content_type='text/html'))
         await self.page.goto(self.url+'qa-cultura.html')
         block = self.page.locator('#cat-cultura')
+        cinema = self.page.locator('#cat-cine-streaming')
         self.assertEqual(await self.page.locator('nav a[href="#cat-cultura"]').count(),1)
         self.assertEqual(await self.page.locator('.weekly-releases,.satire-links,.release-grid,.nav-subitem').count(),0)
+        self.assertEqual(await self.page.locator('nav a[href="#cat-cine-streaming"]').count(),1)
+        self.assertEqual(await cinema.locator('.section-grid').count(),1)
+        self.assertEqual(await block.locator('[data-content-kind="guide"]').count(),0)
+        self.assertEqual(await cinema.locator('[data-content-kind="satire"]').count(),0)
         self.assertEqual(await block.locator('.section-grid').count(),1)
-        self.assertIn('Guía publicada',await block.inner_text())
-        self.assertIn('Guía de México',await block.inner_text())
+        self.assertIn('Guía publicada',await cinema.inner_text())
+        self.assertIn('Guía de México',await cinema.inner_text())
         self.assertIn('Ficción satírica',await block.inner_text())
         self.assertEqual(await block.locator('a[target]').count(),0)
         self.assertEqual(await self.page.locator('.edition-count').get_attribute('data-news-count'),'9')
         satire_card = block.locator('.feature[data-content-kind="satire"],li[data-content-kind="satire"]').first
-        guide_card = block.locator('.feature[data-content-kind="guide"],li[data-content-kind="guide"]').first
+        guide_card = cinema.locator('.feature[data-content-kind="guide"],li[data-content-kind="guide"]').first
         self.assertIn('sátira y humor',(await satire_card.locator('.kicker').inner_text()).lower())
         self.assertIn('cine y streaming',(await guide_card.locator('.kicker').inner_text()).lower())
         await satire_card.locator('.save-story').click()
@@ -1211,12 +1216,15 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.evaluate('(v)=>document.documentElement.dataset.theme=v',theme)
             for width in (320,390,768,1024,1440,1920):
                 await self.page.set_viewport_size({"width":width,"height":1000})
-                bounds=await block.evaluate("""el=>{
+                bounds=await cinema.evaluate("""el=>{
                     const g=el.querySelector('.section-grid').getBoundingClientRect(),r=el.getBoundingClientRect();
-                    return {left:g.left-r.left,right:g.right-r.right,overflow:document.documentElement.scrollWidth-innerWidth};
+                    const cards=[...el.querySelectorAll('.feature,.compact-list>li')].filter(c=>c.getClientRects().length);
+                    const right=Math.max(...cards.map(c=>c.getBoundingClientRect().right));
+                    return {left:g.left-r.left,right:g.right-r.right,unused:g.right-right,overflow:document.documentElement.scrollWidth-innerWidth};
                 }""")
                 self.assertAlmostEqual(bounds['left'],0,delta=1)
                 self.assertAlmostEqual(bounds['right'],0,delta=1)
+                self.assertAlmostEqual(bounds['unused'],0,delta=1)
                 self.assertLessEqual(bounds['overflow'],1,(theme,width,bounds))
             for density in ('compact','headlines'):
                 await self.page.locator('#contenido').evaluate("""(el,v)=>{
@@ -1230,8 +1238,37 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         ARTIFACTS.mkdir(exist_ok=True)
         for width in (1440,390):
             await self.page.set_viewport_size({"width":width,"height":1000})
-            await block.scroll_into_view_if_needed()
-            await block.screenshot(path=str(ARTIFACTS/f'culture-integrated-{width}.png'))
+            await cinema.scroll_into_view_if_needed()
+            await cinema.screenshot(path=str(ARTIFACTS/f'cinema-rootly-{width}.png'))
+        styles=await guide_card.evaluate("el=>({radius:parseFloat(getComputedStyle(el).borderRadius),font:getComputedStyle(el.querySelector('h3')).fontFamily})")
+        self.assertGreaterEqual(styles['radius'],16)
+        self.assertIn('Inter',styles['font'])
+        self.assertGreaterEqual(await guide_card.locator('.share-story').evaluate("el=>parseFloat(getComputedStyle(el).borderRadius)"),100)
+
+    async def test_single_cinema_card_fills_the_grid_in_each_reading_view(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        now=datetime.now(timezone.utc)
+        guide={"title":"Estrenos Netflix esta semana · Guía QA única","source":"Cine PREMIERE",
+               "source_url":"https://cinepremiere.com.mx","link":"https://cinepremiere.com.mx/qa/unica",
+               "published":now.isoformat()}
+        story={"title":"Noticia QA","category":"nacional","sources":["Medio QA"],
+               "source_url":"https://qa.example","link":"https://qa.example/qa/unica",
+               "published":now.isoformat(),"first_seen":now.isoformat(),"image":"","summary":""}
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site([story],now,folder,release_guides=[guide])
+            document=(Path(folder)/'index.html').read_text()
+        await self.page.route('**/qa-cine-unico.html',lambda route:route.fulfill(body=document,content_type='text/html'))
+        await self.page.goto(self.url+'qa-cine-unico.html')
+        grid=self.page.locator('#cat-cine-streaming .section-grid')
+        self.assertEqual(await grid.locator('.feature,.compact-list>li').count(),1)
+        for mode in ('normal','compact','headlines'):
+            await self.page.locator('#contenido').evaluate("(el,m)=>{el.classList.toggle('is-compact',m==='compact');el.classList.toggle('is-headlines',m==='headlines');}",mode)
+            for width in (320,768,1024,1440,1920):
+                await self.page.set_viewport_size({"width":width,"height":1000})
+                sizes=await grid.evaluate("el=>({grid:el.getBoundingClientRect().width,card:el.querySelector('.feature').getBoundingClientRect().width})")
+                self.assertAlmostEqual(sizes['grid'],sizes['card'],delta=1,msg=str((mode,width,sizes)))
 
     async def test_business_directory_is_grouped_accessible_and_keeps_verified_links(self):
         await self.page.goto(self.url+'sobre-el-portal.html#fuentes-negocios')

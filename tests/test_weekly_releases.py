@@ -134,7 +134,7 @@ class WeeklyReleasesTests(unittest.TestCase):
         self.assertIn('Cine PREMIERE',body)
         self.assertNotIn('<script>',body)
         self.assertNotIn('target="_blank"',body)
-        self.assertIn('data-key="cultura"',body)
+        self.assertIn('data-key="cine-streaming"',body)
         self.assertNotIn('<script>',body)
         self.assertEqual(releases.current_guides([],NOW),[])
         self.assertEqual(releases.current_guides(result,NOW+timedelta(days=7)),[])
@@ -147,7 +147,7 @@ class WeeklyReleasesTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             news.build_site([story],NOW,folder,release_guides=result)
             page=(Path(folder)/'index.html').read_text()
-        self.assertIn('href="#cat-cultura"',page)
+        self.assertIn('href="#cat-cine-streaming"',page)
         self.assertNotIn('href="#estrenos-semana"',page)
         self.assertEqual(page.count('id="estrenos-semana"'),1)
         self.assertIn('data-news-count="1"',page)
