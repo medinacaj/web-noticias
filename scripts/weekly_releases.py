@@ -59,13 +59,16 @@ def _weekly_title(title,start,end):
     dates=DATE.findall(text)
     if dates:
         for first,last,month,year in dates:
+            if last and int(last)<int(first):return False
             years=[int(year)] if year else [start.year-1,start.year,start.year+1]
             for candidate in (first,last) if last else (first,):
+                inside=False
                 for y in years:
                     try:day=datetime(y,MONTHS.index(month)+1,int(candidate)).date()
                     except ValueError:continue
-                    if start.date()<=day<end.date():return True
-        return False
+                    if start.date()<=day<end.date():inside=True
+                if not inside:return False
+        return True
     return bool(re.search(r'\b(esta semana|de la semana|del? fin de semana|este fin de semana)\b',text))
 
 

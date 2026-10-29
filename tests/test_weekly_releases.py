@@ -83,6 +83,14 @@ class WeeklyReleasesTests(unittest.TestCase):
         self.assertEqual(self.collect(records),[])
         self.assertEqual(len(self.collect([guide(link='https://news.google.com/rss/articles/verified')])),1)
 
+    def test_month_long_intervals_are_excluded_and_a_week_crossing_months_is_valid(self):
+        for title in ('Estrenos Netflix del 1 al 31 de octubre de 2026',
+                      'Estrenos Netflix del 1 de octubre al 1 de noviembre de 2026'):
+            with self.subTest(title=title):
+                self.assertEqual(self.collect([guide(title=title)]),[])
+        weekly='Qué ver del 26 de octubre al 1 de noviembre de 2026 en Netflix'
+        self.assertEqual(len(self.collect([guide(title=weekly)])),1)
+
     def test_existing_source_restrictions_apply_before_queries_and_results(self):
         blocked={'name':'Cine PREMIERE','domain':'cinepremiere.com.mx','enabled':False,
                  'permission_status':'pending'}
