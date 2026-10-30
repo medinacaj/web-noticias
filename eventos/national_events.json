@@ -1,6 +1,6 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-10-29T16:23:02",
+  "generated_at": "2026-10-30T16:08:43",
   "summary": {
     "sources_attempted": 9,
     "sources_ok": 8,
@@ -10,7 +10,7 @@
     "events_merged": 0,
     "possible_events": 2,
     "quarantined_candidates": 0,
-    "candidates": 2,
+    "candidates": 3,
     "errors": [
       {
         "source": "ChileCultura (Ministerio de las Culturas)",
@@ -41,7 +41,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -53,7 +53,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -91,7 +91,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:20:57"
+          "seen_at": "2026-10-30T16:06:46"
         }
       ],
       "changes": [
@@ -131,46 +131,6 @@
       "region": "Metropolitana"
     },
     {
-      "title": "Festival BioBioCine tendrá 80 películas y una amplia programación gratuita en Concepción",
-      "description": null,
-      "date": "2026-10-29",
-      "end_date": "2026-11-07",
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Concepción",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/festival-biobiocine-533x300.jpg",
-      "discovered_at": "2026-10-29T16:21:21",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-29T16:21:21"
-        }
-      ],
-      "changes": [],
-      "region": "Biobío"
-    },
-    {
       "title": "Girls&Boys",
       "description": null,
       "date": "2026-10-29",
@@ -192,7 +152,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/09/Girls-Boys_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-29T16:21:41",
+      "discovered_at": "2026-10-30T16:07:27",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -204,47 +164,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:41"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Noche de grandes coreógrafos",
-      "description": null,
-      "date": "2026-10-29",
-      "end_date": "2026-10-30",
-      "time": "19:00",
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Teatro Municipal de Santiago",
-          "url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:27"
         }
       ],
       "changes": [],
@@ -272,7 +192,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:22:09",
+      "discovered_at": "2026-10-30T16:07:55",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -284,7 +204,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:22:09"
+          "seen_at": "2026-10-30T16:07:55"
         }
       ],
       "changes": [],
@@ -312,7 +232,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/07/estrategia-caracolcamara-destrucción_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-29T16:21:41",
+      "discovered_at": "2026-10-30T16:07:27",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -324,7 +244,47 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:41"
+          "seen_at": "2026-10-30T16:07:27"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Noche de grandes coreógrafos",
+      "description": null,
+      "date": "2026-10-30",
+      "end_date": null,
+      "time": "19:00",
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": null,
+      "discovered_at": "2026-10-30T16:07:20",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Teatro Municipal de Santiago",
+          "url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -352,7 +312,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -364,11 +324,51 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
       "region": "Metropolitana"
+    },
+    {
+      "title": "Festival BioBioCine tendrá 80 películas y una amplia programación gratuita en Concepción",
+      "description": null,
+      "date": "2026-11-02",
+      "end_date": "2026-11-07",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Concepción",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/festival-biobiocine-533x300.jpg",
+      "discovered_at": "2026-10-30T16:07:04",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-30T16:07:04"
+        }
+      ],
+      "changes": [],
+      "region": "Biobío"
     },
     {
       "title": "GAM y Periscopio presenta: Juegos de Mesa en BiblioGAM",
@@ -402,7 +402,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:20:57"
+          "seen_at": "2026-10-30T16:06:46"
         }
       ],
       "changes": [
@@ -439,7 +439,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -451,7 +451,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -479,7 +479,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -491,7 +491,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -529,7 +529,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:20:57"
+          "seen_at": "2026-10-30T16:06:46"
         }
       ],
       "changes": [
@@ -590,7 +590,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -602,7 +602,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -630,7 +630,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -642,7 +642,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -670,7 +670,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:22:09",
+      "discovered_at": "2026-10-30T16:07:55",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -682,7 +682,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:22:09"
+          "seen_at": "2026-10-30T16:07:55"
         }
       ],
       "changes": [],
@@ -710,7 +710,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -722,7 +722,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -750,7 +750,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-10-29T16:21:45",
+      "discovered_at": "2026-10-30T16:07:37",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -762,7 +762,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:45"
+          "seen_at": "2026-10-30T16:07:37"
         }
       ],
       "changes": [],
@@ -790,7 +790,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -802,7 +802,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -830,7 +830,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-29T16:21:40",
+      "discovered_at": "2026-10-30T16:07:20",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -842,7 +842,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-29T16:21:40"
+          "seen_at": "2026-10-30T16:07:20"
         }
       ],
       "changes": [],
@@ -853,22 +853,22 @@
     {
       "source_name": "Agenda Cultural del Ministerio de las Culturas",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:21:21",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:07:04",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 17,
       "events_found": 1,
       "events_inserted": 1,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:21:40",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:07:41",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -881,22 +881,22 @@
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:21:45",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:07:37",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 1,
       "events_inserted": 1,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "ChileCultura (Ministerio de las Culturas)",
       "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:21:00",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:06:50",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -909,8 +909,8 @@
     {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:21:41",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:07:27",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -923,8 +923,8 @@
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:23:02",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:08:43",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -937,8 +937,8 @@
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:21:40",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:07:20",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -951,22 +951,22 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:21:51",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:07:46",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 2,
       "error": null
     },
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-10-29T16:20:57",
-      "finished_at": "2026-10-29T16:22:09",
+      "started_at": "2026-10-30T16:06:46",
+      "finished_at": "2026-10-30T16:07:55",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 15,
@@ -978,66 +978,6 @@
     }
   ],
   "possible_events": [
-    {
-      "title": "Jueves 29 de octubre – 19:00 horas / Serie B3",
-      "raw_text": "Jueves 29 de octubre – 19:00 horas / Serie B3",
-      "date": "2026-10-29",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Fechas: 21, 22, 28, 29 y 31 de octubre.",
-      "raw_text": "Fechas: 21, 22, 28, 29 y 31 de octubre.",
-      "date": "2026-10-29",
-      "commune": "Estación Central",
-      "source": "Matucana 100",
-      "source_url": "https://www.m100.cl/programacion/teatro/girlsboys/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Jueves 29 de octubre a las 19:00 HORAS",
-      "raw_text": "Jueves 29 de octubre a las 19:00 HORAS",
-      "date": "2026-10-29",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "Alberto Plaza, Sinfónico, 29 de Octubre a las 19:30",
-      "raw_text": "Alberto Plaza, Sinfónico, 29 de Octubre a las 19:30",
-      "date": "2026-10-29",
-      "commune": "Temuco",
-      "source": "Teatro Municipal de Temuco",
-      "source_url": "https://ww2.teatromunicipaltemuco.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "La Araucanía"
-    },
-    {
-      "title": "29 Oct al 15 Nov 2026",
-      "raw_text": "29 Oct al 15 Nov 2026",
-      "date": "2026-10-29",
-      "commune": "Santiago",
-      "source": "Centro Cultural Gabriela Mistral (GAM)",
-      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "29.10.2026 / Biobío",
-      "raw_text": "29.10.2026 / Biobío",
-      "date": "2026-10-29",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
     {
       "title": "Viernes 30 de octubre – 19:00 horas / Serie B4",
       "raw_text": "Viernes 30 de octubre – 19:00 horas / Serie B4",
@@ -1197,6 +1137,26 @@
       "source_url": "https://www.teatroregional.cl/archivo/28422",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "Maule"
+    },
+    {
+      "title": "Antártica: La última página en blanco de la Tierra 05 de Noviembre 19:30",
+      "raw_text": "Antártica: La última página en blanco de la Tierra 05 de Noviembre 19:30",
+      "date": "2026-11-05",
+      "commune": "Antártica",
+      "source": "Teatro Municipal de Temuco",
+      "source_url": "https://ww2.teatromunicipaltemuco.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Magallanes"
+    },
+    {
+      "title": "Antártica: La última página en blanco de la Tierra 05 de Noviembre 11:30",
+      "raw_text": "Antártica: La última página en blanco de la Tierra 05 de Noviembre 11:30",
+      "date": "2026-11-05",
+      "commune": "Antártica",
+      "source": "Teatro Municipal de Temuco",
+      "source_url": "https://ww2.teatromunicipaltemuco.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Magallanes"
     },
     {
       "title": "Viernes 6 de noviembre a las 19:00 horas",
@@ -2992,6 +2952,24 @@
       "url": "https://www.festivalbiobiocine.cl/12-edicion/",
       "domain": "www.festivalbiobiocine.cl",
       "found_on": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/ld-tata-barahona-15-anos-de-fotografias",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/musica/ld-tata-barahona-%c2%b7-15-anos-de-fotografias/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ww2.teatromunicipaltemuco.cl/product/antartica-la-ultima-pagina-en-blanco-de-la-tierra-05-de-noviembre-1930/",
+      "domain": "ww2.teatromunicipaltemuco.cl",
+      "found_on": "https://www.teatromunicipaltemuco.cl/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ww2.teatromunicipaltemuco.cl/?add-to-cart=11243",
+      "domain": "ww2.teatromunicipaltemuco.cl",
+      "found_on": "https://www.teatromunicipaltemuco.cl/",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]
