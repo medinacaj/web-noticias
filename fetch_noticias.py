@@ -948,7 +948,10 @@ def render_sections(by_category, now, satire_items=None, release_guides=None, pr
                 f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
                 f'Ver más {more_label} <span aria-hidden="true">↓</span></button>'
                 if count > 6 else "")
-        count_unit=('contenido' if count==1 else 'contenidos') if has_content else ('noticia' if count==1 else 'noticias')
+        if cat['key']=='cine-streaming' and all(content_kind(s)=='guide' for s in stories):
+            count_unit='guía' if count==1 else 'guías'
+        else:
+            count_unit=('contenido' if count==1 else 'contenidos') if has_content else ('noticia' if count==1 else 'noticias')
         count_label=f'{count} {count_unit}'
         section_note=''
         if cat['key']=='cine-streaming':
