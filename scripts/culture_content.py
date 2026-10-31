@@ -14,7 +14,7 @@ def section_categories(categories):
     return result
 
 
-def add_culture_content(by_category,now,*,satire_items=None,release_guides=None,existing=()):
+def add_culture_content(by_category,now,*,satire_items=None,release_guides=None,premiere_items=None,existing=()):
     from scripts.satire import validated_items, SOURCE_NAME, SOURCE_URL
     from scripts.weekly_releases import current_guides
     from scripts.global_sources import load_catalog as world
@@ -34,13 +34,15 @@ def add_culture_content(by_category,now,*,satire_items=None,release_guides=None,
             additions.append({'title':SOURCE_NAME,'source':SOURCE_NAME,'source_url':SOURCE_URL,
                               'link':SOURCE_URL,'content_kind':'satire-source','published':None,
                               'summary':'','image':'','metadata_only':True})
+    from scripts.premiere_catalog import current_premieres
+    additions.extend(current_premieres(premiere_items or [], now))
     additions.extend({**s,'content_kind':'guide','source_country_label':'Guía de '+s['market']}
                      for s in current_guides(release_guides or [],now))
     for item in additions:
         key=canonical_key(item['link'])
         if key in seen:continue
         seen.add(key)
-        destination=CINEMA_SECTION['key'] if item['content_kind']=='guide' else 'cultura'
+        destination=CINEMA_SECTION['key'] if item['content_kind'] in ('guide','premiere') else 'cultura'
         result.setdefault(destination,[]).append({**item,'category':destination,
                    'sources':[item['source']],'first_seen':''})
     return result
@@ -48,11 +50,13 @@ def add_culture_content(by_category,now,*,satire_items=None,release_guides=None,
 
 def content_kind(story):
     kind=story.get('content_kind')
-    return kind if kind in ('guide','satire','satire-source') else ''
+    return kind if kind in ('premiere','guide','satire','satire-source') else ''
 
 
 def card_label(story):
     kind=content_kind(story)
-    if kind=='guide':return 'Cine y streaming'
+    if kind=='premiere':
+        return 'Estreno en cines de Chile' if story['format']=='Cine' else 'Estreno en '+story['platform']
+    if kind=='guide':return 'Guía semanal'
     if kind in ('satire','satire-source'):return 'Sátira y humor'
     return ''
