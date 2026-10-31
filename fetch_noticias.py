@@ -961,13 +961,17 @@ def render_sections(by_category, now, satire_items=None, release_guides=None, pr
             section_note=(f'<p class="section-note">Estrenos de la semana · {period}. '
                           'Cada ficha individual indica su fecha confirmada en Chile y enlaza a una noticia específica; '
                           'las guías generales son material complementario y su fecha es la de publicación.</p>')
+        portals_html = ''
+        if cat['key'] == 'cine-streaming':
+            from scripts.official_release_portals import render_official_portals
+            portals_html = render_official_portals()
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count_label}</span></div>'
             f'{section_note}<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
-            f'{more}</section>'
+            f'{more}{portals_html}</section>'
         )
     return "\n".join(blocks)
 
