@@ -133,7 +133,7 @@ def _prepare(item,now,restrictions):
     # titulares como «Estrenos en streaming esta semana» son válidos.
     streaming=bool(platforms or re.search(r'\b(streaming|plataformas|series)\b',folded))
     kind='Streaming' if streaming else 'Cine'
-    if kind=='Cine' and (identity[2]!='Cine' or not re.search(r'\\b(cine|cines|cartelera|peliculas)\\b',folded)):
+    if kind=='Cine' and (identity[2]!='Cine' or not re.search(r'\b(cine|cines|cartelera|peliculas)\b',folded)):
         return None
     from fetch_noticias import to_iso
     return {'title':title.strip(),'source':source.strip(),'source_url':item['source_url'],
