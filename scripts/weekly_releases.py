@@ -34,14 +34,13 @@ PLATFORMS = (
     ('MUBI',r'\bmubi\b'), ('Filmin',r'\bfilmin\b'),
     ('Movistar Plus+',r'\bmovistar\s+plus'), ('SkyShowtime',r'\bskyshowtime\b'),
 )
-DATE = re.compile(r'\\b(\\d{1,2})(?:\\s+al\\s+(\\d{1,2}))?\\s+(?:de\\s+)?('
-                  +'|'.join(MONTHS)+r')(?:\\s+(?:de\\s+)?(20\\d{2}))?\\b')
+DATE = re.compile(r'\b(\d{1,2})(?:\s+al\s+(\d{1,2}))?\s+(?:de\s+)?('
+                  +'|'.join(MONTHS)+r')(?:\s+(?:de\s+)?(20\d{2}))?\b')
 DATE_RANGE = re.compile(
-    r'\\b(\\d{1,2})\\s+(?:de\\s+)?('+'|'.join(MONTHS)
-    +r')\\s+al\\s+(\\d{1,2})\\s+(?:de\\s+)?('+'|'.join(MONTHS)
-    +r')(?:\\s+(?:de\\s+)?(20\\d{2}))?\\b'
+    r'\b(\d{1,2})\s+(?:de\s+)?('+'|'.join(MONTHS)
+    +r')\s+al\s+(\d{1,2})\s+(?:de\s+)?('+'|'.join(MONTHS)
+    +r')(?:\s+(?:de\s+)?(20\d{2}))?\b'
 )
-
 
 def _calendar_day(day, month, year):
     try:
@@ -132,7 +131,7 @@ def _prepare(item,now,restrictions):
     platforms=[label for label,pattern in PLATFORMS if re.search(pattern,folded)]
     # No exigir la plataforma en el titular de una guía de streaming:
     # titulares como «Estrenos en streaming esta semana» son válidos.
-    streaming=bool(platforms or re.search(r'\\b(streaming|plataformas|series)\\b',folded))
+    streaming=bool(platforms or re.search(r'\b(streaming|plataformas|series)\b',folded))
     kind='Streaming' if streaming else 'Cine'
     if kind=='Cine' and (identity[2]!='Cine' or not re.search(r'\\b(cine|cines|cartelera|peliculas)\\b',folded)):
         return None
