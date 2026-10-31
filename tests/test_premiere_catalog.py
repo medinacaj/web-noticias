@@ -52,8 +52,7 @@ class PremiereCatalogTests(unittest.TestCase):
         self.assertEqual(current_premieres([item], datetime(2026, 11, 2, 12, tzinfo=timezone.utc), restrictions=[]), [])
 
     def test_premiere_and_guides_coexist_without_false_article_dates(self):
-        records = self.collect(sample())
-        by_cat = add_culture_content({}, NOW, premiere_items=records, release_guides=[])
+        by_cat = add_culture_content({}, NOW, premiere_items=[sample()], release_guides=[])
         items = by_cat["cine-streaming"]
         self.assertEqual(len(items), 1)
         self.assertEqual(content_kind(items[0]), "premiere")
