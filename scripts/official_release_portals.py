@@ -16,6 +16,7 @@ OFFICIAL_PORTALS = (
     ("HBO Max", "HBO Max", "https://press.wbd.com/us/brands/hbo-max", "EE. UU."),
     ("Prime Video", "Prime Video", "https://www.aboutamazon.com/news/entertainment", "Internacional"),
     ("Disney+", "Disney+", "https://press.disneyplus.com/news", "Internacional"),
+    ("Mega / MegaGo", "Mega · Noticias", "https://www.mega.cl/entretenimiento/", "Chile"),
     ("Mega / MegaGo", "Mega / MegaGo", "https://www.mega.cl/temas/megashorts/", "Chile"),
 )
 
