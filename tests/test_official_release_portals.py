@@ -23,7 +23,7 @@ class OfficialReleasePortalsTests(unittest.TestCase):
         portals = official_portals()
         self.assertEqual({p["brand"] for p in portals},
                          {"Netflix", "HBO Max", "Prime Video", "Disney+", "Mega / MegaGo"})
-        self.assertEqual(len(portals), 6)
+        self.assertEqual(len(portals), 7)
         hosts = {
             "Netflix": "about.netflix.com",
             "HBO Max": "press.wbd.com",
@@ -44,8 +44,8 @@ class OfficialReleasePortalsTests(unittest.TestCase):
         self.assertIn('aria-label="Fuentes oficiales de estrenos"', rendered)
         self.assertIn("Portales oficiales", rendered)
         self.assertIn("no garantizan un estreno en Chile", rendered)
-        self.assertEqual(rendered.count('<a href="'), 6)
-        self.assertEqual(rendered.count('rel="noopener noreferrer"'), 6)
+        self.assertEqual(rendered.count('<a href="'), 7)
+        self.assertEqual(rendered.count('rel="noopener noreferrer"'), 7)
         self.assertNotIn('target="_blank"', rendered)
         self.assertNotIn('<article', rendered)
         self.assertNotIn('<time ', rendered)
