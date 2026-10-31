@@ -1,0 +1,52 @@
+{
+  "premieres": [
+    {
+      "title": "Wildwood: El bosque salvaje",
+      "format": "Cine",
+      "platform": "",
+      "release_date": "2026-10-29",
+      "region": "CL",
+      "verified": true,
+      "source": "PAWA",
+      "source_url": "https://www.pawa.cl",
+      "link": "https://www.pawa.cl/wildwood-el-bosque-salvaje-pelicula-laika-estreno-cines-chile-imagem-films/",
+      "verification_url": "https://www.cinemark.cl/pelicula/wildwood-el-bosque-salvaje"
+    },
+    {
+      "title": "Colisión",
+      "format": "Streaming",
+      "platform": "Netflix",
+      "release_date": "2026-10-30",
+      "region": "CL",
+      "verified": true,
+      "source": "Netflix",
+      "source_url": "https://about.netflix.com",
+      "link": "https://about.netflix.com/es_es/news/collision-course-the-new-film-by-daniel-sanchez-arevalo-premieres-on-netflix-on-30-october",
+      "verification_url": "https://www.netflix.com/cl/title/82078375"
+    },
+    {
+      "title": "El de Matthew Perry",
+      "format": "Streaming",
+      "platform": "Netflix",
+      "release_date": "2026-10-27",
+      "region": "CL",
+      "verified": true,
+      "source": "BioBioChile",
+      "source_url": "https://www.biobiochile.cl",
+      "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/09/30/el-de-matthew-perry-docuserie-de-netflix-sobre-estrella-de-friends-publica-imagenes-ineditas.shtml",
+      "verification_url": "https://www.netflix.com/cl/title/81970498"
+    },
+    {
+      "title": "El intercambio",
+      "format": "Streaming",
+      "platform": "Netflix",
+      "release_date": "2026-10-30",
+      "region": "CL",
+      "verified": true,
+      "source": "A24",
+      "source_url": "https://www.a24.com",
+      "link": "https://www.a24.com/trends/furor-netflix-se-estreno-una-nueva-serie-4-episodios-y-es-perfecta-el-fin-semana-n1611783/amp",
+      "verification_url": "https://www.netflix.com/cl/title/81944880"
+    }
+  ]
+}

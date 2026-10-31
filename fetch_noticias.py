@@ -728,7 +728,7 @@ def title_link(story):
         first_seen = ""
     from scripts.culture_content import content_kind
     kind=content_kind(story)
-    prefix='Sátira y humor: ' if kind.startswith('satire') else 'Guía de estrenos: ' if kind=='guide' else ''
+    prefix='Sátira y humor: ' if kind.startswith('satire') else 'Estreno confirmado: ' if kind=='premiere' else 'Guía de estrenos: ' if kind=='guide' else ''
     content=f' data-content-kind="{kind}"' if kind else ''
     prefix_html=f'<span class="sr-only">{prefix}</span>' if prefix else ''
     return (f'<a{content} data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" rel="noopener" '
@@ -770,6 +770,16 @@ def meta_html(story, now, read_link=False):
     if content=='satire-source':
         return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
                 '<span class="content-note">Humor y ficción</span></p>')
+    if content=='premiere':
+        from datetime import date
+        day = date.fromisoformat(story['release_date'])
+        medium = 'Cines de Chile' if story['format']=='Cine' else esc(story['platform']) + ' · Chile'
+        evidence = esc(story['verification_url'])
+        return (f'<p class="meta"><span class="src">{source_mark(story)}'
+                f'<span class="source-name">{esc(label)}</span></span>'
+                f'<span class="content-note">{medium}</span>'
+                f'<time datetime="{day.isoformat()}">Estreno en Chile: {day.day} {MESES[day.month-1]}</time>'
+                f'<a href="{evidence}" rel="noopener">Ficha oficial</a></p>')
     moment = story_time(story) or now
     fresh = ' data-fresh="true"' if hours_old(story, now) <= 1 else ""
     country = (f'<span class="source-country">{esc(story["source_country_label"])}</span>'
@@ -895,18 +905,26 @@ def recent_section_stories(stories):
     return sorted(stories, key=lambda story: story_time(story).timestamp() if story_time(story) else float("-inf"), reverse=True)
 
 
-def render_sections(by_category, now, satire_items=None, release_guides=None):
+def render_sections(by_category, now, satire_items=None, release_guides=None, premiere_items=None):
     from scripts.presentation_groups import PRESENTATION_LABELS
     blocks = []
     from scripts.culture_content import add_culture_content, card_label, content_kind
-    if satire_items is not None or release_guides is not None:
-        by_category=add_culture_content(by_category,now,satire_items=satire_items,release_guides=release_guides)
+    if satire_items is not None or release_guides is not None or premiere_items is not None:
+        by_category=add_culture_content(by_category,now,satire_items=satire_items,
+                                        release_guides=release_guides,premiere_items=premiere_items)
     reserved = set(by_category)
     present = [c for c in section_categories(CATEGORIES) if c["key"] in by_category]
     for number, cat in enumerate(present, start=1):
         original = by_category[cat["key"]]
         editorial_order = {id(story): index for index, story in enumerate(original)}
-        stories = recent_section_stories(original)
+        if cat['key']=='cine-streaming':
+            # Las fichas individuales primero; guías generales como complemento.
+            premieres = sorted((s for s in original if content_kind(s)=='premiere'),
+                               key=lambda s: (s['release_date'], s['title']))
+            guides = recent_section_stories([s for s in original if content_kind(s)!='premiere'])
+            stories = premieres + guides
+        else:
+            stories = recent_section_stories(original)
         feature, rest = stories[0], stories[1:]
         def attributes(story):
             kind=content_kind(story)
@@ -930,14 +948,19 @@ def render_sections(by_category, now, satire_items=None, release_guides=None):
                 f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
                 f'Ver más {more_label} <span aria-hidden="true">↓</span></button>'
                 if count > 6 else "")
-        count_unit=('guía' if count==1 else 'guías') if cat['key']=='cine-streaming' else (('contenido' if count==1 else 'contenidos') if has_content else ('noticia' if count==1 else 'noticias'))
+        if cat['key']=='cine-streaming' and all(content_kind(s)=='guide' for s in stories):
+            count_unit='guía' if count==1 else 'guías'
+        else:
+            count_unit=('contenido' if count==1 else 'contenidos') if has_content else ('noticia' if count==1 else 'noticias')
         count_label=f'{count} {count_unit}'
         section_note=''
         if cat['key']=='cine-streaming':
             from scripts.weekly_releases import week_bounds
             start,end=week_bounds(now);end-=timedelta(days=1)
             period=f'{start.day} {MESES[start.month-1]} – {end.day} {MESES[end.month-1]}'
-            section_note=f'<p class="section-note">Estrenos de la semana · {period}. La disponibilidad puede variar según tu país.</p>'
+            section_note=(f'<p class="section-note">Estrenos de la semana · {period}. '
+                          'Cada ficha individual indica su fecha confirmada en Chile y enlaza a una noticia específica; '
+                          'las guías generales son material complementario y su fecha es la de publicación.</p>')
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
@@ -1029,7 +1052,8 @@ PAGE_404 = """<!DOCTYPE html>
 
 
 def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
-               signals_archive=None, signals_started="", agenda=None, satire_items=None, release_guides=None):
+               signals_archive=None, signals_started="", agenda=None, satire_items=None, release_guides=None,
+               premiere_items=None):
     from scripts.satire import is_satire
     stories = [story for story in stories if not is_satire(story)]
     sel = select(stories, now)
@@ -1052,7 +1076,8 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     from scripts.agenda import render_agenda
     from scripts.culture_content import add_culture_content
     display_sections=add_culture_content(sel['by_category'],now,satire_items=satire_items,
-                     release_guides=release_guides,existing=([sel['lead']] if sel['lead'] else [])+sel['secondary'])
+                     release_guides=release_guides,premiere_items=premiere_items,
+                     existing=([sel['lead']] if sel['lead'] else [])+sel['secondary'])
     sections_shown = sum(1 for c in section_categories(CATEGORIES) if c["key"] in display_sections)
     agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1, source_mark=source_mark)
     nav = render_nav({**sel,'by_category':display_sections}, agenda=bool(agenda_html))
@@ -1194,9 +1219,11 @@ def main():
                                      fetch_rss(url, category, limit=60, **options))
         from scripts.weekly_releases import collect_releases
         release_guides = collect_releases(now, fetch=fetch_rss)
+    from scripts.premiere_catalog import load_catalog as load_premieres
     build_site(stories, now, args.salida, args.ventana,
                signals_archive=archive, signals_started=signals_started, agenda=agenda,
-               satire_items=satire_items, release_guides=release_guides)
+               satire_items=satire_items, release_guides=release_guides,
+               premiere_items=load_premieres())
 
 
 if __name__ == "__main__":
