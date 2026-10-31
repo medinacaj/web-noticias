@@ -1,16 +1,16 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-10-30T16:08:43",
+  "generated_at": "2026-10-31T15:30:35",
   "summary": {
     "sources_attempted": 9,
     "sources_ok": 8,
     "sources_failed": 1,
-    "events_found": 21,
-    "events_inserted": 17,
+    "events_found": 20,
+    "events_inserted": 16,
     "events_merged": 0,
-    "possible_events": 2,
+    "possible_events": 4,
     "quarantined_candidates": 0,
-    "candidates": 3,
+    "candidates": 5,
     "errors": [
       {
         "source": "ChileCultura (Ministerio de las Culturas)",
@@ -41,7 +41,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -53,7 +53,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -91,7 +91,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:06:46"
+          "seen_at": "2026-10-31T15:28:48"
         }
       ],
       "changes": [
@@ -152,7 +152,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/09/Girls-Boys_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-30T16:07:27",
+      "discovered_at": "2026-10-31T15:29:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -164,127 +164,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:27"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Jazz Maule celebra su cuarta edición con músicos de cinco países y conciertos gratuitos en Talca y Constitución",
-      "description": null,
-      "date": "2026-10-30",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Talca",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Por confirmar",
-      "source": "Teatro Regional del Maule",
-      "source_url": "https://www.teatroregional.cl/archivo/28613",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": null,
-      "discovered_at": "2026-10-30T16:07:55",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Teatro Regional del Maule",
-          "url": "https://www.teatroregional.cl/archivo/28613",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-30T16:07:55"
-        }
-      ],
-      "changes": [],
-      "region": "Maule"
-    },
-    {
-      "title": "Lanzamiento de \"El Hambre y las Ganas de Comer\" - La Estrategia del Caracol + Cámara Chilena de la Destrucción",
-      "description": null,
-      "date": "2026-10-30",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Estación Central",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 6000,
-      "price_status": "paid",
-      "status": "Por confirmar",
-      "source": "Matucana 100",
-      "source_url": "https://www.m100.cl/programacion/musica/la-estrategia-del-caracol-camara-chilena-de-la-destruccion/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.m100.cl/wp-content/uploads/2026/07/estrategia-caracolcamara-destrucción_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-30T16:07:27",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Matucana 100",
-          "url": "https://www.m100.cl/programacion/musica/la-estrategia-del-caracol-camara-chilena-de-la-destruccion/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-30T16:07:27"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Noche de grandes coreógrafos",
-      "description": null,
-      "date": "2026-10-30",
-      "end_date": null,
-      "time": "19:00",
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Teatro Municipal de Santiago",
-          "url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:26"
         }
       ],
       "changes": [],
@@ -312,7 +192,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -324,7 +204,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -352,7 +232,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/festival-biobiocine-533x300.jpg",
-      "discovered_at": "2026-10-30T16:07:04",
+      "discovered_at": "2026-10-31T15:29:03",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -364,11 +244,51 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:04"
+          "seen_at": "2026-10-31T15:29:03"
         }
       ],
       "changes": [],
       "region": "Biobío"
+    },
+    {
+      "title": "Trece establecimientos actuarán en el X Encuentro Regional de Teatro Estudiantil",
+      "description": null,
+      "date": "2026-11-03",
+      "end_date": "2026-11-04",
+      "time": "10:00",
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Punta Arenas",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/trece-establecimientos-actuaran-en-el-x-encuentro-regional-de-teatro-estudiantil/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/violeta-3-450x300.jpg",
+      "discovered_at": "2026-10-31T15:29:03",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/trece-establecimientos-actuaran-en-el-x-encuentro-regional-de-teatro-estudiantil/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-31T15:29:03"
+        }
+      ],
+      "changes": [],
+      "region": "Magallanes"
     },
     {
       "title": "GAM y Periscopio presenta: Juegos de Mesa en BiblioGAM",
@@ -402,7 +322,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:06:46"
+          "seen_at": "2026-10-31T15:28:48"
         }
       ],
       "changes": [
@@ -439,7 +359,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -451,7 +371,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -479,7 +399,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -491,7 +411,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -529,7 +449,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:06:46"
+          "seen_at": "2026-10-31T15:28:48"
         }
       ],
       "changes": [
@@ -590,7 +510,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -602,7 +522,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -630,7 +550,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -642,7 +562,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -670,7 +590,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:55",
+      "discovered_at": "2026-10-31T15:29:52",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -682,7 +602,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:55"
+          "seen_at": "2026-10-31T15:29:52"
         }
       ],
       "changes": [],
@@ -710,7 +630,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -722,7 +642,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -750,7 +670,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-10-30T16:07:37",
+      "discovered_at": "2026-10-31T15:29:34",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -762,7 +682,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:37"
+          "seen_at": "2026-10-31T15:29:34"
         }
       ],
       "changes": [],
@@ -790,7 +710,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -802,7 +722,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -830,7 +750,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-30T16:07:20",
+      "discovered_at": "2026-10-31T15:29:16",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -842,7 +762,47 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-30T16:07:20"
+          "seen_at": "2026-10-31T15:29:16"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Noche de grandes coreógrafos",
+      "description": null,
+      "date": "2027-01-20",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": null,
+      "discovered_at": "2026-10-31T15:29:16",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Teatro Municipal de Santiago",
+          "url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-10-31T15:29:16"
         }
       ],
       "changes": [],
@@ -853,36 +813,36 @@
     {
       "source_name": "Agenda Cultural del Ministerio de las Culturas",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:07:04",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:29:03",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 17,
-      "events_found": 1,
-      "events_inserted": 1,
+      "pages_fetched": 18,
+      "events_found": 2,
+      "events_inserted": 2,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 1,
       "error": null
     },
     {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:07:41",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:29:45",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 2,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 1,
       "error": null
     },
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:07:37",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:29:34",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -895,8 +855,8 @@
     {
       "source_name": "ChileCultura (Ministerio de las Culturas)",
       "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:06:50",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:28:51",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -909,13 +869,13 @@
     {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:07:27",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:29:26",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 2,
-      "events_inserted": 2,
+      "events_found": 1,
+      "events_inserted": 1,
       "events_merged": 0,
       "possible_found": 0,
       "error": null
@@ -923,22 +883,22 @@
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:08:43",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:30:35",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 2,
       "error": null
     },
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:07:20",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:29:16",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -951,53 +911,33 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:07:46",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:29:43",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 2,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-10-30T16:06:46",
-      "finished_at": "2026-10-30T16:07:55",
+      "started_at": "2026-10-31T15:28:48",
+      "finished_at": "2026-10-31T15:29:52",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 15,
-      "events_found": 2,
-      "events_inserted": 2,
+      "events_found": 1,
+      "events_inserted": 1,
       "events_merged": 0,
       "possible_found": 0,
       "error": null
     }
   ],
   "possible_events": [
-    {
-      "title": "Viernes 30 de octubre – 19:00 horas / Serie B4",
-      "raw_text": "Viernes 30 de octubre – 19:00 horas / Serie B4",
-      "date": "2026-10-30",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/noche-de-grandes-coreografos-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Viernes 30 de octubre a las 19:00 horas",
-      "raw_text": "Viernes 30 de octubre a las 19:00 horas",
-      "date": "2026-10-30",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
     {
       "title": "Sábado 31 de octubre – 16:00 horas /",
       "raw_text": "Sábado 31 de octubre – 16:00 horas /",
@@ -1077,6 +1017,16 @@
       "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": null
+    },
+    {
+      "title": "4 al 5 Nov 2026",
+      "raw_text": "4 al 5 Nov 2026",
+      "date": "2026-11-04",
+      "commune": "Santiago",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
     },
     {
       "title": "Jueves 5 de noviembre a las 19:30 horas",
@@ -1497,6 +1447,16 @@
       "source_url": "https://ww2.teatromunicipaltemuco.cl/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "La Araucanía"
+    },
+    {
+      "title": "El plazo de de postulación es hasta el 27 de noviembre de 2026 a las 15:00 horas de Santiago de Chile.",
+      "raw_text": "El plazo de de postulación es hasta el 27 de noviembre de 2026 a las 15:00 horas de Santiago de Chile.",
+      "date": "2026-11-27",
+      "commune": "Santiago",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/paocc/ingreso-y-continuidad-2027/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
     },
     {
       "title": "Sábado 28 de noviembre – 18:00 horas",
@@ -2205,6 +2165,26 @@
       "commune": "Valparaíso",
       "source": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/events/cocina-indigena-aymara/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Valparaíso"
+    },
+    {
+      "title": "ActividadesRelacionadas",
+      "raw_text": "En el marco del Día Internacional LGTBIQ+ (28 de junio), el Parque Cultural de Valparaíso estrenará en Chile el documental “Grietas en el Patriarcado”, de los realizadores alemanes Cagdas Celtikli y Kai Münch.",
+      "date": "2027-06-28",
+      "commune": "Valparaíso",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/documental-grietas-en-el-patriarcado/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Valparaíso"
+    },
+    {
+      "title": "El documental se exhibirá el lunes 28 de junio, a las 19:00, previa inscripción en",
+      "raw_text": "El documental se exhibirá el lunes 28 de junio, a las 19:00, previa inscripción en",
+      "date": "2027-06-28",
+      "commune": "Valparaíso",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/documental-grietas-en-el-patriarcado/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "Valparaíso"
     }
@@ -2970,6 +2950,36 @@
       "url": "https://ww2.teatromunicipaltemuco.cl/?add-to-cart=11243",
       "domain": "ww2.teatromunicipaltemuco.cl",
       "found_on": "https://www.teatromunicipaltemuco.cl/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://clave.fondosdecultura.cl/ES/Account/Login",
+      "domain": "clave.fondosdecultura.cl",
+      "found_on": "https://www.cultura.gob.cl/paocc/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://www.fondosdecultura.cl/wp-content/uploads/2026/10/documentos-ingreso-2027.zip",
+      "domain": "www.fondosdecultura.cl",
+      "found_on": "https://www.cultura.gob.cl/paocc/ingreso-y-continuidad-2027/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://www.fondosdecultura.cl/wp-content/uploads/2026/10/documentos-continuidad-2027.zip",
+      "domain": "www.fondosdecultura.cl",
+      "found_on": "https://www.cultura.gob.cl/paocc/ingreso-y-continuidad-2027/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/taltal",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/teatro/taltal/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/lavina-yelb-lanza-resorte-remoto-en-vivo",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/musica/lavina-yelb-lanza-resorte-remoto-en-vivo/",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]
