@@ -131,7 +131,7 @@ def _prepare(item,now,restrictions):
     platforms=[label for label,pattern in PLATFORMS if re.search(pattern,folded)]
     # No exigir la plataforma en el titular de una guía de streaming:
     # titulares como «Estrenos en streaming esta semana» son válidos.
-    streaming=bool(platforms or re.search(r'\b(streaming|plataformas|series)\b',folded))
+    streaming=bool(platforms or re.search(r'\b(streaming|plataformas|series)\b',folded) or identity[2]=='Streaming')
     kind='Streaming' if streaming else 'Cine'
     if kind=='Cine' and (identity[2]!='Cine' or not re.search(r'\b(cine|cines|cartelera|peliculas)\b',folded)):
         return None
