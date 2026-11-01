@@ -31,7 +31,7 @@ class EditionParser(html.parser.HTMLParser):
 
 def assess(html_text, sitemap_xml, now, deployment="success", base=DEFAULT_SITE):
     warnings = []
-    if deployment not in ("", "success", "neutral", "skipped", "cancelled"):
+    if deployment not in ("", "success"):
         warnings.append(f"Resultado del despliegue: {deployment}")
     parser = EditionParser()
     parser.feed(html_text)
