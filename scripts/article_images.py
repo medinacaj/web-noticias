@@ -17,7 +17,7 @@ from urllib.request import (
 )
 
 LOG = logging.getLogger(__name__)
-MAX_LOOKUPS = 30
+MAX_LOOKUPS = 42
 RETRY_HOURS = 4
 MAX_HTML_BYTES = 450_000
 NETWORK_TIMEOUT = 6
@@ -160,11 +160,13 @@ def enrich_visible_images(stories, selected, now, decoder=None, fetch_image=publ
     visible = ([selected["lead"]] if selected["lead"] else []) + selected["secondary"]
     from fetch_noticias import recent_section_stories
     sections = [recent_section_stories(items) for items in selected["by_category"].values()]
-    # La portada muestra seis por sección: atenderlas antes de las de «Ver más».
-    for items in sections:
-        visible.extend(items[:6])
-    for items in sections:
-        visible.extend(items[6:])
+    # Repartir el presupuesto entre categorías visibles: de otro modo la primera
+    # categoría sin foto agota las consultas antes de llegar a Deportes o Cultura.
+    for index in range(6):
+        visible.extend(items[index] for items in sections if index < len(items))
+    # Los contenidos tras «Ver más» solo se revisan después de la portada.
+    for index in range(6, max((len(items) for items in sections), default=6)):
+        visible.extend(items[index] for items in sections if index < len(items))
     unique, seen = [], set()
     for story in visible:
         key = id(story)
