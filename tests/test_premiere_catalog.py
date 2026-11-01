@@ -64,11 +64,21 @@ class PremiereCatalogTests(unittest.TestCase):
         self.assertIn(sample()["link"], rendered)
         self.assertNotIn('target="_blank"', rendered)
 
-    def test_catalog_has_no_out_of_week_releases(self):
+    def test_catalog_current_and_next_week_have_no_cross_leak(self):
         entries = load_catalog()
-        self.assertGreaterEqual(len(entries), 2)
+        self.assertGreaterEqual(len(entries), 6)
         self.assertTrue(all(x.get("verified") is True for x in entries))
-        self.assertEqual(len(current_premieres(entries, NOW, restrictions=[])), len(entries))
+        current = current_premieres(entries, NOW, restrictions=[])
+        next_week_now = datetime(2026, 11, 5, 12, tzinfo=timezone.utc)
+        next_week = current_premieres(entries, next_week_now, restrictions=[])
+        self.assertEqual(len(current), 4)
+        self.assertEqual(len(next_week), 2)
+        self.assertEqual(len(current) + len(next_week), len(entries))
+        self.assertEqual({x["title"] for x in next_week},
+                         {"Caballo Salvaje Nueve", "Todo Vale (temporada 2)"})
+        # La puerta real de permisos por fuente sigue activa, no sólo la prueba
+        # con restricciones vacías.
+        self.assertEqual(current_premieres(entries, next_week_now), next_week)
 
 
 if __name__ == "__main__":
