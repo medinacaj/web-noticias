@@ -212,10 +212,14 @@ async def check_card_shadows(page, width):
     assert await locator.count() > 0, f"Sin tarjetas para revisar sombras a {width}px"
     card = locator.first
     original = await page.evaluate("document.documentElement.dataset.theme")
-    light = await card.evaluate("""el => getComputedStyle(el).boxShadow""")
+    # Evitar medir un fotograma intermedio de la transición CSS:
+    # el navegador interpola la sombra al cambiar de tema.
+    await card.evaluate("el => { el.style.transition = 'none'; }")
+    light = await card.evaluate("el => getComputedStyle(el).boxShadow")
     await page.evaluate("document.documentElement.dataset.theme = 'dark'")
-    dark = await card.evaluate("""el => getComputedStyle(el).boxShadow""")
+    dark = await card.evaluate("el => getComputedStyle(el).boxShadow")
     await page.evaluate("(theme) => {document.documentElement.dataset.theme = theme}", original)
+    await card.evaluate("el => { el.style.removeProperty('transition'); }")
     assert light != "none" and dark != "none", (
         f"La tarjeta no tiene sombra permanente a {width}px: {light} / {dark}")
     assert light != dark, f"El modo oscuro comparte sombra ilegible a {width}px"
