@@ -172,6 +172,40 @@ async def check_compact_navigation(page, width, no_overflow):
     await no_overflow("chevrón lateral")
 
 
+async def check_category_badges(page, width):
+    """Los conteos tienen cápsulas y el color se distingue por categoría."""
+    items = await page.evaluate("""() => Array.from(
+      document.querySelectorAll('.section .section-head')).filter(h => h.getClientRects().length)
+      .map(h => {
+        const count = h.querySelector('.section-count');
+        const num = h.querySelector('.section-num');
+        const category = h.closest('.section').className;
+        if (!count || !num) return null;
+        const style = getComputedStyle(count);
+        const rect = count.getBoundingClientRect();
+        return {category, background:style.backgroundColor, color:style.color,
+          radius:parseFloat(style.borderTopLeftRadius), width:rect.width,
+          height:rect.height, right:rect.right, left:rect.left,
+          numBackground:getComputedStyle(num).backgroundColor};
+      }).filter(Boolean)""")
+    assert items, f"Faltan conteos de secciones a {width}px"
+    assert all(i["radius"] >= 12 and i["height"] >= 26
+               and 0 <= i["left"] and i["right"] <= width + 1
+               for i in items), f"Cápsulas sin forma o fuera de pantalla a {width}px: {items}"
+    if len(items) > 1:
+        assert len({i["background"] for i in items}) >= 2, (
+            f"Los contadores de todas las categorías tienen el mismo color a {width}px")
+        assert len({i["numBackground"] for i in items}) >= 2, (
+            f"Los números de secciones pierden el color por categoría a {width}px")
+    old = await page.evaluate("document.documentElement.dataset.theme")
+    await page.evaluate("document.documentElement.dataset.theme = 'dark'")
+    dark = await page.locator(".section .section-head .section-count").first.evaluate(
+        "el => ({bg:getComputedStyle(el).backgroundColor,fg:getComputedStyle(el).color})")
+    await page.evaluate("(theme) => {document.documentElement.dataset.theme = theme}", old)
+    assert dark["bg"] != items[0]["background"], (
+        f"La cápsula no cambia de contraste en modo oscuro a {width}px")
+
+
 async def check(html, output):
     output.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
@@ -190,6 +224,7 @@ async def check(html, output):
                         .filter(el => el.right > innerWidth + 2).slice(0,10)""")
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
+            await check_category_badges(page, width)
             await check_compact_navigation(page, width, no_overflow)
             # Fotos estables; la ficha de país puede crecer para mostrar su texto.
             thumbnails = await page.evaluate("""() => Array.from(document.querySelectorAll(
