@@ -737,8 +737,8 @@ def title_link(story):
 
 
 def figure_html(story, eager=False):
-    from scripts.culture_content import content_kind
-    if content_kind(story):return ''
+    # Cine y streaming comparte la miniatura editorial: cuando no hay
+    # fotografía autorizada no se deja un hueco, se identifica al medio.
     image = safe_image(story.get("image"))
     if not image:
         source = (story.get("sources") or ["Fuente"])[0]
