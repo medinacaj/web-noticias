@@ -931,7 +931,7 @@
     // Una URL de imagen compartida no es un error: el navegador usa caché.
     // Solo sustituir una fotografía si realmente falla su carga.
     if (img.complete && img.naturalWidth === 0) fallback();
-    else img.addEventListener("error", fallback, {once:true});
+    else img.addEventListener("error", fallback);
   });
 
   // La navegación lateral vive en reader-ui.js; búsqueda solo cierra el panel móvil.
