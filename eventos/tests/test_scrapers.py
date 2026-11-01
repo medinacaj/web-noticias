@@ -68,6 +68,43 @@ class GenericTests(unittest.TestCase):
         self.assertEqual(titles["Cancelado"]["price_status"], "pending")
         self.assertTrue(any(p["title"] == "Show en Santiago" for p in pos))
 
+    def test_national_ticketing_requires_explicit_biobio_locality_and_region(self):
+        from scrapers.quality import review_reason
+        from scrapers import ticketing
+        import json
+        src = dict(SRC, source_type="ticketing", parser="ticketing",
+                   commune=None, official=False, radar_only=False)
+
+        def record(locality, region, venue="Teatro"):
+            return {"@context": "https://schema.org", "@type": "MusicEvent",
+                    "name": "Festival confirmado", "startDate": "2030-11-10T20:00:00-03:00",
+                    "location": {"@type": "Place", "name": venue,
+                                 "address": {"@type": "PostalAddress",
+                                             "addressLocality": locality,
+                                             "addressRegion": region}}}
+        for locality, region, allowed in [
+            ("Concepción", "Región del Biobío", True),
+            ("Florida", "Metropolitana", False),
+            ("Concepción", "Metropolitana", False),
+            ("Concepción", "", False),
+            ("Santiago", "Biobío", False),
+        ]:
+            with self.subTest(locality=locality, region=region):
+                html = '<script type="application/ld+json">' + json.dumps(record(locality, region)) + '</script>'
+                events, _ = ticketing.extract(html, "https://tickets.cl/entrada/1", src, COMMUNES)
+                if not events:
+                    self.assertFalse(allowed)
+                    continue
+                reason = review_reason(events[0], src)
+                self.assertEqual(reason is None, allowed)
+        html = '<script type="application/ld+json">' + json.dumps({
+            "@type": "Event", "name": "Show Florida", "startDate": "2030-11-10",
+            "location": {"name": "Mall Florida", "address": "Av. Vicuña Mackenna, Florida, Santiago"}
+        }) + '</script>'
+        events, _ = ticketing.extract(html, "https://tickets.cl/2", src, COMMUNES)
+        if events:
+            self.assertIsNotNone(review_reason(events[0], src))
+
     def test_radar_source_never_publishes(self):
         evs, pos = generic_events.extract(EVENT_PAGE, "https://n.cl/x", dict(SRC, radar_only=True), COMMUNES)
         self.assertEqual(evs, [])
