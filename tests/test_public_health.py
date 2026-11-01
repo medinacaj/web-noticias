@@ -80,6 +80,24 @@ class PublicHealthTests(unittest.TestCase):
     def test_healthy(self):
         self.assertEqual(assess(self.page(), self.sitemap, self.now), [])
 
+    def test_portal_name_in_body_does_not_mask_bad_html_title(self):
+        # La frase puede aparecer en el pie incluso en una página de error.
+        bad = self.page().replace(
+            "<title>Noticias del Momento</title>",
+            "<title>Error de publicación</title>",
+        ).replace("<body>", "<body><p>Noticias del Momento</p>")
+        self.assertIn(
+            "La portada pública no identifica el portal esperado",
+            assess(bad, self.sitemap, self.now),
+        )
+
+    def test_editorial_suffix_in_real_html_title_is_accepted(self):
+        page = self.page().replace(
+            "<title>Noticias del Momento</title>",
+            "<title>Noticias de Chile hoy | Noticias del Momento</title>",
+        )
+        self.assertEqual(assess(page, self.sitemap, self.now), [])
+
     def test_stale_publication(self):
         warnings = assess(self.page(MAX_AGE_HOURS + 1), self.sitemap, self.now)
         self.assertTrue(any("desactualizada" in x for x in warnings))
