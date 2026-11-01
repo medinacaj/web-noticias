@@ -151,14 +151,16 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
     # Continuidad del historial. Las fichas sin datos estructurados no se arrastran:
     # se vuelven a extraer con la regla vigente (y desaparecen si ya no la cumplen).
     previous = db.load_crawled(conn, crawled_path, communes, skip_tags=(event_page.PAGE_TAG,))
-    started = db.now_iso()
+    # Los timestamps tienen precisión de segundos; usar el ID evita mezclar
+    # corridas sucesivas del mismo segundo con los runs del snapshot previo.
+    last_run_id = conn.execute("SELECT COALESCE(MAX(id), 0) FROM source_runs").fetchone()[0]
     summary = runner.refresh(conn, sources=due, communes=communes, fetcher=fetcher,
                              max_workers=args.workers, only=args.only, remembered=remembered)
     if "error" in summary:
         print(summary["error"])
         return 1
     runs = [dict(r) for r in conn.execute(
-        "SELECT * FROM source_runs WHERE started_at >= ? ORDER BY source_name", (started,))]
+        "SELECT * FROM source_runs WHERE id > ? ORDER BY source_name", (last_run_id,))]
     for r in runs:
         r.pop("id", None)
     summary["skipped_by_cadence"] = len(skipped)
