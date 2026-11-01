@@ -28,6 +28,36 @@ class EventPageTests(unittest.TestCase):
     def extract(self, html, url, source):
         return event_page.event_from_page(html, url, source, CHILE, REF)
 
+    def test_official_detail_with_explicit_startdate_microdata_is_published(self):
+        html = ('<html><head><title>Concierto local</title></head><body>'
+                '<h1>Concierto local</h1>'
+                '<time itemprop="startDate" datetime="2026-11-08T19:30:00-03:00">'
+                'Ver fecha</time></body></html>')
+        ev = self.extract(html, "https://municipal.cl/espectaculos/concierto-local/", MUNICIPAL)
+        self.assertIsNotNone(ev)
+        self.assertEqual((ev["date"], ev["time"], ev["commune"]),
+                         ("2026-11-08", "19:30", "Santiago"))
+        self.assertEqual(ev["status"], "Por confirmar")
+
+    def test_page_publication_time_is_not_treated_as_start_date(self):
+        html = ('<html><head><title>Concierto local</title></head><body>'
+                '<h1>Concierto local</h1>'
+                '<time class="published" datetime="2026-11-08T19:30:00-03:00">'
+                'Publicado hoy</time><meta property="article:published_time" '
+                'content="2026-11-08T19:30:00-03:00"></body></html>')
+        self.assertIsNone(self.extract(
+            html, "https://municipal.cl/espectaculos/concierto-local/", MUNICIPAL))
+
+    def test_invalid_startdate_and_listing_do_not_become_events(self):
+        bad = ('<html><head><title>Concierto local</title></head><body>'
+               '<h1>Concierto local</h1>'
+               '<time itemprop="startDate" datetime="2026-13-44T19:30"></time></body></html>')
+        self.assertIsNone(self.extract(
+            bad, "https://municipal.cl/espectaculos/concierto-local/", MUNICIPAL))
+        html = ('<html><head><title>Cartelera</title></head><body><h1>Cartelera</h1>'
+                '<time itemprop="startDate" datetime="2026-11-08"></time></body></html>')
+        self.assertIsNone(self.extract(html, "https://municipal.cl/", MUNICIPAL))
+
     def test_venue_detail_page_becomes_event_por_confirmar(self):
         html = page("Elektra de Richard Strauss", "Martes 17 de noviembre – 18:00 horas / Ó1",
                     "Jueves 19 de noviembre – 19:00 horas", "Entradas desde $12.000")

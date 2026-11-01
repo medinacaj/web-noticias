@@ -20,6 +20,7 @@ o sus vecinos inmediatos, quedan vacíos.
 from datetime import date, timedelta
 import html
 import re
+from html.parser import HTMLParser
 from urllib.parse import urlparse
 
 from images import extract_official_image
@@ -138,6 +139,49 @@ def _trusted_dates(block, ref):
     return s, e
 
 
+class _StartDateParser(HTMLParser):
+    """Fechas de comienzo declaradas en microdatos de una ficha individual.
+
+    No utiliza fechas de publicación de noticias, enlaces de calendario ni
+    etiquetas <time> genéricas de las cabeceras del sitio.
+    """
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.starts = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag not in ("time", "meta"):
+            return
+        attr = dict(attrs)
+        prop = (attr.get("itemprop") or "").lower()
+        classes = set((attr.get("class") or "").lower().split())
+        if not (prop == "startdate" or classes.intersection(
+                {"event-start", "event-date", "fecha-evento", "fecha-actividad"})):
+            return
+        value = attr.get("datetime") or attr.get("content") or attr.get("data-start")
+        if not isinstance(value, str) or not re.match(
+                r"^20\d{2}-\d{2}-\d{2}(?:[T ]\d{2}:\d{2}(?::\d{2})?(?:Z|[+-]\d{2}:\d{2})?)?$",
+                value.strip()):
+            return
+        raw = value.strip()
+        try:
+            date.fromisoformat(raw[:10])
+        except ValueError:
+            return
+        hour = raw[11:16] if len(raw) > 10 and raw[10] in "T " else None
+        self.starts.append((raw[:10], hour))
+
+
+def _structured_starts(page_html, ref):
+    parser = _StartDateParser()
+    try:
+        parser.feed(page_html or "")
+    except (ValueError, TypeError):
+        return []
+    return [(date.fromisoformat(day), time)
+            for day, time in parser.starts if date.fromisoformat(day) >= ref]
+
+
 def event_from_page(page_html, page_url, source, communes, ref=None):
     """Devuelve un evento (dict) o None si no se cumplen todos los resguardos."""
     ref = ref or date.today()
@@ -160,25 +204,32 @@ def event_from_page(page_html, page_url, source, communes, ref=None):
         span = _trusted_dates(block, ref)
         if span:
             found.append((span, i))
+    # Algunas fichas oficiales declaran su fecha exclusivamente en
+    # <time itemprop="startDate" datetime="...">, no en texto visible.
+    explicit_starts = _structured_starts(page_html, ref)
+    for day, _ in explicit_starts:
+        found.append(((day, day), -1))
     distinct = {span for span, _ in found}
     if not found or len(distinct) > MAX_DATES:
         return None
     start = min(s for (s, _), _ in found)
     end = max(e for (s, e), _ in found if s <= start + timedelta(days=END_WINDOW))
     first = next(i for (s, _), i in found if s == start)
-    near = page.blocks[max(0, first - 1):first + 3]
+    near = page.blocks[max(0, first - 1):first + 3] if first >= 0 else page.blocks[:4]
     names = [c["name"] for c in communes]
     commune = source.get("commune") or next(
         (c for c in (metadata.detect_commune(_without_regions(b), names) for b in near) if c), None)
     if not commune:
         return None
     price_value, price_status = metadata.parse_price(" ".join(near))
-    when = page.blocks[first]
+    when = page.blocks[first] if first >= 0 else ""
+    declared_hour = next((hour for day, hour in explicit_starts
+                          if day == start and hour), None)
     return {
         "title": title, "description": None,
         "date": start.isoformat(),
         "end_date": end.isoformat() if end > start else None,
-        "time": metadata.parse_time(when), "end_time": None,
+        "time": declared_hour or metadata.parse_time(when), "end_time": None,
         "venue": None, "address": None, "commune": commune,
         "category": metadata.guess_category(title + " " + " ".join(near)),
         "tags": [PAGE_TAG],

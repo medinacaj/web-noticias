@@ -58,11 +58,10 @@ def crawl(source, communes, fetcher=fetch, ref=None):
     max_pages = int(source.get("max_pages") or 10) if source.get("deep_crawl") else 1
     max_depth = int(source.get("max_depth") or 1) if source.get("deep_crawl") else 0
     queue, seen = [(start, 0)], {start}
-    if source.get("deep_crawl"):
-        for u in event_urls_from_sitemap(start, fetcher=fetcher, limit=max_pages, timeout=timeout):
-            if u not in seen and same_site(u, start):
-                queue.append((u, 1))
-                seen.add(u)
+    # Evitar que los listados antiguos del sitemap agoten el presupuesto
+    # antes de revisar eventos enlazados en la portada del recinto.
+    sitemap_urls = (event_urls_from_sitemap(start, fetcher=fetcher, limit=max_pages, timeout=timeout)
+                    if source.get("deep_crawl") else [])
     while queue and res.pages < max_pages:
         url, depth = queue.pop(0)
         page = first if url == start and first is not None else fetcher(url, timeout=timeout)
@@ -90,4 +89,9 @@ def crawl(source, communes, fetcher=fetch, ref=None):
                 low = (link + " " + text).lower()
                 if host.endswith(".cl") and any(h in low for h in CANDIDATE_HINTS):
                     res.candidates.append((link, host, url, "Enlace externo con pinta de agenda/eventos"))
+        if url == start:
+            for candidate in sitemap_urls:
+                if candidate not in seen and same_site(candidate, start):
+                    seen.add(candidate)
+                    queue.append((candidate, 1))
     return res

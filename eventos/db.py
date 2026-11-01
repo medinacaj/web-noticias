@@ -226,14 +226,15 @@ def find_duplicate(conn, ev):
             "SELECT * FROM events WHERE source_url = ? OR sources_json LIKE ?",
             (ev["source_url"], '%' + json.dumps(ev["source_url"])[1:-1] + '%')).fetchall()
         for r in rows:
-            if titles_match(r["title"], title) and times_compatible(r["time"], ev.get("time")) \
-                    and r["commune"] == commune:
-                # Fecha distinta desde la MISMA página de un solo evento => posible
-                # reprogramación. Si la página lista varias fechas (temporada),
-                # cada fecha es un evento distinto y no se fusiona.
-                if r["date"] == d or (ev.get("single_event_page")
-                                      and not _has_other_events_from_url(conn, r)):
-                    return r
+            if not titles_match(r["title"], title) or r["commune"] != commune:
+                continue
+            # Misma ficha individual inequívoca: un cambio de fecha Y hora
+            # sigue siendo el mismo evento. No fusionar temporadas ni funciones
+            # de una cartelera con múltiples fechas bajo una URL compartida.
+            if ev.get("single_event_page") and not _has_other_events_from_url(conn, r):
+                return r
+            if r["date"] == d and times_compatible(r["time"], ev.get("time")):
+                return r
     rows = conn.execute("SELECT * FROM events WHERE date = ? AND commune = ?", (d, commune)).fetchall()
     for r in rows:
         if not times_compatible(r["time"], ev.get("time")):
@@ -343,9 +344,11 @@ def _merge(conn, row, e, ts):
         if old in (None, "") or (authoritative and str(new) != str(old)):
             if str(new) != str(old):
                 updates[f] = new
-    if "date" in updates and row["date"] and "status" not in updates \
-            and row["status"] not in ("Cancelado",):
-        updates["status"] = "Reprogramado"
+    if (("date" in updates and row["date"])
+            or ("time" in updates and row["time"] and e.get("single_event_page")
+                and not times_compatible(row["time"], updates["time"]))):
+        if "status" not in updates and row["status"] != "Cancelado":
+            updates["status"] = "Reprogramado"
     for f in ("description", "address", "image_url", "audience", "access", "end_time"):
         if e.get(f) and not row[f]:
             updates[f] = e[f]

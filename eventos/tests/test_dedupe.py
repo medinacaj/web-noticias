@@ -96,6 +96,27 @@ class DedupeTests(unittest.TestCase):
         self.assertEqual(e["status"], "Reprogramado")
         self.assertTrue(any(c["field"] == "date" and c["old_value"] == "2030-05-10" for c in e["changes"]))
 
+    def test_single_detail_page_tracks_new_date_and_hour_without_duplicate(self):
+        first = ev(title="Concierto Otoño", date="2030-05-10", time="17:00",
+                   single_event_page=True)
+        eid, action = db.upsert_event(self.conn, first, COMMUNES)
+        self.assertEqual(action, "inserted")
+        eid2, action2 = db.upsert_event(self.conn, dict(first, date="2030-05-11", time="21:00"), COMMUNES)
+        self.assertEqual((eid2, action2, self.count()), (eid, "merged", 1))
+        result = db.get_event(self.conn, eid)
+        self.assertEqual((result["date"], result["time"], result["status"]),
+                         ("2030-05-11", "21:00", "Reprogramado"))
+        fields = {c["field"] for c in result["changes"]}
+        self.assertTrue({"date", "time"}.issubset(fields))
+
+    def test_single_detail_page_tracks_hour_change(self):
+        first = ev(title="Concierto Otoño", date="2030-05-10", time="17:00",
+                   single_event_page=True)
+        eid, _ = db.upsert_event(self.conn, first, COMMUNES)
+        eid2, action = db.upsert_event(self.conn, dict(first, time="21:00"), COMMUNES)
+        self.assertEqual((eid2, action, self.count()), (eid, "merged", 1))
+        self.assertEqual(db.get_event(self.conn, eid)["status"], "Reprogramado")
+
     def test_season_listing_same_url_multiple_dates_not_merged(self):
         db.upsert_event(self.conn, ev(single_event_page=False), COMMUNES)
         db.upsert_event(self.conn, ev(date="2030-05-11", single_event_page=False), COMMUNES)

@@ -131,7 +131,92 @@ def _balanced(events, limit=MAX_EVENTS, per_region=MAX_PER_REGION):
     return chosen
 
 
-def load_agenda(now, fetch=fetch_snapshot, snapshots=None):
+def coverage_summary(payload, today, communes_path=None):
+    """Indicadores de la última captura regional, no una promesa de cobertura.
+
+    Los candidatos no se publican. La cobertura por comuna considera únicamente
+    eventos vigentes aceptados por el recolector (no la agenda editorial manual).
+    """
+    if not isinstance(payload, dict):
+        return {}
+    runs = [r for r in payload.get("runs", []) if isinstance(r, dict)]
+    if not runs:
+        return {}
+    try:
+        path = communes_path or (ROOT / "eventos/config/communes.json")
+        with open(path, encoding="utf-8") as f:
+            communes = [c["name"] for c in json.load(f).get("communes", [])
+                        if isinstance(c, dict) and isinstance(c.get("name"), str)]
+    except (OSError, ValueError, TypeError, KeyError):
+        communes = []
+    accepted = upcoming_events(payload, today, "Biobío", limit=None)
+    covered = {e["commune"] for e in accepted}
+    ok = [r for r in runs if r.get("ok") and isinstance(r.get("http_status"), int)
+          and 200 <= r["http_status"] < 300]
+    failed = [r.get("source_name", "") for r in runs if r not in ok]
+    pending = payload.get("possible_events")
+    pending = pending if isinstance(pending, list) else []
+    reasons = {}
+    for item in pending:
+        if isinstance(item, dict) and isinstance(item.get("reason"), str):
+            reason = item["reason"][:110]
+            reasons[reason] = reasons.get(reason, 0) + 1
+    generated = str(payload.get("generated_at") or "")[:19]
+    if not re.fullmatch(r"20\d\d-\d\d-\d\dT\d\d:\d\d:\d\d", generated):
+        generated = ""
+    return {
+        "generated_at": generated, "attempted": len(runs), "responded": len(ok),
+        "events": len(accepted), "pending": len(pending),
+        "communes_total": len(communes),
+        "communes_covered": len(covered.intersection(communes)),
+        "missing": [name for name in communes if name not in covered],
+        "failed": [name for name in failed if name][:6],
+        "top_reasons": sorted(reasons.items(), key=lambda item: (-item[1], item[0]))[:3],
+    }
+
+
+def render_coverage(quality):
+    """Panel expandible de transparencia, sin alterar las tarjetas de Agenda."""
+    if not quality or not quality.get("attempted"):
+        return ""
+    pairs = (
+        ("Fuentes consultadas", quality["attempted"]),
+        ("Fuentes que respondieron", quality["responded"]),
+        ("Eventos regionales vigentes en el rastreo", quality["events"]),
+        ("Candidatos guardados para revisión", quality["pending"]),
+    )
+    cells = "".join(
+        f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>'
+        for label, value in pairs
+    )
+    covered = quality.get("communes_covered", 0)
+    total = quality.get("communes_total", 0)
+    if total:
+        cells += (f'<div><dt>Comunas con eventos</dt><dd>{covered} de {total}</dd></div>')
+    missing = quality.get("missing") or []
+    missing_text = ", ".join(missing[:8])
+    if len(missing) > 8:
+        missing_text += f" y {len(missing) - 8} más"
+    issue = '<p><strong>Comunas sin eventos detectados:</strong> ' + esc(missing_text) + '</p>' if missing else ""
+    failed = quality.get("failed") or []
+    failure = ('<p><strong>Fuentes con fallas en la última captura:</strong> '
+               + esc(", ".join(failed)) + '</p>') if failed else ""
+    reasons = quality.get("top_reasons") or []
+    reasons_html = ('<p><strong>Principales motivos de revisión:</strong> '
+                    + esc("; ".join(f"{reason} ({count})" for reason, count in reasons)) + '</p>'
+                    if reasons else "")
+    generated = quality.get("generated_at")
+    timestamp = f'<p>Captura de datos: {esc(generated.replace("T", " "))} (hora registrada por el recolector).</p>' if generated else ""
+    return ('<details class="agenda-quality"><summary>Cobertura y calidad de la agenda</summary>'
+            '<div class="agenda-quality-body"><dl>' + cells + '</dl>' + timestamp
+            + issue + failure + reasons_html
+            + '<p>Estas cifras corresponden al último rastreo de Biobío, no al total '
+            'nacional ni a los eventos agregados manualmente. Un candidato no es '
+            'un evento confirmado y una fuente accesible no garantiza que publique eventos.</p>'
+            '</div></details>')
+
+
+def load_agenda(now, fetch=fetch_snapshot, snapshots=None, coverage=None):
     """Nunca interrumpe la publicación de noticias: un snapshot que falla solo se omite."""
     today = now.astimezone(TZ_CHILE).date()
     events, seen = [], set()
@@ -140,7 +225,10 @@ def load_agenda(now, fetch=fetch_snapshot, snapshots=None):
         if not url:
             continue
         try:
-            found = upcoming_events(fetch(url), today, region, limit=None)
+            payload = fetch(url)
+            found = upcoming_events(payload, today, region, limit=None)
+            if coverage is not None and region == "Biobío":
+                coverage.update(coverage_summary(payload, today))
         except Exception as error:
             print(f"[aviso] Agenda: {variable} no disponible: {error}")
             continue
@@ -148,6 +236,10 @@ def load_agenda(now, fetch=fetch_snapshot, snapshots=None):
             if event["link"] not in seen:
                 seen.add(event["link"])
                 events.append(event)
+            elif variable == "EVENTOS_MANUAL_URL":
+                # Una corrección editorial revisada prevalece sobre el dato
+                # extraído automáticamente cuando ambos apuntan a la misma ficha.
+                events = [event if e["link"] == event["link"] else e for e in events]
     events = _balanced(_ordered(events, today))
     print(f"Agenda: {len(events)} eventos próximos validados en "
           f"{len({e['region'] for e in events})} regiones")
@@ -207,9 +299,9 @@ def render_filters(events):
             f'aria-label="Filtrar eventos">{"".join(buttons)}</div>')
 
 
-def render_agenda(events, now, number=None, source_mark=None):
+def render_agenda(events, now, number=None, source_mark=None, coverage=None):
     """Misma estructura que una sección de noticias: encabezado numerado y tarjetas compactas."""
-    if not events:
+    if not events and not coverage:
         return ""
     today = now.astimezone(TZ_CHILE).date()
     cards = []
@@ -244,4 +336,4 @@ def render_agenda(events, now, number=None, source_mark=None):
             f'<span class="section-count" data-agenda-count>{count} {"evento" if count == 1 else "eventos"}</span></div>'
             f'{render_filters(events)}'
             f'<div class="section-grid" id="noticias-agenda"><ul class="compact-list">{"".join(cards)}</ul></div>'
-            f'{more}</section>')
+            f'{more}{render_coverage(coverage)}</section>')

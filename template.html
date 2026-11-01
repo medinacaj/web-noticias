@@ -646,6 +646,18 @@
   .site-nav a.is-active,.site-nav a.is-current{background:var(--wash);border-color:var(--callout-rule);font-weight:600;}
   .section-num{padding:3px 8px;border-radius:var(--pill);background:var(--wash);color:var(--card-link);letter-spacing:normal;}
   .section-note{margin:-5px 0 16px;font:400 13px/1.5 var(--sans);color:var(--muted);}
+  /* Transparencia de fuentes: desplegable compacto, sin competir con noticias. */
+  .agenda-quality{margin:16px 0 4px;font:400 13px/1.55 var(--sans);color:var(--muted);}
+  .agenda-quality summary{display:list-item;cursor:pointer;color:var(--card-link);font-weight:650;padding:7px 0;max-width:max-content;}
+  .agenda-quality summary:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;}
+  .agenda-quality-body{padding:6px 0 2px;}
+  .agenda-quality dl{display:flex;flex-wrap:wrap;column-gap:22px;row-gap:8px;margin:0 0 10px;}
+  .agenda-quality dl>div{min-width:125px;max-width:220px;}
+  .agenda-quality dt{font-size:12px;line-height:1.4;color:var(--muted);}
+  .agenda-quality dd{margin:2px 0 0;font-weight:650;color:var(--ink);font-variant-numeric:tabular-nums;}
+  .agenda-quality p{margin:5px 0;overflow-wrap:anywhere;}
+  .agenda-quality strong{font-weight:600;color:var(--ink);}
+
   /* Portales institucionales: enlaces de referencia, nunca fichas de noticias. */
   .official-release-portals{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px 15px;margin:16px 0 4px;font:500 13px/1.55 var(--sans);}
   .official-release-portals-label{font-weight:650;color:var(--ink);}

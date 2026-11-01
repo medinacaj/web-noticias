@@ -1057,7 +1057,7 @@ PAGE_404 = """<!DOCTYPE html>
 
 def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
                signals_archive=None, signals_started="", agenda=None, satire_items=None, release_guides=None,
-               premiere_items=None):
+               premiere_items=None, agenda_quality=None):
     from scripts.satire import is_satire
     stories = [story for story in stories if not is_satire(story)]
     sel = select(stories, now)
@@ -1083,7 +1083,8 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
                      release_guides=release_guides,premiere_items=premiere_items,
                      existing=([sel['lead']] if sel['lead'] else [])+sel['secondary'])
     sections_shown = sum(1 for c in section_categories(CATEGORIES) if c["key"] in display_sections)
-    agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1, source_mark=source_mark)
+    agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1,
+                                source_mark=source_mark, coverage=agenda_quality)
     nav = render_nav({**sel,'by_category':display_sections}, agenda=bool(agenda_html))
     replacements = {
         "%%TITLE%%": esc(SITE_TITLE),
@@ -1213,11 +1214,11 @@ def main():
     archive = update_archive(archive, stories, now)
     signals_started = signals_started or to_iso(now)
     save_history(args.historial, stories, now, archive, signals_started)
-    agenda, satire_items, release_guides = [], None, []
+    agenda, satire_items, release_guides, agenda_quality = [], None, [], {}
     if not args.solo_render and not args.importar:
         # Eventos ya validados por eventos-biobio (Biobío y resto de Chile); un fallo solo oculta la sección.
         from scripts.agenda import load_agenda
-        agenda = load_agenda(now)
+        agenda = load_agenda(now, coverage=agenda_quality)
         from scripts.satire import collect_satire
         satire_items = collect_satire(now, fetch=lambda url, category, **options:
                                      fetch_rss(url, category, limit=60, **options))
@@ -1227,7 +1228,7 @@ def main():
     build_site(stories, now, args.salida, args.ventana,
                signals_archive=archive, signals_started=signals_started, agenda=agenda,
                satire_items=satire_items, release_guides=release_guides,
-               premiere_items=load_premieres())
+               premiere_items=load_premieres(), agenda_quality=agenda_quality or None)
 
 
 if __name__ == "__main__":
