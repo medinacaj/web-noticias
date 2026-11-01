@@ -14,38 +14,39 @@ on:
       - "scripts/**"
       - "eventos/agenda_manual.json"
 
+# Permiso por defecto: ninguna etapa que procese fuentes externas puede escribir.
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read
 
 concurrency:
   group: noticias-del-momento
   cancel-in-progress: false
 
 jobs:
-  actualizar:
+  generar:
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    # Mantiene el entorno original, donde puede residir el secreto GNEWS_API_KEY.
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Clonar código revisado de main
+      - name: Clonar código revisado de main sin credenciales de escritura
         uses: actions/checkout@v4
         with:
           ref: main
           persist-credentials: false
 
-      - name: Clonar sólo datos de news-data
+      - name: Clonar sólo datos de news-data (lectura)
         uses: actions/checkout@v4
         with:
           ref: news-data
           path: .news-data
           sparse-checkout: data/historial.json
           sparse-checkout-cone-mode: false
-          persist-credentials: true
+          persist-credentials: false
 
       - name: Clonar sólo snapshots de eventos (events-data)
         uses: actions/checkout@v4
@@ -95,17 +96,87 @@ jobs:
           python3 scripts/audit_seo.py --site public
           python3 scripts/audit_news_health.py
 
-      - name: Guardar historial de noticias (sólo news-data, push normal)
-        run: python3 scripts/news_data.py persist --data-repo .news-data --history data/historial.json --state "$RUNNER_TEMP/news-data-state.json"
+      - name: Preparar historial validado para el publicador
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build-news-state
+          cp -- data/historial.json build-news-state/historial.json
+          cp -- "$RUNNER_TEMP/news-data-state.json" build-news-state/state.json
 
-      - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v5
+      - name: Transferir exclusivamente el historial y la referencia del commit
+        uses: actions/upload-artifact@v4
+        with:
+          name: news-history-data
+          path: build-news-state/
+          retention-days: 1
+          if-no-files-found: error
 
-      - name: Subir sitio generado
+      - name: Preparar artefacto GitHub Pages sin permisos de despliegue
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
-      - name: Publicar en GitHub Pages
+  guardar_historial:
+    needs: generar
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Clonar código revisado sin credenciales persistentes
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Clonar solo historial (único checkout con credenciales de escritura)
+        uses: actions/checkout@v4
+        with:
+          ref: news-data
+          path: .news-data
+          sparse-checkout: data/historial.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: true
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Descargar el historial generado
+        uses: actions/download-artifact@v4
+        with:
+          name: news-history-data
+          path: build-news-state
+
+      - name: Revalidar el contenido antes de escribir
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -- build-news-state/historial.json data/historial.json
+          python3 scripts/validate_history.py
+
+      - name: Persistir solo el historial de la rama news-data
+        run: python3 scripts/news_data.py persist --data-repo .news-data --history data/historial.json --state build-news-state/state.json
+
+  publicar_pages:
+    needs: [generar, guardar_historial]
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Publicar sitio generado y validado
         id: deployment
         uses: actions/deploy-pages@v4
