@@ -20,6 +20,27 @@ class PublisherImagesTests(unittest.TestCase):
         self.assertTrue(all(story['image'] for story in latam))
         self.assertFalse(national[6]['image'])
 
+    def test_visible_images_are_spread_across_categories_before_hidden_items(self):
+        now = datetime(2026, 11, 1, tzinfo=timezone.utc)
+        first = [{"category": "nacional", "link": f"https://editor.example/n/{i}", "image": ""}
+                 for i in range(24)]
+        later = [{"category": "cultura", "link": f"https://editor.example/c/{i}", "image": ""}
+                 for i in range(6)]
+        selected = {"lead": None, "secondary": [], "by_category": {
+            "nacional": first, "cultura": later}}
+        visited = []
+        def lookup(url):
+            visited.append(url)
+            return "https://editor.example/photo.jpg"
+        with patch("scripts.article_images.permitted_url", return_value=True):
+            count, checked = enrich_visible_images(
+                first + later, selected, now, max_lookups=8,
+                fetch_image=lookup)
+        self.assertEqual((count, checked), (8, 8))
+        self.assertEqual([x["link"] for x in later[:4]], visited[1:8:2])
+        self.assertFalse(first[6]["image"])
+        self.assertTrue(all(x["image"] for x in later[:4]))
+
     def test_extracts_official_open_graph_image(self):
         page = '''<html><head><meta property="og:image" content="/media/reportaje.jpg">
                   <meta name="twitter:image" content="https://cdn.example.com/other.jpg"></head></html>'''
