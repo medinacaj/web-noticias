@@ -1,6 +1,6 @@
 # Cobertura verificada · Eventos Región del Biobío
 
-Snapshot: `2026-11-01T19:09:13`
+Snapshot: `2026-11-01T19:15:11`
 
 La cobertura vigente cuenta solo eventos de `events` con fecha final igual o posterior al día de revisión en Chile y no cancelados. El snapshot puede conservar hasta 30 días de eventos históricos. HTTP 2xx y candidatos no acreditan eventos verificados.
 
@@ -69,6 +69,17 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 **Fuentes omitidas por cadencia:** 52 (sin petición nueva).
 
 **Revalidación de fichas vigentes:** 0/0 respuestas satisfactorias.
+
+## Candidatos pendientes por motivo de revisión
+
+Estos registros están en cuarentena; no son eventos publicados ni se verifican automáticamente al generar el informe.
+
+| Motivo registrado | Candidatos |
+|---|---:|
+| Texto con fecha futura sin datos estructurados | 270 |
+| Evento estructurado sin comuna del Biobío identificable | 28 |
+| Proceso electoral/administrativo interno: verificar acceso público antes de difundir | 9 |
+| Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto | 3 |
 
 ## Alertas de salud por fuente
 
