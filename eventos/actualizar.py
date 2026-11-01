@@ -113,6 +113,20 @@ def with_regions(items, communes):
     return items
 
 
+
+def review_candidates(conn, today, limit=500):
+    """Prioriza fechas futuras verificables antes de pistas sin fecha.
+
+    No convierte candidatos en eventos publicados. El límite del snapshot
+    no debe ocultar fichas fechadas tras cientos de registros sin fecha.
+    """
+    return [dict(row) for row in conn.execute(
+        "SELECT title, raw_text, date, commune, source, source_url, reason FROM possible_events"
+        " WHERE date IS NULL OR date >= ?"
+        " ORDER BY (date IS NULL), date, source, title LIMIT ?",
+        (today, limit))]
+
+
 def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, communes_path=None):
     ap = argparse.ArgumentParser(description="Rastrea las fuentes y guarda data/crawled_events.json")
     ap.add_argument("--only", action="append", help="nombre exacto de una fuente (repetible)")
@@ -187,9 +201,7 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
     responded = {r["source_name"] for r in runs if r["ok"]}
     restored = db.restore_tagged_events(conn, crawled_path, communes, event_page.PAGE_TAG,
                                         skip_sources=responded)
-    pending = [dict(r) for r in conn.execute(
-        "SELECT title, raw_text, date, commune, source, source_url, reason FROM possible_events"
-        " WHERE date IS NULL OR date >= ? ORDER BY date LIMIT 500", (db.today_iso(),))]
+    pending = review_candidates(conn, db.today_iso())
     candidates = [dict(r) for r in conn.execute(
         "SELECT url, domain, found_on, reason FROM source_candidates ORDER BY id LIMIT 500")]
     events = db.export_crawled(conn)
