@@ -91,6 +91,13 @@ class PublicHealthTests(unittest.TestCase):
         self.assertTrue(any("desactualizada" in warning
                             for warning in assess(self.page(3.3), self.sitemap, self.now)))
 
+    def test_non_successful_publication_conclusions_trigger_alert(self):
+        """Una portada fresca no debe ocultar un workflow cancelado u omitido."""
+        for conclusion in ("cancelled", "skipped", "neutral", "failure", "timed_out"):
+            with self.subTest(conclusion=conclusion):
+                warnings = assess(self.page(), self.sitemap, self.now, deployment=conclusion)
+                self.assertIn(f"Resultado del despliegue: {conclusion}", warnings)
+
     def test_missing_timestamp_and_title(self):
         warnings = assess("<html><body>Fuera de servicio</body></html>", self.sitemap, self.now)
         self.assertEqual(len(warnings), 2)
