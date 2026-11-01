@@ -24,6 +24,7 @@ lleva la región de su comuna. El flujo del Biobío no cambia.
 import argparse
 import json
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 import os
 import re
 import sys
@@ -138,14 +139,15 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
         # Si el workflow se dispara nuevamente antes de que venza cualquier
         # ventana (p. ej. tras fusionar un PR), sondear hasta tres fuentes con
         # última respuesta exitosa; no reutilizar éxitos antiguos como nuevos.
-        priority = sorted(planned, key=lambda src: (
-            not (200 <= ((state or {}).get(src["name"]) or {}).get("last_http_status", 0) < 300),
-            src["name"]))
+        def good_last_response(src):
+            previous_status = ((state or {}).get(src["name"]) or {}).get("last_http_status")
+            return isinstance(previous_status, int) and 200 <= previous_status < 300
+        priority = sorted(planned, key=lambda src: (not good_last_response(src), src["name"]))
         due = priority[:3]
         forced_names = {src["name"] for src in due}
         skipped = [name for name in skipped if name not in forced_names]
     remembered = source_planning.remembered_event_urls(previous_data, due,
-                                                        datetime.now(timezone.utc).date())
+                                                        datetime.now(ZoneInfo("America/Santiago")).date())
     # Continuidad del historial. Las fichas sin datos estructurados no se arrastran:
     # se vuelven a extraer con la regla vigente (y desaparecen si ya no la cumplen).
     previous = db.load_crawled(conn, crawled_path, communes, skip_tags=(event_page.PAGE_TAG,))
