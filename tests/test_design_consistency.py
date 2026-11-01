@@ -61,6 +61,19 @@ class PaletteTests(unittest.TestCase):
         self.assertEqual(sorted(used - PALETTE), [],
                          "Color nuevo en template.html: usa un token existente o pide aprobación")
 
+    def test_no_dead_media_queries_or_duplicate_lead_text_size(self):
+        css = template_css()
+        self.assertNotRegex(css, r"@media\s*\([^)]*\)\s*\{\s*\}",
+                            "No dejar media queries vacíos en la plantilla editorial")
+        self.assertEqual(css.count(
+            ".lead--text .lead-title{font-size:clamp(28px,3vw,42px);}"), 1)
+        self.assertRegex(css, (
+            r"@media\s*\(max-width:767px\)\s*\{\s*"
+            r"\.newsletter-invite-inner\{[^{}]*\}\s*"
+            r"\.newsletter-actions\{[^{}]*\}\s*"
+            r"\.library-columns\{"
+        ))
+
     def test_category_classes_match_real_categories(self):
         keys = {c["key"] for c in news.CATEGORIES} | EXTRA_SECTIONS
         defined = set(re.findall(r"^\s*\.cat-([a-z-]+)\{", template_css(), re.M))
