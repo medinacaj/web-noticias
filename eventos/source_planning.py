@@ -36,7 +36,8 @@ def due_sources(sources, state, now, force=False):
     for source in sources:
         if not source.get("enabled") or source.get("parser") == "none":
             continue
-        last = _timestamp((state.get(source["name"]) or {}).get("last_checked_at"))
+        previous = state.get(source["name"])
+        last = _timestamp(previous.get("last_checked_at")) if isinstance(previous, dict) else None
         interval = refresh_hours(source)
         # Margen ante la variabilidad del cron diario de GitHub.
         span = timedelta(hours=max(6, interval - 2))
@@ -55,14 +56,22 @@ def update_state(previous, sources, runs):
         name = run.get("source_name")
         if name not in known:
             continue
-        before = state.get(name) or {}
+        before = state.get(name)
+        if not isinstance(before, dict):
+            before = {}
         ok = bool(run.get("ok")) and isinstance(run.get("http_status"), int) and 200 <= run["http_status"] < 300
         checked = run.get("finished_at") or run.get("started_at")
+        # Los snapshots son JSON persistente; un valor de fallo dañado no debe
+        # interrumpir la actualización del resto de fuentes.
+        try:
+            failures = max(0, int(before.get("consecutive_failures") or 0))
+        except (TypeError, ValueError, OverflowError):
+            failures = 0
         state[name] = {
             "last_checked_at": checked,
             "last_success_at": checked if ok else before.get("last_success_at"),
             "last_http_status": run.get("http_status"),
-            "consecutive_failures": 0 if ok else min(int(before.get("consecutive_failures") or 0) + 1, 999),
+            "consecutive_failures": 0 if ok else min(failures + 1, 999),
             "refresh_interval_hours": refresh_hours(known[name]),
         }
     return {name: state[name] for name in sorted(state) if name in known}
