@@ -38,7 +38,7 @@ PALETTE = {
     # Editorial Mineral, seleccionado por el usuario el 2026-11-01 tras auditoría #193.
     "#252C2C", "#637070", "#285D63", "#DDEBEA", "#D5D9D5",
     "#14191B", "#1B2224", "#F1F4F2", "#BCC5C5", "#9ED0CC",
-    "#283B3D", "#404A4C",
+    "#283B3D", "#404A4C", "#343A43",
     # Color propio de la Agenda (dorado), pedido por el usuario el 2026-10-24.
     "#8A6100", "#F2C14E",
     # Cabecera y controles con más color, solicitados por el usuario el 2026-10-28.
