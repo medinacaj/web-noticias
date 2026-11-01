@@ -41,7 +41,8 @@ from scrapers.common import fetch  # noqa: E402
 CRAWLED_PATH = os.path.join(BASE_DIR, "data", "crawled_events.json")
 NATIONAL_PATH = os.path.join(BASE_DIR, "data", "national_events.json")
 _STATUS_PREFIX = re.compile(
-    r"^(No verificada en vivo:.*?contra esta URL\.|Verificada en vivo el [^.]*\.|"
+    r"^(Omitida por cadencia; última respuesta HTTP [^.]*\\.|"
+    r"No verificada en vivo:.*?contra esta URL\.|Verificada en vivo el [^.]*\.|"
     r"Última verificación en vivo [^.]*\.(?: Error: [^\n]*?\.)?)\s*", re.S)
 
 
@@ -98,8 +99,8 @@ def update_sources_file(path, runs, source_state=None, skipped=()):
         s["last_live_check"] = {"at": r.get("finished_at"), "ok": ok, "http_status": r.get("http_status"),
                                 "error": r.get("error")}
         changed += 1
-    cfg["_notes"] = ("verified_live=true solo si la URL respondió (HTTP 2xx) a una petición real hecha por "
-                     "actualizar.py en su última corrida; ver last_live_check. url_evidence indica de dónde salió la URL.")
+    cfg["_notes"] = ("verified_live=true solo si la URL respondió (HTTP 2xx) a su última petición real registrada "
+                     "por actualizar.py; una fuente omitida por cadencia NO se reconsulta. Ver last_live_check. url_evidence indica de dónde salió la URL.")
     _write_json(path, cfg)
     return changed
 
