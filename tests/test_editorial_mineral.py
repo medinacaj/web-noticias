@@ -43,10 +43,12 @@ class EditorialMineralTests(unittest.TestCase):
 
     def test_dark_theme_is_neutral_and_petrolic(self):
         for token, expected in {
-            "--paper": "#14191B", "--surface": "#1B2224",
-            "--card-bg": "#343A43", "--card-ink": "#F1F4F2",
-            "--card-link": "#9ED0CC", "--brand": "#9ED0CC",
-            "--wash": "#283B3D", "--card-rule": "#404A4C",
+            "--paper": "#111315", "--surface": "#1C1F23",
+            "--card-bg": "#343A43", "--card-ink": "#F7F6F2",
+            "--card-muted": "#CCD1D6", "--card-link": "#B4DCC8",
+            "--brand": "#B4DCC8", "--wash": "#27362F",
+            "--card-rule": "#66717D", "--callout-bg": "#27362F",
+            "--callout-ink": "#DEEDDE",
         }.items():
             with self.subTest(token=token):
                 self.assertEqual(self.dark[token], expected)
@@ -69,6 +71,18 @@ class EditorialMineralTests(unittest.TestCase):
         ):
             with self.subTest(theme=theme):
                 self.assertGreaterEqual(contrast(color, surface), 4.5)
+
+    def test_dark_background_and_controls_are_separate(self):
+        self.assertGreaterEqual(contrast(self.dark["--card-bg"], self.dark["--paper"]), 1.6)
+        self.assertGreaterEqual(contrast(self.dark["--card-rule"], self.dark["--card-bg"]), 2.25)
+        self.assertGreaterEqual(contrast(self.dark["--card-muted"], self.dark["--card-bg"]), 7)
+        self.assertIn(':root[data-theme="dark"] .save-story,', self.css)
+        self.assertIn(':root[data-theme="dark"] .share-story{', self.css)
+        self.assertIn('background:var(--callout-bg);', self.css)
+        self.assertIn('border:1px solid #789087;', self.css)
+        self.assertIn(':root[data-theme="dark"] .back-to-top{', self.css)
+        self.assertGreaterEqual(contrast("#789087", self.dark["--card-bg"]), 3)
+        self.assertGreaterEqual(contrast(self.dark["--card-link"], self.dark["--callout-bg"]), 4.5)
 
     def test_categories_keep_distinct_colors_instead_of_violet(self):
         for theme in (self.light, self.dark):
