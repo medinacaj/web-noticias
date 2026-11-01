@@ -4,6 +4,7 @@ import os
 import shutil
 import tempfile
 import unittest
+from datetime import datetime, timezone
 
 from tests.helpers import COMMUNES, ROOT, db, memory_db
 import actualizar
@@ -99,6 +100,28 @@ class ActualizarTests(unittest.TestCase):
         self.assertGreater(after["summary"]["sources_attempted"], 0)
         self.assertTrue(any(r["ok"] for r in after["runs"]))
         self.assertEqual(after["source_state"]["Teatro Demo"]["last_http_status"], 200)
+
+    def test_cadence_fallback_never_selects_disabled_sources(self):
+        # Las fuentes desactivadas no deben ocupar los tres cupos de la
+        # comprobación mínima cuando todas las fuentes habilitadas son recientes.
+        enabled = next(s for s in SOURCES["sources"] if s["name"] == "Caída")
+        disabled = next(s for s in SOURCES["sources"] if s["name"] == "Apagada")
+        cfg = {"sources": [dict(disabled, name=f"A-Off-{i}") for i in range(4)]
+               + [enabled]}
+        with open(self.sources, "w", encoding="utf-8") as file:
+            json.dump(cfg, file)
+        with open(self.crawled, "w", encoding="utf-8") as file:
+            json.dump({"events": [], "source_state": {
+                "Caída": {"last_checked_at": datetime.now(timezone.utc).isoformat(),
+                          "last_http_status": 404},
+            }}, file)
+
+        self.assertEqual(self.run_once(), 0)
+        with open(self.crawled, encoding="utf-8") as file:
+            snap = json.load(file)
+        self.assertEqual([r["source_name"] for r in snap["runs"]], ["Caída"])
+        self.assertEqual(snap["summary"]["sources_attempted"], 1)
+        self.assertEqual(snap["skipped_by_cadence"], [])
 
     def test_skipped_source_status_reports_cached_http_as_previous(self):
         self.assertEqual(self.run_once(), 0)
