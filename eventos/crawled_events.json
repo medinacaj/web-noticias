@@ -1,16 +1,16 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-10-31T15:28:48",
+  "generated_at": "2026-11-01T03:50:18",
   "summary": {
     "sources_attempted": 55,
-    "sources_ok": 44,
-    "sources_failed": 11,
+    "sources_ok": 45,
+    "sources_failed": 10,
     "events_found": 3,
     "events_inserted": 3,
     "events_merged": 0,
-    "possible_events": 227,
-    "quarantined_candidates": 45,
-    "candidates": 4,
+    "possible_events": 32,
+    "quarantined_candidates": 40,
+    "candidates": 3,
     "errors": [
       {
         "source": "Municipalidad de San Pedro de la Paz",
@@ -35,10 +35,6 @@
       {
         "source": "Municipalidad de Tirúa",
         "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
-      },
-      {
-        "source": "Municipalidad de Hualqui",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Hualqui"
       },
       {
         "source": "Municipalidad de Antuco",
@@ -91,7 +87,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:27:06",
+      "discovered_at": "2026-11-01T03:48:14",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -103,7 +99,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:27:06"
+          "seen_at": "2026-11-01T03:48:14"
         }
       ],
       "changes": []
@@ -130,7 +126,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://images.ligup2.com/eyJidWNrZXQiOiJsaWd1cC12MiIsImtleSI6Im5hY2ltaWVudG8vcGhvdG9zLzc5MjkyX3RhbGxlcl9kZV9jYWxlc3RlbmlhXzIwMjZfd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzYyLCJoZWlnaHQiOjI4MywiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsfX0=",
-      "discovered_at": "2026-10-31T15:25:17",
+      "discovered_at": "2026-11-01T03:46:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -142,7 +138,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:25:17"
+          "seen_at": "2026-11-01T03:46:26"
         }
       ],
       "changes": []
@@ -152,22 +148,22 @@
     {
       "source_name": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:22",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:52",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 13,
+      "possible_found": 2,
       "error": null
     },
     {
       "source_name": "Biobío Cultura (Seremi) — RSS",
       "source_url": "https://www.cultura.gob.cl/feed/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:25",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:57",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -180,8 +176,8 @@
     {
       "source_name": "Corcudec (Teatro UdeC)",
       "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:01",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:09",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
@@ -194,8 +190,8 @@
     {
       "source_name": "Corcudec / Teatro Universidad de Concepción — Ticketplus",
       "source_url": "https://ticketplus.cl/c/corporacion-cultural-universidad-de-concepcion",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:26:52",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:00",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -208,22 +204,22 @@
     {
       "source_name": "Diario Concepción — Cultura",
       "source_url": "https://www.diarioconcepcion.cl/cultura",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:20",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:51",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 5,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "El Contraste (Los Ángeles)",
       "source_url": "https://elcontraste.cl/los_angeles/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:25",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -236,53 +232,11 @@
     {
       "source_name": "Extensión Universidad del Bío-Bío",
       "source_url": "https://extension.ubiobio.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:04",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:37",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 2,
-      "error": null
-    },
-    {
-      "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
-      "source_url": "https://ftb.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:06",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 15,
-      "events_found": 1,
-      "events_inserted": 1,
-      "events_merged": 0,
-      "possible_found": 22,
-      "error": null
-    },
-    {
-      "source_name": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:25",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 10,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 12,
-      "error": null
-    },
-    {
-      "source_name": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:24",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 12,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -290,38 +244,80 @@
       "error": null
     },
     {
+      "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:14",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 15,
+      "events_found": 1,
+      "events_inserted": 1,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:50:02",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 11,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "La Tribuna (Los Ángeles)",
+      "source_url": "https://www.latribuna.cl/",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:54",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 11,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 2,
+      "error": null
+    },
+    {
       "source_name": "Ministerio de las Culturas — Agenda cultural",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:02",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:31",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 18,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 2,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Alto Biobío",
       "source_url": "https://munialtobiobio.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:29",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:05",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 21,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 2,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Antuco",
       "source_url": "https://www.antuco.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:46",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:45:38",
       "ok": 0,
       "http_status": 200,
       "pages_fetched": 0,
@@ -334,8 +330,8 @@
     {
       "source_name": "Municipalidad de Arauco",
       "source_url": "https://muniarauco.cl/cultura/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:19",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:45:32",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -348,8 +344,8 @@
     {
       "source_name": "Municipalidad de Cabrero",
       "source_url": "https://www.cabrero.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:48",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:45:40",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -362,8 +358,8 @@
     {
       "source_name": "Municipalidad de Cañete",
       "source_url": "https://municanete.cl/v2/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:23:25",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:52",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 10,
@@ -376,8 +372,8 @@
     {
       "source_name": "Municipalidad de Chiguayante",
       "source_url": "https://chiguayante.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:26",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:43:57",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 5,
@@ -390,8 +386,8 @@
     {
       "source_name": "Municipalidad de Concepción",
       "source_url": "https://www.concepcion.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:22",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:53",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -404,8 +400,8 @@
     {
       "source_name": "Municipalidad de Contulmo",
       "source_url": "https://www.contulmo.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:23:40",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 3,
@@ -418,8 +414,8 @@
     {
       "source_name": "Municipalidad de Coronel",
       "source_url": "https://www.coronel.cl/noticias/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:43",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:13",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 3,
@@ -432,8 +428,8 @@
     {
       "source_name": "Municipalidad de Curanilahue",
       "source_url": "https://www.curanilahue.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:26:50",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:47:59",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -446,8 +442,8 @@
     {
       "source_name": "Municipalidad de Florida",
       "source_url": "https://muniflorida.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:23:04",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:42",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 3,
@@ -460,8 +456,8 @@
     {
       "source_name": "Municipalidad de Hualpén",
       "source_url": "http://www.hualpenciudad.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:48",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:21",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 18,
@@ -474,22 +470,22 @@
     {
       "source_name": "Municipalidad de Hualqui",
       "source_url": "https://www.munihualqui.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:40",
-      "ok": 0,
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:31",
+      "ok": 1,
       "http_status": 200,
-      "pages_fetched": 0,
+      "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
       "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Hualqui"
+      "error": null
     },
     {
       "source_name": "Municipalidad de Laja",
       "source_url": "https://www.munilaja.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:25:09",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:46:03",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 9,
@@ -502,8 +498,8 @@
     {
       "source_name": "Municipalidad de Lebu",
       "source_url": "https://lebu.cl/eventos/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:19",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:57",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -516,8 +512,8 @@
     {
       "source_name": "Municipalidad de Los Álamos",
       "source_url": "https://munilosalamos.cl/categoria/noticias/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:19",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:57",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -530,8 +526,8 @@
     {
       "source_name": "Municipalidad de Los Ángeles",
       "source_url": "https://www.losangeles.cl/category/noticias/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:55",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:46:20",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 7,
@@ -544,50 +540,50 @@
     {
       "source_name": "Municipalidad de Lota",
       "source_url": "https://lota.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:45",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:28",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Mulchén",
       "source_url": "https://www.munimulchen.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:25:05",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:46:15",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 4,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Nacimiento",
       "source_url": "https://www.nacimiento.cl/actividades",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:25:17",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:46:26",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 1,
       "events_inserted": 1,
       "events_merged": 0,
-      "possible_found": 8,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Negrete",
       "source_url": "https://www.muninegrete.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:25:47",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:46:55",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 9,
@@ -600,8 +596,8 @@
     {
       "source_name": "Municipalidad de Penco",
       "source_url": "https://penco.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:27",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:00",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -614,8 +610,8 @@
     {
       "source_name": "Municipalidad de Quilaco",
       "source_url": "https://www.quilaco.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:25:30",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:46:39",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -628,8 +624,8 @@
     {
       "source_name": "Municipalidad de Quilleco",
       "source_url": "https://municipalidadquilleco.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:25:36",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:46:45",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -642,8 +638,8 @@
     {
       "source_name": "Municipalidad de San Pedro de la Paz",
       "source_url": "https://www.sanpedrodelapaz.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:18",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:43:49",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -656,22 +652,22 @@
     {
       "source_name": "Municipalidad de San Rosendo",
       "source_url": "https://www.municipalidadsanrosendo.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:26:19",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:47:31",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 17,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 5,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Santa Bárbara",
       "source_url": "https://www.santabarbara.cl/noticias/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:26:10",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:47:19",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 10,
@@ -684,8 +680,8 @@
     {
       "source_name": "Municipalidad de Santa Juana",
       "source_url": "https://www.santajuana.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:56",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:44:30",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 3,
@@ -698,8 +694,8 @@
     {
       "source_name": "Municipalidad de Talcahuano",
       "source_url": "https://www.talcahuano.cl/actividades",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:24",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:43:56",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -712,8 +708,8 @@
     {
       "source_name": "Municipalidad de Tirúa",
       "source_url": "https://www.tirua.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:24:32",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:45:09",
       "ok": 0,
       "http_status": 200,
       "pages_fetched": 0,
@@ -726,8 +722,8 @@
     {
       "source_name": "Municipalidad de Tomé",
       "source_url": "https://www.tome.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:22:27",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:43:58",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -740,8 +736,8 @@
     {
       "source_name": "Municipalidad de Tucapel",
       "source_url": "https://www.munitucapel.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:26:19",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:47:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 4,
@@ -754,8 +750,8 @@
     {
       "source_name": "Municipalidad de Yumbel",
       "source_url": "https://yumbel.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:26:41",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:47:54",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 4,
@@ -768,22 +764,22 @@
     {
       "source_name": "Noticias UdeC",
       "source_url": "https://noticias.udec.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:40",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:13",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 10,
+      "pages_fetched": 8,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 12,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Passline",
       "source_url": "https://www.passline.com/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:18",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -796,8 +792,8 @@
     {
       "source_name": "PrimeTicket",
       "source_url": "https://www.primeticket.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:40",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:07",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 16,
@@ -810,25 +806,11 @@
     {
       "source_name": "PuntoTicket — todos los eventos",
       "source_url": "https://www.puntoticket.com/todos",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:25",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:48",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 1,
-      "error": null
-    },
-    {
-      "source_name": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:48",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 12,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -836,24 +818,38 @@
       "error": null
     },
     {
-      "source_name": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:13",
+      "source_name": "Radio UdeC",
+      "source_url": "https://www.radioudec.cl/",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:50:18",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 19,
+      "pages_fetched": 12,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 112,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Sabes.cl",
+      "source_url": "https://sabes.cl/",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:50",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 23,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 25,
       "error": null
     },
     {
       "source_name": "TVU Prensa",
       "source_url": "https://www.tvu.cl/prensa/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:28:35",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:50:06",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -866,8 +862,8 @@
     {
       "source_name": "Teatro Biobío",
       "source_url": "https://teatrobiobio.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:01",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:14",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -880,8 +876,8 @@
     {
       "source_name": "Teatro Biobío — Ticketplus",
       "source_url": "https://ticketplus.cl/en/companies/teatro-biobio",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:26:52",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:00",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -894,1410 +890,33 @@
     {
       "source_name": "Ticketplus — Región del Biobío",
       "source_url": "https://ticketplus.cl/en/states/region-del-bio-bio",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:05",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:48:44",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 27,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "TuAcceso",
       "source_url": "https://www.tuacceso.cl/",
-      "started_at": "2026-10-31T15:22:14",
-      "finished_at": "2026-10-31T15:27:34",
+      "started_at": "2026-11-01T03:43:45",
+      "finished_at": "2026-11-01T03:49:04",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 1,
       "error": null
     }
   ],
   "possible_events": [
-    {
-      "title": "CONOCE LOS SELECCIONADOS FERIA TODOS LOS SANTOS 2026",
-      "raw_text": "La Ilustre Municipalidad de Cañete informa a la comunidad que ya se encuentran disponibles los resultados del proceso de selección para participar en la Feria de Todos los Santos 2026, actividad que se desarrollará los días 31 de octubre y 1 de noviembre, en calle Arturo Prat y sectores cercanos al Cementerio Municipal.",
-      "date": "2026-10-31",
-      "commune": "Cañete",
-      "source": "Municipalidad de Cañete",
-      "source_url": "https://municanete.cl/v2/conoce-los-seleccionados-feria-todos-los-santos-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "MUNICIPALIDAD DE CAÑETE ABRE POSTULACIONES PARA LA FERIA DE TODOS LOS SANTOS 2026",
-      "raw_text": "La Ilustre Municipalidad de Cañete informa a la comunidad que se encuentra abierto el proceso de postulación para participar en la Feria de Todos los Santos 2026, actividad que se desarrollará los días 31 de octubre y 1 de noviembre, ofreciendo espacios de comercialización para emprendedores, comerciantes y vecinos de la comuna.",
-      "date": "2026-10-31",
-      "commune": "Cañete",
-      "source": "Municipalidad de Cañete",
-      "source_url": "https://municanete.cl/v2/municipalidad-de-canete-abre-postulaciones-para-la-feria-de-todos-los-santos-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "ELECCIÓN CLUB DEPORTIVO LLICO",
-      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
-      "date": "2026-10-31",
-      "commune": "Arauco",
-      "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-club-deportivo-llico/",
-      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
-    },
-    {
-      "title": "GOTH en Teatro Coliseo",
-      "raw_text": "Teatro Coliseo Nataniel Cox 59, Santiago Centro Santiago Centro",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/goth-teatro-coliseo-oct-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "En La Diabla en La Diabla Bar",
-      "raw_text": "La Diabla Bar Carlos Condell 1121, San Felipe San Felipe",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/el-infierno-en-la-diabla?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Disco Inferno 2026 en Parque de los gasómetros",
-      "raw_text": "Parque de los gasómetros Antofagasta 3424, Estación Central Estación Central",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/aerobica-parque-gasometros?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Viña Classic en Sporting Club de Viña del Mar",
-      "raw_text": "Sporting Club de Viña del Mar Av. Los Castaños 404, Viña Del Mar Viña Del Mar",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/vina-classic-halloween?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "GENERACIÓN OLD SCHOOL en Arena Hipódromo",
-      "raw_text": "Arena Hipódromo Av. Hipodromo Chile 1715, Independencia Independencia",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/generacion-old-school-edicion-halloween?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Sábado 31 de octubre a las 19:00 horas",
-      "raw_text": "Sábado 31 de octubre a las 19:00 horas",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Recta final: docentes chilenos tienen hasta el 31 de octubre para postular a escuelas públicas de Estados Unidos",
-      "raw_text": "Recta final: docentes chilenos tienen hasta el 31 de octubre para postular a escuelas públicas de Estados Unidos",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 de octubre | 17:00 horas:",
-      "raw_text": "Sábado 31 de octubre | 17:00 horas:",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/24/desde-talleres-en-vivo-hasta-la-hora-del-cuento-revisa-la-completa-programacion-del-pabellon-cultural-de-la-expo-quillota-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Hasta el 31 de octubre: Servicio País abre convocatoria a jóvenes para aportar al desarrollo de Chile",
-      "raw_text": "Hasta el 31 de octubre: Servicio País abre convocatoria a jóvenes para aportar al desarrollo de Chile",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 de octubre",
-      "raw_text": "Sábado 31 de octubre",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/musica-a-la-carta/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Últimos días para acceder a exámenes preventivos de cáncer a costo $0 durante octubre",
-      "raw_text": "Afiliados a Caja Los Héroes y sus cargas familiares podrán acceder sin costo a mamografías, ecografía mamaria, Papanicolaou y antígeno prostático hasta el 31 de octubre. La iniciativa forma parte de un programa de salud preventiva que contempla nueve prestaciones médicas durante 2026.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/25/ultimos-dias-para-acceder-a-examenes-preventivos-de-cancer-a-costo-0-durante-octubre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "Este sábado 31 de octubre la Seremi de Culturas Aysén invita a cerrar el Mes de la Música con concierto y homenaje de Los Lazos, después de 56 años de trayectoria.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/cultura-aysen-cierra-el-mes-de-la-musica-con-concierto-y-homenaje-de-los-lazos-en-puerto-ibanez/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Guía de Halloween 2026: la variada cartelera de fiestas, clubes y experiencias inmersivas a lo largo de Chile",
-      "raw_text": "Con opciones que van desde celebraciones de larga duración y circuitos de música electrónica, hasta eventos inmersivos con estadía en recintos patrimoniales, la oferta para este 31 de octubre se adapta a múltiples formatos y públicos.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/28/guia-de-halloween-2026-la-variada-cartelera-de-fiestas-clubes-y-experiencias-inmersivas-a-lo-largo-de-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "En Chile, la banda tendrá como teloneros a los estadounidenses Mammoth y a los ariqueños Nuclear. La primera fecha nacional, programada para este sábado 31 de octubre, está completamente agotada. Para el segundo recital, del domingo 1 de noviembre, aún quedan boletos disponibles.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/artes-y-cultura/musica/2026/10/28/14-clasicos-para-celebrar-50-anos-el-setlist-de-iron-maiden-para-sus-conciertos-en-chile.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "• Fechas y horarios: Sábado 31 de octubre y domingo 1 de noviembre de 2026, desde las 11:15 hasta las 18:15 horas.",
-      "raw_text": "• Fechas y horarios: Sábado 31 de octubre y domingo 1 de noviembre de 2026, desde las 11:15 hasta las 18:15 horas.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/ciencia-o-truco-cicat-invita-a-celebrar-un-halloween-lleno-de-misterio-talleres-interactivos-y-aprendizaje/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Festival Internacional de Cine de Terror llega a Concepción: conoce la programación del evento de miedo",
-      "raw_text": "La segunda versión de Visceral, Festival Internacional de Cine de Terror, tendrá lugar en el espacio Bandera 1001 de Concepción, a partir del martes 27 al sábado 31 de octubre.",
-      "date": "2026-10-31",
-      "commune": "Concepción",
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura/2026/10/26/festival-cine-terror-concepcion.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Navegando entre sueños: Encuentro Internacional Anímate celebra diez años con un mes de títeres, marionetas y espectáculos internacionales en Valparaíso",
-      "raw_text": "Del 31 de octubre al 29 de noviembre se realizará el décimo Encuentro Internacional de Títeres “Anímate”, este año bajo el slogan “navegando entre sueños”, con compañías de distintos lugares del mapa que ofrecerán funciones familiares, talleres y actividades gratuitas en distintos espacios culturales y territorios de la región. Plan de Gestión financiado por el Programa de Apoyo a Organizaciones Culturales Colaboradoras, Convocatoria 2026, del Ministerio de las Culturas, las Artes y el Patrimonio.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/29/navegando-entre-suenos-encuentro-internacional-animate-celebra-diez-anos-con-un-mes-de-titeres-marionetas-y-espectaculos-internacionales-en-valparaiso/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "K-pop y Halloween se encuentran en una obra familiar gratuita en La Calera",
-      "raw_text": "La Calera, octubre de 2026.- La celebración de Halloween tendrá un sello musical en La Calera. Este sábado 31 de octubre, de 18:00 a 19:00 horas, Open presentará una obra familiar inspirada en las Guerreras del K-Pop, una propuesta que une la energía del baile con una aventura en la que sus protagonistas deberán enfrentar a misteriosos demonios.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/29/k-pop-y-halloween-se-encuentran-en-una-obra-familiar-gratuita-en-la-calera/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "🗓️ Fechas: Sábado 31 de octubre y domingo 01 de noviembre",
-      "raw_text": "🗓️ Fechas: Sábado 31 de octubre y domingo 01 de noviembre",
-      "date": "2026-10-31",
-      "commune": "Santa Juana",
-      "source": "Municipalidad de Santa Juana",
-      "source_url": "https://santajuana.cl/%f0%9f%92%90-nos-preparamos-para-la-feria-de-todos-los-santos-%f0%9f%92%90/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "El sábado 31 de octubre y domingo 1 de noviembre se desplegará la programación especial en el recinto ubicado en Coronel.",
-      "raw_text": "El sábado 31 de octubre y domingo 1 de noviembre se desplegará la programación especial en el recinto ubicado en Coronel.",
-      "date": "2026-10-31",
-      "commune": "Coronel",
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/ciencia-y-sociedad/2026/10/30/ciencia-truco-cicat-halloween-talleres.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "• El Cicat UdeC celebrará una nueva edición de su evento “¿Ciencia o truco?” los días 31 de octubre y 1 de noviembre en Coronel.",
-      "raw_text": "• El Cicat UdeC celebrará una nueva edición de su evento “¿Ciencia o truco?” los días 31 de octubre y 1 de noviembre en Coronel.",
-      "date": "2026-10-31",
-      "commune": "Coronel",
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/ciencia-y-sociedad/2026/10/30/ciencia-truco-cicat-halloween-talleres.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "¿Ciencia o truco?: Cicat invita a disfrutar un Halloween con talleres lúdicos y aprendizajes",
-      "raw_text": "Para ofrecer una alternativa diferente para que escolares disfruten la festividad de Halloween a nivel local, el Centro Interactivo de Ciencias, Artes y Tecnologías (Cicat) de la Universidad de Concepción (UdeC) ha organizado una nueva versión de su evento anual “¿Ciencia o truco?”, que se realizará los próximos sábado 31 de octubre y domingo 1 de noviembre.",
-      "date": "2026-10-31",
-      "commune": "Concepción",
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/ciencia-y-sociedad/2026/10/30/ciencia-truco-cicat-halloween-talleres.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Biobío: declaran Alerta Temprana Preventiva por probabilidad de tormentas eléctricas",
-      "raw_text": "De acuerdo con la información proporcionada por la Dirección Meteorológica de Chile (DMC), se emite el aviso por evento meteorológico de probables tormentas eléctricas asociadas con chubascos aislados en valle, precordillera y cordillera en el Biobío. Este evento está pronosticado para la jornada del sábado 31 de octubre.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/ciudad/2026/10/29/biobio-alerta-temprana-preventiva-tormentas.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 de octubre",
-      "raw_text": "Sábado 31 de octubre",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/concierto-matinal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "El recorrido por las teselas se detiene en el primer rascacielos de Concepción con una actividad de apreciación",
-      "raw_text": "Para esta ocasión escogieron un diseño de Iván Godoy. Este sábado 31 de octubre se reunirán en el Edificio EMPART de San Martín 685, llegando a Aníbal Pinto, para un conversatorio y reconocimiento. Aquellos que han observado la fachada del denominado primer rascacielos de Concepción, ya habrán notado el mosaico de teselas en varios tonos de azul, amarillo, verde, naranjas, entre otros detalles.",
-      "date": "2026-10-31",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/obra/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/obra/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/obra/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/obra/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/obra/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/obra/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 12:27",
-      "raw_text": "31 de octubre de 2026, 12:27",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 11:14",
-      "raw_text": "31 de octubre de 2026, 11:14",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 10:12",
-      "raw_text": "31 de octubre de 2026, 10:12",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de octubre de 2026, 09:28",
-      "raw_text": "31 de octubre de 2026, 09:28",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "raw_text": "Sat, 31 Oct 2026 14:31:27 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "raw_text": "Sat, 31 Oct 2026 12:54:58 +0000",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de Octubre 2026",
-      "raw_text": "31 de Octubre 2026",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 de Octubre 2026",
-      "raw_text": "31 de Octubre 2026",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura/2026/10/31/fernando-ubiergo-presentara-concierto-50-anos-no-es-nada-en-concepcion-lota.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 Octubre, 2026 | 05:55",
-      "raw_text": "Sábado 31 Octubre, 2026 | 05:55",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 Octubre, 2026",
-      "raw_text": "Sábado 31 Octubre, 2026",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 octubre de 2026 | 10:59",
-      "raw_text": "Sábado 31 octubre de 2026 | 10:59",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/31/autoridades-coordinan-en-la-reina-medidas-preventivas-ante-nuevo-sistema-frontal.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "Distintas autoridades se reunieron en el Club de Campo de Carabineros, en la comuna de La Reina, en la región Metropolitana, para coordinar medidas preventivas ante el nuevo sistema frontal, que se espera que comience la tarde de este sábado 31 de octubre.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/10/31/autoridades-coordinan-en-la-reina-medidas-preventivas-ante-nuevo-sistema-frontal.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 octubre de 2026 | 09:56",
-      "raw_text": "Sábado 31 octubre de 2026 | 09:56",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/10/31/tras-salida-de-rafael-cavada-matilde-burgos-debuto-en-chilevision-y-envio-especial-agradecimiento.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 31 octubre de 2026 | 06:01",
-      "raw_text": "Sábado 31 octubre de 2026 | 06:01",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "Este fin de semana habrá dos feriados religiosos: el sábado 31 de octubre, Día de las Iglesias Evangélicas y Protestantes, y el domingo 1 de noviembre, Día de Todos los Santos. Ninguno es irrenunciable, por lo que el comercio podrá funcionar con normalidad, incluidos supermercados, malls y centros comerciales, aunque algunos locales podrían ajustar sus horarios. Quienes trabajen tendrán derecho a un día de descanso compensatorio.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "¿Por qué es feriado este sábado 31 de octubre y domingo 1 de noviembre?",
-      "raw_text": "¿Por qué es feriado este sábado 31 de octubre y domingo 1 de noviembre?",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Aunque el 31 de octubre suele asociarse con Halloween o Noche de Brujas, esto es solo una coincidencia. Resulta que, en Chile, desde 2008,",
-      "raw_text": "Aunque el 31 de octubre suele asociarse con Halloween o Noche de Brujas, esto es solo una coincidencia. Resulta que, en Chile, desde 2008,",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "el 31 de octubre se reconoce como feriado religioso en honor al Día de las Iglesias Evangélicas y Protestantes.",
-      "raw_text": "el 31 de octubre se reconoce como feriado religioso en honor al Día de las Iglesias Evangélicas y Protestantes.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 octubre 2026",
-      "raw_text": "31 octubre 2026",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 octubre 2026",
-      "raw_text": "31 octubre 2026",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/31/el-64-de-los-chilenos-se-ha-perdido-un-momento-importante-de-un-evento-por-mirar-el-celular-segun-un-estudio/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 octubre 2026",
-      "raw_text": "31 octubre 2026",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/31/difunden-programa-de-mediacion-penal-juvenil-con-comunidades-educativas-del-slep-puerto-cordillera/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "31 octubre 2026",
-      "raw_text": "31 octubre 2026",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/31/diseno-internacional-y-sello-fresco-el-look-de-karen-doggenweiler-para-el-inicio-de-la-expo-feria-yo-creo-en-quillota/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
     {
       "title": "Circo Pastelito y Tachuela Chico en Mall Cenco Florida",
       "raw_text": "Compra tus entradas para Circo Pastelito y Tachuela Chico en PuntoTicket.com",
@@ -2386,6 +1005,240 @@
       "commune": null,
       "source": "Radio UdeC",
       "source_url": "https://www.radioudec.cl/concierto-matinal/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/31/nina-de-6-anos-fue-hospitalizada-tras-intoxicarse-con-cocaina-en-osorno-madre-quedo-en-prision-preventiva-junto-a-faccion-del-tren-de-aragua/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/31/festival-leufu-revela-su-cartel-para-tercera-edicion-jornada-musical-gratuita-en-concepcion/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/31/rompen-una-de-las-obras-del-museo-del-prado-en-concepcion-exposicion-sufre-nuevo-ataque-a-dias-de-su-cierre/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/tag/festival-leufu/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/03/a-solo-dos-dias-de-su-estreno-vandalizan-obra-de-la-historica-muestra-del-museo-del-prado-en-concepcion/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/tag/programa/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/tag/concierto/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/tag/festival-bamba/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 00:09",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 00:09",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 00:09",
+      "raw_text": "Domingo 01 noviembre de 2026 | 00:09",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/jennifer-lawrence-denuncia-que-hubo-gente-en-el-set-durante-escena-de-desnudo-con-a-robert-pattinson.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Feria de las Flores reúne a 16 productores en la Plaza de Armas de Yumbel",
+      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "La Tribuna (Los Ángeles)",
+      "source_url": "https://www.latribuna.cl/economia/2026/10/31/feria-de-las-flores-reune-a-16-productores-en-la-plaza-de-armas-de-yumbel.html",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "feria de las flores",
+      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "La Tribuna (Los Ángeles)",
+      "source_url": "https://www.latribuna.cl/tag/feria-de-las-flores/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -3361,6 +2214,24 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Edo Caroe en Trotamundos Valparaíso",
+      "raw_text": "Trotamundos Valparaíso Calle Blanco 1253, Valparaíso Valparaíso",
+      "date": "2026-11-11",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/edo-caroe-trotamundos?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Rodrigo Gonzales y Mauricio Flores en Casa Comedia",
+      "raw_text": "Casa Comedia Constitución 97, Providencia Providencia",
+      "date": "2026-11-11",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/una-noche-en-casa-comedia?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
       "title": "ELECCIÓN JUDO CLUB MUSASHI DE ARAUCO",
       "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
       "date": "2026-11-12",
@@ -3496,6 +2367,15 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Rompen una de las obras del Museo del Prado en Concepción: exposición sufre nuevo ataque a días de su cierre",
+      "raw_text": ". La muestra permite apreciar reproducciones a tamaño real de reconocidas pinturas pertenecientes a la colección del Museo del Prado de Madrid y permanecerá disponible hasta el 15 de noviembre.",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/31/rompen-una-de-las-obras-del-museo-del-prado-en-concepcion-exposicion-sufre-nuevo-ataque-a-dias-de-su-cierre/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "16 de noviembre para los pagos emitidos el 16 de febrero.",
       "raw_text": "16 de noviembre para los pagos emitidos el 16 de febrero.",
       "date": "2026-11-16",
@@ -3592,6 +2472,24 @@
       "commune": "Concepción",
       "source": "Noticias UdeC",
       "source_url": "https://noticias.udec.cl/udec-campus-chillan-finaliza-con-exito-tercera-version-del-taller-de-bordado/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "El próximo 29 de noviembre la música nacional y local se tomará nuevamente Concepción con una nueva edición del Festival",
+      "raw_text": "El próximo 29 de noviembre la música nacional y local se tomará nuevamente Concepción con una nueva edición del Festival",
+      "date": "2026-11-29",
+      "commune": "Concepción",
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/31/festival-leufu-revela-su-cartel-para-tercera-edicion-jornada-musical-gratuita-en-concepcion/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Festival Leufü revela su cartel para tercera edición: jornada musical gratuita en Concepción",
+      "raw_text": "La tercera edición del encuentro se desarrollará el sábado 29 de noviembre en el estacionamiento del Teatro Biobío, en Concepción. La entrada será gratuita y participarán cinco proyectos:",
+      "date": "2026-11-29",
+      "commune": "Concepción",
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/31/festival-leufu-revela-su-cartel-para-tercera-edicion-jornada-musical-gratuita-en-concepcion/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -5376,6 +4274,24 @@
       "url": "https://www.fondosdecultura.cl/wp-content/uploads/2026/10/documentos-continuidad-2027.zip",
       "domain": "www.fondosdecultura.cl",
       "found_on": "https://www.cultura.gob.cl/paocc/ingreso-y-continuidad-2027/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://gam.ticketplus.cl?referal_name=destacados_home_tp",
+      "domain": "gam.ticketplus.cl",
+      "found_on": "https://ticketplus.cl/?locale=en/events/folie",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://teatro-a-mil.ticketplus.cl/?referal_name=slider_tp&_ga=2.251218886.1383921876.1788784169-1482502339.1765830613&_gac=1.258009720.1785256662.CjwKCAjwpqHTBhAcEiwAj2AfumVtWPnFg342pIra-z8BmuwN9uhReme1yxbPSjQRR85tJl9fy9RhbxoCqKcQAvD_BwE",
+      "domain": "teatro-a-mil.ticketplus.cl",
+      "found_on": "https://ticketplus.cl/?locale=en/events/folie",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ceacuchile.ticketplus.cl",
+      "domain": "ceacuchile.ticketplus.cl",
+      "found_on": "https://ticketplus.cl/?locale=en/events/folie",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]

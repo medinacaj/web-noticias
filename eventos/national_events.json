@@ -1,16 +1,16 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-10-31T15:30:35",
+  "generated_at": "2026-11-01T03:52:24",
   "summary": {
     "sources_attempted": 9,
     "sources_ok": 8,
     "sources_failed": 1,
-    "events_found": 20,
-    "events_inserted": 16,
+    "events_found": 35,
+    "events_inserted": 33,
     "events_merged": 0,
-    "possible_events": 4,
+    "possible_events": 11,
     "quarantined_candidates": 0,
-    "candidates": 5,
+    "candidates": 0,
     "errors": [
       {
         "source": "ChileCultura (Ministerio de las Culturas)",
@@ -19,46 +19,6 @@
     ]
   },
   "events": [
-    {
-      "title": "Ópera: La Traviata",
-      "description": null,
-      "date": "2026-10-10",
-      "end_date": "2026-10-31",
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/opera-la-traviata-municipal-delivery-2026/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Teatro Municipal de Santiago",
-          "url": "https://municipal.cl/espectaculos/opera-la-traviata-municipal-delivery-2026/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-10-31T15:29:16"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
     {
       "title": "Laboratorio Ciudadano de Danza 2026: Presentado por SURA",
       "description": "El Laboratorio Ciudadano de Danza llega en su segunda versión como un espacio de encuentro y creación colectiva que invita a personas de distintas edades y t...",
@@ -91,7 +51,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:28:48"
+          "seen_at": "2026-11-01T03:50:19"
         }
       ],
       "changes": [
@@ -131,40 +91,38 @@
       "region": "Metropolitana"
     },
     {
-      "title": "Girls&Boys",
-      "description": null,
-      "date": "2026-10-29",
-      "end_date": "2026-10-31",
-      "time": null,
+      "title": "El sonido de los polinizadores: Instalación sonora multiespecie",
+      "description": "Las nuevas áreas verdes de GAM se abren a la escucha. Dirigido por Paula Aros Gho y con textos de Nona Fernández, un recorrido sonoro invita a caminar el jar...",
+      "date": "2026-11-01",
+      "end_date": "2026-11-15",
+      "time": "09:00",
       "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Estación Central",
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Zócalo",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
       "category": "Cultura",
       "audience": null,
       "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Matucana 100",
-      "source_url": "https://www.m100.cl/programacion/teatro/girlsboys/",
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
       "source_type": "venue",
       "source_priority": 1,
       "official": true,
-      "image_url": "https://www.m100.cl/wp-content/uploads/2026/09/Girls-Boys_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-10-31T15:29:26",
+      "image_url": "https://gam.cl/media/images/PortadaPolizinadores.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-11-01T03:51:11",
       "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
+      "tags": [],
       "sources": [
         {
-          "name": "Matucana 100",
-          "url": "https://www.m100.cl/programacion/teatro/girlsboys/",
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:26"
+          "seen_at": "2026-11-01T03:51:11"
         }
       ],
       "changes": [],
@@ -173,9 +131,9 @@
     {
       "title": "Teatro Musical: Estación Ópera",
       "description": null,
-      "date": "2026-10-31",
-      "end_date": "2026-11-01",
-      "time": "16:00",
+      "date": "2026-11-01",
+      "end_date": null,
+      "time": "12:00",
       "end_time": null,
       "venue": null,
       "address": null,
@@ -192,7 +150,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -204,7 +162,45 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Día de los Difuntos",
+      "description": "Música, arte y tradición mexicana se tomarán Barrio Lastarria en una celebración gratuita.",
+      "date": "2026-11-01",
+      "end_date": null,
+      "time": "14:00",
+      "end_time": "14:00",
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Central",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/dia-de-muertos-en-barrio-lastarria/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/vecteezy_day-of-the-dead-skulls-a.253aee8a.fill-1200x630.jpg",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/dia-de-muertos-en-barrio-lastarria/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
         }
       ],
       "changes": [],
@@ -232,7 +228,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/festival-biobiocine-533x300.jpg",
-      "discovered_at": "2026-10-31T15:29:03",
+      "discovered_at": "2026-11-01T03:50:59",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -244,7 +240,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:03"
+          "seen_at": "2026-11-01T03:50:59"
         }
       ],
       "changes": [],
@@ -272,7 +268,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/violeta-3-450x300.jpg",
-      "discovered_at": "2026-10-31T15:29:03",
+      "discovered_at": "2026-11-01T03:50:59",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -284,11 +280,445 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:03"
+          "seen_at": "2026-11-01T03:50:59"
         }
       ],
       "changes": [],
       "region": "Magallanes"
+    },
+    {
+      "title": "Laboratorio de apreciación fotográfica: En movimiento",
+      "description": "Una invitación a desarrollar una mirada crítica y creativa sobre la fotografía, explorando el lenguaje visual y las posibilidades expresivas de nuestras prop...",
+      "date": "2026-11-03",
+      "end_date": "2026-11-19",
+      "time": "18:00",
+      "end_time": null,
+      "venue": "Centro Gabriela Mistral - GAM - Sala C1 (Edificio B, piso —1)",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-de-apreciacion-fotografica-en-movimiento/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/portadaLabFotos.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-de-apreciacion-fotografica-en-movimiento/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "35º Festival de Música Contemporánea UC",
+      "description": "GAM será sede de las tres primeras jornadas de la edición aniversario del Festival de Música Contemporánea UC, un encuentro que reunirá a destacados ensamble...",
+      "date": "2026-11-04",
+      "end_date": "2026-11-06",
+      "time": "19:00",
+      "end_time": null,
+      "venue": "Centro Gabriela Mistral - GAM - Sala A1 (Edificio A, piso 1)",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/musica-clasica/35%C2%BA-festival-de-musica-contemporanea-uc/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/MusicaUC.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/musica-clasica/35%C2%BA-festival-de-musica-contemporanea-uc/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Secretos de La AraucaníaArtesanía por excelencia",
+      "description": null,
+      "date": "2026-11-05",
+      "end_date": "2026-11-08",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/secretos-de-la-araucaniaartesania-por-excelencia/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/BANNER-SECRETOS-DE-LA-ARAUCANIA-v2.jpg",
+      "discovered_at": "2026-11-01T03:51:03",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/secretos-de-la-araucaniaartesania-por-excelencia/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:03"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Laboratorio de creación performática - NEXOLAB",
+      "description": null,
+      "date": "2026-11-06",
+      "end_date": "2026-11-28",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/laboratorio-de-creacion-performatica-nexolab/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/nexolab.jpg",
+      "discovered_at": "2026-11-01T03:51:03",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/laboratorio-de-creacion-performatica-nexolab/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:03"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Feria Vinilo Garage",
+      "description": "Discos, sellos independientes y sesiones de DJs en vinilo se reúnen en nuestra Plaza Central de en una feria dedicada a la cultura del sonido análogo.",
+      "date": "2026-11-07",
+      "end_date": null,
+      "time": "10:00",
+      "end_time": "10:00",
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Central",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Comunidad",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/feria-vinilo-garage-nov/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/PortadaViniloGarage.2e16d0ba.fill-1200x630.jpg",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/feria-vinilo-garage-nov/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Fotografía 17º Festival Internacional de Fotografía de Valparaíso",
+      "description": null,
+      "date": "2026-11-07",
+      "end_date": null,
+      "time": "10:00",
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valparaíso",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/fotografia-17o-festival-internacional-de-fotografia-de-valparaiso/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://parquecultural.cl/wp-content/uploads/2026/10/17o_FIFV_PCdV_web_01.jpg",
+      "discovered_at": "2026-11-01T03:52:24",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Parque Cultural de Valparaíso",
+          "url": "https://parquecultural.cl/events/fotografia-17o-festival-internacional-de-fotografia-de-valparaiso/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:52:24"
+        }
+      ],
+      "changes": [],
+      "region": "Valparaíso"
+    },
+    {
+      "title": "Exposición \"Contar el mar(itorio)\"",
+      "description": null,
+      "date": "2026-11-08",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valparaíso",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/exposicion-contar-el-maritorio/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://parquecultural.cl/wp-content/uploads/2026/09/Contar_el-maritorio_PCdV_web_01.jpg",
+      "discovered_at": "2026-11-01T03:52:24",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Parque Cultural de Valparaíso",
+          "url": "https://parquecultural.cl/events/exposicion-contar-el-maritorio/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:52:24"
+        }
+      ],
+      "changes": [],
+      "region": "Valparaíso"
+    },
+    {
+      "title": "Cultura digital: nuevas inteligencias, nuevas experiencias",
+      "description": null,
+      "date": "2026-11-10",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/seminario-cultura-digital-nuevas-inteligencias/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-2.jpg",
+      "discovered_at": "2026-11-01T03:51:03",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/seminario-cultura-digital-nuevas-inteligencias/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:03"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "CCLM es parte del 5º Festival Ladera Sur",
+      "description": null,
+      "date": "2026-11-13",
+      "end_date": "2026-11-15",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/centro-cultural-la-moneda-en-festival-ladera-sur-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/ladera-sur-festival.jpg",
+      "discovered_at": "2026-11-01T03:51:03",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/centro-cultural-la-moneda-en-festival-ladera-sur-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:03"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Espacios culturales para las infancias",
+      "description": null,
+      "date": "2026-11-13",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/espacios-culturales-para-las-infancias/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/circulo-lenguaje.jpg",
+      "discovered_at": "2026-11-01T03:51:03",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/espacios-culturales-para-las-infancias/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:03"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Equipajes, accesorios de cuero y su vínculo con la historia del ferrocarril en Chile",
+      "description": null,
+      "date": "2026-11-14",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/equipajes-accesorios-de-cuero-y-su-vinculo-con-la-historia-del-ferrocarril-en-chile/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/taller-lemu.jpg",
+      "discovered_at": "2026-11-01T03:51:03",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/equipajes-accesorios-de-cuero-y-su-vinculo-con-la-historia-del-ferrocarril-en-chile/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:03"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
     },
     {
       "title": "GAM y Periscopio presenta: Juegos de Mesa en BiblioGAM",
@@ -322,7 +752,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:28:48"
+          "seen_at": "2026-11-01T03:50:19"
         }
       ],
       "changes": [
@@ -336,6 +766,46 @@
         }
       ],
       "region": "Metropolitana"
+    },
+    {
+      "title": "Exposición \"10 años resistiendo memoria\"",
+      "description": null,
+      "date": "2026-11-15",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valparaíso",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/exposicion-10-anos-resistiendo-memoria/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://parquecultural.cl/wp-content/uploads/2026/10/10_anos_resistiendo_memoria_PCdV_web_01.jpg",
+      "discovered_at": "2026-11-01T03:52:24",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Parque Cultural de Valparaíso",
+          "url": "https://parquecultural.cl/events/exposicion-10-anos-resistiendo-memoria/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:52:24"
+        }
+      ],
+      "changes": [],
+      "region": "Valparaíso"
     },
     {
       "title": "Elektra de Richard Strauss",
@@ -359,7 +829,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -371,7 +841,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
         }
       ],
       "changes": [],
@@ -399,7 +869,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -411,7 +881,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
         }
       ],
       "changes": [],
@@ -449,7 +919,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:28:48"
+          "seen_at": "2026-11-01T03:50:19"
         }
       ],
       "changes": [
@@ -510,7 +980,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -522,7 +992,83 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Vestir el Ser",
+      "description": "En el marco del Mes del Diseño, la tercera edición de esta plataforma nacional llega a GAM para reunir a diseñadores, estudiantes, marcas, investigadores e i...",
+      "date": "2026-11-21",
+      "end_date": null,
+      "time": "09:00",
+      "end_time": "09:00",
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Zócalo",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/vestir-el-ser/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/PORTADAVestirElSer_1.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/vestir-el-ser/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Itinerancias Literarias",
+      "description": "Combinando conferencias inspiradoras, narración oral, recursos escénicos, ilustración en vivo y tecnología amigable, la dramaturga y directora, Carol Aragón,...",
+      "date": "2026-11-21",
+      "end_date": null,
+      "time": "12:00",
+      "end_time": "12:00",
+      "venue": "Centro Gabriela Mistral - GAM - BiblioGAM (Edificio A, piso 3)",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/itinerancias-literarias/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/bibliogamlee-23_1.2e16d0ba.fill-1200x630.jpg",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/itinerancias-literarias/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
         }
       ],
       "changes": [],
@@ -550,7 +1096,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -562,7 +1108,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
         }
       ],
       "changes": [],
@@ -590,7 +1136,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:52",
+      "discovered_at": "2026-11-01T03:51:30",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -602,7 +1148,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:52"
+          "seen_at": "2026-11-01T03:51:30"
         }
       ],
       "changes": [],
@@ -630,7 +1176,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -642,7 +1188,45 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Festival ENAI 2026: Encuentro de Artes Escénicas para la Comunidad Sorda",
+      "description": "Una programación que reúne a artistas, creadores y públicos en torno a las múltiples formas de expresión de la comunidad Sorda, donde el cuerpo, el gesto y l...",
+      "date": "2026-12-09",
+      "end_date": "2026-12-13",
+      "time": "10:00",
+      "end_time": null,
+      "venue": "Centro Gabriela Mistral - GAM - Sala B1 (Edificio B, piso 2) Sala La Pecera (Edificio A, piso —1) Sala C1 (Edificio B, piso —1)",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/teatro/festival-enai-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/Diseno_sin_titulo_3.2e16d0ba.fill-1200x630.jpg",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/teatro/festival-enai-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
         }
       ],
       "changes": [],
@@ -670,7 +1254,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-10-31T15:29:34",
+      "discovered_at": "2026-11-01T03:51:03",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -682,7 +1266,45 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:34"
+          "seen_at": "2026-11-01T03:51:03"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Festival Periscopio",
+      "description": "Un espacio para explorar el mundo de los juegos de mesa, descubrir nuevas propuestas y celebrar el juego como una forma de conectar, compartir y crear experi...",
+      "date": "2026-12-12",
+      "end_date": "2026-12-13",
+      "time": "11:00",
+      "end_time": null,
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Zócalo",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/festival-periscopio/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/PortadaPerioscopioGAM.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/festival-periscopio/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
         }
       ],
       "changes": [],
@@ -710,7 +1332,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -722,7 +1344,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
         }
       ],
       "changes": [],
@@ -750,7 +1372,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -762,7 +1384,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
         }
       ],
       "changes": [],
@@ -790,7 +1412,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-10-31T15:29:16",
+      "discovered_at": "2026-11-01T03:50:49",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -802,7 +1424,47 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-10-31T15:29:16"
+          "seen_at": "2026-11-01T03:50:49"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Festival Internacional Teatro a Mil 2026",
+      "description": null,
+      "date": "2027-01-25",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/festivales-eventos-residentes/festival-internacional-teatro-a-mil-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/Captura_de_pantalla_2025-12-19_10.2e16d0ba.fill-1200x800.png",
+      "discovered_at": "2026-11-01T03:51:11",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/festivales-eventos-residentes/festival-internacional-teatro-a-mil-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-01T03:51:11"
         }
       ],
       "changes": [],
@@ -813,27 +1475,27 @@
     {
       "source_name": "Agenda Cultural del Ministerio de las Culturas",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:29:03",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:50:59",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 18,
       "events_found": 2,
       "events_inserted": 2,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:29:45",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:51:11",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 2,
-      "events_inserted": 0,
+      "events_found": 12,
+      "events_inserted": 10,
       "events_merged": 0,
       "possible_found": 1,
       "error": null
@@ -841,22 +1503,22 @@
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:29:34",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:51:03",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 1,
-      "events_inserted": 1,
+      "events_found": 7,
+      "events_inserted": 7,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 1,
       "error": null
     },
     {
       "source_name": "ChileCultura (Ministerio de las Culturas)",
       "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:28:51",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:50:22",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -869,13 +1531,13 @@
     {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:29:26",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:51:17",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 1,
-      "events_inserted": 1,
+      "events_found": 0,
+      "events_inserted": 0,
       "events_merged": 0,
       "possible_found": 0,
       "error": null
@@ -883,36 +1545,36 @@
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:30:35",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:52:24",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
+      "events_found": 3,
+      "events_inserted": 3,
       "events_merged": 0,
-      "possible_found": 2,
+      "possible_found": 3,
       "error": null
     },
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:29:16",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:50:49",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 13,
-      "events_inserted": 11,
+      "events_found": 10,
+      "events_inserted": 10,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 6,
       "error": null
     },
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:29:43",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:51:21",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -925,8 +1587,8 @@
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-10-31T15:28:48",
-      "finished_at": "2026-10-31T15:29:52",
+      "started_at": "2026-11-01T03:50:19",
+      "finished_at": "2026-11-01T03:51:30",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 15,
@@ -938,36 +1600,6 @@
     }
   ],
   "possible_events": [
-    {
-      "title": "Sábado 31 de octubre – 16:00 horas /",
-      "raw_text": "Sábado 31 de octubre – 16:00 horas /",
-      "date": "2026-10-31",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/teatro-musical-estacion-opera/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Sábado 31 de octubre a las 19:00 horas",
-      "raw_text": "Sábado 31 de octubre a las 19:00 horas",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "Este sábado 31 de octubre la Seremi de Culturas Aysén invita a cerrar el Mes de la Música con concierto y homenaje de Los Lazos, después de 56 años de trayectoria.",
-      "date": "2026-10-31",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/cultura-aysen-cierra-el-mes-de-la-musica-con-concierto-y-homenaje-de-los-lazos-en-puerto-ibanez/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
     {
       "title": "Domingo 1 de noviembre – 12:00 horas /",
       "raw_text": "Domingo 1 de noviembre – 12:00 horas /",
@@ -1869,6 +2501,26 @@
       "region": "Metropolitana"
     },
     {
+      "title": "Mis tickets",
+      "raw_text": "El lunes 26 de enero el Centro Cultural La Moneda celebró su vigésimo aniversario con una jornada especial que incluyó la presentación de sus resultados 2025, el lanzamiento de una memoria institucional, un concierto de la Orquesta Sinfónica Nacional Juvenil de la FOJI dirigida por Paolo Bortolameolli y el anuncio de su programación 2026.",
+      "date": "2027-01-26",
+      "commune": "Santiago",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/cclm-lanza-su-programacion-2026-e-invita-a-vivir-la-cultura-de-forma-colectiva-gratuita-y-participativa/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
+    },
+    {
+      "title": "XV Festival Santiago Off",
+      "raw_text": "Entre el 22 y el 31 de enero, el Festival Internacional Santiago Off celebra 15 años de resistencia cultural, consolidándose como uno de los espacios más relevantes para la circulación del teatro, la danza, performance y la música independiente en Chile e Iberoamérica.",
+      "date": "2027-01-31",
+      "commune": "Santiago",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/festivales-eventos-residentes/festival-santiago-off-26/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
+    },
+    {
       "title": "Del 15 al 28 de febrero | 2021",
       "raw_text": "Del 15 al 28 de febrero | 2021",
       "date": "2027-02-15",
@@ -1925,6 +2577,36 @@
       "commune": "Valparaíso",
       "source": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/events/tardes-mayores-2021-03-24/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Valparaíso"
+    },
+    {
+      "title": "Todos los miércoles (excepto el martes 23 de febrero), de febrero y marzo de 2021, de 15.00 a 17.00 horas.",
+      "raw_text": "Todos los miércoles (excepto el martes 23 de febrero), de febrero y marzo de 2021, de 15.00 a 17.00 horas.",
+      "date": "2027-02-23",
+      "commune": "Valparaíso",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/tardes-mayores-2021-03-03/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Valparaíso"
+    },
+    {
+      "title": "ActividadesRelacionadas",
+      "raw_text": "El viernes 4 de marzo, en el Parque Cultural de Valparaíso, abre al público la exposición “Entrar en la Barca, arte a lo divino”, compuesta por 40 obras pictóricas del artista Andrés Ovalle, que dialogan con la obra poética del cantautor de origen porteño, Florencio Navarro (1961 – 2020).",
+      "date": "2027-03-04",
+      "commune": "Valparaíso",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/entrar-en-la-barca-arte-a-lo-divino-2022-03-04/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Valparaíso"
+    },
+    {
+      "title": "ActividadesRelacionadas",
+      "raw_text": "La muestra estará montada en la Galería de Artes Visuales en el Edificio de Difusión y se podrá visitar desde el 5 de marzo hasta el 15 de abril, de 10 a 17 hrs. La inauguración será e 5 de marzo a las 12 hrs en la misma sala.",
+      "date": "2027-03-05",
+      "commune": "Valparaíso",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/anonimas-2022-04-06/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "Valparaíso"
     },
@@ -2109,6 +2791,46 @@
       "region": "Valparaíso"
     },
     {
+      "title": "Inscripciones hasta el martes 9 de junio, a las 18:00 horas o hasta completar los cupos.",
+      "raw_text": "Inscripciones hasta el martes 9 de junio, a las 18:00 horas o hasta completar los cupos.",
+      "date": "2027-06-09",
+      "commune": "Santiago",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/municipal/taller-de-maquillaje-teatral/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Inscipciones hasta el jueves 11 de junio, a las 18:00 horas o hasta comlpetar los cupos.",
+      "raw_text": "Inscipciones hasta el jueves 11 de junio, a las 18:00 horas o hasta comlpetar los cupos.",
+      "date": "2027-06-11",
+      "commune": "Santiago",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/municipal/taller-confeccion-de-tutus/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Viernes 12 de junio – 10:00 a 14:00 horas.",
+      "raw_text": "Viernes 12 de junio – 10:00 a 14:00 horas.",
+      "date": "2027-06-12",
+      "commune": "Santiago",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/municipal/taller-de-maquillaje-teatral/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Domingo 14 de junio – 09:00 a 19:00 horas.",
+      "raw_text": "Domingo 14 de junio – 09:00 a 19:00 horas.",
+      "date": "2027-06-14",
+      "commune": "Santiago",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/municipal/taller-confeccion-de-tutus/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
+    },
+    {
       "title": "ActividadesRelacionadas",
       "raw_text": "Este 16, 17 y 18 de junio se realizará, entre las 10.00 y 16.30 horas, la versión número 34 de la Feria del Libro Independiente de Valparaíso en la explanada del Parque Cultural, cuyo objetivo principal es apoyar a las editoriales y a la cadena del libro por la compleja situación sanitaria y económica en que se encuentran muchos y muchas creadoras, quienes han visto mermadas sus posibilidades laborales de manera presencial.",
       "date": "2027-06-17",
@@ -2117,6 +2839,26 @@
       "source_url": "https://parquecultural.cl/events/parque-cultural-de-valparaiso-vuelve-con-feria-del-libro-presencial/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "Valparaíso"
+    },
+    {
+      "title": "Miércoles 17 de junio – 15:00 a 16:30 horas.",
+      "raw_text": "Miércoles 17 de junio – 15:00 a 16:30 horas.",
+      "date": "2027-06-17",
+      "commune": "Santiago",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/municipal/taller-estrategias-de-vinculacion-con-publicos/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Miércoles 17 de junio – 13:00 a 14:30 horas.",
+      "raw_text": "Miércoles 17 de junio – 13:00 a 14:30 horas.",
+      "date": "2027-06-17",
+      "commune": "Santiago",
+      "source": "Teatro Municipal de Santiago",
+      "source_url": "https://municipal.cl/municipal/taller-como-iniciar-un-archivo-patrimonial/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Metropolitana"
     },
     {
       "title": "ActividadesRelacionadas",
