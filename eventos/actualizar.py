@@ -41,7 +41,7 @@ from scrapers.common import fetch  # noqa: E402
 CRAWLED_PATH = os.path.join(BASE_DIR, "data", "crawled_events.json")
 NATIONAL_PATH = os.path.join(BASE_DIR, "data", "national_events.json")
 _STATUS_PREFIX = re.compile(
-    r"^(Omitida por cadencia; última respuesta HTTP [^.]*\\.|"
+    r"^(Omitida por cadencia; última respuesta HTTP [^.]*\.|"
     r"No verificada en vivo:.*?contra esta URL\.|Verificada en vivo el [^.]*\.|"
     r"Última verificación en vivo [^.]*\.(?: Error: [^\n]*?\.)?)\s*", re.S)
 
