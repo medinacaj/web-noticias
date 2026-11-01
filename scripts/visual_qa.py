@@ -215,11 +215,35 @@ async def check_card_shadows(page, width):
     # Evitar medir un fotograma intermedio de la transición CSS:
     # el navegador interpola la sombra al cambiar de tema.
     await card.evaluate("el => { el.style.transition = 'none'; }")
+    palette = """el => {
+      const sample = css => {
+        const canvas = document.createElement('canvas');
+        canvas.width = canvas.height = 1;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = css; ctx.fillRect(0, 0, 1, 1);
+        return [...ctx.getImageData(0, 0, 1, 1).data].slice(0, 3);
+      };
+      const root = getComputedStyle(document.documentElement);
+      return {
+        canvas: sample(getComputedStyle(document.body).backgroundColor),
+        paper: sample(root.getPropertyValue('--paper').trim()),
+        card: sample(getComputedStyle(el).backgroundColor),
+      };
+    }"""
+    light_palette = await card.evaluate(palette)
     light = await card.evaluate("el => getComputedStyle(el).boxShadow")
     await page.evaluate("document.documentElement.dataset.theme = 'dark'")
+    dark_palette = await card.evaluate(palette)
     dark = await card.evaluate("el => getComputedStyle(el).boxShadow")
     await page.evaluate("(theme) => {document.documentElement.dataset.theme = theme}", original)
     await card.evaluate("el => { el.style.removeProperty('transition'); }")
+    distance = lambda a, b: sum(abs(x - y) for x, y in zip(a, b))
+    assert distance(light_palette["card"], light_palette["canvas"]) >= 48, (
+        f"Fondo claro demasiado parecido a tarjeta a {width}px: {light_palette}")
+    assert distance(light_palette["canvas"], light_palette["paper"]) >= 10, (
+        f"El nuevo lienzo no se aplicó a {width}px: {light_palette}")
+    assert distance(dark_palette["canvas"], dark_palette["paper"]) <= 3, (
+        f"El fondo nuevo alteró el modo oscuro a {width}px: {dark_palette}")
     assert light != "none" and dark != "none", (
         f"La tarjeta no tiene sombra permanente a {width}px: {light} / {dark}")
     assert light != dark, f"El modo oscuro comparte sombra ilegible a {width}px"
