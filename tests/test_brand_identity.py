@@ -34,11 +34,12 @@ class BrandIdentityTests(unittest.TestCase):
         template = (ROOT / "template.html").read_text(encoding="utf-8")
         for marker in ('href="favicon.svg?v=editorial" type="image/svg+xml"', 'href="favicon-32.png?v=editorial" sizes="32x32"',
                        'rel="apple-touch-icon" href="apple-touch-icon.png?v=editorial"', 'rel="manifest" href="site.webmanifest"',
-                       '<meta name="theme-color" content="#100F12">'):
+                       '<meta name="theme-color" content="#E9E8E2">'):
             self.assertIn(marker, template)
         self.assertNotIn('rel="icon" href="data:', template)
         manifest = json.loads((STATIC / "site.webmanifest").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["theme_color"], "#100F12")
+        self.assertEqual(manifest["theme_color"], "#E9E8E2")
+        self.assertEqual(manifest["background_color"], "#E9E8E2")
         for icon in manifest["icons"]:
             self.assertTrue((STATIC / icon["src"]).is_file(), icon["src"])
         self.assertTrue(any(i.get("purpose") == "maskable" for i in manifest["icons"]))
