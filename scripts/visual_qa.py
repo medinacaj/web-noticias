@@ -300,6 +300,38 @@ async def check_dark_card_legibility(page, width):
         await page.evaluate("(theme) => { document.documentElement.dataset.theme = theme }", original)
 
 
+async def check_back_to_top_clear(page, width):
+    """La acción Portada jamás debe cubrir el área táctil de Compartir."""
+    if width > 767:
+        return
+    candidate = await page.evaluate("""() => {
+        const footer = document.querySelector('.site-footer');
+        const footerY = footer ? footer.getBoundingClientRect().top + scrollY : document.documentElement.scrollHeight;
+        const targetY = innerHeight - 12 - 22;
+        return [...document.querySelectorAll('.card-actions .share-story')]
+          .map(button => {
+            const b = button.getBoundingClientRect();
+            return {y: b.top + scrollY + b.height / 2, width: b.width, height: b.height};
+          })
+          .find(item => item.width > 0 && item.height > 0
+            && item.y > 900 + targetY && item.y < footerY - targetY - 80) || null;
+    }""")
+    assert candidate, f"No hay acción visible para validar superposición a {width}px"
+    await page.evaluate("""(y) => window.scrollTo({
+        top: Math.max(0, y - (innerHeight - 12 - 22)), behavior:'instant'
+    })""", candidate["y"])
+    await page.wait_for_timeout(120)
+    result = await page.evaluate("""() => ({
+        floatingHidden: document.getElementById('back-to-top').hidden,
+        menuOpen: document.documentElement.dataset.menuOpen,
+        scrollY: window.scrollY
+    })""")
+    assert result["scrollY"] >= 900, f"No se probó scroll largo a {width}px: {result}"
+    assert result["floatingHidden"], (
+        f"El botón Portada intercepta Compartir a {width}px: {result}")
+    await page.evaluate("window.scrollTo({top:0,behavior:'instant'})")
+
+
 async def check(html, output):
     output.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
@@ -320,6 +352,7 @@ async def check(html, output):
             await no_overflow("portada")
             await check_card_shadows(page, width)
             await check_dark_card_legibility(page, width)
+            await check_back_to_top_clear(page, width)
             await check_category_badges(page, width)
             await check_compact_navigation(page, width, no_overflow)
             # Fotos estables; la ficha de país puede crecer para mostrar su texto.
