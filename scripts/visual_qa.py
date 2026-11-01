@@ -300,6 +300,29 @@ async def check_dark_card_legibility(page, width):
         await page.evaluate("(theme) => { document.documentElement.dataset.theme = theme }", original)
 
 
+async def check_browser_theme_color(page, width):
+    """El color del navegador acompaña a la preferencia real del lector."""
+    values = await page.evaluate("""() => {
+        const theme = () => document.documentElement.dataset.theme;
+        const color = () => document.querySelector('meta[name="theme-color"]').content;
+        const initial = {theme: theme(), color: color()};
+        const toggle = document.getElementById('theme-toggle');
+        toggle.click();
+        const changed = {theme: theme(), color: color()};
+        toggle.click();
+        return {initial, changed, restored: {theme: theme(), color: color()}};
+    }""")
+    expected = lambda state: "#111315" if state["theme"] == "dark" else "#E9E8E2"
+    assert values["initial"]["color"] == expected(values["initial"]), (
+        f"Barra del navegador no coincide con tema inicial a {width}px: {values}")
+    assert values["changed"]["theme"] != values["initial"]["theme"], (
+        f"Selector de tema no cambió el estado a {width}px: {values}")
+    assert values["changed"]["color"] == expected(values["changed"]), (
+        f"Barra del navegador no responde a cambio a {width}px: {values}")
+    assert values["restored"] == values["initial"], (
+        f"No se recupera tema inicial a {width}px: {values}")
+
+
 async def check_mobile_header_touch_targets(page, width):
     """Los controles visibles de la cabecera deben ofrecer 44 × 44 px en móviles."""
     if width >= 480:
@@ -366,6 +389,7 @@ async def check(html, output):
                         .filter(el => el.right > innerWidth + 2).slice(0,10)""")
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
+            await check_browser_theme_color(page, width)
             await check_mobile_header_touch_targets(page, width)
             await check_card_shadows(page, width)
             await check_dark_card_legibility(page, width)
