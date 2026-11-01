@@ -80,6 +80,29 @@ class AgendaQualityTests(unittest.TestCase):
         self.assertIn("0 eventos", page)
         self.assertEqual(render_agenda([], NOW), "")
 
+    def test_valid_snapshot_without_http_runs_is_visible_not_silently_healthy(self):
+        with TemporaryDirectory() as temp:
+            communes = Path(temp) / "communes.json"
+            communes.write_text(json.dumps({"communes": [
+                {"name": "Concepción"}, {"name": "Hualpén"}]}),
+                encoding="utf-8")
+            report = coverage_summary({
+                "generated_at": "2026-11-01T08:00:00+00:00",
+                "runs": [], "events": [], "possible_events": [],
+                "skipped_by_cadence": ["Municipalidad"],
+            }, TODAY, communes_path=communes)
+        self.assertEqual(report["attempted"], 0)
+        self.assertEqual(report["responded"], 0)
+        self.assertEqual(report["skipped"], 1)
+        self.assertEqual(report["communes_total"], 2)
+        panel = render_coverage(report)
+        self.assertIn("Sin evidencia de consultas", panel)
+        self.assertIn("0 de 2", panel)
+        self.assertIn("Fuentes omitidas por cadencia", panel)
+        self.assertIn('id="cat-agenda"', render_agenda([], NOW, coverage=report))
+        self.assertEqual(coverage_summary({}, TODAY), {})
+        self.assertEqual(render_coverage({}), "")
+
     def test_integration_does_not_turn_candidates_into_news(self):
         quality = {}
         inputs = {"bio": payload(), "national": {"events": []}, "manual": {"events": []}}

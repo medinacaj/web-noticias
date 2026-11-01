@@ -140,7 +140,11 @@ def coverage_summary(payload, today, communes_path=None):
     if not isinstance(payload, dict):
         return {}
     runs = [r for r in payload.get("runs", []) if isinstance(r, dict)]
-    if not runs:
+    # Una captura válida con cero consultas también merece transparencia:
+    # ocultar sus métricas podría hacer creer que hubo una ejecución sana.
+    if not runs and not re.fullmatch(
+            r"20\d\d-\d\d-\d\dT\d\d:\d\d:\d\d",
+            str(payload.get("generated_at") or "")[:19]):
         return {}
     try:
         path = communes_path or (ROOT / "eventos/config/communes.json")
@@ -183,7 +187,7 @@ def coverage_summary(payload, today, communes_path=None):
 
 def render_coverage(quality):
     """Panel expandible de transparencia, sin alterar las tarjetas de Agenda."""
-    if not quality or not quality.get("attempted"):
+    if not quality:
         return ""
     pairs = (
         ("Fuentes consultadas", quality["attempted"]),
@@ -209,6 +213,9 @@ def render_coverage(quality):
     if len(missing) > 8:
         missing_text += f" y {len(missing) - 8} más"
     issue = '<p><strong>Comunas sin eventos detectados:</strong> ' + esc(missing_text) + '</p>' if missing else ""
+    absent = ('<p><strong>Sin evidencia de consultas:</strong> esta captura no incluye '
+              'registros HTTP de fuentes. No se puede afirmar que el rastreo haya '
+              'comprobado las fuentes.</p>' if not quality.get("attempted") else "")
     failed = quality.get("failed") or []
     failure = ('<p><strong>Fuentes con fallas en la última captura:</strong> '
                + esc(", ".join(failed)) + '</p>') if failed else ""
@@ -220,7 +227,7 @@ def render_coverage(quality):
     timestamp = f'<p>Captura de datos: {esc(generated.replace("T", " "))} (hora registrada por el recolector).</p>' if generated else ""
     return ('<details class="agenda-quality"><summary>Cobertura y calidad de la agenda</summary>'
             '<div class="agenda-quality-body"><dl>' + cells + '</dl>' + timestamp
-            + issue + failure + reasons_html
+            + issue + absent + failure + reasons_html
             + '<p>Estas cifras corresponden al último rastreo de Biobío, no al total '
             'nacional ni a los eventos agregados manualmente. Un candidato no es '
             'un evento confirmado y una fuente accesible no garantiza que publique eventos.</p>'
