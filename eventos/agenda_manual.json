@@ -1,4 +1,47 @@
 {
-  "_notas": "Eventos revisados a mano por el responsable desde la publicación OFICIAL del organizador (municipio, recinto o productora), por ejemplo un afiche en Instagram. Cada evento necesita title, date (AAAA-MM-DD), commune, region y source_url https de esa publicación; opcionales: end_date, time (HH:MM), venue, price_text, price_status (free/paid), category, status, source e image_url (solo si el organizador la publica en una URL https directa). No se copian afiches de cuentas que no son del organizador. Los eventos vencidos se ocultan solos; se pueden borrar en cualquier momento.",
-  "events": []
+  "_notas": "Agenda editorial de eventos con fuente oficial específica: publicación del organizador, cartelera de venta autorizada o agenda institucional pública (p. ej. Sernatur). Cada ficha tiene title, date, commune, region y source_url https de esa publicación. Puede incluir end_date, time, venue, price_text, price_status, category, status y source. No copiar afiches ni usar fechas de publicación como fechas de realización. Los vencidos se ocultan automáticamente.",
+  "events": [
+    {
+      "title": "Oktoberfest Concepción 2026",
+      "date": "2026-10-30",
+      "end_date": "2026-11-01",
+      "commune": "Concepción",
+      "region": "Biobío",
+      "venue": "Plaza Bicentenario",
+      "price_text": "Entrada liberada",
+      "price_status": "free",
+      "category": "Festival",
+      "status": "Confirmado",
+      "source": "Oktoberfest Concepción (organización)",
+      "source_url": "https://www.instagram.com/p/DexW9DKFM6Y/"
+    },
+    {
+      "title": "Festival Cervecero de San Pedro de la Paz",
+      "date": "2026-10-31",
+      "end_date": "2026-11-01",
+      "time": "12:00",
+      "commune": "San Pedro de la Paz",
+      "region": "Biobío",
+      "venue": "Arauco Premium Outlet San Pedro",
+      "price_text": "Entrada liberada",
+      "price_status": "free",
+      "category": "Festival",
+      "status": "Confirmado",
+      "source": "Chile es Tuyo (Sernatur)",
+      "source_url": "https://chileestuyo.cl/eventos/festival-cervecero-de-san-pedro-de-la-paz/"
+    },
+    {
+      "title": "Iron Maiden — Run For Your Lives World Tour",
+      "date": "2026-11-01",
+      "commune": "Ñuñoa",
+      "region": "Metropolitana",
+      "venue": "Estadio Nacional",
+      "price_text": "Entradas en Ticketmaster, sujetas a disponibilidad",
+      "price_status": "paid",
+      "category": "Concierto",
+      "status": "Confirmado",
+      "source": "Ticketmaster Chile",
+      "source_url": "https://www.ticketmaster.cl/event/iron-maiden-run-for-your-lives-scl-2026"
+    }
+  ]
 }
