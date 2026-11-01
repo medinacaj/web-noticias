@@ -113,6 +113,21 @@ class CrawlTests(unittest.TestCase):
         self.assertEqual([e["title"] for e in res.events], ["La Negra Ester"])
         self.assertEqual(res.candidates[0][1], "otro-centro-cultural.cl")
 
+    def test_live_homepage_events_are_crawled_before_old_sitemap_links(self):
+        source = dict(SRC, max_pages=2, max_depth=1)
+        home = '<html><body><a href="/concierto-nuevo/">Concierto nuevo</a></body></html>'
+        old_urls = [f"https://teatro.demo.cl/eventos/archivo-{i}/" for i in range(8)]
+        sitemap = ('<?xml version="1.0"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                   + "".join(f"<url><loc>{url}</loc></url>" for url in old_urls) + "</urlset>")
+        pages = {"https://teatro.demo.cl/": home,
+                 "https://teatro.demo.cl/sitemap.xml": sitemap,
+                 "https://teatro.demo.cl/concierto-nuevo/": EVENT_PAGE}
+        pages.update({url: "<html><body>Archivo antiguo</body></html>" for url in old_urls})
+        res = deep_crawler.crawl(source, COMMUNES, fetcher=fake_fetcher(pages),
+                                 ref=date(2030, 10, 1))
+        self.assertEqual(res.pages, 2)
+        self.assertEqual([e["title"] for e in res.events], ["La Negra Ester"])
+
     def test_crawl_unreachable_start(self):
         res = deep_crawler.crawl(SRC, COMMUNES, fetcher=fake_fetcher({}))
         self.assertEqual(res.error, "HTTP 404")
