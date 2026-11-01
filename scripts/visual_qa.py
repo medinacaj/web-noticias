@@ -222,7 +222,7 @@ async def check_card_shadows(page, width):
     # No inspeccionar :hover: en Safari móvil no está disponible de forma estable.
     import re
     def alpha(shadow):
-        matches = re.findall(r"rgba?\\([^)]*?,\\s*(0?\\.\\d+|1(?:\\.0+)?)\\)", shadow)
+        matches = re.findall(r"rgba?\([^)]*?,\s*(0?\.\d+|1(?:\.0+)?)\)", shadow)
         return float(matches[0]) if matches else 0
     assert alpha(light) >= 0.08 and alpha(dark) >= 0.30, (
         f"Sombra base apenas visible a {width}px: {light} / {dark}")
