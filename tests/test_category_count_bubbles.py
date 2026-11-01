@@ -36,7 +36,7 @@ class CategoryBadgesTests(unittest.TestCase):
                      "tecnologia", "deportes", "cultura", "agenda", "regiones",
                      "politica", "medioambiente", "salud-ciencia", "cine-streaming"):
             self.assertIn(".cat-" + name, CSS)
-        self.assertIn(".cat-cine-streaming{--cat:#087985;--cat-b:#80D9DD;}", CSS)
+        self.assertIn(".cat-cine-streaming{--cat:color-mix(in srgb,var(--c-internacional) 58%,var(--c-economia));--cat-b:color-mix(in srgb,var(--b-internacional) 55%,var(--b-economia));}", CSS)
 
     def test_badges_stay_small_tinted_and_legible_in_both_themes(self):
         for marker in (".section-head .section-count{", "border-radius:var(--pill)",
