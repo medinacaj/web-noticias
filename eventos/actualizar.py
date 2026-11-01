@@ -53,8 +53,9 @@ def _write_json(path, data):
     os.replace(tmp, path)
 
 
-def update_sources_file(path, runs):
-    """Marca verified_live según la última petición real a cada fuente."""
+def update_sources_file(path, runs, source_state=None, skipped=()):
+    """Marca verified_live según la última petición real, nunca según un salto."""
+
     with open(path, encoding="utf-8") as f:
         cfg = json.load(f)
     by_name = {r["source_name"]: r for r in runs}
@@ -62,6 +63,21 @@ def update_sources_file(path, runs):
     for s in cfg["sources"]:
         r = by_name.get(s["name"])
         if not r:
+            if s["name"] in skipped:
+                last = (source_state or {}).get(s["name"]) or {}
+                code = last.get("last_http_status")
+                checked = last.get("last_checked_at")
+                if checked and isinstance(code, int):
+                    old_ok = 200 <= code < 300
+                    s["verified_live"] = old_ok
+                    s["last_live_check"] = {"at": checked, "ok": old_ok,
+                                            "http_status": code, "error": None}
+                    # No atribuir esta respuesta HTTP a la corrida actual.
+                    original_notes = _STATUS_PREFIX.sub("", s.get("notes") or "").strip()
+                    s["notes"] = (f"Omitida por cadencia; última respuesta HTTP {code} el {checked}. "
+                                  + original_notes).strip()
+                else:
+                    s["verified_live"] = False
             continue
         ok = bool(r["ok"]) and r.get("http_status") is not None and 200 <= r["http_status"] < 300
         day = (r.get("finished_at") or "")[:10]
@@ -191,7 +207,8 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
         "possible_events": pending,
         "source_candidates": candidates,
     })
-    updated = 0 if args.no_update_sources else update_sources_file(status_path, runs)
+    updated = 0 if args.no_update_sources else update_sources_file(
+        status_path, runs, source_state=state, skipped=skipped)
     ok = summary["sources_ok"]
     print("Fuentes intentadas: %d | respondieron: %d | fallaron: %d" % (
         summary["sources_attempted"], ok, summary["sources_failed"]))
