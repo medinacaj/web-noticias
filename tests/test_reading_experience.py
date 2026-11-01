@@ -55,7 +55,7 @@ class ReadingExperienceTests(unittest.TestCase):
         self.assertIn('data-fresh="true"', meta_html(story, now))
 
     def test_colors_and_motion_remain_accessible(self):
-        for marker in ('--paper:#F3F1F8', '--card-bg:#FFFFFF',
+        for marker in ('--paper:#E9E8E2', '--card-bg:#FFFFFF',
                        '--radius-card:17px', '--motion-card:.2s',
                        ':focus-visible', 'prefers-reduced-motion:reduce'):
             self.assertIn(marker, self.html)

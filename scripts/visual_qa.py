@@ -238,12 +238,14 @@ async def check_card_shadows(page, width):
     await page.evaluate("(theme) => {document.documentElement.dataset.theme = theme}", original)
     await card.evaluate("el => { el.style.removeProperty('transition'); }")
     distance = lambda a, b: sum(abs(x - y) for x, y in zip(a, b))
-    assert distance(light_palette["card"], light_palette["canvas"]) >= 48, (
-        f"Fondo claro demasiado parecido a tarjeta a {width}px: {light_palette}")
-    assert distance(light_palette["canvas"], light_palette["paper"]) >= 10, (
-        f"El nuevo lienzo no se aplicó a {width}px: {light_palette}")
+    assert distance(light_palette["card"], light_palette["canvas"]) >= 70, (
+        f"El blanco de las tarjetas no se separa del fondo de piedra a {width}px: {light_palette}")
+    assert distance(light_palette["canvas"], light_palette["paper"]) <= 3, (
+        f"El fondo no usa el mismo token de papel editorial a {width}px: {light_palette}")
+    assert max(light_palette["canvas"]) - min(light_palette["canvas"]) <= 9, (
+        f"El fondo aún tiene tinte violeta en vez de un neutro cálido a {width}px: {light_palette}")
     assert distance(dark_palette["canvas"], dark_palette["paper"]) <= 3, (
-        f"El fondo nuevo alteró el modo oscuro a {width}px: {dark_palette}")
+        f"El ajuste alteró el modo oscuro a {width}px: {dark_palette}")
     assert light != "none" and dark != "none", (
         f"La tarjeta no tiene sombra permanente a {width}px: {light} / {dark}")
     assert light != dark, f"El modo oscuro comparte sombra ilegible a {width}px"
