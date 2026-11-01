@@ -19,6 +19,7 @@ def story(kind="", image=""):
         "published": "2026-11-01T09:00:00Z",
         "format": "Cine", "platform": "",
         "release_date": "2026-11-01",
+        "verification_url": "https://medio.example/cartelera/nota",
     }
 
 
