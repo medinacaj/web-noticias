@@ -164,8 +164,14 @@ def coverage_summary(payload, today, communes_path=None):
     generated = str(payload.get("generated_at") or "")[:19]
     if not re.fullmatch(r"20\d\d-\d\d-\d\dT\d\d:\d\d:\d\d", generated):
         generated = ""
+    skipped = payload.get("skipped_by_cadence")
+    skipped = len(skipped) if isinstance(skipped, list) else 0
+    metrics = payload.get("summary") if isinstance(payload.get("summary"), dict) else {}
     return {
         "generated_at": generated, "attempted": len(runs), "responded": len(ok),
+        "skipped": skipped,
+        "revalidation_attempts": metrics.get("revalidation_attempts", 0),
+        "revalidated_ok": metrics.get("revalidated_ok", 0),
         "events": len(accepted), "pending": len(pending),
         "communes_total": len(communes),
         "communes_covered": len(covered.intersection(communes)),
@@ -185,6 +191,11 @@ def render_coverage(quality):
         ("Eventos regionales vigentes en el rastreo", quality["events"]),
         ("Candidatos guardados para revisión", quality["pending"]),
     )
+    if quality.get("skipped"):
+        pairs += (("Fuentes omitidas por cadencia", quality["skipped"]),)
+    if quality.get("revalidation_attempts"):
+        pairs += (("Fichas previas revalidadas",
+                   f'{quality.get("revalidated_ok", 0)} de {quality["revalidation_attempts"]}'),)
     cells = "".join(
         f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>'
         for label, value in pairs
