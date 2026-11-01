@@ -772,6 +772,49 @@
   @media (max-width:767px){.edition-detail{display:none;}}
   /* Una sola tarjeta ocupa la fila también al cambiar densidad o breakpoint. */
   .section-grid.section-grid--single{grid-template-columns:minmax(0,1fr);}
+
+  /* Identidad cromática editorial: una cápsula discreta por categoría,
+     sin colorear toda la noticia ni añadir barras decorativas. */
+  .cat-cine-streaming{--cat:#087985;--cat-b:#80D9DD;}
+  .section-head .section-num{
+    display:inline-flex;align-items:center;justify-content:center;flex:none;
+    min-height:28px;min-width:35px;padding:4px 9px;
+    border:1px solid color-mix(in srgb,var(--cat) 28%,var(--card-rule));
+    border-radius:11px;
+    background:color-mix(in srgb,var(--cat) 11%,var(--card-bg));
+    color:var(--cat);font-weight:700;font-variant-numeric:tabular-nums;
+  }
+  .section-head .section-count{
+    display:inline-flex;align-items:center;justify-content:center;flex:none;
+    max-width:100%;min-height:30px;min-width:0;padding:5px 12px;
+    margin-left:auto;border:1px solid color-mix(in srgb,var(--cat) 30%,var(--card-rule));
+    border-radius:var(--pill);
+    background:color-mix(in srgb,var(--cat) 10%,var(--card-bg));
+    color:var(--cat);font:650 11px/1.3 var(--sans);
+    font-variant-numeric:tabular-nums;white-space:nowrap;
+  }
+  .section-grid .kicker{
+    display:inline-flex;align-self:flex-start;max-width:100%;
+    width:fit-content;padding:5px 9px;
+    border-radius:var(--pill);
+    background:color-mix(in srgb,var(--cat) 9%,var(--card-bg));
+    color:var(--cat);font-weight:650;letter-spacing:.025em;
+  }
+  .section-grid .kicker::before{background:var(--cat);}
+  :root[data-theme="dark"] .section-head .section-num,
+  :root[data-theme="dark"] .section-head .section-count,
+  :root[data-theme="dark"] .section-grid .kicker{
+    background:color-mix(in srgb,var(--cat-b) 13%,var(--card-bg));
+    border-color:color-mix(in srgb,var(--cat-b) 32%,var(--card-rule));
+    color:var(--cat-b);
+  }
+  :root[data-theme="dark"] .section-grid .kicker::before{background:var(--cat-b);}
+  @media (max-width:479px){
+    .section-head{align-items:center;gap:8px;flex-wrap:wrap;}
+    .section-head h2{min-width:0;}
+    .section-head .section-count{min-height:29px;padding:5px 10px;font-size:10px;}
+    .section-head .section-num{min-height:27px;min-width:33px;padding:4px 8px;}
+  }
 </style>
 </head>
 <body>
