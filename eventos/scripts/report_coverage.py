@@ -81,6 +81,22 @@ def report(snapshot, communes, sources, today=None):
         checked = summary.get("revalidation_attempts", 0)
         ok = summary.get("revalidated_ok", 0)
         lines += ["", f"**Revalidación de fichas vigentes:** {ok}/{checked} respuestas satisfactorias."]
+    # Motivos originales del snapshot, sin promover ni borrar candidaturas.
+    # Evitar que un gran volumen de notas sin fecha verificada oculte causas
+    # distintas, como recinto sin comuna o convocatorias administrativas.
+    reasons = Counter(_cell(item.get("reason") or "Sin motivo", 130)
+                      for item in catalog.get("possible_events", [])
+                      if isinstance(item, dict))
+    lines += ["", "## Candidatos pendientes por motivo de revisión", "",
+              "Estos registros están en cuarentena; no son eventos publicados ni "
+              "se verifican automáticamente al generar el informe.", ""]
+    if reasons:
+        lines += ["| Motivo registrado | Candidatos |", "|---|---:|"]
+        for reason, count in sorted(reasons.items(), key=lambda x: (-x[1], x[0])):
+            lines.append(f"| {reason} | {count} |")
+    else:
+        lines.append("No se registran candidatos pendientes.")
+
     state = catalog.get("source_state")
     if not isinstance(state, dict):
         state = {}
