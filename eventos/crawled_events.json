@@ -1,75 +1,20 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-01T04:11:39",
+  "generated_at": "2026-11-01T16:06:28",
   "summary": {
-    "sources_attempted": 55,
-    "sources_ok": 44,
-    "sources_failed": 11,
-    "events_found": 3,
-    "events_inserted": 3,
+    "sources_attempted": 7,
+    "sources_ok": 7,
+    "sources_failed": 0,
+    "events_found": 1,
+    "events_inserted": 1,
     "events_merged": 0,
-    "possible_events": 27,
-    "quarantined_candidates": 40,
-    "candidates": 0,
-    "revalidation_attempts": 2,
-    "revalidated_ok": 2,
-    "errors": [
-      {
-        "source": "Municipalidad de San Pedro de la Paz",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz"
-      },
-      {
-        "source": "Municipalidad de Talcahuano",
-        "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
-      },
-      {
-        "source": "Municipalidad de Tomé",
-        "error": "HTTP 403"
-      },
-      {
-        "source": "Municipalidad de Lebu",
-        "error": "HTTP 403"
-      },
-      {
-        "source": "Municipalidad de Los Álamos",
-        "error": "HTTP 403"
-      },
-      {
-        "source": "Municipalidad de Tirúa",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
-      },
-      {
-        "source": "Municipalidad de Hualqui",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Hualqui"
-      },
-      {
-        "source": "Municipalidad de Antuco",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco"
-      },
-      {
-        "source": "Municipalidad de Quilaco",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco"
-      },
-      {
-        "source": "Municipalidad de Curanilahue",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue"
-      },
-      {
-        "source": "Municipalidad de Concepción",
-        "error": "URLError: <urlopen error timed out>"
-      }
-    ],
-    "feeds": [
-      {
-        "source": "Municipalidad de Arauco",
-        "feeds": [
-          "https://muniarauco.cl/eventos/?ical=1",
-          "https://muniarauco.cl/wp-json/tribe/events/v1/events?per_page=50",
-          "https://muniarauco.cl/?post_type=tribe_events&ical=1&eventDisplay=list"
-        ]
-      }
-    ],
-    "skipped_by_cadence": 0
+    "possible_events": 3,
+    "quarantined_candidates": 3,
+    "candidates": 1,
+    "revalidation_attempts": 1,
+    "revalidated_ok": 1,
+    "errors": [],
+    "skipped_by_cadence": 48
   },
   "events": [
     {
@@ -94,7 +39,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:09:54",
+      "discovered_at": "2026-11-01T16:06:01",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -106,7 +51,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:09:54"
+          "seen_at": "2026-11-01T16:06:01"
         }
       ],
       "changes": []
@@ -133,7 +78,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://images.ligup2.com/eyJidWNrZXQiOiJsaWd1cC12MiIsImtleSI6Im5hY2ltaWVudG8vcGhvdG9zLzc5MjkyX3RhbGxlcl9kZV9jYWxlc3RlbmlhXzIwMjZfd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzYyLCJoZWlnaHQiOjI4MywiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsfX0=",
-      "discovered_at": "2026-11-01T04:08:02",
+      "discovered_at": "2026-11-01T16:06:28",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -145,7 +90,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:08:02"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": []
@@ -153,38 +98,10 @@
   ],
   "runs": [
     {
-      "source_name": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:14",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 1,
-      "error": null
-    },
-    {
-      "source_name": "Biobío Cultura (Seremi) — RSS",
-      "source_url": "https://www.cultura.gob.cl/feed/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:17",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
       "source_name": "Corcudec (Teatro UdeC)",
       "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:51",
+      "started_at": "2026-11-01T16:05:53",
+      "finished_at": "2026-11-01T16:06:03",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
@@ -197,53 +114,11 @@
     {
       "source_name": "Corcudec / Teatro Universidad de Concepción — Ticketplus",
       "source_url": "https://ticketplus.cl/c/corporacion-cultural-universidad-de-concepcion",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:41",
+      "started_at": "2026-11-01T16:05:53",
+      "finished_at": "2026-11-01T16:05:53",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:13",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "El Contraste (Los Ángeles)",
-      "source_url": "https://elcontraste.cl/los_angeles/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:17",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Extensión Universidad del Bío-Bío",
-      "source_url": "https://extension.ubiobio.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:00",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -253,8 +128,8 @@
     {
       "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
       "source_url": "https://ftb.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:54",
+      "started_at": "2026-11-01T16:05:53",
+      "finished_at": "2026-11-01T16:06:01",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 15,
@@ -265,556 +140,10 @@
       "error": null
     },
     {
-      "source_name": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:24",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 11,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:14",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 11,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:54",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 18,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Alto Biobío",
-      "source_url": "https://munialtobiobio.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:23",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 21,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Antuco",
-      "source_url": "https://www.antuco.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:35",
-      "ok": 0,
-      "http_status": 200,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco"
-    },
-    {
-      "source_name": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/cultura/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:05",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 1,
-      "events_inserted": 1,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Cabrero",
-      "source_url": "https://www.cabrero.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:37",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Cañete",
-      "source_url": "https://municanete.cl/v2/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:06:17",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 10,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Chiguayante",
-      "source_url": "https://chiguayante.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:16",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 5,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Concepción",
-      "source_url": "https://www.concepcion.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:13",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "URLError: <urlopen error timed out>"
-    },
-    {
-      "source_name": "Municipalidad de Contulmo",
-      "source_url": "https://www.contulmo.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:06:31",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 3,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Coronel",
-      "source_url": "https://www.coronel.cl/noticias/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:32",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 3,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Curanilahue",
-      "source_url": "https://www.curanilahue.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:40",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue"
-    },
-    {
-      "source_name": "Municipalidad de Florida",
-      "source_url": "https://muniflorida.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:54",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 3,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Hualpén",
-      "source_url": "http://www.hualpenciudad.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:39",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 18,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Hualqui",
-      "source_url": "https://www.munihualqui.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:29",
-      "ok": 0,
-      "http_status": 200,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Hualqui"
-    },
-    {
-      "source_name": "Municipalidad de Laja",
-      "source_url": "https://www.munilaja.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:08:01",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 9,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Lebu",
-      "source_url": "https://lebu.cl/eventos/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:05",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "source_name": "Municipalidad de Los Álamos",
-      "source_url": "https://munilosalamos.cl/categoria/noticias/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:05",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "source_name": "Municipalidad de Los Ángeles",
-      "source_url": "https://www.losangeles.cl/category/noticias/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:40",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 7,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Lota",
-      "source_url": "https://lota.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:36",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Mulchén",
-      "source_url": "https://www.munimulchen.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:49",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 4,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Nacimiento",
-      "source_url": "https://www.nacimiento.cl/actividades",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:08:02",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 1,
-      "events_inserted": 1,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Negrete",
-      "source_url": "https://www.muninegrete.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:08:35",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 9,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Penco",
-      "source_url": "https://penco.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:19",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Quilaco",
-      "source_url": "https://www.quilaco.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:08:15",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco"
-    },
-    {
-      "source_name": "Municipalidad de Quilleco",
-      "source_url": "https://municipalidadquilleco.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:08:20",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de San Pedro de la Paz",
-      "source_url": "https://www.sanpedrodelapaz.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:08",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz"
-    },
-    {
-      "source_name": "Municipalidad de San Rosendo",
-      "source_url": "https://www.municipalidadsanrosendo.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:13",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 17,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Santa Bárbara",
-      "source_url": "https://www.santabarbara.cl/noticias/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:08:59",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 10,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Santa Juana",
-      "source_url": "https://www.santajuana.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:46",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 3,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Talcahuano",
-      "source_url": "https://www.talcahuano.cl/actividades",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:15",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
-    },
-    {
-      "source_name": "Municipalidad de Tirúa",
-      "source_url": "https://www.tirua.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:07:17",
-      "ok": 0,
-      "http_status": 200,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
-    },
-    {
-      "source_name": "Municipalidad de Tomé",
-      "source_url": "https://www.tome.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:05:16",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "source_name": "Municipalidad de Tucapel",
-      "source_url": "https://www.munitucapel.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:07",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 4,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Yumbel",
-      "source_url": "https://yumbel.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:33",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 4,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Noticias UdeC",
-      "source_url": "https://noticias.udec.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:38",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 8,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Passline",
-      "source_url": "https://www.passline.com/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:30",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "PrimeTicket",
-      "source_url": "https://www.primeticket.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:31",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 16,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
       "source_name": "PuntoTicket — todos los eventos",
       "source_url": "https://www.puntoticket.com/todos",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:22",
+      "started_at": "2026-11-01T16:05:53",
+      "finished_at": "2026-11-01T16:06:28",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
@@ -825,52 +154,10 @@
       "error": null
     },
     {
-      "source_name": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:39",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 12,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:12",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 23,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 22,
-      "error": null
-    },
-    {
-      "source_name": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:11:29",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
       "source_name": "Teatro Biobío",
       "source_url": "https://teatrobiobio.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:52",
+      "started_at": "2026-11-01T16:05:53",
+      "finished_at": "2026-11-01T16:06:13",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -883,8 +170,8 @@
     {
       "source_name": "Teatro Biobío — Ticketplus",
       "source_url": "https://ticketplus.cl/en/companies/teatro-biobio",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:09:41",
+      "started_at": "2026-11-01T16:05:53",
+      "finished_at": "2026-11-01T16:05:55",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -897,8 +184,8 @@
     {
       "source_name": "Ticketplus — Región del Biobío",
       "source_url": "https://ticketplus.cl/en/states/region-del-bio-bio",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:18",
+      "started_at": "2026-11-01T16:05:53",
+      "finished_at": "2026-11-01T16:06:28",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
@@ -906,20 +193,6 @@
       "events_inserted": 0,
       "events_merged": 0,
       "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "TuAcceso",
-      "source_url": "https://www.tuacceso.cl/",
-      "started_at": "2026-11-01T04:05:04",
-      "finished_at": "2026-11-01T04:10:31",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 1,
       "error": null
     }
   ],
@@ -939,15 +212,15 @@
       "refresh_interval_hours": 48
     },
     "Corcudec (Teatro UdeC)": {
-      "last_checked_at": "2026-11-01T04:09:51",
-      "last_success_at": "2026-11-01T04:09:51",
+      "last_checked_at": "2026-11-01T16:06:03",
+      "last_success_at": "2026-11-01T16:06:03",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Corcudec / Teatro Universidad de Concepción — Ticketplus": {
-      "last_checked_at": "2026-11-01T04:09:41",
-      "last_success_at": "2026-11-01T04:09:41",
+      "last_checked_at": "2026-11-01T16:05:53",
+      "last_success_at": "2026-11-01T16:05:53",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -974,8 +247,8 @@
       "refresh_interval_hours": 48
     },
     "Festival Internacional de Teatro del Biobío (FTB)": {
-      "last_checked_at": "2026-11-01T04:09:54",
-      "last_success_at": "2026-11-01T04:09:54",
+      "last_checked_at": "2026-11-01T16:06:01",
+      "last_success_at": "2026-11-01T16:06:01",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1254,8 +527,8 @@
       "refresh_interval_hours": 48
     },
     "PuntoTicket — todos los eventos": {
-      "last_checked_at": "2026-11-01T04:10:22",
-      "last_success_at": "2026-11-01T04:10:22",
+      "last_checked_at": "2026-11-01T16:06:28",
+      "last_success_at": "2026-11-01T16:06:28",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1282,22 +555,22 @@
       "refresh_interval_hours": 48
     },
     "Teatro Biobío": {
-      "last_checked_at": "2026-11-01T04:09:52",
-      "last_success_at": "2026-11-01T04:09:52",
+      "last_checked_at": "2026-11-01T16:06:13",
+      "last_success_at": "2026-11-01T16:06:13",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Biobío — Ticketplus": {
-      "last_checked_at": "2026-11-01T04:09:41",
-      "last_success_at": "2026-11-01T04:09:41",
+      "last_checked_at": "2026-11-01T16:05:55",
+      "last_success_at": "2026-11-01T16:05:55",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Ticketplus — Región del Biobío": {
-      "last_checked_at": "2026-11-01T04:10:18",
-      "last_success_at": "2026-11-01T04:10:18",
+      "last_checked_at": "2026-11-01T16:06:28",
+      "last_success_at": "2026-11-01T16:06:28",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1310,7 +583,56 @@
       "refresh_interval_hours": 48
     }
   },
-  "skipped_by_cadence": [],
+  "skipped_by_cadence": [
+    "Municipalidad de Concepción",
+    "Municipalidad de Talcahuano",
+    "Municipalidad de Hualpén",
+    "Municipalidad de San Pedro de la Paz",
+    "Municipalidad de Chiguayante",
+    "Municipalidad de Penco",
+    "Municipalidad de Tomé",
+    "Municipalidad de Coronel",
+    "Municipalidad de Lota",
+    "Municipalidad de Hualqui",
+    "Municipalidad de Santa Juana",
+    "Municipalidad de Florida",
+    "Municipalidad de Arauco",
+    "Municipalidad de Cañete",
+    "Municipalidad de Contulmo",
+    "Municipalidad de Curanilahue",
+    "Municipalidad de Lebu",
+    "Municipalidad de Los Álamos",
+    "Municipalidad de Tirúa",
+    "Municipalidad de Los Ángeles",
+    "Municipalidad de Antuco",
+    "Municipalidad de Cabrero",
+    "Municipalidad de Laja",
+    "Municipalidad de Mulchén",
+    "Municipalidad de Nacimiento",
+    "Municipalidad de Negrete",
+    "Municipalidad de Quilaco",
+    "Municipalidad de Quilleco",
+    "Municipalidad de San Rosendo",
+    "Municipalidad de Santa Bárbara",
+    "Municipalidad de Tucapel",
+    "Municipalidad de Yumbel",
+    "Municipalidad de Alto Biobío",
+    "Passline",
+    "TuAcceso",
+    "PrimeTicket",
+    "Noticias UdeC",
+    "Extensión Universidad del Bío-Bío",
+    "Ministerio de las Culturas — Agenda cultural",
+    "BioBioChile — Región del Biobío",
+    "Diario Concepción — Cultura",
+    "Sabes.cl",
+    "G5 Noticias",
+    "TVU Prensa",
+    "La Tribuna (Los Ángeles)",
+    "El Contraste (Los Ángeles)",
+    "Radio UdeC",
+    "Biobío Cultura (Seremi) — RSS"
+  ],
   "possible_events": [
     {
       "title": "Circo Pastelito y Tachuela Chico en Mall Cenco Florida",
@@ -2843,6 +2165,15 @@
       "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
     },
     {
+      "title": "Ari Montiel en La Diabla Bar",
+      "raw_text": "La Diabla Bar Carlos Condell 1121, San Felipe San Felipe",
+      "date": "2026-11-12",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/ari-montiel-en-la-diabla-bar?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
       "title": "Hacer lugar: obras de jóvenes de Teletón O’Higgins llegan a la sala de exposiciones de la UOH",
       "raw_text": "La muestra “Hacer lugar. Crear es habitar el mundo” estará abierta gratuitamente hasta el 13 de noviembre, de lunes a sábado, en la Sala de Exposiciones de la UOH. Así, «Hacer lugar» invita a reconocer en cada obra las capacidades, los sueños y las formas de expresión de sus creadores y creadoras.",
       "date": "2026-11-13",
@@ -2976,6 +2307,15 @@
       "source": "Sabes.cl",
       "source_url": "https://sabes.cl/2026/10/31/rompen-una-de-las-obras-del-museo-del-prado-en-concepcion-exposicion-sufre-nuevo-ataque-a-dias-de-su-cierre/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Feria del Sanguche 2026 en Parque Padre Hurtado",
+      "raw_text": "Parque Padre Hurtado Av. Francisco Bilbao 8105, La Reina La Reina",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/feria-del-sanguche-2026-parque-padre-hurtado-nov?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "16 de noviembre para los pagos emitidos el 16 de febrero.",
@@ -3156,6 +2496,15 @@
       "source": "G5 Noticias",
       "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Pedro Ruminot en La Diabla Bar",
+      "raw_text": "La Diabla Bar Carlos Condell 1121, San Felipe San Felipe",
+      "date": "2026-12-11",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/pedro-ruminot-en-la-diabla-bar?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Fernando Ubiergo presentará su concierto “50 años no es nada” en Concepción y Lota",
@@ -4894,6 +4243,12 @@
       "url": "https://ceacuchile.ticketplus.cl",
       "domain": "ceacuchile.ticketplus.cl",
       "found_on": "https://ticketplus.cl/?locale=en/events/folie",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://www.cultura.gob.cl/",
+      "domain": "www.cultura.gob.cl",
+      "found_on": "https://teatrobiobio.cl/",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]

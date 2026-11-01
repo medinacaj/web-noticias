@@ -1,25 +1,20 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-01T04:13:12",
+  "generated_at": "2026-11-01T16:08:23",
   "summary": {
-    "sources_attempted": 9,
-    "sources_ok": 8,
-    "sources_failed": 1,
-    "events_found": 35,
-    "events_inserted": 24,
+    "sources_attempted": 7,
+    "sources_ok": 7,
+    "sources_failed": 0,
+    "events_found": 33,
+    "events_inserted": 22,
     "events_merged": 0,
     "possible_events": 0,
     "quarantined_candidates": 0,
-    "candidates": 0,
-    "revalidation_attempts": 18,
-    "revalidated_ok": 18,
-    "errors": [
-      {
-        "source": "ChileCultura (Ministerio de las Culturas)",
-        "error": "HTTP 403"
-      }
-    ],
-    "skipped_by_cadence": 0
+    "candidates": 1,
+    "revalidation_attempts": 16,
+    "revalidated_ok": 16,
+    "errors": [],
+    "skipped_by_cadence": 2
   },
   "events": [
     {
@@ -54,7 +49,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [
@@ -125,7 +120,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -153,7 +148,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -165,7 +160,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -203,7 +198,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -231,7 +226,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/festival-biobiocine-533x300.jpg",
-      "discovered_at": "2026-11-01T04:11:55",
+      "discovered_at": "2026-11-01T16:08:23",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -243,7 +238,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:55"
+          "seen_at": "2026-11-01T16:08:23"
         }
       ],
       "changes": [],
@@ -271,7 +266,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/violeta-3-450x300.jpg",
-      "discovered_at": "2026-11-01T04:11:55",
+      "discovered_at": "2026-11-01T16:08:23",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -283,7 +278,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:55"
+          "seen_at": "2026-11-01T16:08:23"
         }
       ],
       "changes": [],
@@ -321,7 +316,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -359,7 +354,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -387,7 +382,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/BANNER-SECRETOS-DE-LA-ARAUCANIA-v2.jpg",
-      "discovered_at": "2026-11-01T04:11:45",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -399,7 +394,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:45"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -427,7 +422,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/nexolab.jpg",
-      "discovered_at": "2026-11-01T04:11:45",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -439,7 +434,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:45"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -477,7 +472,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -505,7 +500,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/10/17o_FIFV_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-01T04:13:12",
+      "discovered_at": "2026-11-01T16:08:23",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -517,7 +512,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:13:12"
+          "seen_at": "2026-11-01T16:08:23"
         }
       ],
       "changes": [],
@@ -545,7 +540,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/09/Contar_el-maritorio_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-01T04:13:12",
+      "discovered_at": "2026-11-01T16:08:23",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -557,7 +552,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:13:12"
+          "seen_at": "2026-11-01T16:08:23"
         }
       ],
       "changes": [],
@@ -585,7 +580,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-2.jpg",
-      "discovered_at": "2026-11-01T04:11:45",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -597,7 +592,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:45"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -625,7 +620,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/ladera-sur-festival.jpg",
-      "discovered_at": "2026-11-01T04:11:45",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -637,7 +632,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:45"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -665,7 +660,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/circulo-lenguaje.jpg",
-      "discovered_at": "2026-11-01T04:11:45",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -677,7 +672,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:45"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -705,7 +700,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/taller-lemu.jpg",
-      "discovered_at": "2026-11-01T04:11:45",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -717,7 +712,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:45"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -755,7 +750,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [
@@ -792,7 +787,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/10/10_anos_resistiendo_memoria_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-01T04:13:12",
+      "discovered_at": "2026-11-01T16:08:23",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -804,7 +799,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:13:12"
+          "seen_at": "2026-11-01T16:08:23"
         }
       ],
       "changes": [],
@@ -832,7 +827,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -844,7 +839,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -872,7 +867,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -884,7 +879,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -922,7 +917,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [
@@ -983,7 +978,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -995,7 +990,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -1033,7 +1028,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -1071,7 +1066,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -1099,7 +1094,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1111,7 +1106,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -1139,7 +1134,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:35",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1151,7 +1146,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:35"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -1179,7 +1174,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1191,7 +1186,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -1229,7 +1224,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -1257,7 +1252,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-11-01T04:11:45",
+      "discovered_at": "2026-11-01T16:07:26",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1269,7 +1264,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:45"
+          "seen_at": "2026-11-01T16:07:26"
         }
       ],
       "changes": [],
@@ -1307,7 +1302,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:11:39"
+          "seen_at": "2026-11-01T16:06:28"
         }
       ],
       "changes": [],
@@ -1335,7 +1330,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1347,7 +1342,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -1375,7 +1370,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1387,7 +1382,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -1415,7 +1410,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T04:12:16",
+      "discovered_at": "2026-11-01T16:06:58",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1427,7 +1422,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:16"
+          "seen_at": "2026-11-01T16:06:58"
         }
       ],
       "changes": [],
@@ -1455,7 +1450,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://gam.cl/media/images/Captura_de_pantalla_2025-12-19_10.2e16d0ba.fill-1200x800.png",
-      "discovered_at": "2026-11-01T04:12:37",
+      "discovered_at": "2026-11-01T16:07:18",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1467,7 +1462,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T04:12:37"
+          "seen_at": "2026-11-01T16:07:18"
         }
       ],
       "changes": [],
@@ -1476,24 +1471,10 @@
   ],
   "runs": [
     {
-      "source_name": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:11:55",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 18,
-      "events_found": 2,
-      "events_inserted": 2,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:12:37",
+      "started_at": "2026-11-01T16:06:28",
+      "finished_at": "2026-11-01T16:07:18",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1506,8 +1487,8 @@
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:11:45",
+      "started_at": "2026-11-01T16:06:28",
+      "finished_at": "2026-11-01T16:07:26",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1518,24 +1499,10 @@
       "error": null
     },
     {
-      "source_name": "ChileCultura (Ministerio de las Culturas)",
-      "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:11:42",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:12:07",
+      "started_at": "2026-11-01T16:06:28",
+      "finished_at": "2026-11-01T16:06:46",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1548,8 +1515,8 @@
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:13:12",
+      "started_at": "2026-11-01T16:06:28",
+      "finished_at": "2026-11-01T16:08:23",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1562,8 +1529,8 @@
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:12:16",
+      "started_at": "2026-11-01T16:06:28",
+      "finished_at": "2026-11-01T16:06:58",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1576,8 +1543,8 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:12:26",
+      "started_at": "2026-11-01T16:06:28",
+      "finished_at": "2026-11-01T16:07:29",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -1590,8 +1557,8 @@
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-11-01T04:11:39",
-      "finished_at": "2026-11-01T04:12:35",
+      "started_at": "2026-11-01T16:06:28",
+      "finished_at": "2026-11-01T16:07:26",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 15,
@@ -1611,15 +1578,15 @@
       "refresh_interval_hours": 24
     },
     "Centro Cultural Gabriela Mistral (GAM)": {
-      "last_checked_at": "2026-11-01T04:12:37",
-      "last_success_at": "2026-11-01T04:12:37",
+      "last_checked_at": "2026-11-01T16:07:18",
+      "last_success_at": "2026-11-01T16:07:18",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Centro Cultural La Moneda": {
-      "last_checked_at": "2026-11-01T04:11:45",
-      "last_success_at": "2026-11-01T04:11:45",
+      "last_checked_at": "2026-11-01T16:07:26",
+      "last_success_at": "2026-11-01T16:07:26",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1632,42 +1599,45 @@
       "refresh_interval_hours": 24
     },
     "Matucana 100": {
-      "last_checked_at": "2026-11-01T04:12:07",
-      "last_success_at": "2026-11-01T04:12:07",
+      "last_checked_at": "2026-11-01T16:06:46",
+      "last_success_at": "2026-11-01T16:06:46",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Parque Cultural de Valparaíso": {
-      "last_checked_at": "2026-11-01T04:13:12",
-      "last_success_at": "2026-11-01T04:13:12",
+      "last_checked_at": "2026-11-01T16:08:23",
+      "last_success_at": "2026-11-01T16:08:23",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Santiago": {
-      "last_checked_at": "2026-11-01T04:12:16",
-      "last_success_at": "2026-11-01T04:12:16",
+      "last_checked_at": "2026-11-01T16:06:58",
+      "last_success_at": "2026-11-01T16:06:58",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Temuco": {
-      "last_checked_at": "2026-11-01T04:12:26",
-      "last_success_at": "2026-11-01T04:12:26",
+      "last_checked_at": "2026-11-01T16:07:29",
+      "last_success_at": "2026-11-01T16:07:29",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Regional del Maule": {
-      "last_checked_at": "2026-11-01T04:12:35",
-      "last_success_at": "2026-11-01T04:12:35",
+      "last_checked_at": "2026-11-01T16:07:26",
+      "last_success_at": "2026-11-01T16:07:26",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     }
   },
-  "skipped_by_cadence": [],
+  "skipped_by_cadence": [
+    "ChileCultura (Ministerio de las Culturas)",
+    "Agenda Cultural del Ministerio de las Culturas"
+  ],
   "possible_events": [
     {
       "title": "Domingo 1 de noviembre – 12:00 horas /",
@@ -3791,6 +3761,12 @@
       "url": "https://ticketplus.cl/events/lavina-yelb-lanza-resorte-remoto-en-vivo",
       "domain": "ticketplus.cl",
       "found_on": "https://www.m100.cl/programacion/musica/lavina-yelb-lanza-resorte-remoto-en-vivo/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://www.cultura.gob.cl/",
+      "domain": "www.cultura.gob.cl",
+      "found_on": "https://www.m100.cl/",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]
