@@ -91,6 +91,8 @@
     if (themes.indexOf(preference) < 0) preference = "light";
     root.dataset.themePreference = preference;
     root.dataset.theme = preference === "system" ? (systemTheme.matches ? "dark" : "light") : preference;
+    var themeMeta = d.querySelector('meta[name="theme-color"]');
+    if (themeMeta) themeMeta.setAttribute("content", root.dataset.theme === "dark" ? "#111315" : "#E9E8E2");
     if (themeSelect) themeSelect.value = preference;
     if (themeToggle) {
       var label = {system: "automático", light: "claro", dark: "oscuro"};
