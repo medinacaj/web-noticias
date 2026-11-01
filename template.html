@@ -64,8 +64,8 @@
     --header-bg:var(--surface);--header-rule:var(--rule);
     --action-theme:#4A3E8A;--action-search:#4A3E8A;--action-view:#4A3E8A;--action-saved:#4A3E8A;--action-menu:#4A3E8A;
     --space-section:32px; --radius-card:17px; --motion-card:.2s;
-    --card-shadow:0 1px 2px rgba(16,15,18,.025);
-    --card-shadow-hover:0 8px 24px rgba(16,15,18,.08);
+    --card-shadow:0 4px 16px rgba(16,15,18,.105);
+    --card-shadow-hover:0 10px 27px rgba(16,15,18,.16);
     --serif:var(--sans);
     --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     color-scheme:light;
@@ -757,6 +757,12 @@
   :root[data-theme="dark"]{--navy-dark:#121116;--red:#FF907F;--paper:#121116;--surface:#1B1921;--ink:#FBFAFF;--muted:#D0CCD9;--rule:#554D64;--strong:#D9CFFA;--card-bg:#383441;--card-ink:#FBFAFF;--card-muted:#D0CCD9;--card-rule:#6A607C;--card-link:#D9CFFA;--c-nacional:#FF907F;--c-internacional:#94B9E4;--c-economia:#93CDB5;--c-tecnologia:#C7B2E8;--c-deportes:#F2BE86;--c-cultura:#E7ACD1;--c-agenda:#E6C773;--callout-bg:#30283F;--callout-ink:#F0EBFF;--callout-muted:#D0CCD9;--callout-rule:#8D6FDE;--signature-bg:#FBFAFF;--signature-ink:#100F12;--signature-muted:#65646E;--wash:#30283F;color-scheme:dark;}
   :root[data-theme="dark"] :is(.cat-regiones,.cat-politica,.cat-medioambiente,.cat-salud-ciencia){--cat:var(--cat-b);}
   :root[data-theme="dark"]{--action-theme:#D9CFFA;--action-search:#D9CFFA;--action-view:#D9CFFA;--action-saved:#D9CFFA;--action-menu:#D9CFFA;}
+  /* En superficies oscuras, una sombra negra tenue desaparece: aumentar
+     profundidad sin añadir bordes brillantes ni alterar tamaños de tarjetas. */
+  :root[data-theme="dark"]{
+    --card-shadow:0 6px 20px rgba(0,0,0,.36);
+    --card-shadow-hover:0 11px 30px rgba(0,0,0,.48);
+  }
   @media (max-width:1023px){
     :root{--header-height:56px;}
     .bar-inner{flex-wrap:nowrap;align-items:center;padding-top:0;padding-bottom:0;}
