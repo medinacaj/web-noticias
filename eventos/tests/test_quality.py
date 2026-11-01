@@ -10,6 +10,17 @@ class QualityReviewTests(unittest.TestCase):
         self.assertIsNotNone(review_reason(
             {"title":"Circo en Mall Cenco Florida"},
             {"source_type":"ticketing","commune":None,"radar_only":False}))
+    def test_national_ticketing_with_explicit_commune_and_biobio_region_allowed(self):
+        self.assertIsNone(review_reason(
+            {"title": "Festival de jazz", "ticketing_location_verified": True},
+            {"source_type": "ticketing", "commune": None, "radar_only": False}))
+
+    def test_national_ticketing_without_verified_region_still_quarantined(self):
+        self.assertIsNotNone(review_reason(
+            {"title": "Festival de jazz", "commune": "Concepción",
+             "ticketing_location_verified": False},
+            {"source_type": "ticketing", "commune": None, "radar_only": False}))
+
     def test_location_specific_ticketing_allowed(self):
         self.assertIsNone(review_reason(
             {"title":"Concierto de cámara"},

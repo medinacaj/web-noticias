@@ -33,7 +33,29 @@ def report(snapshot, communes, sources):
     coverage = sum(bool(counts[n]) for n in names)
     lines += ["", f"**Cobertura publicada: {coverage}/{len(names)} comunas.**",
               "", "Nota: hay ticketeras y radares nacionales sin comuna confiable; "
-              "sus candidatos no se publican automáticamente."]
+              "sus candidatos no se publican automáticamente.",
+              "", "## Diagnóstico del último rastreo por fuente",
+              "", "La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas "
+              "por cadencia no se cuentan como accesibles en esta ejecución.",
+              "", "| Fuente | Candidatos acumulados | HTTP esta ejecución | Páginas consultadas | Eventos aceptados |",
+              "|---|---:|---|---:|---:|"]
+    pending_sources = Counter(e.get("source") for e in catalog.get("possible_events", [])
+                              if isinstance(e, dict) and e.get("source"))
+    for name, pending in pending_sources.most_common(15):
+        run = runs.get(name)
+        status = str(run.get("http_status") or "Sin respuesta") if run else "No consultada"
+        pages = run.get("pages_fetched", 0) if run else 0
+        accepted = run.get("events_found", 0) if run else 0
+        title = str(name).replace("|", "/").replace("\\n", " ")[:90]
+        lines.append(f"| {title} | {pending} | {status} | {pages} | {accepted} |")
+    skipped = catalog.get("skipped_by_cadence", [])
+    if isinstance(skipped, list) and skipped:
+        lines += ["", f"**Fuentes omitidas por cadencia:** {len(skipped)} (sin petición nueva)."]
+    summary = catalog.get("summary") or {}
+    if isinstance(summary, dict):
+        checked = summary.get("revalidation_attempts", 0)
+        ok = summary.get("revalidated_ok", 0)
+        lines += ["", f"**Revalidación de fichas vigentes:** {ok}/{checked} respuestas satisfactorias."]
     return "\n".join(lines)+"\n"
 
 

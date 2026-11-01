@@ -21,6 +21,8 @@ class CrawlResult:
         self.error = None
         self.resolved_url = None  # dominio confirmado entre url_candidates
         self.feeds = []
+        self.revalidation_attempts = 0
+        self.revalidated_ok = 0
 
 
 def _is_own_site(page, source):
@@ -41,7 +43,7 @@ def resolve_start(source, fetcher, timeout):
     return None, last
 
 
-def crawl(source, communes, fetcher=fetch, ref=None):
+def crawl(source, communes, fetcher=fetch, ref=None, prior_event_urls=()):
     res = CrawlResult()
     parser = PARSERS.get(source.get("parser") or "generic", generic_events.extract)
     start = source["url"]
@@ -62,9 +64,13 @@ def crawl(source, communes, fetcher=fetch, ref=None):
     # antes de revisar eventos enlazados en la portada del recinto.
     sitemap_urls = (event_urls_from_sitemap(start, fetcher=fetcher, limit=max_pages, timeout=timeout)
                     if source.get("deep_crawl") else [])
+    prior_urls = [u for u in prior_event_urls if u != start and same_site(u, start)][:4]
     while queue and res.pages < max_pages:
         url, depth = queue.pop(0)
         page = first if url == start and first is not None else fetcher(url, timeout=timeout)
+        if url in prior_urls:
+            res.revalidation_attempts += 1
+            res.revalidated_ok += bool(page.ok)
         if url == start:
             res.http_status = page.status
             if not page.ok:
@@ -90,6 +96,14 @@ def crawl(source, communes, fetcher=fetch, ref=None):
                 if host.endswith(".cl") and any(h in low for h in CANDIDATE_HINTS):
                     res.candidates.append((link, host, url, "Enlace externo con pinta de agenda/eventos"))
         if url == start:
+            # Tres enlaces recientes + hasta cuatro fichas anteriormente verificadas;
+            # después las demás novedades y por último el sitemap histórico.
+            urgent = []
+            for candidate in prior_urls:
+                if candidate not in seen:
+                    seen.add(candidate)
+                    urgent.append((candidate, 1))
+            queue[3:3] = urgent
             for candidate in sitemap_urls:
                 if candidate not in seen and same_site(candidate, start):
                     seen.add(candidate)

@@ -11,7 +11,7 @@ class CoverageReportTests(unittest.TestCase):
             (p/"snapshot.json").write_text(json.dumps({
                 "generated_at":"2026-10-18",
                 "events":[{"commune":"Concepción"}],
-                "possible_events":[{"commune":"Florida"},{"commune":"Florida"}],
+                "possible_events":[{"commune":"Florida","source":"Fuente externa"},{"commune":"Florida","source":"Fuente externa"}],
                 "runs":[{"source_name":"Municipal", "ok":1, "http_status":200}]
             }),encoding="utf8")
             (p/"communes.json").write_text(json.dumps({
@@ -23,6 +23,9 @@ class CoverageReportTests(unittest.TestCase):
             result=report(p/"snapshot.json",p/"communes.json",p/"sources.json")
             self.assertIn("Cobertura publicada: 1/2 comunas",result)
             self.assertIn("| Florida | 0 | 0 | 0 | 2 |",result)
+            self.assertIn("Diagnóstico del último rastreo por fuente", result)
+            self.assertIn("No consultada", result)
+            self.assertIn("Revalidación de fichas vigentes", result)
 
 if __name__=="__main__":
     unittest.main()

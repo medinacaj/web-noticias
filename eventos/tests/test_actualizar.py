@@ -84,6 +84,38 @@ class ActualizarTests(unittest.TestCase):
         self.assertEqual(src["Teatro Demo"]["notes"].count("Verificada en vivo"), 1)
         self.assertEqual(src["Caída"]["notes"].count("falló"), 1)
 
+    def test_rapid_second_run_keeps_event_and_fresh_http_evidence(self):
+        self.assertEqual(self.run_once(), 0)
+        with open(self.crawled, encoding="utf-8") as f:
+            previous = json.load(f)
+        self.assertIn("source_state", previous)
+        self.assertIn("Teatro Demo", previous["source_state"])
+        self.assertEqual(previous["source_state"]["Teatro Demo"]["last_http_status"], 200)
+        self.assertEqual(self.run_once(), 0)
+        with open(self.crawled, encoding="utf-8") as f:
+            after = json.load(f)
+        self.assertEqual([e["title"] for e in after["events"]], ["La Negra Ester"])
+        self.assertEqual(after["summary"]["sources_attempted"], len(after["runs"]))
+        self.assertGreater(after["summary"]["sources_attempted"], 0)
+        self.assertTrue(any(r["ok"] for r in after["runs"]))
+        self.assertEqual(after["source_state"]["Teatro Demo"]["last_http_status"], 200)
+
+    def test_skipped_source_status_reports_cached_http_as_previous(self):
+        self.assertEqual(self.run_once(), 0)
+        with open(self.crawled, encoding="utf-8") as file:
+            state = json.load(file)["source_state"]
+        actualizar.update_sources_file(
+            self.sources, [], source_state=state, skipped=["Teatro Demo", "Caída"])
+        with open(self.sources, encoding="utf-8") as file:
+            statuses = {source["name"]: source for source in json.load(file)["sources"]}
+        self.assertIn("Omitida por cadencia", statuses["Teatro Demo"]["notes"])
+        self.assertTrue(statuses["Teatro Demo"]["verified_live"])
+        self.assertEqual(statuses["Teatro Demo"]["last_live_check"]["http_status"], 200)
+        self.assertEqual(statuses["Teatro Demo"]["last_live_check"]["at"],
+                         state["Teatro Demo"]["last_checked_at"])
+        self.assertFalse(statuses["Caída"]["verified_live"])
+        self.assertEqual(statuses["Caída"]["last_live_check"]["http_status"], 404)
+
     def test_app_loads_snapshot_idempotently(self):
         self.run_once()
         conn = memory_db()

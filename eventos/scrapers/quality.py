@@ -21,5 +21,7 @@ def review_reason(event, source):
     if source.get("radar_only"):
         return "Fuente radar: requiere validación manual antes de publicación"
     if source.get("source_type") == "ticketing" and not source.get("commune"):
-        return "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
+        if not event.get("ticketing_location_verified"):
+            return ("Ticketera nacional: falta coincidencia explícita de comuna "
+                    "y región del Biobío en los datos estructurados del recinto")
     return None

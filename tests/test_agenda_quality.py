@@ -16,6 +16,8 @@ NOW = datetime(2026, 11, 1, 12, tzinfo=timezone.utc)
 def payload():
     return {
         "generated_at": "2026-11-01T08:00:00",
+        "skipped_by_cadence": ["Radar Regional"],
+        "summary": {"revalidation_attempts": 2, "revalidated_ok": 1},
         "runs": [
             {"source_name": "Teatro A", "ok": 1, "http_status": 200},
             {"source_name": "Teatro B", "ok": 1, "http_status": 200},
@@ -44,6 +46,8 @@ class AgendaQualityTests(unittest.TestCase):
                 encoding="utf-8")
             report = coverage_summary(payload(), TODAY, communes_path=communes)
         self.assertEqual((report["attempted"], report["responded"]), (3, 2))
+        self.assertEqual(report["skipped"], 1)
+        self.assertEqual((report["revalidation_attempts"], report["revalidated_ok"]), (2, 1))
         self.assertEqual((report["events"], report["pending"]), (1, 3))
         self.assertEqual((report["communes_covered"], report["communes_total"]), (1, 3))
         self.assertEqual(set(report["missing"]), {"Tomé", "Hualpén"})
@@ -61,11 +65,16 @@ class AgendaQualityTests(unittest.TestCase):
         self.assertIn("<details", html)
         self.assertIn("Cobertura y calidad de la agenda", html)
         self.assertIn("Fuentes que respondieron", html)
+        self.assertNotIn("Fuentes omitidas por cadencia", html)
         self.assertIn("Candidatos guardados para revisión", html)
         self.assertNotIn("<script>", html)
         self.assertIn("&lt;script&gt;", html)
         self.assertNotIn("<article", html)
         self.assertNotIn("<time", html)
+        richer = render_coverage({**coverage, "skipped": 2,
+                                  "revalidation_attempts": 3, "revalidated_ok": 1})
+        self.assertIn("Fuentes omitidas por cadencia", richer)
+        self.assertIn("Fichas previas revalidadas", richer)
         page = render_agenda([], NOW, coverage=coverage)
         self.assertIn('id="cat-agenda"', page)
         self.assertIn("0 eventos", page)

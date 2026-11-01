@@ -43,3 +43,30 @@ El código lee exclusivamente recursos públicos admitidos; no elude autenticaci
 bloqueos 403 ni restricciones de acceso. Ningún evento sin evidencia suficiente
 se publica automáticamente. Los reportes indican fallos de rastreo, **no**
 incumplimientos de las entidades citadas. Jurisdicción editorial: Chile.
+
+## Fase 2: cadencia y revalidación de eventos vigentes
+
+- Cada ejecución del workflow sigue ocurriendo según su cron actual: una vez por
+  día y al fusionar cambios en `eventos/`. Dentro de una ejecución, el motor
+  aplica cadencias **por fuente**. La ventana predeterminada es 12 horas para
+  recintos y ticketeras; 24 para otras fuentes y municipalidades; 48 para
+  radares. Se pueden declarar valores de 6 a 168 horas con
+  `refresh_interval_hours` en la configuración de fuentes. Una ventana de
+  12 horas **no provoca dos ejecuciones diarias**.
+- El último intento, éxito y HTTP de cada fuente se guardan en
+  `source_state` dentro de `events-data`. Omitir una fuente por cadencia no
+  equivale a volver a verificarla. La opción `--only` y el nuevo `--force`
+  pasan por alto la cadencia en ejecuciones manuales.
+- Una nueva corrida activada muy pronto después de otra sondea hasta tres
+  fuentes adicionales si, de lo contrario, no se comprobaría ninguna.
+  `check_snapshot.py` sigue exigiendo al menos una respuesta HTTP real 2xx.
+- Hasta cuatro URL HTTPS de fichas **ya publicadas** y aún vigentes por fuente
+  se vuelven a revisar aunque no aparezcan en portada, dentro del presupuesto
+  normal de páginas rastreadas. No se vuelven a visitar candidatos sin validar.
+  El historial de cambios lo conserva `db.py`; las páginas caídas no se
+  consideran canceladas automáticamente.
+- En carteleras nacionales sin comuna fija, los eventos JSON-LD se publican
+  solo cuando `location.address.addressLocality` coincide exactamente con
+  una comuna registrada y `addressRegion` declara Biobío. Si hay homónimos,
+  dirección insuficiente o una región distinta, permanecen en revisión.
+  No se interpreta como autorización para copiar contenidos de terceros.
