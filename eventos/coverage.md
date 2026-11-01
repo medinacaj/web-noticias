@@ -1,6 +1,6 @@
 # Cobertura verificada · Eventos Región del Biobío
 
-Snapshot: `2026-11-01T18:52:19`
+Snapshot: `2026-11-01T18:55:11`
 
 La cobertura vigente cuenta solo eventos de `events` con fecha final igual o posterior al día de revisión en Chile y no cancelados. El snapshot puede conservar hasta 30 días de eventos históricos. HTTP 2xx y candidatos no acreditan eventos verificados.
 
