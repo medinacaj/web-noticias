@@ -1,6 +1,6 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-01T18:55:11",
+  "generated_at": "2026-11-01T19:09:13",
   "summary": {
     "sources_attempted": 3,
     "sources_ok": 3,
@@ -39,7 +39,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T18:55:11",
+      "discovered_at": "2026-11-01T19:09:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -51,7 +51,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T18:55:11"
+          "seen_at": "2026-11-01T19:09:13"
         }
       ],
       "changes": []
@@ -78,7 +78,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://images.ligup2.com/eyJidWNrZXQiOiJsaWd1cC12MiIsImtleSI6Im5hY2ltaWVudG8vcGhvdG9zLzc5MjkyX3RhbGxlcl9kZV9jYWxlc3RlbmlhXzIwMjZfd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzYyLCJoZWlnaHQiOjI4MywiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsfX0=",
-      "discovered_at": "2026-11-01T18:55:11",
+      "discovered_at": "2026-11-01T19:09:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -90,7 +90,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T18:55:11"
+          "seen_at": "2026-11-01T19:09:13"
         }
       ],
       "changes": []
@@ -100,8 +100,8 @@
     {
       "source_name": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "started_at": "2026-11-01T18:54:29",
-      "finished_at": "2026-11-01T18:55:11",
+      "started_at": "2026-11-01T19:08:30",
+      "finished_at": "2026-11-01T19:09:13",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -114,8 +114,8 @@
     {
       "source_name": "Biobío Cultura (Seremi) — RSS",
       "source_url": "https://www.cultura.gob.cl/feed/",
-      "started_at": "2026-11-01T18:54:29",
-      "finished_at": "2026-11-01T18:54:31",
+      "started_at": "2026-11-01T19:08:30",
+      "finished_at": "2026-11-01T19:08:32",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -128,8 +128,8 @@
     {
       "source_name": "Corcudec (Teatro UdeC)",
       "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-11-01T18:54:29",
-      "finished_at": "2026-11-01T18:54:38",
+      "started_at": "2026-11-01T19:08:30",
+      "finished_at": "2026-11-01T19:08:40",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
@@ -142,22 +142,22 @@
   ],
   "source_state": {
     "BioBioChile — Región del Biobío": {
-      "last_checked_at": "2026-11-01T18:55:11",
-      "last_success_at": "2026-11-01T18:55:11",
+      "last_checked_at": "2026-11-01T19:09:13",
+      "last_success_at": "2026-11-01T19:09:13",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Biobío Cultura (Seremi) — RSS": {
-      "last_checked_at": "2026-11-01T18:54:31",
-      "last_success_at": "2026-11-01T18:54:31",
+      "last_checked_at": "2026-11-01T19:08:32",
+      "last_success_at": "2026-11-01T19:08:32",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Corcudec (Teatro UdeC)": {
-      "last_checked_at": "2026-11-01T18:54:38",
-      "last_success_at": "2026-11-01T18:54:38",
+      "last_checked_at": "2026-11-01T19:08:40",
+      "last_success_at": "2026-11-01T19:08:40",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -583,66 +583,273 @@
   ],
   "possible_events": [
     {
-      "title": "Circo Pastelito y Tachuela Chico en Mall Cenco Florida",
-      "raw_text": "Compra tus entradas para Circo Pastelito y Tachuela Chico en PuntoTicket.com",
-      "date": "2026-11-01",
-      "commune": "Florida",
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/circo-pastelito-festival-de-circo?utm_medium=organic&utm_source=microformat",
-      "reason": "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
-    },
-    {
-      "title": "Alex Serra en Club Chocolate, Barrio Bellavista",
-      "raw_text": "Club Chocolate, Barrio Bellavista Ernesto Pinto Lagarrigue 192, Barrio Bellavista, Recoleta Recoleta",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/alex-serra-club-chocolate-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Dillom en Cúpula Parque O'Higgins",
-      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/FNA387?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Domingo 1 de noviembre | 16:30 horas:",
-      "raw_text": "Domingo 1 de noviembre | 16:30 horas:",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/24/desde-talleres-en-vivo-hasta-la-hora-del-cuento-revisa-la-completa-programacion-del-pabellon-cultural-de-la-expo-quillota-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Universidad Católica vs. Universidad de Chile en Claro Arena",
-      "raw_text": "Claro Arena Camino Las Flores 13000, Las Condes Las Condes",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/universidad-catolica-vs-udechile-ligaprimera-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Ante riesgo de marea roja: Gobierno declara emergencia preventiva en 15 regiones del país",
-      "raw_text": "El Gobierno declaró emergencia preventiva en 15 regiones del país ante el riesgo de marea roja, es decir, floraciones de algas nocivas. Esta medida se extenderá desde el 1 de noviembre de 2026 hasta el 30 de junio de 2027.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/ciudad/2026/10/27/emergencia-preventiva-floraciones-algales-nocivas.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "Documentos Perdidos",
       "raw_text": "El Gobierno declaró emergencia preventiva en 15 regiones por la amenaza de floraciones algales nocivas o marea roja. La medida regirá entre el 1 de noviembre de 2026 y el 30 de junio de 2027, y busca reforzar el monitoreo y la coordinación ante posibles episodios asociados al fenómeno de El Niño. El anuncio se realizó tras detectarse marea roja en Bahía Terao, en Chonchi, Chiloé.",
       "date": "2026-11-01",
       "commune": null,
       "source": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/27/gobierno-declara-emergencia-preventiva-en-15-regiones-ante-amenaza-de-marea-roja.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "¿Y el 1 de noviembre? Este miércoles 1 de noviembre, en todo Chile y gran parte del mundo se celebra el feriado religioso llamado Día de Todos los Santos, una jornada en que los vivos homenajean a los fallecidos. Al menos en nuestro país, esta jornada suele congregar a miles de personas en los cementerios a lo largo de todo el territorio, quienes llegan para recordar a familiares, amigos y toros.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "Mariah Carey dio inicio a la temporada navideña el 1 de noviembre con un video que mezcló Halloween, punk rock y Navidad. La cantante apareció con estética gótica interpretando «Hermit» y, al llegar la medianoche, lanzó su clásico “It’s tiiiiiime”. Luego cambió a un atuendo rojo sobre un árbol gigante mientras sonaba «All I Want for Christmas Is You». La “descongelación” es una tradición viral de la artista, vinculada a su éxito de 1994.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "Y aunque la celebración de este año ya terminó, Klum parece no tomarse demasiado descanso: en conversación con Vogue aseguró que el 1 de noviembre ya comienza a reunir ideas para la siguiente edición.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 00:09",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 00:09",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 01:43",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 01:43",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 06:16",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 06:16",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 07:20",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 07:20",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 07:58",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 07:58",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 09:00",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 09:00",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 09:56",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 09:56",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 10:45",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 10:45",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 11:51",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 11:51",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 12:16",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 12:16",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 12:55",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 12:55",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 13:22",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 13:22",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 13:50",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 13:50",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 14:39",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 14:39",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 15:41",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 15:41",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 00:09",
+      "raw_text": "Domingo 01 noviembre de 2026 | 00:09",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/jennifer-lawrence-denuncia-que-hubo-gente-en-el-set-durante-escena-de-desnudo-con-a-robert-pattinson.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 07:58",
+      "raw_text": "Domingo 01 noviembre de 2026 | 07:58",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/mauricio-pinilla-enfrenta-seis-demandas-de-primus-capital-por-deudas-que-superan-los-1-600-millones.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 09:00",
+      "raw_text": "Domingo 01 noviembre de 2026 | 09:00",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 10:45",
+      "raw_text": "Domingo 01 noviembre de 2026 | 10:45",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 11:51",
+      "raw_text": "Domingo 01 noviembre de 2026 | 11:51",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/protagonistas-del-iconico-videoclip-crazy-se-reencontraron-para-presentar-el-regreso-de-aerosmith.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 12:16",
+      "raw_text": "Domingo 01 noviembre de 2026 | 12:16",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 12:55",
+      "raw_text": "Domingo 01 noviembre de 2026 | 12:55",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/martha-stewart-la-guru-estadounidense-del-hogar-borra-polemica-foto-de-halloween-tras-criticas.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 13:22",
+      "raw_text": "Domingo 01 noviembre de 2026 | 13:22",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/01/motosierra-en-la-tv-chilena-otro-programa-sale-del-aire-y-deja-a-varios-rostros-sin-pantalla.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -655,6 +862,24 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Ante riesgo de marea roja: Gobierno declara emergencia preventiva en 15 regiones del país",
+      "raw_text": "El Gobierno declaró emergencia preventiva en 15 regiones del país ante el riesgo de marea roja, es decir, floraciones de algas nocivas. Esta medida se extenderá desde el 1 de noviembre de 2026 hasta el 30 de junio de 2027.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "Diario Concepción — Cultura",
+      "source_url": "https://www.diarioconcepcion.cl/ciudad/2026/10/27/emergencia-preventiva-floraciones-algales-nocivas.html",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 1 de noviembre | 16:30 horas:",
+      "raw_text": "Domingo 1 de noviembre | 16:30 horas:",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/24/desde-talleres-en-vivo-hasta-la-hora-del-cuento-revisa-la-completa-programacion-del-pabellon-cultural-de-la-expo-quillota-2026/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "Gobierno se anticipa a riesgos de marea roja y declara emergencia preventiva en la Región de Valparaíso",
       "raw_text": "La decisión, que regirá entre el 1 de noviembre de 2026 y el 30 de junio de 2027, permitirá fortalecer la preparación y coordinación de las instituciones responsables de enfrentar este fenómeno, reforzando el monitoreo, el intercambio de información y la capacidad de respuesta ante eventuales contingencias que pudieran afectar la salud de las personas, los ecosistemas y las actividades económicas vinculadas al mar.",
       "date": "2026-11-01",
@@ -662,6 +887,60 @@
       "source": "G5 Noticias",
       "source_url": "https://g5noticias.cl/2026/10/30/gobierno-se-anticipa-a-riesgos-de-marea-roja-y-declara-emergencia-preventiva-en-la-region-de-valparaiso/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Feria de las Flores reúne a 16 productores en la Plaza de Armas de Yumbel",
+      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "La Tribuna (Los Ángeles)",
+      "source_url": "https://www.latribuna.cl/economia/2026/10/31/feria-de-las-flores-reune-a-16-productores-en-la-plaza-de-armas-de-yumbel.html",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "feria de las flores",
+      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "La Tribuna (Los Ángeles)",
+      "source_url": "https://www.latribuna.cl/tag/feria-de-las-flores/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Alex Serra en Club Chocolate, Barrio Bellavista",
+      "raw_text": "Club Chocolate, Barrio Bellavista Ernesto Pinto Lagarrigue 192, Barrio Bellavista, Recoleta Recoleta",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/alex-serra-club-chocolate-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Circo Pastelito y Tachuela Chico en Mall Cenco Florida",
+      "raw_text": "Compra tus entradas para Circo Pastelito y Tachuela Chico en PuntoTicket.com",
+      "date": "2026-11-01",
+      "commune": "Florida",
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/circo-pastelito-festival-de-circo?utm_medium=organic&utm_source=microformat",
+      "reason": "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
+    },
+    {
+      "title": "Dillom en Cúpula Parque O'Higgins",
+      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/FNA387?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Universidad Católica vs. Universidad de Chile en Claro Arena",
+      "raw_text": "Claro Arena Camino Las Flores 13000, Las Condes Las Condes",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/universidad-catolica-vs-udechile-ligaprimera-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Domingo 01 de noviembre",
@@ -871,42 +1150,6 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Domingo 01 Noviembre, 2026 | 00:09",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 00:09",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 00:09",
-      "raw_text": "Domingo 01 noviembre de 2026 | 00:09",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/jennifer-lawrence-denuncia-que-hubo-gente-en-el-set-durante-escena-de-desnudo-con-a-robert-pattinson.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Feria de las Flores reúne a 16 productores en la Plaza de Armas de Yumbel",
-      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/economia/2026/10/31/feria-de-las-flores-reune-a-16-productores-en-la-plaza-de-armas-de-yumbel.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "feria de las flores",
-      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/tag/feria-de-las-flores/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "Sun, 01 Nov 2026 03:44:57 +0000",
       "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
       "date": "2026-11-01",
@@ -1105,264 +1348,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Documentos Perdidos",
-      "raw_text": "¿Y el 1 de noviembre? Este miércoles 1 de noviembre, en todo Chile y gran parte del mundo se celebra el feriado religioso llamado Día de Todos los Santos, una jornada en que los vivos homenajean a los fallecidos. Al menos en nuestro país, esta jornada suele congregar a miles de personas en los cementerios a lo largo de todo el territorio, quienes llegan para recordar a familiares, amigos y toros.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 14:39",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 14:39",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 09:56",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 09:56",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 07:20",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 06:16",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 06:16",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 13:50",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 13:50",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 13:22",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 13:22",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 12:55",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 12:55",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 12:16",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 12:16",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 11:51",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 11:51",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 10:45",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 10:45",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 09:00",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 07:58",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 07:58",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 07:20",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 01:43",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 13:22",
-      "raw_text": "Domingo 01 noviembre de 2026 | 13:22",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/01/motosierra-en-la-tv-chilena-otro-programa-sale-del-aire-y-deja-a-varios-rostros-sin-pantalla.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 12:55",
-      "raw_text": "Domingo 01 noviembre de 2026 | 12:55",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/martha-stewart-la-guru-estadounidense-del-hogar-borra-polemica-foto-de-halloween-tras-criticas.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 12:16",
-      "raw_text": "Domingo 01 noviembre de 2026 | 12:16",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "Mariah Carey dio inicio a la temporada navideña el 1 de noviembre con un video que mezcló Halloween, punk rock y Navidad. La cantante apareció con estética gótica interpretando «Hermit» y, al llegar la medianoche, lanzó su clásico “It’s tiiiiiime”. Luego cambió a un atuendo rojo sobre un árbol gigante mientras sonaba «All I Want for Christmas Is You». La “descongelación” es una tradición viral de la artista, vinculada a su éxito de 1994.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 11:51",
-      "raw_text": "Domingo 01 noviembre de 2026 | 11:51",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/protagonistas-del-iconico-videoclip-crazy-se-reencontraron-para-presentar-el-regreso-de-aerosmith.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 10:45",
-      "raw_text": "Domingo 01 noviembre de 2026 | 10:45",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 09:00",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 01:43",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 09:00",
-      "raw_text": "Domingo 01 noviembre de 2026 | 09:00",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "Y aunque la celebración de este año ya terminó, Klum parece no tomarse demasiado descanso: en conversación con Vogue aseguró que el 1 de noviembre ya comienza a reunir ideas para la siguiente edición.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 07:58",
-      "raw_text": "Domingo 01 noviembre de 2026 | 07:58",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/mauricio-pinilla-enfrenta-seis-demandas-de-primus-capital-por-deudas-que-superan-los-1-600-millones.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 15:41",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 15:41",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Edo Caroe en Club San Miguel",
-      "raw_text": "Club San Miguel Llano Subercaseaux 3597, San Miguel San Miguel",
+      "title": "del evento desde el 2 de noviembre.",
+      "raw_text": "del evento desde el 2 de noviembre.",
       "date": "2026-11-02",
       "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/edocaroe-club-san-miguel-noviembre?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Lunes 2 de noviembre a las 19:00 horas",
-      "raw_text": "Lunes 2 de noviembre a las 19:00 horas",
-      "date": "2026-11-02",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/27/autoday-2026-anuncian-evento-de-descuentos-en-vehiculos-como-revisar-las-ofertas.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1375,12 +1366,21 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Teatro UdeC será el telón de 40 proyecciones del 12º Festival BioBioCine",
-      "raw_text": "El tradicional espacio cultural de la Universidad de Concepción recibirá la proyección inaugural del festival, el 2 de noviembre, y también otros filmes en competencia. La entrada es gratuita, previa inscripción virtual.",
+      "title": "Lunes 2 de noviembre a las 19:00 horas",
+      "raw_text": "Lunes 2 de noviembre a las 19:00 horas",
       "date": "2026-11-02",
-      "commune": "Concepción",
-      "source": "Noticias UdeC",
-      "source_url": "https://noticias.udec.cl/teatro-udec-sera-el-telon-de-40-proyecciones-del-12o-festival-biobiocine/",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
+      "raw_text": "Del 02 al 07 de noviembre, la 12ª edición del Festival Internacional BioBioCine desplegará una programación de cine nacional e internacional, retrospectivas, muestras especiales, experiencias performativas y actividades de encuentro. Todas las funciones y actividades serán con entrada liberada.",
+      "date": "2026-11-02",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1393,12 +1393,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "del evento desde el 2 de noviembre.",
-      "raw_text": "del evento desde el 2 de noviembre.",
+      "title": "Teatro UdeC será el telón de 40 proyecciones del 12º Festival BioBioCine",
+      "raw_text": "El tradicional espacio cultural de la Universidad de Concepción recibirá la proyección inaugural del festival, el 2 de noviembre, y también otros filmes en competencia. La entrada es gratuita, previa inscripción virtual.",
       "date": "2026-11-02",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/27/autoday-2026-anuncian-evento-de-descuentos-en-vehiculos-como-revisar-las-ofertas.shtml",
+      "commune": "Concepción",
+      "source": "Noticias UdeC",
+      "source_url": "https://noticias.udec.cl/teatro-udec-sera-el-telon-de-40-proyecciones-del-12o-festival-biobiocine/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1411,31 +1411,13 @@
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "Del 02 al 07 de noviembre, la 12ª edición del Festival Internacional BioBioCine desplegará una programación de cine nacional e internacional, retrospectivas, muestras especiales, experiencias performativas y actividades de encuentro. Todas las funciones y actividades serán con entrada liberada.",
+      "title": "Edo Caroe en Club San Miguel",
+      "raw_text": "Club San Miguel Llano Subercaseaux 3597, San Miguel San Miguel",
       "date": "2026-11-02",
       "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema Puntoticket.",
-      "raw_text": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema Puntoticket.",
-      "date": "2026-11-02",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema",
-      "raw_text": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema",
-      "date": "2026-11-02",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/edocaroe-club-san-miguel-noviembre?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Lunes 02 de noviembre",
@@ -1456,31 +1438,22 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "La feria contará con la participación de 12 emprendedores y estará disponible hasta el 3 de noviembre.",
-      "raw_text": "La feria contará con la participación de 12 emprendedores y estará disponible hasta el 3 de noviembre.",
-      "date": "2026-11-03",
-      "commune": "Coronel",
-      "source": "Municipalidad de Coronel",
-      "source_url": "https://www.coronel.cl/noticias/inauguran-feria-de-emprendedores-de-coronel-en-el-mall-arauco/",
+      "title": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema",
+      "raw_text": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema",
+      "date": "2026-11-02",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "ELECCIÓN \"CGPA JARDIN INFANTIL CECI YANI\"",
-      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
-      "date": "2026-11-03",
-      "commune": "Arauco",
-      "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-cgpa-jardin-infantil-ceci-yani/",
-      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
-    },
-    {
-      "title": "ELECCIÓN «CGPA JARDIN INFANTIL CECI YANI»",
-      "raw_text": "Artículo 21 bis de la ley 19.418. \"La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario […] \\n",
-      "date": "2026-11-03",
-      "commune": "Arauco",
-      "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-cgpa-jardin-infantil-ceci-yani/",
-      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+      "title": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema Puntoticket.",
+      "raw_text": "La preventa exclusiva para clientes Entel o Santander comenzará el lunes 2 de noviembre a las 12:00 horas a través del sistema Puntoticket.",
+      "date": "2026-11-02",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
+      "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
       "title": "Fechas: 3 al 7 de noviembre.",
@@ -1498,15 +1471,6 @@
       "commune": "Concepción",
       "source": "Festival Internacional de Teatro del Biobío (FTB)",
       "source_url": "https://ftb.cl/category/talleres/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Martes 3 de noviembre a las 19:00 horas",
-      "raw_text": "Martes 3 de noviembre a las 19:00 horas",
-      "date": "2026-11-03",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1528,6 +1492,51 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Martes 3 de noviembre a las 19:00 horas",
+      "raw_text": "Martes 3 de noviembre a las 19:00 horas",
+      "date": "2026-11-03",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
+      "raw_text": "El certamen, organizado por el Ministerio de las Culturas a través del Programa Fortalecimiento de la Identidad Cultural Regional, se desarrollará este 3 y 4 de noviembre, a partir de las 10.00 horas, en dependencias del espacio Circo del Sur, ubicado en calle O’Higgins N°655, Punta Arenas. Ambas jornadas son abierta a todo público y con entrada liberada.",
+      "date": "2026-11-03",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/trece-establecimientos-actuaran-en-el-x-encuentro-regional-de-teatro-estudiantil/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "ELECCIÓN \"CGPA JARDIN INFANTIL CECI YANI\"",
+      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
+      "date": "2026-11-03",
+      "commune": "Arauco",
+      "source": "Municipalidad de Arauco",
+      "source_url": "https://muniarauco.cl/evento/eleccion-cgpa-jardin-infantil-ceci-yani/",
+      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+    },
+    {
+      "title": "ELECCIÓN «CGPA JARDIN INFANTIL CECI YANI»",
+      "raw_text": "Artículo 21 bis de la ley 19.418. \"La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario […] \\n",
+      "date": "2026-11-03",
+      "commune": "Arauco",
+      "source": "Municipalidad de Arauco",
+      "source_url": "https://muniarauco.cl/evento/eleccion-cgpa-jardin-infantil-ceci-yani/",
+      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+    },
+    {
+      "title": "La feria contará con la participación de 12 emprendedores y estará disponible hasta el 3 de noviembre.",
+      "raw_text": "La feria contará con la participación de 12 emprendedores y estará disponible hasta el 3 de noviembre.",
+      "date": "2026-11-03",
+      "commune": "Coronel",
+      "source": "Municipalidad de Coronel",
+      "source_url": "https://www.coronel.cl/noticias/inauguran-feria-de-emprendedores-de-coronel-en-el-mall-arauco/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "Martes 03 de noviembre",
       "raw_text": "Martes 03 de noviembre",
       "date": "2026-11-03",
@@ -1543,105 +1552,6 @@
       "commune": null,
       "source": "Radio UdeC",
       "source_url": "https://www.radioudec.cl/un-paseo-por-la-musica/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "El certamen, organizado por el Ministerio de las Culturas a través del Programa Fortalecimiento de la Identidad Cultural Regional, se desarrollará este 3 y 4 de noviembre, a partir de las 10.00 horas, en dependencias del espacio Circo del Sur, ubicado en calle O’Higgins N°655, Punta Arenas. Ambas jornadas son abierta a todo público y con entrada liberada.",
-      "date": "2026-11-03",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/trece-establecimientos-actuaran-en-el-x-encuentro-regional-de-teatro-estudiantil/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "BAILARINAS INCENDIADAS",
-      "raw_text": "BAILARINAS INCENDIADAS Argentina Miércoles 4 de noviembre / 19:30 / Teatro Biobío / Sala de cámara / +12 años Crónicas sobre cinco bailarinas incendiadas por el fuego de las...",
-      "date": "2026-11-04",
-      "commune": "Concepción",
-      "source": "Festival Internacional de Teatro del Biobío (FTB)",
-      "source_url": "https://ftb.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Miércoles 4 de noviembre a las 19:00 horas",
-      "raw_text": "Miércoles 4 de noviembre a las 19:00 horas",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Lokos de Aká celebran 20 años de trayectoria con concierto en Viña del Mar",
-      "raw_text": "La banda iquiqueña se presentará el 4 de noviembre en Journal Viña del Mar, en el marco de una gira que también contempla fechas en Iquique, Santiago y Concepción.",
-      "date": "2026-11-04",
-      "commune": "Concepción",
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/26/lokos-de-aka-celebran-20-anos-de-trayectoria-con-concierto-en-vina-del-mar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/categoria/cultura-y-espectaculos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Miércoles 4 de noviembre",
-      "raw_text": "Miércoles 4 de noviembre",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/personas-mayores-al-estilo-juegos-olimpicos-limache-realizo-inedita-actividad-en-la-pista-atletica/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/hacer-lugar-obras-de-jovenes-de-teleton-ohiggins-llegan-a-la-sala-de-exposiciones-de-la-uoh/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/cuentos-digitales-chilenos-son-reconocidos-en-importante-festival-iberoamericano-con-cuatro-premios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad – G5noticias",
-      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad – G5noticias",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/festival-rara-comienza-el-4-de-noviembre-en-pucon-con-danza-contemporanea-y-actividades-gratuitas-abiertas-a-la-comunidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/festival-rara-comienza-el-4-de-noviembre-en-pucon-con-danza-contemporanea-y-actividades-gratuitas-abiertas-a-la-comunidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Miércoles 4 de noviembre, 18:00 h.",
-      "raw_text": "Miércoles 4 de noviembre, 18:00 h.",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/vuelvo-donde-nunca-estuve-cierra-su-recorrido-con-ultimas-funciones-en-octubre-y-noviembre/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1663,12 +1573,102 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "BAILARINAS INCENDIADAS",
+      "raw_text": "BAILARINAS INCENDIADAS Argentina Miércoles 4 de noviembre / 19:30 / Teatro Biobío / Sala de cámara / +12 años Crónicas sobre cinco bailarinas incendiadas por el fuego de las...",
+      "date": "2026-11-04",
+      "commune": "Concepción",
+      "source": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/categoria/cultura-y-espectaculos/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/27/hacer-lugar-obras-de-jovenes-de-teleton-ohiggins-llegan-a-la-sala-de-exposiciones-de-la-uoh/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/27/cuentos-digitales-chilenos-son-reconocidos-en-importante-festival-iberoamericano-con-cuatro-premios/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/27/festival-rara-comienza-el-4-de-noviembre-en-pucon-con-danza-contemporanea-y-actividades-gratuitas-abiertas-a-la-comunidad/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad – G5noticias",
+      "raw_text": "Festival RARA comienza el 4 de noviembre en Pucón con danza contemporánea y actividades gratuitas abiertas a la comunidad – G5noticias",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/27/festival-rara-comienza-el-4-de-noviembre-en-pucon-con-danza-contemporanea-y-actividades-gratuitas-abiertas-a-la-comunidad/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Lokos de Aká celebran 20 años de trayectoria con concierto en Viña del Mar",
+      "raw_text": "La banda iquiqueña se presentará el 4 de noviembre en Journal Viña del Mar, en el marco de una gira que también contempla fechas en Iquique, Santiago y Concepción.",
+      "date": "2026-11-04",
+      "commune": "Concepción",
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/26/lokos-de-aka-celebran-20-anos-de-trayectoria-con-concierto-en-vina-del-mar/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Miércoles 4 de noviembre",
+      "raw_text": "Miércoles 4 de noviembre",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/27/personas-mayores-al-estilo-juegos-olimpicos-limache-realizo-inedita-actividad-en-la-pista-atletica/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Miércoles 4 de noviembre, 18:00 h.",
+      "raw_text": "Miércoles 4 de noviembre, 18:00 h.",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/27/vuelvo-donde-nunca-estuve-cierra-su-recorrido-con-ultimas-funciones-en-octubre-y-noviembre/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "Obra teatral “Khipu en resistencia” pone el foco en vivencias personales sujetas a desplazamientos migratorios",
       "raw_text": "Reflexionar sobre qué nos acompaña internamente cuando cruzamos una frontera y de qué manera el cuerpo se transforma en un contenedor de recuerdos es el eje central de “Khipu en resistencia”, obra que llegará al Teatro del Parque Cultural de Valparaíso (PCdV) el miércoles 4 de noviembre a las 19:00 horas con entrada liberada.",
       "date": "2026-11-04",
       "commune": null,
       "source": "G5 Noticias",
       "source_url": "https://g5noticias.cl/2026/10/30/obra-teatral-khipu-en-resistencia-pone-el-foco-en-vivencias-personales-sujetas-a-desplazamientos-migratorios/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Miércoles 4 de noviembre a las 19:00 horas",
+      "raw_text": "Miércoles 4 de noviembre a las 19:00 horas",
+      "date": "2026-11-04",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1687,78 +1687,6 @@
       "commune": null,
       "source": "Radio UdeC",
       "source_url": "https://www.radioudec.cl/un-paseo-por-la-musica/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "San Rosendo, noviembre de 2025; Cada 5 de noviembre se Conmemora el Día Internacional de las Personas Cuidadoras, un día para",
-      "raw_text": "San Rosendo, noviembre de 2025; Cada 5 de noviembre se Conmemora el Día Internacional de las Personas Cuidadoras, un día para",
-      "date": "2026-11-05",
-      "commune": "San Rosendo",
-      "source": "Municipalidad de San Rosendo",
-      "source_url": "https://municipalidadsanrosendo.cl/tag/programa-red-local-de-apoyos-y-cuidados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Dr. Manuel Sans Segarra en Teatro Coliseo",
-      "raw_text": "Teatro Coliseo Nataniel Cox 59, Santiago Centro Santiago Centro",
-      "date": "2026-11-05",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/manuel-sans-segarra-chile?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Camilo en Santander Arena",
-      "raw_text": "Santander Arena Beaucheff 1204, Santiago Centro Santiago Centro",
-      "date": "2026-11-05",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/camilo-santander-arena-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Jorge Alís en La Diabla Bar",
-      "raw_text": "La Diabla Bar Carlos Condell 1121, San Felipe San Felipe",
-      "date": "2026-11-05",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/jorge-alis-en-la-diabla-bar?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Jueves 5 de noviembre a las 19:30 horas",
-      "raw_text": "Jueves 5 de noviembre a las 19:30 horas",
-      "date": "2026-11-05",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "Una de las novedades de este año es la denominada “Estación Diseño”, un espacio que se desplegará en el Centro Cultural Gabriela Mistral (GAM), entre el 5 y 15 de noviembre, y que servirá como centro neurálgico del Mes del Diseño. En éste se ofrecerán talleres, charlas, presentaciones y encuentros, desarrollados en colaboración con diversas organizaciones, como ChileDiseño, ChileModa, la Cámara de Diseño Sustentable, escuelas de diseño, VIDEO GAMES CHILE, entre otras.",
-      "date": "2026-11-05",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/mes-del-diseno-2026-revela-su-programacion-con-mas-de-50-actividades-en-ocho-regiones-del-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
-      "raw_text": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
-      "date": "2026-11-05",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
-      "raw_text": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
-      "date": "2026-11-05",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/petorca-suma-nuevo-vehiculo-de-patrullaje-preventivo-para-fortalecer-la-seguridad-municipal-y-de-sus-zonas-rurales/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1789,6 +1717,24 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
+      "raw_text": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
+      "date": "2026-11-05",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
+      "raw_text": "Región de Valparaíso se prepara para simulacro de sismo y tsunami en establecimientos educacionales: será el 5 de noviembre",
+      "date": "2026-11-05",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/27/petorca-suma-nuevo-vehiculo-de-patrullaje-preventivo-para-fortalecer-la-seguridad-municipal-y-de-sus-zonas-rurales/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "FUAS 2027: extienden hasta el 5 de noviembre el plazo para postular a beneficios",
       "raw_text": "FUAS 2027: extienden hasta el 5 de noviembre el plazo para postular a beneficios",
       "date": "2026-11-05",
@@ -1798,13 +1744,67 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mientras que la venta general para el concierto de Pitbull se llevará cabo el jueves 5 de noviembre a las 12:01 horas en el mismo sitio web.",
-      "raw_text": "Mientras que la venta general para el concierto de Pitbull se llevará cabo el jueves 5 de noviembre a las 12:01 horas en el mismo sitio web.",
+      "title": "Jueves 5 de noviembre a las 19:30 horas",
+      "raw_text": "Jueves 5 de noviembre a las 19:30 horas",
       "date": "2026-11-05",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
+      "raw_text": "Una de las novedades de este año es la denominada “Estación Diseño”, un espacio que se desplegará en el Centro Cultural Gabriela Mistral (GAM), entre el 5 y 15 de noviembre, y que servirá como centro neurálgico del Mes del Diseño. En éste se ofrecerán talleres, charlas, presentaciones y encuentros, desarrollados en colaboración con diversas organizaciones, como ChileDiseño, ChileModa, la Cámara de Diseño Sustentable, escuelas de diseño, VIDEO GAMES CHILE, entre otras.",
+      "date": "2026-11-05",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/mes-del-diseno-2026-revela-su-programacion-con-mas-de-50-actividades-en-ocho-regiones-del-pais/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "San Rosendo, noviembre de 2025; Cada 5 de noviembre se Conmemora el Día Internacional de las Personas Cuidadoras, un día para",
+      "raw_text": "San Rosendo, noviembre de 2025; Cada 5 de noviembre se Conmemora el Día Internacional de las Personas Cuidadoras, un día para",
+      "date": "2026-11-05",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/tag/programa-red-local-de-apoyos-y-cuidados/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Camilo en Santander Arena",
+      "raw_text": "Santander Arena Beaucheff 1204, Santiago Centro Santiago Centro",
+      "date": "2026-11-05",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/camilo-santander-arena-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Dr. Manuel Sans Segarra en Teatro Coliseo",
+      "raw_text": "Teatro Coliseo Nataniel Cox 59, Santiago Centro Santiago Centro",
+      "date": "2026-11-05",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/manuel-sans-segarra-chile?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Jorge Alís en La Diabla Bar",
+      "raw_text": "La Diabla Bar Carlos Condell 1121, San Felipe San Felipe",
+      "date": "2026-11-05",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/jorge-alis-en-la-diabla-bar?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Universidad de Chile vs. Antofagasta en Estadio Santa Laura - Universidad SEK",
+      "raw_text": "Estadio Santa Laura - Universidad SEK Julio Martínez Prádanos 1365, Independencia Independencia",
+      "date": "2026-11-05",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/universidad-de-chile-vs-antofagasta-copachile?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Jueves 05 de noviembre",
@@ -1825,66 +1825,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Universidad de Chile vs. Antofagasta en Estadio Santa Laura - Universidad SEK",
-      "raw_text": "Estadio Santa Laura - Universidad SEK Julio Martínez Prádanos 1365, Independencia Independencia",
+      "title": "Mientras que la venta general para el concierto de Pitbull se llevará cabo el jueves 5 de noviembre a las 12:01 horas en el mismo sitio web.",
+      "raw_text": "Mientras que la venta general para el concierto de Pitbull se llevará cabo el jueves 5 de noviembre a las 12:01 horas en el mismo sitio web.",
       "date": "2026-11-05",
       "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/universidad-de-chile-vs-antofagasta-copachile?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "La XVI versión del Festival FTB, se llevará a cabo en la ciudad de Concepción y Chiguayante durante del 6 al 13 de noviembre, realizando",
-      "raw_text": "La XVI versión del Festival FTB, se llevará a cabo en la ciudad de Concepción y Chiguayante durante del 6 al 13 de noviembre, realizando",
-      "date": "2026-11-06",
-      "commune": "Chiguayante",
-      "source": "Festival Internacional de Teatro del Biobío (FTB)",
-      "source_url": "https://ftb.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Alex Manga en Havana Club",
-      "raw_text": "Compra tus entradas para Alex Manga en PuntoTicket.com",
-      "date": "2026-11-06",
-      "commune": "Concepción",
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/alex-manga-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
-    },
-    {
-      "title": "ONEUS en Cúpula Parque O'Higgins",
-      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
-      "date": "2026-11-06",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/KPO010?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "La Hungara en Arena Hipódromo",
-      "raw_text": "Arena Hipódromo Av. Hipodromo Chile 1715, Independencia Independencia",
-      "date": "2026-11-06",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/la-hungara-arena-hipodromo-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Viernes 6 de noviembre a las 19:00 horas",
-      "raw_text": "Viernes 6 de noviembre a las 19:00 horas",
-      "date": "2026-11-06",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
-      "raw_text": "El festival se realizará el 6 y 7 de noviembre en el Museo Regional de La Araucanía. Su directora, Brenda Lizama Farfán, participó como delegada chilena en el 13 Festival Internacional de Teatro Córdoba para la Infancia y la Juventud: FIT Córdoba, Argentina.",
-      "date": "2026-11-06",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/manojo-reunira-artes-escenicas-y-experiencias-de-juego-para-las-infancias-en-temuco/",
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1906,8 +1852,8 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre | TV y Espectáculo | BioBioChile",
-      "raw_text": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre | TV y Espectáculo | BioBioChile",
+      "title": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre",
+      "raw_text": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre",
       "date": "2026-11-06",
       "commune": null,
       "source": "BioBioChile — Región del Biobío",
@@ -1915,8 +1861,8 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre",
-      "raw_text": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre",
+      "title": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre | TV y Espectáculo | BioBioChile",
+      "raw_text": "Diversos artistas y actividades: Teletón 2026 presenta su programación para el 6 y 7 de noviembre | TV y Espectáculo | BioBioChile",
       "date": "2026-11-06",
       "commune": null,
       "source": "BioBioChile — Región del Biobío",
@@ -1933,30 +1879,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Teletón 2026 presenta la programación de sus 27 horas de solidaridad",
-      "raw_text": "A dos semanas del inicio de las tradicionales 27 horas de transmisión televisiva, el equipo realizador de Teletón 2026 presentó la programación oficial de la cruzada solidaria que se llevará a cabo los días 6 y 7 de noviembre, a través de los canales asociados a Anatel. La estructura contemplará cinco bloques temáticos que combinarán espectáculos en el Teatro Teletón, despachos en vivo por todo el país y el cierre masivo en el Estadio Nacional, sumando una meta económica que este año buscará sobrepasar los 44 mil millones de pesos.",
-      "date": "2026-11-06",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/teleton-2026-presenta-la-programacion-de-sus-27-horas-de-solidaridad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "Documentos Perdidos",
       "raw_text": "La audiencia por la denuncia de violencia intrafamiliar de Yamila Reyna contra Américo fue reprogramada para el viernes 6 de noviembre, luego de que el cantante, quien está fuera de Chile, intentara comparecer por Zoom.",
       "date": "2026-11-06",
       "commune": null,
       "source": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/10/29/americo-no-llega-a-audiencia-con-yamila-y-ella-exige-que-sea-presencial-se-me-acabo-la-paciencia.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Programación de Teletón 2026 para el 6 de noviembre",
-      "raw_text": "Programación de Teletón 2026 para el 6 de noviembre",
-      "date": "2026-11-06",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/29/a-una-semana-revisa-toda-la-programacion-y-artistas-que-tendra-la-teleton-2026.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1969,12 +1897,84 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Audiencia entre Yamila Reyna y Américo debió reprogramarse: cantante no llegó presencialmente al tribunal",
-      "raw_text": "Tras los inconvenientes registrados por la ausencia presencial del cantante, el tribunal estableció que la audiencia se realizará el próximo viernes 6 de noviembre, a las 09:30 horas.",
+      "title": "Programación de Teletón 2026 para el 6 de noviembre",
+      "raw_text": "Programación de Teletón 2026 para el 6 de noviembre",
       "date": "2026-11-06",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/audiencia-entre-yamila-reyna-y-americo-debio-reprogramarse-cantante-no-llego-presencialmente-al-tribunal/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/29/a-una-semana-revisa-toda-la-programacion-y-artistas-que-tendra-la-teleton-2026.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Pablo Langlois Prado desplegará instalación “Pinturas Negras: Textos Negros” en Teatro Biobío",
+      "raw_text": "El artista visual, con una trayectoria de casi cuatro décadas en la escena chilena, exhibirá en el hall central una obra site-specific que reúne fragmentos de artículos científicos, poemas, manuales técnicos y cancioneros populares en torno a la palabra negro y sus múltiples significados. Inauguración oficial será el 6 de noviembre.",
+      "date": "2026-11-06",
+      "commune": null,
+      "source": "Diario Concepción — Cultura",
+      "source_url": "https://www.diarioconcepcion.cl/cultura/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "La XVI versión del Festival FTB, se llevará a cabo en la ciudad de Concepción y Chiguayante durante del 6 al 13 de noviembre, realizando",
+      "raw_text": "La XVI versión del Festival FTB, se llevará a cabo en la ciudad de Concepción y Chiguayante durante del 6 al 13 de noviembre, realizando",
+      "date": "2026-11-06",
+      "commune": "Chiguayante",
+      "source": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
+      "raw_text": "El festival se realizará el 6 y 7 de noviembre en el Museo Regional de La Araucanía. Su directora, Brenda Lizama Farfán, participó como delegada chilena en el 13 Festival Internacional de Teatro Córdoba para la Infancia y la Juventud: FIT Córdoba, Argentina.",
+      "date": "2026-11-06",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/manojo-reunira-artes-escenicas-y-experiencias-de-juego-para-las-infancias-en-temuco/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Viernes 6 de noviembre a las 19:00 horas",
+      "raw_text": "Viernes 6 de noviembre a las 19:00 horas",
+      "date": "2026-11-06",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Alex Manga en Havana Club",
+      "raw_text": "Compra tus entradas para Alex Manga en PuntoTicket.com",
+      "date": "2026-11-06",
+      "commune": "Concepción",
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/alex-manga-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
+    },
+    {
+      "title": "La Hungara en Arena Hipódromo",
+      "raw_text": "Arena Hipódromo Av. Hipodromo Chile 1715, Independencia Independencia",
+      "date": "2026-11-06",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/la-hungara-arena-hipodromo-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "ONEUS en Cúpula Parque O'Higgins",
+      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
+      "date": "2026-11-06",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/KPO010?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Teletón 2026 presenta la programación de sus 27 horas de solidaridad",
+      "raw_text": "A dos semanas del inicio de las tradicionales 27 horas de transmisión televisiva, el equipo realizador de Teletón 2026 presentó la programación oficial de la cruzada solidaria que se llevará a cabo los días 6 y 7 de noviembre, a través de los canales asociados a Anatel. La estructura contemplará cinco bloques temáticos que combinarán espectáculos en el Teatro Teletón, despachos en vivo por todo el país y el cierre masivo en el Estadio Nacional, sumando una meta económica que este año buscará sobrepasar los 44 mil millones de pesos.",
+      "date": "2026-11-06",
+      "commune": null,
+      "source": "Radio UdeC",
+      "source_url": "https://www.radioudec.cl/teleton-2026-presenta-la-programacion-de-sus-27-horas-de-solidaridad/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -1996,58 +1996,13 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Pablo Langlois Prado desplegará instalación “Pinturas Negras: Textos Negros” en Teatro Biobío",
-      "raw_text": "El artista visual, con una trayectoria de casi cuatro décadas en la escena chilena, exhibirá en el hall central una obra site-specific que reúne fragmentos de artículos científicos, poemas, manuales técnicos y cancioneros populares en torno a la palabra negro y sus múltiples significados. Inauguración oficial será el 6 de noviembre.",
+      "title": "Audiencia entre Yamila Reyna y Américo debió reprogramarse: cantante no llegó presencialmente al tribunal",
+      "raw_text": "Tras los inconvenientes registrados por la ausencia presencial del cantante, el tribunal estableció que la audiencia se realizará el próximo viernes 6 de noviembre, a las 09:30 horas.",
       "date": "2026-11-06",
       "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura/",
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/29/audiencia-entre-yamila-reyna-y-americo-debio-reprogramarse-cantante-no-llego-presencialmente-al-tribunal/",
       "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "San Rosendo, noviembre de 2023; Comenzando con las actividades del «Mes de los Cuidados» el día 7 de noviembre se",
-      "raw_text": "San Rosendo, noviembre de 2023; Comenzando con las actividades del «Mes de los Cuidados» el día 7 de noviembre se",
-      "date": "2026-11-07",
-      "commune": "San Rosendo",
-      "source": "Municipalidad de San Rosendo",
-      "source_url": "https://municipalidadsanrosendo.cl/tag/programa-red-local-de-apoyos-y-cuidados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 7 de noviembre a las 19:00 horas",
-      "raw_text": "Sábado 7 de noviembre a las 19:00 horas",
-      "date": "2026-11-07",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Primavera De Praga en Cúpula Parque O'Higgins",
-      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
-      "date": "2026-11-07",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/primavera-de-praga-cupula-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Luciano Pereyra en Santander Arena",
-      "raw_text": "Santander Arena Beaucheff 1204, Santiago Centro Santiago Centro",
-      "date": "2026-11-07",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/luciano-pereyra-santander-arena-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "After Piknic en Club Amanda",
-      "raw_text": "Club Amanda Embajador Doussinague 1767, Vitacura Vitacura",
-      "date": "2026-11-07",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/after-piknic-amanda-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Documentos Perdidos",
@@ -2068,15 +2023,6 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "viernes 6 y sábado 7 de noviembre,",
-      "raw_text": "viernes 6 y sábado 7 de noviembre,",
-      "date": "2026-11-07",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/29/a-una-semana-revisa-toda-la-programacion-y-artistas-que-tendra-la-teleton-2026.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "Programación de Teletón 2026 para el 7 de noviembre",
       "raw_text": "Programación de Teletón 2026 para el 7 de noviembre",
       "date": "2026-11-07",
@@ -2086,21 +2032,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Sábado 07 de noviembre",
-      "raw_text": "Sábado 07 de noviembre",
+      "title": "viernes 6 y sábado 7 de noviembre,",
+      "raw_text": "viernes 6 y sábado 7 de noviembre,",
       "date": "2026-11-07",
       "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/musica-a-la-carta/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sábado 07 de noviembre",
-      "raw_text": "Sábado 07 de noviembre",
-      "date": "2026-11-07",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/concierto-matinal/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/29/a-una-semana-revisa-toda-la-programacion-y-artistas-que-tendra-la-teleton-2026.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2110,6 +2047,15 @@
       "commune": null,
       "source": "G5 Noticias",
       "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sábado 7 de noviembre de 2026, de 12:00 a 19:00 horas.",
+      "raw_text": "Sábado 7 de noviembre de 2026, de 12:00 a 19:00 horas.",
+      "date": "2026-11-07",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/30/arbol-de-canciones-musica-teatro-y-talleres-para-volver-a-encontrarnos-en-las-calles-de-valparaiso/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2131,12 +2077,84 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Sábado 7 de noviembre de 2026, de 12:00 a 19:00 horas.",
-      "raw_text": "Sábado 7 de noviembre de 2026, de 12:00 a 19:00 horas.",
+      "title": "Sábado 7 de noviembre a las 19:00 horas",
+      "raw_text": "Sábado 7 de noviembre a las 19:00 horas",
       "date": "2026-11-07",
       "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "San Rosendo, noviembre de 2023; Comenzando con las actividades del «Mes de los Cuidados» el día 7 de noviembre se",
+      "raw_text": "San Rosendo, noviembre de 2023; Comenzando con las actividades del «Mes de los Cuidados» el día 7 de noviembre se",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/tag/programa-red-local-de-apoyos-y-cuidados/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "After Piknic en Club Amanda",
+      "raw_text": "Club Amanda Embajador Doussinague 1767, Vitacura Vitacura",
+      "date": "2026-11-07",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/after-piknic-amanda-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Luciano Pereyra en Santander Arena",
+      "raw_text": "Santander Arena Beaucheff 1204, Santiago Centro Santiago Centro",
+      "date": "2026-11-07",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/luciano-pereyra-santander-arena-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Primavera De Praga en Cúpula Parque O'Higgins",
+      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
+      "date": "2026-11-07",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/primavera-de-praga-cupula-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Sábado 07 de noviembre",
+      "raw_text": "Sábado 07 de noviembre",
+      "date": "2026-11-07",
+      "commune": null,
+      "source": "Radio UdeC",
+      "source_url": "https://www.radioudec.cl/musica-a-la-carta/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sábado 07 de noviembre",
+      "raw_text": "Sábado 07 de noviembre",
+      "date": "2026-11-07",
+      "commune": null,
+      "source": "Radio UdeC",
+      "source_url": "https://www.radioudec.cl/concierto-matinal/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
+      "raw_text": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
+      "date": "2026-11-08",
+      "commune": null,
       "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/30/arbol-de-canciones-musica-teatro-y-talleres-para-volver-a-encontrarnos-en-las-calles-de-valparaiso/",
+      "source_url": "https://g5noticias.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
+      "raw_text": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
+      "date": "2026-11-08",
+      "commune": null,
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/24/programa-construyamos-comunidad-llega-a-su-quinta-version-y-suma-plan-piloto-de-apoyo-a-deportistas/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2158,40 +2176,13 @@
       "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
     },
     {
-      "title": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
-      "raw_text": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
+      "title": "San Rosendo, octubre de 2026; Municipalidad de San Rosendo invita los días sábado 07 y domingo 08 de noviembre en […]",
+      "raw_text": "San Rosendo, octubre de 2026; Municipalidad de San Rosendo invita los días sábado 07 y domingo 08 de noviembre en […]",
       "date": "2026-11-08",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/",
       "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
-      "raw_text": "Pedalea por la cultura: la Cicletada Italiana vuelve el domingo 8 de noviembre a Santiago",
-      "date": "2026-11-08",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/24/programa-construyamos-comunidad-llega-a-su-quinta-version-y-suma-plan-piloto-de-apoyo-a-deportistas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Magika en Mori Parque Arauco - Av. Presidente Kennedy 5413",
-      "raw_text": "Vuelve el asombro al Teatro Mori Después de un exitoso debut, MAGIKA vuelve al Teatro Mori Parque Arauco el próximo 8 de noviembre de 2026, a las 16:00 horas, para sorprender a grandes y pequeños con un espectáculo de magia y grandes ilusiones",
-      "date": "2026-11-08",
-      "commune": "Arauco",
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/Magika-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
-    },
-    {
-      "title": "Reset en Piscina temperada Parque O'higgins",
-      "raw_text": "Piscina temperada Parque O'higgins Parque O'Higgins, Santiago Centro Santiago Centro",
-      "date": "2026-11-08",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/breath-float-noviembre-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Drefquila en Teatro Coliseo",
@@ -2203,6 +2194,15 @@
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
+      "title": "Magika en Mori Parque Arauco - Av. Presidente Kennedy 5413",
+      "raw_text": "Vuelve el asombro al Teatro Mori Después de un exitoso debut, MAGIKA vuelve al Teatro Mori Parque Arauco el próximo 8 de noviembre de 2026, a las 16:00 horas, para sorprender a grandes y pequeños con un espectáculo de magia y grandes ilusiones",
+      "date": "2026-11-08",
+      "commune": "Arauco",
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/Magika-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
+    },
+    {
       "title": "Natural Mystic Festival en Teatro Caupolicán",
       "raw_text": "Teatro Caupolicán San Diego 850, Santiago Centro Santiago Centro",
       "date": "2026-11-08",
@@ -2212,13 +2212,13 @@
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
-      "title": "San Rosendo, octubre de 2026; Municipalidad de San Rosendo invita los días sábado 07 y domingo 08 de noviembre en […]",
-      "raw_text": "San Rosendo, octubre de 2026; Municipalidad de San Rosendo invita los días sábado 07 y domingo 08 de noviembre en […]",
+      "title": "Reset en Piscina temperada Parque O'higgins",
+      "raw_text": "Piscina temperada Parque O'higgins Parque O'Higgins, Santiago Centro Santiago Centro",
       "date": "2026-11-08",
-      "commune": "San Rosendo",
-      "source": "Municipalidad de San Rosendo",
-      "source_url": "https://municipalidadsanrosendo.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/breath-float-noviembre-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Domingo 08 de noviembre",
@@ -2227,15 +2227,6 @@
       "commune": null,
       "source": "Radio UdeC",
       "source_url": "https://www.radioudec.cl/concierto-matinal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Municipalidad de Hualqui",
-      "raw_text": "Lugar: HualquiInicio: Lunes 09 de noviembre 2026Dirigido a usuarios y usuarias de la comuna de Hualqui, que cumplan con los criterios de evaluación de la Ficha de postulación disponible",
-      "date": "2026-11-09",
-      "commune": "Hualqui",
-      "source": "Municipalidad de Hualqui",
-      "source_url": "https://www.munihualqui.cl/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2248,12 +2239,21 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Temporada de Música de Cámara 2026 en Teatro Zoco",
-      "raw_text": "Teatro Zoco AVENIDA LA DEHESA 1.500, Lo Barnechea Lo Barnechea",
+      "title": "Municipalidad de Hualqui",
+      "raw_text": "Lugar: HualquiInicio: Lunes 09 de noviembre 2026Dirigido a usuarios y usuarias de la comuna de Hualqui, que cumplan con los criterios de evaluación de la Ficha de postulación disponible",
+      "date": "2026-11-09",
+      "commune": "Hualqui",
+      "source": "Municipalidad de Hualqui",
+      "source_url": "https://www.munihualqui.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Bunbury en Santander Arena",
+      "raw_text": "Santander Arena Beaucheff 1204, Santiago Centro Santiago Centro",
       "date": "2026-11-09",
       "commune": null,
       "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/temporada-de-musica-de-camara-2026-teatro-zoco-abr-2026?utm_medium=organic&utm_source=microformat",
+      "source_url": "https://www.puntoticket.com/evento/bunbury-santander-arena-2026?utm_medium=organic&utm_source=microformat",
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
@@ -2266,22 +2266,13 @@
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
-      "title": "Bunbury en Santander Arena",
-      "raw_text": "Santander Arena Beaucheff 1204, Santiago Centro Santiago Centro",
+      "title": "Temporada de Música de Cámara 2026 en Teatro Zoco",
+      "raw_text": "Teatro Zoco AVENIDA LA DEHESA 1.500, Lo Barnechea Lo Barnechea",
       "date": "2026-11-09",
       "commune": null,
       "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/bunbury-santander-arena-2026?utm_medium=organic&utm_source=microformat",
+      "source_url": "https://www.puntoticket.com/evento/temporada-de-musica-de-camara-2026-teatro-zoco-abr-2026?utm_medium=organic&utm_source=microformat",
       "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Los espacios pueden inscribir sus actividades hasta el martes 10 de noviembre en el sitio web",
-      "raw_text": "Los espacios pueden inscribir sus actividades hasta el martes 10 de noviembre en el sitio web",
-      "date": "2026-11-10",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/ministro-francisco-undurraga-invita-a-espacios-culturales-a-inscribir-sus-actividades-para-noche-de-museos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
       "title": "El plazo para inscribir actividades se extiende hasta el martes 10 de noviembre.",
@@ -2293,13 +2284,13 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "ELECCIÓN CLUB DE ADULTOS MAYORES DE EX FUNCIONARIOS MUNICIPALES DE ARAUCO",
-      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
-      "date": "2026-11-11",
-      "commune": "Arauco",
-      "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-club-de-adultos-mayores-de-ex-funcionarios-municipales-de-arauco/",
-      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+      "title": "Los espacios pueden inscribir sus actividades hasta el martes 10 de noviembre en el sitio web",
+      "raw_text": "Los espacios pueden inscribir sus actividades hasta el martes 10 de noviembre en el sitio web",
+      "date": "2026-11-10",
+      "commune": null,
+      "source": "Ministerio de las Culturas — Agenda cultural",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/ministro-francisco-undurraga-invita-a-espacios-culturales-a-inscribir-sus-actividades-para-noche-de-museos/",
+      "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
       "title": "Miércoles 11 de noviembre, 18:00 h.",
@@ -2309,6 +2300,15 @@
       "source": "G5 Noticias",
       "source_url": "https://g5noticias.cl/2026/10/27/vuelvo-donde-nunca-estuve-cierra-su-recorrido-con-ultimas-funciones-en-octubre-y-noviembre/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "ELECCIÓN CLUB DE ADULTOS MAYORES DE EX FUNCIONARIOS MUNICIPALES DE ARAUCO",
+      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
+      "date": "2026-11-11",
+      "commune": "Arauco",
+      "source": "Municipalidad de Arauco",
+      "source_url": "https://muniarauco.cl/evento/eleccion-club-de-adultos-mayores-de-ex-funcionarios-municipales-de-arauco/",
+      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
     },
     {
       "title": "Eduardo Sacheri compartió su obra y trayectoria con lectores de Concepción en Biblioteca UdeC",
@@ -2410,21 +2410,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Panoramas 14 al 18 de noviembre",
-      "raw_text": "Panoramas 14 al 18 de noviembre",
+      "title": "Feria del Sánguche vuelve en noviembre con una edición dedicada a los grandes “socios” de un buen sánguche",
+      "raw_text": "La clásica fiesta de la cultura sanguchera regresa al Parque Padre Hurtado los días 13, 14 y 15 de noviembre. Este año, la feria pondrá especial atención en esos ingredientes que muchas veces quedan fuera del protagonismo, pero que pueden cambiarlo todo: la palta, el tomate, el queso, los encurtidos, las salsas y todos esos acompañamientos que hacen que un sánguche sea realmente memorable.",
       "date": "2026-11-14",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/noticias/agenda-cultural/?page=19",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Agenda Cultural",
-      "raw_text": "El lunes 14 de noviembre se presentará un concierto en homenaje al artista estadounidense Frank Sinatra, en el marco del aniversario número 59 de la Corporación Cultural Artistas del Acero. La presentación será gratis y abierta a todo el pú",
-      "date": "2026-11-14",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/noticias/agenda-cultural/?page=19",
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/28/feria-del-sanguche-vuelve-en-noviembre-con-una-edicion-dedicada-a-los-grandes-socios-de-un-buen-sanguche/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2437,12 +2428,66 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Feria del Sánguche vuelve en noviembre con una edición dedicada a los grandes “socios” de un buen sánguche",
-      "raw_text": "La clásica fiesta de la cultura sanguchera regresa al Parque Padre Hurtado los días 13, 14 y 15 de noviembre. Este año, la feria pondrá especial atención en esos ingredientes que muchas veces quedan fuera del protagonismo, pero que pueden cambiarlo todo: la palta, el tomate, el queso, los encurtidos, las salsas y todos esos acompañamientos que hacen que un sánguche sea realmente memorable.",
+      "title": "Agenda Cultural",
+      "raw_text": "El lunes 14 de noviembre se presentará un concierto en homenaje al artista estadounidense Frank Sinatra, en el marco del aniversario número 59 de la Corporación Cultural Artistas del Acero. La presentación será gratis y abierta a todo el pú",
       "date": "2026-11-14",
       "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/noticias/agenda-cultural/?page=19",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Panoramas 14 al 18 de noviembre",
+      "raw_text": "Panoramas 14 al 18 de noviembre",
+      "date": "2026-11-14",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/noticias/agenda-cultural/?page=19",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 15 de noviembre.",
+      "raw_text": "Domingo 15 de noviembre.",
+      "date": "2026-11-15",
+      "commune": null,
       "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/28/feria-del-sanguche-vuelve-en-noviembre-con-una-edicion-dedicada-a-los-grandes-socios-de-un-buen-sanguche/",
+      "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "ELECCIÓN COMITÉ DE VIVIENDA RENACER DE LOS PADRES II",
+      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
+      "date": "2026-11-15",
+      "commune": "Arauco",
+      "source": "Municipalidad de Arauco",
+      "source_url": "https://muniarauco.cl/evento/eleccion-comite-de-vivienda-renacer-de-los-padres-ii/",
+      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+    },
+    {
+      "title": "ELECCIÓN TALLER LABORAL LA UNIÓN",
+      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
+      "date": "2026-11-15",
+      "commune": "Arauco",
+      "source": "Municipalidad de Arauco",
+      "source_url": "https://muniarauco.cl/evento/eleccion-taller-laboral-la-union/",
+      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+    },
+    {
+      "title": "Feria del Sanguche 2026 en Parque Padre Hurtado",
+      "raw_text": "Parque Padre Hurtado Av. Francisco Bilbao 8105, La Reina La Reina",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/feria-del-sanguche-2026-parque-padre-hurtado-nov?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Rompen una de las obras del Museo del Prado en Concepción: exposición sufre nuevo ataque a días de su cierre",
+      "raw_text": ". La muestra permite apreciar reproducciones a tamaño real de reconocidas pinturas pertenecientes a la colección del Museo del Prado de Madrid y permanecerá disponible hasta el 15 de noviembre.",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/31/rompen-una-de-las-obras-del-museo-del-prado-en-concepcion-exposicion-sufre-nuevo-ataque-a-dias-de-su-cierre/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2455,49 +2500,13 @@
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
-      "title": "ELECCIÓN TALLER LABORAL LA UNIÓN",
+      "title": "ELECCIÓN ESCUELA DE FUTBOL BRISAS DEL MAR",
       "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
-      "date": "2026-11-15",
+      "date": "2026-11-16",
       "commune": "Arauco",
       "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-taller-laboral-la-union/",
+      "source_url": "https://muniarauco.cl/evento/eleccion-escuela-de-futbol-brisas-del-mar/",
       "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
-    },
-    {
-      "title": "ELECCIÓN COMITÉ DE VIVIENDA RENACER DE LOS PADRES II",
-      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
-      "date": "2026-11-15",
-      "commune": "Arauco",
-      "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-comite-de-vivienda-renacer-de-los-padres-ii/",
-      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
-    },
-    {
-      "title": "Domingo 15 de noviembre.",
-      "raw_text": "Domingo 15 de noviembre.",
-      "date": "2026-11-15",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Rompen una de las obras del Museo del Prado en Concepción: exposición sufre nuevo ataque a días de su cierre",
-      "raw_text": ". La muestra permite apreciar reproducciones a tamaño real de reconocidas pinturas pertenecientes a la colección del Museo del Prado de Madrid y permanecerá disponible hasta el 15 de noviembre.",
-      "date": "2026-11-15",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/rompen-una-de-las-obras-del-museo-del-prado-en-concepcion-exposicion-sufre-nuevo-ataque-a-dias-de-su-cierre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Feria del Sanguche 2026 en Parque Padre Hurtado",
-      "raw_text": "Parque Padre Hurtado Av. Francisco Bilbao 8105, La Reina La Reina",
-      "date": "2026-11-15",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/feria-del-sanguche-2026-parque-padre-hurtado-nov?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "16 de noviembre para los pagos emitidos el 16 de febrero.",
@@ -2507,15 +2516,6 @@
       "source": "Sabes.cl",
       "source_url": "https://sabes.cl/2026/10/24/ex-bono-marzo-de-66-mil-tiene-fecha-limite-para-cobrarlo-revisa-si-tienes-dinero-pendiente/",
       "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "ELECCIÓN ESCUELA DE FUTBOL BRISAS DEL MAR",
-      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
-      "date": "2026-11-16",
-      "commune": "Arauco",
-      "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-escuela-de-futbol-brisas-del-mar/",
-      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
     },
     {
       "title": "Respira Primavera 2026 en Espacio Riesco",
@@ -2536,21 +2536,21 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Feria I3D",
-      "raw_text": "El miércoles 25 de noviembre, la Facultad de Ciencias Químicas reunirá 15 stands y 18 pósters de resultados de proyectos financiados por los Fondos I3D de la Dirección de Docencia, en una jornada abierta a la comunidad universitaria.",
-      "date": "2026-11-25",
-      "commune": "Concepción",
-      "source": "Noticias UdeC",
-      "source_url": "https://noticias.udec.cl/etiqueta/feria-i3d/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "Dirigido por académico UdeC: documental ‘Künü, espacio de diálogo’ tendrá estreno local en Festival Biobío Cine",
       "raw_text": "El documental «Künü, un espacio de diálogo», dirigido por el académico del Departamento de Artes de la Universidad de Concepción, Francisco Huichaqueo Pérez, vivirá su estreno regional el próximo 25 de noviembre, en el Teatro de la UdeC, en el marco de la 11ª edición del",
       "date": "2026-11-25",
       "commune": "Concepción",
       "source": "Noticias UdeC",
       "source_url": "https://noticias.udec.cl/dirigido-por-academico-udec-documental-kunu-espacio-de-dialogo-tendra-estreno-local-en-festival-biobio-cine/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Feria I3D",
+      "raw_text": "El miércoles 25 de noviembre, la Facultad de Ciencias Químicas reunirá 15 stands y 18 pósters de resultados de proyectos financiados por los Fondos I3D de la Dirección de Docencia, en una jornada abierta a la comunidad universitaria.",
+      "date": "2026-11-25",
+      "commune": "Concepción",
+      "source": "Noticias UdeC",
+      "source_url": "https://noticias.udec.cl/etiqueta/feria-i3d/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2572,15 +2572,6 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "COMIENZO en Teatro Zoco",
-      "raw_text": "Teatro Zoco AVENIDA LA DEHESA 1.500, Lo Barnechea Lo Barnechea",
-      "date": "2026-11-29",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/comienzo-teatro-zoco-oct-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
       "title": "Trova y poesía en el centro: Tata Barahona se presentará el 29 de noviembre en Concepción",
       "raw_text": "Trova y poesía en el centro: Tata Barahona se presentará el 29 de noviembre en Concepción",
       "date": "2026-11-29",
@@ -2597,6 +2588,15 @@
       "source": "Noticias UdeC",
       "source_url": "https://noticias.udec.cl/udec-campus-chillan-finaliza-con-exito-tercera-version-del-taller-de-bordado/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "COMIENZO en Teatro Zoco",
+      "raw_text": "Teatro Zoco AVENIDA LA DEHESA 1.500, Lo Barnechea Lo Barnechea",
+      "date": "2026-11-29",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/comienzo-teatro-zoco-oct-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "El próximo 29 de noviembre la música nacional y local se tomará nuevamente Concepción con una nueva edición del Festival",
@@ -2626,6 +2626,15 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Competencia de “Sumo Bot” pone a prueba robots creados por estudiantes de la UdeC",
+      "raw_text": "La competencia de sumo bot también funciona como una instancia preparatoria para el Campanil Challenge, encuentro de robótica que la Sociedad de Robótica y Automatización proyecta realizar el 4 y 5 de diciembre en la UdeC.",
+      "date": "2026-12-04",
+      "commune": null,
+      "source": "Diario Concepción — Cultura",
+      "source_url": "https://www.diarioconcepcion.cl/ciudad/2026/10/29/udec-competencia-sumo-bot-talleres-robotica.html",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "• La actividad prepara el camino para el Campanil Challenge, programado para el 4 y 5 de diciembre en la UdeC.",
       "raw_text": "• La actividad prepara el camino para el Campanil Challenge, programado para el 4 y 5 de diciembre en la UdeC.",
       "date": "2026-12-04",
@@ -2635,12 +2644,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Competencia de “Sumo Bot” pone a prueba robots creados por estudiantes de la UdeC",
-      "raw_text": "La competencia de sumo bot también funciona como una instancia preparatoria para el Campanil Challenge, encuentro de robótica que la Sociedad de Robótica y Automatización proyecta realizar el 4 y 5 de diciembre en la UdeC.",
-      "date": "2026-12-04",
+      "title": "Sábado 5 de diciembre.",
+      "raw_text": "Sábado 5 de diciembre.",
+      "date": "2026-12-05",
       "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/ciudad/2026/10/29/udec-competencia-sumo-bot-talleres-robotica.html",
+      "source": "G5 Noticias",
+      "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2653,15 +2662,6 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Parte la venta de entradas para Viaja Fest: el festival de viajes que tendrá destinos, música y sorteos",
-      "raw_text": "• El evento, que se realizará el 5 y 6 de diciembre en SurActivo, anunció a sus primeros artistas confirmados, entre ellos Pedro Ruminot, Javiera Parra, Dulce y Agraz además de Ignacio González y su Big Band. La propuesta combinará destinos, experiencias turísticas, gastronomía y espectáculos en vivo. Venta de entradas ya están disponibles en sistema ticket plus.",
-      "date": "2026-12-05",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "Festival",
       "raw_text": "Desde Rapa Nui hasta el sur del país, el festival acercará destinos, experiencias y oportunidades de viaje al público del centro-sur de Chile. El encuentro se realizará el 5 y 6 de diciembre en SurActivo y combinará turismo, promociones, gastronomía y espectáculos en vivo.",
       "date": "2026-12-05",
@@ -2671,12 +2671,12 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Sábado 5 de diciembre.",
-      "raw_text": "Sábado 5 de diciembre.",
+      "title": "Parte la venta de entradas para Viaja Fest: el festival de viajes que tendrá destinos, música y sorteos",
+      "raw_text": "• El evento, que se realizará el 5 y 6 de diciembre en SurActivo, anunció a sus primeros artistas confirmados, entre ellos Pedro Ruminot, Javiera Parra, Dulce y Agraz además de Ignacio González y su Big Band. La propuesta combinará destinos, experiencias turísticas, gastronomía y espectáculos en vivo. Venta de entradas ya están disponibles en sistema ticket plus.",
       "date": "2026-12-05",
       "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
+      "source": "Sabes.cl",
+      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2887,8 +2887,8 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "· Feria usuarias de Prodemu: 16 de enero",
-      "raw_text": "· Feria usuarias de Prodemu: 16 de enero",
+      "title": "· Concierto Orquesta Sinfónica UdeC junto a Quique Neira: 16 de enero",
+      "raw_text": "· Concierto Orquesta Sinfónica UdeC junto a Quique Neira: 16 de enero",
       "date": "2027-01-16",
       "commune": "Concepción",
       "source": "Noticias UdeC",
@@ -2896,8 +2896,8 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "· Concierto Orquesta Sinfónica UdeC junto a Quique Neira: 16 de enero",
-      "raw_text": "· Concierto Orquesta Sinfónica UdeC junto a Quique Neira: 16 de enero",
+      "title": "· Feria usuarias de Prodemu: 16 de enero",
+      "raw_text": "· Feria usuarias de Prodemu: 16 de enero",
       "date": "2027-01-16",
       "commune": "Concepción",
       "source": "Noticias UdeC",
@@ -2941,15 +2941,6 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "· Día de las Artes Cecal UdeC: 22 de enero",
-      "raw_text": "· Día de las Artes Cecal UdeC: 22 de enero",
-      "date": "2027-01-22",
-      "commune": "Concepción",
-      "source": "Noticias UdeC",
-      "source_url": "https://noticias.udec.cl/udec-campus-chillan-presenta-actividades-de-la-escuela-de-verano-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "· Concierto Pedropiedra: 22 de enero",
       "raw_text": "· Concierto Pedropiedra: 22 de enero",
       "date": "2027-01-22",
@@ -2959,9 +2950,9 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "· Concierto Campamento de Jazz: 23 de enero",
-      "raw_text": "· Concierto Campamento de Jazz: 23 de enero",
-      "date": "2027-01-23",
+      "title": "· Día de las Artes Cecal UdeC: 22 de enero",
+      "raw_text": "· Día de las Artes Cecal UdeC: 22 de enero",
+      "date": "2027-01-22",
       "commune": "Concepción",
       "source": "Noticias UdeC",
       "source_url": "https://noticias.udec.cl/udec-campus-chillan-presenta-actividades-de-la-escuela-de-verano-2026/",
@@ -2974,6 +2965,15 @@
       "commune": null,
       "source": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/10/30/determinan-que-lauren-bennet-se-ahorco-y-murio-en-un-bosque-tras-avisar-a-su-marido-que-iba-de-paseo.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "· Concierto Campamento de Jazz: 23 de enero",
+      "raw_text": "· Concierto Campamento de Jazz: 23 de enero",
+      "date": "2027-01-23",
+      "commune": "Concepción",
+      "source": "Noticias UdeC",
+      "source_url": "https://noticias.udec.cl/udec-campus-chillan-presenta-actividades-de-la-escuela-de-verano-2026/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -3058,6 +3058,15 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Fechas sesiones online: Lunes 31 de marzo, miércoles 02 y viernes 04 de abril.",
+      "raw_text": "Fechas sesiones online: Lunes 31 de marzo, miércoles 02 y viernes 04 de abril.",
+      "date": "2027-03-31",
+      "commune": "Concepción",
+      "source": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/category/talleres/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "Sábado 28 (online), lunes 30, martes 31 de marzo y miércoles 1 de abril presencial.",
       "raw_text": "Sábado 28 (online), lunes 30, martes 31 de marzo y miércoles 1 de abril presencial.",
       "date": "2027-03-31",
@@ -3078,15 +3087,6 @@
     {
       "title": "Sábado 28 (online), lunes 30, martes 31 de marzo y miércoles 1 de abril presencial.",
       "raw_text": "Sábado 28 (online), lunes 30, martes 31 de marzo y miércoles 1 de abril presencial.",
-      "date": "2027-03-31",
-      "commune": "Concepción",
-      "source": "Festival Internacional de Teatro del Biobío (FTB)",
-      "source_url": "https://ftb.cl/category/talleres/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Fechas sesiones online: Lunes 31 de marzo, miércoles 02 y viernes 04 de abril.",
-      "raw_text": "Fechas sesiones online: Lunes 31 de marzo, miércoles 02 y viernes 04 de abril.",
       "date": "2027-03-31",
       "commune": "Concepción",
       "source": "Festival Internacional de Teatro del Biobío (FTB)",
@@ -3238,6 +3238,15 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Evento",
+      "raw_text": "A nivel internacional, cada 18 de mayo se conmemora el Día d elos Museos. Es por esa razón que el Museo Marta Colvin ha preparado recorridos especiales, a través de su staff de estudiantes UBB. Será en cuatro horarios: 10:30, 12:00, 15:30 y 17:00 horas.",
+      "date": "2027-05-18",
+      "commune": "Concepción",
+      "source": "Extensión Universidad del Bío-Bío",
+      "source_url": "https://extension.ubiobio.cl/event/recorridos-por-dia-de-los-museos/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "FECHAS: Lunes y miércoles 4, 6, 11, 13, 18 y 20 de mayo",
       "raw_text": "FECHAS: Lunes y miércoles 4, 6, 11, 13, 18 y 20 de mayo",
       "date": "2027-05-18",
@@ -3253,15 +3262,6 @@
       "commune": "Concepción",
       "source": "Festival Internacional de Teatro del Biobío (FTB)",
       "source_url": "https://ftb.cl/taller-de-escritura-creativa-a-traves-del-cuerpo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Evento",
-      "raw_text": "A nivel internacional, cada 18 de mayo se conmemora el Día d elos Museos. Es por esa razón que el Museo Marta Colvin ha preparado recorridos especiales, a través de su staff de estudiantes UBB. Será en cuatro horarios: 10:30, 12:00, 15:30 y 17:00 horas.",
-      "date": "2027-05-18",
-      "commune": "Concepción",
-      "source": "Extensión Universidad del Bío-Bío",
-      "source_url": "https://extension.ubiobio.cl/event/recorridos-por-dia-de-los-museos/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -3310,15 +3310,6 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "TALLERES",
-      "raw_text": "FECHAS: miércoles 17 y 24 de junio – miércoles 1, 8 y 15 de julio Nº DE SESIONES: 5 HORARIOS: 18:30 a 20:30 horas FORMATO: Online CUPOS: 15 personas. ACTIVIDAD GRATUITA PREVIA INSCRIPCIÓN *Deberán entregar un avance escritural (1 plana) para su revisión a modo...",
-      "date": "2027-06-17",
-      "commune": "Concepción",
-      "source": "Festival Internacional de Teatro del Biobío (FTB)",
-      "source_url": "https://ftb.cl/talleres/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
       "title": "FECHAS: miércoles 17 y 24 de junio – miércoles 1, 8 y 15 de julio",
       "raw_text": "FECHAS: miércoles 17 y 24 de junio – miércoles 1, 8 y 15 de julio",
       "date": "2027-06-17",
@@ -3334,6 +3325,15 @@
       "commune": "Concepción",
       "source": "Festival Internacional de Teatro del Biobío (FTB)",
       "source_url": "https://ftb.cl/category/talleres-2026/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "TALLERES",
+      "raw_text": "FECHAS: miércoles 17 y 24 de junio – miércoles 1, 8 y 15 de julio Nº DE SESIONES: 5 HORARIOS: 18:30 a 20:30 horas FORMATO: Online CUPOS: 15 personas. ACTIVIDAD GRATUITA PREVIA INSCRIPCIÓN *Deberán entregar un avance escritural (1 plana) para su revisión a modo...",
+      "date": "2027-06-17",
+      "commune": "Concepción",
+      "source": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/talleres/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {

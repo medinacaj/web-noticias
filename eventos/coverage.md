@@ -1,6 +1,6 @@
 # Cobertura verificada · Eventos Región del Biobío
 
-Snapshot: `2026-11-01T18:55:11`
+Snapshot: `2026-11-01T19:09:13`
 
 La cobertura vigente cuenta solo eventos de `events` con fecha final igual o posterior al día de revisión en Chile y no cancelados. El snapshot puede conservar hasta 30 días de eventos históricos. HTTP 2xx y candidatos no acreditan eventos verificados.
 
@@ -52,8 +52,8 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 |---|---:|---|---:|---:|
 | Sabes.cl | 62 | No consultada | 0 | 0 |
 | BioBioChile — Región del Biobío | 50 | 200 | 25 | 0 |
-| PuntoTicket — todos los eventos | 30 | No consultada | 0 | 0 |
 | G5 Noticias | 30 | No consultada | 0 | 0 |
+| PuntoTicket — todos los eventos | 30 | No consultada | 0 | 0 |
 | Festival Internacional de Teatro del Biobío (FTB) | 26 | No consultada | 0 | 0 |
 | Diario Concepción — Cultura | 25 | No consultada | 0 | 0 |
 | Radio UdeC | 17 | No consultada | 0 | 0 |
