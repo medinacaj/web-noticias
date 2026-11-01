@@ -133,6 +133,17 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
     planned = [s for s in sources if not args.only or s["name"] in args.only]
     due, skipped = source_planning.due_sources(planned, state, datetime.now(timezone.utc),
                                                force=args.force or bool(args.only))
+    if not due and skipped:
+        # La validación del snapshot exige una respuesta HTTP de ESTA ejecución.
+        # Si el workflow se dispara nuevamente antes de que venza cualquier
+        # ventana (p. ej. tras fusionar un PR), sondear hasta tres fuentes con
+        # última respuesta exitosa; no reutilizar éxitos antiguos como nuevos.
+        priority = sorted(planned, key=lambda src: (
+            not (200 <= ((state or {}).get(src["name"]) or {}).get("last_http_status", 0) < 300),
+            src["name"]))
+        due = priority[:3]
+        forced_names = {src["name"] for src in due}
+        skipped = [name for name in skipped if name not in forced_names]
     remembered = source_planning.remembered_event_urls(previous_data, due,
                                                         datetime.now(timezone.utc).date())
     # Continuidad del historial. Las fichas sin datos estructurados no se arrastran:
