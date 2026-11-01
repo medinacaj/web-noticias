@@ -1,6 +1,6 @@
 # Retiro seguro del repositorio `medinacaj/eventos-biobio`
 
-Esta guía prepara la **revisión humana** antes de retirar el repositorio antiguo. No autoriza ni ejecuta su borrado. El PR asociado a esta guía debe permanecer sin fusionar hasta que el responsable lo revise.
+Esta guía fue integrada como documentación mediante el [PR #147](https://github.com/medinacaj/web-noticias/pull/147). Su integración **no autoriza ni ejecuta** el retiro del repositorio antiguo. Archivar, borrar o desactivar su automatización sigue siendo una decisión humana separada, posterior a las comprobaciones descritas aquí.
 
 ## Arquitectura que debe conservarse
 
