@@ -206,6 +206,28 @@ async def check_category_badges(page, width):
         f"La cápsula no cambia de contraste en modo oscuro a {width}px")
 
 
+async def check_card_shadows(page, width):
+    """La elevación debe ser visible antes de pasar el cursor en iPhone."""
+    locator = page.locator(".section-grid .feature, .section-grid .compact-list li, .top-grid .lead")
+    assert await locator.count() > 0, f"Sin tarjetas para revisar sombras a {width}px"
+    card = locator.first
+    original = await page.evaluate("document.documentElement.dataset.theme")
+    light = await card.evaluate("""el => getComputedStyle(el).boxShadow""")
+    await page.evaluate("document.documentElement.dataset.theme = 'dark'")
+    dark = await card.evaluate("""el => getComputedStyle(el).boxShadow""")
+    await page.evaluate("(theme) => {document.documentElement.dataset.theme = theme}", original)
+    assert light != "none" and dark != "none", (
+        f"La tarjeta no tiene sombra permanente a {width}px: {light} / {dark}")
+    assert light != dark, f"El modo oscuro comparte sombra ilegible a {width}px"
+    # No inspeccionar :hover: en Safari móvil no está disponible de forma estable.
+    import re
+    def alpha(shadow):
+        matches = re.findall(r"rgba?\\([^)]*?,\\s*(0?\\.\\d+|1(?:\\.0+)?)\\)", shadow)
+        return float(matches[0]) if matches else 0
+    assert alpha(light) >= 0.08 and alpha(dark) >= 0.30, (
+        f"Sombra base apenas visible a {width}px: {light} / {dark}")
+
+
 async def check(html, output):
     output.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
@@ -224,6 +246,7 @@ async def check(html, output):
                         .filter(el => el.right > innerWidth + 2).slice(0,10)""")
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
+            await check_card_shadows(page, width)
             await check_category_badges(page, width)
             await check_compact_navigation(page, width, no_overflow)
             # Fotos estables; la ficha de país puede crecer para mostrar su texto.
