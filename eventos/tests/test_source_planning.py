@@ -55,6 +55,39 @@ class SourcePlanningTests(unittest.TestCase):
         self.assertEqual(changed["Municipio"], first["Municipio"])
         self.assertEqual(changed["Municipio"]["last_http_status"], 403)
 
+    def test_invalid_source_state_triggers_real_recheck_instead_of_crash(self):
+        sources = [src("Teatro"), src("Muni", kind="municipal")]
+        damaged = {"Teatro": "estado no estructurado",
+                   "Muni": {"last_checked_at": ["2026-11-01"], "consecutive_failures": "falló"}}
+        due, skipped = source_planning.due_sources(sources, damaged, NOW)
+        self.assertEqual({s["name"] for s in due}, {"Teatro", "Muni"})
+        self.assertEqual(skipped, [])
+        state = source_planning.update_state(damaged, sources, [
+            {"source_name": "Teatro", "finished_at": NOW.isoformat(),
+             "ok": 0, "http_status": 503},
+            {"source_name": "Muni", "finished_at": NOW.isoformat(),
+             "ok": 0, "http_status": 429},
+        ])
+        self.assertEqual(state["Teatro"]["consecutive_failures"], 1)
+        self.assertEqual(state["Muni"]["consecutive_failures"], 1)
+        self.assertEqual(state["Muni"]["last_http_status"], 429)
+
+    def test_failure_count_is_sanitized_and_bounded(self):
+        source = src("Teatro")
+        for old, expected in ((None, 1), ("fallo", 1), (-15, 1),
+                              ("3", 4), ("1000000", 999)):
+            with self.subTest(old=old):
+                state = source_planning.update_state(
+                    {"Teatro": {"consecutive_failures": old}}, [source],
+                    [{"source_name": "Teatro", "ok": 0, "http_status": 500,
+                      "finished_at": NOW.isoformat()}])
+                self.assertEqual(state["Teatro"]["consecutive_failures"], expected)
+        recovered = source_planning.update_state(
+            {"Teatro": {"consecutive_failures": "erróneo"}}, [source],
+            [{"source_name": "Teatro", "ok": 1, "http_status": 200,
+              "finished_at": NOW.isoformat()}])
+        self.assertEqual(recovered["Teatro"]["consecutive_failures"], 0)
+
     def test_only_previously_published_future_same_domain_urls_are_revisited(self):
         source = src("Teatro")
         snap = {"events": [
