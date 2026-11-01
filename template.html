@@ -962,7 +962,11 @@
       // nativo (Normal/Grande) sin que el usuario lo haya tocado.
       // Solo mover el foco al contenedor si se abrió por teclado.
       if (opening && event.detail === 0) panel.focus({preventScroll:true});
-      else if (!opening) toggle.focus({preventScroll:true});
+      else if (!opening && toggle.closest("#nav-tools")) {
+        // Cerrar Vista también cierra el menú móvil y libera la portada.
+        setMenu(false);
+        menuBtn.focus({preventScroll:true});
+      } else if (!opening) toggle.focus({preventScroll:true});
     });
     d.addEventListener("pointerdown", function (event) {
       if (!panel.hidden && !event.target.closest(".view-options-wrap")) setOpen(false);
