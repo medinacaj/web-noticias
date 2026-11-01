@@ -1,20 +1,20 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-01T16:06:28",
+  "generated_at": "2026-11-01T17:54:28",
   "summary": {
-    "sources_attempted": 7,
-    "sources_ok": 7,
+    "sources_attempted": 3,
+    "sources_ok": 3,
     "sources_failed": 0,
-    "events_found": 1,
-    "events_inserted": 1,
+    "events_found": 0,
+    "events_inserted": 0,
     "events_merged": 0,
-    "possible_events": 3,
-    "quarantined_candidates": 3,
-    "candidates": 1,
-    "revalidation_attempts": 1,
-    "revalidated_ok": 1,
+    "possible_events": 26,
+    "quarantined_candidates": 0,
+    "candidates": 0,
+    "revalidation_attempts": 0,
+    "revalidated_ok": 0,
     "errors": [],
-    "skipped_by_cadence": 48
+    "skipped_by_cadence": 52
   },
   "events": [
     {
@@ -39,7 +39,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T16:06:01",
+      "discovered_at": "2026-11-01T17:54:28",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -51,7 +51,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T16:06:01"
+          "seen_at": "2026-11-01T17:54:28"
         }
       ],
       "changes": []
@@ -78,7 +78,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://images.ligup2.com/eyJidWNrZXQiOiJsaWd1cC12MiIsImtleSI6Im5hY2ltaWVudG8vcGhvdG9zLzc5MjkyX3RhbGxlcl9kZV9jYWxlc3RlbmlhXzIwMjZfd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzYyLCJoZWlnaHQiOjI4MywiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsfX0=",
-      "discovered_at": "2026-11-01T16:06:28",
+      "discovered_at": "2026-11-01T17:54:28",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -90,7 +90,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T16:06:28"
+          "seen_at": "2026-11-01T17:54:28"
         }
       ],
       "changes": []
@@ -98,97 +98,41 @@
   ],
   "runs": [
     {
+      "source_name": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "started_at": "2026-11-01T17:53:49",
+      "finished_at": "2026-11-01T17:54:28",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 25,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 26,
+      "error": null
+    },
+    {
+      "source_name": "Biobío Cultura (Seremi) — RSS",
+      "source_url": "https://www.cultura.gob.cl/feed/",
+      "started_at": "2026-11-01T17:53:49",
+      "finished_at": "2026-11-01T17:53:51",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 1,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
       "source_name": "Corcudec (Teatro UdeC)",
       "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-11-01T16:05:53",
-      "finished_at": "2026-11-01T16:06:03",
+      "started_at": "2026-11-01T17:53:49",
+      "finished_at": "2026-11-01T17:53:58",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Corcudec / Teatro Universidad de Concepción — Ticketplus",
-      "source_url": "https://ticketplus.cl/c/corporacion-cultural-universidad-de-concepcion",
-      "started_at": "2026-11-01T16:05:53",
-      "finished_at": "2026-11-01T16:05:53",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
-      "source_url": "https://ftb.cl/",
-      "started_at": "2026-11-01T16:05:53",
-      "finished_at": "2026-11-01T16:06:01",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 15,
-      "events_found": 1,
-      "events_inserted": 1,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/todos",
-      "started_at": "2026-11-01T16:05:53",
-      "finished_at": "2026-11-01T16:06:28",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 30,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 3,
-      "error": null
-    },
-    {
-      "source_name": "Teatro Biobío",
-      "source_url": "https://teatrobiobio.cl/",
-      "started_at": "2026-11-01T16:05:53",
-      "finished_at": "2026-11-01T16:06:13",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Teatro Biobío — Ticketplus",
-      "source_url": "https://ticketplus.cl/en/companies/teatro-biobio",
-      "started_at": "2026-11-01T16:05:53",
-      "finished_at": "2026-11-01T16:05:55",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Ticketplus — Región del Biobío",
-      "source_url": "https://ticketplus.cl/en/states/region-del-bio-bio",
-      "started_at": "2026-11-01T16:05:53",
-      "finished_at": "2026-11-01T16:06:28",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 30,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -198,22 +142,22 @@
   ],
   "source_state": {
     "BioBioChile — Región del Biobío": {
-      "last_checked_at": "2026-11-01T04:11:14",
-      "last_success_at": "2026-11-01T04:11:14",
+      "last_checked_at": "2026-11-01T17:54:28",
+      "last_success_at": "2026-11-01T17:54:28",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Biobío Cultura (Seremi) — RSS": {
-      "last_checked_at": "2026-11-01T04:11:17",
-      "last_success_at": "2026-11-01T04:11:17",
+      "last_checked_at": "2026-11-01T17:53:51",
+      "last_success_at": "2026-11-01T17:53:51",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Corcudec (Teatro UdeC)": {
-      "last_checked_at": "2026-11-01T16:06:03",
-      "last_success_at": "2026-11-01T16:06:03",
+      "last_checked_at": "2026-11-01T17:53:58",
+      "last_success_at": "2026-11-01T17:53:58",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -617,21 +561,25 @@
     "Municipalidad de Tucapel",
     "Municipalidad de Yumbel",
     "Municipalidad de Alto Biobío",
+    "Teatro Biobío",
+    "Teatro Biobío — Ticketplus",
+    "Corcudec / Teatro Universidad de Concepción — Ticketplus",
+    "Festival Internacional de Teatro del Biobío (FTB)",
+    "Ticketplus — Región del Biobío",
+    "PuntoTicket — todos los eventos",
     "Passline",
     "TuAcceso",
     "PrimeTicket",
     "Noticias UdeC",
     "Extensión Universidad del Bío-Bío",
     "Ministerio de las Culturas — Agenda cultural",
-    "BioBioChile — Región del Biobío",
     "Diario Concepción — Cultura",
     "Sabes.cl",
     "G5 Noticias",
     "TVU Prensa",
     "La Tribuna (Los Ángeles)",
     "El Contraste (Los Ángeles)",
-    "Radio UdeC",
-    "Biobío Cultura (Seremi) — RSS"
+    "Radio UdeC"
   ],
   "possible_events": [
     {
@@ -1163,6 +1111,231 @@
       "commune": null,
       "source": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 14:39",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 14:39",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 09:56",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 09:56",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 07:20",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 06:16",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 06:16",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 13:50",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 13:50",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 13:22",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 13:22",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 12:55",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 12:55",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 12:16",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 12:16",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 11:51",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 11:51",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 10:45",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 10:45",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 09:00",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 07:58",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 07:58",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 07:20",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 01:43",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 13:22",
+      "raw_text": "Domingo 01 noviembre de 2026 | 13:22",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/01/motosierra-en-la-tv-chilena-otro-programa-sale-del-aire-y-deja-a-varios-rostros-sin-pantalla.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 12:55",
+      "raw_text": "Domingo 01 noviembre de 2026 | 12:55",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/martha-stewart-la-guru-estadounidense-del-hogar-borra-polemica-foto-de-halloween-tras-criticas.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 12:16",
+      "raw_text": "Domingo 01 noviembre de 2026 | 12:16",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "Mariah Carey dio inicio a la temporada navideña el 1 de noviembre con un video que mezcló Halloween, punk rock y Navidad. La cantante apareció con estética gótica interpretando «Hermit» y, al llegar la medianoche, lanzó su clásico “It’s tiiiiiime”. Luego cambió a un atuendo rojo sobre un árbol gigante mientras sonaba «All I Want for Christmas Is You». La “descongelación” es una tradición viral de la artista, vinculada a su éxito de 1994.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 11:51",
+      "raw_text": "Domingo 01 noviembre de 2026 | 11:51",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/protagonistas-del-iconico-videoclip-crazy-se-reencontraron-para-presentar-el-regreso-de-aerosmith.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 10:45",
+      "raw_text": "Domingo 01 noviembre de 2026 | 10:45",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 09:00",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 01:43",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 09:00",
+      "raw_text": "Domingo 01 noviembre de 2026 | 09:00",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "Y aunque la celebración de este año ya terminó, Klum parece no tomarse demasiado descanso: en conversación con Vogue aseguró que el 1 de noviembre ya comienza a reunir ideas para la siguiente edición.",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 noviembre de 2026 | 07:58",
+      "raw_text": "Domingo 01 noviembre de 2026 | 07:58",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/mauricio-pinilla-enfrenta-seis-demandas-de-primus-capital-por-deudas-que-superan-los-1-600-millones.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2648,6 +2821,15 @@
       "commune": "Concepción",
       "source": "Diario Concepción — Cultura",
       "source_url": "https://www.diarioconcepcion.cl/ciudad/2026/10/21/alerta-roja-arauco-evacuacion-preventiva-villa-el-mirador.html",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "La esperada película de Marvel Studios, Avengers: Doomsday, está programada para estrenarse en cines el 17 de diciembre de 2026 en la mayor parte de Latinoamérica",
+      "date": "2026-12-17",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {

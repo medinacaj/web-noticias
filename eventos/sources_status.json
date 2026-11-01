@@ -873,7 +873,7 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 2 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Las fichas de evento (p.ej. /inarbolece/) se ven en resultados de búsqueda con fecha, hora, sala y precio. Venta de entradas vía Ticketplus.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:06:13. Dominio observado en resultados de búsqueda web el 2026-10-03. Las fichas de evento (p.ej. /inarbolece/) se ven en resultados de búsqueda con fecha, hora, sala y precio. Venta de entradas vía Ticketplus.",
       "last_live_check": {
         "at": "2026-11-01T16:06:13",
         "ok": true,
@@ -898,7 +898,7 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Página de empresa en Ticketplus observada en búsqueda.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:05:55. Dominio observado en resultados de búsqueda web el 2026-10-03. Página de empresa en Ticketplus observada en búsqueda.",
       "last_live_check": {
         "at": "2026-11-01T16:05:55",
         "ok": true,
@@ -923,7 +923,7 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 1 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Observada en búsqueda.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:05:53. Dominio observado en resultados de búsqueda web el 2026-10-03. Observada en búsqueda.",
       "last_live_check": {
         "at": "2026-11-01T16:05:53",
         "ok": true,
@@ -950,7 +950,7 @@
       "url_evidence": "observado_en_busqueda",
       "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 8 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Sitio citado por prensa como web oficial del Teatro UdeC.",
       "last_live_check": {
-        "at": "2026-11-01T16:06:03",
+        "at": "2026-11-01T17:53:58",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -973,7 +973,7 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 15 página(s), 1 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. No se encontraron fechas confirmadas de la edición 2026.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:06:01. Dominio observado en resultados de búsqueda web el 2026-10-03. No se encontraron fechas confirmadas de la edición 2026.",
       "last_live_check": {
         "at": "2026-11-01T16:06:01",
         "ok": true,
@@ -998,7 +998,7 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 30 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Listado regional de Ticketplus observado en búsqueda. La comuna se infiere desde el recinto/dirección.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:06:28. Dominio observado en resultados de búsqueda web el 2026-10-03. Listado regional de Ticketplus observado en búsqueda. La comuna se infiere desde el recinto/dirección.",
       "last_live_check": {
         "at": "2026-11-01T16:06:28",
         "ok": true,
@@ -1023,7 +1023,7 @@
       "parser": "ticketing",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 30 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Catálogo nacional; solo se guardan eventos cuyo recinto/dirección menciona una comuna del Biobío.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:06:28. Dominio observado en resultados de búsqueda web el 2026-10-03. Catálogo nacional; solo se guardan eventos cuyo recinto/dirección menciona una comuna del Biobío.",
       "last_live_check": {
         "at": "2026-11-01T16:06:28",
         "ok": true,
@@ -1217,9 +1217,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T04:11:14. Dominio observado (sección exacta no confirmada) en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
+      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado (sección exacta no confirmada) en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-11-01T04:11:14",
+        "at": "2026-11-01T17:54:28",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1417,9 +1417,9 @@
       "parser": "rss",
       "verified_live": true,
       "url_evidence": "conocimiento_previo",
-      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T04:11:17. Supone un feed WordPress estándar en /feed/; sin confirmar.",
+      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 1 página(s), 0 evento(s)). Supone un feed WordPress estándar en /feed/; sin confirmar.",
       "last_live_check": {
-        "at": "2026-11-01T04:11:17",
+        "at": "2026-11-01T17:53:51",
         "ok": true,
         "http_status": 200,
         "error": null

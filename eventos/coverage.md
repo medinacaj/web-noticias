@@ -1,12 +1,12 @@
 # Cobertura verificada · Eventos Región del Biobío
 
-Snapshot: `2026-11-01T16:06:28`
+Snapshot: `2026-11-01T17:54:28`
 
 Solo se consideran **eventos publicados** los incluidos en `events`. Una fuente HTTP 2xx o un candidato no equivalen a un evento verificado.
 
 | Comuna | Fuentes locales habilitadas | Fuentes HTTP 2xx | Eventos publicados | Candidatos por revisar |
 |---|---:|---:|---:|---:|
-| Concepción | 8 | 5 | 1 | 64 |
+| Concepción | 8 | 1 | 1 | 64 |
 | Talcahuano | 1 | 0 | 0 | 0 |
 | Hualpén | 1 | 0 | 0 | 0 |
 | San Pedro de la Paz | 1 | 0 | 0 | 0 |
@@ -51,11 +51,11 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 | Fuente | Candidatos acumulados | HTTP esta ejecución | Páginas consultadas | Eventos aceptados |
 |---|---:|---|---:|---:|
 | Sabes.cl | 62 | No consultada | 0 | 0 |
-| PuntoTicket — todos los eventos | 30 | 200 | 30 | 0 |
+| BioBioChile — Región del Biobío | 49 | 200 | 25 | 0 |
+| PuntoTicket — todos los eventos | 30 | No consultada | 0 | 0 |
 | G5 Noticias | 30 | No consultada | 0 | 0 |
-| Festival Internacional de Teatro del Biobío (FTB) | 26 | 200 | 15 | 1 |
+| Festival Internacional de Teatro del Biobío (FTB) | 26 | No consultada | 0 | 0 |
 | Diario Concepción — Cultura | 25 | No consultada | 0 | 0 |
-| BioBioChile — Región del Biobío | 23 | No consultada | 0 | 0 |
 | Radio UdeC | 17 | No consultada | 0 | 0 |
 | Noticias UdeC | 17 | No consultada | 0 | 0 |
 | Ministerio de las Culturas — Agenda cultural | 14 | No consultada | 0 | 0 |
@@ -66,6 +66,6 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 | Municipalidad de Alto Biobío | 2 | No consultada | 0 | 0 |
 | Extensión Universidad del Bío-Bío | 2 | No consultada | 0 | 0 |
 
-**Fuentes omitidas por cadencia:** 48 (sin petición nueva).
+**Fuentes omitidas por cadencia:** 52 (sin petición nueva).
 
-**Revalidación de fichas vigentes:** 1/1 respuestas satisfactorias.
+**Revalidación de fichas vigentes:** 0/0 respuestas satisfactorias.

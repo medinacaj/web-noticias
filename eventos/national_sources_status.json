@@ -45,9 +45,9 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T04:11:55. Sección agendacultural de cultura.gob.cl observada en resultados de búsqueda (notas de 2013 a 2026). Sin comuna fija.",
+      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 18 página(s), 2 evento(s)). Sección agendacultural de cultura.gob.cl observada en resultados de búsqueda (notas de 2013 a 2026). Sin comuna fija.",
       "last_live_check": {
-        "at": "2026-11-01T04:11:55",
+        "at": "2026-11-01T17:54:56",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -73,7 +73,7 @@
       "url_evidence": "observado_en_busqueda",
       "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 25 página(s), 12 evento(s)). Dominio gam.cl observado en búsqueda (páginas institucionales y sala de prensa).",
       "last_live_check": {
-        "at": "2026-11-01T16:07:18",
+        "at": "2026-11-01T17:55:14",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -99,7 +99,7 @@
       "url_evidence": "observado_en_busqueda",
       "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 25 página(s), 7 evento(s)). Sección 'Calendario de actividades' de cclm.cl observada en búsqueda.",
       "last_live_check": {
-        "at": "2026-11-01T16:07:26",
+        "at": "2026-11-01T17:54:44",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -123,7 +123,7 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 25 página(s), 10 evento(s)). Dominio municipal.cl citado como sitio oficial (Wikipedia).",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:06:58. Dominio municipal.cl citado como sitio oficial (Wikipedia).",
       "last_live_check": {
         "at": "2026-11-01T16:06:58",
         "ok": true,
@@ -149,7 +149,7 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 25 página(s), 0 evento(s)). Dominio m100.cl citado en prensa (El Mostrador, 2020) para venta de entradas. La dirección Matucana 100 está en Estación Central según conocimiento previo; verificar.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:06:46. Dominio m100.cl citado en prensa (El Mostrador, 2020) para venta de entradas. La dirección Matucana 100 está en Estación Central según conocimiento previo; verificar.",
       "last_live_check": {
         "at": "2026-11-01T16:06:46",
         "ok": true,
@@ -175,7 +175,7 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 25 página(s), 3 evento(s)). Dominio parquecultural.cl citado por la Universidad de Valparaíso y en su memoria 2024.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:08:23. Dominio parquecultural.cl citado por la Universidad de Valparaíso y en su memoria 2024.",
       "last_live_check": {
         "at": "2026-11-01T16:08:23",
         "ok": true,
@@ -201,7 +201,7 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "observado_en_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 15 página(s), 1 evento(s)). Dominio teatroregional.cl observado en búsqueda (memorias institucionales) y en el directorio de Opera Latinoamérica.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:07:26. Dominio teatroregional.cl observado en búsqueda (memorias institucionales) y en el directorio de Opera Latinoamérica.",
       "last_live_check": {
         "at": "2026-11-01T16:07:26",
         "ok": true,
@@ -227,7 +227,7 @@
       "parser": "generic",
       "verified_live": true,
       "url_evidence": "resumen_de_busqueda",
-      "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 1 página(s), 0 evento(s)). Dominio indicado por el directorio IbsenStage; confianza baja hasta verificar.",
+      "notes": "Omitida por cadencia; última respuesta HTTP 200 el 2026-11-01T16:07:29. Dominio indicado por el directorio IbsenStage; confianza baja hasta verificar.",
       "last_live_check": {
         "at": "2026-11-01T16:07:29",
         "ok": true,
