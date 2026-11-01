@@ -87,6 +87,25 @@ def _locality(obj):
     return (addr.get("addressLocality") or "") if isinstance(addr, dict) else ""
 
 
+
+def _ticketing_location_verified(obj, commune, names):
+    """Comuna explícita Y región Biobío en la dirección estructurada.
+
+    No se acepta localidad deducida del nombre del recinto o un homónimo como
+    Florida en Santiago. Solo para ticketeras sin comuna fija.
+    """
+    loc = obj.get("location")
+    loc = loc[0] if isinstance(loc, list) and loc else loc
+    address = loc.get("address") if isinstance(loc, dict) else None
+    if not isinstance(address, dict) or not commune:
+        return False
+    locality = metadata.normalize(address.get("addressLocality") or "")
+    region = metadata.normalize(address.get("addressRegion") or "")
+    return (locality in {metadata.normalize(name) for name in names}
+            and locality == metadata.normalize(commune)
+            and region in {"biobio", "bio bio", "region del biobio",
+                           "region del bio bio", "region de biobio", "cl bi"})
+
 def _price(obj):
     if obj.get("isAccessibleForFree") in (True, "true", "True"):
         return 0, "free"
@@ -165,6 +184,7 @@ def events_from_jsonld(html, page_url, source, communes):
             "official": bool(source.get("official")),
             "image_url": urljoin(page_url, img) if isinstance(img, str) and img else None,
             "single_event_page": len(objs) == 1,
+            "ticketing_location_verified": _ticketing_location_verified(o, commune, names),
         })
     if len(events) == 1 and not events[0]["image_url"]:
         events[0]["image_url"] = extract_official_image(html, page_url)
