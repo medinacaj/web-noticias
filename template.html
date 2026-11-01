@@ -125,6 +125,20 @@
   .nav-tools .icon-btn{width:100%;justify-content:flex-start;min-height:44px;}
   .nav-tools .control-label{display:inline;font:600 12px/1 var(--sans);}
   .nav-tools .view-options-panel{position:static;width:100%;max-width:100%;margin-top:8px;box-shadow:none;}
+  /* Móvil: Vista es un acordeón compacto dentro de la navegación; el resto
+     del menú sigue accesible y el panel desplaza solo su propio contenido. */
+  @media (max-width:1023px){
+    .nav-tools .view-options-panel{
+      box-sizing:border-box;
+      max-height:min(56dvh,420px);
+      overflow-y:auto;
+      overscroll-behavior:contain;
+      -webkit-overflow-scrolling:touch;
+      padding:12px;
+    }
+    .nav-tools .view-options-heading{margin-bottom:9px;}
+    .nav-tools .view-option-extra{gap:8px;margin-top:9px;padding-top:9px;}
+  }
   .nav-tools .library-toggle{margin-top:8px;}
   .site-nav{background:var(--surface);color:var(--ink);padding:20px 12px;overflow-y:auto;overscroll-behavior:contain;}
   .nav-heading{font:700 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin:0 12px 12px;}
@@ -785,7 +799,7 @@
       <button type="button" class="icon-btn view-options-toggle" id="view-options-toggle" aria-label="Opciones de visualización" aria-expanded="false" aria-controls="view-options-panel" title="Opciones de visualización">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.4" fill="var(--navy)"/><circle cx="16" cy="17" r="2.4" fill="var(--navy)"/></svg><span class="control-label" aria-hidden="true">Vista</span>
       </button>
-      <div class="view-options-panel" id="view-options-panel" hidden aria-label="Opciones de visualización">
+      <div class="view-options-panel" id="view-options-panel" role="region" tabindex="-1" hidden aria-label="Opciones de visualización">
         <p class="view-options-heading">Personalizar vista</p>
         <label class="theme-label" for="theme-select">Tema<select id="theme-select"><option value="system">Automático</option><option value="light" selected>Claro</option><option value="dark">Oscuro</option></select></label>
         <div class="news-toolbar"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><select id="density-switch"><option value="editorial">Normal</option><option value="compact">Compacta</option><option value="headlines">Solo titulares</option></select></div>
@@ -941,10 +955,14 @@
       panel.hidden = !open;
       toggle.setAttribute("aria-expanded", String(open));
     }
-    toggle.addEventListener("click", function () {
-      setOpen(panel.hidden);
-      if (!panel.hidden) d.getElementById("text-size").focus();
-      else if (toggle.closest("#nav-tools")) { setMenu(false); menuBtn.focus({preventScroll:true}); }
+    toggle.addEventListener("click", function (event) {
+      var opening = panel.hidden;
+      setOpen(opening);
+      // En iOS, enfocar automáticamente un <select> puede abrir el selector
+      // nativo (Normal/Grande) sin que el usuario lo haya tocado.
+      // Solo mover el foco al contenedor si se abrió por teclado.
+      if (opening && event.detail === 0) panel.focus({preventScroll:true});
+      else if (!opening) toggle.focus({preventScroll:true});
     });
     d.addEventListener("pointerdown", function (event) {
       if (!panel.hidden && !event.target.closest(".view-options-wrap")) setOpen(false);
