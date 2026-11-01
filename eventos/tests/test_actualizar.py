@@ -84,6 +84,22 @@ class ActualizarTests(unittest.TestCase):
         self.assertEqual(src["Teatro Demo"]["notes"].count("Verificada en vivo"), 1)
         self.assertEqual(src["Caída"]["notes"].count("falló"), 1)
 
+    def test_rapid_second_run_keeps_event_and_fresh_http_evidence(self):
+        self.assertEqual(self.run_once(), 0)
+        with open(self.crawled, encoding="utf-8") as f:
+            previous = json.load(f)
+        self.assertIn("source_state", previous)
+        self.assertIn("Teatro Demo", previous["source_state"])
+        self.assertEqual(previous["source_state"]["Teatro Demo"]["last_http_status"], 200)
+        self.assertEqual(self.run_once(), 0)
+        with open(self.crawled, encoding="utf-8") as f:
+            after = json.load(f)
+        self.assertEqual([e["title"] for e in after["events"]], ["La Negra Ester"])
+        self.assertEqual(after["summary"]["sources_attempted"], len(after["runs"]))
+        self.assertGreater(after["summary"]["sources_attempted"], 0)
+        self.assertTrue(any(r["ok"] for r in after["runs"]))
+        self.assertEqual(after["source_state"]["Teatro Demo"]["last_http_status"], 200)
+
     def test_app_loads_snapshot_idempotently(self):
         self.run_once()
         conn = memory_db()
