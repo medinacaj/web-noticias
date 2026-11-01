@@ -22,9 +22,16 @@ class TopViewOptionsTests(unittest.TestCase):
         for key in ('aria-expanded="false"', 'aria-controls="view-options-panel"',
                     'toggle.setAttribute("aria-expanded", String(open))',
                     'if (event.key === "Escape" && !panel.hidden)',
-                    'd.getElementById("text-size").focus()',
+                    'panel.focus({preventScroll:true})',
+                    'role="region" tabindex="-1"',
                     'noticias:density:v1', 'noticias:text-size:v1'):
             self.assertIn(key, self.page)
+
+    def test_mobile_vista_does_not_autofocus_native_iphone_picker(self):
+        self.assertNotIn('d.getElementById("text-size").focus()', self.page)
+        self.assertIn('if (opening && event.detail === 0) panel.focus({preventScroll:true})', self.page)
+        self.assertIn('max-height:min(56dvh,420px)', self.page)
+        self.assertIn('overscroll-behavior:contain', self.page)
 
     def test_portal_keeps_public_news(self):
         for excluded in ('id="reading-filter"', 'id="reading-status"',
