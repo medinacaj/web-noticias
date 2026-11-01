@@ -18,7 +18,7 @@ def state():
     return dict(_state)
 
 
-def _run_source(source, communes, fetcher):
+def _run_source(source, communes, fetcher, prior_urls=()):
     if source.get("parser") == "rss":
         res = deep_crawler.CrawlResult()
         page = fetcher(source["url"], timeout=int(source.get("timeout") or 20))
@@ -29,10 +29,12 @@ def _run_source(source, communes, fetcher):
         else:
             res.error = page.error or "HTTP %s" % page.status
         return res
-    return deep_crawler.crawl(source, communes, fetcher=fetcher)
+    return deep_crawler.crawl(source, communes, fetcher=fetcher,
+                              prior_event_urls=prior_urls)
 
 
-def refresh(conn, sources=None, communes=None, fetcher=fetch, max_workers=6, only=None):
+def refresh(conn, sources=None, communes=None, fetcher=fetch, max_workers=6, only=None,
+            remembered=None):
     """Ejecuta el rastreo. Devuelve un resumen con cifras REALES de esta corrida."""
     sources = sources if sources is not None else discovery.load_sources()
     communes = communes if communes is not None else discovery.load_communes()
@@ -44,10 +46,13 @@ def refresh(conn, sources=None, communes=None, fetcher=fetch, max_workers=6, onl
         _state.update(running=True, started_at=db.now_iso(), finished_at=None, summary=None)
     summary = {"sources_attempted": len(todo), "sources_ok": 0, "sources_failed": 0,
                "events_found": 0, "events_inserted": 0, "events_merged": 0,
-               "possible_events": 0, "quarantined_candidates": 0, "candidates": 0, "errors": []}
+               "possible_events": 0, "quarantined_candidates": 0, "candidates": 0,
+               "revalidation_attempts": 0, "revalidated_ok": 0, "errors": []}
     try:
         with ThreadPoolExecutor(max_workers=max_workers) as pool:
-            futs = {pool.submit(_run_source, s, communes, fetcher): (s, db.now_iso()) for s in todo}
+            futs = {pool.submit(_run_source, s, communes, fetcher,
+                                 (remembered or {}).get(s["name"], ())): (s, db.now_iso())
+                    for s in todo}
             for fut in as_completed(futs):
                 s, started = futs[fut]
                 run = {"source_name": s["name"], "source_url": s["url"], "started_at": started}
@@ -91,6 +96,8 @@ def refresh(conn, sources=None, communes=None, fetcher=fetch, max_workers=6, onl
                            error=res.error)
                 db.record_run(conn, run)
                 summary["sources_ok" if ok else "sources_failed"] += 1
+                summary["revalidation_attempts"] += getattr(res, "revalidation_attempts", 0)
+                summary["revalidated_ok"] += getattr(res, "revalidated_ok", 0)
                 summary["events_found"] += published
                 summary["quarantined_candidates"] += quarantined
                 summary["events_inserted"] += ins
