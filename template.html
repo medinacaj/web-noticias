@@ -1510,16 +1510,38 @@
     });
   });
 
-  // Acceso a portada sin otra barra, y sin movimiento forzado si está desactivado.
+  // Acceso a portada sin tapar Guardar o Compartir en tarjetas móviles.
   (function () {
     var top = d.getElementById("back-to-top");
     if (!top) return;
     var footer = d.querySelector(".site-footer");
-    var update = function () {
-      top.hidden = window.scrollY < 900 || (footer && footer.getBoundingClientRect().top < window.innerHeight);
-    };
-    window.addEventListener("scroll", update, {passive:true});
-    window.addEventListener("resize", update);
+    var actions = Array.from(d.querySelectorAll(".card-actions .save-story, .card-actions .share-story"));
+    var pending = false;
+    function overlaps(a, b, gap) {
+      return a.left < b.right + gap && a.right + gap > b.left
+        && a.top < b.bottom + gap && a.bottom + gap > b.top;
+    }
+    function update() {
+      if (window.scrollY < 900 || (footer && footer.getBoundingClientRect().top < window.innerHeight)) {
+        top.hidden = true;
+        return;
+      }
+      // Medir la ubicación real antes de mostrar el control; solo ocultarlo
+      // si su zona táctil intercepta los botones Guardar/Compartir.
+      top.hidden = false;
+      var target = top.getBoundingClientRect();
+      top.hidden = actions.some(function (button) {
+        if (!button.getClientRects().length) return false;
+        return overlaps(target, button.getBoundingClientRect(), 8);
+      });
+    }
+    function schedule() {
+      if (pending) return;
+      pending = true;
+      window.requestAnimationFrame(function () { pending = false; update(); });
+    }
+    window.addEventListener("scroll", schedule, {passive:true});
+    window.addEventListener("resize", schedule);
     top.addEventListener("click", function () {
       var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       window.scrollTo({top:0,behavior:reduced ? "instant" : "smooth"});
