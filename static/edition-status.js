@@ -13,7 +13,7 @@
   var scheduled = new Date(published);
   scheduled.setUTCMinutes(minute, 0, 0);
   if (scheduled.getTime() <= published) scheduled.setUTCHours(scheduled.getUTCHours() + 1);
-  var deadline = scheduled.getTime(), noticeTimer, helpTimer;
+  var deadline = scheduled.getTime(), noticeTimer, helpTimer, clockTimer;
   function hideHelp() { window.clearTimeout(helpTimer); help.hidden = true; }
   function showHelp() {
     window.clearTimeout(helpTimer);
@@ -105,7 +105,18 @@
       button.setAttribute("aria-busy", "false");
     }
   });
-  tick();
-  window.setInterval(tick, 1000);
-  d.addEventListener("visibilitychange", function () { if (!d.hidden) tick(); });
+  // La hora se muestra en minutos: evitar 60 escrituras de DOM por minuto.
+  // Un único timeout se alinea con el siguiente minuto y se pausa en segundo plano.
+  function scheduleMinuteTick() {
+    window.clearTimeout(clockTimer);
+    tick();
+    if (d.hidden) return;
+    var remaining = 60000 - (Date.now() % 60000);
+    clockTimer = window.setTimeout(scheduleMinuteTick, remaining + 50);
+  }
+  scheduleMinuteTick();
+  d.addEventListener("visibilitychange", function () {
+    if (d.hidden) window.clearTimeout(clockTimer);
+    else scheduleMinuteTick();
+  });
 })();
