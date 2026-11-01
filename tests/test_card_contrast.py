@@ -38,6 +38,15 @@ class ContrastThemeTests(unittest.TestCase):
                 rgb = [int(colors[token][i:i+2], 16) for i in (1, 3, 5)]
                 self.assertLessEqual(max(rgb) - min(rgb), 24)
 
+    def test_light_page_clearly_separates_white_cards_without_extra_borders(self):
+        self.assertIn('body{margin:0;background:var(--paper);', self.css)
+        self.assertIn(':root:not([data-theme="dark"]) body{', self.css)
+        self.assertIn('background:color-mix(in srgb,var(--paper) 58%,var(--rule) 42%);', self.css)
+        # La nueva capa usa exclusivamente dos colores ya aprobados.
+        self.assertNotIn('linear-gradient', self.css[
+            self.css.index('/* Lienzo editorial claro:'):
+            self.css.index('/* ---------- Barra utilitaria ----------')])
+
     def test_card_readability_wcag_aa(self):
         for dark in (False, True):
             colors = self.palette(dark)
