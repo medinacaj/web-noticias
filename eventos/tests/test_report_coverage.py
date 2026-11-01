@@ -53,6 +53,31 @@ class CoverageReportTests(unittest.TestCase):
             self.assertIn("| Florida | 0 | 0 | 0 | 0 |", result)
             self.assertIn("| Talcahuano | 0 | 0 | 1 | 0 |", result)
 
+    def test_report_separates_candidate_reasons_without_publishing_any(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp)
+            (p / "snapshot.json").write_text(json.dumps({
+                "events": [],
+                "possible_events": [
+                    {"title": "No comprobado A", "reason": "Sin fecha"},
+                    {"title": "No comprobado B", "reason": "Sin fecha"},
+                    {"title": "No comprobado C", "reason": "Recinto|<sin comuna>"},
+                    {"title": "No comprobado D", "reason": None},
+                ],
+            }), encoding="utf8")
+            (p / "communes.json").write_text(
+                '{"communes":[{"name":"Concepción"}]}', encoding="utf8")
+            (p / "sources.json").write_text('{"sources":[]}', encoding="utf8")
+            result = report(p / "snapshot.json", p / "communes.json",
+                            p / "sources.json", today=date(2026, 11, 1))
+            self.assertIn("Cobertura vigente: 0/1 comunas", result)
+            self.assertIn("Candidatos pendientes por motivo de revisión", result)
+            self.assertIn("| Sin fecha | 2 |", result)
+            self.assertIn("| Recinto/&lt;sin comuna&gt; | 1 |", result)
+            self.assertIn("| Sin motivo | 1 |", result)
+            self.assertNotIn("<sin comuna>", result)
+            self.assertNotIn("No comprobado A", result)
+
     def test_alerts_only_enabled_sources_with_three_failures(self):
         with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp)
