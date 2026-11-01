@@ -688,9 +688,11 @@
   .save-story,.share-story{--control-accent:var(--card-link);}
   .cat-cine-streaming{--cat:var(--card-link);--cat-b:#B39AF5;}
 
-  /* Latinoamérica conserva una ficha de país/medio, diferenciada de una foto. */
-  .media--source:not(.media--date):not(.media--region){display:none;}
-  .rail-item:has(> .media--source:not(.media--region)){grid-template-columns:minmax(0,1fr);}
+  /* Cuando no hay fotografía real se ve el distintivo del medio, nunca
+     un hueco invisible ni una imagen inventada. En Latinoamérica se conserva
+     además la ficha de país ya existente. */
+  .section-grid .media--source,.rail-item > .media--source{background:color-mix(in srgb,var(--cat,var(--card-link)) 11%,var(--card-bg));border-color:var(--card-rule);}
+  .section-grid .feature:has(> .media--source),.section-grid .compact-list li:has(.media--source){min-height:0;}
   .top-grid:has(.lead > .media--source:not(.media--region)){align-items:start;}
   @media (min-width:1180px){
     /* Rótulos en una fila y tarjetas en la siguiente: los dos extremos coinciden. */
@@ -905,7 +907,6 @@
 
   // Si una imagen externa falla, conservar la composición y mostrar la fuente real.
   // No generar ilustraciones ficticias ni dejar espacios vacíos.
-  var usedNewsImages = Object.create(null);
   d.querySelectorAll("figure.media > img").forEach(function (img) {
     var fallback = function () {
       var figure = img.closest("figure");
@@ -927,9 +928,10 @@
       visual.appendChild(label);
       figure.appendChild(visual);
     };
-    if (usedNewsImages[img.src]) { fallback(); return; }
-    usedNewsImages[img.src] = true;
-    if (img.complete && img.naturalWidth === 0) fallback(); else img.addEventListener("error", fallback);
+    // Una URL de imagen compartida no es un error: el navegador usa caché.
+    // Solo sustituir una fotografía si realmente falla su carga.
+    if (img.complete && img.naturalWidth === 0) fallback();
+    else img.addEventListener("error", fallback, {once:true});
   });
 
   // La navegación lateral vive en reader-ui.js; búsqueda solo cierra el panel móvil.
