@@ -950,7 +950,7 @@
       "url_evidence": "observado_en_busqueda",
       "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 8 página(s), 0 evento(s)). Dominio observado en resultados de búsqueda web el 2026-10-03. Sitio citado por prensa como web oficial del Teatro UdeC.",
       "last_live_check": {
-        "at": "2026-11-01T17:53:58",
+        "at": "2026-11-01T18:51:50",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1219,7 +1219,7 @@
       "url_evidence": "observado_en_busqueda",
       "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 25 página(s), 0 evento(s)). Dominio observado (sección exacta no confirmada) en resultados de búsqueda web el 2026-10-03. Medio regional: solo radar (posibles eventos para revisión humana).",
       "last_live_check": {
-        "at": "2026-11-01T17:54:28",
+        "at": "2026-11-01T18:52:19",
         "ok": true,
         "http_status": 200,
         "error": null
@@ -1419,7 +1419,7 @@
       "url_evidence": "conocimiento_previo",
       "notes": "Verificada en vivo el 2026-11-01 (HTTP 200; 1 página(s), 0 evento(s)). Supone un feed WordPress estándar en /feed/; sin confirmar.",
       "last_live_check": {
-        "at": "2026-11-01T17:53:51",
+        "at": "2026-11-01T18:51:42",
         "ok": true,
         "http_status": 200,
         "error": null

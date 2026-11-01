@@ -1,8 +1,8 @@
 # Cobertura verificada · Eventos Región del Biobío
 
-Snapshot: `2026-11-01T17:54:28`
+Snapshot: `2026-11-01T18:52:19`
 
-Solo se consideran **eventos publicados** los incluidos en `events`. Una fuente HTTP 2xx o un candidato no equivalen a un evento verificado.
+La cobertura vigente cuenta solo eventos de `events` con fecha final igual o posterior al día de revisión en Chile y no cancelados. El snapshot puede conservar hasta 30 días de eventos históricos. HTTP 2xx y candidatos no acreditan eventos verificados.
 
 | Comuna | Fuentes locales habilitadas | Fuentes HTTP 2xx | Eventos publicados | Candidatos por revisar |
 |---|---:|---:|---:|---:|
@@ -40,7 +40,7 @@ Solo se consideran **eventos publicados** los incluidos en `events`. Una fuente 
 | Yumbel | 1 | 0 | 0 | 0 |
 | Alto Biobío | 1 | 0 | 0 | 2 |
 
-**Cobertura publicada: 2/33 comunas.**
+**Cobertura vigente: 2/33 comunas.**
 
 Nota: hay ticketeras y radares nacionales sin comuna confiable; sus candidatos no se publican automáticamente.
 
@@ -51,7 +51,7 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 | Fuente | Candidatos acumulados | HTTP esta ejecución | Páginas consultadas | Eventos aceptados |
 |---|---:|---|---:|---:|
 | Sabes.cl | 62 | No consultada | 0 | 0 |
-| BioBioChile — Región del Biobío | 49 | 200 | 25 | 0 |
+| BioBioChile — Región del Biobío | 50 | 200 | 25 | 0 |
 | PuntoTicket — todos los eventos | 30 | No consultada | 0 | 0 |
 | G5 Noticias | 30 | No consultada | 0 | 0 |
 | Festival Internacional de Teatro del Biobío (FTB) | 26 | No consultada | 0 | 0 |
@@ -69,3 +69,9 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 **Fuentes omitidas por cadencia:** 52 (sin petición nueva).
 
 **Revalidación de fichas vigentes:** 0/0 respuestas satisfactorias.
+
+## Alertas de salud por fuente
+
+Se informa desde 3 fallos consecutivos **registrados** en fuentes habilitadas. No se hacen solicitudes nuevas ni se atribuye una respuesta a fuentes omitidas por cadencia.
+
+No se registran 3 fallos consecutivos en fuentes habilitadas.

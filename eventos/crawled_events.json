@@ -1,6 +1,6 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-01T17:54:28",
+  "generated_at": "2026-11-01T18:52:19",
   "summary": {
     "sources_attempted": 3,
     "sources_ok": 3,
@@ -8,7 +8,7 @@
     "events_found": 0,
     "events_inserted": 0,
     "events_merged": 0,
-    "possible_events": 26,
+    "possible_events": 1,
     "quarantined_candidates": 0,
     "candidates": 0,
     "revalidation_attempts": 0,
@@ -39,7 +39,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T17:54:28",
+      "discovered_at": "2026-11-01T18:52:19",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -51,7 +51,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T17:54:28"
+          "seen_at": "2026-11-01T18:52:19"
         }
       ],
       "changes": []
@@ -78,7 +78,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://images.ligup2.com/eyJidWNrZXQiOiJsaWd1cC12MiIsImtleSI6Im5hY2ltaWVudG8vcGhvdG9zLzc5MjkyX3RhbGxlcl9kZV9jYWxlc3RlbmlhXzIwMjZfd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzYyLCJoZWlnaHQiOjI4MywiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsfX0=",
-      "discovered_at": "2026-11-01T17:54:28",
+      "discovered_at": "2026-11-01T18:52:19",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -90,7 +90,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T17:54:28"
+          "seen_at": "2026-11-01T18:52:19"
         }
       ],
       "changes": []
@@ -100,22 +100,22 @@
     {
       "source_name": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "started_at": "2026-11-01T17:53:49",
-      "finished_at": "2026-11-01T17:54:28",
+      "started_at": "2026-11-01T18:51:40",
+      "finished_at": "2026-11-01T18:52:19",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 26,
+      "possible_found": 1,
       "error": null
     },
     {
       "source_name": "Biobío Cultura (Seremi) — RSS",
       "source_url": "https://www.cultura.gob.cl/feed/",
-      "started_at": "2026-11-01T17:53:49",
-      "finished_at": "2026-11-01T17:53:51",
+      "started_at": "2026-11-01T18:51:40",
+      "finished_at": "2026-11-01T18:51:42",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -128,8 +128,8 @@
     {
       "source_name": "Corcudec (Teatro UdeC)",
       "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-11-01T17:53:49",
-      "finished_at": "2026-11-01T17:53:58",
+      "started_at": "2026-11-01T18:51:40",
+      "finished_at": "2026-11-01T18:51:50",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
@@ -142,22 +142,22 @@
   ],
   "source_state": {
     "BioBioChile — Región del Biobío": {
-      "last_checked_at": "2026-11-01T17:54:28",
-      "last_success_at": "2026-11-01T17:54:28",
+      "last_checked_at": "2026-11-01T18:52:19",
+      "last_success_at": "2026-11-01T18:52:19",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Biobío Cultura (Seremi) — RSS": {
-      "last_checked_at": "2026-11-01T17:53:51",
-      "last_success_at": "2026-11-01T17:53:51",
+      "last_checked_at": "2026-11-01T18:51:42",
+      "last_success_at": "2026-11-01T18:51:42",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Corcudec (Teatro UdeC)": {
-      "last_checked_at": "2026-11-01T17:53:58",
-      "last_success_at": "2026-11-01T17:53:58",
+      "last_checked_at": "2026-11-01T18:51:50",
+      "last_success_at": "2026-11-01T18:51:50",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1336,6 +1336,15 @@
       "commune": null,
       "source": "BioBioChile — Región del Biobío",
       "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/mauricio-pinilla-enfrenta-seis-demandas-de-primus-capital-por-deudas-que-superan-los-1-600-millones.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Domingo 01 Noviembre, 2026 | 15:41",
+      "raw_text": "Domingo 01 Noviembre, 2026 | 15:41",
+      "date": "2026-11-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
