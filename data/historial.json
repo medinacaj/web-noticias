@@ -1,6 +1,40 @@
 {
- "actualizado": "2026-11-01T11:41:25Z",
+ "actualizado": "2026-11-01T11:52:57Z",
  "noticias": [
+  {
+   "category": "regiones",
+   "title": "Un muerto y cuatro heridos en San Pedro de la Paz: Hombre llegó a una fiesta buscando a un joven y al no encontrarlo comenzó a disparar",
+   "summary": "",
+   "image": "https://s.t13.cl/sites/default/files/styles/manualcrop_850x475/public/t13/field-imagen/2026-11/1793533364.jpeg?h=1d33c45f&amp;itok=vZJJ4rXk",
+   "source_url": "https://www.t13.cl",
+   "sources": [
+    "Teletrece"
+   ],
+   "coverages": [],
+   "link": "https://www.t13.cl/amp/noticia/nacional/un-muerto-cuatro-heridos-san-pedro-paz-hombre-llego-una-fiesta-buscando-joven-a-1-11-2026",
+   "published": "2026-11-01T11:45:00Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Ana Bovino: “Hacer cine en Argentina ya no es una posibilidad para todos”",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.lacapitalmdp.com",
+   "sources": [
+    "Diario La Capital de Mar del Plata"
+   ],
+   "coverages": [],
+   "link": "https://www.lacapitalmdp.com/ana-bovino-hacer-cine-en-argentina-ya-no-es-una-posibilidad-para-todos/",
+   "published": "2026-11-01T11:42:29Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR"
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
+  },
   {
    "category": "latinoamerica",
    "title": "Barranquilla lidera en Colombia con 17 colegios públicos en la máxima categoría de las Pruebas Saber 11",
@@ -57,6 +91,21 @@
     "MX"
    ],
    "image_checked_at": "2026-11-01T11:41:25.073006Z"
+  },
+  {
+   "category": "tecnologia",
+   "title": "Tras robo récord de US$6.300 millones: Binance comienza a restablecer retiros de criptomonedas",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7003646-foto-contexto-nota-bbcl-39.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/01/tras-robo-record-de-us6-300-millones-binance-comienza-a-restablecer-retiros-de-criptomonedas.shtml",
+   "published": "2026-11-01T11:34:40Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -385,37 +434,39 @@
    "category": "latinoamerica",
    "title": "Continúa la actualización de los CASA C-212 de la Prefectura Naval Argentina",
    "summary": "",
-   "image": "",
+   "image": "https://www.defensa.com/adjuntos/fichero_46970_20261028.jpg",
    "source_url": "https://www.defensa.com",
    "sources": [
     "Defensa.com"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONHE1M0pjYVBZd2QzNHliMXU0R1RnemlQcXVncDduWklvT2FyOTFFeW43eE5VWDhZVGl1NE1lMWl1ME5uZnRhWlNva0FwS0tUamMyd2dGMzU3QThHUG5tZExOR1JwWW9kVUdGQ3U0Vk9CMlBzdFZ6aFNEVjBlWW5JYmg0VFVaVEFmUGVJd0s0Qjl2TGIxbEFOVFJn?oc=5",
+   "link": "https://www.defensa.com/argentina/continua-actualizacion-casa-c-212-prefectura-naval-argentina",
    "published": "2026-11-01T11:00:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Aniversario redondo: GLM cumple 50 años como referente tecnológico en Argentina",
    "summary": "",
-   "image": "",
+   "image": "https://media.lacapital.com.ar/p/f06ceef6ebef58bce1d4cfd4943cf973/adjuntos/203/imagenes/103/500/0103500320/image-2026-10-29t152626026.png",
    "source_url": "https://www.lacapital.com.ar",
    "sources": [
     "La Capital"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFotMUxyWTZNWkZtVzktTDhNLWRPVUduRHNsWV9tdWRicHFkcFZsSm1oT1ZzZGliQTgyTFV3b3Q0NXYtTU1oWnNPSS1tYjh1M1E1X1lVSkY0Yi03T3J3S1pWbWZpaGx0ZlI1VF91ZEU3RWRySTRiQy15X3FaRVdHSzJiMUx1OEJOcXh1alBsekZ2aXRnYVVOS1pyUmxBeHBLVW4zMFMzbWlQYi11SFVLVWZJNG8zZW16SzJDNTRWMU5idEZZcXJR0gHMAUFVX3lxTE1CS21rNlBHUTVKZXVYc3RZYl9RUFRNN2lCMW5oOEY2Z204djNnRE5yNlZCdTYzTVNvekhPZ2hRS0w0b3FoTjRidkVNNG1vbXpFZkVvek9ZZlZoSmJBOEVWUTM1VmVEQlBFNkFBVkNjaVlhZnRqdmRCZDgzbmllZ1paNnN4V0wya1QyR3RHRmpuWk0zT1BDV19kelN2cVh0UUJYZGJiZnRWbXctbFFlaTA3TG9rM1I3R0VsRVJzQ1hQcDV4YklMZEhRZ01SQQ?oc=5",
+   "link": "https://www.lacapital.com.ar/negocios/aniversario-redondo-glm-cumple-50-anos-como-referente-tecnologico-argentina-n10289193.html",
    "published": "2026-11-01T11:00:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "nacional",
@@ -436,103 +487,108 @@
    "category": "latinoamerica",
    "title": "“Deben poner las armas abajo”: Rusia se refiere a organizaciones criminales en Colombia y menciona al ELN y el Clan del Golfo",
    "summary": "",
-   "image": "",
+   "image": "https://www.semana.com/resizer/v2/PVS63L5E5ZEMVEPXVCPTOSTHQA.jpg?auth=4e5b05e1f6b2a7252cc2198679cc60d36875b4b59c776d531d8c1c7d40909c60&smart=true&quality=75&width=1280&height=720",
    "source_url": "https://www.semana.com",
    "sources": [
     "Revista Semana"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQWG0tTWU0ZUxwNDZhbVdUMHZZdUppSmM2MERyN3FyS3NYRUtpNHVrOGZWYlFNLUF4aThsV2QxdFczRUtPcTB1bzYwRXJvWjJqRjhvRmRDeURpU2RLWFJrak9Ta1p6X0JwX1VLQmYzeGZfcWRIeEtVTEcwTUhnWEwxNHdQR2VQVldLXzRfMzI0eGk1R09lZEpSTm1TVDdBbVM2Sldud3lHVlNqY3Z3R2FYTU5OYW5MSkNUbUE2UkVWblBEWGNPcnFnRDY5cV9WcmVwdVFnQklNb1I4cUJpVm81d1k5TV9tdTRzaG4xQ19xMk9PWFctTFBydUlCTFfSAYICQVVfeXFMTXNsS1pBVGRKTTZQUi1obWRfc0VoWXZXSHhhYTJOVmZNLUJSRTdQRTdPY3BRSXFXaEd6ZEREMExBRXgwTmhKZ053Njg1MWVpSF9YeHFZMy15YkJZNTExZWtPN1Q3ekJXTm5LOVBlOHZXSVNya09IVzlBMmhhSkhONTF6cWhWU0VGV0xEZDI5WGp1TG9kQnRfc0dMMUtONjNfa240UFdIX05kNkl3UXkzTUlsYXRJZzd0RjRVMFdtV1l2dVUtUW1fU2p0ZVRkMjN5SVdVNGlKM2JGejJBUVhDZHFEQjZnUXgtSWJnS1E4SUNkLUF6eWVKRWFBSVIybmZKRE1n?oc=5",
-   "published": "2026-11-01T10:55:40Z",
+   "link": "https://www.semana.com/mundo/articulo/deben-poner-las-armas-abajo-rusia-se-refiere-a-organizaciones-criminales-en-colombia-y-menciona-al-eln-y-el-clan-del-golfo/202600/",
+   "published": "2026-11-01T10:54:01Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "CO"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Comisión de Educación y Cultura Senado de la Nación Argentina",
    "summary": "",
-   "image": "",
+   "image": "https://revista.elarcondeclio.com.ar/wp-content/uploads/2020/10/dest-Comunidad-Educacion-2.jpg",
    "source_url": "https://revista.elarcondeclio.com.ar",
    "sources": [
     "Revista El Arcón de Clio"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVU9MaVJ1dkpFcTZWV0l1b0Zpd0lRdUZkUV8yWDItX0pOVkpQNDd0RnR6enNKVkVPd0JhbjE3NE41eHktOHF4OHk2VVV4U0lTYTFVMlY5QTltN0NCd29JOXprYWt5RER1cU43cWxUb2c5Yll4SDdjaWdKQm12VXJyTHVNZVdreVpMVDRtZWNUejFtMmRCWGZFSDBLMmE4T3ZZ?oc=5",
+   "link": "https://revista.elarcondeclio.com.ar/comision-de-educacion-y-cultura-senado-de-la-nacion-argentina/",
    "published": "2026-11-01T10:51:39Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Milei y Trump: Un vínculo político que redefine el rol de Argentina en el escenario global",
    "summary": "",
-   "image": "",
+   "image": "https://images-tools.cadena3.com/tools/r/7b2ce5a5-8484-4c21-86b7-0a50ec452bff.jpg?width=1200&height=704",
    "source_url": "https://www.cadena3.com",
    "sources": [
     "Cadena 3 Argentina"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUXNpbDB6UkdqaHM4Ry1yZnBoNGx5MmotdjlGWU9PMDF1OHVsNUpHNDVHMmtDYk1rM2pNUTBZOHpVU3hmWWMzVjRTYi14VjY0RXIxamVGVU9nSG81bzVGUmpRRENxZkRZNnVjaWc2aGVtdjE3bzZVYm1NOEVVOUFEaFVZdF94ZDhBNjh0YnNfQ240M0JBU1RkbG1tYVkxX19LQUhzUGtNUmRvTGd1T0pVUWZ4STBoY0R1UWZZWEt6WFE5WTBraEFQU0hhZU0yNGPSAdQBQVVfeXFMUHhucS03RnFFbUtycDRfcUhFSGIxSFdoRy1mSmJWMFE2VVdYQV9adVJFZ2pWekVOYkFOWWRJb0p0ZVRQcV9zeDhlUmVUWC16RlhpbGhQVi1GTUNtQWlsam11U1RhM1BnTTV5YVBhUTViSl9CNmdsejJtdWRYaU9jVk0tc1dtR196QjdlZHh4ZGViUUVSVFNWb2wxM2xsQTloUkM5RjQ5dzZJdjU1WkpTZlA1eVFGbUF5aDdIMUEzQ3ROcHFLUnN3ZUZEenpzd1NMTWxucFY?oc=5",
+   "link": "https://www.cadena3.com/noticia/mundo/milei-y-trump-un-vinculo-politico-que-redefine-el-rol-de-argentina-en-el-escenario-global_609048",
    "published": "2026-11-01T10:51:35Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Innovación de exportación: la solución argentina de IA para WhatsApp que compitió contra 80 países y ganó en Taiwán",
    "summary": "",
-   "image": "",
+   "image": "https://statics.forbesargentina.com/2026/10/6ae0a6da79873.jpg",
    "source_url": "https://www.forbesargentina.com",
    "sources": [
     "Forbes Argentina"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNC1fbllwZGVpSGVsY3RIeXJMTWNta3hjTkk4b0pLUWZTNENORllYTl93NjNKdnRJYUVOWWdCNmdkRHc5Ynd6cnZZeUg3MWNtemh5Q2ptaWpZU29OMmkzUHE5MWc2Y1RyY01ldGVEZmoyZzR5YnFFVFNhNEJ5WVFaYkZkQzRIYV9mSGtSU2c5bUhXd0tFdndjYWRmNjNoUDBpR3BIblk5cmtNc1QwNW5yem9sQTM5NHdCR2s4RWZJMHEyVFFqcHN3WGRFcF84QdIB0wFBVV95cUxOT1Q0WnFYVTJRMEZOWEpMcVYxckNxem9ST19rN2FuMHB6eHhJZ3gtZHRWN0FhYThpbHFuUF9oZVU2Z0lUU1BFZzhLVGN1emd0WFI4eFFRWXZ5bC15ZFJ0VEpKYUYySllBNVNpazZMNno5QXBfUnBCdnFOVHZSLTU2UFpxRlBmazZZM1VzbjVEdDUzQ2ZWT1RHa0pmc1k1dFpxZE5DejFYeVdqa2hFNWJpNFJEbTBIVmhHSDctVmlCbDNOaXkzMUxVNVBPMjN0VnFqbERZ?oc=5",
+   "link": "https://www.forbesargentina.com/negocios/innovacion-exportacion-solucion-argentina-ia-whatsapp-compitio-80-paises-gano-taiwan-n101514",
    "published": "2026-11-01T10:50:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "GP de México 2026: a qué hora y dónde ver EN VIVO la carrera de Fórmula 1 con “Checo” Pérez y cómo quedó la parrilla de salida",
    "summary": "",
-   "image": "",
+   "image": "https://www.elimparcial.com/resizer/v2/M3USZYE5FBE6TJDHBQT4IVCWXU.jpg?auth=d838b9ccc3a56db8b1deecbcce2c1032f76add1ba1de1088b8ec21424ff82454&smart=true&width=1200&height=630&quality=70",
    "source_url": "https://www.elimparcial.com",
    "sources": [
     "El Imparcial"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxORlFtbmk4Z0ZYbjdsMW9NdWFNYjl2QjVIRGJudUJPU3VkSmpnQmVkVE5yYjlianN4emZpYkZQSFRCU2kzQWJBblRTbmJBWk0yS05ZOVpXVjY3Qm9JcjRYM1FnQW5iYURsWm9vUUE5VXNWM1owX1NTQjJmYU4wUVpZUnpIbUJHS3NXN3RpeUxDQUxTTU1zYVBXclFfcHhsbkstckNZcGlJSGlCaGoxaEROa2ZUaVVGSk1yWk5IZ0FCVUxWX0NJYlA5dUwzeThWZEpSel9pTWhlRTROSklkSFdmdS1WWHlhOHNYQ2hacVNUSDIwbjRUWGdIQ3BaX1ZiWjlx0gGbAkFVX3lxTE5KTVk5SS1HbGI2TDVMRGR5Zll3U2NWWEgwYW5Mb2NGUk5WZTZYVzdteElmX1RnZ1V5enJNVmhhYkR5QXROTGJ2T0ZOZDk4ZFUxTTBobm1ZdVRLbjRaNkliaXlxUVJwTXNLM1NCaFdVZHF4M1ZUekhWVnNfT0g5c3NSUWxaeVBfV21GaURfWHVnWEdsTEV2SWJlYkhiUjBWQXV3UFNyTzYtSzkyZlo2dGdkeHpRYVlKazdrYkJpNFd5VGk4b3Bldlg1TVNVeTF2Z0xFUUYzOTVQT2ZHSzE2NWRGSDczbVQ3Q2J5OFRZOHV1RmlYWWNSaFdkUm15WlUyN0E5NC1nU1VzakdjQXNRc1VkWDFQYkFFZHV2TVE?oc=5",
+   "link": "https://www.elimparcial.com/deporte/2026/11/01/gp-de-mexico-2026-a-que-hora-y-donde-ver-en-vivo-la-carrera-de-formula-1-con-checo-perez-y-como-quedo-la-parrilla-de-salida/",
    "published": "2026-11-01T10:48:11Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "De Argentina y Brasil a Colombia: las raíces de la batalla cultural del gobierno De la Espriella | El Colombiano",
    "summary": "",
-   "image": "",
+   "image": "https://estaticos.elcolombiano.com/binrepository/1024x683/0c-36/1280d720/none/11101/VVKD/whatsapp-image-2026-10-15-at-2-04_52026817_20261031165604.webp",
    "source_url": "https://www.elcolombiano.com",
    "sources": [
     "El Colombiano"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdHc0ZDFpNWZyaGFFb0w5QzVhQk9oLTMwenQxWmFTNl82cmNvR3NyUW9jdTBYa1BFVzhnTkpkWGs1djU1OXZ1MmlObHlkY3BUaFVWa0JOajdIZmV6clh2SHh1VVZibDVjTVBjal8xRmQtaUMtMzh6bWpqUmw4WlJ5eTJpX25jMlJRdmxKUWRaVlhYUnJCUDBUTmZES3pXanhJeGh1eXQ2SkYtdFl6bDdZbGhFRUpUd9IBuwFBVV95cUxPb2hGSnluUlRraEk5dFNXbXhJNVZ0Nkl5MUpFeFQxX0dNUHp3RGl4cEkyVU5yS09VaGJMbkJSNEZYR2QydmY0SmQ1NlhhNVhscVd2YXRVUWFtZ2puQ3ZRWDNxT1RxSjdlM1VKRDB4Nlp0aHJWOXJSSUVHNlBoNnJHaEVaV2s5QXBVUHExVjdwbmVzT19OcllWTzhIRUtrY3hqU0FDTkNVRkpaSjBQWkJ4TkQ5b1VmeVhsSEtv?oc=5",
+   "link": "https://www.elcolombiano.com/cultura/contrarrevolucion-cultural-que-es-gobierno-abelardo-de-la-espriella-MC43054833",
    "published": "2026-11-01T10:47:32Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
@@ -540,25 +596,27 @@
     "AR",
     "BR",
     "CO"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Argentina busca las semifinales de la AmeriCup 3x3 con sus dos seleccionados",
    "summary": "",
-   "image": "",
+   "image": "https://deportv.gob.ar/thumbs/advf/imagenes/2026/11/6ae718ca07244_450.webp",
    "source_url": "https://deportv.gob.ar",
    "sources": [
     "DeporTV"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYldkam5DUVJ5X0hFd2R0NmFBa2RKQVhwQlNrQm1SR2lmU2lJdmVHcGdWY2h2WWx5R3pHRW85T2FxZXJSTjVZVGZWOGJkSmpMX056MkpMR2NQMVFnb25MM3Z3ekVCUmtGN29MUTRZMzZCaDU3Z0FoTVNmcXpZQ3poeVlnazgzMXNxeV8yMGg1TUJRT21TUzU3SlAxYTBlbHg0Z0lYYldEV1N2T01JM2FzWQ?oc=5",
+   "link": "https://deportv.gob.ar/basquetbol/americup-3x3-argentina-semifinales-seleccionados-masculino-femenino-nid:18519",
    "published": "2026-11-01T10:47:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -570,14 +628,15 @@
     "LA17"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNc21uRGR2b1A3SzlxbVZ2X21yd0hUWlJ2RTFKRE9xUkZZeUVjSFFjY29OS0lCd2JlQm1IRHN0ZFpOc0dCVzZqbm9DY2tFbUFWRjBld1k5NzJnVEtNUVJtWVk3dC11UTNqclotU3ZoNm5od2F2VDRubld5aDZrdFdUMHJSd2lpdldiNHhUYW9NV2sxa1ZMV0hNRThKM1BFZWgwTm9nY2RlUUFWa1RDTnhn?oc=5",
+   "link": "https://lu17.com/contenido/155734/argentina-perdio-terreno-agricola-frente-a-brasil-en-las-ultimas-dos-decadas",
    "published": "2026-11-01T10:47:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR",
     "BR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "deportes",
@@ -601,19 +660,21 @@
    "category": "latinoamerica",
    "title": "Euro hoy en Paraguay: precio y cotización de la divisa este domingo 1 de noviembre de 2026",
    "summary": "",
-   "image": "",
+   "image": "https://www.clarin.com/img/2013/01/23/rJ4kl9llW_1256x620.jpg",
    "source_url": "https://www.clarin.com",
    "sources": [
     "Clarin.com"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWnhjeFJnV0RuSGhiM003VjcxaXQwdUlTbElVYklyWlZtOTluUlpFWldTcGdCWmZoV1oxcnV0Z1JKeFlBLW55ZnRJZklXSGZIeTVVSDlHRVR1TjdMdmFUaV85dTl4elhMRmU2UGVyQnc2ejVZdGI3ZlFkcm1pbjU2UEpOa0JXYThLVVdFZl81bERIZGw4dW8wSjdPSEhldzBYRkhvTzJMUkU1cDBvSVFrSnFPTnNfVkVXaUh4U05CblBtWlZKN0xWUVNublB1bmJseHBzUzlB0gHbAUFVX3lxTE9fcTZRa01faWZ5UkJUaDdUNkgtTUNCZWtDZGpnVHhUcENOWUoySl96cTJVZFZMbzZuNVEzZHh1MnE3YTJOcDBJanBtSlZMd3hKUmtUOXpHM1dkaC1DVE9mSkJRbEhYUTZlVHRULUVtdHdTdkY3OVB2Z2s4WVZLMTFOSi0wQzhWaktPTHZVZmVxTUpjd3dLLWd0dnlSM3BkcjdaX1Nna0dDQjI0NXJtLVB6MkhuYTNaM095N1liSnpTWEdyN3ZON1dGdVVhOEdrNnZscHJqOXF2blE5TQ?oc=5",
+   "link": "https://www.clarin.com/economia/euro-hoy-en-paraguay-precio-y-cotizacion-de-la-divisa-este-domingo-1-de-noviembre-de-2026_0_q7Ceam3nxP.html",
    "published": "2026-11-01T10:40:13Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
-    "PY"
-   ]
+    "PY",
+    "UY"
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -625,140 +686,148 @@
     "LA17"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZXhhNTZCbFpnNVU5WWpPYl8yQ19Lb2NSSEx4Y3lyLTQyWnNGUzJ4SW55ZDBFdlFKZFVqVUU3OU1jWmpNQ0p5d1hSQXNoWGQ4aTlpTkJ3U1pKdzZabjFrXzl2aWdCamxUYWp6SXNXcW1Rc3FQTThiUFlBUXItY0N2bE1GUXZVMkRYVno1X2NLd2RfbmtxRW1ZZlF4UXRZbnFpd3ZjTHgxekFjNG02WHNv?oc=5",
+   "link": "https://lu17.com/contenido/155730/confianza-ciudadana-argentina-25-global-medicos-lideran-funcionarios-ultimos",
    "published": "2026-11-01T10:40:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Mercado de capitales y banca privada: las claves para financiar el crecimiento de la Argentina",
    "summary": "",
-   "image": "",
+   "image": "https://statics.forbesargentina.com/2026/10/6ae11c0eb81e8.webp",
    "source_url": "https://www.forbesargentina.com",
    "sources": [
     "Forbes Argentina"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObG0tMGlxOTdmQ3Mtb1pTOE9kcU1lYkdrYjEwQlRoRE1yNnVxVGx6WlhyNTdBdHpRSWllRzVETHBVeGx4c3dtMFktTlZYNC1YdERSZkhWVjkwdnR0d2lxaXdUa3RGTEt4R2xXcGd4VEhXbDFoRllCek1VSmhJVWd2OWJlb2xxdzNLQ0lvWW1wSVpPbTA1enhJdjljY05pNC02akxLRWdZR3dNdnVwSmFuTzVNVHI4X0Rh0gG-AUFVX3lxTE5iaGJKZGh5QTMySkozUVFPY1ZrZjBnOTJSWDhzVU5JLWl1RHU2SUw2ekVxVnp5RmxwNFQzTzl3THZnTm9fWXRYYWV2NVZVUkpsT3B6dXIyWVpXMXdZR2ZwQWowLWMxQ2FvaFhicTFFVEk2RWdraEp2YXhKRHhLcnByTG82MkMwWGhEd2cyMVN3c2Q1S3Z4YS1mUE10a2U5eF9MLS00RUNxd3RVRW1vWFVVa0NNdHdkeXVQNVc5MWc?oc=5",
+   "link": "https://www.forbesargentina.com/summit/mercado-capitales-banca-privada-claves-financiar-crecimiento-argentina-n101509",
    "published": "2026-11-01T10:34:43Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Cuba. \"Che Guevara en ONU Cuando USA Gritó “¡Terrorista Comunista!”: 5 Minutos Que Hicieron Historia…",
    "summary": "",
-   "image": "",
+   "image": "https://www.resumenlatinoamericano.org/wp-content/uploads/2026/11/WAHACNV6YBH3NBJHPHWLGKFDDU.jpg",
    "source_url": "https://www.resumenlatinoamericano.org",
    "sources": [
     "Resumen Latinoamericano -"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOLThWNGdmRG5paklLVHdXR0U4Qm1UUnFCaUpDajF5M1ViTWUxRlZtU3pCM19kanFJT1FqcUt4YjNCYWpFQ0o0RHR1RFRnWTRHSmhEbC0zUzdfUzBNUWlnSnRSSnlBVFJubC1qbDFGV2NWNFU0bTdSUE02aGg1bHp3UktDZmRrZWhZT1RnblQ0OC04UFVISjRrMlVGNXVMMFpIM2tLbXlyQjV2VmpPWGRJOTBqZFF1UjY4QkZ2Zm9uUVBTVkQwTy1wV3BKelppM05HdDBEczZHRkR2cmlQ?oc=5",
+   "link": "https://www.resumenlatinoamericano.org/2026/11/01/cuba-che-guevara-en-onu-cuando-usa-grito-terrorista-comunista-5-minutos-que-hicieron-historia/",
    "published": "2026-11-01T10:32:43Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "CU"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Concepción del Uruguay celebra su desfile histórico con Granaderos y la voz de Emanuel Noir",
    "summary": "",
-   "image": "",
+   "image": "https://elonce-media.elonce.com/fotos/2026/11/01/m_1793530078_33043.webp",
    "source_url": "https://www.elonce.com",
    "sources": [
     "Elonce.com"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNejh0eGVyeXVKMS05bHgyc2ZmZC1za015ZWZjcFVEa2lobWN1MHc4OTg0ZE40cnFTRjNaOFlORndsYnJ4LW8yS1NxZkNNMjkxMU55OGFlQ3dGdWJUM2VlejZwc3RFdmVlRW5vTjFFZUJSWTV1R0NfTm54NzNNbC0zTXlJNHJHZGJDVTl2aS1aam5TSXZIbzlvTVVJSHlGLWl3eVUwZ2t1ZGw5cnE0TGNRRDNYcG5aaTJiSmtYb2pGX0dkcTVoMEHSAb8BQVVfeXFMT1oybE9KcnNhb3RKR29JV0NibExNY3loaTRGb0hJdWREdXdGYzJraFI1dEhtUnY2WDJMNEFGWnVaWjk1NVFILTNyU2dCanRqYlI4bFhpU0swblhOV0hWYjVoZWhzcGEtVS1KMEZMcklwNlc1azJGQWRUdVl2ODc5NGw1V0FRRzNMdnFLSXFmQV9TeWNjZ1JUUWdQY3d5VWJTcXBIU2ZRSUJlWjVNd0dJamZmc012ak9DV1ZsNUZfeE0?oc=5",
+   "link": "https://www.elonce.com/sociedad/concepcion-del-uruguay-celebra-su-desfile-historico-con-granaderos-y-la-voz-de-emanuel-noir.htm",
    "published": "2026-11-01T10:30:02Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "UY"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "México busca elevar su participación tecnológica en cadenas de suministro",
    "summary": "",
-   "image": "",
+   "image": "https://i0.wp.com/sociedad-noticias.com/wp-content/uploads/2026/10/1-278.jpg?fit=1200%2C800&ssl=1",
    "source_url": "https://sociedad-noticias.com",
    "sources": [
     "Sociedad Noticias"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYVJ0WDdjQWNiTlg5OFhtTW5ZemhsajhrZF9ub2N2UHU2dlpzcVpNenUzWkVGWFAwenhIbDJpWkpiTXpfTkp5QkR3Wl9MbC01b1A0NDRwYjJreG9uRktQWmZnam5UZWFSWVlITjFZTmFvNjhqM0dOVF9wYi1EV3owY0Z5S0hvd29qSmQ1RzNQanhGT0YwdmVXUzhrSTJHSk1Hb2ZnS3gxSlo5b0kyZTRNZmM5XzkzZw?oc=5",
+   "link": "https://sociedad-noticias.com/2026/11/01/mexico-busca-elevar-su-participacion-tecnologica-en-cadenas-de-suministro/",
    "published": "2026-11-01T10:30:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Argentina - Estados Unidos: una relación bicentenaria en el contexto de una Nueva Era",
    "summary": "",
-   "image": "",
+   "image": "https://alpha-app.tadevel-cdn.com/hostname/noticiasargentinas.com/api/v1/image/article/6ae4a38945c3c55a7b58950d/facebook?v=a64fe2dfbc4bdc50e4099f0498f64303&s=e8e69f086c70996151c376fd2cbc906c",
    "source_url": "https://noticiasargentinas.com",
    "sources": [
     "Agencia Noticias Argentinas"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOZmxvdHprNXh5SzhLZjhfblo4Nlc1SmdaVC1BX3M1STVmd1JvOXBHbklKSWlNdzFqMy1IRzhheXo4U1cydDN2SXpBTWxDNGE1NG4wbExWc1lPZHhKRnJBRFRGX05lZzZVdEZkNVJsZ0pUajlXYXFmMVFWY0xQRGhmRWNNZDhmU0ZZYngyNG5TSGN5Nlp6N29kQWNfNDh3ckh6NGpBVDI2dVN3MWlYMEpZUXI3VzFZdGczUWV1RUlCdjVDSGtTRGlKaFlzRFJ4TUNrb2FfemFnZWkzQTNXcERaQlZLNkZmd9IB9AFBVV95cUxPV1I0b2YwVTROT09CTWxHZGg1V3FaY3BHQ1JYdGxYbTl0NVc4WDJMM3lFUDk3b1NRbzZxM1VmVUdPUm9Db1VmbklQMU9Xa3FqWkowV1BmOThDMERfZ0t4anJoNWFWcks5UE9mM3BJaXZtT2V4aWxEUlVFNGpSYnpWd3F2U2prTmhqLUg3NndVSmJPeU11azMwQW1HMHdoRncycDVPVGt5ZGtrX2RxS1c4T2FnSVhIeDc1Z21DcWxKdUFyc0VLSWI5M1Rld1owSE9lT0tUOG1oTWVCanR5MHpyT3NQU29VR0doMzlOajh0M1JwU3lU?oc=5",
+   "link": "https://noticiasargentinas.com/politica/argentina---estados-unidos--una-relacion-bicentenaria-en-el-contexto-de-una-nueva-era_a6ae4a38945c3c55a7b58950d",
    "published": "2026-11-01T10:30:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Argentina recibe al Papa: los límites éticos de la inteligencia artificial y el valor del trabajo humano",
    "summary": "",
-   "image": "",
+   "image": "https://media.losandes.com.ar/p/dd5229a6ba6c22234a8e515db283adff/adjuntos/368/imagenes/100/762/0100762111/1200x675/smart/claudio-barros-y-laura-carbonari-argentina-recibe-al-papa.jpg",
    "source_url": "https://www.losandes.com.ar",
    "sources": [
     "Los Andes",
     "Diario de Cuyo"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVUNBZkpVNlhPTWhsamtMT3FMMnBVVkZmSkhteF9rWVFZcy0yTnpreHF2c19yNm9aSWNhQTBXclV2U0p2X3puUlMzVk10U0JPaUdMbjVHMFZOcVhYZm5PblZoeDItZDRZTTBsMnpfV3k3bmxTaEQ0dzZWZUNWbmFURWxwN3p5UEhlaXNPUkpJWmdfR3pmUklrak1pdU53TDdkSG1mcmRnd0QxMmJLZERMZ01BclpaNVlhSHk1emdKaHRERDM1d3hIclhsZ1B2MkZ6ME12Y0EyREozOFNXQXpR?oc=5",
+   "link": "https://www.losandes.com.ar/sociedad/argentina-recibe-al-papa-los-limites-eticos-la-inteligencia-artificial-y-el-valor-del-trabajo-humano-n6012438",
    "published": "2026-11-01T10:30:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Récord de exportaciones en Argentina: el rol clave del agro, Patagonia y las economías regionales",
    "summary": "",
-   "image": "",
+   "image": "https://media.lmneuquen.com/p/0fea4ff4fd90c4a112de2685e59231c3/adjuntos/353/imagenes/008/425/0008425855/1200x675/smart/image.png",
    "source_url": "https://masp.lmneuquen.com",
    "sources": [
     "Lmneuquen.com"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaEcwNHp4RDJlZkt4Z3NqV2QzcGZ5UkJRUzBWa0NjYVJTSmJJQjAyY2ptc3p0bjR4Z2wxRnJYMHpfeDgxbVFpSTVuREc5VFJXb0FTRk1yTWJIV1JvRkNycEwyNy05N1hCRTZCMTJUZFRuT3JZcHhXLWJsR2s1Q2t4UUVoY3pic3BYZ28wMHNjS2NQMHRVSDZwdGlCZlVnMlhMbEhBRXAyUkJTb1FQSWtQSHJVV0N2aHpFSGdNZEk0a1hfaVpTMlNZOWxhZE1hUdIB0wFBVV95cUxOTUNpVm80aGcySDQySUEwWGo2MDdLY1VuWHN2eTlKWVFobVBSN282QnZRRnJCVk5lVjlXZ2sxV2ktZWt4c3o5aDVfWHBmWTBpcFFYMlp1QXJTRWUzTDM4dkMtanlrMTRCbGpMbVFqYmMyQnN0eFFHWHNRMHd5aFY5Ty1GMXFXRGNEeEtaMnhGSHMydE5oOVMtdl9aT3JtbTNZdkFpdXVQdmo4S2JiamdwakhzU1l0RDVGRVFENHV3TzZWTmRNOVRNNzhHVEwtUElCU1pr?oc=5",
+   "link": "https://masp.lmneuquen.com/opinion/record-exportaciones-argentina-el-rol-clave-del-agro-patagonia-y-las-economias-regionales-n1259431",
    "published": "2026-11-01T10:29:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "internacional",
@@ -785,74 +854,78 @@
    "category": "latinoamerica",
    "title": "Argentina solicitará frenar la explotación petrolera británica en las Islas Malvinas ante el Tribunal del Mar",
    "summary": "",
-   "image": "",
+   "image": "https://mendozatoday.com.ar/files/image/394/394901/6a9c22690e6a8_600_315!.jpg?s=e08828bafd83ea05d2dc13853d9ac46f&d=1789073333",
    "source_url": "https://mendozatoday.com.ar",
    "sources": [
     "Diario Mendoza Today"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPX0phbjlWLTV2YjR3VTVMaE5IR1RDRG1NWHpTbjFaSkVfYjU4eGU1VFRlcFNHaUJpU2xEcmZKQ0hwOTBkMDFFWEJySUcxUWpQTG9qMUc5RWduRXpLeDJhM3lfZVphdTZVM1NmdmVtRVI4Q3VSaEVSM29pVkhvX1U2SGt5WU1VbW52dkpsOVZEeGo2WTlIczlCYXdqVlBCV0FXRUhDUTNLcTRZSnpkNUdNUWNfVFM0eE9KZklOOFdhZmVpMW1UYUZ0WkNJTXduXzVUdy1meEpBSmtYb196WlpwU1NsNNIB2gFBVV95cUxNUnRGSThSQUIzMnA5TkphTk5tTU94cDJVTkRJa2VPd09RNTRybVFhSlZ1QTU1WVA5QWtEbXhoQ09HajlfSFlWSlJoblRFejRmcmtXZUFyZmg0OUhVSGktR1VmUW5QMXNOTjVYZXB4ZnhDYndDUHowQ1BUSl9MS1B1UkNmbU9UVVQ4NHFyRTZoRHp2WlpUR2FYV2Z5U3NZdjNMMlJ6Z280RzBsS0MyeDBIbHBmN0FweHd1U29FUjQ5c3hLejdFSVlIUTV3NkRQb3NCUDEwSG5LRzJtZw?oc=5",
+   "link": "https://mendozatoday.com.ar/nacionales/argentina-solicitara-frenar-la-explotacion-petrolera-britanica-en-las-islas-malvinas-ante-el-tribunal-del-mar/",
    "published": "2026-11-01T10:25:56Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "El papel de la frontera México-EU en las elecciones de mitad de mandato",
    "summary": "",
-   "image": "",
+   "image": "https://assets.lasillarota.com/social/535349-52822aec3c.jpg",
    "source_url": "https://lasillarota.com",
    "sources": [
     "La Silla Rota"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRThhOHJJV24tMnN6RUctOTZLQkFpcGt1eFRJTUZBd3hxUGZYc25pT2hQcFF6WXNNVmZ5QmZSNmpXWVVxQlVJOFVEQWNtaGRUcGdYc2Q2aVRnYkQyUzBkM2kzTE9JeUhrMmxQaVpyZEJRZVJzMFdCMHFaVEF5N3JBV1Y2Vk9mcUl3VXYya3RuWE01aFNrTjJDd0lYclZGY0Z1Q2FyNG9pRDVKelVUOXc1d3JtVVV0NHh1WWs3Q0F6bVU?oc=5",
+   "link": "https://lasillarota.com/mundo/2026/11/1/el-papel-de-la-frontera-mexico-eu-en-las-elecciones-de-mitad-de-mandato-535349.html",
    "published": "2026-11-01T10:21:00Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "‘Checo’ Pérez Previo al GP de la Ciudad de México: ¡Vamos por Una Buena Carrera!",
    "summary": "",
-   "image": "",
+   "image": "https://static.nmas.com.mx/Nmas/cms/checo-perez%20(5)-1376x774.jpg",
    "source_url": "https://www.nmas.com.mx",
    "sources": [
     "N+"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPLVBYRmw3NVJHanBMMG5XMzlPLXVJU0tBcVczV19oQTctMnh1TThDMlQxWnl6SmVwS3NtZHhNanBFcXFKQy1Ea2c1ckh5QUdMbFFLdVJ6N1RuLWdPM3h1YVk0S0I1N1hfMEo0S0ppVlZvdWxBS2luYUJERldqZGVQV1F2a3BaYWU2VVJMUXdrOTlNUkUtaHBvNkUwWGprajFpc1gtOV85azVLMXBKRlR2VkhudGpaNlN1RlZFV0lqQ0xsdHVW?oc=5",
+   "link": "https://www.nmas.com.mx/ciudad-de-mexico/deportes/checo-perez-previo-al-gp-de-la-ciudad-de-mexico-vamos-por-una-buena-carrera/",
    "published": "2026-11-01T10:20:50Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
    "title": "Algunas de las más de 400 víctimas hablaron con Infobae Colombia y señalaron que Loany Lismeiry Ortiz Nova participó en un reinado organizado dentro de la cárcel El Buen Pastor, en Bogotá, donde permanece recluida. Además, la venezolana Keylis Sa",
    "summary": "",
-   "image": "",
+   "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.99422-6/877585011_1161283110030939_4860277604070524817_n.png?stp=dst-jpg_tt6&cstp=mx1600x2000&ctp=p600x600&_nc_cat=111&ccb=1-7&_nc_sid=cae128&_nc_ohc=E3AdfQz6hZkQ7kNvwE-aJXn&_nc_oc=AdqkDyFXX_s1GqnGRFff0yyu-S__QihPxjp--UBftVAwwkiPfC73UtbZ08g_SeeQZEc&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=M-E1xrNLCeFAONEl6eRfbA&_nc_ss=7b20f&oh=00_AQTgp1i45KjuLxDLdQ1FrwO_ZyLafExqP2a6TWfYgDAqtQ&oe=6AED02C4",
    "source_url": "https://www.facebook.com",
    "sources": [
     "Facebook"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPcVEyMEhheFlMVjM4WjlKdW5pbTRXQ3Q1NER1Q3FKSVdBXzB1c292aXZfM0NGN2daaWo2Znl2NE1lYzBDQ1hzR2ZFUi16a3FTTGx3OG1QbVN4VXBhbFZwQ1hXV0c0cGZYdVpDd1RGSFNkUk5WcWFMMXpWLUhPZGlhRmdIU09wYkdhSjhnQi1rY3ZDbmlxVkxHTkxhNkxrTkswb25rY0NQRzRZLURYZnlibFZoMU9WWlZHWEx5WE5qUldmTFFwdGdGT000Zng3cDZpYm1WV0EzTTNKQ3BRXzZHdHUzMVRtMmY3QTlYOVV3aWM3UQ?oc=5",
+   "link": "https://www.facebook.com/infobaecolombia/posts/algunas-de-las-m%C3%A1s-de-400-v%C3%ADctimas-hablaron-con-infobae-colombia-y-se%C3%B1alaron-que/1584125017063588/",
    "published": "2026-11-01T10:20:48Z",
    "first_seen": "2026-11-01T11:41:25Z",
    "metadata_only": false,
    "coverage_countries": [
     "CO",
     "VE"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "cultura",
@@ -901,6 +974,24 @@
    "metadata_only": true,
    "source_kind": "news",
    "metadata_policy": "source"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Publihistorias: 1930: un robot en el centro de la Ciudad de México",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.merca20.com",
+   "sources": [
+    "Revista Merca2.0"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVktYcWUyckw2ZzBrLTVEWG1fWVU0Zl9hcTQ2dVF2bVZVZTVpUVYyMjBEWEYwcm9jNTF5dGRDdnFfUHJjeHQwZ1pIVnB3U25GLVZRdXdXa0VaSU1mdEVYS3V3NGdUdElicXd6WUx4cXU3T3FpZWlaUDllZUtUYzlJMExBS0oyNEsxYncxc1pfczNfd0k?oc=5",
+   "published": "2026-11-01T10:08:32Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "MX"
+   ]
   },
   {
    "category": "latinoamerica",
@@ -1190,6 +1281,24 @@
   },
   {
    "category": "latinoamerica",
+   "title": "¿Quién es Kimi Antonelli? El joven que podría coronarse campeón de F1 en México",
+   "summary": "",
+   "image": "",
+   "source_url": "https://grupoanimal.mx",
+   "sources": [
+    "Grupo Animal"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOY1hWRXl1R1VJQmY5ZFNhM2dCZTBlN0pnTDFsT0JUNkwtbUc3WkFqVVV5THh5b3h2NGZnT091UDFnSVNrYTFsNTQxY2tLc2NGM3l1THg2RjVBSVU3Z0tneEhTWGJwbjZTTmo4U1pDY3ZJTE5zWnlDZEp2bnpHN2dtRGFEOFJGQVNlQV9LcGQ0UkhkY2NndkM5ajBkOWQ2aFhBVGhCa21wSmtqN1UxQ1E?oc=5",
+   "published": "2026-11-01T09:02:45Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "MX"
+   ]
+  },
+  {
+   "category": "latinoamerica",
    "title": "Los planes de la automotriz china Omoda&Jaecoo para la Argentina: \"Podríamos comprar una planta existente o hacer una de cero, pero tardaríamos más\"",
    "summary": "",
    "image": "",
@@ -1443,6 +1552,23 @@
    ]
   },
   {
+   "category": "cultura",
+   "title": "Heidi Klum vuelve a coronarse como la reina de Halloween con un disfraz hiperrealista de su propia mano cercenada",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.revistavanityfair.es",
+   "sources": [
+    "Vanity Fair España"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1KRWZYWVFrNkpYTHZxclN1QUNmNlJFTFJmZ3FPNk5qMzZuaGRGM1BBelNpeVM0b2d3N1pMVWxFM2pJRnpkQ0ZjcWlKWUwzLXgzbldsdnpUeHJlRjhrRDlzRWktUmpRdlZpLXNaTzdNVjZ3R3lLczZKZmZoWGN0dw?oc=5",
+   "published": "2026-11-01T08:27:46Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": true,
+   "discovery_edition": "ES",
+   "metadata_policy": "source"
+  },
+  {
    "category": "latinoamerica",
    "title": "El dato que preocupa a los economistas y pone en duda la recuperación de la Argentina antes de fin de año",
    "summary": "",
@@ -1513,6 +1639,24 @@
    "metadata_only": true,
    "discovery_edition": "CL-CINE",
    "metadata_policy": "source"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "El efectivo sigue dominando las transacciones cotidianas en México",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.yucatan.com.mx",
+   "sources": [
+    "Diario de Yucatán"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeGxEeFUtakVkQ2RiODBYNW9Sc3NTR2J0N2w1dGNfNGhOQXNSVFZXRnJBQzZRdHZ2REdsUXJpWWdtRmdJT1pzTmx0cDFvdUpoN0M5NVBFQ1ZWMGg4cVhsZTRYVWkydWNvUUF4dWlYMUZvVXVTYWplVEJVaTd4M2lYVzlUaXJkcTBLZXhEY1JHaUEwVmdFVENxMUhlcG1mVmhOVDVOX2ZGeHBlQXV3V1VKUjNIbkcyakk?oc=5",
+   "published": "2026-11-01T08:00:00Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "MX"
+   ]
   },
   {
    "category": "cultura",
@@ -1729,6 +1873,7 @@
    "first_seen": "2026-11-01T07:26:13Z",
    "metadata_only": false,
    "coverage_countries": [
+    "AR",
     "MX"
    ],
    "image_checked_at": "2026-11-01T07:26:13.998098Z"
@@ -2468,7 +2613,8 @@
    "image": "",
    "source_url": "https://www.clarin.com",
    "sources": [
-    "Clarín"
+    "Clarín",
+    "Clarin.com"
    ],
    "coverages": [],
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZ0EzYUFoV3o2aE1zMG16RzhYOC1ySDVtbmZDaGZ3ay10cDhtbTI0QTA4TmJTcmlCYXlPTWNhMThjNmx3c0s5TzV0MUx6eTRFZTRrNVo5OHdEam52T05JR0paYW13dEc5dVZSWWtsdVRYSTdtWFU1M2MxZy12R0R0VkJZVVM2bW1kNG1tWjNSRl84YVhkNUtMT3d5YTRpMllGZE5MVTdvN3JNTzAxYnJvUXRna3padk90cXVIaFVFLXE5RUJn0gHKAUFVX3lxTE9wM0U4SklBNkFhVGl5eFNtMU10R1Bob1Zrang2bk91N3Y4ZmlpLWxlaE9YeDA4SEw4bG5rSDdLc2xFN1F5S2hxNERpR2RJT2dacFMydE4xNXZjMm56LVA1ZlRWaTdzRGtna3ZYbUd4SFBUV25tLWlwRWxrbGYwTTZ4S20yWEFHdE9mUDBVcWlrVFNTQUkxU3l5WDZRUVROeElxVzFudkttVmtsbXRVbndBYXVScllrOENKMWlFYmJzNFEtTEZ2aVZ3LVE?oc=5",
@@ -2649,13 +2795,6 @@
      "source_url": "https://www.vietnam.vn",
      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeWNFYTdsNW9namt6UktZMGNnUmR2TzVzMTZtWXhxRGIxeHE2cmM1RWhnbVRDSTEwS0c2RWJMQjl6dkR1S0xYOGVjWWhoLVVlM2QxcU1BZ2FxaTRFX3hpVWxSNHZ2RzBPMmNjZjNuMXFqV3ZEeUFCaWRNM0JmaWNIQTloVmU1WDl0eElwcDd4MkZaMWk4azFseEpKS09RWnh6WTRKZWkyb3hqVEdsQThB?oc=5",
      "published": "2026-11-01T04:34:27Z"
-    },
-    {
-     "title": "Civiles regresan a Ucrania gracias a misión humanitaria tras cese al fuego negociado con Rusia",
-     "source": "Chicago Tribune",
-     "source_url": "https://www.chicagotribune.com",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcFA3NGp2UGdKUjJtZW44ODBvY3I0WURPZ2FDMFctRnRXLXJ3WTZTZUhGOXNxeHpkVGdBTUV4Zjhtdl8weUx0WFlPbWJJamtHVkZGdVktSm5qdV9iblFZMTBxOW1pa1Y5bWR0S2dqOC1SNzVENTZIaVZuMTVPWlBKcEhSQkJVY0VjVlg1WkJvQndGM2FOaUJRc2tHSmxzMDE0cHZwNDNMbkRfRFVSZDdtWVZqZmJ5LXdwamdYYnF3LVZqcnRKN2xsU1ZhUXFrcTlyNkE?oc=5",
-     "published": "2026-10-31T11:52:39Z"
     },
     {
      "title": "\"Algunos comían perros\", el relato de los habitantes de una ciudad ucraniana ocupada por Rusia",
@@ -2999,6 +3138,21 @@
     "UY"
    ],
    "image_checked_at": "2026-11-01T04:05:10.460155Z"
+  },
+  {
+   "category": "nacional",
+   "title": "Corte de luz afectará tres comunas de la RM y durará hasta seis horas: Revisa los sectores que estarán sin suministro este domingo",
+   "summary": "",
+   "image": "https://images2-mega.cdn.mdstrm.com/meganoticias/2026/10/31/cortes-de-luz_535274_4_6ae6a014af2d1.jpg?d=1200x675",
+   "source_url": "https://www.meganoticias.cl",
+   "sources": [
+    "Meganoticias"
+   ],
+   "coverages": [],
+   "link": "https://www.meganoticias.cl/nacional/535274-corte-de-luz-programado-santiago-rm-enel-comunas-afectadas-domingo-1-noviembre-dcv-01-11-2026.html",
+   "published": "2026-11-01T03:00:00Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -3451,6 +3605,26 @@
    "metadata_policy": "source"
   },
   {
+   "category": "latinoamerica",
+   "title": "Argentina confirmó las sedes para los amistosos ante Uruguay y Costa Rica",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.espn.com.ar",
+   "sources": [
+    "ESPN Argentina"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLXJFQnRBSTVnSUJMSkllWDNSdmZ1RDdieENpV0w2MGk0TFROUzRWcjBnRnEteWlmb1lQcjJ2RjhhSVJOdTU2ZjR5R2xIZG4xWER2NHZwQmtxa09nSFpCTmdUOVBjZUNpeXB0N3J4WUVWaEZZMWpHc25Fb25hdk5vbHllbjNqYlROVFVqa0lJdFk2NG9pQ05MNzhuRWUtS0owRl9wSXg2S2o1Q1Z0aklLYVRXMHJfRzBLeWM5eG9OTGVFV1dpNkE?oc=5",
+   "published": "2026-11-01T01:53:09Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR",
+    "CR",
+    "UY"
+   ]
+  },
+  {
    "category": "internacional",
    "title": "Maestra de EEUU tuvo bebé con estudiante de 13 años y él la defiende: Imagen de Facebook los delató",
    "summary": "",
@@ -3543,15 +3717,16 @@
    "category": "cultura",
    "title": "“Son una mie...”: conocido periodista expone el colapso nervioso de panelista de Alfombra Roja y destroza a su equipo",
    "summary": "",
-   "image": "",
+   "image": "https://www.adnradio.cl/resizer/v2/D37B24HEIBBVLEDKOJX2UNZHG4.jpg?auth=fb893e4a86e1035cf31f7aaa73bbfdb9d89b327af105617927fce996939066f0&quality=70&width=1200&height=675&smart=true",
    "source_url": "https://www.adnradio.cl",
    "sources": [
     "ADN Radio"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPODAtODJqTzVOY2pIX3JxcHEzUFR3NXU3Z2pyYzc2UUFweVVGLWxDMDA4czVfWGN5VlB4RFNsUkFWTnpkbFA5enlxX0VGd1RrUy12VTF4Q09zUjlyTkNRRVhOSlVqa1hKc19MVDZQVUhuQlJId1NwUU5CRndqN0xHUGFMaVIwb0VjZlgtSWQ4dFVzUU5FckJjZkJ4QXZOQW9ubHRQdDZDY1ctdk1ZR1c5U2FWc0E4YUR1VXFRRlVtV3NXclFha0dsbEVpTXJjTG9Tbk02bFFoY09hMzlsMWZtaNIB9AFBVV95cUxPRVNtNDdkNk1nSlVtNHJmXzRfVVFmZjFGOTJTYWt2QkJlMkpmaVF0RG5fTEFCdzdUdF9fSjQ3R0FMNlBQMFdqdVM3Q3ZPRDdXVGFmNjZOSDRHaERfOTFmVkduZFR2eEQzTFkwNWFldkc0bGI3LVkwTnZkMW9sXzhnX0FWSk50T0RtVDZlX2NCaGU5MnVXcjhYazFET3FTZ2Q0eXVIbEFkeFc4OUpxOGs1bTl1dTdZQmpCN3NyaGpPRXpkVkhvYTRnT2VWelVJS3RKTW1PWFVsbXhMeDhGSm9HNF9zSldrczhvZEY1Q091blRxbkpB?oc=5",
+   "link": "https://www.adnradio.cl/2026/10/31/son-una-mie-conocido-periodista-expone-el-colapso-nervioso-de-panelista-de-alfombra-roja-y-destroza-a-su-equipo/",
    "published": "2026-11-01T01:46:59Z",
-   "first_seen": "2026-11-01T11:41:25Z"
+   "first_seen": "2026-11-01T11:41:25Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -4169,9 +4344,10 @@
     "AS Chile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdUNYVnUxQ01BX29LMmEyaENYN1FBd2x0bEc2ZzJ5dEVGSFZmQmFiT1kzNUpCX3Z0OUF4Y3hHSi1CZlB6QTNTNzNVYzhDWXRTRW5XN1lCeVlsMFNlc2ptT3FuS2djWU5FcmhRQXNOUWdMSkplaEF0MFMtOWNqTWdFOWZ1SWFPRXEzQTRBRklIeUxnUlkyZFlsR0JGdHY3TzBOdjJKNnJwdlgzS05NeWt3dXNDa3lSQdIBygFBVV95cUxOMHJqOGZOanNjb3I1Nk9sNVd2TXA3UjhiRFQwY3FManJzV1RzSGJweUdIV1NtTjF4azRlVmhLZFFERERTR0tRMnRnVFB0T29DZHBOSGZFSmRsend2T0J3cnI4MEdQTnZZRXBwZHBYRUUtRWJ3VHlVRGtSZ1lzcjNNRzROT2tQNVFxOE1GRGR2aVRaZFQ1dURiNXNYaE5sM1ZXcm1tUmRSajRNWURveGxyVzJjbGxMd21nVWpvQ1VUckg3eXhxd3BpSHh3?oc=5",
+   "link": "https://chile.as.com/futbol/la-discusion-que-tensiono-a-la-uc-antes-del-clasico-no-vuelvo-a-entrenar-mas-f202611-n/",
    "published": "2026-11-01T00:40:46Z",
-   "first_seen": "2026-11-01T11:41:25Z"
+   "first_seen": "2026-11-01T11:41:25Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -4379,15 +4555,16 @@
    "category": "deportes",
    "title": "Entrevista a Pablo Milad: “Mi mandato ha sido accidentado; todo lo que pasó esta semana fue la guinda de la torta”",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/FTCWHKRAEFDYTOR5GMXYQLAURI.jpeg?auth=6fd208681adfb52d920f4c0078fb982f7b333724035ac4f47b22a4cf61eb7744&height=630&width=1200&focal=1269%2C119",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnU2VuejhMWTg3U19hOHZtTVpKZ2c3OFdjRnpSY205clpPSlFmYWRwaDExOVVsWkNxZ0dXd0hEbUQ0S1ZFc3YwOE1vWldDelhmYldPMm5wU0c5MWZIclhDa2FDMNIBhAFBVV95cUxQTS1Vcmlzc3VaMnZnZHg4ejVMa0dLcmJYV0EydXhOOUJpb2htRUdMZ3hDT21lQXU1clZzbGo5VnFxLWpGRmQzWUtPQjJVa2V2RmlqV1hkamtWekRMRGoyQWJJNlBEYVpTZHVHSmFESEkzMDNtSzV1dVJDcHpRMTlGYzQ0NmY?oc=5",
+   "link": "https://www.latercera.com/el-deportivo/noticia/milad/",
    "published": "2026-11-01T00:18:27Z",
-   "first_seen": "2026-11-01T11:41:25Z"
+   "first_seen": "2026-11-01T11:41:25Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -4898,6 +5075,21 @@
    ]
   },
   {
+   "category": "deportes",
+   "title": "En Cobreloa dan vuelta la página tras escritoriazos: “Nuestra obligación es ganar en cancha”",
+   "summary": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/31201904/cobreloa-b-1-1200x740.webp",
+   "source_url": "https://redgol.cl",
+   "sources": [
+    "RedGol"
+   ],
+   "coverages": [],
+   "link": "https://redgol.cl/chile/primera-b-ignacio-mehech-cobreloa-anfp-desafiliacion-san-marcos-tribunal-escritorio-campeones",
+   "published": "2026-10-31T23:39:17Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "Soja argentina: la Unión Europea abre una oportunidad de exportación frente a Brasil en 2027",
    "summary": "",
@@ -5164,29 +5356,31 @@
    "category": "cultura",
    "title": "El último viaje de la violista Penelope Knuth",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/GIE5XD3I5JF6XBRZZ67K5FY4QY.jpeg?auth=61545adc4903de03c6077d844c987b802d07636a49672fce58a83c8badf647c3&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORUNYNWgtdFBOYzBvN2tQZmtZbnppNzRWMDNEZ01aWU9uNkJrMGk5TUlkY3pyLVpJWEFhSjZ2Z1BoSGgxcGdDcVloclBCVDJadlZlU2EySFRWbTZOeXpQdW9aRlhpRzJSemFwZmMyX0Rza2F6WldXVTdhN0ZXZzlMWXdiNFV4MzU2MjZHcDJ1ONIBsAFBVV95cUxQdGFYWUpXMHFHZDZoWm9YZ0U1OUdnbmVhMmc0WFVjZG1XSFg4UmtkNzdzbG92QjRRdWRIWGtFeG9Jb2ZPc2tsY0tOdjJ4VDF6OWRCRzBFTDYzRlp1T1lSUkxCQTZjbko3OExrY2VvQUJXbGdnTUhwaGRNWkYyN3V3TUFHZFE3Sml5Q0JxQk9TZUJ5X19PaGxsUFRUSzR5X0RSaGJxR2NrVHlxbHVTREFUSg?oc=5",
+   "link": "https://www.latercera.com/culto/noticia/el-ultimo-viaje-de-la-violista-penelope-knuth/",
    "published": "2026-10-31T23:21:03Z",
-   "first_seen": "2026-11-01T11:41:25Z"
+   "first_seen": "2026-11-01T11:41:25Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "deportes",
    "title": "O’Higgins vence a Ñublense y pone al rojo vivo la lucha por el descenso: Tabla actualizada",
    "summary": "",
-   "image": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/31201531/PS_1204354-e1793488593931-1200x740.webp",
    "source_url": "https://redgol.cl",
    "sources": [
     "RedGol"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOblJJNUgyQW5tdlh5LXItU2RRWVJ2MUVsZ2RCaWwxd2tDdVZfcmNScG4xcVBScDJEY3pBYXBtYTlGMkFuVUoyVGtMZjFHU2RaXzl5TXpEOE5iU01TeF9QSW9QUG5FZ2lVT01yX0k5Z3RqSlJ1SFNKcVNITXV1dlpsRjVGbnZFTXhNQ3RPQURUYkFFUTZwSG9QTXZ5TkRsT195T0tWQzIxdk1xZ2hNdUdmVG1n0gG3AUFVX3lxTFA4VUdfVEczUWhMbzdTYjNUaXpFbjQtbDI5TS14OWlMRkNidW1LR2FEX0EybU5sYzNIYXJMU3NENnoyNzdBdG9ZdXczeWg2OHVud2J5dldGejRkbzJiTU1ZYTI4eVlVdEJVYkRMbTlSbk9aMUpZbThiVDRwRHFZakhKbzcwTVd3YkNpYW1ycmFVcjhzS1JYVGNKUU5mZUNXMFlLQWpfVmNvbF9CS1J0SEt2XzhMWWFxNA?oc=5",
+   "link": "https://redgol.cl/chile/ohiggins-vence-a-nublense-y-pone-al-rojo-vivo-la-lucha-por-el-descenso-tabla-actualizada",
    "published": "2026-10-31T23:20:32Z",
-   "first_seen": "2026-11-01T11:41:25Z"
+   "first_seen": "2026-11-01T11:41:25Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -5387,6 +5581,21 @@
    ]
   },
   {
+   "category": "deportes",
+   "title": "O’Higgins logra un importante triunfo ante Ñublense :Así queda la tabla de posiciones en la Liga de Primera",
+   "summary": "",
+   "image": "https://media.bolavip.com/wp-content/uploads/sites/19/2026/10/31194203/PS_1204404-e1793486596778-1200x740.webp",
+   "source_url": "https://bolavip.com",
+   "sources": [
+    "Bolavip Chile"
+   ],
+   "coverages": [],
+   "link": "https://bolavip.com/cl/nacional/ohiggins-logra-un-importante-triunfo-ante-nublense-asi-queda-la-tabla-de-posiciones-en-la-liga-de-primera",
+   "published": "2026-10-31T23:07:26Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "El albañil cumbiero entrerriano llegó al Top 50 de Spotify Argentina: la canción que lo posicionó en el ranking",
    "summary": "",
@@ -5582,6 +5791,24 @@
   },
   {
    "category": "latinoamerica",
+   "title": "Marco Rubio niega que EE.UU. haya facilitado la salida de Flávio Bolsonaro de Brasil",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.cnnchile.com",
+   "sources": [
+    "CNN Chile"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYjk3S2paWXM2SjZrRl9GM3poRWVoTUpWOEc2Um9udG91TXdaMFBNZGNkb2pfZlJuSXZkb2U0M1AyYl9Tb2FqTnRVeVIyYVhMRTltX1Q1cUk0TEJBVG4yODh0UXhrUjkxWFMzQThEX1dCaVlxNmVNVThFenY1dmZlODV4Q3ZncVY4VF8wMlYtbjVsTi1RRVJqOHhsWE5qTGRtYy1MUVlsdklLaXpxSkhlS3lXNXhqUQ?oc=5",
+   "published": "2026-10-31T22:53:19Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
    "title": "México suma ocho medallas en Regata Internacional de Para Remo CDMX 2026",
    "summary": "",
    "image": "https://www.gob.mxhttps://www.gob.mx/cms/uploads/press/main_image/323731/1_portada.jpeg",
@@ -5714,15 +5941,16 @@
    "category": "deportes",
    "title": "Se salvaron en la Primera B, cerraron con goleada y ahora comienza la poda: “Valoran muy poco…”",
    "summary": "",
-   "image": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/31193440/curico-unido-e1793486136811-1200x740.webp",
    "source_url": "https://redgol.cl",
    "sources": [
     "RedGol"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObk1Ba2dzX3BRTmpOVFRkQjlnaXhZUE9JX3ZIZnNNbHBMaHNUR09zVDNQZ2tIYlR5MXEweG5qUE43eVJyY195Tm5VdUJZODBwaDZtaDMzd2d6Z0t1QlJfa19qRm53QzV6aXhuMXBuOW9XVjEzSmk1UXIySE96WHB6Tlk5ei1zZ0dXbXZ6eWZLMGQ2RHZXa0pWeDI4UTJZbHJWNld0ODZJYWRaVW5oZGxqMVNQdELSAboBQVVfeXFMTVB1cjVNNUdJSW92aVgzRVJoTlBTR0hEY2kxRFJNMWlXdG5lVjVpNmR6WXlFMGticmlseWtaU1kwa3UwbVNLMGJKX2QyOHBlMmhUTVlpaEp2ellTMDF4RTlmUXU1bnpoSUF3aDJGMHF3RTF2akhORUxiSEh1cnc5dUFWb0EtWUV1X1VoYVpZRU1nUXBLU2J2UGhKRmF5Tk5aVjJPc1hLSlJvaXQ1RkgzTHp6V2J4cW81V3NB?oc=5",
+   "link": "https://redgol.cl/chile/se-salvaron-en-la-primera-b-cerraron-con-goleada-y-ahora-comienza-la-poda-valoran-muy-poco",
    "published": "2026-10-31T22:38:59Z",
-   "first_seen": "2026-11-01T07:26:13Z"
+   "first_seen": "2026-11-01T07:26:13Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -5811,6 +6039,24 @@
    "metadata_only": false,
    "coverage_countries": [
     "PE"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "A qué hora es la carrera de F1 en México 2026 hoy domingo y cómo verla por TV",
+   "summary": "",
+   "image": "",
+   "source_url": "https://es.motorsport.com",
+   "sources": [
+    "Motorsport.com España"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd3V5bFFOeFFodFZZc0VZcUdKd2g2Zm1OWHZ5VmtRTUJRLVh3UW1aUk5PMnBiVmc3clM0cE9ZYjBsZElzMnhFWnFibGIzV2dPeXliU2xoSG9pOUNkZXBDZmFValVmd054dFNFUlItQU9QbUtMaVBBQThjSjNhdHJ1ZUZSM3A1VURpS3JobjN3?oc=5",
+   "published": "2026-10-31T22:34:37Z",
+   "first_seen": "2026-11-01T11:52:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "MX"
    ]
   },
   {
@@ -6347,7 +6593,7 @@
    "coverage_countries": [
     "MX"
    ],
-   "image_checked_at": "2026-11-01T00:56:17.190868Z"
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "regiones",
@@ -6460,15 +6706,16 @@
    "category": "cultura",
    "title": "Éxito en el casting de Gran Hermano: más de tres mil personas llegaron a Chilevisión para postular",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/R2NULKGUVZBGFBLEAZKJOYMEGQ.jpeg?auth=685b2b56271eeef02aab3ac554b763b9525b84c4eb563bd4cfd374b1e56e8d0c&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSmFZLU1MTUk0eEtDOVJlUG9SZF85X1plRXRmSGEtVl92MEpjY25DdGZNUGZwVGZuRWVlUXFWdTd1QTNrSk9aeHdDUUFqVjZPdWVsOWxrRWhUV2hUZ3o5VlUtbGpaVFA3bGltaUhHQ05ub1I4bElyQU5aNUI3M1N5NGZMVEo0ZER2NDVxWVkwZ3JLX1hrNVNENUdzazU1Z3hPYUVmbmsycjB3QjlSZ0xPakd6cGlTVkx0OTRMdUVrN0FoLVVfLURaX1FoQlM3WjJ4blE3XzcxNFVfWXNk0gH-AUFVX3lxTE45QzdFRkJEY0ZuUHhQdmxfY1JnbFRQOWNqR0JmakIzMmlFcFVqNERvN1h0UjZhZnJBNEtCOEdnNVNQSEU3Z0g4aFkzb01Tb0Z0YUZRa2FCcGJhQWpRQkVKVFRoY0ZROUFKbC10c1RIRkg2Zkh0RC1wT25ERDFpMTN5OVY4Vm44MkhKRFR4MjZDeFRWTGNlM3B4ckk4U1A4cU5EMXZmbFp4eG5Ea2FSeUk3NW81ektyZmpEaE0yR3pkWHlTaVpPMnp0TGstMTJyOUdEQXI0UnN0ZTlpckN0elhsUVVYaXdyVy1mQ1BhYjlWazExUWY3UzdhS21Uc2NB?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/exito-en-el-casting-de-gran-hermano-mas-de-tres-mil-personas-llegaron-a-chilevision-para-postular/",
    "published": "2026-10-31T21:59:30Z",
-   "first_seen": "2026-11-01T07:26:13Z"
+   "first_seen": "2026-11-01T07:26:13Z",
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "regiones",
@@ -6580,18 +6827,19 @@
    "category": "cultura",
    "title": "Luto en la actuación chilena: el desgarrador mensaje de conocida actriz chilena tras sufrir dolorosa pérdida familiar",
    "summary": "",
-   "image": "",
+   "image": "https://www.adnradio.cl/resizer/v2/5WTWPOJCNBGSFNFF5ENIIYXW2E.jpg?auth=46d617469b1160af2507a0d2bc4b45ef19b688badd83540911a63aa92c96f77f&quality=70&width=1200&height=675&smart=true",
    "source_url": "https://www.adnradio.cl",
    "sources": [
     "ADN Radio"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQSXROMDFkYzk1eVdzUkdoWEJoUHF2S1JXY0JwRlZudkJuVG9DSzQwNlNwREZYa0pqZ2RjeVdYZHdNcXFFbkNDeVRjZGNoVlNnam45VGdaeVpFekVOZkFHWS15M3lWd2ZHWDNrNmpJZkdnU1NrQ0NSX2Z5dXpnWUdPMUdwbVE3LVEyS2MwSG1mYlZsQlFPZ1MxV2xBUl9RNjA5cV9ud1c2RHpjQktlSEFINUR3ZGFuY1pGN1JoWW5TT2VDa3NhV1R1YmdRbUFzeV9RWElORVZGQ1lvdEwxUXMwQjlWMEJlYUnSAfsBQVVfeXFMTm9DVHVpY2ZtYXhTU2lDVjF5TTA0aTI3RG5DcmxGRGZUUTZmVE95QnBDcGZsV3FCdlRPNTZTeFBrYS1DQVpoNXZpMWo1ekx1QkVSNHYxVmlyTnRXVEU5S1o4TmZNcEc3VDR4SXZXNXpPRkI4N1R2THBySG82WXBhSnZiN0NTWWlQMDBGMElsRHB5bXpuQ01kSGxVZEFYcGN5TWEzUWVfMFRCMGJKVFNUMW01WG4tdmhEVW9kYzNjbjFfLTZnYnFOY3RoV3o3Z3Z1WWc3d19fUnJIVEF4WnFiemRYbXFSQ1ZoZHBwSEVGY2ZraDhwZWNCb1Fmdlk?oc=5",
+   "link": "https://www.adnradio.cl/2026/10/31/luto-en-la-actuacion-chilena-el-desgarrador-mensaje-de-conocida-actriz-chilena-tras-sufrir-dolorosa-perdida-familiar/",
    "published": "2026-10-31T21:49:04Z",
    "first_seen": "2026-11-01T03:43:47Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "nacional",
@@ -7208,7 +7456,7 @@
    "link": "https://chile.as.com/futbol/chilenos-por-el-mundo/dario-osorio-entra-pero-el-crystal-palace-recibe-un-golpe-que-lo-complica-en-la-premier-league-f202610-n/",
    "published": "2026-10-31T21:08:57Z",
    "first_seen": "2026-11-01T00:56:17Z",
-   "image_checked_at": "2026-11-01T00:56:17.190868Z"
+   "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
    "category": "latinoamerica",
@@ -7228,266 +7476,28 @@
     "MX"
    ],
    "image_checked_at": "2026-10-31T21:54:13.252902Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Venezuela recibió 87 máquinas y 1.800 viviendas de China para atender a damnificados por terremotos",
-   "summary": "",
-   "image": "",
-   "source_url": "https://caracol.com.co",
-   "sources": [
-    "Caracol Radio"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObHJabTVibDQ2RG9zTU9Sdm1UMVJpdjAzN0lFZ2VxZUJrS0dGT0NLcENmbWZSYUFGbGNVYkdqd1AyMFVwVUhDNkRTS2lVV0pzZ3o2M19TX1JzT2ZSQVI1YmlqUHZWdUNnR1JZRGQtaTc0V3RNUV82UjJZMlRvQ2IyVThkdVZGMmtpMHNCNVNhOU1mZXRvZHBxUXlIR1VEeVNtQkUyQ0pTLTBLZjNwSlVYQjBjUHpfU3pyVnBKbTNOOWs1elNfalcxdE5odl9hZ9IB4gFBVV95cUxOS3piUy1ydjlQWF9lSHByT3djVmJTWmIxYXNyM0tscXpaZmY4YW9lZnBoQ0VPbkMxUHYtY25rU1NtSjVPdzBlZHNFN0cyT3lfNzk4VkJtUmF4RzFFR3o0YXc3ZEFvZVpmZ3ZBem9lS1JiS2U2b1NtS19qOXhCSFEtRmprRlJOUE10TUlsUVZzN2JxTlBqUk5EWlBkOEtMei1HTWlUUzMxT0dLNDJWXzNGakhyek41cnYzMkMwZUJFQ3BkUlB2LWNaM0daYnRXV25iNHdwRkJMWUlUcTVDNE5tbWF3?oc=5",
-   "published": "2026-10-31T21:06:47Z",
-   "first_seen": "2026-11-01T00:56:17Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "VE"
-   ]
-  },
-  {
-   "category": "deportes",
-   "title": "Colo Colo se acerca al título y Coca Mendoza sepulta remontada de la U en la Liga de Primera",
-   "summary": "",
-   "image": "https://media.dalealbo.cl/wp-content/uploads/sites/14/2026/10/31175624/colo-colo-se-acerca-al-titulo-y-coca-mendoza-sepulta-remontada-de-la-u-en-la-liga-de-primera-1200x740.webp",
-   "source_url": "https://dalealbo.cl",
-   "sources": [
-    "Dale Albo"
-   ],
-   "coverages": [],
-   "link": "https://dalealbo.cl/colocolo/colo-colo-se-acerca-al-titulo-y-coca-mendoza-sepulta-remontada-de-la-u-en-la-liga-de-primera",
-   "published": "2026-10-31T21:06:04Z",
-   "first_seen": "2026-11-01T00:56:17Z",
-   "image_checked_at": "2026-11-01T00:56:17.190868Z"
-  },
-  {
-   "category": "cultura",
-   "title": "VitaFest da a conocer su programación y anuncia homenaje a “Historia de un oso”",
-   "summary": "",
-   "image": "",
-   "source_url": "https://portalmetropolitano.cl",
-   "sources": [
-    "Portal Metropolitano"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUjJxVk5Ub1VfQ3dpRl85dncyM2lCNmV0WEdnRkdqeWhpUjJaVFFNN0k4Mk5EcFVKTk9fTlZhNXQwa0s5LUxDTE9WR3g4WU1wU0pfT0h2UkJmdWdxRFlzb3JmYVpDZUZoOWcxYThWaHRkX2YwZDUwazZicmk0WG5ZblpBdDY3OTRYcW52Y3IzS0JKLV9aYXFqS2ZScWh6ZHV1eVpRdFBmNGdjQUE5RkE?oc=5",
-   "published": "2026-10-31T21:05:41Z",
-   "first_seen": "2026-11-01T04:05:10Z",
-   "metadata_only": true,
-   "discovery_edition": "CL-CINE",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "GP de México 2026: reportan 30 detenidos y 36 acreditaciones falsas durante operativo de seguridad",
-   "summary": "",
-   "image": "https://imagenes.eleconomista.com.mx/files/image_1200_600/uploads/2026/10/31/6ae6548a3de07.jpeg",
-   "source_url": "https://www.eleconomista.com.mx",
-   "sources": [
-    "El Economista",
-    "Yahoo",
-    "López-Dóriga Digital"
-   ],
-   "coverages": [],
-   "link": "https://www.eleconomista.com.mx/estados/gp-mexico-2026-reportan-30-detenidos-36-acreditaciones-falsas-operativo-seguridad-20261031-841535.html",
-   "published": "2026-10-31T21:05:18Z",
-   "first_seen": "2026-10-31T21:26:37Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ],
-   "image_checked_at": "2026-10-31T21:26:37.288692Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Entre cempasúchil, piratería y reventa: los contrastes del Gran Premio de la Ciudad de México",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.jornada.com.mx",
-   "sources": [
-    "La Jornada"
-   ],
-   "coverages": [],
-   "link": "https://www.jornada.com.mx/noticia/2026/10/31/deportes/entre-cempasuchil-pirateria-y-reventa-los-contrastes-del-gran-premio-de-la-ciudad-de-mexico",
-   "published": "2026-10-31T21:05:00Z",
-   "first_seen": "2026-10-31T21:54:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ],
-   "image_checked_at": "2026-10-31T21:54:13.252902Z"
-  },
-  {
-   "category": "nacional",
-   "title": "[Fotos] Las colleras premiadas para la Serie de Campeones del Zonal Centro",
-   "summary": "",
-   "image": "",
-   "source_url": "https://m.caballoyrodeo.cl",
-   "sources": [
-    "Caballo y Rodeo"
-   ],
-   "coverages": [],
-   "link": "https://m.caballoyrodeo.cl/portal_rodeo/site/artic/20261031/pags-movil/20261031134441.html",
-   "published": "2026-10-31T21:03:00Z",
-   "first_seen": "2026-11-01T00:56:17Z",
-   "image_checked_at": "2026-11-01T11:41:25.073006Z"
-  },
-  {
-   "category": "deportes",
-   "title": "“¡Mientras siga, no entreno más!”: El polémico quiebre en la UC en la previa del Clásico Universitario ante la U",
-   "summary": "",
-   "image": "https://www.adnradio.cl/resizer/v2/DPRIK5IW2ZHC5LOMVXWJDCF6DE.jpg?auth=8ac59d269085625925aaf75a52f9bfe931504d74f9fe8582d93dc758d46bb7e2&quality=70&width=1200&height=675&smart=true",
-   "source_url": "https://www.adnradio.cl",
-   "sources": [
-    "ADN Radio"
-   ],
-   "coverages": [],
-   "link": "https://www.adnradio.cl/2026/10/31/mientras-siga-no-entreno-mas-el-polemico-quiebre-en-la-uc-en-la-previa-del-clasico-universitario-ante-la-u/",
-   "published": "2026-10-31T21:02:33Z",
-   "first_seen": "2026-11-01T00:59:26Z",
-   "image_checked_at": "2026-11-01T01:01:54.020100Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Las extracciones de efectivo tocan su piso histórico en la Argentina: el furor de los QR y las transferencias desplazan al billete físico",
-   "summary": "",
-   "image": "https://ceresciudad.com/wp-content/uploads/2026/10/efectivo-y-digital.jpg",
-   "source_url": "https://ceresciudad.com",
-   "sources": [
-    "Ceres Ciudad .com"
-   ],
-   "coverages": [],
-   "link": "https://ceresciudad.com/las-extracciones-de-efectivo-tocan-su-piso-historico-en-la-argentina-el-furor-de-los-qr-y-las-transferencias-desplazan-al-billete-fisico/",
-   "published": "2026-10-31T21:02:21Z",
-   "first_seen": "2026-10-31T21:26:37Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR"
-   ],
-   "image_checked_at": "2026-10-31T21:27:45.444852Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Se vienen tormentas con más de 100 mm en Argentina: dónde se complica y qué día mejora entre el 2 y el 6 de noviembre",
-   "summary": "",
-   "image": "https://services.meteored.com/img/article/se-vienen-tormentas-con-mas-de-100-mm-en-argentina-donde-se-complica-y-que-dia-mejora-entre-el-2-y-el-6-de-noviembre-1793473018789_1280.jpg",
-   "source_url": "https://www.meteored.com.ar",
-   "sources": [
-    "Meteored Argentina"
-   ],
-   "coverages": [],
-   "link": "https://www.meteored.com.ar/noticias/prediccion/se-vienen-tormentas-con-mas-de-100-mm-en-argentina-donde-se-complica-y-que-dia-mejora-entre-el-2-y-el-6-de-noviembre.html",
-   "published": "2026-10-31T21:02:00Z",
-   "first_seen": "2026-10-31T21:26:37Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR"
-   ],
-   "image_checked_at": "2026-10-31T21:27:45.444852Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "NASCAR Brasil: Gabriel Casagrande crava pole em Chapecó",
-   "summary": "",
-   "image": "https://cdn-5.motorsport.com/images/amp/2GdKZ1zY/s6/whatsapp-image-2026-10-31-at-1.jpg",
-   "source_url": "https://motorsport.uol.com.br",
-   "sources": [
-    "MotorSport.com.br"
-   ],
-   "coverages": [],
-   "link": "https://motorsport.uol.com.br/nascar-brasil-series/news/nascar-brasil-gabriel-casagrande-voa-no-oval-de-chapeco-e-garante-primeira-pole-dos-playoffs/10870256/",
-   "published": "2026-10-31T21:01:47Z",
-   "first_seen": "2026-10-31T21:54:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ],
-   "image_checked_at": "2026-10-31T21:54:13.252902Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Gilinski se continúa expandiendo en la región, desde Venezuela hasta Argentina y Ecuador: sus movidas empresariales",
-   "summary": "",
-   "image": "https://imagenes.portafolio.co/files/og_thumbnail/files/fp/uploads/2026/10/31/6ae6515c268ab.r_d.687-191-0.png",
-   "source_url": "https://www.portafolio.co",
-   "sources": [
-    "Portafolio.co"
-   ],
-   "coverages": [],
-   "link": "https://www.portafolio.co/negocios/empresas/gilinski-se-continua-expandiendo-en-la-region-desde-venezuela-hasta-argentina-y-ecuador-sus-movidas-empresariales-505509",
-   "published": "2026-10-31T21:01:40Z",
-   "first_seen": "2026-10-31T21:26:37Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR",
-    "EC",
-    "VE"
-   ],
-   "image_checked_at": "2026-10-31T21:27:45.444852Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "El debate que atraviesa el béisbol de Cuba: ¿profesionalización sí o no?",
-   "summary": "",
-   "image": "https://www.newsdigitales.com/uploads/noticias/2/2026/10/20261030225726_ca-times-brightspotcdn.webp",
-   "source_url": "https://www.newsdigitales.com",
-   "sources": [
-    "NewsDigitales"
-   ],
-   "coverages": [],
-   "link": "https://www.newsdigitales.com/nota/348900/el-debate-que-atraviesa-el-beisbol-de-cuba-profesionalizacion-si-o-no/",
-   "published": "2026-10-31T21:00:35Z",
-   "first_seen": "2026-10-31T21:26:37Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "CU"
-   ],
-   "image_checked_at": "2026-10-31T21:27:45.444852Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Grêmio vence o Brasil-Far e abre vantagem na semifinal do Gauchão Feminino",
-   "summary": "",
-   "image": "https://www.rbsdirect.com.br/filestore/5/5/3/5/1/2/6_a27490f1028caf7/6215355_d6db9a53e2651c0.jpg?w=1200&h=675&a=c&version=1575255600",
-   "source_url": "https://gauchazh.clicrbs.com.br",
-   "sources": [
-    "GZH",
-    "Federação Gaúcha de Futebol"
-   ],
-   "coverages": [],
-   "link": "https://gauchazh.clicrbs.com.br/esportes/futebol-feminino/noticia/2026/10/gremio-vence-o-brasil-far-e-abre-vantagem-na-semifinal-do-gauchao-feminino-cmvwu4h9g02du016gsw01thfj.html",
-   "published": "2026-10-31T21:00:09Z",
-   "first_seen": "2026-10-31T21:26:37Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ],
-   "image_checked_at": "2026-10-31T21:27:45.444852Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "O Brasil depende da nossa reação",
-   "summary": "",
-   "image": "https://media.gazetadopovo.com.br/2026/10/30230111/brasil-reacao-lula.jpg",
-   "source_url": "https://www.gazetadopovo.com.br",
-   "sources": [
-    "Gazeta do Povo"
-   ],
-   "coverages": [],
-   "link": "https://www.gazetadopovo.com.br/opiniao/editoriais/reeleicao-lula-reacao-camara-senado/",
-   "published": "2026-10-31T21:00:00Z",
-   "first_seen": "2026-10-31T21:26:37Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ],
-   "image_checked_at": "2026-10-31T21:27:45.444852Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Un muerto y cuatro heridos en San Pedro de la Paz: Hombre llegó a una fiesta buscando a un joven y al no encontrarlo comenzó a disparar",
+   "link": "https://www.t13.cl/amp/noticia/nacional/un-muerto-cuatro-heridos-san-pedro-paz-hombre-llego-una-fiesta-buscando-joven-a-1-11-2026",
+   "category": "regiones",
+   "published": "2026-11-01T11:45:00Z",
+   "sources": [
+    "Teletrece"
+   ]
+  },
+  {
+   "title": "Ana Bovino: “Hacer cine en Argentina ya no es una posibilidad para todos”",
+   "link": "https://www.lacapitalmdp.com/ana-bovino-hacer-cine-en-argentina-ya-no-es-una-posibilidad-para-todos/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T11:42:29Z",
+   "sources": [
+    "Diario La Capital de Mar del Plata"
+   ]
+  },
   {
    "title": "Barranquilla lidera en Colombia con 17 colegios públicos en la máxima categoría de las Pruebas Saber 11",
    "link": "https://impactonews.co/barranquilla-lidera-en-colombia-con-17-colegios-publicos-en-la-maxima-categoria-de-las-pruebas-saber-11/",
@@ -7513,6 +7523,15 @@
    "published": "2026-11-01T11:36:09Z",
    "sources": [
     "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally"
+   ]
+  },
+  {
+   "title": "Tras robo récord de US$6.300 millones: Binance comienza a restablecer retiros de criptomonedas",
+   "link": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/01/tras-robo-record-de-us6-300-millones-binance-comienza-a-restablecer-retiros-de-criptomonedas.shtml",
+   "category": "tecnologia",
+   "published": "2026-11-01T11:34:40Z",
+   "sources": [
+    "BioBioChile"
    ]
   },
   {
@@ -7543,7 +7562,7 @@
    ]
   },
   {
-   "title": "EDITORIAL | O Brasil precisa reaprender a discordar – “Há mais de uma década, o Brasil atravessa eleições como quem mergulha em trincheiras. A cada campanha, renova-se a esperança de que, encerrada a disputa, o País possa reduzir ",
+   "title": "EDITORIAL | O Brasil precisa reaprender a discordar – “Há mais de uma década, o Brasil atravessa eleições como quem mergulha em trincheiras. A cada campanha, renova-se a esperança de que, encerrada a disputa, o País possa reduzir",
    "link": "https://www.instagram.com/p/DfMd6lFgfny/",
    "category": "latinoamerica",
    "published": "2026-11-01T11:15:56Z",
@@ -7687,6 +7706,24 @@
    ]
   },
   {
+   "title": "Continúa la actualización de los CASA C-212 de la Prefectura Naval Argentina",
+   "link": "https://www.defensa.com/argentina/continua-actualizacion-casa-c-212-prefectura-naval-argentina",
+   "category": "latinoamerica",
+   "published": "2026-11-01T11:00:00Z",
+   "sources": [
+    "Defensa.com"
+   ]
+  },
+  {
+   "title": "Aniversario redondo: GLM cumple 50 años como referente tecnológico en Argentina",
+   "link": "https://www.lacapital.com.ar/negocios/aniversario-redondo-glm-cumple-50-anos-como-referente-tecnologico-argentina-n10289193.html",
+   "category": "latinoamerica",
+   "published": "2026-11-01T11:00:00Z",
+   "sources": [
+    "La Capital"
+   ]
+  },
+  {
    "title": "Mauricio Pinilla enfrenta seis demandas de Primus Capital por deudas que superan los $1.600 millones",
    "link": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/mauricio-pinilla-enfrenta-seis-demandas-de-primus-capital-por-deudas-que-superan-los-1-600-millones.shtml",
    "category": "nacional",
@@ -7705,8 +7742,26 @@
    ]
   },
   {
+   "title": "“Deben poner las armas abajo”: Rusia se refiere a organizaciones criminales en Colombia y menciona al ELN y el Clan del Golfo",
+   "link": "https://www.semana.com/mundo/articulo/deben-poner-las-armas-abajo-rusia-se-refiere-a-organizaciones-criminales-en-colombia-y-menciona-al-eln-y-el-clan-del-golfo/202600/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:54:01Z",
+   "sources": [
+    "Revista Semana"
+   ]
+  },
+  {
    "title": "Comisión de Educación y Cultura Senado de la Nación Argentina",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVU9MaVJ1dkpFcTZWV0l1b0Zpd0lRdUZkUV8yWDItX0pOVkpQNDd0RnR6enNKVkVPd0JhbjE3NE41eHktOHF4OHk2VVV4U0lTYTFVMlY5QTltN0NCd29JOXprYWt5RER1cU43cWxUb2c5Yll4SDdjaWdKQm12VXJyTHVNZVdreVpMVDRtZWNUejFtMmRCWGZFSDBLMmE4T3ZZ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:51:39Z",
+   "sources": [
+    "Revista El Arcón de Clio"
+   ]
+  },
+  {
+   "title": "Comisión de Educación y Cultura Senado de la Nación Argentina",
+   "link": "https://revista.elarcondeclio.com.ar/comision-de-educacion-y-cultura-senado-de-la-nacion-argentina/",
    "category": "latinoamerica",
    "published": "2026-11-01T10:51:39Z",
    "sources": [
@@ -7723,8 +7778,26 @@
    ]
   },
   {
+   "title": "Milei y Trump: Un vínculo político que redefine el rol de Argentina en el escenario global",
+   "link": "https://www.cadena3.com/noticia/mundo/milei-y-trump-un-vinculo-politico-que-redefine-el-rol-de-argentina-en-el-escenario-global_609048",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:51:35Z",
+   "sources": [
+    "Cadena 3 Argentina"
+   ]
+  },
+  {
    "title": "Innovación de exportación: la solución argentina de IA para WhatsApp que compitió contra 80 países y ganó en Taiwán",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNC1fbllwZGVpSGVsY3RIeXJMTWNta3hjTkk4b0pLUWZTNENORllYTl93NjNKdnRJYUVOWWdCNmdkRHc5Ynd6cnZZeUg3MWNtemh5Q2ptaWpZU29OMmkzUHE5MWc2Y1RyY01ldGVEZmoyZzR5YnFFVFNhNEJ5WVFaYkZkQzRIYV9mSGtSU2c5bUhXd0tFdndjYWRmNjNoUDBpR3BIblk5cmtNc1QwNW5yem9sQTM5NHdCR2s4RWZJMHEyVFFqcHN3WGRFcF84QdIB0wFBVV95cUxOT1Q0WnFYVTJRMEZOWEpMcVYxckNxem9ST19rN2FuMHB6eHhJZ3gtZHRWN0FhYThpbHFuUF9oZVU2Z0lUU1BFZzhLVGN1emd0WFI4eFFRWXZ5bC15ZFJ0VEpKYUYySllBNVNpazZMNno5QXBfUnBCdnFOVHZSLTU2UFpxRlBmazZZM1VzbjVEdDUzQ2ZWT1RHa0pmc1k1dFpxZE5DejFYeVdqa2hFNWJpNFJEbTBIVmhHSDctVmlCbDNOaXkzMUxVNVBPMjN0VnFqbERZ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:50:00Z",
+   "sources": [
+    "Forbes Argentina"
+   ]
+  },
+  {
+   "title": "Innovación de exportación: la solución argentina de IA para WhatsApp que compitió contra 80 países y ganó en Taiwán",
+   "link": "https://www.forbesargentina.com/negocios/innovacion-exportacion-solucion-argentina-ia-whatsapp-compitio-80-paises-gano-taiwan-n101514",
    "category": "latinoamerica",
    "published": "2026-11-01T10:50:00Z",
    "sources": [
@@ -7741,8 +7814,26 @@
    ]
   },
   {
+   "title": "GP de México 2026: a qué hora y dónde ver EN VIVO la carrera de Fórmula 1 con “Checo” Pérez y cómo quedó la parrilla de salida",
+   "link": "https://www.elimparcial.com/deporte/2026/11/01/gp-de-mexico-2026-a-que-hora-y-donde-ver-en-vivo-la-carrera-de-formula-1-con-checo-perez-y-como-quedo-la-parrilla-de-salida/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:48:11Z",
+   "sources": [
+    "El Imparcial"
+   ]
+  },
+  {
    "title": "De Argentina y Brasil a Colombia: las raíces de la batalla cultural del gobierno De la Espriella | El Colombiano",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdHc0ZDFpNWZyaGFFb0w5QzVhQk9oLTMwenQxWmFTNl82cmNvR3NyUW9jdTBYa1BFVzhnTkpkWGs1djU1OXZ1MmlObHlkY3BUaFVWa0JOajdIZmV6clh2SHh1VVZibDVjTVBjal8xRmQtaUMtMzh6bWpqUmw4WlJ5eTJpX25jMlJRdmxKUWRaVlhYUnJCUDBUTmZES3pXanhJeGh1eXQ2SkYtdFl6bDdZbGhFRUpUd9IBuwFBVV95cUxPb2hGSnluUlRraEk5dFNXbXhJNVZ0Nkl5MUpFeFQxX0dNUHp3RGl4cEkyVU5yS09VaGJMbkJSNEZYR2QydmY0SmQ1NlhhNVhscVd2YXRVUWFtZ2puQ3ZRWDNxT1RxSjdlM1VKRDB4Nlp0aHJWOXJSSUVHNlBoNnJHaEVaV2s5QXBVUHExVjdwbmVzT19OcllWTzhIRUtrY3hqU0FDTkNVRkpaSjBQWkJ4TkQ5b1VmeVhsSEtv?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:47:32Z",
+   "sources": [
+    "El Colombiano"
+   ]
+  },
+  {
+   "title": "De Argentina y Brasil a Colombia: las raíces de la batalla cultural del gobierno De la Espriella | El Colombiano",
+   "link": "https://www.elcolombiano.com/cultura/contrarrevolucion-cultural-que-es-gobierno-abelardo-de-la-espriella-MC43054833",
    "category": "latinoamerica",
    "published": "2026-11-01T10:47:32Z",
    "sources": [
@@ -7768,6 +7859,24 @@
    ]
   },
   {
+   "title": "Argentina busca las semifinales de la AmeriCup 3x3 con sus dos seleccionados",
+   "link": "https://deportv.gob.ar/basquetbol/americup-3x3-argentina-semifinales-seleccionados-masculino-femenino-nid:18519",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:47:00Z",
+   "sources": [
+    "DeporTV"
+   ]
+  },
+  {
+   "title": "Argentina perdió terreno agrícola frente a Brasil en las últimas dos décadas",
+   "link": "https://lu17.com/contenido/155734/argentina-perdio-terreno-agricola-frente-a-brasil-en-las-ultimas-dos-decadas",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:47:00Z",
+   "sources": [
+    "LA17"
+   ]
+  },
+  {
    "title": "Universidad Católica vs U de Chile por el clásico universitario: a qué hora juegan y dónde verlo",
    "link": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/01/universidad-catolica-vs-u-de-chile-por-el-clasico-universitario-a-que-hora-juegan-y-donde-verlo.shtml",
    "category": "deportes",
@@ -7786,8 +7895,26 @@
    ]
   },
   {
+   "title": "Euro hoy en Paraguay: precio y cotización de la divisa este domingo 1 de noviembre de 2026",
+   "link": "https://www.clarin.com/economia/euro-hoy-en-paraguay-precio-y-cotizacion-de-la-divisa-este-domingo-1-de-noviembre-de-2026_0_q7Ceam3nxP.html",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:40:13Z",
+   "sources": [
+    "Clarin.com"
+   ]
+  },
+  {
    "title": "Confianza ciudadana: Argentina 25° global, médicos lideran, funcionarios últimos",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZXhhNTZCbFpnNVU5WWpPYl8yQ19Lb2NSSEx4Y3lyLTQyWnNGUzJ4SW55ZDBFdlFKZFVqVUU3OU1jWmpNQ0p5d1hSQXNoWGQ4aTlpTkJ3U1pKdzZabjFrXzl2aWdCamxUYWp6SXNXcW1Rc3FQTThiUFlBUXItY0N2bE1GUXZVMkRYVno1X2NLd2RfbmtxRW1ZZlF4UXRZbnFpd3ZjTHgxekFjNG02WHNv?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:40:00Z",
+   "sources": [
+    "LA17"
+   ]
+  },
+  {
+   "title": "Confianza ciudadana: Argentina 25° global, médicos lideran, funcionarios últimos",
+   "link": "https://lu17.com/contenido/155730/confianza-ciudadana-argentina-25-global-medicos-lideran-funcionarios-ultimos",
    "category": "latinoamerica",
    "published": "2026-11-01T10:40:00Z",
    "sources": [
@@ -7804,6 +7931,15 @@
    ]
   },
   {
+   "title": "Mercado de capitales y banca privada: las claves para financiar el crecimiento de la Argentina",
+   "link": "https://www.forbesargentina.com/summit/mercado-capitales-banca-privada-claves-financiar-crecimiento-argentina-n101509",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:34:43Z",
+   "sources": [
+    "Forbes Argentina"
+   ]
+  },
+  {
    "title": "Cuba. \"Che Guevara en ONU Cuando USA Gritó “¡Terrorista Comunista!”: 5 Minutos Que Hicieron Historia…",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOLThWNGdmRG5paklLVHdXR0U4Qm1UUnFCaUpDajF5M1ViTWUxRlZtU3pCM19kanFJT1FqcUt4YjNCYWpFQ0o0RHR1RFRnWTRHSmhEbC0zUzdfUzBNUWlnSnRSSnlBVFJubC1qbDFGV2NWNFU0bTdSUE02aGg1bHp3UktDZmRrZWhZT1RnblQ0OC04UFVISjRrMlVGNXVMMFpIM2tLbXlyQjV2VmpPWGRJOTBqZFF1UjY4QkZ2Zm9uUVBTVkQwTy1wV3BKelppM05HdDBEczZHRkR2cmlQ?oc=5",
    "category": "latinoamerica",
@@ -7813,8 +7949,26 @@
    ]
   },
   {
+   "title": "Cuba. \"Che Guevara en ONU Cuando USA Gritó “¡Terrorista Comunista!”: 5 Minutos Que Hicieron Historia…",
+   "link": "https://www.resumenlatinoamericano.org/2026/11/01/cuba-che-guevara-en-onu-cuando-usa-grito-terrorista-comunista-5-minutos-que-hicieron-historia/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:32:43Z",
+   "sources": [
+    "Resumen Latinoamericano -"
+   ]
+  },
+  {
    "title": "Concepción del Uruguay celebra su desfile histórico con Granaderos y la voz de Emanuel Noir",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNejh0eGVyeXVKMS05bHgyc2ZmZC1za015ZWZjcFVEa2lobWN1MHc4OTg0ZE40cnFTRjNaOFlORndsYnJ4LW8yS1NxZkNNMjkxMU55OGFlQ3dGdWJUM2VlejZwc3RFdmVlRW5vTjFFZUJSWTV1R0NfTm54NzNNbC0zTXlJNHJHZGJDVTl2aS1aam5TSXZIbzlvTVVJSHlGLWl3eVUwZ2t1ZGw5cnE0TGNRRDNYcG5aaTJiSmtYb2pGX0dkcTVoMEHSAb8BQVVfeXFMT1oybE9KcnNhb3RKR29JV0NibExNY3loaTRGb0hJdWREdXdGYzJraFI1dEhtUnY2WDJMNEFGWnVaWjk1NVFILTNyU2dCanRqYlI4bFhpU0swblhOV0hWYjVoZWhzcGEtVS1KMEZMcklwNlc1azJGQWRUdVl2ODc5NGw1V0FRRzNMdnFLSXFmQV9TeWNjZ1JUUWdQY3d5VWJTcXBIU2ZRSUJlWjVNd0dJamZmc012ak9DV1ZsNUZfeE0?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:30:02Z",
+   "sources": [
+    "Elonce.com"
+   ]
+  },
+  {
+   "title": "Concepción del Uruguay celebra su desfile histórico con Granaderos y la voz de Emanuel Noir",
+   "link": "https://www.elonce.com/sociedad/concepcion-del-uruguay-celebra-su-desfile-historico-con-granaderos-y-la-voz-de-emanuel-noir.htm",
    "category": "latinoamerica",
    "published": "2026-11-01T10:30:02Z",
    "sources": [
@@ -7850,8 +8004,45 @@
    ]
   },
   {
+   "title": "México busca elevar su participación tecnológica en cadenas de suministro",
+   "link": "https://sociedad-noticias.com/2026/11/01/mexico-busca-elevar-su-participacion-tecnologica-en-cadenas-de-suministro/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:30:00Z",
+   "sources": [
+    "Sociedad Noticias"
+   ]
+  },
+  {
+   "title": "Argentina - Estados Unidos: una relación bicentenaria en el contexto de una Nueva Era",
+   "link": "https://noticiasargentinas.com/politica/argentina---estados-unidos--una-relacion-bicentenaria-en-el-contexto-de-una-nueva-era_a6ae4a38945c3c55a7b58950d",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:30:00Z",
+   "sources": [
+    "Agencia Noticias Argentinas"
+   ]
+  },
+  {
+   "title": "Argentina recibe al Papa: los límites éticos de la inteligencia artificial y el valor del trabajo humano",
+   "link": "https://www.losandes.com.ar/sociedad/argentina-recibe-al-papa-los-limites-eticos-la-inteligencia-artificial-y-el-valor-del-trabajo-humano-n6012438",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:30:00Z",
+   "sources": [
+    "Los Andes",
+    "Diario de Cuyo"
+   ]
+  },
+  {
    "title": "Récord de exportaciones en Argentina: el rol clave del agro, Patagonia y las economías regionales",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaEcwNHp4RDJlZkt4Z3NqV2QzcGZ5UkJRUzBWa0NjYVJTSmJJQjAyY2ptc3p0bjR4Z2wxRnJYMHpfeDgxbVFpSTVuREc5VFJXb0FTRk1yTWJIV1JvRkNycEwyNy05N1hCRTZCMTJUZFRuT3JZcHhXLWJsR2s1Q2t4UUVoY3pic3BYZ28wMHNjS2NQMHRVSDZwdGlCZlVnMlhMbEhBRXAyUkJTb1FQSWtQSHJVV0N2aHpFSGdNZEk0a1hfaVpTMlNZOWxhZE1hUdIB0wFBVV95cUxOTUNpVm80aGcySDQySUEwWGo2MDdLY1VuWHN2eTlKWVFobVBSN282QnZRRnJCVk5lVjlXZ2sxV2ktZWt4c3o5aDVfWHBmWTBpcFFYMlp1QXJTRWUzTDM4dkMtanlrMTRCbGpMbVFqYmMyQnN0eFFHWHNRMHd5aFY5Ty1GMXFXRGNEeEtaMnhGSHMydE5oOVMtdl9aT3JtbTNZdkFpdXVQdmo4S2JiamdwakhzU1l0RDVGRVFENHV3TzZWTmRNOVRNNzhHVEwtUElCU1pr?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:29:00Z",
+   "sources": [
+    "Lmneuquen.com"
+   ]
+  },
+  {
+   "title": "Récord de exportaciones en Argentina: el rol clave del agro, Patagonia y las economías regionales",
+   "link": "https://masp.lmneuquen.com/opinion/record-exportaciones-argentina-el-rol-clave-del-agro-patagonia-y-las-economias-regionales-n1259431",
    "category": "latinoamerica",
    "published": "2026-11-01T10:29:00Z",
    "sources": [
@@ -7877,8 +8068,26 @@
    ]
   },
   {
+   "title": "Argentina solicitará frenar la explotación petrolera británica en las Islas Malvinas ante el Tribunal del Mar",
+   "link": "https://mendozatoday.com.ar/nacionales/argentina-solicitara-frenar-la-explotacion-petrolera-britanica-en-las-islas-malvinas-ante-el-tribunal-del-mar/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:25:56Z",
+   "sources": [
+    "Diario Mendoza Today"
+   ]
+  },
+  {
    "title": "El papel de la frontera México-EU en las elecciones de mitad de mandato",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRThhOHJJV24tMnN6RUctOTZLQkFpcGt1eFRJTUZBd3hxUGZYc25pT2hQcFF6WXNNVmZ5QmZSNmpXWVVxQlVJOFVEQWNtaGRUcGdYc2Q2aVRnYkQyUzBkM2kzTE9JeUhrMmxQaVpyZEJRZVJzMFdCMHFaVEF5N3JBV1Y2Vk9mcUl3VXYya3RuWE01aFNrTjJDd0lYclZGY0Z1Q2FyNG9pRDVKelVUOXc1d3JtVVV0NHh1WWs3Q0F6bVU?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:21:00Z",
+   "sources": [
+    "La Silla Rota"
+   ]
+  },
+  {
+   "title": "El papel de la frontera México-EU en las elecciones de mitad de mandato",
+   "link": "https://lasillarota.com/mundo/2026/11/1/el-papel-de-la-frontera-mexico-eu-en-las-elecciones-de-mitad-de-mandato-535349.html",
    "category": "latinoamerica",
    "published": "2026-11-01T10:21:00Z",
    "sources": [
@@ -7895,8 +8104,26 @@
    ]
   },
   {
+   "title": "‘Checo’ Pérez Previo al GP de la Ciudad de México: ¡Vamos por Una Buena Carrera!",
+   "link": "https://www.nmas.com.mx/ciudad-de-mexico/deportes/checo-perez-previo-al-gp-de-la-ciudad-de-mexico-vamos-por-una-buena-carrera/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:20:50Z",
+   "sources": [
+    "N+"
+   ]
+  },
+  {
    "title": "Algunas de las más de 400 víctimas hablaron con Infobae Colombia y señalaron que Loany Lismeiry Ortiz Nova participó en un reinado organizado dentro de la cárcel El Buen Pastor, en Bogotá, donde permanece recluida. Además, la vene",
    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPcVEyMEhheFlMVjM4WjlKdW5pbTRXQ3Q1NER1Q3FKSVdBXzB1c292aXZfM0NGN2daaWo2Znl2NE1lYzBDQ1hzR2ZFUi16a3FTTGx3OG1QbVN4VXBhbFZwQ1hXV0c0cGZYdVpDd1RGSFNkUk5WcWFMMXpWLUhPZGlhRmdIU09wYkdhSjhnQi1rY3ZDbmlxVkxHTkxhNkxrTkswb25rY0NQRzRZLURYZnlibFZoMU9WWlZHWEx5WE5qUldmTFFwdGdGT000Zng3cDZpYm1WV0EzTTNKQ3BRXzZHdHUzMVRtMmY3QTlYOVV3aWM3UQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:20:48Z",
+   "sources": [
+    "Facebook"
+   ]
+  },
+  {
+   "title": "Algunas de las más de 400 víctimas hablaron con Infobae Colombia y señalaron que Loany Lismeiry Ortiz Nova participó en un reinado organizado dentro de la cárcel El Buen Pastor, en Bogotá, donde permanece recluida. Además, la vene",
+   "link": "https://www.facebook.com/infobaecolombia/posts/algunas-de-las-m%C3%A1s-de-400-v%C3%ADctimas-hablaron-con-infobae-colombia-y-se%C3%B1alaron-que/1584125017063588/",
    "category": "latinoamerica",
    "published": "2026-11-01T10:20:48Z",
    "sources": [
@@ -7928,6 +8155,15 @@
    "published": "2026-11-01T10:15:00Z",
    "sources": [
     "Gestión"
+   ]
+  },
+  {
+   "title": "Publihistorias: 1930: un robot en el centro de la Ciudad de México",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVktYcWUyckw2ZzBrLTVEWG1fWVU0Zl9hcTQ2dVF2bVZVZTVpUVYyMjBEWEYwcm9jNTF5dGRDdnFfUHJjeHQwZ1pIVnB3U25GLVZRdXdXa0VaSU1mdEVYS3V3NGdUdElicXd6WUx4cXU3T3FpZWlaUDllZUtUYzlJMExBS0oyNEsxYncxc1pfczNfd0k?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T10:08:32Z",
+   "sources": [
+    "Revista Merca2.0"
    ]
   },
   {
@@ -8075,6 +8311,15 @@
    ]
   },
   {
+   "title": "¿Quién es Kimi Antonelli? El joven que podría coronarse campeón de F1 en México",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOY1hWRXl1R1VJQmY5ZFNhM2dCZTBlN0pnTDFsT0JUNkwtbUc3WkFqVVV5THh5b3h2NGZnT091UDFnSVNrYTFsNTQxY2tLc2NGM3l1THg2RjVBSVU3Z0tneEhTWGJwbjZTTmo4U1pDY3ZJTE5zWnlDZEp2bnpHN2dtRGFEOFJGQVNlQV9LcGQ0UkhkY2NndkM5ajBkOWQ2aFhBVGhCa21wSmtqN1UxQ1E?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T09:02:45Z",
+   "sources": [
+    "Grupo Animal"
+   ]
+  },
+  {
    "title": "Los planes de la automotriz china Omoda&Jaecoo para la Argentina: \"Podríamos comprar una planta existente o hacer una de cero, pero tardaríamos más\"",
    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNNEVzV2hqTUVMaHh4d2dUR1A2dzFBdVBXTXNRVE1KT1JyeGQ2MzgzV2dVNS1rVjdfS2tVYXM5SFZ0XzQyZm52S3BzS1ZKUU9LQjRYNlI4RDBudjJGNFhLcXRBeXlWSy1HS0RpcTYwUVZFbFBJR3J3RDdDZ2F6b3pJN0RQY3N5alpJckFaWmY5UXl0V2dxRXVIUlE4amFBSld6M3hCVlJCYUVqQmp5M0lKNlVybTdLTlZKcUhZODU4djZ3bWN6a2kzQl93aGpfN1p3a0dUZzMxVmVla0hKNmlFbGItSndxSk1u?oc=5",
    "category": "latinoamerica",
@@ -8202,6 +8447,15 @@
    ]
   },
   {
+   "title": "Heidi Klum vuelve a coronarse como la reina de Halloween con un disfraz hiperrealista de su propia mano cercenada",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1KRWZYWVFrNkpYTHZxclN1QUNmNlJFTFJmZ3FPNk5qMzZuaGRGM1BBelNpeVM0b2d3N1pMVWxFM2pJRnpkQ0ZjcWlKWUwzLXgzbldsdnpUeHJlRjhrRDlzRWktUmpRdlZpLXNaTzdNVjZ3R3lLczZKZmZoWGN0dw?oc=5",
+   "category": "cultura",
+   "published": "2026-11-01T08:27:46Z",
+   "sources": [
+    "Vanity Fair España"
+   ]
+  },
+  {
    "title": "El dato que preocupa a los economistas y pone en duda la recuperación de la Argentina antes de fin de año",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPUURGVjBoaTRneFNUUDYxbFVyUGFoblBxTmVNRjNmMmxDY1BUOC11WnQxTUJxUTk1Q0d0UjIyYnh4Q1Q3VG5WT1RFVWNkQmhLdzJwcU94N1JJcXMwQ1Z2NVN5S0VBTUhvak9rdGIxbFEzaTBGYm0zMGJseGFCcmxaWW9VM0dJSTd5YXhFNzJucUtCajNzaXV6aVAyRlBiRG4tTVBZN09MLUFGc2dZc3RtcEpZMThqLVdGMVY2U2Zsd2JodThCaThjbHJXNkVoNzdmS1p2MjByc2JvMzJa0gHwAUFVX3lxTE4zUmk5b2pBdDFLRE9aaFBJREwwVzlEZXJtV1NId0EybWl2OG01ZE5qd3RiR1JaWjRRQnkxMVlyUjc1eDNLcS1VeS1VNnVGcUgydHBWMEZWbjFidjFJV202Y0RUblhrSTZzZDB5RHdzMU5YSFpuZEZUbEVaM3JEVkdXZktnektmbHRJUVNsRnpQSFhpSUhTSWFhcUFBb2lmQmRNVnFjT1NEaXBHWG5hSjlXZW1kYzFKZ3lOMk1mMDRYM2gwbFY0WEk5aTB0M2dkWmFhN0ZuSXBWekxTQ1plbjhMa2FVOW5ZeVNrSnA2YlNzRQ?oc=5",
    "category": "latinoamerica",
@@ -8235,6 +8489,15 @@
    "published": "2026-11-01T08:00:00Z",
    "sources": [
     "Pulso Diario San Luis"
+   ]
+  },
+  {
+   "title": "El efectivo sigue dominando las transacciones cotidianas en México",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeGxEeFUtakVkQ2RiODBYNW9Sc3NTR2J0N2w1dGNfNGhOQXNSVFZXRnJBQzZRdHZ2REdsUXJpWWdtRmdJT1pzTmx0cDFvdUpoN0M5NVBFQ1ZWMGg4cVhsZTRYVWkydWNvUUF4dWlYMUZvVXVTYWplVEJVaTd4M2lYVzlUaXJkcTBLZXhEY1JHaUEwVmdFVENxMUhlcG1mVmhOVDVOX2ZGeHBlQXV3V1VKUjNIbkcyakk?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-01T08:00:00Z",
+   "sources": [
+    "Diario de Yucatán"
    ]
   },
   {
@@ -8936,6 +9199,15 @@
    ]
   },
   {
+   "title": "Corte de luz afectará tres comunas de la RM y durará hasta seis horas: Revisa los sectores que estarán sin suministro este domingo",
+   "link": "https://www.meganoticias.cl/nacional/535274-corte-de-luz-programado-santiago-rm-enel-comunas-afectadas-domingo-1-noviembre-dcv-01-11-2026.html",
+   "category": "nacional",
+   "published": "2026-11-01T03:00:00Z",
+   "sources": [
+    "Meganoticias"
+   ]
+  },
+  {
    "title": "Visita del papa León XIV a la Argentina: restringen el paso de vehículos y personas en Recoleta y Palermo",
    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNDVoTGFTRG1zOTZtaHIxMXhjYXVtRVk5M1pnRURFc0V2WlF1TXFKSFlpQU9ERXdxNGY4QTVhb3NGWFpGejFudUVhWUhObnZiTEx4c3c0ZXhDZ1RucDBhTXRQMGlpaXgzU0xpOGxPX3NwR3VQRlNzdE1ud1M3ZzJsaTJFbWExN3pwOFlZM0N2VnVBWUU4VjhtVWNZaVdjN1ozNDBNbm96bVdtVEk0R0gzNzNyS2szYXpZNGZ1SDllYmQ0V1F2WlJqSDdfWkxXQUlqbkcxdncwRkxOLUhBTWJjTTln?oc=5",
    "category": "latinoamerica",
@@ -9299,6 +9571,15 @@
    ]
   },
   {
+   "title": "“Son una mie...”: conocido periodista expone el colapso nervioso de panelista de Alfombra Roja y destroza a su equipo",
+   "link": "https://www.adnradio.cl/2026/10/31/son-una-mie-conocido-periodista-expone-el-colapso-nervioso-de-panelista-de-alfombra-roja-y-destroza-a-su-equipo/",
+   "category": "cultura",
+   "published": "2026-11-01T01:46:59Z",
+   "sources": [
+    "ADN Radio"
+   ]
+  },
+  {
    "title": "Lo que se sabe del posible caso de ébola en Colombia: esto dice el Ministerio de Salud y el INS",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbkgtUlFCSE1SZ05jUWp2NnBfQ1E4eFRNcFdyd2JpR2JNTC1wYVpGQTVfdFFJa3FDWU5pNDVreW0zdmQ2UVhtVnAyWTAzSHpPT003N0k0ai13T0tSclR3X2FmUVJiS2p5WEtMWlQ1aHQ5XzRnY3JTaWplRzNHZEJsRFkxbzN4YzdnRGxoV0x6QmdpUUtORHlWTVYzOE9FNzUwYnV5ZmRUS09yMjhQQ0VmV3Itb1RacVhzaFEzSE1ua241MUNyQWpKT2V30gHXAUFVX3lxTE1HVWlPSjd4VkR6M0QzWnVLdGNscEVsdkM0ZTZHZF9hVmRkcGdKcFRCR21MN3FTVHlZWXZscXZ6ZWhMeTFyVUZzbmg3ZDF3ZC1IRUFSY2N0a2dxZExZYjRlY0R0c3JmU3c3bUV0QnQ5bXF3c1Ixb09JaVpMT3k2TmZSODl3UFZLekt4akRsM1lQam16REdfZHk3ODJpUVFuS3pTMUNTaE5aZ2xvdFhPZDVURFhHclhiR2VhS2Q0a1d0dmNjZmhNbXpXTEQ0dFRtR2FocW9UOFcw?oc=5",
    "category": "latinoamerica",
@@ -9547,6 +9828,15 @@
    ]
   },
   {
+   "title": "La discusión que tensionó a la UC antes del clásico: “No vuelvo a entrenar más”",
+   "link": "https://chile.as.com/futbol/la-discusion-que-tensiono-a-la-uc-antes-del-clasico-no-vuelvo-a-entrenar-mas-f202611-n/",
+   "category": "deportes",
+   "published": "2026-11-01T00:40:46Z",
+   "sources": [
+    "AS Chile"
+   ]
+  },
+  {
    "title": "Autoridades investigan un posible caso de muerte por ébola en Colombia",
    "link": "https://www.bluradio.com/salud/autoridades-investigan-un-posible-caso-de-muerte-por-ebola-en-colombia-so35",
    "category": "latinoamerica",
@@ -9684,6 +9974,15 @@
   {
    "title": "Entrevista a Pablo Milad: “Mi mandato ha sido accidentado; todo lo que pasó esta semana fue la guinda de la torta”",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBnU2VuejhMWTg3U19hOHZtTVpKZ2c3OFdjRnpSY205clpPSlFmYWRwaDExOVVsWkNxZ0dXd0hEbUQ0S1ZFc3YwOE1vWldDelhmYldPMm5wU0c5MWZIclhDa2FDMNIBhAFBVV95cUxQTS1Vcmlzc3VaMnZnZHg4ejVMa0dLcmJYV0EydXhOOUJpb2htRUdMZ3hDT21lQXU1clZzbGo5VnFxLWpGRmQzWUtPQjJVa2V2RmlqV1hkamtWekRMRGoyQWJJNlBEYVpTZHVHSmFESEkzMDNtSzV1dVJDcHpRMTlGYzQ0NmY?oc=5",
+   "category": "deportes",
+   "published": "2026-11-01T00:18:27Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Entrevista a Pablo Milad: “Mi mandato ha sido accidentado; todo lo que pasó esta semana fue la guinda de la torta”",
+   "link": "https://www.latercera.com/el-deportivo/noticia/milad/",
    "category": "deportes",
    "published": "2026-11-01T00:18:27Z",
    "sources": [
@@ -10072,6 +10371,15 @@
    ]
   },
   {
+   "title": "En Cobreloa dan vuelta la página tras escritoriazos: “Nuestra obligación es ganar en cancha”",
+   "link": "https://redgol.cl/chile/primera-b-ignacio-mehech-cobreloa-anfp-desafiliacion-san-marcos-tribunal-escritorio-campeones",
+   "category": "deportes",
+   "published": "2026-10-31T23:39:17Z",
+   "sources": [
+    "RedGol"
+   ]
+  },
+  {
    "title": "Soja argentina: la Unión Europea abre una oportunidad de exportación frente a Brasil en 2027",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjeU9ialU4d2lVd0JhWEV3VDJiOHZYVHlqNXVfVlpEVHNCMTI3SWZBekhfYjBIbG80Z05iUjZ5Y21BVWY2REtuNFNMblV1cVJySUgwTnlQY3NNanFoWVJ4Uw?oc=5",
    "category": "latinoamerica",
@@ -10226,8 +10534,26 @@
    ]
   },
   {
+   "title": "El último viaje de la violista Penelope Knuth",
+   "link": "https://www.latercera.com/culto/noticia/el-ultimo-viaje-de-la-violista-penelope-knuth/",
+   "category": "cultura",
+   "published": "2026-10-31T23:21:03Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
    "title": "O’Higgins vence a Ñublense y pone al rojo vivo la lucha por el descenso: Tabla actualizada",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOblJJNUgyQW5tdlh5LXItU2RRWVJ2MUVsZ2RCaWwxd2tDdVZfcmNScG4xcVBScDJEY3pBYXBtYTlGMkFuVUoyVGtMZjFHU2RaXzl5TXpEOE5iU01TeF9QSW9QUG5FZ2lVT01yX0k5Z3RqSlJ1SFNKcVNITXV1dlpsRjVGbnZFTXhNQ3RPQURUYkFFUTZwSG9QTXZ5TkRsT195T0tWQzIxdk1xZ2hNdUdmVG1n0gG3AUFVX3lxTFA4VUdfVEczUWhMbzdTYjNUaXpFbjQtbDI5TS14OWlMRkNidW1LR2FEX0EybU5sYzNIYXJMU3NENnoyNzdBdG9ZdXczeWg2OHVud2J5dldGejRkbzJiTU1ZYTI4eVlVdEJVYkRMbTlSbk9aMUpZbThiVDRwRHFZakhKbzcwTVd3YkNpYW1ycmFVcjhzS1JYVGNKUU5mZUNXMFlLQWpfVmNvbF9CS1J0SEt2XzhMWWFxNA?oc=5",
+   "category": "deportes",
+   "published": "2026-10-31T23:20:32Z",
+   "sources": [
+    "RedGol"
+   ]
+  },
+  {
+   "title": "O’Higgins vence a Ñublense y pone al rojo vivo la lucha por el descenso: Tabla actualizada",
+   "link": "https://redgol.cl/chile/ohiggins-vence-a-nublense-y-pone-al-rojo-vivo-la-lucha-por-el-descenso-tabla-actualizada",
    "category": "deportes",
    "published": "2026-10-31T23:20:32Z",
    "sources": [
@@ -10334,6 +10660,15 @@
    ]
   },
   {
+   "title": "O’Higgins logra un importante triunfo ante Ñublense :Así queda la tabla de posiciones en la Liga de Primera",
+   "link": "https://bolavip.com/cl/nacional/ohiggins-logra-un-importante-triunfo-ante-nublense-asi-queda-la-tabla-de-posiciones-en-la-liga-de-primera",
+   "category": "deportes",
+   "published": "2026-10-31T23:07:26Z",
+   "sources": [
+    "Bolavip Chile"
+   ]
+  },
+  {
    "title": "El albañil cumbiero entrerriano llegó al Top 50 de Spotify Argentina: la canción que lo posicionó en el ranking",
    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOYVlEOUgyQURxTXFydk5iY1J4cnpJTHVDdk9YRVo1X2h0bXdnUl9lRWtjX0F0TkJvZWN5OTJoVTBVeXcwM0FXYXJwc0pMdUxLS2V1bEVVUFdyNmFhYmxqRmJhcGd4SUVnMGE5WmxtVU42ZDFMSUV0THpDczdCaVFoTEx1Vk5xT3o3bUlmams4Ni01bER2SWFmdkw5UnM5c3VsZms4UU5DWXo3Z3JSWjROSkZEelBUal9KeHpjT3MwTndLRFZpMVBJN3NibVhHSlBJLVpRTUlTcDNJQU1oV3hN0gHYAUFVX3lxTFBnOEtUU2hjbXZUTm1RMXAzM1hYMllhQlhtTDFKMlpJcHRIR1gwUGtGWFNZbHVzYUowOG1JeDhlZm1UX05FXzE0SlJSVWhBT1RoOFB3Q21Vak1wUTk4eUliM2JWN283ZUJWdnRYUnJMMVpOTUV3dUpBSGlZVXlnYzZTVUNveUlXS2RKV1lCWG1kWDVMZnhhRWl4VTJHaXp2ZFhHa1JMVndKb2FkdkNieDhTNS0wRFBVMWtjYkxpOXQyNGNPUmRnTU1SUDF5MmtzRGlxcWtXZHJpMw?oc=5",
    "category": "latinoamerica",
@@ -10434,6 +10769,15 @@
    ]
   },
   {
+   "title": "Marco Rubio niega que EE.UU. haya facilitado la salida de Flávio Bolsonaro de Brasil",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYjk3S2paWXM2SjZrRl9GM3poRWVoTUpWOEc2Um9udG91TXdaMFBNZGNkb2pfZlJuSXZkb2U0M1AyYl9Tb2FqTnRVeVIyYVhMRTltX1Q1cUk0TEJBVG4yODh0UXhrUjkxWFMzQThEX1dCaVlxNmVNVThFenY1dmZlODV4Q3ZncVY4VF8wMlYtbjVsTi1RRVJqOHhsWE5qTGRtYy1MUVlsdklLaXpxSkhlS3lXNXhqUQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-10-31T22:53:19Z",
+   "sources": [
+    "CNN Chile"
+   ]
+  },
+  {
    "title": "México suma ocho medallas en Regata Internacional de Para Remo CDMX 2026",
    "link": "https://www.gob.mx/conade/prensa/mexico-suma-ocho-medallas-en-regata-internacional-de-para-remo-cdmx-2026",
    "category": "latinoamerica",
@@ -10502,6 +10846,15 @@
   {
    "title": "Se salvaron en la Primera B, cerraron con goleada y ahora comienza la poda: “Valoran muy poco…”",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObk1Ba2dzX3BRTmpOVFRkQjlnaXhZUE9JX3ZIZnNNbHBMaHNUR09zVDNQZ2tIYlR5MXEweG5qUE43eVJyY195Tm5VdUJZODBwaDZtaDMzd2d6Z0t1QlJfa19qRm53QzV6aXhuMXBuOW9XVjEzSmk1UXIySE96WHB6Tlk5ei1zZ0dXbXZ6eWZLMGQ2RHZXa0pWeDI4UTJZbHJWNld0ODZJYWRaVW5oZGxqMVNQdELSAboBQVVfeXFMTVB1cjVNNUdJSW92aVgzRVJoTlBTR0hEY2kxRFJNMWlXdG5lVjVpNmR6WXlFMGticmlseWtaU1kwa3UwbVNLMGJKX2QyOHBlMmhUTVlpaEp2ellTMDF4RTlmUXU1bnpoSUF3aDJGMHF3RTF2akhORUxiSEh1cnc5dUFWb0EtWUV1X1VoYVpZRU1nUXBLU2J2UGhKRmF5Tk5aVjJPc1hLSlJvaXQ1RkgzTHp6V2J4cW81V3NB?oc=5",
+   "category": "deportes",
+   "published": "2026-10-31T22:38:59Z",
+   "sources": [
+    "RedGol"
+   ]
+  },
+  {
+   "title": "Se salvaron en la Primera B, cerraron con goleada y ahora comienza la poda: “Valoran muy poco…”",
+   "link": "https://redgol.cl/chile/se-salvaron-en-la-primera-b-cerraron-con-goleada-y-ahora-comienza-la-poda-valoran-muy-poco",
    "category": "deportes",
    "published": "2026-10-31T22:38:59Z",
    "sources": [
@@ -10883,6 +11236,15 @@
    ]
   },
   {
+   "title": "Éxito en el casting de Gran Hermano: más de tres mil personas llegaron a Chilevisión para postular",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/exito-en-el-casting-de-gran-hermano-mas-de-tres-mil-personas-llegaron-a-chilevision-para-postular/",
+   "category": "cultura",
+   "published": "2026-10-31T21:59:30Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "Detienen a delincuentes tras ingresar a robar cinco veces en la misma casa en Los Ángeles",
    "link": "https://elcontraste.cl/policial/2026/10/31/detienen-a-delincuentes-tras-ingresar-a-robar-cinco-veces-en-la-misma-casa-en-los-angeles/",
    "category": "regiones",
@@ -10939,6 +11301,15 @@
   {
    "title": "Luto en la actuación chilena: el desgarrador mensaje de conocida actriz chilena tras sufrir dolorosa pérdida familiar",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQSXROMDFkYzk1eVdzUkdoWEJoUHF2S1JXY0JwRlZudkJuVG9DSzQwNlNwREZYa0pqZ2RjeVdYZHdNcXFFbkNDeVRjZGNoVlNnam45VGdaeVpFekVOZkFHWS15M3lWd2ZHWDNrNmpJZkdnU1NrQ0NSX2Z5dXpnWUdPMUdwbVE3LVEyS2MwSG1mYlZsQlFPZ1MxV2xBUl9RNjA5cV9ud1c2RHpjQktlSEFINUR3ZGFuY1pGN1JoWW5TT2VDa3NhV1R1YmdRbUFzeV9RWElORVZGQ1lvdEwxUXMwQjlWMEJlYUnSAfsBQVVfeXFMTm9DVHVpY2ZtYXhTU2lDVjF5TTA0aTI3RG5DcmxGRGZUUTZmVE95QnBDcGZsV3FCdlRPNTZTeFBrYS1DQVpoNXZpMWo1ekx1QkVSNHYxVmlyTnRXVEU5S1o4TmZNcEc3VDR4SXZXNXpPRkI4N1R2THBySG82WXBhSnZiN0NTWWlQMDBGMElsRHB5bXpuQ01kSGxVZEFYcGN5TWEzUWVfMFRCMGJKVFNUMW01WG4tdmhEVW9kYzNjbjFfLTZnYnFOY3RoV3o3Z3Z1WWc3d19fUnJIVEF4WnFiemRYbXFSQ1ZoZHBwSEVGY2ZraDhwZWNCb1Fmdlk?oc=5",
+   "category": "cultura",
+   "published": "2026-10-31T21:49:04Z",
+   "sources": [
+    "ADN Radio"
+   ]
+  },
+  {
+   "title": "Luto en la actuación chilena: el desgarrador mensaje de conocida actriz chilena tras sufrir dolorosa pérdida familiar",
+   "link": "https://www.adnradio.cl/2026/10/31/luto-en-la-actuacion-chilena-el-desgarrador-mensaje-de-conocida-actriz-chilena-tras-sufrir-dolorosa-perdida-familiar/",
    "category": "cultura",
    "published": "2026-10-31T21:49:04Z",
    "sources": [
@@ -25304,387 +25675,6 @@
    "published": "2026-10-30T02:57:42Z",
    "sources": [
     "MARCA"
-   ]
-  },
-  {
-   "title": "China acusa a EE.UU. de alimentar la violencia en México tras críticas de su embajador",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQV3kxUG10Q1RfQkstRi04Zm5fdHN3Nm0xSkdiX2wyQm9YeWlWdzdGbF9XY1FaRHhQSllWeFJvWUJhRVREcS1HTnFkOGhZMkFiNTYtblU3bUVzU0o3SmhrbHRUUEQzVVN4SV9ZYkhYb3lSVkExSHlrd1k2UUh5aHlaQ2lwUFBVZ3dlYVJhQlJjTkxJTjZhNW5yYTVpTkYwb0NUOHo0?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:55:35Z",
-   "sources": [
-    "López-Dóriga Digital"
-   ]
-  },
-  {
-   "title": "Reportan al menos 3 sismos en menos de 10 minutos con epicentro en el mar en la región de Coquimbo",
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPNWV0UzRDeGFmYXc2NTFuZ1VMbjdCSmpzbEtrdnQyX0dTaWVsOWhiZjVSbGtyZWpyNlVybmNjVmJ4NEdoeGdaS3EzWm1uYVBzSXlKSnI5U3ptWjE4UUhTSWhWYWd4WTFZTnQ1dzY2dTZrT1lkTEhHWm4wUmJrdHRxbkdhX01CWVFtMldSSzlvc09GdHJ5dTVyeTdLRXVmTDBkVi0wQVJLdjc2blRRRElQeHNlVkdWNndOcmRNOWtsaDNrR2d6aVFMX2F6NzFpekNaNl9PSG1uNU9sY3NTbWNqeF9NNUw5dnlmRUZIblBLV0dKUzE1QzktYkNR?oc=5",
-   "category": "nacional",
-   "published": "2026-10-30T02:54:55Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "Así avanza la llegada de soldados a la frontera entre Colombia y Venezuela tras orden de Abelardo de la Espriella de militarizar Cúcuta",
-   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPa253eGlmVVEtN3ZSbm9ON291MkdtdG1SbFdjNU1XMS1sQVFoZms0VFJHeUlIcUZPcVFtRmc0TTk2dEg3ay01Z083VS1nQ29lTUp3aTh3YjBPaUM0QVdyYmlxbV9ONmxkSUxSZHFtdUV1dkNiSzNHOFJIRzFSNW5TLXZBUmhPOENMMGE0T29pNkhMajVCcXN0QXJHNDZLanl1Qko4TlpmQnhQdGp5UTNzc2tPQ3NrTThydlRncnRPTkJmcExCVFp6RzRrOEdZdDJOLWVYMm9UNW9lQldSemFfb0h6Zl9yYVdCVnh2VHNYZDlxTlg1Q2RRMzhkVkgzaVg2cDVvc2VoVVQxOFJNak1WcVp30gGSAkFVX3lxTE5ZMFVabG5SYTYxSHctWVNueGFkUXdpanpiT3I5c0ZsdExoQmN3dU1TRndCdjc0XzZ3Y0xDYXJWT0VsNzZoT1RrY2RfOEtuUWV5ZTNnMVhKYlVkMjNxNlZHM2N4NkNiTndQazZ0bjN5TmtTazVFTXZ5VGpkRGtaUTZOTEdkcmtZaTlkOVNiWjJLSzNDel9WeklndEx2VU5Fbnlza0tyM3ZPRTdEN2M1RVpQUTFhcGJhYndwWlBmSWZ6bjBsZGpSUkh4UjJxVDNURWZSUTNHNXBiLXJsckZBV1dZX0dUT2hMZklvekR5RWxLb1dNZnU0aHlFQlVQR2tDRWQ4T295V1hxTjkxTG9zM0tkUGc?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:52:01Z",
-   "sources": [
-    "NTN24"
-   ]
-  },
-  {
-   "title": "Alejandro Soberón, optimista de que el Gran Premio de México continúe por más años",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOM2kxZXRwaklUdVhjOXVIM0Z5YWNSV0xmZ2x1am9maDlmTHZxSjNUejJnLWp6clR1cEEtbmhadmIyNjhqRjZGOEItMFdrOU41aHg5a3lhM0tSSDduV1haSzBvbGVEX3N1M3BqRnVSZXhPYjFLSENWQ3JlbklPS2JLZVN5a0dZNTJkYjNrOUNfQmZHTFJwbDc0NmZpcVhTZFYwSUHSAaIBQVVfeXFMT0NZTVVLTUdyVVljdDlTal8wOFk5TTFMQ0tNclJrbEt1RlN3WXJvQ2VpUWZuR2g3WjVwV0dUR0VCWndYTzRhLUdEd1F3aDFKZkRsUHRWcF9GQU9KN25MVTlTSkJEdVU3UVZZdUpJcU80SVN5bnFfQnl5X0JCTGpfQWFwS2ViaXpyRWx0bDhMR3dxbVRjcDlwV2JhVXFXYU9BTnZR?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:51:18Z",
-   "sources": [
-    "Mediotiempo"
-   ]
-  },
-  {
-   "title": "Congresistas estadounidenses piden al secretario Rubio no respaldar fumigaciones aéreas en Colombia",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOSGlkYktnOHg1ajhtMU5Vc2VKUVNNYXR1T2doT3BhR2lIVE81LXhBNm9Ja1hYbHI4TEhSOFhJUVkwdUlVc1h0YU9kdTBfdGRTT3Vkb0hnd2FsRjVZcURHVjFPVUY5bGxoOG9DZVNlM0JLZm92Ujc0R2hMekVkLTBLblhFZ29OcmhGcHJDaC0yR09HUkcwMTRsRlNKdFBfc2htazJsb3ZWWkNEVWpiSnVNV2dtVnJzQjNXRkhJVGNiaUwzUVdrb1BPUDRUNnN2N0xkQkZObjNycXJ3ZndiRjJ1LV9ZV1cxMjVNbGh0ME11eUlXZTZNYmc?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:48:48Z",
-   "sources": [
-    "Cámara de Comercio Colombo Americana"
-   ]
-  },
-  {
-   "title": "Mesa REP: presentan la nueva Agenda REgenera Chile del Ministerio del Medio Ambiente a municipios del Biobío",
-   "link": "https://www.portalagrochile.cl/2026/10/29/mesa-rep-presentan-la-nueva-agenda-regenera-chile-del-ministerio-del-medio-ambiente-a-municipios-del-biobio/",
-   "category": "regiones",
-   "published": "2026-10-30T02:41:46Z",
-   "sources": [
-    "Portal Agro Chile"
-   ]
-  },
-  {
-   "title": "Corte de Valparaíso cita a pleno extraordinario por ministra que pagaba por redacción de fallos",
-   "link": "https://www.latercera.com/nacional/noticia/corte-de-valparaiso-cita-a-pleno-extraordinario-por-ministra-que-pagaba-por-redaccion-de-fallos/",
-   "category": "nacional",
-   "published": "2026-10-30T02:32:11Z",
-   "sources": [
-    "La Tercera"
-   ]
-  },
-  {
-   "title": "Exministra de Justicia de Paraguay denuncia amenazas de muerte por parte de organizaciones criminales desde la cárcel",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNekRhRzdCdjU1RDJLZTAtbEhHSXhJOTAyRFlVX2MweGI5WHRQY0p1bmxvM2JTSUFRV192V0hEajRZaENhTFNYX1JseXU1VWlPVzZmM0hveEtfc280Ulc1ZlRlRGhzeWFVTGlhRVVtTEQ2MWkyR00wX3dFRWZpajVfeVQwU2hpdnQxUzAxRFpfUmphX2ZybllLWS01SGR4SDYxMDFJeXZtajNNNGM1RkZMTVJ0aGxQblg3RGpZMC1ZOGdJa09nUThQY2J6V0x3a2JTMDdFbF8wMlNBem1tQmJXTy1xV1o4V1lDSWJsVkFR?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:30:48Z",
-   "sources": [
-    "Eduardo Feinmann"
-   ]
-  },
-  {
-   "title": "Así funciona el racionamiento de gas en Colombia: todas las medidas que deben tomarse",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSzVxa3NSdE5wcVdFMVFZLVd0S0dEb09NMU93eWszdVM2X19UX1JJdVlna0ZIaDZGVHMybzRLT0xVWUhuZ1UzZ2dCbzZnTnM2ZUtmWWpxX2l3MmpRX2pJSW1FUFpvUVVtbFhWUUt6Z3dMZ1BJUXpsaU5pM0xYOHpfd1lMbS1VVU5zS0EyNDdob3h5eEtRMWZXRFl0QkE2Z251dzRCV1Nwb1Zac1l4NXRPdkxybW54V0xTMndORktLT2F2cEN4Y1BXN3Zn0gHeAUFVX3lxTE92S19pc3N6cGlrRmtWSDM5UWVINm1VMk9Ob0x0bUhjcUhtRVpuMHo3bV8yR1VwbTVFVGlBTGJEUDNsUmJ1Yy1SSTJBS201M0ppejNnYzBmSFNNdkVoamxxb2xCRTFXV0hidkw5RTVvX29jb0JOQmFsNWNhX0RDMmlwd0NHMlhfeW1rVlN4dG9jaXVtS2ZKTEg1T3JwR2xITGFJSm9JNDEydHVYdV9FQ1ROT2NCYVF4TjhkR19UcHVFRjBnR1JHdDRqY0prSWczNlRmQndDSUdXZVRkcUpjdw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:30:06Z",
-   "sources": [
-    "AS Colombia"
-   ]
-  },
-  {
-   "title": "Más de $500.000 de diferencia: la batalla por el salario mínimo de Colombia en 2027",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSkZDLUc1UkJVUnVpWGJtSzJrRWZ5UURHaWFwNkhLQlh6dW50ZjhwUUM5NlZTeXl0ZHBUcE1xUDFHbVU5V2NTaHJ0SlRESmVCUllscG1xdUFmLWFQTVJSV2VYTkJWYkNpQmVuOW4wTXhmRzE5OVl1X0E3dDdfT3k2NEV5ekhKOTdFeUg5d1R1cUZJQUFlbEZYMG1nZ2p5VWtsdFVjNlpobTBzVmM4OUFZbm1CMDJtNlhpVjhkNXhyU252ZUtY?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:28:27Z",
-   "sources": [
-    "AS Colombia"
-   ]
-  },
-  {
-   "title": "Enel anuncia corte de luz para 8 comunas de Santiago durante las próximas horas",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQci1Ha1JWcEQwVGF2MXJBRElEbXhFaHFDNkJTMG1YQ01qaVJZeTgxNlp1djA0eHlTTzJHOUY5U2xOMldYT21KR1hfaHNaaFVZS1RSTmdWVUx3Yk5tRjhVclJzLU82R1ZZM25zcmIwTmlIQzZWcjZyWVlraTlZQm1faG5lLWxSUHdvbnFmOUxnZWZwR2ZNWTZJRHhhWUNfNDQxZUxPbndkWnVsbzRMUTBtWENCeC0xM01wN2loeWJUbjFrUkNvQlE?oc=5",
-   "category": "regiones",
-   "published": "2026-10-30T02:28:04Z",
-   "sources": [
-    "Chilevisión"
-   ]
-  },
-  {
-   "title": "Inicia construcción del mayor polo de desarrollo del Plan México • Economía y finanzas",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNjVwVy03dXd6bk4tMW44NTVtZ3h2di1vT1dQOGNoeFBQM2stRW1NTG5SYlo0aHBCWjRTRnFXejZVVWpKV0dzYThNaVkzRC14QVNjNTdGUWdfX2ZPV1RNOFF5dG5ER3BQT2VONGY5ZUNVTWVveTFFN21GR3dCSzBEdlN3YXlHZkZpUmp2cVNtU0w?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:23:00Z",
-   "sources": [
-    "Forbes México"
-   ]
-  },
-  {
-   "title": "La Liga Argentina de Básquetbol | Noticia | Segundo al hilo y gran arranque para el San Isidro",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVmhnblg2ZENzSEpyQ0NIaXd0WjB6dmQzZ0lPbkpzMEVoekZwcVdHdFIwNlBxRTl5RXVqVjlCMmJrRjdyWXlvV0JfUjVWUkh0OV81TUdRSE90cHg0QklxbUF6RlBXR0U3NERVZUlCWUxzVl9NZmNuZWdmMFJ0NWNTbDlldTBnbnhSQjlocTdmU1dHaGF2Z2l1ZWpBV2J2OWRhRGVaR2E2MlRwOXR2azZNTTZScUg?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:18:17Z",
-   "sources": [
-    "Liga Nacional de Básquet"
-   ]
-  },
-  {
-   "title": "La hoja de ruta para proteger el medio ambiente en Colombia",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbHZjZ19OeEhMN1ZlRVN2d2tnNzloendjRlVBOGJRcW5pOGVqRHoyU1ZxaEVqMWxzSVU2VXRxbHRSRWJJS1UxUXlEcmhDdGFDZzRMUmZPZUo0eXJvQUluakNsSnl6ckRRa1pZaldoLU1NM1BvMEc2TmpqdGdDOEJ0S0NZdDl3d1lzN0VSOXJfWnZkcDhFbmppLVpB0gGuAUFVX3lxTE41QWRDNGI2Uk5aUmp3RDN3RUdCd01QdVdLaWIwaEZRMGExdGtHZVhnclJROTRWYVZBam1JSE14S1BqbXdBZ1F5Z2o5WXA4aDZsWWlUQnBpRzY1dGNhOG9jQlNlc2VWbWxHUW1oNFBKREtFYXh3cUZZZnpYY1Zzb0lBMUFzWU9qMGY3WUZ6blBrRDZVLU0tc3YwUkVBbkJleDFZUmFnaFpqRUw0eW5DQQ?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:17:43Z",
-   "sources": [
-    "Caracol Radio"
-   ]
-  },
-  {
-   "title": "Ideas espectaculares: música, danza y performance en Puerto de Ideas Valparaíso 2026",
-   "link": "https://g5noticias.cl/2026/10/29/ideas-espectaculares-musica-danza-y-performance-en-puerto-de-ideas-valparaiso-2026/",
-   "category": "regiones",
-   "published": "2026-10-30T02:17:40Z",
-   "sources": [
-    "G5noticias"
-   ]
-  },
-  {
-   "title": "Pasos para tramitar pasaporte venezolano en Colombia 2026 ¿Cuánto vale por primera vez y renovación?",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMEw1QmJMZi1rckUyc1h2a3BBdFpZS1ZneDBUbG9RN0ZNbWxNTncwa0hrenZobG4tb0JpdFJ1ZHBBTnFTa1JTRXZ5dzZpcHBzZEJMSW5id1pQTXlVYTZQWXpMTm1CZGl0Q0tLUTFkQUhEZ1c3dENQYk9TSFZEblIxU24xSmlsMlJrWG94Y2ppN0xIMTZxMXhSdmRDbHFCUmlrT0F1WXJYUXl0VmlVclVjM0E0LUR6Z2Z3UmdUeWFxSGI3UXVRaVV1bi1sZzdrZ9IB4gFBVV95cUxPSVpfNDYySDhkYVVTRnM4U3Fya3F3ck9TOVNhZXhrRXNyRUhjZlBFcGJ0V3NiUTJxZUozbWRNbGt1Vm96ZXVEVWE1dzZEeHZSSGhsWGZpaEpPREhQa0lMLTJodmkyeTdqaEFwZVcyMThHUkNtNm9ZTk1hbVhUMjhyaVgzNkVPaHY5d24wMFBXdkRaVmMyTXFYU21BZlU2dElNVXlQY25mbGZ3US1RbUFzLTJ5eWNLZWM4ZFUtRTBFWW5OSGtmczlrR2I1bHNBajBFaFI5aEg5RjlvRVVXdE9CS3Rn?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:15:24Z",
-   "sources": [
-    "Caracol Radio"
-   ]
-  },
-  {
-   "title": "Bukele muestra despliegue militar de El Salvador en Haití para misión de rescate y niega invasión",
-   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQRmJlVGNMODd0VXFFRkZIdWd1UHQtN29JcnBsT2VzdnVhNHZoM0Y1UXpYY3Zkd2JRQ3ZfT0ZsdjhXay1sXzZoS29XT2xwc3hkZXhsaXFBeElfRTI5dkdqWFpfNTRxanA0bTY3ZWJFZmY2YjZTNURGb3VKZjlmeHNuYlR3MlFHdnVpRkNGa3h1RWt5VTZmRWxibFBJRHpacnA1UkdBd0hNR0szalM0MkREZGF5NC1wRS1PdjhjdGNjYVdIc3dUa3JyVF9icnBzRVBCWklJM3FqbnQtV1hSQUJiLU5wdDZlQTJoM0JScXdHS3lGb25vVk9sam8ybE8tNk5KbmRPeWhUREtqc1U?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:12:30Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "La reina Sonia de Noruega asiste a la inauguración de la exposición 'Munch-Picasso' en Málaga",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOekRqWjAtZ0dFYzR1UTRKMFE5WTVoUXIwemhRbnZNaFhKTG5IdWg0Y2NaYjFHdVYtbmYtSUtRSWpTbXBGUEZtU041Wm1SUTZJb1kwdVFxZWtOR3dwVTBTaVlXc0JNNG1QcEdSSVc2QWxZMFE1ZlpqU05nVjM2dWdpMjQzQ0ZxWVE5YWdiWU1kWFB1d3RINzU5ZFhZMUFwel9MdVp3bUNIOUpOQXNCYlRqcjFHZw?oc=5",
-   "category": "cultura",
-   "published": "2026-10-30T02:12:23Z",
-   "sources": [
-    "ABC"
-   ]
-  },
-  {
-   "title": "LNBTÓN reunió al básquetbol chileno en una jornada solidaria a beneficio de la Teletón",
-   "link": "https://www.biobiochile.cl/noticias/deportes/basquetbol/2026/10/29/lnbton-reunio-al-basquetbol-chileno-en-una-jornada-solidaria-a-beneficio-de-la-teleton.shtml",
-   "category": "deportes",
-   "published": "2026-10-30T02:12:00Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "Fundador de El Ají Seco fue homenajeado en el Congreso del Perú por su trayectoria en Chile",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTzJqZHZVZjh3dnRkNDgwU0g1SXBIZDBiaVNIZm1PM3d6cUI3WXBlcGpCOW96VllZTlZfZFpMaW10QUFkUVRIdXN5alZaVE5haTFVVFVOWXdBZ29RZXJxRGdEa3ppbWV1b014UG82ZUUyN1lCVHg3M2VQSDhFOXBIVm5IUnhfdlAtdEV4RkhNN3NoUzRzYVNDY2lTZUp0XzBQWS1jc2E5R0VjUzNOWGR4SHU4V19NN2RDX0NyV0FOZUk?oc=5",
-   "category": "politica",
-   "published": "2026-10-30T02:10:48Z",
-   "sources": [
-    "Portal Metropolitano"
-   ]
-  },
-  {
-   "title": "Patagones: la filial de la Federación Agraria Argentina avanza en la construcción de su sede",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONGt6REhEZF9uTlIteGF6bWdRakFKckRLUUJLMXlKLUJoVWhqMmpTWWJ4SlRROUNjMVY1ek5wc2tjTEN2aXV6NkF6Q0p0OUJWQ0luSVppUmQ5eHdRRndDSnFidkJWbXR2d0hwajVJazQ5ZXJJRXBxbVR6eVpQUDIyWHlYLTJfMWVQRDN0WXFZTE1HODJfdmxONlFIMkV4a052d2UtclJodVpDTmVRMU52aTRNWk9IVkViMXVtZTI2UFZPcFNXQ2dfSFV6SEVqTFdoSGFsZWJ3?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:03:45Z",
-   "sources": [
-    "La Nueva Provincia"
-   ]
-  },
-  {
-   "title": "Mientras en México han prohibido los celulares en las escuelas, un estudio dice jamás encontró cambios significativos",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPU3c0dnV1bFg4ZExYbTNhRVNoYllIT1lwVGVfT1h1a3JNUzlLMUhuVzdjbFNTdEppQXpleXM2LWV1dnRHZjNEQkFuV09VUGF2YWNtaHluVlRDUUwtZ1B4bmVmbGdOVHRtRUFlYWlPV2JNMXRlYS1IWVBEN0dJVHdwZVJ4WW1FeTdDbkM0bTNFZkN6b1pSNzNVWjNtcjhodG9JRGRiaFRNNEhJcHZOVlplMDR4b0M0V0NKdXA0a1p3Yjd3dEpmay1GS0ZuV2xmcV9kOGFfZGo0ONIB3AFBVV95cUxOQ3hqY0twUEhUTmIxamhMTTZlSUxYWlhpTG9IdldYek5GNVNVaXBGWlVCdEJ3WHBWMGw4R3RlbktHUktFXzVvenFlZ2NuUEgydXR0Nmh4MHo4cWlVSEU4d1BjS2hXbEpjckFyUHhmdWNLVkVlbDFuakZMeWVubXRQVktGRklGUG1MRkUyV1NncC1KT2JXb1gxdzB3UGxRc2ZyOEJzalFYUU9yQ0hmajB6NmM2RFZtUGZaZjNRaFV6eDBZYWZQTlp6X2RLcjVhNXE0b2lMU0VqVXVpcWFa?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T02:01:18Z",
-   "sources": [
-    "Xataka México"
-   ]
-  },
-  {
-   "title": "Gobierno de Francia alerta por \"elevado\" riesgo de desmanes ante protestas del próximo sábado",
-   "link": "https://www.biobiochile.cl/noticias/internacional/europa/2026/10/29/gobierno-de-francia-alerta-por-elevado-riesgo-de-desmanes-ante-protestas-del-proximo-sabado.shtml",
-   "category": "internacional",
-   "published": "2026-10-30T02:00:33Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "Gobierno de Francia alerta por \"elevado\" riesgo de desmanes ante protestas del próximo sábado",
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQY25KSTJnV3hTU0Rfa3drZUl0MEFYUm82bHdkTnJ3LWxYbGpDRUUybFNCTzA1dS1CUUl0X3BPUGQ2RWxYVkVUZXV1dVk2S1ZuUE1TMGlOb0VvNlZFNG53QlUtWG0yU284UC1QZzZ1TXlPSWZQOUhNT2ZmOVllZi0tQTRwc1BENW15UktvbG9TekIwMVRmRVNCbC1Ra1NlT0tzZHhzc3JtMWktSkVjUGVodXpEYUNhVV9VMzRfUU1QY1VkTVdOLUJZaVNPQWhrVXV2MlZ3TTlSakdOWTJ4TkNfeGJIbmxxQTkwWi1JdEVjUkd6Zy1NcFN5bQ?oc=5",
-   "category": "tecnologia",
-   "published": "2026-10-30T02:00:33Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "Paula Bernal, de IATA: “El transporte aéreo en Colombia no es un servicio de lujo”",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYU5oYmxoem83VERYTUVwZEhPV2hsTU01NVlUZDZhVS1OOUl4RGltOGR2c3NqQW1GMGtCUFVQR19ZNnhsV1FBQTdsVDF6Sl9PVHlaSWUwY2VPRklLMFlRSzU3MFNtRHAxVjlnc0k4SzQ2MkxMLUozclM0dXIzeVpfZHNQOTRhZHU0MFFmTVZWSGJWQUhGMXJ4M2h0RVlIcnRvcnV1VmNpZVI3RmwtOUtMaVp3MzJYSkRGdEpJ0gHAAUFVX3lxTE5vdmpYWGZuSFE4R1lIWEV3MHdnZWF1NzVaS3loWERhY01WVTFmWkgyVjhhRDNvOUczZUpYMkRLem9FejhQaUNiY1JuQUJxMXA5Y3lnMGpYYnpvZTBhcFo0YTV0OTFackpOMzB3UTVzSnZBWlFiNXV1X29UTE9aWnVicEFuelRTTFNlTlBMN2h0U3FzdHJUUnhpY2Q0MWpUaTU4c3ZxNDQtY3ROWDc4bWdKQVpCcWZWd2Y2VG9yZXU3dw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:56:22Z",
-   "sources": [
-    "Canal 1 En vivo"
-   ]
-  },
-  {
-   "title": "Roberto Velasco se muestra \"cautelosamente optimista\" sobre acuerdo comercial EE.UU.-México",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUXg4bjhtUWgyU0w3RjZOOWJIRzNuOU9USlRhb29iSk5rN0NITGhES3VsM0hRTnZORW5qdTljTFk2TGJMVTAxS0gzSlhvWWM2X2FvWmRfRk8wQktBckptQXNNODh4RVZZaWd2VVdzNlVOcjNmS0FOTTVWZzQyaU9rVmRob0VQV0xIRHdkUnhubmZjVVAxMmNNaTV4QVgwRXVudVRzWXJETzFtQThPOWE1NkttT0VfYmprY2ZfMmQtcw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:55:55Z",
-   "sources": [
-    "López-Dóriga Digital"
-   ]
-  },
-  {
-   "title": "Prohibida Obsesión - Capítulo 16: La extraña actitud de Pablo con Vivi",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNblE2SHFYcDlYZzlwRW1xbWVBZDE1eW9pSi1LYnlxMWtWY0VWZXR2OGFxMTVpVUhSOWNDeFRHMlk1Tjhmd3ZOdndDdExCZmk4WjNRemEtdHlTWW5udnFaWE1fQVlrNl9nSGpzcHJtUHVGNGlQd3pfSXRhZVRBR2QxNllLN05VTzI4X1NCTHBld29ha1VCYi1LQkNJbHRIUHZpNnJzd0oxUUZXV0VPZnV4RU56RTNXXzlEM1FraERMcmLSAcYBQVVfeXFMTlhFRTNtU2pOMkhDam5YaFBLbDVZSktkNGZybXQ5SjhvQlo2bVJ6ZjBaZDZUWEh3dzZ4UW1xNzdVejVhWE1JR0ZJdjlGQ3hJbnhUZVVBVFBRZXZXS1R2RE8wNmU3VG03R0lzYURGdFI2TWxxRzU1TzE5YWstcjd5WTVKbFZpOFRTUHU3WmRXenE4MW1sUmU5YzNMUWpQLVYzbVBRVHE1bGNWLXpVYVE5Y2pvaFdzLVBLNkNmejQ1R1RSb2Y0NHhR?oc=5",
-   "category": "cultura",
-   "published": "2026-10-30T01:54:00Z",
-   "sources": [
-    "Mega.cl"
-   ]
-  },
-  {
-   "title": "Delegado presidencial del Biobío renuncia a RN en medio de acusaciones de violencia psicológica",
-   "link": "https://www.latribuna.cl/politica/2026/10/29/delegado-presidencial-del-biobio-renuncia-a-rn-en-medio-de-acusaciones-de-violencia-psicologica.html",
-   "category": "regiones",
-   "published": "2026-10-30T01:52:30Z",
-   "sources": [
-    "La Tribuna",
-    "NOSTÁLGICA cl",
-    "Cooperativa",
-    "The Clinic"
-   ]
-  },
-  {
-   "title": "La guapeza de Erick Pulgar que ’enamoró’ a hinchas en goleada del Flamengo: \"Que nunca se vaya\"",
-   "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOWTVPSklGTklZMEUxc1lKeURKb2Fma2VqUFV0SUF5MFRYVVY2WWZ1V0xzLWg4b2J5NG50MVdINmpEZWhFa3p5UE5rOUl4T3VLOHZHb1I1YnNzVDFnazF6T0VwZ2hvdlF4cFJ5U3BMOGdCeklfX2JNRjd1QWQ0NUtHeE9NSkNOc0llMEFWak5HbTBkamVieVBEZGU1THBSRkxkT0Q1MEVuODBKTUtuNS1mdzlqa09SNjF1OFdVbDBrZWNmdVdONEdqVGp4QjdiVlA0TnlvRDdvSGFwV3JCd0NFSHRvam1yczRXX2dieHVvVlRIUVRxVzF5OWNXd1FXSlQ1eW5wLXJnZmFTalp4YnZkeFgweFV6YlNTb2xQd2pVbG9Dd3M?oc=5",
-   "category": "deportes",
-   "published": "2026-10-30T01:51:46Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "Biblioteca Nacional de Colombia conecta al país con 89.000 bibliotecas en el mundo e internacionaliza la memoria colombiana",
-   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOdjlLVXFvU1JUSi1DRVlLWUJ3MGlSbWg4eHE3R2NETkx5R3FsV0s4dXZXWElvQ3g4NjZqWWRiM01mZTd2VWtiS0tvbmVKRjZmNVZLMmRsZDAzbGFORHV5bDhFajNGMHQ3VFhMOTR1dUJfWlBuVWVLa25HNGxJdndQd05SQU8tUUlWTWhPUUtmMVV6RjZjcDVYSC1sME50dGNGcHc3S2dZdnU1ckR2SWN4UTQ0c19pbVNiUXBGUWZ2VWhfMlQ4SVZiWkkyQktSZTBJc3ZnVVE0OTJIXzNuNEphV3JjN3puMlQ1WlBzRU5pSFEwVmVoVXA1UWF1WGF0WEJBU3h4ZA?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:51:27Z",
-   "sources": [
-    "MinCultura"
-   ]
-  },
-  {
-   "title": "Degradación a categoría 2 de seguridad aérea de México sería un golpe adicional al turismo: CNET",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRHZYMTZ6b1E3QVVtdklVRzhIUGZYaDh1czhWUm1fUE4wN0Q0aWhlOFBMRmtZYUFGMTJYTlJhOFljODlQbmVFVVNkdEpHV0dFcHdwVExJa1ZBUFJyZTRrVTM1dEdqVkhwcUh6QkE3X3ZadnpwVkNIalNXYmJ5bGlJejhyTWdsSnNEeGUzLXZLQ21ZYjYtR1VONmNtNFdaZFJST2pXdks3N1Z4MC1NYzJxVU85TzZyN1JDYXJ6WnZKdWliN1N1LTlPUHlBQlN4R1JXYnFwSlJrZUJJWFXSAeABQVVfeXFMTnJVTGRHMWpOR3U3S1ZZM3FPd0hWdWJITGJDYm5wZWxZLWdYMC1MXy1fdzIweFNpWFBCeVQzOE1XeVR6OHpuaG9OSlRqZWFJdERJM2s2M1pTY0JBbzBlVFg3bm5PN1pLZTNibHpHSUVqSFRDbzl1OF83cUpYUVEyZWZsR2dEMC1sNEYtTE1GellIaWJEbnFuUHVCVHl3NHJNN01lUjVQdGQwczdROE81T19jZUE2WlVkQkh6c0FKSVE2OWU2RzQzbm1sMnQ3aGxKV2tnTEt1MDhYel9rdnBER28?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:45:02Z",
-   "sources": [
-    "El Economista"
-   ]
-  },
-  {
-   "title": "Bloque de Netanyahu no logra mayoría, según recuento final de la Comisión Electoral Central de Israel",
-   "link": "https://www.dw.com/es/bloque-de-netanyahu-no-logra-mayor%C3%ADa-seg%C3%BAn-recuento-final-de-la-comisi%C3%B3n-electoral-central-de-israel/a-79803290",
-   "category": "internacional",
-   "published": "2026-10-30T01:41:26Z",
-   "sources": [
-    "DW.com"
-   ]
-  },
-  {
-   "title": "Orrego asegura que gobernadores y Gobierno están ad portas de acuerdo para mantener fondos regionales",
-   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/29/orrego-asegura-que-gobernadores-y-gobierno-estan-ad-portas-de-acuerdo-para-mantener-fondos-regionales.shtml",
-   "category": "politica",
-   "published": "2026-10-30T01:32:37Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "Directora de Fontur conoció la riqueza turística del Magdalena en Colombia Travel Expo 2026",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaXNSM3ZxLUtRcWZIWVd6RF90REVRZ1Q5TVhkMVZrOW5yd0tZMktqT2NsZGhqRi02aWNYczNkUDUxbm9uaHVjYkI1UlVScHFrb0h3MVl1Y0hJc3BOSFFvamRmQTVkQkd6ckhwSFhHZWNFUFMxdGhVTE8wMzFZQVBBT2ZtdUhfRWFCQkZhVVJHOUtVU2JXVUpHRDF4YTN4czhReGJQSUhCWnZtckZjSlNpcExQQmFhbDJGVTBrWTlKaUVacm9vWVprclhiUTBYaE5n?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:28:57Z",
-   "sources": [
-    "Gobernación del Magdalena"
-   ]
-  },
-  {
-   "title": "Incorpora CRT mapa de conectividad en México para consultar cobertura de telefonía móvil",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNeFprd1MxVTFGM3NRdF9zYkc0WkM0V0tQREk4WE03eE1DQWNFMFpIOEtVbS1uM29SZFhaQ3huR29MdUNLT09mWjVVSkpSWmlBYy1RREExTmlLYnpqZFpvQ3VvckhQUWJYLW9FMUxxZHFGWTNmei1rZGhTLW1QZVhNY0NYUmtUMlp3QkoyQ1VPMnNYcWdEQk40a2Z5VVlFUUNhbjFsREU5UWN1OElHcVVyOE1McjVtZHo3bDBQRVdhN2xRV052LVdfcUFTTFFlZjJMbldDcVNMTGs?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:18:00Z",
-   "sources": [
-    "La Jornada"
-   ]
-  },
-  {
-   "title": "Sala Cuna Universal en horas clave: aporte de empleadores tensiona acuerdo entre Gobierno y oposición",
-   "link": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/29/sala-cuna-universal-en-horas-clave-aporte-de-empleadores-tensiona-acuerdo-entre-gobierno-y-oposicion.shtml",
-   "category": "politica",
-   "published": "2026-10-30T01:17:50Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "Un fiscal de Misiones pidió desestimar la denuncia contra el Gobierno por el ingreso de Flávio Bolsonaro a la Argentina",
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQalZQWmtlUm01Rk9FTGFUOEI5bERHT2RGOHZYZHJoOGxOUDV1Zk42Q0tzbEpVcDQxcmFTUVVjUXpzLVptdFV3X0FibDVKRmExM1MwOGpwaUVSRE1UQ2tQT3RrS1NuZEJqMmg5S29HeHgyalZ0aVhUdmRkRmxXa05QcTZFMTRuTjB4ZnpaT3hObWlPOW1faDc4YVhJR1lZRjdqeFRUVUtEYmFVbWtiSE96Q0N0anpWd2VvSndVR3R1LXlfS1czbDgtbDl2RjhwZkFJWENZamJiejVsMjllVGJGZU9YS0hFdzgxd1FCbFd2WdIBgwJBVV95cUxQYkRnRzdCc0pzWG1GY2FQSzBpUmMzMjRKN1VFLXV4Z2RPRVF2VDdCT0d5bjU1LWJpdFVHQzNSMkhadFlUVlFjRENlcjlmc3RhUlM5WGFuNnV6c2RPLVYxb0VtdmFxU0VlTFRzTTZRWjVyb1BYVUxFRGplbWs2WmpxajlHUXQ1YUc3OFpQZ2VkZmJZeUVrTl8xRTFqQ2k3amxfaGFCbUN5Vm9WeC1ZWXJEb2pKS21BT29oYzdzUGs2NWNlcFhHQm5TY21wUktnUHR6U0lSMDlPNzQ5UWJMVkg2S2FLUWtkeDF2OFFpTGx6Y3p1MEhRVW84X3FGSUdsd1QtaHY0?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:14:00Z",
-   "sources": [
-    "TN"
-   ]
-  },
-  {
-   "title": "Bucaramanga vs Pasto: Duelo clave en la Liga BetPlay Colombia por la Fecha 5 pendiente",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPR0pBS052NlpsOFN5dmxSR2YxV3RfWGIxUHBYb3J3VU1jNnAxOGlraENUV1FuWmRTUGVxS1dfa2FuT0UyS1poek1Vc2dHNk81anV0UF9tdVpUNF9iZTl0OWtfSjh5b3pvaUlwbGhMT2RsZ2V3SWdmOVh4U09uSXpwUXZPWWd5eUVvQ0Vfb0V3MXlVT1djbFh3V0pEZVVxZTZ2NmtiRHphdDZpY2NXWHRnM2dJMFF1QWI3RFFHekFFN1c0Z2d6QWlDZkZJcW1IN2tSSW9Kd1BtTFdoMUloSHV0OEVFSdIB6AFBVV95cUxORmhvVG5PUGIybjVTdEE4RGNvX08zSW8yT0diamlrcjZPNUd0bm1rWFN6YV9YMC1MQ3pibS1CelNRQmotaXM0R2NrOTBSLUIwZjNGeE1JUVoxT0JxUTNOYXVXOUNLLXJtRjVzTDNMZm9sbEFCdDNpWWRaSDJibDh5MXliajZqajZNUmNHaEFESVZQWXhFR2QwZ1J6S3JOYkdLaDc3TkVqNVBBblFWSVgzNTlvWjB0cHc4WS1UbFFpUW5Ycmg0cXpGVkwtaXQzZmRuLS03QVppXzY4MWx4UnljdGNQYTZMRWVV?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:10:02Z",
-   "sources": [
-    "Futbolred"
-   ]
-  },
-  {
-   "title": "Luego de más de tres horas de bloqueo y una riña, reabren la México-Puebla",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOFNGYWpBVXlFeFgtWTJUZTktTjRuSEgyVjFucHlTUjBVVzQ1TVhtLTFUZnNPUzlrVWFpamkyN0h0ckh1dHd4OEpsRmg2eTVVa21qVUxJNmxWSzlpUjVKN1RFOEFVVXBzNThza2tuaWp5N0FXcExwRUFldzZURndscm1oWFl3bEFiYWhxWGRtXzh3YzJqRUdSTnlSNHRhSGFfeWtkYlpkM2tWMndGeUNXUVRRZXJEQ040X1FYY2dNWQ?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:10:00Z",
-   "sources": [
-    "La Jornada"
-   ]
-  },
-  {
-   "title": "\"No está muy bien...\": Javiera se enterará que su madre sufrió un accidente en el capítulo 215 de RDS",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPN3VfNXJOVlFraVhPYkkxOHRRRHpwVmdPUnBJcHA2Wkk1WmJta0NPam9hT3VGWVNMdnVUb2cwSkd0aUJEYkk1RE9RQ1FUdjlLcGNvaWlYTnZ0MWdPU2J6Q3hjU2F3U0RHYXMwUGczalRBQTBrMk5lQlJJbXZQOHRFZFZJNHVnN0NVZ1B4RlNYY2QxaUNuYi1ENDFCXzBPeWFkbmJTVW0tYS01LUJPbEF6bTRxSVFkeGNWUUxhRjdPUVZwYVAy0gHKAUFVX3lxTE9pZlVyUWpLSkcxZVpBQlZGMGxkY0pnRUM5d3htdGFnNVlpWjJtQ1FSYXRPbVpDQWtWRU53bEdURTBfMUw3V0pncTBzX3R5OWNMY1FBbVItX09WVTZsb01WYlR2YzFMMHlTYWxaem5wVTBENzJpNkVIX0FPUjdzN1NQak5vZmJOY1JpNDJVajFpUGJTQ25NMUFnN0dESUlWeURaQnRQNk1uZDV2YU9TdHR4dUhNelQ0NktQcVNLaXBfVjlEMGtpZl9QR3c?oc=5",
-   "category": "cultura",
-   "published": "2026-10-30T01:10:00Z",
-   "sources": [
-    "Mega.cl"
-   ]
-  },
-  {
-   "title": "Hernán Barcos revienta a Pablo Guede en un clásico de Perú y casi se van a los combos: “Cobarde y cagón”",
-   "link": "https://redgol.cl/internacional/hernan-barcos-revienta-a-pablo-guede-en-un-clasico-de-peru-y-casi-se-van-a-los-combos-cobarde-y-cagon",
-   "category": "deportes",
-   "published": "2026-10-30T01:09:28Z",
-   "sources": [
-    "RedGol"
-   ]
-  },
-  {
-   "title": "Con un amistoso, Argentina y Alemania reinaugurarán el estadio de La Plata",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaGwwdlBqYWR5dkZoQ1FKZDVlUWRiLTh6TmFxd1JYeXN2Zk1YNlNLV0R3Z05sZXhqYm41WS1WcHM5NGZwMjB2UkFKcDBhUDNJSU1qcFRGQ18tMXEtbGRSWDk2MjV2VXJxa2owMmFfdXJlbDZYSjB6ajhhM1BNNGtGNl90MWktdEgybnp0YkcycnJscUIwX0tCSnFDeTV1UVdlQUNJaEQ4NXZ6YVpkWkcyUTl5bVdYemQtd01GUjZ2cVMzMTdDaVJxb0Fwclpadw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T01:08:08Z",
-   "sources": [
-    "TyC Sports"
    ]
   }
  ]
