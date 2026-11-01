@@ -300,6 +300,22 @@ async def check_dark_card_legibility(page, width):
         await page.evaluate("(theme) => { document.documentElement.dataset.theme = theme }", original)
 
 
+async def check_mobile_header_touch_targets(page, width):
+    """Los controles visibles de la cabecera deben ofrecer 44 × 44 px en móviles."""
+    if width >= 480:
+        return
+    controls = await page.evaluate("""() => [...document.querySelectorAll('.site-header .icon-btn')]
+        .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
+        .map(el => {
+            const r = el.getBoundingClientRect();
+            return {id: el.id, width: r.width, height: r.height};
+        })""")
+    assert controls, f"No se encontraron controles táctiles en cabecera a {width}px"
+    small = [button for button in controls
+             if button["width"] < 43.5 or button["height"] < 43.5]
+    assert not small, f"Controles táctiles de menos de 44 px a {width}px: {small}"
+
+
 async def check_back_to_top_clear(page, width):
     """La acción Portada jamás debe cubrir el área táctil de Compartir."""
     if width > 767:
@@ -350,6 +366,7 @@ async def check(html, output):
                         .filter(el => el.right > innerWidth + 2).slice(0,10)""")
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
+            await check_mobile_header_touch_targets(page, width)
             await check_card_shadows(page, width)
             await check_dark_card_legibility(page, width)
             await check_back_to_top_clear(page, width)
