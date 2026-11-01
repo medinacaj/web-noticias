@@ -23,6 +23,7 @@ lleva la región de su comuna. El flujo del Biobío no cambia.
 """
 import argparse
 import json
+from datetime import datetime, timezone
 import os
 import re
 import sys
@@ -32,6 +33,7 @@ sys.path.insert(0, BASE_DIR)
 
 import db  # noqa: E402
 import discovery  # noqa: E402
+import source_planning  # noqa: E402
 from scrapers import event_page, runner  # noqa: E402
 from scrapers.common import fetch  # noqa: E402
 
@@ -99,6 +101,8 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--no-update-sources", action="store_true",
                     help="no modificar config/sources.json")
+    ap.add_argument("--force", action="store_true",
+                    help="Forzar comprobación sin cadencia (uso editorial manual)")
     ap.add_argument("--nacional", action="store_true",
                     help="fuentes del resto de Chile -> data/national_events.json")
     ap.add_argument("--snapshot", help="ruta del snapshot (se lee el anterior y se reescribe)")
@@ -120,12 +124,23 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
     communes = discovery.load_communes(communes_path)
     conn = db.connect(":memory:")
     db.init_db(conn)
+    try:
+        with open(crawled_path, encoding="utf-8") as f:
+            previous_data = json.load(f)
+    except (OSError, ValueError):
+        previous_data = {}
+    state = previous_data.get("source_state") if isinstance(previous_data, dict) else {}
+    planned = [s for s in sources if not args.only or s["name"] in args.only]
+    due, skipped = source_planning.due_sources(planned, state, datetime.now(timezone.utc),
+                                               force=args.force or bool(args.only))
+    remembered = source_planning.remembered_event_urls(previous_data, due,
+                                                        datetime.now(timezone.utc).date())
     # Continuidad del historial. Las fichas sin datos estructurados no se arrastran:
     # se vuelven a extraer con la regla vigente (y desaparecen si ya no la cumplen).
     previous = db.load_crawled(conn, crawled_path, communes, skip_tags=(event_page.PAGE_TAG,))
     started = db.now_iso()
-    summary = runner.refresh(conn, sources=sources, communes=communes, fetcher=fetcher,
-                             max_workers=args.workers, only=args.only)
+    summary = runner.refresh(conn, sources=due, communes=communes, fetcher=fetcher,
+                             max_workers=args.workers, only=args.only, remembered=remembered)
     if "error" in summary:
         print(summary["error"])
         return 1
@@ -133,6 +148,8 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
         "SELECT * FROM source_runs WHERE started_at >= ? ORDER BY source_name", (started,))]
     for r in runs:
         r.pop("id", None)
+    summary["skipped_by_cadence"] = len(skipped)
+    state = source_planning.update_state(state, sources, runs)
     # Fuente caída hoy: sus fichas del snapshot anterior se mantienen hasta que responda.
     responded = {r["source_name"] for r in runs if r["ok"]}
     restored = db.restore_tagged_events(conn, crawled_path, communes, event_page.PAGE_TAG,
@@ -154,6 +171,8 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
         "summary": summary,
         "events": events,
         "runs": runs,
+        "source_state": state,
+        "skipped_by_cadence": skipped,
         "possible_events": pending,
         "source_candidates": candidates,
     })
@@ -167,6 +186,8 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
     print("Posibles eventos pendientes: %d | fuentes candidatas: %d" % (len(pending), len(candidates)))
     print("Candidatos derivados a revisión editorial: %d" % summary.get("quarantined_candidates", 0))
     print("Fichas conservadas de fuentes que no respondieron: %d" % restored)
+    print("Cadencia: %d fuentes omitidas por consulta reciente; revalidación %d/%d URLs" % (
+        len(skipped), summary["revalidated_ok"], summary["revalidation_attempts"]))
     print("Fuentes con estado actualizado en sources.json: %d" % updated)
     for f in summary.get("feeds", []):
         print("  Calendario estructurado de %s: %s" % (f["source"], ", ".join(f["feeds"])))
