@@ -1,6 +1,44 @@
 {
- "actualizado": "2026-11-01T12:10:02Z",
+ "actualizado": "2026-11-01T12:11:41Z",
  "noticias": [
+  {
+   "category": "latinoamerica",
+   "title": "Embratur seleciona empresas brasileiras para participar da FITUR 2027, em Madri",
+   "summary": "",
+   "image": "https://brasiliainfoco.com/wp-content/uploads/2026/11/53655799592_0833aae1eb_b-800x600-1.webp",
+   "source_url": "https://brasiliainfoco.com",
+   "sources": [
+    "Brasília in Foco"
+   ],
+   "coverages": [],
+   "link": "https://brasiliainfoco.com/embratur-seleciona-empresas-brasileiras-para-participar-da-fitur-2027-em-madri/",
+   "published": "2026-11-01T12:07:10Z",
+   "first_seen": "2026-11-01T12:11:41Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "BR"
+   ],
+   "image_checked_at": "2026-11-01T12:11:41.955257Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Elecciones en EE.UU.: qué está en juego para la Argentina",
+   "summary": "",
+   "image": "",
+   "source_url": "https://diarioelnorte.com.ar",
+   "sources": [
+    "Diario El Norte - San Nicolás"
+   ],
+   "coverages": [],
+   "link": "https://diarioelnorte.com.ar/elecciones-en-ee-uu-que-esta-en-juego-para-la-argentina/",
+   "published": "2026-11-01T12:06:19Z",
+   "first_seen": "2026-11-01T12:11:41Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR"
+   ],
+   "image_checked_at": "2026-11-01T12:11:41.955257Z"
+  },
   {
    "category": "latinoamerica",
    "title": "Día de Muertos en México: origen, historia y significado",
@@ -19,6 +57,25 @@
     "MX"
    ],
    "image_checked_at": "2026-11-01T12:10:02.499439Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Argentina y EE.UU.: 200 años de vínculo en disputa",
+   "summary": "",
+   "image": "",
+   "source_url": "https://diarioelnorte.com.ar",
+   "sources": [
+    "Diario El Norte - San Nicolás"
+   ],
+   "coverages": [],
+   "link": "https://diarioelnorte.com.ar/argentina-y-ee-uu-200-anos-de-vinculo-en-disputa/",
+   "published": "2026-11-01T12:02:02Z",
+   "first_seen": "2026-11-01T12:11:41Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR"
+   ],
+   "image_checked_at": "2026-11-01T12:11:41.955257Z"
   },
   {
    "category": "latinoamerica",
@@ -205,6 +262,21 @@
    "image_checked_at": "2026-11-01T11:52:57.993613Z"
   },
   {
+   "category": "nacional",
+   "title": "Pescadores hallan cadáver de un hombre en el río Cautín",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7003645-pescadores-hallan-cadaver-de-un-hombre-en-el-rio-cautin.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-la-araucania/2026/11/01/pescadores-hallan-cadaver-de-un-hombre-en-el-rio-cautin.shtml",
+   "published": "2026-11-01T11:42:49Z",
+   "first_seen": "2026-11-01T12:11:41Z",
+   "image_checked_at": "2026-11-01T12:11:41.955257Z"
+  },
+  {
    "category": "politica",
    "title": "Capellán concluye su viaje a Chile, Argentina y Uruguay para fortalecer vínculos culturales",
    "summary": "",
@@ -352,6 +424,21 @@
     "BR"
    ],
    "image_checked_at": "2026-11-01T12:03:20.532795Z"
+  },
+  {
+   "category": "regiones",
+   "title": "Pronóstico del tiempo en Antofagasta de este lunes 2 de noviembre: viento de hasta 40 km/h marcará la tarde",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.elnortero.cl",
+   "sources": [
+    "El Nortero"
+   ],
+   "coverages": [],
+   "link": "https://www.elnortero.cl/noticia/sociedad/pronostico-del-tiempo-en-antofagasta-de-este-lunes-2-de-noviembre-viento-de-hasta-4",
+   "published": "2026-11-01T11:26:11Z",
+   "first_seen": "2026-11-01T12:11:41Z",
+   "image_checked_at": "2026-11-01T12:11:41.955257Z"
   },
   {
    "category": "latinoamerica",
@@ -3507,7 +3594,8 @@
    "image": "https://radiomitre.cienradios.com/resizer/v2/HVH7RHPONJHRZDBYK2DHLGQK5Y.jpg?smart=true&auth=393bc352e6186c8eb42606e3051e0ab32f9fc309c8b655eaa9b2e9afb2e569bf&width=1200&height=630",
    "source_url": "https://radiomitre.cienradios.com",
    "sources": [
-    "Radio Mitre"
+    "Radio Mitre",
+    "Ambito"
    ],
    "coverages": [],
    "link": "https://radiomitre.cienradios.com/sociedad/visita-del-papa-leon-xiv-a-la-argentina-restringen-el-paso-de-vehiculos-y-personas-en-recoleta-y-palermo/",
@@ -7321,107 +7409,28 @@
    "published": "2026-10-31T21:39:29Z",
    "first_seen": "2026-11-01T00:59:26Z",
    "image_checked_at": "2026-11-01T00:59:26.896390Z"
-  },
-  {
-   "category": "economia",
-   "title": "Centroamérica aprueba nuevas reglas aduaneras: qué cambiará para las empresas",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.revistaeyn.com",
-   "sources": [
-    "www.revistaeyn.com"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOaVdpV003ZnZTRkU0UVZnejAzQU1seUVObzZoeWpKeDFlbTc0SU9XanlsNnQyQ1hJWW9TSWh3OHdEbEVRZUJsTFg3VU5wT25lQncwcUIxRGNVSzg0endCQVBsT1pYa1ItRFpIck14bjktNF9EaFBTSVFTNXcxNEdCUWVzdl9fYzVPQ3NnY092MDN6TzdoeE92VjdxUjNSUV9teTd4WU13NmhSQW5jS1A3dFNCcjFBa1ozeUVycTZlaVU4REpWUklZU2k2RFpidHM?oc=5",
-   "published": "2026-10-31T21:37:00Z",
-   "first_seen": "2026-11-01T03:43:47Z",
-   "publisher_id": "biz-extra-estrategia-negocios",
-   "metadata_only": true,
-   "source_kind": "news",
-   "metadata_policy": "source"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "A página do FLICKR da Agência Brasil Brasil, já está disponível.",
-   "summary": "",
-   "image": "https://imagens.ebc.com.br/d4NTR_UYOOfj5rSAFCYN-MF2Kyw=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/10/31/a_pagina_do_flickr_da_agencia_brasil_brasil_ja_esta_disponivel.jpg?itok=kD6iWmQp",
-   "source_url": "https://agenciabrasil.ebc.com.br",
-   "sources": [
-    "Agência Brasil"
-   ],
-   "coverages": [],
-   "link": "https://agenciabrasil.ebc.com.br/de/foto/2026-10/pagina-do-flickr-da-agencia-brasil-brasil-ja-esta-disponivel-1793482614",
-   "published": "2026-10-31T21:36:00Z",
-   "first_seen": "2026-10-31T21:54:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ],
-   "image_checked_at": "2026-10-31T21:54:13.252902Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Checo Pérez cumple los pronósticos en la clasificación del GP de México",
-   "summary": "",
-   "image": "",
-   "source_url": "https://mexico.as.com",
-   "sources": [
-    "AS México",
-    "Motorsport.com Latinoamérica | F1, MotoGP, Nascar, Rally",
-    "ESPN Deportes",
-    "ESPN Costa Rica",
-    "ESPN México"
-   ],
-   "coverages": [],
-   "link": "https://mexico.as.com/motor/checo-perez-cumple-los-pronosticos-en-la-clasificacion-del-gp-de-mexico-f202610-n/",
-   "published": "2026-10-31T21:32:28Z",
-   "first_seen": "2026-10-31T21:54:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ],
-   "image_checked_at": "2026-11-01T11:41:25.073006Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Argentina y Estados Unidos avanzaron en una agenda de cooperación nuclear con foco en inversiones",
-   "summary": "",
-   "image": "",
-   "source_url": "https://asiesnuestravida.com.ar",
-   "sources": [
-    "Así es nuestra vida"
-   ],
-   "coverages": [],
-   "link": "https://asiesnuestravida.com.ar/argentina-y-estados-unidos-avanzaron-en-una-agenda-de-cooperacion-nuclear-con-foco-en-inversiones/",
-   "published": "2026-10-31T21:30:21Z",
-   "first_seen": "2026-10-31T21:54:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR"
-   ],
-   "image_checked_at": "2026-10-31T21:54:13.252902Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Ocon no correrá en México: Haas anuncia a Hirakawa sin explicar los motivos",
-   "summary": "",
-   "image": "",
-   "source_url": "https://es.motorsport.com",
-   "sources": [
-    "Motorsport.com España"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNc0QtSHd3Qk9neVZZQkRTeDBCSTRsa0pnOTYzdkdidWFvWW1ZY2h2NDA3dHk1by1NNWxLa0N6SWNjLUU4MmxDdkZwYnF5QUxYZHlqcUdXN0ZJNGl2Sk9GbFEyQTRlMWpFNVJjYUNBcUs0RjExbWI3RGdpTWQ3LXVQT2lMbHZXdHVsYWZ3amdjQXEzckhHd2twZ0tfc3o0d2VUS2tLZ1U4dVdheFBTaFV3?oc=5",
-   "published": "2026-10-31T21:28:11Z",
-   "first_seen": "2026-11-01T01:01:54Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Embratur seleciona empresas brasileiras para participar da FITUR 2027, em Madri",
+   "link": "https://brasiliainfoco.com/embratur-seleciona-empresas-brasileiras-para-participar-da-fitur-2027-em-madri/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T12:07:10Z",
+   "sources": [
+    "Brasília in Foco"
+   ]
+  },
+  {
+   "title": "Elecciones en EE.UU.: qué está en juego para la Argentina",
+   "link": "https://diarioelnorte.com.ar/elecciones-en-ee-uu-que-esta-en-juego-para-la-argentina/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T12:06:19Z",
+   "sources": [
+    "Diario El Norte - San Nicolás"
+   ]
+  },
   {
    "title": "Día de Muertos en México: origen, historia y significado",
    "link": "https://cinemedios.com/noticias/dia-de-muertos-mexico-origen-historia/",
@@ -7429,6 +7438,15 @@
    "published": "2026-11-01T12:06:00Z",
    "sources": [
     "CineMedios"
+   ]
+  },
+  {
+   "title": "Argentina y EE.UU.: 200 años de vínculo en disputa",
+   "link": "https://diarioelnorte.com.ar/argentina-y-ee-uu-200-anos-de-vinculo-en-disputa/",
+   "category": "latinoamerica",
+   "published": "2026-11-01T12:02:02Z",
+   "sources": [
+    "Diario El Norte - San Nicolás"
    ]
   },
   {
@@ -7522,6 +7540,15 @@
    ]
   },
   {
+   "title": "Pescadores hallan cadáver de un hombre en el río Cautín",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-la-araucania/2026/11/01/pescadores-hallan-cadaver-de-un-hombre-en-el-rio-cautin.shtml",
+   "category": "nacional",
+   "published": "2026-11-01T11:42:49Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Capellán concluye su viaje a Chile, Argentina y Uruguay para fortalecer vínculos culturales",
    "link": "https://nuevecuatrouno.com/2026/11/01/capellan-concluye-su-viaje-a-chile-argentina-y-uruguay-para-fortalecer-vinculos-culturales/",
    "category": "politica",
@@ -7591,6 +7618,15 @@
    "published": "2026-11-01T11:31:23Z",
    "sources": [
     "UOL Economia"
+   ]
+  },
+  {
+   "title": "Pronóstico del tiempo en Antofagasta de este lunes 2 de noviembre: viento de hasta 40 km/h marcará la tarde",
+   "link": "https://www.elnortero.cl/noticia/sociedad/pronostico-del-tiempo-en-antofagasta-de-este-lunes-2-de-noviembre-viento-de-hasta-4",
+   "category": "regiones",
+   "published": "2026-11-01T11:26:11Z",
+   "sources": [
+    "El Nortero"
    ]
   },
   {
@@ -9340,7 +9376,8 @@
    "category": "latinoamerica",
    "published": "2026-11-01T02:58:19Z",
    "sources": [
-    "Radio Mitre"
+    "Radio Mitre",
+    "Ambito"
    ]
   },
   {
@@ -25582,51 +25619,6 @@
    "published": "2026-10-30T04:07:32Z",
    "sources": [
     "Naciones Unidas en México"
-   ]
-  },
-  {
-   "title": "Mercado Libre inauguró en Escobar su mayor centro de almacenamiento de Argentina",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSWVTeXAyS3hna0s4NWNnWDdCekZxZWoxY04yT01QQjZVV09oTTVKdG9BYWtURmJnelVmSFAwUWNELThiYzZMZ2lBTFBSRWw5NTYwRTh2OURDZTNVN3lpbU1nZHdkOWtLbTE2R0FDVUpLYzI5bHVINS1FYnF4bDZaRmtHY2doTDJvRU9ydWpzRjgxQUo4OXc3dTU5OFdvNmY2V2lXTXM2VDlUa3VQcXQ3dHBR?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T04:03:19Z",
-   "sources": [
-    "mercado.com.ar"
-   ]
-  },
-  {
-   "title": "Crítica de la película «Esta soledad»: almas solitarias",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRTU1OVYtbFAxT20tYnFJUE9XTGxmOERLY3VhZHI5RldFNnhvcEtobzhmMGVmN3QyR2lUM3dVZlVzeHVYNU00djY1bVRMS2dKN3Q2aWl3VW5mSGQyRjdVT2JLQkFlYVM5MlR3cmRjQmFSdFhaY0pMeThFS3lxQU1TTU95TkxXc0pfb1ZFeUIzLU5TV25LZ2ExZDNlVnBrc1haWW5WZTVMelFRN3I1SjhpM0IwV184ZWFhdzJ4OGptT2UtSklO?oc=5",
-   "category": "cultura",
-   "published": "2026-10-30T04:03:05Z",
-   "sources": [
-    "La Voz de Galicia"
-   ]
-  },
-  {
-   "title": "Cómo el tren de alta velocidad de España pasó de ser un modelo mundial a sufrir dos terribles accidentes en menos de un año",
-   "link": "https://www.bbc.com/mundo/articles/cmz7x8xydzwgo?at_medium=RSS&at_campaign=rss",
-   "category": "internacional",
-   "published": "2026-10-30T04:02:36Z",
-   "sources": [
-    "BBC News Mundo"
-   ]
-  },
-  {
-   "title": "GRACE DE GIER LA DESTACADA ARTISTA QUE QUIERE CONQUISTAR ARGENTINA",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV0Mwam1aVExCaENKVW1ZbVB1Q3JZcUotSkxoeFpybkEtbmNsRFdjMEpLNkZGVW9jUGhqVU92eW9FTlRha01LNHZVZkJIOEtBUlhXWGtiTkZjMmF5OXBLWkg4WTdrR3BCRmxyckRZbWpmMmE5bDNQVlpvdTZfNU9zdklaVzFYUjk2REJ4X3RvZDdlbl9heTBNRl9oWXVpbEtWSWpEaGF6M1YwVmNkcFE?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-10-30T04:00:00Z",
-   "sources": [
-    "https://sergiolapegue.com/site/"
-   ]
-  },
-  {
-   "title": "'Hope': monstruos y explosiones en la película de acción más virtuosa del año",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONnNJRHBkajc3SXc4THJQOFpEODd0UnZINXplclJMc2Q3d2hpY1k4bDFiaEZQRmVudEozeU1iTFhOXzR2QTQ4MlFjS04tOVJuY2NRVHcyZGlpdkhwZ3JQbzViZ1FzSjZfMWl3elQ3SHd2dVRFWVhfR0RRRGpJaHl0LXNqLTZmbWhnV1JaVzlsbEt3YzhyMTl3eHNwbjBKOTZ0ZUE?oc=5",
-   "category": "cultura",
-   "published": "2026-10-30T04:00:00Z",
-   "sources": [
-    "El Confidencial"
    ]
   }
  ]
