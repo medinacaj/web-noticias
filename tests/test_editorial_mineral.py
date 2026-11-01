@@ -44,7 +44,7 @@ class EditorialMineralTests(unittest.TestCase):
     def test_dark_theme_is_neutral_and_petrolic(self):
         for token, expected in {
             "--paper": "#14191B", "--surface": "#1B2224",
-            "--card-bg": "#252D30", "--card-ink": "#F1F4F2",
+            "--card-bg": "#343A43", "--card-ink": "#F1F4F2",
             "--card-link": "#9ED0CC", "--brand": "#9ED0CC",
             "--wash": "#283B3D", "--card-rule": "#404A4C",
         }.items():
