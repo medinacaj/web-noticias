@@ -218,6 +218,22 @@ async def check(html, output):
             await toggle_view_options(page)
             assert await page.locator("#view-options-panel").is_visible(), f"Menú visual oculto a {width}px"
             await check_view_options_bounds(page, width)
+            # Al tocar Vista, iOS no debe abrir automáticamente el selector
+            # nativo de tamaño de texto. Se elige solo al pulsar Texto.
+            auto_focused_select = await page.evaluate(
+                '() => document.activeElement && document.activeElement.id === "text-size"')
+            assert not auto_focused_select, f"Vista enfoca Texto automáticamente a {width}px"
+            if width < 1024:
+                panel = await page.locator("#view-options-panel").evaluate("""el => ({
+                    height: el.getBoundingClientRect().height,
+                    viewport: window.innerHeight,
+                    scrollHeight: el.scrollHeight,
+                    clientHeight: el.clientHeight,
+                    overflow: getComputedStyle(el).overflowY,
+                })""")
+                assert panel["height"] <= min(panel["viewport"] * 0.57, 423), (
+                    f"Vista ocupa demasiado alto a {width}px: {panel}")
+                assert panel["overflow"] == "auto", f"Vista no desplaza internamente a {width}px"
             await no_overflow("preferencias")
             await page.screenshot(path=str(output / f"preferences-{width}.png"), full_page=False, animations="disabled")
             await page.locator("#density-switch").select_option("compact")
