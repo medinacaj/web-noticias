@@ -38,14 +38,17 @@ class ContrastThemeTests(unittest.TestCase):
                 rgb = [int(colors[token][i:i+2], 16) for i in (1, 3, 5)]
                 self.assertLessEqual(max(rgb) - min(rgb), 24)
 
-    def test_light_page_clearly_separates_white_cards_without_extra_borders(self):
+    def test_neutral_warm_paper_separates_white_cards(self):
+        light = self.palette()
+        dark = self.palette(dark=True)
+        self.assertEqual(light["--paper"], "#E9E8E2")
+        self.assertEqual(light["--card-bg"], "#FFFFFF")
+        self.assertEqual(dark["--paper"], "#121116")
+        self.assertGreaterEqual(contrast(light["--card-bg"], light["--paper"]), 1.22)
         self.assertIn('body{margin:0;background:var(--paper);', self.css)
-        self.assertIn(':root:not([data-theme="dark"]) body{', self.css)
-        self.assertIn('background:color-mix(in srgb,var(--paper) 58%,var(--rule) 42%);', self.css)
-        # La nueva capa usa exclusivamente dos colores ya aprobados.
-        self.assertNotIn('linear-gradient', self.css[
-            self.css.index('/* Lienzo editorial claro:'):
-            self.css.index('/* ---------- Barra utilitaria ----------')])
+        # Sin segunda capa lavanda ni degradados que compitan con las categorías.
+        self.assertNotIn('background:color-mix(in srgb,var(--paper) 58%,var(--rule) 42%)', self.css)
+        self.assertNotIn(':root:not([data-theme="dark"]) body', self.css)
 
     def test_card_readability_wcag_aa(self):
         for dark in (False, True):
