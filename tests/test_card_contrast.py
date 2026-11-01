@@ -43,7 +43,7 @@ class ContrastThemeTests(unittest.TestCase):
         dark = self.palette(dark=True)
         self.assertEqual(light["--paper"], "#E9E8E2")
         self.assertEqual(light["--card-bg"], "#FFFFFF")
-        self.assertEqual(dark["--paper"], "#121116")
+        self.assertEqual(dark["--paper"], "#14191B")
         self.assertGreaterEqual(contrast(light["--card-bg"], light["--paper"]), 1.22)
         self.assertIn('body{margin:0;background:var(--paper);', self.css)
         # Sin segunda capa lavanda ni degradados que compitan con las categorías.
