@@ -153,6 +153,29 @@ class ActualizarTests(unittest.TestCase):
         r = db.load_crawled(memory_db(), os.path.join(self.tmp, "no.json"), COMMUNES)
         self.assertEqual(r["inserted"], 0)
 
+    def test_review_snapshot_prioritizes_dated_futures_before_undated(self):
+        conn = memory_db()
+        for i in range(5):
+            db.add_possible_event(conn, {
+                "title": f"Sin fecha {i}", "date": None, "source": "Agenda",
+                "source_url": f"https://agenda.cl/undated/{i}", "reason": "Sin fecha confirmada",
+            })
+        db.add_possible_event(conn, {
+            "title": "Evento fechado futuro", "date": "2026-11-02",
+            "source": "Agenda", "source_url": "https://agenda.cl/fecha",
+            "reason": "Recinto sin confirmar",
+        })
+        db.add_possible_event(conn, {
+            "title": "Evento anterior", "date": "2026-10-29",
+            "source": "Agenda", "source_url": "https://agenda.cl/antiguo",
+            "reason": "Histórico",
+        })
+        candidates = actualizar.review_candidates(conn, "2026-11-01", limit=2)
+        self.assertEqual([c["title"] for c in candidates],
+                         ["Evento fechado futuro", "Sin fecha 0"])
+        self.assertTrue(all(c["title"] != "Evento anterior" for c in candidates))
+        self.assertEqual(len(actualizar.review_candidates(conn, "2026-11-01", limit=500)), 6)
+
     def test_repo_snapshot_valid_if_present(self):
         path = os.path.join(ROOT, "data", "crawled_events.json")
         if os.path.exists(path):
