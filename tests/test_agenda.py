@@ -229,3 +229,43 @@ class LocalSnapshotTests(unittest.TestCase):
             snapshots = (("A", str(path), "Biobío"), ("B", str(Path(tmp) / "falta.json"), ""))
             with patch.dict(os.environ, {}, clear=True):
                 self.assertEqual(len(load_agenda(NOW, snapshots=snapshots)), 1)
+
+
+class ConfirmedWeekendEventsTests(unittest.TestCase):
+    """Regresión: la agenda no debe ignorar eventos concretos verificados."""
+    def test_biobio_festivals_and_national_concert_keep_correct_regions(self):
+        import json
+        payload = json.loads((ROOT / "eventos" / "agenda_manual.json").read_text(encoding="utf-8"))
+        events = upcoming_events(payload, date(2026, 10, 31))
+        by_title = {item["title"]: item for item in events}
+        self.assertIn("Oktoberfest Concepción 2026", by_title)
+        self.assertIn("Festival Cervecero de San Pedro de la Paz", by_title)
+        self.assertIn("Iron Maiden — Run For Your Lives World Tour", by_title)
+        self.assertEqual(by_title["Oktoberfest Concepción 2026"]["region"], "Biobío")
+        self.assertEqual(by_title["Festival Cervecero de San Pedro de la Paz"]["commune"], "San Pedro de la Paz")
+        self.assertEqual(by_title["Iron Maiden — Run For Your Lives World Tour"]["region"], "Metropolitana")
+        self.assertEqual(by_title["Iron Maiden — Run For Your Lives World Tour"]["commune"], "Ñuñoa")
+
+    def test_multiday_festivals_remain_visible_on_november_first_then_expire(self):
+        import json
+        payload = json.loads((ROOT / "eventos" / "agenda_manual.json").read_text(encoding="utf-8"))
+        on_sunday = upcoming_events(payload, date(2026, 11, 1))
+        self.assertEqual(len(on_sunday), 3)
+        self.assertEqual(len(upcoming_events(payload, date(2026, 11, 2))), 0)
+        self.assertEqual(len({item["link"] for item in on_sunday}), 3)
+        self.assertTrue(all(item["status"] == "Confirmado" for item in on_sunday))
+
+    def test_manual_events_coexist_with_other_snapshots(self):
+        import json
+        payload = json.loads((ROOT / "eventos" / "agenda_manual.json").read_text(encoding="utf-8"))
+        with patch.dict(os.environ, {}, clear=True):
+            items = load_agenda(
+                datetime(2026, 11, 1, 13, tzinfo=timezone.utc),
+                fetch=lambda path: payload if path == "manual" else {"events": [
+                    event(source_url="https://teatro.cl/otro", date="2026-11-04",
+                          region="Biobío")]},
+                snapshots=(("AGENDA_BIO", "biobio", "Biobío"),
+                           ("AGENDA_MAN", "manual", "")),
+            )
+        self.assertEqual(len(items), 4)
+
