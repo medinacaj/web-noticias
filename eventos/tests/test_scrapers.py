@@ -165,6 +165,17 @@ class CrawlTests(unittest.TestCase):
         self.assertEqual(res.pages, 2)
         self.assertEqual([e["title"] for e in res.events], ["La Negra Ester"])
 
+    def test_revisits_future_event_even_when_homepage_drops_it(self):
+        source = dict(SRC, max_pages=3, max_depth=1)
+        pages = {"https://teatro.demo.cl/": "<html><body>Sin eventos destacados</body></html>",
+                 "https://teatro.demo.cl/obra-negra-ester/": EVENT_PAGE}
+        result = deep_crawler.crawl(
+            source, COMMUNES, fetcher=fake_fetcher(pages),
+            prior_event_urls=("https://teatro.demo.cl/obra-negra-ester/",), ref=date(2030, 10, 1))
+        self.assertEqual([ev["title"] for ev in result.events], ["La Negra Ester"])
+        self.assertEqual((result.revalidation_attempts, result.revalidated_ok), (1, 1))
+        self.assertLessEqual(result.pages, source["max_pages"])
+
     def test_crawl_unreachable_start(self):
         res = deep_crawler.crawl(SRC, COMMUNES, fetcher=fake_fetcher({}))
         self.assertEqual(res.error, "HTTP 404")
