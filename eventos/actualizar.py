@@ -159,7 +159,8 @@ def main(argv=None, fetcher=fetch, crawled_path=None, sources_path=None, commune
         def good_last_response(src):
             previous_status = ((state or {}).get(src["name"]) or {}).get("last_http_status")
             return isinstance(previous_status, int) and 200 <= previous_status < 300
-        priority = sorted(planned, key=lambda src: (not good_last_response(src), src["name"]))
+        priority = sorted((src for src in planned if src["name"] in skipped),
+                          key=lambda src: (not good_last_response(src), src["name"]))
         due = priority[:3]
         forced_names = {src["name"] for src in due}
         skipped = [name for name in skipped if name not in forced_names]
