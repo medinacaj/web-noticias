@@ -94,9 +94,13 @@ def remembered_event_urls(previous, sources, today, limit_per_source=4):
             source = known.get(name)
             if not source or not isinstance(url, str):
                 continue
-            parsed, base = urlsplit(url), urlsplit(source["url"])
+            try:
+                parsed, base = urlsplit(url), urlsplit(source["url"])
+                hostname, base_host = parsed.hostname, base.hostname
+            except ValueError:
+                continue
             if (parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password
-                    or parsed.hostname.removeprefix("www.") != (base.hostname or "").removeprefix("www.")
+                    or not hostname or hostname.removeprefix("www.") != (base_host or "").removeprefix("www.")
                     or not parsed.path.strip("/") or url == source["url"]):
                 continue
             bucket = results[name]
