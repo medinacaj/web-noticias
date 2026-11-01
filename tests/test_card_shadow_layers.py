@@ -18,6 +18,14 @@ class CardShadowTests(unittest.TestCase):
             self.assertEqual(shadow.count("rgba("), 1)
             self.assertNotIn("inset", shadow)
 
+    def test_base_shadow_is_perceptible_on_touch_screens(self):
+        # La base se ve sin hover: iPhone no expone hover constante.
+        self.assertIn("--card-shadow:0 4px 16px rgba(16,15,18,.105)", self.css)
+        self.assertIn("--card-shadow-hover:0 10px 27px rgba(16,15,18,.16)", self.css)
+        self.assertRegex(self.css, r':root\[data-theme="dark"\]\{\s*--card-shadow:0 6px 20px rgba\(0,0,0,\.36\)')
+        self.assertIn("--card-shadow-hover:0 11px 30px rgba(0,0,0,.48)", self.css)
+        self.assertNotIn("--card-shadow:0 1px 2px rgba(16,15,18,.025)", self.css)
+
     def test_card_hover_and_focus_use_shared_tokens(self):
         for token in ("box-shadow:var(--card-shadow);",
                       "box-shadow:var(--card-shadow-hover)",
