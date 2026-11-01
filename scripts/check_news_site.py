@@ -18,15 +18,24 @@ class EditionParser(html.parser.HTMLParser):
         super().__init__()
         self.updated = ""
         self.title_seen = False
+        self._inside_title = False
+        self._title_parts = []
 
     def handle_starttag(self, tag, attrs):
+        if tag == "title":
+            self._inside_title = True
         params = dict(attrs)
         if tag == "time" and params.get("id") == "updated-at":
             self.updated = params.get("datetime") or ""
 
+    def handle_endtag(self, tag):
+        if tag == "title":
+            self._inside_title = False
+            self.title_seen = "Noticias del Momento" in "".join(self._title_parts)
+
     def handle_data(self, data):
-        if "Noticias del Momento" in data:
-            self.title_seen = True
+        if self._inside_title:
+            self._title_parts.append(data)
 
 
 def assess(html_text, sitemap_xml, now, deployment="success", base=DEFAULT_SITE):
