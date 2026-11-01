@@ -30,13 +30,15 @@ class ReadingExperienceTests(unittest.TestCase):
         self.assertIn('src="reader-ui.js"', self.html)
 
     def test_photos_and_layout_remain_stable(self):
-        for marker in ('var usedNewsImages = Object.create(null)',
-                       'if (usedNewsImages[img.src]) { fallback(); return; }',
-                       'figure.classList.add("media--source")', 'aspect-ratio:16/9',
+        for marker in ('figure.classList.add("media--source")',
+                       'img.addEventListener("error", fallback)',
+                       'aspect-ratio:16/9',
                        'decoding="async"', 'loading="lazy"', 'fetchpriority="high"'):
             if marker in ('decoding="async"', 'loading="lazy"', 'fetchpriority="high"'):
                 continue  # attributes are generated in Python
             self.assertIn(marker, self.html)
+        # Reutilizar la misma fotografía en dos fichas no significa error de carga.
+        self.assertNotIn('if (usedNewsImages[img.src]) { fallback(); return; }', self.html)
 
     def test_new_story_metadata_and_text_lead(self):
         story = {

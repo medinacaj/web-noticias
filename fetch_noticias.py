@@ -223,13 +223,27 @@ def source_mark(story):
 
 
 def rss_image(node):
+    """Primero fotografías indicadas por el feed, incluso dentro de media:group.
+
+    No confundir media:content de vídeo/audio con una imagen y no tomar imágenes
+    decorativas de un artículo ajeno. Se respeta el HTTPS de la fuente.
+    """
     for tag in (MEDIA_NS + "content", MEDIA_NS + "thumbnail"):
-        element = node.find(tag)
-        if element is not None and element.get("url"):
-            return safe_image(element.get("url"))
-    enclosure = node.find("enclosure")
-    if enclosure is not None and (enclosure.get("type") or "").startswith("image"):
-        return safe_image(enclosure.get("url"))
+        for element in node.iter(tag):
+            kind = (element.get("type") or "").lower()
+            medium = (element.get("medium") or "").lower()
+            if tag.endswith("content") and (
+                    (kind and not kind.startswith("image/"))
+                    or (medium and medium != "image")):
+                continue
+            image = safe_image(element.get("url"))
+            if image:
+                return image
+    for enclosure in node.findall("enclosure"):
+        if (enclosure.get("type") or "").lower().startswith("image/"):
+            image = safe_image(enclosure.get("url"))
+            if image:
+                return image
     return ""
 
 
@@ -737,8 +751,8 @@ def title_link(story):
 
 
 def figure_html(story, eager=False):
-    from scripts.culture_content import content_kind
-    if content_kind(story):return ''
+    # Cine y streaming comparte la miniatura editorial: cuando no hay
+    # fotografía autorizada no se deja un hueco, se identifica al medio.
     image = safe_image(story.get("image"))
     if not image:
         source = (story.get("sources") or ["Fuente"])[0]
