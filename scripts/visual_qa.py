@@ -258,6 +258,48 @@ async def check_card_shadows(page, width):
         f"Sombra base apenas visible a {width}px: {light} / {dark}")
 
 
+async def check_dark_card_legibility(page, width):
+    """Comprobar contraste real de metadatos, controles y tarjetas sin hover."""
+    original = await page.evaluate("document.documentElement.dataset.theme")
+    await page.evaluate("document.documentElement.dataset.theme = 'dark'")
+    try:
+        # Los botones tienen transición de color; medir el estado final.
+        await page.wait_for_timeout(260)
+        result = await page.evaluate("""() => {
+          const card = document.querySelector('.section-grid .feature, .section-grid .compact-list li, .top-grid .lead');
+          if (!card) return null;
+          const body = getComputedStyle(document.body);
+          const cardStyle = getComputedStyle(card);
+          const meta = card.querySelector('.meta');
+          const button = card.querySelector('.save-story, .share-story');
+          const ch = x => (x.match(/[\\d.]+/g) || []).slice(0, 3).map(Number);
+          const lum = rgb => rgb.map(v => {
+            const c = v / 255; return c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4;
+          }).reduce((a, c, i) => a + c * [0.2126, 0.7152, 0.0722][i], 0);
+          const contrast = (a, b) => {
+            const v = [lum(ch(a)), lum(ch(b))].sort((x,y) => y-x);
+            return (v[0]+.05)/(v[1]+.05);
+          };
+          return {
+            cardToPage: contrast(cardStyle.backgroundColor, body.backgroundColor),
+            metadata: meta ? contrast(getComputedStyle(meta).color, cardStyle.backgroundColor) : null,
+            control: button ? contrast(getComputedStyle(button).color, getComputedStyle(button).backgroundColor) : null,
+            controlEdge: button ? contrast(getComputedStyle(button).borderTopColor, cardStyle.backgroundColor) : null
+          };
+        }""")
+        assert result, f"Sin tarjeta para contrastes oscuros a {width}px"
+        assert result["cardToPage"] >= 1.60, (
+            f"Tarjeta demasiado similar al lienzo oscuro a {width}px: {result}")
+        assert result["metadata"] is not None and result["metadata"] >= 4.5, (
+            f"Metadatos ilegibles en la tarjeta oscura a {width}px: {result}")
+        assert result["control"] is not None and result["control"] >= 4.5, (
+            f"Iconos de acción ilegibles a {width}px: {result}")
+        assert result["controlEdge"] is not None and result["controlEdge"] >= 3, (
+            f"Borde de los controles no se distingue a {width}px: {result}")
+    finally:
+        await page.evaluate("(theme) => { document.documentElement.dataset.theme = theme }", original)
+
+
 async def check(html, output):
     output.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
@@ -277,6 +319,7 @@ async def check(html, output):
                     raise AssertionError(f"Desborde horizontal a {width}px en {stage}: {offenders}")
             await no_overflow("portada")
             await check_card_shadows(page, width)
+            await check_dark_card_legibility(page, width)
             await check_category_badges(page, width)
             await check_compact_navigation(page, width, no_overflow)
             # Fotos estables; la ficha de país puede crecer para mostrar su texto.
