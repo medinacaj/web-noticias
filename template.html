@@ -78,6 +78,11 @@
   [hidden]{display:none !important;}
   html{scroll-padding-top:env(safe-area-inset-top,0px);}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  /* Lienzo editorial claro: un poco más de contraste con tarjetas blancas.
+     Conserva la paleta existente y hace visible su sombra permanente en iPhone. */
+  :root:not([data-theme="dark"]) body{
+    background:color-mix(in srgb,var(--paper) 58%,var(--rule) 42%);
+  }
   a{color:inherit;text-decoration:none;}
   img{max-width:100%;display:block;}
   :focus-visible{outline:2px solid var(--red);outline-offset:3px;}
