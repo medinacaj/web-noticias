@@ -266,6 +266,18 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         lead=await self.page.locator('.lead').bounding_box()
         self.assertLess(title['x']-lead['x'],30)
 
+    async def test_visual_qa_contrast_understands_modern_css_colors(self):
+        from scripts.visual_qa import check_dark_card_legibility
+        await self.page.locator('.lead .save-story').evaluate("e=>e.style.borderColor='color(srgb 0.470588 0.564706 0.529412)'")
+        await check_dark_card_legibility(self.page,1440)
+
+    async def test_compact_spacing_matches_highlights_at_each_width(self):
+        for width in (320,768,1440):
+            await self.page.set_viewport_size({'width':width,'height':900})
+            grid=await self.page.locator('.section-grid').first.evaluate('e=>getComputedStyle(e).gap')
+            rail=await self.page.locator('.rail-list').evaluate('e=>getComputedStyle(e).gap')
+            self.assertEqual(grid,rail,width)
+
     async def test_category_labels_and_radar_have_aa_contrast_in_both_themes(self):
         measure='''() => {
           const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const ctx=canvas.getContext('2d');

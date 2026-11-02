@@ -274,7 +274,12 @@ async def check_dark_card_legibility(page, width):
           const cardStyle = getComputedStyle(card);
           const meta = card.querySelector('.meta');
           const button = card.querySelector('.save-story, .share-story');
-          const ch = x => (x.match(/[\\d.]+/g) || []).slice(0, 3).map(Number);
+          const canvas = document.createElement('canvas');canvas.width=canvas.height=1;
+          const ctx = canvas.getContext('2d');
+          const ch = x => {
+            ctx.clearRect(0,0,1,1);ctx.fillStyle=x;ctx.fillRect(0,0,1,1);
+            return Array.from(ctx.getImageData(0,0,1,1).data).slice(0,3);
+          };
           const lum = rgb => rgb.map(v => {
             const c = v / 255; return c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4;
           }).reduce((a, c, i) => a + c * [0.2126, 0.7152, 0.0722][i], 0);
