@@ -1,11 +1,11 @@
 """Group displayed sections without changing ingestion or story categories."""
 
 # Los rótulos salen de CATEGORIES: menú, sección, tarjetas y filtros usan el mismo nombre.
-PRESENTATION_LABELS = {}
+PRESENTATION_LABELS = {"nacional": "Chile", "internacional": "Mundo"}
 
-# Salud se publica dentro de «Ciencia y tecnología»; Medioambiente tiene sección propia.
-_DESTINATIONS = {"salud-ciencia": "tecnologia"}
-_SUBTOPICS = {destination: origin for origin, destination in _DESTINATIONS.items()}
+# Cambia la presentación, nunca el registro editorial original.
+_DESTINATIONS = {"politica": "nacional", "regiones": "nacional",
+                 "salud-ciencia": "tecnologia", "medioambiente": "tecnologia"}
 
 
 def canonical_section(category):
@@ -29,8 +29,8 @@ def group_sections(by_category, limit=24):
     """Return new ordered lists with up to ``limit`` stories per section.
 
     A group's position is its first member's position in the input. Preserve
-    each source list's relevance order, reserving up to four places for its
-    smaller subtopic before filling remaining places from the destination.
+    each source list's relevance order, reserving up to four places per
+    subtopic before filling remaining places from the destination.
     Any leftover room is filled with additional subtopic stories. Equal but
     distinct records remain distinct; ingestion owns article deduplication.
     """
@@ -41,10 +41,25 @@ def group_sections(by_category, limit=24):
         if destination in grouped:
             continue
         primary = _unique(by_category.get(destination, []))
-        subtopic = _unique(by_category.get(_SUBTOPICS.get(destination), []),
-                           {id(item) for item in primary})
-        reserved = min(4, len(subtopic), limit)
-        selected_primary = primary[:limit - reserved]
-        grouped[destination] = (selected_primary +
-                                subtopic[:limit - len(selected_primary)])
+        seen = {id(item) for item in primary}
+        pools = []
+        for origin, parent in _DESTINATIONS.items():
+            if parent != destination:
+                continue
+            pool = _unique(by_category.get(origin, []), seen)
+            seen.update(id(item) for item in pool)
+            pools.append(pool)
+        counts = [0] * len(pools)
+        budget = max(0, limit - bool(primary))
+        for index in range(4):
+            for slot, pool in enumerate(pools):
+                if budget and len(pool) > index:
+                    counts[slot] += 1
+                    budget -= 1
+        selected = primary[:max(0, limit - sum(counts))]
+        for pool, count in zip(pools, counts):
+            selected.extend(pool[:count])
+        for pool, count in zip(pools, counts):
+            selected.extend(pool[count:count + max(0, limit - len(selected))])
+        grouped[destination] = selected
     return grouped

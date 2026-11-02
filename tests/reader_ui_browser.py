@@ -94,6 +94,66 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.keyboard.press('Escape')
             self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'menu-toggle')
 
+    async def grouped_reading_fixture(self):
+        import tempfile
+        from datetime import datetime, timedelta, timezone
+        import fetch_noticias as news
+        now = datetime(2026,11,2,12,tzinfo=timezone.utc)
+        items=[]
+        for key, count in (('politica',16),('regiones',4),('nacional',4),('salud-ciencia',3),('medioambiente',3),('tecnologia',3)):
+            for i in range(count):
+                items.append({'category':key,'title':f'Información de {key} número {i}',
+                    'sources':['QA Par' if i%2==0 else 'QA Impar'],'source_url':'https://qa.example',
+                    'link':f'https://qa.example/{key}/{i}','published':(now-timedelta(minutes=i+1)).isoformat(),'image':'','summary':''})
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(items,now,folder)
+            body=Path(folder,'index.html').read_text()
+        await self.page.route('**/?grouped-reading=1',lambda r:r.fulfill(content_type='text/html',body=body))
+        await self.page.goto(self.url+'?grouped-reading=1')
+        return body
+
+    async def test_grouped_section_filters_combine_with_source_and_reading_limit(self):
+        await self.grouped_reading_fixture()
+        self.assertEqual(await self.page.locator('#titulo-nacional').inner_text(),'Chile')
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-politica"]').count(),0)
+        await self.toggle_view_options()
+        await self.page.locator('#cards-per-section').select_option('12')
+        await self.page.keyboard.press('Escape')
+        await self.page.locator('#cat-nacional [data-topic-filter="politica"]').click()
+        grid=self.page.locator('#noticias-nacional')
+        visible=grid.locator('.feature:visible,.compact-list>li:visible')
+        self.assertGreater(await visible.count(),0)
+        self.assertLessEqual(await visible.count(),12)
+        self.assertEqual(set(await visible.locator('h3 a[data-key]').evaluate_all('es=>es.map(e=>e.dataset.key)')),{'politica'})
+        await self.toggle_view_options()
+        await self.page.locator('#source-preference').select_option('QA Impar')
+        await self.page.keyboard.press('Escape')
+        self.assertGreater(await visible.count(),0)
+        for source in await visible.locator('.source-name').all_inner_texts():self.assertEqual(source,'QA Impar')
+        await self.page.locator('#cat-nacional [data-topic-filter=""]').click()
+        self.assertGreater(len(set(await visible.locator('h3 a').evaluate_all('es=>es.map(e=>e.dataset.key)'))),1)
+
+    async def test_subtopic_filter_is_restored_when_returning_without_bfcache(self):
+        body=await self.grouped_reading_fixture()
+        browser=await self.pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--disable-features=BackForwardCache'])
+        context=await browser.new_context(viewport={'width':1440,'height':1000},reduced_motion='reduce')
+        try:
+            await context.route('https://**/*',lambda r:r.abort())
+            page=await context.new_page()
+            await page.route('**/?grouped-reading=1',lambda r:r.fulfill(content_type='text/html',body=body))
+            await page.route('https://qa.example/**',lambda r:r.fulfill(content_type='text/html',body='<p>Medio original</p>'))
+            await page.goto(self.url+'?grouped-reading=1')
+            button=page.locator('#cat-nacional [data-topic-filter="regiones"]')
+            await button.click()
+            link=page.locator('#noticias-nacional h3 a:visible').first
+            await link.click()
+            await page.go_back(wait_until='domcontentloaded')
+            await page.wait_for_timeout(120)
+            self.assertEqual(await button.get_attribute('aria-pressed'),'true')
+            self.assertEqual(set(await page.locator('#noticias-nacional h3 a:visible').evaluate_all('es=>es.map(e=>e.dataset.key)')),{'regiones'})
+        finally:
+            await context.close();await browser.close()
+
     async def test_reading_preferences_include_small_text_columns_and_section_limit(self):
         await self.dense_reading_fixture()
         await self.toggle_view_options()

@@ -49,14 +49,15 @@ class GroupedSiteTests(unittest.TestCase):
         body = PageInspector(); body.feed(html)
         hrefs = {a.get('href') for a in menu.anchors}
         # Salud vive dentro de «Ciencia y tecnología»: sin entrada aparte en el menú (2026-10-25).
-        for topic in set(topics) - {'salud-ciencia'}:
+        for topic in set(topics) - {'salud-ciencia','medioambiente'}:
             self.assertIn('#cat-' + topic, hrefs)
         self.assertNotIn('#cat-salud-ciencia', hrefs)
         for href in hrefs:
             self.assertIn(href[1:], body.ids)
         self.assertEqual(len(body.ids), len(set(body.ids)))
         nav = news.render_nav(sel)
-        self.assertIn('>Medioambiente<', nav)
+        self.assertNotIn('>Medioambiente<', nav)
+        self.assertIn('>Chile<', nav)
         self.assertIn('>Ciencia y tecnología<', nav)
         self.assertNotIn('>Salud<', nav)
 
@@ -102,7 +103,7 @@ class GroupedSiteTests(unittest.TestCase):
             news.build_site(stories, now, folder)
             text = Path(folder, "index.html").read_text()
         parser = PageInspector();parser.feed(text)
-        self.assertEqual(parser.sections, ["cat-nacional", "cat-tecnologia", "cat-medioambiente"])
+        self.assertEqual(parser.sections, ["cat-nacional", "cat-tecnologia"])
         self.assertIn("Ciencia y tecnología", text)
         self.assertIn("cat-salud-ciencia", parser.ids)
         self.assertIn("cat-medioambiente", parser.ids)

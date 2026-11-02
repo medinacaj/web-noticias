@@ -923,12 +923,14 @@ def recent_section_stories(stories):
 def _section_grid_html(stories, identifier, now, editorial_order, reserved, more_label):
     """Mismas tarjetas y controles para noticias y guías complementarias."""
     from scripts.culture_content import card_label, content_kind
+    from scripts.reading_topics import story_topics
     if not stories:
         return ''
     feature, rest = stories[0], stories[1:]
     def attributes(story):
         kind=content_kind(story)
-        return f' data-content-kind="{kind}"' if kind else ''
+        return (f' data-topic-tags="{esc(json.dumps(story_topics(story)))}"'
+                + (f' data-content-kind="{kind}"' if kind else ''))
     feature_html = (f'<article class="feature"{attributes(feature)} data-original-order="{editorial_order[id(feature)]}">{figure_html(feature)}'
                     f'<div class="news-body"><p class="kicker">{esc(card_label(feature) or category_label(feature))}</p>'
                     f'<h3 class="feature-title"{topic_anchor(feature, reserved)}>{title_link(feature)}</h3>'
@@ -1003,12 +1005,21 @@ def render_sections(by_category, now, satire_items=None, release_guides=None, pr
         if cat['key'] == 'cine-streaming':
             from scripts.official_release_portals import render_official_portals
             portals_html = render_official_portals()
+        from scripts.reading_topics import topic_choices
+        choices = topic_choices(stories, cat['key'])
+        filters = ''
+        if choices:
+            label = PRESENTATION_LABELS.get(cat['key'], cat['label'])
+            buttons = ''.join(f'<button type="button" data-topic-filter="{esc(key)}" '
+                              f'aria-pressed="{"false" if key else "true"}">{esc(name)}</button>' for key,name in choices)
+            filters = (f'<div class="section-filters" role="group" aria-label="Filtrar noticias de {esc(label)}">{buttons}</div>'
+                       '<p class="section-topic-status" role="status" hidden>No hay noticias que coincidan con estos filtros. Prueba otro subtema o medio.</p>')
         blocks.append(
             f'<section class="section cat-{cat["key"]}" id="cat-{cat["key"]}" aria-labelledby="titulo-{cat["key"]}">'
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count_label}</span></div>'
-            f'{section_note}{grid_html}{portals_html}</section>'
+            f'{section_note}{filters}{grid_html}{portals_html}</section>'
         )
     return "\n".join(blocks)
 
