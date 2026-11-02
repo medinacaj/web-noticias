@@ -875,15 +875,16 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2.4" fill="var(--navy)"/><circle cx="16" cy="17" r="2.4" fill="var(--navy)"/></svg><span class="control-label" aria-hidden="true">Vista</span>
       </button>
       <div class="view-options-panel" id="view-options-panel" hidden role="region" tabindex="-1" aria-label="Opciones de visualización">
-        <p class="view-options-heading">Personalizar vista</p>
+        <div class="view-options-heading-row"><p class="view-options-heading">Personalizar vista</p><button type="button" id="view-options-close" class="view-options-close" aria-label="Cerrar opciones de visualización">×</button></div>
         <label class="theme-label" for="theme-select">Tema<select id="theme-select"><option value="system">Automático</option><option value="light" selected>Claro</option><option value="dark">Oscuro</option></select></label>
-        <div class="news-toolbar"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="normal">Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><select id="density-switch"><option value="editorial">Normal</option><option value="compact">Compacta</option><option value="headlines">Solo titulares</option></select></div>
+        <div class="news-toolbar"><label for="text-size">Texto</label><select id="text-size" aria-label="Tamaño del texto"><option value="small">Pequeño</option><option value="normal" selected>Normal</option><option value="large">Grande</option></select><label for="density-switch">Vista</label><select id="density-switch"><option value="compact" selected>Compacta</option><option value="editorial">Tarjetas</option><option value="headlines">Solo titulares</option></select><label for="column-count">Columnas</label><select id="column-count"><option value="auto">Automático</option><option value="2">Hasta 2</option><option value="3">Hasta 3</option><option value="4">Hasta 4</option></select><label for="cards-per-section">Por sección</label><select id="cards-per-section"><option value="6">6 noticias</option><option value="12">12 noticias</option><option value="24">24 noticias</option><option value="all">Todas</option></select></div>
         <div class="view-option-extra">
           <label for="source-preference">Mostrar noticias de<select id="source-preference"><option value="">Todos los medios</option></select></label>
           <label for="source-sort">Ordenar noticias<select id="source-sort"><option value="relevance">Orden editorial</option><option value="recent" selected>Recientes en cada sección</option></select></label>
           <label for="category-preference">Sección<select id="category-preference"><option value="">Todas las categorías</option></select></label>
         </div>
         <p class="reader-hint">Tus opciones se recuerdan en este navegador.</p>
+        <button type="button" id="view-reset" class="preferences-reset">Restablecer lectura</button>
         <button type="button" id="preferences-reset" class="preferences-reset" hidden>Volver a todos los medios y secciones</button>
       </div>
     </div>
@@ -1029,7 +1030,18 @@
       if (open) { if (!toggle.closest("#nav-tools")) setMenu(false); setSearch(false); }
       panel.hidden = !open;
       toggle.setAttribute("aria-expanded", String(open));
+      if (open && toggle.closest("#nav-tools")) {
+        window.requestAnimationFrame(function () {
+          if (!panel.hidden) panel.scrollIntoView({block:"nearest",behavior:"instant"});
+        });
+      }
     }
+    function closeOptions() {
+      setOpen(false);
+      if (toggle.closest("#nav-tools")) { setMenu(false); menuBtn.focus({preventScroll:true}); }
+      else toggle.focus({preventScroll:true});
+    }
+    d.getElementById("view-options-close").addEventListener("click", closeOptions);
     toggle.addEventListener("click", function (event) {
       var opening = panel.hidden;
       setOpen(opening);
@@ -1048,9 +1060,7 @@
     });
     d.addEventListener("keydown", function (event) {
       if (event.key === "Escape" && !panel.hidden) {
-        setOpen(false);
-        if (toggle.closest("#nav-tools")) { setMenu(false); menuBtn.focus({preventScroll:true}); }
-        else toggle.focus();
+        closeOptions();
       }
     });
     if (search) search.addEventListener("click", function () {setOpen(false);});
@@ -1060,6 +1070,7 @@
   (function () {
     var main = d.getElementById("contenido"), density = d.getElementById("density-switch");
     var textSize = d.getElementById("text-size"), densityKey = "noticias:density:v1";
+    var columns = d.getElementById("column-count"), quantity = d.getElementById("cards-per-section");
     if (!main || !density) return;
     try {
       localStorage.removeItem("noticias:reading:v1");
@@ -1072,10 +1083,10 @@
         try { localStorage.setItem("noticias:text-size:v1", textSize.value); } catch (err) {}
       });
       try {
-        if (localStorage.getItem("noticias:text-size:v1") === "large") {
-          textSize.value = "large"; main.dataset.textSize = "large";
-        }
+        var storedSize = localStorage.getItem("noticias:text-size:v1");
+        if (["small","normal","large"].indexOf(storedSize) !== -1) textSize.value = storedSize;
       } catch (err) {}
+      main.dataset.textSize = textSize.value;
     }
     function setDensity(mode) {
       main.classList.toggle("is-compact", mode === "compact");
@@ -1087,10 +1098,45 @@
       setDensity(mode);
       try { localStorage.setItem(densityKey, mode); } catch (err) {}
     });
+    var savedMode = "compact";
     try {
-      var savedMode = localStorage.getItem(densityKey);
-      if (savedMode === "compact" || savedMode === "headlines") setDensity(savedMode);
+      var storedMode = localStorage.getItem(densityKey);
+      if (["compact","headlines","editorial"].indexOf(storedMode) !== -1) savedMode = storedMode;
     } catch (err) {}
+    setDensity(savedMode);
+    function readChoice(select, key, allowed, fallback) {
+      var value;
+      try { value = localStorage.getItem(key); } catch (err) {}
+      select.value = allowed.indexOf(value) !== -1 ? value : fallback;
+    }
+    readChoice(columns, "noticias:columns:v1", ["auto","2","3","4"], "auto");
+    readChoice(quantity, "noticias:section-limit:v1", ["6","12","24","all"], "6");
+    function applyReading() {
+      main.dataset.columns = columns.value;
+      main.querySelectorAll(".section-grid").forEach(function (grid) { refreshSection(grid, sectionPageSize()); });
+      main.dispatchEvent(new Event("news-layout-change"));
+    }
+    [columns,quantity].forEach(function (select) {
+      select.addEventListener("change", function () {
+        try {
+          localStorage.setItem("noticias:columns:v1", columns.value);
+          localStorage.setItem("noticias:section-limit:v1", quantity.value);
+        } catch (err) {}
+        applyReading();
+      });
+    });
+    d.getElementById("view-reset").addEventListener("click", function () {
+      textSize.value = "normal"; main.dataset.textSize = "normal";
+      columns.value = "auto"; quantity.value = "6"; setDensity("compact");
+      try {
+        localStorage.setItem("noticias:text-size:v1", "normal");
+        localStorage.setItem(densityKey, "compact");
+        localStorage.removeItem("noticias:columns:v1");
+        localStorage.removeItem("noticias:section-limit:v1");
+      } catch (err) {}
+      applyReading();
+    });
+    applyReading();
   })();
 
   // Las etiquetas visibles pueden abreviar coberturas; los filtros usan todas las fuentes.
@@ -1109,7 +1155,12 @@
       .map(function (name) {return name.trim();}).filter(Boolean) : [];
   }
 
-  // Cada cambio de filtros u orden vuelve a mostrar las seis primeras coincidencias.
+  function sectionPageSize() {
+    var value = d.getElementById("cards-per-section")?.value;
+    return value === "all" ? 400 : (["6","12","24"].indexOf(value) !== -1 ? Number(value) : 6);
+  }
+
+  // Filtros y orden respetan la cantidad elegida de coincidencias por sección.
   function refreshSection(grid, limit) {
     grid.dataset.visibleLimit = String(limit);
     var count = 0;
@@ -1330,7 +1381,7 @@
           });
           grid.replaceChildren.apply(grid, parts);
         }
-        refreshSection(grid, 6);
+        refreshSection(grid, sectionPageSize());
       });
     }
     if (resetPreferences) resetPreferences.addEventListener("click", function () {
@@ -1405,7 +1456,7 @@
         var matches = Array.from(grid.querySelectorAll(".feature,.compact-list li")).filter(function (item) {
           return !item.hasAttribute("data-source-hidden") && !item.hasAttribute("data-filtered");
         });
-        refreshSection(grid, Math.max(Number(grid.dataset.visibleLimit) || 6, matches.indexOf(card) + 1));
+        refreshSection(grid, Math.max(Number(grid.dataset.visibleLimit) || sectionPageSize(), matches.indexOf(card) + 1));
       }
       return target;
     }
@@ -1505,8 +1556,8 @@
     var section = d.getElementById(button.getAttribute("aria-controls"));
     if (!section) return;
     button.addEventListener("click", function () {
-      var limit = Number(section.dataset.visibleLimit) || 6;
-      refreshSection(section, limit + (Number(button.getAttribute("data-step")) || 6));
+      var limit = Number(section.dataset.visibleLimit) || sectionPageSize();
+      refreshSection(section, limit + sectionPageSize());
     });
   });
 
@@ -1662,7 +1713,7 @@
       try {
         var limits = {};
         content.querySelectorAll(".section-grid[id]").forEach(function (grid) {
-          limits[grid.id] = Number(grid.dataset.visibleLimit) || 6;
+          limits[grid.id] = Number(grid.dataset.visibleLimit) || sectionPageSize();
         });
         var state = window.history.state;
         var next = state && typeof state === "object" ? Object.assign({}, state) : {};
@@ -1691,7 +1742,7 @@
       Object.keys(saved.limits).forEach(function (id) {
         var grid = d.getElementById(id), limit = Number(saved.limits[id]);
         if (grid && content.contains(grid) && grid.classList.contains("section-grid") && Number.isFinite(limit))
-          refreshSection(grid, Math.max(6, Math.min(400, limit)));
+          refreshSection(grid, Math.max(sectionPageSize(), Math.min(400, limit)));
       });
     }
     if (input && typeof saved.query === "string") input.value = saved.query.slice(0, 512);

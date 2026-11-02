@@ -56,6 +56,100 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.locator('#menu-toggle').click()
         await button.click()
 
+    async def dense_reading_fixture(self):
+        import tempfile
+        from datetime import datetime, timedelta, timezone
+        import fetch_noticias as news
+        now = datetime(2026, 11, 1, 16, tzinfo=timezone.utc)
+        stories = [{'category': 'nacional', 'title': f'Información nacional de prueba {i}',
+                    'sources': ['QA Par' if i % 2 == 0 else 'QA Impar'],
+                    'source_url': 'https://qa.example', 'link': f'https://qa.example/nota/{i}',
+                    'published': (now - timedelta(minutes=i)).isoformat(), 'image': '', 'summary': ''}
+                   for i in range(40)]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(stories, now, folder)
+            body = Path(folder, 'index.html').read_text()
+        await self.page.route('**/?dense-reading=1', lambda route: route.fulfill(content_type='text/html', body=body))
+        await self.page.goto(self.url + '?dense-reading=1')
+
+    async def test_mobile_view_settings_open_inside_the_visible_drawer(self):
+        for width in (320, 390, 768):
+            await self.page.set_viewport_size({'width': width, 'height': 844})
+            await self.page.reload()
+            await self.toggle_view_options()
+            await self.page.wait_for_timeout(80)
+            rect = await self.page.locator('#view-options-panel').evaluate('''el => {
+              const r=el.getBoundingClientRect();return {top:r.top,bottom:r.bottom,h:innerHeight};
+            }''')
+            self.assertGreaterEqual(rect['top'], 0, (width, rect))
+            self.assertLessEqual(rect['bottom'], rect['h'] + 1, (width, rect))
+            self.assertTrue(await self.page.locator('#theme-select').is_visible())
+            await self.page.keyboard.press('Escape')
+            self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'menu-toggle')
+
+    async def test_reading_preferences_include_small_text_columns_and_section_limit(self):
+        await self.dense_reading_fixture()
+        await self.toggle_view_options()
+        self.assertIn('small', await self.page.locator('#text-size option').evaluate_all('es=>es.map(e=>e.value)'))
+        await self.page.locator('#text-size').select_option('small')
+        await self.page.locator('#column-count').select_option('3')
+        await self.page.locator('#cards-per-section').select_option('12')
+        grid = self.page.locator('#noticias-nacional')
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), 12)
+        await self.page.reload()
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'small')
+        self.assertEqual(await self.page.locator('#column-count').input_value(), '3')
+        self.assertEqual(await self.page.locator('#cards-per-section').input_value(), '12')
+        self.assertEqual(await self.page.locator('#contenido').get_attribute('data-columns'), '3')
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), 12)
+
+    async def test_filters_and_show_more_use_the_selected_section_limit(self):
+        await self.dense_reading_fixture()
+        await self.toggle_view_options()
+        await self.page.locator('#cards-per-section').select_option('12')
+        await self.page.locator('#source-preference').select_option('QA Par')
+        await self.page.locator('#source-sort').select_option('relevance')
+        grid = self.page.locator('#noticias-nacional')
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), 12)
+        await self.page.keyboard.press('Escape')
+        await self.page.locator('[data-show-more][aria-controls="noticias-nacional"]').click()
+        available = await grid.locator('.feature:not([data-source-hidden]),.compact-list>li:not([data-source-hidden])').count()
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), min(24, available))
+        await self.toggle_view_options()
+        await self.page.locator('#source-preference').select_option('')
+        await self.page.locator('#cards-per-section').select_option('all')
+        total = await grid.locator('.feature,.compact-list>li').count()
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), total)
+        self.assertFalse(await self.page.locator('[data-show-more][aria-controls="noticias-nacional"]').is_visible())
+
+    async def test_reading_reset_and_invalid_stored_preferences_are_safe(self):
+        await self.dense_reading_fixture()
+        await self.toggle_view_options()
+        await self.page.locator('#text-size').select_option('large')
+        await self.page.locator('#column-count').select_option('4')
+        await self.page.locator('#cards-per-section').select_option('24')
+        await self.page.locator('#view-reset').click()
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'normal')
+        self.assertEqual(await self.page.locator('#density-switch').input_value(), 'compact')
+        self.assertEqual(await self.page.locator('#column-count').input_value(), 'auto')
+        self.assertEqual(await self.page.locator('#cards-per-section').input_value(), '6')
+        await self.page.evaluate('''() => {
+          localStorage.setItem('noticias:columns:v1','999');
+          localStorage.setItem('noticias:section-limit:v1','NaN');
+          localStorage.setItem('noticias:text-size:v1','broken');
+        }''')
+        await self.page.reload()
+        self.assertEqual(await self.page.locator('#column-count').input_value(), 'auto')
+        self.assertEqual(await self.page.locator('#cards-per-section').input_value(), '6')
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'normal')
+
+    async def test_saving_a_card_keeps_keyboard_focus_on_its_button(self):
+        button = self.page.locator('#contenido .section-grid .save-story').first
+        await button.focus()
+        await self.page.keyboard.press('Enter')
+        self.assertTrue(await button.evaluate('el=>el===document.activeElement'))
+        self.assertEqual(await button.get_attribute('aria-pressed'), 'true')
+
     async def test_reading_hierarchy_and_control_labels(self):
         self.assertTrue(await self.page.locator('#search-toggle .control-label').is_visible())
         self.assertTrue(await self.page.locator('#view-options-toggle .control-label').is_visible())
