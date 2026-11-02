@@ -134,10 +134,17 @@ async def check_shared_alignment(page, width):
     aligned_cards = await page.evaluate("""() => {
       const rail=document.querySelector('.rail-list'), grid=document.querySelector('.section-grid');
       if (!rail || !grid) return true;
+      // La elevación hover transforma la pintura, no la retícula. Medir las
+      // posiciones de layout evita confundir esa animación con un desborde.
+      const layoutBox=el=>{
+        let x=0,y=0,node=el;
+        while(node){x+=node.offsetLeft;y+=node.offsetTop;node=node.offsetParent;}
+        return {left:x,right:x+el.offsetWidth,y};
+      };
       return [[rail,'li'],[grid,'.feature,.compact-list > li']].every(([container,selector])=>{
-        const bounds=container.getBoundingClientRect(),rows=[];
+        const bounds=layoutBox(container),rows=[];
         Array.from(container.querySelectorAll(selector)).filter(el=>el.getClientRects().length).forEach(el=>{
-          const rect=el.getBoundingClientRect();let row=rows.find(r=>Math.abs(r[0].y-rect.y)<2);
+          const rect=layoutBox(el);let row=rows.find(r=>Math.abs(r[0].y-rect.y)<2);
           if(!row){row=[];rows.push(row);}row.push(rect);
         });
         return rows.every(row=>Math.abs(row[0].left-bounds.left)<=1 &&

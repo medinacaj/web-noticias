@@ -278,6 +278,13 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             rail=await self.page.locator('.rail-list').evaluate('e=>getComputedStyle(e).gap')
             self.assertEqual(grid,rail,width)
 
+    async def test_visual_alignment_checks_layout_while_a_card_is_hovered(self):
+        from scripts.visual_qa import check_shared_alignment
+        await self.page.emulate_media(reduced_motion='no-preference')
+        await self.page.locator('.rail-list>li').first.hover()
+        await self.page.wait_for_timeout(380)
+        await check_shared_alignment(self.page,1440)
+
     async def test_category_labels_and_radar_have_aa_contrast_in_both_themes(self):
         measure='''() => {
           const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const ctx=canvas.getContext('2d');
