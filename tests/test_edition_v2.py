@@ -69,9 +69,9 @@ class EditionV2Tests(unittest.TestCase):
         self.assertIn('d.querySelectorAll("[data-show-more]")', template)
         self.assertIn('.js .section-grid [data-extra]', template)
         self.assertIn('button.hidden = true', template)
-        self.assertIn('grid-column:1 / span 7', template)
-        self.assertIn('grid-column:8 / span 5', template)
-        self.assertIn('.lead .media{', template)
+        self.assertIn('.top-grid{display:flex;flex-direction:column;', template)
+        self.assertIn('grid-template-columns:180px minmax(0,1fr)', template)
+        self.assertIn('.lead > .media{', template)
         self.assertIn('@media (max-width:767px)', template)
 
     def test_generated_categories_retain_existing_selections(self):

@@ -70,6 +70,15 @@ class PremiereCatalogTests(unittest.TestCase):
         self.assertTrue(all(x.get("verified") is True for x in entries))
         self.assertEqual(len(current_premieres(entries, NOW, restrictions=[])), len(entries))
 
+    def test_weekly_guides_follow_individual_premieres_in_a_complementary_group(self):
+        guide={'title':'Estrenos Netflix del 26 al 30 de octubre de 2026',
+               'source':'Cine PREMIERE','source_url':'https://cinepremiere.com.mx',
+               'link':'https://cinepremiere.com.mx/estrenos/semana','published':'2026-10-30T11:00:00Z'}
+        rendered=news.render_sections({},NOW,premiere_items=[sample()],release_guides=[guide])
+        self.assertIn('<details class="cinema-guides"',rendered)
+        self.assertLess(rendered.index('Película demostración'),rendered.index('class="cinema-guides"'))
+        self.assertGreater(rendered.index(guide['title']),rendered.index('class="cinema-guides"'))
+
 
 if __name__ == "__main__":
     unittest.main()

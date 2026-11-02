@@ -742,7 +742,7 @@ def title_link(story):
         first_seen = ""
     from scripts.culture_content import content_kind
     kind=content_kind(story)
-    prefix='Sátira y humor: ' if kind.startswith('satire') else 'Estreno confirmado: ' if kind=='premiere' else 'Guía de estrenos: ' if kind=='guide' else ''
+    prefix='Sátira y humor: ' if kind.startswith('satire') else 'Estreno confirmado: ' if kind=='premiere' else 'Noticia de estreno: ' if kind=='premiere-news' else 'Guía de estrenos: ' if kind=='guide' else ''
     content=f' data-content-kind="{kind}"' if kind else ''
     prefix_html=f'<span class="sr-only">{prefix}</span>' if prefix else ''
     return (f'<a{content} data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" rel="noopener" '
@@ -805,7 +805,7 @@ def meta_html(story, now, read_link=False):
     kind_label = {'institutional':'Institucional','analysis':'Análisis'}.get(source_kind) if isinstance(source_kind,str) else None
     kind = f'<span class="source-kind">{kind_label}</span>' if kind_label else ''
     note = '<span class="content-note">Ficción satírica</span>' if content=='satire' else ''
-    date_label = f'Guía publicada {moment.astimezone(TZ_CHILE).day} {MESES[moment.astimezone(TZ_CHILE).month-1]}' if content=='guide' else time_ago(story,now)
+    date_label = f'Guía publicada {moment.astimezone(TZ_CHILE).day} {MESES[moment.astimezone(TZ_CHILE).month-1]}' if content=='guide' else ('Publicado ' if content=='premiere-news' else '') + time_ago(story,now)
     return (f'<p class="meta"><span class="src">{source_mark(story)}<span class="source-name">{esc(label)}</span></span>'
             f'{country}{coverage}{kind}{note}<time datetime="{to_iso(moment)}"{fresh}>{date_label}</time>{coverage_control(story, now)}</p>')
 
@@ -907,11 +907,12 @@ def render_coverage_radar(stories):
         f'{esc(story["title"])}</a><span>{len(set(story["sources"]))} medios distintos</span></li>'
         for story in prominent[:5]
     )
-    return (f'<section class="coverage-radar" aria-labelledby="coverage-radar-title">'
-            f'<div class="radar-head"><h2 id="coverage-radar-title">Radar de cobertura</h2>'
-            f'<span>4 o más medios</span></div>'
+    return (f'<details class="coverage-radar" id="coverage-radar" aria-labelledby="coverage-radar-title">'
+            f'<summary class="radar-head"><h2 id="coverage-radar-title">Radar de cobertura</h2>'
+            f'<span>{min(len(prominent),5)} temas · 4 o más medios</span>'
+            '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>'
             f'<p>Noticias publicadas por varios medios. No implica que estén creciendo en popularidad.</p>'
-            f'<ul>{items}</ul></section>')
+            f'<ul>{items}</ul></details>')
 
 
 def recent_section_stories(stories):
@@ -919,49 +920,57 @@ def recent_section_stories(stories):
     return sorted(stories, key=lambda story: story_time(story).timestamp() if story_time(story) else float("-inf"), reverse=True)
 
 
-def render_sections(by_category, now, satire_items=None, release_guides=None, premiere_items=None):
+def _section_grid_html(stories, identifier, now, editorial_order, reserved, more_label):
+    """Mismas tarjetas y controles para noticias y guías complementarias."""
+    from scripts.culture_content import card_label, content_kind
+    if not stories:
+        return ''
+    feature, rest = stories[0], stories[1:]
+    def attributes(story):
+        kind=content_kind(story)
+        return f' data-content-kind="{kind}"' if kind else ''
+    feature_html = (f'<article class="feature"{attributes(feature)} data-original-order="{editorial_order[id(feature)]}">{figure_html(feature)}'
+                    f'<div class="news-body"><p class="kicker">{esc(card_label(feature) or category_label(feature))}</p>'
+                    f'<h3 class="feature-title"{topic_anchor(feature, reserved)}>{title_link(feature)}</h3>'
+                    f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
+    compact = ''.join(
+        f'<li{attributes(s)} data-original-order="{editorial_order[id(s)]}"{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
+        f'<div class="news-body"><p class="kicker">{esc(card_label(s) or category_label(s))}</p>'
+        f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
+        for i,s in enumerate(rest))
+    grid_class = 'section-grid' if compact else 'section-grid section-grid--single'
+    if len(stories) in (2,4):grid_class += ' section-grid--balanced'
+    compact_html = f'<ul class="compact-list">{compact}</ul>' if compact else ''
+    more = (f'<button type="button" class="show-more" data-show-more '
+            f'aria-controls="{esc(identifier)}" data-step="6">Ver más {more_label} '
+            '<span aria-hidden="true">↓</span></button>' if len(stories)>6 else '')
+    return f'<div class="{grid_class}" id="{esc(identifier)}">{feature_html}{compact_html}</div>{more}'
+
+
+def render_sections(by_category, now, satire_items=None, release_guides=None, premiere_items=None, premiere_news=None):
     from scripts.presentation_groups import PRESENTATION_LABELS
     blocks = []
     from scripts.culture_content import add_culture_content, card_label, content_kind
-    if satire_items is not None or release_guides is not None or premiere_items is not None:
+    if satire_items is not None or release_guides is not None or premiere_items is not None or premiere_news is not None:
         by_category=add_culture_content(by_category,now,satire_items=satire_items,
-                                        release_guides=release_guides,premiere_items=premiere_items)
+                                        release_guides=release_guides,premiere_items=premiere_items,premiere_news=premiere_news)
     reserved = set(by_category)
-    present = [c for c in section_categories(CATEGORIES) if c["key"] in by_category]
+    present = [c for c in section_categories(CATEGORIES) if by_category.get(c["key"])]
     for number, cat in enumerate(present, start=1):
         original = by_category[cat["key"]]
         editorial_order = {id(story): index for index, story in enumerate(original)}
         if cat['key']=='cine-streaming':
             # Las fichas individuales primero; guías generales como complemento.
             premieres = sorted((s for s in original if content_kind(s)=='premiere'),
-                               key=lambda s: (s['release_date'], s['title']))
-            guides = recent_section_stories([s for s in original if content_kind(s)!='premiere'])
-            stories = premieres + guides
+                               key=lambda s: s['release_date'],reverse=True)
+            articles = recent_section_stories([s for s in original if content_kind(s) not in ('premiere','guide')])
+            guides = recent_section_stories([s for s in original if content_kind(s)=='guide'])
+            stories = premieres + articles + guides
         else:
             stories = recent_section_stories(original)
-        feature, rest = stories[0], stories[1:]
-        def attributes(story):
-            kind=content_kind(story)
-            return f' data-content-kind="{kind}"' if kind else ''
-        feature_html = (f'<article class="feature"{attributes(feature)} data-original-order="{editorial_order[id(feature)]}">{figure_html(feature)}'
-                        f'<div class="news-body"><p class="kicker">{esc(card_label(feature) or category_label(feature))}</p>'
-                        f'<h3 class="feature-title"{topic_anchor(feature, reserved)}>{title_link(feature)}</h3>'
-                        f'{dek_html(feature)}{meta_html(feature, now, True)}</div></article>')
-        compact = "".join(
-            f'<li{attributes(s)} data-original-order="{editorial_order[id(s)]}"{" data-extra" if i >= 5 else ""}><article class="compact">{figure_html(s)}'
-            f'<div class="news-body"><p class="kicker">{esc(card_label(s) or category_label(s))}</p>'
-            f'<h3{topic_anchor(s, reserved)}>{title_link(s)}</h3>{meta_html(s, now)}</div></article></li>'
-            for i, s in enumerate(rest))
-        grid_class = "section-grid" if compact else "section-grid section-grid--single"
-        if len(stories) in (2,4):grid_class += " section-grid--balanced"
-        compact_html = f'<ul class="compact-list">{compact}</ul>' if compact else ""
         count = len(stories)
         has_content=any(content_kind(story) for story in stories)
         more_label='contenidos' if has_content else 'noticias'
-        more = (f'<button type="button" class="show-more" data-show-more '
-                f'aria-controls="noticias-{esc(cat["key"])}" data-step="6">'
-                f'Ver más {more_label} <span aria-hidden="true">↓</span></button>'
-                if count > 6 else "")
         if cat['key']=='cine-streaming' and all(content_kind(s)=='guide' for s in stories):
             count_unit='guía' if count==1 else 'guías'
         else:
@@ -972,9 +981,24 @@ def render_sections(by_category, now, satire_items=None, release_guides=None, pr
             from scripts.weekly_releases import week_bounds
             start,end=week_bounds(now);end-=timedelta(days=1)
             period=f'{start.day} {MESES[start.month-1]} – {end.day} {MESES[end.month-1]}'
-            section_note=(f'<p class="section-note">Estrenos de la semana · {period}. '
-                          'Cada ficha individual indica su fecha confirmada en Chile y enlaza a una noticia específica; '
-                          'las guías generales son material complementario y su fecha es la de publicación.</p>')
+            section_note=(f'<p class="section-note">Esta semana · {period}. '
+                          'Las fichas de estreno indican su fecha confirmada en Chile; '
+                          'los anuncios y las guías muestran su fecha de publicación.</p>')
+            if not premieres:
+                section_note += '<p class="cinema-status">Aún no tenemos fechas de estreno verificadas para Chile esta semana.</p>'
+        grid_html = ''
+        if cat['key']=='cine-streaming':
+            primary = premieres + articles
+            if primary:
+                grid_html = _section_grid_html(primary,'noticias-cine-streaming',now,editorial_order,reserved,more_label)
+            if guides:
+                guide_id = 'guias-cine-streaming' if primary else 'noticias-cine-streaming'
+                open_attribute = '' if primary else ' open'
+                grid_html += (f'<details class="cinema-guides" id="cinema-guides"{open_attribute}><summary>Guías de la semana '
+                              f'<span>· {len(guides)}</span></summary>'
+                              + _section_grid_html(guides,guide_id,now,editorial_order,reserved,'guías')+'</details>')
+        else:
+            grid_html = _section_grid_html(stories,'noticias-'+cat['key'],now,editorial_order,reserved,more_label)
         portals_html = ''
         if cat['key'] == 'cine-streaming':
             from scripts.official_release_portals import render_official_portals
@@ -984,8 +1008,7 @@ def render_sections(by_category, now, satire_items=None, release_guides=None, pr
             f'<div class="section-head"><span class="section-num">{number:02d}</span>'
             f'<h2 id="titulo-{cat["key"]}">{esc(PRESENTATION_LABELS.get(cat["key"], cat["label"]))}</h2>'
             f'<span class="section-count">{count_label}</span></div>'
-            f'{section_note}<div class="{grid_class}" id="noticias-{esc(cat["key"])}">{feature_html}{compact_html}</div>'
-            f'{more}{portals_html}</section>'
+            f'{section_note}{grid_html}{portals_html}</section>'
         )
     return "\n".join(blocks)
 
@@ -1071,7 +1094,7 @@ PAGE_404 = """<!DOCTYPE html>
 
 def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
                signals_archive=None, signals_started="", agenda=None, satire_items=None, release_guides=None,
-               premiere_items=None, agenda_quality=None):
+               premiere_items=None, premiere_news=None, agenda_quality=None):
     from scripts.satire import is_satire
     stories = [story for story in stories if not is_satire(story)]
     sel = select(stories, now)
@@ -1094,7 +1117,7 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     from scripts.agenda import render_agenda
     from scripts.culture_content import add_culture_content
     display_sections=add_culture_content(sel['by_category'],now,satire_items=satire_items,
-                     release_guides=release_guides,premiere_items=premiere_items,
+                     release_guides=release_guides,premiere_items=premiere_items,premiere_news=premiere_news,
                      existing=([sel['lead']] if sel['lead'] else [])+sel['secondary'])
     sections_shown = sum(1 for c in section_categories(CATEGORIES) if c["key"] in display_sections)
     agenda_html = render_agenda(agenda or [], now, number=sections_shown + 1,
@@ -1228,7 +1251,7 @@ def main():
     archive = update_archive(archive, stories, now)
     signals_started = signals_started or to_iso(now)
     save_history(args.historial, stories, now, archive, signals_started)
-    agenda, satire_items, release_guides, agenda_quality = [], None, [], {}
+    agenda, satire_items, release_guides, premiere_news, agenda_quality = [], None, [], [], {}
     if not args.solo_render and not args.importar:
         # Eventos ya validados por eventos-biobio (Biobío y resto de Chile); un fallo solo oculta la sección.
         from scripts.agenda import load_agenda
@@ -1238,11 +1261,13 @@ def main():
                                      fetch_rss(url, category, limit=60, **options))
         from scripts.weekly_releases import collect_releases
         release_guides = collect_releases(now, fetch=fetch_rss)
+        from scripts.premiere_news import collect_news
+        premiere_news = collect_news(now, fetch=fetch_rss)
     from scripts.premiere_catalog import load_catalog as load_premieres
     build_site(stories, now, args.salida, args.ventana,
                signals_archive=archive, signals_started=signals_started, agenda=agenda,
                satire_items=satire_items, release_guides=release_guides,
-               premiere_items=load_premieres(), agenda_quality=agenda_quality or None)
+               premiere_items=load_premieres(), premiere_news=premiere_news, agenda_quality=agenda_quality or None)
 
 
 if __name__ == "__main__":

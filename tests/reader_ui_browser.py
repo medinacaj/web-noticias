@@ -56,6 +56,290 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.locator('#menu-toggle').click()
         await button.click()
 
+    async def dense_reading_fixture(self, with_images=False, count=40, radar=False):
+        import tempfile
+        from datetime import datetime, timedelta, timezone
+        import fetch_noticias as news
+        now = datetime(2026, 11, 1, 16, tzinfo=timezone.utc)
+        stories = [{'category': 'nacional', 'title': f'Información nacional de prueba {i}',
+                    'sources': ['QA Par' if i % 2 == 0 else 'QA Impar'],
+                    'source_url': 'https://qa.example', 'link': f'https://qa.example/nota/{i}',
+                    'published': (now - timedelta(minutes=i)).isoformat(),
+                    'image': f'https://qa.example/images/{i}.png' if with_images else '', 'summary': ''}
+                   for i in range(count)]
+        if radar:
+            for story in stories:story['sources'] += ['QA Dos','QA Tres','QA Cuatro']
+        if with_images:
+            import base64
+            pixel = base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=')
+            await self.page.route('https://qa.example/images/**', lambda route: route.fulfill(content_type='image/png', body=pixel))
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(stories, now, folder)
+            body = Path(folder, 'index.html').read_text()
+        await self.page.route('**/?dense-reading=1', lambda route: route.fulfill(content_type='text/html', body=body))
+        await self.page.goto(self.url + '?dense-reading=1')
+
+    async def test_mobile_view_settings_open_inside_the_visible_drawer(self):
+        for width in (320, 390, 768):
+            await self.page.set_viewport_size({'width': width, 'height': 844})
+            await self.page.reload()
+            await self.toggle_view_options()
+            await self.page.wait_for_timeout(80)
+            rect = await self.page.locator('#view-options-panel').evaluate('''el => {
+              const r=el.getBoundingClientRect();return {top:r.top,bottom:r.bottom,h:innerHeight};
+            }''')
+            self.assertGreaterEqual(rect['top'], 0, (width, rect))
+            self.assertLessEqual(rect['bottom'], rect['h'] + 1, (width, rect))
+            self.assertTrue(await self.page.locator('#theme-select').is_visible())
+            await self.page.keyboard.press('Escape')
+            self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'menu-toggle')
+
+    async def test_reading_preferences_include_small_text_columns_and_section_limit(self):
+        await self.dense_reading_fixture()
+        await self.toggle_view_options()
+        self.assertIn('small', await self.page.locator('#text-size option').evaluate_all('es=>es.map(e=>e.value)'))
+        await self.page.locator('#text-size').select_option('small')
+        await self.page.locator('#column-count').select_option('3')
+        await self.page.locator('#cards-per-section').select_option('12')
+        grid = self.page.locator('#noticias-nacional')
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), 12)
+        await self.page.reload()
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'small')
+        self.assertEqual(await self.page.locator('#column-count').input_value(), '3')
+        self.assertEqual(await self.page.locator('#cards-per-section').input_value(), '12')
+        self.assertEqual(await self.page.locator('#contenido').get_attribute('data-columns'), '3')
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), 12)
+
+    async def test_filters_and_show_more_use_the_selected_section_limit(self):
+        await self.dense_reading_fixture()
+        await self.toggle_view_options()
+        await self.page.locator('#cards-per-section').select_option('12')
+        await self.page.locator('#source-preference').select_option('QA Par')
+        await self.page.locator('#source-sort').select_option('relevance')
+        grid = self.page.locator('#noticias-nacional')
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), 12)
+        await self.page.keyboard.press('Escape')
+        await self.page.locator('[data-show-more][aria-controls="noticias-nacional"]').click()
+        available = await grid.locator('.feature:not([data-source-hidden]),.compact-list>li:not([data-source-hidden])').count()
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), min(24, available))
+        await self.toggle_view_options()
+        await self.page.locator('#source-preference').select_option('')
+        await self.page.locator('#cards-per-section').select_option('all')
+        total = await grid.locator('.feature,.compact-list>li').count()
+        self.assertEqual(await grid.locator('.feature:visible,.compact-list>li:visible').count(), total)
+        self.assertFalse(await self.page.locator('[data-show-more][aria-controls="noticias-nacional"]').is_visible())
+
+    async def test_reading_reset_and_invalid_stored_preferences_are_safe(self):
+        await self.dense_reading_fixture()
+        await self.toggle_view_options()
+        await self.page.locator('#text-size').select_option('large')
+        await self.page.locator('#column-count').select_option('4')
+        await self.page.locator('#cards-per-section').select_option('24')
+        await self.page.locator('#view-reset').click()
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'normal')
+        self.assertEqual(await self.page.locator('#density-switch').input_value(), 'compact')
+        self.assertEqual(await self.page.locator('#column-count').input_value(), 'auto')
+        self.assertEqual(await self.page.locator('#cards-per-section').input_value(), '6')
+        await self.page.evaluate('''() => {
+          localStorage.setItem('noticias:columns:v1','999');
+          localStorage.setItem('noticias:section-limit:v1','NaN');
+          localStorage.setItem('noticias:text-size:v1','broken');
+        }''')
+        await self.page.reload()
+        self.assertEqual(await self.page.locator('#column-count').input_value(), 'auto')
+        self.assertEqual(await self.page.locator('#cards-per-section').input_value(), '6')
+        self.assertEqual(await self.page.locator('#text-size').input_value(), 'normal')
+
+    async def test_saving_a_card_keeps_keyboard_focus_on_its_button(self):
+        button = self.page.locator('#contenido .section-grid .save-story').first
+        await button.focus()
+        await self.page.keyboard.press('Enter')
+        self.assertTrue(await button.evaluate('el=>el===document.activeElement'))
+        self.assertEqual(await button.get_attribute('aria-pressed'), 'true')
+
+    async def test_compact_front_page_is_short_and_keeps_real_thumbnails(self):
+        await self.dense_reading_fixture(with_images=True)
+        self.assertEqual(await self.page.locator('#density-switch').input_value(), 'compact')
+        self.assertLessEqual((await self.page.locator('.section').first.bounding_box())['y'], 700)
+        self.assertTrue(await self.page.locator('.section-grid .media:not(.media--source)').first.is_visible())
+        self.assertLessEqual((await self.page.locator('.lead > .media').bounding_box())['height'], 200)
+        for size in ('small','normal','large'):
+            await self.toggle_view_options()
+            await self.page.locator('#text-size').select_option(size)
+            await self.page.keyboard.press('Escape')
+            font = await self.page.locator('.section-grid .meta').first.evaluate('e=>parseFloat(getComputedStyle(e).fontSize)')
+            self.assertGreaterEqual(font, 12 if size=='small' else 13)
+
+    async def test_columns_adapt_to_width_and_last_row_uses_the_space(self):
+        await self.dense_reading_fixture()
+        for width,columns in ((2560,4),(1920,3),(1440,2),(390,1)):
+            await self.page.set_viewport_size({'width':width,'height':1000})
+            await self.toggle_view_options()
+            await self.page.locator('#column-count').select_option(str(columns) if columns>1 else '4')
+            await self.page.keyboard.press('Escape')
+            await self.page.wait_for_timeout(80)
+            rows=await self.page.locator('#noticias-nacional').evaluate('''grid=>{
+              const cards=[...grid.querySelectorAll('.feature,.compact-list>li')].filter(e=>e.getClientRects().length);
+              return cards.map(e=>{const r=e.getBoundingClientRect();return {top:r.top,left:r.left,right:r.right}});
+            }''')
+            first=[r for r in rows if abs(r['top']-rows[0]['top'])<2]
+            self.assertEqual(len(first), columns, (width,rows))
+            last=[r for r in rows if abs(r['top']-rows[-1]['top'])<2]
+            grid=await self.page.locator('#noticias-nacional').bounding_box()
+            self.assertAlmostEqual(last[0]['left'],grid['x'],delta=2)
+            self.assertAlmostEqual(last[-1]['right'],grid['x']+grid['width'],delta=2)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+1'))
+
+    async def test_text_only_rows_fill_the_card_without_hiding_the_headline(self):
+        await self.dense_reading_fixture()
+        for width in (320,390,1440):
+            await self.page.set_viewport_size({'width':width,'height':900})
+            card=self.page.locator('#noticias-nacional .compact-list>li:visible').first
+            inner=await card.locator('.compact').bounding_box()
+            heading=await card.locator('h3').bounding_box()
+            outer=await card.bounding_box()
+            self.assertIsNotNone(heading,(width,inner,outer))
+            self.assertGreater(heading['width'],100,(width,heading,outer))
+            self.assertLessEqual(inner['x']+inner['width'],outer['x']+outer['width'],width)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+1'))
+
+    async def test_coverage_radar_is_compact_until_the_reader_opens_it(self):
+        await self.dense_reading_fixture(radar=True)
+        radar=self.page.locator('details.coverage-radar:not(.signal-timeline)')
+        self.assertEqual(await radar.count(),1)
+        self.assertFalse(await radar.evaluate('e=>e.open'))
+        self.assertLessEqual((await self.page.locator('.section').first.bounding_box())['y'],800)
+        await radar.locator('summary').focus()
+        await self.page.keyboard.press('Enter')
+        self.assertTrue(await radar.evaluate('e=>e.open'))
+        self.assertTrue(await radar.locator('li').first.is_visible())
+
+    async def test_back_restores_open_guides_and_radar_without_bfcache(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        now=datetime(2026,10,31,12,tzinfo=timezone.utc)
+        articles=[{'title':f'Noticia nacional {i}','category':'nacional','sources':['QA A','QA B','QA C','QA D'],
+                   'source_url':'https://qa.example','link':f'https://qa.example/n/{i}',
+                   'published':now.isoformat(),'image':'','summary':''} for i in range(10)]
+        cinema=[{'title':"'Horizonte': la nueva serie de Netflix ya tiene fecha de estreno",
+                 'source':'Espinof','source_url':'https://www.espinof.com',
+                 'link':'https://www.espinof.com/qa/horizonte','published':'2026-10-30T10:00:00Z'}]
+        guides=[{'title':'Estrenos Netflix del 26 al 30 de octubre de 2026','source':'Cine PREMIERE',
+                 'source_url':'https://cinepremiere.com.mx','link':'https://cinepremiere.com.mx/qa/back-guide',
+                 'published':'2026-10-30T11:00:00Z'}]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(articles,now,folder,premiere_news=cinema,release_guides=guides)
+            body=Path(folder,'index.html').read_text()
+        browser=await self.pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--disable-features=BackForwardCache'])
+        context=await browser.new_context(viewport={'width':1440,'height':1000},reduced_motion='reduce')
+        try:
+            await context.route('https://**/*',lambda r:r.abort())
+            await context.add_init_script('window.qaDocumentId=Math.random()')
+            page=await context.new_page()
+            await page.route('**/?back-disclosures=1',lambda r:r.fulfill(content_type='text/html',body=body))
+            await page.goto(self.url+'?back-disclosures=1')
+            before=await page.evaluate('window.qaDocumentId')
+            radar=page.locator('.coverage-radar:not(.signal-timeline)')
+            guides_box=page.locator('.cinema-guides')
+            await radar.locator('summary').click()
+            await guides_box.locator('summary').click()
+            link=guides_box.locator('h3 a').first
+            target=await link.get_attribute('href')
+            await page.route(target,lambda r:r.fulfill(content_type='text/html',body='<h1>Medio de origen</h1>'))
+            await link.focus();await page.keyboard.press('Enter');await page.wait_for_url(target)
+            await page.go_back()
+            self.assertNotEqual(await page.evaluate('window.qaDocumentId'),before)
+            self.assertTrue(await guides_box.evaluate('e=>e.open'))
+            self.assertTrue(await link.is_visible())
+            self.assertTrue(await radar.evaluate('e=>e.open'))
+        finally:
+            await context.close();await browser.close()
+
+    async def test_headlines_view_hides_the_lead_photo_without_reserving_a_column(self):
+        await self.dense_reading_fixture(with_images=True)
+        await self.toggle_view_options()
+        await self.page.locator('#density-switch').select_option('headlines')
+        await self.page.keyboard.press('Escape')
+        self.assertFalse(await self.page.locator('.lead > .media').is_visible())
+        title=await self.page.locator('.lead-title').bounding_box()
+        lead=await self.page.locator('.lead').bounding_box()
+        self.assertLess(title['x']-lead['x'],30)
+
+    async def test_visual_qa_contrast_understands_modern_css_colors(self):
+        from scripts.visual_qa import check_dark_card_legibility
+        await self.page.locator('.lead .save-story').evaluate("e=>e.style.borderColor='color(srgb 0.470588 0.564706 0.529412)'")
+        await check_dark_card_legibility(self.page,1440)
+
+    async def test_compact_spacing_matches_highlights_at_each_width(self):
+        for width in (320,768,1440):
+            await self.page.set_viewport_size({'width':width,'height':900})
+            grid=await self.page.locator('.section-grid').first.evaluate('e=>getComputedStyle(e).gap')
+            rail=await self.page.locator('.rail-list').evaluate('e=>getComputedStyle(e).gap')
+            self.assertEqual(grid,rail,width)
+
+    async def test_visual_alignment_checks_layout_while_a_card_is_hovered(self):
+        from scripts.visual_qa import check_shared_alignment
+        await self.page.emulate_media(reduced_motion='no-preference')
+        await self.page.locator('.rail-list>li').first.hover()
+        await self.page.wait_for_timeout(380)
+        await check_shared_alignment(self.page,1440)
+
+    async def test_category_labels_and_radar_have_aa_contrast_in_both_themes(self):
+        measure='''() => {
+          const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const ctx=canvas.getContext('2d');
+          function rgba(css){ctx.clearRect(0,0,1,1);ctx.fillStyle=css;ctx.fillRect(0,0,1,1);return [...ctx.getImageData(0,0,1,1).data];}
+          function bg(e){if(!e)return [255,255,255];const c=rgba(getComputedStyle(e).backgroundColor);if(c[3]===255)return c.slice(0,3);const b=bg(e.parentElement),a=c[3]/255;return c.slice(0,3).map((v,i)=>v*a+b[i]*(1-a));}
+          function lum(c){return c.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);}
+          return [...document.querySelectorAll('.section-head .section-num,.section-head .section-count,.section-grid .kicker,.radar-head>span,.coverage-radar>p')].filter(e=>e.getClientRects().length).map(e=>{
+            const a=lum(rgba(getComputedStyle(e).color)),b=lum(bg(e));return {text:e.textContent.trim(),ratio:(Math.max(a,b)+.05)/(Math.min(a,b)+.05)};
+          });
+        }'''
+        for theme in ('light','dark'):
+            await self.page.evaluate('(value)=>{const e=document.querySelector("#theme-select");e.value=value;e.dispatchEvent(new Event("change",{bubbles:true}));}',theme)
+            ratios=await self.page.evaluate(measure)
+            self.assertTrue(ratios)
+            self.assertEqual([r for r in ratios if r['ratio']<4.5],[],theme)
+
+    async def test_cinema_guides_stay_complementary_after_sort_and_source_filters(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        from scripts.premiere_catalog import load_catalog
+        now=datetime(2026,10,31,12,tzinfo=timezone.utc)
+        articles=[{'title':f"'Horizonte {i}': la serie de Netflix ya tiene fecha de estreno",
+                   'source':'Espinof','source_url':'https://www.espinof.com',
+                   'link':f'https://www.espinof.com/qa/estreno-{i}','published':'2026-10-30T11:00:00Z'} for i in range(2)]
+        guides=[{'title':'Estrenos Netflix del 26 al 30 de octubre de 2026',
+                 'source':'Cine PREMIERE','source_url':'https://cinepremiere.com.mx',
+                 'link':'https://cinepremiere.com.mx/qa/guia','published':'2026-10-31T11:00:00Z'}]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site([],now,folder,premiere_items=load_catalog(),premiere_news=articles,release_guides=guides)
+            body=Path(folder,'index.html').read_text()
+        await self.page.route('**/?cinema-groups=1',lambda route:route.fulfill(content_type='text/html',body=body))
+        await self.page.goto(self.url+'?cinema-groups=1')
+        details=self.page.locator('.cinema-guides')
+        self.assertFalse(await details.evaluate('e=>e.open'))
+        primary=self.page.locator('#noticias-cine-streaming')
+        self.assertEqual(await primary.locator('[data-content-kind="guide"]').count(),0)
+        await self.toggle_view_options()
+        for order in ('recent','relevance'):
+            await self.page.locator('#source-sort').select_option(order)
+            kinds=await primary.locator('.feature,.compact-list>li').evaluate_all('es=>es.map(e=>e.dataset.contentKind)')
+            self.assertEqual(kinds,['premiere']*4+['premiere-news']*2)
+        await self.page.locator('#source-preference').select_option('Cine PREMIERE')
+        self.assertTrue(await details.evaluate('e=>e.open'))
+        await self.page.keyboard.press('Escape')
+        self.assertTrue(await details.locator('h3 a').is_visible())
+        self.assertEqual(await self.page.locator('[data-news-count]').get_attribute('data-news-count'),'0')
+        await self.toggle_view_options()
+        await self.page.locator('#source-preference').select_option('')
+        await self.page.keyboard.press('Escape')
+        await details.evaluate('e=>e.open=false')
+        await self.page.evaluate("location.hash='estrenos-semana'")
+        await self.page.wait_for_timeout(80)
+        self.assertTrue(await self.page.locator('#estrenos-semana').is_visible())
+
     async def test_reading_hierarchy_and_control_labels(self):
         self.assertTrue(await self.page.locator('#search-toggle .control-label').is_visible())
         self.assertTrue(await self.page.locator('#view-options-toggle .control-label').is_visible())
@@ -297,8 +581,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.toggle_view_options()
         selector = self.page.get_by_label('Vista', exact=True)
         self.assertEqual(await selector.evaluate('el => el.tagName'), 'SELECT')
-        self.assertEqual(await selector.input_value(), 'editorial')
-        self.assertEqual(await selector.locator('option:checked').inner_text(), 'Normal')
+        self.assertEqual(await selector.input_value(), 'compact')
+        self.assertEqual(await selector.locator('option:checked').inner_text(), 'Compacta')
         for mode, css_class in (('compact', 'is-compact'), ('headlines', 'is-headlines'), ('editorial', '')):
             await selector.select_option(mode)
             self.assertEqual(await self.page.locator('#contenido').evaluate("el => [...el.classList].filter(c => c === 'is-compact' || c === 'is-headlines').join(' ')"), css_class)
@@ -362,7 +646,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_latam_visuals_are_visible_and_respect_reader_density(self):
         await self.load_latam_lead_fixture(coverage_countries=['AR', 'BR', 'CO', 'MX'])
-        figures = self.page.locator('.cat-latinoamerica .media--region')
+        await self.page.locator('#contenido').evaluate("el=>el.classList.remove('is-compact','is-headlines')")
+        figures = self.page.locator('.cat-latinoamerica .section-grid .media--region')
         self.assertGreater(await figures.count(), 0)
         for width in (320, 390, 768, 1440):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
@@ -429,13 +714,15 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_latam_lead_respects_dense_views(self):
         await self.load_latam_lead_fixture()
         figure = self.page.locator('.lead .media--region')
-        self.assertTrue(await figure.is_visible())
+        self.assertFalse(await figure.is_visible())
+        self.assertTrue(await self.page.locator('.lead .source-name').is_visible())
         for density in ('is-compact', 'is-headlines'):
             await self.page.locator('#contenido').evaluate('(el, density) => el.className=density', density)
             self.assertFalse(await figure.is_visible(), density)
 
     async def test_latam_rail_countries_and_mark_fit_inside_thumbnail(self):
         await self.load_latam_lead_fixture()
+        await self.page.locator('#contenido').evaluate("el=>el.classList.remove('is-compact','is-headlines')")
         for width in (320, 390, 768, 1024, 1440):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
             figure = self.page.locator('.rail-item .media--region').first
@@ -1086,7 +1373,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'))
             await check_shared_alignment(self.page,width)
 
-    async def test_photo_lead_and_highlights_share_top_and_bottom_without_blank_padding(self):
+    async def test_compact_photo_portada_and_highlights_share_edges_without_blank_rows(self):
         import tempfile
         from datetime import datetime,timezone
         import fetch_noticias as news
@@ -1121,8 +1408,11 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                     lead=await self.page.locator('.lead').bounding_box()
                     cards=await self.page.locator('.rail-list > li').all()
                     first,last=await cards[0].bounding_box(),await cards[-1].bounding_box()
-                    self.assertAlmostEqual(lead['y'],first['y'],delta=1,msg=(width,collapsed,text_size,lead,first))
-                    self.assertAlmostEqual(lead['y']+lead['height'],last['y']+last['height'],delta=1,msg=(width,collapsed,text_size,lead,last))
+                    self.assertGreaterEqual(first['y'],lead['y']+lead['height'],(width,collapsed,text_size))
+                    self.assertAlmostEqual(lead['x'],first['x'],delta=1,msg=(width,collapsed,text_size))
+                    self.assertAlmostEqual(lead['x']+lead['width'],last['x']+last['width'],delta=1,msg=(width,collapsed,text_size))
+                    self.assertAlmostEqual(first['y'],last['y'],delta=1,msg=(width,collapsed,text_size))
+                    self.assertLessEqual((await self.page.locator('.lead > .media').bounding_box())['height'],200)
                     title=await self.page.locator('.lead-title').bounding_box()
                     footer=await self.page.locator('.lead > .card-footer').bounding_box()
                     self.assertLessEqual(footer['y']-(title['y']+title['height']),40,(width,collapsed,text_size))
@@ -1136,7 +1426,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(await self.page.locator('.rail-list > li').count(),remaining)
             lead=await self.page.locator('.lead').bounding_box()
             last=await self.page.locator('.rail-list > li').last.bounding_box()
-            self.assertAlmostEqual(lead['y']+lead['height'],last['y']+last['height'],delta=1,msg=remaining)
+            self.assertAlmostEqual(lead['x']+lead['width'],last['x']+last['width'],delta=1,msg=remaining)
         await self.page.locator('.lead .media > img').evaluate('el=>el.src="https://fixture.example/missing.jpg"')
         await self.page.wait_for_function('document.querySelector(".lead > .media").classList.contains("media--source")')
         self.assertFalse(await self.page.locator('.lead-heading').is_visible())
@@ -1195,7 +1485,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         satire_card = block.locator('.feature[data-content-kind="satire"],li[data-content-kind="satire"]').first
         guide_card = cinema.locator('.feature[data-content-kind="guide"],li[data-content-kind="guide"]').first
         self.assertIn('sátira y humor',(await satire_card.locator('.kicker').inner_text()).lower())
-        self.assertIn('cine y streaming',(await guide_card.locator('.kicker').inner_text()).lower())
+        self.assertIn('guía semanal',(await guide_card.locator('.kicker').inner_text()).lower())
         await satire_card.locator('.save-story').click()
         await self.toggle_library()
         self.assertIn('Sátira y humor:',await self.page.locator('#saved-stories').inner_text())
@@ -1242,7 +1532,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await cinema.screenshot(path=str(ARTIFACTS/f'cinema-rootly-{width}.png'))
         styles=await guide_card.evaluate("el=>({radius:parseFloat(getComputedStyle(el).borderRadius),font:getComputedStyle(el.querySelector('h3')).fontFamily})")
         self.assertGreaterEqual(styles['radius'],16)
-        self.assertIn('Inter',styles['font'])
+        shared_font=await block.locator('h3').first.evaluate('el=>getComputedStyle(el).fontFamily')
+        self.assertEqual(styles['font'],shared_font)
         self.assertGreaterEqual(await guide_card.locator('.share-story').evaluate("el=>parseFloat(getComputedStyle(el).borderRadius)"),100)
 
     async def test_single_cinema_card_fills_the_grid_in_each_reading_view(self):
@@ -1305,6 +1596,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             body = Path(folder, 'index.html').read_text()
         await self.page.route('**/?radar-fixture=1', lambda route: route.fulfill(status=200,content_type='text/html',body=body))
         await self.page.goto(self.url + '?radar-fixture=1')
+        await self.page.locator('.coverage-radar > summary').click()
+        self.assertTrue(await self.page.locator('.coverage-radar').evaluate('el=>el.open'))
         for width in (320,390,768,1024,1440,1920,2560):
             await self.page.set_viewport_size({'width':width,'height':1000})
             cards = self.page.locator('.coverage-radar ul > li')

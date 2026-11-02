@@ -7,7 +7,8 @@ const vm = require('node:vm');
 class Element {
   constructor(tag = 'div', attrs = {}, text = '') {
     this.tagName = tag; this.attrs = {...attrs}; this.children = []; this.parentNode = null;
-    this.text = text; this.value = ''; this.hidden = false; this.events = {}; this.style = {};
+    this.text = text; this.value = ''; this.hidden = false; this.events = {}; this.clientWidth = 900;
+    this.style = {setProperty(key,value){this[key]=value;}};
     this.dataset = new Proxy({}, {get: (_, k) => this.getAttribute('data-' + k.replace(/[A-Z]/g, x => '-' + x.toLowerCase())),
       set: (_, k, v) => {this.setAttribute('data-' + k.replace(/[A-Z]/g, x => '-' + x.toLowerCase()), v); return true;}});
     this.classList = {contains: c => this.className.split(/\s+/).includes(c),

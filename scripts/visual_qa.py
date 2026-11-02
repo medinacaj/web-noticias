@@ -133,16 +133,25 @@ async def check_shared_alignment(page, width):
     assert header['height'] <= (80 if width < 1024 else 68), f"Cabecera alta a {width}px: {header}"
     aligned_cards = await page.evaluate("""() => {
       const rail=document.querySelector('.rail-list'), grid=document.querySelector('.section-grid');
-      if (!rail || !grid || getComputedStyle(rail).gridTemplateColumns.split(' ').length !== 3 ||
-          getComputedStyle(grid).gridTemplateColumns.split(' ').length !== 3) return true;
-      const first=Array.from(rail.querySelectorAll('li')).slice(0,3);
-      const second=Array.from(grid.querySelectorAll('.feature,.compact-list > li')).slice(0,3);
-      return first.length === second.length && first.every((el,index) => {
-        const a=el.getBoundingClientRect(),b=second[index].getBoundingClientRect();
-        return Math.abs(a.x-b.x)<=1 && Math.abs(a.right-b.right)<=1;
+      if (!rail || !grid) return true;
+      // La elevación hover transforma la pintura, no la retícula. Medir las
+      // posiciones de layout evita confundir esa animación con un desborde.
+      const layoutBox=el=>{
+        let x=0,y=0,node=el;
+        while(node){x+=node.offsetLeft;y+=node.offsetTop;node=node.offsetParent;}
+        return {left:x,right:x+el.offsetWidth,y};
+      };
+      return [[rail,'li'],[grid,'.feature,.compact-list > li']].every(([container,selector])=>{
+        const bounds=layoutBox(container),rows=[];
+        Array.from(container.querySelectorAll(selector)).filter(el=>el.getClientRects().length).forEach(el=>{
+          const rect=layoutBox(el);let row=rows.find(r=>Math.abs(r[0].y-rect.y)<2);
+          if(!row){row=[];rows.push(row);}row.push(rect);
+        });
+        return rows.every(row=>Math.abs(row[0].left-bounds.left)<=1 &&
+          Math.abs(row[row.length-1].right-bounds.right)<=1);
       });
     }""")
-    assert aligned_cards, f"Columnas de Destacadas y secciones desalineadas a {width}px"
+    assert aligned_cards, f"Bordes de filas de Destacadas o secciones desalineados a {width}px"
 
 
 async def check_compact_navigation(page, width, no_overflow):
@@ -272,7 +281,12 @@ async def check_dark_card_legibility(page, width):
           const cardStyle = getComputedStyle(card);
           const meta = card.querySelector('.meta');
           const button = card.querySelector('.save-story, .share-story');
-          const ch = x => (x.match(/[\\d.]+/g) || []).slice(0, 3).map(Number);
+          const canvas = document.createElement('canvas');canvas.width=canvas.height=1;
+          const ctx = canvas.getContext('2d');
+          const ch = x => {
+            ctx.clearRect(0,0,1,1);ctx.fillStyle=x;ctx.fillRect(0,0,1,1);
+            return Array.from(ctx.getImageData(0,0,1,1).data).slice(0,3);
+          };
           const lum = rgb => rgb.map(v => {
             const c = v / 255; return c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4;
           }).reduce((a, c, i) => a + c * [0.2126, 0.7152, 0.0722][i], 0);
@@ -503,5 +517,12 @@ if __name__ == "__main__":
     parser.add_argument("--html", default="public/index.html")
     parser.add_argument("--output", default="artifacts/visual-qa")
     args = parser.parse_args()
-    asyncio.run(check(Path(args.html), Path(args.output)))
+    try:
+        asyncio.run(check(Path(args.html), Path(args.output)))
+    except Exception as error:
+        # El mensaje también queda en las anotaciones de GitHub; conserva el
+        # fallo y su traceback. Escapar texto de titulares/DOM en el protocolo.
+        message = str(error).replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+        print('::error::' + message, flush=True)
+        raise
 

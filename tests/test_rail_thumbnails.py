@@ -40,7 +40,7 @@ class RailThumbnailTests(unittest.TestCase):
     def test_template_sizes_square_thumbnail_and_hides_it_in_dense_views(self):
         css = (ROOT / "template.html").read_text(encoding="utf-8")
         self.assertIn(".rail-item > .media{grid-column:2;grid-row:2 / span 2;width:88px;height:88px;", css)
-        self.assertIn(".is-compact .rail-item > .media,.is-headlines .rail-item > .media{display:none;}", css)
+        self.assertIn(".is-compact .rail-item > .media--source,.is-headlines .rail-item > .media{display:none;}", css)
         self.assertIn('".lead,.feature,.compact-list li,.rail-list li"', css)
 
 

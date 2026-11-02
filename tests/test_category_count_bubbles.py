@@ -41,10 +41,10 @@ class CategoryBadgesTests(unittest.TestCase):
     def test_badges_stay_small_tinted_and_legible_in_both_themes(self):
         for marker in (".section-head .section-count{", "border-radius:var(--pill)",
                        "background:color-mix(in srgb,var(--cat) 10%,var(--card-bg))",
-                       "color:var(--cat);font:650 11px/1.3 var(--sans)",
+                       "color:var(--card-ink);font:650 12px/1.3 var(--sans)",
                        '.section-head .section-num{',
                        ":root[data-theme=\"dark\"] .section-head .section-count",
-                       "color:var(--cat-b);", ".section-grid .kicker{",
+                       "color:var(--card-ink);", ".section-grid .kicker{",
                        "max-width:100%;", "@media (max-width:479px)"):
             self.assertIn(marker, CSS)
         self.assertNotIn("background:linear-gradient", CSS[CSS.index("/* Identidad cromática editorial:"):CSS.index("</style>")])
