@@ -36,7 +36,7 @@ PALETTE = {
     "#EBE5FF", "#D9CFFA", "#D0CCD9", "#121116", "#1B1921", "#554D64", "#6A607C",
     "#30283F", "#F0EBFF", "#8D6FDE", "#383441",
     # Editorial Mineral, seleccionado por el usuario el 2026-11-01 tras auditoría #193.
-    "#252C2C", "#637070", "#285D63", "#DDEBEA", "#D5D9D5",
+    "#252C2C", "#637070", "#596565", "#285D63", "#DDEBEA", "#D5D9D5",
     "#14191B", "#1B2224", "#F1F4F2", "#BCC5C5", "#9ED0CC",
     "#283B3D", "#404A4C", "#343A43",
     # Color propio de la Agenda (dorado), pedido por el usuario el 2026-10-24.
@@ -66,7 +66,7 @@ class PaletteTests(unittest.TestCase):
         self.assertNotRegex(css, r"@media\s*\([^)]*\)\s*\{\s*\}",
                             "No dejar media queries vacíos en la plantilla editorial")
         self.assertEqual(css.count(
-            ".lead--text .lead-title{font-size:clamp(28px,3vw,42px);}"), 1)
+            ".lead--text .lead-title{font-size:clamp(23px,2.2vw,30px);}"), 1)
         self.assertRegex(css, (
             r"@media\s*\(max-width:767px\)\s*\{\s*"
             r"\.newsletter-invite-inner\{[^{}]*\}\s*"

@@ -41,9 +41,9 @@ class CardShadowTests(unittest.TestCase):
         self.assertIn("@media (hover:hover)", self.css)
         self.assertIn(".compact-list li:active", self.css)
 
-    def test_no_new_card_height_or_padding_rules(self):
+    def test_compact_lead_keeps_shared_radius_and_controlled_padding(self):
         self.assertIn("--radius-card:17px", self.css)
-        self.assertIn(".lead{grid-column:1 / span 7;--pad:22px;", self.css)
+        self.assertIn(".lead{--pad:18px;", self.css)
 
 
 if __name__ == "__main__":

@@ -56,7 +56,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.locator('#menu-toggle').click()
         await button.click()
 
-    async def dense_reading_fixture(self):
+    async def dense_reading_fixture(self, with_images=False, count=40):
         import tempfile
         from datetime import datetime, timedelta, timezone
         import fetch_noticias as news
@@ -64,8 +64,13 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         stories = [{'category': 'nacional', 'title': f'Información nacional de prueba {i}',
                     'sources': ['QA Par' if i % 2 == 0 else 'QA Impar'],
                     'source_url': 'https://qa.example', 'link': f'https://qa.example/nota/{i}',
-                    'published': (now - timedelta(minutes=i)).isoformat(), 'image': '', 'summary': ''}
-                   for i in range(40)]
+                    'published': (now - timedelta(minutes=i)).isoformat(),
+                    'image': f'https://qa.example/images/{i}.png' if with_images else '', 'summary': ''}
+                   for i in range(count)]
+        if with_images:
+            import base64
+            pixel = base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=')
+            await self.page.route('https://qa.example/images/**', lambda route: route.fulfill(content_type='image/png', body=pixel))
         with tempfile.TemporaryDirectory() as folder:
             news.build_site(stories, now, folder)
             body = Path(folder, 'index.html').read_text()
@@ -149,6 +154,55 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.page.keyboard.press('Enter')
         self.assertTrue(await button.evaluate('el=>el===document.activeElement'))
         self.assertEqual(await button.get_attribute('aria-pressed'), 'true')
+
+    async def test_compact_front_page_is_short_and_keeps_real_thumbnails(self):
+        await self.dense_reading_fixture(with_images=True)
+        self.assertEqual(await self.page.locator('#density-switch').input_value(), 'compact')
+        self.assertLessEqual((await self.page.locator('.section').first.bounding_box())['y'], 700)
+        self.assertTrue(await self.page.locator('.section-grid .media:not(.media--source)').first.is_visible())
+        self.assertLessEqual((await self.page.locator('.lead > .media').bounding_box())['height'], 200)
+        for size in ('small','normal','large'):
+            await self.toggle_view_options()
+            await self.page.locator('#text-size').select_option(size)
+            await self.page.keyboard.press('Escape')
+            font = await self.page.locator('.section-grid .meta').first.evaluate('e=>parseFloat(getComputedStyle(e).fontSize)')
+            self.assertGreaterEqual(font, 12 if size=='small' else 13)
+
+    async def test_columns_adapt_to_width_and_last_row_uses_the_space(self):
+        await self.dense_reading_fixture()
+        for width,columns in ((2560,4),(1920,3),(1440,2),(390,1)):
+            await self.page.set_viewport_size({'width':width,'height':1000})
+            await self.toggle_view_options()
+            await self.page.locator('#column-count').select_option(str(columns) if columns>1 else '4')
+            await self.page.keyboard.press('Escape')
+            await self.page.wait_for_timeout(80)
+            rows=await self.page.locator('#noticias-nacional').evaluate('''grid=>{
+              const cards=[...grid.querySelectorAll('.feature,.compact-list>li')].filter(e=>e.getClientRects().length);
+              return cards.map(e=>{const r=e.getBoundingClientRect();return {top:r.top,left:r.left,right:r.right}});
+            }''')
+            first=[r for r in rows if abs(r['top']-rows[0]['top'])<2]
+            self.assertEqual(len(first), columns, (width,rows))
+            last=[r for r in rows if abs(r['top']-rows[-1]['top'])<2]
+            grid=await self.page.locator('#noticias-nacional').bounding_box()
+            self.assertAlmostEqual(last[0]['left'],grid['x'],delta=2)
+            self.assertAlmostEqual(last[-1]['right'],grid['x']+grid['width'],delta=2)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+1'))
+
+    async def test_category_labels_and_radar_have_aa_contrast_in_both_themes(self):
+        measure='''() => {
+          const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const ctx=canvas.getContext('2d');
+          function rgba(css){ctx.clearRect(0,0,1,1);ctx.fillStyle=css;ctx.fillRect(0,0,1,1);return [...ctx.getImageData(0,0,1,1).data];}
+          function bg(e){if(!e)return [255,255,255];const c=rgba(getComputedStyle(e).backgroundColor);if(c[3]===255)return c.slice(0,3);const b=bg(e.parentElement),a=c[3]/255;return c.slice(0,3).map((v,i)=>v*a+b[i]*(1-a));}
+          function lum(c){return c.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);}
+          return [...document.querySelectorAll('.section-head .section-num,.section-head .section-count,.section-grid .kicker,.radar-head>span,.coverage-radar>p')].filter(e=>e.getClientRects().length).map(e=>{
+            const a=lum(rgba(getComputedStyle(e).color)),b=lum(bg(e));return {text:e.textContent.trim(),ratio:(Math.max(a,b)+.05)/(Math.min(a,b)+.05)};
+          });
+        }'''
+        for theme in ('light','dark'):
+            await self.page.evaluate('(value)=>{const e=document.querySelector("#theme-select");e.value=value;e.dispatchEvent(new Event("change",{bubbles:true}));}',theme)
+            ratios=await self.page.evaluate(measure)
+            self.assertTrue(ratios)
+            self.assertEqual([r for r in ratios if r['ratio']<4.5],[],theme)
 
     async def test_reading_hierarchy_and_control_labels(self):
         self.assertTrue(await self.page.locator('#search-toggle .control-label').is_visible())
@@ -391,8 +445,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.toggle_view_options()
         selector = self.page.get_by_label('Vista', exact=True)
         self.assertEqual(await selector.evaluate('el => el.tagName'), 'SELECT')
-        self.assertEqual(await selector.input_value(), 'editorial')
-        self.assertEqual(await selector.locator('option:checked').inner_text(), 'Normal')
+        self.assertEqual(await selector.input_value(), 'compact')
+        self.assertEqual(await selector.locator('option:checked').inner_text(), 'Compacta')
         for mode, css_class in (('compact', 'is-compact'), ('headlines', 'is-headlines'), ('editorial', '')):
             await selector.select_option(mode)
             self.assertEqual(await self.page.locator('#contenido').evaluate("el => [...el.classList].filter(c => c === 'is-compact' || c === 'is-headlines').join(' ')"), css_class)

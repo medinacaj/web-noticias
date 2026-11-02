@@ -10,8 +10,8 @@ class EditorialVisualSystemTests(unittest.TestCase):
         cls.source = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
 
     def test_featured_photography_and_typography(self):
-        for css in ("aspect-ratio:16/9;height:auto;max-height:280px",
-                    "font-size:clamp(29px,3vw,42px)",
+        for css in ("min-height:140px;max-height:190px",
+                    "font-size:clamp(23px,2.2vw,30px)",
                     "text-wrap:balance", "text-wrap:pretty",
                     "object-fit:cover;object-position:center"):
             self.assertIn(css, self.source)
@@ -27,7 +27,8 @@ class EditorialVisualSystemTests(unittest.TestCase):
         self.assertIn(".section-grid .media{flex:0 0 104px;width:104px;height:auto;min-height:0;align-self:flex-start;aspect-ratio:4/3;", self.source)
         self.assertIn(".section-grid .media{flex-basis:92px;width:92px;height:auto;min-height:0;}", self.source)
         self.assertIn(".media > img{width:100%;height:100%;object-fit:cover;object-position:center", self.source)
-        self.assertIn(".is-compact .section-grid .media{display:none;}", self.source)
+        self.assertIn(".is-compact .section-grid .media--source{display:none;}", self.source)
+        self.assertIn(".is-compact .section-grid .media{flex-basis:88px;width:88px;}", self.source)
         self.assertIn(".is-headlines .section-grid .media,.is-headlines .section-grid .dek{display:none;}", self.source)
         self.assertIn(".section-grid .media--source{padding:8px;}", self.source)
 

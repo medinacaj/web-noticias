@@ -11,7 +11,7 @@ class ReadingExperienceTests(unittest.TestCase):
         cls.html = Path(TEMPLATE_PATH).read_text(encoding="utf-8")
 
     def test_density_is_accessible_and_persistent(self):
-        for marker in ('<select id="density-switch">', '<option value="editorial">Normal</option>',
+        for marker in ('<select id="density-switch">', '<option value="editorial">Tarjetas</option>',
                        'noticias:density:v1', '.is-compact .section-grid',
                        'density.value = mode'):
             self.assertIn(marker, self.html)

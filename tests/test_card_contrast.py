@@ -57,6 +57,11 @@ class ContrastThemeTests(unittest.TestCase):
                 with self.subTest(dark=dark, token=token):
                     self.assertGreaterEqual(contrast(colors[token], colors['--card-bg']), 4.5)
 
+    def test_auxiliary_text_is_legible_on_the_page_background(self):
+        for dark in (False, True):
+            colors=self.palette(dark)
+            self.assertGreaterEqual(contrast(colors['--muted'],colors['--paper']),4.5)
+
     def test_shadows_have_soft_layers_and_motion_safe(self):
         self.assertIn("--card-shadow:0 4px 16px", self.css)
         self.assertIn("--card-shadow-hover:0 10px 27px", self.css)
