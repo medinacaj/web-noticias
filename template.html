@@ -323,6 +323,9 @@
   .lead:has(> .media--source){grid-template-columns:minmax(0,1fr);}
   .lead > .media--source{display:none;}
   .lead:has(> .media--source) > *{grid-column:1;}
+  .is-headlines .lead{grid-template-columns:minmax(0,1fr);}
+  .is-headlines .lead > *{grid-column:1;}
+  .is-headlines .lead > .media{display:none;}
   .lead--text .lead-title{font-size:clamp(23px,2.2vw,30px);}
   .lead .dek{font-size:17px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
   .lead .meta{margin-top:auto;padding-top:12px;}
@@ -1765,12 +1768,16 @@
     function saveView() {
       try {
         var limits = {};
+        var disclosures = {};
+        content.querySelectorAll("details[id]").forEach(function (item) {
+          disclosures[item.id] = item.open;
+        });
         content.querySelectorAll(".section-grid[id]").forEach(function (grid) {
           limits[grid.id] = Number(grid.dataset.visibleLimit) || sectionPageSize();
         });
         var state = window.history.state;
         var next = state && typeof state === "object" ? Object.assign({}, state) : {};
-        next.newsView = {limits: limits, y: window.scrollY, x: window.scrollX,
+        next.newsView = {limits: limits, disclosures: disclosures, y: window.scrollY, x: window.scrollX,
           searchOpen: !!panel && !panel.hidden,
           query: input ? input.value.slice(0, 512) : "",
           category: catSelect ? catSelect.value : "",
@@ -1791,6 +1798,12 @@
     try { saved = window.history.state && window.history.state.newsView; }
     catch (error) { return; }
     if (!saved || typeof saved !== "object") return;
+    if (saved.disclosures && typeof saved.disclosures === "object") {
+      content.querySelectorAll("details[id]").forEach(function (item) {
+        var open = saved.disclosures[item.id];
+        if (typeof open === "boolean") item.open = open;
+      });
+    }
     if (saved.limits && typeof saved.limits === "object") {
       Object.keys(saved.limits).forEach(function (id) {
         var grid = d.getElementById(id), limit = Number(saved.limits[id]);

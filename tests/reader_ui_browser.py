@@ -214,6 +214,58 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(await radar.evaluate('e=>e.open'))
         self.assertTrue(await radar.locator('li').first.is_visible())
 
+    async def test_back_restores_open_guides_and_radar_without_bfcache(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        now=datetime(2026,10,31,12,tzinfo=timezone.utc)
+        articles=[{'title':f'Noticia nacional {i}','category':'nacional','sources':['QA A','QA B','QA C','QA D'],
+                   'source_url':'https://qa.example','link':f'https://qa.example/n/{i}',
+                   'published':now.isoformat(),'image':'','summary':''} for i in range(10)]
+        cinema=[{'title':"'Horizonte': la nueva serie de Netflix ya tiene fecha de estreno",
+                 'source':'Espinof','source_url':'https://www.espinof.com',
+                 'link':'https://www.espinof.com/qa/horizonte','published':'2026-10-30T10:00:00Z'}]
+        guides=[{'title':'Estrenos Netflix del 26 al 30 de octubre de 2026','source':'Cine PREMIERE',
+                 'source_url':'https://cinepremiere.com.mx','link':'https://cinepremiere.com.mx/qa/back-guide',
+                 'published':'2026-10-30T11:00:00Z'}]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(articles,now,folder,premiere_news=cinema,release_guides=guides)
+            body=Path(folder,'index.html').read_text()
+        browser=await self.pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--disable-features=BackForwardCache'])
+        context=await browser.new_context(viewport={'width':1440,'height':1000},reduced_motion='reduce')
+        try:
+            await context.route('https://**/*',lambda r:r.abort())
+            await context.add_init_script('window.qaDocumentId=Math.random()')
+            page=await context.new_page()
+            await page.route('**/?back-disclosures=1',lambda r:r.fulfill(content_type='text/html',body=body))
+            await page.goto(self.url+'?back-disclosures=1')
+            before=await page.evaluate('window.qaDocumentId')
+            radar=page.locator('.coverage-radar:not(.signal-timeline)')
+            guides_box=page.locator('.cinema-guides')
+            await radar.locator('summary').click()
+            await guides_box.locator('summary').click()
+            link=guides_box.locator('h3 a').first
+            target=await link.get_attribute('href')
+            await page.route(target,lambda r:r.fulfill(content_type='text/html',body='<h1>Medio de origen</h1>'))
+            await link.focus();await page.keyboard.press('Enter');await page.wait_for_url(target)
+            await page.go_back()
+            self.assertNotEqual(await page.evaluate('window.qaDocumentId'),before)
+            self.assertTrue(await guides_box.evaluate('e=>e.open'))
+            self.assertTrue(await link.is_visible())
+            self.assertTrue(await radar.evaluate('e=>e.open'))
+        finally:
+            await context.close();await browser.close()
+
+    async def test_headlines_view_hides_the_lead_photo_without_reserving_a_column(self):
+        await self.dense_reading_fixture(with_images=True)
+        await self.toggle_view_options()
+        await self.page.locator('#density-switch').select_option('headlines')
+        await self.page.keyboard.press('Escape')
+        self.assertFalse(await self.page.locator('.lead > .media').is_visible())
+        title=await self.page.locator('.lead-title').bounding_box()
+        lead=await self.page.locator('.lead').bounding_box()
+        self.assertLess(title['x']-lead['x'],30)
+
     async def test_category_labels_and_radar_have_aa_contrast_in_both_themes(self):
         measure='''() => {
           const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const ctx=canvas.getContext('2d');
@@ -1525,6 +1577,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             body = Path(folder, 'index.html').read_text()
         await self.page.route('**/?radar-fixture=1', lambda route: route.fulfill(status=200,content_type='text/html',body=body))
         await self.page.goto(self.url + '?radar-fixture=1')
+        await self.page.locator('.coverage-radar > summary').click()
+        self.assertTrue(await self.page.locator('.coverage-radar').evaluate('el=>el.open'))
         for width in (320,390,768,1024,1440,1920,2560):
             await self.page.set_viewport_size({'width':width,'height':1000})
             cards = self.page.locator('.coverage-radar ul > li')

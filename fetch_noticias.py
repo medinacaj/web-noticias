@@ -907,7 +907,7 @@ def render_coverage_radar(stories):
         f'{esc(story["title"])}</a><span>{len(set(story["sources"]))} medios distintos</span></li>'
         for story in prominent[:5]
     )
-    return (f'<details class="coverage-radar" aria-labelledby="coverage-radar-title">'
+    return (f'<details class="coverage-radar" id="coverage-radar" aria-labelledby="coverage-radar-title">'
             f'<summary class="radar-head"><h2 id="coverage-radar-title">Radar de cobertura</h2>'
             f'<span>{min(len(prominent),5)} temas · 4 o más medios</span>'
             '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>'
@@ -994,7 +994,7 @@ def render_sections(by_category, now, satire_items=None, release_guides=None, pr
             if guides:
                 guide_id = 'guias-cine-streaming' if primary else 'noticias-cine-streaming'
                 open_attribute = '' if primary else ' open'
-                grid_html += (f'<details class="cinema-guides"{open_attribute}><summary>Guías de la semana '
+                grid_html += (f'<details class="cinema-guides" id="cinema-guides"{open_attribute}><summary>Guías de la semana '
                               f'<span>· {len(guides)}</span></summary>'
                               + _section_grid_html(guides,guide_id,now,editorial_order,reserved,'guías')+'</details>')
         else:
