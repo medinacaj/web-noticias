@@ -61,7 +61,7 @@
     --on-navy:#F1F4F2; --on-navy-soft:#BCC5C5;
     --card-bg:#FFFFFF; --card-ink:#252C2C; --card-muted:#637070;
     --card-rule:#D5D9D5; --card-link:#285D63;
-    --brand:#285D63;--accent:#285D63;--wash:#DDEBEA;--pill:999px; --callout-bg:#DDEBEA; --callout-ink:#285D63; --callout-muted:#637070; --callout-rule:#D5D9D5;
+    --brand:#285D63;--accent:#285D63;--wash:#DDEBEA;--pill:999px; --callout-bg:#DDEBEA; --callout-ink:#285D63; --callout-muted:#596565; --callout-rule:#D5D9D5;
     --signature-bg:#252C2C; --signature-ink:#F1F4F2; --signature-muted:#BCC5C5;
     --header-bg:var(--surface);--header-rule:var(--rule);
     --action-theme:var(--brand);--action-search:var(--brand);--action-view:var(--brand);--action-saved:var(--brand);--action-menu:var(--brand);
@@ -317,7 +317,7 @@
   .rail-item .region-label{font-size:11px;line-height:1.15;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;}
   .is-compact .lead .media--region,.is-headlines .lead .media--region{display:none;}
   .is-compact .rail-item > .media--source,.is-headlines .rail-item > .media{display:none;}
-  .rail-item:has(> .media--source),.is-headlines .rail-item{grid-template-columns:minmax(0,1fr);}
+  .is-compact .rail-item:has(> .media--source),.is-headlines .rail-item{grid-template-columns:minmax(0,1fr);}
 
   .lead > .media{grid-column:1;grid-row:1 / span 4;width:100%;height:100%;min-height:140px;max-height:190px;aspect-ratio:auto;margin:0;border-radius:8px;align-self:center;}
   .lead:has(> .media--source){grid-template-columns:minmax(0,1fr);}
@@ -396,7 +396,7 @@
   .view-options-panel .news-toolbar label{font:600 12px var(--sans);color:var(--muted);}
   .view-options-panel .news-toolbar select{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:6px;min-height:40px;padding:7px;color:var(--ink);font:500 12px var(--sans);}
   .view-options-panel .news-toolbar .density-switch{width:100%;}
-  .coverage-radar{margin:34px 0 6px;padding:12px 0;border:0;}
+  .coverage-radar{margin:20px 0 6px;padding:0;border:0;}
   .radar-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;}
   .radar-head h2{font:700 25px/1.2 var(--serif);margin:0;}
   .radar-head span,.coverage-radar p{font-size:12px;color:var(--muted);}
@@ -407,7 +407,12 @@
   .coverage-radar li span{font-size:11px;color:var(--muted);white-space:nowrap;}
   /* El radar comparte columnas y separación con las noticias. El historial plegable
      conserva su lista cronológica y no adopta estas tarjetas. */
-  .coverage-radar:not(.signal-timeline) ul{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--grid-gap);}
+  .coverage-radar:not(.signal-timeline) ul{display:flex;flex-wrap:wrap;gap:12px;}
+  .coverage-radar:not(.signal-timeline) li{flex:1 1 280px;}
+  .coverage-radar:not(.signal-timeline) > summary{cursor:pointer;min-height:44px;align-items:center;}
+  .coverage-radar:not(.signal-timeline) > summary h2{font-size:20px;}
+  .coverage-radar:not(.signal-timeline) > summary span{margin-left:auto;}
+  .coverage-radar:not(.signal-timeline)[open] > summary svg{transform:rotate(180deg);}
   .coverage-radar:not(.signal-timeline) li{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:10px;min-width:0;padding:16px;background:var(--card-bg);color:var(--card-ink);border:1px solid var(--card-rule);border-radius:var(--radius-card);box-shadow:var(--card-shadow);}
   .coverage-radar:not(.signal-timeline) li a{font-size:18px;min-width:0;overflow-wrap:anywhere;}
   .coverage-radar:not(.signal-timeline) li a:hover{text-decoration:underline;text-underline-offset:3px;}
@@ -835,8 +840,8 @@
     flex:1 1 calc((100% - (var(--reader-columns) - 1) * 12px) / var(--reader-columns));
     min-width:0;min-height:0;
   }
-  #contenido .is-headlines .section-grid{--reader-columns:1;}
-  .is-compact .section-grid .feature,.is-compact .section-grid .compact{flex-wrap:nowrap;gap:12px;}
+  #contenido.is-headlines .section-grid{--reader-columns:1;}
+  .is-compact .section-grid .feature,.is-compact .section-grid .compact{flex-wrap:wrap;gap:12px;}
   .is-compact .section-grid .media{flex-basis:88px;width:88px;}
   .is-compact .section-grid .news-body{flex:1;min-width:0;}
   .is-compact .section-grid .card-footer{gap:6px;}
@@ -844,7 +849,13 @@
   .is-compact .section-grid h3{font-family:var(--sans);line-height:1.35;}
   .is-compact .section-grid .kicker{padding:2px 7px;margin-bottom:7px;}
   .source-name{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;}
+  .cinema-guides{margin-top:14px;padding:0;border:0;background:transparent;}
+  .cinema-guides > summary{padding:12px 0;min-height:44px;cursor:pointer;font:600 13px/1.5 var(--sans);color:var(--ink);}
+  .cinema-guides > summary span{font-weight:400;color:var(--muted);}
+  .cinema-guides[open]{padding-bottom:0;}
+  .cinema-status{font:400 13px/1.6 var(--sans);color:var(--muted);margin:8px 0 14px;}
   @media (max-width:767px){
+    #contenido .section-grid{--reader-columns:1;}
     .lead{grid-template-columns:98px minmax(0,1fr);column-gap:12px;--pad:14px;}
     .lead-title,.lead--text .lead-title{font-size:23px;}
     .lead > .media{min-height:120px;max-height:175px;}
@@ -1395,6 +1406,11 @@
           var items = Array.from(grid.querySelectorAll(".feature,.compact-list li"));
           items.sort(function (a,b) {
             var original = Number(a.dataset.originalOrder) - Number(b.dataset.originalOrder);
+            if (grid.closest("#cat-cine-streaming")) {
+              var rank = function (card) { return card.dataset.contentKind === "premiere" ? 0 : 1; };
+              var groupOrder = rank(a) - rank(b);
+              if (groupOrder) return groupOrder;
+            }
             if (sortSelect.value !== "recent") return original;
             var ta = Date.parse(a.querySelector("time")?.dateTime || "") || 0;
             var tb = Date.parse(b.querySelector("time")?.dateTime || "") || 0;
@@ -1415,6 +1431,10 @@
           grid.replaceChildren.apply(grid, parts);
         }
         refreshSection(grid, sectionPageSize());
+      });
+      if (source || category) main.querySelectorAll(".cinema-guides").forEach(function (details) {
+        var matches = details.querySelector(".feature:not([data-source-hidden]),.compact-list li:not([data-source-hidden])");
+        if (matches) details.open = true;
       });
     }
     if (resetPreferences) resetPreferences.addEventListener("click", function () {

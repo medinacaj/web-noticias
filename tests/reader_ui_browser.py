@@ -56,7 +56,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.locator('#menu-toggle').click()
         await button.click()
 
-    async def dense_reading_fixture(self, with_images=False, count=40):
+    async def dense_reading_fixture(self, with_images=False, count=40, radar=False):
         import tempfile
         from datetime import datetime, timedelta, timezone
         import fetch_noticias as news
@@ -67,6 +67,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                     'published': (now - timedelta(minutes=i)).isoformat(),
                     'image': f'https://qa.example/images/{i}.png' if with_images else '', 'summary': ''}
                    for i in range(count)]
+        if radar:
+            for story in stories:story['sources'] += ['QA Dos','QA Tres','QA Cuatro']
         if with_images:
             import base64
             pixel = base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+jRZkAAAAASUVORK5CYII=')
@@ -188,6 +190,30 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertAlmostEqual(last[-1]['right'],grid['x']+grid['width'],delta=2)
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+1'))
 
+    async def test_text_only_rows_fill_the_card_without_hiding_the_headline(self):
+        await self.dense_reading_fixture()
+        for width in (320,390,1440):
+            await self.page.set_viewport_size({'width':width,'height':900})
+            card=self.page.locator('#noticias-nacional .compact-list>li:visible').first
+            inner=await card.locator('.compact').bounding_box()
+            heading=await card.locator('h3').bounding_box()
+            outer=await card.bounding_box()
+            self.assertIsNotNone(heading,(width,inner,outer))
+            self.assertGreater(heading['width'],100,(width,heading,outer))
+            self.assertLessEqual(inner['x']+inner['width'],outer['x']+outer['width'],width)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+1'))
+
+    async def test_coverage_radar_is_compact_until_the_reader_opens_it(self):
+        await self.dense_reading_fixture(radar=True)
+        radar=self.page.locator('details.coverage-radar:not(.signal-timeline)')
+        self.assertEqual(await radar.count(),1)
+        self.assertFalse(await radar.evaluate('e=>e.open'))
+        self.assertLessEqual((await self.page.locator('.section').first.bounding_box())['y'],800)
+        await radar.locator('summary').focus()
+        await self.page.keyboard.press('Enter')
+        self.assertTrue(await radar.evaluate('e=>e.open'))
+        self.assertTrue(await radar.locator('li').first.is_visible())
+
     async def test_category_labels_and_radar_have_aa_contrast_in_both_themes(self):
         measure='''() => {
           const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const ctx=canvas.getContext('2d');
@@ -203,6 +229,45 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             ratios=await self.page.evaluate(measure)
             self.assertTrue(ratios)
             self.assertEqual([r for r in ratios if r['ratio']<4.5],[],theme)
+
+    async def test_cinema_guides_stay_complementary_after_sort_and_source_filters(self):
+        from datetime import datetime, timezone
+        import tempfile
+        import fetch_noticias as news
+        from scripts.premiere_catalog import load_catalog
+        now=datetime(2026,10,31,12,tzinfo=timezone.utc)
+        articles=[{'title':f"'Horizonte {i}': la serie de Netflix ya tiene fecha de estreno",
+                   'source':'Espinof','source_url':'https://www.espinof.com',
+                   'link':f'https://www.espinof.com/qa/estreno-{i}','published':'2026-10-30T11:00:00Z'} for i in range(2)]
+        guides=[{'title':'Estrenos Netflix del 26 al 30 de octubre de 2026',
+                 'source':'Cine PREMIERE','source_url':'https://cinepremiere.com.mx',
+                 'link':'https://cinepremiere.com.mx/qa/guia','published':'2026-10-31T11:00:00Z'}]
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site([],now,folder,premiere_items=load_catalog(),premiere_news=articles,release_guides=guides)
+            body=Path(folder,'index.html').read_text()
+        await self.page.route('**/?cinema-groups=1',lambda route:route.fulfill(content_type='text/html',body=body))
+        await self.page.goto(self.url+'?cinema-groups=1')
+        details=self.page.locator('.cinema-guides')
+        self.assertFalse(await details.evaluate('e=>e.open'))
+        primary=self.page.locator('#noticias-cine-streaming')
+        self.assertEqual(await primary.locator('[data-content-kind="guide"]').count(),0)
+        await self.toggle_view_options()
+        for order in ('recent','relevance'):
+            await self.page.locator('#source-sort').select_option(order)
+            kinds=await primary.locator('.feature,.compact-list>li').evaluate_all('es=>es.map(e=>e.dataset.contentKind)')
+            self.assertEqual(kinds,['premiere']*4+['premiere-news']*2)
+        await self.page.locator('#source-preference').select_option('Cine PREMIERE')
+        self.assertTrue(await details.evaluate('e=>e.open'))
+        await self.page.keyboard.press('Escape')
+        self.assertTrue(await details.locator('h3 a').is_visible())
+        self.assertEqual(await self.page.locator('[data-news-count]').get_attribute('data-news-count'),'0')
+        await self.toggle_view_options()
+        await self.page.locator('#source-preference').select_option('')
+        await self.page.keyboard.press('Escape')
+        await details.evaluate('e=>e.open=false')
+        await self.page.evaluate("location.hash='estrenos-semana'")
+        await self.page.wait_for_timeout(80)
+        self.assertTrue(await self.page.locator('#estrenos-semana').is_visible())
 
     async def test_reading_hierarchy_and_control_labels(self):
         self.assertTrue(await self.page.locator('#search-toggle .control-label').is_visible())
@@ -510,7 +575,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_latam_visuals_are_visible_and_respect_reader_density(self):
         await self.load_latam_lead_fixture(coverage_countries=['AR', 'BR', 'CO', 'MX'])
-        figures = self.page.locator('.cat-latinoamerica .media--region')
+        await self.page.locator('#contenido').evaluate("el=>el.classList.remove('is-compact','is-headlines')")
+        figures = self.page.locator('.cat-latinoamerica .section-grid .media--region')
         self.assertGreater(await figures.count(), 0)
         for width in (320, 390, 768, 1440):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
@@ -577,13 +643,15 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_latam_lead_respects_dense_views(self):
         await self.load_latam_lead_fixture()
         figure = self.page.locator('.lead .media--region')
-        self.assertTrue(await figure.is_visible())
+        self.assertFalse(await figure.is_visible())
+        self.assertTrue(await self.page.locator('.lead .source-name').is_visible())
         for density in ('is-compact', 'is-headlines'):
             await self.page.locator('#contenido').evaluate('(el, density) => el.className=density', density)
             self.assertFalse(await figure.is_visible(), density)
 
     async def test_latam_rail_countries_and_mark_fit_inside_thumbnail(self):
         await self.load_latam_lead_fixture()
+        await self.page.locator('#contenido').evaluate("el=>el.classList.remove('is-compact','is-headlines')")
         for width in (320, 390, 768, 1024, 1440):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
             figure = self.page.locator('.rail-item .media--region').first
@@ -1234,7 +1302,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+2'))
             await check_shared_alignment(self.page,width)
 
-    async def test_photo_lead_and_highlights_share_top_and_bottom_without_blank_padding(self):
+    async def test_compact_photo_portada_and_highlights_share_edges_without_blank_rows(self):
         import tempfile
         from datetime import datetime,timezone
         import fetch_noticias as news
@@ -1269,8 +1337,11 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
                     lead=await self.page.locator('.lead').bounding_box()
                     cards=await self.page.locator('.rail-list > li').all()
                     first,last=await cards[0].bounding_box(),await cards[-1].bounding_box()
-                    self.assertAlmostEqual(lead['y'],first['y'],delta=1,msg=(width,collapsed,text_size,lead,first))
-                    self.assertAlmostEqual(lead['y']+lead['height'],last['y']+last['height'],delta=1,msg=(width,collapsed,text_size,lead,last))
+                    self.assertGreaterEqual(first['y'],lead['y']+lead['height'],(width,collapsed,text_size))
+                    self.assertAlmostEqual(lead['x'],first['x'],delta=1,msg=(width,collapsed,text_size))
+                    self.assertAlmostEqual(lead['x']+lead['width'],last['x']+last['width'],delta=1,msg=(width,collapsed,text_size))
+                    self.assertAlmostEqual(first['y'],last['y'],delta=1,msg=(width,collapsed,text_size))
+                    self.assertLessEqual((await self.page.locator('.lead > .media').bounding_box())['height'],200)
                     title=await self.page.locator('.lead-title').bounding_box()
                     footer=await self.page.locator('.lead > .card-footer').bounding_box()
                     self.assertLessEqual(footer['y']-(title['y']+title['height']),40,(width,collapsed,text_size))
@@ -1284,7 +1355,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(await self.page.locator('.rail-list > li').count(),remaining)
             lead=await self.page.locator('.lead').bounding_box()
             last=await self.page.locator('.rail-list > li').last.bounding_box()
-            self.assertAlmostEqual(lead['y']+lead['height'],last['y']+last['height'],delta=1,msg=remaining)
+            self.assertAlmostEqual(lead['x']+lead['width'],last['x']+last['width'],delta=1,msg=remaining)
         await self.page.locator('.lead .media > img').evaluate('el=>el.src="https://fixture.example/missing.jpg"')
         await self.page.wait_for_function('document.querySelector(".lead > .media").classList.contains("media--source")')
         self.assertFalse(await self.page.locator('.lead-heading').is_visible())
@@ -1343,7 +1414,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         satire_card = block.locator('.feature[data-content-kind="satire"],li[data-content-kind="satire"]').first
         guide_card = cinema.locator('.feature[data-content-kind="guide"],li[data-content-kind="guide"]').first
         self.assertIn('sátira y humor',(await satire_card.locator('.kicker').inner_text()).lower())
-        self.assertIn('cine y streaming',(await guide_card.locator('.kicker').inner_text()).lower())
+        self.assertIn('guía semanal',(await guide_card.locator('.kicker').inner_text()).lower())
         await satire_card.locator('.save-story').click()
         await self.toggle_library()
         self.assertIn('Sátira y humor:',await self.page.locator('#saved-stories').inner_text())
@@ -1390,7 +1461,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await cinema.screenshot(path=str(ARTIFACTS/f'cinema-rootly-{width}.png'))
         styles=await guide_card.evaluate("el=>({radius:parseFloat(getComputedStyle(el).borderRadius),font:getComputedStyle(el.querySelector('h3')).fontFamily})")
         self.assertGreaterEqual(styles['radius'],16)
-        self.assertIn('Inter',styles['font'])
+        shared_font=await block.locator('h3').first.evaluate('el=>getComputedStyle(el).fontFamily')
+        self.assertEqual(styles['font'],shared_font)
         self.assertGreaterEqual(await guide_card.locator('.share-story').evaluate("el=>parseFloat(getComputedStyle(el).borderRadius)"),100)
 
     async def test_single_cinema_card_fills_the_grid_in_each_reading_view(self):

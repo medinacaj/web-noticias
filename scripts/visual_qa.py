@@ -133,16 +133,18 @@ async def check_shared_alignment(page, width):
     assert header['height'] <= (80 if width < 1024 else 68), f"Cabecera alta a {width}px: {header}"
     aligned_cards = await page.evaluate("""() => {
       const rail=document.querySelector('.rail-list'), grid=document.querySelector('.section-grid');
-      if (!rail || !grid || getComputedStyle(rail).gridTemplateColumns.split(' ').length !== 3 ||
-          getComputedStyle(grid).gridTemplateColumns.split(' ').length !== 3) return true;
-      const first=Array.from(rail.querySelectorAll('li')).slice(0,3);
-      const second=Array.from(grid.querySelectorAll('.feature,.compact-list > li')).slice(0,3);
-      return first.length === second.length && first.every((el,index) => {
-        const a=el.getBoundingClientRect(),b=second[index].getBoundingClientRect();
-        return Math.abs(a.x-b.x)<=1 && Math.abs(a.right-b.right)<=1;
+      if (!rail || !grid) return true;
+      return [[rail,'li'],[grid,'.feature,.compact-list > li']].every(([container,selector])=>{
+        const bounds=container.getBoundingClientRect(),rows=[];
+        Array.from(container.querySelectorAll(selector)).filter(el=>el.getClientRects().length).forEach(el=>{
+          const rect=el.getBoundingClientRect();let row=rows.find(r=>Math.abs(r[0].y-rect.y)<2);
+          if(!row){row=[];rows.push(row);}row.push(rect);
+        });
+        return rows.every(row=>Math.abs(row[0].left-bounds.left)<=1 &&
+          Math.abs(row[row.length-1].right-bounds.right)<=1);
       });
     }""")
-    assert aligned_cards, f"Columnas de Destacadas y secciones desalineadas a {width}px"
+    assert aligned_cards, f"Bordes de filas de Destacadas o secciones desalineados a {width}px"
 
 
 async def check_compact_navigation(page, width, no_overflow):
