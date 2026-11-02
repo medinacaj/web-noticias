@@ -198,6 +198,26 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(await self.page.locator('#text-size').input_value(),'small')
         self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
 
+    async def test_reading_preferences_apply_before_delayed_page_script(self):
+        files=await self.reading_pages_fixture()
+        await self.page.evaluate("localStorage.setItem('noticias:theme:v1','dark');localStorage.setItem('noticias:text-size:v1','large')")
+        ready=asyncio.Event()
+        async def delayed(route):
+            await ready.wait()
+            await route.fulfill(content_type='text/javascript',body=files['reading-pages.js'])
+        await self.page.route(self.url+'reading-pages.js',delayed)
+        topic=next(name for name in files if name.startswith('temas/') and name.endswith('.html'))
+        for path in ('hoy.html',topic):
+            ready.clear()
+            try:
+                await self.page.goto(self.url+path,wait_until='commit')
+                await self.page.locator('h1').wait_for(state='visible')
+                self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+                self.assertEqual(await self.page.locator('body').evaluate('e=>getComputedStyle(e).fontSize'),'18px')
+            finally:
+                ready.set()
+                await self.page.wait_for_load_state('domcontentloaded')
+
     async def test_reading_preferences_include_small_text_columns_and_section_limit(self):
         await self.dense_reading_fixture()
         await self.toggle_view_options()
