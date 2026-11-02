@@ -103,6 +103,28 @@ class DiscoveryTests(unittest.TestCase):
         self.assertIn(saved_path,updated)
         self.assertIn(old['link'],updated[saved_path])
 
+    def test_topic_headline_represents_the_latest_publication_even_when_older_has_more_sources(self):
+        from scripts.discovery import build_topics
+        older=story(1,title='Observatorio Atacama muestra nuevas imágenes de galaxia Andrómeda',age=30,sources=['A','B','C','D','E','F','G','H'])
+        latest=story(2,title=older['title']+' hoy',age=1)
+        topic=build_topics([latest],[older],NOW)[0]
+        self.assertEqual(topic['lead']['link'],latest['link'])
+
+    def test_duplicate_syndicated_record_does_not_create_a_false_timeline(self):
+        from scripts.discovery import build_topics
+        original=story(1,title='Observatorio Atacama presenta nuevas imágenes de galaxia Andrómeda',sources=['A','B'])
+        duplicate={**original,'link':'https://otro-enlace.example/misma-nota'}
+        self.assertEqual(build_topics([original],[duplicate],NOW),[])
+
+    def test_duplicate_well_covered_records_produce_one_topic(self):
+        from scripts.discovery import build_topics
+        original=story(1,title='Observatorio Atacama presenta nuevas imágenes de galaxia Andrómeda',sources=['A','B','C','D'])
+        duplicate={**original,'link':'https://otro-enlace.example/misma-nota'}
+        topics=build_topics([original],[duplicate],NOW)
+        self.assertEqual(len(topics),1)
+        self.assertEqual(len(topics[0]['entries']),1)
+        self.assertEqual(len(topics[0]['aliases']),2)
+
     def test_pages_have_safe_real_links_noindex_and_valid_local_targets(self):
         from scripts.discovery import render_discovery_pages
         import fetch_noticias as news
@@ -136,3 +158,12 @@ class DiscoveryTests(unittest.TestCase):
         self.assertIn('No hay titulares recientes disponibles',files['hoy.html'])
         self.assertNotIn('id="para-ti"',files['hoy.html'])
         self.assertNotIn('id="descubre"',files['hoy.html'])
+
+    def test_reading_pages_keep_institutional_and_analysis_disclosures(self):
+        from scripts.discovery import render_discovery_pages
+        import fetch_noticias as news
+        items=[story(1,'economia',title='Startup presenta una nueva convocatoria',source_kind='institutional'),
+               story(2,'tecnologia',title='Análisis de la industria tecnológica',source_kind='analysis')]
+        page=render_discovery_pages(items,[],NOW,'https://portal.example',news.CATEGORIES)['hoy.html']
+        self.assertIn('Institucional',page)
+        self.assertIn('Análisis',page)

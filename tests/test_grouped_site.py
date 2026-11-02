@@ -53,7 +53,8 @@ class GroupedSiteTests(unittest.TestCase):
             self.assertIn('#cat-' + topic, hrefs)
         self.assertNotIn('#cat-salud-ciencia', hrefs)
         for href in hrefs:
-            self.assertIn(href[1:], body.ids)
+            if href.startswith('#'):
+                self.assertIn(href[1:], body.ids)
         self.assertEqual(len(body.ids), len(set(body.ids)))
         nav = news.render_nav(sel)
         self.assertNotIn('>Medioambiente<', nav)

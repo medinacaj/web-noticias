@@ -78,7 +78,7 @@ CATEGORIES = [
     {"key": "cultura",       "label": "Cultura y entretenimiento", "google_topic": "ENTERTAINMENT", "gnews": "entertainment", "short": "Cultura"},
     {"key": "regiones", "label": "Regiones", "google_query": "(Biobío OR Ñuble OR Concepción OR Valparaíso OR Antofagasta OR Araucanía) noticias Chile"},
     {"key": "politica", "label": "Política", "google_query": "(Gobierno OR Congreso OR Senado OR política) Chile"},
-    # Medioambiente incluye clima y es sección propia (decisión del usuario, 2026-10-25).
+    # Conservar la clave editorial; la presentación agrupa Medioambiente con Ciencia.
     {"key": "medioambiente", "label": "Medioambiente", "google_query": "(medioambiente OR cambio climático OR meteorología OR clima) Chile"},
     # Salud es un subtema de «Ciencia y tecnología»: rótulo propio en tarjetas y filtros, sin entrada
     # aparte en el menú. La clave se mantiene para no romper el historial ni las anclas publicadas.
@@ -896,22 +896,25 @@ def render_edition_count(sel):
             f'{outlets} {"medio" if outlets == 1 else "medios"}</span></p>')
 
 
-def render_coverage_radar(stories):
+def render_coverage_radar(stories, topics=None):
     """Radar conservador: no infiere tendencia o crecimiento desde una instantánea."""
     prominent = [s for s in stories if len(set((s.get("sources") or []))) >= 4]
     prominent.sort(key=lambda s: len(set(s["sources"])), reverse=True)
     if not prominent:
         return ""
+    from scripts.dedupe_history import canonical_key
+    destinations = {canonical_key(entry['link']):'temas/'+topic['id']+'.html'
+                    for topic in (topics or []) for entry in topic['entries']}
     items = "".join(
-        f'<li><a href="{esc(story["link"])}" rel="noopener">'
+        f'<li><a href="{esc(destinations.get(canonical_key(story["link"]),story["link"]))}" rel="noopener">'
         f'{esc(story["title"])}</a><span>{len(set(story["sources"]))} medios distintos</span></li>'
         for story in prominent[:5]
     )
     return (f'<details class="coverage-radar" id="coverage-radar" aria-labelledby="coverage-radar-title">'
-            f'<summary class="radar-head"><h2 id="coverage-radar-title">Radar de cobertura</h2>'
+            f'<summary class="radar-head"><h2 id="coverage-radar-title">{"Temas en seguimiento" if destinations else "Radar de cobertura"}</h2>'
             f'<span>{min(len(prominent),5)} temas · 4 o más medios</span>'
             '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>'
-            f'<p>Noticias publicadas por varios medios. No implica que estén creciendo en popularidad.</p>'
+            f'<p>Noticias publicadas por varios medios. No implica que estén creciendo en popularidad. Consulta las publicaciones y sus fechas originales.</p>'
             f'<ul>{items}</ul></details>')
 
 
@@ -1031,6 +1034,7 @@ def render_nav(sel, agenda=False):
     published += [story for items in sel["by_category"].values() for story in items]
     available = sections | {canonical_section(story["category"]) for story in published}
     links = ['<li><a href="#portada">Portada</a></li>'] if sel["lead"] else []
+    links.append('<li><a href="hoy.html">Hoy · resumen y lecturas</a></li>')
     emitted = set()
     def entry(category):
         key = category["key"]
@@ -1113,6 +1117,8 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
     sel["by_category"] = group_sections(sel["by_category"], STORIES_PER_CATEGORY)
     from scripts.editorial_signals import trending_topics, related_timeline, render_signals
     archive = [story for story in (signals_archive or []) if not is_satire(story)]
+    from scripts.discovery import build_topics, render_discovery_pages, render_shortcuts
+    topics = build_topics(stories, archive, now)
     signals_html = render_signals(
         trending_topics(archive, now, signals_started),
         related_timeline(archive, now))
@@ -1152,8 +1158,9 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "%%FOOTER_NAV%%": nav,
         "%%BREAKING%%": render_breaking(sel, now),
         "%%TOP%%": render_top(sel, now),
+        "%%DISCOVERY%%": render_shortcuts(stories, now),
         "%%EDITION_COUNT%%": render_edition_count(sel),
-        "%%RADAR%%": render_coverage_radar(stories),
+        "%%RADAR%%": render_coverage_radar(stories, topics),
         "%%SIGNALS%%": signals_html,
         "%%SECTIONS%%": render_sections(display_sections, now),
         "%%AGENDA%%": agenda_html,
@@ -1184,6 +1191,11 @@ def build_site(stories, now, out_dir, window_hours=WINDOW_HOURS,
         "robots.txt": f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
         "sitemap.xml": render_sitemap(SITE_URL, to_iso(now)),
     }
+    files.update(render_discovery_pages(stories, archive, now, SITE_URL, CATEGORIES, topics=topics))
+    # Directorio propio del generador: quitar referencias vencidas y regenerar
+    # también los alias de temas conservados en la ventana del historial.
+    shutil.rmtree(os.path.join(out_dir, 'temas'), ignore_errors=True)
+    os.makedirs(os.path.join(out_dir, 'temas'), exist_ok=True)
     if adsense["ads_txt"]:
         files["ads.txt"] = adsense["ads_txt"]
     else:

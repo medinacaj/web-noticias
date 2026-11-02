@@ -154,6 +154,50 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         finally:
             await context.close();await browser.close()
 
+    async def reading_pages_fixture(self):
+        from datetime import datetime, timedelta, timezone
+        from unittest.mock import patch
+        from urllib.parse import urlsplit
+        import mimetypes,tempfile
+        import fetch_noticias as news
+        now=datetime(2026,11,2,12,tzinfo=timezone.utc)
+        stories=[{'title':f'Subsidio y empleo: nuevas convocatorias de vivienda {i}',
+                  'category':category,'sources':[f'Editor {i}','Dos','Tres','Cuatro'],
+                  'link':f'https://qa.example/n/{i}','source_url':'https://qa.example',
+                  'published':(now-timedelta(minutes=i+1)).isoformat(),'summary':'','image':''}
+                 for i,category in enumerate(('nacional','economia','tecnologia','cultura','internacional','latinoamerica'))]
+        with tempfile.TemporaryDirectory() as folder,patch.object(news,'SITE_URL',self.url.rstrip('/')):
+            news.build_site(stories,now,folder)
+            files={str(p.relative_to(folder)):p.read_bytes() for p in Path(folder).rglob('*') if p.is_file()}
+        async def response(route):
+            path=urlsplit(route.request.url).path.lstrip('/') or 'index.html'
+            if path in files:await route.fulfill(body=files[path],content_type=mimetypes.guess_type(path)[0] or 'text/plain')
+            else:await route.continue_()
+        await self.page.route(self.url+'**',response)
+        return files
+
+    async def test_daily_reading_pages_share_preferences_and_work_in_mobile(self):
+        files=await self.reading_pages_fixture()
+        await self.page.goto(self.url+'hoy.html')
+        self.assertEqual(await self.page.locator('h1').inner_text(),'Tu día, en perspectiva')
+        self.assertEqual(await self.page.locator('#resumen .reading-card').count(),5)
+        await self.page.locator('#reading-size').select_option('small')
+        await self.page.locator('#reading-theme').click()
+        await self.page.reload()
+        self.assertEqual(await self.page.locator('#reading-size').input_value(),'small')
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+        await self.page.locator('#seguimiento h3 a').first.click()
+        self.assertTrue(await self.page.locator('#publicaciones').is_visible())
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+        for width in (320,390,768,1440,2560):
+            await self.page.set_viewport_size({'width':width,'height':900})
+            await self.page.wait_for_timeout(70)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+1'),width)
+            self.assertGreaterEqual((await self.page.locator('#reading-theme').bounding_box())['height'],44)
+        await self.page.locator('.reading-brand').click()
+        self.assertEqual(await self.page.locator('#text-size').input_value(),'small')
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+
     async def test_reading_preferences_include_small_text_columns_and_section_limit(self):
         await self.dense_reading_fixture()
         await self.toggle_view_options()
@@ -913,13 +957,14 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_menu_covers_all_published_categories_and_real_targets(self):
         missing = await self.page.evaluate("""() => {
           const categories = new Set([...document.querySelectorAll('main h2 a[data-key],main h3 a[data-key]')].map(a=>a.dataset.key));
-          // Salud se publica dentro de Ciencia y tecnología, sin entrada propia en el menú.
-          return [...categories].filter(key=>key!=='salud-ciencia'&&!document.querySelector('#site-nav a[href="#cat-'+key+'"]'));
+          const parents={'salud-ciencia':'tecnologia','medioambiente':'tecnologia','politica':'nacional','regiones':'nacional'};
+          return [...categories].filter(key=>!document.querySelector('#site-nav a[href="#cat-'+(parents[key]||key)+'"]'));
         }""")
         self.assertEqual(missing, [])
         self.assertTrue(await self.page.evaluate("""() => [...document.querySelectorAll('#site-nav a')]
-          .every(a=>document.getElementById(a.hash.slice(1)))"""))
-        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-medioambiente"]').inner_text(), 'Medioambiente')
+          .every(a=>!a.hash||document.getElementById(a.hash.slice(1)))"""))
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-medioambiente"]').count(), 0)
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-nacional"]').inner_text(), 'Chile')
         self.assertEqual(await self.page.locator('#site-nav a[href="#cat-salud-ciencia"]').count(), 0)
         self.assertEqual(await self.page.locator('#site-nav a[href="#cat-tecnologia"]').inner_text(), 'Ciencia y tecnología')
 
@@ -927,7 +972,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         for width in (1440, 390):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
             await self.page.reload()
-            for category in ('medioambiente', 'tecnologia'):
+            for category in ('nacional', 'tecnologia'):
                 if width < 1024:
                     await self.page.locator('#menu-toggle').click()
                 link = self.page.locator('#site-nav a[href="#cat-' + category + '"]')
@@ -942,7 +987,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.toggle_view_options()
         await self.page.locator('#category-preference').select_option('cultura')
         await self.toggle_view_options()
-        await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
+        await self.page.locator('#site-nav a[href="#cat-tecnologia"]').click()
+        await self.page.locator('#cat-tecnologia [data-topic-filter="medioambiente"]').click()
         self.assertTrue(await self.page.locator('#cat-medioambiente').is_visible())
         self.assertEqual(await self.page.locator('#category-preference').input_value(), '')
         await self.toggle_view_options()
@@ -965,7 +1011,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertTrue(await target.is_visible())
 
     async def test_back_to_topic_hash_preserves_later_category_filter(self):
-        await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
+        await self.page.goto(self.url+'#cat-medioambiente')
         await self.toggle_view_options()
         await self.page.locator('#category-preference').select_option('cultura')
         await self.toggle_view_options()

@@ -862,6 +862,13 @@
   .section-filters button[aria-pressed="true"]{color:var(--card-link);background:var(--callout-bg);border-color:var(--card-link);}
   .section-filters button:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;}
   .section-topic-status{color:var(--muted);font:400 13px/1.6 var(--sans);margin:0 0 12px;}
+  .discovery-shortcuts{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 12px;}
+  .discovery-shortcuts a{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:7px 13px;border:1px solid var(--card-rule);border-radius:var(--pill);background:var(--card-bg);color:var(--card-link);font:600 12px/1.4 var(--sans);text-decoration:none;}
+  .discovery-shortcuts .shortcut-primary{border-color:var(--callout-rule);background:var(--callout-bg);color:var(--callout-ink);}
+  .discovery-shortcuts .shortcut-primary>span:first-child{font-weight:750;}
+  .discovery-shortcuts a:hover{text-decoration:underline;text-underline-offset:3px;}
+  .discovery-shortcuts a:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;}
+  @media(max-width:767px){.discovery-shortcuts .shortcut-secondary{display:none;}.discovery-shortcuts{gap:6px;}.discovery-shortcuts a{padding-inline:10px;}}
   @media (max-width:767px){
     #contenido .section-grid{--reader-columns:1;}
     .lead{grid-template-columns:98px minmax(0,1fr);column-gap:12px;--pad:14px;}
@@ -965,6 +972,7 @@
   <div class="library-columns"><section><h3>Guardadas</h3><ul id="saved-stories" class="reader-library-list"></ul></section></div>
   <p class="reader-hint">Solo se guardan las noticias que marcas voluntariamente como favoritas en este navegador.</p>
 </div>
+%%DISCOVERY%%
 %%TOP%%
 %%RADAR%%
 %%SIGNALS%%

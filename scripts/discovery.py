@@ -75,6 +75,14 @@ def discover_stories(stories, now, limit=6):
     return _diverse(candidates,now,limit)
 
 
+def render_shortcuts(stories, now):
+    arrow='<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>'
+    links=['<a class="shortcut-primary" href="hoy.html"><span>Hoy</span> El día en 2 minutos '+arrow+'</a>']
+    if useful_stories(stories,now,limit=1):links.append('<a class="shortcut-secondary" href="hoy.html#para-ti">Qué cambia para ti</a>')
+    if discover_stories(stories,now,limit=1):links.append('<a href="hoy.html#descubre">Descubre '+arrow+'</a>')
+    return '<nav class="discovery-shortcuts" aria-label="Lecturas de la edición">'+''.join(links)+'</nav>'
+
+
 def build_topics(stories, archive, now):
     """Relacionar titulares muy próximos; referencias adicionales siempre aparte."""
     from scripts.related_news import display_coverages
@@ -103,15 +111,24 @@ def build_topics(stories, archive, now):
                 when=moment(row.get('published'));url=canonical(row.get('link'))
                 if url and url not in links and when and now-timedelta(days=8)<=when<=now:
                     references.append(row);links.add(url)
+        member_keys={canonical(s['link']) for s in group}
+        aliases=[sha256(repr(canonical(s['link'])).encode()).hexdigest()[:16] for s in group]
+        unique, fingerprints = [], set()
+        for item in group:
+            fingerprint=(fold(item['title']),moment(item['published']),
+                         tuple(sorted(fold(s).strip() for s in item['sources'] if isinstance(s,str))))
+            if fingerprint not in fingerprints:
+                unique.append(item);fingerprints.add(fingerprint)
+        group=unique
         sources=list(dict.fromkeys(s.strip() for item in group for s in item['sources'] if isinstance(s,str) and s.strip()))
         if len(sources)<4 and len(group)<2 and not references:continue
         # Cada URL permite conservar su página aunque cambie el orden editorial.
         identifier=sha256(repr(key).encode()).hexdigest()[:16]
         group.sort(key=lambda item:moment(item['published']))
-        result.append({'id':identifier,'lead':lead,'entries':group,'sources':sources,
-                       'aliases':[sha256(repr(canonical(s['link'])).encode()).hexdigest()[:16] for s in group],
+        result.append({'id':identifier,'lead':group[-1],'entries':group,'sources':sources,
+                       'aliases':aliases,
                        'references':sorted(references,key=lambda r:moment(r['published']))[:12]})
-        used.update(canonical(s['link']) for s in group)
+        used.update(member_keys)
     return result
 
 
@@ -124,9 +141,11 @@ def _entry(story, labels):
     sources=[s for s in story.get('sources',[]) if isinstance(s,str) and s.strip()]
     source=story.get('source') or ', '.join(sources[:3])+ (f' y {len(sources)-3} más' if len(sources)>3 else '')
     category=labels.get(story.get('category'),'Referencia relacionada')
+    kind={'institutional':'Institucional','analysis':'Análisis'}.get(story.get('source_kind'),'')
+    attribution=' · '.join(value for value in (source,kind,story.get('source_country_label','')) if value)
     return (f'<li class="reading-card"><article><p class="eyebrow">{esc(category)}</p>'
             f'<h3><a href="{esc(story["link"])}" rel="noopener">{esc(story["title"])}</a></h3>'
-            f'<p class="byline">{esc(source)} · <time datetime="{esc(story["published"])}">{_date(story["published"])}</time></p>'
+            f'<p class="byline">{esc(attribution)} · <time datetime="{esc(story["published"])}">{_date(story["published"])}</time></p>'
             '</article></li>')
 
 
@@ -173,7 +192,7 @@ def render_discovery_pages(stories,archive,now,site_url,categories,*,topics=None
     body=(f'<p class="eyebrow">Edición del {_date(now.isoformat())} · Santiago</p><h1>Tu día, en perspectiva</h1>'
           '<p class="reading-intro">Una selección breve para informarte, encontrar noticias útiles y explorar otros temas.</p>'
           '<nav class="reading-tabs" aria-label="Lecturas de hoy">'+''.join(f'<a href="#{key}">{label}</a>' for key,label in destinations)+'</nav>')
-    body+=_section('resumen','El día en 2 minutos','Cinco titulares de las últimas 24 horas, con diversidad de temas y fuentes.',brief,labels,numbered=True)
+    body+=_section('resumen','El día en 2 minutos','Titulares de las últimas 24 horas, con diversidad de temas y fuentes.',brief,labels,numbered=True)
     if not brief:body+='<section id="resumen"><p>No hay titulares recientes disponibles. Puedes consultar la portada y el archivo.</p></section>'
     body+=_section('para-ti','Qué cambia para ti','Precios, empleo, trámites y otros asuntos prácticos. Consulta los detalles y requisitos en el medio original.',useful,labels)
     if active:
@@ -189,7 +208,7 @@ def render_discovery_pages(stories,archive,now,site_url,categories,*,topics=None
     for topic in topics:
         lead=topic['lead'];path='temas/'+topic['id']+'.html'
         body=(f'<p class="eyebrow">Temas en seguimiento · últimos 8 días</p><h1>{esc(lead["title"])}</h1>'
-              '<p class="reading-intro">Publicaciones con titulares próximos dentro de una misma sección. Consulta cada fuente para conocer su información completa.</p>'
+              '<p class="reading-intro">Consulta las publicaciones de este tema y sus fechas originales. Cada enlace abre la información completa del medio.</p>'
               f'<p class="topic-sources"><strong>{len(topic["sources"])} medios registrados:</strong> {esc(", ".join(topic["sources"]))}</p>')
         body+=_section('publicaciones','Publicaciones del tema','Ordenadas por fecha de publicación, de la primera a la más reciente.',topic['entries'],labels,numbered=True)
         body+=_section('referencias','Referencias relacionadas','Otros enfoques; estas referencias no se suman a los medios que respaldan el titular principal.',topic['references'],labels)
