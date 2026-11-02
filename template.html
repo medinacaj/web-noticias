@@ -857,6 +857,18 @@
   .cinema-guides > summary span{font-weight:400;color:var(--muted);}
   .cinema-guides[open]{padding-bottom:0;}
   .cinema-status{font:400 13px/1.6 var(--sans);color:var(--muted);margin:8px 0 14px;}
+  .section-filters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;}
+  .section-filters button{min-height:44px;padding:7px 13px;border:1px solid var(--card-rule);border-radius:var(--pill);font:600 12px/1.3 var(--sans);color:var(--card-ink);background:var(--card-bg);cursor:pointer;}
+  .section-filters button[aria-pressed="true"]{color:var(--card-link);background:var(--callout-bg);border-color:var(--card-link);}
+  .section-filters button:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;}
+  .section-topic-status{color:var(--muted);font:400 13px/1.6 var(--sans);margin:0 0 12px;}
+  .discovery-shortcuts{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 12px;}
+  .discovery-shortcuts a{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:7px 13px;border:1px solid var(--card-rule);border-radius:var(--pill);background:var(--card-bg);color:var(--card-link);font:600 12px/1.4 var(--sans);text-decoration:none;}
+  .discovery-shortcuts .shortcut-primary{border-color:var(--callout-rule);background:var(--callout-bg);color:var(--callout-ink);}
+  .discovery-shortcuts .shortcut-primary>span:first-child{font-weight:750;}
+  .discovery-shortcuts a:hover{text-decoration:underline;text-underline-offset:3px;}
+  .discovery-shortcuts a:focus-visible{outline:2px solid var(--card-link);outline-offset:3px;}
+  @media(max-width:767px){.discovery-shortcuts .shortcut-secondary{display:none;}.discovery-shortcuts{gap:6px;}.discovery-shortcuts a{padding-inline:10px;}}
   @media (max-width:767px){
     #contenido .section-grid{--reader-columns:1;}
     .lead{grid-template-columns:98px minmax(0,1fr);column-gap:12px;--pad:14px;}
@@ -960,6 +972,7 @@
   <div class="library-columns"><section><h3>Guardadas</h3><ul id="saved-stories" class="reader-library-list"></ul></section></div>
   <p class="reader-hint">Solo se guardan las noticias que marcas voluntariamente como favoritas en este navegador.</p>
 </div>
+%%DISCOVERY%%
 %%TOP%%
 %%RADAR%%
 %%SIGNALS%%
@@ -1400,8 +1413,12 @@
       if (resetPreferences) resetPreferences.hidden = !source && !category;
       cards.forEach(function (card) {
         var link = card.querySelector("h2 a[data-cat],h3 a[data-cat]");
+        var section = card.closest("section.section"), topic = section && section.dataset.subtopic;
+        var topics = [];
+        try { topics = JSON.parse(card.getAttribute("data-topic-tags") || "[]"); } catch (error) {}
         var matches = (!source || storySources(card, link).indexOf(source) !== -1)
-          && (!category || link.getAttribute("data-key") === category);
+          && (!category || link.getAttribute("data-key") === category)
+          && (!topic || topics.indexOf(topic) !== -1);
         card.toggleAttribute("data-source-hidden", !matches);
       });
       main.querySelectorAll(".section-grid").forEach(function (grid) {
@@ -1439,9 +1456,26 @@
         var matches = details.querySelector(".feature:not([data-source-hidden]),.compact-list li:not([data-source-hidden])");
         if (matches) details.open = true;
       });
+      main.querySelectorAll("section.section").forEach(function (section) {
+        var topic = section.dataset.subtopic || "", status = section.querySelector(".section-topic-status");
+        section.querySelectorAll("[data-topic-filter]").forEach(function (button) {
+          button.setAttribute("aria-pressed", String(button.dataset.topicFilter === topic));
+        });
+        if (status) status.hidden = !topic || !!section.querySelector(".feature:not([data-source-hidden]),.compact-list li:not([data-source-hidden])");
+        if (topic === "guias") { var guides = section.querySelector(".cinema-guides"); if (guides) guides.open = true; }
+      });
     }
+    main.querySelectorAll("[data-topic-filter]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        button.closest("section.section").dataset.subtopic = button.dataset.topicFilter;
+        applySourcePreferences();
+        main.dispatchEvent(new Event("news-layout-change"));
+      });
+    });
+    main.addEventListener("news:topics-restored", applySourcePreferences);
     if (resetPreferences) resetPreferences.addEventListener("click", function () {
       sourceSelect.value = ""; categorySelect.value = "";
+      main.querySelectorAll("section.section[data-subtopic]").forEach(function (section) {section.dataset.subtopic = "";});
       set(sourceKey, ""); set(categoryKey, "");
       applySourcePreferences();
       main.dispatchEvent(new Event("news-preferences-change"));
@@ -1769,6 +1803,8 @@
       try {
         var limits = {};
         var disclosures = {};
+        var subtopics = {};
+        content.querySelectorAll("section.section[data-subtopic]").forEach(function (item) {subtopics[item.id] = item.dataset.subtopic;});
         content.querySelectorAll("details[id]").forEach(function (item) {
           disclosures[item.id] = item.open;
         });
@@ -1777,7 +1813,7 @@
         });
         var state = window.history.state;
         var next = state && typeof state === "object" ? Object.assign({}, state) : {};
-        next.newsView = {limits: limits, disclosures: disclosures, y: window.scrollY, x: window.scrollX,
+        next.newsView = {limits: limits, disclosures: disclosures, subtopics: subtopics, y: window.scrollY, x: window.scrollX,
           searchOpen: !!panel && !panel.hidden,
           query: input ? input.value.slice(0, 512) : "",
           category: catSelect ? catSelect.value : "",
@@ -1798,6 +1834,13 @@
     try { saved = window.history.state && window.history.state.newsView; }
     catch (error) { return; }
     if (!saved || typeof saved !== "object") return;
+    if (saved.subtopics && typeof saved.subtopics === "object") {
+      content.querySelectorAll("section.section[id]").forEach(function (section) {
+        var topic = saved.subtopics[section.id];
+        if (typeof topic === "string" && Array.from(section.querySelectorAll("[data-topic-filter]")).some(function (button) {return button.dataset.topicFilter === topic;})) section.dataset.subtopic = topic;
+      });
+      content.dispatchEvent(new Event("news:topics-restored"));
+    }
     if (saved.disclosures && typeof saved.disclosures === "object") {
       content.querySelectorAll("details[id]").forEach(function (item) {
         var open = saved.disclosures[item.id];

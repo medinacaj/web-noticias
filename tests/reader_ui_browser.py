@@ -94,6 +94,130 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             await self.page.keyboard.press('Escape')
             self.assertEqual(await self.page.evaluate('document.activeElement.id'), 'menu-toggle')
 
+    async def grouped_reading_fixture(self):
+        import tempfile
+        from datetime import datetime, timedelta, timezone
+        import fetch_noticias as news
+        now = datetime(2026,11,2,12,tzinfo=timezone.utc)
+        items=[]
+        for key, count in (('politica',16),('regiones',4),('nacional',4),('salud-ciencia',3),('medioambiente',3),('tecnologia',3)):
+            for i in range(count):
+                items.append({'category':key,'title':f'Información de {key} número {i}',
+                    'sources':['QA Par' if i%2==0 else 'QA Impar'],'source_url':'https://qa.example',
+                    'link':f'https://qa.example/{key}/{i}','published':(now-timedelta(minutes=i+1)).isoformat(),'image':'','summary':''})
+        with tempfile.TemporaryDirectory() as folder:
+            news.build_site(items,now,folder)
+            body=Path(folder,'index.html').read_text()
+        await self.page.route('**/?grouped-reading=1',lambda r:r.fulfill(content_type='text/html',body=body))
+        await self.page.goto(self.url+'?grouped-reading=1')
+        return body
+
+    async def test_grouped_section_filters_combine_with_source_and_reading_limit(self):
+        await self.grouped_reading_fixture()
+        self.assertEqual(await self.page.locator('#titulo-nacional').inner_text(),'Chile')
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-politica"]').count(),0)
+        await self.toggle_view_options()
+        await self.page.locator('#cards-per-section').select_option('12')
+        await self.page.keyboard.press('Escape')
+        await self.page.locator('#cat-nacional [data-topic-filter="politica"]').click()
+        grid=self.page.locator('#noticias-nacional')
+        visible=grid.locator('.feature:visible,.compact-list>li:visible')
+        self.assertGreater(await visible.count(),0)
+        self.assertLessEqual(await visible.count(),12)
+        self.assertEqual(set(await visible.locator('h3 a[data-key]').evaluate_all('es=>es.map(e=>e.dataset.key)')),{'politica'})
+        await self.toggle_view_options()
+        await self.page.locator('#source-preference').select_option('QA Impar')
+        await self.page.keyboard.press('Escape')
+        self.assertGreater(await visible.count(),0)
+        for source in await visible.locator('.source-name').all_inner_texts():self.assertEqual(source,'QA Impar')
+        await self.page.locator('#cat-nacional [data-topic-filter=""]').click()
+        self.assertGreater(len(set(await visible.locator('h3 a').evaluate_all('es=>es.map(e=>e.dataset.key)'))),1)
+
+    async def test_subtopic_filter_is_restored_when_returning_without_bfcache(self):
+        body=await self.grouped_reading_fixture()
+        browser=await self.pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--disable-features=BackForwardCache'])
+        context=await browser.new_context(viewport={'width':1440,'height':1000},reduced_motion='reduce')
+        try:
+            await context.route('https://**/*',lambda r:r.abort())
+            page=await context.new_page()
+            await page.route('**/?grouped-reading=1',lambda r:r.fulfill(content_type='text/html',body=body))
+            await page.route('https://qa.example/**',lambda r:r.fulfill(content_type='text/html',body='<p>Medio original</p>'))
+            await page.goto(self.url+'?grouped-reading=1')
+            button=page.locator('#cat-nacional [data-topic-filter="regiones"]')
+            await button.click()
+            link=page.locator('#noticias-nacional h3 a:visible').first
+            await link.click()
+            await page.go_back(wait_until='domcontentloaded')
+            await page.wait_for_timeout(120)
+            self.assertEqual(await button.get_attribute('aria-pressed'),'true')
+            self.assertEqual(set(await page.locator('#noticias-nacional h3 a:visible').evaluate_all('es=>es.map(e=>e.dataset.key)')),{'regiones'})
+        finally:
+            await context.close();await browser.close()
+
+    async def reading_pages_fixture(self):
+        from datetime import datetime, timedelta, timezone
+        from unittest.mock import patch
+        from urllib.parse import urlsplit
+        import mimetypes,tempfile
+        import fetch_noticias as news
+        now=datetime(2026,11,2,12,tzinfo=timezone.utc)
+        stories=[{'title':f'Subsidio y empleo: nuevas convocatorias de vivienda {i}',
+                  'category':category,'sources':[f'Editor {i}','Dos','Tres','Cuatro'],
+                  'link':f'https://qa.example/n/{i}','source_url':'https://qa.example',
+                  'published':(now-timedelta(minutes=i+1)).isoformat(),'summary':'','image':''}
+                 for i,category in enumerate(('nacional','economia','tecnologia','cultura','internacional','latinoamerica'))]
+        with tempfile.TemporaryDirectory() as folder,patch.object(news,'SITE_URL',self.url.rstrip('/')):
+            news.build_site(stories,now,folder)
+            files={str(p.relative_to(folder)):p.read_bytes() for p in Path(folder).rglob('*') if p.is_file()}
+        async def response(route):
+            path=urlsplit(route.request.url).path.lstrip('/') or 'index.html'
+            if path in files:await route.fulfill(body=files[path],content_type=mimetypes.guess_type(path)[0] or 'text/plain')
+            else:await route.continue_()
+        await self.page.route(self.url+'**',response)
+        return files
+
+    async def test_daily_reading_pages_share_preferences_and_work_in_mobile(self):
+        files=await self.reading_pages_fixture()
+        await self.page.goto(self.url+'hoy.html')
+        self.assertEqual(await self.page.locator('h1').inner_text(),'Tu día, en perspectiva')
+        self.assertEqual(await self.page.locator('#resumen .reading-card').count(),5)
+        await self.page.locator('#reading-size').select_option('small')
+        await self.page.locator('#reading-theme').click()
+        await self.page.reload()
+        self.assertEqual(await self.page.locator('#reading-size').input_value(),'small')
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+        await self.page.locator('#seguimiento h3 a').first.click()
+        self.assertTrue(await self.page.locator('#publicaciones').is_visible())
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+        for width in (320,390,768,1440,2560):
+            await self.page.set_viewport_size({'width':width,'height':900})
+            await self.page.wait_for_timeout(70)
+            self.assertFalse(await self.page.evaluate('document.documentElement.scrollWidth>innerWidth+1'),width)
+            self.assertGreaterEqual((await self.page.locator('#reading-theme').bounding_box())['height'],44)
+        await self.page.locator('.reading-brand').click()
+        self.assertEqual(await self.page.locator('#text-size').input_value(),'small')
+        self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+
+    async def test_reading_preferences_apply_before_delayed_page_script(self):
+        files=await self.reading_pages_fixture()
+        await self.page.evaluate("localStorage.setItem('noticias:theme:v1','dark');localStorage.setItem('noticias:text-size:v1','large')")
+        ready=asyncio.Event()
+        async def delayed(route):
+            await ready.wait()
+            await route.fulfill(content_type='text/javascript',body=files['reading-pages.js'])
+        await self.page.route(self.url+'reading-pages.js',delayed)
+        topic=next(name for name in files if name.startswith('temas/') and name.endswith('.html'))
+        for path in ('hoy.html',topic):
+            ready.clear()
+            try:
+                await self.page.goto(self.url+path,wait_until='commit')
+                await self.page.locator('h1').wait_for(state='visible')
+                self.assertEqual(await self.page.locator('html').get_attribute('data-theme'),'dark')
+                self.assertEqual(await self.page.locator('body').evaluate('e=>getComputedStyle(e).fontSize'),'18px')
+            finally:
+                ready.set()
+                await self.page.wait_for_load_state('domcontentloaded')
+
     async def test_reading_preferences_include_small_text_columns_and_section_limit(self):
         await self.dense_reading_fixture()
         await self.toggle_view_options()
@@ -853,13 +977,14 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
     async def test_menu_covers_all_published_categories_and_real_targets(self):
         missing = await self.page.evaluate("""() => {
           const categories = new Set([...document.querySelectorAll('main h2 a[data-key],main h3 a[data-key]')].map(a=>a.dataset.key));
-          // Salud se publica dentro de Ciencia y tecnología, sin entrada propia en el menú.
-          return [...categories].filter(key=>key!=='salud-ciencia'&&!document.querySelector('#site-nav a[href="#cat-'+key+'"]'));
+          const parents={'salud-ciencia':'tecnologia','medioambiente':'tecnologia','politica':'nacional','regiones':'nacional'};
+          return [...categories].filter(key=>!document.querySelector('#site-nav a[href="#cat-'+(parents[key]||key)+'"]'));
         }""")
         self.assertEqual(missing, [])
         self.assertTrue(await self.page.evaluate("""() => [...document.querySelectorAll('#site-nav a')]
-          .every(a=>document.getElementById(a.hash.slice(1)))"""))
-        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-medioambiente"]').inner_text(), 'Medioambiente')
+          .every(a=>!a.hash||document.getElementById(a.hash.slice(1)))"""))
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-medioambiente"]').count(), 0)
+        self.assertEqual(await self.page.locator('#site-nav a[href="#cat-nacional"]').inner_text(), 'Chile')
         self.assertEqual(await self.page.locator('#site-nav a[href="#cat-salud-ciencia"]').count(), 0)
         self.assertEqual(await self.page.locator('#site-nav a[href="#cat-tecnologia"]').inner_text(), 'Ciencia y tecnología')
 
@@ -867,7 +992,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         for width in (1440, 390):
             await self.page.set_viewport_size({'width': width, 'height': 1000})
             await self.page.reload()
-            for category in ('medioambiente', 'tecnologia'):
+            for category in ('nacional', 'tecnologia'):
                 if width < 1024:
                     await self.page.locator('#menu-toggle').click()
                 link = self.page.locator('#site-nav a[href="#cat-' + category + '"]')
@@ -882,7 +1007,8 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
         await self.toggle_view_options()
         await self.page.locator('#category-preference').select_option('cultura')
         await self.toggle_view_options()
-        await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
+        await self.page.locator('#site-nav a[href="#cat-tecnologia"]').click()
+        await self.page.locator('#cat-tecnologia [data-topic-filter="medioambiente"]').click()
         self.assertTrue(await self.page.locator('#cat-medioambiente').is_visible())
         self.assertEqual(await self.page.locator('#category-preference').input_value(), '')
         await self.toggle_view_options()
@@ -905,7 +1031,7 @@ class ReaderBrowserTests(unittest.IsolatedAsyncioTestCase):
             self.assertTrue(await target.is_visible())
 
     async def test_back_to_topic_hash_preserves_later_category_filter(self):
-        await self.page.locator('#site-nav a[href="#cat-medioambiente"]').click()
+        await self.page.goto(self.url+'#cat-medioambiente')
         await self.toggle_view_options()
         await self.page.locator('#category-preference').select_option('cultura')
         await self.toggle_view_options()

@@ -27,12 +27,31 @@ class PresentationGroupsTests(unittest.TestCase):
         self.assertEqual(result["tecnologia"], technology[:20] + health)
         self.assertEqual(len(result["tecnologia"]), 24)
 
-    def test_environment_is_its_own_section(self):
-        # Decisión del usuario (2026-10-25): Medioambiente no se integra en Nacional.
+    def test_environment_joins_science_without_entering_chile(self):
         national = stories("nacional", 3)
         climate = stories("medioambiente", 2)
         result = group_sections({"nacional": national, "medioambiente": climate})
-        self.assertEqual(result, {"nacional": national, "medioambiente": climate})
+        self.assertEqual(result, {"nacional": national, "tecnologia": climate})
+
+    def test_chile_preserves_politics_and_regions_under_one_section(self):
+        national, politics, regions = (stories(key, 20) for key in ('nacional', 'politica', 'regiones'))
+        data = {'nacional': national, 'politica': politics, 'regiones': regions}
+        before = copy.deepcopy(data)
+        grouped = group_sections(data)
+        self.assertEqual(list(grouped), ['nacional'])
+        self.assertEqual(len(grouped['nacional']), 24)
+        self.assertEqual([s['category'] for s in grouped['nacional']].count('politica'), 4)
+        self.assertEqual([s['category'] for s in grouped['nacional']].count('regiones'), 4)
+        self.assertEqual(data, before)
+        short = group_sections(data, limit=6)['nacional']
+        self.assertEqual(len(short), 6)
+        self.assertEqual({s['category'] for s in short}, set(data))
+
+    def test_multiple_children_work_without_a_parent_category(self):
+        regions, politics = stories('regiones', 2), stories('politica', 2)
+        grouped = group_sections({'regiones': regions, 'politica': politics})
+        self.assertEqual(list(grouped), ['nacional'])
+        self.assertEqual({id(s) for s in grouped['nacional']}, {id(s) for s in regions+politics})
 
     def test_group_uses_earliest_member_position_without_overwriting(self):
         science = stories("salud-ciencia", 2)
@@ -95,10 +114,12 @@ class PresentationGroupsTests(unittest.TestCase):
 
     def test_canonical_sections_and_labels_only_change_presentation(self):
         self.assertEqual(canonical_section("salud-ciencia"), "tecnologia")
-        self.assertEqual(canonical_section("medioambiente"), "medioambiente")
+        self.assertEqual(canonical_section("medioambiente"), "tecnologia")
+        self.assertEqual(canonical_section("politica"), "nacional")
+        self.assertEqual(canonical_section("regiones"), "nacional")
         self.assertEqual(canonical_section("cultura"), "cultura")
         # Un solo nombre por tema: los rótulos vienen de CATEGORIES.
-        self.assertEqual(PRESENTATION_LABELS, {})
+        self.assertEqual(PRESENTATION_LABELS, {'nacional':'Chile','internacional':'Mundo'})
 
 
 if __name__ == "__main__":
