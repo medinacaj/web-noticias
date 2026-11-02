@@ -510,5 +510,12 @@ if __name__ == "__main__":
     parser.add_argument("--html", default="public/index.html")
     parser.add_argument("--output", default="artifacts/visual-qa")
     args = parser.parse_args()
-    asyncio.run(check(Path(args.html), Path(args.output)))
+    try:
+        asyncio.run(check(Path(args.html), Path(args.output)))
+    except Exception as error:
+        # El mensaje también queda en las anotaciones de GitHub; conserva el
+        # fallo y su traceback. Escapar texto de titulares/DOM en el protocolo.
+        message = str(error).replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+        print('::error::' + message, flush=True)
+        raise
 
