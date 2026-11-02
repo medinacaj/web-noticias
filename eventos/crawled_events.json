@@ -1,20 +1,65 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-01T19:15:11",
+  "generated_at": "2026-11-02T19:45:39",
   "summary": {
-    "sources_attempted": 3,
-    "sources_ok": 3,
-    "sources_failed": 0,
-    "events_found": 0,
-    "events_inserted": 0,
+    "sources_attempted": 40,
+    "sources_ok": 29,
+    "sources_failed": 11,
+    "events_found": 2,
+    "events_inserted": 2,
     "events_merged": 0,
-    "possible_events": 0,
-    "quarantined_candidates": 0,
+    "possible_events": 29,
+    "quarantined_candidates": 2,
     "candidates": 0,
-    "revalidation_attempts": 0,
-    "revalidated_ok": 0,
-    "errors": [],
-    "skipped_by_cadence": 52
+    "revalidation_attempts": 2,
+    "revalidated_ok": 2,
+    "errors": [
+      {
+        "source": "Municipalidad de San Pedro de la Paz",
+        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz"
+      },
+      {
+        "source": "Municipalidad de Talcahuano",
+        "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+      },
+      {
+        "source": "Municipalidad de Tomé",
+        "error": "HTTP 403"
+      },
+      {
+        "source": "Municipalidad de Lebu",
+        "error": "HTTP 403"
+      },
+      {
+        "source": "Municipalidad de Los Álamos",
+        "error": "HTTP 403"
+      },
+      {
+        "source": "Municipalidad de Tirúa",
+        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
+      },
+      {
+        "source": "Municipalidad de Antuco",
+        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco"
+      },
+      {
+        "source": "Municipalidad de Hualqui",
+        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Hualqui"
+      },
+      {
+        "source": "Municipalidad de Quilaco",
+        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco"
+      },
+      {
+        "source": "Municipalidad de Curanilahue",
+        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue"
+      },
+      {
+        "source": "Municipalidad de Concepción",
+        "error": "URLError: <urlopen error timed out>"
+      }
+    ],
+    "skipped_by_cadence": 15
   },
   "events": [
     {
@@ -39,7 +84,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-01T19:15:11",
+      "discovered_at": "2026-11-02T19:37:03",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -51,7 +96,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T19:15:11"
+          "seen_at": "2026-11-02T19:37:03"
         }
       ],
       "changes": []
@@ -78,7 +123,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://images.ligup2.com/eyJidWNrZXQiOiJsaWd1cC12MiIsImtleSI6Im5hY2ltaWVudG8vcGhvdG9zLzc5MjkyX3RhbGxlcl9kZV9jYWxlc3RlbmlhXzIwMjZfd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzYyLCJoZWlnaHQiOjI4MywiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsfX0=",
-      "discovered_at": "2026-11-01T19:15:11",
+      "discovered_at": "2026-11-02T19:34:59",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -90,7 +135,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-01T19:15:11"
+          "seen_at": "2026-11-02T19:34:59"
         }
       ],
       "changes": []
@@ -98,13 +143,13 @@
   ],
   "runs": [
     {
-      "source_name": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "started_at": "2026-11-01T19:14:30",
-      "finished_at": "2026-11-01T19:15:11",
+      "source_name": "Corcudec (Teatro UdeC)",
+      "source_url": "https://www.corcudec.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:55",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 25,
+      "pages_fetched": 8,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -112,10 +157,10 @@
       "error": null
     },
     {
-      "source_name": "Biobío Cultura (Seremi) — RSS",
-      "source_url": "https://www.cultura.gob.cl/feed/",
-      "started_at": "2026-11-01T19:14:30",
-      "finished_at": "2026-11-01T19:14:32",
+      "source_name": "Corcudec / Teatro Universidad de Concepción — Ticketplus",
+      "source_url": "https://ticketplus.cl/c/corporacion-cultural-universidad-de-concepcion",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:45",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -126,13 +171,531 @@
       "error": null
     },
     {
-      "source_name": "Corcudec (Teatro UdeC)",
-      "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-11-01T19:14:30",
-      "finished_at": "2026-11-01T19:14:40",
+      "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:37:03",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 8,
+      "pages_fetched": 15,
+      "events_found": 1,
+      "events_inserted": 1,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Alto Biobío",
+      "source_url": "https://munialtobiobio.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:37:17",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 21,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Antuco",
+      "source_url": "https://www.antuco.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:34:20",
+      "ok": 0,
+      "http_status": 200,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco"
+    },
+    {
+      "source_name": "Municipalidad de Arauco",
+      "source_url": "https://muniarauco.cl/cultura/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:25",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 1,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Cabrero",
+      "source_url": "https://www.cabrero.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:34:23",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 2,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Cañete",
+      "source_url": "https://municanete.cl/v2/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:47",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 10,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Chiguayante",
+      "source_url": "https://chiguayante.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:32:51",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 5,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Concepción",
+      "source_url": "https://www.concepcion.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:38:47",
+      "ok": 0,
+      "http_status": null,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "URLError: <urlopen error timed out>"
+    },
+    {
+      "source_name": "Municipalidad de Contulmo",
+      "source_url": "https://www.contulmo.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:45",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 3,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Coronel",
+      "source_url": "https://www.coronel.cl/noticias/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:05",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 2,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 1,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Curanilahue",
+      "source_url": "https://www.curanilahue.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:52",
+      "ok": 0,
+      "http_status": null,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue"
+    },
+    {
+      "source_name": "Municipalidad de Florida",
+      "source_url": "https://muniflorida.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:20",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 1,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Hualpén",
+      "source_url": "http://www.hualpenciudad.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:15",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 18,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Hualqui",
+      "source_url": "https://www.munihualqui.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:34:51",
+      "ok": 0,
+      "http_status": 200,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Hualqui"
+    },
+    {
+      "source_name": "Municipalidad de Laja",
+      "source_url": "https://www.munilaja.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:34:44",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 9,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Lebu",
+      "source_url": "https://lebu.cl/eventos/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:47",
+      "ok": 0,
+      "http_status": 403,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "source_name": "Municipalidad de Los Álamos",
+      "source_url": "https://munilosalamos.cl/categoria/noticias/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:47",
+      "ok": 0,
+      "http_status": 403,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "source_name": "Municipalidad de Los Ángeles",
+      "source_url": "https://www.losangeles.cl/category/noticias/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:34:14",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 7,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Lota",
+      "source_url": "https://lota.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:17",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 25,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Mulchén",
+      "source_url": "https://www.munimulchen.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:34:47",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 1,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Nacimiento",
+      "source_url": "https://www.nacimiento.cl/actividades",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:34:59",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 25,
+      "events_found": 1,
+      "events_inserted": 1,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Negrete",
+      "source_url": "https://www.muninegrete.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:35:29",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 9,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Penco",
+      "source_url": "https://penco.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:32:52",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 2,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Quilaco",
+      "source_url": "https://www.quilaco.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:35:12",
+      "ok": 0,
+      "http_status": null,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco"
+    },
+    {
+      "source_name": "Municipalidad de Quilleco",
+      "source_url": "https://municipalidadquilleco.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:35:18",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 1,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de San Pedro de la Paz",
+      "source_url": "https://www.sanpedrodelapaz.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:32:42",
+      "ok": 0,
+      "http_status": null,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz"
+    },
+    {
+      "source_name": "Municipalidad de San Rosendo",
+      "source_url": "https://www.municipalidadsanrosendo.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:07",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 17,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 18,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Santa Bárbara",
+      "source_url": "https://www.santabarbara.cl/noticias/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:35:53",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 10,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Santa Juana",
+      "source_url": "https://www.santajuana.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:30",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 3,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Talcahuano",
+      "source_url": "https://www.talcahuano.cl/actividades",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:32:48",
+      "ok": 0,
+      "http_status": null,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    },
+    {
+      "source_name": "Municipalidad de Tirúa",
+      "source_url": "https://www.tirua.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:33:50",
+      "ok": 0,
+      "http_status": 200,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
+    },
+    {
+      "source_name": "Municipalidad de Tomé",
+      "source_url": "https://www.tome.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:32:51",
+      "ok": 0,
+      "http_status": 403,
+      "pages_fetched": 0,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "source_name": "Municipalidad de Tucapel",
+      "source_url": "https://www.munitucapel.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:02",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 4,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Yumbel",
+      "source_url": "https://yumbel.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:25",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 4,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/todos",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:45:39",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 30,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 10,
+      "error": null
+    },
+    {
+      "source_name": "Teatro Biobío",
+      "source_url": "https://teatrobiobio.cl/",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:44",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 2,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Teatro Biobío — Ticketplus",
+      "source_url": "https://ticketplus.cl/en/companies/teatro-biobio",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:36:44",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 1,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Ticketplus — Región del Biobío",
+      "source_url": "https://ticketplus.cl/en/states/region-del-bio-bio",
+      "started_at": "2026-11-02T19:32:38",
+      "finished_at": "2026-11-02T19:37:28",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 30,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -156,15 +719,15 @@
       "refresh_interval_hours": 48
     },
     "Corcudec (Teatro UdeC)": {
-      "last_checked_at": "2026-11-01T19:14:40",
-      "last_success_at": "2026-11-01T19:14:40",
+      "last_checked_at": "2026-11-02T19:36:55",
+      "last_success_at": "2026-11-02T19:36:55",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Corcudec / Teatro Universidad de Concepción — Ticketplus": {
-      "last_checked_at": "2026-11-01T16:05:53",
-      "last_success_at": "2026-11-01T16:05:53",
+      "last_checked_at": "2026-11-02T19:36:45",
+      "last_success_at": "2026-11-02T19:36:45",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -191,8 +754,8 @@
       "refresh_interval_hours": 48
     },
     "Festival Internacional de Teatro del Biobío (FTB)": {
-      "last_checked_at": "2026-11-01T16:06:01",
-      "last_success_at": "2026-11-01T16:06:01",
+      "last_checked_at": "2026-11-02T19:37:03",
+      "last_success_at": "2026-11-02T19:37:03",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -219,232 +782,232 @@
       "refresh_interval_hours": 48
     },
     "Municipalidad de Alto Biobío": {
-      "last_checked_at": "2026-11-01T04:10:23",
-      "last_success_at": "2026-11-01T04:10:23",
+      "last_checked_at": "2026-11-02T19:37:17",
+      "last_success_at": "2026-11-02T19:37:17",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Antuco": {
-      "last_checked_at": "2026-11-01T04:07:35",
+      "last_checked_at": "2026-11-02T19:34:20",
       "last_success_at": null,
       "last_http_status": 200,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Arauco": {
-      "last_checked_at": "2026-11-01T04:07:05",
-      "last_success_at": "2026-11-01T04:07:05",
+      "last_checked_at": "2026-11-02T19:33:25",
+      "last_success_at": "2026-11-02T19:33:25",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Cabrero": {
-      "last_checked_at": "2026-11-01T04:07:37",
-      "last_success_at": "2026-11-01T04:07:37",
+      "last_checked_at": "2026-11-02T19:34:23",
+      "last_success_at": "2026-11-02T19:34:23",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Cañete": {
-      "last_checked_at": "2026-11-01T04:06:17",
-      "last_success_at": "2026-11-01T04:06:17",
+      "last_checked_at": "2026-11-02T19:33:47",
+      "last_success_at": "2026-11-02T19:33:47",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Chiguayante": {
-      "last_checked_at": "2026-11-01T04:05:16",
-      "last_success_at": "2026-11-01T04:05:16",
+      "last_checked_at": "2026-11-02T19:32:51",
+      "last_success_at": "2026-11-02T19:32:51",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Concepción": {
-      "last_checked_at": "2026-11-01T04:11:13",
+      "last_checked_at": "2026-11-02T19:38:47",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Contulmo": {
-      "last_checked_at": "2026-11-01T04:06:31",
-      "last_success_at": "2026-11-01T04:06:31",
+      "last_checked_at": "2026-11-02T19:33:45",
+      "last_success_at": "2026-11-02T19:33:45",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Coronel": {
-      "last_checked_at": "2026-11-01T04:05:32",
-      "last_success_at": "2026-11-01T04:05:32",
+      "last_checked_at": "2026-11-02T19:33:05",
+      "last_success_at": "2026-11-02T19:33:05",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Curanilahue": {
-      "last_checked_at": "2026-11-01T04:09:40",
+      "last_checked_at": "2026-11-02T19:36:52",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Florida": {
-      "last_checked_at": "2026-11-01T04:05:54",
-      "last_success_at": "2026-11-01T04:05:54",
+      "last_checked_at": "2026-11-02T19:33:20",
+      "last_success_at": "2026-11-02T19:33:20",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Hualpén": {
-      "last_checked_at": "2026-11-01T04:05:39",
-      "last_success_at": "2026-11-01T04:05:39",
+      "last_checked_at": "2026-11-02T19:33:15",
+      "last_success_at": "2026-11-02T19:33:15",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Hualqui": {
-      "last_checked_at": "2026-11-01T04:07:29",
+      "last_checked_at": "2026-11-02T19:34:51",
       "last_success_at": null,
       "last_http_status": 200,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Laja": {
-      "last_checked_at": "2026-11-01T04:08:01",
-      "last_success_at": "2026-11-01T04:08:01",
+      "last_checked_at": "2026-11-02T19:34:44",
+      "last_success_at": "2026-11-02T19:34:44",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Lebu": {
-      "last_checked_at": "2026-11-01T04:07:05",
+      "last_checked_at": "2026-11-02T19:33:47",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Los Álamos": {
-      "last_checked_at": "2026-11-01T04:07:05",
+      "last_checked_at": "2026-11-02T19:33:47",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Los Ángeles": {
-      "last_checked_at": "2026-11-01T04:07:40",
-      "last_success_at": "2026-11-01T04:07:40",
+      "last_checked_at": "2026-11-02T19:34:14",
+      "last_success_at": "2026-11-02T19:34:14",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Lota": {
-      "last_checked_at": "2026-11-01T04:05:36",
-      "last_success_at": "2026-11-01T04:05:36",
+      "last_checked_at": "2026-11-02T19:33:17",
+      "last_success_at": "2026-11-02T19:33:17",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Mulchén": {
-      "last_checked_at": "2026-11-01T04:07:49",
-      "last_success_at": "2026-11-01T04:07:49",
+      "last_checked_at": "2026-11-02T19:34:47",
+      "last_success_at": "2026-11-02T19:34:47",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Nacimiento": {
-      "last_checked_at": "2026-11-01T04:08:02",
-      "last_success_at": "2026-11-01T04:08:02",
+      "last_checked_at": "2026-11-02T19:34:59",
+      "last_success_at": "2026-11-02T19:34:59",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Negrete": {
-      "last_checked_at": "2026-11-01T04:08:35",
-      "last_success_at": "2026-11-01T04:08:35",
+      "last_checked_at": "2026-11-02T19:35:29",
+      "last_success_at": "2026-11-02T19:35:29",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Penco": {
-      "last_checked_at": "2026-11-01T04:05:19",
-      "last_success_at": "2026-11-01T04:05:19",
+      "last_checked_at": "2026-11-02T19:32:52",
+      "last_success_at": "2026-11-02T19:32:52",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Quilaco": {
-      "last_checked_at": "2026-11-01T04:08:15",
+      "last_checked_at": "2026-11-02T19:35:12",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Quilleco": {
-      "last_checked_at": "2026-11-01T04:08:20",
-      "last_success_at": "2026-11-01T04:08:20",
+      "last_checked_at": "2026-11-02T19:35:18",
+      "last_success_at": "2026-11-02T19:35:18",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de San Pedro de la Paz": {
-      "last_checked_at": "2026-11-01T04:05:08",
+      "last_checked_at": "2026-11-02T19:32:42",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de San Rosendo": {
-      "last_checked_at": "2026-11-01T04:09:13",
-      "last_success_at": "2026-11-01T04:09:13",
+      "last_checked_at": "2026-11-02T19:36:07",
+      "last_success_at": "2026-11-02T19:36:07",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Santa Bárbara": {
-      "last_checked_at": "2026-11-01T04:08:59",
-      "last_success_at": "2026-11-01T04:08:59",
+      "last_checked_at": "2026-11-02T19:35:53",
+      "last_success_at": "2026-11-02T19:35:53",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Santa Juana": {
-      "last_checked_at": "2026-11-01T04:05:46",
-      "last_success_at": "2026-11-01T04:05:46",
+      "last_checked_at": "2026-11-02T19:33:30",
+      "last_success_at": "2026-11-02T19:33:30",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Talcahuano": {
-      "last_checked_at": "2026-11-01T04:05:15",
+      "last_checked_at": "2026-11-02T19:32:48",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Tirúa": {
-      "last_checked_at": "2026-11-01T04:07:17",
+      "last_checked_at": "2026-11-02T19:33:50",
       "last_success_at": null,
       "last_http_status": 200,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Tomé": {
-      "last_checked_at": "2026-11-01T04:05:16",
+      "last_checked_at": "2026-11-02T19:32:51",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 1,
+      "consecutive_failures": 2,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Tucapel": {
-      "last_checked_at": "2026-11-01T04:09:07",
-      "last_success_at": "2026-11-01T04:09:07",
+      "last_checked_at": "2026-11-02T19:36:02",
+      "last_success_at": "2026-11-02T19:36:02",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Yumbel": {
-      "last_checked_at": "2026-11-01T04:09:33",
-      "last_success_at": "2026-11-01T04:09:33",
+      "last_checked_at": "2026-11-02T19:36:25",
+      "last_success_at": "2026-11-02T19:36:25",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
@@ -471,8 +1034,8 @@
       "refresh_interval_hours": 48
     },
     "PuntoTicket — todos los eventos": {
-      "last_checked_at": "2026-11-01T16:06:28",
-      "last_success_at": "2026-11-01T16:06:28",
+      "last_checked_at": "2026-11-02T19:45:39",
+      "last_success_at": "2026-11-02T19:45:39",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -499,22 +1062,22 @@
       "refresh_interval_hours": 48
     },
     "Teatro Biobío": {
-      "last_checked_at": "2026-11-01T16:06:13",
-      "last_success_at": "2026-11-01T16:06:13",
+      "last_checked_at": "2026-11-02T19:36:44",
+      "last_success_at": "2026-11-02T19:36:44",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Biobío — Ticketplus": {
-      "last_checked_at": "2026-11-01T16:05:55",
-      "last_success_at": "2026-11-01T16:05:55",
+      "last_checked_at": "2026-11-02T19:36:44",
+      "last_success_at": "2026-11-02T19:36:44",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Ticketplus — Región del Biobío": {
-      "last_checked_at": "2026-11-01T16:06:28",
-      "last_success_at": "2026-11-01T16:06:28",
+      "last_checked_at": "2026-11-02T19:37:28",
+      "last_success_at": "2026-11-02T19:37:28",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -528,825 +1091,23 @@
     }
   },
   "skipped_by_cadence": [
-    "Municipalidad de Concepción",
-    "Municipalidad de Talcahuano",
-    "Municipalidad de Hualpén",
-    "Municipalidad de San Pedro de la Paz",
-    "Municipalidad de Chiguayante",
-    "Municipalidad de Penco",
-    "Municipalidad de Tomé",
-    "Municipalidad de Coronel",
-    "Municipalidad de Lota",
-    "Municipalidad de Hualqui",
-    "Municipalidad de Santa Juana",
-    "Municipalidad de Florida",
-    "Municipalidad de Arauco",
-    "Municipalidad de Cañete",
-    "Municipalidad de Contulmo",
-    "Municipalidad de Curanilahue",
-    "Municipalidad de Lebu",
-    "Municipalidad de Los Álamos",
-    "Municipalidad de Tirúa",
-    "Municipalidad de Los Ángeles",
-    "Municipalidad de Antuco",
-    "Municipalidad de Cabrero",
-    "Municipalidad de Laja",
-    "Municipalidad de Mulchén",
-    "Municipalidad de Nacimiento",
-    "Municipalidad de Negrete",
-    "Municipalidad de Quilaco",
-    "Municipalidad de Quilleco",
-    "Municipalidad de San Rosendo",
-    "Municipalidad de Santa Bárbara",
-    "Municipalidad de Tucapel",
-    "Municipalidad de Yumbel",
-    "Municipalidad de Alto Biobío",
-    "Teatro Biobío",
-    "Teatro Biobío — Ticketplus",
-    "Corcudec / Teatro Universidad de Concepción — Ticketplus",
-    "Festival Internacional de Teatro del Biobío (FTB)",
-    "Ticketplus — Región del Biobío",
-    "PuntoTicket — todos los eventos",
     "Passline",
     "TuAcceso",
     "PrimeTicket",
     "Noticias UdeC",
     "Extensión Universidad del Bío-Bío",
     "Ministerio de las Culturas — Agenda cultural",
+    "BioBioChile — Región del Biobío",
     "Diario Concepción — Cultura",
     "Sabes.cl",
     "G5 Noticias",
     "TVU Prensa",
     "La Tribuna (Los Ángeles)",
     "El Contraste (Los Ángeles)",
-    "Radio UdeC"
+    "Radio UdeC",
+    "Biobío Cultura (Seremi) — RSS"
   ],
   "possible_events": [
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "El Gobierno declaró emergencia preventiva en 15 regiones por la amenaza de floraciones algales nocivas o marea roja. La medida regirá entre el 1 de noviembre de 2026 y el 30 de junio de 2027, y busca reforzar el monitoreo y la coordinación ante posibles episodios asociados al fenómeno de El Niño. El anuncio se realizó tras detectarse marea roja en Bahía Terao, en Chonchi, Chiloé.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/27/gobierno-declara-emergencia-preventiva-en-15-regiones-ante-amenaza-de-marea-roja.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "¿Y el 1 de noviembre? Este miércoles 1 de noviembre, en todo Chile y gran parte del mundo se celebra el feriado religioso llamado Día de Todos los Santos, una jornada en que los vivos homenajean a los fallecidos. Al menos en nuestro país, esta jornada suele congregar a miles de personas en los cementerios a lo largo de todo el territorio, quienes llegan para recordar a familiares, amigos y toros.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/31/abriran-los-supermercados-el-doble-feriado-como-funcionara-el-comercio-este-fin-de-semana.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "Mariah Carey dio inicio a la temporada navideña el 1 de noviembre con un video que mezcló Halloween, punk rock y Navidad. La cantante apareció con estética gótica interpretando «Hermit» y, al llegar la medianoche, lanzó su clásico “It’s tiiiiiime”. Luego cambió a un atuendo rojo sobre un árbol gigante mientras sonaba «All I Want for Christmas Is You». La “descongelación” es una tradición viral de la artista, vinculada a su éxito de 1994.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "Y aunque la celebración de este año ya terminó, Klum parece no tomarse demasiado descanso: en conversación con Vogue aseguró que el 1 de noviembre ya comienza a reunir ideas para la siguiente edición.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 00:09",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 00:09",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 01:43",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 01:43",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 01:43",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 06:16",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 06:16",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 07:20",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 07:20",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 07:20",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 07:58",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 07:58",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 09:00",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 09:00",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 09:00",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 09:56",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 09:56",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 10:45",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 10:45",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 11:51",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 11:51",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 12:16",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 12:16",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 12:55",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 12:55",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 13:22",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 13:22",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 13:50",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 13:50",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 14:39",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 14:39",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 Noviembre, 2026 | 15:41",
-      "raw_text": "Domingo 01 Noviembre, 2026 | 15:41",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 00:09",
-      "raw_text": "Domingo 01 noviembre de 2026 | 00:09",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/jennifer-lawrence-denuncia-que-hubo-gente-en-el-set-durante-escena-de-desnudo-con-a-robert-pattinson.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 07:58",
-      "raw_text": "Domingo 01 noviembre de 2026 | 07:58",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/mauricio-pinilla-enfrenta-seis-demandas-de-primus-capital-por-deudas-que-superan-los-1-600-millones.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 09:00",
-      "raw_text": "Domingo 01 noviembre de 2026 | 09:00",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/la-reina-de-halloween-lo-hizo-de-nuevo-heidi-klum-sorprende-con-grotesco-disfraz-de-su-mano-cercenada.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 10:45",
-      "raw_text": "Domingo 01 noviembre de 2026 | 10:45",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/01/el-multiverso-se-descontrolo-pedro-pascal-y-robert-downey-jr-sorprenden-con-cambio-de-personajes.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 11:51",
-      "raw_text": "Domingo 01 noviembre de 2026 | 11:51",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/protagonistas-del-iconico-videoclip-crazy-se-reencontraron-para-presentar-el-regreso-de-aerosmith.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 12:16",
-      "raw_text": "Domingo 01 noviembre de 2026 | 12:16",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/asi-fue-el-descongelamiento-de-mariah-carey-cantante-dio-inicio-a-la-navidad-con-particular-video.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 12:55",
-      "raw_text": "Domingo 01 noviembre de 2026 | 12:55",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/01/martha-stewart-la-guru-estadounidense-del-hogar-borra-polemica-foto-de-halloween-tras-criticas.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 01 noviembre de 2026 | 13:22",
-      "raw_text": "Domingo 01 noviembre de 2026 | 13:22",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/01/motosierra-en-la-tv-chilena-otro-programa-sale-del-aire-y-deja-a-varios-rostros-sin-pantalla.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "desde el 1 de noviembre de 2026 hasta el 30 de junio de 2027",
-      "raw_text": "desde el 1 de noviembre de 2026 hasta el 30 de junio de 2027",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/nacional/chile/2026/10/27/gobierno-declara-emergencia-preventiva-en-15-regiones-ante-amenaza-de-marea-roja.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ante riesgo de marea roja: Gobierno declara emergencia preventiva en 15 regiones del país",
-      "raw_text": "El Gobierno declaró emergencia preventiva en 15 regiones del país ante el riesgo de marea roja, es decir, floraciones de algas nocivas. Esta medida se extenderá desde el 1 de noviembre de 2026 hasta el 30 de junio de 2027.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/ciudad/2026/10/27/emergencia-preventiva-floraciones-algales-nocivas.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Domingo 1 de noviembre | 16:30 horas:",
-      "raw_text": "Domingo 1 de noviembre | 16:30 horas:",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/24/desde-talleres-en-vivo-hasta-la-hora-del-cuento-revisa-la-completa-programacion-del-pabellon-cultural-de-la-expo-quillota-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Gobierno se anticipa a riesgos de marea roja y declara emergencia preventiva en la Región de Valparaíso",
-      "raw_text": "La decisión, que regirá entre el 1 de noviembre de 2026 y el 30 de junio de 2027, permitirá fortalecer la preparación y coordinación de las instituciones responsables de enfrentar este fenómeno, reforzando el monitoreo, el intercambio de información y la capacidad de respuesta ante eventuales contingencias que pudieran afectar la salud de las personas, los ecosistemas y las actividades económicas vinculadas al mar.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/30/gobierno-se-anticipa-a-riesgos-de-marea-roja-y-declara-emergencia-preventiva-en-la-region-de-valparaiso/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Feria de las Flores reúne a 16 productores en la Plaza de Armas de Yumbel",
-      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/economia/2026/10/31/feria-de-las-flores-reune-a-16-productores-en-la-plaza-de-armas-de-yumbel.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "feria de las flores",
-      "raw_text": "La segunda versión del evento contempla la venta de flores de corte, arreglos florales, plantas ornamentales y suculentas. La actividad se extenderá hasta este domingo 1 de noviembre.",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/tag/feria-de-las-flores/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Alex Serra en Club Chocolate, Barrio Bellavista",
-      "raw_text": "Club Chocolate, Barrio Bellavista Ernesto Pinto Lagarrigue 192, Barrio Bellavista, Recoleta Recoleta",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/alex-serra-club-chocolate-nov-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Circo Pastelito y Tachuela Chico en Mall Cenco Florida",
-      "raw_text": "Compra tus entradas para Circo Pastelito y Tachuela Chico en PuntoTicket.com",
-      "date": "2026-11-01",
-      "commune": "Florida",
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/circo-pastelito-festival-de-circo?utm_medium=organic&utm_source=microformat",
-      "reason": "Ticketera sin comuna fija: posible homónimo fuera de Biobío; revisar región y recinto"
-    },
-    {
-      "title": "Dillom en Cúpula Parque O'Higgins",
-      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/FNA387?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Universidad Católica vs. Universidad de Chile en Claro Arena",
-      "raw_text": "Claro Arena Camino Las Flores 13000, Las Condes Las Condes",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/universidad-catolica-vs-udechile-ligaprimera-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Domingo 01 de noviembre",
-      "raw_text": "Domingo 01 de noviembre",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/concierto-matinal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/nina-de-6-anos-fue-hospitalizada-tras-intoxicarse-con-cocaina-en-osorno-madre-quedo-en-prision-preventiva-junto-a-faccion-del-tren-de-aragua/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/festival-leufu-revela-su-cartel-para-tercera-edicion-jornada-musical-gratuita-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/rompen-una-de-las-obras-del-museo-del-prado-en-concepcion-exposicion-sufre-nuevo-ataque-a-dias-de-su-cierre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-leufu/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/03/a-solo-dos-dias-de-su-estreno-vandalizan-obra-de-la-historica-muestra-del-museo-del-prado-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "raw_text": "Sun, 01 Nov 2026 01:45:18 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/nina-de-6-anos-fue-hospitalizada-tras-intoxicarse-con-cocaina-en-osorno-madre-quedo-en-prision-preventiva-junto-a-faccion-del-tren-de-aragua/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/festival-leufu-revela-su-cartel-para-tercera-edicion-jornada-musical-gratuita-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/rompen-una-de-las-obras-del-museo-del-prado-en-concepcion-exposicion-sufre-nuevo-ataque-a-dias-de-su-cierre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/23/gore-biobio-sale-a-cobrar-dineros-a-ex-funcionarios-viajeros-tras-dictamen-de-contraloria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/28/regresa-el-mr-worldwide-pitbull-anuncio-concierto-en-chile-para-el-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/20/un-brindis-frente-al-escenario-festival-bamba-detalla-sus-zonas-de-descanso-gastronomia-y-cocteleria/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-leufu/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/03/a-solo-dos-dias-de-su-estreno-vandalizan-obra-de-la-historica-muestra-del-museo-del-prado-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/ex-funcionarios/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/sueldos-impagos-y-deudas-los-motivos-detras-del-supuesto-termino-del-programa-sin-filtros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/24/festival-de-vina-2027-en-problemas-artista-internacional-estaria-en-duda-tras-complicacion-en-negociaciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-bamba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "raw_text": "Sun, 01 Nov 2026 03:44:57 +0000",
-      "date": "2026-11-01",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
     {
       "title": "del evento desde el 2 de noviembre.",
       "raw_text": "del evento desde el 2 de noviembre.",
@@ -1381,6 +1142,15 @@
       "commune": null,
       "source": "Ministerio de las Culturas — Agenda cultural",
       "source_url": "https://www.cultura.gob.cl/eventos-actividades/festival-biobiocine-tendra-80-peliculas-y-una-amplia-programacion-gratuita-en-concepcion/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "2 Noviembre, 2026",
+      "raw_text": "2 Noviembre, 2026",
+      "date": "2026-11-02",
+      "commune": "Coronel",
+      "source": "Municipalidad de Coronel",
+      "source_url": "https://www.coronel.cl/noticias/coronel-cierra-proyecto-comedor-solidario-mas-preparado-que-fortalecio-el-funcionamiento-del-comedor-de-villa-esperanza-unida/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -2095,6 +1865,159 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/municipio/dom/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2026/10/segundo-llamado-a-licitacion-publica-del-programa-de-emprendedores/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2026/09/taller-abierto-a-la-comunidad-como-gestionar-financieramente-mi-negocio/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2025/02/con-inversion-historica-se-inician-obras-del-paseo-ferroviario-en-san-rosendo/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/tag/programa-red-local-de-apoyos-y-cuidados/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2025/02/programa-vinculos-malon-metodologico/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2025/03/feria-oferta-programatica-2025/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2025/02/prlac-actividad-moviendonos-al-ritmo-del-agua/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2024/12/san-rosendo-programa-de-accion-regional-contra-la-discriminacion/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2024/01/autoridades-realizan-visita-en-el-marco-del-trabajo-desarrollado-por-el-programa-red-local-de-apoyos-y-cuidados/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2023/12/prlac-san-rosendo-desarrollo-diversas-actividades-conmemorando-la-diversidad-por-construir-un-mundo-inclusivo/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2023/06/en-un-entorno-familiar-programa-red-local-de-apoyos-y-cuidados-realizo-mateada-recreativa/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2023/03/programa-red-local-de-apoyos-resalto-el-rol-de-cuidadoras-en-el-marco-del-mes-de-la-mujer/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2022/12/con-actividad-participativa-y-recreativa-se-conmemoro-dia-internacional-de-las-personas-con-discapacidad/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2022/04/seremi-de-desarrollo-social-visito-la-comuna-para-conocer-desarrollo-del-programa-red-local-de-apoyos-y-cuidados/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "raw_text": "¡FIESTA DE LA CARMELA! | 07 y 08 de Noviembre 2026",
+      "date": "2026-11-07",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/2021/10/llamado-a-concurso-para-cargo-gestora-comunitarioa-del-programa-red-local-de-apoyos-y-cuidados/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "After Piknic en Club Amanda",
       "raw_text": "Club Amanda Embajador Doussinague 1767, Vitacura Vitacura",
       "date": "2026-11-07",
@@ -2174,6 +2097,15 @@
       "source": "Municipalidad de Arauco",
       "source_url": "https://muniarauco.cl/evento/eleccion-junta-de-vecinos-villa-el-bosque/",
       "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+    },
+    {
+      "title": "San Rosendo, octubre de 2026; Municipalidad de San Rosendo invita los días sábado 07 y domingo 08 de noviembre en",
+      "raw_text": "San Rosendo, octubre de 2026; Municipalidad de San Rosendo invita los días sábado 07 y domingo 08 de noviembre en",
+      "date": "2026-11-08",
+      "commune": "San Rosendo",
+      "source": "Municipalidad de San Rosendo",
+      "source_url": "https://municipalidadsanrosendo.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
       "title": "San Rosendo, octubre de 2026; Municipalidad de San Rosendo invita los días sábado 07 y domingo 08 de noviembre en […]",
@@ -2428,6 +2360,51 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Contrastes Europeos en Teatro Zoco",
+      "raw_text": "Teatro Zoco AVENIDA LA DEHESA 1.500, Lo Barnechea Lo Barnechea",
+      "date": "2026-11-14",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/contrastes-europeos-teatro-zoco-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Coquimbo Unido vs OHiggins en Estadio Santa Laura - Universidad SEK",
+      "raw_text": "Estadio Santa Laura - Universidad SEK Julio Martínez Prádanos 1365, Independencia Independencia",
+      "date": "2026-11-14",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/coquimbo-vs-ohiggins-finalcopadelaliga-2026-stalaura?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Los Jaivas 2026 Gira 45 años alturas de Macchu Picchu en Teatro Provincial de Curico",
+      "raw_text": "Teatro Provincial de Curico carmen 560 3340000 Curicó, Curicó Curicó",
+      "date": "2026-11-14",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/los-jaivas-teatro-provincial-de-curico-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "SANDRA en Teatro Caupolicán",
+      "raw_text": "Teatro Caupolicán San Diego 850, Santiago Centro Santiago Centro",
+      "date": "2026-11-14",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/sandra-teatro-caupolican-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Youngers Discoteque en Salón Ballroom Enjoy Coquimbo",
+      "raw_text": "Salón Ballroom Enjoy Coquimbo Peñuelas Norte 56, Coquimbo Coquimbo",
+      "date": "2026-11-14",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/Youngers-Discoteque-coquimbo?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
       "title": "Agenda Cultural",
       "raw_text": "El lunes 14 de noviembre se presentará un concierto en homenaje al artista estadounidense Frank Sinatra, en el marco del aniversario número 59 de la Corporación Cultural Artistas del Acero. La presentación será gratis y abierta a todo el pú",
       "date": "2026-11-14",
@@ -2473,12 +2450,39 @@
       "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
     },
     {
+      "title": "Exotic Dolls Championship en Cúpula Parque O'Higgins",
+      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/exotic-dolls-championship-cupula-parque-ohiggins-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
       "title": "Feria del Sanguche 2026 en Parque Padre Hurtado",
       "raw_text": "Parque Padre Hurtado Av. Francisco Bilbao 8105, La Reina La Reina",
       "date": "2026-11-15",
       "commune": null,
       "source": "PuntoTicket — todos los eventos",
       "source_url": "https://www.puntoticket.com/evento/feria-del-sanguche-2026-parque-padre-hurtado-nov?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Pariente Fest en Arena Hipódromo",
+      "raw_text": "Arena Hipódromo Av. Hipodromo Chile 1715, Independencia Independencia",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/pariente-fest-arena-hipodromo-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "The Lemon Twigs en Club Chocolate, Barrio Bellavista",
+      "raw_text": "Club Chocolate, Barrio Bellavista Ernesto Pinto Lagarrigue 192, Barrio Bellavista, Recoleta Recoleta",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/the-lemon-twings-club-chocolate-nov-2026?utm_medium=organic&utm_source=microformat",
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
@@ -2507,6 +2511,15 @@
       "source": "Municipalidad de Arauco",
       "source_url": "https://muniarauco.cl/evento/eleccion-escuela-de-futbol-brisas-del-mar/",
       "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
+    },
+    {
+      "title": "Edo Caroe en Palermo Teatro Bar",
+      "raw_text": "Palermo Teatro Bar José Manuel Infante 1414, Providencia, Región Metropolitana, Chile, Providencia Providencia",
+      "date": "2026-11-16",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/edocaroe-palermo-nov?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "16 de noviembre para los pagos emitidos el 16 de febrero.",
@@ -2705,6 +2718,15 @@
       "source": "G5 Noticias",
       "source_url": "https://g5noticias.cl/2026/10/31/festicrin-2026-inicia-su-gira-de-conciertos-familiares-en-el-artequin-de-vina-del-mar/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Ciclo de Premios Nacionales en Teatro Zoco",
+      "raw_text": "Teatro Zoco AVENIDA LA DEHESA 1.500, Lo Barnechea Lo Barnechea",
+      "date": "2026-12-15",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/ciclo-de-premios-nacionales-teatro-zoco-abr-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Femicidio en Coronel: TOP de Concepción fija para el 16 de diciembre juicio oral",
