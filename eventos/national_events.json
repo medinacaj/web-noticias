@@ -1,18 +1,18 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-04T17:27:03",
+  "generated_at": "2026-11-05T17:35:54",
   "summary": {
     "sources_attempted": 9,
     "sources_ok": 8,
     "sources_failed": 1,
-    "events_found": 38,
-    "events_inserted": 28,
+    "events_found": 39,
+    "events_inserted": 29,
     "events_merged": 3,
-    "possible_events": 15,
+    "possible_events": 0,
     "quarantined_candidates": 0,
-    "candidates": 3,
-    "revalidation_attempts": 18,
-    "revalidated_ok": 17,
+    "candidates": 1,
+    "revalidation_attempts": 20,
+    "revalidated_ok": 20,
     "errors": [
       {
         "source": "ChileCultura (Ministerio de las Culturas)",
@@ -54,7 +54,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [
@@ -125,7 +125,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [],
@@ -153,7 +153,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/festival-biobiocine-533x300.jpg",
-      "discovered_at": "2026-11-04T17:26:00",
+      "discovered_at": "2026-11-05T17:34:57",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -165,216 +165,56 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:00"
+          "seen_at": "2026-11-05T17:34:57"
         }
       ],
       "changes": [],
       "region": "Biobío"
     },
     {
-      "title": "Trece establecimientos actuarán en el X Encuentro Regional de Teatro Estudiantil",
+      "title": "Secretos de La AraucaníaArtesanía por excelencia",
       "description": null,
-      "date": "2026-11-03",
-      "end_date": "2026-11-04",
-      "time": "10:00",
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Punta Arenas",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/trece-establecimientos-actuaran-en-el-x-encuentro-regional-de-teatro-estudiantil/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/10/violeta-3-450x300.jpg",
-      "discovered_at": "2026-11-04T17:26:00",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/trece-establecimientos-actuaran-en-el-x-encuentro-regional-de-teatro-estudiantil/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-04T17:26:00"
-        }
-      ],
-      "changes": [],
-      "region": "Magallanes"
-    },
-    {
-      "title": "Los Lagos invita a celebrar el Día de la Música con gran homenaje a los 43 años de Bordemar en Puerto Montt",
-      "description": null,
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "end_date": "2026-11-08",
       "time": null,
       "end_time": null,
       "venue": null,
       "address": null,
-      "commune": "Puerto Montt",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/los-lagos-invita-a-celebrar-el-dia-de-la-musica-con-gran-homenaje-a-los-43-anos-de-bordemar-en-puerto-montt/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/bordemar3-289x300.jpg",
-      "discovered_at": "2026-11-04T17:26:00",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/los-lagos-invita-a-celebrar-el-dia-de-la-musica-con-gran-homenaje-a-los-43-anos-de-bordemar-en-puerto-montt/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-04T17:26:00"
-        }
-      ],
-      "changes": [],
-      "region": "Los Lagos"
-    },
-    {
-      "title": "Ruta Escena Biobío continúa su itinerancia con nuevas localidades y un taller de diseño escénico",
-      "description": null,
-      "date": "2026-11-04",
-      "end_date": "2026-12-12",
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Cabrero",
-      "category": "Comunidad",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/foto-450x300.jpeg",
-      "discovered_at": "2026-11-04T17:26:00",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-04T17:26:00"
-        }
-      ],
-      "changes": [],
-      "region": "Biobío"
-    },
-    {
-      "title": "Tras exitosa presentación en Osorno y Purranque, BAFONA continúa su gira regional con espectáculos gratuitos en Puerto Varas",
-      "description": null,
-      "date": "2026-11-04",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Los Lagos",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/tras-exitosa-presentacion-en-osorno-y-purranque-bafona-continua-su-gira-regional-con-espectaculos-gratuitos-en-puerto-varas/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/bafona-en-su-presentacion-en-osorno-con-sermei-karen-lindh-400x300.jpeg",
-      "discovered_at": "2026-11-04T17:26:00",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/tras-exitosa-presentacion-en-osorno-y-purranque-bafona-continua-su-gira-regional-con-espectaculos-gratuitos-en-puerto-varas/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-04T17:26:00"
-        }
-      ],
-      "changes": [],
-      "region": "Los Ríos"
-    },
-    {
-      "title": "“Fuego, Tierra, Alma: Relatos Volcánicos”, arte y memoria de nuestra sorprendente geografía",
-      "description": null,
-      "date": "2026-11-04",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Los Lagos",
+      "commune": "Santiago",
       "category": "Cultura",
       "audience": null,
       "access": null,
       "price_value": null,
       "price_status": "pending",
       "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/fuego-tierra-alma-relatos-volcanicos-arte-y-memoria-de-nuestra-sorprendente-geografia/",
-      "source_type": "aggregator",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/secretos-de-la-araucaniaartesania-por-excelencia/",
+      "source_type": "venue",
       "source_priority": 1,
       "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/graficaprensa_volcan_nota2-720x287.jpg",
-      "discovered_at": "2026-11-04T17:26:00",
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/BANNER-SECRETOS-DE-LA-ARAUCANIA-v2.jpg",
+      "discovered_at": "2026-11-05T17:34:47",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
       ],
       "sources": [
         {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/fuego-tierra-alma-relatos-volcanicos-arte-y-memoria-de-nuestra-sorprendente-geografia/",
-          "type": "aggregator",
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/secretos-de-la-araucaniaartesania-por-excelencia/",
+          "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:00"
+          "seen_at": "2026-11-05T17:34:47"
         }
       ],
       "changes": [],
-      "region": "Los Ríos"
+      "region": "Metropolitana"
     },
     {
       "title": "El sonido de los polinizadores: Instalación sonora multiespecie",
       "description": "Las nuevas áreas verdes de GAM se abren a la escucha. Dirigido por Paula Aros Gho y con textos de Nona Fernández, un recorrido sonoro invita a caminar el jar...",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "end_date": "2026-11-15",
       "time": "09:00",
       "end_time": null,
@@ -386,7 +226,7 @@
       "access": null,
       "price_value": 0,
       "price_status": "free",
-      "status": "Reprogramado",
+      "status": "Confirmado",
       "source": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
       "source_type": "venue",
@@ -394,7 +234,7 @@
       "official": true,
       "image_url": "https://gam.cl/media/images/PortadaPolizinadores.2e16d0ba.fill-1200x630.png",
       "discovered_at": "2026-11-01T03:51:11",
-      "changed_at": "2026-11-04T17:26:20",
+      "changed_at": "2026-11-05T17:35:08",
       "tags": [],
       "sources": [
         {
@@ -403,7 +243,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [
@@ -454,54 +294,30 @@
           "source": "Centro Cultural Gabriela Mistral (GAM)",
           "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
           "changed_at": "2026-11-04T17:26:20"
+        },
+        {
+          "field": "date",
+          "old_value": "2026-11-04",
+          "new_value": "2026-11-05",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
+          "changed_at": "2026-11-05T17:35:08"
+        },
+        {
+          "field": "status",
+          "old_value": "Reprogramado",
+          "new_value": "Confirmado",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
+          "changed_at": "2026-11-05T17:35:08"
         }
       ],
       "region": "Metropolitana"
     },
     {
-      "title": "Biobío cierra el Mes de la Música Chilena con un gran concierto gratuito en Concepción",
-      "description": null,
-      "date": "2026-11-04",
-      "end_date": null,
-      "time": "17:00",
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Concepción",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/biobio-cierra-el-mes-de-la-musica-chilena-con-gran-concierto-gratuito-en-concepcion/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/flor-de-guayaba-musica-450x300.jpg",
-      "discovered_at": "2026-11-04T17:26:00",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/biobio-cierra-el-mes-de-la-musica-chilena-con-gran-concierto-gratuito-en-concepcion/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-04T17:26:00"
-        }
-      ],
-      "changes": [],
-      "region": "Biobío"
-    },
-    {
       "title": "Laboratorio de apreciación fotográfica: En movimiento",
       "description": "Una invitación a desarrollar una mirada crítica y creativa sobre la fotografía, explorando el lenguaje visual y las posibilidades expresivas de nuestras prop...",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "end_date": "2026-11-19",
       "time": "18:00",
       "end_time": null,
@@ -513,7 +329,7 @@
       "access": null,
       "price_value": 0,
       "price_status": "free",
-      "status": "Reprogramado",
+      "status": "Confirmado",
       "source": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-de-apreciacion-fotografica-en-movimiento/",
       "source_type": "venue",
@@ -521,7 +337,7 @@
       "official": true,
       "image_url": "https://gam.cl/media/images/portadaLabFotos.2e16d0ba.fill-1200x630.png",
       "discovered_at": "2026-11-01T03:51:11",
-      "changed_at": "2026-11-04T17:26:20",
+      "changed_at": "2026-11-05T17:35:08",
       "tags": [],
       "sources": [
         {
@@ -530,7 +346,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [
@@ -549,6 +365,22 @@
           "source": "Centro Cultural Gabriela Mistral (GAM)",
           "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-de-apreciacion-fotografica-en-movimiento/",
           "changed_at": "2026-11-04T17:26:20"
+        },
+        {
+          "field": "date",
+          "old_value": "2026-11-04",
+          "new_value": "2026-11-05",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-de-apreciacion-fotografica-en-movimiento/",
+          "changed_at": "2026-11-05T17:35:08"
+        },
+        {
+          "field": "status",
+          "old_value": "Reprogramado",
+          "new_value": "Confirmado",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/laboratorio-de-apreciacion-fotografica-en-movimiento/",
+          "changed_at": "2026-11-05T17:35:08"
         }
       ],
       "region": "Metropolitana"
@@ -556,10 +388,10 @@
     {
       "title": "35º Festival de Música Contemporánea UC",
       "description": "GAM será sede de las tres primeras jornadas de la edición aniversario del Festival de Música Contemporánea UC, un encuentro que reunirá a destacados ensamble...",
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "end_date": "2026-11-05",
       "time": "19:00",
-      "end_time": null,
+      "end_time": "19:00",
       "venue": "Centro Gabriela Mistral - GAM - Sala A1 (Edificio A, piso 1)",
       "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
       "commune": "Santiago",
@@ -568,7 +400,7 @@
       "access": null,
       "price_value": 0,
       "price_status": "free",
-      "status": "Reprogramado",
+      "status": "Confirmado",
       "source": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/es/que-hacer-en-gam/musica-clasica/35%C2%BA-festival-de-musica-contemporanea-uc/",
       "source_type": "venue",
@@ -576,7 +408,7 @@
       "official": true,
       "image_url": "https://gam.cl/media/images/MusicaUC.2e16d0ba.fill-1200x630.png",
       "discovered_at": "2026-11-01T03:51:11",
-      "changed_at": "2026-11-04T17:26:20",
+      "changed_at": "2026-11-05T17:35:08",
       "tags": [],
       "sources": [
         {
@@ -585,7 +417,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [
@@ -636,6 +468,22 @@
           "source": "Centro Cultural Gabriela Mistral (GAM)",
           "source_url": "https://gam.cl/es/que-hacer-en-gam/musica-clasica/35%C2%BA-festival-de-musica-contemporanea-uc/",
           "changed_at": "2026-11-04T17:26:20"
+        },
+        {
+          "field": "date",
+          "old_value": "2026-11-04",
+          "new_value": "2026-11-05",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/musica-clasica/35%C2%BA-festival-de-musica-contemporanea-uc/",
+          "changed_at": "2026-11-05T17:35:08"
+        },
+        {
+          "field": "status",
+          "old_value": "Reprogramado",
+          "new_value": "Confirmado",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/musica-clasica/35%C2%BA-festival-de-musica-contemporanea-uc/",
+          "changed_at": "2026-11-05T17:35:08"
         }
       ],
       "region": "Metropolitana"
@@ -662,7 +510,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/nexolab.jpg",
-      "discovered_at": "2026-11-04T17:26:37",
+      "discovered_at": "2026-11-05T17:34:47",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -674,7 +522,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:37"
+          "seen_at": "2026-11-05T17:34:47"
         }
       ],
       "changes": [],
@@ -712,7 +560,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [],
@@ -740,7 +588,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/10/17o_FIFV_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-04T17:27:03",
+      "discovered_at": "2026-11-05T17:35:54",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -752,7 +600,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:27:03"
+          "seen_at": "2026-11-05T17:35:54"
         }
       ],
       "changes": [],
@@ -780,7 +628,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/09/Contar_el-maritorio_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-04T17:27:03",
+      "discovered_at": "2026-11-05T17:35:54",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -792,11 +640,91 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:27:03"
+          "seen_at": "2026-11-05T17:35:54"
         }
       ],
       "changes": [],
       "region": "Valparaíso"
+    },
+    {
+      "title": "Ruta Escena Biobío continúa su itinerancia con nuevas localidades y un taller de diseño escénico",
+      "description": null,
+      "date": "2026-11-08",
+      "end_date": "2026-12-12",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Tomé",
+      "category": "Comunidad",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/foto-450x300.jpeg",
+      "discovered_at": "2026-11-05T17:34:57",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-05T17:34:57"
+        }
+      ],
+      "changes": [],
+      "region": "Biobío"
+    },
+    {
+      "title": "Los Lagos invita a celebrar el Día de la Música con gran homenaje a los 43 años de Bordemar en Puerto Montt",
+      "description": null,
+      "date": "2026-11-08",
+      "end_date": null,
+      "time": "16:00",
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Puerto Montt",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/los-lagos-invita-a-celebrar-el-dia-de-la-musica-con-gran-homenaje-a-los-43-anos-de-bordemar-en-puerto-montt/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/bordemar3-289x300.jpg",
+      "discovered_at": "2026-11-05T17:34:57",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/los-lagos-invita-a-celebrar-el-dia-de-la-musica-con-gran-homenaje-a-los-43-anos-de-bordemar-en-puerto-montt/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-05T17:34:57"
+        }
+      ],
+      "changes": [],
+      "region": "Los Lagos"
     },
     {
       "title": "Cultura digital: nuevas inteligencias, nuevas experiencias",
@@ -820,7 +748,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-2.jpg",
-      "discovered_at": "2026-11-04T17:26:37",
+      "discovered_at": "2026-11-05T17:34:47",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -832,7 +760,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:37"
+          "seen_at": "2026-11-05T17:34:47"
         }
       ],
       "changes": [],
@@ -860,7 +788,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/verbo-america-450x300.jpeg",
-      "discovered_at": "2026-11-04T17:26:00",
+      "discovered_at": "2026-11-05T17:34:57",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -872,11 +800,51 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:00"
+          "seen_at": "2026-11-05T17:34:57"
         }
       ],
       "changes": [],
       "region": "Valparaíso"
+    },
+    {
+      "title": "Circuito Matta Patrimonial suma por primera vez actividades fuera de Santiago",
+      "description": null,
+      "date": "2026-11-11",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/circuito-matta-patrimonial-suma-por-primera-vez-actividades-fuera-de-santiago/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/matta_en_pcdv_02.jpg-450x300.jpg",
+      "discovered_at": "2026-11-05T17:34:57",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/circuito-matta-patrimonial-suma-por-primera-vez-actividades-fuera-de-santiago/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-05T17:34:57"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
     },
     {
       "title": "CCLM es parte del 5º Festival Ladera Sur",
@@ -900,7 +868,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/ladera-sur-festival.jpg",
-      "discovered_at": "2026-11-04T17:26:37",
+      "discovered_at": "2026-11-05T17:34:47",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -912,7 +880,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:37"
+          "seen_at": "2026-11-05T17:34:47"
         }
       ],
       "changes": [],
@@ -940,7 +908,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/circulo-lenguaje.jpg",
-      "discovered_at": "2026-11-04T17:26:37",
+      "discovered_at": "2026-11-05T17:34:47",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -952,11 +920,91 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:37"
+          "seen_at": "2026-11-05T17:34:47"
         }
       ],
       "changes": [],
       "region": "Metropolitana"
+    },
+    {
+      "title": "Noche de Museos en CCLM",
+      "description": null,
+      "date": "2026-11-13",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/festivales/noche-de-museos-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/11/noche-de-museos-banner-1.jpg",
+      "discovered_at": "2026-11-05T17:34:47",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/festivales/noche-de-museos-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-05T17:34:47"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "“Una noche, mil historias”: Región de Valparaíso se prepara para vivir la Noche de Museos",
+      "description": null,
+      "date": "2026-11-13",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valparaíso",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/una-noche-mil-historias-region-de-valparaiso-se-prepara-para-vivir-la-noche-de-museos/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/01-450x300.jpeg",
+      "discovered_at": "2026-11-05T17:34:57",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/una-noche-mil-historias-region-de-valparaiso-se-prepara-para-vivir-la-noche-de-museos/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-05T17:34:57"
+        }
+      ],
+      "changes": [],
+      "region": "Valparaíso"
     },
     {
       "title": "Equipajes, accesorios de cuero y su vínculo con la historia del ferrocarril en Chile",
@@ -980,7 +1028,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/taller-lemu.jpg",
-      "discovered_at": "2026-11-04T17:26:37",
+      "discovered_at": "2026-11-05T17:34:47",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -992,7 +1040,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:37"
+          "seen_at": "2026-11-05T17:34:47"
         }
       ],
       "changes": [],
@@ -1030,7 +1078,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [
@@ -1067,7 +1115,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/10/10_anos_resistiendo_memoria_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-04T17:27:03",
+      "discovered_at": "2026-11-05T17:35:54",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1079,11 +1127,51 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:27:03"
+          "seen_at": "2026-11-05T17:35:54"
         }
       ],
       "changes": [],
       "region": "Valparaíso"
+    },
+    {
+      "title": "2° Encuentro Nacional de Patrimonio Digital abordará los desafíos del acceso abierto y la inteligencia artificial",
+      "description": null,
+      "date": "2026-11-17",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/2-encuentro-nacional-de-patrimonio-digital-abordara-los-desafios-del-acceso-abierto-y-la-inteligencia-artificial/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/noticia-mincap-450x300.jpg",
+      "discovered_at": "2026-11-05T17:34:57",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/2-encuentro-nacional-de-patrimonio-digital-abordara-los-desafios-del-acceso-abierto-y-la-inteligencia-artificial/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-05T17:34:57"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
     },
     {
       "title": "Elektra de Richard Strauss",
@@ -1107,7 +1195,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1119,7 +1207,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1147,7 +1235,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1159,7 +1247,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1197,7 +1285,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [
@@ -1258,7 +1346,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1270,7 +1358,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1308,7 +1396,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [],
@@ -1346,7 +1434,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [],
@@ -1374,7 +1462,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1386,7 +1474,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1414,7 +1502,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:46",
+      "discovered_at": "2026-11-05T17:35:33",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1426,7 +1514,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:46"
+          "seen_at": "2026-11-05T17:35:33"
         }
       ],
       "changes": [],
@@ -1454,7 +1542,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1466,7 +1554,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1504,7 +1592,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [],
@@ -1532,7 +1620,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-11-04T17:26:37",
+      "discovered_at": "2026-11-05T17:34:47",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1544,7 +1632,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:37"
+          "seen_at": "2026-11-05T17:34:47"
         }
       ],
       "changes": [],
@@ -1582,7 +1670,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:25:32"
+          "seen_at": "2026-11-05T17:34:26"
         }
       ],
       "changes": [],
@@ -1610,7 +1698,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1622,7 +1710,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1650,7 +1738,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1662,7 +1750,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1690,7 +1778,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1702,7 +1790,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1730,7 +1818,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-04T17:26:13",
+      "discovered_at": "2026-11-05T17:35:13",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1742,7 +1830,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-04T17:26:13"
+          "seen_at": "2026-11-05T17:35:13"
         }
       ],
       "changes": [],
@@ -1753,22 +1841,22 @@
     {
       "source_name": "Agenda Cultural del Ministerio de las Culturas",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:26:00",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:34:57",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 24,
-      "events_found": 8,
-      "events_inserted": 8,
+      "pages_fetched": 23,
+      "events_found": 7,
+      "events_inserted": 7,
       "events_merged": 0,
-      "possible_found": 12,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:26:20",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:35:08",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1781,13 +1869,13 @@
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:26:37",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:34:47",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 6,
-      "events_inserted": 6,
+      "events_found": 8,
+      "events_inserted": 8,
       "events_merged": 0,
       "possible_found": 0,
       "error": null
@@ -1795,8 +1883,8 @@
     {
       "source_name": "ChileCultura (Ministerio de las Culturas)",
       "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:25:35",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:34:29",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -1809,22 +1897,22 @@
     {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:26:20",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:35:03",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:27:03",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:35:54",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1837,8 +1925,8 @@
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:26:13",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:35:13",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -1851,8 +1939,8 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:26:41",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:35:20",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -1865,78 +1953,78 @@
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-11-04T17:25:32",
-      "finished_at": "2026-11-04T17:26:46",
+      "started_at": "2026-11-05T17:34:26",
+      "finished_at": "2026-11-05T17:35:33",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 15,
       "events_found": 1,
       "events_inserted": 1,
       "events_merged": 0,
-      "possible_found": 2,
+      "possible_found": 0,
       "error": null
     }
   ],
   "source_state": {
     "Agenda Cultural del Ministerio de las Culturas": {
-      "last_checked_at": "2026-11-04T17:26:00",
-      "last_success_at": "2026-11-04T17:26:00",
+      "last_checked_at": "2026-11-05T17:34:57",
+      "last_success_at": "2026-11-05T17:34:57",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Centro Cultural Gabriela Mistral (GAM)": {
-      "last_checked_at": "2026-11-04T17:26:20",
-      "last_success_at": "2026-11-04T17:26:20",
+      "last_checked_at": "2026-11-05T17:35:08",
+      "last_success_at": "2026-11-05T17:35:08",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Centro Cultural La Moneda": {
-      "last_checked_at": "2026-11-04T17:26:37",
-      "last_success_at": "2026-11-04T17:26:37",
+      "last_checked_at": "2026-11-05T17:34:47",
+      "last_success_at": "2026-11-05T17:34:47",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "ChileCultura (Ministerio de las Culturas)": {
-      "last_checked_at": "2026-11-04T17:25:35",
+      "last_checked_at": "2026-11-05T17:34:29",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 3,
+      "consecutive_failures": 4,
       "refresh_interval_hours": 24
     },
     "Matucana 100": {
-      "last_checked_at": "2026-11-04T17:26:20",
-      "last_success_at": "2026-11-04T17:26:20",
+      "last_checked_at": "2026-11-05T17:35:03",
+      "last_success_at": "2026-11-05T17:35:03",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Parque Cultural de Valparaíso": {
-      "last_checked_at": "2026-11-04T17:27:03",
-      "last_success_at": "2026-11-04T17:27:03",
+      "last_checked_at": "2026-11-05T17:35:54",
+      "last_success_at": "2026-11-05T17:35:54",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Santiago": {
-      "last_checked_at": "2026-11-04T17:26:13",
-      "last_success_at": "2026-11-04T17:26:13",
+      "last_checked_at": "2026-11-05T17:35:13",
+      "last_success_at": "2026-11-05T17:35:13",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Temuco": {
-      "last_checked_at": "2026-11-04T17:26:41",
-      "last_success_at": "2026-11-04T17:26:41",
+      "last_checked_at": "2026-11-05T17:35:20",
+      "last_success_at": "2026-11-05T17:35:20",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Regional del Maule": {
-      "last_checked_at": "2026-11-04T17:26:46",
-      "last_success_at": "2026-11-04T17:26:46",
+      "last_checked_at": "2026-11-05T17:35:33",
+      "last_success_at": "2026-11-05T17:35:33",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1944,96 +2032,6 @@
   },
   "skipped_by_cadence": [],
   "possible_events": [
-    {
-      "title": "04.11.2026 / Biobío",
-      "raw_text": "04.11.2026 / Biobío",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "04.11.2026 / La Araucanía",
-      "raw_text": "04.11.2026 / La Araucanía",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "04.11.2026 / Los Lagos",
-      "raw_text": "04.11.2026 / Los Lagos",
-      "date": "2026-11-04",
-      "commune": "Los Lagos",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Los Ríos"
-    },
-    {
-      "title": "04.11.2026 / Nacional",
-      "raw_text": "04.11.2026 / Nacional",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "Miércoles 4 de noviembre a las 19:00 horas",
-      "raw_text": "Miércoles 4 de noviembre a las 19:00 horas",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/bafona-anuncia-gira-por-las-regiones-de-los-rios-y-los-lagos-con-estreno-de-obra-dedicada-al-bicentenario-de-chiloe/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "PUBLICADO EL 04 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 04 NOVIEMBRE, 2026",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/2-encuentro-nacional-de-patrimonio-digital-abordara-los-desafios-del-acceso-abierto-y-la-inteligencia-artificial/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "PUBLICADO EL 04 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 04 NOVIEMBRE, 2026",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/programas/mesa-regional-de-educacion-artistica-fortalece-su-trabajo-territorial-y-proyecta-nuevas-iniciativas-para-ohiggins/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "PUBLICADO EL 04 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 04 NOVIEMBRE, 2026",
-      "date": "2026-11-04",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/actualidad/ministerio-de-las-culturas-anuncia-presupuesto-historico-para-el-programa-de-mejoramiento-integral-de-bibliotecas-publicas/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "4 al 5 Nov 2026",
-      "raw_text": "4 al 5 Nov 2026",
-      "date": "2026-11-04",
-      "commune": "Santiago",
-      "source": "Centro Cultural Gabriela Mistral (GAM)",
-      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
-    },
     {
       "title": "Del 5 al 30 de noviembre, la ciudadanía vuelve a ser protagonista del",
       "raw_text": "Del 5 al 30 de noviembre, la ciudadanía vuelve a ser protagonista del",
@@ -4244,6 +4242,12 @@
       "url": "https://ww2.teatromunicipaltemuco.cl/2026/10/29/con-mas-de-900-asistentes-la-orquesta-infantil-juvenil-del-teatro-municipal-de-temuco-presento-su-gala-2026/",
       "domain": "ww2.teatromunicipaltemuco.cl",
       "found_on": "https://www.teatromunicipaltemuco.cl/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/un-carnaval-de-derrotas-la-celebracion-del-fracaso",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/teatro/un-carnaval-de-derrotas-la-celebracion-del-fracaso/",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]
