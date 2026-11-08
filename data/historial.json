@@ -1,6 +1,25 @@
 {
- "actualizado": "2026-11-08T19:36:34Z",
+ "actualizado": "2026-11-08T19:38:57Z",
  "noticias": [
+  {
+   "category": "latinoamerica",
+   "title": "Histórico: el Papa León XIV aterrizó en la Argentina",
+   "summary": "",
+   "image": "",
+   "source_url": "https://elchorrillero.com",
+   "sources": [
+    "El Chorrillero"
+   ],
+   "coverages": [],
+   "link": "https://elchorrillero.com/nota/2026/11/08/676381-historico-el-papa-leon-xiv-aterrizo-en-la-argentina/amp/",
+   "published": "2026-11-08T19:37:40Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR"
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
+  },
   {
    "category": "latinoamerica",
    "title": "El emotivo mensaje del Papa Leon XIV para Uruguay",
@@ -33,7 +52,10 @@
    "link": "https://chile.as.com/futbol/nublense-colo-colo-goles-resultado-y-como-va-el-partido-de-la-liga-de-primera-en-directo-f202611-d/",
    "published": "2026-11-08T19:33:40Z",
    "first_seen": "2026-11-08T19:36:34Z",
-   "image_checked_at": "2026-11-08T19:36:34.106956Z"
+   "image_checked_at": "2026-11-08T19:36:34.106956Z",
+   "coverage_countries": [
+    "CL"
+   ]
   },
   {
    "category": "latinoamerica",
@@ -175,19 +197,20 @@
    "category": "latinoamerica",
    "title": "Argentina podría sumar US$5.000 millones a su PBI, según un experto en IA",
    "summary": "",
-   "image": "",
+   "image": "https://www.bloomberglinea.com/resizer/v2/ABQZIUUQKRBWZIXYF2D2BLXLDY.jpg?auth=488944564fb970c288b3b18c623baab48fb8571ffb8a15872e48b35143e4c6db&width=1200&height=630&quality=80&smart=true",
    "source_url": "https://www.bloomberglinea.com",
    "sources": [
     "Bloomberg Línea"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYzdGVWs0RDJ3RUZORVNRRVZCR0ZMa3Z5YnFIRWxoUnJsQ011MVBfVzdMSzhkclpjOUlHTGtHYUY4V2NEaXpFdzk4bl9uR1JweTNGVkxhWDdYX2QzSW9weTlJZy1iNVN1SDJqdU54aTMtUkFsSjg1a2YxS3Y4S2hicXlIRXJtT0x3d2pfQ3FVR2Zsenp5cV9ieFEzOWpZT25MeW8tRldkTmVKcElXTllIM9IBxAFBVV95cUxNRlFTOVA1Si1UcW1LbU5ocGdYa21vckUwN2FoMDhSa0NveGotMTM1WjJGMnBjWDEtU3ZidE9MYnVtdnA0WVBWbzJSR3dhYU9OSnZja2xtZXoxSGQydkdMY29TSXdSaHlMY1JpVTdwd3RyRncyRExnUWhiY1B4WnZpU0hIVDQyZGNNUGI4aHkzTVRXWDh0Z0Zfbmk2UmE5YXBoenZ3MHNiOGhJNHZxM2Y2WDN5VVNKVVRrZ3g2dGZwdzF2X2w5?oc=5",
+   "link": "https://www.bloomberglinea.com/economia/argentina-podria-sumar-us5000-millones-a-su-pbi-segun-un-experto-en-ia/",
    "published": "2026-11-08T19:22:04Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "cultura",
@@ -223,75 +246,118 @@
   },
   {
    "category": "latinoamerica",
-   "title": "La austeridad presente y futura: los límites fiscales del desarrollo en México | Artículo de Mario Luis Fuentes",
+   "title": "IPN registró 75 títulos de patentes en 2025, la cifra más alta de México",
    "summary": "",
    "image": "",
+   "source_url": "https://www.jornada.com.mx",
+   "sources": [
+    "La Jornada"
+   ],
+   "coverages": [],
+   "link": "https://www.jornada.com.mx/noticia/2026/11/08/sociedad/ipn-registro-75-titulos-de-patentes-en-2025-la-cifra-mas-alta-de-mexico",
+   "published": "2026-11-08T19:18:00Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "MX"
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "La austeridad presente y futura: los límites fiscales del desarrollo en México | Artículo de Mario Luis Fuentes",
+   "summary": "",
+   "image": "https://editorial.aristeguinoticias.com/wp-content/uploads/2026/11/super-peso-mexico-dinero-08112026.jpg",
    "source_url": "https://aristeguinoticias.com",
    "sources": [
     "Aristegui Noticias"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPS2MwcEw4SzRMaExtbFFjWnVTOS16LWdPNmNyam55UnpwdTBoT3l4VnJobUc0emFMejVuOWVuZDI4SmhRd2JKRzN4dkpBZ2dPZE1IR19NZ01OaDJsd2lTUGU1R1YwZWdRR2NFeXlxOG5sX2pUdTd4aU1WUlRzSWpackZuY2N3VkFtSnpqM2JBb0FhQWdjUXZ1RlN6a2tnWl9LRk1GWk85ZTdvQllmT1luSW9kaFdRWnB3V3VQMWtrdGZ5TWVRTVBYSEt2aVo2SHZiMWlwdjltRmtyYzRPSk5Vc2VuRmVuQ2s?oc=5",
+   "link": "https://aristeguinoticias.com/0811/opinion/la-austeridad-presente-y-futura-los-limites-fiscales-del-desarrollo-en-mexico-articulo-de-mario-luis-fuentes/",
    "published": "2026-11-08T19:17:00Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
    "title": "León XIV en la Argentina: así reflejaba El Eco la última visita papal de 1987",
    "summary": "",
-   "image": "",
+   "image": "https://cdnartic.ar/06S2BpwmPmg-1YrzpK8iSboQGKw=/1200x630/smart/filters:format(jpeg):quality(70)/https://cdn.eleco.com.ar/media/2026/11/visita_papal_1.webp",
    "source_url": "https://www.eleco.com.ar",
    "sources": [
     "El Eco"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOS0Z1YlE5WXZhd1lRTXpDSXkwUGRBRGhDVEdxSXRDalNvUmd0U1FRTGczMmhaSUh1aVJFOW1wNHpUaG9tN1J5S0R1bjNlZkFaNDZwblRhSEJHa2NEUURCZDlIV1BSSEY3cWFDWWlYYWdGRUdXekJpOEVWVEluXzVjdFRuajZkWWU5SFFGeW5SUU90QzFwUlJjdk1UNmdRUU9XOWRNVkVmTWE4THc5YU85ZkVn?oc=5",
+   "link": "https://www.eleco.com.ar/la-ciudad/visita-de-leon-xiv-a-la-argentina-asi-reflejaba-el-eco-la-ultima-visita-papal",
    "published": "2026-11-08T19:14:37Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
    "title": "Va México por meta de 50 millones de turistas para 2026",
    "summary": "",
-   "image": "",
+   "image": "https://d6isf1yxni2j5.cloudfront.net/large_finanzas_turistas_mexico_96bf6bbff7_c7c8aa8c17.jpg",
    "source_url": "https://www.elhorizonte.mx",
    "sources": [
     "El Horizonte"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY09NRUxNZjFiXy1jTXNZOUMwNk9VN1VMUGRETWZONklCV2FvU2VIY1dHUVd0SmdGVnRpOF85NFJzZ0pPdUoxSE1DTzhIZlFWQ2tlSU5zS3d3UGlDSkVJY3BUa0VJTDlMQS1SVlJ2MV9YcVBfcFFtMUhQeWlfcExxeGFORGRQb3RvbUdpZmZobzR2WGdPQ2g4akFMbkdGU01JZHhzRQ?oc=5",
+   "link": "https://www.elhorizonte.mx/finanzas/va-mexico-por-meta-de-50-millones-de-turistas-para-2026/5348230332",
    "published": "2026-11-08T19:13:48Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Ver Honduras U19 vs. El Salvador U19 Online en Directo | DAZN MX",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.dazn.com",
+   "sources": [
+    "DAZN"
+   ],
+   "coverages": [],
+   "link": "https://www.dazn.com/es-MX/home/192qtgj8cogs01nstux1p0ea6q/aq2xvehz9i0116nxdvnxwfjhl",
+   "published": "2026-11-08T19:11:24Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "HN",
+    "SV"
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
    "title": "Detienen en México a presunto integrante del Cartel del Noreste requerido por EE.UU.",
    "summary": "",
-   "image": "",
+   "image": "https://s.yimg.com/lo/mysterio/api/2e40595e9951de40533cdedafe6633720ef5bb9ce6f20a6634b7fb31aa9e5e0f/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fes%2Fefe.es%2F402094741f9382dd96da85a531c2d387.jpg",
    "source_url": "https://es-us.noticias.yahoo.com",
    "sources": [
     "Yahoo"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOck11b0ZEQ2VDTXBKRFdxcDJVWFdpQm5jb3B4MTlMcHpWMlJlTmQtdzAtcTVycVgxZ3cwVVhLdlhxbmFQLUpjOUlUdXIzUkI1UnhTRktEcXNBRUgtWGkyUFlYY29DMl9iU0owZ2d2ZkI3ZnpfQjVIdWtPNjBIWHdlTWt2REt0YW9RU3hteHd1bWJIYmNhbTQxTVdqMA?oc=5",
+   "link": "https://es-us.noticias.yahoo.com/detienen-m%C3%A9xico-presunto-integrante-cartel-191119114.html",
    "published": "2026-11-08T19:11:19Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -303,50 +369,53 @@
     "El Sol de México"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRERCa1FhQ3o3dDM0TlhYczQ1bDN5UnNuMHJSTFlxVmxMai1RdFNVR2V3T2dtemVqLTdxME5nMWQxaGQ0dGFuMzBuSTVHallFZXl3VFpkdXRub1d2cU1QWHQ4ak11YmlXSW45ZXR0SWpwMUsyT0ZITm4wcEVSSHo1NGJYN25fZlhfbmVkcGxadTVqam1jZnM2anFlano1NnpqVnI4ck4xZVhNSTVNRUlRTTlweGtDbExPY1RLYzVCcmg2WDQzbFVWbklNTC1ZWWV5TFJKR0ZXSQ?oc=5",
+   "link": "https://oem.com.mx/esto/juegos-olimpicos/kendra-duany-la-atleta-que-eligio-a-mexico-sobre-cuba-gano-medalla-de-bronce-en-dakar-2026-33029666",
    "published": "2026-11-08T19:10:00Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "MX"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
    "title": "El papa se despidió de Uruguay y continúa su viaje hacia Argentina - VIDEO",
    "summary": "",
-   "image": "",
+   "image": "https://www.romereports.com/wp-content/uploads/2026/11/MINIS-71.jpg",
    "source_url": "https://www.romereports.com",
    "sources": [
     "Rome Reports"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVjZ1Wm9CTXR0M1dFWVJJZ3JmOVlYZ3lqalg4Vm1lUUZBODA4MGlRcHFmTlg2STZFbDZqODN5cmd2UWJrMkxBX0VCd20yMEhKc0FmSUt6aVI1SWhKaGNkajBWbDh1VmlUenNucmxXYXlWMWpRSE95OGNVWDNVNzZwSDZFZU0tVk5GbWdYb1ZSY1dUd3NVeHpid0RIblZvdThVcWpnWjlpRTA2cTZ3YVAtMExB?oc=5",
+   "link": "https://www.romereports.com/2026/11/08/el-papa-se-despidio-de-uruguay-y-continua-su-viaje-hacia-argentina-video/",
    "published": "2026-11-08T19:09:21Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR",
     "UY"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
    "title": "Sismo débil mag. 2.3 - 18 km al sur de Valledupar, Cesar, Colombia, Sunday 8 Nov 2026 a las 13:58 (Hora Bogota)",
    "summary": "",
-   "image": "",
+   "image": "https://volcanodiscovery.de/maps/quakemap-20k_s-23618005.jpg?t=1794166292",
    "source_url": "https://www.volcanodiscovery.com",
    "sources": [
     "Volcano Discovery"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbDZiSFg0akNxazdPeExINWZaa0M2SnBKSjJSUUszTEIyN1VQS2d3dVJrWWpRaWRsYzNIcjgtUnlyd2hra3FvbGpKTmRUbHB3bGwzaVZXclJWTENlNmk3WkRFSjBEWFgtNF9mLVd0SzdIM2Z1SFNrSmhRUWRIMjVmS3Q5TjhrRWY0NGNtVU85VEpXd2pPcHRXcVJKUFRlajNIUXdIbXh0eG5DUjNaa0tUMVEwS2FPSmJz?oc=5",
+   "link": "https://www.volcanodiscovery.com/es/sismos/informe-sismo/23618005/mag2quake-Nov-8-2026-Valledupar-Cesar-Colombia.html",
    "published": "2026-11-08T19:04:00Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "CO"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -416,6 +485,24 @@
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNV2Zpd09HcGcyVTByQ01DMUMxNG9OeUp4a2E2QmZqVzJ6WjlKMGJUMXRvbDNSN05Mbjk4RU1scWhIaXJSNExQcE1Rclo1cWpJOVJxTFFOSGFsaG1CWUtiMUgySmJQcGxobGs2amp3T1psS0ZuWDBJVy1xaC1vVWw4YzFvM2pJNHdjV2FoQm11eTMxOFc2UFM3UDF0am1EdFQ1TG05Zm1NMUhkZl9JMVE2UmhRSnFrd2pzTmUxYU83a2JiV29ZQmFDR3dwY1pBRFNTYU9qMQ?oc=5",
    "published": "2026-11-08T18:56:15Z",
    "first_seen": "2026-11-08T19:36:34Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "León XIV llega a la Argentina: quién es Robert Prevost, el Papa estadounidense con alma latinoamericana",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.ambito.com",
+   "sources": [
+    "Ambito"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNTl9jWG5QNTJ0bndQcWloc1RJREdUYWZGVDA0TGw2N0wzWmUtSmVsTDQza05UVXE3NHlGX1l4aXFzVXhNT21saHozb1BNRmFJSzNydVhUbW82ZUpzeFo0aWxwd184UElwZFBKaTd1Z0VTODJHU21FemUwajZKS0R2UGl6NXo0WEw5QjByVGRTejh1eURYWG9jYnJvR0tlYnlva2hqbjMwWnhlSlRCVzVpbDh0V09rOVpPcU5WTXNHekFCX21kTHN0RjRXWGd4Z9IB0wFBVV95cUxPN3daOS05a014R2l6M1lzSG5Tc25tVWxpX2ZJS1BVMDMyR25CTWdKR0xDdFNvWDEzUFVhOHRaX2EzVlRVUXdVOEloNFM1ejRnRHZiQXVMWi12MlVYdzE3d3Q5SDI3cFdzMEtHT1F4Q2FobWxMNl9hZUQ1XzR1Nkd4MDlnOG0xd1hPcEZJdXQzenRPeGtmUkg0aDk0M1pjV2Y0dk82bjJGbGZsdzYtcllYWW5UZTU0V2NOeURwb3pNcktFMWliX2g4OG1pbnVxTnQ3NTQ0?oc=5",
+   "published": "2026-11-08T18:56:15Z",
+   "first_seen": "2026-11-08T19:38:57Z",
    "metadata_only": false,
    "coverage_countries": [
     "AR"
@@ -639,6 +726,21 @@
    "image_checked_at": "2026-11-08T19:36:34.106956Z"
   },
   {
+   "category": "nacional",
+   "title": "Tragedia en Santo Domingo: hay diez heridos hospitalizados y dos de ellos en riesgo vital",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7011793-tragedia-en-santo-domingo-hay-10-heridos-hospitalizados-y-dos-de-ellos-en-riesgo-vital-1200x633.jpg",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/11/08/tragedia-en-santo-domingo-hay-diez-heridos-hospitalizados-y-dos-de-ellos-en-riesgo-vital.shtml",
+   "published": "2026-11-08T18:41:49Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "Luis Vázquez logra segundo lugar en Medio Maratón de Costa Rica",
    "summary": "",
@@ -654,6 +756,25 @@
    "metadata_only": false,
    "coverage_countries": [
     "CR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "León XIV se despidió de Uruguay y mira hacia Argentina: “Les pido que me sigan acompañando con sus oraciones”",
+   "summary": "",
+   "image": "",
+   "source_url": "https://noticias.mitelefe.com",
+   "sources": [
+    "Telefe Noticias"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRi1nNnliVkUxRlI1RjJPV0JsX0JYZHVPczJ5LWhWTWRycG1DM0JPUVdJeTh6akV5bzJkSnl4YjdKS3ZkUWtQV3VGVEljZVBuTHA3Rnd6WmtoUjNTVWNuQ2xIcUxVdzNZOEZhRHhjTi1DVGZFbUpNUkhnRHpab2lhb2c4T2pDcnNMNUNTS1FWdUY0eEJneWhJck9JY0ZCbC1VRHdOV1BhMzB2aUhBRDRDZXQ5Zkl4c21VUnVJMzlJbEVOdzYwUDYxXzRWa21LcVNIMWFsYkFGZE81Z2d2NEhtMXRqV3RGa3lCUU5YUDlCVkpwQXVkOWc?oc=5",
+   "published": "2026-11-08T18:41:17Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR",
+    "UY"
    ]
   },
   {
@@ -931,24 +1052,6 @@
   },
   {
    "category": "latinoamerica",
-   "title": "EN VIVO el vuelo del papa León XIV: cómo seguir su viaje hacia Argentina",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.minutouno.com",
-   "sources": [
-    "Minutouno"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQUxGc2pGWmxJR21hYUdmOGVibWh2b1lPQ1hOQUVScHhnUHNWZ2RJdWRZZHRZaHBPZFc5MVd6M05jV25vVG5jdExmWDhLMDNkUmFvaXp2TFg5YWxDMXVUMko0WVpqRTNwNFNvMDlQN0ZCUGprS0xCVEZPNjc4SXNzQTZLZGxwSEhjYlByRm5LZkFxMlp6WGEybWVYczRLbUQ3a3ZLaFdnWElneEI0dkHSAa4BQVVfeXFMUEFMRnNqRlpsSUdtYWFHZjhlYm1odm9ZT0NYTkFFUnB4Z1BzVmdkSXVkWWR0WWhwT2RXOTFXejNOY1dub1RuY3RMZlg4SzAzZFJhb2l6dkxYOWFsQzF1VDJKNFlaakUzcDRTbzA5UDdGQlBqa0tMQlRGTzY3OElzc0E2S2RscEhIY2JQckZuS2ZBcTJaelhhMm1lWHM0S21EN2t2S2hXZ1hJZ3hCNHZB?oc=5",
-   "published": "2026-11-08T18:24:00Z",
-   "first_seen": "2026-11-08T19:36:34Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR"
-   ]
-  },
-  {
-   "category": "latinoamerica",
    "title": "Colombia ajusta su política exterior ante nueva mayoría demócrata en el Congreso de EE. UU. y reestructura su estrategia diplomática",
    "summary": "",
    "image": "",
@@ -999,6 +1102,24 @@
    "metadata_only": false,
    "coverage_countries": [
     "MX"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Llega el Papa León XIV a la Argentina: expectativa y fuerte operativo en Aeroparque",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.clarin.com",
+   "sources": [
+    "Clarin.com"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUVZXNzdaRmdhcHVieTE3cER1bFNDNTlRTUhkOTBUZXFINFRZZ19rMkZBRFZsLWhPRWhlVzA5MWtpWENtSkd4REdZaVpFaGhqQ0ZWSDV6blM2SkNkMmxJWEY5UjJOSmZqYjVZaGhyd2UtX1JJQXR6QTA4Qjc3bTN0aXM3MFlyTkpIdUYwTGhvaFNIaE9VMjRIcTNzSUlMdlR4elBJQlJyRjk0UDZtS1B2LXVKbHVKNDZPc1V3?oc=5",
+   "published": "2026-11-08T18:19:39Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR"
    ]
   },
   {
@@ -1391,24 +1512,6 @@
   },
   {
    "category": "latinoamerica",
-   "title": "Brasil x Espanha, Finalíssima de Futsal; horário e onde assistir",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.lance.com.br",
-   "sources": [
-    "LANCE!"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeGItNC1EX01PSWlKaklQd0Rad3RDN1JubzlCY2ZFR3VVQjh2ZGs0NWhPaTE2ZHc0REs5SE1WOWxBeEx5WEJRcHU5aG96SXJ3T25KSEdHTVkzai1TUm92NGREd2N3WGdEYTExRVFqRjJuVTdOTFhDa25vRlh0SDBIMFNkcWhCSGdGZVhWM081U3JMZE5Tc1dDZVd5NnZVYVRqcE1kZDcwTEhoZw?oc=5",
-   "published": "2026-11-08T17:50:16Z",
-   "first_seen": "2026-11-08T19:36:34Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "latinoamerica",
    "title": "León XIV es esperado en Argentina con el ajuste de Milei bajo la lupa de la Iglesia",
    "summary": "",
    "image": "",
@@ -1673,6 +1776,47 @@
    ]
   },
   {
+   "category": "latinoamerica",
+   "title": "México necesitará una nueva arena para tener franquicia en la NBA: Adam Silver",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.sopitas.com",
+   "sources": [
+    "Sopitas.com"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbjZPbU1leUFCWlBPeDMxcTdjQXA0QmlfYXVYbGFsVGF0b3QyVFFTeWJUb3NpdFhYdVRuZy1tMW5sei1TUG1pa3ZwZ2RDV256MU55N1dWejBURkw2MlRrSnZtTGVuRHNPalpaQWtLRUx4VFFXS045cW80QUlfb01pY1dReGY3QQ?oc=5",
+   "published": "2026-11-08T17:11:49Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "MX"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "EN VIVO el vuelo del papa León XIV: cómo seguir su viaje hacia Argentina",
+   "summary": "",
+   "image": "https://media.minutouno.com/p/dddf0cc987b19b1a06a22c0a76c1cfae/adjuntos/150/imagenes/043/754/0043754439/1200x675/smart/leon-centenario.png",
+   "source_url": "https://www.minutouno.com",
+   "sources": [
+    "Minutouno",
+    "Crónica",
+    "Ambito",
+    "Radio Mitre",
+    "La Nueva Provincia"
+   ],
+   "coverages": [],
+   "link": "https://www.minutouno.com/sociedad/en-vivo-el-vuelo-del-papa-leon-xiv-como-seguir-su-viaje-argentina-n6342898",
+   "published": "2026-11-08T17:09:50Z",
+   "first_seen": "2026-11-08T19:36:34Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "AR"
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
+  },
+  {
    "category": "tecnologia",
    "title": "Atos y NxN Data Centers se alían para crear una plataforma digital soberana entre España y Portugal",
    "summary": "",
@@ -1784,7 +1928,8 @@
    "source_url": "https://ge.globo.com",
    "sources": [
     "ge",
-    "UOL"
+    "UOL",
+    "CNN Brasil"
    ],
    "coverages": [],
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWGwxbFk3TmlTUV9rVEkwUTBwTnhnSDFCdGhUMjNsT1owRUpsYVRydDJnQURrMEplNjlWNERickhYcDRyS1htbW45bVRSYkd6NU4wT2pOdHlHQ19Bc0E0QjZWWHRHTW4wQ2pONWRLLXRZWGhoLXJQNk1Ba1N2aXVBQTNJN2R3T2RIVTdKcA?oc=5",
@@ -1899,6 +2044,24 @@
    ]
   },
   {
+   "category": "latinoamerica",
+   "title": "Colombia evacúa Caracol Televisión por una amenaza de atentado bomba",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.mundiario.com",
+   "sources": [
+    "MUNDIARIO"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVmhkbjk4cTFtN3otUF9lQVBEZGpyUnJfYkxzYk5qWTlMLVc1TEpyZndkNk5ZUlg1WHQ2NHpFNTZ5dGZpZWpZX3gxbHZHakNjQnNFbnNldEZnNXMxa1ppZGhQaDhFYlJ6UktGWDdZWG9OVFNJTlNEckRpVlZEdnV5elhOckVuOHhmZ2ZyZHRmeFFuRzEwUzY4c1BHRDlvLUJPcWxRNWZrczdINmJmNzlOdUpB0gG3AUFVX3lxTE5VRHJQWGp2V1hZdjMwdTg1NkVZXzRoSXRRWTVVZDIxTUlVN0x6OWN0QnIyWDFHZHhUMzZSX2RWb3hNNy0tX3ppTy04ak51dHhZTDd4R1A2WXdwaGoyZld4RzdkcF9rNUswQ004TkRkdmEyaDJGRDJncWJMZXJSVHU1OXNJZjJZQm5SVE1rQUVxay1TSkdjTTBxNndGNUlYVXZMYVFaUUQxRGZtbHdpemY4WEFKaDA0dw?oc=5",
+   "published": "2026-11-08T16:44:35Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "CO"
+   ]
+  },
+  {
    "category": "cultura",
    "title": "Cuéllar se convierte en una sala de cine internacional con estrenos inéditos y un homenaje a Paco Rabal",
    "summary": "",
@@ -1932,6 +2095,21 @@
    "coverage_countries": [
     "CO"
    ]
+  },
+  {
+   "category": "deportes",
+   "title": "Ñublense vs. Colo Colo: A qué hora y dónde ver EN VIVO y ONLINE el partido",
+   "summary": "",
+   "image": "https://www.tvn.cl/tvn/site/artic/20261106/imag/foto_0000000720261106161820/colo_colo.jpg",
+   "source_url": "https://www.tvn.cl",
+   "sources": [
+    "TVN"
+   ],
+   "coverages": [],
+   "link": "https://www.tvn.cl/deportes/futbol-nacional/nublense-vs-colo-colo-a-que-hora-y-donde-ver-en-vivo-y-online-el-partido",
+   "published": "2026-11-08T16:31:00Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "deportes",
@@ -2036,15 +2214,16 @@
    "category": "regiones",
    "title": "TEMUCO LANZA LA PLATAFORMA SIN FACHADAS PARA DENUNCIAR COMERCIOS IRREGULARES",
    "summary": "",
-   "image": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/11/temuco-lanza-la-plataforma-sin-fachadas-para.jpeg",
    "source_url": "https://araucanianoticias.cl",
    "sources": [
     "Araucanía Noticias Temuco"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPejZwV01odVFXYTlMNnZjY0kwNi1rbzVxVl96dE5wTDJ1ekZOVHlvRDh2dVZqZk1iYkgxMVl3c3hIalFxclBDbTNRLXFCU1g5VktBSF80aVV1R05HdjdlSmZJWnVpcXJZcGxvOEk2cFpFUGZPNklGYVFYeFZ5RW1OSWlHOUlZOWlsZ19ZbndzODRpU2RBZ19rcF82ZDlwZ1JDRWx6RHhPNDJZbG1QU1gxV21BdW9PbGxtQzZQRzBR?oc=5",
+   "link": "https://araucanianoticias.cl/2026/temuco-lanza-la-plataforma-sin-fachadas-para-denunciar-comercios-irregulares/1108318560",
    "published": "2026-11-08T16:17:39Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2085,32 +2264,34 @@
    "category": "regiones",
    "title": "CASEN 2026: La radiografía social del Chile de hoy",
    "summary": "",
-   "image": "",
+   "image": "https://alertanoticiastemuco.cl/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-06-at-11.44.47.webp",
    "source_url": "https://alertanoticiastemuco.cl",
    "sources": [
     "Alerta Noticias Temuco.cl"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWWtmQUs1MmNqczV1T1preWkya1NkRWZTQlBmMGd0VnJpa0V1SDEtU1NUbWlqY3AxaGNoLTBJbS1KUzFSUUFaWEZreVB6R242NnQ2UGNpRGx4YkRTZW5ZSlJsQnJmY0ZyX1Zpc19tWkM2UG9sTVZORExsZ2tqMHFRTVl4VUJkLVVfX2RLMXZjN2Z5d0ZJ?oc=5",
+   "link": "https://alertanoticiastemuco.cl/2026/11/08/encuesta-casen-2026-participacion-la-araucania/",
    "published": "2026-11-08T16:12:02Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "regiones",
    "title": "Al menos cinco sujetos habrían participado en robo a banco tras perforar estructuras de seguridad",
    "summary": "",
-   "image": "",
+   "image": "https://img.latribuna.cl/upload/2026/08/17161D524C434C6D15110F55574944731F121918524247781D17-2000x1125.jpg",
    "source_url": "https://www.latribuna.cl",
    "sources": [
     "La Tribuna"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOHNUQXFKempXYmpqT19GTEhmNnh0bmdzWHNvY3p3NXFwblJhejNpS0pSTlpQV0lOMko4NElTc1AwTTJIWmQ3ajVtNl9KeXN4QlpnNHR1LUJpb0lfeXZJRjZqTVV5RjVaT2lhMlNPMjFpYWhkQ0RTT0RmUEQzaEFfd0FzN0NKYW9BdWhTRkZuVUk4UUNzaVJYVG05ZHVyRmt6c0NHeXhmX2dzamNYV0o5WGZyVWhGeFVyS2ZOWURHZEFNcnNkR21VZ1prLVBmV2xWXzcwQ3ZuS1hGb2s1MVdqMVBiMU5hUFI00gHoAUFVX3lxTE44c1RBcUp6aldiampPX0ZMSGY2eHRuZ3NYc29jenc1cXBuUmF6M2lLSlJOWlBXSU4ySjg0SVNzUDBNMkhaZDdqNW02X0p5c3hCWmc0dHUtQmlvSV95dklGNmpNVXlGNVpPaWEyU08yMWlhaGRDRFNPRGZQRDNoQV93QXM3Q0phb0F1aFNGRm5VSThRQ3NpUlhUbTlkdXJGa3pzQ0d5eGZfZ3NqY1hXSjlYZnJVaEZ4VXJLZk5ZREdkQU1yc2RHbVVnWmstUGZXbFZfNzBDdm5LWEZvazUxV2oxUGIxTmFQUjQ?oc=5",
+   "link": "https://www.latribuna.cl/policial/2026/11/08/al-menos-cinco-sujetos-habrian-participado-en-robo-a-banco-tras-perforar-estructuras-de-seguridad.html?amp=1",
    "published": "2026-11-08T16:08:09Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2343,15 +2524,16 @@
    "category": "regiones",
    "title": "Minvu traspasará más de $336 millones para la construcción de espacio cultural y artístico en San Rosendo",
    "summary": "",
-   "image": "",
+   "image": "https://www.radiocamilatv.cl/portal/core/controllers/Noticias/imagen/08-11-2026_15-42-45sr.jpeg",
    "source_url": "https://www.radiocamilatv.cl",
    "sources": [
     "Radio Camila TV"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPaUozM3FPeGlmVmQtdnRzV3NPU3c5Qm5xQUNTT2hVMUJFUHJ0WWtkZm5abVNxaWVsYVVoVHYtZ3lfTWJPeUdGVk4tZHJvSFZGNHVaMkRrNDJyNExfYTJlRkNCVkoxVUhYcW5iUDNjY0xLM05ZT29JdnM4ZXdfeDJ4bi1PWkQ4YnhSVU5RWks3YnRlMG9aZVFwZlU5X2ZCcEQwUS1ZTGQxdjhiQjY0R1UzYy03NFhZTW8zcGVxTmRJNm4xNnA2SjhtTjU2bVhIQWlEcDlnZ0RsVk84Y1dKVlZ5S3FJX1pRYnh6dEE?oc=5",
+   "link": "https://www.radiocamilatv.cl/portal/noticia/24386/minvu-traspasara-mas-de-336-millones-para-la-construccion-de-espacio-cultural-y-artistico-en-san-rosendo",
    "published": "2026-11-08T15:48:00Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2418,9 +2600,10 @@
     "Guioteca"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPX3YwQmdrOEhYMTBiT1ZVWlpDYXFrR28zQUlSZ3pEMjdGbllVdFpxZmVYSE52TXVUZ2xGcEQ2QThPZ1lha1VuajRUR0h6TklmMnQ2cVdEOVVXanFaekJnZ1ZGa0dtcjBGWUpHUEFsZGVfbklwblRiVHZwcV8ybFJVb0h1UEV1ckdWbUd6eEVPMVpYbTE1MUtudktjeUdRUUZNWjk1d1hBRGpFZTkwSmVxOGgycVpmamZGVXZlTjlUaXdfUm9tSTJPeDlfeU9mRXA3U093?oc=5",
+   "link": "https://www.guioteca.com/celebridades/asi-luce-hoy-adrian-martin-vega-el-nino-que-deslumbro-en-la-teleton-2015-con-la-cancion-que-bonito/",
    "published": "2026-11-08T15:40:53Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2439,20 +2622,6 @@
    "coverage_countries": [
     "CO"
    ]
-  },
-  {
-   "category": "regiones",
-   "title": "Delincuentes roban $3 mil millones desde un banco en Concepción: habrían ingresado mediante un forado",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.lacuarta.com",
-   "sources": [
-    "La Cuarta"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUG5fcnlfbDRGdEM2U0JSeGlzSkhWOVoyRm9HcDdNYjlOdURLWUxqOE1OaHpZUG94TVAtVzdwT1MweDZQaS1sTUtfTzJseENPM2txRGpINVhqbkNDUm1uVlRWSGZHZENfQ2ViQmhfeGxmdk5QZkhrM0VITnZYbEVRbTBwd29HbjMxOTc2RGFjYmViSXJ1dnR3cERhOHlrZ1Vsb3RrSHljRlVyQnBqS2JySUhmeWwtdnVpc1YzbjdRSmFCR0RSMTI4U1lLNG9oM1ZTMnpGbm5R0gH3AUFVX3lxTE9UR2hNRURKaFRIcFpuZ3FManFYTGEyMTFjZF9KR3VQTU5yeHJqYko3b1ZNcHN4c2xrUU12R3o4UFA0QnNwNEotQTNhb1JHWlB1MmRpQURZcVpPYzZPNGVBUTVfMnJ1ZG8tZk9obXZBWHZMTEV4b2RnOUpERkNZbTJQOVJ2V2RFSUZiTVlpSmE5YUdpM2lNNnhROWsySXNnWFFrNDYzY29IYkZMNGxuTWZ0M0xTRmxRVXZIbW5RWUtJM0FzSGlRck1Nd05KajJxRHpuYU5SOG0xNnlJdG9Tek9tWHpKTlhtZHlTbGMtcGtyQ2ZWOThBV2s?oc=5",
-   "published": "2026-11-08T15:32:38Z",
-   "first_seen": "2026-11-08T19:36:34Z"
   },
   {
    "category": "latinoamerica",
@@ -2512,15 +2681,16 @@
    "category": "regiones",
    "title": "Ferepa Biobío acusa falta de apoyo estatal ante crisis de la pesca artesanal",
    "summary": "",
-   "image": "",
+   "image": "https://i2.ondapress.com/?w=1200&h=630&q=90&src=https%3A%2F%2Fassets.ondapress.com%2Fsabescl%2F2026%2F11%2Fdiseno-sin-titulo-779a245b8c00a3-1793825891.jpg",
    "source_url": "https://sabes.cl",
    "sources": [
     "Sabes.cl"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdC1nbUFFRTQ3WHhlR1k3QTIwVjBwbmZRLTBjLVdfSnhsclU0UzMzRWhvSG5DTTczTVA5cEhwSFRheHJyVG54b1dRdkgweUNJanp3LUtNdE95TU1VOTdESFYxT3dJV29rS3VvN0NYLVdvNkl4RHUxUlg0OVRhN1FLdk8xc096eWo3eWpSY2tNWE1iWHdYLXZPWTBXcmFYdjl6OW1jQ2ltV3Y?oc=5",
+   "link": "https://sabes.cl/2026/11/08/ferepa-biobio-acusa-falta-de-apoyo-estatal-ante-crisis-de-la-pesca-artesanal/",
    "published": "2026-11-08T15:18:39Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2595,29 +2765,31 @@
    "category": "deportes",
    "title": "La pizarra de Pellegrini dio frutos: Betis venció a un Elche que tuvo a Cepeda titular y Dituro figura",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7011671-betis-vs-elche-foto-de-contexto-en-laliga.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQbjhLZkp4MEpnaGJnV0N2MTRtSzBEcDZkcVJfMU9ka1ltWnlkc1Fza2VoVDFtejZTbWltNV9XZDBCaGQ4aUFJT01lS282MTd0RmxQQ2M3OUllT2o5V1VvZzBmamVyTFgyN3RPWlhMSjlRNnNFRHBkRzFDa0V0VkNGRW9FU19ocUpPS1piZ04yTC1WUXlhQmZSVXlHbFlVWGtXME1Hd3VqeGZLcWx0WXJFZ2RfLVlsRkVkU3YtVFhkU0dlOE9DZ2tJbndjalRSRUFuVjFlV3FoZ1ktR1hLZWFWeVR0Nm1QM19ueXB5OFl0TkVld3RKQzFla3NtZk5rLTdCenVGLU13NGhCSURUMV94Zlo1am1KVzN5aUdScEJLZXlwVEJ5X3FlZ01Yb3RGMnI1ZVE?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/11/08/la-pizarra-de-pellegrini-dio-frutos-betis-vencio-a-un-elche-que-tuvo-a-cepeda-titular-y-dituro-figura.shtml",
    "published": "2026-11-08T15:03:52Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "regiones",
    "title": "Río Biobío con drogas: ciencia alerta que sustancias consumidas por la población llegan a su caudal",
    "summary": "",
-   "image": "",
+   "image": "https://assets.diarioconcepcion.cl/2026/11/pag-11-r%C3%ADo-Biob%C3%ADo-foto-carolina.jpg",
    "source_url": "https://www.diarioconcepcion.cl",
    "sources": [
     "Diario Concepción"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOdjNRWGplb2lJcGZXd3ZLT3o4UmIxZGg0ZTEzWS0zZXJ3RVFaNlFCNkU1QXg2OUUwYUNhOEJTUGVHT05IcTA3V0hMR3ZNQl9YZkZxNkZTNHhXd3RzU2FtWEdWdUJZWEpQdl84dEM3RURObUNLUkUzN2pTNXl2Vy1KQTUwTkxRVi0tb1ZBSmFGQW5MbnotNWNjaV9RMExwejc0YWVidUJRVHc5M012OEh3VXQwS21IMW1rZGtvYzZucXgzTzlYSVlyZUdXYjdNcTJQMi1NQmNfTHNsNl9JYnZ0bUFxSzR4TUVOVzdDa0pJQV9wakxXQTZscdIBgAJBVV95cUxNRkJfaC1TUWZ0NFFsbmFPYlNEZHdmUi1xbWg5cHRNdmxtYTlaOUZsMUVLQl9qZGRoODloUUpEZG04ZjB6SUhIVjhvbTZCNndJc3BRdS1teUFzMWJsNkFnMUJwUDZuUndaUWxUdmlPczN2SnhzdzZyb280Q2dfNUl5aUNqdVdpYTdmRV9MU0l3X1dSTEphTzE3NEI2ellaRWRVdlJzMEd5aEoyQzA5RXpDUmQwSU5JLXhJNTZ2cjd5X0RDUmY0RHhwTEZuX29peE41WEx2bWxxOVZ2LXVCZWFmRkV4U3pHQndhMEVqNy1idFBMZlk3NHF2X1dxWTJPM09D?oc=5",
+   "link": "https://www.diarioconcepcion.cl/ciencia-y-sociedad/2026/11/08/rio-biobio-con-drogas-ciencia-alerta-que-sustancias-consumidas-por-la-poblacion-llegan-a-su-caudal.html",
    "published": "2026-11-08T15:03:11Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2759,7 +2931,7 @@
    "link": "https://www.elconcecuente.cl/noticia/sociedad/que-hora-llovera-en-coquimbo-santiago-y-valparaiso-este-lunes-y-martes-revisa-el-pr",
    "published": "2026-11-08T14:56:58Z",
    "first_seen": "2026-11-08T15:03:26Z",
-   "image_checked_at": "2026-11-08T15:03:26.380970Z"
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2823,31 +2995,17 @@
    "category": "regiones",
    "title": "TELETÓN 2026 SUPERA SU META Y RECAUDA MÁS DE $46 MIL MILLONES EN EL ESTADIO NACIONAL",
    "summary": "",
-   "image": "",
+   "image": "https://araucanianoticias.cl/wp-content/uploads/2026/11/teleton-2026-supera-su-meta-y-recauda-mas-de-4.jpg",
    "source_url": "https://araucanianoticias.cl",
    "sources": [
     "Araucanía Noticias Temuco",
     "Radio Ñuble"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRHVtYXpuSEQ3bHNRNzU1MEM1bWRnRXBEWFowdFZxSU5QV2dKWlJuYU5waDBnXzJxN1hycDZranlNSlh3OTVHZm5vbHpVakp4V2xzdnZORjRFNVZudXlxa2NHUUJERUcxaU05YURNaVFIS05ubGRmSzY3bVowZzd4a1kxbTdGbEZVVlRhVnhBb282WEZvSGlLRWNXYnR1QjFzR3hKRFV4UVp1YVJRRlRqM05KclZVOFZVS3lDVDV6U0R4Z2dMTndz?oc=5",
+   "link": "https://araucanianoticias.cl/2026/teleton-2026-supera-su-meta-y-recauda-mas-de-46-mil-millones-en-el-estadio-nacional/1108318540",
    "published": "2026-11-08T14:51:56Z",
-   "first_seen": "2026-11-08T19:36:34Z"
-  },
-  {
-   "category": "nacional",
-   "title": "Nueva tragedia en la Ruta de la Fruta: un muerto deja accidente entre bus y auto en San Pedro",
-   "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7011669-accidente-ruta-fruta.png",
-   "source_url": "https://www.biobiochile.cl",
-   "sources": [
-    "BioBioChile"
-   ],
-   "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/11/08/nueva-tragedia-en-la-ruta-de-la-fruta-un-muerto-deja-accidente-entre-bus-y-auto-en-san-pedro.shtml",
-   "published": "2026-11-08T14:51:11Z",
    "first_seen": "2026-11-08T19:36:34Z",
-   "image_checked_at": "2026-11-08T19:36:34.106956Z"
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -2872,15 +3030,16 @@
    "category": "cultura",
    "title": "Se casó en la playa: los registros del matrimonio de la actriz Ingrid Parra en Papudo",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/4XREUXIJ2NEPLCGAJJM3OGHRFA.jpg?auth=862bc59a6da7d8aa8fb1e0af0a459771fa7b8de6045c5e680eea636f40a1c039&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbC1xb3hSVlJhRWhVN0M3WHdHY1NxVmtOWXd4a0FaTzg5VHM2aDJfTHg4c3U2R0Z4VlRvSGhDbXN5ZFRkc2tEZjlLUUkwWjZnN3hHTFBLbVBTeERSQ3NhekllRE9xQ2ZhcFFSODdyTHhGMUJhY1o5dzA0LVNDN1JQNEhVbDU4Ymw2STNJOWlTdXdmVWUxak1IYUFCc01zbWhNMmxSVFRnaS1GbDJwZTdoY0twR3JGM3pGSElfT3ptY3lMenc3bDlRU0N6RdIB7AFBVV95cUxQaXF5bGNrQjBKUW4zMEhkSnpWZkc3SGxEcXN6dlhZZ0dKWENXSXBNWjBWS0pvWDlSN3N6UTNsNmNvUHpIRDIzNTU4RGZnMDhEb1lqMXFHS29kVS02TThnR1VPdTNhdDR2bDFCOTBTWUlWVW5GcThNTkJWU0lQd2llTXU5bktwVUZsVTktcndzVlU3VV9TbDFzRWlkOEtpaENzcVlkNDJQd2JfYjZkSnlIRXVpOTZjQW8tYjV6MWpwQUNRb0FKNm5idmYzY0oyeVVUZnMzVURXVzJmOF9FelZycFJDMjA1N0FzV3RsMg?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/se-caso-en-la-playa-los-registros-del-matrimonio-de-la-actriz-ingrid-parra-en-papudo/",
    "published": "2026-11-08T14:49:56Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "regiones",
@@ -2892,9 +3051,10 @@
     "Ñuble Actual"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPbXlObUFuRExHVXVaN0lISUIwLXJEdGNhUVRHazdxMjFxa3BDNzFDM040NnJUM3d6eHV2ZGJGUUhnRmhBNFNCanoyZldldVlmdm9pRzZtN09xNzdGcEhncWVKYTFDMFFtX0UxbzRCbGswSGJSNjFQQkc1NTdxcERzdHNmRWExbGNGcmFsV3hRTFE5SnlRTFF4XzQ4LUxuTWdMZmxUeUl4R0huNVh5NjQ2WGp6OWhfZ0w5WmNPMWFUT2c2RzlBbFNTOTJzVjhpLWdOa1BtUU5CVFhhSXJocHBxak16eS1kMk5yN3J3TWhESVpleFAzNGFIUlU3bG9fNmZtdjRVcHJvWmdzVFpmYWNyakRWTFZETUUwVVE?oc=5",
+   "link": "https://www.nubleactual.cl/region-de-nuble/indap-nuble-abre-las-puertas-del-mundo-a-la-agricultura-familiar-campesina-y-nuevas-oportunidades-de-exportacion-marcan-historica-semana-comercial/",
    "published": "2026-11-08T14:47:44Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "internacional",
@@ -3425,6 +3585,22 @@
    ]
   },
   {
+   "category": "nacional",
+   "title": "Nueva tragedia en la Ruta de la Fruta: un muerto deja accidente entre bus y auto en San Pedro",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7011669-accidente-ruta-fruta.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile",
+    "24horas"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/11/08/nueva-tragedia-en-la-ruta-de-la-fruta-un-muerto-deja-accidente-entre-bus-y-auto-en-san-pedro.shtml",
+   "published": "2026-11-08T14:14:00Z",
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:36:34.106956Z"
+  },
+  {
    "category": "cultura",
    "title": "Don Omar confirma su regreso a Chile en 2027: cuándo será el concierto y cómo acceder a la preventa",
    "summary": "",
@@ -3534,18 +3710,19 @@
    "category": "deportes",
    "title": "Fernando Gago llama de regreso a Javier Altamirano en duelo clave de U de Chile",
    "summary": "",
-   "image": "",
+   "image": "https://media.redgol.cl/wp-content/uploads/sites/8/2026/10/29114033/PS_1202891-1-e1793284860314-1200x740.webp",
    "source_url": "https://redgol.cl",
    "sources": [
     "RedGol"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMnVIeEx2MFNScmZPWVJ5clV3SmN5YWYxUlJydnlaeGJwWVZ0VDNycXlYUTFKeE1DUEo3blJxeGcweEstM1gyVHZ0a2dwVXZvRWVZT09JMGpKTFotOVA0dnhycUEzM0VEMXp0YkNCTlVwWWxNdFZzMEp0VlBKT1ZVY2loRWpFSDVjY0VscmVNeV93QjBEZ2hYaHpYY0V1U28tRmVBSHdMNkpFUdIBrwFBVV95cUxOVUNIaXRDQWxIUmY3b2dTRUlrLXYzRXhCX29tUmtkQlVGUDcxU3o0RjBWbkRwcnhsejMwaDU3MFJqUC1zdXdsTHZKNG1mT19FSmpHY1hMX1Ixd181OHRvNXdqdE5WTzd5SzdmdlJ4blBEcDlWaHo3a1NhMnhhQW5YQWtOd1FqUWdQVjFFcGhqQ3FMVzhBYWp0dlBWMUdRSURTdFlWa25aU2J4Z2tXNWNv?oc=5",
+   "link": "https://redgol.cl/udechile/fernando-gago-llama-de-regreso-a-javier-altamirano-en-duelo-clave-de-u-de-chile",
    "published": "2026-11-08T14:05:04Z",
    "first_seen": "2026-11-08T19:36:34Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -3880,6 +4057,21 @@
    ]
   },
   {
+   "category": "nacional",
+   "title": "[Fotos] Las colleras premiadas para la Serie de Campeones del Zonal Sur 2026",
+   "summary": "",
+   "image": "",
+   "source_url": "https://m.caballoyrodeo.cl",
+   "sources": [
+    "Caballo y Rodeo"
+   ],
+   "coverages": [],
+   "link": "https://m.caballoyrodeo.cl/portal_rodeo/site/artic/20261107/pags-movil/20261107142550.html",
+   "published": "2026-11-08T13:48:00Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "A qué hora llega el papa León XIV a la Argentina: los detalles de su agenda para el primer día, domingo 8 de noviembre",
    "summary": "",
@@ -3902,15 +4094,16 @@
    "category": "cultura",
    "title": "“No me pude quedar en el segundo bloque”: Gala Caldirola reveló el motivo por el que desapareció de la Teletón 2026",
    "summary": "",
-   "image": "",
+   "image": "https://www.lacuarta.com/resizer/v2/VFWF3ASNOFHPDP45WGOD5B55UM.png?auth=f4f88b96e417e45685df10eec2239dec6c3725040d58dcc6814d064874e0ea9e&height=630&width=1200&smart=true",
    "source_url": "https://www.lacuarta.com",
    "sources": [
     "La Cuarta"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOXzg0RWJZQmMxeDg0a2FmcWVBOFF6cE1yd0hZcTN0SUVYYnBjcTFFQTZ2TEU0TkxwZjEyMkowRWt0cXFPUkRMREUtdVBRb0VUaUlnNGIweUo4c09GdlhKLUZiWUgyQkhaU19NTjdLRnE2cldMN040MEhCM01qdDlBdmlMY1R6ZXdyVFVPQWVGLUE4ZE9USFozS2ptTEZjMFR6OHd0OU1ObThmcEZ0N21LM0diRUViZmZGMm1rdVByTG1ZTlp1R3paWGNoVmRPU1VtcVlDelk5RGNWVmE0SGtabVV5a004Ylcxd0FqSDliY23SAZICQVVfeXFMT2FEZzB4NVRHTEI3dkZxWnFaS2xUdWEwR1Q0Y3RtVDA3aTNxWnFsS3g5WjZ2SjZ6YmlhalNVaGNWeml2MWNyR2VkNlRNM3VqVEV3WTZ5ZlFQMnk5RWljTDRMaURFNk9HV281ODVGcVg0VVgtVVpoT3FHbmlubFlpcTFIVzQ1blgxdFJXZ0tKbVgxVzFleXVmdk5IbVVzRS0tdVZMclNsMTI5bU9QbGpTOUlaX2xXMk9RZjJIX0lzcnAwNjVDQWJ5SmY4QjFpdUsyUERUaHI4bWNoVFhyOVRjM0xmbjg5OVVoSW9wb1Z2VHlfaWhjOXhKUVRlZks2Z1lYZzVlMG9lVzdXTGFMZHFISVl4QQ?oc=5",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/no-me-pude-quedar-en-el-segundo-bloque-gala-caldirola-revelo-el-motivo-por-el-que-desaparecio-de-la-teleton-2026/",
    "published": "2026-11-08T13:47:11Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -4057,15 +4250,16 @@
    "category": "deportes",
    "title": "Competencia para el Real Madrid por Zion Suzuki",
    "summary": "",
-   "image": "",
+   "image": "https://assets-es.imgfoot.com/media/cache/1200x675/suzuki-6ab254e2062a1.jpg",
    "source_url": "https://www.fichajes.com",
    "sources": [
     "Fichajes.com"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcFdXT3VpVmlJRXkwRGE5ZDdxSVNUZHhqeFZ1Wk1DYlI4YUc4NlZQSVJ2eFpTRjBhU1NtbVdRT0tzSy1kX0dkeHQwXzZHcFIydkJfYU5YSHZWWTFsZDFGNlJha3BIVXVaaGozTkU0LWVKQkJKREFtd29oNXIwWTlPbFN5Z2VEX2I4Q0ZDVS05TUVvRHB2ZmlQNg?oc=5",
+   "link": "https://www.fichajes.com/a7471063895920246329-competencia-para-el-real-madrid-por-zion-suzuki",
    "published": "2026-11-08T13:39:16Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "cultura",
@@ -4268,20 +4462,20 @@
   },
   {
    "category": "regiones",
-   "title": "Aumenta a 3 mil millones de pesos la cifra robada desde banco en centro de Concepción",
+   "title": "Delincuentes roban $3 mil millones desde un banco en Concepción: habrían ingresado mediante un forado",
    "summary": "",
-   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7011630-robo-banco-concepcion-2-1.png",
-   "source_url": "https://www.biobiochile.cl",
+   "image": "https://www.lacuarta.com/resizer/v2/QDNUJ3VQVZD7HKGDBR7AM4OHO4.jpg?auth=9e8a9e81c170adfc4c72299d4f0c60c1856650e7dcef36c3742d8aa53156cecf&height=630&width=1200&smart=true",
+   "source_url": "https://www.lacuarta.com",
    "sources": [
-    "BioBioChile",
+    "La Cuarta",
     "El Informador Chile",
     "Meganoticias"
    ],
    "coverages": [],
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/08/aumenta-a-3-mil-millones-de-pesos-la-cifra-robada-desde-banco-en-centro-de-concepcion.shtml",
+   "link": "https://www.lacuarta.com/chile/noticia/delincuentes-roban-3-mil-millones-desde-un-banco-en-concepcion-habrian-ingresado-mediante-un-forado/",
    "published": "2026-11-08T13:23:00Z",
-   "first_seen": "2026-11-08T15:03:26Z",
-   "image_checked_at": "2026-11-08T15:03:26.380970Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "politica",
@@ -4311,6 +4505,24 @@
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN08xUHNSb3lZalZxQnVUakRXenQzdDhBMlVielkxYW90OVFVZG95bS1NdEZsMFNuUHgzSFF1cG91a3VoN3RpbFJnZzFfeDhrV29xRFBjM2w1UkVaZmlJNDF1LUZhOUo2NEw2STdGaW00S3dEd1NRNG5lckdWaGhKQ0JKMmpBYmNjRGE2b1ozTXJKMXJaS3JxMGpDaE1ySTIyajFIQi16YnBXdw?oc=5",
    "published": "2026-11-08T13:21:14Z",
    "first_seen": "2026-11-08T15:03:26Z",
+   "metadata_only": false,
+   "coverage_countries": [
+    "BR"
+   ]
+  },
+  {
+   "category": "latinoamerica",
+   "title": "Brasil x Espanha, Finalíssima de Futsal; horário e onde assistir",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.lance.com.br",
+   "sources": [
+    "LANCE!"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeGItNC1EX01PSWlKaklQd0Rad3RDN1JubzlCY2ZFR3VVQjh2ZGs0NWhPaTE2ZHc0REs5SE1WOWxBeEx5WEJRcHU5aG96SXJ3T25KSEdHTVkzai1TUm92NGREd2N3WGdEYTExRVFqRjJuVTdOTFhDa25vRlh0SDBIMFNkcWhCSGdGZVhWM081U3JMZE5Tc1dDZVd5NnZVYVRqcE1kZDcwTEhoZw?oc=5",
+   "published": "2026-11-08T13:20:07Z",
+   "first_seen": "2026-11-08T19:36:34Z",
    "metadata_only": false,
    "coverage_countries": [
     "BR"
@@ -5041,6 +5253,21 @@
    "first_seen": "2026-11-08T19:36:34Z"
   },
   {
+   "category": "nacional",
+   "title": "A horas de la definición del título: delantero de Colo Colo protagoniza grave choque en estado de ebriedad",
+   "summary": "",
+   "image": "https://www.latercera.com/resizer/v2/WKEGPM3JKJDM7P2PK4Z7HCNP7I.png?auth=99ebece1872fe915cbd5bddf686d958ead0ced4ecb976dbca99000f9e808b69b&height=630&width=1200&smart=true",
+   "source_url": "https://www.latercera.com",
+   "sources": [
+    "La Tercera"
+   ],
+   "coverages": [],
+   "link": "https://www.latercera.com/el-deportivo/noticia/a-horas-de-la-definicion-del-titulo-delantero-de-colo-colo-protagoniza-grave-choque-en-estado-de-ebriedad/",
+   "published": "2026-11-08T12:38:17Z",
+   "first_seen": "2026-11-08T19:38:57Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
+  },
+  {
    "category": "latinoamerica",
    "title": "Colombia se despidió del tiro con arco de los Juegos Olímpicos de la Juventud",
    "summary": "",
@@ -5062,15 +5289,16 @@
    "category": "deportes",
    "title": "¿Qué canal transmite el partido de Colo Colo Femenino vs Coquimbo por la Liga Femenina?",
    "summary": "",
-   "image": "",
+   "image": "https://media.dalealbo.cl/wp-content/uploads/sites/14/2026/11/08093253/VamosLasAlbasH-e1794141193287-1200x740.webp",
    "source_url": "https://dalealbo.cl",
    "sources": [
     "Dale Albo"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYkNhWFJ5U25rXzRTazBXdTc2YWZhalRKTWlSNHh0X2FFTkVGa3U3VnNoS3pQMndNY1Q2bXpkY01WTWRud1ZFSmJJZzVSb1g5LWxSY1VVcnhjZGU2NU95c3Q1b0ZjTUcxd2lPYkV3SUs2MkVGTUlRdWQ4UnFSYmdOd2ZydWtqTV9sd1BNdVdnSjZuY3FTX1Yya0lvZ01uUmczSFdfTGVQcjNQMUQtS0ExLURXNDJXelVBTUp1NXVQS094Z9IBxwFBVV95cUxOUFdaU2oxc3dtMTRUbjczVFdzNVVsb1ZCc0RDdEtGMnVmd3RRSC1LSEZ3cHNvVm55SXRSVG84RkJtU2lwSGctd0EyRVFlWExWMnd0cFE4YjRDMTRjakV4SE5VMTdJYlhiUlppSzV1TjRCbUN2bnpEeW93RnF5V0l6c2NxN1gzalo0ZVJrbVJCVFlQR183bTZrX3BwYUc0Qjh1VnVvRi1zQzdRcEdKSmVJb1R4bkVlalpRRDNYU0piRHZuSUxtT3ZZ?oc=5",
+   "link": "https://dalealbo.cl/colo-colo-femenino/que-canal-transmite-el-partido-de-colo-colo-femenino-vs-coquimbo-por-la-liga-femenina",
    "published": "2026-11-08T12:34:14Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "deportes",
@@ -5260,6 +5488,23 @@
   },
   {
    "category": "regiones",
+   "title": "Aumenta a 3 mil millones de pesos la cifra robada desde banco en centro de Concepción",
+   "summary": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7011630-robo-banco-concepcion-2-1.png",
+   "source_url": "https://www.biobiochile.cl",
+   "sources": [
+    "BioBioChile",
+    "El Informador Chile",
+    "Meganoticias"
+   ],
+   "coverages": [],
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/08/aumenta-a-3-mil-millones-de-pesos-la-cifra-robada-desde-banco-en-centro-de-concepcion.shtml",
+   "published": "2026-11-08T12:09:16Z",
+   "first_seen": "2026-11-08T15:03:26Z",
+   "image_checked_at": "2026-11-08T15:03:26.380970Z"
+  },
+  {
+   "category": "regiones",
    "title": "Roban al menos 4.000 millones desde un banco BCI en Concepción",
    "summary": "",
    "image": "https://www.cooperativa.cl/noticias/site/artic/20261108/imag/foto_0000001320261108104018.png",
@@ -5282,7 +5527,8 @@
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile",
-    "La Tercera"
+    "La Tercera",
+    "Cooperativa"
    ],
    "coverages": [],
    "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/08/delincuentes-ingresan-por-forado-a-banco-y-protagonizan-millonario-robo-en-centro-de-concepcion.shtml",
@@ -5539,9 +5785,10 @@
     "ESPN Deportes"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWWFaWUFOckNMV1FfMC01YTdNdkdGRXdwb051MmJrZUVCWmRHZC1KdFlWQnNYRHlXSHRBNHVMcFBEbzN6MzFNUEFOS1IwS1FIWG9wRTdzR0ZrdGFmNU9BZ2h1dDR0M1hINWRTVUtTaXh4SXlwTGt4VlNMSTVZaVRseC1Jclh3TVF3My1WQ1lwY0xmQjZyUHc0a2w4MXdCQ0gwX09SU3dSQUV4cU1GYkhz?oc=5",
+   "link": "https://espndeportes.espn.com/basquetbol/nota/_/id/17493214/curry-wembanyama-shai-brillaron-resumen-nba-sabado",
    "published": "2026-11-08T11:50:00Z",
-   "first_seen": "2026-11-08T19:36:34Z"
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "latinoamerica",
@@ -5705,15 +5952,16 @@
    "category": "internacional",
    "title": "Revelan que torres de control de EEUU siguen usando disquetes para datos de vuelos",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7011565-250038.jpg",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcHUwUFdkZFZ2dEM0aExCQ1F3MG9EVzF4RTk3SWpCejZvRGZwQzA1REdsVldrQjR6VnhLNkdoVzVyTEs4NGcxZGJDSFNBcklBMlE3RERlOS15Y2ljTGFlZlp0RTJId1pyMDQ4RnJoeGRNdlRyQWxsVTJqQV80OUkwclFfeTJKZFlLMkV5dXNzUnBlZHpBR3V1MXlRSjYtR1V0M01mbXktVHpmR1VoOS1YVUNraXh1NnZ1LU80R21RVlRLNnplS3BBU3BVTEpCeEFvOGdvbmxUVGc5NWdGUlhmMVRXUjNpR3JPb1dyN2JrUHQ5Mm82NUlteTR3?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/adelantos/2026/11/08/revelan-que-torres-de-control-de-eeuu-siguen-usando-disquetes-para-datos-de-vuelos.shtml",
    "published": "2026-11-08T11:41:44Z",
-   "first_seen": "2026-11-08T15:03:26Z"
+   "first_seen": "2026-11-08T15:03:26Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "cultura",
@@ -6179,35 +6427,37 @@
    "category": "nacional",
    "title": "Las secuelas económicas de la pérdida de poder de Trump para Chile y el mundo",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/WNNBPCW2LNEU3AHBNU2SR2SI3U.webp?auth=01331352f418ba0d8ce8021c2db5b2e136380dbfbfa51bae8342ce2c8d20f5de&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYVV0ZklDcE1acmhYRzlHY01vbUZ3ZE1XNm85YUxURlZJMkkzblZjY09qT2hvSHBhc3FxaTg3QWJQc1ZHU2VtSFpqQ2U2YzdTbm9kNU91aUtMSVZIU2dTZlU4TUFDcEJMbF84UlY4M2VZdGtzMm5ValVzdHF0TnQyY19PLW9zam8xQ3NtbjNQR2xxUkpxdE5yeUpFVkR5UGdUemJOclhOWEZUdHZab0EwUjM5Qk1mWU9mUnfSAdsBQVVfeXFMTzh6djhKR2tHeG9wWTRQNEZXdjhRdy1qRkE1ZlhaVFFXODN4R0lDTkpKV0lFaHdnTFhVSkF6VEJXY01GUUpIQnd5TjFhNGNxUDlhUmtpSUktUWhZR2NlZ29RN1RWdzJsdnh3MmNpS0R2MENRVFVJSUJKN0l5ZENsRVlZdlpjR3ltdHJXeGtORjhqZTI2T2xnM19TWDIwVzJuQ1JfMmJRSEd5czc5YnJOaEl4U2lqVTdiNHFJMU9lUHFDNkIwaUZEd1oteHVFbkFmc1VSUTJ3a0lBR3Rj?oc=5",
+   "link": "https://www.latercera.com/pulso/noticia/las-secuelas-economicas-de-la-perdida-de-poder-de-trump-para-chile-y-el-mundo/",
    "published": "2026-11-08T10:00:00Z",
    "first_seen": "2026-11-08T15:03:26Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "nacional",
    "title": "La nueva generación de banqueros en Chile",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/SUOFROWT2NFJLHUMJTF5GUMFXI.jpg?auth=2236cb83ac3b0d5337c408817e5d2a2693a33aedab657b733c8c0053022b95ac&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaG5pemI4all1aF9FMnd5M2dCZVluTUFXd3lSdG9SMi04eEhIaVdaQzVPTUVUWDFleFMzUnNXV3pWRXVDUGdxYnVmYUpQa0tSbHdsdTNRQ0EyelFtNWlFN2JyS3paWnF2UnZWV05lb0RXN1BqZk1SOGg2WnJFdW55dXJnQnZnVVF2SWfSAasBQVVfeXFMUEJ4ZEhKN1BCTUFEcm91bTRCbnB0T3R4dXFvUkY4N01fRmJ0SHRBRlVfMWkxalJueGk2N2N3UEw2VWpyazE0c1VpOVpEX1hobmxjTU02MEpWd3ozRVdILXVlYndpZ203X2JHcmxhYU4weTc2MENYaXI4bWcwbUpUZTRCRmlvTFptSVNod2E5LVcyYXp0TURaOTg0QlRBQWhxNll0bGlpaUU1V1VN?oc=5",
+   "link": "https://www.latercera.com/pulso/noticia/la-nueva-generacion-de-banqueros-en-chile/",
    "published": "2026-11-08T10:00:00Z",
    "first_seen": "2026-11-08T15:03:26Z",
    "coverage_countries": [
     "CL"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "economia",
@@ -6299,19 +6549,20 @@
    "category": "nacional",
    "title": "El expresidente peruano que usó el antichilenismo para ganar votos y luego pactó con Chile",
    "summary": "",
-   "image": "",
+   "image": "https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7010544-augustobleguia2.png",
    "source_url": "https://www.biobiochile.cl",
    "sources": [
     "BioBioChile"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPaEJvU1h5REpNVUx2ZjNiRXBYV1ZpSUo3bVV4U05zSHFVZWNZYzZSa2VpNzNtTjBwYndpdzVpSVFmR21tY2xPRDd1c3l3ZEh5c0NyYl92RnlKR1lBaXZYdzFSSDI1M0VaZlZWNUVsNm9VY25iUTR3aWNvSUhDX3ZlcEc1MHV3WlhqM3NFN3ZsNXoya2x5ODZDUkJCYXhDdFVMVGJ5U0FJTnV4RmJ4bXAtSGprbmQ5RkJuRkxHNllJMEN0R1VidHNMNjdpeHFpRHZPeUdiSUt6TUlMUjlZV3JGZHBIblZzdk9XMGZ0eC1nTGVTbzcwZkY3R2VwM0phRmFFc0E?oc=5",
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/11/08/el-expresidente-peruano-que-uso-el-antichilenismo-para-ganar-votos-y-luego-pacto-con-chile.shtml",
    "published": "2026-11-08T09:40:33Z",
    "first_seen": "2026-11-08T15:03:26Z",
    "coverage_countries": [
     "CL",
     "PE"
-   ]
+   ],
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "tecnologia",
@@ -6354,15 +6605,16 @@
    "category": "nacional",
    "title": "Ricardo Lagos, su quiebre con la izquierda y la hora de su retiro",
    "summary": "",
-   "image": "",
+   "image": "https://www.latercera.com/resizer/v2/EMBGB2NDGBEBZEN33YBY253RAM.jpg?auth=4fa90a565899cc7e199c036b13428b958bfa319a344a598d827be1c12530cecf&height=630&width=1200&smart=true",
    "source_url": "https://www.latercera.com",
    "sources": [
     "La Tercera"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbG80Ukk5QnNwR3VwbEo1Qno3aGxuNWVPeTRFbi02cFpMVDVGQ0ZBcHI3YzJGUEtLVnFZbEZJVDl6c04zM0I3bDZfdzlXTk9IRGxYQzJUWGQtbnVqc2t0RDhpR1BaS1ZCTUpKc2hTeGpmaWNiZS1ZM0lVcjVmYVBhV2JFMU9BTnY4N3RrUUN1TGJib0NRRUNYb0lmbjc2SjFkOVdES0wzNUFWUEw30gHOAUFVX3lxTE9wUEl6ZnFnU241ZjlkT1h1Xy1yckVzdFVrUncwRnJMWXc3UEphYmNQXzJhS21GRDdPc014V05hWnZJMmZxREJpUGxKSXNiVUI5M1Y0anM5QmtQblB0UDE5NDREM3d6eFh5dDNjNmMtbVl5ZTVBNVRrX3kwNkUxc0E4VjhBR3ZZYVp4clV2cXhWNlhDYXMyVmhwR2ppdkNNbG5KVVlqeUtYOXd2Y2ZoVGtqLVM5ckdhUGk4QWMtNFlEbmc3UTZtMERQaUJKckVn?oc=5",
+   "link": "https://www.latercera.com/politica/noticia/ricardo-lagos-su-quiebre-con-la-izquierda-y-la-hora-de-su-retiro/",
    "published": "2026-11-08T09:30:00Z",
-   "first_seen": "2026-11-08T15:03:26Z"
+   "first_seen": "2026-11-08T15:03:26Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "regiones",
@@ -6478,6 +6730,20 @@
    ]
   },
   {
+   "category": "deportes",
+   "title": "El Bayern de Múnich confirma su interés en una joven promesa",
+   "summary": "",
+   "image": "",
+   "source_url": "https://www.fichajes.com",
+   "sources": [
+    "Fichajes.com"
+   ],
+   "coverages": [],
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOUVPSGVoVjVNNnduWWk5RlJKNS1YcHlEUTk0TXRmcFlJU1NtcmVlNjB0bF94YzJxQkVudHdGcW5xREJxZ1VUVDBOMHV1Unk1N3g2MTl6XzRjRVV0azVESzMyT25hd1A1ZWhuN2NUWmpFYVZqZ0JUZVA3Yk9BVVRqaTRrMjJsdEtvMnlEYnQwWi1iSnR5RENFVTNJaUM0RnVyWC1TYU41QS05UQ?oc=5",
+   "published": "2026-11-08T08:46:24Z",
+   "first_seen": "2026-11-08T19:38:57Z"
+  },
+  {
    "category": "cultura",
    "title": "“Gijón y el cine argentino tienen una conexión evidente”",
    "summary": "",
@@ -6515,15 +6781,16 @@
    "category": "internacional",
    "title": "Irarrázaval: cómo terminar un Gobierno en 8 meses",
    "summary": "",
-   "image": "",
+   "image": "https://media-front.elmostrador.cl/2026/11/IMG_2610-700x401.png",
    "source_url": "https://www.elmostrador.cl",
    "sources": [
     "El Mostrador"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNa3o5Nld6MnBpdnlzWVRDVlFqMUNlVHJGRTFDVDViV3UwTmxrTVE3WEJxR0JWdTBEbW9mdVR3Vy1VdkEta2tiVmhhNG15T1BTRTZqUGdCLUdlMlJuQ3ZVVUJJSUt5RnpQcnpsaUY2dGhMMkpheUJSODJVV2VNQTA5blJUMEx1VTZBZWJzZmNZb09FZk4wZlVZaldxLWw?oc=5",
+   "link": "https://www.elmostrador.cl/politica/2026/11/08/irarrazaval-como-terminar-un-gobierno-en-8-meses/",
    "published": "2026-11-08T08:11:14Z",
-   "first_seen": "2026-11-08T15:03:26Z"
+   "first_seen": "2026-11-08T15:03:26Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   },
   {
    "category": "economia",
@@ -6772,257 +7039,29 @@
    "category": "internacional",
    "title": "Irán reporta incendio de dos buques petroleros en el estrecho de Ormuz",
    "summary": "",
-   "image": "",
+   "image": "https://static.dw.com/image/79637500_6.jpg",
    "source_url": "https://www.dw.com",
    "sources": [
     "DW.com"
    ],
    "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTVcxZktKVS1SUTI3a0lOZGtZMWp1X25aMEJtZG5xTlJ1WFBNQjljeFFvTDh5cENZVjJsQXhfQy12OGdscGdEdjZIS1kzUWstY0JnSGRoREszVzFhMjB6ckFDeVNQSUMybzlJOFhLM1R4dy1vNXNNZENfQXZ5VUVxQlZVSGJvdnlNOHFaemN1d3hfOUFfYkg2eGNZUkVJOUNvLWxOUTVOVVFSN1dH0gGsAUFVX3lxTE9iajB4ZUQzN3BEem5tX0p1TFBub01Yc1lpcFlfYzdsUFpqenBocVpYaWp4cU8xbWxIb3QwTnB0cXl2RzlCazgtQjBsYkxLZElPejBTRzlxX1J6Um9LQ3JPOEpfMXNSU1BwdllXZDltWENNaHNCR1hDLVFvRW5CQ1VnWDdNNlAwZnVkcVQwa0dkNmNfRUxDRlFaZXlQbVZDaVBKamxEX01xRERuMUY?oc=5",
+   "link": "https://www.dw.com/es/ir%C3%A1n-reporta-incendio-de-dos-buques-petroleros-en-el-estrecho-de-ormuz/a-79888657",
    "published": "2026-11-08T06:25:58Z",
-   "first_seen": "2026-11-08T19:36:34Z"
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Tres conclusiones de la NBA en México: Jokic eclipsó a Pacers y la expansión sigue pendiente",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.si.com",
-   "sources": [
-    "Sports Illustrated"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTE5ubHZCY09NLVU2SFZNNEl0SWM1VldCbG9FalJCdXFWSkJQLTBaTjZ5Qkx4Y1pCMzdVaFloWms2eFF1NVl3Q0NfS1V3cmpQNk1sUVE0bFA0aGVhRXk4aVlwclF0RnBJNDFXZkZqZHVBeWZqNmFHbEFSM21rd1ZSVkZXSHdqRmVWWERCMnZTTXp3UXJDZC1hR19EMzRIZWNsaHN2bDUwdXgzR2wyRko2cEVHaUh2Z3pTYnZSVVR1bkZXUQ?oc=5",
-   "published": "2026-11-08T06:22:55Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Startup argentina conecta pesos y dólar cripto junto a MoneyGram",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.iproup.com",
-   "sources": [
-    "iProUP"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNmhJb3B4Ung5cE5VN0FHU1VhUEVkRGRpMWlxTlhNVVVoUjRKZU85NEQzVUF1VmxCLUtIYWlHZDA2cHVadjlhb3VoeUV0OGdBRFVnZGk3YkJhUXdPdzgzMWdTU2E3WkhicHJFSl9wci15SkJkQ2VGeHRGeWhpQ0hKcXh4QjE0QXp6UFhpTG1MckhiWWY4X2xrWGd4ZnpJOFRHRjh1MdIBqgFBVV95cUxOWEZKWTdWTzQwaktOZUFGQUpYQmdmWkNBVG1yZnBJMlEyLXVTY21GMkd5S1pEUGdCMklqNGdIU2pMeHd5Z3pncVZRZEhJYzlkSlBUUkhxYUVzUVZXLTZwdjJWRTNlSlMzRk0zaTdWWndjMVlXQ1dJX19JWFVHRHJEOW9NTXk0UHBXQ1BOMlROR21yRWN2UlRJc3hJc2hHZW1tbnRjQ1FNNkV2UQ?oc=5",
-   "published": "2026-11-08T06:22:30Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "¿Qué falta a México para competir por una franquicia de NBA?",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.espn.com.mx",
-   "sources": [
-    "ESPN México"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdEFjMi1iUHNvTkVEckI5MmRLQkNaeldkS0FjWS1MVlZlOF9BRkdfRzViZXpDTmhaMjZRQXZDTWNrTWd4S05ELWlHdzFUZ0FiclZMa09SZGlSTy1Xd0NXYW9JMFpqb0tzX3VMTXBRdlZ6bXJfSF9fTkgyR3llSUJKb1ZZMjhzalVBWm5Uc1FKZWJPVUN2M0ZubWJBZUlhODZpNTEtOEln?oc=5",
-   "published": "2026-11-08T06:20:00Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Cuando Durango abrió sus puertas a los sueños de México",
-   "summary": "",
-   "image": "",
-   "source_url": "https://oem.com.mx",
-   "sources": [
-    "El Sol de México"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdlpJM3B0NVR6WHp2cXl4VVBDbGZMUW84R1B1R2tqOEZVenIwdmFSbFN6MXlwVXo1aHd3WDMyNHNtNXVVLXFxUmpWRG0wYVNlR0Y4djhWRERXR3ExbmFmMFUxSmZjSThLdndiQVllRjA1dF8ydE92cmRURTNsRnA0cGFDWTZyOGJ5OW1QQkNSLTFDVWJfWklkcUtxQWwwYTgwUThUeW1fclQ5V2c?oc=5",
-   "published": "2026-11-08T06:11:27Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Irán, derrota de Trump y el rebote en México",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.sinembargo.mx",
-   "sources": [
-    "Sin Embargo"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd09EMkk5TnIzYVg4UkVsV1Y1TWdocnpJazQxank0LWR6SThvekdQNlZBWXNEN1pNQmdDWnZYLWlTX1hlalVRWEdvSy1weTJvWnhnd1ltTldHQkdINnRrVnZINDdVb0xvU2pvTGhIMENUeHY4N1dKYnQtclpHNWxNX0tIT0s?oc=5",
-   "published": "2026-11-08T06:03:29Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Tormenta Negra llega a 7 estados de México hoy, domingo 8 de noviembre 2026: en qué entidades habrá lluvias intensas con granizo",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.ambito.com",
-   "sources": [
-    "Ambito"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPRE8zNGplOEo5UzVPV0lZeDJTVUdMMDAtN2hZMGZOejJ5RC1JQmh1cFJhMVpvaV9RTnE5aG5SaGpXZUpqLVUwM0laanJVODI4TGs3MU5XVTdWc21UZEFGN2pYWmRTZTJqUlNYcUhuVE1nSW9JVDhRQmZLV19DdEZXSUN3T0pzbmdLTDdTcXRZLWFVZ0tKWmFucDY0ajREd1JpeXlEcjZiV3lKSWhMcWJWQndBNmpSbkUyWHRvMXFIYVhkcm80dzBhUHBOS2tPd2JKdkJadmJ6LVlWQTlrQ3JqelVtN0VrVWVZNjJBU3prRi1kRjBMWVdUOC1CRk1KZVHSAYQCQVVfeXFMT1NrMEs3bkZZT3VIdG9PNzdEZUd2bDROOEZMVWRhc2Y0MG9SbjBzV0wzcDRIdDNvazdMOUNUeFJkYjA0b3AwaXdUQzB5MzhaMHBJcVduNzRtczd1a3RnZWJIRVhUQTdZSjFFWnJNZC1SVEJqdGQ4MVpiUnN5YkRHd0NScmhBTjJ4LVRQdzNRTUhQQlR5TjFZdXMxakt0dXRvOS1DTFNGMjRPTU4xLXNWRllDQW1weXJkZTRlX3RqR3pDWUtTaDRCREgwN3lWbVVEU1pEQ2JhejV6djlNd1hlZTV1RHUwTVB0bTFGdXppVEwyYkdfX2pKLS1Xck1iWFBZejJMd0g?oc=5",
-   "published": "2026-11-08T06:00:00Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "León XIV llamó contra la exclusión antes de viajar hacia la Argentina",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.diarionorte.com",
-   "sources": [
-    "Diario Norte",
-    "El Liberal",
-    "0264Noticias",
-    "MDZ Online"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQd3lmMHJzQTM2cS1jZk1JdkZpUE16Rmh0YTVZME9xX0REM2FXdVdrUVRoTnk1WDlfR3ZCY0htOUxpNFhaY0xLY1FEaGpQcXdHT2hqcTBsRnRSd1hKaUJKMTBXRFhwYzdyOVhmS3dwd0poaE9Zc2Z1dHJLUDN3V3BNQjJVQkFNU0hFbU5wSXNHRllwbWdrelpvX3RKRDJKRE1EUEMxYVVJVQ?oc=5",
-   "published": "2026-11-08T05:59:56Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR",
-    "UY"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Siempre utilicen su conocimiento para el bienestar del pueblo de México: Presidenta Claudia Sheinbaum entrega Beca Gertrudis Bocanegra a estudiantes de la Universidad Politécnica de Chiapas",
-   "summary": "",
-   "image": "",
-   "source_url": "https://edomexaldia.com",
-   "sources": [
-    "Edomex Al Día"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxONUV2cFVuWFJIazBmaWJIZ0ZvakxQNVRHVGE5MEx0NXVfczRVLVl0N3ctVEoycnpCczBoOHQ1ekZIX3pWdE5kYi1fWGZZZ01wX2k1TkZBWks5dS1GekpLZkh6aDJJSnlQV29BRkZFZVBObEk0TERtWDVtVmVvUVNOU2FUQndDZUllUWhsTkV5MWxfcDBLcEVzRkNVS0E4SnJuVzNUWFUtc2V5MWJzRFhpajU0TmI1dHc5c0RxYjB0eVVpTGRSR0FfZWtyUWdMR1JfQVh3SE1kdU1WSlhURVpORHVia3V3SWJxU0M4SkFJbGlSbmJDTllURHpSQkloVTNZVEJvZVRaLXhJejlLalR0aGxPT1VLbU1Nc1ZEV0NkUFVubGdsWFU0UXZOZE93OGhQQTMxYTJpaS0?oc=5",
-   "published": "2026-11-08T05:54:06Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "MBA Brasil seleciona seis brasileiros para bolsas de US$ 10 mil em MBAs no exterior",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.infomoney.com.br",
-   "sources": [
-    "InfoMoney"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRG9rY0dvZVhfb2plSEwxTmVDREtxMVA1ZDZLZTNXMFpCMFFLUTc5b0NvTWN6bF9MZXBRVmJqN0hjMG5LV3FobkRva0FBMzVETldISDczaTQwcmV6Mndsa1oyWDU2WUttS2FNQ3VFcHd2ZnFTeGhOMHpTUWF4dUhKNlRvUHZqeEk0SGNiTWhvMGR3TmxvX0FmMGR2cS13M2UtU1dZSEN0cTBJd0lzd2w5cGtSRkRLSXlvSGFlWEN30gHDAUFVX3lxTFAtdEFwQkhYcnVWWkREVmc4UkJCZng3QlZhZ3RuTldBT2hZb0ZuX1NpUWxVUXR3R3UxWW9wRFBtOERjRXk0TkFuRTQwVUhUT3JTZjUzUXRKLTQzdXdKTlNiYm1VcXV4UnY5MEYzUkIyenJtdjI5VVNubTB1TU53SHowdEQtNV8ybDJWaUc1N1RYYUE5WF9IN3hlMWkzSml4VkFMT1lmcHJhZzE3MUVMWlZTWHBZVlV6cHI4LUZZTUl0Y3ZIZw?oc=5",
-   "published": "2026-11-08T05:44:41Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "BR"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Así se jugarán las semifinales de vuelta de la Copa Colombia",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.lanacion.com.co",
-   "sources": [
-    "La Nación.com.co"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQN0FVdFpOQ2ZLak5idERYQWx2aHZmeGlESktWWkVmdWxnQ3JyNEo3TXAzc2VXQ1FUcVBJN000TW5oRnZJRE5ueDE0b2RzcTFSTDY2dkFDcVVPY1VVWng3TTU0Ylh5LUx1T2o4Wi1LUjEwMEpUQlJ0Z0xqS0VNOTRMQWRhcGFyVDVUNThobHl5NkdGaFk?oc=5",
-   "published": "2026-11-08T05:40:00Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "CO"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Pascal Siakam elogia la experiencia de jugar en México y su afición: 'Maravillosa, nos encantó venir’",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.mediotiempo.com",
-   "sources": [
-    "Mediotiempo"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbmtkUmdwak5LWWhMaTJXQ1FJZUo2T1lWTG44cDhtNjVhUjR6dnJZdmxNY1J2a0tBMGpFTk1sdHRSY25CQmtYbjRDaTJuYVVuSFlDZ25tdnFWYTA0aXVzU3o5dVVuVDRoRHB0dks5SUtRdGpDM3Q1OHpSUzhRZmtXTXpzLVhSVk44bmZKNUlkZnh0TFBseGZjVnI2VXFKNHJWQ0tYZ2d4NDM5ZFNsNzFuSGlFQi1fRnFLRU1DNnRJa9IBvwFBVV95cUxQdW1KUi1hVF9HNXdramxadFVIYmJxdHpLRGZKN0pNR0dDRXV6eC1mQWc5OUlRdU84bXRsZVBmTmxrc2F2eGRBZF9IMWRnRFMzLVhYZEhTR0tCZXdCY25Ybk5VdFY1Y2lNYi1tc3dlRl9kSm5qTkFneVNWTnN2Njdjd3ZQUGhKNFcyVEZsT1R2b0VBRjlLeU9YWGcxQlRqU1ktLWZiQ3owTWp4Mmk0YzNuSE1LbVBUWkZocVpGdThKTQ?oc=5",
-   "published": "2026-11-08T05:39:00Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "MX"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "Prisión preventiva a Peña: se hunde el expresidente de Paraguay",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.eldia.com",
-   "sources": [
-    "Diario El Día de La Plata"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObE5xRldVOHlOc1I3NzR0OWVqYklrU29DbkcxUWlQU1g4ZTloVVNGVUwxOWhpSFQzSmpsNFhyUnV0SGNuclVOM1l1Z3YwWFduNGVHeXVJb01xQ1dQZmJuclJkQ3ZESmJ6eG1BMVhSMVUyTnhVR1UyUjNuaEZicUlwdDJ0eVd6NEJMLWdkd1haZlk4UTBXRGZmaWYzcG1tbC1WZVpGZGQ5LTE1UVF3SFp3d1djNA?oc=5",
-   "published": "2026-11-08T05:35:04Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "PY"
-   ]
-  },
-  {
-   "category": "latinoamerica",
-   "title": "La agenda del Papa en Argentina, día por día",
-   "summary": "",
-   "image": "",
-   "source_url": "https://www.eldia.com",
-   "sources": [
-    "Diario El Día de La Plata"
-   ],
-   "coverages": [],
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNand4LTMzcDZKUXhCUklXX0lxZ05iamx6cjY2UG9lLTNiUXJzSXA1eHd6Tjgyd3lPX2l0Y1hjRzhIVnNyM2JVMXNwTzNHdjZtM1EteDYwYzhtZ3NxLVROY2xHMXMwelJVWFhHeE9zcEw1c0RGMUdXUEFMSjYxRXZqQnpoUDJMQ2ZwUjhfUG9ZNEc4M0lvV1lKUHY0N3VkbzFSRnFYRFd3Z1JpZ1ROdW1QN0RuUl8ydEE?oc=5",
-   "published": "2026-11-08T05:32:32Z",
-   "first_seen": "2026-11-08T07:13:13Z",
-   "metadata_only": false,
-   "coverage_countries": [
-    "AR"
-   ]
+   "first_seen": "2026-11-08T19:36:34Z",
+   "image_checked_at": "2026-11-08T19:38:57.138026Z"
   }
  ],
  "senales_inicio": "2026-10-21T05:28:00Z",
  "senales_historicas": [
+  {
+   "title": "Histórico: el Papa León XIV aterrizó en la Argentina",
+   "link": "https://elchorrillero.com/nota/2026/11/08/676381-historico-el-papa-leon-xiv-aterrizo-en-la-argentina/amp/",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:37:40Z",
+   "sources": [
+    "El Chorrillero"
+   ]
+  },
   {
    "title": "El emotivo mensaje del Papa Leon XIV para Uruguay",
    "link": "https://www.noticiero9.com.ar/35215-el-emotivo-mensaje-del-papa-leon-xiv-para-uruguay",
@@ -7114,6 +7153,15 @@
    ]
   },
   {
+   "title": "Argentina podría sumar US$5.000 millones a su PBI, según un experto en IA",
+   "link": "https://www.bloomberglinea.com/economia/argentina-podria-sumar-us5000-millones-a-su-pbi-segun-un-experto-en-ia/",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:22:04Z",
+   "sources": [
+    "Bloomberg Línea"
+   ]
+  },
+  {
    "title": "Narciso y Monguen destacan entre los ganadores de SANFIC22, que rindió homenaje a Sebastián Lelio en su clausura",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbFpGN09LNnVLN0ZKM2xZR05vazV1Y1NOVE5oZ0FBMEJNRkI0dnZvei04YlpoWFMyRi1YYUlYNWN2dldsRDg4UUhoaE1TM1ZYUGdNc2VUdjhWRWxuenRXQUNFdTZtay1adGItQmtTcVUwa1R1Rm9Bc0Yzam5MUjVyQVg3YnNKYklrMGpxZXFsMlpBZ2szZkJpbDU0VWc2c1diMFhXUElNMnl0RzBLSF9wRGNLRHVLTzgwNDUyLWxSUWM1OUdadU5ITGZseXhISXRPdU9HUw?oc=5",
    "category": "cultura",
@@ -7132,8 +7180,26 @@
    ]
   },
   {
+   "title": "IPN registró 75 títulos de patentes en 2025, la cifra más alta de México",
+   "link": "https://www.jornada.com.mx/noticia/2026/11/08/sociedad/ipn-registro-75-titulos-de-patentes-en-2025-la-cifra-mas-alta-de-mexico",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:18:00Z",
+   "sources": [
+    "La Jornada"
+   ]
+  },
+  {
    "title": "La austeridad presente y futura: los límites fiscales del desarrollo en México | Artículo de Mario Luis Fuentes",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPS2MwcEw4SzRMaExtbFFjWnVTOS16LWdPNmNyam55UnpwdTBoT3l4VnJobUc0emFMejVuOWVuZDI4SmhRd2JKRzN4dkpBZ2dPZE1IR19NZ01OaDJsd2lTUGU1R1YwZWdRR2NFeXlxOG5sX2pUdTd4aU1WUlRzSWpackZuY2N3VkFtSnpqM2JBb0FhQWdjUXZ1RlN6a2tnWl9LRk1GWk85ZTdvQllmT1luSW9kaFdRWnB3V3VQMWtrdGZ5TWVRTVBYSEt2aVo2SHZiMWlwdjltRmtyYzRPSk5Vc2VuRmVuQ2s?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:17:00Z",
+   "sources": [
+    "Aristegui Noticias"
+   ]
+  },
+  {
+   "title": "La austeridad presente y futura: los límites fiscales del desarrollo en México | Artículo de Mario Luis Fuentes",
+   "link": "https://aristeguinoticias.com/0811/opinion/la-austeridad-presente-y-futura-los-limites-fiscales-del-desarrollo-en-mexico-articulo-de-mario-luis-fuentes/",
    "category": "latinoamerica",
    "published": "2026-11-08T19:17:00Z",
    "sources": [
@@ -7150,6 +7216,15 @@
    ]
   },
   {
+   "title": "León XIV en la Argentina: así reflejaba El Eco la última visita papal de 1987",
+   "link": "https://www.eleco.com.ar/la-ciudad/visita-de-leon-xiv-a-la-argentina-asi-reflejaba-el-eco-la-ultima-visita-papal",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:14:37Z",
+   "sources": [
+    "El Eco"
+   ]
+  },
+  {
    "title": "Va México por meta de 50 millones de turistas para 2026",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY09NRUxNZjFiXy1jTXNZOUMwNk9VN1VMUGRETWZONklCV2FvU2VIY1dHUVd0SmdGVnRpOF85NFJzZ0pPdUoxSE1DTzhIZlFWQ2tlSU5zS3d3UGlDSkVJY3BUa0VJTDlMQS1SVlJ2MV9YcVBfcFFtMUhQeWlfcExxeGFORGRQb3RvbUdpZmZobzR2WGdPQ2g4akFMbkdGU01JZHhzRQ?oc=5",
    "category": "latinoamerica",
@@ -7159,8 +7234,35 @@
    ]
   },
   {
+   "title": "Va México por meta de 50 millones de turistas para 2026",
+   "link": "https://www.elhorizonte.mx/finanzas/va-mexico-por-meta-de-50-millones-de-turistas-para-2026/5348230332",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:13:48Z",
+   "sources": [
+    "El Horizonte"
+   ]
+  },
+  {
+   "title": "Ver Honduras U19 vs. El Salvador U19 Online en Directo | DAZN MX",
+   "link": "https://www.dazn.com/es-MX/home/192qtgj8cogs01nstux1p0ea6q/aq2xvehz9i0116nxdvnxwfjhl",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:11:24Z",
+   "sources": [
+    "DAZN"
+   ]
+  },
+  {
    "title": "Detienen en México a presunto integrante del Cartel del Noreste requerido por EE.UU.",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOck11b0ZEQ2VDTXBKRFdxcDJVWFdpQm5jb3B4MTlMcHpWMlJlTmQtdzAtcTVycVgxZ3cwVVhLdlhxbmFQLUpjOUlUdXIzUkI1UnhTRktEcXNBRUgtWGkyUFlYY29DMl9iU0owZ2d2ZkI3ZnpfQjVIdWtPNjBIWHdlTWt2REt0YW9RU3hteHd1bWJIYmNhbTQxTVdqMA?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:11:19Z",
+   "sources": [
+    "Yahoo"
+   ]
+  },
+  {
+   "title": "Detienen en México a presunto integrante del Cartel del Noreste requerido por EE.UU.",
+   "link": "https://es-us.noticias.yahoo.com/detienen-m%C3%A9xico-presunto-integrante-cartel-191119114.html",
    "category": "latinoamerica",
    "published": "2026-11-08T19:11:19Z",
    "sources": [
@@ -7177,6 +7279,15 @@
    ]
   },
   {
+   "title": "¡Se llevó medalla! Kendra Duany, la atleta que eligió a México y ganó el bronce en Dakar 2026",
+   "link": "https://oem.com.mx/esto/juegos-olimpicos/kendra-duany-la-atleta-que-eligio-a-mexico-sobre-cuba-gano-medalla-de-bronce-en-dakar-2026-33029666",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:10:00Z",
+   "sources": [
+    "El Sol de México"
+   ]
+  },
+  {
    "title": "El papa se despidió de Uruguay y continúa su viaje hacia Argentina - VIDEO",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVjZ1Wm9CTXR0M1dFWVJJZ3JmOVlYZ3lqalg4Vm1lUUZBODA4MGlRcHFmTlg2STZFbDZqODN5cmd2UWJrMkxBX0VCd20yMEhKc0FmSUt6aVI1SWhKaGNkajBWbDh1VmlUenNucmxXYXlWMWpRSE95OGNVWDNVNzZwSDZFZU0tVk5GbWdYb1ZSY1dUd3NVeHpid0RIblZvdThVcWpnWjlpRTA2cTZ3YVAtMExB?oc=5",
    "category": "latinoamerica",
@@ -7186,8 +7297,26 @@
    ]
   },
   {
+   "title": "El papa se despidió de Uruguay y continúa su viaje hacia Argentina - VIDEO",
+   "link": "https://www.romereports.com/2026/11/08/el-papa-se-despidio-de-uruguay-y-continua-su-viaje-hacia-argentina-video/",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:09:21Z",
+   "sources": [
+    "Rome Reports"
+   ]
+  },
+  {
    "title": "Sismo débil mag. 2.3 - 18 km al sur de Valledupar, Cesar, Colombia, Sunday 8 Nov 2026 a las 13:58 (Hora Bogota)",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbDZiSFg0akNxazdPeExINWZaa0M2SnBKSjJSUUszTEIyN1VQS2d3dVJrWWpRaWRsYzNIcjgtUnlyd2hra3FvbGpKTmRUbHB3bGwzaVZXclJWTENlNmk3WkRFSjBEWFgtNF9mLVd0SzdIM2Z1SFNrSmhRUWRIMjVmS3Q5TjhrRWY0NGNtVU85VEpXd2pPcHRXcVJKUFRlajNIUXdIbXh0eG5DUjNaa0tUMVEwS2FPSmJz?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T19:04:00Z",
+   "sources": [
+    "Volcano Discovery"
+   ]
+  },
+  {
+   "title": "Sismo débil mag. 2.3 - 18 km al sur de Valledupar, Cesar, Colombia, Sunday 8 Nov 2026 a las 13:58 (Hora Bogota)",
+   "link": "https://www.volcanodiscovery.com/es/sismos/informe-sismo/23618005/mag2quake-Nov-8-2026-Valledupar-Cesar-Colombia.html",
    "category": "latinoamerica",
    "published": "2026-11-08T19:04:00Z",
    "sources": [
@@ -7229,6 +7358,15 @@
    "published": "2026-11-08T18:56:15Z",
    "sources": [
     "Perfil"
+   ]
+  },
+  {
+   "title": "León XIV llega a la Argentina: quién es Robert Prevost, el Papa estadounidense con alma latinoamericana",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNTl9jWG5QNTJ0bndQcWloc1RJREdUYWZGVDA0TGw2N0wzWmUtSmVsTDQza05UVXE3NHlGX1l4aXFzVXhNT21saHozb1BNRmFJSzNydVhUbW82ZUpzeFo0aWxwd184UElwZFBKaTd1Z0VTODJHU21FemUwajZKS0R2UGl6NXo0WEw5QjByVGRTejh1eURYWG9jYnJvR0tlYnlva2hqbjMwWnhlSlRCVzVpbDh0V09rOVpPcU5WTXNHekFCX21kTHN0RjRXWGd4Z9IB0wFBVV95cUxPN3daOS05a014R2l6M1lzSG5Tc25tVWxpX2ZJS1BVMDMyR25CTWdKR0xDdFNvWDEzUFVhOHRaX2EzVlRVUXdVOEloNFM1ejRnRHZiQXVMWi12MlVYdzE3d3Q5SDI3cFdzMEtHT1F4Q2FobWxMNl9hZUQ1XzR1Nkd4MDlnOG0xd1hPcEZJdXQzenRPeGtmUkg0aDk0M1pjV2Y0dk82bjJGbGZsdzYtcllYWW5UZTU0V2NOeURwb3pNcktFMWliX2g4OG1pbnVxTnQ3NTQ0?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T18:56:15Z",
+   "sources": [
+    "Ambito"
    ]
   },
   {
@@ -7342,12 +7480,30 @@
    ]
   },
   {
+   "title": "Tragedia en Santo Domingo: hay diez heridos hospitalizados y dos de ellos en riesgo vital",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-de-valparaiso/2026/11/08/tragedia-en-santo-domingo-hay-diez-heridos-hospitalizados-y-dos-de-ellos-en-riesgo-vital.shtml",
+   "category": "nacional",
+   "published": "2026-11-08T18:41:49Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Luis Vázquez logra segundo lugar en Medio Maratón de Costa Rica",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU3Q2U3dLVFJYXzRqekJaVGlKZDRQYzhXZGNjQ2w3LVpoNXNSa1JTZEg4SzViR1ZIb3k3YVlwellpTHBuV19pZm8walBlUUVfcUZtenZpNlUzdUVEcVlYU1BWUGNmTF9WeUktOEsyTVpyeldETGgzRnc2NFlpeW5iQkRnbGpILUMwMzdWTEozVmVHbUVNSmNtQzlaOWJ5ZEM5TTFkb0dVNjg0YmpTazNWOWR3NTJvZw?oc=5",
    "category": "latinoamerica",
    "published": "2026-11-08T18:41:44Z",
    "sources": [
     "El Sol de México"
+   ]
+  },
+  {
+   "title": "León XIV se despidió de Uruguay y mira hacia Argentina: “Les pido que me sigan acompañando con sus oraciones”",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRi1nNnliVkUxRlI1RjJPV0JsX0JYZHVPczJ5LWhWTWRycG1DM0JPUVdJeTh6akV5bzJkSnl4YjdKS3ZkUWtQV3VGVEljZVBuTHA3Rnd6WmtoUjNTVWNuQ2xIcUxVdzNZOEZhRHhjTi1DVGZFbUpNUkhnRHpab2lhb2c4T2pDcnNMNUNTS1FWdUY0eEJneWhJck9JY0ZCbC1VRHdOV1BhMzB2aUhBRDRDZXQ5Zkl4c21VUnVJMzlJbEVOdzYwUDYxXzRWa21LcVNIMWFsYkFGZE81Z2d2NEhtMXRqV3RGa3lCUU5YUDlCVkpwQXVkOWc?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T18:41:17Z",
+   "sources": [
+    "Telefe Noticias"
    ]
   },
   {
@@ -7520,6 +7676,15 @@
    "published": "2026-11-08T18:19:45Z",
    "sources": [
     "Claro Sports"
+   ]
+  },
+  {
+   "title": "Llega el Papa León XIV a la Argentina: expectativa y fuerte operativo en Aeroparque",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUVZXNzdaRmdhcHVieTE3cER1bFNDNTlRTUhkOTBUZXFINFRZZ19rMkZBRFZsLWhPRWhlVzA5MWtpWENtSkd4REdZaVpFaGhqQ0ZWSDV6blM2SkNkMmxJWEY5UjJOSmZqYjVZaGhyd2UtX1JJQXR6QTA4Qjc3bTN0aXM3MFlyTkpIdUYwTGhvaFNIaE9VMjRIcTNzSUlMdlR4elBJQlJyRjk0UDZtS1B2LXVKbHVKNDZPc1V3?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T18:19:39Z",
+   "sources": [
+    "Clarin.com"
    ]
   },
   {
@@ -7721,15 +7886,6 @@
    ]
   },
   {
-   "title": "Brasil x Espanha, Finalíssima de Futsal; horário e onde assistir",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeGItNC1EX01PSWlKaklQd0Rad3RDN1JubzlCY2ZFR3VVQjh2ZGs0NWhPaTE2ZHc0REs5SE1WOWxBeEx5WEJRcHU5aG96SXJ3T25KSEdHTVkzai1TUm92NGREd2N3WGdEYTExRVFqRjJuVTdOTFhDa25vRlh0SDBIMFNkcWhCSGdGZVhWM081U3JMZE5Tc1dDZVd5NnZVYVRqcE1kZDcwTEhoZw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-08T17:50:16Z",
-   "sources": [
-    "LANCE!"
-   ]
-  },
-  {
    "title": "León XIV es esperado en Argentina con el ajuste de Milei bajo la lupa de la Iglesia",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPN2ttd3hNcm1TX21MTUh2N0JScDctWWgxV1VBSHZKTVlLcVZXc08xR3VsQVpEUm9UOUxFU0ZLcWVxRU91RS13U1JSUzFKZmdDUEZJNjVTVGpPcmM5aTVHMGUxVzBwN0MwV3Q2UFlCWEVxbWdCX08wSGI1MTZkV0d5Q2NUYUFxVzdILWFOR1Y1TERsSjRGR1gwYkpoelotMGlXNmZDY2YtMWpRTy1yNnE0Wm5IYmpzVFhrZHNvN21Ja01RM3hXWE5nQmZCQnJWMi11bmw0?oc=5",
    "category": "latinoamerica",
@@ -7856,6 +8012,28 @@
    ]
   },
   {
+   "title": "México necesitará una nueva arena para tener franquicia en la NBA: Adam Silver",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbjZPbU1leUFCWlBPeDMxcTdjQXA0QmlfYXVYbGFsVGF0b3QyVFFTeWJUb3NpdFhYdVRuZy1tMW5sei1TUG1pa3ZwZ2RDV256MU55N1dWejBURkw2MlRrSnZtTGVuRHNPalpaQWtLRUx4VFFXS045cW80QUlfb01pY1dReGY3QQ?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T17:11:49Z",
+   "sources": [
+    "Sopitas.com"
+   ]
+  },
+  {
+   "title": "EN VIVO el vuelo del papa León XIV: cómo seguir su viaje hacia Argentina",
+   "link": "https://www.minutouno.com/sociedad/en-vivo-el-vuelo-del-papa-leon-xiv-como-seguir-su-viaje-argentina-n6342898",
+   "category": "latinoamerica",
+   "published": "2026-11-08T17:09:50Z",
+   "sources": [
+    "Minutouno",
+    "Crónica",
+    "Ambito",
+    "Radio Mitre",
+    "La Nueva Provincia"
+   ]
+  },
+  {
    "title": "Atos y NxN Data Centers se alían para crear una plataforma digital soberana entre España y Portugal",
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOY25YYUxja0lMUDduby00TVllOTEtLTVvQmF6Ym1BcVFvd0JuZXRoRXNhMTUzZHNlR0lYM29Pc1AtWWh0R2NVLWhBMGNMd09ubHc2TEZrT0JpRHdIMmg2OEMtTkpONnBObTJtZDFTWElDaGRUbUpqeGJIWkg1V1R0Uk1BTUw3STNQXzlPYnNwXzhUc193bndKcVp1MTAxU1RsMTJKYVI1eHl3Zngyam5IZUdOWVVFZjdCZURYYUNuMTFYeTFuc05vcmo1RjJzZWZGSVFZS3BJYmo?oc=5",
    "category": "tecnologia",
@@ -7964,6 +8142,15 @@
    ]
   },
   {
+   "title": "Colombia evacúa Caracol Televisión por una amenaza de atentado bomba",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVmhkbjk4cTFtN3otUF9lQVBEZGpyUnJfYkxzYk5qWTlMLVc1TEpyZndkNk5ZUlg1WHQ2NHpFNTZ5dGZpZWpZX3gxbHZHakNjQnNFbnNldEZnNXMxa1ppZGhQaDhFYlJ6UktGWDdZWG9OVFNJTlNEckRpVlZEdnV5elhOckVuOHhmZ2ZyZHRmeFFuRzEwUzY4c1BHRDlvLUJPcWxRNWZrczdINmJmNzlOdUpB0gG3AUFVX3lxTE5VRHJQWGp2V1hZdjMwdTg1NkVZXzRoSXRRWTVVZDIxTUlVN0x6OWN0QnIyWDFHZHhUMzZSX2RWb3hNNy0tX3ppTy04ak51dHhZTDd4R1A2WXdwaGoyZld4RzdkcF9rNUswQ004TkRkdmEyaDJGRDJncWJMZXJSVHU1OXNJZjJZQm5SVE1rQUVxay1TSkdjTTBxNndGNUlYVXZMYVFaUUQxRGZtbHdpemY4WEFKaDA0dw?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T16:44:35Z",
+   "sources": [
+    "MUNDIARIO"
+   ]
+  },
+  {
    "title": "Cuéllar se convierte en una sala de cine internacional con estrenos inéditos y un homenaje a Paco Rabal",
    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNXFVUlZNRFpfRVZPRU9jbDkyVDBzREdDdlFnbmQ2UEkwSmJCRWJkMnpHalBPVWo4cXpBVl9UZ0Q5Zzg4dzlmaXNLaExIUDJuZXJOUTl3aWE0ZGlkN0J4RzdtdzV1NExNTmpCOTM2M1FKdjlPSGwwMHE0dXp4R1hkV1I4WmhnbHAxVlNFanROT2lSZ1Nval95UVFqbDFDcDg4cnNYSGJBVmRBbnpoTnd0YmpsalZTNzlmMUZKd3pWMEZVSHAxNjRNN09yRHkzTlBvQ2YxWkFyWEllZkZla1lJaGJud2o?oc=5",
    "category": "cultura",
@@ -7979,6 +8166,15 @@
    "published": "2026-11-08T16:40:00Z",
    "sources": [
     "Noticias Caracol"
+   ]
+  },
+  {
+   "title": "Ñublense vs. Colo Colo: A qué hora y dónde ver EN VIVO y ONLINE el partido",
+   "link": "https://www.tvn.cl/deportes/futbol-nacional/nublense-vs-colo-colo-a-que-hora-y-donde-ver-en-vivo-y-online-el-partido",
+   "category": "deportes",
+   "published": "2026-11-08T16:31:00Z",
+   "sources": [
+    "TVN"
    ]
   },
   {
@@ -8000,7 +8196,7 @@
    ]
   },
   {
-   "title": "Jefa de Estado: La luz no conoce fronteras y la esperanza nos une «La luz no conoce fronteras y la esperanza nos une», expresó la presidenta de la República Bolivariana de Venezuela, Delcy Rodríguez, quien recientemente participó ",
+   "title": "Jefa de Estado: La luz no conoce fronteras y la esperanza nos une «La luz no conoce fronteras y la esperanza nos une», expresó la presidenta de la República Bolivariana de Venezuela, Delcy Rodríguez, quien recientemente participó",
    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ULVNkTE5aWHB6dW1vdXZoMkYyOXF5M3lsd3VGeGlNbms1bU0xS0RSbXQ0TWhHZmxEWFd5MmtQYXVPTzJRUjl0c1BEanNHeHNDTVE?oc=5",
    "category": "latinoamerica",
    "published": "2026-11-08T16:22:39Z",
@@ -8045,6 +8241,15 @@
    ]
   },
   {
+   "title": "TEMUCO LANZA LA PLATAFORMA SIN FACHADAS PARA DENUNCIAR COMERCIOS IRREGULARES",
+   "link": "https://araucanianoticias.cl/2026/temuco-lanza-la-plataforma-sin-fachadas-para-denunciar-comercios-irregulares/1108318560",
+   "category": "regiones",
+   "published": "2026-11-08T16:17:39Z",
+   "sources": [
+    "Araucanía Noticias Temuco"
+   ]
+  },
+  {
    "title": "'Poco importa': Hijas de Gustavo Petro sorprenden a Colombia entera con su reacción a las graves denuncias de Deicy Jiménez",
    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNS1MzNUlzX1FUSGE5QXJlTnY1dU5Vbmd1LVE4bDMyY3g3WGJ4SnJEMkhIVGQ5M3dxdV9IbDJjcy1SbTBUckcyVDNncThhakFvZmZ5Q2R0QW5RVjI2ZW94elE2NTFHS0hhLW9uZ3VCcU9RdmFrVUtLb0F0UHE0TFl2MDZTWmgtWjdFSHNlQUVSMzkxYjhWNUhBak50TzBKVUM0LUhHZ25yTEtMeEo0LUtpTlpDdlZkaGJmNUFHQzFzc0NQNVFpYTZRb2RTdVo5dy1GM2FXdjQyYkQwaExhWjRhcm02SndsN1JpUDlGNGNwdTBkRmF2LXJzelFSYnJ1T2M?oc=5",
    "category": "latinoamerica",
@@ -8072,8 +8277,26 @@
    ]
   },
   {
+   "title": "CASEN 2026: La radiografía social del Chile de hoy",
+   "link": "https://alertanoticiastemuco.cl/2026/11/08/encuesta-casen-2026-participacion-la-araucania/",
+   "category": "regiones",
+   "published": "2026-11-08T16:12:02Z",
+   "sources": [
+    "Alerta Noticias Temuco.cl"
+   ]
+  },
+  {
    "title": "Al menos cinco sujetos habrían participado en robo a banco tras perforar estructuras de seguridad",
    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOHNUQXFKempXYmpqT19GTEhmNnh0bmdzWHNvY3p3NXFwblJhejNpS0pSTlpQV0lOMko4NElTc1AwTTJIWmQ3ajVtNl9KeXN4QlpnNHR1LUJpb0lfeXZJRjZqTVV5RjVaT2lhMlNPMjFpYWhkQ0RTT0RmUEQzaEFfd0FzN0NKYW9BdWhTRkZuVUk4UUNzaVJYVG05ZHVyRmt6c0NHeXhmX2dzamNYV0o5WGZyVWhGeFVyS2ZOWURHZEFNcnNkR21VZ1prLVBmV2xWXzcwQ3ZuS1hGb2s1MVdqMVBiMU5hUFI00gHoAUFVX3lxTE44c1RBcUp6aldiampPX0ZMSGY2eHRuZ3NYc29jenc1cXBuUmF6M2lLSlJOWlBXSU4ySjg0SVNzUDBNMkhaZDdqNW02X0p5c3hCWmc0dHUtQmlvSV95dklGNmpNVXlGNVpPaWEyU08yMWlhaGRDRFNPRGZQRDNoQV93QXM3Q0phb0F1aFNGRm5VSThRQ3NpUlhUbTlkdXJGa3pzQ0d5eGZfZ3NqY1hXSjlYZnJVaEZ4VXJLZk5ZREdkQU1yc2RHbVVnWmstUGZXbFZfNzBDdm5LWEZvazUxV2oxUGIxTmFQUjQ?oc=5",
+   "category": "regiones",
+   "published": "2026-11-08T16:08:09Z",
+   "sources": [
+    "La Tribuna"
+   ]
+  },
+  {
+   "title": "Al menos cinco sujetos habrían participado en robo a banco tras perforar estructuras de seguridad",
+   "link": "https://www.latribuna.cl/policial/2026/11/08/al-menos-cinco-sujetos-habrian-participado-en-robo-a-banco-tras-perforar-estructuras-de-seguridad.html?amp=1",
    "category": "regiones",
    "published": "2026-11-08T16:08:09Z",
    "sources": [
@@ -8199,6 +8422,15 @@
    ]
   },
   {
+   "title": "Minvu traspasará más de $336 millones para la construcción de espacio cultural y artístico en San Rosendo",
+   "link": "https://www.radiocamilatv.cl/portal/noticia/24386/minvu-traspasara-mas-de-336-millones-para-la-construccion-de-espacio-cultural-y-artistico-en-san-rosendo",
+   "category": "regiones",
+   "published": "2026-11-08T15:48:00Z",
+   "sources": [
+    "Radio Camila TV"
+   ]
+  },
+  {
    "title": "Crise no Paraguai: prisão de Peña trava investimentos brasileiros",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPeFVoZFE1Yl9tOFpTQWJlUC0xSXBzUFRjZEMwczhkQ3pFLXhLR3RkMG83ZWFERUJ1VjFrSmRWOVNOMUZiQnlzVVBqRjQwbDF6TmFrdkdla3NXTVYyZlBibTRrSFJhUGp2Z0l0dXZyQ1NYaFRiaXlvWm1JQUh0cHlkUHhZOE9MSFVZdmxqZzlHUFlwQkZaTTBCRTdGcEVPOFdqUGlDcm1ibHhhQ1NkZERXX2FPYnJVMkxsMXFMN3pJR3VIeU1TMEZr?oc=5",
    "category": "latinoamerica",
@@ -8289,6 +8521,15 @@
    ]
   },
   {
+   "title": "Ferepa Biobío acusa falta de apoyo estatal ante crisis de la pesca artesanal",
+   "link": "https://sabes.cl/2026/11/08/ferepa-biobio-acusa-falta-de-apoyo-estatal-ante-crisis-de-la-pesca-artesanal/",
+   "category": "regiones",
+   "published": "2026-11-08T15:18:39Z",
+   "sources": [
+    "Sabes.cl"
+   ]
+  },
+  {
    "title": "¡Prográmese! Bogotá será sede de la final del Colombia Padel Fest 2026",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSHROa3pCSXo1NW4zZmxYY1d4bnA3WDFQOXZWRmhOWnlrRDF1elVhcEJBcEpxdlpGN2ZZdlkwRFFKYnhmaGxHZmpaZHMtZU9TR1ZGZWkxaGRWcjdTa3hTcU1YS0pOdFlGU2IycGQ1MVU4TmUyS1h6cEhDZ1RpdEZHMElJRWpYOGtyVzlxZU10ZTROVVdJQmViemkxUG93Z9IBngFBVV95cUxPSkdtY3VwRlhVYjRpeFRkSnBwOHFGQWZKZFJmcjZzNEgtSVNCRHpPb1BacGZOR3d1OEgxRjlzYlVxN0hFYldpTmEteUVQek0tV0pDaklMSmJyMGZvVElXejE3MXllbVhIaDN4V0VGWFB2dUdqOXNickplb0JQTE5DV1RMZ0VUNFlEb2FLNGpMdkNJZFIwaDl5Z2FsbTVQUQ?oc=5",
    "category": "latinoamerica",
@@ -8334,8 +8575,26 @@
    ]
   },
   {
+   "title": "La pizarra de Pellegrini dio frutos: Betis venció a un Elche que tuvo a Cepeda titular y Dituro figura",
+   "link": "https://www.biobiochile.cl/noticias/deportes/futbol-internacional/chilenos-en-el-exterior/2026/11/08/la-pizarra-de-pellegrini-dio-frutos-betis-vencio-a-un-elche-que-tuvo-a-cepeda-titular-y-dituro-figura.shtml",
+   "category": "deportes",
+   "published": "2026-11-08T15:03:52Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "Río Biobío con drogas: ciencia alerta que sustancias consumidas por la población llegan a su caudal",
    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOdjNRWGplb2lJcGZXd3ZLT3o4UmIxZGg0ZTEzWS0zZXJ3RVFaNlFCNkU1QXg2OUUwYUNhOEJTUGVHT05IcTA3V0hMR3ZNQl9YZkZxNkZTNHhXd3RzU2FtWEdWdUJZWEpQdl84dEM3RURObUNLUkUzN2pTNXl2Vy1KQTUwTkxRVi0tb1ZBSmFGQW5MbnotNWNjaV9RMExwejc0YWVidUJRVHc5M012OEh3VXQwS21IMW1rZGtvYzZucXgzTzlYSVlyZUdXYjdNcTJQMi1NQmNfTHNsNl9JYnZ0bUFxSzR4TUVOVzdDa0pJQV9wakxXQTZscdIBgAJBVV95cUxNRkJfaC1TUWZ0NFFsbmFPYlNEZHdmUi1xbWg5cHRNdmxtYTlaOUZsMUVLQl9qZGRoODloUUpEZG04ZjB6SUhIVjhvbTZCNndJc3BRdS1teUFzMWJsNkFnMUJwUDZuUndaUWxUdmlPczN2SnhzdzZyb280Q2dfNUl5aUNqdVdpYTdmRV9MU0l3X1dSTEphTzE3NEI2ellaRWRVdlJzMEd5aEoyQzA5RXpDUmQwSU5JLXhJNTZ2cjd5X0RDUmY0RHhwTEZuX29peE41WEx2bWxxOVZ2LXVCZWFmRkV4U3pHQndhMEVqNy1idFBMZlk3NHF2X1dxWTJPM09D?oc=5",
+   "category": "regiones",
+   "published": "2026-11-08T15:03:11Z",
+   "sources": [
+    "Diario Concepción"
+   ]
+  },
+  {
+   "title": "Río Biobío con drogas: ciencia alerta que sustancias consumidas por la población llegan a su caudal",
+   "link": "https://www.diarioconcepcion.cl/ciencia-y-sociedad/2026/11/08/rio-biobio-con-drogas-ciencia-alerta-que-sustancias-consumidas-por-la-poblacion-llegan-a-su-caudal.html",
    "category": "regiones",
    "published": "2026-11-08T15:03:11Z",
    "sources": [
@@ -8455,12 +8714,13 @@
    ]
   },
   {
-   "title": "Nueva tragedia en la Ruta de la Fruta: un muerto deja accidente entre bus y auto en San Pedro",
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/11/08/nueva-tragedia-en-la-ruta-de-la-fruta-un-muerto-deja-accidente-entre-bus-y-auto-en-san-pedro.shtml",
-   "category": "nacional",
-   "published": "2026-11-08T14:51:11Z",
+   "title": "TELETÓN 2026 SUPERA SU META Y RECAUDA MÁS DE $46 MIL MILLONES EN EL ESTADIO NACIONAL",
+   "link": "https://araucanianoticias.cl/2026/teleton-2026-supera-su-meta-y-recauda-mas-de-46-mil-millones-en-el-estadio-nacional/1108318540",
+   "category": "regiones",
+   "published": "2026-11-08T14:51:56Z",
    "sources": [
-    "BioBioChile"
+    "Araucanía Noticias Temuco",
+    "Radio Ñuble"
    ]
   },
   {
@@ -8482,8 +8742,26 @@
    ]
   },
   {
+   "title": "Se casó en la playa: los registros del matrimonio de la actriz Ingrid Parra en Papudo",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/se-caso-en-la-playa-los-registros-del-matrimonio-de-la-actriz-ingrid-parra-en-papudo/",
+   "category": "cultura",
+   "published": "2026-11-08T14:49:56Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "INDAP Ñuble abre las puertas del mundo a la Agricultura Familiar Campesina y nuevas oportunidades de exportación marcan histórica semana comercial – Ñuble Actual",
    "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPbXlObUFuRExHVXVaN0lISUIwLXJEdGNhUVRHazdxMjFxa3BDNzFDM040NnJUM3d6eHV2ZGJGUUhnRmhBNFNCanoyZldldVlmdm9pRzZtN09xNzdGcEhncWVKYTFDMFFtX0UxbzRCbGswSGJSNjFQQkc1NTdxcERzdHNmRWExbGNGcmFsV3hRTFE5SnlRTFF4XzQ4LUxuTWdMZmxUeUl4R0huNVh5NjQ2WGp6OWhfZ0w5WmNPMWFUT2c2RzlBbFNTOTJzVjhpLWdOa1BtUU5CVFhhSXJocHBxak16eS1kMk5yN3J3TWhESVpleFAzNGFIUlU3bG9fNmZtdjRVcHJvWmdzVFpmYWNyakRWTFZETUUwVVE?oc=5",
+   "category": "regiones",
+   "published": "2026-11-08T14:47:44Z",
+   "sources": [
+    "Ñuble Actual"
+   ]
+  },
+  {
+   "title": "INDAP Ñuble abre las puertas del mundo a la Agricultura Familiar Campesina y nuevas oportunidades de exportación marcan histórica semana comercial – Ñuble Actual",
+   "link": "https://www.nubleactual.cl/region-de-nuble/indap-nuble-abre-las-puertas-del-mundo-a-la-agricultura-familiar-campesina-y-nuevas-oportunidades-de-exportacion-marcan-historica-semana-comercial/",
    "category": "regiones",
    "published": "2026-11-08T14:47:44Z",
    "sources": [
@@ -8762,6 +9040,16 @@
    ]
   },
   {
+   "title": "Nueva tragedia en la Ruta de la Fruta: un muerto deja accidente entre bus y auto en San Pedro",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/11/08/nueva-tragedia-en-la-ruta-de-la-fruta-un-muerto-deja-accidente-entre-bus-y-auto-en-san-pedro.shtml",
+   "category": "nacional",
+   "published": "2026-11-08T14:14:00Z",
+   "sources": [
+    "BioBioChile",
+    "24horas"
+   ]
+  },
+  {
    "title": "Don Omar confirma su regreso a Chile en 2027: cuándo será el concierto y cómo acceder a la preventa",
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNDBWRWVfRXVYOW9oNnhMclVUY05Jemx4WVlheWhYWEdHZ2ZoNDYwVDRSY21qTjZkZlhZY3BRd2NvdDFCNTFMVkYxT0g3SzdiOGtTeFBRUXp3X0wwWkptUWYwTkJnWV9JS295bGJEMVBTb0xFT1pGN3A2bTg4alBnSTNTdHhteVo1WTdBLXF6SFBYbVc5Q21xOUdRRjFVYzF5dUk2SThKWkJZelpoMWhwNHBvNHE2aDVVTEd6X256cjBwSlJHNWxOQzc4Q213WUHSAeMBQVVfeXFMT0E0NFplRFpJZnVkdHY1T1NtcnYtRmF3aU1EYk5Ya3BkOGluOGNhWFJaY3h4OHpDVDVsM1lvaE1Kd2lWbGV1cFZyNUw2RWplVDBhTTFrTmpHVlRmMGZBVENqUnc3TkdwdzBYNUtJOUJpV1NBT0tGeVJud2FCMTJ5N3pvTFFiWXpINHY1MGI1Q3g1eGVPcEVYbmp0Q0UzR19TWlRESlJLUzFyVDJ6dF9xQXBKZFNUY0M1MGs0dWZpeGh6UktPNHBsUGxxbzhjT1hrSXY3UTlzdkhJYWdNTVJUZFZ3YTg?oc=5",
    "category": "cultura",
@@ -8809,6 +9097,15 @@
   {
    "title": "Fernando Gago llama de regreso a Javier Altamirano en duelo clave de U de Chile",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMnVIeEx2MFNScmZPWVJ5clV3SmN5YWYxUlJydnlaeGJwWVZ0VDNycXlYUTFKeE1DUEo3blJxeGcweEstM1gyVHZ0a2dwVXZvRWVZT09JMGpKTFotOVA0dnhycUEzM0VEMXp0YkNCTlVwWWxNdFZzMEp0VlBKT1ZVY2loRWpFSDVjY0VscmVNeV93QjBEZ2hYaHpYY0V1U28tRmVBSHdMNkpFUdIBrwFBVV95cUxOVUNIaXRDQWxIUmY3b2dTRUlrLXYzRXhCX29tUmtkQlVGUDcxU3o0RjBWbkRwcnhsejMwaDU3MFJqUC1zdXdsTHZKNG1mT19FSmpHY1hMX1Ixd181OHRvNXdqdE5WTzd5SzdmdlJ4blBEcDlWaHo3a1NhMnhhQW5YQWtOd1FqUWdQVjFFcGhqQ3FMVzhBYWp0dlBWMUdRSURTdFlWa25aU2J4Z2tXNWNv?oc=5",
+   "category": "deportes",
+   "published": "2026-11-08T14:05:04Z",
+   "sources": [
+    "RedGol"
+   ]
+  },
+  {
+   "title": "Fernando Gago llama de regreso a Javier Altamirano en duelo clave de U de Chile",
+   "link": "https://redgol.cl/udechile/fernando-gago-llama-de-regreso-a-javier-altamirano-en-duelo-clave-de-u-de-chile",
    "category": "deportes",
    "published": "2026-11-08T14:05:04Z",
    "sources": [
@@ -8992,6 +9289,15 @@
    ]
   },
   {
+   "title": "“No me pude quedar en el segundo bloque”: Gala Caldirola reveló el motivo por el que desapareció de la Teletón 2026",
+   "link": "https://www.lacuarta.com/espectaculos/noticia/no-me-pude-quedar-en-el-segundo-bloque-gala-caldirola-revelo-el-motivo-por-el-que-desaparecio-de-la-teleton-2026/",
+   "category": "cultura",
+   "published": "2026-11-08T13:47:11Z",
+   "sources": [
+    "La Cuarta"
+   ]
+  },
+  {
    "title": "La carne argentina comenzó su participación en la CIIE de Shanghái",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUWpacTFmcVBuaVFOd0d3SjBlaGhvNmoxNDZRbjBHSF9iN2dDZWVqM29BWDdsQm44bzZoYjV4d0xlQ1k5SzZiQ3pTTFlJalRkcHlQMFk0WXhLM3BvNVFIaTdteWFlVzNGV044eC1GTk9rR2JXQmFsbzREWWtPSlVnX0VtcXFVUGdZSThEdVB1SWVjWWM0YnA1NHp2ZGctREZnMV8zN0prLS04c0Fveml1N2NJWWdaMjA?oc=5",
    "category": "latinoamerica",
@@ -9066,6 +9372,15 @@
   {
    "title": "Competencia para el Real Madrid por Zion Suzuki",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcFdXT3VpVmlJRXkwRGE5ZDdxSVNUZHhqeFZ1Wk1DYlI4YUc4NlZQSVJ2eFpTRjBhU1NtbVdRT0tzSy1kX0dkeHQwXzZHcFIydkJfYU5YSHZWWTFsZDFGNlJha3BIVXVaaGozTkU0LWVKQkJKREFtd29oNXIwWTlPbFN5Z2VEX2I4Q0ZDVS05TUVvRHB2ZmlQNg?oc=5",
+   "category": "deportes",
+   "published": "2026-11-08T13:39:16Z",
+   "sources": [
+    "Fichajes.com"
+   ]
+  },
+  {
+   "title": "Competencia para el Real Madrid por Zion Suzuki",
+   "link": "https://www.fichajes.com/a7471063895920246329-competencia-para-el-real-madrid-por-zion-suzuki",
    "category": "deportes",
    "published": "2026-11-08T13:39:16Z",
    "sources": [
@@ -9174,12 +9489,12 @@
    ]
   },
   {
-   "title": "Aumenta a 3 mil millones de pesos la cifra robada desde banco en centro de Concepción",
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/08/aumenta-a-3-mil-millones-de-pesos-la-cifra-robada-desde-banco-en-centro-de-concepcion.shtml",
+   "title": "Delincuentes roban $3 mil millones desde un banco en Concepción: habrían ingresado mediante un forado",
+   "link": "https://www.lacuarta.com/chile/noticia/delincuentes-roban-3-mil-millones-desde-un-banco-en-concepcion-habrian-ingresado-mediante-un-forado/",
    "category": "regiones",
    "published": "2026-11-08T13:23:00Z",
    "sources": [
-    "BioBioChile",
+    "La Cuarta",
     "El Informador Chile",
     "Meganoticias"
    ]
@@ -9200,6 +9515,15 @@
    "published": "2026-11-08T13:21:14Z",
    "sources": [
     "CNN Brasil"
+   ]
+  },
+  {
+   "title": "Brasil x Espanha, Finalíssima de Futsal; horário e onde assistir",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeGItNC1EX01PSWlKaklQd0Rad3RDN1JubzlCY2ZFR3VVQjh2ZGs0NWhPaTE2ZHc0REs5SE1WOWxBeEx5WEJRcHU5aG96SXJ3T25KSEdHTVkzai1TUm92NGREd2N3WGdEYTExRVFqRjJuVTdOTFhDa25vRlh0SDBIMFNkcWhCSGdGZVhWM081U3JMZE5Tc1dDZVd5NnZVYVRqcE1kZDcwTEhoZw?oc=5",
+   "category": "latinoamerica",
+   "published": "2026-11-08T13:20:07Z",
+   "sources": [
+    "LANCE!"
    ]
   },
   {
@@ -9573,6 +9897,15 @@
    ]
   },
   {
+   "title": "A horas de la definición del título: delantero de Colo Colo protagoniza grave choque en estado de ebriedad",
+   "link": "https://www.latercera.com/el-deportivo/noticia/a-horas-de-la-definicion-del-titulo-delantero-de-colo-colo-protagoniza-grave-choque-en-estado-de-ebriedad/",
+   "category": "nacional",
+   "published": "2026-11-08T12:38:17Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
    "title": "Colombia se despidió del tiro con arco de los Juegos Olímpicos de la Juventud",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbl92TkpjMzQ0MVZfQkEtbjlJZ014blRxaWx1NTh4T1NxcjF4S0ZTSTNTUjRzd3JUSHZKLVNhU2ZzRzlMMUlQa0lSdHlqZGVCOWpwbXd3U1g0eFhqTk5JUGRWNlJLZzMtMDVJYVZPS1Vpemw2N3hnTUxMZW4tNE9JdEtUdDdMS1ZGYmRkOS14YWY0YUtGeDhZeVV6dWJBUFVUQlJjb1BBcHBYbEE?oc=5",
    "category": "latinoamerica",
@@ -9584,6 +9917,15 @@
   {
    "title": "¿Qué canal transmite el partido de Colo Colo Femenino vs Coquimbo por la Liga Femenina?",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYkNhWFJ5U25rXzRTazBXdTc2YWZhalRKTWlSNHh0X2FFTkVGa3U3VnNoS3pQMndNY1Q2bXpkY01WTWRud1ZFSmJJZzVSb1g5LWxSY1VVcnhjZGU2NU95c3Q1b0ZjTUcxd2lPYkV3SUs2MkVGTUlRdWQ4UnFSYmdOd2ZydWtqTV9sd1BNdVdnSjZuY3FTX1Yya0lvZ01uUmczSFdfTGVQcjNQMUQtS0ExLURXNDJXelVBTUp1NXVQS094Z9IBxwFBVV95cUxOUFdaU2oxc3dtMTRUbjczVFdzNVVsb1ZCc0RDdEtGMnVmd3RRSC1LSEZ3cHNvVm55SXRSVG84RkJtU2lwSGctd0EyRVFlWExWMnd0cFE4YjRDMTRjakV4SE5VMTdJYlhiUlppSzV1TjRCbUN2bnpEeW93RnF5V0l6c2NxN1gzalo0ZVJrbVJCVFlQR183bTZrX3BwYUc0Qjh1VnVvRi1zQzdRcEdKSmVJb1R4bkVlalpRRDNYU0piRHZuSUxtT3ZZ?oc=5",
+   "category": "deportes",
+   "published": "2026-11-08T12:34:14Z",
+   "sources": [
+    "Dale Albo"
+   ]
+  },
+  {
+   "title": "¿Qué canal transmite el partido de Colo Colo Femenino vs Coquimbo por la Liga Femenina?",
+   "link": "https://dalealbo.cl/colo-colo-femenino/que-canal-transmite-el-partido-de-colo-colo-femenino-vs-coquimbo-por-la-liga-femenina",
    "category": "deportes",
    "published": "2026-11-08T12:34:14Z",
    "sources": [
@@ -9693,6 +10035,17 @@
    ]
   },
   {
+   "title": "Aumenta a 3 mil millones de pesos la cifra robada desde banco en centro de Concepción",
+   "link": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/08/aumenta-a-3-mil-millones-de-pesos-la-cifra-robada-desde-banco-en-centro-de-concepcion.shtml",
+   "category": "regiones",
+   "published": "2026-11-08T12:09:16Z",
+   "sources": [
+    "BioBioChile",
+    "El Informador Chile",
+    "Meganoticias"
+   ]
+  },
+  {
    "title": "Roban al menos 4.000 millones desde un banco BCI en Concepción",
    "link": "https://www.cooperativa.cl/noticias/pais/policial/robo-bancos/roban-al-menos-4-000-millones-desde-un-banco-bci-en-concepcion/2026-11-08/104018.html",
    "category": "regiones",
@@ -9709,7 +10062,8 @@
    "published": "2026-11-08T12:09:16Z",
    "sources": [
     "BioBioChile",
-    "La Tercera"
+    "La Tercera",
+    "Cooperativa"
    ]
   },
   {
@@ -9849,6 +10203,15 @@
    ]
   },
   {
+   "title": "Curry, Wembanyama y Shai, las estrellas que más brillaron en la NBA",
+   "link": "https://espndeportes.espn.com/basquetbol/nota/_/id/17493214/curry-wembanyama-shai-brillaron-resumen-nba-sabado",
+   "category": "deportes",
+   "published": "2026-11-08T11:50:00Z",
+   "sources": [
+    "ESPN Deportes"
+   ]
+  },
+  {
    "title": "Vitae Fest 2026: guía para asistir al evento en el Zócalo capitalino",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObHBsbVVOX0V3OFR0dUpxN3pCUzBBeG01cTRYd0h4VlhQTlZTWGlkRTZuSGdJamNGSUJIbWhFbE1IVUlVQzMwZFNVSXR4TEcwbFRNSHItXzRYVzRNU3VTVEZVYjVKU1MtQld3QWJ0anQ4TU5TMTNYVi1weHBPMXJYUDdOSGJzcFhmR2NvTWdtaVJUREhwRGRkcWRVSXBmbURvd3hudVJicEh0cVpsQTE5QXBZRnlYeTA?oc=5",
    "category": "cultura",
@@ -9941,6 +10304,15 @@
   {
    "title": "Revelan que torres de control de EEUU siguen usando disquetes para datos de vuelos",
    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcHUwUFdkZFZ2dEM0aExCQ1F3MG9EVzF4RTk3SWpCejZvRGZwQzA1REdsVldrQjR6VnhLNkdoVzVyTEs4NGcxZGJDSFNBcklBMlE3RERlOS15Y2ljTGFlZlp0RTJId1pyMDQ4RnJoeGRNdlRyQWxsVTJqQV80OUkwclFfeTJKZFlLMkV5dXNzUnBlZHpBR3V1MXlRSjYtR1V0M01mbXktVHpmR1VoOS1YVUNraXh1NnZ1LU80R21RVlRLNnplS3BBU3BVTEpCeEFvOGdvbmxUVGc5NWdGUlhmMVRXUjNpR3JPb1dyN2JrUHQ5Mm82NUlteTR3?oc=5",
+   "category": "internacional",
+   "published": "2026-11-08T11:41:44Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
+   "title": "Revelan que torres de control de EEUU siguen usando disquetes para datos de vuelos",
+   "link": "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/adelantos/2026/11/08/revelan-que-torres-de-control-de-eeuu-siguen-usando-disquetes-para-datos-de-vuelos.shtml",
    "category": "internacional",
    "published": "2026-11-08T11:41:44Z",
    "sources": [
@@ -10218,6 +10590,24 @@
    ]
   },
   {
+   "title": "Las secuelas económicas de la pérdida de poder de Trump para Chile y el mundo",
+   "link": "https://www.latercera.com/pulso/noticia/las-secuelas-economicas-de-la-perdida-de-poder-de-trump-para-chile-y-el-mundo/",
+   "category": "nacional",
+   "published": "2026-11-08T10:00:00Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "La nueva generación de banqueros en Chile",
+   "link": "https://www.latercera.com/pulso/noticia/la-nueva-generacion-de-banqueros-en-chile/",
+   "category": "nacional",
+   "published": "2026-11-08T10:00:00Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
    "title": "El legendario pianista Kenny Barron brilla en el Cartagena Jazz Festival",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRGVTMzVzMTZvaUlkcmI1TVFCOXlGeHAxM3hLWmRZZjI4RThqbDVCOFRmb0NBNEt4cFJ3LU1Fb0tXdkluRFg3Qnk3ZGZIVTVoRVBfQS1lMl9BTWlJaWIzSURXREk4UzgtOFNWTFJOSkJvd0t2YzNtWHJkUURXaXh2YVh0ZHZOdHItSTRpM016RmZocTFtUTRsRGh3bzF6bzh4OUlJTkotR2EtSlNhUlY1VTNZNHNyR2pGbDNVTmdxcnJxcUk10gHYAUFVX3lxTE9KZlE1NVhTeDhQY0h6TkxYQXlzREh6NDNNRjhtYXpoRWFTNTd1WEVYeTZGSXVBRmFKcU9vQk54MndTSndsWlhvNElibUM5c09TWk40ZEVQa3p2OVBUMmd4UlhaR0NjWTk2TjlhTC1xUlFMVm9ldl9OV1czUEtpSzhiOU9HOU5vVWFLMUFfd0RIdDhIWEQ2N00zZnpjNTVPSUV2dGtyd1JPd1dpbjVfMF9XekJNSXFhVG1wb0pqYTdnYjJQckdOS3NVVkljdWZtYUVZMUNxdmRLYw?oc=5",
    "category": "cultura",
@@ -10254,6 +10644,15 @@
    ]
   },
   {
+   "title": "El expresidente peruano que usó el antichilenismo para ganar votos y luego pactó con Chile",
+   "link": "https://www.biobiochile.cl/noticias/internacional/america-latina/2026/11/08/el-expresidente-peruano-que-uso-el-antichilenismo-para-ganar-votos-y-luego-pacto-con-chile.shtml",
+   "category": "nacional",
+   "published": "2026-11-08T09:40:33Z",
+   "sources": [
+    "BioBioChile"
+   ]
+  },
+  {
    "title": "El gasto en infraestructura de IA crece un 53 % y ya apunta a 521.000 millones de dólares en 2026",
    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQa1pUcGo2UWlpVUVCb3EtRjl1eXRNNzdwR25pX2RwdTFPR1B5ajQyTmtHRUJzMTVjLXpZNXFnMkxacHB2LUlDSEdHOWhWcXdrYVlNbzRnbkJ3alc5THZTWGE4MGRkaEFvQk82c3BoYm04RTBaQVFMVGdEM0FCWm8tT2pWblBsaHBuRExPTVlaMThqSlpNOVZVM1dreUg5MHhEVjN5U3g4ZS1YVkxlSnh4S2lWSVg4RWMxajlTNnBYVFVISkpYcVFzdjVvMDlXSUc5MV8w?oc=5",
    "category": "tecnologia",
@@ -10275,6 +10674,15 @@
   {
    "title": "Ricardo Lagos, su quiebre con la izquierda y la hora de su retiro",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbG80Ukk5QnNwR3VwbEo1Qno3aGxuNWVPeTRFbi02cFpMVDVGQ0ZBcHI3YzJGUEtLVnFZbEZJVDl6c04zM0I3bDZfdzlXTk9IRGxYQzJUWGQtbnVqc2t0RDhpR1BaS1ZCTUpKc2hTeGpmaWNiZS1ZM0lVcjVmYVBhV2JFMU9BTnY4N3RrUUN1TGJib0NRRUNYb0lmbjc2SjFkOVdES0wzNUFWUEw30gHOAUFVX3lxTE9wUEl6ZnFnU241ZjlkT1h1Xy1yckVzdFVrUncwRnJMWXc3UEphYmNQXzJhS21GRDdPc014V05hWnZJMmZxREJpUGxKSXNiVUI5M1Y0anM5QmtQblB0UDE5NDREM3d6eFh5dDNjNmMtbVl5ZTVBNVRrX3kwNkUxc0E4VjhBR3ZZYVp4clV2cXhWNlhDYXMyVmhwR2ppdkNNbG5KVVlqeUtYOXd2Y2ZoVGtqLVM5ckdhUGk4QWMtNFlEbmc3UTZtMERQaUJKckVn?oc=5",
+   "category": "nacional",
+   "published": "2026-11-08T09:30:00Z",
+   "sources": [
+    "La Tercera"
+   ]
+  },
+  {
+   "title": "Ricardo Lagos, su quiebre con la izquierda y la hora de su retiro",
+   "link": "https://www.latercera.com/politica/noticia/ricardo-lagos-su-quiebre-con-la-izquierda-y-la-hora-de-su-retiro/",
    "category": "nacional",
    "published": "2026-11-08T09:30:00Z",
    "sources": [
@@ -10345,6 +10753,15 @@
    ]
   },
   {
+   "title": "El Bayern de Múnich confirma su interés en una joven promesa",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOUVPSGVoVjVNNnduWWk5RlJKNS1YcHlEUTk0TXRmcFlJU1NtcmVlNjB0bF94YzJxQkVudHdGcW5xREJxZ1VUVDBOMHV1Unk1N3g2MTl6XzRjRVV0azVESzMyT25hd1A1ZWhuN2NUWmpFYVZqZ0JUZVA3Yk9BVVRqaTRrMjJsdEtvMnlEYnQwWi1iSnR5RENFVTNJaUM0RnVyWC1TYU41QS05UQ?oc=5",
+   "category": "deportes",
+   "published": "2026-11-08T08:46:24Z",
+   "sources": [
+    "Fichajes.com"
+   ]
+  },
+  {
    "title": "“Gijón y el cine argentino tienen una conexión evidente”",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeVZsS2dFaXdLTTBtNjlCTHBMdVliQWE4bHpzZlBfbHFPQWhtN0E5SjFfa1I3RHJyTDBlQU5UU0E4bXRFYmRxblFWaXhfMy1XUTd3MEtoUW1FemhGdl80RDBlTVFFRmpGNmU5RVVmbUNmTTR6Zjc0OHp3SHdpRjExTG9wa1JGZ3RvcEhMZGN6SThUbHByV0gwV3NoMzVsNXJkR2ZueWw2X3AtQ09mX1d1OTRiWmlNWGZSNmJydUlYNFFkUFk?oc=5",
    "category": "cultura",
@@ -10365,6 +10782,15 @@
   {
    "title": "Irarrázaval: cómo terminar un Gobierno en 8 meses",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNa3o5Nld6MnBpdnlzWVRDVlFqMUNlVHJGRTFDVDViV3UwTmxrTVE3WEJxR0JWdTBEbW9mdVR3Vy1VdkEta2tiVmhhNG15T1BTRTZqUGdCLUdlMlJuQ3ZVVUJJSUt5RnpQcnpsaUY2dGhMMkpheUJSODJVV2VNQTA5blJUMEx1VTZBZWJzZmNZb09FZk4wZlVZaldxLWw?oc=5",
+   "category": "internacional",
+   "published": "2026-11-08T08:11:14Z",
+   "sources": [
+    "El Mostrador"
+   ]
+  },
+  {
+   "title": "Irarrázaval: cómo terminar un Gobierno en 8 meses",
+   "link": "https://www.elmostrador.cl/politica/2026/11/08/irarrazaval-como-terminar-un-gobierno-en-8-meses/",
    "category": "internacional",
    "published": "2026-11-08T08:11:14Z",
    "sources": [
@@ -10492,6 +10918,15 @@
   {
    "title": "Irán reporta incendio de dos buques petroleros en el estrecho de Ormuz",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTVcxZktKVS1SUTI3a0lOZGtZMWp1X25aMEJtZG5xTlJ1WFBNQjljeFFvTDh5cENZVjJsQXhfQy12OGdscGdEdjZIS1kzUWstY0JnSGRoREszVzFhMjB6ckFDeVNQSUMybzlJOFhLM1R4dy1vNXNNZENfQXZ5VUVxQlZVSGJvdnlNOHFaemN1d3hfOUFfYkg2eGNZUkVJOUNvLWxOUTVOVVFSN1dH0gGsAUFVX3lxTE9iajB4ZUQzN3BEem5tX0p1TFBub01Yc1lpcFlfYzdsUFpqenBocVpYaWp4cU8xbWxIb3QwTnB0cXl2RzlCazgtQjBsYkxLZElPejBTRzlxX1J6Um9LQ3JPOEpfMXNSU1BwdllXZDltWENNaHNCR1hDLVFvRW5CQ1VnWDdNNlAwZnVkcVQwa0dkNmNfRUxDRlFaZXlQbVZDaVBKamxEX01xRERuMUY?oc=5",
+   "category": "internacional",
+   "published": "2026-11-08T06:25:58Z",
+   "sources": [
+    "DW.com"
+   ]
+  },
+  {
+   "title": "Irán reporta incendio de dos buques petroleros en el estrecho de Ormuz",
+   "link": "https://www.dw.com/es/ir%C3%A1n-reporta-incendio-de-dos-buques-petroleros-en-el-estrecho-de-ormuz/a-79888657",
    "category": "internacional",
    "published": "2026-11-08T06:25:58Z",
    "sources": [
@@ -22250,7 +22685,8 @@
    "sources": [
     "ge",
     "GE",
-    "UOL"
+    "UOL",
+    "CNN Brasil"
    ]
   },
   {
@@ -24819,402 +25255,6 @@
    "published": "2026-11-06T10:01:37Z",
    "sources": [
     "Portal Radar"
-   ]
-  },
-  {
-   "title": "Marca País Argentina impulsa capacitaciones estratégicas sobre el uso de su licencia, en Salta",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVEhJWXo2MXA4YnBMQ1ZqMEZJR0xWYjBhN2JYN1dRUktDTGF0Y3pMS0FpTVh0V3U5S2pFdnV5emtRekxQVHhTY2VDQlcwSElMeVE1MWh4dUprOHotNG1ycmNIWURZX2FUdDdvcDhtSG9sWDc5VEJjWWY0cERpckZqNFhLbFhiNkRxclZNelpqd3p1bU1RSlY2YVgxUFVCZ0VHZ3FTdlYyelRBU0FFNE1LSm5ZUFpkbmNUOG9RcVcwa1F3SjNYQl9GekRrTFBWbUdzYUQ1c1huc0VIZ2s?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T10:00:46Z",
-   "sources": [
-    "Noticias AgroPecuarias"
-   ]
-  },
-  {
-   "title": "A medição inteligente na abertura do mercado de eletricidade no Brasil",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNlhHeDNEdUpIZXdlS0NWd19CcUprSGtZeHZ4UHlKb2JKQ3FXMFlEVjNIZ3haM1d5X1dyaWlqczI2amNlVWd0bldyNE5UZVZ3SzVreWJ3VWFGZHd1Vm9tbWhTcWFMZVdzRExOZHJKbnVYdWcwU09hZnlXTGFRRDQwRXVmaU5ET2FfdGdwMVhpRlpNMm45ZjN1QjhVcmVaTXd1bG1Ddm4zM21GQURidjdfSkRvWTM4UdIBxAFBVV95cUxPN081dVZNOXJMZFY2U1U4aW5HRDdqMkZDb1ZqbUljcjAtbzA1VmpyY0NEbUt5ejNwRXNTN3dwbmxjMkJaNl9CNnNZYWx6V0RBczl6alZRSzZZUlM2clJuYzRwOW00UVU1QlN0VWhWeFBLUDhmX2h1anlYR3JBWlNZWHU3RGZHUThJQXJUYjFxQklKc3RLenpkc0RuNzBYNXl0a0YwYm1ja3JDdXlKU1E2THZMY3lacDJaak00WTdDdF9kZEJ3?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T10:00:00Z",
-   "sources": [
-    "Valor Econômico"
-   ]
-  },
-  {
-   "title": "México envejece: un desafío que urge atender",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX29QREFkTFV3c0JRWVZFV0w4dzc4Y2huSm1nMExZZlhwZXhaaHo1bkY1Ymw2elIxbGcweVVFVHpWQ2liemVmLUV2QkZrcWNvYUZkQ1ZhN0JHN3lRa0VtejRUQjkxWm11Z19EUEVKb2UyYlVIU2tZNy1tODU2allqM0JobFpiaDRmTkc5ZDdWdW1meHB2NVFncUp2T0F0ODJMb3llVi16Q18zUVFuVkc0UnE0Z0RfbUU?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T10:00:00Z",
-   "sources": [
-    "El Financiero"
-   ]
-  },
-  {
-   "title": "Casanare tiene finalista para la fase nacional de la Copa Claro por Colombia",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTkROSTE0QmJ3bWh0b0RlN1MyMlo5blR5M01zcnFqcTJNZThOSkI1cm9Vb2xjTDU1X3VsbEF2ajNiNVhGVEQtbExQVE5YM0lqOFRPcVBOZGFDU09hMHJmZHlJWjNqSXl3YmwyUENUb0dRODBVcDd5NkJTdlFfeXczVHJRc1Y5dDNVVnNZX2RVVElEMm5zbG4yM0l3VVU1YjRwdzAzTTNLcWUxYlBLVV9oRVNULTIyYlVzVW5uc210d0N1aXp1RjFn?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:59:02Z",
-   "sources": [
-    "PRENSA LIBRE CASANARE"
-   ]
-  },
-  {
-   "title": "A la cárcel tras macabro vuelco: juró inocencia en TV, entregó a su hijo a la policía, pero también descuartizó a pareja",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPQ0trc3JIV2g3QW1ubDdhZFU0c21FeUM0bXpzTHlkSEhrQTM5RF9RcjZxSnBQV0ZwWjFKQ0pzYXNMX0VXSzh0X1dQUUMxRHl3QVg0V3VTQmV6a2Vab29ySGxtS09ZRTFoNURCbGpDek5yak5FMmZ6NjNTQU4yRjRUZ2w0alRXbWd0em5YM3BmR09qQUVWNE1nSTBYZGNMOXpBMzljSlFYQnJsdDUwcVZCQXM5UGU4bXY1eVU3aHUtb3IyZjhFcGxVb1d5LXItc0hZMklfdE1Lc1Q4UWpWX2FQaC1FN1U0Y2tacEkxN2x30gGPAkFVX3lxTFBCclNVUEtGTmpEWmdJa1QzN1JKS0F1MndhdC0yOGZaazBDcjZDNXpLQUY4TUYtUFJLZFNmc3BIZGgwTjNCdmRPZVhTTmNwWlFVQkMxai13NmZPUl9Jc1dhbXlqeklMMC1VMW8yVkZmVFZYbG11VkdmWEl2V2RXQ3lEandxVTFsRnVKUmFjdnpCVTRNbnVjV0Z3RThRbXh3ZmZyVFpLOTNVdDNFMjUyRW40S3BKY3VhVlFuYmk1UE1XMDNmLXh5SzQ2SGJVSzExWFFCVEJDWEtRZUk2TWFXb0FVUFRjdHRqMFppWklzT1dBRy1yWThFMDNtUnRreHIxWTA5LXcxaGNoSnNlaGJfMGs?oc=5",
-   "category": "nacional",
-   "published": "2026-11-06T09:51:47Z",
-   "sources": [
-    "La Cuarta"
-   ]
-  },
-  {
-   "title": "Gobierno busca acelerar Corredor Bioceánico que conectará Brasil con los puertos del norte de Chile",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNUtuSFBjN3pNNzlOdDhpNGVFcW9ybnFlTzd0VnpmeXh5T0FZZEphUkdISVlLaC1iSmttcnAtWmUyNHlNM3BHbHlPMGVyZGZkMmJvLW1fckQtaHRudDFwenpvbllkOWUwS201U1NCNVZFWEh6cmR1OFpSXzNkNlUzOU13azZlMERaZDd1cVVCUnFRWWVSN191d0xmTWRrWnVaSE9fWUVKNDF6X1hjQ0l5OS1MUkpEV3RKM2hzSGVGckVNY2ZqdlVDaXpHN3c0MHpN0gHQAUFVX3lxTFA1S25IUGM3ek03OU50OGk0ZUVxb3JucWVPN3RWemZ5eHlPQVlkSmFSR0hJWUtoLWJKa21ycC1aZTI0eU0zcEdseU8wZXJkZmQyYm8tbV9yRC1odG50MXB6em9uWWQ5ZTBLbTVTU0I1VkVYSHpyZHU4WlJfM2Q2VTM5TXdrNmUwRFpkN3VxVUJScVFZZVI3X3V3TGZNZGtadVpIT19ZRUo0MXpfWGNDSXk5LUxSSkRXdEozaHNIZUZyRU1jZmp2VUNpekc3dzQwek0?oc=5",
-   "category": "politica",
-   "published": "2026-11-06T09:50:00Z",
-   "sources": [
-    "Radio Paulina"
-   ]
-  },
-  {
-   "title": "Juez federal detenido en Colombia ya enfrentaba cuatro investigaciones administrativas en México",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWU9UYi1EOEE3aTdiQjVZZTJHTFlmMlVmNEw5T2Vhd3B4TnhpZlR1NUVVd1lZcTVSYy1jZHVpUk9Kb014aS1fWXhPWUFvQmxOQzdxaW84WndDRUxRZ3djb3BLT29xMVdOVUNQYTgtUkphUUZXaDJjWlNHSlZCdFJ4Z0FrbFgzcHRDVjBaVmc2NDBTNlhjazdjeFp5YnV2SmRRWE5zT0p1aGM3R1UyZ3g5ZGhORm9BejdoOW9vWlA5bXQweVJoN3BJdE1IQTBfYzdveGVlajZjaThUaWxrenc?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:48:38Z",
-   "sources": [
-    "El Sol de México"
-   ]
-  },
-  {
-   "title": "Brasil é 55,5% negro, mas terá apenas 26% das cadeiras da Câmara em 2027",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPSE1lOHdGd2QwR2pERUNDU0FKWTNBajlDdFVuZkx2UVpOcl93VmhvRVA4SU9pMkVCN1RDbVB4Wlg1bWFLekp4OUtRZHdKVEkxQV9SSE1CQXAtM1BWeUwwZjFfNUlXMmxod3VQckJVbGZhZ2hLWEtXNU9ERG5WNEVzenNsbVdJM201LURkRk0wdk5ScGZrdWU4MHNDZi1DelE?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:48:06Z",
-   "sources": [
-    "Portal Verdade"
-   ]
-  },
-  {
-   "title": "Detenidos tres europeos en Perú por intentar sacar del país 3.000 tarántulas en avión",
-   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBzNlhyTXJoeXRBckh0MW1DZGVjdzNRN0JsbEhuUGlteWR3bFBiM01YQVZraXhYNHg5UDVPOFhacE1DOUkwVDN4aQ?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:43:09Z",
-   "sources": [
-    "سانا"
-   ]
-  },
-  {
-   "title": "Un baleado tras nuevo ataque en Bajos de Mena: Toledo dice que \"el Gobierno le falló a Puente Alto\"",
-   "link": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/11/06/un-baleado-tras-nuevo-ataque-en-bajos-de-mena-toledo-dice-que-el-gobierno-le-fallo-a-puente-alto.shtml",
-   "category": "tecnologia",
-   "published": "2026-11-06T09:41:33Z",
-   "sources": [
-    "BioBioChile"
-   ]
-  },
-  {
-   "title": "“Esa decisión me quedó grande”: Gonzalo Valenzuela confiesa íntimas razones sobre quiebre matrimonial con Kika Silva",
-   "link": "https://www.lacuarta.com/espectaculos/noticia/esa-decision-me-quedo-grande-gonzalo-valenzuela-confiesa-intimas-razones-sobre-quiebre-matrimonial-con-kika-silva/",
-   "category": "cultura",
-   "published": "2026-11-06T09:31:39Z",
-   "sources": [
-    "La Cuarta"
-   ]
-  },
-  {
-   "title": "Chile sufrirá sexta alza consecutiva de bencinas: diésel acumulará casi $500 de aumento en tres meses",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOHhTRzlKRTVGeEpvVDEwbXl3RHZRbHFhTTRGcGpvLTFRVURzZWFRazFhRG9FS3F6cU0zbzM2NXNXTFA1alJEY1RtcWYtTmliS2paMDh2TVVQekhjaU5ra3Z0Qk5LTnl3czdYSE04VmFldHpfNEV0Q19HUUJtRWJGQjRGTDdTa2vSAYwBQVVfeXFMTzU5Nndwd2RVNHI4ZlVkbHZBMTNnTllUUFFyUlRyTExJZVQzdm5ULXdpdEdxQlNDSUN3ZW8wdXo5YllIMzhNa3NEMXJWV2xOdVByY1plemc4Q3ExWFhtTVN0bV9hYkxXYk43Y3RHa0JVamE1NE9ydHdQUXo3LUFtTmxaUXNlWHNqZzRhdkk?oc=5",
-   "category": "economia",
-   "published": "2026-11-06T09:31:00Z",
-   "sources": [
-    "24horas"
-   ]
-  },
-  {
-   "title": "Más allá de las arengas",
-   "link": "https://elpais.com/chile/2026-11-06/mas-alla-de-las-arengas.html",
-   "category": "politica",
-   "published": "2026-11-06T09:30:00Z",
-   "sources": [
-    "EL PAÍS"
-   ]
-  },
-  {
-   "title": "Pamela Figueroa, presidenta del Servel: “La comunicación tóxica en redes tiene por finalidad expulsar a las personas, y sobre todo a las mujeres, del sistema político”",
-   "link": "https://elpais.com/chile/2026-11-06/pamela-figueroa-presidenta-del-servel-la-comunicacion-toxica-en-redes-tiene-por-finalidad-expulsar-a-las-personas-y-sobre-todo-a-las-mujeres-del-sistema-politico.html",
-   "category": "politica",
-   "published": "2026-11-06T09:30:00Z",
-   "sources": [
-    "EL PAÍS"
-   ]
-  },
-  {
-   "title": "Defiende México el multilateralismo y repudia el bloqueo contra Cuba",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQaWZfQ003azRqdWpmOV9XcGZtR3lCeS1YWDYxZzh4QkhuRm1MNnYxLUV0b1htWVpLVjJXZ0dsNUNrc3FQeENPRzE2WjdXR3FuRGV2X0JIcVlvSk1BTXhzeEhR?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:26:12Z",
-   "sources": [
-    "La Jornada"
-   ]
-  },
-  {
-   "title": "México SA",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13T3VORXJOS09pT1lKdzBLSVYya216YWt3Q0t4bEhOM09iX1hKZG5jSUlMMmpvNjBDSFhvMl94MFQ0bEtUVS03LWMxVnFrOWMyU3hwazBxNTZkdktyMlJvd2U3UjU?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:26:12Z",
-   "sources": [
-    "La Jornada"
-   ]
-  },
-  {
-   "title": "Brasileiros atravessam a fronteira para ver o Papa no Uruguai",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZ25GcHJQcWFBTlBPYWd3ZGQ1RVhsUDU0RXhJVGVOa0N0OFl3YUtuOXNBdzJhdTlLT3dmbjd3QXBWdGhxd3JJdGtxUTFfNW1SVXQtNndDMnFlSWN1dF82Z1AzNnZPel9jM0JxLWMxZjRHc1F2dG1NRVBNTDRsZzc1bFdrcHlsM2pBMWFiLXhzWjZLT3RpZldTcXVnakdwSVlMWmlCX1piYnk3OExUUHV5RFZQVlN4YjRiOEE?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:18:34Z",
-   "sources": [
-    "Vatican News"
-   ]
-  },
-  {
-   "title": "Entre México y Cuba: Tony Espino, el gánster que despistó a la policía internacional",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaWdDLXZ2MklkSjI1MjB2dTRROER5bUFsb245LXpnODVybU1QNzVEM3ZFWlJBeTJmRE9DRzJvT1NtRlFUaXJUbm11eTBjRjI4dkVZN1VfQVZ5Z3UyazUwR2RicDVkR1RzdTR6Z1dmdTNaZFJZS01PMGRDeHlEWnU4YWRyS3pmMDFHRjBVZmVzbVVtVHI2d092aUg0MFJQbTcwZHlPVTV1ajBHMWZMMlFzbWFCZjgzQUdORzZtV0paSjA4aEJmbmc2Z19iSDhxbHJuUy1uLQ?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:17:11Z",
-   "sources": [
-    "El Sol de México"
-   ]
-  },
-  {
-   "title": "Festival Música Original reúne 16 propuestas musicales de distintas regiones de México",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNl9yQlVlWWc4UmhNbjVZNlNzVmZvTk9qQ3FnbHg2R04yNXFucUpWdVVPZXFObVFlRHRpY3Vwc29femNYa1hCeHhmQVJKRXd6V3hKVUlGOWVyaHFSS0RXY3FLbmVoT29IdnJpbFVKemR3UHBnQjB5Tmx2bHJtRGh5Z1NZbVNkYS1PdVJlUnpnMXlfZXJTdGxGcXVMVEJZaGpvcGNXbzhJeEYwXzYta1hzdzNlR2sxWjg?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:15:54Z",
-   "sources": [
-    "Hoja de Ruta Digital"
-   ]
-  },
-  {
-   "title": "“Plata falsa” entra al mercado y expertos explican cómo reconocer piezas que podrían contener metales tóxicos",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRlEwZng0MkJfNmtZYS03UVZWRUthMEVtOXdCUmFjaU9nMl9NOVZQUklxNUZNWnBVSXhSdFVkUXlfNkx6dUFiQmxLVFJXN0tlMFN6SUs4WTFTb0N5bVpKUzJXNTh3LVRoc0ozRExVRExBQUVZc0Roc1NaaG9GbkxzaXFkSVFzaUVnLVo0Y00yX251ZHdfcm5vRG5xUWRXbHJyMzFZemhsc2tQLUwza2Q3SFJRT1g0RmpBWXFaXzhMQ2QwUHBhR2luY1lOODBmNF9uNzFrUHdCd9IB3wFBVV95cUxPdy1ZbDJQMzhiUWU4SDgyTUpLVVlvRWcxbjd2TjA4Sk5ST1JPVkNzMnhJLWxVTjJLQjl2NmNRbHpNUGl2bkdCMzR5WERSd29rZmdKZHRjd0dJd0o2YVhJU19mTXR6STJzdG54RXhVaFJJX2RPSWVzQ01mazB2RUEzZjdaVFEwQ2tsQlNuSWs4SUpEdGZKMHlyelZpQ2ktRFZiZjIxb0RFNm5qTEJMX09YdGkzNjJwZG9sbkNkRF9mNnhESVJFMnBmZ05rMlR6TFNxZ0tVTDd4WE5NV2h0NlFv?oc=5",
-   "category": "tecnologia",
-   "published": "2026-11-06T09:13:00Z",
-   "sources": [
-    "trendTIC"
-   ]
-  },
-  {
-   "title": "Flávio Bolsonaro reaparece en la CPAC de Florida",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPXy10UjdkS0lSMnh0SlluT3lYTFBKcEpKMkZ0UWgyNmJjbW5EQ3hhTGx3Nkp1MUx4ZEpkVWhWMHdZanJYQzZhTk1MUm5tbnZabGxNS1B6RXE5V0lwTklnWjZ4SGE0U1BYS01CTlRVRlloendDZF9rN0tlX2FmMUROZjN4U3JrOXhMdy1YTHZCONIBjwFBVV95cUxPa25oNFl2TmNRdDZqUC1RZ2dCbnVEX2pybkNpOGVVaEY5Y0owTkFUVGwyMkF5dnlIZ3gybHlRNGtCVzU5UTdnTkhEbXQ1VU5GZDhhRF9RR3hoZVJPTUE2RzJxd2pIQXh5MTZ5akljZHhPU2cwLU5ZV0xzZ2FGOUt6X09LcEJFVjlDY21mOUFOWQ?oc=5",
-   "category": "internacional",
-   "published": "2026-11-06T09:12:01Z",
-   "sources": [
-    "DW.com"
-   ]
-  },
-  {
-   "title": "En México, 51% ya se siente seguro al caminar solo de noche: así va el mundo",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdHpsSUpVZy1GMV9HbHE5Q3NpTUZueFRJdy1rOGkyZ0hWSVBnT2J3cVBWZnRIOHRzdzBuaVhBN3hYOHJ4OEx5Q2xScV84UENSY19XbzlleDJVRW1UMVkxc1hBakZjRUFEZV9idkNXd0ZPZUtDbU5BV3lGZF9GN2VLRFNjaXNtZGtxcmtkeFhiTmpsOXk2QjBDRC03WFQ5bWkwQWlnalhMZXFVTEoyZU05Q3pXTThCRkt1NkJObHVreUg0QzTSAcgBQVVfeXFMTUJuWURqenN4OGo5emlrZHFSUlJsTXFfRkg1VlF5RmFrZ2hfMTRoQnJsdGRGVUVHa2ZScHo5YTNadk5fbUptSWF0a05wLWM4MUFVMmZOa0Q3Skw1T0NjS0xhUHlYNzh1Tzg3SkZsSWRsbFppak1UWmkyWkV6bWozLWpfRUlFRHBoeGdCeFlIOVNzamxSeXhMMGZ0NGM5alQ3OHNlZE9TTGxObmhzdUM4N2s3dXNOY0ZkNDgyUXdhUS1vdmRmMUQ2ZjA?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:09:00Z",
-   "sources": [
-    "Tus Buenas Noticias"
-   ]
-  },
-  {
-   "title": "El truene del banco paraguayo y los pagos digitales en México",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUWtHc016V1E3YWV4d0hNX2s0dGVlMlJNVHlKNHpOeVUxZHRzSHYtbnA5aFR1eFFEMEVuQUJNVE5YNXlLZmRJQW12UDlHUUJrSGJRZUIwb1JhcEYxRjBCWllJOUkxU0Q5R25EejNrcU5YcURKaHMyMU16Z2xndktISXBGTjZHdTNRZXpLMnEtdjJ3dXp3bVJONkRkVkdTTHZWWHlrREFzZzFkdGZWYThNSjJkYw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:07:41Z",
-   "sources": [
-    "El Sol de México"
-   ]
-  },
-  {
-   "title": "León XIV en Argentina: siete claves a saber sobre el operativo por la visita del Papa",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQUNEbWlkcDBxNlcycGRmTk9sYWF2QnNyOHJXNWpXemd1T19yNzBaN3dHSVRRYTYzcnAtd0NoOWJwZTY1eFpENVJxWmYwNDhIX1ZMMVI0ZHBvLWM0dTZLcXRPUHNSd3ZaV2JKOGdQSDc0WTIyMnR2Y3RJbUd5cFEwcFhzdTk2eEJGZGZhdnlyTlhQR3AyOXBPc3VlQTVwcXA2QWtRUzNHeE_SAa4BQVVfeXFMTlJERlpTNUdwczVEbmdBOHZ6T2s3ajVzbERDY1pxUlgxRUNDR3Z2emIxd1NLVW0wVGFsUXZjUVFtUkdBZ3ZWSEVIR0pISE1mMlpvaVpMUVRheHhGT3BJdWRhUE41elg3aE5MdWd1M1FkQXRDMGZWTE54ZUIxOVU0aVdVU3czV3hhS2dlcEFnV0VlVjVNZF96ZnVRNmladGhtY2pVUnZJNzE0NlhKS1J3?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:07:37Z",
-   "sources": [
-    "elDiarioAR.com"
-   ]
-  },
-  {
-   "title": "Motorola Signature 27 llega con la segunda mejor cámara según DXOMARK",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQN3hMWFBncG01V0doM05EZ3duT0ZFM21XVkRxVko2bzNLVUFTSjVFZ2dQbjB0WjZBNTNPZTFTVHF1dTlFWG5OWFAxcng5SndKU3pPeEpXQThsZDBOcTVtRzlwZG9CQ0Fzek4wc1M2NW1JSWN5WlFJMDh6NW5hb29lbTU4bzFyS0xIMjc4RXdmZ3Rzajh6YWpHc29CaGxQSzBtN1BNZTRZMzVtbEU1cGRUbHNjaXRPd9IB1wFBVV95cUxOSHBhSlViRUZzWmhTOWR4SWFtRlBjaktvWEZQblJodmw0NUpqNXB5MDZOOWVpT3ItRUh6U3h5RG1nSVZGengyVzZXLXZjaF9GVXdDRER6Q2k1YjNDWkV3QlN2eTJHSXZDTy1DXzNUcWE5QUpEclVOM1lZQ1Q0SmhuTExsT0ZXZHBJeVZieWdwT0diR0U0eUtTSThESjFpMGljcmxxRGR3VkZSSVU0b0JHYjh6R1BvSEdycFdNUFNENFdTS2t5S1U5TmNheVJCZnE4TC1GUXNhaw?oc=5",
-   "category": "tecnologia",
-   "published": "2026-11-06T09:05:00Z",
-   "sources": [
-    "La Tercera"
-   ]
-  },
-  {
-   "title": "Las regiones de la zona central que tendrán lluvia hoy, según el pronóstico",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZWpma3RGZHczV2lXcGlMN2tzYlBRWVVja2RyY2hMZm11LWRLaFNYQU8tN3ZpclJiN2tadzMxanpYcEs3WnhOZEhXMmVWQUZNSW5YLV83WF85VnREaEdnNVNSYVFkT09meWdoakNYNWFubTFkQVZyX3JrWThDUEJlWWlDWEhyaEpiS3p5RXlVUWtGWjR3N1dYN3ljdExEZ0hVbE9lSGMzd05NSFJBZDItYXlXRlNSeG55dC1ENdIB3gFBVV95cUxOS3pJdWdBZURBWFpNVzVXV211SHBPaVp1ek84a2czWkU0TEtld1B0OVRjYlFZVHc3ZUhtMnhRWmRJNGE4UXdMWHJNZnQ4LTZyaUMwMTRvUWZ0VEMyWEhUYjEyY29JQ2UwZF9fNWJKS1R1djhRZVQzWkY1QXFKVXpsVUZLdGFJb21WdW5Ia1NuWWo5NU9CUlY2aG5tM3ZqUEdfTGFleEMzc3J0QW5aVS1kYzdjUHBKSFVyT25JdkcxeDhBNWlPU01ZUWZKRmZleUR1VEs0czRaRmlzNXlfNnc?oc=5",
-   "category": "nacional",
-   "published": "2026-11-06T09:03:00Z",
-   "sources": [
-    "La Tercera"
-   ]
-  },
-  {
-   "title": "Qual é o perfil dos usuários de IA no Brasil?",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOW1DMmQyamdqMzYtdVIyd3I3ZEdBTUUyeV8tdTJlZDlzR09rQjg0TkdLWW1lLXZvQmZqSm1UY1ZNRHRWaGYxWGVBX3owXzZ6ODMxMVFWT3lGNzZZZkExeGRGVUNHdC1FS21PWmNIeTdBakFYVllBWVJzdnVkdU12dDNUVkt2V0hVUEFOTVR3bE0?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:01:00Z",
-   "sources": [
-    "Meio e Mensagem"
-   ]
-  },
-  {
-   "title": "Hasta 35 °C: los sectores que tendrán las temperaturas más altas este fin de semana",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPdERURWZNeEFRZnRZMXpOOEExNUtTR19Xd3NPYjZ6ZDhfcmhRejNzMUZZVmV5M3RhNDYxdU16MHJObmFBTG1SRGU0d1JpY25jOEFpRE5Qb1pIWTFBTEEyMDlRNGpiR1hWSUgwMVJ2bnA4bGFYUnVBakgtQVc2ME10SXFsSkw4dTE2ZzZzb3hObEh3U2tTNVIzQUNEVVhta0FvM3RZekszUHYyallnM3BidlR4eFl4b1hucWM2aFJDVGg1LWZ4X0HSAecBQVVfeXFMUGxQOFRPaW1kYndTYkNuYTlLMkd4cUQ2Skh3emt2cDRCMmhQT2g5RzhYem5EZUticjEtdUR5X2poa3lhaEU2cnZMUXpuVmpIajNjTnE4TFJHMUl4UmdvR3lpSjFNUmZUTUkwdTZiZXJRNzRaT3N4cTZkZHQ4S1VHX1pGZllMR01GVDhuVDI5aXFROUg3eWt5aWp3ODJ0QW5WZkZWTGYwZnpwNG56cjV3bmJzYnpzSmV3Yy03MC04azY3YVAxN0o3NFRTOWtGamgzeEctLUlVbmJVRHJOcTlOTGtrODVUdHFj?oc=5",
-   "category": "nacional",
-   "published": "2026-11-06T09:01:00Z",
-   "sources": [
-    "La Tercera"
-   ]
-  },
-  {
-   "title": "Depois do Brasil, eles querem que a Diáspora.Black acelere o afroturismo na Europa",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOaXlzamFpbHRNZVFZbDZOTkxlOTlXOGtTTFBtNmI4bkVhTXFQRE8xV1BsQ2NVT0hIV3NDd2dFVndYSHRSYmtVYkxCMzh1Wm81NFU4cDFyOTk5MmRPYzV3d3FBcTRYVERscnFGOEpxWktfNk9xTkNLMVJVNUFZdGNJczFVN3hvZjdmVHFacm1PT0NTWTVZTXBFQXdrM0JMRWVYb1F5NjREcEc5Rm83SVR3X2Z2ZURZdktXNjRYZWFtbWNOWFI0dFBwd1FpbmNXVzIyWnFqTWFldWN0ZDdNbVhZSkN1ZkJ4SkZha1hCY09MeHR1d9IBgAJBVV95cUxOYnBlLTlsV29jTmdfdVpOdDlVZFF4ckxRU01ENDlYbGgteWZEVEZCWkNVM0RKYWtieDlHUUx5Umdwa1VFbmZfSXdoMlEtRDNkWW1kTE5BbDhWRG1iNGdIRmJvbXhLVGV5TVBwVi1NbS1HN2ljd1ZSczVkMU5fQ0dJakdUMkF5ZFA1T0J5eUhCTzVpSzZFU0RhNVZFRW9FMW1PV3BZNWc5MzBQMENzTmNtWVFUMzFDOXI4TWVEbFYyU1ZqOGMxSHprMVd2czN3ZncySU13Y2hLZ1hqOFZXaXJabzE2UDYtLVg4RUpkMGtRQkoweWQxeWZQVUVfX3Z4TVEt?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:00:01Z",
-   "sources": [
-    "Época Negócios"
-   ]
-  },
-  {
-   "title": "O dia em que Flávio Bolsonaro mais ganhou seguidores foi quando... fugiu do Brasil",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZjQ5elNGTmNGZzdsV3RuWWxMa0dwVGZWamtMejc5NHhqZE1CYWt1QUd3N2tEU1htRzFMQ0VKaGRIMFVFSnZTQUhGOXdmVEltUkl3OGcwd0xpZ0RsQTNIUng5ZXQzUjhDMXZHOFFpaFFuVUo3VDJjUVFsNnVzckh4amU4UkxjZl96WFY5ekNCLVFTcG5HVzZXX2JzUFN0YWVCRzZiUG9wLXdRanBaQjVqanNGTnVoZFo0cFpsSjNobmpxSGhaVm8yZEhEZVZnMWhnQTRsTGhjeHVtZ9IB6AFBVV95cUxQNlU0Z0tQUEtIdGFVR3FYU0hiQnhrN01zQk1uQUNva0FNdWtKYXJ4Zjdjai1GOEs0ZnRFLU5PTjVrTWQyQjJKUXRFVW5Gc2lxSHpmelZ2NDFJMGZXNUZYWHcxZXh3LXpudWpsaW1DTHZVSWRpLW9PUlRlR1dtdmF1UzZwRk8zVEpwV25wTmxwTUNmd09rZk4xX21PNXZfNHNQcVVGOGZOeGh2UlRRMUtnZEtDOGJ2eG9WX0dkcXVkYnU4S0kzR2VzdkxXS3lVMV8zWkFkTjhNM0h0dlRTcHNKOG03Z3YyZk1F?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:00:01Z",
-   "sources": [
-    "O GLOBO"
-   ]
-  },
-  {
-   "title": "TV Bahia exibe documentário sobre legado de Mãe Menininha, uma das maiores lideranças religiosas do Brasil",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZG1iYzA3TUZ3eGxnWFhiUVc2Smp0MUd2ckROZk80U0s2dS1mSWVOZnhfcGItUk9DN1BKZzg3U0lfSEgyQU5iQ0owb2pvb0F6Q01hZy1FNWUzZ0hzRFlXeC02c2xnUGszWDVnaXlHVnplVDA3MDNmOXUxZFpJbE9FZTd0QzZ5bm5KZkV2NjZXU290MHcxY2tsdldMSC1mSjFQWE9majNDaUQzcUpTMVFkbzNn0gHAAUFVX3lxTFBPNkVpM0tnVnhsQUpiZEU0akFobmtmNTVjNGFoQW8zWFcwMkY5Y3J1cll4Z2RUOXdjd3lpdmRScmt0NWVXVDBsemVxQ3ZXdTJqVTFfREFuQWZXWEdfbnJ3SGgxOTZTUkx2RjVvNTFrUXZUNkUwcmNSQ3MyWHhHbzVUSmF5VmJoenlsQ2JfTW1uUUpjZ0FwblBPVFYzQWowRVdqOUdZWjRFM3VBQmVjWHlJN1VoTHE0S3U1LWpiTi1CSQ?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:00:01Z",
-   "sources": [
-    "G1"
-   ]
-  },
-  {
-   "title": "Negócios de impacto no Brasil: capital disponível, mas instrumentos financeiros adequados",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTldPRGZnTEFRc2pnUTJNUHZFMkEyekZndnRkNGN0bzFoNjhUbnA2M3VReEZLVXY4UFA1Z2dMNU5fVzVPMklPTnhMQy1vSF9sWVphSVRvcVFQQ0s1RXJfYlJPQnRPdFYteFNVSkZ2dWJ5MHBZZEYzOFNLMEFIVW1FSVd5aWdWaVBmS3lRWW5PczVDS0RMLXB0ZjU4SDVCcXFhVk1ZSmRZUE9Yb0lsUGxxM21nNzhZZjM5azBRaHRncjJXdWxleFJN?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:00:00Z",
-   "sources": [
-    "Capital Reset"
-   ]
-  },
-  {
-   "title": "Como brasileiros no Paraguai podem ser afetados por crise",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPX3ZILTZMWDY3c0pJTzZfTEVuX1diczRhcDBDSUkxX25aTnNpVnQ4TURFV09qdmdTamU3V1IzZl9iMmFqeEVPamwwWXpGOU1LNkFvVDBibmVMTEZtNGkxYTZwYzczeGp2Wm9sUzlUbTU4QlY1ekotbU1nalhIM3VDLVFtTDVNQkpzSXc4czh6d0lwaE5VYjEtbWFVeS1YUEk?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:00:00Z",
-   "sources": [
-    "SBT News"
-   ]
-  },
-  {
-   "title": "Colombia no está al borde del default: Abelardo de la Espriella miente para radicar una reforma que le sube impuestos al pueblo y los baja a los ricos",
-   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPYVhsNW94UUc2bTVHTXIyRmpLQ2pVVHhFR0Q0SGdiQ2k4eHJzOGRaVTJLWFRJaW1IX3VXa3FRVFp6VVFLbkszUXlVOVQ2R1RuTFZRU3hKcTl4Yjk2WTc1eHJSb3Y2U19jYlZOLWpZUFZzXzZ3V2htSVJHLW1CdW1HR3ZnRThHYnUxTmw4NldQc0xUaUFpSHlQX2tsTU5hSjNoSWFkYVhIYktCMEFoVDBoQkctZWJRZEx5aUVSVncycUFsakZaTFRFNXJwODAxbkNfOHNKc2lUUlRTY1RiRXQ3ZG85YTdZN09OTE0wc1R5b2sxRGpzZk42WkhaS2VhMFBFbXRJLXZTd0tRN3JRdlk4bW9aelZsdnds0gGeAkFVX3lxTE1VXzRFalZIM3ljS3ZlT3R1ZFZkazRZMjQ0S2tobDEyVnlRMlVHU0hCUmhwLUo5bmNybllzQ3NIbVdaVy0wdktPTUVRTFVGWmMteUdlemhHS2ZZWE1ZeVg3Y01DM1RWSnRQRnphWE5hODRNdGkxanF0cnA1eHMzOTg2NHl0eHprZGJtV1ZRS0ZId1lfTTFXb25oa3FNNWVraEx1bDVRenJoNk9nSGpvUnJrOE5USlJVZHVHTkNQanZHNUVzRGZuQklPSi1uZ0EyLTJwLW5lclhuZVI4QWJQZ0RCLXNmOUN3MENMWUhkOTRtUXRTcGlfN3I3a0JySTBzSlAxR19ORjFBdXhSTjlwUWl2LW5iY0stUXlBNjl5amc?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T09:00:00Z",
-   "sources": [
-    "Diario Red"
-   ]
-  },
-  {
-   "title": "ACP contra a representante do TikTok no Brasil",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTNmcE04QkZFeDRUNFhEeVhzNXAxU2UyOHp0RTNUWUVJaWJBWmd6Y1hNZ1lFSERpMVJiS1puVEFUelV3QTVncWRmT21iRTh1T3V2SUl2MEVzR0M2TlFHQ3VmbDlWU0VrNUtzMmhGVUpibmdnZ0ZOZ3d2OVNuUTBTM3VlV3JjZnM1TDdiZzhYR3N3ZmoyRVlXRVlQNGdIS0hHLTkzMVpWaVhJSlhkMGJQZXpMNWFSUmp0ejdXaFhRZWI0aGlUQ181RWpwX0xBZw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:59:40Z",
-   "sources": [
-    "Ministério Público Federal"
-   ]
-  },
-  {
-   "title": "México seguirá presionado por EU",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOLUVENHVuRzI0bDl3by1UbnVEUnZfUlRlQjN5cjkwWVhQSi1MLXp4X25FUmFoN2FBS2lIVVRaeVotQUVMazRPbHlYRGRYNkozMGczTkVSUjB6WS01cnhNWEU4bHMxTk5OZzRuaUl5R3ZaaVZjMnBKWEF6dW9LMkRNazlvYTV0SjVOV0VsMTU2bEk2Mm9ORUpJXzFEWGRwcGI4N1d5Mw?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:55:00Z",
-   "sources": [
-    "El Independiente"
-   ]
-  },
-  {
-   "title": "Corralito, protestas y vacío de poder: Paraguay vive una crisis que recuerda a diciembre de 2001 en la Argentina",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNeWl6eE9WVFFRa1lYcjA2Ni1mLTR5bnpQb3BKV0gtVThmMVU2YXJyLU9oYzBsZHN2eElHMWVtQTZtSU5kZHRCUUZGSklDNi13aWUxVUZxM2xxM0VSMHZ0cTZxeWxlR0FLV3RfUjlIb1k1a1JpYl9uc2E5bjRoT3NlRUNzMEc3aW55MFBLOEZLUGZyX1lPV3UtcTRUSlFWdHJhQkRoZEV0RVltWkUyUS1iZDFLWkQ0a3ZzTXFCSEkyNEQwakhBVWtHXzJETWE1Rm9kUU1SNktyODZtVnFDQWhJLTh6Umc5M3JKUXfSAf4BQVVfeXFMTzlXdXBxYmVNRnItNkRDQS1LWXhmdGxGaFM4ekdicE9WMGhhWmw3bGNud3JxWUt5SWxmUVhaU0ZLa1Q0ZFNsRGZhMnJQNG0wM2c5ZThuUUNtdUJpeEd0VUwtNmFrTzZ0MlRWNVd1aE41SmVxWDlyNmlscm03OEFmdUVHWEJNTWNmSE1CVVZENXpDZFAyUzh0S000UzEzZDBMMTF5enhENGczM1E0QkpBQk9BRnVKRVZJQnJRams5NEVWM216Z3o0cDJYbnZLVjNNNWpOd1VsMzh5VHZkZzdPM0VyZnRBdEJuWDJpTDFXM3NEREJJSUk2RURoYXJ4NWc?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:55:00Z",
-   "sources": [
-    "TN"
-   ]
-  },
-  {
-   "title": "El Gobierno considera que la crisis política en Paraguay no altera el escenario regional ni cambia su estrategia para el Mercosur",
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNZEFZSXY5MU55MXRTeUpibU5qOXhNbng4VWlRbE5MTzNhZ2NqeUlzYllvZHYydmpkbjFkaXdiVXVqaHdrXzZ1X3ZraHIwakdzQlVRek5nLWcxOTBnX2gwb1lfNDlHUGR6b2tLbTZWTjM0anREVTNtcWZxTHZ5NUpZWE81VV9VZGllNG1oeVBDX1hCaHhsb1ZjcDREaERCRkJqT1VUdXBjejVrSUktZWZvMXNZTFFwRXdxM0U3Tk51TVN3eHhoZ1UxbHZ6OHNPR3RsX1QtekJGVDVhLVliY19aVkIxamNNcWk2b1JxQ0VkMi1wZE43SkdONnd2RnXSAZACQVVfeXFMUG5fbWp5cFVhenFfQ1dXMTduZ3dXRnR1bDBhNS1WRFZNdnBPempmZlQtaWpydUJldU0ya2tNNy1zdUhOUTBsTnZvR0NDdjRMRTRFNWxVRlFWOWlaaktXMWVNdHg1bWZybS1XX0VVZHp4SnR3dXpSSHhhTmprYkhaRTF2SnNEeXlLeklIUjV5RHlXRGF1ZUtJZ1U4S2NVTVNfYUFqQzExMWxlTWxfWEUyOV85N3JUbXJXQ2lmNXpDWlNLcHhuZi1vUGw3OG5VVjFfVm5wbnNJU1UzeG05V28wR0otdkZlY1lLMmlhWVhyRlAzVUh5UTdqU1NCdmo5aEZWR0hRLWdIWVVTaE5WNGNQUXA?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:55:00Z",
-   "sources": [
-    "TN"
-   ]
-  },
-  {
-   "title": "Ueno Bank pediu registro de marca no Brasil no ano passado",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZlZ2S3U5V0ExUENYSXpzTzJ5cnhwTWZBM2NLbjhMNEJKUlFXSUZDdVkwMk54Q05QOENhbTcyTGlENWlGSkplVWxWMWtDdFdDUmIteWNTa1VjV1ZJV1hhMVF0OFdnZVEzWFRRYVYyYm96TlZhUXFFQnd1bUEtRU94VEx6bjNvZHRRMHB2T1VKVEI3SUVhSFRQQXdPb0tCblZkcXZjejFQNFVmNnVpeWIwV2IyOXd0R0Jyak1adXpR0gHMAUFVX3lxTFBkSldGck9GbWlzR1VPZkZqYlR4TXltN3ZfYmRBX2lWeEx3bjFGU0lMTGdTRUtfZ0lYM3V1S3F1YlBNSTRLcXZDcUZIUTZvZjBFd3BHd2RZZFhsOFMwQXBISkxYUXJMQnlCb1ZJaEYta1lKMFFuNlBCLWxvcEVMTjdnbHVYMkJ1TUtraTFnd3IwVlhMX19GY2hkSXczdVFBX0gwVVVzekl0ZzkwZXZEN19FcTlCTWV1ZmU4WTlZaTBybkxzTV9kREk4S0hySQ?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:53:01Z",
-   "sources": [
-    "O GLOBO"
-   ]
-  },
-  {
-   "title": "PwC Chile presenta: Gobierno acusa “engaño” por cifras de Codelco / J.P. Lavín dice que “un cambio de gabinete no va a influir en la opinión pública”",
-   "link": "https://ellibero.cl/newsletter/pwc-chile-presenta-gobierno-acusa-engano-por-cifras-de-codelco-j-p-lavin-dice-que-un-cambio-de-gabinete-no-va-a-influir-en-la-opinion-publica/",
-   "category": "politica",
-   "published": "2026-11-06T08:52:17Z",
-   "sources": [
-    "El Líbero"
-   ]
-  },
-  {
-   "title": "El riesgo país pasó de 400 a 900 puntos en cuatro meses: por qué el indicador sube más en la Argentina que en otros paísesy",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdGw2TU0wRF81TERIdTR1YTdTTlMxeE11TERJYUlTZUZhZVZwT1BfWFdGYWk4N0RlUEJKbmN1Z2JvUEVkam1tN1dteFprdHVxbTNnMTdrSGFoaWd2OTNxamxCN2tjWkJscERYWEZhWFVtR0o4X25ERTE3cm9GNHFaMzVuU2pNWFFGdVF1djd6LVpfaWZ3cy1iQmZTNnM1YlJWOXljbHFFU0tyNy1XTWNGRHp5bXppektFTHhSTGlWbkp4OXZVY0hHaEpLVXNuZ2h0Uk0tbmVUNERnVlBhX2liYmktMWNhSkdCUVZuQ3RtNXFVQdIBhgJBVV95cUxOSWJyRFRNWXJOOWctblNwaW1qVzNwZTAzTkc0SkFTWlozdzdaLU9EUmxveHlKeWxINlRyNXpKVkt5ZzdrcmZ2c2hON28wdE5LaEVaWDRfdXhkUEtnYWVMaXRlVHlyWGEtSUFzclNiT3RLamJ0UDRSYWRZcVh0RzhRRC1hX01RU3ZjbmtBUXZveGxHNUYxWkFRaTJ6WTIyVndsQkVUeEdhUEJpVVEtUTB6ZzRxaTRKUkZnY05pcUNVaVBZZkJRU2tPRUF0YV9wZ3pjTWdmZ09nQUxqaDdjRWlZUXREd0VNRTlmdTVUSHlsZndVUk51Sm5zWkkzaUs5WVBVcFVoSmt3?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:51:00Z",
-   "sources": [
-    "TN"
-   ]
-  },
-  {
-   "title": "Cómo se prepara Argentina para proteger al Papa de drones y ciberataques: especialistas analizan las medidas del Gobierno",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPU25weU5lZ055bmZfMTgtOGFfR0FEUmJaN2dMMFZxOUFKZF85X0d4TVNmeXBzUXFfeDAyVzBwZHJIY0duczVVWHJneWZjZHVfT0Fnd0dSbVlJdjVBa0dTQmVPakYxVXBCeEJKbWNOZE5ad1VVTGVCYjE3NEd2bjNBRmJNRWkzZllOWUpJNEx1Q29jMEEzdC03RTAwbEYwa09FYlpwSEZONVM4blZ0ZHVraVBaVnBXR1lCYnQwVmREMnhueXFKQktqYS0xQ1VldnowVXVldnpwSnhVQU3SAeABQVVfeXFMTzlNZjV1dWF3Z3NYdnFJTlNDNnozaDlJWlg4cDc1Qm5tX1BzX05CSXZ3ZExrMzZ6dWkwVEZRU1NGRENxQVBnMDlENVJGb3dCNi1qZG41LVRKTUpqeGstMXNJT0VrSVR3MnIwNDVwdHRPcHRNNVpvWndRT3QtNk5pUERFVkFpS29vdEx6cUx6eEwzLTBZSV9oTEVfWG9uYnRQWTFBTzNYTzBoemN4X1ctSDlsM3pOVE5ZNHo0N0U2c1c3MHAxckh0MkhYX05JbjRWdFhyS2x4NkFVVi1BQUZUb1g?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:46:49Z",
-   "sources": [
-    "Clarín"
-   ]
-  },
-  {
-   "title": "El tsunami demócrata: implicaciones para México",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMTEzYVJZOFlZdGt5XzhfUTdqdFZ1X096MkFqYl94eThmeXlxZUNNeE8zYU9PQzZPclNfNDJIaVBraVhYQjdXZDNPb09ZejZ2MzZqMUFkZGRaREtkT1ptZTdQY3ktRGNsZGwzV1NyRXAtZEZoRXpXVHNXZGgwS3lyMW5KaG1zRmNWUHZnZlZna04zTy1fLUdTQUxiQWZITGM0NFpjS1FGeGs2bGVra1hPdmFpdXF4QmFRREJqeXRBalN5dXM?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:44:53Z",
-   "sources": [
-    "El Financiero"
-   ]
-  },
-  {
-   "title": "Escassez de fósforo no Brasil é grave e ainda pouco dimensionada",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbXVEaUZkaXBQeTFXcF9DSkVuZHhGY0oxM0lzdjNaS1BidHBJQ01TeUJnZ0c1ZzlkSENCa3ZlZEZQd2l5a1lFSkcxREVabHBiVkVCcGN4QWx5bXh4UFhLbV83ZUVvLV9MYk9sbDV1NDc2TEp2MnRkWFBPcTNuM0h6bm5aM05haDUtcnVqVmM4YlVfdFVxVEgtY29oSi1rTXdCZkJmNGFKMm5nR3Vj?oc=5",
-   "category": "latinoamerica",
-   "published": "2026-11-06T08:35:22Z",
-   "sources": [
-    "brasilagro.com.br"
    ]
   }
  ]
