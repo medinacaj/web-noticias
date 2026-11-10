@@ -1,79 +1,20 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-09T19:59:05",
+  "generated_at": "2026-11-10T17:06:52",
   "summary": {
-    "sources_attempted": 53,
-    "sources_ok": 41,
-    "sources_failed": 12,
-    "events_found": 3,
-    "events_inserted": 2,
+    "sources_attempted": 9,
+    "sources_ok": 9,
+    "sources_failed": 0,
+    "events_found": 1,
+    "events_inserted": 0,
     "events_merged": 0,
-    "possible_events": 331,
-    "quarantined_candidates": 32,
-    "candidates": 5,
-    "revalidation_attempts": 2,
-    "revalidated_ok": 2,
-    "errors": [
-      {
-        "source": "Municipalidad de San Pedro de la Paz",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz"
-      },
-      {
-        "source": "Municipalidad de Talcahuano",
-        "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
-      },
-      {
-        "source": "Municipalidad de Tomé",
-        "error": "HTTP 403"
-      },
-      {
-        "source": "Municipalidad de Lebu",
-        "error": "HTTP 403"
-      },
-      {
-        "source": "Municipalidad de Los Álamos",
-        "error": "HTTP 403"
-      },
-      {
-        "source": "Municipalidad de Tirúa",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
-      },
-      {
-        "source": "Municipalidad de Antuco",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco"
-      },
-      {
-        "source": "Municipalidad de Mulchén",
-        "error": "HTTP 503"
-      },
-      {
-        "source": "Municipalidad de Quilaco",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco"
-      },
-      {
-        "source": "Municipalidad de Curanilahue",
-        "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue"
-      },
-      {
-        "source": "Municipalidad de Quilleco",
-        "error": "URLError: <urlopen error timed out>"
-      },
-      {
-        "source": "Municipalidad de Concepción",
-        "error": "URLError: <urlopen error timed out>"
-      }
-    ],
-    "feeds": [
-      {
-        "source": "Municipalidad de Arauco",
-        "feeds": [
-          "https://muniarauco.cl/eventos/?ical=1",
-          "https://muniarauco.cl/wp-json/tribe/events/v1/events?per_page=50",
-          "https://muniarauco.cl/?post_type=tribe_events&ical=1&eventDisplay=list"
-        ]
-      }
-    ],
-    "skipped_by_cadence": 2
+    "possible_events": 47,
+    "quarantined_candidates": 1,
+    "candidates": 0,
+    "revalidation_attempts": 1,
+    "revalidated_ok": 1,
+    "errors": [],
+    "skipped_by_cadence": 46
   },
   "events": [
     {
@@ -108,7 +49,7 @@
           "type": "ticketing",
           "priority": 2,
           "official": false,
-          "seen_at": "2026-11-09T19:52:18"
+          "seen_at": "2026-11-10T17:05:59"
         }
       ],
       "changes": []
@@ -135,7 +76,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://images.ligup2.com/eyJidWNrZXQiOiJsaWd1cC12MiIsImtleSI6Im5hY2ltaWVudG8vcGhvdG9zLzc5MjkyX3RhbGxlcl9kZV9jYWxlc3RlbmlhXzIwMjZfd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NzYyLCJoZWlnaHQiOjI4MywiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsfX0=",
-      "discovered_at": "2026-11-09T19:54:50",
+      "discovered_at": "2026-11-10T17:06:52",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -147,7 +88,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:54:50"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": []
@@ -155,10 +96,38 @@
   ],
   "runs": [
     {
+      "source_name": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:52",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 25,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 36,
+      "error": null
+    },
+    {
+      "source_name": "Biobío Cultura (Seremi) — RSS",
+      "source_url": "https://www.cultura.gob.cl/feed/",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:21",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 1,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
       "source_name": "Corcudec (Teatro UdeC)",
       "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:57:02",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:09",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
@@ -171,8 +140,8 @@
     {
       "source_name": "Corcudec / Teatro Universidad de Concepción — Ticketplus",
       "source_url": "https://ticketplus.cl/c/corporacion-cultural-universidad-de-concepcion",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:56:55",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:01",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -180,86 +149,16 @@
       "events_inserted": 0,
       "events_merged": 0,
       "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:27",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 6,
-      "error": null
-    },
-    {
-      "source_name": "El Contraste (Los Ángeles)",
-      "source_url": "https://elcontraste.cl/los_angeles/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:36",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 1,
-      "error": null
-    },
-    {
-      "source_name": "Extensión Universidad del Bío-Bío",
-      "source_url": "https://extension.ubiobio.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:30",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 2,
       "error": null
     },
     {
       "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
       "source_url": "https://ftb.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:57:30",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:09",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 15,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:56",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 14,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 18,
-      "error": null
-    },
-    {
-      "source_name": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:32",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 12,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -267,584 +166,24 @@
       "error": null
     },
     {
-      "source_name": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:27",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 21,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 11,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Alto Biobío",
-      "source_url": "https://munialtobiobio.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:57:34",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 21,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Antuco",
-      "source_url": "https://www.antuco.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:24",
-      "ok": 0,
-      "http_status": 200,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Antuco"
-    },
-    {
-      "source_name": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/cultura/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:18",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 1,
-      "events_inserted": 1,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Cabrero",
-      "source_url": "https://www.cabrero.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:29",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Cañete",
-      "source_url": "https://municanete.cl/v2/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:53:55",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 10,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Chiguayante",
-      "source_url": "https://chiguayante.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:28",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 5,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Concepción",
-      "source_url": "https://www.concepcion.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:26",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "URLError: <urlopen error timed out>"
-    },
-    {
-      "source_name": "Municipalidad de Contulmo",
-      "source_url": "https://www.contulmo.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:53:24",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Coronel",
-      "source_url": "https://www.coronel.cl/noticias/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:33",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Curanilahue",
-      "source_url": "https://www.curanilahue.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:56:27",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Curanilahue"
-    },
-    {
-      "source_name": "Municipalidad de Florida",
-      "source_url": "https://muniflorida.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:53:12",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 3,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Hualpén",
-      "source_url": "http://www.hualpenciudad.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:49",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 18,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Hualqui",
-      "source_url": "https://www.munihualqui.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:52",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Laja",
-      "source_url": "https://www.munilaja.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:45",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 9,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 1,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Lebu",
-      "source_url": "https://lebu.cl/eventos/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:53:55",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "source_name": "Municipalidad de Los Álamos",
-      "source_url": "https://munilosalamos.cl/categoria/noticias/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:53:55",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "source_name": "Municipalidad de Los Ángeles",
-      "source_url": "https://www.losangeles.cl/category/noticias/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:34",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 15,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Lota",
-      "source_url": "https://lota.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:48",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Mulchén",
-      "source_url": "https://www.munimulchen.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:38",
-      "ok": 0,
-      "http_status": 503,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 503"
-    },
-    {
-      "source_name": "Municipalidad de Nacimiento",
-      "source_url": "https://www.nacimiento.cl/actividades",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:50",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 1,
-      "events_inserted": 1,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Negrete",
-      "source_url": "https://www.muninegrete.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:55:12",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 9,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Penco",
-      "source_url": "https://penco.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:30",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Quilaco",
-      "source_url": "https://www.quilaco.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:55:02",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Quilaco"
-    },
-    {
-      "source_name": "Municipalidad de Quilleco",
-      "source_url": "https://municipalidadquilleco.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:57:49",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "URLError: <urlopen error timed out>"
-    },
-    {
-      "source_name": "Municipalidad de San Pedro de la Paz",
-      "source_url": "https://www.sanpedrodelapaz.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:21",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de San Pedro de la Paz"
-    },
-    {
-      "source_name": "Municipalidad de San Rosendo",
-      "source_url": "https://www.municipalidadsanrosendo.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:55:52",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 16,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 6,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Santa Bárbara",
-      "source_url": "https://www.santabarbara.cl/noticias/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:56:12",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 10,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Santa Juana",
-      "source_url": "https://www.santajuana.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:53:03",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 2,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Talcahuano",
-      "source_url": "https://www.talcahuano.cl/actividades",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:27",
-      "ok": 0,
-      "http_status": null,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
-    },
-    {
-      "source_name": "Municipalidad de Tirúa",
-      "source_url": "https://www.tirua.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:54:06",
-      "ok": 0,
-      "http_status": 200,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "Ningún dominio candidato se identificó como sitio de la Municipalidad de Tirúa"
-    },
-    {
-      "source_name": "Municipalidad de Tomé",
-      "source_url": "https://www.tome.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:52:28",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
-      "source_name": "Municipalidad de Tucapel",
-      "source_url": "https://www.munitucapel.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:56:19",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 4,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Municipalidad de Yumbel",
-      "source_url": "https://yumbel.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:56:38",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 3,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Noticias UdeC",
-      "source_url": "https://noticias.udec.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:02",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 5,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 1,
-      "error": null
-    },
-    {
-      "source_name": "Passline",
-      "source_url": "https://www.passline.com/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:57:56",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "PrimeTicket",
-      "source_url": "https://www.primeticket.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:06",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 16,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
       "source_name": "PuntoTicket — todos los eventos",
       "source_url": "https://www.puntoticket.com/todos",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:57:53",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:43",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 7,
-      "error": null
-    },
-    {
-      "source_name": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:59:05",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 12,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 2,
-      "error": null
-    },
-    {
-      "source_name": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:37",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 239,
-      "error": null
-    },
-    {
-      "source_name": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:40",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 28,
+      "possible_found": 4,
       "error": null
     },
     {
       "source_name": "Teatro Biobío",
       "source_url": "https://teatrobiobio.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:56:54",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:19",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -857,8 +196,8 @@
     {
       "source_name": "Teatro Biobío — Ticketplus",
       "source_url": "https://ticketplus.cl/en/companies/teatro-biobio",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:56:55",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:03",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -871,8 +210,8 @@
     {
       "source_name": "Ticketplus — Región del Biobío",
       "source_url": "https://ticketplus.cl/en/states/region-del-bio-bio",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:57:55",
+      "started_at": "2026-11-10T17:05:59",
+      "finished_at": "2026-11-10T17:06:47",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
@@ -881,47 +220,33 @@
       "events_merged": 0,
       "possible_found": 5,
       "error": null
-    },
-    {
-      "source_name": "TuAcceso",
-      "source_url": "https://www.tuacceso.cl/",
-      "started_at": "2026-11-09T19:52:18",
-      "finished_at": "2026-11-09T19:58:11",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 2,
-      "error": null
     }
   ],
   "source_state": {
     "BioBioChile — Región del Biobío": {
-      "last_checked_at": "2026-11-08T16:07:53",
-      "last_success_at": "2026-11-08T16:07:53",
+      "last_checked_at": "2026-11-10T17:06:52",
+      "last_success_at": "2026-11-10T17:06:52",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Biobío Cultura (Seremi) — RSS": {
-      "last_checked_at": "2026-11-08T16:07:39",
-      "last_success_at": "2026-11-08T16:07:39",
+      "last_checked_at": "2026-11-10T17:06:21",
+      "last_success_at": "2026-11-10T17:06:21",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 48
     },
     "Corcudec (Teatro UdeC)": {
-      "last_checked_at": "2026-11-09T19:57:02",
-      "last_success_at": "2026-11-09T19:57:02",
+      "last_checked_at": "2026-11-10T17:06:09",
+      "last_success_at": "2026-11-10T17:06:09",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Corcudec / Teatro Universidad de Concepción — Ticketplus": {
-      "last_checked_at": "2026-11-09T19:56:55",
-      "last_success_at": "2026-11-09T19:56:55",
+      "last_checked_at": "2026-11-10T17:06:01",
+      "last_success_at": "2026-11-10T17:06:01",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -948,8 +273,8 @@
       "refresh_interval_hours": 48
     },
     "Festival Internacional de Teatro del Biobío (FTB)": {
-      "last_checked_at": "2026-11-09T19:57:30",
-      "last_success_at": "2026-11-09T19:57:30",
+      "last_checked_at": "2026-11-10T17:06:09",
+      "last_success_at": "2026-11-10T17:06:09",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1228,8 +553,8 @@
       "refresh_interval_hours": 48
     },
     "PuntoTicket — todos los eventos": {
-      "last_checked_at": "2026-11-09T19:57:53",
-      "last_success_at": "2026-11-09T19:57:53",
+      "last_checked_at": "2026-11-10T17:06:43",
+      "last_success_at": "2026-11-10T17:06:43",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1256,22 +581,22 @@
       "refresh_interval_hours": 48
     },
     "Teatro Biobío": {
-      "last_checked_at": "2026-11-09T19:56:54",
-      "last_success_at": "2026-11-09T19:56:54",
+      "last_checked_at": "2026-11-10T17:06:19",
+      "last_success_at": "2026-11-10T17:06:19",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Biobío — Ticketplus": {
-      "last_checked_at": "2026-11-09T19:56:55",
-      "last_success_at": "2026-11-09T19:56:55",
+      "last_checked_at": "2026-11-10T17:06:03",
+      "last_success_at": "2026-11-10T17:06:03",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Ticketplus — Región del Biobío": {
-      "last_checked_at": "2026-11-09T19:57:55",
-      "last_success_at": "2026-11-09T19:57:55",
+      "last_checked_at": "2026-11-10T17:06:47",
+      "last_success_at": "2026-11-10T17:06:47",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1285,2663 +610,340 @@
     }
   },
   "skipped_by_cadence": [
-    "BioBioChile — Región del Biobío",
-    "Biobío Cultura (Seremi) — RSS"
+    "Municipalidad de Concepción",
+    "Municipalidad de Talcahuano",
+    "Municipalidad de Hualpén",
+    "Municipalidad de San Pedro de la Paz",
+    "Municipalidad de Chiguayante",
+    "Municipalidad de Penco",
+    "Municipalidad de Tomé",
+    "Municipalidad de Coronel",
+    "Municipalidad de Lota",
+    "Municipalidad de Hualqui",
+    "Municipalidad de Santa Juana",
+    "Municipalidad de Florida",
+    "Municipalidad de Arauco",
+    "Municipalidad de Cañete",
+    "Municipalidad de Contulmo",
+    "Municipalidad de Curanilahue",
+    "Municipalidad de Lebu",
+    "Municipalidad de Los Álamos",
+    "Municipalidad de Tirúa",
+    "Municipalidad de Los Ángeles",
+    "Municipalidad de Antuco",
+    "Municipalidad de Cabrero",
+    "Municipalidad de Laja",
+    "Municipalidad de Mulchén",
+    "Municipalidad de Nacimiento",
+    "Municipalidad de Negrete",
+    "Municipalidad de Quilaco",
+    "Municipalidad de Quilleco",
+    "Municipalidad de San Rosendo",
+    "Municipalidad de Santa Bárbara",
+    "Municipalidad de Tucapel",
+    "Municipalidad de Yumbel",
+    "Municipalidad de Alto Biobío",
+    "Passline",
+    "TuAcceso",
+    "PrimeTicket",
+    "Noticias UdeC",
+    "Extensión Universidad del Bío-Bío",
+    "Ministerio de las Culturas — Agenda cultural",
+    "Diario Concepción — Cultura",
+    "Sabes.cl",
+    "G5 Noticias",
+    "TVU Prensa",
+    "La Tribuna (Los Ángeles)",
+    "El Contraste (Los Ángeles)",
+    "Radio UdeC"
   ],
   "possible_events": [
     {
-      "title": "09 de Noviembre 2026",
-      "raw_text": "09 de Noviembre 2026",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026",
+      "raw_text": "Martes 10 Noviembre, 2026",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "09 de Noviembre 2026",
-      "raw_text": "09 de Noviembre 2026",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 00:05",
+      "raw_text": "Martes 10 Noviembre, 2026 | 00:05",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/economia/2026/11/09/biobio-apuesta-por-la-reforestacion-de-150-mil-hectareas-clave-ante-nueva-agenda-del-gobierno.html",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Amago de incendio en el Hospital de Los Ángeles obligó a evacuar preventivamente a 35 pacientes",
-      "raw_text": "Un amplio despliegue de equipos de emergencia se registró durante la tarde de este lunes 9 de noviembre en el Hospital de Los Ángeles. Esto, luego de que se reportara un amago de incendio al interior de uno de los edificios del recinto hospitalario.",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "El Contraste (Los Ángeles)",
-      "source_url": "https://elcontraste.cl/policial/2026/11/09/incendio-en-hospital-de-los-angeles-despliega-a-bomberos-y-carabineros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/trabajadores-a-honorarios-de-quilpue-mantienen-paralizacion-hasta-votacion-presupuestaria-sindicato-exige-claridad-sobre-eventuales-despidos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/seremi-de-salud-y-autoridades-regionales-impulsan-implementacion-de-ley-que-garantizara-60-minutos-diarios-de-actividad-fisica-en-establecimientos-educacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/vinexpo-explorer-2026-se-realizara-por-primera-vez-en-el-pais-mas-de-70-vinas-y-representantes-de-29-paises-se-reunen-en-chile-en-el-principal-evento-de-negocios-de-la-industria-vitivinicola-a-nivel/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/fiscalia-y-aduanas-logran-prision-preventiva-para-militares-bolivianos-que-salian-de-chile-con-camion-tolva-que-tenia-denuncia-por-robo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/tras-exitosa-segunda-version-organizacion-del-festival-rio-achibueno-exige-cuenca-libre-de-represas-e-intervenciones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/bailes-chinos-de-la-region-de-valparaiso-inspiran-obra-de-danza-contemporanea/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/concon-se-prepara-para-recibir-la-segunda-edicion-de-coctelera-festival/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/funcionarios-de-gendarmeria-de-chile-se-certifican-en-derechos-sexuales-y-reproductivos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/feria-villa-alemana-sin-barreras-reunio-a-comunidades-educativas-y-certifico-a-participantes-de-taller-inclusivo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/manuel-garcia-suma-funcion-en-el-teatro-municipal-de-vina-del-mar-con-su-concierto-interpretando-a-silvio-rodriguez/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 noviembre 2026",
-      "raw_text": "9 noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/09/centro-cultural-leopoldo-silva-reynoard-presenta-su-variada-cartelera-de-actividades-para-noviembre-de-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Del 9 al 14 de noviembre: Con un homenaje a Piazzolla e invitados internacionales, el Festival Internacional del Acordeón regresa a Santiago",
-      "raw_text": "Del 9 al 14 de noviembre: Con un homenaje a Piazzolla e invitados internacionales, el Festival Internacional del Acordeón regresa a Santiago",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/categoria/cultura-y-espectaculos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Del 9 al 14 de noviembre: Con un homenaje a Piazzolla e invitados internacionales, el Festival Internacional del Acordeón regresa a Santiago",
-      "raw_text": "Del 9 al 14 de noviembre: Con un homenaje a Piazzolla e invitados internacionales, el Festival Internacional del Acordeón regresa a Santiago – G5noticias",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/05/del-9-al-14-de-noviembre-con-un-homenaje-a-piazzolla-e-invitados-internacionales-el-festival-internacional-del-acordeon-regresa-a-santiago/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Lunes 9 de noviembre, 16:00 h.",
-      "raw_text": "Lunes 9 de noviembre, 16:00 h.",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/10/27/vuelvo-donde-nunca-estuve-cierra-su-recorrido-con-ultimas-funciones-en-octubre-y-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "09 Noviembre 2026",
-      "raw_text": "09 Noviembre 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/politica/2026/11/09/camara-analizara-presupuesto-2027-y-cambios-en-calendario-de-instalacion-de-los-slep.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Cámara analizará Presupuesto 2027 y cambios en calendario de instalación de los SLEP",
-      "raw_text": "Ambas materias serán abordadas este lunes 9 de noviembre en sesiones separadas. La primera, programada entre las 14:30 y las 18:30 horas, estará destinada a la discusión general del proyecto de Ley de Presupuestos.",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/politica/2026/11/09/camara-analizara-presupuesto-2027-y-cambios-en-calendario-de-instalacion-de-los-slep.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "09.11.2026 / Biobío",
-      "raw_text": "09.11.2026 / Biobío",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "09.11.2026 / Valparaíso",
-      "raw_text": "09.11.2026 / Valparaíso",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/seis-destacadas-trayectorias-reciben-los-premios-regionales-de-arte-y-cultura-del-biobio-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/rockodromo-celebra-su-edicion-2026-por-primera-vez-desde-el-terminal-de-pasajeros-y-con-artistas-de-todas-las-regiones/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/actualidad/obra-ser-extranjer-en-chile-abre-espacios-para-reflexionar-sobre-identidad-migracion-e-interculturalidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Municipalidad de Hualqui",
-      "raw_text": "Lugar: HualquiInicio: Lunes 09 de noviembre 2026Dirigido a usuarios y usuarias de la comuna de Hualqui, que cumplan con los criterios de evaluación de la Ficha de postulación disponible",
-      "date": "2026-11-09",
-      "commune": "Hualqui",
-      "source": "Municipalidad de Hualqui",
-      "source_url": "https://www.munihualqui.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Bunbury en Santander Arena",
-      "raw_text": "Santander Arena Beaucheff 1204, Santiago Centro Santiago Centro",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/bunbury-santander-arena-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Colo-Colo en Estadio Monumental",
-      "raw_text": "Estadio Monumental Marathon 5300, Macul Macul",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/colo-colo-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Edo Caroe en Palermo Teatro Bar",
-      "raw_text": "Palermo Teatro Bar José Manuel Infante 1414, Providencia, Región Metropolitana, Chile, Providencia Providencia",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/edocaroe-palermo-noviembre?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Temporada de Música de Cámara 2026 en Teatro Zoco",
-      "raw_text": "Teatro Zoco AVENIDA LA DEHESA 1.500, Lo Barnechea Lo Barnechea",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/temporada-de-musica-de-camara-2026-teatro-zoco-abr-2026?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Lunes 09 de noviembre",
-      "raw_text": "Lunes 09 de noviembre",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/musica-a-la-carta/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Lunes 09 de noviembre",
-      "raw_text": "Lunes 09 de noviembre",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/un-paseo-por-la-musica/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 10:14",
-      "raw_text": "9 de noviembre de 2026, 10:14",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 11:47",
-      "raw_text": "9 de noviembre de 2026, 11:47",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 12:00",
-      "raw_text": "9 de noviembre de 2026, 12:00",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 12:00",
-      "raw_text": "9 de noviembre de 2026, 12:00",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 12:00",
-      "raw_text": "9 de noviembre de 2026, 12:00",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 12:00",
-      "raw_text": "9 de noviembre de 2026, 12:00",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 12:37",
-      "raw_text": "9 de noviembre de 2026, 12:37",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 13:17",
-      "raw_text": "9 de noviembre de 2026, 13:17",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 13:17",
-      "raw_text": "9 de noviembre de 2026, 13:17",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 13:17",
-      "raw_text": "9 de noviembre de 2026, 13:17",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 13:17",
-      "raw_text": "9 de noviembre de 2026, 13:17",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:03",
-      "raw_text": "9 de noviembre de 2026, 14:03",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:03",
-      "raw_text": "9 de noviembre de 2026, 14:03",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:27",
-      "raw_text": "9 de noviembre de 2026, 14:27",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:50",
-      "raw_text": "9 de noviembre de 2026, 14:50",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:50",
-      "raw_text": "9 de noviembre de 2026, 14:50",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:50",
-      "raw_text": "9 de noviembre de 2026, 14:50",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:50",
-      "raw_text": "9 de noviembre de 2026, 14:50",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:56",
-      "raw_text": "9 de noviembre de 2026, 14:56",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:56",
-      "raw_text": "9 de noviembre de 2026, 14:56",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:56",
-      "raw_text": "9 de noviembre de 2026, 14:56",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 14:56",
-      "raw_text": "9 de noviembre de 2026, 14:56",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:35",
-      "raw_text": "9 de noviembre de 2026, 15:35",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:35",
-      "raw_text": "9 de noviembre de 2026, 15:35",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:35",
-      "raw_text": "9 de noviembre de 2026, 15:35",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:35",
-      "raw_text": "9 de noviembre de 2026, 15:35",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:43",
-      "raw_text": "9 de noviembre de 2026, 15:43",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 15:57",
-      "raw_text": "9 de noviembre de 2026, 15:57",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:13",
-      "raw_text": "9 de noviembre de 2026, 16:13",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "9 de noviembre de 2026, 16:48",
-      "raw_text": "9 de noviembre de 2026, 16:48",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "raw_text": "Mon, 09 Nov 2026 12:22:11 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "raw_text": "Mon, 09 Nov 2026 13:16:49 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:01:34 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 06:52",
+      "raw_text": "Martes 10 Noviembre, 2026 | 06:52",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 07:51",
+      "raw_text": "Martes 10 Noviembre, 2026 | 07:51",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "raw_text": "Mon, 09 Nov 2026 15:45:43 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 08:06",
+      "raw_text": "Martes 10 Noviembre, 2026 | 08:06",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 08:36",
+      "raw_text": "Martes 10 Noviembre, 2026 | 08:36",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/historico-para-santa-juana-invierten-2-200-millones-en-obras-clave-y-piscina-municipal/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 08:53",
+      "raw_text": "Martes 10 Noviembre, 2026 | 08:53",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/redes-2026-el-evento-que-reunira-a-emprendedores-del-biobio-el-11-y-12-de-noviembre/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 08:55",
+      "raw_text": "Martes 10 Noviembre, 2026 | 08:55",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 09:17",
+      "raw_text": "Martes 10 Noviembre, 2026 | 09:17",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/es-un-problema-que-el-gobierno-causo-la-critica-de-neme-en-medio-del-paro-de-camioneros.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 10:18",
+      "raw_text": "Martes 10 Noviembre, 2026 | 10:18",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/21/despliegue-5g-subtel-cobra-garantias-por-38-millones-de-dolares-a-wom-ante-retrasos-y-divide-el-proyecto/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/10/emiten-alerta-meteorologica-por-evento-de-temperaturas-extremas-en-zonas-de-atacama-y-coquimbo.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 10:45",
+      "raw_text": "Martes 10 Noviembre, 2026 | 10:45",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/08/prision-preventiva-para-expresidente-de-paraguay-tras-escandalo-financiero-que-dejo-a-millones-de-clientes-sin-sus-ahorros/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/es-un-problema-que-el-gobierno-causo-la-critica-de-neme-en-medio-del-paro-de-camioneros.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 10:47",
+      "raw_text": "Martes 10 Noviembre, 2026 | 10:47",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/casa-de-la-cultura-de-chiguayante-presentara-obra-de-teatro-al-aire-libre-con-reconocidas-figuras-nacionales/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 11:20",
+      "raw_text": "Martes 10 Noviembre, 2026 | 11:20",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/30/el-recorrido-por-las-teselas-se-detiene-en-el-primer-rascacielos-de-concepcion-con-una-actividad-de-apreciacion/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 11:32",
+      "raw_text": "Martes 10 Noviembre, 2026 | 11:32",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/09/estos-son-los-populares-calendarios-de-adviento-que-puedes-comprar-en-chile-para-navidad/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 11:33",
+      "raw_text": "Martes 10 Noviembre, 2026 | 11:33",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/la-educacion-no-se-abandona-artistas-chilenos-se-unen-para-pedir-de-regreso-el-programa-yo-elijo-mi-pc/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/10/las-teorias-que-apuntan-a-la-verdad-detras-de-la-salida-de-james-gunn-de-dc-studios.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 11:58",
+      "raw_text": "Martes 10 Noviembre, 2026 | 11:58",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/29/tres-razones-para-leer-o-ver-ashita-no-joe-la-obra-maestra-del-fallecido-artista-de-manga-tetsuya-chiba/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/biobiotv/programas/expreso-bio-bio-group-programas",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 12:36",
+      "raw_text": "Martes 10 Noviembre, 2026 | 12:36",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/mon-laferte-recibe-fuerte-golpe-en-el-rostro-fanatica-le-lanzo-celular-en-pleno-concierto/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 12:36",
+      "raw_text": "Martes 10 Noviembre, 2026 | 12:36",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 13:32",
+      "raw_text": "Martes 10 Noviembre, 2026 | 13:32",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 13:32",
+      "raw_text": "Martes 10 Noviembre, 2026 | 13:32",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 Noviembre, 2026 | 13:42",
+      "raw_text": "Martes 10 Noviembre, 2026 | 13:42",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 06:52",
+      "raw_text": "Martes 10 noviembre de 2026 | 06:52",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/programa/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/masterchef-definio-a-su-noveno-eliminado-decision-del-jurado-sorprendio-a-sus-companeros.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 07:51",
+      "raw_text": "Martes 10 noviembre de 2026 | 07:51",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/16/con-shrek-incluido-casa-de-la-cultura-de-chiguayante-revela-su-cartelera-del-mes/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/10/solo-una-asociacion-criminal-detras-del-robo-de-banco-en-concepcion-aumentaria-eventuales-penas.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 08:06",
+      "raw_text": "Martes 10 noviembre de 2026 | 08:06",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/13/que-es-el-femicidio-para-un-nino-una-obra-imposible-de-nombrar-aborda-el-duelo-infantil-a-traves-del-realismo-magico/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/chiste-de-yerko-puchento-sobre-kast-entre-lo-mas-denunciado-al-cntv-en-octubre.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 08:53",
+      "raw_text": "Martes 10 noviembre de 2026 | 08:53",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/confirman-fecha-para-el-regreso-de-pasapalabra-y-revelan-millonario-pozo-del-rosco.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 08:55",
+      "raw_text": "Martes 10 noviembre de 2026 | 08:55",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendarios-de-adviento-chile/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/10/muere-toukie-smith-actriz-de-miami-vice-y-expareja-de-robert-de-niro-a-los-74-anos.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 11:20",
+      "raw_text": "Martes 10 noviembre de 2026 | 11:20",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-la-fete/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/es-un-problema-que-el-gobierno-causo-la-critica-de-neme-en-medio-del-paro-de-camioneros.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 11:32",
+      "raw_text": "Martes 10 noviembre de 2026 | 11:32",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-blush-bar/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/10/expareja-de-russell-brand-celebra-su-condena-y-denuncia-haber-sufrido-violencia-y-malos-tratos.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "raw_text": "Mon, 09 Nov 2026 17:54:03 +0000",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 12:05",
+      "raw_text": "Martes 10 noviembre de 2026 | 12:05",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/calendario-adviento-dbs/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/10/emiten-alerta-meteorologica-por-evento-de-temperaturas-extremas-en-zonas-de-atacama-y-coquimbo.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "09 de Noviembre 2026",
-      "raw_text": "09 de Noviembre 2026",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 13:42",
+      "raw_text": "Martes 10 noviembre de 2026 | 13:42",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/10/las-teorias-que-apuntan-a-la-verdad-detras-de-la-salida-de-james-gunn-de-dc-studios.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "09 de Noviembre 2026",
-      "raw_text": "09 de Noviembre 2026",
-      "date": "2026-11-09",
+      "title": "Martes 10 noviembre de 2026 | 14:02",
+      "raw_text": "Martes 10 noviembre de 2026 | 14:02",
+      "date": "2026-11-10",
       "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/09/movilizacion-de-camioneros-en-los-angeles-matinal-siempre-juntos-9-de-noviembre-de-2026.html",
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/monserrat-alvarez-abandono-matinal-tras-complicacion-de-salud-estara-dos-dias-fuera-de-pantalla.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
-      "title": "Banco BCI Concepción: más de $3 mil millones robados - TVU Noticias 2 PM - 9 de noviembre de 2026",
-      "raw_text": "Banco BCI Concepción: más de $3 mil millones robados - TVU Noticias 2 PM - 9 de noviembre de 2026",
-      "date": "2026-11-09",
+      "title": "BAILARINAS INCENDIADAS",
+      "raw_text": "Colectivo Refugio / Punta Arenas Martes 10 de noviembre / 11:00 horas / Espacio Público / +14 años Una experiencia radiofónica en el espacio público donde el acto de andar se vuelve una práctica...",
+      "date": "2026-11-10",
       "commune": "Concepción",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/page/programacion.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/09/movilizacion-de-camioneros-en-los-angeles-matinal-siempre-juntos-9-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/tvu-noticias/2026/11/05/como-quedan-las-obras-en-plaza-peru-tvu-noticias-central-5-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/2026/11/05/desarrolla-biobio-por-licitacion-trianual-del-festival-rec-permite-proyectarte-y-negociar-buenos-artistas.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/04/como-sera-el-rec-2027-matinal-siempre-juntos-04-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/03/acusan-aguas-servidas-en-talcahuano.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/02/denuncian-socavones-en-cerro-de-talcahuano-matinal-siempre-juntos-02-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/2026/11/01/claudio-orrego-abre-la-puerta-a-una-eventual-carrera-presidencial-veremos-los-distintos-espacios.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/30/anativia-renuncio-como-delegado-presidencial-del-biobio-matinal-siempre-juntos-30-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/29/actualidad-del-biobio-y-la-octava-visita-presidencial-matinal-siempre-juntos-29-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/28/fin-al-plazo-de-obras-en-plaza-peru-que-viene-ahora.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/27/feria-puertas-abiertas-en-la-udec.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/2026/10/26/basquet-udec-volvio-al-triunfo-ante-leones-la-cancha-es-nuestra-26-de-octubre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/26/bienes-nacionales-caleta-perone-fundacion-futuro-21.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/26/en-vivo-advierten-tormentas-electricas-en-biobio-matinal-siempre-juntos-26-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/23/aluvion-en-juan-riquelme-matinal-siempre-juntos-23-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/2026/10/23/cuando-se-juega-el-partido-entre-vial-e-iberia-la-cancha-es-nuestra-23-de-octubre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/21/alerta-roja-por-remocion-en-masa-en-arauco-matinal-siempre-juntos-21-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/tvu-noticias/2026/10/20/retiro-de-cables-retrasa-obras-en-eje-colon-tvu-noticias-2-pm-20-de-octubre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/20/resolvemos-las-dudas-del-pago-electronico-en-el-transporte-publico-matinal-siempre-juntos-20-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/tvu-noticias/2026/10/19/programa-clases-activas-y-sedentarismo-en-las-aulas-tvu-noticias-2-pm-19-de-octubre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/2026/10/19/naval-gano-2-0-y-clasifico-a-la-liguilla-la-cancha-es-nuestra-19-de-octubre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/19/dia-de-la-animacion-en-chile-matinal-siempre-juntos-19-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "raw_text": "Movilización de camioneros en Los Ángeles - Matinal Siempre Juntos - 9 de noviembre de 2026",
-      "date": "2026-11-09",
-      "commune": "Los Ángeles",
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/2026/10/16/vial-con-iberia-no-va-los-pormenores-de-la-suspencion-la-cancha-es-nuestra-16-de-octubre-de-2026.html",
+      "source": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -4449,6 +1451,24 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Documentos Perdidos",
+      "raw_text": "La Dirección Meteorológica de Chile emitió una alerta por temperaturas extremas entre la tarde del martes 10 y el jueves 12 de noviembre. El calor afectará la precordillera de Atacama y la precordillera y valles precordilleranos de Coquimbo, con máximas cercanas a 38°C. Senapred recomendó hidratarse, evitar la exposición al sol entre las 11:00 y las 17:00 horas y no dejar personas ni mascotas dentro de vehículos.",
+      "date": "2026-11-12",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/10/emiten-alerta-meteorologica-por-evento-de-temperaturas-extremas-en-zonas-de-atacama-y-coquimbo.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "Fue este lunes que el mismo presidente, José Antonio Kast, anunció una nueva alza de $40 pesos por litro a partir de este jueves 12 de noviembre. Pero al mismo tiempo, reveló que enviarán un proyecto de ley con discusión inmediata para que durante los próximos 90 días estos aumentos en el precio no superen los $20 pesos por litro.",
+      "date": "2026-11-12",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/es-un-problema-que-el-gobierno-causo-la-critica-de-neme-en-medio-del-paro-de-camioneros.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "Fidocs 30 presenta programación aniversario: 8 días para ver lo mejor del cine de lo real",
       "raw_text": "Santiago, 2 de noviembre de 2026.- A tres décadas de su primera edición, FIDOCS celebra su historia y rinde homenaje a su fundador, Patricio Guzmán, con una nueva versión que vuelve al centro de Santiago con lo mejor del cine de lo real. Del 12 al 19 de noviembre, el Festival invita a un circuito caminable por sus cuatro sedes principales: Cineteca Nacional de Chile, Centro Arte Alameda – Sala CEINA, Sala K / U. Mayor y Sala de Cine, Centro de Extensión UC.",
       "date": "2026-11-12",
@@ -4555,6 +1575,15 @@
       "source": "Ministerio de las Culturas — Agenda cultural",
       "source_url": "https://www.cultura.gob.cl/agendacultural/verbo-america-reunira-en-santiago-y-valparaiso-a-figuras-del-arte-y-la-curatoria-latinoamericana/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Gran Final Campeón BEKRON 2026 en Cúpula Parque O'Higgins",
+      "raw_text": "Cúpula Parque O'Higgins Fábrica 1503, Santiago Centro Santiago Centro",
+      "date": "2026-11-13",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/gran-final-campeon-bekron-2026-cupula-parque-ohiggins-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Viernes 13 de noviembre",
@@ -4755,6 +1784,15 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Documentos Perdidos",
+      "raw_text": "‘Pasapalabra’ regresará a Chilevisión este domingo 15 de noviembre, a las 19:00 horas, tras dos años fuera de pantalla. El programa será conducido por Diana Bolocco y estrenará juegos, escenografía y gráficas renovadas, aunque mantendrá sus siete desafíos clásicos y el Rosco, que partirá con un pozo de $20 millones acumulable. Los participantes serán seleccionados mediante casting y competirán junto a dos famosos cada uno.",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/10/confirman-fecha-para-el-regreso-de-pasapalabra-y-revelan-millonario-pozo-del-rosco.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
       "title": "• La acción arranca este sábado con el Trail Ruta Puma en Nonguén y continúa el 15 de noviembre con la Corrida Lagunas de Concepción.",
       "raw_text": "• La acción arranca este sábado con el Trail Ruta Puma en Nonguén y continúa el 15 de noviembre con la Corrida Lagunas de Concepción.",
       "date": "2026-11-15",
@@ -4833,6 +1871,15 @@
       "commune": null,
       "source": "PuntoTicket — todos los eventos",
       "source_url": "https://www.puntoticket.com/evento/the-lemon-twings-club-chocolate-nov-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Universidad Católica vs. Universidad de Chile en Claro Arena",
+      "raw_text": "Claro Arena Camino Las Flores 13000, Las Condes Las Condes",
+      "date": "2026-11-15",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/universidad-catolica-vs-udechile-liga-femenina-semi-final-vuelta-2026?utm_medium=organic&utm_source=microformat",
       "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
@@ -5052,6 +2099,24 @@
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
+      "title": "Escuela Fútbol UC en Fortin Cruzado, San Carlos de Apoquindo",
+      "raw_text": "Fortin Cruzado, San Carlos de Apoquindo Av. Las Flores 13000, Las Condes Las Condes",
+      "date": "2026-11-21",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/programa-tradicional-ciclo-primavera-2026?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
+      "title": "Jorge Alís en Casa Comedia",
+      "raw_text": "Casa Comedia Constitución 97, Providencia Providencia",
+      "date": "2026-11-21",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/jorge-alis-unplug?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
+    },
+    {
       "title": "La Brigida Orquesta en Teatro Coliseo",
       "raw_text": "Teatro Coliseo Nataniel Cox 59, Santiago Centro Santiago Centro",
       "date": "2026-11-21",
@@ -5247,6 +2312,24 @@
       "commune": "Nacimiento",
       "source": "Municipalidad de Nacimiento",
       "source_url": "https://nacimiento.cl/actividades/calendario-de-talleres-deportivos-y-recreativos-20-163744",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "James Gunn y Peter Safran dejarán la dirección de DC Studios el 1 de diciembre para enfocarse en sus proyectos creativos. Jeremy Latcham, exintegrante del equipo de Marvel, asumirá el cargo. Aunque Skydance destacó el éxito de 'Superman', medios especializados especulan que la salida podría responder a resultados de taquilla, presiones financieras, diferencias con la nueva administración y al desgaste de Gunn.",
+      "date": "2026-12-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/10/las-teorias-que-apuntan-a-la-verdad-detras-de-la-salida-de-james-gunn-de-dc-studios.shtml",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Documentos Perdidos",
+      "raw_text": "Skydance, empresa surgida de la fusión entre Paramount y Warner Bros. Discovery, anunció la salida de James Gunn y Peter Safran de la dirección de DC Studios tras cuatro años. Los reemplazará Jeremy Latcham, ex Marvel, desde el 1 de diciembre. Ambos se dedicarán a su trabajo creativo; Gunn seguirá con Man of Tomorrow.",
+      "date": "2026-12-01",
+      "commune": null,
+      "source": "BioBioChile — Región del Biobío",
+      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/cine-y-series/2026/11/09/skydance-aparta-de-dc-studios-a-james-gunn-y-peter-safran-que-relanzaron-a-superman.shtml",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -5784,6 +2867,15 @@
       "title": "Miércoles 24 y Jueves 25 de junio (1 hora cada sesión)",
       "raw_text": "Miércoles 24 y Jueves 25 de junio (1 hora cada sesión)",
       "date": "2027-06-25",
+      "commune": "Concepción",
+      "source": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/category/talleres/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Sábado 4 de julio / 10:00 a 13:00 hrs.",
+      "raw_text": "Sábado 4 de julio / 10:00 a 13:00 hrs.",
+      "date": "2027-07-04",
       "commune": "Concepción",
       "source": "Festival Internacional de Teatro del Biobío (FTB)",
       "source_url": "https://ftb.cl/category/talleres/",

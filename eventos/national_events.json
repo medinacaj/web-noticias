@@ -1,25 +1,20 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-09T20:00:10",
+  "generated_at": "2026-11-10T17:08:02",
   "summary": {
-    "sources_attempted": 9,
-    "sources_ok": 8,
-    "sources_failed": 1,
-    "events_found": 40,
-    "events_inserted": 30,
-    "events_merged": 2,
-    "possible_events": 6,
+    "sources_attempted": 7,
+    "sources_ok": 7,
+    "sources_failed": 0,
+    "events_found": 34,
+    "events_inserted": 25,
+    "events_merged": 1,
+    "possible_events": 0,
     "quarantined_candidates": 0,
-    "candidates": 1,
-    "revalidation_attempts": 19,
-    "revalidated_ok": 19,
-    "errors": [
-      {
-        "source": "ChileCultura (Ministerio de las Culturas)",
-        "error": "HTTP 403"
-      }
-    ],
-    "skipped_by_cadence": 0
+    "candidates": 0,
+    "revalidation_attempts": 15,
+    "revalidated_ok": 15,
+    "errors": [],
+    "skipped_by_cadence": 2
   },
   "events": [
     {
@@ -54,7 +49,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [
@@ -125,7 +120,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [],
@@ -163,7 +158,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [
@@ -266,7 +261,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [],
@@ -294,7 +289,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/denver2-450x300.jpg",
-      "discovered_at": "2026-11-09T19:59:25",
+      "discovered_at": "2026-11-10T17:08:02",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -306,16 +301,214 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:25"
+          "seen_at": "2026-11-10T17:08:02"
         }
       ],
       "changes": [],
       "region": "Valparaíso"
     },
     {
+      "title": "Un ramito de violetas: un homenaje a Zalo Reyes",
+      "description": "¿Quién te manda flores cada 9 de noviembre? Este año, el admirador secreto seremos todos. En GAM celebraremos la vida, obra y trayectoria de Zalo Reyes con u...",
+      "date": "2026-11-09",
+      "end_date": null,
+      "time": "15:00",
+      "end_time": "15:00",
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Central",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/un-ramito-de-violetas-un-homenaje-a-zalo-reyes/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/Violetas_Portada.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-11-06T16:55:29",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/un-ramito-de-violetas-un-homenaje-a-zalo-reyes/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-10T17:06:52"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Conferencia",
+      "description": null,
+      "date": "2026-11-10",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/conferencia-crear-en-tiempos-liquidos/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/charla-nicolas.jpg",
+      "discovered_at": "2026-11-10T17:07:09",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/conferencia-crear-en-tiempos-liquidos/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-10T17:07:09"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Cultura digital: nuevas inteligencias, nuevas experiencias",
+      "description": null,
+      "date": "2026-11-10",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/seminario-cultura-digital-nuevas-inteligencias/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-2.jpg",
+      "discovered_at": "2026-11-10T17:07:09",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/seminario-cultura-digital-nuevas-inteligencias/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-10T17:07:09"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Mesa 1",
+      "description": null,
+      "date": "2026-11-10",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/mesa-1-investigacion-y-creacion-en-la-era-de-la-inteligencia-digital/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-Mesas-01-scaled.png",
+      "discovered_at": "2026-11-10T17:07:09",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/mesa-1-investigacion-y-creacion-en-la-era-de-la-inteligencia-digital/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-10T17:07:09"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Mesa 2",
+      "description": null,
+      "date": "2026-11-10",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Centro Cultural La Moneda",
+      "source_url": "https://www.cclm.cl/actividades/mesa-2-museos-ante-la-inteligencia-artificial/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-Mesas-02-scaled.png",
+      "discovered_at": "2026-11-10T17:07:09",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Centro Cultural La Moneda",
+          "url": "https://www.cclm.cl/actividades/mesa-2-museos-ante-la-inteligencia-artificial/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-10T17:07:09"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
       "title": "El sonido de los polinizadores: Instalación sonora multiespecie",
       "description": "Las nuevas áreas verdes de GAM se abren a la escucha. Dirigido por Paula Aros Gho y con textos de Nona Fernández, un recorrido sonoro invita a caminar el jar...",
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "end_date": "2026-12-13",
       "time": "09:00",
       "end_time": null,
@@ -327,7 +520,7 @@
       "access": null,
       "price_value": 0,
       "price_status": "free",
-      "status": "Confirmado",
+      "status": "Reprogramado",
       "source": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
       "source_type": "venue",
@@ -335,7 +528,7 @@
       "official": true,
       "image_url": "https://gam.cl/media/images/PortadaPolizinadores.2e16d0ba.fill-1200x630.png",
       "discovered_at": "2026-11-01T03:51:11",
-      "changed_at": "2026-11-09T19:59:59",
+      "changed_at": "2026-11-10T17:07:41",
       "tags": [],
       "sources": [
         {
@@ -344,7 +537,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [
@@ -491,206 +684,24 @@
           "source": "Centro Cultural Gabriela Mistral (GAM)",
           "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
           "changed_at": "2026-11-09T19:59:59"
-        }
-      ],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Un ramito de violetas: un homenaje a Zalo Reyes",
-      "description": "¿Quién te manda flores cada 9 de noviembre? Este año, el admirador secreto seremos todos. En GAM celebraremos la vida, obra y trayectoria de Zalo Reyes con u...",
-      "date": "2026-11-09",
-      "end_date": null,
-      "time": "15:00",
-      "end_time": "15:00",
-      "venue": "Centro Gabriela Mistral - GAM - Plaza Central",
-      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": 0,
-      "price_status": "free",
-      "status": "Confirmado",
-      "source": "Centro Cultural Gabriela Mistral (GAM)",
-      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/un-ramito-de-violetas-un-homenaje-a-zalo-reyes/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://gam.cl/media/images/Violetas_Portada.2e16d0ba.fill-1200x630.png",
-      "discovered_at": "2026-11-06T16:55:29",
-      "changed_at": null,
-      "tags": [],
-      "sources": [
+        },
         {
-          "name": "Centro Cultural Gabriela Mistral (GAM)",
-          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/un-ramito-de-violetas-un-homenaje-a-zalo-reyes/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-09T19:59:05"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Conferencia",
-      "description": null,
-      "date": "2026-11-10",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Centro Cultural La Moneda",
-      "source_url": "https://www.cclm.cl/actividades/conferencia-crear-en-tiempos-liquidos/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/charla-nicolas.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
+          "field": "date",
+          "old_value": "2026-11-09",
+          "new_value": "2026-11-10",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
+          "changed_at": "2026-11-10T17:07:41"
+        },
         {
-          "name": "Centro Cultural La Moneda",
-          "url": "https://www.cclm.cl/actividades/conferencia-crear-en-tiempos-liquidos/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "field": "status",
+          "old_value": "Confirmado",
+          "new_value": "Reprogramado",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
+          "changed_at": "2026-11-10T17:07:41"
         }
       ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Cultura digital: nuevas inteligencias, nuevas experiencias",
-      "description": null,
-      "date": "2026-11-10",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Centro Cultural La Moneda",
-      "source_url": "https://www.cclm.cl/actividades/seminario-cultura-digital-nuevas-inteligencias/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-2.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Centro Cultural La Moneda",
-          "url": "https://www.cclm.cl/actividades/seminario-cultura-digital-nuevas-inteligencias/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-09T19:59:17"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Mesa 1",
-      "description": null,
-      "date": "2026-11-10",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Centro Cultural La Moneda",
-      "source_url": "https://www.cclm.cl/actividades/mesa-1-investigacion-y-creacion-en-la-era-de-la-inteligencia-digital/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-Mesas-01-scaled.png",
-      "discovered_at": "2026-11-09T19:59:17",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Centro Cultural La Moneda",
-          "url": "https://www.cclm.cl/actividades/mesa-1-investigacion-y-creacion-en-la-era-de-la-inteligencia-digital/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-09T19:59:17"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Mesa 2",
-      "description": null,
-      "date": "2026-11-10",
-      "end_date": null,
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Centro Cultural La Moneda",
-      "source_url": "https://www.cclm.cl/actividades/mesa-2-museos-ante-la-inteligencia-artificial/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/Banner-Web-Seminario-Cultura-Digital-Mesas-02-scaled.png",
-      "discovered_at": "2026-11-09T19:59:17",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Centro Cultural La Moneda",
-          "url": "https://www.cclm.cl/actividades/mesa-2-museos-ante-la-inteligencia-artificial/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-09T19:59:17"
-        }
-      ],
-      "changes": [],
       "region": "Metropolitana"
     },
     {
@@ -715,7 +726,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/nexolab.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
+      "discovered_at": "2026-11-10T17:07:09",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -727,7 +738,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "seen_at": "2026-11-10T17:07:09"
         }
       ],
       "changes": [],
@@ -765,7 +776,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [
@@ -850,7 +861,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/matta_en_pcdv_02.jpg-450x300.jpg",
-      "discovered_at": "2026-11-09T19:59:25",
+      "discovered_at": "2026-11-10T17:08:02",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -862,7 +873,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:25"
+          "seen_at": "2026-11-10T17:08:02"
         }
       ],
       "changes": [],
@@ -890,7 +901,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/foto-450x300.jpeg",
-      "discovered_at": "2026-11-09T19:59:25",
+      "discovered_at": "2026-11-10T17:08:02",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -902,7 +913,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:25"
+          "seen_at": "2026-11-10T17:08:02"
         }
       ],
       "changes": [],
@@ -930,7 +941,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/ladera-sur-festival.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
+      "discovered_at": "2026-11-10T17:07:09",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -942,7 +953,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "seen_at": "2026-11-10T17:07:09"
         }
       ],
       "changes": [],
@@ -970,7 +981,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/circulo-lenguaje.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
+      "discovered_at": "2026-11-10T17:07:09",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -982,7 +993,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "seen_at": "2026-11-10T17:07:09"
         }
       ],
       "changes": [],
@@ -1010,7 +1021,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/11/noche-de-museos-banner-1.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
+      "discovered_at": "2026-11-10T17:07:09",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1022,7 +1033,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "seen_at": "2026-11-10T17:07:09"
         }
       ],
       "changes": [],
@@ -1050,7 +1061,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/01-450x300.jpeg",
-      "discovered_at": "2026-11-09T19:59:25",
+      "discovered_at": "2026-11-10T17:08:02",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1062,7 +1073,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:25"
+          "seen_at": "2026-11-10T17:08:02"
         }
       ],
       "changes": [],
@@ -1100,7 +1111,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [
@@ -1148,6 +1159,44 @@
       "region": "Metropolitana"
     },
     {
+      "title": "De la UNCTAD III a GAM: Noche de Museos",
+      "description": "GAM invita a recorrer sus espacios y descubrir la historia de un edificio que ha sido testigo de importantes transformaciones del país, desde su origen como ...",
+      "date": "2026-11-13",
+      "end_date": null,
+      "time": "16:45",
+      "end_time": "16:45",
+      "venue": "Centro Gabriela Mistral - GAM - Plaza Central",
+      "address": "Av. Libertador Bernardo O'Higgins 227, Santiago, Región Metropolitana",
+      "commune": "Santiago",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Confirmado",
+      "source": "Centro Cultural Gabriela Mistral (GAM)",
+      "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/noche-de-museos-gam-2026/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://gam.cl/media/images/Noche_de_museos.2e16d0ba.fill-1200x630.png",
+      "discovered_at": "2026-11-10T17:07:41",
+      "changed_at": null,
+      "tags": [],
+      "sources": [
+        {
+          "name": "Centro Cultural Gabriela Mistral (GAM)",
+          "url": "https://gam.cl/es/que-hacer-en-gam/actividades/noche-de-museos-gam-2026/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-10T17:07:41"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
       "title": "Anillo de Galerías: Inventario común",
       "description": null,
       "date": "2026-11-14",
@@ -1169,7 +1218,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/11/Banner-web-Anillo-de-Galerias-01.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
+      "discovered_at": "2026-11-10T17:07:09",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1181,7 +1230,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "seen_at": "2026-11-10T17:07:09"
         }
       ],
       "changes": [],
@@ -1209,7 +1258,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:58",
+      "discovered_at": "2026-11-10T17:07:40",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1221,7 +1270,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:58"
+          "seen_at": "2026-11-10T17:07:40"
         }
       ],
       "changes": [],
@@ -1249,7 +1298,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/taller-lemu.jpg",
-      "discovered_at": "2026-11-09T19:59:17",
+      "discovered_at": "2026-11-10T17:07:09",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1261,7 +1310,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "seen_at": "2026-11-10T17:07:09"
         }
       ],
       "changes": [],
@@ -1299,7 +1348,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [
@@ -1336,7 +1385,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/10/10_anos_resistiendo_memoria_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-09T20:00:10",
+      "discovered_at": "2026-11-10T17:08:02",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1348,7 +1397,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T20:00:10"
+          "seen_at": "2026-11-10T17:08:02"
         }
       ],
       "changes": [],
@@ -1376,7 +1425,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/noticia-mincap-450x300.jpg",
-      "discovered_at": "2026-11-09T19:59:25",
+      "discovered_at": "2026-11-10T17:08:02",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1388,7 +1437,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:25"
+          "seen_at": "2026-11-10T17:08:02"
         }
       ],
       "changes": [],
@@ -1416,7 +1465,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/m22-afiche-1422x948-1-450x300.jpg",
-      "discovered_at": "2026-11-09T19:59:25",
+      "discovered_at": "2026-11-10T17:08:02",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1428,7 +1477,7 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:25"
+          "seen_at": "2026-11-10T17:08:02"
         }
       ],
       "changes": [],
@@ -1456,7 +1505,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1468,7 +1517,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -1496,7 +1545,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1508,7 +1557,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -1546,7 +1595,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [
@@ -1607,7 +1656,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1619,7 +1668,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -1657,7 +1706,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [],
@@ -1695,7 +1744,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [],
@@ -1723,7 +1772,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1735,7 +1784,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -1763,7 +1812,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:58",
+      "discovered_at": "2026-11-10T17:07:40",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1775,7 +1824,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:58"
+          "seen_at": "2026-11-10T17:07:40"
         }
       ],
       "changes": [],
@@ -1803,7 +1852,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1815,7 +1864,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -1853,7 +1902,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [],
@@ -1881,7 +1930,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-11-09T19:59:17",
+      "discovered_at": "2026-11-10T17:07:09",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1893,7 +1942,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:17"
+          "seen_at": "2026-11-10T17:07:09"
         }
       ],
       "changes": [],
@@ -1931,7 +1980,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:05"
+          "seen_at": "2026-11-10T17:06:52"
         }
       ],
       "changes": [],
@@ -1959,7 +2008,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1971,7 +2020,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -1999,7 +2048,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2011,7 +2060,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -2039,7 +2088,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2051,7 +2100,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -2079,7 +2128,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-09T19:59:34",
+      "discovered_at": "2026-11-10T17:07:25",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2091,7 +2140,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-09T19:59:34"
+          "seen_at": "2026-11-10T17:07:25"
         }
       ],
       "changes": [],
@@ -2100,38 +2149,24 @@
   ],
   "runs": [
     {
-      "source_name": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:26",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 26,
-      "events_found": 6,
-      "events_inserted": 6,
-      "events_merged": 0,
-      "possible_found": 6,
-      "error": null
-    },
-    {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:59",
+      "started_at": "2026-11-10T17:06:52",
+      "finished_at": "2026-11-10T17:07:41",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
       "events_found": 10,
-      "events_inserted": 0,
-      "events_merged": 2,
+      "events_inserted": 1,
+      "events_merged": 1,
       "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:17",
+      "started_at": "2026-11-10T17:06:52",
+      "finished_at": "2026-11-10T17:07:09",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -2142,24 +2177,10 @@
       "error": null
     },
     {
-      "source_name": "ChileCultura (Ministerio de las Culturas)",
-      "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:07",
-      "ok": 0,
-      "http_status": 403,
-      "pages_fetched": 0,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": "HTTP 403"
-    },
-    {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:39",
+      "started_at": "2026-11-10T17:06:52",
+      "finished_at": "2026-11-10T17:07:10",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -2172,8 +2193,8 @@
     {
       "source_name": "Parque Cultural de Valparaíso",
       "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T20:00:10",
+      "started_at": "2026-11-10T17:06:52",
+      "finished_at": "2026-11-10T17:08:02",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -2186,8 +2207,8 @@
     {
       "source_name": "Teatro Municipal de Santiago",
       "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:34",
+      "started_at": "2026-11-10T17:06:52",
+      "finished_at": "2026-11-10T17:07:25",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -2200,8 +2221,8 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:48",
+      "started_at": "2026-11-10T17:06:52",
+      "finished_at": "2026-11-10T17:07:36",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -2214,11 +2235,11 @@
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-11-09T19:59:05",
-      "finished_at": "2026-11-09T19:59:58",
+      "started_at": "2026-11-10T17:06:52",
+      "finished_at": "2026-11-10T17:07:40",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 15,
+      "pages_fetched": 16,
       "events_found": 2,
       "events_inserted": 2,
       "events_merged": 0,
@@ -2235,15 +2256,15 @@
       "refresh_interval_hours": 24
     },
     "Centro Cultural Gabriela Mistral (GAM)": {
-      "last_checked_at": "2026-11-09T19:59:59",
-      "last_success_at": "2026-11-09T19:59:59",
+      "last_checked_at": "2026-11-10T17:07:41",
+      "last_success_at": "2026-11-10T17:07:41",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Centro Cultural La Moneda": {
-      "last_checked_at": "2026-11-09T19:59:17",
-      "last_success_at": "2026-11-09T19:59:17",
+      "last_checked_at": "2026-11-10T17:07:09",
+      "last_success_at": "2026-11-10T17:07:09",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -2256,83 +2277,46 @@
       "refresh_interval_hours": 24
     },
     "Matucana 100": {
-      "last_checked_at": "2026-11-09T19:59:39",
-      "last_success_at": "2026-11-09T19:59:39",
+      "last_checked_at": "2026-11-10T17:07:10",
+      "last_success_at": "2026-11-10T17:07:10",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Parque Cultural de Valparaíso": {
-      "last_checked_at": "2026-11-09T20:00:10",
-      "last_success_at": "2026-11-09T20:00:10",
+      "last_checked_at": "2026-11-10T17:08:02",
+      "last_success_at": "2026-11-10T17:08:02",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Santiago": {
-      "last_checked_at": "2026-11-09T19:59:34",
-      "last_success_at": "2026-11-09T19:59:34",
+      "last_checked_at": "2026-11-10T17:07:25",
+      "last_success_at": "2026-11-10T17:07:25",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Temuco": {
-      "last_checked_at": "2026-11-09T19:59:48",
-      "last_success_at": "2026-11-09T19:59:48",
+      "last_checked_at": "2026-11-10T17:07:36",
+      "last_success_at": "2026-11-10T17:07:36",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Regional del Maule": {
-      "last_checked_at": "2026-11-09T19:59:58",
-      "last_success_at": "2026-11-09T19:59:58",
+      "last_checked_at": "2026-11-10T17:07:40",
+      "last_success_at": "2026-11-10T17:07:40",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     }
   },
-  "skipped_by_cadence": [],
+  "skipped_by_cadence": [
+    "ChileCultura (Ministerio de las Culturas)",
+    "Agenda Cultural del Ministerio de las Culturas"
+  ],
   "possible_events": [
-    {
-      "title": "09.11.2026 / Biobío",
-      "raw_text": "09.11.2026 / Biobío",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "09.11.2026 / Valparaíso",
-      "raw_text": "09.11.2026 / Valparaíso",
-      "date": "2026-11-09",
-      "commune": "Valparaíso",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Valparaíso"
-    },
-    {
-      "title": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/seis-destacadas-trayectorias-reciben-los-premios-regionales-de-arte-y-cultura-del-biobio-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
-    {
-      "title": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "raw_text": "PUBLICADO EL 09 NOVIEMBRE, 2026",
-      "date": "2026-11-09",
-      "commune": null,
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/actualidad/obra-ser-extranjer-en-chile-abre-espacios-para-reflexionar-sobre-identidad-migracion-e-interculturalidad/",
-      "reason": "Texto con fecha futura sin datos estructurados",
-      "region": null
-    },
     {
       "title": "El plazo para inscribir actividades se extiende hasta el martes 10 de noviembre.",
       "raw_text": "El plazo para inscribir actividades se extiende hasta el martes 10 de noviembre.",
