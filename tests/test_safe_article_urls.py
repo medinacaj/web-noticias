@@ -1,7 +1,8 @@
 import unittest
 from datetime import datetime, timezone
+from unittest.mock import patch
 
-from fetch_noticias import safe_article_url, title_link, render_coverage_radar, merge
+from fetch_noticias import safe_article_url, title_link, render_coverage_radar, merge, http_get, MAX_HTTP_RESPONSE_BYTES
 
 
 class SafeArticleLinksTest(unittest.TestCase):
@@ -61,6 +62,30 @@ class SafeArticleLinksTest(unittest.TestCase):
             "link": "javascript:alert(1)",
         }
         self.assertEqual(render_coverage_radar([story]), "")
+
+    def test_http_get_limits_upstream_response_before_buffering_more(self):
+        class FakeResponse:
+            def __init__(self, oversized):
+                self.oversized = oversized
+                self.requested = 0
+            def __enter__(self):
+                return self
+            def __exit__(self, *_args):
+                return False
+            def read(self, count):
+                self.requested = count
+                size = MAX_HTTP_RESPONSE_BYTES + 1 if self.oversized else 6
+                return b"x" * size
+
+        good = FakeResponse(False)
+        with patch("fetch_noticias.urllib.request.urlopen", return_value=good):
+            self.assertEqual(http_get("https://example.org/rss"), b"xxxxxx")
+        self.assertEqual(good.requested, MAX_HTTP_RESPONSE_BYTES + 1)
+        bad = FakeResponse(True)
+        with patch("fetch_noticias.urllib.request.urlopen", return_value=bad):
+            with self.assertRaisesRegex(ValueError, "demasiado grande"):
+                http_get("https://example.org/rss")
+        self.assertEqual(bad.requested, MAX_HTTP_RESPONSE_BYTES + 1)
 
 
 if __name__ == "__main__":
