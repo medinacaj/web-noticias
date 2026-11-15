@@ -155,6 +155,25 @@ def is_google_link(url):
     return "news.google." in (url or "")
 
 
+def safe_article_url(value):
+    """Admit only absolute HTTP(S) article links, never executable schemes."""
+    if not isinstance(value, str):
+        return ""
+    url = value.strip()
+    if not url or "\\" in url or any(ch.isspace() or ord(ch) < 32 or ord(ch) == 127 for ch in url):
+        return ""
+    try:
+        parsed = urllib.parse.urlsplit(url)
+        if (parsed.scheme.lower() not in ("http", "https") or not parsed.hostname
+                or parsed.username is not None or parsed.password is not None):
+            return ""
+        # Accessing port can raise for malformed ports; reject malformed netlocs.
+        _ = parsed.port
+    except ValueError:
+        return ""
+    return url
+
+
 def shorten(text, limit):
     if len(text) <= limit:
         return text
@@ -174,10 +193,17 @@ def clean_summary(title, raw):
     return shorten(text, 220)
 
 
+MAX_HTTP_RESPONSE_BYTES = 8 * 1024 * 1024
+
 def http_get(url):
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=20) as response:
-        return response.read()
+        # Read at most the accepted size plus one sentinel byte. An upstream
+        # feed cannot force the collector to buffer an unbounded response.
+        raw = response.read(MAX_HTTP_RESPONSE_BYTES + 1)
+        if len(raw) > MAX_HTTP_RESPONSE_BYTES:
+            raise ValueError("Respuesta RSS o de API demasiado grande")
+        return raw
 
 
 # ---------- RECOLECCIÓN ----------
@@ -505,7 +531,7 @@ def merge(stories, items, now, window_hours=WINDOW_HOURS):
     for original in items:
         item = classify(dict(original))
         title = (item.get("title") or "").strip()
-        link = (item.get("link") or "").strip()
+        link = safe_article_url(item.get("link"))
         if not title or not link or item.get("category") not in CATEGORY_LABELS:
             continue
         norm = normalize_title(title)
@@ -745,7 +771,10 @@ def title_link(story):
     prefix='Sátira y humor: ' if kind.startswith('satire') else 'Estreno confirmado: ' if kind=='premiere' else 'Noticia de estreno: ' if kind=='premiere-news' else 'Guía de estrenos: ' if kind=='guide' else ''
     content=f' data-content-kind="{kind}"' if kind else ''
     prefix_html=f'<span class="sr-only">{prefix}</span>' if prefix else ''
-    return (f'<a{content} data-news-id="{esc(canonical_key(story["link"]))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(story["link"])}" rel="noopener" '
+    article_url = safe_article_url(story.get("link"))
+    if not article_url:
+        return f'<span class="link-unavailable" aria-label="Enlace de noticia no disponible">{prefix_html}{esc(story["title"])}</span>'
+    return (f'<a{content} data-news-id="{esc(canonical_key(article_url))}" data-first-seen="{esc(first_seen)}" data-countries="{esc(countries)}" href="{esc(article_url)}" rel="noopener" '
             f'data-cat="{esc(category_label(story))}" data-key="{story["category"]}" '
             f'data-sources="{esc(json.dumps(story.get("sources") or [], ensure_ascii=False))}">{prefix_html}{esc(story["title"])}</a>')
 
@@ -898,7 +927,8 @@ def render_edition_count(sel):
 
 def render_coverage_radar(stories, topics=None):
     """Radar conservador: no infiere tendencia o crecimiento desde una instantánea."""
-    prominent = [s for s in stories if len(set((s.get("sources") or []))) >= 4]
+    prominent = [s for s in stories if len(set((s.get("sources") or []))) >= 4
+                 and safe_article_url(s.get("link"))]
     prominent.sort(key=lambda s: len(set(s["sources"])), reverse=True)
     if not prominent:
         return ""
