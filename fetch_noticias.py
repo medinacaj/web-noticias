@@ -160,7 +160,7 @@ def safe_article_url(value):
     if not isinstance(value, str):
         return ""
     url = value.strip()
-    if not url or re.search(r"[\\\\\\s\\x00-\\x1f\\x7f]", url):
+    if not url or "\\" in url or any(ch.isspace() or ord(ch) < 32 or ord(ch) == 127 for ch in url):
         return ""
     try:
         parsed = urllib.parse.urlsplit(url)
