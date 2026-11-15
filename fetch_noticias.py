@@ -193,10 +193,17 @@ def clean_summary(title, raw):
     return shorten(text, 220)
 
 
+MAX_HTTP_RESPONSE_BYTES = 8 * 1024 * 1024
+
 def http_get(url):
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=20) as response:
-        return response.read()
+        # Read at most the accepted size plus one sentinel byte. An upstream
+        # feed cannot force the collector to buffer an unbounded response.
+        raw = response.read(MAX_HTTP_RESPONSE_BYTES + 1)
+        if len(raw) > MAX_HTTP_RESPONSE_BYTES:
+            raise ValueError("Respuesta RSS o de API demasiado grande")
+        return raw
 
 
 # ---------- RECOLECCIÓN ----------
