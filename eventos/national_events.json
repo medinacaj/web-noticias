@@ -1,18 +1,18 @@
 {
   "_notes": "Generado por actualizar.py --nacional. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-22T17:18:49",
+  "generated_at": "2026-11-23T21:36:46",
   "summary": {
     "sources_attempted": 9,
     "sources_ok": 8,
     "sources_failed": 1,
-    "events_found": 29,
-    "events_inserted": 25,
+    "events_found": 34,
+    "events_inserted": 30,
     "events_merged": 1,
-    "possible_events": 0,
+    "possible_events": 5,
     "quarantined_candidates": 0,
-    "candidates": 0,
-    "revalidation_attempts": 23,
-    "revalidated_ok": 23,
+    "candidates": 4,
+    "revalidation_attempts": 22,
+    "revalidated_ok": 22,
     "errors": [
       {
         "source": "ChileCultura (Ministerio de las Culturas)",
@@ -54,7 +54,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [
@@ -125,7 +125,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -163,7 +163,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [
@@ -266,7 +266,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -304,7 +304,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -342,7 +342,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -380,7 +380,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [
@@ -427,7 +427,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [
@@ -546,7 +546,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -584,7 +584,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -622,7 +622,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [
@@ -774,46 +774,6 @@
       "region": "Metropolitana"
     },
     {
-      "title": "Ministerio de las Culturas da la partida al Día del Cine Chileno 2026 con cine móvil en Maipú y Providencia",
-      "description": null,
-      "date": "2026-11-21",
-      "end_date": "2026-11-29",
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Providencia",
-      "category": "Comunidad",
-      "audience": null,
-      "access": null,
-      "price_value": 1000,
-      "price_status": "paid",
-      "status": "Por confirmar",
-      "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/ministerio-de-las-culturas-da-la-partida-al-dia-del-cine-chileno-2026-con-cine-movil-en-maipu-y-providencia/",
-      "source_type": "aggregator",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/31-minutos-400x300.jpg",
-      "discovered_at": "2026-11-22T17:17:57",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/ministerio-de-las-culturas-da-la-partida-al-dia-del-cine-chileno-2026-con-cine-movil-en-maipu-y-providencia/",
-          "type": "aggregator",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-22T17:17:57"
-        }
-      ],
-      "changes": [],
-      "region": "Metropolitana"
-    },
-    {
       "title": "Vestir el Ser",
       "description": "En el marco del Mes del Diseño, la tercera edición de esta plataforma nacional llega a GAM para reunir a diseñadores, estudiantes, marcas, investigadores e i...",
       "date": "2026-11-21",
@@ -845,7 +805,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -883,7 +843,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [
@@ -970,17 +930,137 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
       "region": "Metropolitana"
     },
     {
-      "title": "Danza \"Mudanza\"",
+      "title": "Cultura comunitaria tendrá primera muestra regional en Valdivia",
       "description": null,
-      "date": "2026-11-22",
-      "end_date": null,
+      "date": "2026-11-23",
+      "end_date": "2026-11-27",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valdivia",
+      "category": "Comunidad",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/cultura-comunitaria-tendra-primera-muestra-regional-en-valdivia/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/taller-de-alfareria-lanco-450x300.jpg",
+      "discovered_at": "2026-11-23T21:35:56",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/cultura-comunitaria-tendra-primera-muestra-regional-en-valdivia/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:35:56"
+        }
+      ],
+      "changes": [],
+      "region": "Los Ríos"
+    },
+    {
+      "title": "Ministerio de las Culturas da la partida al Día del Cine Chileno 2026 con cine móvil en Maipú y Providencia",
+      "description": null,
+      "date": "2026-11-23",
+      "end_date": "2026-11-29",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Providencia",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 1000,
+      "price_status": "paid",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/ministerio-de-las-culturas-da-la-partida-al-dia-del-cine-chileno-2026-con-cine-movil-en-maipu-y-providencia/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/31-minutos-400x300.jpg",
+      "discovered_at": "2026-11-23T21:35:56",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/ministerio-de-las-culturas-da-la-partida-al-dia-del-cine-chileno-2026-con-cine-movil-en-maipu-y-providencia/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:35:56"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Teatro Municipal de Iquique recibirá las finales nacionales del XXII Concurso de Composición Musical Luis Advis",
+      "description": null,
+      "date": "2026-11-23",
+      "end_date": "2026-11-27",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Iquique",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/teatro-municipal-de-iquique-recibira-las-finales-nacionales-del-xxii-concurso-de-composicion-musical-luis-advis/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/whatsapp-image-2026-11-23-at-15.45.07-450x300.jpeg",
+      "discovered_at": "2026-11-23T21:35:56",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/teatro-municipal-de-iquique-recibira-las-finales-nacionales-del-xxii-concurso-de-composicion-musical-luis-advis/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:35:56"
+        }
+      ],
+      "changes": [],
+      "region": "Tarapacá"
+    },
+    {
+      "title": "Valparaíso vivirá la “Noche de los Teatros Porteños 2026”",
+      "description": null,
+      "date": "2026-11-23",
+      "end_date": "2026-11-27",
       "time": null,
       "end_time": null,
       "venue": null,
@@ -989,56 +1069,16 @@
       "category": "Cultura",
       "audience": null,
       "access": null,
-      "price_value": 3500,
-      "price_status": "paid",
-      "status": "Por confirmar",
-      "source": "Parque Cultural de Valparaíso",
-      "source_url": "https://parquecultural.cl/events/danza-mudanza/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": "https://parquecultural.cl/wp-content/uploads/2026/11/Mudanza_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-22T17:18:49",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
-        {
-          "name": "Parque Cultural de Valparaíso",
-          "url": "https://parquecultural.cl/events/danza-mudanza/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-22T17:18:49"
-        }
-      ],
-      "changes": [],
-      "region": "Valparaíso"
-    },
-    {
-      "title": "Ruta Escena Biobío continúa su itinerancia con nuevas localidades y un taller de diseño escénico",
-      "description": null,
-      "date": "2026-11-22",
-      "end_date": "2026-12-12",
-      "time": null,
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Laja",
-      "category": "Comunidad",
-      "audience": null,
-      "access": null,
       "price_value": null,
       "price_status": "pending",
       "status": "Por confirmar",
       "source": "Agenda Cultural del Ministerio de las Culturas",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/valparaiso-vivira-la-noche-de-los-teatros-portenos-2026/",
       "source_type": "aggregator",
       "source_priority": 1,
       "official": true,
-      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/foto-450x300.jpeg",
-      "discovered_at": "2026-11-22T17:17:57",
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/01-1-450x300.jpg",
+      "discovered_at": "2026-11-23T21:35:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1046,20 +1086,20 @@
       "sources": [
         {
           "name": "Agenda Cultural del Ministerio de las Culturas",
-          "url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
+          "url": "https://www.cultura.gob.cl/agendacultural/valparaiso-vivira-la-noche-de-los-teatros-portenos-2026/",
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:57"
+          "seen_at": "2026-11-23T21:35:56"
         }
       ],
       "changes": [],
-      "region": "Biobío"
+      "region": "Valparaíso"
     },
     {
       "title": "El sonido de los polinizadores: Instalación sonora multiespecie",
       "description": "Las nuevas áreas verdes de GAM se abren a la escucha. Dirigido por Paula Aros Gho y con textos de Nona Fernández, un recorrido sonoro invita a caminar el jar...",
-      "date": "2026-11-22",
+      "date": "2026-11-23",
       "end_date": "2026-12-13",
       "time": "09:00",
       "end_time": null,
@@ -1071,7 +1111,7 @@
       "access": null,
       "price_value": 0,
       "price_status": "free",
-      "status": "Reprogramado",
+      "status": "Confirmado",
       "source": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
       "source_type": "venue",
@@ -1079,7 +1119,7 @@
       "official": true,
       "image_url": "https://gam.cl/media/images/PortadaPolizinadores.2e16d0ba.fill-1200x630.png",
       "discovered_at": "2026-11-01T03:51:11",
-      "changed_at": "2026-11-22T17:18:36",
+      "changed_at": "2026-11-23T21:36:29",
       "tags": [],
       "sources": [
         {
@@ -1088,7 +1128,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [
@@ -1443,48 +1483,24 @@
           "source": "Centro Cultural Gabriela Mistral (GAM)",
           "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
           "changed_at": "2026-11-22T17:18:36"
-        }
-      ],
-      "region": "Metropolitana"
-    },
-    {
-      "title": "Ciclo Beethoven IV - Boris Giltburg",
-      "description": null,
-      "date": "2026-11-22",
-      "end_date": null,
-      "time": "17:00",
-      "end_time": null,
-      "venue": null,
-      "address": null,
-      "commune": "Santiago",
-      "category": "Cultura",
-      "audience": null,
-      "access": null,
-      "price_value": null,
-      "price_status": "pending",
-      "status": "Por confirmar",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/ciclo-beethoven-iv-boris-giltburg/",
-      "source_type": "venue",
-      "source_priority": 1,
-      "official": true,
-      "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
-      "changed_at": null,
-      "tags": [
-        "ficha sin datos estructurados"
-      ],
-      "sources": [
+        },
         {
-          "name": "Teatro Municipal de Santiago",
-          "url": "https://municipal.cl/espectaculos/ciclo-beethoven-iv-boris-giltburg/",
-          "type": "venue",
-          "priority": 1,
-          "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "field": "date",
+          "old_value": "2026-11-22",
+          "new_value": "2026-11-23",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
+          "changed_at": "2026-11-23T21:36:29"
+        },
+        {
+          "field": "status",
+          "old_value": "Reprogramado",
+          "new_value": "Confirmado",
+          "source": "Centro Cultural Gabriela Mistral (GAM)",
+          "source_url": "https://gam.cl/es/que-hacer-en-gam/actividades/el-sonido-de-los-polinizadores/",
+          "changed_at": "2026-11-23T21:36:29"
         }
       ],
-      "changes": [],
       "region": "Metropolitana"
     },
     {
@@ -1509,7 +1525,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1521,7 +1537,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -1549,7 +1565,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/11/Madre_coraje_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-22T17:18:49",
+      "discovered_at": "2026-11-23T21:36:46",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1561,7 +1577,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:49"
+          "seen_at": "2026-11-23T21:36:46"
         }
       ],
       "changes": [],
@@ -1589,7 +1605,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/10/nexolab.jpg",
-      "discovered_at": "2026-11-22T17:17:49",
+      "discovered_at": "2026-11-23T21:35:44",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1601,7 +1617,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:49"
+          "seen_at": "2026-11-23T21:35:44"
         }
       ],
       "changes": [],
@@ -1629,7 +1645,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/11/retour-2.jpg",
-      "discovered_at": "2026-11-22T17:17:49",
+      "discovered_at": "2026-11-23T21:35:44",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1641,7 +1657,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:49"
+          "seen_at": "2026-11-23T21:35:44"
         }
       ],
       "changes": [],
@@ -1669,7 +1685,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/foto-2-450x300.jpeg",
-      "discovered_at": "2026-11-22T17:17:57",
+      "discovered_at": "2026-11-23T21:35:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1681,11 +1697,51 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:57"
+          "seen_at": "2026-11-23T21:35:56"
         }
       ],
       "changes": [],
       "region": "Antofagasta"
+    },
+    {
+      "title": "Ruta Escena Biobío continúa su itinerancia con nuevas localidades y un taller de diseño escénico",
+      "description": null,
+      "date": "2026-11-27",
+      "end_date": "2026-12-12",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Yumbel",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
+      "source_type": "aggregator",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/foto-450x300.jpeg",
+      "discovered_at": "2026-11-23T21:35:56",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Agenda Cultural del Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/agendacultural/ruta-escena-biobio-continua-su-itinerancia-con-nuevas-localidades-y-un-taller-de-diseno-escenico/",
+          "type": "aggregator",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:35:56"
+        }
+      ],
+      "changes": [],
+      "region": "Biobío"
     },
     {
       "title": "Sonidos del sur: Solistas OCM – Concierto de Temporada VIII",
@@ -1709,7 +1765,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:34",
+      "discovered_at": "2026-11-23T21:36:36",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1721,7 +1777,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:34"
+          "seen_at": "2026-11-23T21:36:36"
         }
       ],
       "changes": [],
@@ -1749,7 +1805,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1761,11 +1817,51 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
       "region": "Metropolitana"
+    },
+    {
+      "title": "Noche de los teatros porteños",
+      "description": null,
+      "date": "2026-11-27",
+      "end_date": null,
+      "time": "21:00",
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valparaíso",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": 0,
+      "price_status": "free",
+      "status": "Por confirmar",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/noche-de-los-teatros-portenos/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": null,
+      "discovered_at": "2026-11-23T21:36:46",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Parque Cultural de Valparaíso",
+          "url": "https://parquecultural.cl/events/noche-de-los-teatros-portenos/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:36:46"
+        }
+      ],
+      "changes": [],
+      "region": "Valparaíso"
     },
     {
       "title": "Enredaderas, mi vida entera",
@@ -1789,7 +1885,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://cdn.cclm.cl/web/wp-content/uploads/2026/11/conciwerto-noviembre-2-birimbao.jpg",
-      "discovered_at": "2026-11-22T17:17:49",
+      "discovered_at": "2026-11-23T21:35:44",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1801,7 +1897,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:49"
+          "seen_at": "2026-11-23T21:35:44"
         }
       ],
       "changes": [],
@@ -1829,7 +1925,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1841,7 +1937,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -1869,7 +1965,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/11/Amor-festival_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-11-22T17:18:10",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1881,7 +1977,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:10"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -1919,7 +2015,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -1947,7 +2043,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.cultura.gob.cl/wp-content/uploads/2026/11/concierto-dia-migrante-450x300.jpg",
-      "discovered_at": "2026-11-22T17:17:57",
+      "discovered_at": "2026-11-23T21:35:56",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -1959,7 +2055,47 @@
           "type": "aggregator",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:57"
+          "seen_at": "2026-11-23T21:35:56"
+        }
+      ],
+      "changes": [],
+      "region": "Valparaíso"
+    },
+    {
+      "title": "Teatro \"ENAI\"",
+      "description": null,
+      "date": "2026-12-04",
+      "end_date": "2026-12-05",
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valparaíso",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/teatro-enai/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://parquecultural.cl/wp-content/uploads/2026/11/ENAI_PCdV_web_01.jpg",
+      "discovered_at": "2026-11-23T21:36:46",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Parque Cultural de Valparaíso",
+          "url": "https://parquecultural.cl/events/teatro-enai/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:36:46"
         }
       ],
       "changes": [],
@@ -1997,7 +2133,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -2035,7 +2171,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -2073,7 +2209,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -2101,7 +2237,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2113,7 +2249,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -2141,7 +2277,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://parquecultural.cl/wp-content/uploads/2026/11/Matta_Memorias_de_guerra_PCdV_web_01.jpg",
-      "discovered_at": "2026-11-22T17:18:49",
+      "discovered_at": "2026-11-23T21:36:46",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2153,7 +2289,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:49"
+          "seen_at": "2026-11-23T21:36:46"
         }
       ],
       "changes": [],
@@ -2191,7 +2327,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -2219,7 +2355,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://i0.wp.com/cclm.idastage.com/web/wp-content/uploads/2020/12/andaki.jpg?fit=2100%2C900&ssl=1",
-      "discovered_at": "2026-11-22T17:17:49",
+      "discovered_at": "2026-11-23T21:35:44",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2231,7 +2367,47 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:49"
+          "seen_at": "2026-11-23T21:35:44"
+        }
+      ],
+      "changes": [],
+      "region": "Metropolitana"
+    },
+    {
+      "title": "Festival Pulso Lírico",
+      "description": null,
+      "date": "2026-12-12",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Estación Central",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Matucana 100",
+      "source_url": "https://www.m100.cl/programacion/musica/festival-pulso-lirico-2/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://www.m100.cl/wp-content/uploads/2026/11/Pulso-lirico_slidehome_1920x1488.jpg",
+      "discovered_at": "2026-11-23T21:36:07",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Matucana 100",
+          "url": "https://www.m100.cl/programacion/musica/festival-pulso-lirico-2/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -2269,7 +2445,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:17:36"
+          "seen_at": "2026-11-23T21:35:23"
         }
       ],
       "changes": [],
@@ -2297,7 +2473,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2309,7 +2485,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -2337,7 +2513,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2349,7 +2525,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -2377,7 +2553,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2389,7 +2565,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -2417,7 +2593,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:34",
+      "discovered_at": "2026-11-23T21:36:36",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2429,11 +2605,51 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:34"
+          "seen_at": "2026-11-23T21:36:36"
         }
       ],
       "changes": [],
       "region": "Maule"
+    },
+    {
+      "title": "Exposición \"Arte en fuga\"",
+      "description": null,
+      "date": "2027-01-03",
+      "end_date": null,
+      "time": null,
+      "end_time": null,
+      "venue": null,
+      "address": null,
+      "commune": "Valparaíso",
+      "category": "Cultura",
+      "audience": null,
+      "access": null,
+      "price_value": null,
+      "price_status": "pending",
+      "status": "Por confirmar",
+      "source": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/events/exposicion-arte-en-fuga/",
+      "source_type": "venue",
+      "source_priority": 1,
+      "official": true,
+      "image_url": "https://parquecultural.cl/wp-content/uploads/2026/11/Arte_en_fuga_PCdV_web_01.png",
+      "discovered_at": "2026-11-23T21:36:46",
+      "changed_at": null,
+      "tags": [
+        "ficha sin datos estructurados"
+      ],
+      "sources": [
+        {
+          "name": "Parque Cultural de Valparaíso",
+          "url": "https://parquecultural.cl/events/exposicion-arte-en-fuga/",
+          "type": "venue",
+          "priority": 1,
+          "official": true,
+          "seen_at": "2026-11-23T21:36:46"
+        }
+      ],
+      "changes": [],
+      "region": "Valparaíso"
     },
     {
       "title": "Festival Teatro a Mil 2027",
@@ -2457,7 +2673,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": "https://www.m100.cl/wp-content/uploads/2026/11/Teatro-a-mil_slidehome_1920x1488.jpg",
-      "discovered_at": "2026-11-22T17:18:10",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2469,7 +2685,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:10"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -2497,7 +2713,7 @@
       "source_priority": 1,
       "official": true,
       "image_url": null,
-      "discovered_at": "2026-11-22T17:18:06",
+      "discovered_at": "2026-11-23T21:36:07",
       "changed_at": null,
       "tags": [
         "ficha sin datos estructurados"
@@ -2509,7 +2725,7 @@
           "type": "venue",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-22T17:18:06"
+          "seen_at": "2026-11-23T21:36:07"
         }
       ],
       "changes": [],
@@ -2520,22 +2736,22 @@
     {
       "source_name": "Agenda Cultural del Ministerio de las Culturas",
       "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:17:57",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:35:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 24,
-      "events_found": 4,
-      "events_inserted": 4,
+      "events_found": 7,
+      "events_inserted": 7,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 4,
       "error": null
     },
     {
       "source_name": "Centro Cultural Gabriela Mistral (GAM)",
       "source_url": "https://gam.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:18:36",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:36:29",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -2548,8 +2764,8 @@
     {
       "source_name": "Centro Cultural La Moneda",
       "source_url": "https://www.cclm.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:17:49",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:35:44",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -2562,8 +2778,8 @@
     {
       "source_name": "ChileCultura (Ministerio de las Culturas)",
       "source_url": "https://chilecultura.gob.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:17:38",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:35:25",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -2576,22 +2792,8 @@
     {
       "source_name": "Matucana 100",
       "source_url": "https://www.m100.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:18:10",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 2,
-      "events_inserted": 2,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Parque Cultural de Valparaíso",
-      "source_url": "https://parquecultural.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:18:49",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:36:07",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -2602,15 +2804,29 @@
       "error": null
     },
     {
-      "source_name": "Teatro Municipal de Santiago",
-      "source_url": "https://www.municipal.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:18:06",
+      "source_name": "Parque Cultural de Valparaíso",
+      "source_url": "https://parquecultural.cl/",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:36:46",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
-      "events_found": 10,
-      "events_inserted": 10,
+      "events_found": 5,
+      "events_inserted": 5,
+      "events_merged": 0,
+      "possible_found": 0,
+      "error": null
+    },
+    {
+      "source_name": "Teatro Municipal de Santiago",
+      "source_url": "https://www.municipal.cl/",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:36:07",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 25,
+      "events_found": 9,
+      "events_inserted": 9,
       "events_merged": 0,
       "possible_found": 0,
       "error": null
@@ -2618,8 +2834,8 @@
     {
       "source_name": "Teatro Municipal de Temuco",
       "source_url": "https://www.teatromunicipaltemuco.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:18:20",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:36:19",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -2632,78 +2848,78 @@
     {
       "source_name": "Teatro Regional del Maule",
       "source_url": "https://www.teatroregional.cl/",
-      "started_at": "2026-11-22T17:17:36",
-      "finished_at": "2026-11-22T17:18:34",
+      "started_at": "2026-11-23T21:35:23",
+      "finished_at": "2026-11-23T21:36:36",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 16,
       "events_found": 2,
       "events_inserted": 2,
       "events_merged": 0,
-      "possible_found": 0,
+      "possible_found": 1,
       "error": null
     }
   ],
   "source_state": {
     "Agenda Cultural del Ministerio de las Culturas": {
-      "last_checked_at": "2026-11-22T17:17:57",
-      "last_success_at": "2026-11-22T17:17:57",
+      "last_checked_at": "2026-11-23T21:35:56",
+      "last_success_at": "2026-11-23T21:35:56",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Centro Cultural Gabriela Mistral (GAM)": {
-      "last_checked_at": "2026-11-22T17:18:36",
-      "last_success_at": "2026-11-22T17:18:36",
+      "last_checked_at": "2026-11-23T21:36:29",
+      "last_success_at": "2026-11-23T21:36:29",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Centro Cultural La Moneda": {
-      "last_checked_at": "2026-11-22T17:17:49",
-      "last_success_at": "2026-11-22T17:17:49",
+      "last_checked_at": "2026-11-23T21:35:44",
+      "last_success_at": "2026-11-23T21:35:44",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "ChileCultura (Ministerio de las Culturas)": {
-      "last_checked_at": "2026-11-22T17:17:38",
+      "last_checked_at": "2026-11-23T21:35:25",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 20,
+      "consecutive_failures": 21,
       "refresh_interval_hours": 24
     },
     "Matucana 100": {
-      "last_checked_at": "2026-11-22T17:18:10",
-      "last_success_at": "2026-11-22T17:18:10",
+      "last_checked_at": "2026-11-23T21:36:07",
+      "last_success_at": "2026-11-23T21:36:07",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Parque Cultural de Valparaíso": {
-      "last_checked_at": "2026-11-22T17:18:49",
-      "last_success_at": "2026-11-22T17:18:49",
+      "last_checked_at": "2026-11-23T21:36:46",
+      "last_success_at": "2026-11-23T21:36:46",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Santiago": {
-      "last_checked_at": "2026-11-22T17:18:06",
-      "last_success_at": "2026-11-22T17:18:06",
+      "last_checked_at": "2026-11-23T21:36:07",
+      "last_success_at": "2026-11-23T21:36:07",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Municipal de Temuco": {
-      "last_checked_at": "2026-11-22T17:18:20",
-      "last_success_at": "2026-11-22T17:18:20",
+      "last_checked_at": "2026-11-23T21:36:19",
+      "last_success_at": "2026-11-23T21:36:19",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Regional del Maule": {
-      "last_checked_at": "2026-11-22T17:18:34",
-      "last_success_at": "2026-11-22T17:18:34",
+      "last_checked_at": "2026-11-23T21:36:36",
+      "last_success_at": "2026-11-23T21:36:36",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -2712,34 +2928,44 @@
   "skipped_by_cadence": [],
   "possible_events": [
     {
-      "title": "Domingo 22 de noviembre",
-      "raw_text": "Domingo 22 de noviembre",
-      "date": "2026-11-22",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/",
+      "title": "23.11.2026 / Los Ríos",
+      "raw_text": "23.11.2026 / Los Ríos",
+      "date": "2026-11-23",
+      "commune": null,
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/",
       "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
+      "region": null
     },
     {
-      "title": "Domingo 22 de noviembre ·",
-      "raw_text": "Domingo 22 de noviembre ·",
-      "date": "2026-11-22",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/",
+      "title": "23.11.2026 / Tarapacá",
+      "raw_text": "23.11.2026 / Tarapacá",
+      "date": "2026-11-23",
+      "commune": null,
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/",
       "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
+      "region": null
     },
     {
-      "title": "Domingo 22 de noviembre – 17:00 horas / Serie SB",
-      "raw_text": "Domingo 22 de noviembre – 17:00 horas / Serie SB",
-      "date": "2026-11-22",
-      "commune": "Santiago",
-      "source": "Teatro Municipal de Santiago",
-      "source_url": "https://municipal.cl/espectaculos/ciclo-beethoven-iv-boris-giltburg/",
+      "title": "23.11.2026 / Valparaíso",
+      "raw_text": "23.11.2026 / Valparaíso",
+      "date": "2026-11-23",
+      "commune": "Valparaíso",
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/agendacultural/",
       "reason": "Texto con fecha futura sin datos estructurados",
-      "region": "Metropolitana"
+      "region": "Valparaíso"
+    },
+    {
+      "title": "PUBLICADO EL 23 NOVIEMBRE, 2026",
+      "raw_text": "PUBLICADO EL 23 NOVIEMBRE, 2026",
+      "date": "2026-11-23",
+      "commune": null,
+      "source": "Agenda Cultural del Ministerio de las Culturas",
+      "source_url": "https://www.cultura.gob.cl/redcultura/programa-red-cultura-presenta-directorio-de-espacios-culturales-2026-con-mas-de-300-recintos-en-todo-el-pais/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": null
     },
     {
       "title": "Lunes 23 de noviembre – 18:00 horas / Ó2",
@@ -2750,6 +2976,16 @@
       "source_url": "https://municipal.cl/espectaculos/elektra-de-richard-strauss-2026/",
       "reason": "Texto con fecha futura sin datos estructurados",
       "region": "Metropolitana"
+    },
+    {
+      "title": "23 de Noviembre de 2026",
+      "raw_text": "23 de Noviembre de 2026",
+      "date": "2026-11-23",
+      "commune": "Talca",
+      "source": "Teatro Regional del Maule",
+      "source_url": "https://www.teatroregional.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados",
+      "region": "Maule"
     },
     {
       "title": "Ministerio de las Culturas, las Artes y el Patrimonio",
@@ -4853,6 +5089,30 @@
       "url": "https://ww2.teatromunicipaltemuco.cl/product/sin-titulo/",
       "domain": "ww2.teatromunicipaltemuco.cl",
       "found_on": "https://www.teatromunicipaltemuco.cl/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ticketplus.cl/events/festival-pulso-lirico-2026-12-12-16-00-00-0300",
+      "domain": "ticketplus.cl",
+      "found_on": "https://www.m100.cl/programacion/musica/festival-pulso-lirico-2/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ww2.teatromunicipaltemuco.cl/2026/11/23/orquesta-filarmonica-de-temuco-dedica-su-noveno-concierto-de-temporada-a-joseph-haydn/",
+      "domain": "ww2.teatromunicipaltemuco.cl",
+      "found_on": "https://www.teatromunicipaltemuco.cl/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://ww2.teatromunicipaltemuco.cl/2026/11/17/el-teatro-municipal-de-temuco-fue-escenario-de-una-ponencia-que-vincula-comunicacion-y-ensayo-coral/",
+      "domain": "ww2.teatromunicipaltemuco.cl",
+      "found_on": "https://www.teatromunicipaltemuco.cl/",
+      "reason": "Enlace externo con pinta de agenda/eventos"
+    },
+    {
+      "url": "https://www.vivoticket.cl/web/concierto-navidad-2026",
+      "domain": "www.vivoticket.cl",
+      "found_on": "https://www.teatroregional.cl/archivo/28746",
       "reason": "Enlace externo con pinta de agenda/eventos"
     }
   ]
