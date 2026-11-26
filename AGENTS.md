@@ -5,3 +5,8 @@ Al diseñar, corregir, auditar o publicar, leer `docs/ASESOR_LEGAL_TECNOLOGICO.m
 
 ## Colaboración Claude + ChatGPT/Codex mediante GitHub
 Para cambios, auditorías, Pull Requests y transferencias entre agentes, aplicar `docs/agent-workflow.md`. Recuperar el Issue, diff, SHA y resultados de pruebas antes de pedir contexto adicional. No asumir que la rama predeterminada se llama `main`. Mantener estas reglas específicas del proyecto y las exigencias jurídico-tecnológicas aplicables; el protocolo compartido no las reemplaza.
+
+## Continuidad y publicación
+Identificar el remoto y la rama predeterminada efectivos, inventariar y preservar cambios locales, y registrar el SHA de código comprobado. Mantener separados la rama de código, el historial operativo de `news-data` y los snapshots de `events-data`. En respaldos documentales, publicar material saneado mediante rama y PR, aplicar los controles de fusión del protocolo y comprobar por separado el commit remoto, la CI, la integración y la publicación del sitio.
+
+Consultar [README](README.md), [memoria operativa](docs/MEMORIA_OPERATIVA.md), [decisiones](docs/DECISIONES.md), [registro de cambios](CHANGELOG.md) y [continuidad de sesión](docs/CONTINUIDAD_NUEVA_SESION.md). Respetar los marcadores `[CONFIRMADO]` y `[NO MODIFICAR]`. Registrar el fundamento cuando una instrucción posterior expresa del propietario sustituya un acuerdo anterior.
