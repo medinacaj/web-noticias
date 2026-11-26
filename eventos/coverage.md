@@ -1,13 +1,13 @@
 # Cobertura verificada · Eventos Región del Biobío
 
-Snapshot: `2026-11-25T19:27:23`
+Snapshot: `2026-11-26T19:11:42`
 
 La cobertura vigente cuenta solo eventos de `events` con fecha final igual o posterior al día de revisión en Chile y no cancelados. El snapshot puede conservar hasta 30 días de eventos históricos. HTTP 2xx y candidatos no acreditan eventos verificados.
 
 | Comuna | Fuentes locales habilitadas | Fuentes HTTP 2xx | Eventos publicados | Candidatos por revisar |
 |---|---:|---:|---:|---:|
-| Concepción | 8 | 6 | 1 | 52 |
-| Talcahuano | 1 | 0 | 0 | 0 |
+| Concepción | 8 | 8 | 1 | 81 |
+| Talcahuano | 1 | 0 | 0 | 1 |
 | Hualpén | 1 | 1 | 0 | 0 |
 | San Pedro de la Paz | 1 | 0 | 0 | 0 |
 | Chiguayante | 1 | 0 | 2 | 2 |
@@ -15,32 +15,32 @@ La cobertura vigente cuenta solo eventos de `events` con fecha final igual o pos
 | Tomé | 1 | 0 | 0 | 0 |
 | Coronel | 1 | 1 | 0 | 0 |
 | Lota | 1 | 1 | 0 | 1 |
-| Hualqui | 1 | 0 | 0 | 0 |
+| Hualqui | 1 | 1 | 0 | 0 |
 | Santa Juana | 1 | 1 | 0 | 0 |
-| Florida | 1 | 1 | 0 | 0 |
-| Arauco | 1 | 1 | 0 | 5 |
+| Florida | 1 | 1 | 0 | 1 |
+| Arauco | 1 | 1 | 0 | 7 |
 | Cañete | 1 | 1 | 0 | 0 |
 | Contulmo | 1 | 1 | 0 | 0 |
 | Curanilahue | 1 | 0 | 0 | 0 |
 | Lebu | 1 | 0 | 0 | 0 |
 | Los Álamos | 1 | 0 | 0 | 0 |
 | Tirúa | 1 | 0 | 0 | 0 |
-| Los Ángeles | 2 | 1 | 0 | 0 |
+| Los Ángeles | 2 | 2 | 0 | 3 |
 | Antuco | 1 | 0 | 0 | 0 |
 | Cabrero | 1 | 1 | 0 | 0 |
-| Laja | 1 | 1 | 0 | 0 |
+| Laja | 1 | 1 | 0 | 1 |
 | Mulchén | 1 | 1 | 0 | 2 |
-| Nacimiento | 1 | 1 | 1 | 10 |
-| Negrete | 1 | 1 | 0 | 1 |
+| Nacimiento | 1 | 1 | 0 | 10 |
+| Negrete | 1 | 1 | 0 | 2 |
 | Quilaco | 1 | 0 | 0 | 0 |
 | Quilleco | 1 | 1 | 0 | 0 |
 | San Rosendo | 1 | 1 | 0 | 6 |
-| Santa Bárbara | 1 | 1 | 0 | 0 |
+| Santa Bárbara | 1 | 1 | 0 | 3 |
 | Tucapel | 1 | 1 | 0 | 0 |
 | Yumbel | 1 | 1 | 0 | 0 |
 | Alto Biobío | 1 | 1 | 0 | 2 |
 
-**Cobertura vigente: 3/33 comunas.**
+**Cobertura vigente: 2/33 comunas.**
 
 Nota: hay ticketeras y radares nacionales sin comuna confiable; sus candidatos no se publican automáticamente.
 
@@ -50,25 +50,23 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 
 | Fuente | Candidatos acumulados | HTTP esta ejecución | Páginas consultadas | Eventos aceptados |
 |---|---:|---|---:|---:|
+| Sabes.cl | 168 | 200 | 15 | 0 |
+| BioBioChile — Región del Biobío | 56 | 200 | 25 | 0 |
+| TVU Prensa | 40 | 200 | 25 | 0 |
 | PuntoTicket — todos los eventos | 30 | 200 | 30 | 0 |
-| Sabes.cl | 27 | No consultada | 0 | 0 |
+| G5 Noticias | 26 | 200 | 10 | 0 |
 | Festival Internacional de Teatro del Biobío (FTB) | 25 | 200 | 15 | 0 |
-| Ministerio de las Culturas — Agenda cultural | 10 | No consultada | 0 | 0 |
-| Municipalidad de Nacimiento | 10 | 200 | 25 | 1 |
-| G5 Noticias | 7 | No consultada | 0 | 0 |
+| Diario Concepción — Cultura | 22 | 200 | 25 | 0 |
+| Noticias UdeC | 22 | 200 | 7 | 0 |
+| Ministerio de las Culturas — Agenda cultural | 12 | 200 | 22 | 0 |
+| Municipalidad de Nacimiento | 10 | 200 | 25 | 0 |
+| Municipalidad de Arauco | 7 | 200 | 25 | 1 |
 | Municipalidad de San Rosendo | 6 | 200 | 16 | 0 |
-| La Tribuna (Los Ángeles) | 5 | No consultada | 0 | 0 |
-| Municipalidad de Arauco | 5 | 200 | 25 | 1 |
-| BioBioChile — Región del Biobío | 3 | No consultada | 0 | 0 |
-| Municipalidad de Chiguayante | 2 | Sin respuesta | 0 | 0 |
-| Municipalidad de Mulchén | 2 | 200 | 5 | 0 |
-| Municipalidad de Alto Biobío | 2 | 200 | 21 | 0 |
-| Diario Concepción — Cultura | 1 | No consultada | 0 | 0 |
-| Radio UdeC | 1 | No consultada | 0 | 0 |
+| Radio UdeC | 5 | 200 | 15 | 0 |
+| Municipalidad de Santa Bárbara | 3 | 200 | 13 | 0 |
+| TuAcceso | 3 | 200 | 25 | 0 |
 
-**Fuentes omitidas por cadencia:** 15 (sin petición nueva).
-
-**Revalidación de fichas vigentes:** 2/2 respuestas satisfactorias.
+**Revalidación de fichas vigentes:** 1/1 respuestas satisfactorias.
 
 ## Candidatos pendientes por motivo de revisión
 
@@ -76,10 +74,10 @@ Estos registros están en cuarentena; no son eventos publicados ni se verifican 
 
 | Motivo registrado | Candidatos |
 |---|---:|
-| Texto con fecha futura sin datos estructurados | 104 |
-| Evento estructurado sin comuna del Biobío identificable | 29 |
-| Proceso electoral/administrativo interno: verificar acceso público antes de difundir | 5 |
-| Ticketera nacional: falta coincidencia explícita de comuna y región del Biobío en los datos estructurados del recinto | 1 |
+| Texto con fecha futura sin datos estructurados | 411 |
+| Evento estructurado sin comuna del Biobío identificable | 31 |
+| Proceso electoral/administrativo interno: verificar acceso público antes de difundir | 7 |
+| Ticketera nacional: falta coincidencia explícita de comuna y región del Biobío en los datos estructurados del recinto | 2 |
 
 ## Alertas de salud por fuente
 
@@ -87,12 +85,12 @@ Se informa desde 3 fallos consecutivos **registrados** en fuentes habilitadas. N
 
 | Fuente | Fallos consecutivos | Último HTTP | Última comprobación |
 |---|---:|---|---|
-| Municipalidad de Antuco | 23 | 200 | 2026-11-25T19:24:56 |
-| Municipalidad de Curanilahue | 23 | Sin respuesta | 2026-11-25T19:27:07 |
-| Municipalidad de Lebu | 23 | 403 | 2026-11-25T19:24:35 |
-| Municipalidad de Los Álamos | 23 | 403 | 2026-11-25T19:24:36 |
-| Municipalidad de Quilaco | 23 | Sin respuesta | 2026-11-25T19:25:35 |
-| Municipalidad de San Pedro de la Paz | 23 | Sin respuesta | 2026-11-25T19:22:12 |
-| Municipalidad de Talcahuano | 23 | Sin respuesta | 2026-11-25T19:22:18 |
-| Municipalidad de Tirúa | 23 | 200 | 2026-11-25T19:24:49 |
-| Municipalidad de Tomé | 23 | 403 | 2026-11-25T19:22:26 |
+| Municipalidad de Antuco | 24 | 200 | 2026-11-26T19:07:32 |
+| Municipalidad de Curanilahue | 24 | Sin respuesta | 2026-11-26T19:09:38 |
+| Municipalidad de Lebu | 24 | 403 | 2026-11-26T19:07:00 |
+| Municipalidad de Los Álamos | 24 | 403 | 2026-11-26T19:07:00 |
+| Municipalidad de Quilaco | 24 | Sin respuesta | 2026-11-26T19:08:38 |
+| Municipalidad de San Pedro de la Paz | 24 | Sin respuesta | 2026-11-26T19:05:39 |
+| Municipalidad de Talcahuano | 24 | Sin respuesta | 2026-11-26T19:05:45 |
+| Municipalidad de Tirúa | 24 | 200 | 2026-11-26T19:07:12 |
+| Municipalidad de Tomé | 24 | 403 | 2026-11-26T19:05:55 |
