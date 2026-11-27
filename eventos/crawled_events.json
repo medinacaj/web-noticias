@@ -1,16 +1,16 @@
 {
   "_notes": "Generado por actualizar.py. Solo contiene lo que las fuentes publicaron en esta corrida y en corridas anteriores; nada se completa a mano.",
-  "generated_at": "2026-11-26T19:11:42",
+  "generated_at": "2026-11-27T19:06:48",
   "summary": {
-    "sources_attempted": 55,
-    "sources_ok": 45,
+    "sources_attempted": 40,
+    "sources_ok": 30,
     "sources_failed": 10,
     "events_found": 2,
     "events_inserted": 1,
     "events_merged": 0,
-    "possible_events": 316,
+    "possible_events": 6,
     "quarantined_candidates": 37,
-    "candidates": 1,
+    "candidates": 0,
     "revalidation_attempts": 1,
     "revalidated_ok": 1,
     "errors": [
@@ -65,7 +65,7 @@
         ]
       }
     ],
-    "skipped_by_cadence": 0
+    "skipped_by_cadence": 15
   },
   "events": [
     {
@@ -100,7 +100,7 @@
           "type": "ticketing",
           "priority": 2,
           "official": false,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -137,7 +137,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -174,7 +174,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -211,7 +211,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -248,7 +248,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -285,7 +285,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -322,7 +322,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -359,7 +359,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -396,7 +396,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -433,7 +433,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -470,7 +470,7 @@
           "type": "municipal",
           "priority": 1,
           "official": true,
-          "seen_at": "2026-11-26T19:05:35"
+          "seen_at": "2026-11-27T19:01:48"
         }
       ],
       "changes": []
@@ -478,38 +478,10 @@
   ],
   "runs": [
     {
-      "source_name": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:20",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 53,
-      "error": null
-    },
-    {
-      "source_name": "Biobío Cultura (Seremi) — RSS",
-      "source_url": "https://www.cultura.gob.cl/feed/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:14",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
       "source_name": "Corcudec (Teatro UdeC)",
       "source_url": "https://www.corcudec.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:47",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:06:06",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
@@ -522,8 +494,8 @@
     {
       "source_name": "Corcudec / Teatro Universidad de Concepción — Ticketplus",
       "source_url": "https://ticketplus.cl/c/corporacion-cultural-universidad-de-concepcion",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:38",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:54",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -534,27 +506,13 @@
       "error": null
     },
     {
-      "source_name": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:03",
+      "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:06:02",
       "ok": 1,
       "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 21,
-      "error": null
-    },
-    {
-      "source_name": "El Contraste (Los Ángeles)",
-      "source_url": "https://elcontraste.cl/los_angeles/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:13",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 7,
+      "pages_fetched": 15,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -562,80 +520,10 @@
       "error": null
     },
     {
-      "source_name": "Extensión Universidad del Bío-Bío",
-      "source_url": "https://extension.ubiobio.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:03",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 2,
-      "error": null
-    },
-    {
-      "source_name": "Festival Internacional de Teatro del Biobío (FTB)",
-      "source_url": "https://ftb.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:46",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 15,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:13",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 10,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 19,
-      "error": null
-    },
-    {
-      "source_name": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:07",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 6,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "Ministerio de las Culturas — Agenda cultural",
-      "source_url": "https://www.cultura.gob.cl/agendacultural/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:10:56",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 22,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 3,
-      "error": null
-    },
-    {
       "source_name": "Municipalidad de Alto Biobío",
       "source_url": "https://munialtobiobio.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:10:39",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:06:48",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 21,
@@ -648,8 +536,8 @@
     {
       "source_name": "Municipalidad de Antuco",
       "source_url": "https://www.antuco.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:32",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:44",
       "ok": 0,
       "http_status": 200,
       "pages_fetched": 0,
@@ -662,8 +550,8 @@
     {
       "source_name": "Municipalidad de Arauco",
       "source_url": "https://muniarauco.cl/cultura/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:08:11",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:04:24",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -676,8 +564,8 @@
     {
       "source_name": "Municipalidad de Cabrero",
       "source_url": "https://www.cabrero.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:35",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:46",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -690,8 +578,8 @@
     {
       "source_name": "Municipalidad de Cañete",
       "source_url": "https://municanete.cl/v2/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:00",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:07",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 9,
@@ -704,8 +592,8 @@
     {
       "source_name": "Municipalidad de Chiguayante",
       "source_url": "https://chiguayante.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:08:25",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:04:39",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -718,8 +606,8 @@
     {
       "source_name": "Municipalidad de Concepción",
       "source_url": "https://www.concepcion.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:02",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:18",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 3,
@@ -732,8 +620,8 @@
     {
       "source_name": "Municipalidad de Contulmo",
       "source_url": "https://www.contulmo.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:54",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:08",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -746,8 +634,8 @@
     {
       "source_name": "Municipalidad de Coronel",
       "source_url": "https://www.coronel.cl/noticias/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:03",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:16",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -760,8 +648,8 @@
     {
       "source_name": "Municipalidad de Curanilahue",
       "source_url": "https://www.curanilahue.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:38",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:06:14",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -774,8 +662,8 @@
     {
       "source_name": "Municipalidad de Florida",
       "source_url": "https://muniflorida.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:41",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 4,
@@ -788,8 +676,8 @@
     {
       "source_name": "Municipalidad de Hualpén",
       "source_url": "http://www.hualpenciudad.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:22",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:28",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 18,
@@ -802,11 +690,25 @@
     {
       "source_name": "Municipalidad de Hualqui",
       "source_url": "https://www.munihualqui.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:18",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:34",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
+      "events_found": 0,
+      "events_inserted": 0,
+      "events_merged": 0,
+      "possible_found": 4,
+      "error": null
+    },
+    {
+      "source_name": "Municipalidad de Laja",
+      "source_url": "https://www.munilaja.cl/",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:04:14",
+      "ok": 1,
+      "http_status": 200,
+      "pages_fetched": 10,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
@@ -814,24 +716,10 @@
       "error": null
     },
     {
-      "source_name": "Municipalidad de Laja",
-      "source_url": "https://www.munilaja.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:59",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 10,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 1,
-      "error": null
-    },
-    {
       "source_name": "Municipalidad de Lebu",
       "source_url": "https://lebu.cl/eventos/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:00",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:09",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -844,8 +732,8 @@
     {
       "source_name": "Municipalidad de Los Álamos",
       "source_url": "https://munilosalamos.cl/categoria/noticias/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:00",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:09",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -858,8 +746,8 @@
     {
       "source_name": "Municipalidad de Los Ángeles",
       "source_url": "https://www.losangeles.cl/category/noticias/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:26",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:37",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -872,8 +760,8 @@
     {
       "source_name": "Municipalidad de Lota",
       "source_url": "https://lota.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:30",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:43",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -886,8 +774,8 @@
     {
       "source_name": "Municipalidad de Mulchén",
       "source_url": "https://www.munimulchen.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:08:18",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:04:33",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 5,
@@ -900,8 +788,8 @@
     {
       "source_name": "Municipalidad de Nacimiento",
       "source_url": "https://www.nacimiento.cl/actividades",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:08:25",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:04:41",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 25,
@@ -914,22 +802,22 @@
     {
       "source_name": "Municipalidad de Negrete",
       "source_url": "https://www.muninegrete.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:08",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:22",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 13,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 1,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Penco",
       "source_url": "https://penco.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:05:55",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:08",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 8,
@@ -942,8 +830,8 @@
     {
       "source_name": "Municipalidad de Quilaco",
       "source_url": "https://www.quilaco.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:08:38",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:04:54",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -956,8 +844,8 @@
     {
       "source_name": "Municipalidad de Quilleco",
       "source_url": "https://municipalidadquilleco.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:08:31",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:04:47",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -970,8 +858,8 @@
     {
       "source_name": "Municipalidad de San Pedro de la Paz",
       "source_url": "https://www.sanpedrodelapaz.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:05:39",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:01:52",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -984,8 +872,8 @@
     {
       "source_name": "Municipalidad de San Rosendo",
       "source_url": "https://www.municipalidadsanrosendo.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:17",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:37",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 16,
@@ -998,22 +886,22 @@
     {
       "source_name": "Municipalidad de Santa Bárbara",
       "source_url": "https://www.santabarbara.cl/noticias/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:15",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:28",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 13,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 3,
+      "possible_found": 0,
       "error": null
     },
     {
       "source_name": "Municipalidad de Santa Juana",
       "source_url": "https://www.santajuana.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:06:34",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:42",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -1026,8 +914,8 @@
     {
       "source_name": "Municipalidad de Talcahuano",
       "source_url": "https://www.talcahuano.cl/actividades",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:05:45",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:00",
       "ok": 0,
       "http_status": null,
       "pages_fetched": 0,
@@ -1040,8 +928,8 @@
     {
       "source_name": "Municipalidad de Tirúa",
       "source_url": "https://www.tirua.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:07:12",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:03:24",
       "ok": 0,
       "http_status": 200,
       "pages_fetched": 0,
@@ -1054,8 +942,8 @@
     {
       "source_name": "Municipalidad de Tomé",
       "source_url": "https://www.tome.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:05:55",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:02:09",
       "ok": 0,
       "http_status": 403,
       "pages_fetched": 0,
@@ -1068,8 +956,8 @@
     {
       "source_name": "Municipalidad de Tucapel",
       "source_url": "https://www.munitucapel.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:13",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:28",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -1082,8 +970,8 @@
     {
       "source_name": "Municipalidad de Yumbel",
       "source_url": "https://yumbel.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:35",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:51",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 3,
@@ -1094,108 +982,24 @@
       "error": null
     },
     {
-      "source_name": "Noticias UdeC",
-      "source_url": "https://noticias.udec.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:10:36",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 7,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 22,
-      "error": null
-    },
-    {
-      "source_name": "Passline",
-      "source_url": "https://www.passline.com/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:58",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 1,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "PrimeTicket",
-      "source_url": "https://www.primeticket.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:10:26",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 17,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 0,
-      "error": null
-    },
-    {
       "source_name": "PuntoTicket — todos los eventos",
       "source_url": "https://www.puntoticket.com/todos",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:10:25",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:06:48",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
       "events_found": 0,
       "events_inserted": 0,
       "events_merged": 0,
-      "possible_found": 2,
-      "error": null
-    },
-    {
-      "source_name": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:42",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 15,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 4,
-      "error": null
-    },
-    {
-      "source_name": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:05",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 15,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 141,
-      "error": null
-    },
-    {
-      "source_name": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:11:23",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 40,
+      "possible_found": 1,
       "error": null
     },
     {
       "source_name": "Teatro Biobío",
       "source_url": "https://teatrobiobio.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:35",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:56",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 2,
@@ -1208,8 +1012,8 @@
     {
       "source_name": "Teatro Biobío — Ticketplus",
       "source_url": "https://ticketplus.cl/en/companies/teatro-biobio",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:09:37",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:05:52",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 1,
@@ -1222,8 +1026,8 @@
     {
       "source_name": "Ticketplus — Región del Biobío",
       "source_url": "https://ticketplus.cl/en/states/region-del-bio-bio",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:10:29",
+      "started_at": "2026-11-27T19:01:48",
+      "finished_at": "2026-11-27T19:06:47",
       "ok": 1,
       "http_status": 200,
       "pages_fetched": 30,
@@ -1231,20 +1035,6 @@
       "events_inserted": 0,
       "events_merged": 0,
       "possible_found": 0,
-      "error": null
-    },
-    {
-      "source_name": "TuAcceso",
-      "source_url": "https://www.tuacceso.cl/",
-      "started_at": "2026-11-26T19:05:35",
-      "finished_at": "2026-11-26T19:10:19",
-      "ok": 1,
-      "http_status": 200,
-      "pages_fetched": 25,
-      "events_found": 0,
-      "events_inserted": 0,
-      "events_merged": 0,
-      "possible_found": 3,
       "error": null
     }
   ],
@@ -1264,15 +1054,15 @@
       "refresh_interval_hours": 48
     },
     "Corcudec (Teatro UdeC)": {
-      "last_checked_at": "2026-11-26T19:09:47",
-      "last_success_at": "2026-11-26T19:09:47",
+      "last_checked_at": "2026-11-27T19:06:06",
+      "last_success_at": "2026-11-27T19:06:06",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Corcudec / Teatro Universidad de Concepción — Ticketplus": {
-      "last_checked_at": "2026-11-26T19:09:38",
-      "last_success_at": "2026-11-26T19:09:38",
+      "last_checked_at": "2026-11-27T19:05:54",
+      "last_success_at": "2026-11-27T19:05:54",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1299,8 +1089,8 @@
       "refresh_interval_hours": 48
     },
     "Festival Internacional de Teatro del Biobío (FTB)": {
-      "last_checked_at": "2026-11-26T19:09:46",
-      "last_success_at": "2026-11-26T19:09:46",
+      "last_checked_at": "2026-11-27T19:06:02",
+      "last_success_at": "2026-11-27T19:06:02",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1327,232 +1117,232 @@
       "refresh_interval_hours": 48
     },
     "Municipalidad de Alto Biobío": {
-      "last_checked_at": "2026-11-26T19:10:39",
-      "last_success_at": "2026-11-26T19:10:39",
+      "last_checked_at": "2026-11-27T19:06:48",
+      "last_success_at": "2026-11-27T19:06:48",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Antuco": {
-      "last_checked_at": "2026-11-26T19:07:32",
+      "last_checked_at": "2026-11-27T19:03:44",
       "last_success_at": null,
       "last_http_status": 200,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Arauco": {
-      "last_checked_at": "2026-11-26T19:08:11",
-      "last_success_at": "2026-11-26T19:08:11",
+      "last_checked_at": "2026-11-27T19:04:24",
+      "last_success_at": "2026-11-27T19:04:24",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Cabrero": {
-      "last_checked_at": "2026-11-26T19:07:35",
-      "last_success_at": "2026-11-26T19:07:35",
+      "last_checked_at": "2026-11-27T19:03:46",
+      "last_success_at": "2026-11-27T19:03:46",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Cañete": {
-      "last_checked_at": "2026-11-26T19:07:00",
-      "last_success_at": "2026-11-26T19:07:00",
+      "last_checked_at": "2026-11-27T19:03:07",
+      "last_success_at": "2026-11-27T19:03:07",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Chiguayante": {
-      "last_checked_at": "2026-11-26T19:08:25",
+      "last_checked_at": "2026-11-27T19:04:39",
       "last_success_at": "2026-11-24T20:12:49",
       "last_http_status": null,
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Concepción": {
-      "last_checked_at": "2026-11-26T19:06:02",
-      "last_success_at": "2026-11-26T19:06:02",
+      "last_checked_at": "2026-11-27T19:02:18",
+      "last_success_at": "2026-11-27T19:02:18",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Contulmo": {
-      "last_checked_at": "2026-11-26T19:06:54",
-      "last_success_at": "2026-11-26T19:06:54",
+      "last_checked_at": "2026-11-27T19:03:08",
+      "last_success_at": "2026-11-27T19:03:08",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Coronel": {
-      "last_checked_at": "2026-11-26T19:06:03",
-      "last_success_at": "2026-11-26T19:06:03",
+      "last_checked_at": "2026-11-27T19:02:16",
+      "last_success_at": "2026-11-27T19:02:16",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Curanilahue": {
-      "last_checked_at": "2026-11-26T19:09:38",
+      "last_checked_at": "2026-11-27T19:06:14",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Florida": {
-      "last_checked_at": "2026-11-26T19:06:41",
-      "last_success_at": "2026-11-26T19:06:41",
+      "last_checked_at": "2026-11-27T19:02:56",
+      "last_success_at": "2026-11-27T19:02:56",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Hualpén": {
-      "last_checked_at": "2026-11-26T19:06:22",
-      "last_success_at": "2026-11-26T19:06:22",
+      "last_checked_at": "2026-11-27T19:02:28",
+      "last_success_at": "2026-11-27T19:02:28",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Hualqui": {
-      "last_checked_at": "2026-11-26T19:06:18",
-      "last_success_at": "2026-11-26T19:06:18",
+      "last_checked_at": "2026-11-27T19:02:34",
+      "last_success_at": "2026-11-27T19:02:34",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Laja": {
-      "last_checked_at": "2026-11-26T19:07:59",
-      "last_success_at": "2026-11-26T19:07:59",
+      "last_checked_at": "2026-11-27T19:04:14",
+      "last_success_at": "2026-11-27T19:04:14",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Lebu": {
-      "last_checked_at": "2026-11-26T19:07:00",
+      "last_checked_at": "2026-11-27T19:03:09",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Los Álamos": {
-      "last_checked_at": "2026-11-26T19:07:00",
+      "last_checked_at": "2026-11-27T19:03:09",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Los Ángeles": {
-      "last_checked_at": "2026-11-26T19:07:26",
-      "last_success_at": "2026-11-26T19:07:26",
+      "last_checked_at": "2026-11-27T19:03:37",
+      "last_success_at": "2026-11-27T19:03:37",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Lota": {
-      "last_checked_at": "2026-11-26T19:06:30",
-      "last_success_at": "2026-11-26T19:06:30",
+      "last_checked_at": "2026-11-27T19:02:43",
+      "last_success_at": "2026-11-27T19:02:43",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Mulchén": {
-      "last_checked_at": "2026-11-26T19:08:18",
-      "last_success_at": "2026-11-26T19:08:18",
+      "last_checked_at": "2026-11-27T19:04:33",
+      "last_success_at": "2026-11-27T19:04:33",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Nacimiento": {
-      "last_checked_at": "2026-11-26T19:08:25",
-      "last_success_at": "2026-11-26T19:08:25",
+      "last_checked_at": "2026-11-27T19:04:41",
+      "last_success_at": "2026-11-27T19:04:41",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Negrete": {
-      "last_checked_at": "2026-11-26T19:09:08",
-      "last_success_at": "2026-11-26T19:09:08",
+      "last_checked_at": "2026-11-27T19:05:22",
+      "last_success_at": "2026-11-27T19:05:22",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Penco": {
-      "last_checked_at": "2026-11-26T19:05:55",
-      "last_success_at": "2026-11-26T19:05:55",
+      "last_checked_at": "2026-11-27T19:02:08",
+      "last_success_at": "2026-11-27T19:02:08",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Quilaco": {
-      "last_checked_at": "2026-11-26T19:08:38",
+      "last_checked_at": "2026-11-27T19:04:54",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Quilleco": {
-      "last_checked_at": "2026-11-26T19:08:31",
-      "last_success_at": "2026-11-26T19:08:31",
+      "last_checked_at": "2026-11-27T19:04:47",
+      "last_success_at": "2026-11-27T19:04:47",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de San Pedro de la Paz": {
-      "last_checked_at": "2026-11-26T19:05:39",
+      "last_checked_at": "2026-11-27T19:01:52",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de San Rosendo": {
-      "last_checked_at": "2026-11-26T19:09:17",
-      "last_success_at": "2026-11-26T19:09:17",
+      "last_checked_at": "2026-11-27T19:05:37",
+      "last_success_at": "2026-11-27T19:05:37",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Santa Bárbara": {
-      "last_checked_at": "2026-11-26T19:09:15",
-      "last_success_at": "2026-11-26T19:09:15",
+      "last_checked_at": "2026-11-27T19:05:28",
+      "last_success_at": "2026-11-27T19:05:28",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Santa Juana": {
-      "last_checked_at": "2026-11-26T19:06:34",
-      "last_success_at": "2026-11-26T19:06:34",
+      "last_checked_at": "2026-11-27T19:02:42",
+      "last_success_at": "2026-11-27T19:02:42",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Talcahuano": {
-      "last_checked_at": "2026-11-26T19:05:45",
+      "last_checked_at": "2026-11-27T19:02:00",
       "last_success_at": null,
       "last_http_status": null,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Tirúa": {
-      "last_checked_at": "2026-11-26T19:07:12",
+      "last_checked_at": "2026-11-27T19:03:24",
       "last_success_at": null,
       "last_http_status": 200,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Tomé": {
-      "last_checked_at": "2026-11-26T19:05:55",
+      "last_checked_at": "2026-11-27T19:02:09",
       "last_success_at": null,
       "last_http_status": 403,
-      "consecutive_failures": 24,
+      "consecutive_failures": 25,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Tucapel": {
-      "last_checked_at": "2026-11-26T19:09:13",
-      "last_success_at": "2026-11-26T19:09:13",
+      "last_checked_at": "2026-11-27T19:05:28",
+      "last_success_at": "2026-11-27T19:05:28",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
     },
     "Municipalidad de Yumbel": {
-      "last_checked_at": "2026-11-26T19:09:35",
-      "last_success_at": "2026-11-26T19:09:35",
+      "last_checked_at": "2026-11-27T19:05:51",
+      "last_success_at": "2026-11-27T19:05:51",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 24
@@ -1579,8 +1369,8 @@
       "refresh_interval_hours": 48
     },
     "PuntoTicket — todos los eventos": {
-      "last_checked_at": "2026-11-26T19:10:25",
-      "last_success_at": "2026-11-26T19:10:25",
+      "last_checked_at": "2026-11-27T19:06:48",
+      "last_success_at": "2026-11-27T19:06:48",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1607,22 +1397,22 @@
       "refresh_interval_hours": 48
     },
     "Teatro Biobío": {
-      "last_checked_at": "2026-11-26T19:09:35",
-      "last_success_at": "2026-11-26T19:09:35",
+      "last_checked_at": "2026-11-27T19:05:56",
+      "last_success_at": "2026-11-27T19:05:56",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Teatro Biobío — Ticketplus": {
-      "last_checked_at": "2026-11-26T19:09:37",
-      "last_success_at": "2026-11-26T19:09:37",
+      "last_checked_at": "2026-11-27T19:05:52",
+      "last_success_at": "2026-11-27T19:05:52",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
     },
     "Ticketplus — Región del Biobío": {
-      "last_checked_at": "2026-11-26T19:10:29",
-      "last_success_at": "2026-11-26T19:10:29",
+      "last_checked_at": "2026-11-27T19:06:47",
+      "last_success_at": "2026-11-27T19:06:47",
       "last_http_status": 200,
       "consecutive_failures": 0,
       "refresh_interval_hours": 12
@@ -1635,2393 +1425,24 @@
       "refresh_interval_hours": 48
     }
   },
-  "skipped_by_cadence": [],
+  "skipped_by_cadence": [
+    "Passline",
+    "TuAcceso",
+    "PrimeTicket",
+    "Noticias UdeC",
+    "Extensión Universidad del Bío-Bío",
+    "Ministerio de las Culturas — Agenda cultural",
+    "BioBioChile — Región del Biobío",
+    "Diario Concepción — Cultura",
+    "Sabes.cl",
+    "G5 Noticias",
+    "TVU Prensa",
+    "La Tribuna (Los Ángeles)",
+    "El Contraste (Los Ángeles)",
+    "Radio UdeC",
+    "Biobío Cultura (Seremi) — RSS"
+  ],
   "possible_events": [
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "La Dirección Meteorológica de Chile emitió un aviso por altas temperaturas entre Coquimbo y el Bío Bío, desde la tarde del martes 24 hasta la del jueves 26 de noviembre, con máximas cercanas a los 32°C. Senapred recomendó hidratarse, evitar exponerse al sol entre las 11:00 y las 17:00 horas y no dejar personas ni mascotas dentro de vehículos.",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/21/emiten-aviso-meteorologico-por-evento-de-altas-temperaturas-desde-coquimbo-al-bio-bio.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Documentos Perdidos",
-      "raw_text": "La Autoridad Marítima emitió un aviso de marejadas entre este martes 24 y el jueves 26 de noviembre, desde el Golfo de Penas hasta Arica, incluyendo el archipiélago Juan Fernández. El mayor oleaje se espera durante las horas de pleamar, principalmente entre las 23:00 y las 02:00, y entre las 11:00 y las 14:00, según la zona. Rapa Nui mantendrá condiciones normales. Se recomendó evitar sectores rocosos, no ingresar al mar y suspender actividades náuticas sin autorización.",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/23/marejadas-afectarian-a-la-costa-chilena-entre-este-martes-y-jueves-revisa-horarios-de-mayor-actividad.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026",
-      "raw_text": "Jueves 26 Noviembre, 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 00:02",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 00:02",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/dominga-lopez-pide-frenar-mensajes-de-odio-contra-estilistas-del-miss-universo-hicieron-lo-posible.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 06:37",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 06:37",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 07:41",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 07:41",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 09:01",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 09:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 09:01",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 09:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 09:14",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 09:14",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 10:07",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 10:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 10:13",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 10:13",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 10:13",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 10:13",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 10:59",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 10:59",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 11:16",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 11:16",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 11:43",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 11:43",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 11:43",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 11:43",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 11:52",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 11:52",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 11:52",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 11:52",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/acusan-a-morgan-freemande-de-negar-ayuda-a-sus-nietos-que-viven-en-un-albergue-de-emergencia.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:14",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:14",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:22",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:22",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:26",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:26",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:30",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:30",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:38",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:38",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/dominga-lopez-anuncia-su-regreso-a-chile-tras-su-aplaudido-paso-por-miss-universo-vuelvo-a-casa.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:48",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:48",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:48",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:48",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 12:48",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 12:48",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/la-impactante-transformacion-de-miss-venezuela-como-cambio-por-completo-su-imagen-para-concursar.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 13:30",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 13:30",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 13:40",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 13:40",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 14:06",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 14:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 14:06",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 14:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 14:08",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 14:08",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 14:18",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 14:18",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 14:22",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 14:22",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 14:22",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 14:22",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 14:56",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 14:56",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 15:47",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 15:47",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/region-del-bio-bio",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 15:54",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 15:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/espectaculos-y-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 Noviembre, 2026 | 15:54",
-      "raw_text": "Jueves 26 Noviembre, 2026 | 15:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/lista/categorias/notas-espectaculos-tv",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 06:37",
-      "raw_text": "Jueves 26 noviembre de 2026 | 06:37",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/tv/2026/11/26/costo-al-principio-claudio-michaux-reacciona-al-fin-del-club-de-la-comedia.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 09:01",
-      "raw_text": "Jueves 26 noviembre de 2026 | 09:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/la-intima-celebracion-de-la-nueva-miss-universo-difunden-foto-celebrando-con-su-esposo-e-hija.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 09:14",
-      "raw_text": "Jueves 26 noviembre de 2026 | 09:14",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/la-vina-de-la-discordia-angelina-jolie-y-brad-pitt-llegan-a-un-acuerdo-tras-anos-de-pelea.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 10:13",
-      "raw_text": "Jueves 26 noviembre de 2026 | 10:13",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/se-va-a-morir-con-nosotros-sobreviviente-de-los-andes-conto-a-checho-hirane-hay-un-ultimo-secreto.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 10:59",
-      "raw_text": "Jueves 26 noviembre de 2026 | 10:59",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/dominga-lopez-pide-frenar-mensajes-de-odio-contra-estilistas-del-miss-universo-hicieron-lo-posible.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 11:43",
-      "raw_text": "Jueves 26 noviembre de 2026 | 11:43",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/figuras-del-espectaculo-y-la-politica-acompanan-a-delfina-guzman-en-emotivo-ultimo-adios-por-santiago.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 11:52",
-      "raw_text": "Jueves 26 noviembre de 2026 | 11:52",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/justicia-francesa-confirma-que-llevara-a-juicio-a-gerard-depardieu-por-presunta-violacion.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 12:22",
-      "raw_text": "Jueves 26 noviembre de 2026 | 12:22",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/german-garmendia-rompe-en-llanto-por-la-muerte-de-su-gato-copito-dejo-de-trabajar-por-su-perdida.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 12:48",
-      "raw_text": "Jueves 26 noviembre de 2026 | 12:48",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/dominga-lopez-anuncia-su-regreso-a-chile-tras-su-aplaudido-paso-por-miss-universo-vuelvo-a-casa.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 14:06",
-      "raw_text": "Jueves 26 noviembre de 2026 | 14:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/la-voz-de-una-mujer-que-cruzo-dictaduras-los-momentos-claves-de-la-despedida-de-delfina-guzman.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 14:08",
-      "raw_text": "Jueves 26 noviembre de 2026 | 14:08",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/acusan-a-morgan-freemande-de-negar-ayuda-a-sus-nietos-que-viven-en-un-albergue-de-emergencia.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 14:18",
-      "raw_text": "Jueves 26 noviembre de 2026 | 14:18",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/11/26/la-impactante-transformacion-de-miss-venezuela-como-cambio-por-completo-su-imagen-para-concursar.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 14:22",
-      "raw_text": "Jueves 26 noviembre de 2026 | 14:22",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/muere-reconocida-actriz-chilena-de-doblaje-carolina-highet-trabajo-en-paw-patrol-y-detective-conan.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 14:56",
-      "raw_text": "Jueves 26 noviembre de 2026 | 14:56",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/11/26/prision-preventiva-para-dueno-de-automotora-que-habria-estafado-a-30-discapacitados-en-el-bio-bio.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Jueves 26 noviembre de 2026 | 15:54",
-      "raw_text": "Jueves 26 noviembre de 2026 | 15:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/notas-espectaculos-tv/2026/11/26/rata-de-cloaca-famosos-artistas-chilenos-acusan-millonarias-estafas-de-productor-de-eventos.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "tarde del martes 24 hasta la tarde del jueves 26 de noviembre.",
-      "raw_text": "tarde del martes 24 hasta la tarde del jueves 26 de noviembre.",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "BioBioChile — Región del Biobío",
-      "source_url": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/11/21/emiten-aviso-meteorologico-por-evento-de-altas-temperaturas-desde-coquimbo-al-bio-bio.shtml",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre 2026",
-      "raw_text": "26 de Noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre 2026",
-      "raw_text": "26 de Noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/cultura/2026/11/26/panoramas-cilturales-proximos-dias-gran-concepcion-miscelanea-agenda.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre 2026",
-      "raw_text": "26 de Noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/pais/2026/11/26/feriados-2027-conoce-los-festivos-que-traera-el-proximo-ano-en-chile.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre 2026",
-      "raw_text": "26 de Noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Diario Concepción — Cultura",
-      "source_url": "https://www.diarioconcepcion.cl/politica/2026/11/26/mop-biobio-comite-obras-emblematicas-puente.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/juzgado-de-garantia-de-villa-alemana-deja-en-prision-preventiva-a-imputado-por-femicidio-intimo-y-violacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/corte-de-arica-confirma-la-prision-preventiva-de-imputado-por-manejo-en-estado-de-ebriedad-causando-muerte/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/contraloria-fiscalizo-instalaciones-encargadas-del-monitoreo-de-la-actividad-volcanica-en-el-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/4most-inicia-su-programa-cientifico-de-cinco-anos-con-participacion-de-investigadores-del-cata-en-dos-grandes-proyectos-astronomicos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/junji-valparaiso-y-achs-convocan-a-equipos-educativos-para-fortalecer-la-cultura-preventiva-y-entornos-seguros-en-jardines-infantiles/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/alimapu-invita-a-disfrutar-de-un-concierto-educativo-en-mercado-puerto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/de-catapilco-al-mar-zapallar-reunira-arte-oficios-tradicionales-y-espectaculos-callejeros-en-la-laguna/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 noviembre 2026",
-      "raw_text": "26 noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/irredentos-se-estrena-obra-del-programa-de-apoyo-a-teatros-universitarios-en-colaboracion-con-el-xviii-encuentro-teatral-escalera-arriba-foto-matias-salazar-desde-el-jueves-26-de-noviembre-h/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "JUEVES 26 DE NOVIEMBRE",
-      "raw_text": "JUEVES 26 DE NOVIEMBRE",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/irredentos-se-estrena-obra-del-programa-de-apoyo-a-teatros-universitarios-en-colaboracion-con-el-xviii-encuentro-teatral-escalera-arriba-foto-matias-salazar-desde-el-jueves-26-de-noviembre-h/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Juzgado de Garantía de Villa Alemana deja en prisión preventiva a imputado por femicidio íntimo y violación",
-      "raw_text": "El Juzgado de Garantía de Villa Alemana decretó este jueves 26 de noviembre la prisión preventiva de Andre Matías Basáez Ugalde, imputado como autor de los delitos consumados de femicidio íntimo agravado, en perjuicio de M.P.V.C.; femicidio íntimo frustrado, violación de persona mayor de 14 años, amenazas en contexto de violencia intrafamiliar y filmación de hechos privados sin consentimiento de la víctima, estos últimos en perjuicio de B.E.C.V. Los ilícitos habrían sido perpetrados el 25 de noviembre en la comuna.",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/juzgado-de-garantia-de-villa-alemana-deja-en-prision-preventiva-a-imputado-por-femicidio-intimo-y-violacion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "«IRREDENTOS»: Se estrena obra del Programa de Apoyo a Teatros Universitarios en colaboración con el XVIII Encuentro Teatral ESCALERA ARRIBA",
-      "raw_text": "Desde el jueves 26 de noviembre hasta el domingo 6 de diciembre hay funciones con entrada liberada de «Irredentos», obra escrita por el dramaturgo chileno Antonio Acevedo Hernández y dirigida por Andrés Bravo Acevedo. El tercer montaje de la Escuela de Teatro de la Universidad de Valparaíso en el marco del Programa de Apoyo a Teatros Universitarios 2026, financiado por el Ministerio de las Culturas, las Artes y el Patrimonio, se articula con el XVIII Encuentro Teatral ESCALERA ARRIBA, promoviendo el convivio en torno a la experiencia escénica en siete cerros de Valparaíso.",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "G5 Noticias",
-      "source_url": "https://g5noticias.cl/2026/11/26/irredentos-se-estrena-obra-del-programa-de-apoyo-a-teatros-universitarios-en-colaboracion-con-el-xviii-encuentro-teatral-escalera-arriba-foto-matias-salazar-desde-el-jueves-26-de-noviembre-h/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Festival Eureka «Pioneras» llega a Los Ángeles con experiencias inmersivas, realidad virtual y conciertos gratuitos",
-      "raw_text": "El jueves 26 de noviembre concentrará gran parte de la actividad formativa y escénica. Durante la mañana, de 10:00 a 13:00 horas, la artista QOA impartirá un taller de escucha colectiva enfocado en explorar la relación entre sonido, espacio y movimiento a través de ejercicios corporales y vocales, instancia abierta a jóvenes sin necesidad de experiencia previa.",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "La Tribuna (Los Ángeles)",
-      "source_url": "https://www.latribuna.cl/cultura/2026/11/19/festival-eureka-pioneras-llega-a-los-angeles-con-experiencias-inmersivas-realidad-virtual-y-conciertos-gratuitos.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "ELECCIÓN JUNTA DE VECINOS YANI",
-      "raw_text": "Artículo 21 bis de la ley 19.418. «La comisión electoral deberá comunicar al secretario municipal la realización de la elección del directorio con al menos quince días hábiles de anticipación a la fecha fijada para ella. En caso de omitir esta comunicación, la elección no tendrá validez. Esta información deberá ser publicada por el secretario municipal en la página web institucional de la municipalidad al día siguiente hábil de la comunicación y hasta la fecha de la elección…",
-      "date": "2026-11-26",
-      "commune": "Arauco",
-      "source": "Municipalidad de Arauco",
-      "source_url": "https://muniarauco.cl/evento/eleccion-junta-de-vecinos-yani/",
-      "reason": "Proceso electoral/administrativo interno: verificar acceso público antes de difundir"
-    },
-    {
-      "title": "26 de Noviembre de 2026",
-      "raw_text": "26 de Noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": "Santa Bárbara",
-      "source": "Municipalidad de Santa Bárbara",
-      "source_url": "https://www.santabarbara.cl/noticias/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre de 2026",
-      "raw_text": "26 de Noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": "Santa Bárbara",
-      "source": "Municipalidad de Santa Bárbara",
-      "source_url": "https://www.santabarbara.cl/santa-barbara-avanza-en-conectividad-rural-con-obras-de-asfalto-en-la-ruta-q-615-sector-rinconada/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre de 2026",
-      "raw_text": "26 de Noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": "Santa Bárbara",
-      "source": "Municipalidad de Santa Bárbara",
-      "source_url": "https://www.santabarbara.cl/santa-barbara-conmemoro-el-dia-universal-de-la-infancia-con-una-feria-dedicada-a-los-derecho-y-talentos-de-la-ninez/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Alex Ortiz en La Diabla Bar",
-      "raw_text": "La Diabla Bar Carlos Condell 1121, San Felipe San Felipe",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/alex-ortiz-en-la-diabla-bar?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "Fernando larraín y Nicolas Larraín en Casa Comedia",
-      "raw_text": "Casa Comedia Constitución 97, Providencia Providencia",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "PuntoTicket — todos los eventos",
-      "source_url": "https://www.puntoticket.com/evento/hermanos-larrain?utm_medium=organic&utm_source=microformat",
-      "reason": "Evento estructurado sin comuna del Biobío identificable"
-    },
-    {
-      "title": "2026-11-26T11:09:22-03:00",
-      "raw_text": "2026-11-26T11:09:22-03:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Radio UdeC",
-      "source_url": "https://www.radioudec.cl/udec-conmemoro-dia-internacional-de-la-eliminacion-de-la-violencia-contra-la-mujer-con-actividades-en-los-3-campus/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 00:19",
-      "raw_text": "26 de noviembre de 2026, 00:19",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 08:30",
-      "raw_text": "26 de noviembre de 2026, 08:30",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 09:24",
-      "raw_text": "26 de noviembre de 2026, 09:24",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:09",
-      "raw_text": "26 de noviembre de 2026, 10:09",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:48",
-      "raw_text": "26 de noviembre de 2026, 10:48",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 10:48",
-      "raw_text": "26 de noviembre de 2026, 10:48",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 11:07",
-      "raw_text": "26 de noviembre de 2026, 11:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:12",
-      "raw_text": "26 de noviembre de 2026, 12:12",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:12",
-      "raw_text": "26 de noviembre de 2026, 12:12",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:12",
-      "raw_text": "26 de noviembre de 2026, 12:12",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:28",
-      "raw_text": "26 de noviembre de 2026, 12:28",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:46",
-      "raw_text": "26 de noviembre de 2026, 12:46",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:46",
-      "raw_text": "26 de noviembre de 2026, 12:46",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:46",
-      "raw_text": "26 de noviembre de 2026, 12:46",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:58",
-      "raw_text": "26 de noviembre de 2026, 12:58",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 12:58",
-      "raw_text": "26 de noviembre de 2026, 12:58",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 13:37",
-      "raw_text": "26 de noviembre de 2026, 13:37",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 13:59",
-      "raw_text": "26 de noviembre de 2026, 13:59",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 13:59",
-      "raw_text": "26 de noviembre de 2026, 13:59",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:07",
-      "raw_text": "26 de noviembre de 2026, 14:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:07",
-      "raw_text": "26 de noviembre de 2026, 14:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:07",
-      "raw_text": "26 de noviembre de 2026, 14:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:07",
-      "raw_text": "26 de noviembre de 2026, 14:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:07",
-      "raw_text": "26 de noviembre de 2026, 14:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:07",
-      "raw_text": "26 de noviembre de 2026, 14:07",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 14:54",
-      "raw_text": "26 de noviembre de 2026, 14:54",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:00",
-      "raw_text": "26 de noviembre de 2026, 15:00",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 15:35",
-      "raw_text": "26 de noviembre de 2026, 15:35",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:01",
-      "raw_text": "26 de noviembre de 2026, 16:01",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/26/concepcion-busca-instalar-el-arbol-de-navidad-mas-grande-del-biobio-preparan-conciertos-y-actividades-gratuitas-en-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/panoramas/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/actividades/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/cartelera-cultural/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de noviembre de 2026, 16:06",
-      "raw_text": "26 de noviembre de 2026, 16:06",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/09/15/golpe-al-turismo-sureno-termas-geometricas-anuncian-su-cierre-definitivo-tras-mas-de-dos-decadas-de-funcionamiento/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/vii-feria-laboral-omil-2026/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/musica",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/conciertos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/prision-preventiva/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festivales/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/tag/festival-leufu-2/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/largas-filas-y-mas-de-1-800-asistentes-la-realidad-del-desempleo-quedo-en-evidencia-en-feria-laboral-de-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/reabren-conexion-entre-el-biobio-y-argentina-y-proyectan-finalizar-obras-de-nuevo-complejo-fronterizo-conoce-cuando-estaria-listo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/24/brunch-beats-by-madriguera-el-nuevo-panorama-am-que-mezcla-musica-electronica-gastronomia-y-amigos-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/polemica-en-concierto-de-ed-sheeran-en-chile-denuncian-que-prohibieron-el-ingreso-con-camisetas-de-palestino/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/23/concepcion-sera-su-unica-parada-en-chile-alejandro-sanz-confirma-concierto-en-el-estadio-ester-roa-para-2027/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/05/francisco-huaiquipan-queda-en-prision-preventiva-por-presuntos-delitos-sexuales-reiterados/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/07/20/como-postular-al-programa-4-a-7-que-ahora-llega-a-dos-comunas-mas-del-gran-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/boliviano-ingreso-con-casi-media-tonelada-de-droga-quedo-en-prision-preventiva-tras-intentar-escapar-a-su-pais/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/12/sabado-repleto-de-cultura-cementerio-general-de-concepcion-anuncia-panoramas-para-este-fin-de-semana/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/19/fuck-kast-hayley-williams-lanzo-duro-mensaje-contra-el-presidente-de-chile-en-medio-de-su-concierto/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/16/festivales-se-toman-el-resto-de-noviembre-en-concepcion-leufu-surpop-y-son-del-biobio/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/13/festival-feriosa-trae-su-cuarta-version-a-concepcion-con-musica-y-cerveza-4-5-y-6-de-diciembre/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/conoce-los-panoramas-culturales-de-este-fin-de-semana-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/06/llega-un-nuevo-game-show-a-chile-descubre-como-postular-al-programa-de-pollo-castillo/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/11/14/the-50-best-vineyards-llegaran-al-biobio-para-conocer-sus-vinos-en-la-precuela-de-un-evento-mas-grande/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/01/parte-la-venta-de-entradas-para-viajafest-el-festival-de-viajes-que-tendra-destinos-musica-y-sorteos/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "raw_text": "Reabre Padre Hurtado: Habrán cambios en el tránsito por eje vial de Concepción este 26 y 27 de noviembre •",
-      "date": "2026-11-26",
-      "commune": "Concepción",
-      "source": "Sabes.cl",
-      "source_url": "https://sabes.cl/2026/10/31/festival-leufu-revela-su-cartel-para-tercera-edicion-jornada-musical-gratuita-en-concepcion/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre 2026",
-      "raw_text": "26 de Noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre 2026",
-      "raw_text": "26 de Noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/2026/11/26/tendra-uno-mas-que-este-ano-conoce-los-feriados-que-traera-el-2027.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "26 de Noviembre 2026",
-      "raw_text": "26 de Noviembre 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/26/ola-de-calor-en-biobio-matinal-siempre-juntos-26-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/page/programacion.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/2026/11/26/tendra-uno-mas-que-este-ano-conoce-los-feriados-que-traera-el-2027.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/26/ola-de-calor-en-biobio-matinal-siempre-juntos-26-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/25/eventos-de-alta-convocatoria-en-estadio-ester-roa-matinal-siempre-juntos-25-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/24/fragata-portuguesa-en-lenga-matinal-siempre-juntos-24-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/23/basural-en-cerro-la-u-de-talcahuano-matinal-siempre-juntos-23-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/18/innovacion-en-tedxbarriouniversitario-women-matinal-siempre-juntos-18-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/17/festival-de-naturaleza-en-canicura-matinal-siempre-juntos-17-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/2026/11/16/el-presente-y-futuro-del-basquetbol-udec-la-cancha-es-nuestra-16-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/16/bolido-ilumino-el-cielo-del-biobio-matinal-siempre-juntos-16-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/13/noche-de-museos-en-la-pinacoteca-matinal-siempre-juntos-13-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/12/expocorma-2026-matinal-siempre-juntos-12-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/11/paro-de-camioneros-en-juan-riquelme-matinal-siempre-juntos-11-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/09/movilizacion-de-camioneros-en-los-angeles-matinal-siempre-juntos-9-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/tvu-noticias/2026/11/05/como-quedan-las-obras-en-plaza-peru-tvu-noticias-central-5-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/2026/11/05/desarrolla-biobio-por-licitacion-trianual-del-festival-rec-permite-proyectarte-y-negociar-buenos-artistas.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/04/como-sera-el-rec-2027-matinal-siempre-juntos-04-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/03/acusan-aguas-servidas-en-talcahuano.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/11/02/denuncian-socavones-en-cerro-de-talcahuano-matinal-siempre-juntos-02-de-noviembre-de-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/prensa/2026/11/01/claudio-orrego-abre-la-puerta-a-una-eventual-carrera-presidencial-veremos-los-distintos-espacios.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/30/anativia-renuncio-como-delegado-presidencial-del-biobio-matinal-siempre-juntos-30-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/29/actualidad-del-biobio-y-la-octava-visita-presidencial-matinal-siempre-juntos-29-de-octubre-2026.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/28/fin-al-plazo-de-obras-en-plaza-peru-que-viene-ahora.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
-    {
-      "title": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "raw_text": "Ola de calor en Biobío - Matinal Siempre Juntos - 26 de noviembre de 2026",
-      "date": "2026-11-26",
-      "commune": null,
-      "source": "TVU Prensa",
-      "source_url": "https://www.tvu.cl/programas/siempre-juntos/2026/10/27/feria-puertas-abiertas-en-la-udec.html",
-      "reason": "Texto con fecha futura sin datos estructurados"
-    },
     {
       "title": "Plataforma de Artes Integradas DOSEL estrena su primer montaje “Cartas de Amor”",
       "raw_text": "La primera creación interdisciplinar de este colectivo escénico local, transportará al público al universo de los recuerdos y testimonios que puedan emerger de las cartas que alguna vez han escrito o recibido. Propuesta que fuera de Concepción también se presentará en Talca y Nacimiento. Funciones parten este 27 de noviembre en Teatro Biobío.",
@@ -4110,6 +1531,42 @@
       "commune": "Chiguayante",
       "source": "Municipalidad de Chiguayante",
       "source_url": "https://chiguayante.cl/Chgte/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Fecha: 27/11/2026",
+      "raw_text": "Fecha: 27/11/2026",
+      "date": "2026-11-27",
+      "commune": "Hualqui",
+      "source": "Municipalidad de Hualqui",
+      "source_url": "https://www.munihualqui.cl/ficha-y-bases-de-postulacion-feria-navidena-2026-articulo-noticias-1795803098.html",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Municipalidad de Hualqui",
+      "raw_text": "Postulaciones: desde el 27 de noviembre al 04 de diciembre (posterior a esta fecha NO se aceptan postulaciones) Resultados: 9 de diciembe 2026.",
+      "date": "2026-11-27",
+      "commune": "Hualqui",
+      "source": "Municipalidad de Hualqui",
+      "source_url": "https://www.munihualqui.cl/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Postulaciones: desde el 27 de noviembre al 04 de diciembre (posterior a esta fecha NO se aceptan postulaciones)",
+      "raw_text": "Postulaciones: desde el 27 de noviembre al 04 de diciembre (posterior a esta fecha NO se aceptan postulaciones)",
+      "date": "2026-11-27",
+      "commune": "Hualqui",
+      "source": "Municipalidad de Hualqui",
+      "source_url": "https://www.munihualqui.cl/ficha-y-bases-de-postulacion-feria-navidena-2026-articulo-noticias-1795803098.html",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Publicado el: 27/11/2026",
+      "raw_text": "Publicado el: 27/11/2026",
+      "date": "2026-11-27",
+      "commune": "Hualqui",
+      "source": "Municipalidad de Hualqui",
+      "source_url": "https://www.munihualqui.cl/ficha-y-bases-de-postulacion-feria-navidena-2026-articulo-noticias-1795803098.html",
       "reason": "Texto con fecha futura sin datos estructurados"
     },
     {
@@ -4696,6 +2153,15 @@
       "source": "Noticias UdeC",
       "source_url": "https://noticias.udec.cl/preparando-el-terreno-para-la-equidad-degyd-realiza-talleres-de-revision-curricular-con-perspectiva-de-genero/",
       "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Doyle en Teatro Coliseo",
+      "raw_text": "Teatro Coliseo Nataniel Cox 59, Santiago Centro Santiago Centro",
+      "date": "2026-12-06",
+      "commune": null,
+      "source": "PuntoTicket — todos los eventos",
+      "source_url": "https://www.puntoticket.com/evento/doyle-chile26?utm_medium=organic&utm_source=microformat",
+      "reason": "Evento estructurado sin comuna del Biobío identificable"
     },
     {
       "title": "Feriados 2027: conoce los festivos que traerá el próximo año en Chile",
@@ -5691,6 +3157,15 @@
       "title": "Fechas: Miércoles, jueves y viernes 10, 11, 12, 17, 18 y 19 de julio.",
       "raw_text": "Fechas: Miércoles, jueves y viernes 10, 11, 12, 17, 18 y 19 de julio.",
       "date": "2027-07-18",
+      "commune": "Concepción",
+      "source": "Festival Internacional de Teatro del Biobío (FTB)",
+      "source_url": "https://ftb.cl/category/talleres/",
+      "reason": "Texto con fecha futura sin datos estructurados"
+    },
+    {
+      "title": "Fecha: 25 al 27 de julio",
+      "raw_text": "Fecha: 25 al 27 de julio",
+      "date": "2027-07-25",
       "commune": "Concepción",
       "source": "Festival Internacional de Teatro del Biobío (FTB)",
       "source_url": "https://ftb.cl/category/talleres/",

@@ -1,12 +1,12 @@
 # Cobertura verificada · Eventos Región del Biobío
 
-Snapshot: `2026-11-26T19:11:42`
+Snapshot: `2026-11-27T19:06:48`
 
 La cobertura vigente cuenta solo eventos de `events` con fecha final igual o posterior al día de revisión en Chile y no cancelados. El snapshot puede conservar hasta 30 días de eventos históricos. HTTP 2xx y candidatos no acreditan eventos verificados.
 
 | Comuna | Fuentes locales habilitadas | Fuentes HTTP 2xx | Eventos publicados | Candidatos por revisar |
 |---|---:|---:|---:|---:|
-| Concepción | 8 | 8 | 1 | 81 |
+| Concepción | 8 | 6 | 1 | 57 |
 | Talcahuano | 1 | 0 | 0 | 1 |
 | Hualpén | 1 | 1 | 0 | 0 |
 | San Pedro de la Paz | 1 | 0 | 0 | 0 |
@@ -15,17 +15,17 @@ La cobertura vigente cuenta solo eventos de `events` con fecha final igual o pos
 | Tomé | 1 | 0 | 0 | 0 |
 | Coronel | 1 | 1 | 0 | 0 |
 | Lota | 1 | 1 | 0 | 1 |
-| Hualqui | 1 | 1 | 0 | 0 |
+| Hualqui | 1 | 1 | 0 | 4 |
 | Santa Juana | 1 | 1 | 0 | 0 |
 | Florida | 1 | 1 | 0 | 1 |
-| Arauco | 1 | 1 | 0 | 7 |
+| Arauco | 1 | 1 | 0 | 6 |
 | Cañete | 1 | 1 | 0 | 0 |
 | Contulmo | 1 | 1 | 0 | 0 |
 | Curanilahue | 1 | 0 | 0 | 0 |
 | Lebu | 1 | 0 | 0 | 0 |
 | Los Álamos | 1 | 0 | 0 | 0 |
 | Tirúa | 1 | 0 | 0 | 0 |
-| Los Ángeles | 2 | 2 | 0 | 3 |
+| Los Ángeles | 2 | 1 | 0 | 3 |
 | Antuco | 1 | 0 | 0 | 0 |
 | Cabrero | 1 | 1 | 0 | 0 |
 | Laja | 1 | 1 | 0 | 1 |
@@ -35,7 +35,7 @@ La cobertura vigente cuenta solo eventos de `events` con fecha final igual o pos
 | Quilaco | 1 | 0 | 0 | 0 |
 | Quilleco | 1 | 1 | 0 | 0 |
 | San Rosendo | 1 | 1 | 0 | 6 |
-| Santa Bárbara | 1 | 1 | 0 | 3 |
+| Santa Bárbara | 1 | 1 | 0 | 0 |
 | Tucapel | 1 | 1 | 0 | 0 |
 | Yumbel | 1 | 1 | 0 | 0 |
 | Alto Biobío | 1 | 1 | 0 | 2 |
@@ -50,21 +50,23 @@ La tabla prioriza fuentes con candidatos por revisar. Las fuentes omitidas por c
 
 | Fuente | Candidatos acumulados | HTTP esta ejecución | Páginas consultadas | Eventos aceptados |
 |---|---:|---|---:|---:|
-| Sabes.cl | 168 | 200 | 15 | 0 |
-| BioBioChile — Región del Biobío | 56 | 200 | 25 | 0 |
-| TVU Prensa | 40 | 200 | 25 | 0 |
-| PuntoTicket — todos los eventos | 30 | 200 | 30 | 0 |
-| G5 Noticias | 26 | 200 | 10 | 0 |
-| Festival Internacional de Teatro del Biobío (FTB) | 25 | 200 | 15 | 0 |
-| Diario Concepción — Cultura | 22 | 200 | 25 | 0 |
-| Noticias UdeC | 22 | 200 | 7 | 0 |
-| Ministerio de las Culturas — Agenda cultural | 12 | 200 | 22 | 0 |
+| PuntoTicket — todos los eventos | 29 | 200 | 30 | 0 |
+| Festival Internacional de Teatro del Biobío (FTB) | 26 | 200 | 15 | 0 |
+| Noticias UdeC | 22 | No consultada | 0 | 0 |
+| Diario Concepción — Cultura | 18 | No consultada | 0 | 0 |
+| G5 Noticias | 15 | No consultada | 0 | 0 |
+| TVU Prensa | 13 | No consultada | 0 | 0 |
+| Ministerio de las Culturas — Agenda cultural | 12 | No consultada | 0 | 0 |
 | Municipalidad de Nacimiento | 10 | 200 | 25 | 0 |
-| Municipalidad de Arauco | 7 | 200 | 25 | 1 |
+| Sabes.cl | 7 | No consultada | 0 | 0 |
 | Municipalidad de San Rosendo | 6 | 200 | 16 | 0 |
-| Radio UdeC | 5 | 200 | 15 | 0 |
-| Municipalidad de Santa Bárbara | 3 | 200 | 13 | 0 |
-| TuAcceso | 3 | 200 | 25 | 0 |
+| Municipalidad de Arauco | 6 | 200 | 25 | 1 |
+| Municipalidad de Hualqui | 4 | 200 | 25 | 0 |
+| Radio UdeC | 4 | No consultada | 0 | 0 |
+| TuAcceso | 3 | No consultada | 0 | 0 |
+| Municipalidad de Chiguayante | 2 | Sin respuesta | 0 | 0 |
+
+**Fuentes omitidas por cadencia:** 15 (sin petición nueva).
 
 **Revalidación de fichas vigentes:** 1/1 respuestas satisfactorias.
 
@@ -74,9 +76,9 @@ Estos registros están en cuarentena; no son eventos publicados ni se verifican 
 
 | Motivo registrado | Candidatos |
 |---|---:|
-| Texto con fecha futura sin datos estructurados | 411 |
-| Evento estructurado sin comuna del Biobío identificable | 31 |
-| Proceso electoral/administrativo interno: verificar acceso público antes de difundir | 7 |
+| Texto con fecha futura sin datos estructurados | 154 |
+| Evento estructurado sin comuna del Biobío identificable | 30 |
+| Proceso electoral/administrativo interno: verificar acceso público antes de difundir | 6 |
 | Ticketera nacional: falta coincidencia explícita de comuna y región del Biobío en los datos estructurados del recinto | 2 |
 
 ## Alertas de salud por fuente
@@ -85,12 +87,13 @@ Se informa desde 3 fallos consecutivos **registrados** en fuentes habilitadas. N
 
 | Fuente | Fallos consecutivos | Último HTTP | Última comprobación |
 |---|---:|---|---|
-| Municipalidad de Antuco | 24 | 200 | 2026-11-26T19:07:32 |
-| Municipalidad de Curanilahue | 24 | Sin respuesta | 2026-11-26T19:09:38 |
-| Municipalidad de Lebu | 24 | 403 | 2026-11-26T19:07:00 |
-| Municipalidad de Los Álamos | 24 | 403 | 2026-11-26T19:07:00 |
-| Municipalidad de Quilaco | 24 | Sin respuesta | 2026-11-26T19:08:38 |
-| Municipalidad de San Pedro de la Paz | 24 | Sin respuesta | 2026-11-26T19:05:39 |
-| Municipalidad de Talcahuano | 24 | Sin respuesta | 2026-11-26T19:05:45 |
-| Municipalidad de Tirúa | 24 | 200 | 2026-11-26T19:07:12 |
-| Municipalidad de Tomé | 24 | 403 | 2026-11-26T19:05:55 |
+| Municipalidad de Antuco | 25 | 200 | 2026-11-27T19:03:44 |
+| Municipalidad de Curanilahue | 25 | Sin respuesta | 2026-11-27T19:06:14 |
+| Municipalidad de Lebu | 25 | 403 | 2026-11-27T19:03:09 |
+| Municipalidad de Los Álamos | 25 | 403 | 2026-11-27T19:03:09 |
+| Municipalidad de Quilaco | 25 | Sin respuesta | 2026-11-27T19:04:54 |
+| Municipalidad de San Pedro de la Paz | 25 | Sin respuesta | 2026-11-27T19:01:52 |
+| Municipalidad de Talcahuano | 25 | Sin respuesta | 2026-11-27T19:02:00 |
+| Municipalidad de Tirúa | 25 | 200 | 2026-11-27T19:03:24 |
+| Municipalidad de Tomé | 25 | 403 | 2026-11-27T19:02:09 |
+| Municipalidad de Chiguayante | 3 | Sin respuesta | 2026-11-27T19:04:39 |
