@@ -53,7 +53,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; NoticiasDelMomento/2.0)"
 STORIES_PER_CATEGORY = 48  # seis iniciales, resto progresivo y buscable
 WINDOW_HOURS = 24            # cuánto tiempo permanece una noticia en el sitio
 FUTURE_TOLERANCE = timedelta(minutes=15)  # pequeño desfase del reloj editorial
-MAX_HISTORY = 400            # tope de noticias guardadas en el historial
+MAX_HISTORY = 600            # tope de noticias guardadas en el historial (reparto por categoría)
 SIMILARITY_THRESHOLD = 0.6   # umbral para considerar dos titulares "la misma noticia"
 RSS_LIMIT = 15
 
@@ -655,7 +655,7 @@ def prune(stories, now, window_hours):
     sizes = defaultdict(int)
     for story in kept:
         sizes[story.get("category") or ""] += 1
-    quotas = history_quotas(sizes)
+    quotas = history_quotas(sizes, MAX_HISTORY)
     used = defaultdict(int)
     balanced = []
     for story in kept:  # conserva el orden global por recencia
