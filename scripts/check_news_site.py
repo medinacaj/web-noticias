@@ -9,8 +9,12 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
 DEFAULT_SITE = "https://medinacaj.github.io/web-noticias/"
-# Dos ciclos horarios perdidos ameritan alerta; no esperar una jornada parcial.
-MAX_AGE_HOURS = 2
+# El cron horario de GitHub Actions es «best effort»: entre el 15 y el 28-11-2026
+# las ejecuciones programadas exitosas llegaron cada 2,1-12,4 h (mediana 8,3 h),
+# por lo que un umbral de 2 h abría y cerraba alertas falsas en cada ciclo (#84,
+# #281). 13 h cubre esa cadencia real y sigue avisando si el planificador se
+# detiene. Un despliegue fallido no espera este plazo: alerta por workflow_run.
+MAX_AGE_HOURS = 13
 
 
 class EditionParser(html.parser.HTMLParser):

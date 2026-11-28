@@ -102,12 +102,18 @@ class PublicHealthTests(unittest.TestCase):
         warnings = assess(self.page(MAX_AGE_HOURS + 1), self.sitemap, self.now)
         self.assertTrue(any("desactualizada" in x for x in warnings))
 
-    def test_two_missed_hourly_updates_warn_without_waiting_eight_hours(self):
-        self.assertEqual(assess(self.page(2), self.sitemap, self.now), [])
-        warnings = assess(self.page(2.01), self.sitemap, self.now)
+    def test_real_scheduler_cadence_does_not_raise_false_alerts(self):
+        # Intervalos observados del cron de GitHub (mediana 8,3 h, máx. 12,4 h).
+        for hours in (2.3, 8.3, 10.7, 12.4, MAX_AGE_HOURS):
+            with self.subTest(hours=hours):
+                self.assertEqual(assess(self.page(hours), self.sitemap, self.now), [])
+        warnings = assess(self.page(MAX_AGE_HOURS + 0.01), self.sitemap, self.now)
         self.assertTrue(any("desactualizada" in warning for warning in warnings))
-        self.assertTrue(any("desactualizada" in warning
-                            for warning in assess(self.page(3.3), self.sitemap, self.now)))
+
+    def test_stopped_scheduler_still_alerts_within_a_day(self):
+        self.assertLess(MAX_AGE_HOURS, 24)
+        warnings = assess(self.page(18.4), self.sitemap, self.now)
+        self.assertTrue(any("desactualizada" in warning for warning in warnings))
 
     def test_non_successful_publication_conclusions_trigger_alert(self):
         """Una portada fresca no debe ocultar un workflow cancelado u omitido."""
