@@ -8,7 +8,7 @@ Sitio estático de noticias generales (Chile y el mundo) que se regenera solo ca
 
 `fetch_noticias.py` en cada ejecución:
 1. Recolecta titulares por categoría desde Google Noticias RSS (sin límite) y GNews API (solo cada 3 horas, para respetar el plan gratis de 100 solicitudes/día). Opcionalmente feeds directos de medios (`DIRECT_FEEDS`).
-2. Los fusiona con `data/historial.json` (ventana de 24 h). Si un titular similar ya existe (difflib ≥ 0,6), suma la fuente en vez de duplicar y prefiere el enlace directo al medio sobre el de Google. El tope `MAX_HISTORY` (400) se reparte equitativamente por categoría (`history_quotas`): las secciones pequeñas conservan toda su ventana y el sobrante va a las de más volumen, para que Latinoamérica no expulse lo vigente de las demás (2026-11-28).
+2. Los fusiona con `data/historial.json` (ventana de 24 h). Si un titular similar ya existe (difflib ≥ 0,6), suma la fuente en vez de duplicar y prefiere el enlace directo al medio sobre el de Google. El tope `MAX_HISTORY` (600 desde el 2026-11-28; antes 400) se reparte equitativamente por categoría (`history_quotas`): las secciones pequeñas conservan toda su ventana y el sobrante va a las de más volumen, para que Latinoamérica no expulse lo vigente de las demás (2026-11-28).
 3. Genera en `public/` el sitio **ya renderizado en HTML** (no depende de JS): `index.html`, `404.html`, `sitemap.xml`, `robots.txt`, más `static/`.
 4. Si no queda ninguna noticia, sale con código 1 a propósito: no publica una página vacía y GitHub avisa por correo.
 

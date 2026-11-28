@@ -62,6 +62,13 @@ class HistoryCapBalanceTests(unittest.TestCase):
         times = [news.story_time(s) for s in kept]
         self.assertEqual(times, sorted(times, reverse=True))
 
+    def test_prune_uses_the_current_history_cap(self):
+        self.assertEqual(news.MAX_HISTORY, 600)
+        with patch.object(news, "MAX_HISTORY", 20):
+            kept = news.prune(self.stories(40, 5), NOW, 24)
+        self.assertEqual(len(kept), 20)
+        self.assertEqual(sum(1 for s in kept if s["category"] == "nacional"), 5)
+
     def test_quotas_share_spare_capacity_among_large_sections(self):
         quotas = news.history_quotas({"a": 10, "b": 300, "c": 300}, capacity=400)
         self.assertEqual(quotas["a"], 10)
