@@ -37,7 +37,10 @@ class PublisherImagesTests(unittest.TestCase):
                 first + later, selected, now, max_lookups=8,
                 fetch_image=lookup)
         self.assertEqual((count, checked), (8, 8))
-        self.assertEqual([x["link"] for x in later[:4]], visited[1:8:2])
+        # Las consultas corren en paralelo: se comprueba qué URL se revisan
+        # (cuatro iniciales de cada sección), no el orden de llegada de los hilos.
+        expected = [x["link"] for pair in zip(first[:4], later[:4]) for x in pair]
+        self.assertCountEqual(visited, expected)
         self.assertFalse(first[6]["image"])
         self.assertTrue(all(x["image"] for x in later[:4]))
 
