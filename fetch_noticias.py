@@ -24,6 +24,7 @@ Variables de entorno:
 """
 
 import argparse
+from collections import defaultdict
 import difflib
 import html
 import json
@@ -627,12 +628,42 @@ def hours_old(story, now):
     return max(0.0, (now - moment).total_seconds() / 3600)
 
 
+def history_quotas(sizes, capacity=MAX_HISTORY):
+    """Reparto equitativo del tope del historial entre categorías.
+
+    Las categorías con menos noticias que su parte las conservan todas; el
+    espacio que dejan se reparte entre las de mayor volumen. Así una sección
+    con muchas consultas (p. ej. Latinoamérica) no expulsa del historial lo
+    vigente de las demás antes de que termine su ventana.
+    """
+    quotas, remaining = {}, capacity
+    ordered = sorted(sizes, key=lambda key: (sizes[key], key))
+    for index, key in enumerate(ordered):
+        share = remaining // (len(ordered) - index)
+        quotas[key] = min(sizes[key], share)
+        remaining -= quotas[key]
+    return quotas
+
+
 def prune(stories, now, window_hours):
     limit = now - timedelta(hours=window_hours)
     future_limit = now + FUTURE_TOLERANCE
     kept = [s for s in stories if limit <= (story_time(s) or now) <= future_limit]
     kept.sort(key=lambda s: story_time(s) or now, reverse=True)
-    return kept[:MAX_HISTORY]
+    if len(kept) <= MAX_HISTORY:
+        return kept
+    sizes = defaultdict(int)
+    for story in kept:
+        sizes[story.get("category") or ""] += 1
+    quotas = history_quotas(sizes)
+    used = defaultdict(int)
+    balanced = []
+    for story in kept:  # conserva el orden global por recencia
+        key = story.get("category") or ""
+        if used[key] < quotas[key]:
+            used[key] += 1
+            balanced.append(story)
+    return balanced
 
 
 # ---------- SELECCIÓN ----------

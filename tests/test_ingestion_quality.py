@@ -31,6 +31,45 @@ def history_item(**changes):
     return item
 
 
+class HistoryCapBalanceTests(unittest.TestCase):
+    """El tope del historial no debe vaciar secciones por el volumen de otra."""
+
+    def stories(self, latam, nacional):
+        items = [history_item(link=f"https://l.example/{i}", category="latinoamerica",
+                              hours=0.01 * (i + 1)) for i in range(latam)]
+        items += [history_item(link=f"https://n.example/{i}", hours=12 + 0.1 * i)
+                  for i in range(nacional)]
+        return items
+
+    def test_under_cap_keeps_everything_in_recency_order(self):
+        kept = news.prune(self.stories(10, 5), NOW, 24)
+        self.assertEqual(len(kept), 15)
+        times = [news.story_time(s) for s in kept]
+        self.assertEqual(times, sorted(times, reverse=True))
+
+    def test_high_volume_section_cannot_evict_older_valid_stories(self):
+        latam = news.MAX_HISTORY + 50
+        kept = news.prune(self.stories(latam, 30), NOW, 24)
+        self.assertEqual(len(kept), news.MAX_HISTORY)
+        by_category = {}
+        for story in kept:
+            by_category[story["category"]] = by_category.get(story["category"], 0) + 1
+        self.assertEqual(by_category["nacional"], 30)
+        self.assertEqual(by_category["latinoamerica"], news.MAX_HISTORY - 30)
+        # Latinoamérica conserva sus noticias más recientes, no unas al azar.
+        latam_links = [s["link"] for s in kept if s["category"] == "latinoamerica"]
+        self.assertEqual(latam_links[:3], [f"https://l.example/{i}" for i in range(3)])
+        times = [news.story_time(s) for s in kept]
+        self.assertEqual(times, sorted(times, reverse=True))
+
+    def test_quotas_share_spare_capacity_among_large_sections(self):
+        quotas = news.history_quotas({"a": 10, "b": 300, "c": 300}, capacity=400)
+        self.assertEqual(quotas["a"], 10)
+        self.assertEqual(quotas["b"] + quotas["c"], 390)
+        self.assertLessEqual(abs(quotas["b"] - quotas["c"]), 1)
+        self.assertEqual(news.history_quotas({"a": 3, "b": 4}, capacity=400), {"a": 3, "b": 4})
+
+
 class TemporalMergeTests(unittest.TestCase):
     def test_expired_history_cannot_absorb_a_recent_distinct_url(self):
         stories = [history_item(hours=25)]
